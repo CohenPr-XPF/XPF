@@ -1,0 +1,70 @@
+type,sfrom,sto,weight,precede,follow,comment
+class,anyh,(għ|h),,,,
+class,vowel,(a|e|i|ie|ɪ|o|u),,,,
+class,highvowel,[iu],,,,
+class,consonant,[bċdfgġhħjklmnpqrstvwxzż],,,,
+class,cons-output,(b|t͡ʃ|d̪|f|g|d͡ʒ|ħ|j|k|l|m|n|p|ʔ|r|s|t̪|v|w|ʃ|z|t͡s),,,
+class,passthrough,[abefħijklmnoprsuvw],,,,
+sub,a,aj,6,,j,
+sub,j,,6,a,,
+sub,a,aw,6,,w,
+sub,w,,6,a,,
+sub,ċ,t͡ʃ,2,,,
+sub,ċ,tːʃ,2.2,,ċ,"beginning of long-affricate conversion"
+sub,ġ,dːʒ,2.2,,ġ,
+sub,z,tːs,2.2,,z,
+sub,ċ,,2.2,ċ,,
+sub,ġ,,2.2,ġ,,
+sub,z,,2.2,z,,"end of long-affricate conversion"
+sub,d,d̪,4,,,
+sub,e,ew,6,,w,
+sub,w,,6,e,,
+sub,g,ɡ,4,,,
+sub,ġ,d͡ʒ,2,,,
+sub,g,,8,,ħ{highvowel},"beginning of għi- and għu-collapsing"
+sub,ħ,,8,g,{highvowel},
+sub,i,ej,8,għ,,
+sub,u,ow,8,għ,,"end of għi- and għu-collapsing"
+sub,g,ħ aː,8,,ħha$,"beginning of -ha suffix configuration"
+sub,ħ,,8,g,ha$,
+sub,h,,8,għ,a$,
+sub,a,,8,għh,$,"end of -ha suffix configuration"
+sub,g,ħ oː m,8,,ħhom$,"beginning of -hom suffix configuration"
+sub,ħ,,8,g,hom$,
+sub,h,,8,għ,om$,
+sub,o,,8,għh,m$,
+sub,m,,8,għho,$,"end of -hom suffix configuration"
+sub,g,ħ,7,,ħ$,"start of standard għ & h rules"
+sub,ħ,,7,g,$,
+sub,h,ħ,7,,$,
+sub,g,ː,7,,ħ.,
+sub,ħ,,7,g,.,
+sub,h,ː,7,,,"end of standard għ & h rules"
+sub,({vowel}),\1ː,8,^{anyh},,"beginning of collapse of word-initial hV"
+sub,{anyh},,8,^,{vowel},"end of collapse of word-initial hV"
+sub,i,ɪː,4.1,,e,"beginning of ie-conversion"
+sub,e,,4.1,i,,"end of ie-conversion"
+sub,q,ʔ,4,,,
+sub,t,t̪,4,,,
+sub,u,uː,6,,{consonant}{vowel}$,
+sub,x,ʃ,4,,,
+sub,z,t͡s,2,,,
+sub,ż,z,1.9,,,
+ipasub,({vowel}) ː,\1ː,1.6,,,"phonemization of long vowels"
+ipasub,({vowel}) {anyh} \1,\1ː,1.6,,,"collapsing of VhV"
+ipasub,({vowel}) ː \1,\1ː,1.6,,,"collapsing of VːV"
+ipasub,({vowel}) \1,\1ː,1.6,,,"collapsing of VV"
+ipasub,({cons-output}) \1,\1ː,1.6,,,"lengthening of double consonants"
+sub,({vowel}),\1ː,7,,għ.,"beginning of vowel length before/after għ"
+sub,g,,7,{vowel},ħ,
+sub,ħ,,7,{vowel}g,,"end of before"
+sub,({vowel}),\1ː,7,għ,,"beginning of after"
+sub,g,,7,,ħ{vowel},
+sub,ħ,,7,g,{vowel},"end of vowel length before/after għ"
+ipasub,({vowel})ː ħ aː$,\1 ħː a,6.9,,,"correcting long vowels before -għha"
+ipasub,({vowel})ː ħ oː m$,\1 ħː o m,6.9,,,"likewise for -għhom"
+ipasub,({cons-output}) ː ({vowel}),\1 \2ː,1.1,,,"fixing length distribution"
+ipasub,^ː ({vowel}),\1ː,1.1,,,"correcting lengthening of word-initial vowels"
+ipasub,(ː |ː)ː+,ː,1,,,"collapsing of multi-length"
+sub,({highvowel}),\1ː,6,,({consonant}|għ)$,"lengthening of high vowel penult"
+sub,({passthrough}),\1,0.1,,,

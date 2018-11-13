@@ -1,0 +1,66 @@
+---
+title: Basque
+---
+# Background
+**Language family**: language isolate  
+
+# Alphabet
+## Vowels
+⟨a⟩ = /a/  
+⟨e⟩ = /e/  
+⟨i⟩ = /i/  
+⟨o⟩ = /o/  
+⟨u⟩ = /u/  
+## Consonants
+⟨b⟩ = /b/  
+⟨d⟩ = /d̪/  
+⟨f⟩ = /f/  
+⟨g⟩ = /ɡ/  
+⟨h⟩ = Ø  
+⟨j⟩ = /x/   
+⟨k⟩ = /k/  
+⟨l⟩ = /l/  
+⟨m⟩ = /m/   
+⟨n⟩ = /n/   
+⟨ñ⟩ = /ɲ/  
+⟨p⟩ = /p/    
+⟨-r-⟩ = /ɾ/  
+⟨r-⟩ = /r/  
+⟨s⟩ = /s̺/  
+⟨t⟩ = /t̪/  
+⟨x⟩ = /ʃ/  
+⟨y⟩ = /j/  
+⟨z⟩ = /s̻/  
+## Digraphs
+⟨dd⟩ = /ɟ/  
+⟨tt⟩ = /c/  
+⟨ts⟩ = /ts̺/  
+⟨tz⟩ = /ts̻/  
+⟨tx⟩ = /tʃ/  
+⟨rr⟩ = /r/  
+⟨ll⟩ = /ʎ/  
+
+In borrowings: c, ç, q, v, w, y
+# Phonology
+## Consonants
+⟨r⟩ -> [ɾ] / V__V
+## Vowels
+Diphthongs  
+ai  
+ei  
+oi  
+au  
+eu  
+
+# Lenition
+### Spirantization
+* X -> [β,ð,ɣ] / {V,tap,trill}__V when X = b,̪d,ɡ
+
+### Voicing
+* /h/ -> voiced / X__X when X=i,u,e,o,a
+* X -> voiced / __Voiced C for segments X = ̥s, s
+* /̥ss, s/ -> voiced / __X (no other voiced Cs occur here) for segments X = m, ̪n, l
+
+### Deletion
+* /b,̪d,g,ɾ/ -> 0 / X__X in colloguial relaxed speech for when X = i,u,e,o,a
+* /h/ -> 0 / when preceded in a word by aspirated X, or when followed by another /h/
