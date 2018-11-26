@@ -1,0 +1,258 @@
+---
+title: Standard Maltese
+---
+
+Last Updated: 2018-11-19
+
+# Background
+
+**Language Family**: Afro-Asiatic / Semitic / Central Semitic / Arabic / Western Arabic / Maltese
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial: /p/, /b/, /m/, /f/, /v/
+Dental/Alveolar: /t̪/, /d̪/, /n/, /s/, /z/, /t͡s/, /d͡z/, /r/, /l/
+Palatal: /ʃ/, /ʒ/, /t͡ʃ/, /d͡ʒ/, /j/
+Velar: /k/, /g/, /w/
+Pharyngeal: /ħ/
+Glottal: /ʔ/
+
+### By manner of articulation
+
+Stops: /p/, /b/, /t̪/, /d̪/, /k/, /g/, /ʔ/
+Nasals: /m/, /n/
+Fricatives: /f/, /v/, /s/, /z/, /ʃ/, /ʒ/, /ħ/
+Affricates: /t͡s/, /d͡z/, /t͡ʃ/, /d͡ʒ/
+Trills: /r/
+Approximants: /l/, /j/, /w/
+
+## Vowels
+
+Short vowels: /a/, /e/, /i/, /o/, /u/
+Long vowels: /iː/, /ɪː/, /uː/
+Diphthongs: /aj/, /ej/, /oj/, /aw/, /ew/, /iw/, /ow/
+
+## Stress
+
+In words without affix, Maltese stresses the last VCC or VːC cluster in the word; in words without those clusters, stress falls on the penultimate syllable.
+
+In loanwords from English, Maltese typically retains the English stress pattern; in loanwords from Italian, the stress pattern is variable, but most commonly based on the Italian vowel length.
+
+# Alphabet
+
+## Phonemic
+
+Capital letter; lowercase letter; phoneme; notes
+
+A; a; /a/ (low central; some authors use /ɐ/)
+B; b; /b/
+Ċ; ċ; /t͡ʃ/
+D; d; /d̪/
+E; e; /e/ (mid front; some authors use /ɛ/)
+F; f; /f/
+Ġ; ġ; /d͡ʒ/
+G; g; /g/
+Għ; għ; /ː/ (lengthens associated vowels)
+H; h; /ː/ (lengthens associated vowels)
+Ħ; ħ; /ħ/; realized by some speakers as [x] or [h]
+I; i; /i/; /iː/
+Ie; ie; /ɪː/ (some authors use /ie/)
+J; j; /j/
+K; k; /k/
+L; l; /l/
+M; m; /m/
+N; n; /n/
+O; o; /o/ (mid back; some authors use /ɔ/)
+P; p; /p/
+Q; q; /ʔ/
+R; r; /r/
+S; s; /s/
+T; t; /t̪/
+U; u; /u/, /uː/ (some authors use /ʊ/)
+V; v; /v/
+W; w; /w/
+X; x; /ʃ/; /ʒ/ in certain loanwords
+Ż; ż; /z/
+Z; z; /t͡s/; /d͡z/ in certain loanwords
+
+### Vowel definitions by author
+
+(1996) HUME:             /a/ /e/ /i/ /o/ /u/
+(1996) DANIELS & BRIGHT: /a/ /ɛ/ /i/ /o/ /u/
+(1997) BORG:             /a/ /e/ /i/ /o/ /u/
+(2009) HUME ET AL.:      /ɐ/ /ɛ/ /i/ /ɔ/ /u/
+(2016) PUECH:            /a/ /ɛ/ /ɪ/ /ɔ/ /ʊ/
+
+(NB: Hume 2009 only uses phonetic transcriptions, rather than phonemic, so it is ambiguous whether her choices of vowels reflect phonemes rather than realization.)
+
+### Digraphs
+
+Aj; aj; /aj/
+Aw; aw; /aw/
+Ew; ew; /ew/ (occasionally realized as [ow])
+Għi; għi; /ej/
+Għu; għu; /ow/
+Iw; iw; /iw/
+Oj; oj; /oj/
+
+## Phonetic
+
+(This turned out not to be necessary for the project, but I'm keeping it in the file in case it proves useful to anyone.)
+
+a → [a] /  _
+a → [aː]  /  _
+b → [p]  /  _ w]
+b → [b]  /  elsewhere
+ċ → [t͡ʃ]  /  _
+d → [t̪]  /  _ w]
+d → [d̪]  /  elsewhere
+e → [e]  /  _
+e → [eː]  /  _
+f → [f]  /  _
+ġ → [t͡ʃ]  /  _ w]
+ġ → [ʒ]  /  _ C[+stop]
+ġ → [d͡ʒ]  /  elsewhere
+g → [k]  /  _ w]
+g → [g]  /  elsewhere
+għ → [ħ]  /  _ w]
+għ → [ħ]  /  _ <ha> w]
+għ → [ħ]  /  _ <hom> w]
+għ → [ˤː]  /  elsewhere (note the pharyngealization)
+h → [ħ]  /  _ w]
+h → [ː]  /  elsewhere
+ħ → [ħ]  /  _
+i → [e]  /  _ [-long] X[+consonant] w]
+i → [i]  /  elsewhere
+i → [iː]  /  elsewhere
+i → [ɪː]  /  elsewhere
+j → [j]  /  _
+k → [k]  /  _
+l → [l]  /  _
+m → X  /  w[ _ X[+consonant, +sonorant]
+m → C[α place]  /  _ X[α place, +obstruent]
+m → [m]  /  elsewhere
+n → X  /  w[ _ X[+consonant, +sonorant]
+n → C[α place]  /  _ X[α place, +obstruent]
+n → [n]  /  elsewhere
+o → [o]  /  _
+o → [oː]  /  _
+p → [p]  /  _
+q → [ʔ]  /  _
+r → [r]  /  _
+s → [s]  /  _
+t → [t̪]  /  _
+u → [o]  /  _ [+stress]
+u → [o]  /  _ [-long] X[+consonant] w]
+u → [u]  /  elsewhere
+u → [uː]  /  elsewhere
+v → [v]  /  _
+w → [w]  /  _
+x → [ʒ]  /  in certain loanwords
+x → [ʃ]  /  elsewhere
+ż → [s]  /  _ w]
+ż → [z]  /  elsewhere
+z → [d͡z]  /  in certain loanwords
+z → [t͡s]  /  elsewhere
+
+# Lenition Processes
+
+* shortening of word-final long vowels
+  * stiednu - [st̪ɪːd̪nu] - "they invited" vs.
+    stiednux - [st̪ɪːd̪nuːʃ] - "they did not invite" (Borg, p. 267)
+* devoicing of word-final obstruents (Borg, p. 250)
+  * kiteb - [kit̪ep] - "he has written"
+  * bergħud - [berowt̪] - "flea"
+* <għ> represents the Old Arabic phones [ʕ] or [ɣ], which were deleted at some point during the evolution of modern Maltese (Borg, p. 261)
+* <h> represents the Old Arabic phone [h], which was deleted at some point during the evolution of modern Maltese
+
+# More Rules
+
+* Clusters of obstruents assimilate to be either fully voiced or fully voiceless
+* Short and long vowels are contrastive; likewise short and long consonants
+* Word-final long consonants are sometimes shortened
+* In the definite article, <il->, the /l/ typically assimilates to subsequent coronal segments (except /d͡ʒ/)
+* Metathesis of the definite article occurs before Italian-derived words with initial sibilants
+* The <h> in the suffixed pronouns (<-ha>, <-hom>) is replaced by a glide after stressed stem-final vowels
+* Word-final vowels lengthen; word boundaries shorten them again, but consonantal suffixes retain the long vowel
+* Elision of short vowels occurs in unstressed word-initial syllables
+* /i/ is inserted before word-initial CC clusters beginning with sonorants
+* CCC clusters are pronounced as CVCC when the middle C is a sonorant
+* Glides are inserted between adjacent vowels
+* V[+long]C[+glide] → V[-long]C[+glide]C[+glide]  /  _
+* Syllabic fusion: /'aːo/ → /'oː/
+
+## Allophones
+
+**Underlying form: /ʃ/**
+[ʒ] in certain loanwords
+[ʃ] elsewhere
+
+**Underlying form: /t͡s/**
+[d͡z] in certain loanwords
+[t͡s] elsewhere
+
+**Underlying form: /tːʃ/**
+[t͡ʃː] in word-final or penultimate positions (e.g. in kaboċċa)
+[tːʃ] elsewhere (e.g. in eċċitament)
+
+## Allomorphs
+
+**Second-person suffix**
+[ok] after stems containing /o/
+[ak] after stem-final /ʔ/
+[ek] elsewhere
+
+### /imaːla/-shift
+
+* /aː/[+stress] → /ɪː/[+stress] / C[+labial or coronal] __
+
+This pattern may happen repeatedly in grammatically complex words that include several suffixes, for example:
+
+<ma sraqnihilhiex> - we did not steal it from her
+
+In plurals of the form CCVːCVC, derived from quadriliteral Romance forms, the following rules apply:
+
+* V[+stress, +front] (singular) → /ɪː/[+stress] (plural)
+* V[+stress, -front] (singular) → /aː/[+stress] (plural)
+* /aː/[+stress] (singular) → /a/ (plural) / __ C w]
+* V[+stress, +long, -low] (singular) → /e/ (plural) / __ C w]
+
+# Examples
+
+(Maltese word) - Maltese pronunciation - English translation
+
+**Short/long consonant contrasts:**
+safar - /safar/ - travel; saffar - /safːar/ - awarded
+
+**Contrast between /iː/ and /ɪː/:**
+snin - /sniːn/ - years; snien - /snɪːn/ - teeth
+
+**Nasal assimilation:**
+jonfoh - /jonfoh/ [joɱfoħ] - blowing
+bank - /bank/ [baŋk] - bank
+
+**[ʒ] in loanwords:**
+televixin - /t̪eleviʒin/ - television (one of several spellings)
+
+**[d͡z] in loanwords:**
+gazzetta - /gad͡zd͡zet̪t̪a/ - newspaper
+
+**Stressed [u] in loanwords:**
+futbol - /fut̪bol/ - football
+lussu - /lussu/ - luxury
+pulptu - /pulpt̪u/ - pulpit
+
+**Glide insertion:**
+xniegħa - /ʃnija/ - rumor
+bluha - /bluwa/ - foolishness
+
+# Sources
+
+@MtBorg1997
+@MtCamilleriGabra2013
+@MtOrthography1996
+@MtPuech2016

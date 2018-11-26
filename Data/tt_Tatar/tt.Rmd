@@ -1,0 +1,176 @@
+---
+title: Tatar
+---
+
+Last Updated: 2018-11-19
+
+# Background
+
+**Language Family**: Turkic / Common Turkic / Kipchak / North Kipchak / Tatar
+
+Although this language is usually simply called Tatar, it is sometimes also known as Kazan Tatar or Volga Tatar, in order to differentiate it from the Crimean Tatar and Siberian Tatar languages.
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial: /p/, /b/, /m/, /ɸ/, /w/
+Dental/Alveolar: /t/, /d/, /n/, /s/, /z/, /l/, /r/
+Alveolo-Palatal: /ɕ/, /ʑ/, /j/
+Palato-Alveolar: /ʃ/, /ʒ/
+Velar: /k/, /g/, /ŋ/, /x/
+Uvular: /q/, /ʁ/
+Glottal: /ʔ/, /h/
+
+In this documentation, "dorsal" will be used to refer to velar and uvular consonants, but not to alveolo-palatal consonants.
+
+### By manner of articulation
+
+Stops: /p/, /b/, /t/, /d/, /k/, /g/, /q/, /ʔ/
+Nasals: /m/, /n/, /ŋ/
+Fricatives: /ɸ/, /s/, /z/, /ɕ/, /ʑ/, /ʃ/, /ʒ/, /x/, /ʁ/, /h/
+Approximants: /w/, /l/, /r/, /j/
+
+(/ɕ/ and /ʑ/ should not be replaced with affricates, per Comrie 1997, p. 902)
+
+## Vowels
+
+Front vowels: /i/, /y/, /e/, /ø/, /a/
+Back vowels: /ɯ/, /u/, /ɤ/, /o/, /ɑ/
+
+## Stress
+
+Stress typically falls on the final syllable.
+
+In compounds, stress falls on the last syllable *of the first component*; reduplicated prefixes count as a separate component for this criterion.
+
+In the following exceptions, stress falls on the initial syllable:
+* Second-person imperative forms of verbs
+* Interrogative pronouns and adverbs
+* Adverbs and conjunctions
+
+Postpositions go wholly unstressed.
+
+The following suffixes are clitics, which are unstressed and leave their stress on the preceding syllable: /-mE/, /-mA/, /-dA/, /-ɕA/, /-dAj/, and all predicative clitics.
+
+/-lAr/ is a stressed suffix, except in the third person plural of the present tense, in which it behaves like a clitic.
+
+Russian loanwords (especially recent ones) disregard these rules and retain the Russian stress patterns, even if inflectional suffixes are appended.
+
+# Alphabet
+
+## Phonemic
+
+а - /ɑ/
+ә - /a/ (some authors prefer to use /æ/)
+б - /b/
+в - /w/; [v] in Russian loanwords
+г - /g/; [ʁ] in a syllable with a back vowel; see {1} re: [ʁ]
+д - /d/
+е - /e/; [je] word-initially
+ё - /jo/ (letter only used in Rus. loanwords)
+ж - /ʒ/ (letter only used in Russian loanwords)
+җ - /ʑ/
+з - /z/
+и - /i/
+й - /j/
+к - /k/; [q] in a syllable with a back vowel
+л - /l/
+м - /m/
+н - /n/
+ң - /ŋ/
+о - /o/
+ө - /ø/
+п - /p/
+р - /r/
+с - /s/
+т - /t/
+у - /u/; [uw] word-finally
+ү - /y/; [yw] word-finally
+ф - /ɸ/; [f] in Russian loanwords (see {2} for specifics)
+х - /x/
+һ - /h/
+ц - /t͡s/ (letter only used in Russian loanwords)
+ч - /ɕ/
+ш - /ʃ/
+щ - /ʃɕ/ (letter only used in Russian loanwords)
+ъ - /ʔ/ (indicates phonetic backing of associated vowels)
+ы - /ɤ/
+ь - /ʔ/ (indicates phonetic fronting of associated vowels)
+э - /e/
+ю - /ɯ/ (phonemic status is controversial; some writers prefer /ju/ or /jy/)
+я - /jɑ/
+
+{1}: /ʁ/ is most often written as /ɣ/, but because it is a "post-velar" sound that acts as a farther-back contrast to /g/, I felt that /ʁ/ more accurately described the character of the phoneme.
+{2}: /ɸ/ is most often written as /f/. Bilabial and labiodental consonants are non-contrastive in Turkic languages (Baitchura, p. 244), though, meaning a case can be made for either phoneme; I have opted for /ɸ/ because Comrie explicitly describes the sound as bilabial (Comrie, p. 901).
+
+* rounded reduced vowels in non-initial syllables are written as unrounded
+* velar vs. uvular sounds are not orthographically distinguished
+* <ь> used to mark frontness in ambiguous vowels (<е>, <я>, <ю>)
+* nasal assimilation to following consonants is not orthographically reflected
+
+## Morphophonemes
+
+These are characters used to represent back-front vowel pairs, as follows:
+
+/a/ & /ɑ/ → A (low vowels)
+/e/, /ø/, /ɤ/, & /o/ → E (mid vowels)
+/i/ & /ɯ/ → I (unrounded high vowels)
+/y/ & /u/ → U (rounded high vowels)
+
+# Lenition Processes
+
+* back-movement of velar stops adjacent to back vowels
+* devoicing of word-final stops
+* voicing rules for stem-final stops followed by vowels:
+  * devoicing of stem-final dental stops
+  * voicing of stem-final labial stops
+  * voicing of intervocalic stem-final dorsal stops
+
+# Misc. Rules
+
+* /a/ is semi-rounded in initial syllables (including stem-initial syllables in prefixed words)
+* The mid vowels (/e/, /ø/, /ɤ/, /o/) are short and relatively centralized
+* Velar/uvular contrasts (/k/ vs. /q/ and /g/ vs. /ʁ/) occur only in words of Arabic or Persian origin
+* Palatal harmony in consonants: in native (i.e., Turkic?) words, velar stops occur in the context of front vowels, while their uvular counterparts occur in the context of back vowels
+* Palatal harmony in vowels: if a word's first vowel is front, all the subsequent vowels must also be front; likewise, if a word's first vowel is back then all subsequent vowels must be back
+* Where the initial vowel is a rounded mid vowel, subsequent mid vowels will also be rounded; otherwise, non-initial vowels are never rounded
+* The exception to the above is <-(E)w>, the verbal noun ending, which typically ends up phonetically at [u]
+* Word-final stops devoice; word-final /ʑ/ only occurs in words of Arabic/Persian origin
+* Stem-final voicing rules (only applicable before vowels)
+  * Stem-final dental stops always devoice
+  * Stem-final labial stops always voice
+  * Stem-final dorsal stops voice if consistently preceded by a vowel; they also voice in Turkic-origin nominals where the penultimate vowel is variable
+* Stems ending in CEC often (but not always) drop the E before a vowel
+  * The rule (Comrie 1997, pp. 907–08) is kind of confusing, but it exists
+* Voicing assimilation occurs in clusters of obstruents, defaulting to voiceless
+* In the suffixes /-lAn/ and /-dAn/, the initial consonant assimilates to [n] after a preceding nasal
+
+## Syllable structure
+
+(C)V(C)(C), except in Russian loanwords
+
+Could alternately be written as CV(C)(C), since syllables without an initial consonant only occur word-initially and are phonetically introduced by a [ʔ].
+
+Rules about which sounds can be word-initial or word-final are found on Comrie 1997, p. 906. These probably don't need to be taken down unless the orthography reflects illegal sounds.
+
+# Examples
+
+**Voicing of stem-final labial stops:**
+/tɑp/ - find; /tɑbɑ/ - finding (pres. gerund)
+
+**Stem-final dorsal voicing:**
+/bɑlɤq/ - fish; /bɑlʁɤ/ - unknown form
+
+**Minimal pairs distinguished by stress:**
+/ɑlmɑ́/ - apple; /ɑ́l-mɑ/ - do not take!
+/sin-dá/ - you (locative case); /sín-da/ - you also
+
+# Sources
+
+@TtBaitchura1975
+@TtBerta1998
+@TtComrie1997
+@TtOmniglot
