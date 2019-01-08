@@ -2,7 +2,7 @@
 title: Tatar
 ---
 
-Last Updated: 2018-11-19
+Last Updated: 2018-11-27
 
 # Background
 
@@ -16,21 +16,20 @@ Although this language is usually simply called Tatar, it is sometimes also know
 
 ### By place of articulation
 
-Labial: /p/, /b/, /m/, /ɸ/, /w/
+Labial: /p/, /b/, /m/, /f/, /w/
 Dental/Alveolar: /t/, /d/, /n/, /s/, /z/, /l/, /r/
 Alveolo-Palatal: /ɕ/, /ʑ/, /j/
 Palato-Alveolar: /ʃ/, /ʒ/
 Velar: /k/, /g/, /ŋ/, /x/
-Uvular: /q/, /ʁ/
 Glottal: /ʔ/, /h/
 
 In this documentation, "dorsal" will be used to refer to velar and uvular consonants, but not to alveolo-palatal consonants.
 
 ### By manner of articulation
 
-Stops: /p/, /b/, /t/, /d/, /k/, /g/, /q/, /ʔ/
+Stops: /p/, /b/, /t/, /d/, /k/, /g/, /ʔ/
 Nasals: /m/, /n/, /ŋ/
-Fricatives: /ɸ/, /s/, /z/, /ɕ/, /ʑ/, /ʃ/, /ʒ/, /x/, /ʁ/, /h/
+Fricatives: /f/, /s/, /z/, /ɕ/, /ʑ/, /ʃ/, /ʒ/, /x/, /h/
 Approximants: /w/, /l/, /r/, /j/
 
 (/ɕ/ and /ʑ/ should not be replaced with affricates, per Comrie 1997, p. 902)
@@ -69,8 +68,8 @@ Russian loanwords (especially recent ones) disregard these rules and retain the 
 в - /w/; [v] in Russian loanwords
 г - /g/; [ʁ] in a syllable with a back vowel; see {1} re: [ʁ]
 д - /d/
-е - /e/; [je] word-initially
-ё - /jo/ (letter only used in Rus. loanwords)
+е - /e/; [je] word-initially (per Poppe p. 20, not a diphthong)
+ё - /o/; [jo] word-initially (letter only used in Rus. loanwords)
 ж - /ʒ/ (letter only used in Russian loanwords)
 җ - /ʑ/
 з - /z/
@@ -89,7 +88,7 @@ Russian loanwords (especially recent ones) disregard these rules and retain the 
 т - /t/
 у - /u/; [uw] word-finally
 ү - /y/; [yw] word-finally
-ф - /ɸ/; [f] in Russian loanwords (see {2} for specifics)
+ф - /f/; (see {2} for specifics)
 х - /x/
 һ - /h/
 ц - /t͡s/ (letter only used in Russian loanwords)
@@ -104,7 +103,7 @@ Russian loanwords (especially recent ones) disregard these rules and retain the 
 я - /jɑ/
 
 {1}: /ʁ/ is most often written as /ɣ/, but because it is a "post-velar" sound that acts as a farther-back contrast to /g/, I felt that /ʁ/ more accurately described the character of the phoneme.
-{2}: /ɸ/ is most often written as /f/. Bilabial and labiodental consonants are non-contrastive in Turkic languages (Baitchura, p. 244), though, meaning a case can be made for either phoneme; I have opted for /ɸ/ because Comrie explicitly describes the sound as bilabial (Comrie, p. 901).
+{2}: Bilabial and labiodental consonants are non-contrastive in Turkic languages (Baitchura, p. 244), so this consonant could theoretically also be /ɸ/. Comrie explicitly describes this consonant as bilabial (Comrie, p. 901), but he diverges from a general consensus of using /f/.
 
 * rounded reduced vowels in non-initial syllables are written as unrounded
 * velar vs. uvular sounds are not orthographically distinguished
@@ -173,4 +172,5 @@ Rules about which sounds can be word-initial or word-final are found on Comrie 1
 @TtBaitchura1975
 @TtBerta1998
 @TtComrie1997
+@TtPoppe1963
 @TtOmniglot

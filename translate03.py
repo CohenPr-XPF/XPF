@@ -13,7 +13,12 @@ def sniff(filestream):
     ##sample = csv.Sniffer().sniff(filestream.read(1024))
     sample = filestream.read(1024)
     sample = "\n".join(line for line in re.split("[\r\n]", sample) if not (line.startswith("#") or len(line) == 0))
-    dialect = csv.Sniffer().sniff(sample)
+    try:
+        dialect = csv.Sniffer().sniff(sample)
+    except Exception as ex:
+        print("Could not determine delimiter type, proceedings as excel csv", file=sys.stderr)
+        dialect = csv.get_dialect("excel")
+        
     filestream.seek(0)
     ret = (line for line in filestream if not line.startswith("#"))
     return (ret, dialect)
@@ -71,7 +76,7 @@ class alphabet2ipa(object):
         self.subs = set()
         self.ipasubs = set()
         self.words = dict()
-        self.pre = None
+        self.pre = str.maketrans("", "")
         self.NO_TRANSLATE = missing
         self.loglevel = loglevel
 
@@ -216,7 +221,17 @@ class alphabet2ipa(object):
         ## Iterate over all lines
         ##
         allGood = True                                     ## default is that it's all good
-        for (word, shouldbe) in data:
+        for values in data:
+            try:
+               word = values[0]
+               shouldbe = values[1]
+            except Exception as ex:
+                errInfo = sys.exc_info()
+                allGood = False
+                traceback.print_exception(*errInfo)
+                print("Error processing verification statement, but resuming processing other statements. Statement details: {}".format(values, ex), file=sys.stderr)
+                continue
+            
             translation = " ".join(self.translate(word))   ## translate returns a list, change to spaces
             if self.loglevel > 2:
                 print("Does '{}' translate to '{}'?".format(word, shouldbe), file=sys.stderr)

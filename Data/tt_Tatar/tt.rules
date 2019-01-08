@@ -1,6 +1,6 @@
 # Tatar Rule Set
 # Written by: Bill
-# Last Updated: 2018-11-19
+# Last Updated: 2018-11-27
 type,sfrom,sto,weight,precede,follow,comment
 # This sequence of classes allows you to use either Cyrillic or Latin orthography
 class,а,[aа],,,,
@@ -51,8 +51,9 @@ sub,{в},w,4,,,
 sub,{г},ɡ,4,,,
 sub,{д},d,4,,,
 sub,{е},e,4,,,
-sub,{е},je,6,^,,
-sub,{ё},jo,5,,,
+sub,{е},j e,6,^,,
+sub,{ё},o,5,,,
+sub,{ё},j o,6,^,,
 sub,{ж},ʒ,4,,,
 sub,{җ},ʑ,4,,,
 sub,{з},z,4,,,
@@ -71,7 +72,7 @@ sub,{с},s,4,,,
 sub,{т},t,4,,,
 sub,{у},u,4,,,
 sub,{ү},y,4,,,
-sub,{ф},ɸ,4,,,
+sub,{ф},f,4,,,
 sub,{х},x,4,,,
 sub,{һ},h,4,,,
 sub,{ц},ts,5,,,
@@ -83,4 +84,4 @@ sub,{ы},ɤ,4,,,
 sub,{ь},ʔ,4,,,
 sub,{э},e,4,,,
 sub,{ю},ɯ,5,,,
-sub,{я},jɑ,5,,,
+sub,{я},j ɑ,5,,,

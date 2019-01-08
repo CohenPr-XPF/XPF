@@ -1,13 +1,15 @@
 # Maltese Rule Set
 # Written by: Bill
-# Last Updated: 2018-11-19
+# Last Updated: 2018-12-03
 type,sfrom,sto,weight,precede,follow,comment
 class,anyh,(għ|h),,,,
 class,vowel,(a|e|i|ie|ɪ|o|u),,,,
 class,highvowel,[iu],,,,
 class,consonant,[bċdfgġhħjklmnpqrstvwxzż],,,,
-class,cons-output,(b|tʃ|d̪|f|g|d͡ʒ|ħ|j|k|l|m|n|p|ʔ|r|s|t̪|v|w|ʃ|z|ts),,,
+class,cons-output,(b|tʃ|d̪|f|g|dʒ|ħ|j|k|l|m|n|p|ʔ|r|s|t̪|v|w|ʃ|z|ts),,,,
+class,punctuation,[-'‘’],,,,
 class,passthrough,[abefħijklmnoprsuvw],,,,
+sub,à,a,4,,,"vowels with grave accents appear occasionally in loanwords, but only <à> appears with enough frequency to be worth including"
 sub,a,aj,6,,j,
 sub,j,,6,a,,
 sub,a,aw,6,,w,
@@ -17,13 +19,14 @@ sub,d,d̪,4,,,
 sub,e,ew,6,,w,
 sub,w,,6,e,,
 sub,g,ɡ,4,,,
-sub,ġ,d͡ʒ,2,,,
+sub,ġ,dʒ,2,,,
 sub,q,ʔ,4,,,
 sub,t,t̪,4,,,
 sub,u,uː,6,,{consonant}{vowel}$,
 sub,x,ʃ,4,,,
 sub,z,ts,2,,,
 sub,ż,z,1.9,,,
+sub,{punctuation},,4,,,
 # Affricate gemination rules begin here
 sub,ċ,tːʃ,2.2,,ċ,
 sub,ġ,dːʒ,2.2,,ġ,
@@ -33,10 +36,10 @@ sub,ġ,,2.2,ġ,,
 sub,z,,2.2,z,,
 # Affricate gemination rules end here
 # Collapsing of <għi> and <għu> begins here
-sub,g,,8,,ħ{highvowel},
-sub,ħ,,8,g,{highvowel},
-sub,i,ej,8,għ,,
-sub,u,ow,8,għ,,
+sub,g,,9,,ħ{highvowel},
+sub,ħ,,9,g,{highvowel},
+sub,i,ej,9,għ,,
+sub,u,ow,9,għ,,
 # Collapsing of <għi> and <għu> ends here
 # Configuration of the <-ha> and <-hom> suffixes begins here
 sub,g,ħ aː,8,,ħha$,
@@ -60,7 +63,7 @@ sub,ħ,,7,g,{vowel},
 # Start of the standard <għ> and <h> rules
 sub,g,ħ,7,,ħ$,
 sub,ħ,,7,g,$,
-sub,h,ħ,7,,$,
+sub,h,ħ,8,,$,
 sub,g,ː,7,,ħ.,
 sub,ħ,,7,g,.,
 sub,h,ː,7,,,
@@ -76,7 +79,8 @@ sub,e,,4.1,i,,
 # Beginning of ipasub rules
 ipasub,({vowel}) ː,\1ː,1.6,,,"phonemization of long vowels"
 ipasub,({vowel}) {anyh} \1,\1ː,1.6,,,"collapsing of VhV"
-ipasub,({vowel}) ː \1,\1ː,1.6,,,"collapsing of VːV"
+ipasub,({vowel})ː \1,\1ː,1.6,,,"collapsing of Vː V"
+ipasub,({vowel}) ː \1,\1ː,1.6,,,"collapsing of V ː V"
 ipasub,({vowel}) \1,\1ː,1.6,,,"collapsing of VV"
 ipasub,({cons-output}) \1,\1ː,1.6,,,"lengthening of double consonants"
 ipasub,({vowel})ː ħ aː$,\1 ħː a,6.9,,,"correcting long vowels before -għha"
@@ -84,5 +88,6 @@ ipasub,({vowel})ː ħ oː m$,\1 ħː o m,6.9,,,"likewise for -għhom"
 ipasub,({cons-output}) ː ({vowel}),\1 \2ː,1.1,,,"fixing length distribution"
 ipasub,^ː ({vowel}),\1ː,1.1,,,"correcting lengthening of word-initial vowels"
 ipasub,(ː |ː)ː+,ː,1,,,"collapsing of multi-length"
+ipasub,({vowel})ː \1ː,\1ː,0.9,,,"collapsing of multiple consecutive long vowels"
 sub,({highvowel}),\1ː,6,,({consonant}|għ)$,"lengthening of high vowel penult"
 sub,({passthrough}),\1,0.1,,,
