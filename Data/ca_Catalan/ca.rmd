@@ -1,0 +1,80 @@
+---
+title: Catalan
+---
+#Background
+**Language family**: Indo-European / Italic / Romance / Western / Gallo-Romance / Occitano-Romance / Catalan / Central Catalan dialect
+
+#Phonology
+
+##Consonants
+###Consonants by place
+Bilabial: /p/, /b/, /m/ 
+Labiodental: /f/, /v/
+Alveolar: /t/, /d/, /s/, /z/, /t͡s/, /d͡z/, /n/, /l/, /r/, /ɾ/
+Palatal: /c/, /ɟ/, /ʃ/, /ʒ/, /tʃ/, /dʒ/, /ɲ/, /ʎ/, /j/
+Velar: /k/, /g/, /ŋ/, /w/
+
+###Consonants by manner
+Stop: /p/, /b/, /t/, /d/, /c/, /ɟ/, /k/, /g/
+Affricate: /t͡s/, /d͡z/, /tʃ/, /dʒ/
+Fricative: /f/, /v/, /s/, /z/, /ʃ/, /ʒ/
+Approximant: /j/, /w/, /l/, /ʎ/
+Tap: /ɾ/
+Trill: /r/
+
+##Vowels
+/a/, /ɛ/, /e/, /i/, /ɔ/, /o/, /u/
+
+#Alphabet
+A; a; /a/ (stressed) or /ə/ (unstressed)
+À; à; /a/ 
+B; b; /b/
+C; c; /k/
+Ç; ç; /s/
+D; d; /d/
+E; e; /e/ or /ɛ/ (stressed) or /ə/ (unstressed)
+È; è; /ɛ/
+É; é; /e/
+F; f; /f/
+G; g; /g/ or /ʒ/
+H; h; /h/ (only in loan words)
+I; i; /i/
+Í; í; /i/
+Ï; ï; /i/ 
+J; j; /dʒ/ or /ʒ/
+L; l; /l/
+L·L;ŀl; /lː/
+M; m; /m/
+N; n; /n/
+O; o; /ɔ/ or /o/(stressed) or /u/(unstressed)
+Ò; ò; /ɔ/
+Ó; ó; /o/
+P; p; /p/
+Q; q; /k/
+R; r; /r/ or /ɾ/
+S; s; /s/
+T; t; /t/
+U; u; /u/
+Ú; ú; /u/
+Ü; ü; /u/
+V; v; /v/ in Valencian, /b/ in Central Catalan
+W; w; /w/ (only used in loan words)
+X; x; /ʃ/
+Y; y; /j/ (only in loan words)
+Z; z; /z/
+
+#Rules
+/g/ --> [tʃ] / i_
+/l/ --> [ʎ] / l_
+/n/ --> [ɲ] / _ /j/
+
+##Lenition
+
+###Spirantization
+/k/ --> [s] / _V[+front +tense]
+/g/ --> [ʒ]/ _V[+front +tense]
+
+###Deletion
+C[+obstruent α place] --> ∅ / C[α place]_#
+/r/ --> � / _#
+
