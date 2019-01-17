@@ -1,0 +1,96 @@
+---
+title: "Georgian"
+author: "Maddie Critz"
+date: "October 9, 2018"
+output: html_document
+---
+
+#Background
+    **Language Family** : Kartvelian / Karto-Zan / Georgian
+    
+    
+#Phonology
+
+##Consonants 
+      
+      ###Stops
+          [pʰ]  [p']  [b]  [tʰ]  [t']  [d]  [kʰ]  [k']  [g] [q]
+      ###Fricatives
+          [v]  [s]  [z]  [ʃ]  [ʒ]  [x]  [ɣ]  [h]
+      ###Affricates 
+          [ts]  [ts']  [dz]  [tʃ]  [tʃ']  [dʒ]
+      ###Sonorants
+          [m]  [n]  [l]  [r/ɾ]   
+
+##Vowels
+  
+        [i]  [ɛ]  [ɑ]  [ɔ]  [u] 
+
+#Alphabet
+    
+    ა	=	[ɑ]
+    
+    ბ	=	[b] 
+    
+    გ	=	[ɡ] 
+    
+    დ	=	[d] 
+    
+    ე	=	[ɛ] 
+    
+    ვ	=	[v] 
+    
+    ზ	=	[z] 
+    
+    თ	=	[tʰ] 
+    
+    ი	=	[i] 
+    
+    კ'=	[k'] 
+    
+    ლ	= [l] 
+    
+    მ	=	[m] 
+    
+    ნ	=	[n] 
+    
+    ო	=	[ɔ] 
+    
+    პ	=	[pʼ]
+    
+    ჟ	=	[ʒ] 
+    
+    რ	=	[r] 
+    
+    ს	=	[s] 
+    
+    ტ	=	[tʼ] 
+    
+    უ	=	[u] 
+    
+    ფ	=	[pʰ]
+    
+    ქ	=	[kʰ]
+    
+    ღ	=	[ɣ]
+    
+    ყ	=	[q']
+    
+    შ	=	[ʃ]
+    
+    ჩ	=	[t͡ʃʰ]
+    
+    ც	=	[t͡sʰ]
+    
+    ძ	=	[d͡z]
+    
+    წ	=	[t͡sʼ]
+    
+    ჭ	=	[t͡ʃʼ]
+    
+    ხ	=	[x]
+    
+    ჯ	= [d͡ʒ]
+    
+    ჰ	=	[h]
+
