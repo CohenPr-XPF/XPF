@@ -1,0 +1,124 @@
+---
+title: "Welsh"
+author: "Maddie Critz"
+date: "September 27, 2018"
+output: html_document
+---
+
+
+#Background
+
+  ** Language Family**: Indo-European / Celtic / Brittonic / Western / Welsh
+
+#Phonology
+
+
+  ##Consonants
+
+    ###Stops
+      [b] [k] [d] [g] [t] [p]
+
+    ###Affricates
+      [tʃ] [dʒ]
+
+    ###Fricatives
+      [f] [θ] [s] [ʃ] [χ] [ɬ] [h] [ð] [v]
+
+    ###Sonorants
+      [m] [n] [ŋ] [m̥] [n̥] [ŋ̊]
+      [l]  [r̥] [r] [j] [w]
+
+
+ 
+
+##Vowels
+
+    ###Short Vowels
+
+      [a] [ɛ] [ɪ] [ɔ] [ɨ] [ʊ] [ə]
+
+    ###Long Vowels
+
+      [aː] [eː] [iː] [oː] [ɨː] [uː] 
+
+    ###Dipthongs
+
+              [ɔɨ]  [ɔɪ]
+              
+              [aɪ]  [aɨ]  [aʊ]
+              
+              [ɪʊ]
+  
+              [əʊ]  [əɪ]  [əɨ]
+              
+              [ʊɪ]  [ʊɨ]
+              
+              [ɑɨ]
+        
+              [ɛʊ]
+        
+              [ɨʊ]  
+      
+
+#Alphabet 
+
+    Aa = [a]
+    
+    Bb = [b]
+    
+    Cc = [k]
+    
+    CHch = [χ]
+    
+    Dd = [d]
+    
+    DDdd = [ð]
+    
+    Ee = [ɛ] or [eː]
+    
+    Ff = [v]
+    
+    FFff = [f]
+    
+    Gg = [g]
+    
+    NGng = [ŋ]
+    
+    Hh = [h]
+    
+    Ii = [ɪ] or [iː]
+    
+    Ll = [l]
+    
+    LLll = [ɬ]
+    
+    Mm = [m]
+    
+    Nn = [n]
+    
+    Oo =  [ɔ] or [oː]
+    
+    Pp = [p]
+    
+    PHph = [f]
+    
+    Rr = [r]
+    
+    RHrh = [r̥]
+    
+    Ss = [s]
+    
+    Tt = [t]
+    
+    THth = [θ]
+    
+    Uu = [ɪ] or [ɨ] or [iː]
+    
+    Ww = [ʊ] or [uː]
+    
+    Yy = [ɨ] or [ə]
+
+
+    
+    
+
