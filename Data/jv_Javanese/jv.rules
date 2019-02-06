@@ -1,0 +1,40 @@
+# Javanese Rule Set
+# Written by: Bill
+# Last Updated: 2019-01-30
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,alv-stop,[dt],,,,
+class,n-follower,[dgjy],,,,
+class,n-trigraph,(dh|gg),,,,
+class,passthrough,[abcfhiklmnoprsuw],,,,
+# Individual Letters
+sub,d,d̪,4,,,
+sub,ḍ,ɖ,4,,,
+sub,e,ə,4,,,
+sub,é,e,4,,,
+sub,è,ɛ,4,,,
+sub,g,ɡ,4,,,
+sub,j,ɟ,4,,,
+sub,t,t̪,4,,,
+sub,ṭ,ʈ,4,,,
+sub,y,j,4,,,
+# Digraphs
+sub,d,ɖ,6,,h,
+sub,t,ʈ,6,,h,
+sub,h,,6,{alv-stop},,
+sub,m,mb,6,,b,
+sub,b,,6,m,,
+sub,n,,6,,{n-follower},
+sub,d,nd̪,6,n,,
+sub,g,ŋ,6,n,,
+sub,j,nɟ,6,n,,
+sub,y,ɲ,6,n,,
+# Trigraphs
+sub,n,,8,,{n-trigraph},
+sub,d,nɖ,8,n,h,
+sub,h,,8,nh,,
+sub,g,ŋɡ,8,n,g,
+sub,g,,8,ng,,
+# Misc. Rules
+sub,-,,2,,,"hyphens appear in some Javanese words but do not seem to carry phonetic value"
+sub,({passthrough}),\1,0.1,,,

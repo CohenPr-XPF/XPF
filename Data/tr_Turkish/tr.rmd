@@ -1,0 +1,63 @@
+---
+title: Turkish
+---
+# Background
+**Language family**: Turkic
+
+# Alphabet
+A B C Ç D E F G Ğ H I İ J K L M N O Ö P R S Ş T U Ü V Y Z  
+a b c ç d e f g ğ h ı i j k l m n o ö p r s ş t u ü v y z    
+* Note that the capital of ⟨i⟩ is ⟨İ⟩ and the capital of ⟨ı⟩ is ⟨I⟩.
+
+## Vowels
+* ⟨a⟩ = /a/
+* ⟨e⟩ = /e/
+* ⟨ı⟩ = /ɯ/
+* ⟨i⟩ = /i/
+* ⟨o⟩ = /o/
+* ⟨ö⟩ = /œ/
+* ⟨u⟩ = /u/
+* ⟨ü⟩ = /y/
+
+## Consonants
+* ⟨b⟩ = /b/
+* ⟨c⟩ = /dʒ/
+* ⟨ç⟩ = /tʃ/
+* ⟨d⟩ = /d/
+* ⟨f⟩ = /f/
+* ⟨g⟩ = /g/, /gʲ/
+* ⟨ğ⟩ = /ɣ/
+* ⟨h⟩ = /h/
+* ⟨j⟩ = /ʒ/
+* ⟨k⟩ = /k/, /kʲ/
+* ⟨l⟩ = /l/
+* ⟨m⟩ = /m/
+* ⟨n⟩ = /n/
+* ⟨p⟩ = /p/
+* ⟨r⟩ = /ɾ/
+* ⟨s⟩ = /s/
+* ⟨ş⟩ = /ʃ/
+* ⟨t⟩ = /t/
+* ⟨v⟩ = /v/
+* ⟨y⟩ = /j/
+* ⟨z⟩ = /z/
+
+# Phonology
+## Consonants
+/k/ and /g/ do not contrast with /c/ and /ɟ/ respectively in the native vocabulary, but they do in some loanwords  
+* _kar_ /kaɾ/ 'snow'
+* _kâr_ /car/ 'profit'  
+
+The circumflex above the vowel indicates that the preceding consonant is palatalized.  
+
+/l/ is velarized next to back vowels, but again, there are exceptions with loanwords.
+* _lala_ [ɫaɫa] 'tutor'
+* _lâle_ [lale] 'tulip'
+
+Doubled consonants are used to represent gemination.
+
+## Vowels
+* Vowel length may be indicated by ⟨ğ⟩. Zimmer and Orgun: "/ɣ/ corresponds to the "soft g" (ğ) in Turkish orthography; its use finds its main justification in accounting for morphological alternations. /ɣ/ between front vowels is pronounced as a weak front-velar or palatal approximant. When the /ɣ/ is word-final or followed by a consonant it is realized phonetically as a lengthening of the preceding vowel; elsewhere when intervocalic, it is phonetically zero"
+
+# Lenition
+/v/ -> [β̞] / V_V
