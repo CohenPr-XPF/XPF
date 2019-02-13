@@ -3,7 +3,7 @@ title: Javanese
 bibliography: jv.bib
 ---
 
-Last Updated: 2019-02-06
+Last Updated: 2019-02-08
 
 # Background
 
@@ -48,7 +48,7 @@ Prenasalized stops: /mb/, /nd̪/, /nɖ/, /nɟ/, /ŋɡ/{1}
 Lenis continuants (pharyngealized): /wh/, /nh/, /lh/, /rh/, /jh/ (Unattested elsewhere, so I have not included them in the ruleset)  
 Sounds found only in loanwords: /f/, /z/  
 
-{1}: Wolff does not depict this consonant as assimilating, but Nothofer and Horne do. Because (at least some) other prenasalized stops feature nasal assimilation, and because /ŋ/ is phonemic in Javanese, I have followed his example. Relatedly, I personally find it likely that nasal assimilation occurs in /nɖ/ and /nɟ/, but because I have been able to find attestation for such assimilation, I have not included it in my ruleset.
+{1}: Wolff does not depict this consonant as assimilating, but Nothofer and Horne do. Because (at least some) other prenasalized stops feature nasal assimilation, and because /ŋ/ is phonemic in Javanese, I have followed his example. Although I have not seen explicit attestation of nasal assimilation in the rest of the prenasalized stops, I find it to be likely enough that I have included it in my ruleset.
 
 ## Vowels
 
@@ -82,7 +82,7 @@ j - /ɟ/ (described by Horne as /d̪z/)
 k - /k/  
 l - /l/  
 m - /m/  
-n - /n/ (does retroflex n exist, and is it here?)  
+n - /n/  
 o - /o/  
 ô - /ɔ/ (unattested in Crubadan corpus, and hence omitted from ruleset)  
 p - /p/  
@@ -98,10 +98,10 @@ y - /j/
 ### Digraphs
 
 dh - /ɖ/  
-mb - /mb/  
-nd - /nd̪/  
+mb - /ᵐb/  
+nd - /ⁿd̪/  
 ng - /ŋ/  
-nj - /nɟ/  
+nj - /ᶮɟ/  
 ny - /ɲ/  
 th - /ʈ/  
 
@@ -109,8 +109,8 @@ Some transcriptions use <ḍ> and <ṭ> in place of <dh> and <th>.
 
 ### Trigraphs
 
-ndh - /nɖ/  
-ngg - /ŋɡ/  
+ndh - /ⁿɖ/  
+ngg - /ᵑɡ/  
 
 # Javanese Script
 
@@ -210,7 +210,7 @@ Syllables take the format (CC)V(C).
 # Examples
 
 **/h/-deletion:**  
-lungguh - /luŋɡuh/ - to sit; lungguhan - /luŋɡuan/ - sitting  
+lungguh - /luᵑɡuh/ - to sit; lungguhan - /luᵑɡuan/ - sitting  
 mulih - /mulih/ - to return home; mulihé - /mulie/ - his return
 
 # Sources
