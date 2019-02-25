@@ -93,4 +93,15 @@ output: html_document
     ჯ	= [d͡ʒ]
     
     ჰ	=	[h]
+    
+# Lenition
+    
+    [v] --> /w/ / in coda and C_
+    [v] --> [f] / _C[devoiced]
+    
+    [v] can glide to /w/ at the end of syllables and after consonants, and [v] is also sometimes realizes as [f] before voiceless consonants 
+    
+    [q] --> /χ/ / V_V
+    
+    [q] can sometimes soften to a uvular fricative in between vowels
 
