@@ -1,0 +1,143 @@
+---
+title: Nahuatl
+bibliography: nhe.bib
+---
+
+Last Updated: 2018-12-03
+
+# Background
+
+**Language Family**: Uto-Aztecan / Nahuan / Nahuatl / Huasteca Nahuatl
+
+Nahuatl has 31 varieties, many of which are mutually non-intelligible; I have chosen to focus on Huasteca Nahuatl, since it's the most widely spoken variety. Huasteca Nahuatl is sometimes divided into three languages (Eastern, Western, and Central), but according to Ethnologue the Huasteca Nahuatl languages have about 85% mutual intelligibility; where differences have been drawn, I have preferred Eastern Huasteca Nahuatl (ISO code [nhe]), since that is the most spoken variant.
+
+# Phonology
+
+## Consonants
+
+* Kimball uses /λ/, which indicates /d͡ɮ/, in place of /t͡ɬ/ (Kimball, p. 196); however, this seems to be a minority view. (For instance, Beller outright states that /t͡ɬ/ is voiceless ([@NheBeller1979], p. 204).)
+* Beller includes /ɡ/ as a phoneme that occurs, although rarely, in native words ([@NheBeller1979], p. 204); however, the Crubadan corpus does not feature <g> except in loaned proper nouns, so based on current evidence I have opted to omit it.
+
+### By place of articulation
+
+Bilabial: /p/, /m/  
+Alveolar: /t/, /s/, /t͡s/, /n/  
+Lateral: /t͡ɬ/, /l/, /r/  
+Palatal: /ʃ/, /t͡ʃ/, /j/  
+Velar: /k/, /kʷ/, /w/  
+Glottal: /ʔ/, /h/  
+
+### By manner of articulation
+
+Stops: /p/, /t/, /k/, /kʷ/, /ʔ/  
+Affricates: /t͡ɬ/, /t͡s/, /t͡ʃ/  
+Fricatives: /s/, /ʃ/, /h/  
+Nasals: /m/, /n/  
+Approximants: /l/, /r/  
+Glides: /w/, /j/  
+
+## Vowels
+
+Front vowels: /i/, /iˑ/, /e/, /eˑ/  
+Back vowels: /o/, /oˑ/, /ɑ/, /ɑˑ/
+
+Vowel length is not often retained, except in minimal pairs ([@NheBeller1979], p. 205). Because of this, vowel length will be omitted in my rule set, except when it is explicitly illustrated by the doubling of vowel characters.
+
+## Stress
+
+Typically on the penultimate syllable. ([@NheBeller1979], p. 205)
+
+# Alphabet
+
+The orthography used will be that of SIL International; the extant Nahuatl corpora are largely based on Bible translations, which were generally done by SIL.
+
+## Phonemic
+
+a - /a/  
+c - /s/ before a front vowel; /k/ before a back vowel  
+ç - /s/ (uncommon)  
+e - /e/  
+h - /ʔ/  
+i - /i/  
+j - /h/  
+k - /k/  
+l - /l/  
+m - /m/  
+n - /n/  
+o - /o/  
+p - /p/  
+r - /r/  
+s - /s/  
+t - /t/  
+u - /o/ or /w/ (uncommon)  
+w - /w/  
+x - /ʃ/  
+y - /j/ (occasionally [i])  
+z - /s/  
+' - /ʔ/  
+
+The 'saltillo' is the term used to collectively refer to the glottal consonants (/ʔ/ and /h/) in Nahuatl. Although they are typically considered together, both consonants seem to have been phonemic. There are three characters sometimes used to indicate the saltillo: in assigning each character a specific phoneme, I have worked from my understanding of which was more common.
+
+A grave accent on a vowel indicates that the vowel is followed by a glottal stop.
+
+## Digraphs
+
+ch - /t͡ʃ/  
+hu - /w/ syllable-initially  
+ku - /kʷ/  
+qu - /k/ before a front vowel; /kʷ/ before a back vowel  
+tl - /t͡ɬ/  
+ts - /t͡s/  
+tz - /t͡s/  
+uh - /w/ syllable-finally  
+
+Long vowels are represented by doubling the character.
+
+## Trigraphs
+
+cuh - /kʷ/ syllable-finally  
+uhc - /kʷ/ syllable-finally
+
+## Misc. Notes
+
+* /ʔ/ is phonemic, but only in rare contexts ([@NheBeller1979], p. 204; [@NheKimball1990], p. 197)
+* The SIL orthography suggests a few alternate characters/digraphs that I have removed due to their extreme scarcity in the Crubadan corpus:
+   * <b> was only attested in proper names, and in loanwords with fewer than 50 appearances.
+   * <v> and <'> were unattested.
+   * <ts> was only attested in a single loaned proper noun, which had fewer than 10 appearances in the corpus.
+* Some characters (<k> and <w>, and the digraph <uh>) were similarly scarce in the Crubadan corpus, but were attested in other sources, so I have preserved them in the rule set.
+
+# More Rules
+
+* [ʔ] appended after word-final vowels ([@NheKimball1990], p. 197)
+* [ʔ] occurs between vowel clusters that straddle morpheme boundaries (ibid.)
+
+## Lenition
+
+(These rules come from [@NheBeller1979], p. 205)
+* Syllable-final /l/ devoices
+* /w/ devoices when preceded by /l/
+* /w/ becomes [h] when followed by a stop
+  * pehua [pewa] ("he starts") vs.
+  * ?? [pehtok] ("he has started")
+* /w/ and /j/ become [ʔ] when word-final
+  * quilhuia [ki ilwija] ("he says it") vs.
+  * quilhui [ki ilwiʔ] ("he said it")
+* degemination of /ll/
+
+## Syllable structure
+
+CV(C) is probable, but I haven't seen an explicit statement of the structure.
+
+# Examples
+
+**Phonemic /ʔ/:**  
+spelling - pronunciation - English meaning  
+nehua - /naʔa/ - emphatic 1st-person singular pronoun  
+no - /noʔo/ - also (emphatic)
+
+# Sources
+
+<!--@NheBeller1979
+@NheKimball1990
+@NheSILOrthography-->

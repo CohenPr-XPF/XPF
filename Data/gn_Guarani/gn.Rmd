@@ -1,0 +1,121 @@
+---
+title: Guarani
+bibliography: gn.bib
+---
+
+Last Updated: 2019-02-25
+
+# Background
+
+**Language Family**: Tupian / Tupi-Guarani / Guarani subgroup I / Guarani
+
+Where there are differences along the Guarani dialect continuum, Paraguayan Guarani will be preferred.
+
+# Phonology
+
+## Consonants
+
+* In nasal syllables, the prenasalized stops assimilate to become fully nasal. Taps and approximants similarly nasalize in nasal syllables. ([@GnWalker1999], p. 68)
+   * [@GnGregores1967] records the nasals as the underlying forms of the phonemes.
+* /x/ exists in free variation with /h/ ([@GnWalker1999], p. 68); all the sources I have seen, except [@GnOrthography], prefer /x/ as the underlying form.
+* [@GnPhonemesUCB] records /ɣ/ instead of /ɰ/. [@GnGregores1967] uses the character <ɣ>, but labels it a sonorant, indicating that they too are referring to the velar approximant.
+* Sources differ on whether /t/ and /ⁿd/ are dental or alveolar; for now I have stuck with alveolar for simplicity.
+* The labiovelars seem to only emerge when followed by <u>, and their attestation is inconsistent, so I am treating them as allophones of the velar sounds and excluding them from the ruleset.
+
+### By place of articulation
+
+Bilabial: /p/, /ᵐb/  
+Labiodental: /ʋ/  
+Alveolar: /t/, /ⁿd/, /s/, /ɾ/, /l/  
+Post-alveolar: /dʒ/, /ʃ/  
+Velar: /k/, /ᵑɡ/, /x/, /ɰ/  
+Labiovelar: /kʷ/, /ᵑɡʷ/  
+Glottal: /ʔ/
+
+### By manner of articulation
+
+Stops: /p/, /ᵐb/, /t/, /ⁿd/, /k/, /ᵑɡ/, /kʷ/, /ᵑɡʷ/, /ʔ/  
+Affricates: /dʒ/  
+Fricatives: /s/, /ʃ/, /x/  
+Taps: /ɾ/  
+Approximants: /ʋ/, /ɰ/  
+Lateral approx.: /l/
+
+## Vowels
+
+All of these vowels have both an oral and a nasal version; nasalization is only phonemic in stressed syllables ([@GnWalker1999], p. 69).
+
+High Vowels: /i/, /ɯ/, /u/  
+Mid Vowels: /e/, /o/  
+Low Vowels: /a/
+
+Although /ɯ/ is a minority view in the sources I have seen, with /ɨ/ appearing more commonly, I have preferred /ɯ/ because Walker provided a chart of vowel realizations that shows /ɯ/ to be backed nearly as far as /u/ ([@GnWalker1999], p. 69).
+
+## Stress
+
+Stress falls on syllables with nasalized vowels; in a word that has no nasalized vowels, stress falls on the final syllable.
+
+Vowels are sometimes marked with an acute accent to indicate that their syllable is stressed, but those accents do not carry any phonemic value.
+
+# Alphabet
+
+## Phonemic
+
+a - /a/  
+ã - /ã/  
+ch - /ʃ/  
+e - /e/  
+ẽ - /ẽ/  
+g - /ɰ/  
+h - /x/  
+i - /i/  
+ĩ - /ĩ/  
+j - /dʒ/ (there are several common realizations of this grapheme, but most scholars appear to prefer /dʒ/)  
+k - /k/  
+l - /l/ (predominantly, if not exclusively, in loanwords)  
+mb - /ᵐb/  
+nd - /ⁿd/  
+ng - /ᵑɡ/  
+o - /o/  
+õ - /õ/  
+p - /p/  
+r - /ɾ/  
+rr - /r/ (only in loanwords)  
+s - /s/  
+t - /t/  
+u - /u/  
+ũ - /ũ/  
+v - /ʋ/  
+y - /ɯ/  
+ỹ - /ɯ̃/
+' - /ʔ/  
+
+<ngu> is used to represent /ᵑɡʷ/.
+
+## Orthography Notes
+
+* The character <g̃> is sometimes used to represent the nasalized velar approximant, but its use is controversial and not consistent, so in my ruleset I will be treating <g̃> as if it were simply <g>.
+* The digraph <nt> is listed as a consonant pronounced /ⁿt/, but that sound rarely occurs and does not seem to be phonemic. (However, [@GnGregores1967] argues that prenasalized voiceless stops, including <nt>, occur before specific vowels (p. 84).)
+* Similarly to the above point, <m>, <n> and <ñ> are listed as consonants, even though nasals only exist as allophones of prenasalized voiced stops (or affricates, in the case of <ñ>). For this reason, my ruleset converts each character's phoneme to the appropriate underlying form.
+
+## Former Orthography
+
+Prior to 1950, Guarani used a different orthographical system (detailed in pp. 4–5 of [@GnOrthography]). Because the grapheme <y> represents a different phoneme in each Guarani orthography (/dʒ/ in the old orthography vs. /ɯ/ in the current one), it is impossible to represent both systems in a single ruleset, so I have opted only to include the current orthography.
+
+# Lenition Rules
+
+* The free variation between [x] and [h] may indicate a lenition process in progress. ([@GnWalker1999], p. 68)
+* Nasal harmony: when a stressed syllable has a nasal vowel, nasalization spreads to voiced segments in both directions; it is only blocked by a stressed syllable containing an oral vowel. ([@GnWalker1999], p. 69)
+
+# Misc. Rules
+
+## Syllable structure
+
+The syllable structure is principally (C)V, although prenasalized stops are able to occur as a syllable coda ([@GnGregores1967], p. 61)
+
+# Examples
+
+**Oral vs. nasal vowels; near-minimal pairs:**  
+Spelling - Pronunciation - English Translation  
+tata - /tata/ - fire **vs.** tetã - /tetã/ - region, country  
+arasa - /aɾasa/ - guava **vs.** akãrasy - /akãɾasɯ/ - headache

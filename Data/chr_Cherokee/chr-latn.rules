@@ -1,0 +1,14 @@
+#Cherokee (Latin script)
+#Written by Abi Creighton
+#Updated 8 Feb. 2019
+type,sfrom,sto,weight,precede,follow,comment
+class,passthrough,"[adeghiklmnostu]",,,,
+class,vowel,"(a|e|i|o|u|v)",,,,
+sub,v,ə̃,1,,,
+sub,k,kʰ,1,,{vowel},
+sub,t,tʰ,1,,{vowel},
+sub,l,ɬ,1,t,,
+sub,w,ɰ,1,,,
+sub,q,kʰw,1,,,
+sub,y,j,1,,,
+sub,({passthrough}),\1,0.1,,,
