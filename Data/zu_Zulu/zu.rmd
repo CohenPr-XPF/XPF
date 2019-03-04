@@ -59,3 +59,8 @@ Z; z; /z/
 /e/ and /o/ are pronounced [e] and [o], respectively, if the following syllable contains an "i" or a "u" or if the vowel is word-final. They are [ɛ] and [ɔ] otherwise
 
 n is velarized before clicks
+
+## Lenition:
+Labial and alveolar consonants are palatalized when followed by /j/. This results in some examples of spirantization:
+pʰ > ʃ /_j
+tʰ > ʃ /_j
