@@ -1,6 +1,6 @@
 #Tagalog
 #Written by Abi Creighton
-#Updated 12 Feb. 2019
+#Updated 27 Feb. 2019
 type,sfrom,sto,weight,precede,follow,comment
 class,passthrough,"[abghiklmpsuw]",,,,
 class,vowel,"(a|e|i|o|u)",,,,
@@ -13,8 +13,8 @@ sub,d,d̪,0.5,,,
 sub,e,ɛ,0.5,,,
 sub,f,p,1,,,
 sub,j,dʒ,1,,,"rare in native Tagalog words"
-sub,o,o̞,0.5,,,
 sub,n,n̪,1,,,
+sub,o,o̞,1,,,
 sub,q,k,0.5,,,
 sub,u,,1,q,,
 sub,r,ɾ,1,,,
@@ -33,9 +33,4 @@ sub,n,ŋ,1,,g,
 sub,g,,1,n,,
 sub,s,ʃ,1,,y,
 sub,y,,1,s,,
-#Rules for lenition of velar stops
-sub,g,ɰ,1,{vowel},{vowel},
-sub,k,x,1,{vowel},{vowel},
-#Rule for deletion of i
-sub,i,,1,^,s{consonant},
 sub,({passthrough}),\1,0.1,,,
