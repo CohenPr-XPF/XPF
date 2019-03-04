@@ -1,0 +1,121 @@
+---
+title: Aymara
+bibliography: ay.bib
+---
+
+Last Updated: 2019-02-26
+
+# Background
+
+**Language Family**: Aymaran / Aymara
+
+# Phonology
+
+## Consonants
+
+* Voiced stops are not native to Aymara, but do appear in some loanwords. ([@AyWexler1967], p. xiv)
+* [@AyWexler1967] argues for /r/ rather than /ɾ/ (p. xiv); [@AyBriggs1976], meanwhile, argues that [r] exists as an allophone of /ɾ/ (p. 82).
+* /ŋ/ is phonemic in a small number of dialects ([@AyBriggs1976], p. 82-83).
+
+### By place of articulation
+
+Bilabial: /p/, /pʰ/, /pʼ/, /m/  
+Dental/Alveolar: /t/, /tʰ/, /tʼ/, /n/, /r/, /l/, /s/  
+Postalveolar/Palatal: /tʃ/, /tʃʰ/, /tʃʼ/, /ɲ/, /ʎ/, /j/  
+Velar ("postpalatal"): /k/, /kʰ/, /kʼ/, /x/, /w/  
+Uvular ("postvelar"): /q/, /qʰ/, /qʼ/, /χ/
+
+### By manner of articulation
+
+Stops (simple): /p/, /t/, /k/, /q/  
+Stops (aspirated): /pʰ/, /tʰ/, /kʰ/, /qʰ/  
+Stops (ejective): /pʼ/, /tʼ/, /kʼ/, /qʼ/  
+Affricates: /tʃ/, /tʃʰ/, /tʃʼ/  
+Nasals: /m/, /n/, /ɲ/  
+Fricatives: /s/, /x/, /χ/  
+Flaps: /ɾ/  
+Approximants: /j/, /w/  
+Lateral approx.: /l/, /ʎ/  
+
+## Vowels
+
+High vowels: /i/, /u/  
+Low vowels: /a/
+
+Older sources also include [e] and [o], but these are just allophones of /i/ and /u/ that emerge next to uvular obstruents ([@AyWexler1967], p. xiv).
+
+Vowel length is phonemic ([@AyBriggs1976], p. 80).
+
+## Stress
+
+Stress falls on the penultimate syllable of words ([@AyBriggs1976], p. 89).
+
+Stress is not phonemic in Aymara ([@AyHardman1981], p. 8).
+
+# Alphabet
+
+The orthography I will be using is the Unified Alphabet, which was made official by the governments of Bolivia and Peru in 1984 and 1985 respectively ([@AyColer2014], pp. 31-32). Older sources, such as Wexler and Hardman, will use different orthographies.
+
+## Phonemic
+
+a - /a/  
+ch - /tʃ/  
+chh - /tʃʰ/  
+ch' - /tʃʼ/  
+i - /i/  
+j - /x/  
+k - /k/  
+kh - /kʰ/  
+k' - /kʼ/  
+l - /l/  
+ll - /ʎ/  
+m - /m/  
+n - /n/  
+ñ - /ɲ/  
+nh - /ŋ/ (only phonemic in some dialects)  
+p - /p/  
+ph - /pʰ/  
+p' - /pʼ/  
+q - /q/  
+qh - /qʰ/  
+q' - /qʼ/  
+r - /ɾ/  
+s - /s/  
+t - /t/  
+th - /tʰ/  
+t' - /tʼ/  
+u - /u/  
+w - /w/  
+x - /χ/  
+y - /j/  
+
+Long vowels are marked with umlauts ([@AyColer2014], p. 31).
+
+# Lenition Rules
+
+* Word-final vowels sometimes are sometimes devoiced or dropped. ([@AyHardman1981], p. 190)
+* In certain morphological contexts, word-medial vowels are dropped. ([@AyHardman1981], p. 8)
+* /x/ debuccalizes to [h] in some dialects. ([@AyBriggs1976], p. 84)
+* High vowels are lowered in uvular environments. ([@AyBriggs1976], p. 85)
+* Nasals assimilate to following consonants. ([@AyColer2014], pp. 41-42)
+
+# Misc. Rules
+
+* /χ/ and /ɾ/ rarely if ever occur word-initially. ([@AyBriggs1976], p. 87)
+* Glides and vowels do not occur adjacent to each other. ([@AyBriggs1976], p. 89)
+
+## Syllable structure
+
+Roots are typically either CV(C)CV or (less commonly) V(C)CV. Most suffixes are CV but there are several other options ([@AyColer2014], p. 29).
+
+Vowel clusters are avoided ([@AyHardman1981], p. 190).
+
+# Examples
+
+**Simple/aspirated/ejective minimal pairs:**  
+tanta - /tanta/ - hairy tail  
+thantha - /tʰantʰa/ - old clothes  
+t'ant'a - /tʼantʼa/ - bread  
+(Source: [@AyHardman1981], p. 264)
+
+Numerous other minimal pairs can be found on pages 34-36 of [@AyColer2014].

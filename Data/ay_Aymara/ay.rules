@@ -1,0 +1,30 @@
+# Aymara Rule Set
+# Written by: Bill
+# Last Updated: 2019-02-26
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,apostrophe,['‘’],,,,
+class,passthrough,[aiklmnpqstuw],,,,
+# Individual Letters
+sub,ä,aː,4,,,
+sub,ï,iː,4,,,
+sub,j,x,4,,,
+sub,ñ,ɲ,4,,,
+sub,r,ɾ,4,,,
+sub,ü,uː,4,,,
+sub,x,χ,4,,,
+sub,y,j,4,,,
+# Aspirates and Ejectives
+sub,h,ʰ,3,,,
+sub,{apostrophe},ʼ,3,,,
+ipasub, ʰ,ʰ,2,,,"Although this method uses ipasub rules, it's cleaner than making separate rules for each of the five consonants with aspirated and ejective forms"
+ipasub, ʼ,ʼ,2,,,
+# Other Digraphs
+sub,c,tʃ,6,,h,
+sub,h,,6,c,,
+sub,l,ʎ,6,,l,
+sub,l,,6,l,,
+# sub,n,ŋ,6,,h,
+# sub,h,,6,n,,
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,
