@@ -118,7 +118,15 @@ output: html_document
     
     Yy = [ɨ] or [ə]
 
-
+#Lenition
+ 
+ 1. [p,t,k] --> [b,d,g] 
+ 2. [b,d] --> [v,ð] 
+ 3. [ɬ,r] --> [l,r]
+ 4. [m] --> [v] 
+                      // certain lexical and syntactical functions
+                      
+  Soft consonant mutation in Welsh rides the border between phonology and syntax. Soft mutation occurs in prepositions, pronouns, and conjunctions to signify masculine or feminine meaning. This can also occur in certain adverbs and adjectives. Lenition rules 1-4 must be in this order. 
     
     
 

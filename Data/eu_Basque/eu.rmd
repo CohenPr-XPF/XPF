@@ -64,3 +64,4 @@ eu
 ### Deletion
 * /b,̪d,g,ɾ/ -> 0 / X__X in colloguial relaxed speech for when X = i,u,e,o,a
 * /h/ -> 0 / when preceded in a word by aspirated X, or when followed by another /h/
+
