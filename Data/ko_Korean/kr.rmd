@@ -1,0 +1,103 @@
+---
+title: Korean
+bibliography: kr.bib
+---
+# Background
+**Language family**: Language isolate
+
+Korean a language isolate, but it is heavily influenced by Mandarin.
+
+# Alphabet
+The Korean alphabet is known as Hangul. The individual letters are known as jamo,
+which are composed into syllable blocks.  
+## Vowels
+Korean has monophthongs and diphthongs.
+
+The monophthongs are as follows:
+* ⟨ㅏ⟩ = /a/
+* ⟨ㅔ⟩ = /e/
+* ⟨ㅐ⟩ = /ɛ/
+* ⟨ㅣ⟩ = /i/
+* ⟨ㅗ⟩ = /o/
+* ⟨ㅜ⟩ = /u/
+* ⟨ㅡ⟩ = /ɨ/
+* ⟨ㅓ⟩ = /ʌ/
+* ⟨ㅚ⟩ = /ø/
+
+There are two types of diphthongs in Korean.
+One type of diphthong is sometimes referred to as 'y' diphthongs because they start with a /j/ sound [@choo2003sounds].
+* ⟨ㅑ⟩ = /ja/
+* ⟨ㅖ⟩ = /je/
+* ⟨ㅒ⟩ = /jɛ/
+* ⟨ㅛ⟩ = /jo/
+* ⟨ㅠ⟩ = /ju/
+* ⟨ㅕ⟩ = /jʌ/
+* ⟨ㅢ⟩ = /ji/
+
+The other type of diphthong is the 'w' diphthong.
+* ⟨ㅟ⟩ = /wi/
+* ⟨ㅞ⟩ = /we/
+* ⟨ㅙ⟩ = /wɛ/
+* ⟨ㅘ⟩ = /wa/
+* ⟨ㅝ⟩ = /wʌ/
+
+## Consonants
+* ⟨ㄱ⟩ = /k/
+* ⟨ㄲ⟩ = /k͈/
+* ⟨ㅋ⟩ = /kʰ/
+* ⟨ㄷ⟩ = /t/
+* ⟨ㄸ⟩ = /t͈/
+* ⟨ㅌ⟩ = /tʰ/
+* ⟨ㅂ⟩ = /p/
+* ⟨ㅃ⟩ = /p͈/
+* ⟨ㅍ⟩ = /pʰ/
+* ⟨ㅅ⟩ = /s/
+* ⟨ㅆ⟩ = /s͈/
+* ⟨ㅈ⟩ = /tʃ/
+* ⟨ㅉ⟩ = /t͈ʃ/
+* ⟨ㅊ⟩ = /tʃʰ/
+* ⟨ㅁ⟩ = /m/
+* ⟨ㄴ⟩ = /n/
+* ⟨ㅇ⟩ = /ŋ/
+* ⟨ㄹ⟩ = /l/
+* ⟨ㅎ⟩ = /h/
+
+# Phonology
+There are some notes to be made about how certain sounds have been transcribed
+as there is some debate in the literature about how best to transcribe particular
+segments in Korean. See the subsections below for more information about the
+decisions that have been made regarding the rules written.
+## Consonants
+Korean makes a three-way stop (and affricate) distinction between plain (unaspirated), tense, and
+aspirated. The alveolar fricative/sibilant has a two-way distinction between plain and tense.
+
+|           |    Bilabial    |      Alveolar     | Palato-alveolar |      Velar     | Glottal |
+|-----------|:--------------:|:-----------------:|:---------------:|:--------------:|:-------:|
+| Stop      | /p/, /p͈/, /pʰ/ | /t/, /t͈/, /tʰ/    |                 | /k/, /k͈/, /kʰ/ |         |
+| Fricative |                | /s/, /s͈/          |                 |                | /h/     |
+| Affricate |                |                   |/tʃ/, /t͈ʃ/, /tʃʰ/|                |         |
+| Nasal     | /m/            | /n/               |                 | /ŋ/            |         |
+| Liquid    |                | /l/               |                 |                |         ‍|
+
+As for representing a transcription for the tense stops, there are various methods
+employed within the literature. Some authors use an apostrophe (e.g. /p'/). However,
+that is not ideal as the apostrophe is already a symbol in the official IPA used
+to indicate ejectives. We have decided to use /◌͈/, which is a diacritic of the
+extension to the IPA used to indicate "strong articulation."
+
+There is also disagreement within the literature about the nature of the affricate,
+with some sources considering it palato-alveolar and others considering it alveolo-palatal.
+We have decided to transcribe the affricate as palato-alveolar.
+
+## Vowels
+* In some dialects of Korean, ⟨ㅔ⟩ and ⟨ㅐ⟩ have merged. Our rules preserve the contrast.
+* Vowel length is contrastive, but it is not obvious from the orthography [@KoreanGrammarLee]. So, our rules will only output normal length vowels (and no long vowels).
+* ⟨ㅚ⟩ is sometimes transcribed as /wɛ/. However, following the traditional vowel
+system of Korean [@brown2015handbook], our rules transcribe it as /ø/.
+* ⟨ㅡ⟩ has been transcribed in one of two ways within the literature: /ɨ/ or /ɯ/. Our rules use /ɨ/ as "ㅡ is produced with the tongue more forward [than ㅜ]" [@choo2003sounds].
+* ⟨ㅢ⟩ is often transcribed as /ɰi/; however, /ɰi/ is only found at the beginning
+of words. Elsewhere, ⟨ㅢ⟩ represents /i/, which is reflected in our rules [@choo2003sounds].
+
+# Lenition
+* {/p/, /b/} -> {[b], [d]} / [+son] __ V
+* /l/ -> [ɾ] / V __ V
