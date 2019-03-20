@@ -9,25 +9,25 @@
 ##Consonants
 ###Consonants by place
 Labial: /m/
-Alveolar: /t/, /ts/, /s/, /n/, /l/
+Alveolar: /d/, /tʰ/, /ts/, /s/, /n/, /l/
 Palatal: /j/
-Velar: /k/, /É°/
-Glottal: /Ê/, /h/
+Velar: /g/, /k/, /ɰ/
+Glottal: /ʔ/, /h/
 
 ###Consonants by manner
-Stop: /t/, /k/, /Ê/
+Stop: /d/, /tʰ/, /g/, /k/, /ʔ/
 Affricate: /ts/
 Fricative: /s/, /h/
 Nasal: /m/, /n/
-Approximant: /l/, /j/, /É°/
+Approximant: /l/, /j/, /ɰ/
 
 ##Vowels
-Front close: /i/, /iË/
-Front mid: /e/, /eË/
-Central mid: /ÉÌ/, /ÉÌË/
-Central open: /a/, /aË/
-Back close: /u/, /uË/
-Back mid: /o/, /oË/
+Front close: /i/, /iː/
+Front mid: /e/, /eː/
+Central mid: /ə̃/, /ə̃ː/
+Central open: /a/, /aː/
+Back close: /u/, /uː/
+Back mid: /o/, /oː/
 
 #Alphabet
 Cherokee has both a syllabary and a Latin script. 
