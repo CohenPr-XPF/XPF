@@ -1,0 +1,179 @@
+---
+title: Uyghur
+bibliography: ug.bib
+---
+
+Last Updated: 2019-03-13
+
+# Background
+
+**Language Family**: Turkic / Common Turkic / Karluk / Uyghur
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial: /p/, /b/, /m/, /f/, /w/  
+Alveolar: /t/, /d/, /n/, /s/, /z/, /r/, /l/  
+Alveo-palatal: /ʃ/, /ʒ/, /tʃ/, /dʒ/, /j/  
+Velar: /k/, /ɡ/, /ŋ/, /x/, /ɣ/  
+Uvular: /q/  
+Glottal: /ʔ/, /h/  
+
+@UgMemtimin2016 lists the aspirated forms of voiceless stops as their underlying phonemes; @UgHahn1991 does not, but does include aspirated forms of those sounds (plus /tʃ/) as common allophones. I have judged it more likely that the simple forms of these consonants are the underlying ones.
+
+According to Hahn, /v/ is phonemic in some nonstandard dialects [@UgHahn1991, p. 59]; according to @UgMemtimin2016, it's an allophone of /w/. Either way, it does not appear to merit inclusion in the ruleset.
+
+Hahn lists /χ/ and /ɢ/ rather than /x/ and /ɣ/ [@UgHahn1991, p. 59]; interestingly, though, he mentions that "in most environments /ɢ/ is phonetically realized as a fricative" (ibid., p. 60).
+
+### By manner of articulation
+
+Stops: /p/, /b/, /t/, /d/, /k/, /ɡ/, /q/, /ʔ/  
+Nasals: /m/, /n/, /ŋ/  
+Fricatives: /f/, /s/, /z/, /ʃ/, /ʒ/, /x/, /ɣ/, /h/  
+Affricates: /tʃ/, /dʒ/  
+Approximants: /w/, /r/, /l/, /j/  
+
+## Vowels
+
+Unrounded front: /i/, /e/, /æ/  
+  Rounded front: /y/, /ø/  
+ Unrounded back: /ɯ/, /ɑ/  
+   Rounded back: /u/, /o/  
+
+/e/ is rare in native words [@UgHahn1991, p. 33].
+
+# Alphabet
+
+The Uyghur Arabic alphabet is the most common orthography in Uyghur; it has been the official script of the language since 1982, and it has by far the largest Crubadan corpus of the various Uyghur scripts. Cyrillic and Latin scripts do also exist, however, and will be factored into the rulesets.
+
+## Arabic
+
+Vowels in the Uyghur Arabic alphabet are formed from the combination of two characters. The first is <ئ>, which carries no phonetic value but serves as a "base" upon which different vowel characters are appended; the second is the affixed character, which marks *which* of the vowels is being written.
+
+For each vowel, the alphabet shown here features both the affix (shown individually on the left of the apostrophe) and the full combined character (shown on the right of the apostrophe).
+
+ئا،ا - /ɑ/  
+ئە،ە - /æ/  
+ب - /b/  
+پ - /p/  
+ت - /t/  
+ج - /dʒ/  
+چ - /tʃ/  
+خ - /x/  
+د - /d/  
+ر - /r/  
+ز - /z/  
+ژ - /ʒ/  
+س - /s/  
+ش - /ʃ/  
+غ - /ɣ/  
+ف - /f/  
+ق - /q/  
+ك - /k/  
+گ - /ɡ/  
+ڭ - /ŋ/  
+ل - /l/  
+م - /m/  
+ن - /n/  
+ھ - /h/  
+ئو،و - /o/  
+ئۇ،ۇ - /u/  
+ئۆ،ۆ - /ø/  
+ئۈ،ۈ - /y/  
+ۋ - /w/  
+ئې،ې - /e/  
+ئى،ى - /i/  
+ي - /j/  
+
+## Cyrillic
+
+а - /ɑ/  
+ə - /æ/  
+б - /b/  
+п - /p/  
+т - /t/  
+җ - /dʒ/  
+ч - /tʃ/  
+х - /x/  
+д - /d/  
+р - /r/  
+з - /z/  
+ж - /ʒ/  
+с - /s/  
+ш - /ʃ/  
+ғ - /ɣ/  
+ф - /f/  
+қ - /q/  
+к - /k/  
+г - /ɡ/  
+ң - /ŋ/  
+л - /l/  
+м - /m/  
+н - /n/  
+һ - /h/  
+о - /o/  
+у - /u/  
+ө - /ø/  
+ү - /y/  
+в - /w/  
+е - /e/  
+и - /i/
+й - /j/  
+
+## Latin
+
+I opted not to build a ruleset for the Latin script, because the Crubadan corpus for Latin-script Uyghur only has around 150,000 words. See @UgJanbaz2006 for further insight on this script.
+
+a - /ɑ/  
+e - /æ/  
+b - /b/  
+p - /p/  
+t - /t/  
+j - /dʒ/  
+ch - /tʃ/  
+x - /x/  
+d - /d/  
+r - /r/  
+z - /z/  
+zh - /ʒ/  
+s - /s/  
+sh - /ʃ/  
+gh - /ɣ/  
+f - /f/  
+q - /q/  
+k - /k/  
+g - /ɡ/  
+ng - /ŋ/  
+l - /l/  
+m - /m/  
+n - /n/  
+h - /h/  
+o - /o/  
+u - /u/  
+ö - /ø/  
+ü - /y/  
+w - /w/  
+ë - /e/ (sometimes <é>; see @UgJanbaz2006, p. 9)  
+i - /i/
+y - /j/  
+
+# Lenition Rules
+
+* /r/ and /l/ are often dropped in casual speech. [@UgMemtimin2016, p. 15]
+* /b/ spirantizes to [β] intervocalically or before liquids. [@UgHahn1991, p. 61]
+* /t/ and /tʃ/ assimilate fully to following /s/ sounds. [@UgHahn1991, pp. 62-63, 70]
+* /t/ is deleted word-finally, or when between two consonants. [@UgHahn1991, p. 63]
+* /q/ spirantizes to [χ] before non-uvular consonants. [@UgHahn1991, p. 67]
+* /tʃ/ and /dʒ/ reduce (to [ʃ] and [ʒ] respectively) syllable-finally. [@UgHahn1991, p. 70]
+* /ŋ/ backs to /ɴ/ when followed by a back vowel or uvular consonant; this pattern also occurs word-finally if preceded by a back vowel or /i/. [@UgHahn1991, p. 76]
+
+# Misc. Rules
+
+## Syllable structure
+
+Sentences are SOV.
+
+Consonant clusters are prohibited in onsets; in codas, clusters are allowed if they comprise a nasal or a liquid followed by a stop [@UgMemtimin2016, pp. 15-16].
