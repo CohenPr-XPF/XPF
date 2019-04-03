@@ -1,0 +1,97 @@
+# Hungarian Rule Set
+# Shiying Yang
+# Last Updated: 2019-04-02
+type,sfrom,sto,weight,precede,follow,comment
+# class rules
+class,consonants,[pbtdkgfvszcl],,,,
+class,gemCon,[pbtkgfvnlmrdz],,,,
+class,nasals,[mn],,,,
+class,pre_y,[tgln],,,,
+class,passthrough,[pbtdkgfvzhrljiounm],,,,
+class,accent_u,ü|ü,,,,
+class,punct,[-],,,,
+#
+# placeless preconsonantal nasal
+sub,{nasals},N,2,,{consonants},
+#
+# ty, gy, ly, ny
+sub,t,c,2,,y,
+sub,g,ɟ,2,,y,
+sub,l,j,2,,y,
+sub,n,ɲ,2,,y,
+sub,y,,2,{pre_y},,
+#
+# tty, ggy, lly, nny
+sub,t,cː,3,t,y,
+sub,g,ɟː,3,g,y,
+sub,l,jː,3,l,y,
+sub,n,ɲː,3,n,y,
+sub,t,,2,,ty,
+sub,g,,2,,gy,
+sub,l,,2,,ly,
+sub,n,,2,,ny,
+#
+# s and sz
+sub,s,ʃ,2,,[^s],
+sub,s,ʃ,2,,$,
+sub,s,s,3,,z,
+sub,z,,2,s,,
+#
+# ss and ssz
+sub,s,ʃː,3,s,[^z],
+sub,s,ʃː,3,s,$,
+sub,s,sː,3,s,z,
+sub,s,,2,,s,
+#
+# zs and dz and dzs
+sub,z,ʒ,3,[^d],s,
+sub,z,ʒ,3,^,s,  #zs
+sub,z,dʒ,3,d,s, #dzs
+sub,z,dz,3,d,[^s],
+sub,z,dz,3,d,$, #dz
+sub,d,,3,,z,
+sub,s,,3,z,,
+#
+# zzs does not actually occur (wiktionary lemmas)
+#sub,z,ʒː,3,z,s,
+#
+# ddz from d dz
+# ddzs from d dzs
+ipasub,d dʒ,dːʒ,2,,, #ddzs
+ipasub,d dz,dːz,2,,, #ddz
+#
+# c and cs
+sub,c,ts,2,,[^c],
+sub,c,ts,2,,$,
+sub,c,tʃ,3,,s,
+sub,s,,3,c,,
+#
+# cc and ccs
+sub,c,tːs,3,c,[^s],
+sub,c,tːs,3,c,$,
+sub,c,tːʃ,3,c,s,
+sub,c,,2,,c,
+#
+# vowels
+sub,a,ɑ,2,,,
+sub,á,aː,2,,,
+sub,e,ɛ,2,,,
+sub,é,eː,2,,,
+sub,í,iː,2,,,
+sub,ó,oː,2,,,
+sub,ö,ø,2,,,
+sub,ő,øː,2,,,
+sub,ú,uː,2,,,
+sub,{accent_u},y,2,,,
+sub,ű,yː,2,,,
+#
+# exclude ch
+sub,c,@,3,,h,
+sub,h,,3,c,,
+#
+# passthrough
+sub,({passthrough}),\1,1,,,
+sub,{punct},,1,,,
+#
+# regular geminates
+ipasub,({gemCon}) \1,\1ː,2,,,

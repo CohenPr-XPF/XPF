@@ -1,0 +1,109 @@
+---
+title: "Hungarian"
+author: "Shiying Yang"
+date: "4/1/2019"
+output:
+  html_document:
+    df_print: paged
+  pdf_document:
+    dev: cairo_pdf
+    keep_tex: yes
+    latex_engine: xelatex
+    number_sections: yes
+geometry: margin=1.2in
+header-includes:
+- \usepackage{setspace}\doublespacing
+- \usepackage{tipa}
+mainfont: DejaVu Serif
+fontsize: 12pt
+tables: yes
+bibliography: hu.bib
+---
+# Background
+
+**Language family:** 
+
+* Uralic 
+  + Finno-Ugric
+
+**Adopted variety:** 
+ECH (Educated Colloquial Hungarian) [@ST]
+
+# Phonology and Orthography
+
+## Consonants [@ST, p 18-19; @IPA] {#con}
+
+```{r, echo=F, include=FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+```{r hu_con, echo=F, tab.cap = NULL, results='asis'}
+hu_c <- read.csv('hu_c.csv')
+#colnames(jp_c)[c(1:2,5)] <- c(' ', '  ', 'alveolo-palatal')
+c_position <- c('labial', 'alveolar', 'post-alveolar', 'palatal', 'velar', 'glottal')
+c_colname <- paste(c_position, 'O', sep = ',')
+c_colname_in_table <- unlist(strsplit(c_colname, ','))
+
+kable(hu_c, caption = 'Consonants', 
+      align = "c", longtable = T, 
+      digits = 3, format = 'latex', 
+      booktabs = T, col.names = c(' ', 'Voicing', c_colname_in_table)) %>% 
+  collapse_rows(columns = c(1), valign = 'middle', latex_hline = 'custom', custom_latex_hline = 1) %>% 
+  footnote(alphabet = c('placeless /N/ appears preconsonantally and receives place from the following consonant', 'The [O] columns stands for orthography.', '[vs] and [vd] in the second column stands for voiceless and voiced'),footnote_as_chunk = F) %>%
+  kable_styling("striped", full_width = T)
+```
+
+## Vowels [@IPA] {#v}
+||IPA | Writing | Example | Gloss|
+|-|----|-------|---------|------|
+1 |\textipa{A}|a |agy|brain|
+2 |a\textipa{:}|á |ágy|bed|
+3 |\textipa{E}|e |egy|one|
+4 |e\textipa{:}|é |ért|understand|
+5 |i|i |irt|eradicate|
+6 |i\textipa{:}|í |ír|write|
+7 |o|o |orr|nose|
+8 |o\textipa{:}|ó |ól|sty|
+9 |\o|ö |öl|kill|
+10|\o\textipa{:}|ő |őr|guard|
+11|u|u |ujj|finger|
+12|u\textipa{:}|ú |úgy|like that|
+13|y|ü |ügy|affair|
+14|y\textipa{:}|ű |űrr|space|
+Marginal[^1]|a, e, \textipa{O:}, \textipa{E:}|
+
+[^1]: typically used for pronuncing letters in abbreviations and borrowed words [@ST, p 280]
+
+## Note on the Alphabet
+
+Letters q, x, y, w as well as the combination 'ch' are excluded in hu.rules since they only occur in borrowed words like homoszexuális, and traditional surnames e.g. Andrássy.
+
+# Rules 
+<!--(Correspondence between orthography and phonemes)-->
+
+see hu.rules written based on Section \ref{con} and \ref{v}
+
+## Controversies and choices
+1. Whether "ty", "dy" are affricates or stops as seen in \ref{con}
+- stops [see @ST, p 82]
+- does not changed the result of translation
+2. Whether there are dipthongs 
+- no [see @ST, p 16-18]
+3. Whether [dz] is a phoneme or just a surface sound
+- surface [see @ST, p 87-89]
+- underlying [see @IPA]
+4. The placeless [N] as the underlying default nasal preconsonantally that undergoes progressive nasal assimilation
+- [see @ST, p 207-212]
+
+# Lenition Processes
+
+- Degemination [@ST, p 83]: Across word boundaries, affricates remain unmerged in careful speech. In colloquial speech, the first affricate may lenite into a fricative due to OCP
+
+|| Writing | careful speech | colloquial speech|
+|-|--------|-------------|-----------|
+  ||rác cég|[raːts-tseːg]|[raːs-tseːg]|
+  ||bölcs csere|[bøltʃ-tʃɛrɛ]|[bølʃ-tʃɛrɛ]|
+
+# References {-}
