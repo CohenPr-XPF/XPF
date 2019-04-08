@@ -1,0 +1,110 @@
+---
+title: "Vietnamese"
+author: "Abi Creighton"
+bibliography: vi.bib
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Background
+**Language family**: Austroasiatic / Vietic / Viet-Muong / Vietnamese 
+
+There is much disagreement between sources about the phonemic inventory of Vietnamese. While Thompson (1965) recognizes the palatal stop /c/, Kirby @kirby_vietnamese_2011 claims that the segment is consistently realized as /tɕ/ in younger native Hanoi Vietnamese speakers. Thompson and Kirby also conflict in their analysis of final <ch> and <nh>. While Thompson argues that that they are the phonemes /c/ and /ɲ/ respectively, Kirby argues that they are allophonic variants of /k/ and /ŋ/. I follow Kirby's analysis and suggest that /k/ and /ŋ/ are palatalized word finally. 
+
+Kirby also does not recognize the existence of retroflex consonants in Vietnamese, though these are recognized by other sources including Michaud et al. @michaud_strata_2015. Linguists also disagree extensively on how many vowels there are Vietnamese; almost every source provides a different answer. Some of the differences between sources are simply the result of dialect variation, but even within the sources which focus specifically on Hanoi Vietnamese, there is much variation. I will draw primarily from Kirby's illustration of the IPA in the Journal of the International Phonetic Association, but my account of the phonology of Hanoi Vietnamese phonology does diverge from Kirby's. I, for example, include /p/ in the phonemic inventony though Kirby acknowledges that for many speakers, it is realized as /ɓ/.
+
+
+I will also address the differences between Northern Vietnamese which is spoken in Hanoi and Southern Vietnamese which is spoken in Ho Chi Minh City. They are the same for the most part, but the HCMC dialect differentiates between some phonemes such as /s/ and /ʂ/ which have merged in the Hanoi dialect. 
+
+#Phonology
+
+##Consonants
+###Consonants by place
+Bilabial: /m/, /p/, /ɓ/, /w/
+Labiodental: /f/, /v/ (only in Hanoi)
+Dental: /t/, /tʰ/, /n/
+Alveolar: /ɗ/, /s/, /z/, /r/, /l/, /j/
+Palatal: /ɲ/, /tɕ/ (only in Hanoi), /c/ (only in HCMC)
+Retroflex (only in HCMC): /ʈ/, /ʂ/
+Velar: /ŋ/, /k/, /x/, /ɣ/
+Glottal: /ʔ/, /h/
+
+###Consonants by manner
+Stop: /p/, /ɓ/, /t/, /tʰ/, /ɗ/, /tɕ/, /k/, /ʈ/, /c/
+Nasal: /m/, /n/, /ɲ/, /ŋ/
+Fricative: /f/, /v/, /s/, /z/, /x/, /ɣ/, /h/, /ʂ/
+Approximant: /l/, /j/, /w/
+Rhotic: /r/
+
+##Vowels
+Close front: /i/
+Close back rounded: /u/
+Close back unrounded: /ɯ/
+Mid front: /e/
+Mid back rounded: /o/
+Mid back unrounded: /ɤː/ and /ɤ/
+Open front: /ɛ/
+Open central: /aː/ and /a/
+Open back: /ɔ/
+Centering diphthongs: /iə/, /ɯə/, /uə/
+
+###Tones
+Mid level: no mark
+Low falling: `
+High rising: ´
+Mid dipping-rising: ̉
+High breaking-rising: ~
+Low falling constricted: .
+
+#Alphabet
+A, a: /aː/
+Ă, ă: /a/
+Â, â: /ɤ/
+B, b: /ɓ/
+C, c: /k/
+D, d: /z/ in Hanoi, /j/ in Ho Chi Minh City
+Đ, đ: /ɗ/
+E, e: /ɛ/
+Ê, ê: /e/
+G, g: /ɣ/
+H, h: /h/
+I, i: /i/
+K, k: /k/
+L, l: /l/
+M, m: /m/
+N, n: /n/
+O, o: /ɔ/
+Ô, ô: /o/
+Ơ, ơ: /ɤː/
+P, p: /p/ (only occurs word initially in loanwords and is often pronounced as [b])
+Q, q: /k/
+R, r: /z/ in Hanoi, /r/ in HCMC
+S, s: /s/ in Hanoi, /ʂ/ in HCMC
+T, t: /t/, /k/ word finally in HCMC
+U, u: /u/
+Ư, ư: /ɯ/
+V, v: /v/ in Hanoi, /j/ in HCMC
+X, x: /s/
+Y, y: /iː/
+
+
+#Rules
+##Hanoi
+k > c /_#
+ŋ >  ɲ/ _#
+
+###Hanoi lenition processes
+k > x /_h
+g > z /_i
+
+
+##Ho Chi Minh City
+n > ŋ / _# if not following i or ê
+ɲ > n / _#
+t > k / _#
+
+##Ho Chi Minh City lenition processes
+g > j /_i
