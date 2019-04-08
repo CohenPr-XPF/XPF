@@ -13,6 +13,7 @@
 | jv            | Javanese  | 
 | ka            | Georgian  | 
 | ko            | Korean    | 
+|mg             | Malgasy   |
 | mt            | Maltese   | 
 | nhe           | Nahuatl   | 
 | ny            | Chichewa  | 
@@ -40,3 +41,4 @@ lv|Latvian              |non-transparent spelling with tones|
 | is | Icelandic        | non-transparent spelling                   | 
 | gl | Galician         | non-transparent spelling                   | 
 | fi | Finnish          | non-transparent spelling                   | 
+|pl|Polish|non-transparent spelling|

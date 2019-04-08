@@ -1,0 +1,66 @@
+---
+title: "Malagasy"
+author: "Abi Creighton"
+bibliography: mg.bib
+output: html_document
+---
+#Background
+**Language family**: Austronesian / Malayo-Polynesian / East Barito / Malagasy
+
+#Phonology
+Sources for inventory and orthography: [@rasoloson_malagasy_2005] and [@oneill_phonology_2015]
+
+##Consonants
+###Consonants by place
+Bilabial: /m/, /p/, /b/, /ᵐb/, /ᵐp/
+Labiodental: /f/, /v/
+Dental: /t/, /ⁿt/, /d/, /ⁿd/
+Alveolar: /n/, /ts/, /dz/, /ⁿts/, /ⁿdz/, /s/, /z/, /l/, /r/
+Retroflex: /ʈʳ/, /ɳʈʳ/, /ɖʳ/, /ɳɖʳ/
+Velar: /ŋ/, /k/, /ᵑk/, /g/, /ᵑg/
+Glottal: /h/
+
+###Consonants by manner
+Nasal: /m/, /n/, /ŋ /
+Stop: /p/, /b/, /ᵐb/, /ᵐp/, /t/, /d/, /ⁿt/, /ⁿd/, /ts/, /dz/, /ⁿts/, /ⁿdz/, /ʈʳ/, /ɳʈʳ/,  /ɖʳ/,  /ɳɖʳ/, /k/, /ᵑk/, /g/, /ᵑg/
+Fricative: /f/, /v/, /s/, /z/, /h/
+Lateral: /l/
+Trill: /r/
+
+##Vowels
+Front close: /i/
+Back close: /u/
+Front mid: /e/
+Back mid: /o/
+Central open: /a/
+
+#Alphabet
+A; a; /a/
+B; b; /b/
+D; d; /d/
+E; e; /e/
+F; f; /f/
+G; g; /g/
+H; h; /h/
+I; i; /i/
+J; j; /dz/
+K; k; /k/ 
+L; l; /l/
+M; m; /m/
+N; n; /n/
+O; o; /o/
+P; p; /p/
+R; r; /r/
+S; s; /s/
+T; t; /t/
+V; v; /v/
+Y; y; /i/ or /j/
+Z; z; /z/
+
+#Rules
+Stops become prenasalized when preceded by a nasal of the same place.
+/a, u, i/ are reduced to [ə, ʷ, ʲ] after a stressed syllable.
+Spirants become stops in possessive and verbal constructions, reduplication, and compounding. 
+
+## Lenition:
+Velar consonants are palatalized after a front vowel

@@ -1,0 +1,52 @@
+#Malagasy
+#Written by Abi Creighton
+#Updated 8 Apr. 2019
+type,sfrom,sto,weight,precede,follow,comment
+class,passthrough,"[abdefghiklmnprstvz]",,,,
+class,alvstop,"[td]",,,,
+class,bilabialstop,"[pb]",,,,
+class,aftern,"[tdkgj]",,,,
+class,aeo,"[aeo]",,,,
+class,a,"[àáâ]",,,,
+class,e,"[èéê]",,,,
+class,i,"[ìíî]",,,,
+class,o,"[oòó]",,,,
+#Consonants
+sub,j,dz,1,,,
+sub,n̈,ŋ,1,,,
+sub,ñ,ŋ,1,,,"only used when a writer cannot produce n̈"
+sub,s,ʃ,1,,y,
+sub,y,,2,s,,
+sub,t,ts,1,,s,
+sub,s,,3,t,,
+sub,t,tʃ,1,,sy,
+#Retroflex consonants
+sub,t,ʈʳ,2,,r,
+sub,d,ɖʳ,2,,r,
+sub,r,,2,{alvstop},,
+sub,n,ɳ,2,,{alvstop}r,
+#Prenasalization rules
+sub,p,ᵐp,1,m,,
+sub,b,ᵐb,1,m,,
+sub,t,ⁿt,1,n,,
+sub,t,ⁿts,1,n,s,
+sub,t,ⁿtʃ,1,n,sy,
+sub,d,ⁿd,1,n,,
+sub,j,ⁿdz,1,n,,
+sub,k,ᵑk,1,n,,
+sub,g,ᵑg,1,n,,
+sub,m,,1,,{bilabialstop},
+sub,n,,1,,{aftern},
+#Vowels
+sub,{a},a,1,,,
+sub,{e},e,1,,,
+sub,{i},i,1,,,
+sub,{o},u,1,,,
+sub,ô,o,1,,,
+sub,{o},o,2,,a,
+sub,a,,1,{o},,
+sub,y,i,1,,,
+sub,i,j,2,{aeo},,
+sub,y,j,2,{aeo},,
+sub,o,w,2,a,,
+sub,({passthrough}),\1,0.1,,,
