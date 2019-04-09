@@ -94,8 +94,9 @@ see hu.rules written based on Section \ref{con} and \ref{v}
 3. Whether [dz] is a phoneme or just a surface sound
 - surface [see @ST, p 87-89]
 - underlying [see @IPA]
-4. The placeless [N] as the underlying default nasal preconsonantally that undergoes progressive nasal assimilation
+4. The placeless [N] as the underlying default nasal preconsonantally that undergoes progressive nasal assimilation vs. [m], [n] as the same with surface and underlying forms
 - [see @ST, p 207-212]
+- decide on keeping [m] and [n] as underlying forms due to words such as háromdimenziós which is három+dimenziós. m keeps its place in this example.
 
 # Lenition Processes
 

@@ -1,0 +1,310 @@
+\documentclass[12pt,]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+    \setmainfont[]{DejaVu Serif}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Hungarian},
+            pdfauthor={Shiying Yang},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Hungarian}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Shiying Yang}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{4/1/2019}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+\usepackage{setspace}\doublespacing
+\usepackage{tipa}
+
+\begin{document}
+\maketitle
+
+\hypertarget{background}{%
+\section{Background}\label{background}}
+
+\textbf{Language family:}
+
+\begin{itemize}
+\tightlist
+\item
+  Uralic
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Finno-Ugric
+  \end{itemize}
+\end{itemize}
+
+\textbf{Adopted variety:} ECH (Educated Colloquial Hungarian) (Siptár
+and Törkenczy 2000)
+
+\hypertarget{phonology-and-orthography}{%
+\section{Phonology and Orthography}\label{phonology-and-orthography}}
+
+\hypertarget{con}{%
+\subsection{\texorpdfstring{Consonants (Siptár and Törkenczy 2000, p
+18-19; Szende
+1994)}{Consonants , p 18-19(Siptár and Törkenczy 2000, p 18-19; Szende 1994)}}\label{con}}
+
+\begin{longtabu} to \linewidth {>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
+\caption{\label{tab:hu_con}Consonants}\\
+\toprule
+  & Voicing & labial & O & alveolar & O & post-alveolar & O & palatal & O & velar & O & glottal & O\\
+\midrule
+nasal &  & m & m & n & n & ɲ & ny &  &  &  &  &  & \\
+\cmidrule{1-14}
+ & vs & p & p & t & t &  &  & c & ty & k & k &  & \\
+
+\multirow{-2}{*}{\centering\arraybackslash stop} & vd & b & b & d & d &  &  & ɟ & gy & g & g &  & \\
+\cmidrule{1-14}
+ & vs & f & f & s & sz & ʃ & s &  &  &  &  & h & h\\
+
+\multirow{-2}{*}{\centering\arraybackslash fricative} & vd & v & v & z & z & ʒ & zs &  &  &  &  &  & \\
+\cmidrule{1-14}
+ & vs &  &  & ts & c & tʃ & cs &  &  &  &  &  & \\
+
+\multirow{-2}{*}{\centering\arraybackslash affricate} & vd &  &  & dz & dz & dʒ & dzs &  &  &  &  &  & \\
+\cmidrule{1-14}
+tap/trill &  &  &  & r & r &  &  &  &  &  &  &  & \\
+\cmidrule{1-14}
+approximant &  &  &  & l & l &  &  & j & j|ly &  &  &  & \\
+\bottomrule
+\multicolumn{14}{l}{\textsuperscript{a} placeless /N/ appears preconsonantally and receives place from the following consonant}\\
+\multicolumn{14}{l}{\textsuperscript{b} The [O] columns stands for orthography.}\\
+\multicolumn{14}{l}{\textsuperscript{c} [vs] and [vd] in the second column stands for voiceless and voiced}\\
+\end{longtabu}
+
+\hypertarget{v}{%
+\subsection{Vowels (Szende 1994)}\label{v}}
+
+\begin{longtable}[]{@{}lllll@{}}
+\toprule
+& IPA & Writing & Example & Gloss\tabularnewline
+\midrule
+\endhead
+1 & \textipa{A} & a & agy & brain\tabularnewline
+2 & a\textipa{:} & á & ágy & bed\tabularnewline
+3 & \textipa{E} & e & egy & one\tabularnewline
+4 & e\textipa{:} & é & ért & understand\tabularnewline
+5 & i & i & irt & eradicate\tabularnewline
+6 & i\textipa{:} & í & ír & write\tabularnewline
+7 & o & o & orr & nose\tabularnewline
+8 & o\textipa{:} & ó & ól & sty\tabularnewline
+9 & \o & ö & öl & kill\tabularnewline
+10 & \o\textipa{:} & ő & őr & guard\tabularnewline
+11 & u & u & ujj & finger\tabularnewline
+12 & u\textipa{:} & ú & úgy & like that\tabularnewline
+13 & y & ü & ügy & affair\tabularnewline
+14 & y\textipa{:} & ű & űrr & space\tabularnewline
+Marginal\footnote{typically used for pronuncing letters in abbreviations
+  and borrowed words (Siptár and Törkenczy 2000, p 280)} & a, e,
+\textipa{O:}, \textipa{E:} & & &\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{note-on-the-alphabet}{%
+\subsection{Note on the Alphabet}\label{note-on-the-alphabet}}
+
+Letters q, x, y, w as well as the combination `ch' are excluded in
+hu.rules since they only occur in borrowed words like homoszexuális, and
+traditional surnames e.g.~Andrássy.
+
+\hypertarget{rules}{%
+\section{Rules}\label{rules}}
+
+see hu.rules written based on Section \ref{con} and \ref{v}
+
+\hypertarget{controversies-and-choices}{%
+\subsection{Controversies and choices}\label{controversies-and-choices}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Whether ``ty'', ``dy'' are affricates or stops as seen in \ref{con}
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  stops (see Siptár and Törkenczy 2000, p 82)
+\item
+  does not changed the result of translation
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Whether there are dipthongs
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  no (see Siptár and Törkenczy 2000, p 16-18)
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Whether {[}dz{]} is a phoneme or just a surface sound
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  surface (see Siptár and Törkenczy 2000, p 87-89)
+\item
+  underlying (see Szende 1994)
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  The placeless {[}N{]} as the underlying default nasal preconsonantally
+  that undergoes progressive nasal assimilation vs.~{[}m{]}, {[}n{]} as
+  the same with surface and underlying forms
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  (see Siptár and Törkenczy 2000, p 207-212)
+\item
+  decide on keeping {[}m{]} and {[}n{]} as underlying forms due to words
+  such as háromdimenziós which is három+dimenziós. m keeps its place in
+  this example.
+\end{itemize}
+
+\hypertarget{lenition-processes}{%
+\section{Lenition Processes}\label{lenition-processes}}
+
+\begin{itemize}
+\tightlist
+\item
+  Degemination (Siptár and Törkenczy 2000, p 83): Across word
+  boundaries, affricates remain unmerged in careful speech. In
+  colloquial speech, the first affricate may lenite into a fricative due
+  to OCP
+\end{itemize}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+& Writing & careful speech & colloquial speech\tabularnewline
+\midrule
+\endhead
+& rác cég & {[}raːts-tseːg{]} & {[}raːs-tseːg{]}\tabularnewline
+& bölcs csere & {[}bøltʃ-tʃɛrɛ{]} & {[}bølʃ-tʃɛrɛ{]}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{references}{%
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
+
+\hypertarget{refs}{}
+\leavevmode\hypertarget{ref-ST}{}%
+Siptár, Péter, and Miklós Törkenczy. 2000. \emph{The Phonology of
+Hungarian}. Oxford University Press.
+
+\leavevmode\hypertarget{ref-IPA}{}%
+Szende, Tamás. 1994. ``Hungarian.'' \emph{Journal of the International
+Phonetic Association} 24 (2): 91--94.
+
+
+\end{document}

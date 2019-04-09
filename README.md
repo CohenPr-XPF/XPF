@@ -13,7 +13,7 @@
 | jv            | Javanese  | 
 | ka            | Georgian  | 
 | ko            | Korean    | 
-|mg             | Malgasy   |
+|mg             | Malagasy   |
 | mt            | Maltese   | 
 | nhe           | Nahuatl   | 
 | ny            | Chichewa  | 

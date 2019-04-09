@@ -11,8 +11,8 @@ class,passthrough,[pbtdkgfvzhrljiounm],,,,
 class,accent_u,ü|ü,,,,
 class,punct,[-],,,,
 #
-# placeless preconsonantal nasal
-sub,{nasals},N,2,,{consonants},
+# placeless preconsonantal nasal (opt for the other approach, see Rmd problem 4 in Section 3.1)
+# sub,{nasals},N,2,,{consonants},
 #
 # ty, gy, ly, ny
 sub,t,c,2,,y,
