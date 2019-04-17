@@ -1,5 +1,8 @@
 ---
-  title: Tagalog
+title: "Tagalog"
+author: "Abi Creighton"
+bibliography: tl.bib
+output: html_document
 ---
 #Background
 **Language family**: Austronesian / Philippine / Central Philippine / Tagalog

@@ -1,5 +1,8 @@
 ---
-title: Zulu
+title: "Zulu"
+author: "Abi Creighton"
+bibliography: zu.bib
+output: html_document
 ---
 #Background
 **Language family**: Niger-Congo / Atlantic-Congo / Benue-Congo / Southern Bantoid / Bantu / Southern Bantu / Nguni / Zunda / Zulu

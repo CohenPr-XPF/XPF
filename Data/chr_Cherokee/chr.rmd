@@ -1,5 +1,8 @@
 ---
-  title: Cherokee
+title: "Cherokee"
+author: "Abi Creighton"
+bibliography: chr.bib
+output: html_document
 ---
 #Background
 **Language family**: Iroquoian / Southern Iroquian / Cherokee

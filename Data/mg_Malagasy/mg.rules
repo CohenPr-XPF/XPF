@@ -1,6 +1,6 @@
 #Malagasy
 #Written by Abi Creighton
-#Updated 8 Apr. 2019
+#Updated 10 Apr. 2019
 type,sfrom,sto,weight,precede,follow,comment
 class,passthrough,"[abdefghiklmnprstvz]",,,,
 class,alvstop,"[td]",,,,
@@ -20,9 +20,9 @@ sub,y,,2,s,,
 sub,t,ts,1,,s,
 sub,s,,3,t,,
 sub,t,tʃ,1,,sy,
-#Retroflex consonants
-sub,t,ʈʳ,2,,r,
-sub,d,ɖʳ,2,,r,
+#Rhotics
+sub,t,tʳ,2,,r,
+sub,d,dʳ,2,,r,
 sub,r,,2,{alvstop},,
 sub,n,ɳ,2,,{alvstop}r,
 #Prenasalization rules
@@ -46,6 +46,7 @@ sub,ô,o,1,,,
 sub,{o},o,2,,a,
 sub,a,,1,{o},,
 sub,y,i,1,,,
+#Diphthong rules
 sub,i,j,2,{aeo},,
 sub,y,j,2,{aeo},,
 sub,o,w,2,a,,

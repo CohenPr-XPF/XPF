@@ -1,0 +1,119 @@
+---
+title: "Bulgarian"
+author: "Bill Mizgerd"
+bibliography: bg.bib
+output: html_document
+---
+
+Last Updated: 2019-04-12
+
+# Background
+
+**Language Family**: Indo-European / Balto-Slavic / Slavic / South Slavic / Eastern South Slavic / Bulgarian
+
+# Phonology
+
+## Consonants
+
+All consonants (except for postalveolars) also have palatalized forms in Bulgarian. The palatalization distinctions are frequently held to be phonemic, but due to their relative scarcity (fairly few words with >100 instances in Crubadan) and their limited distribution (the contrast only occurs before non-front vowels, per @BgScatton1983, p. 64), such an analysis would be problematic for this project. Instead, I have opted to follow an alternate analysis that treats the palatalized consonants as sequences of the non-palatalized form and /j/.
+
+@BgHauge1999 lists the non-palatalized lateral approximant in Bulgarian as /ɫ/, while most other authors prefer /l/; however, Scatton describes the same approximant as "markedly velarized except before front vowels" [@BgScatton1993, p. 190]. The combination of these opinions has made the /ɫ/ analysis more compelling to me.
+
+Outside of the aforementioned palatalization sequences, /j/ mostly appears immediately after vowels [@BgScatton1983, p. 65], but can also appear word-initially [@BgScatton1993, p. 191].
+
+### By place of articulation
+
+**Nonpalatalized**
+
+Labial: /p/, /b/, /m/, /f/, /v/  
+Alveodental: /t/, /d/, /n/, /s/, /z/, /ts/, /r/, /ɫ/  
+Postalveolar: /ʃ/, /ʒ/, /tʃ/, /dʒ/  
+Velar: /k/, /ɡ/, /x/  
+
+### By manner of articulation
+
+**Nonpalatalized**
+
+Stops: /p/, /b/, /t/, /d/, /k/, /ɡ/  
+Nasals: /m/, /n/  
+Fricatives: /f/, /v/, /s/, /z/, /ʃ/, /ʒ/, /x/  
+Affricates: /ts/, /tʃ/, /dʒ/  
+Trills: /r/  
+Approximants: /ɫ/  
+
+Voiceless stops are aspirated in word-initial prevocalic contexts. [@BgKlagstad1958, p. 47, 49]
+
+## Vowels
+
+Front: /i/, /e/  
+Central: /ə/, /a/  
+Back: /u/, /o/  
+
+Klagstad describes many of the listed vowel phonemes as not in fact being the underlying allophones of their phonemes: his analysis sees [ɛ], [ɔ], and [ɑ] as being underlying rather than /e/, /o/, and /a/. He also describes /ə/ as being realized as [ɯ] in "all positions." [@BgKlagstad1958, pp. 44-45]
+
+/ə/ is described in a wide variety of ways by different sources, including /ŭ/ [@BgScatton1983] and /ā/ [@BgScatton1993]; I have opted for /ə/, the preferred choice of @BgKlagstad1958 and @BgGroen1988, as a realistic "median" answer.
+
+Geminate vowels do not phonemically reduce in Bulgarian. [@BgGroen1988, p. 186]
+
+## Stress
+
+Stress can occur on any syllable of a word. [@BgScatton1993, p. 193]
+
+Stress is sometimes orthographically marked with an acute accent, but does not seem to carry any phonemically contrastive content. [@BgHauge1999, preface]
+
+Unstressed vowels reduce to one of /i/, /ə/, or /u/, based on their degree of backing. [@BgHauge1999, p. 1]
+
+# Alphabet
+
+Non-palatalized variants of each character are listed as the "default" in this section; for rules on how to mark palatalization, see the following subsection.
+
+а - /a/  
+б - /b/  
+в - /v/  
+г - /ɡ/  
+д - /d/  
+е - /e/  
+ж - /ʒ/  
+з - /z/  
+и - /i/  
+й - /j/  
+к - /k/  
+л - /ɫ/  
+м - /m/  
+н - /n/  
+о - /o/  
+п - /p/  
+р - /r/  
+с - /s/  
+т - /t/  
+у - /u/  
+ф - /f/  
+х - /x/  
+ц - /ts/  
+ч - /tʃ/  
+ш - /ʃ/  
+щ - /ʃt/  
+ъ - /ə/  
+ь - no phonemic value; marks palatalization of preceding consonant  
+ю - /ju/; marks palatalization of preceding consonant  
+я - /ja/; marks palatalization of preceding consonant  
+
+## Palatalization Orthography
+
+Palatalized consonants are not represented by specific standalone graphemes; instead, specific characters are used to mark that the preceding consonant should be palatalized [@BgHauge1999, p. 8]. Such examples are detailed above.
+
+# Lenition Rules
+
+* In consonant clusters, obstruents assimilate to the voicing of the final obstruent in the cluster, and may yield non-phonemic sounds (e.g. /dz/); however, this pattern does not consistently occur before /v/ or /vʲ/. [@BgKlagstad1958, pp. 47-48] [@BgScatton1983, p. 58, 73]
+* /n/ assimilates to [ŋ] before velars [@BgKlagstad1958, p. 48]; /m/ assimilates to [ɱ] before labiodentals. [@BgHauge1999, p. 4]
+* /l/ fronts before front vowels. [@BgKlagstad1958, p. 48]
+* Vowels nasalize when followed by first a nasal consonant and then a fricative. [@BgHauge1999, p. 1]
+* /j/ deletes before front vowels [@BgHauge1999, p. 11], as well as after palatalized consonants. [@BgScatton1983, pp. 76-77]
+* Geminate consonants tend to simplify across morpheme boundaries. [@BgScatton1983, p. 71]
+* /s/ deletes when preceded by a sibilant and followed by /k/. [@BgScatton1983, p. 77]
+
+# Misc. Rules
+
+* /u/ fronts to [y] after palatalized consonants [@BgKlagstad1958, p. 44]
+* Palatalized consonants followed by /a/ tend to alternate with their non-palatalized counterparts before /e/. [@BgHauge1999, p. 9]
+* Consonants devoice word-finally. [@BgScatton1983, p. 73]

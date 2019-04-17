@@ -1,5 +1,8 @@
 ---
-title: Catalan
+title: "Catalan"
+author: "Abi Creighton"
+bibliography: ca.bib
+output: html_document
 ---
 #Background
 **Language family**: Indo-European / Italic / Romance / Western / Gallo-Romance / Occitano-Romance / Catalan / Central Catalan dialect
@@ -76,5 +79,5 @@ Z; z; /z/
 
 ###Deletion
 C[+obstruent α place] --> ∅ / C[α place]_#
-/r/ --> � / _#
+/r/ --> ? / _#
 
