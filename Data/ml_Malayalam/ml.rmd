@@ -1,0 +1,42 @@
+---
+title: "Malayalam"
+author: "Becky Mathew"
+bibliography: ml.bib
+output: html_document
+---
+
+# Background
+Malayalam, the official language of Kerala and Lakshadweep, is a Dravidian language from South India. It is also heavily influenced by Sanskrit, and in the modern day, has become influenced by English (introduction of /f/).
+
+**Language family**: Dravidian, Southern, Tamil-Kannada, Tamil-Kodagu, Tamil-Malayalam, Malayalam
+
+# Phonology
+## Consonants
+```{r echo = FALSE, results = 'asis'}
+library(knitr)
+bilabial <- c("p pʰ", "b bʱ", "m", 4, 5, 6, 7, 8, 9)
+labiodental <- c(1, 2, 3, 4, 5, 6, 7, "ʋ", 9)
+dental <- c("t̪ t̪ʰ", "d̪ d̪ʱ", "n̪", 4, 5, 6, 7, 8, 9)
+alveolar <- c(1, 2, "n", "r̥ r", "ɾ","s ʃ", "tʃ tʃʰ", 8, "l̥ l")
+retroflex <- c("ʈ ʈʰ","ɖ ɖʱ", "ɳ", 4, 5, "ʂ", 7, "ɻ", "ɭ")
+palatal <- c(1, "ɟ ɟʱ", "ɲ", 4, 5, 6, 7, 8, 9)
+velar <- c("k kʰ","g gʱ","ŋ", 4, 5, 6, 7, "j", 9)
+glottal <- c(1, 2, 3, 4, 5, "h", 7, 8, 9)
+consonants <- data.frame(bilabial, labiodental, dental, alveolar, retroflex, palatal, velar, glottal)
+row.names(consonants) <- c("Voiceless plosive", "Voiced plosive", "Nasal", "Trill", "Tap or Flap", "Fricative", "Affricate", "Approximant", "Lateral approximant")
+kable(consonants, caption = "Note: Two sounds may appear in the same cell if they have the same place and manner. Diacritics will distinguish them.")
+```
+
+Plosives have a four-way contrast (voiceless unaspirated, voiceless aspirated, voiced unaspirated, voiced aspirated) [@TEMU].
+
+Consonant length is contrastive [@Jiang2010].
+
+## Vowels
+
+Vowel length is contrastive. The Malalayam vowels include i, e, a, o, u, and their long counterparts. There are diphthongs /ai/ and /au/, which do not have a length contrast [@Mohanan1986].
+
+## Alphabet
+- Horizontal, left to right. 
+- There is no uppercase / lowercase.
+- A consonant letter carries an inherent /a/ or schwa after it, unless a diacritic changes that vowel.
+- Sometimes letters will combine with other letters or diacritics to form a single shape, but they are usually written separately.

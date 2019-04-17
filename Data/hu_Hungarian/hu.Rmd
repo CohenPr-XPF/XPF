@@ -29,7 +29,7 @@ bibliography: hu.bib
 **Adopted variety:** 
 ECH (Educated Colloquial Hungarian) [@ST]
 
-# Phonology and Orthography
+# Phonology
 
 ## Consonants [@ST, p 18-19; @IPA] {#con}
 
@@ -75,6 +75,52 @@ kable(hu_c, caption = 'Consonants',
 Marginal[^1]|a, e, \textipa{O:}, \textipa{E:}|
 
 [^1]: typically used for pronuncing letters in abbreviations and borrowed words [@ST, p 280]
+
+# Orthography
+A, a  
+Á, á  
+B, b  
+C, c  
+Cs, cs  
+D, d  
+Dz, dz  
+Dzs, dzs  
+E, e  
+É, é  
+F, f  
+G, g  
+Gy, gy  
+H, h  
+I, i  
+Í, í  
+J, j  
+K, k  
+L, l  
+Ly, ly  
+M, m  
+N, n  
+Ny, ny  
+O, o  
+Ó, ó  
+Ö, ö  
+Ő, ő  
+P, p  
+Q, q  
+R, r  
+S, s  
+Sz, sz  
+T, t  
+Ty, ty  
+U, u  
+Ú, ú  
+Ü, ü  
+Ű, ű  
+V, v  
+W, w  
+X, x  
+Y, y  
+Z, z  
+Zs, zs  
 
 ## Note on the Alphabet
 
