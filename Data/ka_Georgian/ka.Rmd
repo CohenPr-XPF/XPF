@@ -7,101 +7,100 @@ output: html_document
 
 #Background
     **Language Family** : Kartvelian / Karto-Zan / Georgian
-    
-    
+
+
 #Phonology
 
-##Consonants 
-      
+##Consonants
+
       ###Stops
           [pʰ]  [p']  [b]  [tʰ]  [t']  [d]  [kʰ]  [k']  [g] [q]
       ###Fricatives
           [v]  [s]  [z]  [ʃ]  [ʒ]  [x]  [ɣ]  [h]
-      ###Affricates 
+      ###Affricates
           [ts]  [ts']  [dz]  [tʃ]  [tʃ']  [dʒ]
       ###Sonorants
           [m]  [n]  [l]  [r/ɾ]   
 
 ##Vowels
-  
-        [i]  [ɛ]  [ɑ]  [ɔ]  [u] 
+
+        [i]  [ɛ]  [ɑ]  [ɔ]  [u]
 
 #Alphabet
-    
+
     ა	=	[ɑ]
-    
-    ბ	=	[b] 
-    
-    გ	=	[ɡ] 
-    
-    დ	=	[d] 
-    
-    ე	=	[ɛ] 
-    
-    ვ	=	[v] 
-    
-    ზ	=	[z] 
-    
-    თ	=	[tʰ] 
-    
-    ი	=	[i] 
-    
-    კ'=	[k'] 
-    
-    ლ	= [l] 
-    
-    მ	=	[m] 
-    
-    ნ	=	[n] 
-    
-    ო	=	[ɔ] 
-    
+
+    ბ	=	[b]
+
+    გ	=	[ɡ]
+
+    დ	=	[d]
+
+    ე	=	[ɛ]
+
+    ვ	=	[v]
+
+    ზ	=	[z]
+
+    თ	=	[tʰ]
+
+    ი	=	[i]
+
+    კ=	[k'] 
+
+    ლ	= [l]
+
+    მ	=	[m]
+
+    ნ	=	[n]
+
+    ო	=	[ɔ]
+
     პ	=	[pʼ]
-    
-    ჟ	=	[ʒ] 
-    
-    რ	=	[r] 
-    
-    ს	=	[s] 
-    
-    ტ	=	[tʼ] 
-    
-    უ	=	[u] 
-    
+
+    ჟ	=	[ʒ]
+
+    რ	=	[r]
+
+    ს	=	[s]
+
+    ტ	=	[tʼ]
+
+    უ	=	[u]
+
     ფ	=	[pʰ]
-    
+
     ქ	=	[kʰ]
-    
+
     ღ	=	[ɣ]
-    
+
     ყ	=	[q']
-    
+
     შ	=	[ʃ]
-    
+
     ჩ	=	[t͡ʃʰ]
-    
+
     ც	=	[t͡sʰ]
-    
+
     ძ	=	[d͡z]
-    
+
     წ	=	[t͡sʼ]
-    
+
     ჭ	=	[t͡ʃʼ]
-    
+
     ხ	=	[x]
-    
+
     ჯ	= [d͡ʒ]
-    
+
     ჰ	=	[h]
-    
+
 # Lenition
-    
+
     [v] --> /w/ / in coda and C_
     [v] --> [f] / _C[devoiced]
-    
-    [v] can glide to /w/ at the end of syllables and after consonants, and [v] is also sometimes realizes as [f] before voiceless consonants 
-    
-    [q] --> /χ/ / V_V
-    
-    [q] can sometimes soften to a uvular fricative in between vowels
 
+    [v] can glide to /w/ at the end of syllables and after consonants, and [v] is also sometimes realizes as [f] before voiceless consonants
+
+    [q] --> /χ/ / V_V
+
+    [q] can sometimes soften to a uvular fricative in between vowels
