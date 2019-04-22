@@ -36,9 +36,12 @@
 | nd| Northern Ndebele | insufficient tokens                        | 
 | mi| Maori            | non-transparent spelling with vowel length | 
 | mas| Maasai           | insufficient tokens                        | 
-lt|Lithuanian            |non-transparent spelling with tones|
-lv|Latvian              |non-transparent spelling with tones|
+| lt |Lithuanian            |non-transparent spelling with tones|
+| lv |Latvian              |non-transparent spelling with tones|
 | is | Icelandic        | non-transparent spelling                   | 
 | gl | Galician         | non-transparent spelling                   | 
 | fi | Finnish          | non-transparent spelling                   | 
-|pl|Polish|non-transparent spelling|
+| pl |Polish            |non-transparent spelling|
+| om |Oromo             |insufficient tokens     |
+| am |Amharic           |non-transparent spelling  |
+| ti  |Tigrinya          |non-transparent spelling|
