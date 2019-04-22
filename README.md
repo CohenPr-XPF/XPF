@@ -4,6 +4,7 @@
 | language code | language  | 
 |---------------|-----------| 
 | ay            | Aymara    | 
+| bg            | Bulgarian |
 | ca            | Catalan   | 
 | chr           | Cherokee  | 
 | cy            | Welsh     | 
@@ -13,16 +14,18 @@
 | jv            | Javanese  | 
 | ka            | Georgian  | 
 | ko            | Korean    | 
-|mg             | Malagasy   |
+| mg            | Malagasy  |
 | mt            | Maltese   | 
 | nhe           | Nahuatl   | 
 | ny            | Chichewa  | 
 | si            | Sinhala   | 
 | sw            | Swahili   | 
+| tk            | Turkmen   |
 | tl            | Tagalog   | 
 | tr            | Turkish   | 
 | tt            | Tatar     | 
 | ug            | Uyghur    | 
+| vi            | Vietnamese|
 | zu            | Zulu      | 
 
 

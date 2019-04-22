@@ -1,0 +1,27 @@
+#Turkmen (Latin script)
+#Written by Abi Creighton
+#Updated 17 Apr. 2019
+type,sfrom,sto,weight,precede,follow,comment
+class,passthrough,"[bfgklmnop]",,,,
+sub,a,ɑ,1,,,
+sub,ç,tʃ,1,,,
+sub,d,d̪,1,,,
+sub,e,ɛ,1,,,
+sub,ä,æ,1,,,
+sub,h,x,1,,,
+sub,i,ɪ,1,,,
+sub,j,dʒ,1,,,
+sub,ž,ʒ,1,,,
+sub,ň,ŋ,1,,,
+sub,ö,œ,1,,,
+sub,r,ɾ,1,,,
+sub,s,θ,1,,,
+sub,ş,ʃ,1,,,
+sub,t,t̪,1,,,
+sub,u,ʊ,1,,,
+sub,ü,ʏ,1,,,
+sub,w,β,1,,,"only in Russian loanwords"
+sub,y,ɯ,1,,,
+sub,ý,j,1,,,
+sub,z,ð,1,,,
+sub,({passthrough}),\1,0.1,,,
