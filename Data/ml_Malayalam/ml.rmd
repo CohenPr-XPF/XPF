@@ -18,9 +18,9 @@ bilabial <- c("p pʰ", "b bʱ", "m", 4, 5, 6, 7, 8, 9)
 labiodental <- c(1, 2, 3, 4, 5, 6, 7, "ʋ", 9)
 dental <- c("t̪ t̪ʰ", "d̪ d̪ʱ", "n̪", 4, 5, 6, 7, 8, 9)
 alveolar <- c(1, 2, "n", "r̥ r", "ɾ","s ʃ", "tʃ tʃʰ", 8, "l̥ l")
-retroflex <- c("ʈ ʈʰ","ɖ ɖʱ", "ɳ", 4, 5, "ʂ", 7, "ɻ", "ɭ")
-palatal <- c(1, "ɟ ɟʱ", "ɲ", 4, 5, 6, 7, 8, 9)
-velar <- c("k kʰ","g gʱ","ŋ", 4, 5, 6, 7, "j", 9)
+retroflex <- c("ʈ ʈʰ","ɖ ɖʱ", "ɳ", 4, 5, "ʂ", 7, "ɻ", "ɭ­")
+palatal <- c(1, "ɟ ɟʱ", "ɲ", 4, 5, 6, 7, "j", 9)
+velar <- c("k kʰ","g gʱ","ŋ", 4, 5, 6, 7, 8, 9)
 glottal <- c(1, 2, 3, 4, 5, "h", 7, 8, 9)
 consonants <- data.frame(bilabial, labiodental, dental, alveolar, retroflex, palatal, velar, glottal)
 row.names(consonants) <- c("Voiceless plosive", "Voiced plosive", "Nasal", "Trill", "Tap or Flap", "Fricative", "Affricate", "Approximant", "Lateral approximant")
@@ -36,7 +36,76 @@ Consonant length is contrastive [@Jiang2010].
 Vowel length is contrastive. The Malalayam vowels include i, e, a, o, u, and their long counterparts. There are diphthongs /ai/ and /au/, which do not have a length contrast [@Mohanan1986].
 
 ## Alphabet
-- Horizontal, left to right. 
+- Horizontal, left to right.
 - There is no uppercase / lowercase.
 - A consonant letter carries an inherent /a/ or schwa after it, unless a diacritic changes that vowel.
 - Sometimes letters will combine with other letters or diacritics to form a single shape, but they are usually written separately.
+
+Initial vowels and diacritics  
+* /a/ = അ  
+* /a ː/ = ആ, ാ  
+* /i/ = ഇ, ി  
+* /i ː/ = ഈ, ീ  
+* /e/ = എ,  െ  
+* /e ː/ = ഏ, േ  
+* /u/ = ഉ, ു  
+* /u ː/ = ഊ, ൂ  
+* /ai/ = ഐ, ൃ  
+* /o/ = ഒ, ൊ  
+* /o ː/ = ഓ,ോ  
+* /au/ = ഔ, ൌ, ൗ    
+* /r̥ i/ = ഋ  
+* /r̥ i ː/ = ൠ  
+* /l̥ i/ = ഌ, ൢ  
+* /l̥ i ː/ = ൡ, ൣ  
+* /∅/ = ് (this letter is called a virama, and itremoves the vowel before)  
+
+Consonants with an inherent /a/ following
+* /k a/ = ക  
+* /kʰ a/ = ഖ  
+* /g a/ = ഗ  
+* /gʱ a/ = ഘ  
+* /ŋ a/ = ങ  
+* /tʃ a/ = ച  
+* /tʃʰ a/ = ഛ  
+* /ɟ a/ = ജ  
+* /ɟʱ a/ = ഝ  
+* /ɲ a/ = ഞ  
+* /ʈ a/ = ട  
+* /ʈʰ a/ = ഠ  
+* /ɖ a/ = ഡ  
+* /ɖʱ a/ = ഢ  
+* /ɳ a/ = ണ  
+* /t̪ a/ = ത  
+* /t̪ʰ a/ = ഥ  
+* /d̪ a/ = ദ  
+* /d̪ʱ a/ = ധ  
+* /n̪ a/ = ന  
+* /n a/ = ഩ  
+* /p a/ = പ  
+* /pʰ a/ = ഫ  
+* /b a/ = ബ  
+* /bʱ a/ = ഭ  
+* /m a/ = മ  
+* /j a/ = യ  
+* /ɾ a/ = ര  
+* /r a/ = റ  
+* /l a/ = ല  
+* /ɭ a/ = ള  
+* /ɻ a/ = ഴ  
+* /ʋ a/ = വ  
+* /ʃ a/ = ശ  
+* /ʂ a/ = ഷ  
+* /s a/ = സ  
+* /h a/ = ഹ  
+
+Consonants without an inherent vowel following
+These kinds of consonants are called chillu or chilluksharam
+* /m/ = ം (this letter is called a anusvaram)  
+* /h/ = ഃ (this letter is called a visarga)  
+* /ɳ/ = ൺ  
+* /n̪/ = ൻ  
+* /r/ = ർ  
+* /l/ = ൽ  
+* /ɭ/ = ൾ  
+* /k/ = ൿ  

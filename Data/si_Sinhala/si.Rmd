@@ -5,7 +5,7 @@ bibliography: si.bib
 
 # Background
 
-Sinhala exhibits diglossia, where the written form contrasts greatly with the spoken form of Sinhala. Written Sinhala is reserved for formal communication, and does not use Sinhala slang or taboo terms. Although spoken Sinhala has various dialects, I've chosen to base my phonology off of formal speech. 
+Sinhala exhibits diglossia, where the written form contrasts greatly with the spoken form of Sinhala. Written Sinhala is reserved for formal communication, and does not use Sinhala slang or taboo terms. Although spoken Sinhala has various dialects, I've chosen to base my phonology off of formal speech.
 
 **Language family**: Indo-European, Indo-Aryan, Sinhalese-Maldivian
 
@@ -14,18 +14,18 @@ Sinhala exhibits diglossia, where the written form contrasts greatly with the sp
 <!-- This is incorrect -->
 ```{r echo = FALSE, results = 'asis'}
 library(knitr)
-Bilabial <- c("p b","  m","","","","","")
-Labiodental <- c("","","","","f  ","  ??","")
-Dental <- c("t d","","","","","","")
-Alveolar <- c("","  n","  r","t?? d??","s  ","","  l")
-Postalveolar <- c("","","","","??","","")
-Retroflex <- c("?? ??","","","","","","")
+Bilabial <- c("p b ᵐb","  m","","","","","")
+Labiodental <- c("","","","","f  ","  ʋ","")
+Dental <- c("t̪ d̪ ⁿd̪","","","","","","")
+Alveolar <- c("","  n","  r","tʃ dʒ","s  ","","  l")
+Postalveolar <- c("","","","","ʃ","","")
+Retroflex <- c("ʈ ɖ ⁿɖ","","","","","","")
 Palatal <- c("  j","  ??","","","","","")
 Velar <- c("k g","  ??","","","","","")
 Glottal <- c("","","","","h  ","","")
 consonants <- data.frame(Bilabial,Labiodental,Dental,Alveolar,Retroflex, Palatal, Velar, Glottal)
 rownames(consonants) <- c("Plosive","Nasal","Trill", "Affricate","Fricative","Approximant","Lateral approximant")
-kable(consonants, caption = "Note: When two consonants appear together in a cell, the left is voiceless and the right is voiced. The IPA sdoesn't display correctly.")
+kable(consonants, caption = "Note: When two consonants appear together in a cell, the left is voiceless and the right is voiced. When three consonants appear together in a cell, the leftmost is voiceless, the middle is voiced, and the rightmost is prenasalized and voiced.")
 ```
 
 [@Chandralal2010]
@@ -39,23 +39,72 @@ kable(consonants, caption = "Note: When two consonants appear together in a cell
 - [f] is borrowed from English
 
 ## Vowels
-- Word-initially, vowels appear as their own letters in the orthography. 
-- Otherwise, the vowels appear as diacritics on the consonant that's part of the same syllable. 
+- Word-initially, vowels appear as their own letters in the orthography.
+- Otherwise, the vowels appear as diacritics on the consonant that's part of the same syllable.
 - Sources say there are seven vowel phonemes: i, e, ae, ??, u, o, a.
-- However, [??] and [a] are in complementary distribution, and their realization depends on the phonological environment, which leads me to believe that they are allophones. The underlying form is /a/. 
+- However, [??] and [a] are in complementary distribution, and their realization depends on the phonological environment, which leads me to believe that they are allophones. The underlying form is /a/.
 - Vowel length is a contrastive feature, so there are also long versions of the previous six vowels.
 - Sources conflict on what and how many dipthongs there are, but I will say there are two dipthongs, ai and au (which are represented in the orthography). These do not have a length feature.
 
 ### Vowel Clusters
-- Disanayaka's "The Structure of Spoken Sinhala" suggests that vowel clusters may occur in Sinhala, yet later references don't always agree with this. I interviewed a consultant (born and raised in Colombo, Sinhala) who speaks and reads Standard Sinhala, and the only vowel clusters she spoke was [a i] and [a u] (which is consistent with the orthography). The other vowel clusters suggested by the book usually have a [j] or labiodental approximant in between them, which are pronounced very quickly in normal speech. 
+- Disanayaka's "The Structure of Spoken Sinhala" suggests that vowel clusters may occur in Sinhala, yet later references don't always agree with this. I interviewed a consultant (born and raised in Colombo, Sinhala) who speaks and reads Standard Sinhala, and the only vowel clusters she spoke was [a i] and [a u] (which is consistent with the orthography). The other vowel clusters suggested by the book usually have a [j] or labiodental approximant in between them, which are pronounced very quickly in normal speech.
 
 [@Disanayaka1991]
 
 ## Alphabet
 - Syllabic alphabet.
-- Horizontal, left to right. 
+- Horizontal, left to right.
 - There is no uppercase / lowercase.
 
+Initial vowels and diacritics  
+* /a/ = අ  
+* /a ː/ = ආ, ා  
+* /æ/ = ඇ, ැ  
+* /æ ː/ = ඈ, ෑ  
+* /i/ = ඉ, ි  
+* /i ː/ = ඊ, ී  
+* /u/ = උ, ු  
+* /u ː/ = ඌ, ූ    
+* /r i/ = ඍ, ෘ  
+* /r i ː/ = ඎ, ෲ  
+* /e/ = එ, ෙ  
+* /e ː/ = ඒ, ේ  
+* /ai/ = ඓ, ෛ  
+* /o/ = ඔ, ො  
+* /o ː/ = ඕ,  
+* /au/ = ඖ, ෝ  
+* /ŋ/ = ං this letter is also called an anusvara  
+* /ø/ = ඃ this letter came from another orthography originally, and it's called a visarga  
+* /ø/ = ් this letter deletes the vowel that comes before it  
+
+Consonants with an inherent /a/ following  
+* /k a/ = ක, ඛ  
+* /g a/ = ග ඝ  
+* /ŋ a/ = ඞ  
+* /ᵑg a/ = ඟ  
+* /tʃ a/ = ච, ඡ  
+* /dʒ a/ = ජ, ඣ  
+* /ɲ a/ = ඤ  
+* /ʈ a/ = ට, ඨ  
+* /ɖ a/ = ඩ, ඪ  
+* /n a/ = ණ, න  
+* /ⁿɖ a/ = ඬ  
+* /t̪ a/ = ත, ථ  
+* /d̪ a/ = ද, ධ  
+* /ⁿd̪ a/ = ඳ  
+* /p a/ = ප, ඵ  
+* /b a/ = බ, භ  
+* /m a/ = ම  
+* /ᵐb a/ = ඹ  
+* /j a/ = ය  
+* /r a/ = ර  
+* /l a/ = ල,ළ  
+* /ʋ a/ = ව  
+* /ʃ a/ = ශ, ෂ  
+* /s a/ = ස  
+* /h a/ = හ  
+* /f a/ = ෆ  
+s
 ## Lenition Rules
 "Weakened articulation of intervocalic single consonants is very common and is applicable to (a) all stops except retroflex (b) nasals and (c) the semi-vowel /w/."
 
