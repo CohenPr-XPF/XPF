@@ -1,12 +1,18 @@
 #Central Catalan
 #Written by Abi Creighton
 #Updated 04 Dec. 2018
+#Edited by Shiying Yang
+#Edited 07 May 2019
 type,sfrom,sto,weight,precede,follow,comment
 class,front,"(e|è|é|i|í|ï)",,,,
 class,cdot,"(·|•|᛫|•|∙|⋅)",,,,
 class,vowel,"(a|e|i|o|u)",,,,
 class,consonant,"(b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z)",,,,
 class,passthrough,"[abdfghiklmnpstuwz]",,,,
+#
+#edit
+class,l_with_cdot,"ŀ",,,,
+#
 sub,à,a,1,,,
 sub,c,s,1,,{front},
 sub,c,k,0.5,,,
@@ -34,6 +40,11 @@ sub,l,ʎ,1,,l,
 sub,l,,1,l,,
 #Next three rules: 2 l's separated by a middot become a geminate
 sub,l,lː,1,,{cdot},
+#
+#edit
+sub,{l_with_cdot},lː,1,,l,
+sub,l,,1,{l_with_cdot},,
+#
 sub,{cdot},,1,l,,
 sub,l,,1,{cdot},,
 sub,n,ɲ,1,,y,
