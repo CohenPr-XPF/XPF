@@ -1,20 +1,23 @@
 # XPF
 
 ## Available Languages
-| language code | language  | 
-|---------------|-----------| 
+| language code | language  | comments      |
+|---------------|-----------| --------------|
 | ay            | Aymara    | 
 | bg            | Bulgarian |
 | ca            | Catalan   | 
+| cho           | Choctaw   |               |
 | chr           | Cherokee  | 
-| cy            | Welsh     | 
+| cy            | Welsh     | under revision|
+| el            | Greek     | lacks lenition|
 | eu            | Basque    | 
 | gn            | Guarani   | 
 | hu            | Hungarian | 
 | jv            | Javanese  | 
-| ka            | Georgian  | 
+| ka            | Georgian  | under revision|
 | ko            | Korean    | 
 | mg            | Malagasy  |
+| ml            | Malayalam |               |
 | mt            | Maltese   | 
 | nhe           | Nahuatl   | 
 | ny            | Chichewa  | 
@@ -22,7 +25,7 @@
 | sw            | Swahili   | 
 | tk            | Turkmen   |
 | tl            | Tagalog   | 
-| tr            | Turkish   | 
+| tr            | Turkish   | under revision|
 | tt            | Tatar     | 
 | ug            | Uyghur    | 
 | vi            | Vietnamese|
@@ -47,4 +50,5 @@
 | pl |Polish            |non-transparent spelling|
 | om |Oromo             |insufficient tokens     |
 | am |Amharic           |non-transparent spelling  |
-| ti  |Tigrinya          |non-transparent spelling|
+| ti  |Tigrinya          |non-transparent spelling|                  
+|bn |Bengali |non-transparent spelling|

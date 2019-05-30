@@ -1,0 +1,121 @@
+---
+title: "Greek"
+author: "Shiying Yang"
+date: "4/29/2019"
+output:
+  pdf_document:
+    dev: cairo_pdf
+    keep_tex: yes
+    latex_engine: xelatex
+    number_sections: yes
+  html_document:
+    df_print: paged
+geometry: margin=1.2in
+header-includes:
+- \usepackage{setspace}\doublespacing
+- \usepackage{tipa}
+mainfont: DejaVu Serif
+fontsize: 12pt
+tables: yes
+bibliography: el.bib
+---
+# Background
+
+**Language family:** 
+
+* Indo-European
+  + Hellenic/Greek
+
+**Adopted variety:** 
+Standard Modern Greek
+
+# Phonology
+```{r, echo=F, include=FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+## Consonants [@IPA, p 1] {#con}
+general mapping of phonemes and orthography
+
+```{r el_con, echo=F, tab.cap = NULL, results='asis'}
+el_c <- read.csv('el_c.csv')
+#colnames(jp_c)[c(1:2,5)] <- c(' ', '  ', 'alveolo-palatal')
+c_position <- c('labial', 'dental', 'alveolar', 'velar')
+c_colname <- paste(c_position, 'O', sep = ',')
+c_colname_in_table <- unlist(strsplit(c_colname, ','))
+
+kable(el_c, caption = 'Consonants', 
+      align = "c", longtable = T, 
+      digits = 3, format = 'latex', 
+      booktabs = T, col.names = c(' ', 'Voicing', c_colname_in_table)) %>% 
+  collapse_rows(columns = c(1), valign = 'middle', latex_hline = 'custom', custom_latex_hline = 1) %>%
+  kable_styling("striped", full_width = T)
+```
+
+## Vowels [@IPA] {#v}
+/i ε  ɐ o u/
+
+# Orthography
+Α,α,ά  
+Β,β  
+Γ,γ   
+Δ,δ  
+Ε,ε,Έ,έ    
+Ζ,ζ  
+Η,η,Ή,ή  
+Θ,θ  
+Ι,ι,Ί,ί,Ϊ,ϊ,Ḯ,ΐ  
+Κ,κ  
+Λ,λ   
+Μ,μ  
+Ν,ν  
+Ξ,ξ  
+Ο,ο,Ό,ό  
+Π,π  
+Σ,ς/σ  
+Τ,τ  
+Υ,υ,Ύ,ύ,Ϋ,ϋ,Ϋ́,ΰ      
+Φ,φ  
+Χ,χ  
+Ψ,ψ  
+Ω,ω,Ώ,ώ   
+
+## Correspondence between orthography and phonemes
+* Most consonant mappings are shown in table \ref{tab:el_con}, here are mappings for vowels, as well as consonant combinations that do not correspond to single phonemes.
+* Stressed vowels (shown by stress markings as seen in ά,έ,ή,ί,ό,ύ,ώ) are represented as the ipa symbol followed by a "1". e.g. /i1/  
+
+|orthography|pronunciation|
+|-----------|-------------|
+|ξ|/ks/|
+|ψ|/ps/|
+|α|/ɐ/|
+|ά|/ɐ1/|
+|ω/ο|/o/|
+|ώ/ό|/o1/|
+|ι/ϊ/η/υ/ϋ/οι/ει|/i/|
+|ί/ΐ/ή/ύ/ΰ/οί/εί|/i1/
+|ε/αι|/ε/|
+|έ/αί|/ε1/|
+|ου|/u/|
+|ού|/u1/|
+|αυ|/ɐf/|
+|αύ|/ɐ1f/|
+|ευ|/εv/|
+|εύ|/ε1v/|
+
+# Rules
+
+## Issues and representative phonological processes
+1. All but two diacritics are kept in the Standard Modern Greek
+- stress marking
+- umlaut
+2. Palatalization of velar consonants
+- Velar consonants /k/, /g/, /x/, /ɣ/ surface as palatal allophones [c], [ɟ], [ç], [ʝ] in front of high vowels /i/ and /ε/
+- [+velar, +consonantal] -> [+palatal]/__[+high, -consonantal]{\$ or [-back, -consonantal]}
+- [+velar, +consonantal][+high, -consonantal] -> [+palatal]/__[+back, -consonantal]
+
+## Lenition Processes
+
+# References {-}

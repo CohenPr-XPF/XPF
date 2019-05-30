@@ -1,0 +1,108 @@
+# Greek Rule Set
+# Shiying Yang
+# Last Updated: 2019-04-24
+type,sfrom,sto,weight,precede,follow,comment
+#
+# class rules
+#
+##consonants
+#
+class,m,[µμ],,,,
+class,p,π,,,,
+class,f,φ,,,,
+class,v,β,,,,
+class,n,ν,,,,
+class,t,τ,,,,
+class,s,[σς],,,,
+class,z,ζ,,,,
+class,ɾ,ρ,,,,
+class,l,λ,,,,
+class,k,κ,,,,
+class,x,χ,,,,
+class,ɣ,γ,,,,
+class,ks,ξ,,,,
+class,ps,ψ,,,,
+class,dh,δ,,,,
+#
+##vowels
+#
+class,a,[α],,,,
+class,a1,[ά],,,,
+class,o,[ωο],,,,
+class,o1,[ώό],,,,
+class,i,[ηιυϊϋ],,,,
+class,i1,[ήίύΐΰ],,,,
+class,preceding_i,[εο],,,,#segments preceding ι and become /i/
+#
+class,passthrough,[θε],,,,
+class,punct,[-'],,,,
+#
+# sub rules
+#
+##consonants
+#
+sub,{m},m,2,,,
+sub,{p},p,2,,,
+sub,{f},f,2,,,
+sub,{v},v,2,,,
+sub,{n},n,2,,,
+sub,{t},t,2,,,
+sub,{s},s,2,,,
+sub,{z},z,2,,,
+sub,{ɾ},ɾ,2,,,
+sub,{l},l,2,,,
+sub,{k},k,2,,,
+sub,{x},x,2,,,
+sub,{ɣ},ɣ,2,,,
+sub,{dh},ð,2,,,
+sub,{ks},k s,2,,,
+sub,{ps},p s,2,,,
+sub,{m},b,3,,{p},#μπ
+sub,{n},d,3,,{t},#ντ
+sub,{ɣ},g,3,,{k},#γκ
+sub,{p},,3,{m},,
+sub,{t},,3,{n},,
+sub,{k},,3,{ɣ},,
+##vowels
+#
+#singletons
+#
+sub,{a},ɐ,2,,,
+sub,{a1},ɐ1,2,,,
+sub,{o},o,2,,,
+sub,{o1},o1,2,,,
+sub,{i},i,2,,,
+sub,{i1},i1,2,,,
+sub,έ,ε1,2,,,
+#
+#combinations
+#
+sub,{preceding_i},i,3,,ι,#οι, ει
+sub,{preceding_i},i1,3,,ί,#οί, εί
+sub,ι,,3,{preceding_i},,
+sub,ί,,3,{preceding_i},,
+sub,{a},ε,3,,ι,#αι
+sub,{a},ε1,3,,ί,#αί
+sub,ι|ί,,3,{a},,
+#
+#υ and ύ
+#
+sub,ο,u,3,,υ,#ου
+sub,ο,u1,3,,ύ,#ού
+sub,υ,,3,ο,,
+sub,ύ,,3,ο,,
+sub,ύ,f,3,{a},,
+sub,ύ,v,3,ε,,
+sub,υ,f,3,{a},,#αυ
+sub,υ,v,3,ε,,#ευ
+sub,{a},ɐ1,3,,ύ,#αύ
+sub,ε,ε1,3,,ύ,#εύ
+#
+sub,({passthrough}),\1,1,,,
+sub,{punct},,1,,,
+#
+## ipasub
+#
+# no geminations
+#
+ipasub,(.) \1,\1,2,,,
