@@ -6,6 +6,7 @@
 | ay            | Aymara    | 
 | bg            | Bulgarian |
 | ca            | Catalan   | 
+| cbt           | Chayahuita|
 | cho           | Choctaw   |               |
 | chr           | Cherokee  | 
 | cy            | Welsh     | under revision|
@@ -15,6 +16,7 @@
 | hu            | Hungarian | 
 | jv            | Javanese  | 
 | ka            | Georgian  | under revision|
+| kk            | Kazakh    | 
 | ko            | Korean    | 
 | mg            | Malagasy  |
 | ml            | Malayalam |               |

@@ -1,0 +1,137 @@
+---
+title: "kk.rmd"
+author: "Abi Creighton"
+date: "May 1, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Background
+**Language family**: Turkic / Common Turkic / Kipchak / Kipchak-Nogai / Kazakh
+
+A Cyrllic script has tradtionally been used for Kazakh in Kazakhstan and Mongolial, but in 2017, the President of Kazakhstan announced that they would transition to using a Latin alphabet by 2025. The 2017 Latin script was revised against in 2018. Parts of China, Iran, and Afghanistan also use an Arabic script. The Cyrllic script and the 2018 Latin script are addressed here. 
+
+#Phonology
+
+##Consonants
+Source: (kirchner_kazakh_1998)
+
+###Consonants by place
+Bilabial: /m/, /p/, /b/
+Labiodental: /f/, /v/
+Alveolar: /n/, /t/, /d/, /s/, /z/, /l/, /ɾ/ 
+Palatal: /j/, /tɕ/, /ɕ/, /ʑ/
+Velar: /ŋ/, /k/, /g/, /w/
+Uvular: /q/, /x/, /ʁ/
+
+###Consonants by manner
+Nasal: /m/, /n/, /ŋ /
+Stop: /p/, /b/, /t/, /d/, /tɕ/, /k/, /g/, /q/
+Fricative: /f/, /v/, /s/, /z/, /ɕ/, /ʑ/, /x/
+Approximant: /l/, /j/, /w/
+Rhotic: /ɾ/
+
+##Vowels
+Front close: /ɪ/, /ʉ /
+Back close: /ə/, /ʊ/
+Front open: /e/, /æ/, /œ̝ /
+Back open: /ɑ/, /o/
+
+#Latin Alphabet
+A a: /ɑ/
+Á á: /æ/
+B b: /b/
+V v: /v/
+D d: /d/
+G g: /g/
+Ǵ ǵ: /ʁ/
+E e: /jɪ/
+Io ıo: /jo/
+J j: /ʑ/
+Z z: /z/
+I ı: /ɪj/, /əj/, /j/
+K k: /k/ 
+Q q: /q/
+L l: /l/
+M m: /m/
+N n: /n/
+Ń ń: /ŋ/
+O o: /wʊ/
+Ó ó: /wʏ/
+P p: /p/
+R r: /ɾ/
+S s: /s/
+T t: /t/
+Ý ý: /w/, /ʊw/, /ʏw/
+U u: /ʊ/
+Ú ú: /ʏ/
+F f: /f/
+H h: /q/, /χ/, /h/
+Ts ts: /ts/
+Ch ch: /tɕ/
+Sh sh: /ɕ/
+Y y: /ə/
+I i: /ɪ/
+Iý ıý: /jʉw/, /jʊw/
+Ia ıa: /jɑ, jæ/
+
+#Cyrillic Alphabet
+А а: /ɑ/
+Ә ә: /æ/
+Б б: /b/
+В в: /v/
+Г г: /g/
+Ғ ғ: /ʁ/
+Д д: /d/
+Е е: /jɪ/
+Ё ё: /jo/
+Ж ж: /ʑ/
+З з: /z/
+И и: /ɪj/, /əj/
+Й й: /j/
+К к: /k/ 
+Қ қ: /q/
+Л л: /l/
+М м: /m/
+Н н: /n/
+Ң ң: /ŋ/
+О о: /wʊ/
+Ө ө: /wʏ/
+П п: /p/
+Р р: /ɾ/
+С с: /s/
+Т т: /t/
+У у: /w/, /ʊw/, /ʏw/
+Ұ ұ: /ʊ/
+Ү ү: /ʏ/
+Ф ф: /f/
+Х х: /q/, /χ/
+Һ һ: /h/
+Ц ц: /ts/
+Ч ч: /tɕ/
+Ш ш: /ɕ/
+Щ щ: /ɕtɕ/
+Ъ ъ: -- (Originally denoted ultra short or reduced middle rounded vowel)
+Ы ы: /ə/
+І і: /ɪ/
+Ь ь: -- (Originally denoted short or reduced front vowel)
+Э э: /ɛ/
+Ю ю: /jʉw/, /jʊw/
+Я я: /jɑ, jæ/
+
+#Rules
+-Before or after ғ & қ and back vowels, и = /əj/
+-Before or after г & к and back vowels, у = /ʊw~əw/, и = /ɘj/ and у = /ʉw~ɘw/
+
+## Lenition
+* Some alternations between two consonants: /ž/~/̌ɡ/
+    ž is an apical fricative, IPA [ʒ] which is the weak counterpart of 
+    ɯ[š],IPA [ʃ]
+    Many pronounce it as [ǧ], IPA [dʒ]
+(manczak-wohlfeld_studies_2010)
+
+*  Between vowels, /b/ may be realised as a fricative
+(kirchner_kazakh_1998)
