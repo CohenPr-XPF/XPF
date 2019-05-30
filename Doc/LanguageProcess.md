@@ -1,13 +1,3 @@
----
-output: 
-   pdf_document:
-      latex_engine: xelatex
-geometry: margin=0.9in
-mainfont: DejaVu Serif
-monofont: DejaVu Sans Mono
-title: Language processing guidelines
----
-
 # General guidelines
 
 * Every language has an "owner": a single person responsible of
