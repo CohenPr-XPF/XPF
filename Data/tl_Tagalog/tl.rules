@@ -1,11 +1,17 @@
 #Tagalog
 #Written by Abi Creighton
 #Updated 27 Feb. 2019
+#Edited by Shiying Yang
+#Edited 13 May 2019
 type,sfrom,sto,weight,precede,follow,comment
 class,passthrough,"[abghiklmpsuw]",,,,
 class,vowel,"(a|e|i|o|u)",,,,
 class,front,"(i|e)",,,,
 class,consonant,"(b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z)",,,,
+#
+#edit
+class,apostrophe,',,,,
+#
 #Rules for individual letters
 sub,c,k,1,,,"only in loanwords"
 sub,c,s,2,,{front},"only in loanwords"
@@ -33,4 +39,8 @@ sub,n,ŋ,1,,g,
 sub,g,,1,n,,
 sub,s,ʃ,1,,y,
 sub,y,,1,s,,
+#
+#edit
+sub,{apostrophe},,2,,,
+#
 sub,({passthrough}),\1,0.1,,,

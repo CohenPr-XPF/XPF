@@ -1,6 +1,6 @@
 type,sfrom,sto,weight,precede,follow,comment
 # class rules
-class,ANUSVARA,ം,,,,only appears after vowels syllable-finally
+class,ANUSVARA,(ം|൦),,,,only appears after vowels syllable-finally
 class,VISARGA,ഃ,,,,only appears after vowels syllable-finally
 class,A,അ,,,,
 class,AA,ആ,,,,
@@ -54,6 +54,7 @@ class,SHA,ശ,,,,
 class,SSA,ഷ,,,,
 class,SA,സ,,,,
 class,HA,ഹ,,,,
+
 # the following letters are diacritics
 class,DIACRITICAA,ാ,,,,
 class,DIACRITICI,ി,,,,
@@ -74,13 +75,15 @@ class,VOCALICRR,ൠ,,,,mostly fallen out of use in modern writing fix this
 class,VOCALICLL,ൡ,,,,mostly fallen out of use in modern writing
 class,DIACRITICVOCALICL,ൢ,,,,mostly fallen out of use in modern writing
 class,DIACRITICVOCALICLL,ൣ,,,,mostly fallen out of use in modern writing
+
 # chillu consonants have no inherent vowel afterwards
 class,CHILLUNN,ൺ,,,,no inherent vowel after
-class,CHILLUN,ൻ,,,,no inherent vowel after
-class,CHILLURR,ർ,,,,no inherent vowel after
+class,CHILLUN,(ൻ|൯),,,,no inherent vowel after
+class,CHILLURR,(ർ|൪),,,,no inherent vowel after
 class,CHILLUL,ൽ,,,,no inherent vowel after
 class,CHILLULL,ൾ,,,,no inherent vowel after
 class,CHILLUK,ൿ,,,,no inherent vowel after
+
 sub,‌,,1,,,removing zero width non joiner
 sub,‍,,1,,,removing zero width joiner 
 sub,{ANUSVARA},m,1,,,only appears after vowels syllable-finally
@@ -136,6 +139,7 @@ sub,{SHA},ʃ a,1,,,
 sub,{SSA},ʂ a,1,,,
 sub,{SA},s a,1,,,
 sub,{HA},h a,1,,,
+
 # the following letters are diacritics
 sub,{DIACRITICAA},ERASE aː,1,,,
 sub,{DIACRITICI},ERASE i,1,,,
@@ -163,9 +167,13 @@ sub,{CHILLURR},r,1,,,no inherent vowel after
 sub,{CHILLUL},l,1,,,no inherent vowel after
 sub,{CHILLULL},ɭ,1,,,no inherent vowel after
 sub,{CHILLUK},k,1,,,no inherent vowel after
+
 # ipasub rules
 ipasub,eː ERASE aː,oː,8,,,changing ea (long) to o
 ipasub,e ERASE aː,o,8,,,changing ea to o
 ipasub,a ERASE,,7,,,removing the inherent vowel when there's a diacritic after
 ipasub,({consonantsIPA}) a ERASE \1,\1 ː,8,,,consonant gemination
 ipasub,r a ERASE r a,t a,9,,,alveolar voiceless unaspirated plosive
+ipasub,({consonantsIPA}) a ERASE \1ʰ,\1ʰ ː,8.5,,,fixing gemination rule  
+ipasub,({consonantsIPA}) a ERASE \1ʱ,\1ʱ ː,8.5,,,fixing gemination rule
+ipasub,ERASE,@,6,,,
