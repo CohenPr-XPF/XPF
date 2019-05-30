@@ -1,0 +1,36 @@
+#main {
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	padding: 20px;
+	border: 5px solid black;
+}
+
+.sel{
+	width: calc(50% - 10px);
+	height: 40px;
+	float: left;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.sel:hover {
+	background-color: grey;
+}
+
+#leftbutton {
+	margin-right: 5px;
+	cursor: default;
+	background-color: grey;
+}
+
+#rightbutton {
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+h4 {
+	margin-top: 10px;
+}
