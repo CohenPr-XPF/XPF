@@ -1,0 +1,110 @@
+---
+title: "Tamil"
+author: "Becky Mathew"
+bibliography: ta.bib
+output: html_document
+---
+
+# Background
+Tamil is a language primarily spoken in the Indian state Tamil Nadu, as well in the countries Sri Lanka, Malayasia, and Singapore. Tamil exhibits diglossia, wherein the written variety of the language is formal or literal, and the spoken variety of the language (which is more colloquial) is used in most other contexts. We used Standard Spoken Tamil for this project. 
+@JIPA2004
+
+**Language family**: Dravidian, Southern, Tamil-Kannada, Tamil-Kodagu, Tamil-Malayalam, Tamil @Crubadan
+
+# Phonology
+## Consonants
+Unlike other related languages, Tamil doesn't have voiced obstruents or aspirated consonants. Also, like other Dravidian languages, Tamil has multiple rhotic sounds and makes use of the retroflex place of articulation. All consonants carry an inherent /a/ following the consonant. 
+@JIPA2004
+
+```{r echo = FALSE, results = 'asis'}
+library(knitr)
+labial <- c("m","p","","","","ʋ","")
+dental <- c("","t̪","","","","","")
+alveolar <- c("n","","","(s)","ɾ","","l")
+postalveolar <- c("","","tʃ","(ʃ)","","","")
+retroflex <- c("ɳ","ʈ","","(ʂ)","","ɻ","ɭ")
+palatal <- c("","","","","","j","")
+velar <- c("","k","","","","","")
+glottal <- c("","","","h","","","")
+consonants <- data.frame(labial, dental, alveolar, postalveolar, retroflex, palatal, velar, glottal)
+rownames(consonants) <- c("nasal","stop","affricate","fricative","tap","approximant","lateral approximant")
+kable(consonants, caption = "Note: Phonemes in parentheses are borrowed from Sanskrit.")
+```
+
+* க - /k a/
+* ங - /n a/, (this letter always precedes nasal consonants, so it represents the allophone [ŋ])
+* ச - /tʃ a/
+* ஞ - /n a/ (this letter represents the allophone [ɲ])
+* ட - /ʈ a/
+* ண - /ɳ a/ 
+* த - /t̪ a/
+* ந -  / n a/ (this letter represents the allophone [n̪])
+* ப -  /p a/
+* ம - /m a/
+* ற - /ɾ a/ (in some dialects, this is pronounced with the trill [r])
+* ன - /n a/
+* ர  - /ɾ a/
+* ல - /l a/
+* ள - /ɭ a/
+* ழ - /ɻ a/
+* ய - /j a/
+* வ - /ʋ a/
+* ஃ - /k a/ (In some dialects, this is pronounced with [x] but in Standard Spoken Tamil [x] is an allophone of /k/. This character is often used to show aspiration from English loanwords and such.) 
+
+The following consonants are called grantha consonants, and they are used to represent phonemes that originally come from Sanskrit. 
+* ஜ - /dʒ a/
+* ஹ - /h a/
+* ஸ - /s a/
+* ஷ - /ʂ a/
+* ஶ - /ʃ a/
+
+## Vowels
+Tamil has five basic vowels (/i/, /e/, /a/, /o/, /u/) that can be contrastively long or short. Tamil also has two diphthongs: /aɪ/ and /aʊ/. 
+@JIPA2004
+
+The following letters can only appear word-initally.
+* அ - /a/
+* ஆ - /aː/
+* இ - /i/
+* ஈ - /iː/
+* உ - /u/
+* ஊ - /uː/
+* எ - /e/
+* ஏ - /eː/
+* ஐ - /aɪ/
+* ஒ - /o/
+* ஓ - /oː/
+* ஔ - /aʊ/
+
+The following letters are diacritics that attach to a consonant. Since consonants carry an inherent /a/, the diacritics replace that inherent /a/ with the vowel they represent. 
+* ா - /aː/
+* ி - /i/
+* ீ - /iː/
+* ு - /u/
+* ூ - /uː/
+* ெ - /e/
+* ே - /eː/
+* ை - /aɪ/
+* ொ - /o/
+* ோ - /oː/
+* ௌ - /aʊ/
+* ் - ∅ (erases the inherent vowel [a] after a consonant)
+
+## Lenition Rules
+Tamil most notably has lenition rules for obstruents post-nasally and intervocalically. When obstruent characters appear in geminate form intervocalically or after a nasal, the sound is pronounced the same as it would be word-initially (voiceless). It may be the case that geminates are also slightly longer. 
+@JIPA2004
+
+Otherwise, if the character appears by itself intervocalically or after a nasal there are a variety of different lenition processes that could occur. 
+
+```{r echo = FALSE, results = 'asis'}
+library(knitr)
+initial <- c("[k]","[ʈ]","[tʃ]","[t̪]","[p]")
+geminate_medial <- c("[k ː]","[ʈ ː]","[tʃ ː]","[t̪ ː]","[p ː]")
+intervocalic <- c("[g] or [x] or [h] or [ɦ] or [ɣ]","[ɖ]","[s]","[ð]","[b] or [ʋ] or [w]")
+after_nasal <- c("[g]","[ɖ]","[j]","[d̪]","[b]")
+lenition <- data.frame(initial, geminate_medial, intervocalic, after_nasal)
+rownames(lenition) <- c("velar", "retroflex", "postalveolar", "dental","labial")
+kable(lenition)
+```
+@Schiffman1999
+@JIPA2004
