@@ -2,6 +2,7 @@
 title: "Georgian"
 author: "Maddie Critz"
 date: "October 9, 2018"
+bibliography: ka.bib
 output: html_document
 ---
 
@@ -14,7 +15,8 @@ output: html_document
 ##Consonants
 
       ###Stops
-          [pʰ]  [p']  [b]  [tʰ]  [t']  [d]  [kʰ]  [k']  [g] [q]
+          [pʰ]  [p']  [b]  [tʰ]  [t']  [d]  [kʰ]  [k']  [g] [q']
+		  <!-- Becky changed the q to be ejective, based on @shosted_chikovani_2006 --> 
       ###Fricatives
           [v]  [s]  [z]  [ʃ]  [ʒ]  [x]  [ɣ]  [h]
       ###Affricates
@@ -60,7 +62,7 @@ output: html_document
 
     ჟ	=	[ʒ]
 
-    რ	=	[r]
+    რ	=	[ɾ] <!-- Becky changed this from a trill to a tap to match the rules -->
 
     ს	=	[s]
 

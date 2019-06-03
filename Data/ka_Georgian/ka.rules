@@ -8,21 +8,21 @@ class,v,ვ,,,,
 class,z,ზ,,,, 
 class,th,თ,,,,
 class,i,ი,,,, 
-class,k,კ,,,, 
+class,kejected,კ,,,,Becky changed the name of the class to match the other ejected consonants
 class,l,ლ,,,,
 class,m,მ,,,, 
 class,n,ნ,,,, 
 class,o,ო,,,, 
-class,peject,პ,,,, 
+class,pejected,პ,,,,Becky changed the name of the class to match the other ejected consonants
 class,zh,ჟ,,,, 
 class,r,რ,,,, 
 class,s,ს,,,, 
-class,teject,ტ,,,, 
+class,tejected,ტ,,,,Becky changed the name of the class to match the other ejected consonants 
 class,u,უ,,,, 
 class,ph,ფ,,,,
 class,kh,ქ,,,,
 class,voicedvelarfric,ღ,,,, 
-class,q,ყ,,,, 
+class,qejected,ყ,,,,Becky changed the name of the class to match the other ejected consonants
 class,sh,შ,,,, 
 class,ch,ჩ,,,, 
 class,ts,ც,,,, 
@@ -32,10 +32,16 @@ class,chejected,ჭ,,,,
 class,x,ხ,,,, 
 class,dg,ჯ,,,, 
 class,h,ჰ,,,, 
+# obsolete letters class rules -- Becky added this section
+class,he,ჱ,,,,
+class,hie,ჲ,,,,
+class,vie,ჳ,,,,
+class,qari,ჴ,,,,
+class,hoe,ჵ,,,,
 #sub rules
 sub,{ch},tʃ,1,,,,
 sub,{r},ɾ,1,,,,
-sub,{d},t,1,,,,
+sub,{d},d,1,,,,Becky changed this from [t] to [d] (based on ka.rmd and on the Shosted & Chikovani 2006 paper)
 sub,{i},i,1,,,,
 sub,{l},l,1,,,,
 sub,{o},ɔ,1,,,,
@@ -46,11 +52,11 @@ sub,{kh},kʰ,1,,,,
 sub,{a},ɑ,1,,,,
 sub,{m},m,1,,,,
 sub,{z},z,1,,,,
-sub,{k},k,1,,,,
+sub,{kejected},k',1,,,,Becky changed this from [k] to [k'] (based on ka.rmd and on the Shosted & Chikovani 2006 paper) 
 sub,{b},b,1,,,,
 sub,{n},n,1,,,,
 sub,{u},u,1,,,,
-sub,{q},q,1,,,,
+sub,{qejected},q',1,,,,Becky changed this from [q] to [q'] (based on ka.rmd and on the Shosted & Chikovani 2006 paper) 
 sub,{ph},pʰ,1,,,,
 sub,{g},g,1,,,,
 sub,{tsejected},ts',1,,,,
@@ -59,19 +65,16 @@ sub,{zh},ʒ,1,,,,
 sub,{dg},dʒ,1,,,,
 sub,{voicedvelarfric},ɣ,1,,,,
 sub,{v},v,1,,,,
-sub,{peject},p',1,,,,
+sub,{pejected},p',1,,,,
 sub,{ts},ts,1,,,,
 sub,{chejected},tʃ',1,,,,
 sub,{x},x,1,,,,
 sub,{h},h,1,,,,
 sub,{dz},dz,1,,,,
-sub,{teject},t',1,,,,
-
-
-
-
-
-
-
-
-
+sub,{tejected},t',1,,,,
+# obsolete letter sub rules -- Becky added this section
+sub,{he},e i,1,,,,
+sub,{hie},i,1,,,,
+sub,{vie},v i,1,,,,
+sub,{qari},x,1,,,,
+sub,{hoe},h ɔ i,1,,,,

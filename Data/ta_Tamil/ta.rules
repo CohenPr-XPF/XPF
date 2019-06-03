@@ -124,5 +124,7 @@ class,"consonantsIPA",(k|n|tʃ|ʈ|ɳ|t̪|p|m|r|ɾ|l|ɭ|ɻ|j|ʋ|s),,,,
 # ipasub rules about vowels
 ipasub,a ERASE,,7,,,removing the inherent vowel when there's a diacritic after
 ipasub,ERASE,@,0.5,,,there's a mistake
-ipasub,e AU2,aʊ,6,,,combining two diacritics for aʊ
+ipasub,e AU2,aʊ,6,,,combining two diacritics for [aʊ]
+ipasub,eː ERASE aː,oː,6,,,combining two diacritics for [oː] 
+ipasub,e ERASE aː,o,6,,,combining two diacritics for [o]
 ipasub,({consonantsIPA}) a ERASE \1,\1 ː,8,,,consonant gemination

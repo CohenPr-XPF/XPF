@@ -15,7 +15,7 @@
 | gn            | Guarani   | 
 | hu            | Hungarian | 
 | jv            | Javanese  | 
-| ka            | Georgian  | under revision|
+| ka            | Georgian  | 
 | kk            | Kazakh    | 
 | ko            | Korean    | 
 | mg            | Malagasy  |
@@ -25,6 +25,7 @@
 | ny            | Chichewa  | 
 | si            | Sinhala   | 
 | sw            | Swahili   | 
+| ta            | Tamil     |
 | tk            | Turkmen   |
 | tl            | Tagalog   | 
 | tr            | Turkish   | under revision|
