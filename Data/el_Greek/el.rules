@@ -34,7 +34,7 @@ class,i,[ηιυϊϋ],,,,
 class,i1,[ήίύΐΰ],,,,
 class,preceding_i,[εο],,,,#segments preceding ι and become /i/
 #
-class,passthrough,[θε],,,,
+#class,passthrough,[θε],,,,
 class,punct,[-'],,,,
 #
 # sub rules
@@ -73,7 +73,7 @@ sub,{o},o,2,,,
 sub,{o1},o1,2,,,
 sub,{i},i,2,,,
 sub,{i1},i1,2,,,
-sub,έ,ε1,2,,,
+sub,έ,ɛ1,2,,,
 #
 #combinations
 #
@@ -81,8 +81,8 @@ sub,{preceding_i},i,3,,ι,#οι, ει
 sub,{preceding_i},i1,3,,ί,#οί, εί
 sub,ι,,3,{preceding_i},,
 sub,ί,,3,{preceding_i},,
-sub,{a},ε,3,,ι,#αι
-sub,{a},ε1,3,,ί,#αί
+sub,{a},ɛ,3,,ι,#αι
+sub,{a},ɛ1,3,,ί,#αί
 sub,ι|ί,,3,{a},,
 #
 #υ and ύ
@@ -96,9 +96,11 @@ sub,ύ,v,3,ε,,
 sub,υ,f,3,{a},,#αυ
 sub,υ,v,3,ε,,#ευ
 sub,{a},ɐ1,3,,ύ,#αύ
-sub,ε,ε1,3,,ύ,#εύ
+sub,ε,ɛ1,3,,ύ,#εύ
 #
-sub,({passthrough}),\1,1,,,
+sub,θ,θ,1,,,
+sub,ε,ɛ,1,,,
+#sub,({passthrough}),\1,1,,,
 sub,{punct},,1,,,
 #
 ## ipasub
