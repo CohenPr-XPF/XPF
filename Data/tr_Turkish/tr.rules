@@ -1,3 +1,6 @@
+# Turkish
+# Written by: Justin
+# Last Updated: 2019-06-17
 type,sfrom,sto,weight,precede,follow,comment
 class,circumflex,"(â|û)",,,,
 class,vowel,"(a|e|i|o|u|â|û|ö|ı|ü)",,,,
@@ -20,7 +23,7 @@ sub,ş,ʃ,1,,,
 sub,y,j,1,,,
 sub,k,k ʲ,2,,{circumflex},
 sub,g,g ʲ,2,,{circumflex},
+sub,j,ʒ,1,,,
 class,consonant,"(b|d|f|g|h|k|l|m|n|p|s|t|v|z|dʒ|tʃ|ɾ|ʃ|j)",,,,
 ipasub,({consonant}) \1,\1 ː,2,,,
 sub,({passthrough}),\1,0.1,,,
-
