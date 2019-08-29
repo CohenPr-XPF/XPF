@@ -1,0 +1,70 @@
+---
+title: "Indonesian"
+author: "Justin Bai"
+bibliography: id.bib
+output: html_document
+---
+# Background
+**Language family**: Austronesian
+# Alphabet
+The Indonesian alphabet has the following letters: ⟨a⟩, ⟨b⟩, ⟨c⟩, ⟨d⟩, ⟨e⟩, ⟨f⟩, ⟨g⟩, ⟨h⟩, ⟨i⟩, ⟨j⟩, ⟨k⟩, ⟨l⟩, ⟨m⟩, ⟨n⟩, ⟨o⟩, ⟨p⟩, ⟨q⟩, ⟨r⟩, ⟨s⟩, ⟨t⟩, ⟨u⟩, ⟨v⟩, ⟨w⟩, ⟨x⟩, ⟨y⟩, ⟨z⟩.
+
+Some of these letters can come together to form digraphs.
+
+## Vowels
+Indonesian has six vowels, represented using five letters.
+* ⟨a⟩ = /a/
+* ⟨e⟩ = /e/, /ə/
+* ⟨i⟩ = /i/
+* ⟨o⟩ = /o/
+* ⟨u⟩ = /u/
+
+Note that ⟨e⟩ can represent two different vowels. The rules merge the two, representing only /e/.
+
+## Consonants
+* ⟨b⟩ = /b/
+* ⟨c⟩ = /tʃ/
+* ⟨d⟩ = /d/
+* ⟨f⟩ = /f~p/ (only in loanwords)
+* ⟨g⟩ = /g/
+* ⟨h⟩ = /h/
+* ⟨j⟩ = /dʒ/
+* ⟨k⟩ = /k/
+* ⟨l⟩ = /l/
+* ⟨m⟩ = /m/
+* ⟨n⟩ = /n/
+* ⟨p⟩ = /p/
+* ⟨q⟩ = /k/ (only in loanwords)
+* ⟨r⟩ = /r/
+* ⟨s⟩ = /s/
+* ⟨t⟩ = /t/
+* ⟨v⟩ = /v~f/ (only in loanwords)
+* ⟨w⟩ = /w/
+* ⟨x⟩ = /ks/ (only in loanwords)
+* ⟨y⟩ = /j/
+* ⟨z⟩ = /z/ (only in loanwords)
+
+### Digraphs
+* ⟨ng⟩ = /ŋ/
+* ⟨ny⟩ = /ɲ/
+* ⟨kh⟩ = /x/ (only in loanwords)
+* ⟨sy⟩ = /ʃ/ (only in loanwords)
+
+# Phonology
+## Vowels
+|      |  Front  | Central |   Back   |
+|------|:-------:|:-------:|:--------:|
+| High |   /i/   |         |    /u/   |
+| Mid  |   /e/   |   /ə/   |    /o/   |
+| Low  |         |   /a/   |          ‍|
+
+## Consonants
+* ⟨f⟩ is only found in loanwords may be optionally pronounced [p]. The rules reflect the /f/ pronunciation.
+* ⟨v⟩ is also only found in loanwords and may be pronounced as [v] or [f]. The rules reflect the [f] pronunciation, per @soderberg2008indonesian.
+
+* The digraphs ⟨kh⟩ /x/ and ⟨sy⟩ /ʃ/ are only found in loanwords. According to @soderberg2008indonesian, /x/ is generally being replaced by /k/ but since /x/ is preserved in older speakers, this phoneme is maintained in the rules.
+* There is a glottal stop but it only occurs phonetically.
+
+
+# Lenition
+* /k/ -> [ʔ] syllable finally

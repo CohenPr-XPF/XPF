@@ -1,0 +1,26 @@
+type,sfrom,sto,weight,precede,follow,comment
+class,passthrough,[aeioubdfghlmprtwz],,,,
+sub,c,tʃ,1,,,
+sub,j,dʒ,1,,,
+sub,q,k,1,,,
+sub,v,f,1,,,
+sub,x,k s,1,,,
+sub,y,j,1,,,
+
+sub,n,n,1,,,
+sub,n,ŋ,2,,g,
+sub,g,,2,n,,
+
+sub,n,n,1,,,
+sub,n,ɲ,2,,y,
+sub,y,,2,n,,
+
+sub,k,k,1,,,
+sub,k,x,2,,h,
+sub,h,,2,k,,
+
+sub,s,s,1,,,
+sub,s,ʃ,2,,y,
+sub,y,,2,s,,
+
+sub,({passthrough}),\1,0.1,,,

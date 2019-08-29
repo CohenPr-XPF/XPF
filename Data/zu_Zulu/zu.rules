@@ -1,16 +1,24 @@
 #Zulu
 #Written by Abi Creighton
+#Edited by Shiying Yang
+#7 Aug 2019
 type,sfrom,sto,weight,precede,follow,comment
-class,aspirate,"(c|k|p|q|t|x)",,,,
-class,click,"(c|q|x)",,,,
+class,aspirate,[ckpqtx],,,,
+class,click,[cqx],,,,
 class,palatalize,"(j|tsh|y)",,,,
-class,passthrough,"[adefghilmnoprstuvwz]",,,,
+class,passthrough,[adefghilmnoprstuvwz],,,,
+class,click_middle,(\ǀ|ǁ),,,,
+class,pre_click,[ᵑᶢ],,,,
 sub,b,ɓ,1,,,
 sub,b,b,2,,h,
 sub,h,,2,b,,
 sub,b,b,2,m,,
 sub,c,ǀ,1,,,
-sub,h,ʰ,2,{aspirate},,
+#aspirated stops
+sub,p,pʰ,2,,h,
+sub,k,kʰ,2,,h,
+sub,t,tʰ,2,,h,
+sub,h,,2,{aspirate},,
 sub,d,ɮ,1,,l,
 sub,l,,1,d,,
 sub,g,ᶢǀʱ,1,,c,
@@ -46,3 +54,10 @@ sub,h,,1,s,,
 sub,x,ǁ,1,,,
 sub,y,j,1,,,
 sub,({passthrough}),\1,0.1,,,
+#ipasub
+ipasub,({click_middle}) ʱ,\1ʱ,1,,,
+ipasub,({click_middle}) ʰ,\1ʰ,1,,,
+ipasub,({pre_click}) ({click_middle}),\1\2,1,,,
+ipasub,({pre_click}) !,\1!,1,,,
+ipasub,! ʱ,!ʱ,1,,,
+ipasub,! ʰ,!ʰ,1,,,

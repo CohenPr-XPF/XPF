@@ -4,7 +4,7 @@
 #Edited by Shiying Yang
 #Edited 13 May 2019
 type,sfrom,sto,weight,precede,follow,comment
-class,passthrough,"[abghiklmpsuw]",,,,
+class,passthrough,"[abghiklmpsuwdnto]",,,,
 class,vowel,"(a|e|i|o|u)",,,,
 class,front,"(i|e)",,,,
 class,consonant,"(b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z)",,,,
@@ -15,16 +15,12 @@ class,apostrophe,',,,,
 #Rules for individual letters
 sub,c,k,1,,,"only in loanwords"
 sub,c,s,2,,{front},"only in loanwords"
-sub,d,d̪,0.5,,,
 sub,e,ɛ,0.5,,,
 sub,f,p,1,,,
 sub,j,dʒ,1,,,"rare in native Tagalog words"
-sub,n,n̪,1,,,
-sub,o,o̞,1,,,
 sub,q,k,0.5,,,
 sub,u,,1,q,,
 sub,r,ɾ,1,,,
-sub,t,t̪,0.5,,,
 sub,v,b,1,,,
 sub,x,k s,1,,,"only in loanwords"
 sub,y,j,0.5,,,
