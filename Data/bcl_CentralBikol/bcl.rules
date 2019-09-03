@@ -1,0 +1,40 @@
+# Central Bikol Rule Set
+# Written by: Bill
+# Last Updated: 2019-06-17
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,punctuation,['‘’-],,,,
+class,w-preceder,[ai],,,,
+class,y-preceder,[aou],,,,
+class,vowel,[aiu],,,,
+class,passthrough,[abdhilkmnpstu],,,,
+# Individual Letters
+sub,e,i,4,,,
+sub,g,ɡ,4,,,
+sub,o,u,4,,,
+sub,r,ɾ,4,,,
+sub,w,ʋ,4,,,
+sub,y,j,4,,,
+sub,{punctuation},ʔ,4,,,
+# Letters in Loanwords
+sub,f,p,4,,,
+sub,v,b,4,,,
+sub,z,s,4,,,
+# Digraphs
+sub,a,au,6,,w,"aw"
+sub,i,iu,6,,w,"iw"
+sub,w,,6,{w-preceder},,"w-final diphthongs"
+sub,a,ai,6,,y,"ay"
+sub,o,ui,6,,y,"oy"
+sub,u,ui,6,,y,"uy"
+sub,y,,6,{y-preceder},,"y-final diphthongs"
+sub,n,ŋ,6,,g,
+sub,g,,6,n,,
+# Non-Diphthongs
+ipasub,au ({vowel}),a w \1,3,,,
+ipasub,iu ({vowel}),i w \1,3,,,
+ipasub,ai ({vowel}),a j \1,3,,,
+ipasub,ui ({vowel}),u j \1,3,,,
+# Misc. Rules
+ipasub,({vowel}) ({vowel}),\1 ʔ \2,2,,,
+sub,({passthrough}),\1,0.1,,,

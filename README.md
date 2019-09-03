@@ -3,8 +3,13 @@
 ## Available Languages
 | language code | language  | comments      |
 |---------------|-----------| --------------|
+| ab            | Abkhaz    | under revision|
 | amn           | Amanab    |
+| ast           | Asturian  | under revision|
 | ay            | Aymara    |
+under revision|
+| ba            | Bashkir   | under revision|
+| bcl           | Central Bikol| under revision|
 | bg            | Bulgarian |
 | ca            | Catalan   |
 | cbt           | Chayahuita|
@@ -46,6 +51,7 @@
 | ak | Akan             | non-transparent spelling with tones        |
 | alq | Algonquin       | non-transparent spelling with vowel length |
 | am |Amharic           | non-transparent spelling with consonant gemination                    |
+| bcw | Bana            | non-transparent spelling with tones        |
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |

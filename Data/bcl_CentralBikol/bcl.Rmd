@@ -1,0 +1,92 @@
+---
+title: "Central Bikol"
+author: "Bill Mizgerd"
+bibliography: bcl.bib
+output: html_document
+---
+
+Last Updated: 2019-06-17
+
+# Background
+
+**Language Family**: Austronesian / Malayo-Polynesian / Greater Central Philippine / Central Philippine / Bikol / Coastal Bikol / Central Bikol
+
+# Phonology
+
+## Consonants
+
+* Loans from Spanish and English have introduced /f v z ʃ ʒ ɲ ʎ tʃ dʒ/ to Bicol, although not all speakers use those sounds. [@BclMattes2014, p. 8]
+
+### By place of articulation
+
+Labial: /p/, /b/, /m/, /ʋ/  
+Alveolar: /t/, /d/, /n/, /s/, /ɾ/, /l/  
+Palatal: /j/  
+Velar: /k/, /ɡ/, /ŋ/  
+Glottal: /ʔ/, /h/  
+
+### By manner of articulation
+
+Stops: /p/, /b/, /t/, /d/, /k/, /ɡ/, /ʔ/  
+Nasals: /m/, /n/, /ŋ/  
+Fricatives: /s/, /h/  
+Flaps: /ɾ/  
+Approximants: /ʋ/, /l/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /a/  
+Diphthongs: /iu/, /ui/, /ai/, /au/  
+
+Although the orthography includes <e> and <o>, [e] and [o] only exist as allophones of /i/ and /u/ respectively. [@BclMattes2014, p. 8]
+
+# Alphabet
+
+a - /a/  
+b - /b/  
+d - /d/  
+e - /i/  
+g - /ɡ/  
+h - /h/  
+i - /i/  
+k - /k/  
+l - /l/  
+m - /m/  
+n - /n/  
+o - /u/  
+p - /p/  
+r - /ɾ/  
+s - /s/  
+t - /t/  
+u - /u/  
+w - /ʋ/  
+y - /j/  
+
+## Digraphs
+
+aw - /au/  
+ay - /ai/  
+iw - /iu/  
+ng - /ŋ/  
+oy - /ui/  
+uy - /ui/  
+
+## Orthographic Notes
+
+* /ʔ/ is typically represented by an apostrophe or hyphen. [@BclMattes2014, p. 11]
+* Glottal stops are always inserted between orthographically adjacent vowels. [@BclMattes2014, p. 12]
+
+# Lenition Rules
+
+* Prefix-final /ŋ/ tends to assimilate, to varying degrees, to the first consonant of the stem. [@BclMattes2014, p. 9]
+
+# Misc. Rules
+
+* Epenthesis of [h] occurs between stem-final and suffix-initial vowels. [@BclMattes2014, p. 9]
+* /u/ is pronounced [o] in the final syllable of a word. [@BclMintzD1971, p. 17]
+
+## Syllable Structure
+
+Bicol syllable structure is CV(C), where V can be either a single vowel or a diphthong. [@BclMattes2014, p. 10]
+
+# References
