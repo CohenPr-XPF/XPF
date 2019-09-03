@@ -1,0 +1,24 @@
+# Carib Rule Set
+# Written by: Bill
+# Last Updated: 2019-06-24
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,apostrophe,[ꞌ'ˈ‘’],,,,
+class,diph-vowel,[aeɨou],,,,
+class,n-follower,[ptks],,,,
+class,passthrough,[aeijkmnopstuw],,,,
+# Individual Letters
+sub,b,p,4,,,
+sub,d,t,4,,,
+sub,g,k,4,,,
+sub,ï,ɨ,4,,,"this letter used in some older orthographies"
+sub,n,ŋ,4,,{n-follower},"marks /ŋ/ in syllable codas"
+sub,r,ɽ,4,,,
+sub,y,ɨ,4,,,
+sub,{apostrophe},ʔ,4,,,
+# Diphthongs
+sub,a,au,6,,u,"au"
+sub,u,,6,a,,
+ipasub,({diph-vowel}) i,\1i,2,,,"i-final diphthongs"
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,

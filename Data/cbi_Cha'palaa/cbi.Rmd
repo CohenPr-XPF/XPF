@@ -1,0 +1,97 @@
+---
+title: "Cha'palaa"
+author: "Bill Mizgerd"
+bibliography: cbi.bib
+output: html_document
+---
+
+Last Updated: 2019-07-25
+
+# Background
+
+**Language Family**: Barbacoan / Cayapa-Colorado / Cha'palaa
+
+Also known as Chachi or Cayapa.
+
+# Phonology
+
+## Consonants
+
+* /f/ exists in free variation with [ɸ]. [@CbiLindskoog1962, p. 36]
+
+### By place of articulation
+
+Labial: /p/, /b/, /m/, /f/, /v/, /w/  
+Alveolar: /t/, /tʲ/, /d/, /dʲ/, /ts/, /n/, /s/, /ɾ/, /l/  
+Postalveolar: /tʃ/, /ʃ/  
+Palatal: /ɲ/, /ʎ/, /j/  
+Velar: /k/, /ɡ/, /ŋ/  
+Glottal: /ʔ/, /h/  
+
+### By manner of articulation
+
+Stops: /p/, /b/, /t/, /tʲ/, /d/, /dʲ/, /k/, /ɡ/, /ʔ/  
+Affricates: /ts/, /tʃ/  
+Nasals: /m/, /n/, /ɲ/, /ŋ/  
+Fricatives: /f/, /v/, /s/, /ʃ/, /h/  
+Flaps: /ɾ/  
+Approximants: /w/, /l/, /ʎ/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /e/, /a/  
+
+Vowel length is contrastive. [@CbiFloyd2014, p. 80]
+
+@CbiLindskoog1962 argues that vowel clusters do not form diphthongs. (pp. 38-39)
+
+# Alphabet
+
+a - /a/  
+b - /b/  
+ch - /tʃ/  
+d - /d/  
+  dy - /dʲ/  
+e - /e/  
+f - /f/  
+g - /ɡ/  
+i - /i/  
+j - /h/  
+k - /k/  
+l - /l/  
+ll - /ʎ/  
+m - /m/  
+n - /n/  
+ng - /ŋ/  
+ñ - /ɲ/  
+p - /p/  
+r - /ɾ/  
+s - /s/  
+sh - /ʃ/  
+t - /t/  
+  ty - /tʲ/  
+ts - /ts/  
+u - /u/  
+v - /v/  
+w - /w/  
+y - /j/  
+' - /ʔ/  
+
+Vowel length is written by doubling the vowel character.
+
+# Lenition Rules
+
+* Stops voice post-nasally. [@CbiFloyd2014, p. 79]
+* /h/ sometimes deletes word-medially. [@CbiTapuyo2009, p. xvii]
+
+# Misc. Rules
+
+* /w/ becomes [v] before front vowels. [@CbiFloyd2014, p. 79]
+* /n/ adapts to the place of following bilabials. [@CbiFloyd2014, p. 80]
+* The contrast between alveolar consonants and their palatalized equivalents collapses before /i/. [@CbiLindskoog1962, p. 34]
+
+## Syllable Structure
+
+The syllable structure of Cha'palaa is CV(V)(C). [@CbiFloyd2014, p. 80] [@CbiLindskoog1962, p. 37]
+
+# References

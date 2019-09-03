@@ -12,7 +12,7 @@ class,passthrough,"[abdfghiklmnpstuwz]",,,,
 #
 #edit
 class,l_with_cdot,"ŀ",,,,
-class,punct,['],,,,
+class,punct,['-],,,,
 #
 sub,à,a,1,,,
 sub,c,s,1,,{front},
@@ -80,4 +80,3 @@ sub,({passthrough}),\1,0.1,,,
 #
 #edit
 sub,{punct},,0.1,,,
-

@@ -13,6 +13,8 @@
 | bg            | Bulgarian |
 | boa           | Bora      |
 | ca            | Catalan   |
+| car           | Carib     | under revision|
+| cbi           | Cha'palaa |
 | cbt           | Chayahuita|
 | cho           | Choctaw   |               |
 | chr           | Cherokee  |
@@ -54,6 +56,7 @@
 | am |Amharic           | non-transparent spelling with consonant gemination                    |
 | bcw | Bana            | non-transparent spelling with tones        |
 | bn |Bengali           | non-transparent spelling                   |
+| bs | Bosnian          | non-transparent spelling with vowel length and tones |
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |

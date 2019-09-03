@@ -1,0 +1,42 @@
+# Asturian Rule Set
+# Written by: Emily
+# Last Updated: 2019-08-28
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[abdefgilmnopqstuü],,,,
+class,u-rep,(ü),,,,
+class,misc,[#@'ꞌ‘’-],,,,
+class,fvowel,[eiéí],,,,
+class,bvowel,[aouáóú],,,
+# Individual Letters
+sub,c,k,0.5,,,
+sub,c,k,1,,{bvowel},
+sub,c,θ,1,,{fvowel},
+sub,h,,1,,,
+sub,ñ,ɲ,1,,,
+sub,r,ɾ,1,,,
+sub,r,r,2,^,,
+sub,v,b,1,,,
+sub,x,ʃ,1,,,
+sub,y,ʝ,1,,,
+sub,z,θ,1,,,
+sub,{misc},,1,,,
+# Digraphs
+sub,c,tʃ,2,,h,
+sub,h,,2,c,,
+sub,l,ʎ,2,,l,
+sub,l,,3,l,,
+sub,r,r,3,,r,
+sub,r,,4,r,,
+# Accented vowels
+sub,á,a,1,,,
+sub,é,e,1,,,
+sub,í,i,1,,,
+sub,ó,o,1,,,
+sub,ú,u,1,,,
+sub,({passthrough}),\1,1,,,
+ipasub,g u ({fvowel}),g \1,2,,,
+ipasub,g u ({bvowel}),g u \1,2,,,
+ipasub,q u ({fvowel}),k \1,2,,,
+ipasub,q u ({bvowel}),k u \1,2,,,
+ipasub,{u-rep},u,1,,,
