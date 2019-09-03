@@ -12,7 +12,7 @@
 | be            | Belarusan | under revision|
 | bg            | Bulgarian |
 | boa           | Bora      |
-| ca            | Catalan   |
+| ca            | Catalan   | under revision|
 | car           | Carib     | under revision|
 | cbi           | Cha'palaa |
 | cbt           | Chayahuita|
@@ -57,6 +57,8 @@
 | bcw | Bana            | non-transparent spelling with tones        |
 | bn |Bengali           | non-transparent spelling                   |
 | bs | Bosnian          | non-transparent spelling with vowel length and tones |
+| ce | Chechen          | non-transparent spelling with vowel length |
+| ceb | Cebuano         | non-transparent spelling with vowel length |
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |
