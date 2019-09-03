@@ -1,0 +1,79 @@
+---
+title: "Amanab"
+author: "Bill Mizgerd"
+bibliography: amn.bib
+output: html_document
+---
+
+Last Updated: 2019-07-24
+
+# Background
+
+**Language Family**: (Trans-New Guinea - debated) / Border / Waris / Amanab
+
+# Phonology
+
+## Consonants
+
+* @AmnMinch1991 argues against the presence of /ⁿd/. (p. 107)
+* @AmnSIL2001 argues for /ɸ/ rather than /f/, as well as for a series of /ᵑɡ/ and /ɣ/ rather than /ŋ/ and /ᵑɡ/. (p. 1)
+* @AmnPalmer2017 presents a general consonant inventory of the Border family, rather than for Amanab specifically, so his inventory features a handful of differences from the other sources.
+* @AmnSIL2001 includes /l/ as a phoneme (p. 1), but it seems to actually be an allophone of /ɾ/ - even later in the same paper, the author lists [l] and [ɾ] as occurring in free variation (p. 4).
+
+### By place of articulation
+
+Labial: /p/, /ᵐb/, /m/, /f/, /w/  
+Alveolar: /t/, /ⁿd/, /n/, /s/, /ɾ/  
+Palatal: /j/  
+Velar: /k/, /ᵑɡ/, /ŋ/  
+Glottal: /h/  
+
+### By manner of articulation
+
+Stops: /p/, /ᵐb/, /t/, /ⁿd/, /k/, /ᵑɡ/  
+Nasals: /m/, /n/, /ŋ/  
+Fricatives: /f/, /s/, /h/  
+Flaps: /ɾ/  
+Approximants: /w/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /e/, /o/, /a/  
+
+@AmnSIL2001 argues for /ɑ/ and /ɛ/ rather than /a/ and /e/. (p. 1)
+
+# Alphabet
+
+a - /a/  
+b - /ᵐb/  
+d - /ⁿd/ (rare)  
+e - /e/  
+f - /f/  
+g - /ᵑɡ/  
+h - /h/  
+i - /i/  
+k - /k/  
+l - /ɾ/  
+m - /m/  
+n - /n/  
+ng - /ŋ/  
+o - /o/  
+p - /p/  
+r - /ɾ/  
+s - /s/  
+t - /t/  
+u - /u/  
+w - /w/  
+y - /j/  
+
+# Lenition Rules
+
+* Word-medial /ᵑɡ/ sometimes spirantizes to [ɣ]. [@AmnSIL2001, p. 4]
+* Word-medial /f/ sometimes voices to [v]. (ibid.)
+* /x/, which is attested in other languages of the Border family [@AmnPalmer2017, p. 327], has historically debuccalized to [h] in Amanab. [@AmnSIL2001, p. 4]
+
+# Misc. Rules
+
+* Word-final /k/ has a lateral release. [@AmnSIL2001, p. 4]
+
+# References
