@@ -1,0 +1,48 @@
+# Bora Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-03
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,pre-s,[dt],,,,
+class,v-output,[aɛiɨoɯ],,,,
+class,tone,[˨˦],,,,
+class,passthrough,[mn],,,,
+# Individual Letters
+sub,a,a ˨,4,,,
+sub,á,a ˦,4,,,
+sub,b,p,4,,,
+sub,c,kʰ,4,,,
+sub,d,t,4,,,
+sub,e,ɛ ˨,4,,,
+sub,é,ɛ ˦,4,,,
+sub,g,k,4,,,
+sub,h,ʔ,4,,,
+sub,i,i ˨,4,,,
+sub,í,i ˦,4,,,
+sub,ɨ,ɨ ˨,4,,,
+sub,j,x,4,,,
+sub,k,kʰ,4,,,
+sub,ñ,ɲ,4,,,
+sub,o,o ˨,4,,,
+sub,ó,o ˦,4,,,
+sub,p,pʰ,4,,,
+sub,r,ɾ,4,,,
+sub,t,tʰ,4,,,
+sub,u,ɯ ˨,4,,,
+sub,ú,ɯ ˦,4,,,
+sub,v,β,4,,,
+sub,w,kp,4,,,
+sub,y,j,4,,,
+# Digraphs
+sub,c,tʃʰ,6,,h,"<ch>"
+sub,h,,6,c,,"<ch> cleanup"
+sub,l,tʃ,6,,l,"<ll>"
+sub,l,,6,l,,"<ll> cleanup"
+sub,d,ts,6,,s,"<ds>"
+sub,t,tsʰ,6,,s,"<ts>"
+sub,s,,6,{pre-s},,"<ds> and <ts> cleanup"
+# Misc. Rules
+sub,ɨ,ɨ ˦,5,,́,"high-tone <ɨ>"
+sub,́,,5,,,"cleanup of the diacritic from high <ɨ>"
+ipasub,({v-output}) ({tone}) \1 \2,\1 \2 ː,2,,,
+sub,({passthrough}),\1,0.1,,,

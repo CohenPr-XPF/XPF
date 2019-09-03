@@ -11,6 +11,7 @@
 | bcl           | Central Bikol| under revision|
 | be            | Belarusan | under revision|
 | bg            | Bulgarian |
+| boa           | Bora      |
 | ca            | Catalan   |
 | cbt           | Chayahuita|
 | cho           | Choctaw   |               |
