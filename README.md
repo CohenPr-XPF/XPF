@@ -3,6 +3,7 @@
 ## Available Languages
 | language code | language  | comments      |
 |---------------|-----------| --------------|
+| amn           | Amanab    |
 | ay            | Aymara    |
 | bg            | Bulgarian |
 | ca            | Catalan   |

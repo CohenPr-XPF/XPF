@@ -1,0 +1,113 @@
+---
+title: "Bashkir"
+author: "Emily Strand"
+bibliography: ba.bib
+output: html_document
+---
+
+Last Updated: 2019-08-15
+
+# Background
+
+**Language Family**: Altaic / Turkic / Western / Uralian
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Bilabial: /p/, /b/, /m/, /w/  
+Labio-dental: /f/, /v/  
+Dental: /θ/, /ð/  
+Alveolar: /t/, /d/, /ts/, /s/, /z/, /l/, /n/, /r/  
+Palato-alveolar: /tʃ/, /ʃ/, /ʒ/, /j/  
+Velar: /k/, /g/, /x/, /ŋ/, /q/, /ɣ/  
+Glottal: /ʔ/, /h/  
+
+### By manner of articulation
+
+Stop: /p/, /b/, /t/, /d/, /k/, /g/, /q/, /ʔ/  
+Fricative: /f/, /v/, /θ/, /ð/, /s/, /z/, /ʃ/, /ʒ/, /x/, /ɣ/, /h/  
+Affricate: /ts/, /tʃ/  
+Nasal: /m/, /n/, /ŋ/  
+Trill: /r/  
+Liquid: /w/, /l/, /j/    
+
+## Vowels
+
+* Vowels do not occur consecutively [@poppe_bashkir_1997, pg. 12].  
+* /e/ and /ɔ/ only appear in loanwords [@poppe_bashkir_1997, pg. 6].  
+
+Front: /i/, /ə/, /a/, /ɵ/, /y/  
+Back: /ɤ/, /ɑ/, /u/, /o/  
+
+# Alphabet
+
+а - /ɑ/  
+б - /b/  
+в - /w/ (initially); /v/ (in loanwords)
+г - /g/  
+ғ - /ɣ/  
+д - /d/  
+ҙ - /ð/  
+е - /jə/ word initially; /ə/ elsewhere  
+ё - /jo/ (only occurs in loanwords)  
+ж - /ʒ/  
+з - /z/  
+и - /i/ word initially and within the first syllable; /əj/ word finally and appearing in non-initial syllables  
+й - /j/  
+к - /k/  
+ҡ - /q/  
+л - /l/  
+м - /m/  
+н - /n/  
+ң - /ŋ/  
+о - /o/  
+ө - /ɵ/  
+п - /p/  
+р - /r/  
+с - /s/  
+ҫ - /θ/  
+т - /t/  
+у - /u/  
+ү - /y/  
+ф - /f/  
+х - /x/  
+һ - /h/  
+ц - /ts/   
+ч - /tʃ/   
+ш - /ʃ/  
+щ - /ʃtʃ/  
+ъ - /ʔ/ (following back vowels)      
+ы - /ɤ/    
+ь - /ʔ/ (following front vowels)      
+э - /ə/  
+ә - /a/  
+ю - /ju/  
+я - /jɑ/  
+
+# Lenition Rules
+
+* /b/ can undergo spirantization in fast speech [@poppe_bashkir_1997, pg. 8].
+* /b/ changes to /w/ word initially.  
+* /d/ undergoes spirantization in suffix onsets [@poppe_bashkir_1997, pg. 23].  
+* /l/ and /n/ often debuccalize to /t/, /d/, or /ð/ in the presence of suffixation [@poppe_bashkir_1997, pg. 23].
+
+# Misc Rules
+
+* Depending on the syllable structure, mid-vowels are consistently reduced or unpronounced [@poppe_bashkir_1997, pg.22].  
+* /n/ assimilates to /m/ or /ŋ/ when preceding bilabial or velar consonants respectively [@poppe_bashkir_1997, pg. 24].  
+* There is apparent consonant harmony between /g/ and /k/ in words containing front vowels and between /ɣ/ and /q/ in words containing back vowels [@poppe_bashkir_1997, pg. 22].  
+* Vowel harmony also occurs, making the distinction between front and back vowels [@poppe_bashkir_1997, pg. 19].
+
+
+# Syllable Structure
+
+* Bashkir seems to favor complex codas over onsets, given the possible syllable structures below [@poppe_bashkir_1997, pg. 12]:  
+    - V  
+    - VC  
+    - VCC  
+    - CV  
+    - CVC  
+    - CVCCC  

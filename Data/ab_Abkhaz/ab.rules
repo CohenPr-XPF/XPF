@@ -1,0 +1,53 @@
+# Abkhaz Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-01
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,supraseg,[ʷʲ],,,,
+# Individual Letters
+sub,а,a,4,,,
+sub,б,b,4,,,
+sub,в,v,4,,,
+sub,г,ɡ,4,,,
+sub,ӷ,ʁ,4,,,
+sub,ҕ,ʁ,4,,,"alternate form of <ӷ>"
+sub,д,d,4,,,
+sub,е,a,4,,,"[e] is an allophone of /a/; see @AbChirikba2003, p. 21"
+sub,ж,ʒ,4,,,
+sub,з,z,4,,,
+sub,ӡ,dz,4,,,
+sub,и,j,4,,,
+sub,к,kʼ,4,,,
+sub,қ,k,4,,,
+sub,ҟ,qʼ,4,,,
+sub,л,l,4,,,
+sub,м,m,4,,,
+sub,н,n,4,,,
+sub,о,a,4,,,"[o] is an allophone of /a/; see @AbChirikba2003, p. 21"
+sub,п,pʼ,4,,,
+sub,ԥ,p,4,,,
+sub,ҧ,p,4,,,"older form of <ԥ>"
+sub,р,r,4,,,
+sub,с,s,4,,,
+sub,т,tʼ,4,,,
+sub,ҭ,t,4,,,
+sub,у,w,4,,,
+sub,ф,f,4,,,
+sub,х,χ,4,,,
+sub,ҳ,ħ,4,,,
+sub,ц,ts,4,,,
+sub,ҵ,tsʼ,4,,,
+sub,ч,tʃʲ,4,,,
+sub,ҷ,tʃʲʼ,4,,,
+sub,ҽ,tʃ,4,,,
+sub,ҿ,tʃʼ,4,,,
+sub,ш,ʃ,4,,,
+sub,ы,ə,4,,,
+sub,ҩ,ʡ,4,,,
+sub,џ,dʒ,4,,,
+sub,ь,ʲ,4,,,
+sub,ә,ʷ,4,,,
+sub,-,,4,,,"a hyphen with no phonetic value appears in some words"
+# Misc. Rules
+ipasub,ʼ ({supraseg}),\1ʼ,2,,,"attaches suprasegmentals to ejectives"
+ipasub, ({supraseg}),\1,1,,,"attaches suprasegmentals to their characters"
