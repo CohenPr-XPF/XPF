@@ -6,10 +6,10 @@
 | ab            | Abkhaz    | under revision|
 | amn           | Amanab    |
 | ast           | Asturian  | under revision|
-| ay            | Aymara    |
-under revision|
+| ay            | Aymara    |under revision|
 | ba            | Bashkir   | under revision|
 | bcl           | Central Bikol| under revision|
+| be            | Belarusan | under revision|
 | bg            | Bulgarian |
 | ca            | Catalan   |
 | cbt           | Chayahuita|
@@ -45,13 +45,14 @@ under revision|
 | language code | language         | reason                                     |
 |---------------|------------------|--------------------------------------------|
 | ace | Acehnese         | non-transparent spelling with vowel nasalization                  |
-| af | Afrikaans        | non-transparent spelling for vowels and dipthongs                  |
+| af | Afrikaans        | non-transparent spelling between vowels and dipthongs                  |
 | agd | Agarabi         | non-transparent spelling with tones        |
 | agr | Aguaruna        | non-transparent spelling with vowel nasalization               |
 | ak | Akan             | non-transparent spelling with tones        |
 | alq | Algonquin       | non-transparent spelling with vowel length |
 | am |Amharic           | non-transparent spelling with consonant gemination                    |
 | bcw | Bana            | non-transparent spelling with tones        |
+| bn |Bengali           | non-transparent spelling                   |
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |
@@ -66,4 +67,3 @@ under revision|
 | fi | Finnish          | non-transparent spelling                   |
 | pl |Polish            | non-transparent spelling                    |
 | ti  |Tigrinya          | non-transparent spelling  |                  
-| bn |Bengali           | non-transparent spelling                   |

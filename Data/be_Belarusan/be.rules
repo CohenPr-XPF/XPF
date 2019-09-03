@@ -1,0 +1,63 @@
+# Belarusan Rule Set
+# Written by: Emily
+# Last Updated: 2019-08-26
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,num,[12],,,,curtesy of Bill
+class,gem,(l|n|t|d|s|z|ʃ|ʒ|tʃ|ts),,,,
+class,apostrophe,['ꞌ‘’],,,,
+class,pal,(p|b|m|f|v|n|ts|dz|s|z|l|k|g|x|ɣ),,,,
+class,pal-out,(pʲ|bʲ|mʲ|fʲ|vʲ|nʲ|tsʲ|dzʲ|sʲ|zʲ|lʲ|kʲ|gʲ|xʲ|ɣʲ),,,,
+# Individual Letters
+sub,а,a,2,,,
+sub,б,b,2,,,
+sub,в,v,2,,,
+sub,г,ɣ,2,,,
+sub,д,d,2,,,
+sub,е,ʲ1 ɛ,2,,,
+sub,ё,ʲ1 o,2,,,
+sub,ж,ʒ,2,,,
+sub,з,z,2,,,
+sub,і,ʲ1 i,2,,,
+sub,й,j,2,,,
+sub,к,k,2,,,
+sub,л,l,2,,,
+sub,м,m,2,,,
+sub,н,n,2,,,
+sub,о,o,2,,,
+sub,п,p,2,,,
+sub,р,r,2,,,
+sub,с,s,2,,,
+sub,т,t,2,,,
+sub,у,u,2,,,
+sub,ў,w,2,,,
+sub,ф,f,2,,,
+sub,х,x,2,,,
+sub,ц,ts,2,,,
+sub,ч,tʃ,2,,,
+sub,ш,ʃ,2,,,
+sub,ы,ɨ,2,,,
+sub,ь,ʲ2,2,,,
+sub,э,ɛ,2,,,
+sub,ю,ʲ1 u,2,,,
+sub,я,ʲ1 a,2,,,
+sub,{apostrophe},nopala,2,,,
+sub,-,,2,,,
+# Digraphs
+sub,д,dʒ,3,,ж,
+sub,ж,,3,д,,clean-up
+sub,д,dz,4,,з,
+sub,з,,3,д,,clean-up
+sub,д,dzʲ ː,5,д,з,orthographic exception to gem ipasub
+sub,д,,3,,д,clean-up
+sub,з,,3,д,,clean-up
+ipasub,ː j,ː,3,,,clean-up pal
+# Palatalization
+ipasub,({pal}) ʲ{num},\1ʲ,6,,,change consonant to pal-cons
+ipasub,ʲ1\b,j,5,,,change isolated pal to /j/
+ipasub,ʲ2\b,,5,,,deletes palatalization when necessary
+ipasub,nopala ,,4,,,deletes apostrophe
+# Gemination
+ipasub,({gem}) \1ʲ,\1ʲ ː,3,,,gemination when palatalized
+ipasub,({gem}) \1 ({pal-out}),\1ʲ ː \3,4,,,gemination when followed by palatalized cons
+ipasub,({gem}) \1\b,\1 ː,1,,,gemination when non-palatalized

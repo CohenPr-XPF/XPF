@@ -1,0 +1,97 @@
+---
+title: "Belarusan"
+author: "Emily Strand"
+bibliography: be.bib
+output: html_document
+---
+
+Last Updated: 2019-08-28
+
+# Background
+
+**Language family**: Indo-European / Slavic / East
+
+Also referred to as Belarusian or White Russian.
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial (non-palatalized): /p/, /b/, /m/, /f/, /v/  
+Labial (palatalized): /pʲ/, /bʲ/, /mʲ/, /fʲ/, /vʲ/  
+Alveolar (non-palatalized): /n/, /t/, /d/, /ts/, /dz/, /s/, /z/, /l/, /r/  
+Alveolar (palatalized): /nʲ/, /tsʲ/, /dzʲ/, /sʲ/, /zʲ/, /lʲ/  
+Palatal: /tʃ/, /dʒ/, /ʃ/, /ʒ/, /j/  
+Velar (non-palatalized): /k/, /g/, /x/, /ɣ/  
+Velar (palatalized): /kʲ/, /gʲ/, /xʲ/, /ɣʲ/  
+
+### By manner of articulation
+
+Stops (non-palatalized): /p/, /b/, /k/, /g/  
+Stops (palatalized): /pʲ/, /bʲ/, /kʲ/, /gʲ/  
+Nasals (non-palatalized): /m/, /n/  
+Nasals (palatalized): /mʲ/, /nʲ/  
+Affricates (non-palatalized): /ts/, /dz/, /tʃ/, /dʒ/  
+Affricates (palatalized): /tsʲ/, /dzʲ/  
+Fricatives (non-palatalized): /f/, /v/, /s/, /z/, /x/, /ɣ/  
+Fricatives (palatalized): /fʲ/, /vʲ/, /sʲ/, /zʲ/, /xʲ/, /ɣʲ/  
+Approximants (non-palatalized): /l/, /j/  
+Approximants (palatalized): /lʲ/  
+Trills: /r/  
+
+## Vowels
+
+* Although /ɨ/ is represented by the grapheme ⟨ы⟩, it is considered an allophone of /i/ [@stolz_human_2012, pg. 73].
+
+/i/, /u/, /ɛ/, /o/, /a/  
+
+# Alphabet
+
+* ⟨Ґ⟩, representing /g/, was abolished from the Belarusan language during the orthography reform in 1933 [@2008arXiv0802, pg. 2].
+
+а - /a/   
+б - /b/  
+в - /v/  
+г - /ɣ/   
+д - /d/  
+  дж - /dʒ/         
+  дз - /dz/  
+е - /jɛ/  
+ё - /jo/  
+ж - /ʒ/  
+з - /z/  
+i - /ji/   
+й - /j/  
+к - /k/   
+л - /l/  
+м - /m/  
+н - /n/    
+о - /o/   
+п - /p/  
+р - /r/  
+с - /s/    
+т - /t/  
+у - /u/  
+ў - /w/ (understood as an allophone of /u/, but is represented with a specific grapheme [@stolz_human_2012, pg. 73]).  
+ф - /f/  
+х - /x/    
+ц - /ts/  
+ч - /tʃ/  
+ш - /ʃ/     
+ы - /ɨ/  
+ь - indicates palatalization of the preceding consonant    
+э - /ɛ/   
+ю - /ju/  
+я - /ja/  
+' - indicates separation of sounds (non-palatalization of preceding consonant)  
+
+# Lenition Rules
+
+* Within the Slavic languages, including Belarusan, its common for /g/ to lenite to /ɣ/ [@klein_86, pg. 1607].  
+
+# Misc Rules
+
+* Palatalized consonants precede ⟨я⟩, ⟨е⟩, ⟨ё⟩, ⟨ю⟩, ⟨i⟩ [@stolz_human_2012, pg. 73].  
+* Gemination of some consonants occurs [@bocek_relationship_2012, pg. 166].  
