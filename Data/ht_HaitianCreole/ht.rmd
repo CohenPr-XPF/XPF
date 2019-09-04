@@ -1,0 +1,77 @@
+---
+title: "Haitian Creole"
+author: "Justin Bai"
+bibliography: ht.bib
+output: html_document
+---
+# Background
+**Language family**: French Creole
+
+# Alphabet
+The alphabet of Haitian Creole is a Latin-based writing system. Per @faraclas2010orthography, there are 32 letters: ⟨a⟩, ⟨an⟩, ⟨b⟩, ⟨ch⟩, ⟨d⟩, ⟨e⟩, ⟨è⟩, ⟨en⟩, ⟨f⟩, ⟨g⟩, ⟨h⟩, ⟨i⟩, ⟨j⟩, ⟨k⟩, ⟨l⟩, ⟨m⟩, ⟨n⟩, ⟨ng⟩, ⟨o⟩, ⟨ò⟩, ⟨on⟩, ⟨ou⟩, ⟨oun⟩, ⟨p⟩, ⟨r⟩, ⟨s⟩, ⟨t⟩, ⟨ui⟩, ⟨v⟩, ⟨w⟩, ⟨y⟩, and ⟨z⟩.
+## Vowels
+Haitian Creole has both oral and nasal vowels, which are distinguished orthographically.
+
+### Oral Vowels
+The oral vowels are:
+* ⟨a⟩ = /a/
+* ⟨e⟩ = /e/
+* ⟨è⟩ = /ɛ/
+* ⟨i⟩ = /i/
+* ⟨o⟩ = /o/
+* ⟨ò⟩ = /ɔ/
+* ⟨ou⟩ = /u/
+
+### Nasal Vowels
+Nasal vowels are orthographically represented with ⟨n⟩ after the vowel, and not all oral vowels have a nasal counterpart. The nasal vowels are:
+* ⟨an⟩ = /ã/
+* ⟨en⟩ = /ɛ̃/
+ * Note that this is NOT /ẽ/.
+* ⟨on⟩ = /õ/
+* ⟨oun⟩ = /ũ/
+
+### Semivowels
+* ⟨w⟩ = /w/
+* ⟨y⟩ = /j/
+* ⟨ui⟩ = /ɥi/
+
+## Consonants
+* ⟨b⟩ = /b/
+* ⟨ch⟩ = /ʃ/
+* ⟨d⟩ = /d/
+* ⟨f⟩ = /f/
+* ⟨g⟩ = /g/
+* ⟨h⟩ = /h/
+* ⟨j⟩ = /ʒ/
+* ⟨k⟩ = /k/
+* ⟨l⟩ = /l/
+* ⟨m⟩ = /m/
+* ⟨n⟩ = /n/
+* ⟨ng⟩ = /ŋ/
+* ⟨p⟩ = /p/
+* ⟨r⟩ = /ɣ/
+* ⟨s⟩ = /s/
+* ⟨t⟩ = /t/
+* ⟨v⟩ = /v/
+* ⟨z⟩ = /z/
+
+# Phonology
+## Vowels
+⟨an⟩, ⟨en⟩, and ⟨on⟩ are oral vowels + /n/ when a vowel appears after them.
+
+The grave accent is used on ⟨a⟩ to prevent it from turning into a nasal vowel. For example,
+* van /vã/ 'breeze'
+* vàn /van/ 'flood gate'
+
+The same principle applies to ⟨è⟩ and ⟨ò⟩.
+* ⟨èn⟩ = /ɛn/
+* ⟨òn⟩ = /ɔn/
+
+A nasalized vowel followed by /n/ is written with two ⟨n⟩s.
+* aprann /apɣãn/ 'learn'
+
+## Consonants
+* ⟨ng⟩ (/ŋ/) is only found at the end of words.
+* All other consonants can be found initially, medially, and finally.
+
+# Lenition

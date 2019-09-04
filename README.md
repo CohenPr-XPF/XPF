@@ -31,7 +31,9 @@
 | gvn           | Kuku-Yalanji |            |
 | haw           | Hawaiian  |
 | hmn           | Hmong     | under revision|
-| hu            | Hungarian |
+| ht            | Haitian Creole| under revision; lacks lenition|
+| hu            | Hungarian | under revision|
+| hy            | Armenian  |
 | jv            | Javanese  |
 | ka            | Georgian  |
 | kk            | Kazakh    |
@@ -90,6 +92,7 @@
 | grt | Garo            | non-transparent spelling with vowels       |
 | gub | Guajajara       | non-transparent spelling with vowel nasalization|
 | ha | Hausa            | non-transparent spelling with vowel length |
+| huv | Huave           | inconsistent phonological documentation    |
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |
