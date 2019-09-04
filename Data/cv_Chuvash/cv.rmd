@@ -1,0 +1,80 @@
+---
+title: "Chuvash"
+author: "Emily Strand"
+bibliography: cv.bib
+output: html_document
+---
+
+Last Updated: 2019-08-06
+
+# Background
+
+**Language Family**: Altaic / Turkic / Bolgar
+
+# Phonology
+
+## Consonants
+
+* /b/, /d/, /g/, /f/, /z/, /ʒ/, /ts/, and /dʒ/ are preserved only in loanwords (Russian) [@johanson_chuvash_2006, pg. 434]. Therefore, voicing is not phonemic within the Chuvash language.
+
+### By place of articulation
+
+Labial: /p/, /v/, /m/            
+Alveodental: /t/, /s/, /n/, /l/, /r/       
+Alveopalatal: /ʃ/, /tʃ/, /ɕ/, /j/     
+Velar: /k/, /χ/      
+
+### By manner of articulation
+
+Stop: /p/, /t/, /k/      
+Fricative: /v/, /s/, /ʃ/, /ɕ/, /χ/    
+Affricate: /tʃ/     
+Nasal: /m/, /n/     
+Liquid: /l/, /r/      
+Glide: /j/     
+
+## Vowels
+
+/a/, /ӑ/, /e/, /ӗ/, /i/, /u/, /ɯ/, /y/
+
+
+# Alphabet
+
+* Much of the grapheme to phoneme mapping was inferred from @kruger_chuvash_1997.
+
+a - a  
+ӑ - ӑ     
+в - /v/           
+e - /je/ initially; /e/ elsewhere           
+ӗ	- /ӗ/                    
+и - /i/     
+й - /j/        
+к - /k/         
+л - /l/       
+м - /m/         
+н - /n/               
+п - /p/   
+р - /r/       
+с - /s/          
+ҫ - /ɕ/            
+т - /t/          
+у - /u/         
+ӳ - /y/                
+х - /χ/             
+ч - /tʃ/       
+ш - /ʃ/                         
+ы - /ɯ/      
+э - /e/
+ю - /ju/
+я	- /ja/       
+
+# Lenition Rules
+
+* Voiceless consonants are voiced intervocalically, after sonorants, and before vowels [@johanson_chuvash_2006, pg. 435]     
+* Consonants palatalize preceding and following front vowels [@johanson_chuvash_2006, pg. 435].
+
+# Misc. Rules
+
+* The Chuvash language requires vowel harmony [@johanson_chuvash_2006, pg. 436].    
+* Gemination can occur with any consonant (specification only on native phonemes) [@dobrovolsky_chuvash_1996, pg. 31].    
+* Geminate obstruents are voiceless [@dobrovolsky_chuvash_1996, pg. 31].

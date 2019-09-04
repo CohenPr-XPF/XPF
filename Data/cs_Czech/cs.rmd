@@ -1,0 +1,113 @@
+---
+title: "Czech"
+author: "Emily Strand"
+bibliography: cs.bib
+output: html_document
+---
+
+Last updated: 2019-08-29
+
+# Background
+
+**Language family**: Indo-European / Slavic / West / Czech-Slovak
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial: /p/, /b/, /m/, /f/, /v/  
+Alveolar: /t/, /d/, /n/, /s/, /z/, /ts/, /r/, /r̝/, /l/  
+Post-Alveolar: /ʃ/, /ʒ/, /tʃ/  
+Palatal: /j/, /ɲ/, /c/, /ɟ/   
+Velar: /k/, /g/, /x/  
+Glottal: /ɦ/  
+
+### By manner of articulation
+
+Stops: /p/, /b/, /t/, /d/, /c/, /ɟ/, /k/, /g/  
+Nasals: /m/, /n/, /ɲ/  
+Fricatives: /f/, /v/, /s/, /z/, /ʃ/, /ʒ/, /x/, /ɦ/  
+Affricatives: /ts/, /tʃ/  
+Liquids: /r/, /r̝/, /l/, /j/  
+
+## Vowels
+
+* Vowel length is contrastive in Czech. Long vowels are indicated by an acute accent (´). An overring (˚) over /u/ also indicates lengthening [@harkins_modern_1980, pg. 7].  
+* /eu̯/ and /au̯/ were introduced into the Czech language through loanwords; however, now days they are included in the vowel inventory [@bican_phonotactics_2011, pg. 21; @simackova_czech_2012, pg. 23].  
+
+Short: /ɪ/, /ɛ/, /a/, /o/, /u/  
+Long: /iː/, /ɛː/, /aː/, /oː/, /uː/  
+
+Dipthongs: /eu̯/, /au̯/, /ou̯/  
+
+# Alphabet
+
+* Notice that ⟨Ď⟩ and ⟨Ť⟩ are the upper case forms of ⟨ď⟩ and ⟨ť⟩	respectively.  
+
+A	a	- /a/  
+Á	á	- /aː/  
+B	b	- /b/  
+C	c	- /ts/  
+Č	č	- /tʃ/  
+D	d	- /d/  
+Ď	ď	- /ɟ/  
+E	e	- /ɛ/  
+É	é	- /ɛː/  
+Ě	ě	- /ɛ/  
+F	f	- /f/  
+G	g	- /g/  
+H	h	- /ɦ/  
+Ch ch	- /x/  
+I	i	- /ɪ/  
+Í	í	- /iː/  
+J	j	- /j/  
+K	k	- /k/  
+L	l	- /l/  
+M	m	- /m/  
+N	n	- /n/  
+Ň	ň	- /ɲ/  
+O	o	- /o/  
+Ó	ó	- /oː/ (only used in loanwords)  
+P	p	- /p/  
+Q	q	- /kv/ (only used in loanwords)  
+R	r	- /r/  
+Ř	ř	- /r̝/  
+S	s	- /s/  
+Š š	- /ʃ/  
+T	t	- /t/  
+Ť ť	- /c/  
+U	u	- /u/  
+Ú	ú	- /uː/  
+Ů	ů	- /uː/  
+V	v	- /v/ (only used in loanwords)  
+W	w	- /v/ (only used in loanwords)  
+X	x	- /ks/  
+Y	y	- /ɪ/  
+Ý	ý	- /iː/  
+Z	z	- /z/  
+Ž ž - /ʒ/  
+
+## Dipthongs
+
+au - /au̯/  
+eu - /eu̯/  
+ou - /ou̯/  
+
+# Syllable Structure
+
+* Czech prefers empty codas, but it's not obligatory in the language [@harkins_modern_1980, pg. 9].  
+
+# Lenition Rules
+
+* Voiced word-final consonants generally neutralize [@harkins_modern_1980, pg. 10].  
+* /j/ may delete word-initially if preceding a consonant [@harkins_modern_1980, pg. 14].  
+* Voiceless consonants become voiced if followed by voiced consonants [@harkins_modern_1980, pg. 10].  
+* /ɦ/ appeared due to the lenition of /g/, which is common within the Slavic languages [@sussex_slavic_2006, pg. 143].  
+
+# Misc Rules
+
+* Glottal epenthesis occurs preceding a vowel in word-initial positions [@harkins_modern_1980, pg. 13].  
+* Repetition of consonants is typically avoided in Czech [@harkins_modern_1980, pg. 9].  
+* The voiceless plosives are often aspirated, but it's not contrastive to their non-aspirated counterparts [@harkins_modern_1980, pg. 5].  
