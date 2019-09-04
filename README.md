@@ -17,8 +17,9 @@
 | cbi           | Cha'palaa |
 | cbt           | Chayahuita|
 | cho           | Choctaw   |               |
-| chr           | Cherokee  |
-| cy            | Welsh     | under revision|
+| chr           | Cherokee  | under revision|
+| cs            | Czech     | under revision|
+| cv            | Chuvash   | under revision|
 | el            | Greek     | lacks lenition|
 | eu            | Basque    |
 | gn            | Guarani   |
@@ -59,6 +60,10 @@
 | bs | Bosnian          | non-transparent spelling with vowel length and tones |
 | ce | Chechen          | non-transparent spelling with vowel length |
 | ceb | Cebuano         | non-transparent spelling with vowel length |
+| cnh | Haka Chin       | non-transparent spelling with tones        |
+| coe | Koreguaja       | non-transparent spelling with tones        |
+| cuk | San Blas Kuna   | inconsistent orthographies            |
+| cy | Welsh            | non-transparent spelling with vowel length |    
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |
