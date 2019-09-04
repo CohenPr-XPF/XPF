@@ -20,7 +20,10 @@
 | chr           | Cherokee  | under revision|
 | cs            | Czech     | under revision|
 | cv            | Chuvash   | under revision|
+| dgz           | Daga      | under revision; lacks lenition|
+| djr           | Djambarrpuyngu |          |
 | el            | Greek     | lacks lenition|
+| emi           | Mussau Emira | under revision|
 | eu            | Basque    |
 | gn            | Guarani   |
 | hu            | Hungarian |
@@ -63,7 +66,11 @@
 | cnh | Haka Chin       | non-transparent spelling with tones        |
 | coe | Koreguaja       | non-transparent spelling with tones        |
 | cuk | San Blas Kuna   | inconsistent orthographies            |
-| cy | Welsh            | non-transparent spelling with vowel length |    
+| cy | Welsh            | non-transparent spelling with vowel length |  
+| da | Danish           | non-transparent spelling with vowels       |
+| des | Desano          | non-transparent spelling with tones        |
+| ee | Ewe              | non-transparent spelling with tones        |
+| efi | Efik            | non-transparent spelling with tones        |
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |
