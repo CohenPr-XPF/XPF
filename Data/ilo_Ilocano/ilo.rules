@@ -1,0 +1,25 @@
+# Ilocano Rule Set
+# Written by Emily
+# Last updated: 2019-08-22
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdgiklmnopstuw],,,,
+class,gem,[pbtdkgsmnŋɾljw],,,,
+class,vowel-in,[aiou],,,,
+class,vowel-out,[aɛiou],,,,
+# Individual Letters
+sub,e,ɛ,1,,,
+sub,e,ʔ ɛ,1,^,,,
+sub,r,ɾ,1,,,
+sub,y,j,1,,,
+sub,-,ʔ,1,,,
+sub,({vowel-in}),ʔ \1,1,^,,,
+sub,({passthrough}),\1,0.5,,,
+# Digraphs
+sub,n,ŋ,2,,g,
+sub,g,,2,n,,
+# ipasub rules
+ipasub,({gem}) \1\b,\1 ː,2,,,
+ipasub,({vowel-out}) \1,\1 ʔ \1,1,,,
+# word rules
+word,haan,h a ʔ a n,1,,,

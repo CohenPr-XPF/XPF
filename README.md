@@ -34,6 +34,7 @@
 | ht            | Haitian Creole| under revision; lacks lenition|
 | hu            | Hungarian | under revision|
 | hy            | Armenian  |
+| ilo           | Ilocano   | under revision|
 | jv            | Javanese  |
 | ka            | Georgian  |
 | kk            | Kazakh    |
@@ -93,6 +94,7 @@
 | gub | Guajajara       | non-transparent spelling with vowel nasalization|
 | ha | Hausa            | non-transparent spelling with vowel length |
 | huv | Huave           | inconsistent phonological documentation    |
+| hz | Herero           | non-transparent spelling with tones        |
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |
