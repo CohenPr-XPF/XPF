@@ -23,11 +23,14 @@
 | dgz           | Daga      | under revision; lacks lenition|
 | djr           | Djambarrpuyngu |          |
 | el            | Greek     | lacks lenition|
-| emi           | Mussau Emira | under revision|
+| emi           | Mussau-Emira | under revision|
 | eu            | Basque    | under revision|
 | ff            | Fula      |               |
 | gil           | Kiribati  | under revision|
 | gn            | Guarani   | under revision|
+| gvn           | Kuku-Yalanji |            |
+| haw           | Hawaiian  |
+| hmn           | Hmong     | under revision|
 | hu            | Hungarian |
 | jv            | Javanese  |
 | ka            | Georgian  |
@@ -86,6 +89,7 @@
 | gl | Galician         | non-transparent spelling                   |
 | grt | Garo            | non-transparent spelling with vowels       |
 | gub | Guajajara       | non-transparent spelling with vowel nasalization|
+| ha | Hausa            | non-transparent spelling with vowel length |
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |

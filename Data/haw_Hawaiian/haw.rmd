@@ -1,0 +1,58 @@
+---
+title: Hawaiian
+bibliography: haw.bib
+---
+# Background
+**Language family**: Austronesian
+# Alphabet
+The Hawaiian alphabet has 13 letters. There are five vowel qualities and eight consonants.
+## Vowels
+Hawaiian has five vowel qualities, each with their own letter.
+* ⟨a⟩ = /a/  
+* ⟨e⟩ = /e/  
+* ⟨i⟩ = /i/  
+* ⟨o⟩ = /o/  
+* ⟨u⟩ = /u/  
+
+Hawaiian makes a vowel length distinction. Long vowels are indicated with a macron ⟨¯⟩.
+* ⟨ā⟩ = /aː/  
+* ⟨ē⟩ = /eː/  
+* ⟨ī⟩ = /iː/  
+* ⟨ō⟩ = /oː/  
+* ⟨ū⟩ = /uː/
+
+## Consonants
+The Hawaiian consonants are as follows:
+* ⟨h⟩ = /h/
+* ⟨k⟩ = /k~t/
+* ⟨l⟩ = /l/
+* ⟨m⟩ = /m/
+* ⟨n⟩ = /n/
+* ⟨p⟩ = /p/
+* ⟨w⟩ = /w~v/
+* ⟨ʻ⟩ = /ʔ/  
+
+All of the consonants have capital letters as distinct from the lowercase ⟨H K L M N P W⟩
+with the exception of ⟨ʻ⟩, which does not have a capital form. When a word begins with ⟨ʻ⟩
+and the word is capitalized, the following letter receives the capital form.
+
+# Phonology
+## Vowels
+|      |   Front   |  Central  |    Back   |
+|------|:---------:|:---------:|:---------:|
+| High | /i/, /iː/ |           | /u/, /uː/ |
+| Mid  | /e/, /eː/ |           | /o/, /oː/ |
+| Low  |           | /a/, /aː/ |           ‍|
+
+## Consonants
+Hawaiian for the most part has a one-to-one mapping of letter to phoneme.
+The letter ⟨k⟩ can be used to represent either [k] or [t],
+but this is not a phonemic contrast—for example,
+[kapa] and [tapa] both refer to the same thing ("a type of ‘cloth beaten from the bark of . . . trees’"), but "both word forms are acceptable and neither is uncommon" [@jones2018hawaiian]. I have chosen to represent ⟨k⟩ as /k/.
+
+Another letter that may surface in more than one way is ⟨w⟩, which may surface as [w] or [v].
+However, [w] and [v] are not contrastive. Per @jones2018hawaiian, the rules treat ⟨w⟩ as [v].
+
+
+# Lenition
+h > ∅ / V_V [@elbert1986hawaiian]

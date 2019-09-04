@@ -1,0 +1,76 @@
+---
+title: "Kuku-Yalanji"
+author: "Bill Mizgerd"
+bibliography: gvn.bib
+output: html_document
+---
+
+Last Updated: 2019-07-26
+
+# Background
+
+**Language Family**: Pama-Nyungan / Yalandyic / Kuku-Yalanji
+
+This language can be spelled in a handful of ways, including Gugu-Yalanji and Guugu Yalandji.
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial: /b/, /m/, /w/  
+Alveolar: /d/, /n/, /r/, /l/  
+Retroflex: /ɻ/  
+Palatal: /ɟ/, /ɲ/, /j/  
+Velar: /ɡ/, /ŋ/  
+
+### By manner of articulation
+
+Stops: /b/, /d/, /ɟ/, /ɡ/  
+Nasals: /m/, /n/, /ɲ/, /ŋ/  
+Trills: /r/  
+Approximants: /w/, /l/, /ɻ/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /a/  
+
+Kuku-Yalanji vowels do not have contrastive length, and do not form diphthongs. [@GvnPatz1982, p. 36]
+
+# Alphabet
+
+a - /a/  
+b - /b/  
+d - /d/  
+i - /i/  
+j - /ɟ/  
+k - /ɡ/  
+l - /l/  
+m - /m/  
+n - /n/  
+ng - /ŋ/  
+ny - /ɲ/  
+r - /ɻ/  
+rr - /r/  
+u - /u/  
+w - /w/  
+y - /j/  
+
+# Lenition Rules
+
+* Intervocalic /d/ often taps to [ɾ]. [@GvnPatz1982, p. 32]
+* /ɟ/ is typically realized as an affricate. [@GvnPatz1982, p. 33]
+* Intervocalic /r/ typically taps to [ɾ]. [@GvnPatz1982, p. 34]
+* Word-initial /j/ can be dropped before /i/ or /a/; word-initial /w/ can be dropped before /u/. [@GvnPatz1982, p. 36]
+
+# Misc. Rules
+
+* Kuku-Yalanji stops have both voiced and voiceless allophones - the voiced allophones tend to surface intervocalically and after most sonorants (/l/, /ɻ/, and nasals), while the voiceless ones surface elsewhere. [@GvnPatz1982, p. 34]
+* /l/ tends to velarize after /a/ or /u/. (ibid.)
+
+## Syllable Structure
+
+Kuku-Yalanji has a (C)CV(C) syllable structure. [@GvnOates1964, p. 23]
+
+# References
