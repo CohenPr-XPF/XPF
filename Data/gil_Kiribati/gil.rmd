@@ -1,0 +1,57 @@
+---
+title: "Kiribati"
+author: "Justin Bai"
+bibliography: gil.bib
+output: html_document
+---
+# Background
+
+**Language family**: Austronesian
+
+Also referred to as Gilbertese.
+
+# Alphabet
+
+## Consonants
+* ⟨b⟩ = /p/
+* ⟨bw⟩ = /pˠ/
+* ⟨k⟩ = /k/
+* ⟨m⟩ = /m/
+* ⟨mm⟩ = /mː/
+* ⟨mw⟩ = /mˠ/
+* ⟨n⟩ = /nː/
+* ⟨ng⟩ = /ŋ/
+* ⟨ngng⟩ = /ŋː/
+* ⟨r⟩ = /ɾ/
+* ⟨t⟩ = /t/
+* ⟨w⟩ = /βˠ/
+
+Consonants transcribed with /ˠ/ are velarized-labials.
+
+## Vowels
+* ⟨a⟩ = /a/
+* ⟨e⟩ = /e/
+* ⟨i⟩ = /i/
+* ⟨o⟩ = /o/
+* ⟨u⟩ = /u/
+
+Long vowels are represented orthographically by
+doubling the vowel.
+* ⟨aa⟩ = /aː/
+* ⟨ee⟩ = /eː/
+* ⟨ii⟩ = /iː/
+* ⟨oo⟩ = /oː/
+* ⟨uu⟩ = /uː/
+
+# Phonology
+## Consonants
+Some observations noted in @blevins1999trimoraic,
+* "Voicing is nondistinctive in Gilbertese."
+* "Note that _r_ represents an alveolar tap or flap,
+while _w_ represents a voiced labiovelar fricative that has both flap and approximant
+allophones."
+* "The stop _t_ is realized as [s] when followed by i in all dialects."
+
+## Vowels
+* "Quantity is distinctive for vowels and nasal consonants, but not for obstruents,
+or for /r, w/. Length is indicated by double symbols: _aa_, _oo_, and so forth."

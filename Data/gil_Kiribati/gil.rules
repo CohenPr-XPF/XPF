@@ -1,0 +1,49 @@
+# Gilbertese
+# Written by: Justin
+# Last Updated: 2019-08-02
+type,sfrom,sto,weight,precede,follow,comment
+class,passthrough,[ktaeiou],,,
+
+sub,b,p,1,,,
+sub,b,pˠ,2,,w,
+sub,w,,2,b,,
+
+sub,m,m,1,,,
+sub,m,mˠ,2,,w,
+sub,w,,2,m,,
+sub,m,m ː,2,,m,
+sub,m,,2,m,,
+
+sub,n,n,1,,,
+sub,n,nˠ,2,,w,
+sub,w,,2,n,,
+sub,n,n ː,2,,n,
+sub,n,,2,n,,
+
+sub,n,ŋ,2,,g,
+sub,g,,2,n,,
+sub,n,ŋ ː,3,,gng,
+sub,g,,3,n,n,
+sub,n,,3,g,g,
+
+sub,r,ɾ,1,,,
+sub,w,βˠ,1,,,
+
+sub,a,a ː,2,,a,
+sub,a,,2,a,,
+
+sub,e,e ː,2,,e,
+sub,e,,2,e,,
+
+sub,i,i ː,2,,i,
+sub,i,,2,i,,
+
+sub,o,o ː,2,,o,
+sub,o,,2,o,,
+
+sub,u,u ː,2,,u,
+sub,u,,2,u,,
+
+sub,-,,1,,,
+
+sub,({passthrough}),\1,0.1,,,
