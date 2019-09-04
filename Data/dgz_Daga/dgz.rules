@@ -1,0 +1,11 @@
+# Daga
+# Written by: Justin
+# Last Updated: 2019-08-06
+type,sfrom,sto,weight,precede,follow,comment
+class,passthrough,[bdgkmnprtwaeiou],,,
+
+sub,s,t,1,,,
+sub,v,w,1,,,
+sub,y,j,1,,,
+
+sub,({passthrough}),\1,0.1,,,

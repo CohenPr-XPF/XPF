@@ -1,0 +1,80 @@
+---
+title: "Mussau-Emira"
+author: "Bill Mizgerd"
+bibliography: emi.bib
+output: html_document
+---
+
+Last Updated: 2019-07-23
+
+# Background
+
+**Language Family**: Austronesian / Malayo-Polynesian / Eastern Malayo-Polynesian / Oceanic / St. Matthias / Mussau-Emira
+
+# Phonology
+
+## Consonants
+
+Consonant gemination occurs contrastively. [@EmiBrownie2007, p. 13]
+
+* @EmiBrownie2007 argues for the flap /ɾ/ rather than /r/. (p. 13)
+* @EmiRoss2002 argues that the phonemes I have listed as voiced fricatives are actually stops in their underlying forms. (p. 149)
+
+### By place of articulation
+
+Bilabial: /p/, /m/, /β/  
+Alveolar: /t/, /n/, /s/, /r/, /l/  
+Velar: /k/, /ŋ/, /ɣ/  
+
+### By manner of articulation
+
+Stops: /p/, /t/, /k/  
+Nasals: /m/, /n/, /ŋ/  
+Fricatives: /β/, /s/, /ɣ/  
+Trills: /r/  
+Approximants: /l/  
+
+## Vowels
+
+Vowels: /i/, /u/, /ɛ/, /ɔ/, /ɑ/  
+Diphthongs: /ɑi/, /ɑu/, /ɑɛ/, /ɑɔ/, /ɛi/, /ɔi/, /ɔu/  
+
+Vowel length is contrastive. [@EmiBrownie2007, p. 13]
+
+@EmiRoss2002 argues for the more traditional five-vowel system of /i u e o a/. (p. 149)
+
+# Alphabet
+
+a - /ɑ/  
+b - /β/  
+e - /ɛ/  
+g - /ɣ/  
+gh - /ɣ/  
+i - /i/  
+k - /k/  
+l - /l/  
+m - /m/  
+n - /n/  
+ng - /ŋ/  
+o - /ɔ/  
+p - /p/  
+r - /r/  
+s - /s/  
+t - /t/  
+u - /u/  
+v - /β/  
+
+Gemination and vowel length are written by doubling the relevant character.
+
+The Seventh-Day Adventist orthography varies slightly, using <q> for /ɣ/ and <g> for /ŋ/ [@EmiRoss2002, p. 151]; I have opted not to support that orthography by default, given that it is unused by the Crubadan corpus.
+
+# Lenition Rules
+
+* Final vowels are frequently dropped. [@EmiBrownie2007, p. 15] [@EmiBrownie2009, p. 11]
+* In casual speech, syncope of vowels occurs between identical consonants. [@EmiBrownie2007, p. 16]
+
+# Misc. Rules
+
+* Voiced fricatives become stops when geminated, and sometimes when word-initial. [@EmiBrownie2007, p. 13] [@EmiRoss2002, p. 149]
+
+# References

@@ -1,0 +1,43 @@
+---
+title: "Daga"
+author: "Justin Bai"
+bibliography: dgz.bib
+output: html_document
+---
+# Background
+**Language family**: Trans–New Guinea / Dagan
+
+# Alphabet
+## Vowels
+* ⟨a⟩ = /a/
+* ⟨e⟩ = /e/
+* ⟨i⟩ = /i/
+* ⟨o⟩ = /o/
+* ⟨u⟩ = /u/
+## Consonants
+* ⟨b⟩ = /b/
+* ⟨d⟩ = /d/
+* ⟨g⟩ = /g/
+* ⟨k⟩ = /k/
+* ⟨m⟩ = /m/
+* ⟨n⟩ = /n/
+* ⟨p⟩ = /p/
+* ⟨r⟩ = /r/
+* ⟨s⟩ = /t/
+* ⟨t⟩ = /t/
+* ⟨v⟩ = /w/
+* ⟨w⟩ = /w/
+* ⟨y⟩ = /j/
+
+# Phonology
+## Vowels
+* @murane1974daga shows ⟨a⟩ as /a/ whereas @sil2011daga shows /ɑ/. The rules
+will represent ⟨a⟩ as /a/.
+
+## Consonants
+* /t/ is [s] before /i/ and /e/. The rules represent ⟨s⟩ as /t/.
+* /w/ is [v] before /i/ and /e/. The rules represent ⟨v⟩ as /w/.
+* Free variation in the representation of ⟨r⟩, which can either be [r] or [l]. The rules represent it as /r/.
+
+# Lenition
+No information available.

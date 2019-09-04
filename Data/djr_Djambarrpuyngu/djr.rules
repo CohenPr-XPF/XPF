@@ -1,0 +1,36 @@
+# Djambarrpuyngu Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-12
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,apostrophe,['ꞌˈ‘’],,,,
+class,pre-h,[dnt],,,,
+class,pre-j,[dt],,,,
+class,passthrough,[abdiklmnŋptuw],,,,
+# Individual Letters
+sub,ä,a ː,4,,,
+sub,ḏ,ɖ,4,,,
+sub,e,i ː,4,,,
+sub,g,ɡ,4,,,
+sub,ḻ,ɭ,4,,,
+sub,ṉ,ɳ,4,,,
+sub,o,u ː,4,,,
+sub,r,ɻ,4,,,
+sub,ṯ,ʈ,4,,,
+sub,y,j,4,,,
+sub,{apostrophe},ʔ,4,,,
+sub,-,,4,,,"some words have a hyphen that carries no phonetic value"
+# Digraphs
+sub,d,d̪,6,,h,"<dh>"
+sub,n,n̪,6,,h,"<nh>"
+sub,t,t̪,6,,h,"<th>"
+sub,h,,6,{pre-h},,"cleanup of h-final digraphs"
+sub,d,ɟ,6,,j,"<dj>"
+sub,t,c,6,,j,"<tj>"
+sub,j,,6,{pre-h},,"cleanup of j-final digraphs"
+sub,n,ɲ,6,,y,"<ny>"
+sub,y,,6,n,,"cleanup of <ny>"
+sub,r,r,6,,r,"<rr>"
+sub,r,,6,r,,"cleanup of <rr>"
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,

@@ -56,7 +56,7 @@
 | alq | Algonquin       | non-transparent spelling with vowel length |
 | am |Amharic           | non-transparent spelling with consonant gemination                    |
 | bcw | Bana            | non-transparent spelling with tones        |
-| bn |Bengali           | non-transparent spelling                   |
+| bn | Bengali           | non-transparent spelling                  |
 | bs | Bosnian          | non-transparent spelling with vowel length and tones |
 | ce | Chechen          | non-transparent spelling with vowel length |
 | ceb | Cebuano         | non-transparent spelling with vowel length |
@@ -70,11 +70,11 @@
 | st | Sesotho          | non-transparent spelling with tones        |
 | nd | Northern Ndebele | insufficient tokens                        |
 | mi | Maori            | non-transparent spelling with vowel length |
-| mas | Maasai           | insufficient tokens                        |
-| lt |Lithuanian        | non-transparent spelling with tones         |
-| lv |Latvian           | non-transparent spelling with tones         |
+| mas | Maasai          | insufficient tokens                        |
+| lt |Lithuanian        | non-transparent spelling with tones        |
+| lv |Latvian           | non-transparent spelling with tones        |
 | is | Icelandic        | non-transparent spelling                   |
 | gl | Galician         | non-transparent spelling                   |
 | fi | Finnish          | non-transparent spelling                   |
-| pl |Polish            | non-transparent spelling                    |
-| ti  |Tigrinya          | non-transparent spelling  |                  
+| pl |Polish            | non-transparent spelling                   |
+| ti  |Tigrinya          | non-transparent spelling |                  

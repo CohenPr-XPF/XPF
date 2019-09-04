@@ -1,0 +1,88 @@
+---
+title: "Djambarrpuyngu"
+author: "Bill Mizgerd"
+bibliography: djr.bib
+output: html_document
+---
+
+Last Updated: 2019-07-03
+
+# Background
+
+**Language Family**: Pama-Nyungan / Yolngu / Southern Yolngu / Dhuwal / Djambarrpuyngu
+
+# Phonology
+
+## Consonants
+
+* Voicing distinctions are only contrastive intervocalically or between sonorants. [@DjrWilkinson1991, p. 42]
+
+### By place of articulation
+
+Labial: /p/, /b/, /m/, /w/  
+Dental: /t̪/, /d̪/, /n̪/  
+Alveolar: /t/, /d/, /n/, /r/, /l/  
+Retroflex: /ʈ/, /ɖ/, /ɳ/, /ɻ/, /ɭ/  
+Palatal: /c/, /ɟ/, /ɲ/, /j/  
+Velar: /k/, /ɡ/  
+Glottal: /ʔ/  
+
+### By manner of articulation
+
+Stops: /p/, /b/, /t̪/, /d̪/, /t/, /d/, /ʈ/, /ɖ/, /c/, /ɟ/, /k/, /ɡ/, /ʔ/  
+Nasals: /m/, /n̪/, /n/, /ɳ/, /ɲ/, /ŋ/  
+Trills: /r/  
+Approximants: /w/, /ɻ/, /l/, /ɭ/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /a/  
+
+Vowel length is contrastive in Djambarrpuyngu. [@DjrWilkinson1991, p. 44]
+
+# Alphabet
+
+a - /a/  
+ä - /aː/  
+b - /b/  
+d - /d/  
+  dh - /d̪/  
+  dj - /ɟ/  
+ḏ - /ɖ/  
+e - /iː/  
+g - /ɡ/  
+i - /i/  
+k - /k/  
+l - /l/  
+ḻ - /ɭ/  
+m - /m/  
+n - /n/  
+  nh - /n̪/  
+  ny - /ɲ/  
+ṉ - /ɳ/  
+ŋ - /ŋ/  
+o - /uː/  
+p - /p/  
+r - /ɻ/  
+rr - /r/  
+t - /t/  
+  th - /t̪/  
+  tj - /c/  
+ṯ - /ʈ/  
+u - /u/  
+w - /w/  
+y - /j/  
+' - /ʔ/  
+
+# Lenition Rules
+
+* Intramorphemic labial and velar stops often approximantize to [w], while intramorphemic dental and palatal stops often approximantize to [j]. [@DjrWilkinson1991, p. 42]
+* /ɖ/ usually becomes the flap [ɾ] in the sequences /jɖ/ and /rɖ/. (ibid.)
+
+# Misc. Rules
+
+## Syllable Structure
+
+Djambarrpuyngu has a CV(C)(C)(ʔ) syllable structure. [@DjrWilkinson1991, p. 45]
+
+# References
