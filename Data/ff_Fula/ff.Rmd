@@ -1,0 +1,94 @@
+---
+title: "Fula"
+author: "Bill Mizgerd"
+bibliography: ff.bib
+output: html_document
+---
+
+Last Updated: 2019-07-17
+
+# Background
+
+**Language Family**: Niger-Congo / Atlantic-Congo / Atlantic / Northern Atlantic / Senegambian / Fula-Wolof / Fula-Serer / Fula
+
+The Fula language comprises a broad dialect continuum; I have opted to put together information that, as much as possible, reflects the most common cross-dialectal patterns.
+
+Other names for the language include Fulani and Fulfulde.
+
+# Phonology
+
+## Consonants
+
+* @FfPelletier1981 argues for /tʃ/ and /dʒ/ (p. 3), while @FfMukoshy1984 argues for /c/ and /ɟ/ (p. 46). I have chosen to prefer Mukoshy's analysis, since his work analyzes a greater range of Fula dialects.
+* @FfMukoshy1984 interprets the prenasalized stops as simply sequences of two consonants, rather than as single distinct phonemes. (pp. 48-49)
+* /ᵑɡ/ and /ŋ/ are mutually exclusive between dialects; a dialect of Fula may have one or the other of those phonemes, but none have both. [@FfMukoshy1984, p. 49]
+* Some western dialects debuccalize /w/ to [ʔ]; the Adamawa dialect realizes /w/ as [v]. [@FfMukoshy1984, p. 54]
+* The Adamawa dialect collapses the distinction between /ʔʲ/ and /ʔ/. [@FfMukoshy1984, p. 57]
+
+### By place of articulation
+
+Labial: /p/, /b/, /ᵐb/, /ɓ/, /m/, /f/, /w/  
+Alveolar: /t/, /d/, /ⁿd/, /ɗ/, /n/, /s/, /r/, /l/  
+Palatal: /c/, /ɟ/, /ᶮɟ/, /ɲ/, /j/  
+Velar: /k/, /ɡ/, /ᵑɡ/, /ŋ/  
+Glottal: /ʔ/, /ʔʲ/, /h/  
+
+### By manner of articulation
+
+Stops: /p/, /b/, /ᵐb/, /t/, /d/, /ⁿd/, /c/, /ɟ/, /ᶮɟ/, /k/, /ɡ/, /ᵑɡ/, /ʔ/, /ʔʲ/  
+Implosives: /ɓ/, /ɗ/  
+Nasals: /m/, /n/, /ɲ/, /ŋ/  
+Fricatives: /f/, /s/, /h/  
+Trills: /r/  
+Approximants: /w/, /l/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /e/, /o/, /a/  
+
+Vowel length is contrastive in Fula. [@FfMukoshy1984, p. 49]
+
+# Alphabet
+
+a - /a/  
+b - /b/  
+ɓ	- /ɓ/  
+c - /c/  
+d - /d/  
+ɗ - /ɗ/  
+e - /e/  
+f - /f/  
+g - /ɡ/  
+ɠ - /ɠ/ (only present in the Pular dialect)  
+h - /h/  
+i - /i/  
+j - /ɟ/  
+k - /k/  
+l - /l/  
+m - /m/  
+  mb - /ᵐb/  
+n - /n/  
+  nd - /ⁿd/  
+  ng - /ᵑɡ/  
+  nj - /ᶮɟ/  
+ny - /ɲ/  
+ŋ - /ŋ/  
+o - /o/  
+p - /p/  
+r - /r/  
+s - /s/  
+t - /t/  
+u - /u/  
+w - /w/  
+y - /j/  
+ƴ - /ʔʲ/  
+' - /ʔ/  
+
+Long vowels and geminate consonants are written by doubling the appropriate character. [@FfPelletier1981, pp. 14, 23]
+
+# Lenition Rules
+
+* In some dialects, /s/ approximantizes to [j]. [@FfMukoshy1984, p. 53]
+* Hausa-influenced dialects tend to spirantize /c/ to [ʃ]. [@FfMukoshy1984, p. 56]
+
+# References

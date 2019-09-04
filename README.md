@@ -24,7 +24,8 @@
 | djr           | Djambarrpuyngu |          |
 | el            | Greek     | lacks lenition|
 | emi           | Mussau Emira | under revision|
-| eu            | Basque    |
+| eu            | Basque    | under revision|
+| ff            | Fula      |               |
 | gn            | Guarani   |
 | hu            | Hungarian |
 | jv            | Javanese  |
@@ -71,6 +72,10 @@
 | des | Desano          | non-transparent spelling with tones        |
 | ee | Ewe              | non-transparent spelling with tones        |
 | efi | Efik            | non-transparent spelling with tones        |
+| emp | Northern Emberá | no documented orthography                  |
+| enq | Enga            | non-transparent spelling with tones        |
+| et | Estonian         | non-transparent spelling with contrastive syllable length|
+| faa | Fasu            | non-transparent spelling with tones        |
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |

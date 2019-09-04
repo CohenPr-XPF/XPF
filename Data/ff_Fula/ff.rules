@@ -1,0 +1,39 @@
+# Fula Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-17
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,apostrophe,['ꞌˈ‘’],,,,
+class,post-n,[dgjy],,,,
+class,output,[abɓcdɗefɡɠhiɟklmnɲŋoprstuwjʔ],,,,
+class,pre-ng-gem,[nŋ],,,,
+class,passthrough,[abɓcdɗefɠhiklmnɲŋoprstuw],,,,
+# Individual Letters
+sub,g,ɡ,4,,,
+sub,j,ɟ,4,,,
+sub,ñ,ɲ,4,,,"some orthographies use this instead of <ny>; others use <ɲ>, which is in the passthrough"
+sub,y,j,4,,,
+sub,ƴ,ʔʲ,4,,,
+sub,{apostrophe},ʔ,4,,,
+# Digraphs
+sub,m,ᵐb,6,,b,"<mb>"
+sub,b,,6,m,,"<mb> cleanup"
+sub,d,ⁿd,6,n,,"<nd>"
+sub,g,ᵑɡ,6,n,,"<ng>"
+sub,j,ᶮɟ,6,n,,"<nj>"
+sub,y,ɲ,6,n,,"<ny>"
+sub,n,,6,,{post-n},"n-initial diphthong cleanup"
+sub,ŋ,ᵑɡ,6,,g,"<ŋg> - alternate spelling of <ng>"
+sub,g,,6,ŋ,,"<ŋg> cleanup"
+# Long Vowels & Geminates
+ipasub,({output}) \1,\1 ː,2,,,"covers all long vowels and simple geminates"
+ipasub,m ᵐb,ᵐb ː,2,,,"long /ᵐb/"
+ipasub,n ⁿd,ⁿd ː,2,,,"long /ⁿd/"
+ipasub,n ᶮɟ,ᶮɟ ː,2,,,"long /ᶮɟ/"
+ipasub,{pre-ng-gem} ᵑɡ,ᵑɡ ː,2,,,"long /ᵑɡ/"
+sub,n,ɲ ː,8,,ny,"<nny> = long /ɲ/"
+sub,n,,8,n,y,"<nny> cleanup pt. 1"
+sub,y,,8,nn,,"<nny> cleanup pt. 2"
+# Misc. Rules
+ipasub,ʔ j,ʔʲ,2,,,"some orthographies use <'y> rather than <ƴ>"
+sub,({passthrough}),\1,0.1,,,
