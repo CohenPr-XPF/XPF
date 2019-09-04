@@ -26,7 +26,8 @@
 | emi           | Mussau Emira | under revision|
 | eu            | Basque    | under revision|
 | ff            | Fula      |               |
-| gn            | Guarani   |
+| gil           | Kiribati  | under revision|
+| gn            | Guarani   | under revision|
 | hu            | Hungarian |
 | jv            | Javanese  |
 | ka            | Georgian  |
@@ -72,10 +73,19 @@
 | des | Desano          | non-transparent spelling with tones        |
 | ee | Ewe              | non-transparent spelling with tones        |
 | efi | Efik            | non-transparent spelling with tones        |
-| emp | Northern Emberá | no documented orthography                  |
+| emp | Northern Emberá | non-transparent spelling                   |
 | enq | Enga            | non-transparent spelling with tones        |
 | et | Estonian         | non-transparent spelling with contrastive syllable length|
 | faa | Fasu            | non-transparent spelling with tones        |
+| fi | Finnish          | non-transparent spelling                   |
+| fj | Fijian           | non-transparent spelling with vowel length |
+| fo | Faroese          | non-transparent spelling with vowels       |
+| fy | Frisian          | non-transparent spelling with vowels       |
+| ga | Irish            | non-transparent spelling                   |
+| gah | Alekano         | non-transparent spelling with tones        |
+| gl | Galician         | non-transparent spelling                   |
+| grt | Garo            | non-transparent spelling with vowels       |
+| gub | Guajajara       | non-transparent spelling with vowel nasalization|
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |
@@ -86,7 +96,5 @@
 | lt |Lithuanian        | non-transparent spelling with tones        |
 | lv |Latvian           | non-transparent spelling with tones        |
 | is | Icelandic        | non-transparent spelling                   |
-| gl | Galician         | non-transparent spelling                   |
-| fi | Finnish          | non-transparent spelling                   |
 | pl |Polish            | non-transparent spelling                   |
 | ti  |Tigrinya          | non-transparent spelling |                  
