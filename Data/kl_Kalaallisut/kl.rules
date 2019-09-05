@@ -1,0 +1,25 @@
+# Kalaallisut Rule Set
+# Written by: Bill
+# Last Updated: 2019-06-10
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,output,[aɣijklmnŋɴpqʁstuv],,,,
+class,passthrough,[aijklmnpqstuv],,,,
+# Individual Letters
+sub,e,i,4,,,
+sub,f,v,4,,,
+sub,g,ɣ,4,,,
+sub,o,u,4,,,
+sub,r,ʁ,4,,,
+# Digraphs
+sub,n,ŋ,6,,g,"ng"
+sub,g,,6,n,,
+sub,r,ɴ,6,,n,"rn"
+sub,n,,6,r,,
+# Geminates
+sub,n,ŋ,8,,ng,"nng"
+sub,n,ː,8,n,g,"no need for a g-deletion rule since that already exists on line 16"
+ipasub,({output}) \1,\1 ː,2,,,
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,
+sub,-,,4,,,

@@ -1,0 +1,84 @@
+---
+title: "Kwoma"
+author: "Bill Mizgerd"
+bibliography: kmo.bib
+output: html_document
+---
+
+Last Updated: 2019-07-24
+
+# Background
+
+**Language Family**: Sepik / Middle Sepik / Nukuma / Kwoma
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial: /ᵐb/, /m/, /ɸ/, /β/, /w/  
+Alveolar: /t/, /ⁿd/, /n/, /s/, /ɾ/  
+Postalveolar: /ʃ/, /tʃ/, /ⁿdʒ/  
+Palatal: /ɲ/, /j/  
+Velar: /k/, /ᵑɡ/  
+Glottal: /ʔ/, /h/  
+
+### By manner of articulation
+
+Stops: /ᵐb/, /t/, /ⁿd/, /k/, /ᵑɡ/, /ʔ/  
+Affricates: /tʃ/, /ⁿdʒ/  
+Nasals: /m/, /n/, /ɲ/  
+Fricatives: /ɸ/, /β/, /s/, /ʃ/, /h/  
+Flaps: /ɾ/  
+Approximants: /w/, /j/  
+
+## Vowels
+
+Vowels: /a/, /e/, /i/, /o/, /u/, /ɛ/, /ɨ/  
+
+# Alphabet
+
+a - /a/  
+b - /ᵐb/  
+ch - /tʃ/  
+d - /ⁿd/  
+e - /e/  
+g - /ᵑɡ/  
+h - /h/  
+i - /i/  
+j - /ⁿdʒ/  
+k - /k/  
+m - /m/  
+n - /n/  
+ny - /ɲ/  
+o - /o/  
+p - /ɸ/  
+r - /ɾ/  
+s - /s/  
+sh - /ʃ/  
+t - /t/  
+u - /u/  
+v - /β/  
+w - /w/  
+y - /j/  
+' - /ʔ/  
+
+## Digraphs
+
+ay - /ai/  
+ee - /ɛ/  
+ey - /ei/  
+ii - /ɨ/  
+iy - /i/  
+ow - /ou/  
+uw - /u/  
+
+# Lenition Rules
+
+* The suffix /-ta/ spirantizes to /-tʃa/ after certain morphemes. [@KmoKooyers1974, p. 9]
+* The suffix /-tawa/ collapses to one of four shortened versions, depending on preceding morphemes. [@KmoKooyers1974, p. 10]
+* Monosyllabic /a/-final verb stems raise to [ɛ] before the suffix /-tʃi/. (ibid.)
+* The imperative marker /na/ raises to [ne] before /i/. (ibid.)
+
+# References

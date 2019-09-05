@@ -1,0 +1,131 @@
+# Kannada Rule Set
+# Written by: Bill
+# Last Updated: 2019-08-02
+type,sfrom,sto,weight,precede,follow,comment
+# Classes - Consonants
+class,k,[ಕ],,,,
+class,kh,[ಖ],,,,
+class,g,[ಗ],,,,
+class,gh,[ಘ],,,,
+class,tsh,[ಚ],,,,
+class,tshh,[ಛ],,,,
+class,dzh,[ಜ],,,,
+class,dzhh,[ಝ],,,,
+class,t-retro,[ಟ],,,,
+class,th-retro,[ಠ],,,,
+class,d-retro,[ಡ],,,,
+class,dh-retro,[ಢ],,,,
+class,n-retro,[ಣ],,,,
+class,t,[ತ],,,,
+class,th,[ಥ],,,,
+class,d,[ದ],,,,
+class,dh,[ಧ],,,,
+class,n,[ನಙಞ],,,,"includes palatal and velar allophones"
+class,p,[ಪ],,,,
+class,ph,[ಫ],,,,
+class,b,[ಬ],,,,
+class,bh,[ಭ],,,,
+class,m,[ಮ],,,,
+class,j-glide,[ಯ],,,,
+class,r,[ರ],,,,
+class,l,[ಲ],,,,
+class,v-approx,[ವ],,,,
+class,sh,[ಶ],,,,
+class,s-retro,[ಷ],,,,
+class,s,[ಸ],,,,
+class,h,[ಹ],,,,
+class,l-retro,[ಳ],,,,
+# Classes - Vowels & Misc.
+class,zero,[್],,,,
+class,a,[ಅ],,,,
+class,a-long,[ಾಆ],,,,
+class,i,[ಿಇ],,,,
+class,i-long,[ೀಈ],,,,
+class,u,[ುಉ],,,,
+class,u-long,[ೂಊ],,,,
+class,r-syllabic,[ೃಋ],,,,
+class,r-syl-long,[ೄೠ],,,,
+class,e,[ೆಎ],,,,
+class,e-long,[ೇಏ],,,,
+class,aj,[ೈಐ],,,,
+class,o,[ೊಒ],,,,
+class,o-long,[ೋಓ],,,,
+class,aw,[ೌಔ],,,,
+class,anusvara,[ಂ],,,,"nasal coda with the place of its following consonant"
+class,visarga,[ಃ],,,,"/h/; also repeats short vowels that precede it"
+class,zw,[‌],,,,"looks like a zero-width space? which is where the name comes from. regardless, i can't see it, and i don't think it carries any phonetic value"
+# Classes - For IPASub Purposes
+class,retroflex,[ʈ|ʈʰ|ɖ|ɖʱ|ɳ|ʂ|ɭ],,,,
+class,labial,[p|pʰ|b|bʱ|m|ʋ],,,,
+class,cons-output,(k|kʰ|ɡ|ɡʱ|tʃ|tʃʰ|dʒ|dʒʱ|ʈ|ʈʰ|ɖ|ɖʱ|ɳ|t̪ʰ|d̪ʱ|n|p|pʰ|b|bʱ|m|j|r|l|ʋ|ʃ|ʂ|s|h|ɭ),,,,
+class,anyvowel,[aeiou],,,,
+# Sub Rules - Consonants
+sub,{k},k a,4,,,
+sub,{kh},kʰ a,4,,,
+sub,{g},ɡ a,4,,,
+sub,{gh},ɡʱ a,4,,,
+sub,{tsh},tʃ a,4,,,
+sub,{tshh},tʃʰ a,4,,,
+sub,{dzh},dʒ a,4,,,
+sub,{dzhh},dʒʱ a,4,,,
+sub,{t-retro},ʈ a,4,,,
+sub,{th-retro},ʈʰ a,4,,,
+sub,{d-retro},ɖ a,4,,,
+sub,{dh-retro},ɖʱ a,4,,,
+sub,{n-retro},ɳ a,4,,,
+sub,{t},t̪ a,4,,,
+sub,{th},t̪ʰ a,4,,,
+sub,{d},d̪ a,4,,,
+sub,{dh},d̪ʱ a,4,,,
+sub,{n},n a,4,,,
+sub,{p},p a,4,,,
+sub,{ph},pʰ a,4,,,
+sub,{b},b a,4,,,
+sub,{bh},bʱ a,4,,,
+sub,{m},m a,4,,,
+sub,{j-glide},j a,4,,,
+sub,{r},r a,4,,,
+sub,{l},l a,4,,,
+sub,{v-approx},ʋ a,4,,,
+sub,{sh},ʃ a,4,,,
+sub,{s-retro},ʂ a,4,,,
+sub,{s},s a,4,,,
+sub,{h},h a,4,,,
+sub,{l-retro},ɭ a,4,,,
+# Sub Rules - Vowels
+sub,{zero},NULL,4,,,
+sub,{a},REAL,4,,,
+sub,{a-long},a ː,4,,,
+sub,{i},i,4,,,
+sub,{i-long},i ː,4,,,
+sub,{u},u,4,,,
+sub,{u-long},u ː,4,,,
+sub,{e},e,4,,,
+sub,{e-long},e ː,4,,,
+sub,{o},o,4,,,
+sub,{o-long},o ː,4,,,
+sub,{aj},a j,4,,,
+sub,{aw},a ʋ,4,,,
+sub,{r-syllabic},SYLr u,4,,,
+sub,{r-syl-long},SYLr u ː,4,,,
+sub,{zw},,4,,,
+# Anusvara
+sub,{anusvara},MAYBEn,4,,,
+ipasub,MAYBEn ({retroflex}),ɳ \1,6,,,"adapts the anusvara to retroflex consonants"
+ipasub,MAYBEn ({labial}),m \1,6,,,"adapts the anusvara to labial consonants"
+ipasub,MAYBEn,n,5,,,"adapts the anusvara otherwise"
+# Visarga
+sub,{visarga},ALTh,4,,,
+ipasub,({anyvowel}) ALTh,\1 h \1,6,,,"visarga after short vowels"
+ipasub,ː ALTh,ː h,5,,,"visarga after long vowels"
+# IPASub Rules
+ipasub,a ({anyvowel})\b,\1,4,,,"replaces automatic /a/ with a marked vowel"
+ipasub,a SYLr,r,4,,,"replaces automatic /a/ with syllabic /r/"
+ipasub, a NULL,,4,,,"replaces automatic /a/ with null"
+ipasub,REAL,a,2,,,"protects marked /a/"
+ipasub,SYLr,r,2,,,"corrects syllabic /r/ that wasn't caught by the rule above"
+ipasub,({cons-output}) \1\b,\1 ː,1,,,"consonant gemination"
+ipasub,d̪ d̪ ,d̪ ː ,1.5,,,"d-gemination - for reasons I haven't been able to place, the cons-output class doesn't like standalone <d̪> and <t̪>, so I use this workaround instead"
+ipasub,t̪ t̪ ,t̪ ː ,1.5,,,"t-gemination"
+
+sub,-,,4,,,

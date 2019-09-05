@@ -1,0 +1,157 @@
+---
+title: "Kannada"
+author: "Bill Mizgerd"
+bibliography: kn.bib
+output: html_document
+---
+
+Last Updated: 2019-08-01
+
+@KnAndronov1969: scan 19-22
+@KnSchiffman1983: scan 3-21
+@KnSridhar1990: scan 291-301, 307-313
+
+# Background
+
+**Language Family**: Dravidian / South Dravidian / Tamil-Kannada / Badaga-Kannada / Kannada
+
+# Phonology
+
+## Consonants
+
+* /f/ and /z/ appear in loanwords. [@KnKrishnamurti2003, p. 67]
+* /r/ seems to exist in free variation with [ɾ]. [@KnSridhar1990, p. 294] [@KnSchiffman1983, p. 15]
+* Consonants have contrastive gemination. [@KnSridhar1990, pp. 299-301] [@KnSchiffman1983, p. 8]
+* @KnAndronov1969 argues for /ɲ/ and /ŋ/ as phonemic (p. 21), but this view seems to have fallen out of favor.
+
+### By place of articulation
+
+Labial: /p/, /pʰ/, /b/, /bʰ/, /m/, /ʋ/  
+Dental: /t̪/, /t̪ʰ/, /d̪/, /d̪ʰ/  
+Alveolar: /n/, /s/, /r/, /l/  
+Retroflex: /ʈ/, /ʈʰ/, /ɖ/, /ɖʰ/, /ɳ/, /ʂ/, /ɭ/  
+Postalveolar: /tʃ/, /tʃʰ/, /dʒ/, /dʒʰ/  
+Palatal: /j/  
+Velar: /k/, /kʰ/, /ɡ/, /ɡʰ/  
+Glottal: /h/  
+
+### By manner of articulation
+
+Stops (unasp.): /p/, /b/, /t̪/, /d̪/, /ʈ/, /ɖ/, /k/, /ɡ/  
+Stops (asp.): /pʰ/, /bʱ/, /t̪ʰ/, /d̪ʱ/, /ʈʰ/, /ɖʱ/, /kʰ/, /ɡʱ/  
+Affricates: /tʃ/, /dʒ/, /tʃʰ/, /dʒʱ/  
+Nasals: /m/, /n/, /ɳ/  
+Fricatives: /s/, /ʂ/, /ʃ/, /h/  
+Trills: /r/  
+Approximants: /ʋ/, /l/, /ɭ/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /e/, /o/, /a/  
+
+* /æ/ appears in some loanwords [@KnKrishnamurti2003, p. 67], as does /ɔ/. [@KnSchiffman1983, p. 3]
+* All native vowels can be contrastively lengthened. [@KnKrishnamurti2003, p. 66]
+* /aj/ and /aʋ/ occur in Kannada, but they are sequences of discrete phonemes rather than diphthongs. [@KnSridhar1990, p. 296]
+
+# Alphabet
+
+## Consonants
+
+ಕ - /ka/  
+ಖ - /kʰa/  
+ಗ - /ɡa/  
+ಘ - /ɡʱa/  
+ಙ - /na/ (allophonically velar; see @KnSchiffman1983, p. 9)  
+ಚ - /tʃa/  
+ಛ - /tʃʰa/  
+ಜ - /dʒa/  
+ಝ - /dʒʱa/  
+ಞ - /na/ (allophonically palatal; see @KnSchiffman1983, p. 10)  
+ಟ - /ʈa/  
+ಠ - /ʈʰa/  
+ಡ - /ɖa/  
+ಢ - /ɖʱa/  
+ಣ - /ɳa/  
+ತ - /t̪a/  
+ಥ - /t̪ʰa/  
+ದ - /d̪a/  
+ಧ - /d̪ʱa/  
+ನ - /na/  
+ಪ - /pa/  
+ಫ - /pʰa/  
+ಬ - /ba/  
+ಭ - /bʱa/  
+ಮ - /ma/  
+ಯ - /ja/  
+ರ - /ra/  
+ಲ - /la/  
+ವ - /ʋa/  
+ಶ - /ʃa/  
+ಷ - /ʂa/  
+ಸ - /sa/  
+ಹ - /ha/  
+ಳ - /ɭa/  
+
+## Vowel Characters
+
+ಅ - /a/  
+ಆ - /aː/  
+ಇ - /i/  
+ಈ - /iː/  
+ಉ - /u/  
+ಊ - /uː/  
+ಋ - /r/ (see [^r-meaning])  
+ೠ - /rː/ (obsolete; see [^r-meaning])  
+ಎ - /e/  
+ಏ - /eː/  
+ಐ - /aj/  
+ಒ - /o/  
+ಓ - /oː/  
+ಔ - /aʋ/  
+
+## Vowel Diacritics
+
+್ - ∅ (marks consonant-final syllables)  
+ಾ - /aː/  
+ಿ - /i/  
+ೀ - /iː/  
+ು - /u/  
+ೂ - /uː/  
+ೃ - /r/ (see [^r-meaning])  
+ೄ - /rː/ (see [^r-meaning])  
+ೆ - /e/  
+ೇ - /eː/  
+ೈ - /aj/  
+ೊ - /o/  
+ೋ - /oː/  
+ೌ - /aʋ/  
+
+[^r-meaning]: Some Sanskrit loanwords feature syllabic /r/; however, in Kannada the /r/ is interpreted with an epenthetic vowel after it. Per @KnKrishnamurti2003, this vowel can be either /u/ or /i/ (p. 84); I have opted to prefer to add /u/, since in my experience it is likelier.
+
+There is no diacritic for /a/ because it is the inherent vowel on consonant characters.
+
+In loanwords with /æ/ or /ɔ/, those vowels are written with the characters for /eː/ and /oː/ respectively. [@KnSchiffman1983, p. 4]
+
+## Other Characters
+
+ಂ - anusvara; nasal with the same place as the following consonant [@KnKrishnamurti2003, p. 84]  
+ಃ - visarga; /h/ (after long vowels); /hV/ (after short vowels)  
+
+# Lenition Rules
+
+* Word-final short vowels often delete. [@KnSridhar1990, p. 307]
+* Word-medial short vowels sometimes delete, especially in casual speech; this happens most often in a penultimate syllable, and never in the first or last syllable of a word. (ibid.)
+* Consonants degeminate when followed by an unlike consonant. [@KnSridhar1990, p. 308]
+* Preconsonantal stops delete after a nasal with the same place of articulation. (ibid.)
+* Intervocalically or post-nasally, /d̪/ spirantizes to [ð]. [@KnSchiffman1983, p. 12]
+
+# Misc. Rules
+
+* Epenthesis of [u] typically occurs after word-final consonants (although if the consonant is /j/, then [i] will be inserted instead). [@KnSridhar1990, p. 296]
+* The final consonants of monosyllabic words undergo gemination. [@KnSridhar1990, p. 310]
+
+## Syllable Structure
+
+Kannada syllable structure is (C)(C)(C)V(C)(C)(C). [@KnSridhar1990, p. 298]
+
+# References

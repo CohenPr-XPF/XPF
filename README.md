@@ -41,7 +41,10 @@
 | ka            | Georgian  |
 | kbd           | Kabardian | under revision|
 | kk            | Kazakh    | under revision|
-| ko            | Korean    |
+| kl            | Kalaallisut |
+| kmo           | Kwoma     | under revision|
+| kn            | Kannada   | under revision|
+| ko            | Korean    | under revision|
 | mg            | Malagasy  |
 | ml            | Malayalam |               |
 | mt            | Maltese   |
@@ -101,8 +104,10 @@
 | is | Icelandic        | non-transparent spelling with vowel length                  |
 | kbc | Kadiweu         | non-transparent spelling with consonant gemination              |
 | kek | Qeqchi          | non-transparent spelling with ejectivization          |
-| kha | Khasi | non-transparent spelling with vowel length            |
+| kha | Khasi | non-transparent spelling with vowel length                  |
 | khk | Khalkha Mongolian | non-transparent spelling with vowels                  |
+| kmr | Northern Kurdish| non-transparent spelling with consonants              |
+| kw | Cornish          | non-transparent spelling with vowel length |
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |
