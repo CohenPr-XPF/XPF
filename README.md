@@ -35,7 +35,9 @@
 | hu            | Hungarian | under revision|
 | hy            | Armenian  |
 | ilo           | Ilocano   | under revision|
-| jv            | Javanese  |
+| iu            | Inuktitut | under revision|
+| jam           | Jamaican Creole | under revision; lacks lenition|
+| jv            | Javanese  | under revision|
 | ka            | Georgian  |
 | kk            | Kazakh    |
 | ko            | Korean    |
@@ -95,6 +97,7 @@
 | ha | Hausa            | non-transparent spelling with vowel length |
 | huv | Huave           | inconsistent phonological documentation    |
 | hz | Herero           | non-transparent spelling with tones        |
+| is | Icelandic        | non-transparent spelling with vowel length                  |
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |
@@ -104,6 +107,5 @@
 | mas | Maasai          | insufficient tokens                        |
 | lt |Lithuanian        | non-transparent spelling with tones        |
 | lv |Latvian           | non-transparent spelling with tones        |
-| is | Icelandic        | non-transparent spelling                   |
 | pl |Polish            | non-transparent spelling                   |
 | ti  |Tigrinya          | non-transparent spelling |                  

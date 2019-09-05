@@ -1,0 +1,104 @@
+---
+title: "Inuktitut"
+author: "Bill Mizgerd"
+bibliography: iu.bib
+output: html_document
+---
+
+Last Updated: 2019-07-10
+
+There are two rulesets (and, accordingly, two verify files): one for the Latin-alphabet orthography of Inuktitut, and one for the Inuktitut syllabary.
+
+# Background
+
+**Language Family**: Eskimo-Aleut / Eskimo / Inuit / Inuktitut
+
+Where dialects diverge, this analysis will be preferring Eastern Canadian Inuktitut.
+
+# Phonology
+
+## Consonants
+
+* /r/ survives in a small number of dialects. [@IuDorais1990, p. 215]
+
+### By place of articulation
+
+Labial: /p/, /m/, /v/  
+Alveolar: /t/, /n/, /s/, /ɬ/, /l/  
+Palatal: /j/  
+Velar: /k/, /ŋ/, /ɣ/  
+Uvular: /q/, /ʁ/  
+
+### By manner of articulation
+
+Stops: /p/, /t/, /k/, /q/  
+Nasals: /m/, /n/, /ŋ/  
+Fricatives: /v/, /s/, /ɬ/, /ɣ/, /ʁ/  
+Approximants: /l/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /a/  
+
+Vowel length is contrastive. [@IuDorais1990, p. 214]
+
+# Alphabet
+
+## Inuit Syllabary
+
+See @IuDorais1990 (p. 241) for details. A dot can be appended above a character to indicate a long syllable.
+
+| ᐃ - /i/  | ᐅ - /u/  | ᐊ - /a/  | ᐁ - /ai/  |  Final   |
+|:--------:|:--------:|:--------:|:---------:|:--------:|
+| ᐱ	- /pi/ | ᐳ - /pu/ | ᐸ - /pa/ | ᐯ - /pai/ | ᑉ - /p/ |
+| ᑎ - /ti/ | ᑐ - /tu/ | ᑕ - /ta/ | ᑌ - /tai/ | ᑦ - /t/ |
+| ᑭ - /ki/ | ᑯ - /ku/ | ᑲ - /ka/ | ᑫ - /kai/ | ᒃ - /k/ |
+| ᒋ - /ɣi/ | ᒍ - /ɣu/ | ᒐ - /ɣa/ | ᒉ - /ɣai/ | ᒡ - /ɣ/ |
+| ᒥ - /mi/ | ᒧ - /mu/ | ᒪ - /ma/ | ᒣ - /mai/ | ᒻ - /m/ |
+| ᓂ - /ni/ | ᓄ - /nu/ | ᓇ - /na/ | ᓀ - /nai/ | ᓐ - /n/ |
+| ᓯ - /si/ | ᓱ - /su/ | ᓴ - /sa/ | ᓭ - /sai/ | ᔅ - /s/ |
+| ᓕ - /li/ | ᓗ - /lu/ | ᓚ - /la/ | ᓓ - /lai/ | ᓪ - /l/ |
+| ᔨ - /ji/ | ᔪ - /ju/ | ᔭ - /ja/ | ᔦ - /jai/ | ᔾ - /j/ |
+| ᕕ - /vi/ | ᕗ - /vu/ | ᕙ - /va/ | ᕓ - /vai/ | ᕝ - /v/ |
+| ᕆ - /ʁi/ | ᕈ - /ʁu/ | ᕋ - /ʁa/ | ᕃ - /ʁai/ | ᕐ - /ʁ/ |
+| ᕿ - /qi/ | ᖁ - /qu/ | ᖃ - /qa/ | ᙯ - /qai/ | ᖅ - /q/ |
+| ᖏ - /ŋi/ | ᖑ - /ŋu/ | ᖓ - /ŋa/ | ᙰ - /ŋai/ | ᖕ - /ŋ/ |
+| ᖠ - /ɬi/ | ᖢ - /ɬu/ | ᖤ - /ɬa/ |    N/A    | ᖦ - /ɬ/ |
+
+## Roman Alphabet
+
+a - /a/  
+g - /ɣ/  
+h - /h/ (in some dialects)  
+i - /i/  
+j - /j/  
+k - /k/  
+l - /l/  
+& - /ɬ/  
+m - /m/  
+n - /n/  
+ng - /ŋ/  
+p - /p/  
+q - /q/  
+r - /ʁ/  
+s - /s/  
+t - /t/  
+u - /u/  
+v - /v/  
+
+Vowel length is shown by doubling the vowel character [@IuDorais2010, p. 56].
+
+# Lenition Rules
+
+* In some dialects, /s/ debuccalizes to [h]. [@IuDorais1990, pp. 215-216]
+* In some dialects, /t/ spirantizes to [s] - or reduces even farther to [h] - when preceded by /i/. [@IuDorais1990, pp. 216-217]
+* In some Alaskan dialects, /p/ spirantizes to [v] and /v/ approximantizes to [w] when preceded by unstressed syllables. [@IuDorais1986, p. 25]
+* In some dialects, /q/ spirantizes to [χ] or [ʁ]. (ibid.)
+* In some Greenlandic dialects, intervocalic /ŋ/ deletes. [@IuDorais1986, p. 27]
+* In dialects in Greenland and western Canada, word-final /i/ deletes. [@IuDorais1986, p. 31]
+
+# Misc. Rules
+
+* Regressive assimilation occurs in consonant clusters, with the extent of the assimilation varying based on dialect. [@IuDorais1986, pp. 34-35]
+
+# References

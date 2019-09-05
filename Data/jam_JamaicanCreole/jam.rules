@@ -1,0 +1,30 @@
+# Jamaican Creole
+# Written by: Justin
+# Last Updated: 2019-08-02
+type,sfrom,sto,weight,precede,follow,comment
+class,passthrough,[bdfghklmnptvwzaeiu],,,
+class,punct,['’-],,,
+
+sub,c,tʃ,2,,h,
+sub,h,,2,c,,
+
+sub,n,ŋ,2,,g,
+sub,g,,2,n,,
+
+sub,j,d ʒ,1,,,
+
+sub,r,ɹ,1,,,
+
+sub,s,s,1,,,
+sub,s,ʃ,2,,h,
+sub,h,,2,s,,
+
+sub,o,o,1,,,
+sub,o,a u,2,,u,
+sub,u,,2,o,,
+
+sub,y,j,1,,,
+
+sub,{punct},,1,,,
+
+sub,({passthrough}),\1,0.1,,,
