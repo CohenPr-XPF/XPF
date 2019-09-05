@@ -45,7 +45,10 @@
 | kmo           | Kwoma     | under revision|
 | kn            | Kannada   | under revision|
 | ko            | Korean    | under revision|
-| mg            | Malagasy  |
+| ky            | Kirghiz   | under revision|
+| lem           | Nomaande  |
+| mcq           | Ese       |
+| mg            | Malagasy  | under revision|
 | ml            | Malayalam |               |
 | mt            | Maltese   |
 | nhe           | Nahuatl   |
@@ -108,6 +111,13 @@
 | khk | Khalkha Mongolian | non-transparent spelling with vowels                  |
 | kmr | Northern Kurdish| non-transparent spelling with consonants              |
 | kw | Cornish          | non-transparent spelling with vowel length |
+| lb | Luxembourgish    | non-transparent spelling with vowels       |
+| lg | Luganda          | non-transparent spelling with tones        |
+| lt |Lithuanian        | non-transparent spelling with tones        |
+| lus | Mizo            | non-transparent spelling with tones        |
+| lv | Latvian          | non-transparent spelling with tones        |
+| lvs | Standard Latvian | non-transparent spelling with tones       |
+| mhr | Eastern Mari    | non-transparent spelling with palatalization |
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |
@@ -115,7 +125,6 @@
 | nd | Northern Ndebele | insufficient tokens                        |
 | mi | Maori            | non-transparent spelling with vowel length |
 | mas | Maasai          | insufficient tokens                        |
-| lt |Lithuanian        | non-transparent spelling with tones        |
 | lv |Latvian           | non-transparent spelling with tones        |
 | pl |Polish            | non-transparent spelling                   |
 | ti  |Tigrinya          | non-transparent spelling |                  

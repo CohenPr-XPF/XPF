@@ -1,0 +1,79 @@
+---
+title: "Ese"
+author: "Bill Mizgerd"
+bibliography: mcq.bib
+output: html_document
+---
+
+Last Updated: 2019-08-06
+
+# Background
+
+**Language Family**: Trans-New Guinea / Koiarian / Baraic / Ese
+
+The language is also known as Managalasi.
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Bilabial: /p/, /m/, /β/  
+Alveolar: /t/, /n/, /s/, /ɾ/  
+Postalveolar: /tɕ/, /dʑ/  
+Velar: /k/  
+Glottal: /ʔ/, /h/  
+
+### By manner of articulation
+
+Stops: /p/, /t/, /k/, /ʔ/  
+Affricates: /tɕ/, /dʑ/  
+Nasals: /m/, /n/  
+Fricatives: /β/, /s/, /h/  
+Flaps: /ɾ/  
+
+## Vowels
+
+Vowels: /i/, /ʉ/, /u/, /e/, /o/, /ɑ/  
+
+# Alphabet
+
+a - /ɑ/  
+ch - /tɕ/  
+e - /e/  
+h - /h/  
+i - /i/  
+j - /dʑ/  
+k - /k/  
+m - /m/  
+n - /n/  
+o - /o/  
+p - /p/  
+r - /ɾ/  
+s - /s/  
+t - /t/  
+u - /u/  
+ú - /ʉ/  
+v - /β/  
+' - /ʔ/  
+
+# Lenition Rules
+
+* Postvocalic /a/ reduces to [ə], except when followed by /ne/ or /nɑ/. [@McqParlier1963, p. 19]
+
+# Misc. Rules
+
+* Word-initial /ɾ/ lateralizes to [ɺ]. [@McqParlier1992, p. 3]
+* @McqParlier1963 also attests this process as occurring after /i/. (p. 10)
+* /u/ becomes [w] before stressed vowels. [@McqParlier1992, p. 3] [@McqParlier1981, p. viii]
+* /β/ goes to [b] before unstressed /u/. [@McqParlier1963, p. 7]
+* /tɕ/ alternates with [ts] before /ɑ/. [@McqParlier1963, p. 8]
+* /dʑ/ retroflexes (to [ɖʑ], supposedly) before non-high back vowels. [@McqParlier1963, p. 9]
+* Word-final mid vowels lower to be mid-open. [@McqParlier1963, pp. 18-20]
+
+## Syllable Structure
+
+Ese has a (C)V syllable structure. [@McqParlier1992, p. 2]
+
+# References

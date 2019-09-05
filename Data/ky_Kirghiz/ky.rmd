@@ -1,0 +1,92 @@
+---
+title: "Kirghiz"
+author: "Emily Strand"
+bibliography: ky.bib
+output: html_document
+---
+
+# Background
+
+**Language family**: Altaic / Turkic / Kipchak
+
+# Phonology
+
+## consonants
+
+*
+
+### By place of articulation
+
+Labial: /v/, /b/, /p/, /m/     
+Alveo-dental: /d/, /t/, /z/, /s/, /n/, /r/, /l/       
+Alveo-palatal: /tʃ/, /dʒ/, /ʃ/, /ʒ/, /j/      
+Velar: /g/, /k/, /ŋ/      
+
+### By manner of articulation
+
+Stops: /b/, /p/, /d/, /t/, /g/, /k/   
+Affricates: /tʃ/, /dʒ/  
+Fricatives: /v/, /z/, /s/, /ʃ/, /ʒ/      
+Nasals: /m/, /n/, /ŋ/     
+Glides: /j/      
+Liquids: /r/, /l/      
+
+## Vowels
+
+* Vowel length is phonemic [@johanson_kirghiz_2006, pg. 344].    
+* Long vowels are represented by repeated graphemes or macrons (¯) [@johanson_kirghiz_2006, pg. 345].
+
+Short: /ɑ/, /e/, /i/, /o/, /ø/, /u/, /y/, /ɯ/
+
+# Alphabet
+
+* Although a Roman-based alphabet was introduced following the Soviet era, the Cyrillic-based script is widely used [@brown_kirghiz_2009, pg. 611].
+* Much of the one-to-one mapping of grapheme to phoneme was inferred from @herbert_kirghiz_1997 (pg. 3 - 7).
+
+A; a - /ɑ/    
+Б; б - /b/
+В; в - /v/  
+Г; г - /g/       
+Д; д - /d/   
+Е; е - /e/  
+Ё; ё - /jo/   
+Ж; ж - /dʒ/     
+З; з - /z/   
+И; и - /i/    
+Й; й - /j/     
+К; к - /k/     
+Л; л - /l/    
+М; м - /m/       
+Н; н - /n/     
+Ң; ң - /ŋ/     
+О; о - /o/    
+Ө; ө - /ø/     
+П; п - /p/   
+Р; р - /r/         
+С; с - /s/     
+Т; т - /t/        
+У; у - /u/        
+Ү; ү - /y/    
+Ф; ф - /f/ (only used in loanwords)
+Х; х - /χ/      
+Ц; ц - /ts/ (only used in loanwords)
+Ч; ч - /tʃ/     
+Ш; ш - /ʃ/      
+Щ; щ - /ʃtʃ/ (only used in loanwords)    
+Ъ; ъ - no phonemic representation (indicates non-palatalization of the preceding consonant - only used in loanwords)    
+Ы; ы - /ɯ/    
+Ь; ь - no phonemic representation (indicates palatilazation of the preceding consonant - only used in loanwords)    
+Э; э - /e/   
+Ю; ю - /ju/    
+Я; я - /jɑ/     
+
+
+# Lenition Rules
+
+* Spirantization occurs with most stops intervocalically [@johanson_kirghiz_2006, pg. 345].
+
+
+# Misc. Rules
+
+* /k/, /g/, and /l/ are realized as [q], [ɢ], and [ɫ] respectively preceding back vowels [@johanson_kirghiz_2006, pg. 345].    
+* The Kirghiz language implements two types of vowel harmony [@herbert_kirghiz_1997, pg. 7].

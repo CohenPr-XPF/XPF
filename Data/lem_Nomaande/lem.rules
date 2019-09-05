@@ -1,0 +1,44 @@
+# Nomaande Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-12
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,apostrophe,[ꞌ'ˈ‘’ʼ],,,,
+class,v-midlow,[ɛɔ],,,,
+class,n-follower,[djy],,,,
+class,ipavowel,[aɨɛioɔu],,,,
+class,tone,[˨˦],,,,
+class,passthrough,[fhklmnŋstw],,,,
+# Individual Letters
+sub,a,a ˨,4,,,
+sub,á,a ˦,4,,,
+sub,b,p,4,,,
+sub,c,tʃ,4,,,
+sub,e,ɨ ˨,4,,,
+sub,é,ɨ ˦,4,,,
+sub,ɛ,ɛ ˨,4,,,
+sub,i,i ˨,4,,,
+sub,í,i ˦,4,,,
+sub,o,o ˨,4,,,
+sub,ó,o ˦,4,,,
+sub,ɔ,ɔ ˨,4,,,
+sub,u,u ˨,4,,,
+sub,ú,u ˦,4,,,
+sub,y,j,4,,,
+sub,{apostrophe},ʔ,4,,,
+sub,-,,4,,,"a handful of words have hyphens with no phonetic value"
+# Accented <ɛ> and <ɔ>
+sub,́,˦,4,,,"acute accent = high tone"
+ipasub,({v-midlow}) ˨ ˦,\1 ˦,2,,,"attaches the high tone to the vowel"
+# Digraphs
+sub,m,ᵐb,6,,b,"<mb>"
+sub,b,,6,m,,"<mb> cleanup"
+sub,ŋ,ᵑɡ,6,,g,"<ŋg>"
+sub,g,,6,ŋ,,"<ŋg> cleanup"
+sub,n,,6,,{n-follower},"<n>-initial digraph cleanup"
+sub,d,ⁿd,6,n,,"<nd>"
+sub,j,ᶮdʒ,6,n,,"<nj>"
+sub,y,ɲ,6,n,,"<ny>"
+# Misc. Rules
+ipasub,({ipavowel}) ({tone}) \1 \2,\1 \2 ː,1,,,"vowel lengthening"
+sub,({passthrough}),\1,0.1,,,
