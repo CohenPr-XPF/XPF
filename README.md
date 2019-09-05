@@ -39,7 +39,8 @@
 | jam           | Jamaican Creole | under revision; lacks lenition|
 | jv            | Javanese  | under revision|
 | ka            | Georgian  |
-| kk            | Kazakh    |
+| kbd           | Kabardian | under revision|
+| kk            | Kazakh    | under revision|
 | ko            | Korean    |
 | mg            | Malagasy  |
 | ml            | Malayalam |               |
@@ -98,6 +99,10 @@
 | huv | Huave           | inconsistent phonological documentation    |
 | hz | Herero           | non-transparent spelling with tones        |
 | is | Icelandic        | non-transparent spelling with vowel length                  |
+| kbc | Kadiweu         | non-transparent spelling with consonant gemination              |
+| kek | Qeqchi          | non-transparent spelling with ejectivization          |
+| kha | Khasi | non-transparent spelling with vowel length            |
+| khk | Khalkha Mongolian | non-transparent spelling with vowels                  |
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |
