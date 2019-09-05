@@ -49,8 +49,8 @@
 | lem           | Nomaande  |
 | mcq           | Ese       |
 | mg            | Malagasy  | under revision|
-| ml            | Malayalam |               |
-| mt            | Maltese   |
+| ml            | Malayalam | under revision|
+| mt            | Maltese   | under revision|
 | nhe           | Nahuatl   |
 | ny            | Chichewa  |
 | si            | Sinhala   |
@@ -95,6 +95,7 @@
 | fi | Finnish          | non-transparent spelling                   |
 | fj | Fijian           | non-transparent spelling with vowel length |
 | fo | Faroese          | non-transparent spelling with vowels       |
+| fur | Friulian        | non-transparent spelling with vowels       |
 | fy | Frisian          | non-transparent spelling with vowels       |
 | ga | Irish            | non-transparent spelling                   |
 | gah | Alekano         | non-transparent spelling with tones        |
@@ -117,14 +118,16 @@
 | lus | Mizo            | non-transparent spelling with tones        |
 | lv | Latvian          | non-transparent spelling with tones        |
 | lvs | Standard Latvian | non-transparent spelling with tones       |
+| mas | Maasai          | insufficient tokens                        |
 | mhr | Eastern Mari    | non-transparent spelling with palatalization |
+| mi | Maori            | non-transparent spelling with vowel length |
+| mos | Mossi           | non-transparent spelling with tones        |
+| mps | Dadibi          | non-transparent spelling with tones and vowel nasalization |
+| ms | Malay            | non-transparent spelling with vowels       |
 | yo | Yoruba           | non-transparent spelling with tones        |
 | xh | Xhosa            | non-transparent spelling with tones        |
 | sv | Swedish          | non-transparent spelling                   |
 | st | Sesotho          | non-transparent spelling with tones        |
 | nd | Northern Ndebele | insufficient tokens                        |
-| mi | Maori            | non-transparent spelling with vowel length |
-| mas | Maasai          | insufficient tokens                        |
-| lv |Latvian           | non-transparent spelling with tones        |
 | pl |Polish            | non-transparent spelling                   |
 | ti  |Tigrinya          | non-transparent spelling |                  
