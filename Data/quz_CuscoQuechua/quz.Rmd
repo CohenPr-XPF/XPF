@@ -1,0 +1,97 @@
+---
+title: "Cusco Quechua"
+author: "Bill Mizgerd"
+bibliography: sq.bib
+output: html_document
+---
+
+Last Updated: 2019-06-20
+
+# Background
+
+**Language Family**: Quechuan / Quechua II / Southern Quechua / Cusco Quechua
+
+# Phonology
+
+## Consonants
+
+* The voiced stops /b d ɡ/ appear, but only in Spanish loanwords. [@QuzParker1996, p. 71]
+* [ŋ] is traditionally held to be an allophone of /n/, but @QuzEbina2011 argues for it being a distinct phoneme. (p. 4)
+
+### By place of articulation
+
+Labial: /p/, /pʰ/, /p'/, /m/, /w/  
+Alveolar: /t/, /tʰ/, /t'/, /n/, /s/, /ɾ/, /l/  
+Postalveolar: /tʃ/, /tʃʰ/, /tʃ'/  
+Palatal: /ɲ/, /ʎ/, /j/  
+Velar: /k/, /kʰ/, /k'/  
+Uvular: /q/, /qʰ/, /q'/  
+Glottal: /h/  
+
+### By manner of articulation
+
+Stops (ejective): /p'/, /t'/, /k'/, /q'/  
+Stops (pulmonic): /p/, /pʰ/, /t/, /tʰ/, /k/, /kʰ/, /q/, /qʰ/  
+Affricates: /tʃ/, /tʃʰ/, /tʃ'/  
+Nasals: /m/, /n/, /ɲ/  
+Fricatives: /s/, /ʃ/, /h/  
+Taps: /ɾ/  
+Approximants: /w/, /l/, /ʎ/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /a/  
+
+The status of /e/ and /o/ is controversial. The sounds first entered the language after contact with Spanish, but @QuzParker1996 argues that they have become contrastive since then (p. 71); conversely, @QuzEbina2011 argues that [e] and [o] are only produced as allophones of /i/ and /u/ near uvular consonants (p. 5). I have opted to prefer the three-vowel analysis in my ruleset.
+
+# Alphabet
+
+a - /a/  
+ch - /tʃ/  
+  chh - /tʃʰ/  
+  ch' - /tʃ'/  
+h - /h/  
+i - /i/  
+k - /k/  
+  kh - /kʰ/  
+  k' - /k'/  
+l - /l/  
+ll - /ʎ/  
+m - /m/  
+n - /n/  
+ñ - /ɲ/  
+p - /p/  
+  ph - /pʰ/  
+  p' - /p'/  
+q - /q/  
+  qh - /qʰ/  
+  q' - /q'/  
+r - /ɾ/  
+s - /s/  
+sh - /ʃ/  
+t - /t/  
+  th - /tʰ/  
+  t' - /tʰ/  
+u - /u/  
+w - /w/  
+y - /j/  
+
+## Notes
+
+* Ejective consonants are marked by following the consonant with <'>.
+* Aspiration of a phoneme is typically marked by following the consonant with <h>. [@QuzEbina2011, p. 5]
+
+# Lenition Rules
+
+* Syllable-final /k/ and /q/ tend to spirantize to [x] and [χ] respectively; intervocalic /qʰ/ also spirantizes to [χ]. [@QuzEbina2011, p. 4]
+* /pʰ/ spirantizes to [ɸ] in some contexts. [@QuzEbina2011, p. 4] [@QuzMannheim1982, p. 214]
+
+# Misc. Rules
+
+* Aspirated and ejective stops occur only in syllable onsets, always as the first syllable-initial stop in the root, and only in consonant-initial words. [@QuzParker1996, p. 72]
+
+## Syllable Structure
+
+Cusco Quechua has a (C)V(C) structure in word-initial syllables, and a CV(C) structure in word-medial syllables. [@QuzParker1996, p. 71] [@QuzEbina2011, p. 5]
+
+# References

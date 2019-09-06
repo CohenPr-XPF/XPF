@@ -1,0 +1,16 @@
+# Rotokas Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-18
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,vowel,[aeiou],,,,
+class,passthrough,[aeikoptu],,,,
+# Individual Letters
+sub,g,ɡ,4,,,
+sub,r,ɾ,4,,,
+sub,s,t,4,,,
+sub,v,β,4,,,
+sub,-,,4,,,"some words have a hyphen with no phonetic value"
+# Misc. Rules
+ipasub,({vowel}) \1,\1 ː,2,,,"vowel lengthening"
+sub,({passthrough}),\1,0.1,,,

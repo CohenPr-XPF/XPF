@@ -1,0 +1,31 @@
+# Uzbek Rule Set
+# Written by: Emily
+# Last Updated: 2019-08-21
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[a|h|i|l|m|n|p|r|s|t|u|w],,,,
+# Individual Letters
+sub,ä,a ː,1,,,
+sub,c,k,1,,,
+sub,e,i,1,,,
+sub,ë,i ː,1,,,
+sub,g,q,1,,,
+sub,ï,i ː,1,,,
+sub,j,h,1,,,
+sub,ñ,ɲ,1,,,
+sub,o,u,1,,,
+sub,ö,u ː,1,,,
+sub,ü,u ː,1,,,
+sub,y,j,1,,,
+# Digraphs
+sub,c,tʃ,2,,h,
+sub,h,,2,c,,
+sub,g,q,2,,u,
+sub,u,,2,g,,
+sub,l,ʎ,2,,l,,
+sub,l,,2,l,,
+sub,q,k,1,,u,
+sub,u,,2,q,,
+sub,s,ʃ,2,,h,
+sub,h,,2,s,,
+sub,({passthrough}),\1,0.5,,,,

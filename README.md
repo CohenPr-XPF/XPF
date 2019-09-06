@@ -61,6 +61,9 @@
 | or            | Oriya          | under revision; lacks lenition|
 | pa            | Punjabi        | under revision; lacks lenition|
 | pau           | Palauan        |
+| qub           | Huallaga Huánuco Quechua | under revision      |
+| quz           | Cusco Quechua  | under revision                |
+| roo           | Rotokas        |
 | si            | Sinhala        |
 | sw            | Swahili        |
 | ta            | Tamil          |
@@ -144,6 +147,7 @@
 | pl  |Polish            | non-transparent spelling                                  |
 | poh | Poqomchi'        | insufficient documentation             |
 | pms | Piedmontese      | non-transparent spelling               |
+| rw  | Kinyarwanda      | non-transparent spelling with tones and vowel length                |
 | yo  | Yoruba           | non-transparent spelling with tones                       |
 | xh  | Xhosa            | non-transparent spelling with tones                       |
 | sv  | Swedish          | non-transparent spelling                                  |
