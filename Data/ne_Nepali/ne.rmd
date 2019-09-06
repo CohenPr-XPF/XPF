@@ -1,0 +1,96 @@
+---
+title: "Nepali"
+author: "Becky Mathew"
+bibliography: ne.bib
+output: html_document
+---
+<!-- Last updadted on July 6 2019 -->
+
+# Background
+Nepali is the official language of Nepal and is also spoken in India and Bhutan and by members of the Nepalese diaspora. My rules are written based on the eastern Nepali dialect. Like many other Indic languages it has a left-to-right abugida alphabet. @JIPA2009
+
+**Language family**: Indo-European Indo-Iranian Indo-Aryan Northern zone Eastern Pahari
+
+# Phonology
+## Consonants
+```{r echo = FALSE results = 'asis'}
+library(knitr)
+labial <- c("p  b","pʰ  bʱ","","","   m","","","   w")
+dental <- c("t̪  d̪","t̪ʰ d̪ʱ","","","   n","","","")
+alveolar <- c("","","ts dz","tsʰ dzʱ","","   r","s   ","   l","")
+retroflex <- c("ʈ  ɖ","ʈʰ  ɖʱ","","","","","","","")
+palatal <- c("","","","","","","","","   j")
+velar <- c("k  g","kʰ  gʱ","","","   ŋ","","","")
+glottal <- c("","","","","","","   ɦ","","")
+consonants <- data.frame(labial dental alveolar retroflex palatal velar glottal)
+rownames(consonants) <- c("stop" "aspirated stop" "affricate" "aspirated affricate""nasal" "trill" "fricative" "lateral approximant" "approximant")
+kable(consonants caption = "Note: Phonemes to the left of a cell are voiceless and phonemes to the right are voiced.")
+```
+
+Each consonant letter comes with an inherent /ʌ/ following.
+* क - /k ʌ/
+* ख - /k ʌ/
+* ग - /g ʌ/
+* घ - /g ʌ/
+* ङ - /ŋ ʌ/
+* च - /ts ʌ/
+* छ - /ts ʌ/
+* ज - /dz ʌ/
+* झ - /dz ʌ/
+* ञ - /ɲ ʌ/
+* ट - /ʈ ʌ/
+* ठ - /ʈʰ ʌ/
+* ड - /ɖ ʌ/
+* ढ - /ɖʱ ʌ/
+* ण - /ɳ ʌ/
+* त - /t̪ ʌ/
+* थ - /t̪ʰ ʌ/
+* द - /d̪ ʌ/
+* ध - /d̪ʱ ʌ/
+* न - /n̪ ʌ/
+* प - /p ʌ/
+* फ - /pʰ ʌ/
+* ब - /b ʌ/
+* व,भ - /bʱ ʌ/
+* म - /m ʌ/
+* य - /j ʌ/
+* र - /r ʌ/
+* ल - /l ʌ/
+* व - /w ʌ/
+* श,ष,स - /s ʌ/
+* ह - /ɦ ʌ/
+
+## Vowels
+
+Nepali has six basic vowels (/ʌ/ /a/ /e/ /i/ /o/ /u/) that are can contrastively oral or nasal. Nepali also has two diphthongs (/ai/ and /au/), which also exist in contrastive oral and nasal forms.
+
+The following letters represent standalone vowels.
+* अ - /ʌ/
+* आ - /a/
+* इई - /i/
+* उऊ - /u/
+* ऋ - /r i/
+* ए - /e/
+* ओ - /o/
+* ऐ - /ai/
+* औ - /au/
+
+The following letters are diacritics that attach to a consonant. Since consonants carry an inherent /ʌ/, the diacritics replace that inherent /ʌ/ with the vowel they represent.
+* ा - /a/
+* िी - /i/
+* ुू - /u/
+* ृ - /r i/
+* े - /e/
+* ै - /ai/
+* ो - /o/
+* ौ - /au/
+* ् - ∅ (This character is called hal and it erases the inherent vowel /ʌ/ after a consonant)
+
+The following diacritic is called a chandrabindu and it attaches after other vowel diacritics. The chandrabindu nasalizes the previous vowel.
+* ँ - ̃  (nasalization diacritic)
+
+The following diacritic (called a shirbindu) attaches before consonants. The shirbindu adds a nasal consonant of unspecified place before other consonants. Since we can't show an unspecified place I've defaulted it to an [n].
+* ं - [n]
+
+The following diacritic (called bisarga) attaches to vowels and adds an /ɦ/ at the end.
+* ः - /ɦ/

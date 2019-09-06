@@ -1,0 +1,77 @@
+# Naro Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-03
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,tone,[˧˨˦],,,,
+class,click-input,(c|q|tc|x),,,,
+class,click-output,[ǀǃǂǁ],,,,
+class,pre-h,[kptsg],,,,
+class,pre-g-cons,[kt],,,,
+class,apostrophe,['ꞌ‘’],,,,
+class,underline,[̱],,,,
+class,passthrough,[ãbdẽẽfhíkmnõpstw],,,,
+# Vowels
+sub,a,a ˧,4,,,"mid tones"
+sub,e,e ˧,4,,,
+sub,i,i ˧,4,,,
+sub,o,o ˧,4,,,
+sub,u,u ˧,4,,,
+sub,à,a ˨,4,,,"low tones"
+sub,è,e ˨,4,,,
+sub,ì,i ˨,4,,,
+sub,ò,o ˨,4,,,
+sub,ù,u ˨,4,,,
+sub,á,a ˦,4,,,"high tones"
+sub,é,e ˦,4,,,
+sub,í,i ˦,4,,,
+sub,ó,o ˦,4,,,
+sub,ú,u ˦,4,,,
+sub,ã,ã,4,,,"nasals"
+sub,õ,õ,4,,,
+sub,{underline},ˤ,4,,,"pharyngealization marker"
+ipasub,{tone} ˤ,ˤ,2,,,"attaches the pharyngealization to the previous vowel; pharyngealization does not appear to coexist with tones on vowels"
+# Individual Consonants
+sub,c,ǀ,4,,,
+sub,g,x,4,,,
+sub,ḿ,m ˦,4,,,"Sometimes syllabic /m/ is rendered with inherent diacritics, "
+sub,m̀,m ˨,4,,,"in which case these two lines convert it to IPA; "
+sub,́,˦,4,,,"other times, the diacritic is seen as a different character from the /m/, "
+sub,̀,˨,4,,,"in which case these two lines convert it to IPA. "
+sub,q,ǃ,4,,,
+sub,r,ɾ,4,,,
+sub,x,ǁ,4,,,
+sub,y,j,4,,,
+sub,z,dz,4,,,
+sub,{apostrophe},ʼ,4,,,
+sub,-,,4,,,"a hyphen appears in some words but carries no phonetic value"
+# Aspirated Letters
+sub,k,kʰ,6,,h,"<kh>"
+sub,p,pʰ,6,,h,"<ph>"
+sub,t,tʰ,6,,h,"<th>"
+sub,t,tsʰ,6,,sh,"<tsh>"
+sub,s,,6,t,h,"<tsh> cleanup"
+sub,h,,6,{pre-h},,"cleans up various h-final digraphs"
+# Digraphs
+sub,g,ɡ,6,,h,"<gh> = /ɡ/"
+sub,k,kx,6,,g,"<kg> = /kx/"
+sub,t,tx,6,,g,"<tg> = /tx/"
+sub,g,,6,{pre-g-cons},,"<kg> and <tg> cleanup"
+sub,t,ǂ,6,,c,"<tc> = /ǂ/"
+sub,c,,6,t,,"<tc> cleanup"
+sub,t,ts,6,,s,"<ts> = /ts/"
+sub,s,,6,t,,"<ts> cleanup"
+# Click Rules
+sub,h,ʰ,6,{click-input},,"aspirated clicks"
+sub,d,ᶢ,6,,{click-input},"voiced clicks"
+sub,n,ⁿ,6,,({click-input}),"prenasalized clicks"
+ipasub,({click-output}) ʰ,\1ʰ,2,,,"collapsing spaces in aspirated clicks"
+ipasub,({click-output}) x,\1x,2,,,"collapsing spaces in fricative-released clicks"
+ipasub,ᶢ ({click-output}),ᶢ\1,2,,,"collapsing spaces in voiced clicks"
+ipasub,ⁿ ({click-output}),ⁿ\1,2,,,"collapsing spaces in prenasalized clicks"
+# Misc. Rules
+ipasub, ʼ,ʼ,2,,,"attaches the ejective marker to the previous consonant"
+ipasub,aˤ ̃,ãˤ,1,,,"fixes a vowel that translate04 misreads"
+ipasub,e ˧ ̃,ẽ,1,,,"fixes a vowel that translate04 misreads"
+ipasub,oˤ ̃,õˤ,1,,,"fixes a vowel that translate04 misreads"
+sub,({passthrough}),\1,0.1,,,
