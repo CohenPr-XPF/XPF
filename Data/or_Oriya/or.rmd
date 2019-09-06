@@ -1,0 +1,112 @@
+---
+title: "Oriya"
+author: "Becky Mathew"
+bibliography: or.bib
+output: html_document
+---
+
+# Background
+Oriya (now romanized as Odia) is the official of Orissa, an eastern Indian state. There are four major dialects of Oriya, and this project focuses on Standard Oriya.
+[@Jain2003]
+
+**Language family**: Indo-European, Indo-Iranian, Indo-Aryan, Eastern zone, Oriya
+
+# Phonology
+## Vowels
+Although the Oriya script includes characters that indicate vowel lengthening or vowel nasalization, those are not contrastive features. 
+```{r echo = FALSE, results = 'asis'}
+library(knitr)
+front <- c("i","e","")
+central <- c("u","","a")
+back <- c("","o","ɔ")
+vowels <- data.frame(front, central, back)
+row.names(vowels) <- c("high", "mid", "low")
+kable(vowels)
+```
+[@Jain2003]
+
+## Consonants 
+```{r echo = FALSE, results = 'asis'}
+library(knitr)
+bilabial <- c("p pʰ","b bʱ","m","","","","w")
+dental <- c("t̪ t̪ʰ","d̪ d̪ʱ","n̪","","","","")
+alveolar <- c("","","","ɾ","l","s","")
+retroflex <- c("ʈ ʈʰ","ɖ ɖʱ","ɳ","","ɭ","","")
+palatal <- c("c cʰ","ɟ ɟʱ","","","","","j")
+velar <- c("k kʰ","g gʱ","ŋ","","","","")
+glottal <- c("","","","","","h","")
+consonants <- data.frame(bilabial, dental, alveolar, retroflex, palatal, velar, glottal)
+row.names(consonants) <- c("Voiceless plosive", "Voiced plosive", "Nasal", "Tap", "Lateral", "Fricative", "Semivowel")
+kable(consonants, caption = "Note: Two sounds may appear in the same cell if they have the same place and manner. Diacritics will distinguish them.")
+``` 
+[@Jain2003]
+
+# Alphabet 
+Oriya is descended from the Brahmi script but does not hang from a horizontal line. It is a left-to-right abugida script without capital letters. As an abugida script, every consonant carries an inherent /ɔ/ following it. 
+[@Jain2003]
+
+## Consonants
+* <କ> = /k ɔ/
+* <ଖ> = /kʰ ɔ/
+* <ଗ> =  /g ɔ/
+* <ଘ> = /gʱ ɔ/
+* <ଙ> = /ŋ ɔ/
+* <ଚ> = /c ɔ/
+* <ଛ> = /cʰ ɔ/
+* <ଜ>, <ଯ> = /ɟ ɔ/
+* <ଝ> = /ɟʱ ɔ/
+* <ଞ> = /n ɔ/
+* <ଟ> = /ʈ ɔ/
+* <ଠ> = /ʈʰ ɔ/
+* <ଡ> = /ɖ ɔ/
+* <ଢ> = /ɖʱ ɔ/
+* <ଣ> = /ɳ ɔ/
+* <ତ> = /t̪ ɔ/
+* <ଥ> = /t̪ʰ ɔ/
+* <ଦ> = /d̪ ɔ/
+* <ଧ> = /d̪ʱ ɔ/
+* <ନ> = /n̪ ɔ/
+* <ପ> = /p ɔ/
+* <ଫ> = /pʰ ɔ/
+* <ବ> = /b ɔ/
+* <ଭ> = /bʱ ɔ/
+* <ମ> = /m ɔ/
+* <ର> = /ɾ ɔ/
+* <ଳ> = /ɭ ɔ/
+* <ୱ>, <ଵ> =  /w ɔ/
+* <ଶ>, <ଷ> , <ସ> = /s ɔ/ 
+* <ହ> = /h ɔ/
+* <ୟ> = /j ɔ/
+* <ଲ> = /l ɔ/
+
+## Independent vowels
+* <ଅ> = /ɔ/
+* <ଆ> = /a/
+* <ଇ>, <ଈ> = /i/
+* <ଉ>, <ଊ> = /u/
+* <ଋ>, <ୠ> = /ɾ/
+* <ଌ>, <ୡ> = /l/
+* <ଏ> = /e/
+* <ଐ> = /a i/
+* <ଓ> = /o/
+* <ଔ> = /a u/
+
+## Diacritics
+* <ା> = /a/
+* <ି>, <ୀ> = /i/
+* <ୁ>, <ୂ> = /o/
+* <ୃ> = /ɾ/
+* <େ> = /e/ 
+* <ୈ> = /a i/
+* <ୋ> = /o/ 
+* <ୌ> = /a u/
+* <ଁ> = ∅, represents nasalization which isn't contrastive
+* <ଂ> = /ŋ/
+* <ଃ> = /h/
+* <୍> = ∅, deletes the inherent vowel from a consonant
+* <଼> = ∅, represents that a sound originally came from another language
+
+# Lenition rules 
+* Aspirated consonants are deaspirated when preceded by /s/ and followed by a vowel. 
+* For many speakers, geminate consonants are replaced by a single consonant (so consonant length isn't contrastive). 
+[@Jain2003]

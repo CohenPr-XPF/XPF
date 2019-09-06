@@ -1,0 +1,140 @@
+type,sfrom,sto,weight,precede,follow,comment
+# Written by Becky Mathew
+# Last updated on July 20 2019
+
+# independent vowels class rules
+class,A,ଅ,,,,
+class,AA,ଆ,,,,
+class,I,(ଇ|ଈ),,,,
+class,U,(ଉ|ଊ),,,,
+class,R,(ଋ|ୠ),,,,
+class,L,(ଌ|ୡ),,,,
+class,E,ଏ,,,,
+class,AI,ଐ,,,,
+class,O,ଓ,,,,
+class,AU,ଔ,,,,
+
+# diacritic vowels class rules
+class,DIACRITICA,ା,,,,
+class,DIACRITICI,(ି|ୀ),,,,
+class,DIACRITICU,(ୁ|ୂ),,,,
+class,DIACRITICR,ୃ,,,,
+class,DIACRITICE,େ,,,,
+class,DIACRITICAI,ୈ,,,,
+class,DIACRITICO,ୋ,,,,
+class,DIACRITICAU,ୌ,,,,
+
+# structured consonants class rules
+class,KA,କ,,,,
+class,KHA,ଖ,,,,
+class,GA,ଗ,,,,
+class,GHA,ଘ,,,,
+class,NGA,ଙ,,,,
+class,CA,ଚ,,,,
+class,CHA,ଛ,,,,
+class,JA,(ଜ|ଯ),,,,
+class,JHA,ଝ,,,,
+class,NJA,ଞ,,,,
+class,RETROFLEXTA,ଟ,,,,
+class,RETROFLEXTHA,ଠ,,,,
+class,RETROFLEXDA,ଡ,,,,
+class,RETROFLEXDHA,ଢ,,,,
+class,RETROFLEXNA,ଣ,,,,
+class,DENTALTA,ତ,,,,
+class,DENTALTHA,ଥ,,,,
+class,DENTALDA,ଦ,,,,
+class,DENTALDHA,ଧ,,,,
+class,DENTALNA,ନ,,,,
+class,PA,ପ,,,,
+class,PHA,ଫ,,,,
+class,BA,ବ,,,,
+class,BHA,ଭ,,,,
+class,MA,ମ,,,,
+
+# unstructured consonants class rules 
+class,RA,ର,,,,
+class,RETROFLEXLA,ଳ,,,,
+class,WA,(ୱ|ଵ),,,,the second letter represents a [v] sound which isn't a native Oriya phoneme
+class,SA,(ଶ|ଷ|ସ),,,,
+class,HA,ହ,,,,
+class,YA,ୟ,,,,
+class,LA,ଲ,,,,
+
+# other diacritic class rules
+class,NASAL,ଁ,,,,
+class,FINALNG,ଂ,,,,
+class,FINALH,ଃ,,,,
+class,HALANTA,୍,,,,
+class,NUQTA,଼,,,,
+
+# independent vowels sub rules
+sub,{A},ɔ,1,,,
+sub,{AA},a,1,,,
+sub,{I},i,1,,,
+sub,{U},u,1,,,
+sub,{R},ɾ,1,,,
+sub,{L},l,1,,,
+sub,{E},e,1,,,
+sub,{AI},a i,1,,,
+sub,{O},o,1,,,
+sub,{AU},a u,1,,,
+
+# diacritic vowels sub rules
+sub,{DIACRITICA},ERASE a,1,,,
+sub,{DIACRITICI},ERASE i,1,,,
+sub,{DIACRITICU},ERASE u,1,,,
+sub,{DIACRITICR},ERASE ɾ,1,,,
+sub,{DIACRITICE},ERASE e,1,,,
+sub,{DIACRITICAI},ERASE a i,1,,,
+sub,{DIACRITICO},ERASE o,1,,,
+sub,{DIACRITICAU},ERASE a u,1,,,
+
+# structured consonants sub rules
+sub,{KA},k ɔ,1,,,
+sub,{KHA},kʰ ɔ,1,,,
+sub,{GA},g ɔ,1,,,
+sub,{GHA},gʱ ɔ,1,,,
+sub,{NGA},ŋ ɔ,1,,,
+sub,{CA},c ɔ,1,,,
+sub,{CHA},cʰ ɔ,1,,,
+sub,{JA},ɟ ɔ,1,,,
+sub,{JHA},ɟʱ ɔ,1,,,
+sub,{NJA},n ɔ,1,,,
+sub,{RETROFLEXTA},ʈ ɔ,1,,,
+sub,{RETROFLEXTHA},ʈʰ ɔ,1,,,
+sub,{RETROFLEXDA},ɖ ɔ,1,,,
+sub,{RETROFLEXDHA},ɖʱ ɔ,1,,,
+sub,{RETROFLEXNA},ɳ ɔ,1,,,
+sub,{DENTALTA},t̪ ɔ,1,,,
+sub,{DENTALTHA},t̪ʰ ɔ,1,,,
+sub,{DENTALDA},d̪ ɔ,1,,,
+sub,{DENTALDHA},d̪ʱ ɔ,1,,,
+sub,{DENTALNA},n̪ ɔ,1,,,
+sub,{PA},p ɔ,1,,,
+sub,{PHA},pʰ ɔ,1,,,
+sub,{BA},b ɔ,1,,,
+sub,{BHA},bʱ ɔ,1,,,
+sub,{MA},m ɔ,1,,,
+
+# unstructured consonants sub rules
+sub,{RA},ɾ ɔ,1,,,
+sub,{RETROFLEXLA},ɭ ɔ,1,,,
+sub,{WA},w ɔ,1,,,
+sub,{SA},s ɔ,1,,,
+sub,{HA},h ɔ,1,,,
+sub,{YA},j ɔ,1,,,
+sub,{LA},l ɔ,1,,,
+
+# other diacritics sub rules
+sub,{NASAL},,1,,,nasal vowels are not contrastive
+sub,{FINALNG},ŋ,1,,,
+sub,{FINALH},h,1,,,
+sub,{HALANTA},ERASE,1,,,deletes inherent vowel
+sub,{NUQTA},,1,,,nuqta indicates sound was originally from another language
+
+# zero width rules
+sub,‌,,1,,,removing zero width non joiner
+sub,‍,,1,,,removing zero width joiner
+
+# ipasub rules
+ipasub,ɔ ERASE,,7,,,removing the inherent vowel when there's a diacritic after

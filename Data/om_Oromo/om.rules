@@ -1,0 +1,71 @@
+type,sfrom,sto,weight,precede,follow,comment
+class,passthrough,[bdfghklmnprstvwzaeiou],,,
+
+class,apostrophe,"[’'‘`ʻ]",,,,
+sub,{apostrophe},ʔ,0.5,,,
+
+class,hyphen,"[-–—]",,,,
+sub,{hyphen},,0.5,,,
+
+sub,c,tʃ,2,,h,
+sub,h,,2,c,,
+
+sub,c,tʃ ː,3,,ch,
+sub,c,,3,c,h,
+
+sub,c,tʃ’,1,,,
+
+sub,d,ᶑ,2,,h,
+sub,h,,2,d,,
+
+sub,d,ᶑ ː,3,,dh,
+sub,d,,3,d,h,
+
+sub,j,dʒ,1,,,
+
+sub,n,ɲ,2,,y,
+sub,y,,2,n,,
+
+sub,n,ɲ ː,3,,ny,
+sub,n,,3,n,y,
+
+sub,p,p’,2,,h,
+sub,h,,2,p,,
+
+sub,p,p’ ː,3,,ph,
+sub,p,,3,p,h,
+
+sub,q,kʼ,1,,,
+
+sub,s,ʃ,2,,h,
+sub,h,,2,s,,
+
+sub,s,ʃ ː,3,,sh,
+sub,s,,3,s,h,
+
+
+sub,x,t’,1,,,
+
+sub,y,j,1,,,
+
+sub,a,a ː,2,,a,
+sub,a,,2,a,,
+sub,e,e ː,2,,e,
+sub,e,,2,e,,
+sub,i,i ː,2,,i,
+sub,i,,2,i,,
+sub,o,o ː,2,,o,
+sub,o,,2,o,,
+sub,u,u ː,2,,u,
+sub,u,,2,u,,
+
+class,consonant,"(b|d|f|g|k|l|m|n|p|r|s|t|v|w|z|ᶑ|ɲ|ʃ|j)",,,
+ipasub,({consonant}) \1\b,\1 ː,2,,,double consonants are geminates
+
+class,consonant2,"(t’|tʃ’|kʼ)",,,
+ipasub,({consonant2}) \1,\1 ː,2.5,,,double consonants are geminates
+
+ipasub,ː’,@,0.9,,,fixes glitch
+
+
+sub,({passthrough}),\1,0.1,,,

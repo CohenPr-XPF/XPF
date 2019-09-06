@@ -56,6 +56,11 @@
 | nhe           | Nahuatl        |
 | nhr           | Naro           | under revision                |
 | ny            | Chichewa       | under revision                |
+| om            | Oromo          |
+| omw           | South Tairora  | lacks lenition                |
+| or            | Oriya          | under revision; lacks lenition|
+| pa            | Punjabi        | under revision; lacks lenition|
+| pau           | Palauan        |
 | si            | Sinhala        |
 | sw            | Swahili        |
 | ta            | Tamil          |
@@ -132,9 +137,15 @@
 | nfr | Nafaanra         | non-transparent spelling with tones   |
 | no  | Norwegian        | non-transparent spelling with tones and vowel length                |
 | nv  | Navajo           | non-transparent spelling with vowel nasalization                |
+| opm | Oksapmin         | non-transparent spelling with vowels       |
+| os  | Ossetian         | non-transparent spelling         |
+| pao | Northern Paiute  | non-transparet spelling with vowel length |
+| pir | Wanano           | non-transparent spelling with tones    |
+| pl  |Polish            | non-transparent spelling                                  |
+| poh | Poqomchi'        | insufficient documentation             |
+| pms | Piedmontese      | non-transparent spelling               |
 | yo  | Yoruba           | non-transparent spelling with tones                       |
 | xh  | Xhosa            | non-transparent spelling with tones                       |
 | sv  | Swedish          | non-transparent spelling                                  |
 | st  | Sesotho          | non-transparent spelling with tones                       |
-| pl  |Polish            | non-transparent spelling                                  |
 | ti  |Tigrinya          | non-transparent spelling                                  |                              

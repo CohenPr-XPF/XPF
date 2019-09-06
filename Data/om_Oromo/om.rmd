@@ -1,0 +1,92 @@
+---
+title: "Oromo"
+author: "Justin Bai"
+bibliography: om.bib
+output: html_document
+---
+# Background
+**Language family**: Afro-Asiatic
+
+Oromo consists of several language varieties and dialects. However, as noted by @degeneh2015development, "speakers of all branches of Oromo understand one another without much difficulty and the Oromo varieties have the same phonemic inventory of consonants and vowels."
+
+# Alphabet
+
+The writing system for Oromo is called Qubee, which is a form of the Roman alphabet. This was adopted as the official writing system for the language in 1991 (@degeneh2015development).
+
+## Consonants
+* ⟨b⟩ = /b/
+* ⟨ch⟩ = /tʃ/
+* ⟨c⟩ = /tʃʼ/
+* ⟨d⟩ = /d/
+* ⟨dh⟩ = /ᶑ/
+* ⟨f⟩ = /f/
+* ⟨g⟩ = /g/
+* ⟨h⟩ = /h/
+* ⟨j⟩ = /dʒ/
+* ⟨k⟩ = /k/
+* ⟨l⟩ = /l/
+* ⟨m⟩ = /m/
+* ⟨n⟩ = /n/
+* ⟨ny⟩ = /ɲ/
+* ⟨p⟩ = /p/
+* ⟨ph⟩ = /pʼ/
+* ⟨q⟩ = /kʼ/
+* ⟨r⟩ = /r/
+* ⟨s⟩ = /s/
+* ⟨sh⟩ = /ʃ/
+* ⟨t⟩ = /t/
+* ⟨x⟩ = /tʼ/
+* ⟨v⟩ = /v/
+* ⟨w⟩ = /w/
+* ⟨y⟩ = /j/
+* ⟨z⟩ = /z/
+* ⟨‘⟩ = /ʔ/
+
+### Representing geminates
+With digraphs, there is some inconsistency in how long consonants
+are written. With single-character consonants, geminates are simply written by doubling
+the letter. However, with digraphs, some users of the language do NOT
+represent geminates as any different from single consonants. That is, /pʼ/ and
+/pʼː/ are both written ⟨ph⟩.
+
+Other users DO represent geminates differently, typically by doubling the first
+letter of the digraph. For example, /pʼ/ is written ⟨ph⟩ while /pʼː/ is written
+⟨pph⟩.
+
+## Vowels
+Oromo has five vowel qualities, each which can be long or short.
+* ⟨a⟩ = /a/
+* ⟨e⟩ = /e/
+* ⟨i⟩ = /i/
+* ⟨o⟩ = /o/
+* ⟨u⟩ = /u/
+
+The long vowels are written by doubling the vowel.
+* ⟨aa⟩ = /aː/
+* ⟨ee⟩ = /eː/
+* ⟨ii⟩ = /iː/
+* ⟨oo⟩ = /oː/
+* ⟨uu⟩ = /uː/
+
+# Phonology
+The language is tonal (although the level of tonality differs from dialect to
+  dialect). The orthography does not show tone, so the rules may be considered
+  "compromised" since tonality is not conveyed.
+
+## Consonants
+* Stops include ejectives and one implosive /ᶑ/.
+* The consonants can appear in geminate forms. The exception is with glottals
+/h/ and /ʔ/, which only appear as singles.
+
+## Vowels
+* The long forms of vowels may differ somewhat in quality from their short
+counterparts. For example, @degeneh2015development states, "The short form of
+/a/ sounds like /ʌ/ while the longer one is relatively more open." The rules will
+represent long and short vowels with the same qualities.
+
+## Tone
+Oromo does have pitch accent, but overall, it is *not* a highly tonal language.
+As stated by @ali1990handbook, "minimal pairs of words distinguished only by it
+[i.e., pitch accent] do not occur." Pitch accent is not represented in the
+orthography, so the rules do not represent it. In this manner, the rules may
+be considered "compromised."
