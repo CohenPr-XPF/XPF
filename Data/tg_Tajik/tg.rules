@@ -1,0 +1,43 @@
+# Tajik Rule Set
+# Written by: Bill
+# Last Updated: 2019-06-14
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+# Individual Letters
+sub,а,a,4,,,
+sub,б,b,4,,,
+sub,в,v,4,,,
+sub,г,ɡ,4,,,
+sub,ғ,ʁ,4,,,
+sub,д,d,4,,,
+sub,е,e,4,,,
+sub,ё,j ɔ,4,,,
+sub,ж,ʒ,4,,,
+sub,з,z,4,,,
+sub,и,i,4,,,
+sub,ӣ,i,4,,,
+sub,й,j,4,,,
+sub,к,k,4,,,
+sub,қ,q,4,,,
+sub,л,l,4,,,
+sub,м,m,4,,,
+sub,н,n,4,,,
+sub,о,ɔ,4,,,
+sub,п,p,4,,,
+sub,р,r,4,,,
+sub,с,s,4,,,
+sub,т,t,4,,,
+sub,у,u,4,,,
+sub,ӯ,ɵ,4,,,
+sub,ф,f,4,,,
+sub,х,χ,4,,,
+sub,ҳ,h,4,,,
+sub,ч,tʃ,4,,,
+sub,ҷ,dʒ,4,,,
+sub,ш,ʃ,4,,,
+sub,ъ,ʔ,4,,,
+sub,э,e,4,,,
+sub,ю,j u,4,,,
+sub,я,j a,4,,,
+# Misc. Rules
+sub,е,j e,6,^,,

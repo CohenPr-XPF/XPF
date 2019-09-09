@@ -1,0 +1,105 @@
+---
+title: "Tajik"
+author: "Bill Mizgerd"
+bibliography: tg.bib
+output: html_document
+---
+
+Last Updated: 2019-06-14
+
+# Background
+
+**Language Family**: Indo-European / Indo-Iranian / Iranian / Western Iranian / Southwestern Iranian / Persian / Tajik
+
+# Phonology
+
+## Consonants
+
+* @TgKhojayori2009 argues for /ɽ/ rather than /r/. (p. 4)
+
+### By place of articulation
+
+Labial: /p/, /b/, /m/, /f/, /v/  
+Alveolar: /t/, /d/, /n/, /s/, /z/, /r/, /l/  
+Postalveolar: /ʃ/, /ʒ/, /tʃ/, /dʒ/  
+Palatal: /j/  
+Velar: /k/, /ɡ/  
+Uvular: /q/, /χ/, /ʁ/  
+Glottal: /ʔ/, /h/  
+
+### By manner of articulation
+
+Stops: /p/, /b/, /t/, /d/, /k/, /ɡ/, /q/, /ʔ/  
+Affricates: /tʃ/, /dʒ/  
+Nasals: /m/, /n/  
+Fricatives: /f/, /v/, /s/, /z/, /ʃ/, /ʒ/, /χ/, /ʁ/, /h/  
+Trills: /r/  
+Approximants: /l/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /e/, /ɵ/, /ɔ/, /a/  
+
+Some older sources describe /iː/ as a separate phoneme, but modern scholars tend to argue that length is wholly non-contrastive in Tajik. [@TgIdo2005, p. 11]
+
+# Alphabet
+
+а - /a/  
+б - /b/  
+в - /v/  
+г - /ɡ/  
+ғ - /ʁ/  
+д - /d/  
+е - /e/ (/je/ if word-initial [@TgBaizoyev2004, p. 2])  
+ё - /jɔ/  
+ж - /ʒ/  
+з - /z/  
+и - /i/  
+ӣ - /i/ (only used word-finally [@TgBaizoyev2004, p. 2])  
+й - /j/  
+к - /k/  
+қ - /q/  
+л - /l/  
+м - /m/  
+н - /n/  
+о - /ɔ/  
+п - /p/  
+р - /r/  
+с - /s/  
+т - /t/  
+у - /u/  
+ӯ - /ɵ/  
+ф - /f/  
+х - /χ/  
+ҳ - /h/  
+ч - /tʃ/  
+ҷ	- /dʒ/  
+ш - /ʃ/  
+ъ - /ʔ/  
+э - /e/ (used word-initially where initial glides are absent [@TgBaizoyev2004, p. 2])  
+ю - /ju/  
+я - /ja/  
+
+# Lenition Rules
+
+* Loanwords with the affricate /ts/ typically reduce it to /s/. [@TgIdo2005, p. 13]
+* /n/ assimilates to the place of following bilabials. [@TgIdo2005, p. 13] [@TgKhojayori2009, p. 7]
+* /q/ spirantizes in some words. (ibid.)
+* Consonant clusters assimilate to the voicing of the final one. [@TgKhojayori2009, p. 3]
+* /a u i/ reduce to [ə] in unstressed syllables. [@TgKhojayori2009, p. 6]
+* The middle consonant is often deleted in three-consonant clusters. [@TgKhojayori2009, p. 7]
+  * However, sometimes [ə] is inserted between the second and third consonant instead. (ibid.)
+* In word-final consonant clusters, the last consonant is sometimes deleted. (ibid.)
+* /ʔ/ deletes intervocalically; /v/ does as well, if the vowels are identical. [@TgKhojayori2009, p. 8]
+* Word-final /h/ deletes. (ibid.)
+
+# Misc. Rules
+
+* Obstruents devoice word-finally. [@TgKhojayori2009, p. 3]
+* Glides, typically /j/, are often added between vowel clusters. [@TgKhojayori2009, p. 8] [@TgIdo2005, p. 12]
+
+## Syllable Structure
+
+Tajik has a (C)V(C)(C) syllable structure. [@TgIdo2005, p. 14]
+
+# References

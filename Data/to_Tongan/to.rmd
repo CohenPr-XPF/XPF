@@ -1,0 +1,58 @@
+---
+title: "Tongan"
+author: "Justin Bai"
+bibliography: to.bib
+output: html_document
+---
+# Background
+**Language family**: Austronesian / Polynesian
+
+
+# Alphabet
+Tongan uses the Latin alphabet along with an additional letter to represent the glottal stop.
+
+## Consonants
+The Tongan consonants are as follows:
+* ⟨f⟩ = /f/
+* ⟨h⟩ = /h/
+* ⟨k⟩ = /k/
+* ⟨l⟩ = /l/
+* ⟨m⟩ = /m/
+* ⟨n⟩ = /n/
+* ⟨ng⟩ = /ŋ/
+* ⟨p⟩ = /p/
+* ⟨s⟩ = /s/
+* ⟨t⟩ = /t/
+* ⟨v⟩ = /v/
+* ⟨ʻ⟩ = /ʔ/  
+
+## Vowels
+Tongan has five vowel qualities, each with their own letter.
+* ⟨a⟩ = /a/  
+* ⟨e⟩ = /e/  
+* ⟨i⟩ = /i/  
+* ⟨o⟩ = /o/  
+* ⟨u⟩ = /u/  
+
+Tongan makes a vowel length distinction. Long vowels are indicated with a macron ⟨¯⟩.
+* ⟨ā⟩ = /aː/  
+* ⟨ē⟩ = /eː/  
+* ⟨ī⟩ = /iː/  
+* ⟨ō⟩ = /oː/  
+* ⟨ū⟩ = /uː/
+
+Stress is sometimes marked by an acute accent on the vowel that is stressed.
+
+# Phonology
+## Consonants
+* As stated in @garellektongan, "Tongan has a three-way laryngeal contrast in initial position; words may begin with
+///, /h/, or a vowel. This is a rare contrast across languages".
+* Consonants to not appear word-finally.
+* "Due to a sound change * t → /s/ before /i/ (Morton 1962), sequences of /ti/ are rare and are restricted to loanwords." [@garellektongan]
+
+## Vowels
+|      |   Front   |  Central  |    Back   |
+|------|:---------:|:---------:|:---------:|
+| High | /i/, /iː/ |           | /u/, /uː/ |
+| Mid  | /e/, /eː/ |           | /o/, /oː/ |
+| Low  |           | /a/, /aː/ |           ‍|

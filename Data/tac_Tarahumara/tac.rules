@@ -1,0 +1,31 @@
+# Tarahumara Rule Set
+# Written by: Bill
+# Last Updated: 2019-06-24
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,apostrophe,['ꞌˈ‘’],,,,
+class,u-preceder,[hq],,,,
+class,passthrough,[aeihkmnopstuw],,,,
+# Individual Letters
+sub,b,β,4,,,
+sub,c,k,4,,,
+sub,g,ɣ,4,,,
+sub,j,h,4,,,
+sub,l,ɭ,4,,,
+sub,q,k,4,,,
+sub,r,ɽ,4,,,
+sub,y,j,4,,,
+sub,{apostrophe},ʔ,4,,,
+# Accented Vowels
+sub,á,a,4,,,
+sub,é,e,4,,,
+sub,í,i,4,,,
+sub,ó,o,4,,,
+sub,ú,u,4,,,
+# Digraphs
+sub,c,tʃ,6,,h,"<ch> = /tʃ/"
+sub,h,,6,c,,
+sub,h,w,5,,u,"<hu> = /w/"
+sub,u,,5,{u-preceder},,
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,

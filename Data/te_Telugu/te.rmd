@@ -1,0 +1,63 @@
+---
+title: "Telugu"
+author: "Becky Mathew"
+bibliography: te.bib
+output: html_document
+---
+
+# Background
+Telugu is one of the most popular languages in India, particularly in the southern states of Andhra Pradesh and Telangana. Telugu is one of the official classical languages of India, and has significant influence from Sanskrit and Prakrit, as well as Perso-Arabic and English. 
+
+[@JIPA2016]
+
+**Language family**: Dravidian, South-Central, Telugu
+
+# Phonology
+[@Luthra2012]
+## Consonants
+```{r echo = FALSE, results = 'asis'}
+library(knitr)
+bilabial <- c("p b","pʰ bʱ","m","","","","","","","")
+labiodental <- c("","","","","f","","","ʋ","")
+dentialveolar <- c("t d","tʰ dʱ","","","s","","","","")
+alveolar <- c("","","n","r","","","","","l")
+retroflex <- c("ʈ ɖ","ʈʰ ɖʱ","ɳ","","ʂ","","","","ɭ")
+postalveolar <- c("","","","","ʃ","tʃ dʒ","tʃʰ dʒʱ","","")
+palatal <- c("","","","","","","","j","")
+velar <- c("k g","kʰ gʱ","","","","","","","")
+glottal  <- c("","","","","h","","","","")
+
+consonants <- data.frame(bilabial, labiodental,dentialveolar, alveolar, retroflex, palatoalveolar, palatal, velar, glottal)
+rownames(consonants) <- c("unaspirated plosives", "aspirated plosives", "nasals", "trills", "fricatives", "unaspirated affricates", "aspirated affricates", "approximants", "lateral approximant")
+kable(consonants, caption="When two phonemes appear in a cell, the left is voiceless and the right is voiced.")
+```
+
+@JIPA2016 claims the existence of affricates /ts/ and /dz/, but other sources do not include those phonemes (@Jagganath1981, @Krishnamurti1985). I have not included /ts/ or /dz/. 
+
+
+## Vowels
+All Telugu vowel phonemes contrast in length. 
+
+<!-- TODO: Replace Punjabi vowels with Telugu vowels. --> 
+```
+{r echo = FALSE, results = 'asis'}
+library(knitr)
+front <- c("i","e","",)
+central <- c("","","ɐ")
+back <- c("u","o","",)
+
+vowels <- data.frame(front, central, back)
+rownames(vowels) <- c("close", "close-mid", "near-open")
+```
+
+
+
+@JIPA2016 claim that /ɛ/ and /æ ː/ are phonemes because they contrast in English loanwords. Older works on Telugu phonology do not include /ɛ/ and /æ ː/ as vowel phonemes (@Jagganath1981) (@Krishnamurti1985). I've also chosen not to include /ɛ/ and /æ ː/, partially because I'm wary to include English as a part of Telugu yet and partially because their inclusion would render the rules for this language unusable because the orthography does not represent them.
+
+# Alphabet 
+Telugu has an abugida script written fron left to right (@JIPA2016). 
+
+# Lenition Rules
+* /r/ is a tap [ɾ] intervocalically and a trill [r] everywhere else 
+* /dʒ/ is a fricative [ʒ] and an affricate [dʒ] everywhere else 
+(@JIPA2016)

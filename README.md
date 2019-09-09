@@ -74,11 +74,19 @@
 | suz           | Sunwar         | under revision                |
 | sw            | Swahili        | under revision                |
 | ta            | Tamil          | under revision                |
-| tk            | Turkmen        |
-| tl            | Tagalog        |
+| tac           | Western Tarahumara |
+| te            | Telugu         | under revision                |
+| tg            | Tajik          |
+| tk            | Turkmen        | under revision                |
+| tl            | Tagalog        | under revision                |
+| to            | Tongan         | lacks lenition                |
+| tpi           | Tok Pisin      | lacks lenition                |
 | tr            | Turkish        | under revision                |
-| tt            | Tatar          |
-| ug            | Uyghur         |
+| tt            | Tatar          | under revision                |
+| tzo           | Tzotzil        |
+| ug            | Uyghur         | under revision                |
+| uk            | Ukrainian      |
+| uz            | Uzbek          |
 | vi            | Vietnamese     |
 | zu            | Zulu           |
 
@@ -160,7 +168,10 @@
 | so  | Somali           | non-transparent spelling with tones    |
 | ss  | Swati            | non-transparent spelling with tones    |
 | st  | Sesotho          | non-transparent spelling with tones                       |
+| tcz | Thadou Chin      | non-transparent spelling with tones     |
+| ti  |Tigrinya          | non-transparent spelling with gemination                                 |  
+| tn  | Tswana           | non-transparent spelling with tones |   
+| ts  | Tsonga           | non-transparent spelling with tones |                     
 | yo  | Yoruba           | non-transparent spelling with tones                       |
 | xh  | Xhosa            | non-transparent spelling with tones                       |
 | sv  | Swedish          | non-transparent spelling                                  |
-| ti  |Tigrinya          | non-transparent spelling                                  |                              

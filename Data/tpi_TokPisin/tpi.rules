@@ -1,0 +1,12 @@
+# Tok Pisin
+# Written by: Justin
+# Last Updated: 2019-08-02
+type,sfrom,sto,weight,precede,follow,comment
+class,passthrough,[aeioubdfghklmprstvw],,,
+sub,j,d ʒ,1,,,
+sub,y,j,1,,,
+sub,n,n,1,,,
+sub,n,ŋ,2,,g,
+sub,g,,2,n,,
+sub,-,,1,,,
+sub,({passthrough}),\1,0.1,,,

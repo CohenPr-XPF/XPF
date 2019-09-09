@@ -1,0 +1,107 @@
+---
+title: "Uzbek"
+author: "Bill Mizgerd"
+bibliography: uz.bib
+output: html_document
+---
+
+Last Updated: 2019-08-02
+
+@UzBoeschoten1998 - pp 358-360
+@UzSjoberg1963 - pp 7-22, 36-39
+@UzWaterson1980 - pp xiv-xviii
+
+# Background
+
+**Language Family**: Turkic / Common Turkic / Karluk / Uzbek
+
+# Phonology
+
+## Consonants
+
+* /ʒ/ and /ts/ appear in Russian loanwords. [@UzIsmatulla1992, pp. vii-viii] [@UzSjoberg1963, pp. 7-8]
+* /ʔ/ appears in some Arabic loanwords. [@UzSjoberg1963, pp. 20-21]
+* @UzSjoberg1963 argues for /ɸ/ rather than /f/; /f/, in her view, is limited to loans. (pp. 7-8)
+* @UzSjoberg1963 writes /x/ rather than /χ/, but describes it as "postvelar, almost uvular" (p. 11) so I have chosen to follow @UzBoeschoten1998 in interpreting the sound as /χ/ (p. 359).
+* /w/ varies with voiced bilabial and labiodental fricatives. [@UzSjoberg1963, p. 13]
+* @UzWaterson1980 argues for /ʁ/ rather than /ɣ/. (p. xviii)
+
+Most consonants have contrastive gemination. [@UzSjoberg1963, p. 41]
+
+### By place of articulation
+
+Labial: /p/, /b/, /m/, /f/, /w/  
+Alveolar: /t/, /d/, /n/, /s/, /z/, /ɾ/, /l/  
+Postalveolar: /tʃ/, /dʒ/, /ʃ/  
+Palatal: /j/  
+Velar: /k/, /ɡ/, /ŋ/, /ɣ/  
+Uvular: /q/, /χ/  
+Glottal: /h/  
+
+### By manner of articulation
+
+Stops: /p/, /b/, /t/, /d/, /k/, /ɡ/, /q/  
+Affricates: /tʃ/, /dʒ/  
+Nasals: /m/, /n/, /ŋ/  
+Fricatives: /f/, /s/, /z/, /ʃ/, /ɣ/, /χ/, /h/  
+Flaps: /ɾ/  
+Approximants: /w/, /l/, /j/  
+
+## Vowels
+
+Vowels: /i/, /ɛ/, /a/, /ɔ/, /o/, /u/
+
+Some sources list the grapheme <ъ> as marking length on preceding vowels, but none of my sources have made any indication that length is contrastive in Uzbek.
+
+# Alphabet
+
+а - /a/  
+б - /b/  
+в - /w/ (/v/ in some loanwords)  
+г - /ɡ/  
+ғ - /ɣ/  
+д - /d/  
+е - /ɛ/ (word-medially); /jɛ/ (word-initially)  
+ё - /jɔ/  
+ж - /dʒ/ (/ʒ/ in some loanwords)  
+з - /z/  
+и - /i/  
+й - /j/  
+к - /k/  
+қ - /q/  
+л - /l/  
+м - /m/  
+н - /n/  
+  нг - /ŋ/  
+о - /ɔ/  
+п - /p/  
+р - /ɾ/  
+с - /s/  
+т - /t/  
+у - /u/  
+ў - /o/  
+ф - /f/  
+х - /χ/  
+ҳ - /h/  
+ч - /tʃ/  
+ш - /ʃ/  
+ъ - /j/ (before <е>); marks (non-phonemic?) vowel length (postvocalically)  
+э - /ɛ/  
+ю - /ju/  
+я - /ja/  
+
+ь - marks palatalization of preceding consonant; only occurs in Russian loans  
+ц - /ts/ (only occurs in Russian loans)  
+
+# Lenition Rules
+
+* Many speakers spirantize /k/ and /q/. [@UzBoeschoten1998, p. 359]
+* /j/ is produced with lax articulation next to high front vowels. [@UzSjoberg1963, p. 13]
+* /ɡ/ sometimes approximantized to [j] in casual speech. [@UzSjoberg1963, p. 21]
+
+# Misc. Rules
+
+* Velar stops palatalize before front vowels, especially rounded ones. [@UzSjoberg1963, p. 10]
+* Some speakers lower /ɔ/ to [a] in various words. [@UzSjoberg1963, p. 39]
+
+# References

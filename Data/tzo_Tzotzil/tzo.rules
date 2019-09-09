@@ -1,0 +1,38 @@
+# Tzotzil Rule Set
+# Written by: Bill
+# Last Updated: 2019-06-27
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,apostrophe,['ꞌ‘’],,,,
+class,ejectable-cons,(c|ch|k|p|q|t|ts),,,,
+class,either-q,(q|q'),,,,
+class,passthrough,[abeilmnosuv],,,,
+# Individual Letters
+sub,c,kʰ,4,,,
+sub,j,h,4,,,
+sub,k,kʰ,4,,,
+sub,p,pʰ,4,,,
+sub,r,ɾ,4,,,
+sub,t,tʰ,4,,,
+sub,x,ʃ,4,,,
+sub,y,j,4,,,
+sub,{apostrophe},ʔ,4,,,
+# Ejectives
+sub,c,kʼ,5,,{apostrophe},
+sub,k,kʼ,5,,{apostrophe},
+sub,p,pʼ,5,,{apostrophe},
+sub,t,tʼ,5,,{apostrophe},
+# Digraphs
+sub,c,tʃʼ,7,,h{apostrophe},"ejective ch"
+sub,c,tʃ,6,,h,"regular ch"
+sub,h,,6,c,,"<ch> cleanup"
+sub,q,kʼ,7,,{apostrophe},"ejective qu"
+sub,',,7,q,u,"ejective <qu> cleanup"
+sub,q,kʰ,6,,,"regular qu; <u> isn't mentioned in this rule b/c word-final <q> occasionally occurs"
+sub,u,,6,{either-q},,"<qu> cleanup"
+sub,t,tsʼ,7,,s{apostrophe},"ejective ts"
+sub,t,ts,6,,s,"regular ts"
+sub,s,,6,t,,"<ts> cleanup"
+# Misc. Rules
+sub,{apostrophe},,5,{ejectable-cons},,
+sub,({passthrough}),\1,0.1,,,

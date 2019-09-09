@@ -1,0 +1,22 @@
+# Tongan
+# Written by: Justin
+# Last Updated: 2019-08-02
+type,sfrom,sto,weight,precede,follow,comment
+class,passthrough,[aeioufhklmpstv],,,
+class,apostrophe,"[’'‘`ʻ]",,,,
+sub,{apostrophe},ʔ,1,,,
+sub,ā,a ː,1,,,
+sub,ē,e ː,1,,,
+sub,ī,i ː,1,,,
+sub,ō,o ː,1,,,
+sub,ū,u ː,1,,,
+sub,á,a,1,,,
+sub,é,e,1,,,
+sub,í,i,1,,,
+sub,ó,o,1,,,
+sub,ú,u,1,,,
+sub,n,n,1,,,
+sub,n,ŋ,2,,g,
+sub,g,,2,n,,
+sub,-,,1,,,
+sub,({passthrough}),\1,0.1,,,

@@ -1,0 +1,50 @@
+---
+title: "Tok Pisin"
+author: "Justin Bai"
+bibliography: tpi.bib
+output: html_document
+---
+# Background
+**Language family**: English Creole
+
+Although the "Pisin" of the language's name does indeed come from the English words
+"pidgin," the language is more accurately characterized as a creole as there are
+native speakers and the system has become grammaticized.
+
+# Alphabet
+Tok Pisin has twenty-two letters, some of which may be used in digraphs.
+
+The letters are: ⟨a⟩, ⟨b⟩, ⟨d⟩, ⟨e⟩, ⟨f⟩, ⟨g⟩, ⟨h⟩, ⟨i⟩, ⟨j⟩, ⟨k⟩, ⟨l⟩, ⟨m⟩, ⟨n⟩, ⟨o⟩, ⟨p⟩, ⟨r⟩, ⟨s⟩, ⟨t⟩, ⟨u⟩, ⟨v⟩, ⟨w⟩, ⟨y⟩.
+
+## Consonants
+* ⟨b⟩ = /b/
+* ⟨d⟩ = /d/
+* ⟨f⟩ = /f/
+* ⟨g⟩ = /g/
+* ⟨h⟩ = /h/
+* ⟨j⟩ = /dʒ/
+* ⟨k⟩ = /k/
+* ⟨l⟩ = /l/
+* ⟨m⟩ = /m/
+* ⟨n⟩ = /n/
+* ⟨p⟩ = /p/
+* ⟨r⟩ = /r/
+* ⟨s⟩ = /s/
+* ⟨t⟩ = /t/
+* ⟨v⟩ = /v/
+* ⟨w⟩ = /w/
+* ⟨y⟩ = /j/
+* ⟨ng⟩ = /ŋ/
+
+## Vowels
+* ⟨a⟩ = /a/
+* ⟨e⟩ = /e/
+* ⟨i⟩ = /i/
+* ⟨o⟩ = /o/
+* ⟨u⟩ = /u/
+
+# Phonology
+The correspondences presented in the section above represents the core phonemes
+of Tok Pisin. There is much variation as many speakers learn Tok Pisin as a
+second language or also speak English, in which case such speakers may have additional
+vowels [@22]. The rules reflect the core (somewhat idealized) phonemic inventory above.

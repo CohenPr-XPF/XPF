@@ -1,0 +1,168 @@
+type,sfrom,sto,weight,precede,follow,comment
+# Rules made by Becky Mathew
+# consonant class rules
+## Modified ISO class names
+class,K,క,,,,
+class,KH,ఖ,,,,
+class,G,గ,,,,
+class,GH,ఘ,,,,
+class,C,చ,,,,
+class,CH,ఛ,,,,
+class,J,జ,,,,
+class,JH,ఝ,,,,
+class,RETROFLEXT,ట,,,,
+class,RETROFLEXTH,ఠ,,,,
+class,RETROFLEXD,డ,,,,
+class,RETROFLEXDH,ఢ,,,,
+class,RETROFLEXN,ణ,,,,
+class,T,త,,,,
+class,TH,థ,,,,
+class,D,ద,,,,
+class,DH,ధ,,,,
+class,N,(ఙ|ఞ|న),,,,
+class,P,ప,,,,
+class,PH,ఫ,,,,
+class,B,బ,,,,
+class,BH,భ,,,,
+class,M,మ,,,,
+class,Y,య,,,,
+class,R,ర,,,,
+class,L,ల,,,,
+class,V,వ,,,,
+class,RETROFLEXL,ళ,,,,
+class,SH,శ,,,,
+class,RETROFLEXS,ష,,,,
+class,S,స,,,,
+class,H,హ,,,,
+class,RETROFLEXR,ఱ,,,,
+
+# independent vowel class rules
+class,A,అ,,,,
+class,AA,ఆ,,,,
+class,I,ఇ,,,,,
+class,II,ఈ,,,,
+class,U,ఉ,,,,
+class,UU,ఊ,,,,
+class,VOCALICR,ఋ,,,,
+class,VOCALICRR,ౠ,,,,
+class,VOCALICL,ఌ,,,,
+class,VOCALICLL,ౡ,,,,
+class,E,ఎ,,,,
+class,EE,ఏ,,,,
+class,AI,ఐ,,,,
+class,AU,ఔ,,,,
+class,O,ఒ,,,,
+class,OO,ఓ,,,,
+
+# vowel diacritic class rules 
+class,DIACRITICAA,ా,,,,
+class,DIACRITICI,ి,,,,
+class,DIACRITICII,ీ,,,,
+class,DIACRITICU,ు,,,,
+class,DIACRITICUU,ూ,,,,
+class,DIACRITICVOCALICR,ృ,,,,
+class,DIACRITICVOCALICRR,ౄ,,,,
+class,DIACRITICVOCALICL,ౢ,,,,
+class,DIACRITICVOCALICLL,ౣ,,,,
+class,DIACRITICE,ె,,,,
+class,DIACRITICEE,ే,,,,
+class,DIACRITICAI,ై,,,,
+class,DIACRITICAU,ౌ,,,,
+class,DIACRITICO,ొ,,,,
+class,DIACRITICOO,ో,,,,
+
+# other diacritic class rules
+class,VIRAMA,్,,,,
+class,CANDRABINDU,ఁ,,,,
+class,ANUSVARA,ం,,,,
+class,VISARGA,ః,,,,
+
+# consonant sub rules
+sub,{K},k ɐ,1,,,
+sub,{KH},kʰ ɐ,1,,,
+sub,{G},g ɐ,1,,,
+sub,{GH},gʱ ɐ,1,,,
+sub,{C},tʃ ɐ,1,,,
+sub,{CH},tʃʰ ɐ,1,,,
+sub,{J},dʒ ɐ,1,,,
+sub,{JH},dʒʱ ɐ,1,,,
+sub,{RETROFLEXT},ʈ ɐ,1,,,
+sub,{RETROFLEXTH},ʈʰ ɐ,1,,,
+sub,{RETROFLEXD},ɖ ɐ,1,,,
+sub,{RETROFLEXDH},ɖʱ ɐ,1,,,
+sub,{RETROFLEXN},ɳ ɐ,1,,,
+sub,{T},t̻ ɐ,1,,,
+sub,{TH},t̻ʰ ɐ,1,,,
+sub,{D},d̻ ɐ,1,,,
+sub,{DH},d̻ʱ ɐ,1,,,
+sub,{N},n ɐ,1,,,
+sub,{P},p ɐ,1,,,
+sub,{PH},pʰ ɐ,1,,,
+sub,{B},b ɐ,1,,,
+sub,{BH},bʱ ɐ,1,,,
+sub,{M},m ɐ,1,,,
+sub,{Y},j ɐ,1,,,
+sub,{R},r ɐ,1,,,
+sub,{L},l ɐ,1,,,
+sub,{V},ʋ ɐ,1,,,
+sub,{RETROFLEXL},ɭ ɐ,1,,,
+sub,{SH},ʃ ɐ,1,,,
+sub,{RETROFLEXS},ʂ ɐ,1,,,
+sub,{S},s̻ ɐ,1,,,
+sub,{H},h ɐ,1,,,
+sub,{RETROFLEXR},ɻ ɐ,1,,,
+
+# independent vowel sub rules
+sub,{A},ɐ,1,,,
+sub,{AA},ɐ ː,1,,,
+sub,{I},i,1,,,,
+sub,{II},i ː,1,,,
+sub,{U},u,1,,,
+sub,{UU},u ː,1,,,
+sub,{VOCALICR},r u,1,,,
+sub,{VOCALICRR},r u ː,1,,,
+sub,{VOCALICL},l u,1,,,
+sub,{VOCALICLL},l u ː,1,,,
+sub,{E},e,1,,,
+sub,{EE},e ː,1,,,
+sub,{AI},ɐ i,1,,,
+sub,{AU},ɐ u,1,,,
+sub,{O},o,1,,,
+sub,{OO},o ː,1,,,
+
+# diacritic vowel sub rules
+sub,{DIACRITICAA},ERASE ɐ ː,1,,,
+sub,{DIACRITICI},ERASE i,1,,,
+sub,{DIACRITICII},ERASE i ː,1,,,
+sub,{DIACRITICU},ERASE u,1,,,
+sub,{DIACRITICUU},ERASE u ː,1,,,
+sub,{DIACRITICVOCALICR},ERASE r u,1,,,
+sub,{DIACRITICVOCALICRR},ERASE r u ː,1,,,
+sub,{DIACRITICVOCALICL},ERASE l u,1,,,
+sub,{DIACRITICVOCALICLL},ERASE l u ː,1,,,
+sub,{DIACRITICE},ERASE e,1,,,
+sub,{DIACRITICEE},ERASE e ː,1,,,
+sub,{DIACRITICAI},ERASE ɐ i,1,,,
+sub,{DIACRITICAU},ERASE ɐ u,1,,,
+sub,{DIACRITICO},ERASE o,1,,,
+sub,{DIACRITICOO},ERASE o ː,1,,,
+
+# other diacritic sub rules
+sub,{VIRAMA},ERASE,1,,,
+sub,{CANDRABINDU},n,1,,,adds an /n/ after a vowel syllable-finally
+sub,{ANUSVARA},m,1,,,adds an /m/ after a vowel syllable-finally
+sub,{VISARGA},h,1,,,
+
+# removing joiners
+sub,‌,,1,,,removing zero width non joiner
+sub,‍,,1,,,removing zero width joiner 
+
+# TODO: Ask about dentialveolar letters
+# TODO: Ask about long ɐ
+# TODO: Ask about diphthongs
+
+class,consonantsIPA,(k|kʰ|g|gʱ|tʃ|tʃʰ|dʒ|dʒʱ|ʈ|ʈʰ|ɖ|ɖʱ|ɳ|t̻|t̻ʰ|d̻|d̻ʱ|n|p|pʰ|b|bʱ|m|j|r|l|ʋ|ɭ|ʃ|ʂ|s|h|ɻ),,,,
+
+# ipasub rules
+ipasub,ɐ ERASE,,7,,,removing the inherent vowel when there's a diacritic after
+ipasub,({consonantsIPA}) ɐ ERASE \1,\1 ː,8,,,consonant gemination
