@@ -1,0 +1,52 @@
+# Yakut Rule Set
+# Written by Jordan / Emily
+# Last Updated: 2019-08-22
+type,sfrom,sto,weight,precede,follow,comment
+# Class rules
+class,gem,[b|g|ʁ|d|ɟʝ|j|k|p|ɾ|s|h|t|x|c|cç|l|m|n|ŋ],,,,
+class,vowels,[aeiyuɯоø],,,,
+class,misc,[ъь-],,,,
+# Sub rules
+sub,а,a,3,,,
+sub,б,b,3,,,
+sub,г,g,3,,,
+sub,ҕ,ʁ,3,,,
+sub,д,d,3,,,
+sub,д,ɟʝ,4,,ь,
+sub,ь,,4,д,,
+sub,и,i,3,,,
+sub,й,j,3,,,
+sub,к,k,3,,,
+sub,л,l,3,,,
+sub,м,m,3,,,
+sub,н,n,3,,,
+sub,ҥ,ŋ,3,,,
+sub,н,ɲ,4,,ь,
+sub,ь,,4,н,,
+sub,о,o,3,,,
+sub,ө,ø,3,,,
+sub,п,p,3,,,
+sub,р,ɾ,3,,,
+sub,с,s,3,,,
+sub,һ,h,3,,,
+sub,т,t,3,,,
+sub,у,u,3,,,
+sub,ү,y,3,,,
+sub,х,x,3,,,
+sub,ч,cç,3,,,
+sub,ы,ɯ,3,,,
+sub,э,e,3,,,
+sub,({misc}),\1,3,,,
+# Long Vowels
+ipasub,({vowels}) \1\b,\1 ː,2,,,
+# Gemination
+ipasub,({gem}) \1\b,\1 ː,2,,,
+sub,н,ɲ ː,4,н,ь,"exception",
+sub,н,,4,,н,,
+sub,ь,,4,н,,
+# Dipthongs
+ipasub,ɯ a,ɯa,4,,,
+ipasub,u o,uo,4,,,
+ipasub,i e,ie,4,,,
+ipasub,y ø,yø,4,,,
+ipasub,{misc},,4,,,

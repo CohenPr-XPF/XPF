@@ -1,0 +1,81 @@
+---
+title: "Sinaugoro"
+author: "Emily Strand"
+bibliography: snc.bib
+output: html_document
+---
+
+Last updated: 9-6-2019
+
+# Background
+
+**Language family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Western / Papuan Tip / Peripheral / Central Papuan / Sinagoro-Keapara
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial: /b/, /f/, /v/, /m/
+Alveolar: /t/, /d/, /s/, /n/, /r/, /l/
+Velar: /k/, /g/, /ɣ/, /kʷ/, /gʷ/, /ɣʷ/
+
+### By manner of articulation
+
+Stop: /b/, /t/, /d/, /k/, /g/, /kʷ/, /gʷ/
+Fricative: /f/, /v/, /s/, /ɣ/, /ɣʷ/
+Nasal: /m/, /n/
+Approximant: /l/, /r/
+
+## Vowels
+
+/i/, /e/, /a/, /o/, /u/
+
+Dipthongs: /ae/, /ai/, /ao/, /au/, /oe/, /oi/
+
+# Alphabet
+
+a - /a/
+b - /b/
+d - /d/
+e - /e/
+f - /f/
+g - /g/
+ḡ - /ɣ/
+i - /i/
+k - /k/
+l - /l/
+m - /m/
+n - /n/
+o - /o/
+r - /r/
+s - /s/
+t - /t/
+u - /u/
+v - /v/
+
+# Digraphs
+
+gw -/gʷ/
+kw - /kʷ/
+ḡw - /ɣʷ/
+ai - /ai/
+ae - /ae/
+ao - /ao/
+au - /au/
+ei - /ei/
+oi - /oi/
+ou - /ou/
+
+
+# Syllable Structure
+
+* Syllables in Sinaugoro require empty codas and prohibit consonant clusters, leaving CV and V as the inherent structures [@tauberschmidt_grammar_1999, pg. 4].
+
+# Lenition Rules
+
+# Misc Rules
+
+* /i/ is realized as [j] in syllable onsets [@tauberschmidt_grammar_1999, pg. 4].
+* /ɣ/ palatalizes preceding front vowels [@tauberschmidt_grammar_1999, pg. 7].

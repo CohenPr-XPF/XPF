@@ -1,0 +1,113 @@
+---
+title: "Albanian"
+author: "Bill Mizgerd"
+bibliography: sq.bib
+output: html_document
+---
+
+Last Updated: 2019-06-11
+
+# Background
+
+**Language Family**: Indo-European / Albanian / Standard Albanian
+
+Albanian has two major dialects, Gheg and Tosk. I will be aiming to reflect Standard Albanian, which is predominantly based on the Tosk dialect.
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial: /p/, /b/, /m/, /f/, /v/  
+Dental: /θ/, /ð/  
+Alveolar: /t/, /d/, /ts/, /dz/, /n/, /s/, /z/, /ɾ/, /r/, /l/  
+Postalveolar: /tʃ/, /dʒ/, /ʃ/, /ʒ/  
+Palatal: /c/, /ɟ/, /ɲ/, /j/  
+Velar: /k/, /ɡ/, /ɫ/  
+Glottal: /h/  
+
+### By manner of articulation
+
+Stops: /p/, /b/, /t/, /d/, /c/, /ɟ/, /k/, /ɡ/  
+Affricates: /ts/, /dz/, /tʃ/, /dʒ/  
+Nasals: /m/, /n/, /ɲ/  
+Fricatives: /f/, /v/, /θ/, /ð/, /s/, /z/, /ʃ/, /ʒ/, /h/  
+Flaps: /ɾ/  
+Trills: /r/  
+Approximants: /l/, /ɫ/, /j/  
+
+## Vowels
+
+High: /i/, /y/, /u/  
+Mid: /e/, /ə/, /o/  
+Low: /a/  
+
+@SqNewmark1982 argues for /ɛ/ rather than /e/. (p. 10)
+
+Nasal and long vowels exist in Gheg, but Tosk has lost them. Because my analysis focuses on the Tosk-based Standard Albanian, I will be omitting information on the nasal and long vowels, but it can be found on pp. 5-6 of @SqCamaj1984.
+
+For diphthongs see @SqCamaj1984, p. 7, and @SqNewmark1982, p. 12.
+
+# Alphabet
+
+a - /a/  
+b - /b/  
+c - /ts/  
+ç - /tʃ/  
+d - /d/  
+dh - /ð/  
+e - /e/  
+ë - /ə/  
+f - /f/  
+g - /ɡ/  
+gj - /ɟ/  
+h - /h/  
+i - /i/  
+j - /j/  
+k - /k/  
+l - /l/  
+ll - /ɫ/  
+m - /m/  
+n - /n/  
+nj - /ɲ/  
+o - /o/  
+p - /p/  
+q - /c/  
+r - /ɾ/  
+rr - /r/  
+s - /s/  
+sh - /ʃ/  
+t - /t/  
+th - /θ/  
+u - /u/  
+v - /v/  
+x - /dz/  
+xh - /dʒ/  
+y - /y/  
+z - /z/  
+zh - /ʒ/  
+
+## Diphthongs
+
+ie - /ie/  
+ua - /ua/  
+ue - /ue/  
+ye - /ye/  
+
+# Lenition Rules
+
+* The palatal stops spirantize to affricates in many Gheg-speaking regions. [@SqCamaj1984, p. 2]
+* Nasals tend to assimilate to the place of following voiced stops. [@SqCamaj1984, p. 4]
+  * In northern Gheg, the stop tends to delete in such environments, leaving just the assimilated nasal behind. (ibid.)
+* When preceded by /n/, /d/ tends to be released nasally or even deleted entirely. (ibid.)
+* Word-final /ə/ often deletes in casual speech. [@SqNewmark1982, p. 11]
+
+# Misc. Rules
+
+* Stress and tone are non-contrastive in Albanian. [@SqNewmark1982, pp. 14-17]
+* In the Arbëresh dialects, /l/ tends to palatalize. [@SqCamaj1984, p. 3]
+* /ɡ/ devoices when followed by /t/. [@SqCamaj1984, p. 5]
+* Final /ə/ tends to lengthen the syllable preceding it. [@SqNewmark1982, p. 12]
+
+# References

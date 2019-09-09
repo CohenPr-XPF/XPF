@@ -1,0 +1,39 @@
+# Shilha Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-12
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,cons-output,(b|d|dˤ|ʕ|f|ɡ|ɡʷ|ʁ|ʁʷ|h|ħ|ʒ|ʒˤ|k|kʷ|l|lˤ|m|n|nˤ|q|qʷ|r|rˤ|s|sˤ|ʃ|t|tˤ|w|χ|χʷ|j|z|zˤ),,,,
+class,passthrough,[abdfhiklmnqrstuwʷz],,,,
+class,pharyngeal,"[̣]",,,,
+# Individual Letters
+sub,ḍ,dˤ,4,,,
+sub,e,,4,,,"<e> is used to mark [ə], which is non-phonemic in Shilha"
+sub,ɛ,ʕ,4,,,
+sub,g,ɡ,4,,,
+sub,ġ,ʁ,4,,,
+sub,ḥ,ħ,4,,,
+sub,h̬,χ,4,,,
+sub,j,ʒ,4,,,
+sub,ḷ,lˤ,4,,,
+sub,ṇ,nˤ,4,,,
+sub,ṛ,rˤ,4,,,
+sub,ṣ,sˤ,4,,,
+sub,š,ʃ,4,,,
+sub,ṭ,tˤ,4,,,
+sub,x,χ,4,,,
+sub,y,j,4,,,
+sub,ẓ,zˤ,4,,,
+sub,-,,4,,,"some words have a hyphen with no phonetic value"
+# Diacritics that get read separately
+sub,h,χ,8,,̬,"<h̬>"
+sub,̬,,8,,,"cleans up the diacritic from <h̬>"
+sub,{pharyngeal},"ˤ",1,,,"pharyngealization diacritic"
+ipasub,ʷ χ,χʷ,3.5,,,"for some reason, <ʷ> usually comes before <h̬>"
+# Gemination
+ipasub,({cons-output}) \1,\1 ː,2,,,
+ipasub,({cons-output}) ːˤ,\1 \1ˤ,1,,,"corrects mistaken gemination of plain/pharyngealized consonant sequences"
+# Misc. Rules
+ipasub, ʷ,ʷ,3,,,"attaches labialization to the preceding character"
+ipasub,({cons-output}) ːʷ,\1 \1ʷ,1,,,"fixes clusters of regular + labialized consonants"
+sub,({passthrough}),\1,0.1,,,

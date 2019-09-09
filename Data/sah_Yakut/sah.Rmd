@@ -1,0 +1,105 @@
+---
+title: "Yakut"
+author: "Jordan / Emily"
+bibliography: sah.bib
+output: html_document
+---
+
+Last Updated: 2019-08-22
+
+# Background
+
+**Language Family**: Altaic / Turkic / Northern
+
+Also referred to as Sakha.
+
+# Phonology
+
+## Consonants
+
+* There seems to be some debate as to whether the palatal affricates /cç/ and /ɟʝ/ are in fact stops /c/ and /ɟ/ respectively, due to a lack of frication, but I decided to go with Tolkov's classification as affricates [@tolkov_phonetics_2011, pg. 1].
+* /v/, /ʒ/, /f/, /z/, /ts/, /ʃ/, and /ɕː/ appear in loanwords [@tarasova_translation_2013, pg. 2].
+
+### By Place of Articulation
+
+Bilabial: /p/, /b/, /m/
+Dentoalveolar: /t/, /d/, /n/, /ɾ/, /s/, /l/
+Palatal: /ɲ/, /cç/, /ɟʝ/, /j/, /j̃/
+Velar: /k/, /g/, /ŋ/, /x/
+Uvular: /ʁ/
+Glottal: /h/
+
+### By Manner of Articulation
+
+Plosives: /p/, /b/, /t/, /d/, /k/, /g/
+Nasals: /m/, /n/, /ɲ/, /ŋ/
+Flap: /ɾ/
+Fricatives: /s/, /x/, /ʁ/, /h/
+Affricates: /cç/, /ɟʝ/
+Approximants: /l/, /j/, /j̃/
+
+## Vowels
+
+* Vowel harmony exists in Yakut [@tolkov_phonetics_2011, pg. 6-7].
+* Vowel length is contrastive. Long vowels are indicated by repeated graphemes [@tarasova_translation_2013, pg. 2].
+
+Short: /i/, /y/, /ɯ/, /u/, /e/, /ø/, /a/, /o/
+Long: /iː/, /yː/, /ɯː/, /uː/, /eː/, /øː/, /aː/, /oː/
+
+Dipthongs: /ie/, /yø/, /ɯa/, /uo/
+
+# Alphabet
+
+* The distinction between /j/ and /j̃/ is not marked in the orthography [@tolkov_phonetics_2011, pg. 2].
+
+а	- /a/
+б	- /b/
+в - /v/ (only used in loanwords)
+г	- /g/
+ҕ	- /ʁ/ or /ɣ/ (for transcription I went with the former, as indicated by Tolkov)
+д	- /d/
+дь- /ɟʝ/
+е - /e/ (only used in loanwords)
+ё - /jo/ (only used in loanwords)
+ж - /ʒ/ (only used in loanwords)
+з - /z/ (only used in loanwords)
+и	- /i/
+й - /j/ or /j̃/
+к - /k/
+л	- /l/
+м	- /m/
+н	- /n/
+ҥ	- /ŋ/
+нь - /ɲ/ (long нь is written as ннь, rather than ньнь)
+о	- /o/
+ө	- /ø/
+п	- /p/
+р	- /ɾ/
+с	- /s/
+һ	- /h/
+т - /t/
+у	- /u/
+ү	- /y/
+ф - /f/ (only used in loanwords)
+х - /x/
+ц - /ts/ (only used in loanwords)
+ч	- /cç/
+ш - /ʃ/ (only used in loanwords)
+щ - /ɕː/ (only used in loanwords)
+ъ - no phonemic transcription - only used in loanwords
+ы	- /ɯ/
+ь - may indicate palatalization of preceding consonant; only used in loanwords or in the digraphs дь and нь
+э	- /e/
+ю - /ju/ (only used in loanwords)
+я - /ja/ (only used in loanwords)
+
+
+# Lenition Rules
+
+* /s/ debuccalizes to /h/ [@tolkov_phonetics_2011, pg. 1].
+* /p/ voices intervocalically [@gurevich_2004, pg. 269-272].
+* /k/ is said to spirantize to /χ/ [@gurevich_2004]; however, @kingstong_2008 argues that it's merely due to place assimilation.
+
+# Misc Rules
+
+* Gemination of consonant occurs [@tolkov_phonetics_2011, pg. 7].

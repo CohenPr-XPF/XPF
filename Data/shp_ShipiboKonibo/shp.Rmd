@@ -1,0 +1,105 @@
+---
+title: "Shipibo-Konibo"
+author: "Bill Mizgerd"
+bibliography: shp.bib
+output: html_document
+---
+
+Last Updated: 2019-06-21
+
+# Background
+
+**Language Family**: Panoan / Mainline Panoan / Nawa / Shipibo-Konibo
+
+The language is often simply referred to as Shipibo.
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial: /p/, /m/, /β/, /w/  
+Alveolar: /t/, /ts/, /n/, /s/  
+Postalveolar: /ʃ/, /tʃ/  
+Retroflex: /ʂ/, /ɻ/  
+Palatal: /j/  
+Velar: /k/  
+Glottal: /h/  
+
+### By manner of articulation
+
+Stops: /p/, /t/, /k/  
+Affricates: /ts/, /tʃ/  
+Nasals: /m/, /n/  
+Fricatives: /β/, /s/, /ʃ/, /ʂ/, /h/  
+Approximants: /w/, /ɻ/, /j/  
+
+## Vowels
+
+Vowels: /i/, /ɨ/, /o/, /a/  
+
+Each vowel has both an oral and a nasal phoneme, according to @ShpValenzuelaEtAl2001 (p. 282); @ShpValenzuela2003, however, analyzes nasal vowels as /Vn/ sequences (p. 95). Because @ShpEliasUlloa2006 also finds nasal vowels to only exist as through a nasalization process from consonants (p. 14), I have opted to prefer the analysis that excludes nasal vowels.
+
+Long vowels are pronounced in some words. @ShpEliasUlloa2006 describes vowel length as phonemic, but @ShpValenzuela2003 finds it never to be contrastive (p. 95).
+
+@ShpValenzuelaEtAl2001 argues for /ɯ/ rather than /ɨ/.
+
+# Alphabet
+
+a - /a/  
+b - /β/  
+c - /k/  
+ch - /tʃ/  
+e - /ɨ/  
+hu - /w/  
+i - /i/  
+j - /h/  
+k - /k/  
+m - /m/  
+n - /n/  
+nh - /n/ (see [^nh])
+o - /o/  
+p - /p/  
+qu - /k/  
+r - /ɻ/  
+s - /s/  
+sh - /ʃ/  
+s̈h - /ʂ/ (according to @ShpWise1993)  
+t - /t/  
+ts - /ts/  
+w - /w/  
+x - /ʂ/ (according to @ShpValenzuela2003)  
+y - /j/  
+
+[^nh]: Normally postvocalic <n> is used to indicate vowel nasalization, so <nh> is used to indicate when a nasal vowel is actually followed by /n/ [@ShpWise1993, p. 18]. However, because my analysis does not treat vowel nasalization as contrastive, <nh> behaves like any other <n> in my ruleset.
+
+* Apostrophes are used to represent the glottal stop, but because it is not phonemic, I will be omitting it from the ruleset. [@ShpValenzuela2003, p. 138]
+
+# Lenition Rules
+
+* /k/ lenites, either to [ɣ] or to [ɰ], in certain high-frequency morphemes. [@ShpValenzuelaEtAl2001, p. 282] [@ShpValenzuela2003, p. 103]
+* Vowels centralize somewhat in closed syllables. [@ShpValenzuelaEtAl2001, p. 283]
+* Word-initial /h/ sometimes deletes before /a/. [@ShpValenzuela2003, p. 103]
+* Between voiceless obstruents, vowels may devoice or delete. (ibid.)
+* The middle marker /-t/ often deletes before consonant-initial suffixes. [@ShpValenzuela2003, pp. 116-117]
+
+# Misc. Rules
+
+* Epenthesis of [ʔ] occurs at the beginning of vowel-initial utterances and the end of vowel-final utterances, as well as at morpheme boundaries with vowels on both sides. [@ShpValenzuelaEtAl2001, p. 282] [@ShpValenzuela2003, pp. 95-96]
+* Vowels nasalize after nasal consonants; vowels nasalized in this way behave differently than contrastively nasalized vowels. (ibid.)
+* Word-initial /β/ despirantizes to [b] in stressed syllables. (ibid.) [@ShpValenzuela2003, p. 97]
+* /ɻ/ tends to be variable: intervocalically it is sometimes pronounced [ɹ], and in other cases it is realized as [ʐ] or [ɾ]. In the onsets of stressed syllables, it tends to be pre-stopped, yielding [dz] or [dɹ]. [@ShpValenzuelaEtAl2001, pp. 282-283]
+* Approximants nasalize before nasal vowels. [@ShpValenzuelaEtAl2001, p. 283]
+* /w/ becomes the labiopalatal approximant [ɥ] before high front vowels, and unrounds to [ɰ] before high back vowels. (ibid.)
+* /ɯ/ fronts to [ɨ] after coronals. (ibid.)
+* Nasalized vowels spread their nasalization to preceding vowels, if the vowels are adjacent or only separated by approximants. (ibid.)
+* /o/ raises to [u] before /i/. [@ShpValenzuela2003, p. 94]
+
+## Syllable Structure
+
+Shipibo has a (C)V(C) syllable structure. [@ShpValenzuela2003, p. 104]
+
+No consonants are syllabic. Only sibilants and /n/ occur in codas. [@ShpValenzuela2003, p. 105]
+
+# References

@@ -64,9 +64,16 @@
 | qub           | Huallaga Huánuco Quechua | under revision      |
 | quz           | Cusco Quechua  | under revision                |
 | roo           | Rotokas        |
-| si            | Sinhala        |
-| sw            | Swahili        |
-| ta            | Tamil          |
+| sah           | Yakut          | under revision                |
+| shi           | Shilha         | under revision                |
+| shp           | Shipibo Konibo |
+| si            | Sinhala        | under revision                |
+| sk            | Slovak         | under revision                |
+| snc           | Sinaugoro      | under revision                |
+| sq            | Albanian       |
+| suz           | Sunwar         | under revision                |
+| sw            | Swahili        | under revision                |
+| ta            | Tamil          | under revision                |
 | tk            | Turkmen        |
 | tl            | Tagalog        |
 | tr            | Turkish        | under revision                |
@@ -148,8 +155,12 @@
 | poh | Poqomchi'        | insufficient documentation             |
 | pms | Piedmontese      | non-transparent spelling               |
 | rw  | Kinyarwanda      | non-transparent spelling with tones and vowel length                |
+| se  | Northern Sami    | non-transparent spelling               |
+| sn  | Shona            | non-transparent spelling with tones    |
+| so  | Somali           | non-transparent spelling with tones    |
+| ss  | Swati            | non-transparent spelling with tones    |
+| st  | Sesotho          | non-transparent spelling with tones                       |
 | yo  | Yoruba           | non-transparent spelling with tones                       |
 | xh  | Xhosa            | non-transparent spelling with tones                       |
 | sv  | Swedish          | non-transparent spelling                                  |
-| st  | Sesotho          | non-transparent spelling with tones                       |
 | ti  |Tigrinya          | non-transparent spelling                                  |                              
