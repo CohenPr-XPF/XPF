@@ -1,0 +1,58 @@
+# Zaza Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-19
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+pre,Iİ,ıi,,,,
+class,apostrophe,['ꞌ‘’],,,,
+class,post-apost,[hlst],,,,
+class,pre-h,[lst],,,,
+class,passthrough,[bfhklmnopqsvwxz],,,,
+# Individual Letters
+sub,a,ɑ,4,,,
+sub,c,dʒ,4,,,
+sub,ç,tʃ,4,,,
+sub,d,d̪,4,,,
+sub,e,ə,4,,,
+sub,ê,e,4,,,
+sub,é,e,4,,,
+sub,g,ɡ,4,,,
+sub,ğ,ɣ,4,,,
+sub,j,ʒ,4,,,
+sub,r,ɾ,4,,,
+sub,ş,ʃ,4,,,
+sub,t,t̪,4,,,
+sub,u,ʊ,4,,,
+sub,û,u,4,,,
+sub,ü,u,4,,,
+sub,y,j,4,,,
+sub,{apostrophe},ʕ,4,,,
+# Forms of <i>
+# For the phonemes /i/ and /ɨ/, one orthography uses <i> and <ı> respectively, while the other uses <î> and <i>.
+# Because the pronunciation of <i> differs by orthography, I currently only support the i/ı orthography.
+# To support the other orthography, uncomment lines 36-37, and comment out lines 34-35.
+sub,ı,ɨ,4,,,
+sub,i,i,4,,,
+# sub,i,ɨ,4,,,
+# sub,î,i,4,,,
+# Digraphs
+sub,h,ħ,6,{apostrophe},,"<'h>"
+sub,l,ɫ,6,{apostrophe},,"<'l>"
+sub,s,sˤ,6,{apostrophe},,"<'s>"
+sub,t,t̪ˤ,6,{apostrophe},,"<'t>"
+sub,{apostrophe},,6,,{post-apost},"cleanup of <'>-initial digraphs"
+sub,l,ɫ,5,,h,"<lh>"
+sub,s,sˤ,5,,h,"<sh>"
+sub,t,t̪ˤ,5,,h,"<th>"
+sub,h,,5,{pre-h},,"cleanup of <h>-final digraphs"
+sub,r,r,6,,r,"<rr>"
+sub,r,,6,r,,"cleanup of <rr>"
+# Diphthongs
+ipasub,ɑ j,ɑj,2,,,
+ipasub,ɑ w,ɑw,2,,,
+ipasub,ə j,əj,2,,,
+ipasub,ə w,əw,2,,,
+ipasub,o j,oj,2,,,
+ipasub,ʊ j,ʊj,2,,,
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,

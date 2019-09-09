@@ -87,8 +87,14 @@
 | ug            | Uyghur         | under revision                |
 | uk            | Ukrainian      |
 | uz            | Uzbek          |
-| vi            | Vietnamese     |
-| zu            | Zulu           |
+| vi            | Vietnamese     | under revision                |
+| wbp           | Warlpiri       |
+| wo            | Wolof          |
+| viv           | Iduna          |
+| ycn           | Yucuna         |
+| yua           | Yucatec Maya   | under revision; lacks lenition|
+| zu            | Zulu           | under revision                |
+| zza           | Zaza           |
 
 
 ## Abandoned Languages
@@ -168,10 +174,18 @@
 | so  | Somali           | non-transparent spelling with tones    |
 | ss  | Swati            | non-transparent spelling with tones    |
 | st  | Sesotho          | non-transparent spelling with tones                       |
+| sv  | Swedish          | non-transparent spelling                                  |
 | tcz | Thadou Chin      | non-transparent spelling with tones     |
 | ti  |Tigrinya          | non-transparent spelling with gemination                                 |  
 | tn  | Tswana           | non-transparent spelling with tones |   
-| ts  | Tsonga           | non-transparent spelling with tones |                     
+| ts  | Tsonga           | non-transparent spelling with tones |  
+| wal | Wolaytta         | non-transparent spelling with tones                       |
+| war | Waray-Waray      | insufficient documentation               |  
+| xav | Xavánte          | non-transparent spelling with vowel length                      |
+| xbi | Kombio           | non-transparent spelling with vowels                      |
+| xh  | Xhosa            | non-transparent spelling with tones   |    
+| xla | Kamula           | non-transparent spelling with vowels and tones |
+| xsr | Sherpa           | insufficient documentation   |
 | yo  | Yoruba           | non-transparent spelling with tones                       |
 | xh  | Xhosa            | non-transparent spelling with tones                       |
-| sv  | Swedish          | non-transparent spelling                                  |
+| zai | Zapotec          | non-transparent spelling with tones |

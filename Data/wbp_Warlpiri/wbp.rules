@@ -1,0 +1,32 @@
+# Warlpiri Rule Set
+# Written by: Bill
+# Last Updated: 2019-08-09
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,post-r,[lndrt],,,,
+class,pre-y,[ln],,,,
+class,vowel,[aiu],,,,
+class,passthrough,[aiklmnptuw],,,,
+# Individual Letters
+sub,j,ɟ,4,,,
+sub,r,ɻ,4,,,
+sub,y,j,4,,,
+sub,-,,4,,,"some words have a hyphen with no phonetic value"
+# Digraphs
+sub,d,ɽ,6,r,,"<rd>"
+sub,l,ɭ,6,r,,"<rl>"
+sub,n,ɳ,6,r,,"<rn>"
+sub,r,ɾ,6,r,,"<rr>"
+sub,t,ʈ,6,r,,"<rt>"
+sub,r,,6,,{post-r},"cleanup of r-initial digraphs"
+sub,l,ʎ,6,,y,"<ly>"
+sub,n,ɲ,6,,y,"<ny>"
+sub,y,,6,{pre-y},,"cleanup of y-final digraphs"
+sub,n,ŋ,6,,g,"<ng>"
+sub,g,,6,n,,"<ng> cleanup"
+# Misc. Rules
+ipasub,({vowel}) \1,\1 ː,4,,,"vowel lengthening"
+ipasub,^t,ʈ,4,,,"retroflexion of word-initial <t>"
+ipasub,^n,ɳ,4,,,"retroflexion of word-initial <n>"
+ipasub,^l,ɭ,4,,,"retroflexion of word-initial <l>"
+sub,({passthrough}),\1,0.1,,,

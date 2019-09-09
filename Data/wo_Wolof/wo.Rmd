@@ -1,0 +1,104 @@
+---
+title: "Wolof"
+author: "Bill Mizgerd"
+bibliography: wo.bib
+output: html_document
+---
+
+Last Updated: 2019-07-02
+
+# Background
+
+**Language Family**: Niger-Congo / Atlantic-Congo / Atlantic / Senegambian / Fula-Wolof / Wolof
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial: /p/, /b/, /ᵐb/, /m/, /f/, /w/  
+Alveolar: /t/, /d/, /ⁿd/, /n/, /s/, /l/, /ɾ/  
+Postalveolar: /tʃ/, /dʒ/, /ᶮdʒ/  
+Palatal: /ɲ/, /j/  
+Velar: /k/, /ɡ/, /ᵑɡ/, /ŋ/, /x/  
+Uvular: /q/  
+
+### By manner of articulation
+
+Stops (plain): /p/, /b/, /t/, /d/, /k/, /ɡ/, /q/  
+Stops (pre-nas): /ᵐb/, /ⁿd/, /ᶮdʒ/, /ᵑɡ/  
+Affricates: /tʃ/, /dʒ/  
+Nasals: /m/, /n/, /ɲ/, /ŋ/  
+Fricatives: /f/, /s/, /x/  
+Flaps: /ɾ/  
+Approximants: /w/, /l/, /j/  
+
+## Vowels
+
+Front: /i/, /e/, /ɛ/  
+Central: /ə/, /a/  
+Back: /u/, /o/, /ɔ/  
+
+# Alphabet
+
+a - /a/  
+à - /aː/  
+b - /b/  
+c - /tʃ/  
+d - /d/  
+e - /ɛ/  
+é - /e/  
+ë - /ə/  
+f - /f/  
+g - /ɡ/  
+i - /i/  
+j - /dʒ/  
+k - /k/  
+l - /l/  
+m - /m/  
+n - /n/  
+ñ - /ɲ/  
+ŋ - /ŋ/  
+o - /ɔ/  
+ó - /o/  
+p - /p/  
+q - /q/  
+r - /ɾ/  
+s - /s/  
+t - /t/  
+u - /u/  
+w - /w/  
+x - /x/  
+y - /j/  
+
+Long vowels are written by doubling the vowel character. When accented vowels are doubled, the diacritic is sometimes omitted on the second. [@WoDiop2012, p. 5]
+
+Some older orthographies use <ny> instead of <ñ>. [@WoGamble1985, p. v]
+
+## Prenasalized Consonants
+
+mb - /ᵐb/  
+mp - /ᵐp/  
+nc - /ᶮtʃ/  
+nd - /ⁿd/  
+ng - /ᵑɡ/  
+nj - /ᶮdʒ/  
+nk - /ᵑk/  
+nt - /ⁿt/  
+
+Voiceless prenasalized consonants do not occur word-initially. [@WoCamara2006, p. 2]
+
+The authors I have read disagree about which of the prenasalized consonants exist in Wolof; I have opted to include all of the prenasalized voiced consonants in my analysis, but to exclude the prenasalized voiceless consonants, as those were less widely attested.
+
+# Lenition Rules
+
+* Short /u/ is generally realized as lax [ʊ]. [@WoCamara2006, p. 3]
+* /a/ reduces to [ə] in the final syllable of a word, unless the preceding syllable has a low or mid-low vowel. [@WoCamara2006, p. 4]
+
+# Misc. Rules
+
+* Epenthesis of [ə] occurs after word-final geminated consonants; if the consonant is a voiceless stop, that [ə] is also realized as voiceless. [@WoCamara2006, p. 1]
+* Vowels nasalize before nasal or prenasalized consonants. [@WoCamara2006, p. 4]
+
+# References

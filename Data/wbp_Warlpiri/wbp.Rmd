@@ -1,0 +1,81 @@
+---
+title: "Warlpiri"
+author: "Bill Mizgerd"
+bibliography: wbp.bib
+output: html_document
+---
+
+Last Updated: 2019-08-09
+
+# Background
+
+**Language Family**: Pama-Nyungan / Ngumpin-Yapa / Warlpiri
+
+# Phonology
+
+## Consonants
+
+* @WbpJagst1975 includes a series of prenasalized stops in his analysis. (p. 21)
+
+### By place of articulation
+
+Labial: /p/, /m/, /w/  
+Alveolar: /t/, /n/, /ɾ/, /l/  
+Retroflex: /ʈ/, /ɳ/, /ɽ/, /ɭ/, /ɻ/  
+Palatal: /ɟ/, /ɲ/, /ʎ/, /j/  
+Velar: /k/, /ŋ/  
+
+### By manner of articulation
+
+Stops: /p/, /t/, /ʈ/, /ɟ/, /k/  
+Nasals: /m/, /n/, /ɳ/, /ɲ/, /ŋ/  
+Flaps: /ɾ/, /ɽ/  
+Laterals: /l/, /ɭ/, /ʎ/  
+Approximants: /w/, /ɻ/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /a/  
+
+Vowel length is contrastive. [@WbpNash1980, p. 65]
+
+# Alphabet
+
+a - /a/  
+i - /i/  
+j - /ɟ/  
+k - /k/  
+l - /l/  
+  rl - /ɭ/  
+  ly - /ʎ/  
+m - /m/  
+n - /n/  
+  rn - /ɳ/  
+  ny - /ɲ/  
+  ng - /ŋ/  
+p - /p/  
+r - /ɻ/  
+rd - /ɽ/  
+rr - /ɾ/  
+t - /t/  
+  rt - /ʈ/  
+u - /u/  
+w - /w/  
+y - /j/  
+
+Long vowels are represented by doubling the vowel character. [@WbpNash1980, p. 65]
+
+Word-initial /ʈ/, /ɳ/, and /ɭ/ are simply written as <t>, <n>, and <l> [@WbpNash1983, p. 2]; however, because alveolar consonants do not appear word-initially [@WbpHale1977, pp. 2-3], this does not create any ambiguity. (See also @WbpJagst1975, p. 26, for this issue.)
+
+# Lenition Rules
+
+* Stops often gain voicing in unstressed syllables [@WbpHale1977, p. 3]; the specific conditions under which these voicing processes occur differ slightly by consonant [@WbpJagst1975, p. 22].
+* Retroflex sonorants flap (/ɭ/ to [ɺ], /ɳ/ to [ɾ̃]?) after non-front vowels. [@WbpJagst1975, pp. 25-26]
+
+# Misc. Rules
+
+## Syllable Structure
+
+Warlpiri has a CV(C) syllable structure, except word-initially, where it becomes CV(V)(C). [@WbpNash1980, p. 78]
+
+# References

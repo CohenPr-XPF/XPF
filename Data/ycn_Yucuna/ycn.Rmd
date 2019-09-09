@@ -1,0 +1,92 @@
+---
+title: "Yucuna"
+author: "Bill Mizgerd"
+bibliography: cbt.bib
+output: html_document
+---
+
+Last Updated: 2019-06-28
+
+# Background
+
+**Language Family**: Arawakan / Maipuran / Northern Maipuran / Upper Amazon / Western Nawiki / Yucuna
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial: /p/, /pʰ/, /m/, /w/  
+Alveolar: /t/, /tʰ/, /n/, /s/, /ɾ/, /l/  
+Postalveolar: /tʃ/  
+Palatal: /ɲ/, /j/  
+Velar: /k/  
+Glottal: /ʔ/, /h/  
+
+### By manner of articulation
+
+Stops: /p/, /pʰ/, /t/, /tʰ/, /k/, /ʔ/  
+Affricates: /tʃ/  
+Nasals: /m/, /n/, /ɲ/  
+Fricatives: /s/, /h/  
+Flaps: /ɾ/  
+Approximants: /w/, /l/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /e/, /o/, /a/  
+
+In a few rare cases, vowel nasalization is contrastive. [@YcnSchauer1967, p. 66]
+
+Adjacent vowels do not form diphthongs. [@YcnSchauer1967, p. 67]
+
+# Alphabet
+
+a - /a/  
+c - /k/  
+ch - /tʃ/  
+e - /e/  
+' - /ʔ/  
+hu - /w/  
+i - /i/  
+j - /h/  
+k - /k/  
+l - /l/  
+m - /m/  
+n - /n/  
+ñ - /ɲ/  
+o - /o/  
+p - /p/  
+  ph - /pʰ/  
+qu - /k/  
+r - /ɾ/  
+s - /s/  
+t - /t/  
+  th - /tʰ/  
+u - /u/  
+w - /w/  
+y - /j/  
+
+Orthographies disagree slightly at a few points; older, more Spanish-influenced texts use <hu, c, qu> where newer orthographies tend to use <w, k, k> respectively. Based on the Crubadan corpus, both patterns are still in wide usage, so I have included rulesets for both.
+
+# Lenition Rules
+
+* In some words, /pʰ/ spirantizes to [ɸ]. [@YcnSchauer1967, p. 64] [@YcnSchauerEtAl2005, p. 15]
+* Many speakers debuccalize /s/ to [h]. [@YcnSchauerEtAl2005, p. 15]
+* Word-initial /j/ is sometimes deleted. (ibid.)
+
+# Misc. Rules
+
+* /k/ labializes to [kʷ] after /u/, and palatalizes to [kʲ] after /i/. [@YcnSchauer1967, p. 64]
+* /k/ and [kʰ] exist in free variation in some words. (ibid.)
+* /n/ assimilates to the place of following velars. [@YcnSchauer1967, p. 65]
+* Before consonants, /h/ is realized as [x]. (ibid.)
+* Word-final vowels nasalize in syllables of the pattern V or hV. [@YcnSchauer1967, p. 66] [@YcnSchauerEtAl2005, p. 15]
+* Epenthesis of [ʔ] occurs intervocalically. [@YcnSchauerEtAl2005, p. 15]
+
+## Syllable Structure
+
+Yucuna has a syllable structure of (C)V(C); the only consonants that appear in syllable codas are /n/ and /h/. [@YcnSchauer1967, pp. 66-67]
+
+# References
