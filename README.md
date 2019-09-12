@@ -4,7 +4,9 @@
 | language code | language       | comments                      |
 |---------------|----------------| ------------------------------|
 | ab            | Abkhaz         | under revision                |
+| acf           | Saint Lucian Creole French | under revision; lacks lenition |
 | amn           | Amanab         |
+| apu           | Apurinã        | under revision                |
 | ast           | Asturian       | under revision                |
 | ay            | Aymara         | under revision                |
 | ba            | Bashkir        | under revision                |
@@ -107,6 +109,7 @@
 | ak  | Akan             | non-transparent spelling with tones                       |
 | alq | Algonquin        | non-transparent spelling with vowel length                |
 | am  |Amharic           | non-transparent spelling with consonant gemination        |
+| ban | Bali             | non-standardized orthography       |
 | bcw | Bana             | non-transparent spelling with tones                       |
 | bn  | Bengali          | non-transparent spelling                                  |
 | bs  | Bosnian          | non-transparent spelling with vowel length and tones      |

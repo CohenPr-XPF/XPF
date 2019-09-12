@@ -1,0 +1,84 @@
+---
+title: "Saint Lucian Creole French"
+author: "Emily Strand"
+bib: acf.bib
+output: html_document
+---
+
+Last updated: 09-11-2019
+
+# Background
+
+**Language family**: French Creole
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial: /m/, /p/, /b/, /f/, /v/
+Alveolar: /n/, /t/, /d/, /s/, /z/, /l/, /ɹ/
+Post-alveolar: /tʃ/, /dʒ/, /ʃ/, /ʒ/
+Palatal: /j/
+Velar: /ŋ/, /k/, /g/, /w/
+Glottal: /h/
+
+### By manner of articulation
+
+Stop: /p/, /b/, /t/, /d/, /k/, /g/
+Fricative: /f/, /v/, /s/, /z/, /ʃ/, /ʒ/, /h/
+Affricate: /tʃ/, /dʒ/
+Nasal: /m/, /n/, /ŋ/
+Approximant: /l/, /j/, /w/, /ɹ/
+
+## Vowels
+
+* There is some debate as to how many vowels are included in the vowel inventory. @bhatt_creole_2006 and @mondesir_dictionary_1992 argue for an eight-vowel inventory (pg. 9; pg. 3); however, @crosbie_kweyol_2001 and @frank_sources_2007 argue for a seven-vowel inventory (pg. xi; pg. 3). The debate centers around the question of whether /a/ and /ɑ/ are contrastive.
+* Given the fact that @lefebvre_creoles_2011 indicates that /ɑ/ has only been marginally attested and seldom appears in modern day St. Lucian Creole, I have opted for the seven-vowel distribution (pg. 109-110).
+* Three nasal vowels are also classified as phonemes, indicated by a following ⟨n⟩ [@crosbie_kweyol_2001, pg. xvii].
+
+Oral: /i/, /e/, /ɛ/, /a/, /u/, /ɔ/, /o/
+Nasal: /ã/, /ẽ/, /õ/
+
+# Alphabet
+
+* @mondesir_dictionary_1992 has /ɛ/ represented by ⟨e⟩ (pg. 4), whereas most other sources uses ⟨è⟩ as the convention [@crosbie_kweyol_2001, pg. xi; @frank_sources_2007, pg. 4-11]. Crubadan seems to use ⟨è⟩; however I will account for both forms due to /e/ being distinguishable.
+
+a - /a/
+b - /b/
+d - /d/
+é - /e/
+è; e - /ɛ/
+f - /f/
+g - /g/
+h - /h/
+i - /i/
+j - /ʒ/
+k - /k/
+l - /l/
+m - /m/
+n - /n/
+o - /o/
+ò - /ɔ/
+p - /p/
+r - /ɹ/ (only appears in English loanwords)
+s - /s/
+t - /t/
+v - /v/
+w - /w/
+y - /j/
+z - /z/
+
+## Digraphs
+
+ch - /ʃ/
+dj - /dʒ/
+ng - /ŋ/
+ou - /u/
+tj - /tʃ/
+an - /ã/
+en - /ẽ/
+on - /õ/
+
+# Lenition Rules 
