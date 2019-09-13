@@ -43,6 +43,8 @@ Vowel length is contrastive. [@EmiBrownie2007, p. 13]
 
 @EmiRoss2002 argues for the more traditional five-vowel system of /i u e o a/. (p. 149)
 
+Because Crubadan has instances of three vowel sequences, leaving diphthongs to be determined by syllable structure, they aren't included in the rule set.
+
 # Alphabet
 
 a - /ɑ/  

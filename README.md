@@ -8,13 +8,13 @@
 | amn           | Amanab         |
 | apu           | Apurinã        | under revision                |
 | ast           | Asturian       | under revision                |
-| ay            | Aymara         | under revision                |
+| ay            | Aymara         |
 | ba            | Bashkir        | under revision                |
 | bcl           | Central Bikol  | under revision                |
 | be            | Belarusan      | under revision                |
 | bg            | Bulgarian      |
 | boa           | Bora           |
-| ca            | Catalan        | under revision                |
+| ca            | Catalan        | under revision; lacks lenition                |
 | car           | Carib          | under revision                |
 | cbi           | Cha'palaa      |
 | cbt           | Chayahuita     |
@@ -25,7 +25,7 @@
 | dgz           | Daga           | under revision; lacks lenition|
 | djr           | Djambarrpuyngu |                               |
 | el            | Greek          | lacks lenition                |
-| emi           | Mussau-Emira   | under revision                |
+| emi           | Mussau-Emira   |
 | eu            | Basque         | under revision                |
 | ff            | Fula           |                               |
 | gil           | Kiribati       | under revision                |
