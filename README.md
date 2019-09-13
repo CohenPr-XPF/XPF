@@ -26,10 +26,10 @@
 | djr           | Djambarrpuyngu |                               |
 | el            | Greek          | lacks lenition                |
 | emi           | Mussau-Emira   |
-| eu            | Basque         | under revision                |
+| eu            | Basque         |
 | ff            | Fula           |                               |
-| gil           | Kiribati       | under revision                |
-| gn            | Guarani        | under revision                |
+| gil           | Kiribati       |
+| gn            | Guarani        |
 | gvn           | Kuku-Yalanji   |                               |
 | haw           | Hawaiian       |
 | hmn           | Hmong          | under revision                |

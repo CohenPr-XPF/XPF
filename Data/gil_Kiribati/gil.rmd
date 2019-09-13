@@ -19,7 +19,8 @@ Also referred to as Gilbertese.
 * ⟨m⟩ = /m/
 * ⟨mm⟩ = /mː/
 * ⟨mw⟩ = /mˠ/
-* ⟨n⟩ = /nː/
+* ⟨n⟩ = /n/
+* ⟨nn⟩ = /nː/
 * ⟨ng⟩ = /ŋ/
 * ⟨ngng⟩ = /ŋː/
 * ⟨r⟩ = /ɾ/
