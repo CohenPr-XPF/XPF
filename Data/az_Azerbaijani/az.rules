@@ -1,0 +1,33 @@
+# Azerbaijani Rule Set
+# Written by: Bill
+# Last Updated: 2019-06-19
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+pre,Iİ,ıi,,,,
+class,consonant,[bcçdfgğhxjkqlmnprsşj],,,,
+class,frontvowel,[ieyœæ],,,,
+class,passthrough,[bdefhxiklmnopstuvz],,,,
+# Individual Letters
+sub,a,ɑ,4,,,
+sub,c,dʒ,4,,,
+sub,ç,tʃ,4,,,
+sub,ə,æ,4,,,
+sub,g,ɟ,4,,,
+sub,ğ,ɣ,4,,,
+sub,ı,ɯ,4,,,
+sub,j,ʒ,4,,,
+sub,q,ɡ,4,,,
+sub,ö,œ,4,,,
+sub,r,ɾ,4,,,
+sub,ş,ʃ,4,,,
+sub,ü,y,4,,,
+sub,y,j,4,,,
+sub,-,,4,,,
+# Misc. Rules
+# Because /k/ and /c/ have non-overlapping distribution, it seems likely that they are not contrastive.
+# For this reason, the standard ruleset does not factor in /k/-fronting.
+# But if you wish to include /k/-fronting, uncomment the following three lines:
+# ipasub,k ({frontvowel}),c \1,3,,,"k-fronting (start)"
+# ipasub,({frontvowel}) k ({consonant}),\1 c \2,2,,,
+# ipasub,({frontvowel}) k$,\1 c,2,,,"k-fronting (end)"
+sub,({passthrough}),\1,0.1,,,

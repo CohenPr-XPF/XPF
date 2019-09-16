@@ -3,14 +3,15 @@
 ## Available Languages
 | language code | language       | comments                      |
 |---------------|----------------| ------------------------------|
-| ab            | Abkhaz         | under revision                |
+| ab            | Abkhaz         |
 | acf           | Saint Lucian Creole French | under revision; lacks lenition |
 | amn           | Amanab         |
 | apu           | Apurinã        | under revision                |
 | ast           | Asturian       | under revision                |
 | ay            | Aymara         |
+| az            | Azerbaijani    | under revision                |
 | ba            | Bashkir        | under revision                |
-| bcl           | Central Bikol  | under revision                |
+| bcl           | Central Bikol  |
 | be            | Belarusan      | under revision                |
 | bg            | Bulgarian      |
 | boa           | Bora           |

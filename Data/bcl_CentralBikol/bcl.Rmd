@@ -87,6 +87,6 @@ uy - /ui/
 
 ## Syllable Structure
 
-Bicol syllable structure is CV(C), where V can be either a single vowel or a diphthong. [@BclMattes2014, p. 10]
+Bicol syllable structure is CV(C), where V can be either a single vowel or a diphthong. [@BclMattes2014, p. 10]. In the rules, where three vowels occur in succession, rather than staying consistent with the syllable structure and transcribing the intervocalic vowel as a glide /j/ or /w/, which is not a phoneme of the language, all three vowels are transcribed as they would have been otherwise.  
 
 # References

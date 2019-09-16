@@ -1,9 +1,13 @@
 # Abkhaz Rule Set
 # Written by: Bill
-# Last Updated: 2019-07-01
+# Edited by: Emily
+# Last Updated: 2019-09-16
 type,sfrom,sto,weight,precede,follow,comment
 # Classes
-class,supraseg,[ʷʲ],,,,
+class,supraseg-out,[ʷʲ],,,,
+class,supraseg,[ьә],,,,
+class,labial,(t|tʼ|d|ʃ|ʒ|k|kʼ|ɡ|qʼ|χ|ʁ|ħ),,,,
+class,palatal,(ʒ|dʒ|k|kʼ|ɡ|qʼ|χ|ʁ|ʃ),,,,
 # Individual Letters
 sub,а,a,4,,,
 sub,б,b,4,,,
@@ -45,9 +49,12 @@ sub,ш,ʃ,4,,,
 sub,ы,ə,4,,,
 sub,ҩ,ʡ,4,,,
 sub,џ,dʒ,4,,,
-sub,ь,ʲ,4,,,
-sub,ә,ʷ,4,,,
+sub,({supraseg}),\1,4,,,
 sub,-,,4,,,"a hyphen with no phonetic value appears in some words"
 # Misc. Rules
-ipasub,ʼ ({supraseg}),\1ʼ,2,,,"attaches suprasegmentals to ejectives"
-ipasub, ({supraseg}),\1,1,,,"attaches suprasegmentals to their characters"
+ipasub,({labial}) ә,\1ʷ,2,,
+ipasub,({palatal}) ь,\1ʲ,2,,
+ipasub,ʼ({supraseg-out}),\1ʼ,1,,,
+
+ipasub,({supraseg}),@,1,,,some combinations aren't attested resulting in duplication of diacritics or certain palatalized and ejectivized phonemes (eg. ɡьә, dzә), thus they shouldn't be transcribed
+ipasub,tʃʷ,@,1,,,combination not attested - no other work-around with the rules 
