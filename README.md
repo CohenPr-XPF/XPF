@@ -15,7 +15,7 @@
 | bg            | Bulgarian      |
 | boa           | Bora           |
 | ca            | Catalan        | under revision; lacks lenition                |
-| car           | Carib          | under revision                |
+| car           | Carib          |
 | cbi           | Cha'palaa      |
 | cbt           | Chayahuita     |
 | cho           | Choctaw        |                               |
@@ -38,7 +38,7 @@
 | hy            | Armenian       |
 | ilo           | Ilocano        | under revision                |
 | iu            | Inuktitut      | under revision                |
-| jam           | Jamaican Creole| under revision; lacks lenition|
+| jam           | Jamaican Creole| lacks lenition                |
 | jv            | Javanese       | under revision                |
 | ka            | Georgian       |
 | kbd           | Kabardian      | under revision                |

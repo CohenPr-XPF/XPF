@@ -35,7 +35,7 @@ Glottal: /ʔ/
 
 ### By manner of articulation
 
-Stops: /p/, /t/, /k/  
+Stops: /p/, /t/, /k/, /ʔ/   
 Nasals: /m/, /n/, /ŋ/  
 Fricatives: /s/  
 Flaps: /ɽ/  

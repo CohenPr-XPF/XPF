@@ -3,7 +3,8 @@
 # Last Updated: 2019-08-02
 type,sfrom,sto,weight,precede,follow,comment
 class,passthrough,[bdfghklmnptvwzaeiu],,,
-class,punct,['’-],,,
+class,punct,['’-],,,,
+class,longv,[aiu],,,,
 
 sub,c,tʃ,2,,h,
 sub,h,,2,c,,
@@ -20,7 +21,7 @@ sub,s,ʃ,2,,h,
 sub,h,,2,s,,
 
 sub,o,o,1,,,
-sub,o,a u,2,,u,
+sub,o,au,2,,u,
 sub,u,,2,o,,
 
 sub,y,j,1,,,
@@ -28,3 +29,5 @@ sub,y,j,1,,,
 sub,{punct},,1,,,
 
 sub,({passthrough}),\1,0.1,,,
+
+ipasub,({longv}) \1\b,\1 ː,1,,,
