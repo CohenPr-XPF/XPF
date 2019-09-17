@@ -33,7 +33,7 @@
 | guc           | Wayuu  | under revision |
 | gvn           | Kuku-Yalanji   |                               |
 | haw           | Hawaiian       |
-| hmn           | Hmong          | under revision                |
+| hmn           | Hmong          | under revision; lacks lenition                |
 | ht            | Haitian Creole | under revision; lacks lenition|
 | hu            | Hungarian      | under revision                |
 | hy            | Armenian       |
@@ -80,7 +80,6 @@
 | tac           | Western Tarahumara |
 | te            | Telugu         | under revision                |
 | tg            | Tajik          |
-| tk            | Turkmen        | under revision                |
 | tl            | Tagalog        | under revision                |
 | to            | Tongan         | lacks lenition                |
 | tpi           | Tok Pisin      | lacks lenition                |
@@ -181,7 +180,8 @@
 | st  | Sesotho          | non-transparent spelling with tones                       |
 | sv  | Swedish          | non-transparent spelling                                  |
 | tcz | Thadou Chin      | non-transparent spelling with tones     |
-| ti  |Tigrinya          | non-transparent spelling with gemination                                 |  
+| ti  |Tigrinya          | non-transparent spelling with gemination                                 |
+| tk  | Turkmen          | non-transparent spelling with vowel length             |
 | tn  | Tswana           | non-transparent spelling with tones |   
 | ts  | Tsonga           | non-transparent spelling with tones |  
 | wal | Wolaytta         | non-transparent spelling with tones                       |
