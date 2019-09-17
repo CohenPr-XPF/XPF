@@ -30,6 +30,7 @@
 | ff            | Fula           |                               |
 | gil           | Kiribati       |
 | gn            | Guarani        |
+| guc           | Wayuu  | under revision |
 | gvn           | Kuku-Yalanji   |                               |
 | haw           | Hawaiian       |
 | hmn           | Hmong          | under revision                |
