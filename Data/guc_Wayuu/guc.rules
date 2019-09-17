@@ -1,0 +1,24 @@
+# Wayuu Rule Set
+# Written by: Emily
+# Last Updated: 2019-09-17
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[aeikmnoprstuw],,,,
+class,apostrophe,['ꞌˈ‘’ʼ],,,,
+class,longv,[aeiuoɯ],,,,
+class,gem,(p|m|n|t|s|tʃ|ʃ|k),,,,
+class,h-preceder,[cs],,,,
+# Individual Letters
+sub,j,h,2,,,
+sub,l,ɺ,2,,,
+sub,ü,ɯ,2,,,
+sub,y,j,2,,,
+sub,{apostrophe},ʔ,2,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,tʃ,2,,h,
+sub,s,ʃ,3,,h,
+sub,h,,2,{h-preceder},,
+# Gemination
+ipasub,({longv}) \1\b,\1 ː,2,,,
+ipasub,({gem}) \1\b,\1 ː,2,,,

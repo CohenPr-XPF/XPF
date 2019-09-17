@@ -20,7 +20,6 @@
 | cbi           | Cha'palaa      |
 | cbt           | Chayahuita     |
 | cho           | Choctaw        |                               |
-| chr           | Cherokee       | under revision                |
 | cs            | Czech          | under revision                |
 | cv            | Chuvash        | under revision                |
 | dgz           | Daga           | under revision; lacks lenition|
@@ -116,6 +115,7 @@
 | bs  | Bosnian          | non-transparent spelling with vowel length and tones      |
 | ce  | Chechen          | non-transparent spelling with vowel length                |
 | ceb | Cebuano          | non-transparent spelling with vowel length                |
+| chr           | Cherokee       | non-transparent spelling with vowel length               |
 | cnh | Haka Chin        | non-transparent spelling with tones                       |
 | coe | Koreguaja        | non-transparent spelling with tones                       |
 | cuk | San Blas Kuna    | inconsistent orthographies                                |
