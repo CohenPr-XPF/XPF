@@ -40,7 +40,7 @@ Approximant: /j/, /ɰ/
 
 * Vowels are contrastive in terms of length and nasality [@facundes_language_2000, pg. 55].
 * Long vowels (both oral and nasal) are indicated by repeated graphemes.
-* In addition to oral diphthongs, Apurinã includes nasal diphthongs, although these are very infrequent [@facundes_language_2000, pg. 85-87].
+* In addition to oral diphthongs, Apurinã includes nasal diphthongs, although these are very extremely infrequent (these won't be accounted for) [@facundes_language_2000, pg. 85-87].
 
 Oral (short): /i/, /e/, /a/, /ɨ/, /o/
 Oral (long): /iː/, /eː/, /aː/, /ɨː/, /oː/
@@ -48,7 +48,7 @@ Nasal (short): /ĩ/, /ẽ/, /ã/, /ɨ̃/, /õ/
 Nasal (long): /ĩː/, /ẽː/, /ãː/, /ɨ̃ː/, /õː/
 
 Dipthongs (oral): /ai/, /ei/, /oi/, /ao/, /io/
-Dipthongs (nasal): /ãĩ/, /ẽĩ/, /ãõ/, /õĩ/
+
 
 # Alphabet
 

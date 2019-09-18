@@ -44,8 +44,8 @@ Back: /u/, /o/, /a/
 
 # Alphabet
 
-* In some dialects the digraphs <ḷḷ>, <ḥ>, <ts>, <yy> appear, corresponding to a variety of different phonemes [@academia_de_la_llingua_asturiana_gramatica_2001, pg. 15].  
-* <j>, <k>, and <w> appear in loanwords [@academia_de_la_llingua_asturiana_gramatica_2001, pg. 15].   
+* In some dialects the digraphs ⟨ḷḷ⟩, ⟨ḥ⟩, ⟨ts⟩, ⟨yy⟩ appear, corresponding to a variety of different phonemes [@academia_de_la_llingua_asturiana_gramatica_2001, pg. 15].  
+* ⟨j⟩, ⟨k⟩, and ⟨w⟩ appear in loanwords [@academia_de_la_llingua_asturiana_gramatica_2001, pg. 15].   
 
 a - /a/  
 b - /b/  

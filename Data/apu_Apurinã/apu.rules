@@ -7,7 +7,6 @@ class,passthrough,[aãeẽhiĩkmnoõpst],,,,
 class,vowels,[ieaɨoĩẽãɨ̃õ],,,,
 class,i-dip,[aeo],,,,
 class,o-dip,[ai],,,,
-class,ĩ-dip,[ãẽõ],,,
 class,punct,[ꞌ'ˈ‘ʼ-],,,,
 # Individual Letters
 sub,r,ɾ,2,,,
@@ -29,10 +28,6 @@ sub,({i-dip}),\1i,4,,i,
 sub,i,,3,{i-dip},,
 sub,({o-dip}),\1o,4,,o,
 sub,o,,3,{o-dip},,
-sub,({ĩ-dip}),\1ĩ,4,,ĩ,
-sub,ĩ,,3,{ĩ-dip},,
-sub,ã,ãõ,3,,õ,
-sub,õ,,3,ã,,,
 # Long Vowels
 ipasub,({vowels}) \1\b,\1 ː,2,,,
 

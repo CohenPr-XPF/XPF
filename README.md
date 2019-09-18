@@ -4,10 +4,10 @@
 | language code | language       | comments                      |
 |---------------|----------------| ------------------------------|
 | ab            | Abkhaz         |
-| acf           | Saint Lucian Creole French | under revision; lacks lenition |
+| acf           | Saint Lucian Creole French | under revision    |
 | amn           | Amanab         |
 | apu           | Apurinã        | under revision                |
-| ast           | Asturian       | under revision                |
+| ast           | Asturian       |
 | ay            | Aymara         |
 | az            | Azerbaijani    | under revision                |
 | ba            | Bashkir        | under revision                |
