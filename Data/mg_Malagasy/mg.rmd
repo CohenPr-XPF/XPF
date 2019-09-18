@@ -1,6 +1,7 @@
 ---
 title: "Malagasy"
 author: "Abi Creighton"
+edited by: "Emily Strand"
 bibliography: mg.bib
 output: html_document
 ---
@@ -8,65 +9,104 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+Last updated: 09-18-2019
 
-#Background
+# Background
+
 **Language family**: Austronesian / Malayo-Polynesian / East Barito / Malagasy
 
-#Phonology
-Sources for inventory and orthography: [@rasoloson_malagasy_2005] and [@oneill_phonology_2015]
+# Phonology
 
-##Consonants
-###Consonants by place
-Bilabial: /m/, /p/, /b/, /ᵐb/, /ᵐp/
-Labiodental: /f/, /v/
-Dental: /t/, /ⁿt/, /d/, /ⁿd/
-Alveolar: /n/, /ts/, /dz/, /ⁿts/, /ⁿdz/, /s/, /z/, /l/, /r/
-Rhotic: /tʳ/, /ɳtʳ/, /dʳ/, /ɳdʳ/
-Velar: /ŋ/, /k/, /ᵑk/, /g/, /ᵑg/
-Glottal: /h/
+## Consonants  
 
-###Consonants by manner
-Nasal: /m/, /n/, /ŋ /
-Stop: /p/, /b/, /ᵐb/, /ᵐp/, /t/, /d/, /ⁿt/, /ⁿd/, /ts/, /dz/, /ⁿts/, /ⁿdz/, /tʳ/, /ɳtʳ/,  /dʳ/,  /ɳdʳ/, /k/, /ᵑk/, /g/, /ᵑg/
-Fricative: /f/, /v/, /s/, /z/, /h/
-Lateral: /l/
-Trill: /r/
+* Pre-nasalized stops are proposed by @oneill_phonology_2015 as being allophones of their oral counterparts brought about through nasal assimilation (pg. 38). That being said, it's widely documented that Malagasy doesn't allow for consonant clusters (discussed under Syllable Structure). Therefore, if such stops were treated as allophones, the underlying transcription would violate that very restriction. Based on this and on the fact that @rasoloson_malagasy_2005 includes pre-nasalized stops as part of the phonemic inventory (pg. 459), I will too.  
+* Although the pre-nasalized /g/ occurs in Malagasy, /ŋ/ is not attributed as being part of the official language [@rasoloson_malagasy_2005, pg. 459]. It is, however, said to be realized through nasal assimilation in the official language and part of the phonemic inventories in other dialects (eg. Betsimisaraka) [@oneill_phonology_2015, pg. 13].
+* Geminate consonant do not occur in the language [@rasoloson_malagasy_2005, pg. 460].
+
+### By place of articulation
+
+Bilabial: /m/, /p/, /b/, /ᵐb/, /ᵐp/  
+Labiodental: /f/, /v/  
+Dental: /t/, /ⁿt/, /d/, /ⁿd/  
+Alveolar: /n/, /ts/, /dz/, /ⁿts/, /ⁿdz/, /s/, /z/, /l/, /r/  
+Rhotic: /tʳ/, /ⁿtʳ/, /dʳ/, /ⁿdʳ/  
+Velar: /k/, /ᵑk/, /g/, /ᵑg/  
+Glottal: /h/  
+
+### By manner of articulation
+
+Nasal: /m/, /n/  
+Stop: /p/, /b/, /ᵐb/, /ᵐp/, /t/, /d/, /ⁿt/, /ⁿd/, /ts/, /dz/, /ⁿts/, /ⁿdz/, /tʳ/, /ⁿtʳ/,  /dʳ/,  /ⁿdʳ/, /k/, /ᵑk/, /g/, /ᵑg/  
+Fricative: /f/, /v/, /s/, /z/, /h/  
+Lateral: /l/  
+Trill: /r/  
 
 ##Vowels
-Front close: /i/
-Back close: /u/
-Front mid: /e/
-Back mid: /o/
-Central open: /a/
 
-#Alphabet
-A; a; /a/
-B; b; /b/
-D; d; /d/
-E; e; /e/
-F; f; /f/
-G; g; /g/
-H; h; /h/
-I; i; /i/
-J; j; /dz/
-K; k; /k/ 
-L; l; /l/
-M; m; /m/
-N; n; /n/
-O; o; /o/
-P; p; /p/
-R; r; /r/
-S; s; /s/
-T; t; /t/
-V; v; /v/
-Y; y; /i/ or /j/
-Z; z; /z/
+* There is some controversy around the phoneme /o/. Although it appears to occur as a dialectal variant (eg. Betsimisaraka) [@oneill_phonology_2015, pg. 13, 43], it is not attested as being part of the official inventory. Rather, authors argue that it's phonetically realized as a result of reduced vowel duration [@rasoloson_malagasy_2005, pg. 460], or as a result of /u/ being in environments with non-high vowels [@oneill_phonology_2015, pg. 42, 43].
+* @rasoloson_malagasy_2005 exclaims that /o/ does occur in loanwords, which is represented by <ô> (pg. 460).
+* There is a lack of consensus regarding the diphthongs of Malagasy [@oneill_phonology_2015, pg. 43-45]. Therefore, I won't account for them. However, it is important to note that some vowel sequences are actually realized on the surface as monophthongs (eg. /ia/ and /ai/ as /e/, and /ua/ as /o/) [@rasoloson_malagasy_2005, pg. 460].
 
-#Rules
--Stops become prenasalized when preceded by a nasal of the same place.
--Alveolar stops are rhotacized when followed by /r/
--/a, u, i/ are reduced to [ə, ʷ, ʲ] after a stressed syllable.
--Spirants become stops in possessive and verbal constructions, reduplication, and compounding. 
+/i/, /e/, /a/, /u/
 
-## Lenition
-Velar consonants are palatalized after a front vowel
+# Alphabet
+
+* The Malagasy alphabet is referred to as the Abidy [@griffiths_grammar_1854, pg. 11].
+
+a - /a/  
+b - /b/  
+d - /d/  
+e - /e/  
+f - /f/  
+g - /g/  
+h - /h/  
+i - /i/  
+j - /dz/  
+k - /k/  
+l - /l/  
+m - /m/  
+n - /n/  
+o - /u/  
+p - /p/  
+r - /r/  
+s - /s/  
+t - /t/  
+v - /v/  
+y - /i/ (word-finally)  
+z - /z/  
+
+# Digraphs
+
+mb - /ᵐb/  
+mp - /ᵐp/  
+nd - /ⁿd/  
+ng - /ᵑg/  
+nj - /ⁿdz/  
+nk - /ᵑk/  
+nt - /ⁿt/  
+dr - /dʳ/  
+tr - /tʳ/  
+ts - /ts/  
+
+# Trigraphs
+
+ntr - /ⁿtʳ/  
+ndr - /ⁿdʳ/  
+nts - /ⁿts/  
+
+# Syllable Structure
+
+* Syllables in Malagasy follow a (C)V structure - codas are prohibited [@rasoloson_malagasy_2005, pg. 460].
+* Aside from the consonants that appear in succession with the digraphs and trigraphs, no consonant clusters are allowed in syllable onsets (loanwords are exempt) [@rasoloson_malagasy_2005, pg. 460].
+
+## Lenition Rules
+
+* All velar stops palatalize following a vowel [@rasoloson_malagasy_2005, pg. 459].
+* Vowels often become nasalized when preceding nasal or pre-nasalized consonants [@rasoloson_malagasy_2005, pg. 460].
+* Vowels are often elided word-finally and intervocalically [@tench_malagasy_2008, pg. 2].
+* /h/ is almost always elided except intervocalically [@oneill_phonology_2015, pg. 36].
+
+# Misc Rules
+
+* Fricatives become stops in possessive and verbal constructions, reduplication, and compounding [@rasoloson_malagasy_2005].
+* Pre-nasalized stops occur word-medially. Word-initially, the nasal is unpronounced and the oral stop is voiceless [@rasoloson_malagasy_2005, pg. 459].

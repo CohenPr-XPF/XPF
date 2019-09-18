@@ -15,7 +15,7 @@
 | be            | Belarusan      | under revision                |
 | bg            | Bulgarian      |
 | boa           | Bora           |
-| ca            | Catalan        | under revision; lacks lenition                |
+| ca            | Catalan        | under revision; lacks lenition|
 | car           | Carib          |
 | cbi           | Cha'palaa      |
 | cbt           | Chayahuita     |
@@ -33,7 +33,7 @@
 | guc           | Wayuu  | under revision |
 | gvn           | Kuku-Yalanji   |                               |
 | haw           | Hawaiian       |
-| hmn           | Hmong          | under revision; lacks lenition                |
+| hmn           | Hmong          | under revision; lacks lenition|
 | ht            | Haitian Creole | under revision; lacks lenition|
 | hu            | Hungarian      | under revision                |
 | hy            | Armenian       |
@@ -51,7 +51,7 @@
 | ky            | Kirghiz        | under revision                |
 | lem           | Nomaande       |
 | mcq           | Ese            |
-| mg            | Malagasy       | under revision                |
+| mg            | Malagasy       |
 | ml            | Malayalam      | under revision                |
 | mt            | Maltese        | under revision                |
 | mto           | Totontepec Mixe| under revision                |

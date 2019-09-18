@@ -1,53 +1,45 @@
-#Malagasy
-#Written by Abi Creighton
-#Updated 10 Apr. 2019
+# Malagasy Rule Set
+# Written by: Abi Creighton
+# Edited by: Emily
+# Last updated: 2019-09-18
 type,sfrom,sto,weight,precede,follow,comment
-class,passthrough,"[abdefghiklmnprstvz]",,,,
-class,alvstop,"[td]",,,,
-class,bilabialstop,"[pb]",,,,
-class,aftern,"[tdkgj]",,,,
-class,aeo,"[aeo]",,,,
-class,a,"[àáâ]",,,,
-class,e,"[èéê]",,,,
-class,i,"[ìíî]",,,,
-class,o,"[oòó]",,,,
-#Consonants
-sub,j,dz,1,,,
-sub,n̈,ŋ,1,,,
-sub,ñ,ŋ,1,,,"only used when a writer cannot produce n̈"
-sub,s,ʃ,1,,y,
-sub,y,,2,s,,
-sub,t,ts,1,,s,
-sub,s,,3,t,,
-sub,t,tʃ,1,,sy,
-#Rhotics
+class,passthrough,[abdefghiklmnprstvz],,,,
+class,n-follower,(t|d|g|k|ts|j),,,,
+class,bi-stop,[pb],,,,
+class,alv,[td],,,,
+class,a,[àáâ],,,,
+class,e,[èéê],,,,
+class,i,[ìíî],,,,
+class,o,[oòó],,,,
+class,punct,['ꞌˈ‘’-],,,,
+# Individual Letters
+sub,j,dz,2,,,
+sub,o,u,2,,,
+sub,y,i,2,,$,
+sub,({passthrough}),\1,1,,,
+# Digraphs
+sub,b,ᵐb,2,m,,
+sub,p,ᵐp,2,m,,
+sub,d,ⁿd,2,n,,
+sub,t,ⁿt,2,n,,
+sub,g,ᵑg,2,n,,
+sub,k,ᵑk,2,n,,
+sub,j,ⁿdz,2,n,,
 sub,t,tʳ,2,,r,
 sub,d,dʳ,2,,r,
-sub,r,,2,{alvstop},,
-sub,n,ɳ,2,,{alvstop}r,
-#Prenasalization rules
-sub,p,ᵐp,1,m,,
-sub,b,ᵐb,1,m,,
-sub,t,ⁿt,1,n,,
-sub,t,ⁿts,1,n,s,
-sub,t,ⁿtʃ,1,n,sy,
-sub,d,ⁿd,1,n,,
-sub,j,ⁿdz,1,n,,
-sub,k,ᵑk,1,n,,
-sub,g,ᵑg,1,n,,
-sub,m,,1,,{bilabialstop},
-sub,n,,1,,{aftern},
-#Vowels
-sub,{a},a,1,,,
-sub,{e},e,1,,,
-sub,{i},i,1,,,
-sub,{o},u,1,,,
-sub,ô,o,1,,,
-sub,{o},o,2,,a,
-sub,a,,1,{o},,
-sub,y,i,1,,,
-#Diphthong rules
-sub,i,j,2,{aeo},,
-sub,y,j,2,{aeo},,
-sub,o,w,2,a,,
-sub,({passthrough}),\1,0.1,,,
+sub,t,ts,2,,s,
+sub,m,,3,,{bi-stop},
+sub,n,,3,,{n-follower},
+sub,s,,3,t,,
+# Trigraphs
+sub,t,ⁿtʳ,3,n,r
+sub,d,ⁿdʳ,3,n,r
+sub,t,ⁿts,4,n,s,
+sub,r,,2,{alv},,
+# Vowels
+sub,({a}),a,2,,,
+sub,({e}),e,2,,,
+sub,({i}),i,2,,,
+sub,({o}),u,2,,,
+
+sub,{punct},,1,,,hyphens and apostrophes are use to join compounds; apostrophes are also used to indicate the elision of a vowel
