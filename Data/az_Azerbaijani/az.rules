@@ -23,6 +23,11 @@ sub,ş,ʃ,4,,,
 sub,ü,y,4,,,
 sub,y,j,4,,,
 sub,-,,4,,,
+# Diphthongs
+sub,t,ts,6,,s,
+sub,s,,6,t,,
+sub,d,dz,6,,z,
+sub,z,,6,d,,
 # Misc. Rules
 # Because /k/ and /c/ have non-overlapping distribution, it seems likely that they are not contrastive.
 # For this reason, the standard ruleset does not factor in /k/-fronting.
