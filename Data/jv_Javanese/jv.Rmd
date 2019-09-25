@@ -1,6 +1,8 @@
 ---
-title: Javanese
+title: "Javanese"
+author: "Bill Mizgerd"
 bibliography: jv.bib
+output: html_document
 ---
 
 Last Updated: 2019-02-08
@@ -15,18 +17,19 @@ Last Updated: 2019-02-08
 
 ### By place of articulation
 
-Bilabial: /p/, /b/, /m/, /w/  
-Dental/Alveolar: /t̪/, /d̪/, /n/, /s/, /l/, /r/  
-Retroflex: /ʈ/, /ɖ/  
-Palatal: /c/, /ɟ/, /ɲ/, /j/  
-Velar: /k/, /ɡ/, /ŋ/  
+Bilabial: /p/, /b/, /mb/, /m/, /w/  
+Dental/Alveolar: /t̪/, /d̪/, /nd̪/, /n/, /s/, /l/, /r/  
+Retroflex: /ʈ/, /ɖ/, /nɖ/  
+Palatal: /c/, /ɟ/, /nɟ/, /ɲ/, /j/  
+Velar: /k/, /ɡ/, /ŋ/, /ŋɡ/  
 Glottal: /ʔ/, /h/  
 
-Suharno uses /q/ instead of /ʔ/, but describes the consonant as glottal; Nothofer also uses /q/, but in his table gives it the same place of articulation as /h/. For these reasons, I have followed the pattern of the authors (Wolff, Horne, Robson) who prefer /ʔ/.
+@JvSuharno1982 uses /q/ instead of /ʔ/, but describes the consonant as glottal; @JvNothofer1975 also uses /q/, but in his table gives it the same place of articulation as /h/. For these reasons, I have followed the pattern of the authors (Wolff, Horne, Robson) who prefer /ʔ/.
 
 ### By manner of articulation
 
-Stops: /p/, /b/, /t̪/, /d̪/, /ʈ/, /ɖ/, /c/, /ɟ/, /k/, /ɡ/, /ʔ/  
+Stops: /p/, /b/, /t̪/, /d̪/, /ʈ/, /ɖ/, /c/, /ɟ/, /k/, /ɡ/, /ʔ/
+Stops (pre-nasalize): /mb/, /nd̪/, /nɖ/, /nɟ/, /ŋɡ/
 Nasals: /m/, /n/, /ɲ/, /ŋ/  
 Fricatives: /s/, /h/  
 Laterals: /l/  
@@ -35,15 +38,15 @@ Glides: /w/, /j/
 
 I have chosen to include dental and retroflex stops, but not alveolar stops. The authors I've read have disagreed about which of the aforementioned stops do occur in Javanese; all agree, however, that exactly two of the three places of articulation are represented. Dental and retroflex is the pair that I find to be likeliest.
 
-Horne: Dental, alveolar  
-Nothofer: Alveolar, retroflex(?)  
-Robson: Dental, retroflex  
-Suharno: Dental, retroflex  
-Wolff: Dental, alveolar  
+@JvHorne1974: Dental, alveolar  
+@JvNothofer1975: Alveolar, retroflex(?)  
+@JvRobson2014: Dental, retroflex  
+@JvSuharno1982: Dental, retroflex  
+@JvWolffChart1982: Dental, alveolar  
 
 ### Other notes on consonants
 
-Additional phonemes, per [@JvWolffChart1982]:  
+Additional phonemes, per @JvWolffChart1982:  
 Prenasalized stops: /mb/, /nd̪/, /nɖ/, /nɟ/, /ŋɡ/{1}  
 Lenis continuants (pharyngealized): /wh/, /nh/, /lh/, /rh/, /jh/ (Unattested elsewhere, so I have not included them in the ruleset)  
 Sounds found only in loanwords: /f/, /z/  
@@ -57,11 +60,11 @@ Mid vowels: /e/, /o/
 Mid-low vowels: /ɛ/, /ə/, /ɔ/  
 Low vowels: /a/  
 
-Vowels may occur successively, but they do not form diphthongs when doing so. ([@JvSuharno1982], p. 2)
+Vowels may occur successively, but they do not form diphthongs when doing so. [@JvSuharno1982, page 2]
 
 ## Stress
 
-Stress falls on the penult, unless the vowel of the penult is /ə/, which is never stressed in Javanese. ([@JvRobson2014], p. xvi)
+Stress falls on the penult, unless the vowel of the penult is /ə/, which is never stressed in Javanese. [@JvRobson2014, page xvi]
 
 # Alphabet
 
@@ -74,7 +77,7 @@ d - /d̪/
 e - /ə/  
 é - /e/  
 è - /ɛ/  
-f - /f/ (only in loanwords; sometimes replaced by /p/; see [@JvHorne1974] p. xi)  
+f - /f/ (only in loanwords; sometimes replaced by /p/; see @JvHorne1974, page xi)  
 g - /ɡ/  
 h - /h/  
 i - /i/  
@@ -116,7 +119,7 @@ ngg - /ᵑɡ/
 
 A ruleset for the Javanese abugida is also provided at jv-jscript.rules. Note that, because Crubadan's only Javanese corpus uses the Latin script, the Javanese-script ruleset is not as thoroughly tested as its Latin-script counterpart.
 
-The phonology of the Javanese script is taken from [@JvOmniglot] and [@JvRomanization].
+The phonology of the Javanese script is taken from @JvOmniglot and @JvRomanization.
 
 ## Consonants
 
@@ -184,28 +187,28 @@ Despite being present in the Latin script, /ɛ/ does not seem to be attested in 
 
 Syllables take the format (CC)V(C).
 
-* The following consonants do not occur word-finally ([@JvSuharno1982]p. 6):
+* The following consonants do not occur word-finally [@JvSuharno1982, page 6]:
   * Voiced stops (due to word-final devoicing)
   * Palatal and retroflex consonants
   * Glides
   * /h/
   * Any consonant cluster
 * Conversely,
-* /e/ and /ɛ/ do not occur word-finally; /a/ only occurs word-finally in the word <ora> ([@JvSuharno1982], p. 6)
-* Except in interjections, /ə/ never occurs word-finally or before /ʔ/ ([@JvNothofer1975], p. 9)
-* /ʔ/ always appears word-finally, except in interjections where it can be intervocalic ([@JvNothofer1975], p. 9)
-* /h/ only occurs word-initially in interjections or loanwords ([@JvRobson2014], p. xvi)
-* /ʔ/ inserted before the suffix <-aké> or after the prefix <sa-> ([@JvRobson2014], p. xvi)
-* Nasal prefixes added to many verb forms ([@JvRobson2014], p. 12)
+* /e/ and /ɛ/ do not occur word-finally; /a/ only occurs word-finally in the word <ora> [@JvSuharno1982, page 6]
+* Except in interjections, /ə/ never occurs word-finally or before /ʔ/ [@JvNothofer1975, page 9]
+* /ʔ/ always appears word-finally, except in interjections where it can be intervocalic [@JvNothofer1975, page 9]
+* /h/ only occurs word-initially in interjections or loanwords [@JvRobson2014, page xvi]
+* /ʔ/ inserted before the suffix <-aké> or after the prefix <sa-> [@JvRobson2014, page xvi]
+* Nasal prefixes added to many verb forms [@JvRobson2014, p. 12]
 
 ## Lenition rules
 
-* /h/ deleted intervocalically if between non-identical vowels ([@JvRobson2014], p. xvi)
+* /h/ deleted intervocalically if between non-identical vowels [@JvRobson2014, page xvi]
 * word-final /k/ debuccalizes to [ʔ]
 
 ### Vowel Lenition
 
-* tense vowels become lax in closed syllables ([@JvHorne1974], p. xi)
+* tense vowels become lax in closed syllables [@JvHorne1974, page xi]
 
 # Examples
 
@@ -213,10 +216,4 @@ Syllables take the format (CC)V(C).
 lungguh - /luᵑɡuh/ - to sit; lungguhan - /luᵑɡuan/ - sitting  
 mulih - /mulih/ - to return home; mulihé - /mulie/ - his return
 
-# Sources
-
-<!--@JvHorne1974
-@JvNothofer1975
-@JvRobson2014
-@JvSuharno1982
-@JvWolffChart1982-->
+# References

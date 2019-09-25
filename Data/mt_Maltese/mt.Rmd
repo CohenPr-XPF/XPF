@@ -15,8 +15,8 @@ Last Updated: 2018-11-19
 ### By place of articulation
 
 Labial: /p/, /b/, /m/, /f/, /v/
-Dental/Alveolar: /t̪/, /d̪/, /n/, /s/, /z/, /t͡s/, /d͡z/, /r/, /l/
-Palatal: /ʃ/, /ʒ/, /t͡ʃ/, /d͡ʒ/, /j/
+Dental/Alveolar: /t̪/, /d̪/, /n/, /s/, /z/, /ts/, /dz/, /r/, /l/
+Palatal: /ʃ/, /ʒ/, /tʃ/, /dʒ/, /j/
 Velar: /k/, /g/, /w/
 Pharyngeal: /ħ/
 Glottal: /ʔ/
@@ -26,7 +26,7 @@ Glottal: /ʔ/
 Stops: /p/, /b/, /t̪/, /d̪/, /k/, /g/, /ʔ/
 Nasals: /m/, /n/
 Fricatives: /f/, /v/, /s/, /z/, /ʃ/, /ʒ/, /ħ/
-Affricates: /t͡s/, /d͡z/, /t͡ʃ/, /d͡ʒ/
+Affricates: /ts/, /dz/, /tʃ/, /dʒ/
 Trills: /r/
 Approximants: /l/, /j/, /w/
 

@@ -9,7 +9,7 @@
 | apu           | Apurinã                   | under revision                |
 | ast           | Asturian                  |
 | ay            | Aymara                    |
-| az            | Azerbaijani               | 
+| az            | Azerbaijani               |
 | ba            | Bashkir                   | under revision                |
 | bcl           | Central Bikol             |
 | be            | Belarusan                 | under revision                |
@@ -37,9 +37,9 @@
 | hu            | Hungarian                 | under revision                |
 | hy            | Armenian                  |
 | ilo           | Ilocano                   | under revision                |
-| iu            | Inuktitut                 | under revision                |
+| iu            | Inuktitut                 | 
 | jam           | Jamaican Creole           | lacks lenition                |
-| jv            | Javanese                  | under revision                |
+| jv            | Javanese                  |
 | ka            | Georgian                  |
 | kbd           | Kabardian                 | under revision                |
 | kk            | Kazakh                    | under revision                |

@@ -5,6 +5,7 @@ type,sfrom,sto,weight,precede,follow,comment
 # Classes
 class,vowel,[aiu],,,,
 class,passthrough,[ahijklmnpqstuv],,,,
+class,punct,['‘’-],,,,
 # Individual Letters
 sub,g,ɣ,4,,,
 sub,&,ɬ,4,,,
@@ -15,4 +16,4 @@ sub,g,,6,n,,"<ng> cleanup"
 ipasub,({vowel}) \1,\1 ː,2,,,"long vowels"
 # Misc. Rules
 sub,({passthrough}),\1,0.1,,,
-sub,-,,4,,,
+sub,{punct},,4,,,
