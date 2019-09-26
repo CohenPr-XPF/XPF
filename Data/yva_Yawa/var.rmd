@@ -1,0 +1,90 @@
+---
+title: "Huarijío"
+author: "Emily Strand"
+bibliography: var.rmd
+output: html_document
+---
+# Background
+
+**Language family**: Uto-Aztecan / Southern / Sonoran / Tarahumaran / Guarijio
+
+Also referred to as Guarijío.
+
+# Phonology
+
+## Consonants
+
+* Consonants do not geminate [@caballero_templatic_2007, pg. 5].
+* Glottal stops only appear word-medially [@felix_armendariz_grammar_2005, pg. 11].
+
+### By place of articulation
+
+Labial: /p/, /m/, /w/  
+Alveolar: /t/, /r/, /s/, /n/  
+Palatal: /tʃ/, /j/  
+Velar: /k/  
+Glottal: /h/, /ʔ/  
+
+### By manner of articulation
+
+Stop: /p/, /t/, /k/, /ʔ/  
+Nasal: /m/, /n/  
+Africate: /tʃ/  
+Fricate: /s/, /h/  
+Tap: /ɾ/  
+Approximant: /w/, /j/  
+
+## Vowels
+
+* Vowel length is not contrastive [@caballero_templatic_2007, pg. 5]. However, free variation among long and short vowels does occur [@felix_armendariz_grammar_2005, pg. 15]. Repetition of vowel graphemes does occur in the orthography; however, because they pose no contrast, they will be transcribed as short vowels.
+* Accents are put over the vowels to indicate stress, but there's no indication that it affects the realization of the phoneme [@miller_guarijio_1993, pg. 25].
+* When the repetition of vowels occurs, if the second one is stressed, they are realized as individual syllabic vowels rather than a long vowel [@felix_armendariz_grammar_2005, pg. 15].
+* Diphthongs must be formed by at least one high vowel [@felix_armendariz_grammar_2005, pg. 18, 19]. Given this, /e/ and /o/ in some instances will change to /i/ and /u/ respectfully in order to form a diphthong (ibid.).
+
+/i/, /e/, /a/, /o/, /u/  
+
+Diphthongs: /ai/, /au/, /ia/, /ua/, /oi/, /ei/, /ui/, /ie/, /ue/  
+
+# Alphabet
+
+a - /a/  
+e - /e/  
+h - /h/  
+i - /i/  
+j - /h/  
+k - /k/  
+m - /m/  
+n - /n/  
+o - /o/  
+p - /p/  
+r - /ɾ/  
+s - /s/  
+t - /t/  
+u - /u/  
+w - /w/  
+y - /j/  
+’ - /ʔ/  
+
+## Digraphs
+
+ch - /tʃ/  
+
+
+# Syllable Structure
+
+* The syllable structures permitted in Huarijío follow the form of (C)V(C) [@miller_guarijio_1993, pg. 23]. However, codas mainly only consist of /h/, /ʔ/, /m/, and /n/. Word-final consonants are also prohibited.
+* Consonant clusters are rare, appearing from contractions [@miller_guarijio_1993, pg. 24] or syllable boundaries [@felix_armendariz_grammar_2005, pg. 10].
+
+# Lenition Rules
+
+* Voiceless stops (/p/ and /k/) become voiced intervocalically if the following vowel is not accented [@miller_guarijio_1993, pg. 25].
+* /t/ becomes /ɾ/ intervocalically in environments following a stressed syllable [@miller_guarijio_1993, pg. 25].
+* /s/ palatalizes preceding /i/[@miller_guarijio_1993, pg. 27].
+* /wo/ word-initially can be realized as [bo] [@miller_guarijio_1993, pg. 27].
+* Preceding /i/, /e/, and /u/, /ɾ/ may be realized as retroflex [@miller_guarijio_1993, pg. 27].
+
+# Misc Rules
+
+* Vowel disharmony plays a role in Huarijío when concerning the addition of suffixes [@Armendáriz, pg. 26]. If the vowel of the root is low, the vowel of the suffix will be high and vice versa.
+* Reduplication of prefixes is abundant in Huarijío [@haugen_laryngeals_2014, pg. 5].
+* Word-initial vowels may be preceded by /h/ or a glottal stop (rare) [@miller_guarijio_1993, pg. 28].

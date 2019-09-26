@@ -1,0 +1,48 @@
+# Huarijío Rule Set
+# Written by: Emily
+# Last Updated: 2019-09-25
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[aehikmnopstuw],,,,
+class,apostrophe,[ꞌ'ꞌ‘’],,,,
+class,a,[aá],,,,
+class,e,[eé],,,,
+class,i,[ií],,,,
+class,o,[oó],,,,
+class,u,[uú],,,,
+class,i-preceder,[aoeu],,,,
+class,ae-preceder,[iu],,,,
+class,iu-follower,[ae],,,,
+# Individual Letters
+sub,j,h,2,,,
+sub,r,ɾ,2,,,
+sub,y,j,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,{a},a,2,,,
+sub,{e},e,2,,,
+sub,{i},i,2,,,
+sub,{o},o,2,,,
+sub,{u},u,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,tʃ,2,,h,
+sub,h,,3,c,
+# Diphthongs
+sub,a,ai,3,,i,
+sub,a,au,3,,u,
+sub,i,ia,3,,a,
+sub,u,ua,3,,a,
+sub,o,oi,3,,i,
+sub,e,ei,3,,i,
+sub,u,ui,3,,i,
+sub,i,ie,3,,e,
+sub,u,ue,3,,e,
+sub,u,,4,a,,
+sub,i,,4,{i-preceder},,
+sub,{iu-follower},,4,{ae-preceder},,
+# Long vowel removal
+sub,a,,4,a,,
+sub,e,,4,e,,
+sub,i,,4,i,,
+sub,o,,4,o,,
+sub,u,,4,u,,

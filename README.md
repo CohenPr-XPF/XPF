@@ -10,9 +10,9 @@
 | ast           | Asturian                  |
 | ay            | Aymara                    |
 | az            | Azerbaijani               |
-| ba            | Bashkir                   | under revision                |
+| ba            | Bashkir                   |
 | bcl           | Central Bikol             |
-| be            | Belarusan                 | under revision                |
+| be            | Belarusan                 |
 | bg            | Bulgarian                 |
 | boa           | Bora                      |
 | car           | Carib                     |
@@ -20,7 +20,7 @@
 | cbt           | Chayahuita                |
 | cho           | Choctaw                   |                               |
 | cs            | Czech                     | under revision                |
-| cv            | Chuvash                   | under revision                |
+| cv            | Chuvash                   |
 | dgz           | Daga                      | under revision; lacks lenition|
 | djr           | Djambarrpuyngu            |                               |
 | el            | Greek                     | lacks lenition                |
@@ -29,15 +29,16 @@
 | ff            | Fula                      |                               |
 | gil           | Kiribati                  |
 | gn            | Guarani                   |
-| guc           | Wayuu                     | under revision                |
+| guc           | Wayuu                     |
 | gvn           | Kuku-Yalanji              |                               |
 | haw           | Hawaiian                  |
+| hch           | Huichol                   |
 | hmn           | Hmong                     | under revision; lacks lenition|
 | ht            | Haitian Creole            | under revision; lacks lenition|
 | hu            | Hungarian                 | under revision                |
 | hy            | Armenian                  |
-| ilo           | Ilocano                   | under revision                |
-| iu            | Inuktitut                 | 
+| ilo           | Ilocano                   |
+| iu            | Inuktitut                 |
 | jam           | Jamaican Creole           | lacks lenition                |
 | jv            | Javanese                  |
 | ka            | Georgian                  |
@@ -47,7 +48,7 @@
 | kmo           | Kwoma                     | under revision                |
 | kn            | Kannada                   | under revision                |
 | ko            | Korean                    | under revision                |
-| ky            | Kirghiz                   | under revision                |
+| ky            | Kirghiz                   |
 | lem           | Nomaande                  |
 | mcq           | Ese                       |
 | mg            | Malagasy                  |
@@ -63,15 +64,15 @@
 | or            | Oriya                     | under revision; lacks lenition|
 | pa            | Punjabi                   | under revision; lacks lenition|
 | pau           | Palauan                   |
-| qub           | Huallaga Huánuco Quechua  | under revision                |
+| qub           | Huallaga Huánuco Quechua  |
 | quz           | Cusco Quechua             | under revision                |
 | roo           | Rotokas                   |
 | sah           | Yakut                     | under revision                |
 | shi           | Shilha                    | under revision                |
 | shp           | Shipibo Konibo            |
 | si            | Sinhala                   | under revision                |
-| sk            | Slovak                    | under revision                |
-| snc           | Sinaugoro                 | under revision                |
+| sk            | Slovak                    |
+| snc           | Sinaugoro                 |
 | sq            | Albanian                  |
 | suz           | Sunwar                    | under revision                |
 | sw            | Swahili                   | under revision                |
@@ -91,9 +92,11 @@
 | vi            | Vietnamese                | under revision                |
 | wbp           | Warlpiri                  |
 | wo            | Wolof                     |
+| var           | Huarjío                   |
 | viv           | Iduna                     |
 | ycn           | Yucuna                    |
 | yua           | Yucatec Maya              | under revision; lacks lenition|
+| yva           | Yawa                      |
 | zu            | Zulu                      | under revision                |
 | zza           | Zaza                      |
 
