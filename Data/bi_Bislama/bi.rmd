@@ -1,0 +1,75 @@
+---
+title: "Bislama"
+author: "Becky Mathew"
+bibliography: te.bib
+output: html_document
+---
+
+# Background
+
+Bislama is a relatively new language (from the mid 19th century) that is the national language of Vanuatu, a Pacific island country. Bislama is a creole that has some basis in English.
+[@crowley2004]
+
+**Language family**: Creole, English-based, Pacific
+
+## Consonants
+
+```{r echo = FALSE, results = 'asis'}
+library(knitr)
+labial <- c("p","b","m","","v","f","","","w")
+alveolar <- c("t","d","n","tʃ","","s","ɾ","l","")
+palatal <- c("","","","","","","","","j")
+velar <- c("k","g","ŋ","","","","","","")
+glottal <- c("","","","","","h","","","")
+
+consonants <- data.frame(labial, alveolar, palatal, velar, glottal)
+rownames(consonants) <- c("voiceless stops","voiced stops","nasals","voiced fricatives","voiceless fricatives","rhotic","lateral","glides")
+kable(consonants)
+```
+Not all speakers make a contrast between voiced and voiceless stops. Not all speakers make a contrast between /v/ and /f/. [@crowley2004]
+
+## Vowels
+
+{r echo = FALSE, results = 'asis'}
+library(knitr)
+front <- c("i","e","a")
+back <- c("u","o","")
+
+vowels <- data.frame(front, back)
+rownames(vowels) <- c("close", "close-mid", "open")
+[@crowley2004]
+
+# Alphabet
+
+Bislama is written with a Latin script from left to right.
+
+a - /a/
+b - /b/
+d - /d/
+e - /e/
+f - /f/
+g - /g/
+h - /h/
+i - /i/
+j - /tʃ/
+k - /k/
+l - /l/
+m - /m/
+n - /n/
+o - /o/
+p - /p/
+r - /ɾ/
+s - /s/
+t - /t/
+u - /u/
+v - /v/
+w - /w/
+y - /j/
+
+## Digraphs
+
+ng - /ŋ/
+
+# Lenition Rules
+
+* /h/ is frequently not pronounced intervocalically.

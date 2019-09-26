@@ -5,6 +5,7 @@
 |---------------|---------------------------| ------------------------------|
 | ab            | Abkhaz                    |
 | acf           | Saint Lucian Creole French| lacks lenition                |
+| aey           | Amele                     |
 | amn           | Amanab                    |
 | apu           | Apurinã                   | under revision                |
 | ast           | Asturian                  |
@@ -111,11 +112,15 @@
 | ak  | Akan             | non-transparent spelling with tones                       |
 | alq | Algonquin        | non-transparent spelling with vowel length                |
 | am  |Amharic           | non-transparent spelling with consonant gemination        |
+| as  | Assamese         | non-transparent spelling between vowels                |
 | ban | Bali             | non-standardized orthography                              |
 | bcw | Bana             | non-transparent spelling with tones                       |
+| bi  | Bislama          |
 | bn  | Bengali          | non-transparent spelling                                  |
 | bs  | Bosnian          | non-transparent spelling with vowel length and tones      |
+| bua | Buryat           | non-transparent spelling with palatalization        |
 | ca  | Catalan          | non-transparent spelling with vowels                      |
+| cax | Chiquitano       | non-transparent spelling with vowel nasalization          |
 | ce  | Chechen          | non-transparent spelling with vowel length                |
 | ceb | Cebuano          | non-transparent spelling with vowel length                |
 | chr | Cherokee         | non-transparent spelling with vowel length                |
@@ -142,11 +147,13 @@
 | grt | Garo             | non-transparent spelling with vowels                      |
 | gub | Guajajara        | non-transparent spelling with vowel nasalization          |
 | ha  | Hausa            | non-transparent spelling with vowel length                |
-| huv | Huave            | inconsistent phonological documentation                   |
+| huv | Huave            | inconsistent phonological documentation         |
 | hz  | Herero           | non-transparent spelling with tones                       |
+| ig  | Igbo             | non-transparent spelling with tones                 |
 | is  | Icelandic        | non-transparent spelling with vowel length                |
-| kbc | Kadiweu          | non-transparent spelling with consonant gemination        |
-| kek | Qeqchi           | non-transparent spelling with ejectivization              |
+| kac | Jingpho          | non-transparent spelling with tones                 |
+| kbc | Kadiweu          | non-transparent spelling with consonant gemination            |
+| kek | Qeqchi           | non-transparent spelling with ejectivization        |
 | kha | Khasi            | non-transparent spelling with vowel length                |
 | khk | Khalkha Mongolian| non-transparent spelling with vowels                      |
 | kmr | Northern Kurdish | non-transparent spelling with consonants                  |
@@ -158,8 +165,10 @@
 | lv  | Latvian          | non-transparent spelling with tones                       |
 | lvs | Standard Latvian | non-transparent spelling with tones                       |
 | mas | Maasai           | insufficient tokens                                       |
+| meu | Motu             | non-transparent spelling with vowel length                |
 | mhr | Eastern Mari     | non-transparent spelling with palatalization              |
 | mi  | Maori            | non-transparent spelling with vowel length                |
+| miq | Miskito          | non-transparent spelling with vowel nasalization and length     |
 | mos | Mossi            | non-transparent spelling with tones                       |
 | mps | Dadibi           | non-transparent spelling with tones and vowel nasalization|
 | ms  | Malay            | non-transparent spelling with vowels                      |
@@ -170,7 +179,8 @@
 | nv  | Navajo           | non-transparent spelling with vowel nasalization          |
 | opm | Oksapmin         | non-transparent spelling with vowels                      |
 | os  | Ossetian         | non-transparent spelling                                  |
-| pao | Northern Paiute  | non-transparet spelling with vowel length                 |
+| pao | Northern Paiute  | non-transparent spelling with vowel length                 |
+| pap | Papiamentu       | non-transparent spelling with vowels                 |
 | pir | Wanano           | non-transparent spelling with tones                       |
 | pl  |Polish            | non-transparent spelling                                  |
 | poh | Poqomchi'        | insufficient documentation                                |
@@ -182,11 +192,13 @@
 | ss  | Swati            | non-transparent spelling with tones                       |
 | st  | Sesotho          | non-transparent spelling with tones                       |
 | sv  | Swedish          | non-transparent spelling                                  |
+| tcy | Tulu             | non-transparent spelling with vowels                |
 | tcz | Thadou Chin      | non-transparent spelling with tones                       |
 | ti  |Tigrinya          | non-transparent spelling with gemination                  |
 | tk  | Turkmen          | non-transparent spelling with vowel length                |
 | tn  | Tswana           | non-transparent spelling with tones                       |    
 | ts  | Tsonga           | non-transparent spelling with tones                       |  
+| vro | Võro             | non-transparent spelling with vowels and palatalization        |
 | wal | Wolaytta         | non-transparent spelling with tones                       |
 | war | Waray-Waray      | insufficient documentation                                |   
 | xav | Xavánte          | non-transparent spelling with vowel length                |

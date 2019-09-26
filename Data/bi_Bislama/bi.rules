@@ -1,0 +1,11 @@
+type,sfrom,sto,weight,precede,follow,comment
+class,passthrough,[aeioupbmfvtdnslkgwh],,,,
+
+sub,n,ŋ,2,,g,ng digraph
+sub,g,,2,n,,ng digraph
+
+sub,j,tʃ,1,,,
+sub,r,ɾ,1,,,
+sub,y,j,1,,,
+
+sub,({passthrough}),\1,0.1,,,
