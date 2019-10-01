@@ -2,7 +2,7 @@
 title: "Abkhaz"
 author: "Bill Mizgerd"
 bibliography: ab.bib
-output: html_document
+output: rmarkdown::github_document
 ---
 
 Last Updated: 2019-07-05
@@ -56,47 +56,48 @@ Some authors argue for the existence of /aː/, but @AbChirikba2003 (p. 20) and @
 The Tapanta dialect "marginally preserves" a tonal system from older forms of Abkhaz, but all other dialects - including Standard Abkhaz - have lost it. [@AbChirikba1996, p. iii]
 
 # Alphabet
-
-а - /a/  
-б - /b/  
-в - /v/  
-г - /ɡ/  
-ӷ - /ʁ/  
-д - /d/  
-е - /a/  
-ж - /ʒ/  
-з - /z/  
-ӡ - /dz/  
-и - /j/  
-к - /kʼ/  
-қ - /k/  
-ҟ - /qʼ/  
-л - /l/  
-м - /m/  
-н - /n/  
-о - /a/  
-п - /pʼ/  
-ԥ - /p/  
-р - /r/  
-с - /s/  
-т - /tʼ/  
-ҭ - /t/  
-у - /w/  
-ф - /f/  
-х - /χ/  
-ҳ - /ħ/  
-ц - /ts/  
-ҵ - /tsʼ/  
-ч - /tʃʲ/  
-ҷ - /tʃʲʼ/  
-ҽ - /tʃ/  
-ҿ - /tʃʼ/  
-ш - /ʃ/  
-ы - /ə/  
-ҩ - /ʡ/  
-џ - /dʒ/  
-ь - marks palatalization  
-ә - marks labialization  
+|Orthography|Phoneme|
+|--|----|
+|а|  /a/|  
+|б| /b/|  
+|в|  /v/|  
+|г | /ɡ/ |
+|ӷ  |/ʁ/  |
+|д | /d/  |
+|е  |/a/  |
+|ж  |/ʒ/  |
+|з  |/z/  |
+|ӡ  |/dz/  |
+|и|  /j/  |
+|к | /kʼ/  |
+|қ | /k/  |
+|ҟ | /qʼ/  |
+|л | /l/  |
+|м | /m/  |
+|н | /n/  |
+|о | /a/  |
+|п | /pʼ/  |
+|ԥ | /p/  |
+|р | /r/  |
+|с | /s/  |
+|т | /tʼ/  |
+|ҭ | /t/  |
+|у | /w/  |
+|ф | /f/  |
+|х | /χ/  |
+|ҳ  |/ħ/  |
+|ц  |/ts/  |
+|ҵ | /tsʼ/  |
+|ч | /tʃʲ/  |
+|ҷ | /tʃʲʼ/  |
+|ҽ | /tʃ/  |
+|ҿ | /tʃʼ/  |
+|ш | /ʃ/  |
+|ы | /ə/  |
+|ҩ | /ʡ/  |
+|џ | /dʒ/  |
+|ь | marks palatalization |  
+|ә | marks labialization  |
 
 # Lenition Rules
 
