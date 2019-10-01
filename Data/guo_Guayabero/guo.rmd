@@ -1,0 +1,95 @@
+---
+title: "Guayabero"
+author: "Emily Strand"
+bibliography: guo.bib
+output: html_document
+---
+
+Last updated: 2019-09-30
+
+# Background
+
+**Language family**: Guahiboan
+
+# Phonology
+
+## Consonants
+
+### By place of articulation
+
+Labial: /p/, /b/, /ɸ/, /m/, /w/  
+Alveolar: /t/, /d/, /s/, /n/, /l/, /ɾ/  
+Palatal: /tʃ/, /j/  
+Velar: /k/, /x/  
+Glottal: /h/, /ʔ/  
+
+### By manner of articulation
+
+Stop: /p/, /b/, /t/, /d/, /k/, /ʔ/  
+Affricate: /tʃ/  
+Fricative: /ɸ/, /s/, /x/, /h/  
+Nasal: /m/, /n/  
+Approximant: /l/, /j/, /w/  
+Flap: /ɾ/  
+
+## Vowels
+
+* /i/ and /a/ are the only vowels that have long counterparts in Guayabero [@Keels1985, pg. 67]. Although /aa/ is said to be contrastive with /a/, nothing is mentioned about the contrastiveness of /ii/ with /i/.
+* Several diphthongs occur in Guayabero [@Keels1985, pg. 66, 67]; however, given that they can also appear as vowel sequences [@Waller1976, pg. 53], they will not be included in the rules.
+
+/a/, /e/, /i/, /ɨ/, /o/, /u/  
+
+# Alphabet
+
+a - /a/  
+b - /b/  
+c - /k/  
+d - /d/  
+e - /e/  
+f - /ɸ/  
+i - /i/  
+j - /h/  
+k - /k/  
+l - /l/  
+m - /m/  
+n - /n/  
+o - /o/  
+p - /p/  
+r - /ɾ/  
+s - /s/  
+t - /t/  
+u - /u/  
+ʉ - /ɨ/  
+w - /w/  
+x - /x/  
+y - /j/  
+' - /ʔ/  
+
+## Digraphs
+
+ch - /tʃ/  
+qu - /k/  
+
+
+# Syllable Structure
+
+* The syllable structures permitted in Guayabero include [@Keels1985, pg. 59]:
+
+    CV  
+    CVC  
+    CVCC  
+    CVV   
+    CVVC   
+    CVVCC  
+
+# Lenition Rules
+
+* Unstressed /a/ is deleted preceding /ɾ/ and following an obstruent [@Keels1985, pg. 79].
+* Unstressed vowels are deleted immediately preceding stress [@Keels1985, pg. 80, 81].
+
+# Misc Rules
+
+* Voiceless stops become aspirated preceding vowels [@Waller1976, pg. 49].
+* Consonants may be labialized preceding a stressed, rounded vowel [@Keels1985, pg. 71, 72].
+* Vowel epenthesis occurs preceding voiced consonant suffixes [@Keels1985, pg. 82].
+* Geminate consonants seem to appear in the orthography through affixation; however long consonants are not present in the language [@Keels1985, pg. 84]. Vowel epenthesis occurs to prevent the realization of such long consonants (ibid.). 

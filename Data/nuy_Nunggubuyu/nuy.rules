@@ -1,0 +1,32 @@
+# Nunggubuyu Rule Set
+# Written by: Bill
+# Last Updated: 2019-08-07
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,alveolar-base,[dnl],,,,
+class,post-n,[gy],,,,
+# class,underline,[̱],,,,
+class,passthrough,[abdilmnuw],,,,
+# Individual Letters
+sub,ḏ,ɖ,4,,,
+sub,g,ɡ,4,,,
+sub,j,ɟ,4,,,
+sub,ḻ,ɭ,4,,,
+sub,ṉ,ɳ,4,,,
+sub,r,ɻ,4,,,
+sub,y,j,4,,,
+sub,-,,4,,,"many words have hyphens that carry no phonetic value"
+# Digraphs
+sub,d,d̪,6,,h,"<dh>"
+sub,l,l̪,6,,h,"<lh>"
+sub,n,n̪,6,,h,"<nh> - rare"
+sub,h,,6,{alveolar-base},,"cleanup of h-final digraphs"
+sub,y,ɲ,6,n,,"<ny>"
+sub,g,ŋ,6,n,,"<ng>"
+sub,n,,6,,{post-n},"cleanup of n-initial digraphs"
+sub,a,aː,6,,a,"<aa>"
+sub,a,,6,a,,"<aa> cleanup"
+sub,r,ɾ,6,,r,"<rr>"
+sub,r,,6,r,,"<rr> cleanup"
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,

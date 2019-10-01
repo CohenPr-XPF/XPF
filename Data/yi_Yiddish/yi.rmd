@@ -1,0 +1,121 @@
+---
+title: "yi.rmd"
+author: "Abi Creighton"
+date: "September 26, 2019"
+bibliography: yi.bib
+output: html_document
+---
+
+# Background
+
+**Language family**: Indo-European / Germanic / West Germanic / Elbe Germanic / High German  
+
+Though Yiddish is descended a Germanic language, it borrows elements extensively from Hebrew, Aramaic, Romance languages, and Slavic languages, including the use of the Hebrew script. Yiddish has two major distinct dialects: Eastern and Western. Eastern Yiddish is more broadly spoken and contains more words of Slavic origin than Western Yiddish. [@kleine_illustrations_2003]
+
+Yiddish has both a Hebrew script and a romanized scipt. Because the Hebrew alphabet contains diacritics which differentiate between letters but are not always recorded in written Yiddish, the Hebrew alphabet cannot be used to construct a rule set with a one-to-one correspondence between graphemes and phonemes. Therefore, only the Latin script is addressed here.  
+
+# Phonology
+
+Sources for inventory and orthography: [@kleine_illustrations_2003], [@kahn_phonology_2015], and [@kahn_orthography_2015]
+
+## Consonants
+
+### By place of articulation
+
+Bilabial: /p/, /b/, /m/  
+Labiodental: /f/, /v/  
+Alveolar: /t/, /d/, /n/, /ɾ/, /s/, /z/, /l/, /ts/, /tʃ/, /dʒ/   
+Post-alveolar: /ʃ/, /ʒ/
+Palatalized: /j/
+Velar: /k/, /g/, /χ/
+Glottal: /h/
+
+### By manner of articulation
+
+Stop: /p/, /b/, /t/, /d/
+Nasal: /m/, /n/
+Trill/Tap: /ɾ/
+Fricative: /f/, /v/, /s/, /z/, /ʃ/, /ʒ/, /χ/
+Affricates: /ts/, /tʃ/, /dʒ/
+Approximant: /j/
+Lateral approximant: /l/
+
+## Vowels
+
+High: /ɪ/, /ʊ/  
+Mid: /ɛ/, /ɔ/  
+Low: /a/
+Diphthongs: /aɪ/, /ɛɪ/, /ɔɪ/
+
+# Latin Alphabet
+
+A a: /a/
+B b: /b/
+D d: /d/
+DZH dzh: /dʒ/
+E e: /ɛ/
+F f: /f/
+G g: /g/
+H h: /h/
+I i: /ɪ/
+K k: /k/
+L l: /l/
+Y y: /j/
+M m: /m/
+N n: /n/
+O o: /ɔ/
+P p: /p/
+R r: /ɾ/
+S s: /s/
+SH sh: /ʃ/
+T t: /t/
+TS ts: /ts/
+TSH tsh: /tʃ/
+U u: /ʊ/
+V v: /v/
+KH kh: /χ/
+Z z: /z/
+ZH zh: /ʒ/
+
+# Hebrew Alphabet
+
+א: silent
+אַ: /a/
+אָ: /ɔ/
+ב: /b/
+בֿ: /v/
+ג: /g/
+ד: /d/
+ה: /h/
+ו: /ʊ/
+וּ: /ʊ/
+ז: /z/
+ח: /χ/
+ט: /t/
+י: /j/
+כּ: /k/
+כ: /χ/
+ך: /χ/
+ל: /l/ (or /ʎ/ in some speakers)
+מ: /m/
+ם: /m/
+נ: /n/
+ן: /n/
+ס: /s/
+ע: /ɛ/
+פּ: /p/
+פֿ: /f/
+ף: /f/
+צ: /ts/
+ץ: /ts/
+ק: /k/
+ר: /ʀ/
+ש: /ʃ/
+שׂ: /s/
+תּ: /t/
+ת: /s/
+
+# Rules
+
+-"Obstruent sequences in Yiddish are homogeneous for voice, in a such a way that the rightmost obstruent determines the voice value of the entire cluster." [@wetzels_typology_2001]
+

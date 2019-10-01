@@ -1,0 +1,51 @@
+# Nomatsiguenga Rule Set
+# Written by: Emily
+# Last Updated: 2019-09-30
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[abegimnopst],,,,
+class,engma,(c|qu),,,,
+class,front,[eiéí],,,,
+class,low,[eiaoë],,,,
+class,vowel-output,[aeioɨ],,,,
+class,tone,(NO|˥),,,,
+# Individual Letters
+sub,c,k,2,,,
+sub,ë,ɨ,2,,,
+sub,j,h,2,,,
+sub,q,k,2,,,
+sub,r,ɾ,2,,,
+sub,y,j,2,,,
+sub,n,ŋ,3,,{engma},
+sub,({passthrough}),\1,2,,,
+# Multigraphs
+sub,c,tʃ,3,,h,
+sub,h,,3,c,,
+sub,n,ŋ,4,,g,
+sub,g,,5,n,,
+sub,s,ʃ,3,,h,
+sub,h,,3,s,,
+sub,t,ts,3,,s,
+sub,s,,4,t,,
+sub,g,g,4,,u,
+sub,u,,3,g,,
+sub,n,ŋ,5,,gu{front},
+sub,q,k,3,,u,
+sub,u,,3,q,,
+# High Tone
+sub,á,a ˥,2,,,
+sub,é,e ˥,2,,,
+sub,í,i ˥,2,,,
+sub,ó,o ˥,2,,,
+sub,ë́,ɨ ˥,2,,,
+# Low Tone
+sub,({low}),\1 NO,2,,,
+# Long Vowels
+ipasub,({vowel-output}) ({tone}) \1 ({tone}),\1 \2 \4 ː,4,,,
+# Diphthongs
+ipasub,a ({tone}) i ({tone}),ai \2 \4,3,,,
+ipasub,e ({tone}) i ({tone}),ei \2 \4,3,,,
+ipasub,o ({tone}) i ({tone}),oi \2 \4,3,,,
+#
+ipasub,NO,,2,,,
+ipasub,ŋ tʃ,n tʃ,2,,,"fix <nch> cluster"

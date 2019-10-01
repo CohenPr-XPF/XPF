@@ -1,0 +1,33 @@
+# Guayabero Rule Set
+# Written by: Emily
+# Last Updated: 2019-09-30
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,apostrophe,[ꞌ'ˈ‘’],,,,
+class,passthrough,[abdeiklmnopstuwx],,,,
+class,non-gem,(p|t|k|d|ɸ|s|x|h|tʃ|m|n|l|ɾ|w),,,,
+# Individual Letters
+sub,á,a,2,,,
+sub,é,e,2,,,
+sub,í,i,2,,,
+sub,ó,o,2,,,
+sub,ú,u,2,,,
+sub,ʉ́,ɨ,2,,,
+sub,c,k,2,,,
+sub,f,ɸ,2,,,
+sub,j,h,2,,,
+sub,r,ɾ,2,,,
+sub,ʉ,ɨ,2,,,
+sub,y,j,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+sub,-,,2,,,
+# Digraphs
+sub,c,tʃ,3,,h,
+sub,h,,3,c,,
+sub,q,k,2,,u,
+sub,u,,3,q,,
+# Long /a/
+ipasub,a a,aː,2,,,
+# Non-geminates
+ipasub,({non-gem}) \1,\1,2,,,

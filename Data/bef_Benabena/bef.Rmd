@@ -1,0 +1,82 @@
+---
+title: "Benabena"
+author: "Bill Mizgerd"
+bibliography: bef.bib
+output: html_document
+---
+
+Last Updated: 2019-09-30
+
+# Background
+
+**Language Family**: Trans-New Guinea / Kainantu-Goroka / Goroka / Gahuku-Benabena / Benabena
+
+Some sources hyphenate the language as Bena-Bena.
+
+# Phonology
+
+## Consonants
+
+* @BefYoung1961 (p. 4) and @BefYoung1975 (p. 1) argue for [β] rather than /ɸ/. However, I have preferred the analysis of @BefYoung1992, which seems to show the most recent form of Young's understanding of the phoneme.
+
+### By place of articulation
+
+Labial: /p/, /m/, /ɸ/, /f/  
+Alveolar: /t/, /n/, /s/  
+Retroflex: /ɭ/  
+Palatal: /j/  
+Velar: /k/, /ɣ/  
+Glottal: /ʔ/, /h/  
+
+### By manner of articulation
+
+Stops: /p/, /t/, /k/, /ʔ/  
+Nasals: /m/, /n/  
+Fricatives: /ɸ/, /f/, /s/, /ɣ/, /h/  
+Approximants: /ɭ/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /e/, /o/, /ɑ/  
+
+# Alphabet
+
+a - /ɑ/  
+b - /ɸ/  
+e - /e/  
+f - /f/  
+g - /ɣ/  
+h - /h/  
+i - /i/  
+k - /k/  
+l - /ɭ/  
+m - /m/  
+n - /n/  
+o - /o/  
+p - /p/  
+s - /s/  
+t - /t/  
+u - /u/  
+y - /j/  
+' - /ʔ/  
+
+# Lenition Rules
+
+* In a small number of words, word-initial /ɸ/ approximantizes to [w]. [@BefYoung1961, p. 9]
+* /ʔ/ may be deleted in certain words. (ibid.)
+
+# Misc. Rules
+
+* /ɸ/ alternates with [b] word-initially. [@BefYoung1992, p. 2]
+* /j/ undergoes some word-initial alternation: in stressed syllables, it alternates with [ʝ], while in unstressed syllables it alternates with [z]. (ibid.) [@BefYoung1961, pp. 10-11]
+* Some speakers realize /ɣ/ as [ɡ]. [@BefYoung1992, p. 3] [@BefYoung1961, p. 12]
+* Some speakers realize /ɭ/ as [ɽ]. [@BefYoung1992, p. 3] [@BefYoung1961, p. 14]
+* Non-glottal stops are sometimes realized with aspiration. [@BefYoung1961, p. 8]
+* Preconsonantal glottal stops may adopt the place of articulation of the following consonant; when this occurs, the stop is produced as unreleased. [@BefYoung1961, p. 9]
+* Some speakers back /s/ to [ʃ] before high vowels. [@BefYoung1961, p. 11]
+
+## Syllable Structure
+
+Benabena has a (C)V(ʔ) syllable structure. [@BefYoung1992, p. 2]
+
+# References

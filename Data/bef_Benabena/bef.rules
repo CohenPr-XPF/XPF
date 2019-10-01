@@ -1,0 +1,16 @@
+# Benabena Rule Set
+# Written by: Bill
+# Last Updated: 2019-09-30
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,apostrophe,['ꞌˈ‘’],,,,
+class,passthrough,[efhikmnopstu],,,,
+# Individual Letters
+sub,a,ɑ,4,,,
+sub,b,ɸ,4,,,
+sub,g,ɣ,4,,,
+sub,l,ɭ,4,,,
+sub,y,j,4,,,
+sub,{apostrophe},ʔ,4,,,
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,

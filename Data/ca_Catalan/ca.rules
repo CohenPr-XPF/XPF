@@ -1,0 +1,106 @@
+#Central Catalan
+#Written by Abi Creighton
+#Updated 04 Dec. 2018
+#Edited by Shiying Yang
+#Edited 21 May 2019
+#Edited by Emily Strand
+#Edited 27 September 2019
+type,sfrom,sto,weight,precede,follow,comment
+class,front,"(e|è|é|i|í|ï)",,,,
+class,back,"(o|ò|ó|u|ú|ü|a|à)"
+class,cdot,"(·|•|᛫|•|∙|⋅)",,,,
+class,vowel,"(a|e|i|o|u)",,,,
+class,consonant,"(b|c|d|f|g|h|k|l|m|n|p|q|r|s|t|v|w|x|y|z)",,,,
+class,passthrough,"[abdfghiklmnpstuwz]",,,,
+class,t-follower,[jsz],,,,
+class,l_with_cdot,"ŀ",,,,
+class,punct,['-],,,,
+#
+sub,à,a,1,,,
+sub,c,s,1,,{front},
+sub,c,k,0.5,,,
+sub,ç,s,1,,,
+#
+#Next 8 rules: when e becomes [e] vs [ɛ]
+sub,é,e,1,,,
+sub,e,ɛ,0.5,,,
+sub,e,e,2,,{consonant}{consonant},
+sub,e,e,2,^,,
+sub,e,e,2,,$,
+sub,e,ɛ,3,,ll,
+sub,e,ɛ,3,,rr,
+sub,è,ɛ,1,,,
+#
+sub,g,tʃ,2,i,,
+sub,i,,2,,g,
+sub,g,ʒ,1,,{front},
+sub,h,,1,,,
+sub,í,i,1,,,
+sub,ï,i,1,,,
+#
+#Next 3 rules: diphthongization--/i/ becomes a semivowel when preceded by a vowel except u
+sub,i,j,1,{vowel},,
+sub,i,j,1,,{vowel},
+sub,i,i,2,u,,
+#
+sub,l,ʎ,1,,l,
+sub,l,,1,l,,
+#
+#Next three rules: 2 l's separated by a middot become a geminate
+sub,l,lː,1,,{cdot},
+sub,{l_with_cdot},lː,1,,l,
+sub,l,,1,{l_with_cdot},,
+sub,{cdot},,1,l,,
+sub,l,,1,{cdot},,
+#
+sub,n,ɲ,1,,y,
+sub,y,,1,n,,
+sub,ó,o,1,,,
+sub,ò,ɔ,1,,,
+sub,o,ɔ,1,,,
+sub,j,ʒ,1,,,
+#
+#Next 5 rules: does r becomes trilled (rules 1-3), tapped (4), or deleted (5)
+sub,r,r,1,,r,
+sub,r,,1,r,,
+sub,r,r,1,^,,
+sub,r,ɾ,0.5,,,
+sub,r,,2,,$,
+#
+sub,s,s,1,,s,
+sub,s,,1,s,,
+sub,t,tʃ,1,,x,
+sub,x,,1,t,,
+sub,ú,u,1,,,
+sub,ü,u,1,,,
+#
+#Next 2 rules: diphthongization--/u/ becomes a semivowel when followed by a vowel
+sub,u,w,1,{vowel},,,
+sub,u,w,1,,{vowel},,
+#
+sub,v,b,1,,,
+sub,x,ʃ,0.5,,,
+sub,x,ks,1,,$,"only occurs in loan words"
+sub,y,i,0.5,,,
+sub,y,j,1,{vowel},,
+sub,({passthrough}),\1,0.1,,,
+#
+sub,{punct},,0.1,,,
+#
+# Additional digraphs - Emily
+sub,g,g,3,,u{front},"ex. gui"
+sub,g,g w,4,,u{back},"ex. gua"
+sub,u,,3,g,,
+sub,g,g w,3,,ü{front},
+sub,ü,,3,g,,
+sub,q,k,3,,u{front},"ex. qui"
+sub,q,k w,3,,u{back},"ex. qua"
+sub,u,,4,q,,
+sub,q,k w,3,,ü{front},
+sub,ü,,4,q,,
+sub,g,dʒ,3,t,{front},
+sub,t,,4,,g,
+sub,t,dʒ,3,,j,
+sub,t,ts,3,,s,
+sub,t,dz,3,,z,
+sub,{t-follower},,4,t,,

@@ -14,8 +14,11 @@
 | ba            | Bashkir                   |
 | bcl           | Central Bikol             |
 | be            | Belarusan                 |
+| bef           | Benabena                  |
 | bg            | Bulgarian                 |
 | boa           | Bora                      |
+| ca            | Catalan                   | under revision |
+| caa           | Ch'orti'                  |
 | car           | Carib                     |
 | cbi           | Cha'palaa                 |
 | cbt           | Chayahuita                |
@@ -31,6 +34,7 @@
 | gil           | Kiribati                  |
 | gn            | Guarani                   |
 | guc           | Wayuu                     |
+| guo           | Guayabero                 |
 | gvn           | Kuku-Yalanji              |                               |
 | haw           | Hawaiian                  |
 | hch           | Huichol                   |
@@ -59,6 +63,8 @@
 | ne            | Nepali                    | under revision                |
 | nhe           | Nahuatl                   |
 | nhr           | Naro                      | under revision                |
+| not           | Nomatsiguenga             |
+| nuy           | Nunggubuyu                |
 | ny            | Chichewa                  | under revision                |
 | om            | Oromo                     |
 | omw           | South Tairora             | lacks lenition                |
@@ -96,6 +102,7 @@
 | var           | Huarjío                   |
 | viv           | Iduna                     |
 | ycn           | Yucuna                    |
+| yi            | Yiddish                   |
 | yua           | Yucatec Maya              | under revision; lacks lenition|
 | yva           | Yawa                      |
 | zu            | Zulu                      | under revision                |
@@ -114,6 +121,7 @@
 | am  |Amharic           | non-transparent spelling with consonant gemination        |
 | as  | Assamese         | non-transparent spelling between vowels                |
 | ban | Bali             | non-standardized orthography                              |
+| bem | Bemba            | non-transparent spelling with tones  |
 | bcw | Bana             | non-transparent spelling with tones                       |
 | bi  | Bislama          |
 | bn  | Bengali          | non-transparent spelling                                  |
@@ -143,9 +151,12 @@
 | fy  | Frisian          | non-transparent spelling with vowels                      |
 | ga  | Irish            | non-transparent spelling                                  |
 | gah | Alekano          | non-transparent spelling with tones                       |
+| gd  | Scottish Gaelic  | non-transparent spelling with consonants and vowels
 | gl  | Galician         | non-transparent spelling                                  |
 | grt | Garo             | non-transparent spelling with vowels                      |
 | gub | Guajajara        | non-transparent spelling with vowel nasalization          |
+| gum | Guambiano        | non-standardized orthography    |
+| gv  | Manx Gaelic      | non-transparent spelling with consonants and vowels   |
 | ha  | Hausa            | non-transparent spelling with vowel length                |
 | huv | Huave            | inconsistent phonological documentation         |
 | hz  | Herero           | non-transparent spelling with tones                       |
@@ -156,6 +167,8 @@
 | kek | Qeqchi           | non-transparent spelling with ejectivization        |
 | kha | Khasi            | non-transparent spelling with vowel length                |
 | khk | Khalkha Mongolian| non-transparent spelling with vowels                      |
+| ki  | Gikuyu           | non-transparent spelling with tones  |
+| kj  | Kwanyama         | non-transparent spelling with tones  |
 | kmr | Northern Kurdish | non-transparent spelling with consonants                  |
 | kw  | Cornish          | non-transparent spelling with vowel length                |
 | lb  | Luxembourgish    | non-transparent spelling with vowels                      |

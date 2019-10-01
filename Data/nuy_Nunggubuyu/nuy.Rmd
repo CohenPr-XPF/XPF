@@ -1,0 +1,87 @@
+---
+title: "Nunggubuyu"
+author: "Bill Mizgerd"
+bibliography: nuy.bib
+output: html_document
+---
+
+Last Updated: 2019-08-07
+
+# Background
+
+**Language Family**: Gunwinyguan / Wubuy-Anindilyakwa / Nunggubuyu
+
+# Phonology
+
+## Consonants
+
+* /n̪/ appears only rarely, in a handful of animal-related nouns. [@NuyHeath1984, p. 12]
+
+### By place of articulation
+
+Labial: /b/, /m/, /w/  
+Dental: /d̪/, /n̪/, /l̪/  
+Alveolar: /d/, /n/, /ɾ/, /l/  
+Retroflex: /ɖ/, /ɳ/, /ɭ/, /ɻ/  
+Palatal: /ɟ/, /ɲ/, /j/  
+Velar: /ɡ/, /ŋ/  
+
+### By manner of articulation
+
+Stops: /b/, /d̪/, /d/, /ɖ/, /ɟ/, /ɡ/  
+Nasals: /m/, /n̪/, /n/, /ɳ/, /ɲ/, /ŋ/  
+Taps: /ɾ/  
+Laterals: /l̪/, /l/, /ɭ/  
+Approximants: /w/, /ɻ/, /j/  
+
+## Vowels
+
+Vowels: /i/, /u/, /a/, /aː/  
+
+Vowel lengthening is present in Nunggubuyu, but only /aː/ has minimal pairs with its short counterpart. [@NuyHeath1984, p. 9]
+
+Tone does not appear to be contrastive. [@NuyHeath1984, p. 32]
+
+@NuyHughes1971 lists /æ/ as present, albeit only marginally (p. 72); this does not seem to be borne out by the other authors, though.
+
+# Alphabet
+
+a - /a/  
+  aa - /aː/  
+b - /b/  
+d - /d/  
+  dh - /d̪/  
+  ḏ - /ɖ/  
+g - /ɡ/  
+i - /i/  
+j - /ɟ/  
+l - /l/  
+  lh - /l̪/  
+  ḻ - /ɭ/  
+m - /m/  
+n - /n/  
+  nh - /n̪/  
+  ṉ - /ɳ/  
+  ny - /ɲ/  
+  ng - /ŋ/  
+r - /ɻ/  
+  rr - /ɾ/  
+u - /u/  
+w - /w/  
+y - /j/  
+
+# Lenition Rules
+
+* /ɟ/ undergoes an affricate release when non-syllable-final. [@NuyHeath1984, p. 13]
+* Word-final /ɡ/ is weakly realized when preceded by a liquid or vowel. (ibid.)
+
+# Misc. Rules
+
+* /au/ sequences are sometimes realized as [oː]. [@NuyHeath1984, p. 33]
+* /ɾ/ trills to [r] in preconsonantal and word-final positions. [@NuyHughes1971, p. 75]
+
+## Syllable Structure
+
+Nunggubuyu has a (C)V(C)(C) syllable structure. [@NuyHughes1971, pp. 75-76]
+
+# References
