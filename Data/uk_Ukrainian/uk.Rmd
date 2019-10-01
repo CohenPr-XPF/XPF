@@ -1,0 +1,102 @@
+---
+title: "Ukrainian"
+author: "Bill Mizgerd"
+bibliography: uk.bib
+output: html_document
+---
+
+Last Updated: 2019-08-05
+
+# Background
+
+**Language Family**: Indo-European / Balto-Slavic / Slavic / East Slavic / Ukrainian
+
+# Phonology
+
+## Consonants
+
+* @UkMarschall2016 argues for /ʋ/ rather than /v/. (p. 350)
+* Any Ukrainian consonant can be allophonically palatalized, but this palatalization is only phonemic for alveolar consonants. [@UkMarschall2016, p. 350]
+* Consonant gemination exists, but it is controversial whether consonant length is contrastive; @UkMarschall2016 disputes it, arguing instead for simple consonant sequences (p. 353).
+
+### By place of articulation
+
+Labial: /p/, /b/, /m/, /f/, /v/  
+Alveolar (non-palatalized): /t/, /d/, /ts/, /dz/, /n/, /s/, /z/, /r/, /l/  
+Alveolar (palatalized): /tʲ/, /dʲ/, /tsʲ/, /dzʲ/, /nʲ/, /sʲ/, /zʲ/, /rʲ/, /lʲ/  
+Postalveolar: /tʃ/, /dʒ/, /ʃ/, /ʒ/  
+Palatal: /j/  
+Velar: /k/, /ɡ/, /x/  
+Glottal: /ɦ/  
+
+### By manner of articulation
+
+Stops: /p/, /b/, /t/, /d/, /tʲ/, /dʲ/, /k/, /ɡ/  
+Affricates: /ts/, /dz/, /tsʲ/, /dzʲ/, /tʃ/, /dʒ/  
+Nasals: /m/, /n/, /nʲ/  
+Fricatives: /f/, /v/, /s/, /z/, /sʲ/, /zʲ/, /ʃ/, /ʒ/, /x/, /ɦ/  
+Trills: /r/, /rʲ/  
+Approximants: /l/, /lʲ/, /j/  
+
+## Vowels
+
+Vowels: /i/, /ɪ/, /u/, /ɛ/, /ɔ/, /a/  
+
+Vowel length is not contrastive in Ukrainian. [@UkMarschall2016, p. 353]
+
+# Alphabet
+
+а - /a/  
+б - /b/  
+в - /v/  
+г - /ɦ/  
+ґ - /ɡ/  
+д - /d/  
+  дж - /dʒ/  
+  дз - /dz/  
+е - /ɛ/  
+є - /jɛ/ (palatalizes preceding consonant)  
+ж - /ʒ/  
+з - /z/  
+и - /ɪ/  
+і - /i/ (palatalizes preceding consonant)  
+ї - /ji/ (always indicates two separate sounds, per @UkMedushevsky1963, p. 11)  
+й - /j/  
+к - /k/  
+л - /l/  
+м - /m/  
+н - /n/  
+о - /ɔ/  
+п - /p/  
+р - /r/  
+с - /s/  
+т - /t/  
+у - /u/  
+ф - /f/  
+х - /x/  
+ц - /ts/  
+ч - /tʃ/  
+ш - /ʃ/  
+щ - /ʃtʃ/  
+ь - marks palatalization of preceding consonant  
+ю - /ju/ (palatalizes preceding consonant)  
+я - /ja/ (palatalizes preceding consonant)  
+' - marks non-palatalization of preceding consonant in an otherwise palatalizing environment  
+
+Acute accents are sometimes used to mark stress, but these seem to be rare outside of academic/didactic sources. [@UkPugh1999, p. 24]
+
+**NOTE:** During the Soviet period, the character <ґ> was not used, and <г> represented both /ɦ/ and /ɡ/. Although /ɡ/ is relatively rare in Ukrainian, this conflict still compromises the language for corpora that are based on Soviet-era texts. [@UkPugh1999, p. 20] [@UkHumesky1980, p. 17]
+
+# Lenition Rules
+
+* The palatalized trill, /rʲ/, tends to flap to [ɾʲ]. [@UkMarschall2016, p. 352]
+* /v/ approximantizes to [w] before rounded back vowels. (ibid.)
+* /v/ approximantizes to [w] when preconsonantal or word-final. [@UkPugh1999, p. 27] [@UkHumesky1980, p. 18]
+
+# Misc. Rules
+
+* Non-palatalized /l/ tends to velarize to [ɫ]. [@UkMarschall2016, p. 352]
+* /ɦ/ fronts to [x] before /k/. (ibid.)
+* Syllable-final glides become the non-syllabic vowels [i̯] and [u̯]. (ibid.)
+
+# References
