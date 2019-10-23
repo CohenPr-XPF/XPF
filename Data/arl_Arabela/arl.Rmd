@@ -1,0 +1,108 @@
+---
+title: "Arabela"
+author: "Emily Strand"
+bibliography: arl.bib
+output: html_document
+---
+
+Last updated: 2019-10-03
+
+# Background
+
+**Language family**: Zaparoan
+
+* Also referred to as Chiripuno, Arabela is spoken in Peru, specifically in two villages of the Napo tributary.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Bilabial    Alveolar    Postalveolar    Velar    Glottal
+Stops                         "p"          "t"           ""          "k"       ""
+Fricatives                     ""          "s"           "ʃ"          ""       "h"
+Nasals                        "m"          "n"           ""           ""       ""
+Trills                        ""           "r"            ""          ""        ""
+Approximants                  "w"           ""            ""          "j"       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Vowel length is phonemic [@Carvalho2013, p. 95]. Long vowels are represented by the duplication of vowel graphemes.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"          ""          "u"
+Mid       "e"          ""          "o"
+Low       ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"           "/a/"  
+"c"           "/k/"  
+"e"           "/e/"   
+"i"           "/i/"  
+"j"           "/h/"  
+"m"           "/m/"  
+"n"           "/n/"  
+"o"           "/o/"  
+"p"           "/p/"  
+"r"           "/r/"  
+"s"           "/s/"  
+"t"           "/t/"  
+"u"           "/u/"  
+"y"           "/j/"  
+**Digraph**   ""
+"qu"          "/k/"  
+"hu"          "/w/"  
+"sh"          "/ʃ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```  
+
+# Syllable Structure
+
+* The syllables permitted in Arabela follow the order of CV and CCV [@Topintzi2016, p. 84].
+
+
+# Lenition Rules
+
+* Vowels tend to be deleted between homorganic consonants [@Rich1999, p. 14].
+* /t/ often becomes a flap [ɾ] (ibid.).
+* /k/ often spirantizes or becomes voiced [@Rich1963, pp. 194, 195].
+
+# Misc. Rules
+
+* /n/ and /r/ occur in free variation in some instances [@Rich1963, p. 194].
+* /t/, /n/, /ʃ/, /r/, and /k/ geminate allophonically between homorganic consonants [@Rich1963, p. 195].
+* /w/ and /y/ are nasalized following nasals or nasal-vowel sequences [@Rich1963, pp. 196, 197].
+* Vowels are nasalized following nasals and /h/ (most often) [@Rich1963, p. 197].
+
+# References

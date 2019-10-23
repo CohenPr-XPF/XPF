@@ -1,0 +1,21 @@
+# Arabela Rule Set
+# Written by: Emily
+# Last Updated: 2019-10-03
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[aeimnoprstu],,,,
+class,vowels,[aeiou],,,,
+# Individual Letters
+sub,c,k,2,,,
+sub,j,h,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,h,w,2,,u,
+sub,u,,3,h,,"clean-up",
+sub,q,k,2,,u,
+sub,u,,3,q,,"clean-up",
+sub,s,ʃ,3,,h,
+sub,h,,3,s,,"clean-up",
+# Long Vowels
+ipasub,({vowels}) \1,\1 ː,2,,,

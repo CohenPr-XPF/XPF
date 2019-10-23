@@ -11,74 +11,103 @@ Last Updated: 2019-09-23
 
 **Language Family**: Trans-New Guinea / Madang / Croisilles / Mabuso / Gum / Amele
 
+* Amele is spoken on the Madang Province of Papua New Guinea.
+
 # Phonology
 
 ## Consonants
 
-* The Huar dialect includes /r/, which does not exist in any other dialects of Amele. [@AeyRoberts2016, p. 81]
+* The Huar dialect includes /r/, which does not exist in any other dialect of Amele [@AeyRoberts2016, p. 81].
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /b/, /m/, /f/  
-Alveolar: /t/, /d/, /n/, /s/, /l/  
-Palatal: /j/  
-Velar: /k/, /ɡ/  
-Labiovelar: /ɡb/, /w/  
-Glottal: /ʔ/, /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /b/, /ɡb/, /t/, /d/, /k/, /ɡ/, /ʔ/  
-Nasals: /m/, /n/  
-Fricatives: /f/, /s/, /h/  
-Approximants: /w/, /l/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Palatal  Velar  Labiovelar  Glottal
+Stops                       "b"     "t d"     ""       "k ɡ"  "ɡb"        "ʔ"
+Fricatives                  "f"     "s"       ""       ""     ""          "h"
+Nasals                      "m"     "n"       ""       ""     ""          ""
+Approximants                ""      "l"       "j"      ""     "w"         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Labiovelar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /i/, /u/, /e/, /o/, /a/  
+* Amele contains the following diphthongs: /ai/, /au/, /ei/, /eu/, /oi/, /ou/; @AeyRoberts2016 interprets these as sequences of consecutive vowels rather than as complex phonemes. Other sequences of vowels can also occur (including consecutive identical vowels), but only across syllable boundaries [@AeyRoberts2016, pp. 66-68]. (@AeyRoberts1998 also argues for the existence of /ae/ and /ao/ as diphthongs (p. 3), but he seems to have moved away from that analysis by 2016.)
+* Mid vowels sometimes lengthen, but @AeyRoberts2016 finds the length to be a realization of an underlying sequence of identical vowels (p. 75).
 
-Amele contains the following diphthongs: /ai/, /au/, /ei/, /eu/, /oi/, /ou/; @AeyRoberts2016 interprets these as sequences of consecutive vowels rather than as complex phonemes. Other sequences of vowels can also occur (including consecutive identical vowels), but only across syllable boundaries [@AeyRoberts2016, pp. 66-68]. (@AeyRoberts1998 also argues for the existence of /ae/ and /ao/ as diphthongs (p. 3), but he seems to have moved away from that analysis by 2016.)
 
-Mid vowels sometimes lengthen, but @AeyRoberts2016 finds the length to be a realization of an underlying sequence of identical vowels. (p. 75)
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+       Front   Central   Back
+High   "i"     ""        "u"
+Mid    "e"     ""        "o"
+Low    ""      "a"       ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
 
 # Alphabet
 
-The alphabet used is of the modern Amele orthography (developed ca. 1990), as the older orthography (developed in the 1920s) has several ambiguities; the modern orthography is also the one used by Crubadan, making it all the more preferable.
+* The alphabet used is of the modern Amele orthography (developed ca. 1990), as the older orthography (developed in the 1920s) has several ambiguities; the modern orthography is also the one used by Crubadan, making it all the more preferable.
+* Older orthography also uses ⟨p⟩, but because [p] is non-phonemic in Amele, I have excluded ⟨p⟩ from my ruleset.
 
-a - /a/  
-b - /b/  
-c - /ʔ/  
-d - /d/  
-e - /e/  
-f - /f/  
-g - /ɡ/  
-h - /h/  
-i - /i/  
-j - /j/  
-k - /k/  
-l - /l/  
-m - /m/  
-n - /n/  
-o - /o/  
-q - /ɡb/  
-r - /r/ (only used in Huar dialect)  
-s - /s/  
-t - /t/  
-u - /u/  
-w - /w/  
 
-The older orthography also uses <p>, but because [p] is non-phonemic in Amele, I have excluded <p> from my ruleset.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                Comment
+  "a"          "/a/"                   ""
+  "b"          "/b/"                   ""
+  "c"          "/ʔ/"                   ""
+  "d"          "/d/"                   ""
+  "e"          "/e/"                   ""
+  "f"          "/f/"                   ""
+  "g"          "/ɡ/"                   ""
+  "h"          "/h/"                   ""
+  "i"          "/i/"                   ""
+  "j"          "/j/"                   ""
+  "k"          "/k/"                   ""
+  "l"          "/l/"                   ""
+  "m"          "/m/"                   ""
+  "n"          "/n/"                   ""
+  "o"          "/o/"                   ""
+  "q"          "/ɡb/"                  ""
+  "r"          "/r/"       "only used in Huar dialect"  
+  "s"          "/s/"                   ""
+  "t"          "/t/"                   ""
+  "u"          "/u/"                   ""
+  "w"          "/w/"                   ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
-* In some words, /s/ alternates with [h] when adjacent to high vowels. [@AeyRoberts2016, p. 56]
+* In some words, /s/ alternates with [h] when adjacent to high vowels [@AeyRoberts2016, p. 56].
 
 # Misc. Rules
 
-* Word-final non-alveolar stops devoice, if the word is multisyllabic; contrast between /ɡb/ and /b/ also collapses in such position, with both phonemes being realized as [p]. [@AeyRoberts2016, pp. 52-53, 64]
-* /j/ goes to [ʒ] in certain circumstances: word-initially, when surrounded on both sides by /a/, word-finally after /i/, and intervocalically before /i/. [@AeyRoberts2016, p. 57]
-* Word-final /w/ is realized as [ʋ]. [@AeyRoberts2016, p. 64]
-* Consonant clusters can only occur word-medially. [@AeyRoberts2016, p. 65]
-* Phonetically lax /a/ lengthens before voiced stops in monosyllabic words. [@AeyRoberts2016, p. 76]
+* Word-final non-alveolar stops devoice, if the word is multisyllabic; contrast between /ɡb/ and /b/ also collapses in such position, with both phonemes being realized as [p] [@AeyRoberts2016, pp. 52-53, 64].
+* /j/ goes to [ʒ] in certain circumstances: word-initially, when surrounded on both sides by /a/, word-finally after /i/, and intervocalically before /i/ [@AeyRoberts2016, p. 57].
+* Word-final /w/ is realized as [ʋ] [@AeyRoberts2016, p. 64].
+* Consonant clusters can only occur word-medially [@AeyRoberts2016, p. 65].
+* Phonetically lax /a/ lengthens before voiced stops in monosyllabic words [@AeyRoberts2016, p. 76].
 
 # References

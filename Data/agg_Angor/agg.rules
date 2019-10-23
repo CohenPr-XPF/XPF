@@ -1,0 +1,27 @@
+# Angor Rule Set
+# Written by: Emily
+# Last Updated: 2019-10-22
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[abdeikmnopstuw],,,,
+class,pre-nasal-follower,[bdg],,,
+class,pre-nasal-preceder,[mnŋ],,,
+# Individual Letters
+sub,f,ɸ,2,,,
+sub,g,ɡ,2,,,
+sub,h,x,2,,,
+sub,ɨ,ə,2,,,
+sub,ŋ,ŋ,2,,,
+sub,r,ɾ,2,,,
+sub,ü,ɨ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+sub,-,,2,,,
+# Multigraphs
+sub,m,ᵐb,3,,b,
+sub,n,ⁿd,3,,d,
+sub,n,ŋ,3,,g,
+sub,n,ᵑɡ,4,,gg,
+sub,ŋ,ᵑɡ,5,,g,
+sub,{pre-nasal-follower},,5,{pre-nasal-preceder},,"clean-up",
+sub,g,,4,g,,"clean-up",

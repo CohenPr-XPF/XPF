@@ -6,8 +6,10 @@
 | ab            | Abkhaz                    |
 | acf           | Saint Lucian Creole French| lacks lenition                |
 | aey           | Amele                     |
+| agg           | Angor                     |
 | amn           | Amanab                    |
-| apu           | Apurinã                   | under revision                |
+| arl           | Arabela                   |
+| arn           | Mapudungun                |
 | ast           | Asturian                  |
 | ay            | Aymara                    |
 | az            | Azerbaijani               |

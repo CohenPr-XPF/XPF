@@ -11,103 +11,129 @@ Last Updated: 2019-07-05
 
 **Language Family**: Northwest Caucasian / Abkhaz-Adyghe / Abkhaz-Abaza / Abkhaz
 
-Where dialects diverge, my ruleset will prefer Standard Abkhaz.
+* Abkhaz is spoken within Abkhazia, located in Georgia along the Black Sea.
+* Where dialects diverge, my ruleset will prefer Standard Abkhaz.
 
 # Phonology
 
 ## Consonants
 
-* @AbChirikba2003 depicts the alveolar series of consonants as dental. (p. 18)
+* @AbChirikba2003 depicts the alveolar series of consonants as dental (p. 18).
 * @AbChirikba2003 argues for the plain voiceless obstruents as aspirated (p. 19); @AbHewitt1979 observes aspiration as well, but regards it as a non-distinctive part of the phoneme (p. 256).
-* @AbKoryakov2002 (p. 7) and @AbHewitt1979 (p. 258) argue for velar rather than uvular fricatives.
+* @AbKoryakov2002 and @AbHewitt1979 argue for velar rather than uvular fricatives (p. 7; p. 258).
+* The sources have diverged somewhat on what sibilants are present in Abkhaz. @AbCatford1977 lists both the /ʃ ʒ/ and /ɕ ʑ/ series as present in Abkhaz (p. 291); however, the consensus among other sources seems to be that /ɕ ʑ/ has only been preserved in a subset of Abkhaz dialects, and has been lost in Standard Abkhaz. @AbChirikba2003 and @AbHewitt1979 describe the postalveolar sibilants as being produced as retroflex (p. 19; pp. 256, 257); however, this view is not widely attested elsewhere, so I have preferred the more common /ʃ ʒ/ analysis. @AbHewitt1979 also follows Catford in regarding /tɕ dʑ/ as phonemic (p. 256), but nevertheless I have continued to follow the more recent analyses that regard those phones as lost in Standard Abkhaz.
 
-The sources have diverged somewhat on what sibilants are present in Abkhaz. @AbCatford1977 lists both the /ʃ ʒ/ and /ɕ ʑ/ series as present in Abkhaz (p. 291); however, the consensus among other sources seems to be that /ɕ ʑ/ has only been preserved in a subset of Abkhaz dialects, and has been lost in Standard Abkhaz. @AbChirikba2003 (p. 19) and @AbHewitt1979 (pp. 256-257) describe the postalveolar sibilants as being produced as retroflex; however, this view is not widely attested elsewhere, so I have preferred the more common /ʃ ʒ/ analysis. @AbHewitt1979 also follows Catford in regarding /tɕ dʑ/ as phonemic (p. 256), but nevertheless I have continued to follow the more recent analyses that regard those phones as lost in Standard Abkhaz.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-### By place of articulation
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-Labial: /p/, /pʼ/, /b/, /f/, /v/, /m/, /w/  
-Alveolar: /t/, /tʼ/, /tʷ/, /tʷʼ/, /d/, /dʷ/, /ts/, /tsʼ/, /dz/, /s/, /z/, /n/, /r/, /l/  
-Postalveolar: /ʃ/, /ʃʷ/, /ʃʲ/, /ʒ/, /ʒʷ/, /ʒʲ/, /tʃ/, /tʃʼ/, /tʃʲ/, /tʃʲʼ/, /dʒ/, /dʒʲ/  
-Palatal: /j/  
-Velar: /k/, /kʼ/, /kʷ/, /kʷʼ/, /kʲ/, /kʲʼ/, /ɡ/, /ɡʷ/, /ɡʲ/  
-Uvular: /qʼ/, /qʷʼ/, /qʲʼ/, /χ/, /χʷ/, /χʲ/, /ʁ/, /ʁʷ/, /ʁʲ/  
-Pharyngeal: /ʡ/, /ħ/, /ħʷ/  
 
-### By manner of articulation
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial        Alveolar        Postalveolar     Palatal       Velar        Uvular     Pharyngeal
+"Stops (plain)"          "p  b  pʼ"     "t  d  tʼ"           ""             ""       "k  ɡ  kʼ"        "qʼ"        "ʡ"
+"Stops (labialized)"         ""       "tʷ  dʷ  tʷʼ"          ""             ""      "kʷ  ɡʷ  kʷʼ"     "qʷʼ"        ""
+"Stops (palatalized)"        ""            ""                ""             ""      "kʲ  ɡʲ  kʲʼ"     "qʲʼ"        ""
+"Affricates (plain)"         ""       "ts  dz  tsʼ"     "tʃ  dʒ  tʃʼ"       ""           ""             ""         ""
+"Affricates (palatalized)"   ""            ""          "tʃʲ  dʒʲ  tʃʲʼ"     ""           ""             ""         ""
+"Fricatives (plain)"       "f  v"        "s  z"            "ʃ  ʒ"           ""           ""           "χ  ʁ"       "ħ"
+"Fricatives (labialized)"    ""            ""             "ʃʷ  ʒʷ"          ""           ""          "χʷ  ʁʷ"      "ħʷ"
+"Fricatives (palatalized)"   ""            ""             "ʃʲ  ʒʲ"          ""           ""          "χʲ  ʁʲ"      ""
+"Nasals"                    "m"           "n"                ""             ""           ""             ""         ""
+"Trills"                     ""           "r"                ""             ""           ""             ""         ""
+"Approximants"              "w"           "l"                ""             "j"          ""             ""         ""
+'), TRUE)
 
-Stops (pulmonic): /p/, /b/, /t/, /tʷ/, /d/, /dʷ/, /k/, /kʷ/, /kʲ/, /ɡ/, /ɡʷ/, /ɡʲ/, /ʡ/  
-Stops (ejective): /pʼ/, /tʼ/, /tʷʼ/, /kʼ/, /kʷʼ/, /kʲʼ/, /qʼ/, /qʷʼ/, /qʲʼ/  
-Affricates: /ts/, /tsʼ/, /dz/, /tʃ/, /tʃʼ/, /tʃʲ/, /tʃʼʲ/, /dʒ/, /dʒʲ/  
-Fricatives (plain): /f/, /v/, /s/, /z/, /ʃ/, /ʒ/, /χ/, /ʁ/, /ħ/  
-Fricatives (labialized): /ʃʷ/, /ʒʷ/, /χʷ/, /ʁʷ/, /ħʷ/  
-Fricatives (palatalized): /ʃʲ/, /ʒʲ/, /χʲ/, /ʁʲ/  
-Nasals: /m/, /n/  
-Trills: /r/  
-Approximants: /w/, /l/, /j/  
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Pharyngeal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  footnote(general = "Note: From left to right, phonemes that share a cell are voiceless, voiced, and ejective; if a cell only contains two phonemes, they are voiceless and voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /ə/, /a/  
+* Some authors argue for the existence of /aː/, but @AbChirikba2003 and @AbHewitt1979 assert that [aː] is just a realization of the sequence /ħ a/ (p. 20; p. 263).
+* [o e i u] all surface allophonically in certain environments [@AbChirikba2003, p. 21; @AbHewitt1979, pp. 259-260].
+* The Tapanta dialect "marginally preserves" a tonal system from older forms of Abkhaz, but all other dialects - including Standard Abkhaz - have lost it [@AbChirikba1996, p. iii].
 
-Some authors argue for the existence of /aː/, but @AbChirikba2003 (p. 20) and @AbHewitt1979 (p. 263) assert that [aː] is just a realization of the sequence /ħ a/.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-[o e i u] all surface allophonically in certain environments. [@AbChirikba2003, p. 21] [@AbHewitt1979, pp. 259-260]
+consonants <- read.table(textConnection('
+        Central
+  Mid    "ə"
+  Low    "a"
+'), TRUE)
 
-The Tapanta dialect "marginally preserves" a tonal system from older forms of Abkhaz, but all other dialects - including Standard Abkhaz - have lost it. [@AbChirikba1996, p. iii]
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered")%>%
+  column_spec(1, bold = TRUE)
+```
 
 # Alphabet
 
-а - /a/  
-б - /b/  
-в - /v/  
-г - /ɡ/  
-ӷ - /ʁ/  
-д - /d/  
-е - /a/  
-ж - /ʒ/  
-з - /z/  
-ӡ - /dz/  
-и - /j/  
-к - /kʼ/  
-қ - /k/  
-ҟ - /qʼ/  
-л - /l/  
-м - /m/  
-н - /n/  
-о - /a/  
-п - /pʼ/  
-ԥ - /p/  
-р - /r/  
-с - /s/  
-т - /tʼ/  
-ҭ - /t/  
-у - /w/  
-ф - /f/  
-х - /χ/  
-ҳ - /ħ/  
-ц - /ts/  
-ҵ - /tsʼ/  
-ч - /tʃʲ/  
-ҷ - /tʃʲʼ/  
-ҽ - /tʃ/  
-ҿ - /tʃʼ/  
-ш - /ʃ/  
-ы - /ə/  
-ҩ - /ʡ/  
-џ - /dʒ/  
-ь - marks palatalization  
-ә - marks labialization  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+
+Grapheme     Phoneme     Comment   
+"а"           "/a/"        ""
+"б"           "/b/"        ""
+"в"           "/v/"        ""
+"г"           "/ɡ/"        ""
+"ӷ"           "/ʁ/"        ""
+"д"           "/d/"        ""
+"е"           "/a/"        ""
+"ж"           "/ʒ/"        ""
+"з"           "/z/"        ""
+"ӡ"           "/dz/"       ""
+"и"           "/j/"        ""
+"к"           "/kʼ/"       ""
+"қ"           "/k/"        ""
+"ҟ"           "/qʼ/"       ""
+"л"           "/l/"        ""
+"м"           "/m/"        ""
+"н"           "/n/"        ""
+"о"           "/a/"        ""
+"п"           "/pʼ/"       ""
+"ԥ"           "/p/"        ""
+"р"           "/r/"        ""
+"с"           "/s/"        ""
+"т"           "/tʼ/"       ""
+"ҭ"           "/t/"        ""
+"у"           "/w/"        ""
+"ф"           "/f/"        ""
+"х"           "/χ/"        ""
+"ҳ"           "/ħ/"        ""
+"ц"           "/ts/"       ""
+"ҵ"           "/tsʼ/"      ""
+"ч"           "/tʃʲ/"      ""
+"ҷ"           "/tʃʲʼ/"     ""
+"ҽ"           "/tʃ/"       ""
+"ҿ"           "/tʃʼ/"      ""
+"ш"           "/ʃ/"        ""
+"ы"           "/ə/"        ""
+"ҩ"           "/ʡ/"        ""
+"џ"           "/dʒ/"       ""
+"ь"             ""   "marks palatalization"  
+"ә"             ""   "marks labialization"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
-* Aspiration and ejectivization of consonants are only weakly realized. [@AbChirikba2003, p. 19]
-* /qʼ/ debuccalizes to [ʔ] for many speakers. (ibid.)
-* Some speakers spirantize the consonant in the word /apʼa/, yielding [afʼa]. [@AbHewitt1979, p. 257]
-* For some speakers, /ħʷ/ approximantizes to the labiopalatal approximant, [ɥ]. [@AbHewitt1979, p. 258]
+* Aspiration and ejectivization of consonants are only weakly realized [@AbChirikba2003, p. 19].
+* /qʼ/ debuccalizes to [ʔ] for many speakers (ibid.).
+* Some speakers spirantize the consonant in the word /apʼa/, yielding [afʼa] [@AbHewitt1979, p. 257].
+* For some speakers, /ħʷ/ approximantizes to the labiopalatal approximant, [ɥ] [@AbHewitt1979, p. 258].
 
 # Misc. Rules
 
-* Labialized alveolar stops are often realized with full lip closure, causing them to be produced as [db], [tp], [tpʼ]. [@AbChirikba2003, p. 19]
-* The semivowels /w/ and /j/ have vocalic allophones ([u] and [i] respectively). (ibid.)
+* Labialized alveolar stops are often realized with full lip closure, causing them to be produced as [db], [tp], [tpʼ] [@AbChirikba2003, p. 19].
+* The semivowels /w/ and /j/ have vocalic allophones ([u] and [i] respectively) (ibid.).
 
 # References

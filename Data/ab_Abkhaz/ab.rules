@@ -55,6 +55,6 @@ sub,-,,4,,,"a hyphen with no phonetic value appears in some words"
 ipasub,({labial}) ә,\1ʷ,2,,
 ipasub,({palatal}) ь,\1ʲ,2,,
 ipasub,ʼ({supraseg-out}),\1ʼ,1,,,
-
-ipasub,({supraseg}),@,1,,,some combinations aren't attested resulting in duplication of diacritics or certain palatalized and ejectivized phonemes (eg. ɡьә, dzә), thus they shouldn't be transcribed
-ipasub,tʃʷ,@,1,,,combination not attested - no other work-around with the rules
+# Retroactive Clean-up
+ipasub,({supraseg}),@,1,,,"some combinations aren't attested resulting in duplication of diacritics or certain palatalized and ejectivized phonemes (eg. ɡьә, dzә), thus they shouldn't be transcribed out",
+ipasub,tʃʷ,@,1,,,"combination not attested - no other work-around with the rules",

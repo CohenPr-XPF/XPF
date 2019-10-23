@@ -1,0 +1,47 @@
+# Mapudungun Rule Set
+# Written by: Emily
+# Last Updated: 2019-10-01
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[aefiklmnopstuw],,,,
+class,gem,(p|t̪|t|k|m|n̪|n|ɲ|ŋ|tʃ|ʈʂ|f|θ|s|ʃ|ʐ|ɣ|l̪|l|j|ʎ|w),,,,
+# Individual Letters
+sub,d,θ,2,,,
+sub,g,ŋ,2,,,
+sub,ï,ɘ,2,,,
+sub,ḻ,l̪,2,,,
+sub,ṉ,n̪,2,,,
+sub,ñ,ɲ,2,,,
+sub,r,ʐ,2,,,
+sub,ṯ,t̪,2,,,
+sub,ü,ɘ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,tʃ,3,,h,
+sub,h,,3,c,,
+sub,t,ʈʂ,3,,r,
+sub,r,,3,t,,
+sub,s,ʃ,3,,h,
+sub,h,,3,s,,
+sub,n,ŋ,3,,g,
+sub,g,,3,n,,
+sub,l,ʎ,3,,l,
+sub,l,,3,l,,
+# Orthographic Variation
+sub,c,tʃ,2,,,
+sub,x,ʈʂ,2,,,
+sub,t,ʈʂ,3,,x,
+sub,x,,3,t,,
+sub,z,θ,2,,,
+sub,h,n̪,2,,,
+sub,n,n̪,3,,h,
+sub,h,,3,n,,
+sub,q,ɣ,2,,,
+sub,b,l̪,2,,,
+sub,l,l̪,3,,l,
+sub,l,,3,h,,
+sub,j,ʎ,2,,,
+sub,v,ɘ,2,,,
+# Geminates
+ipasub,({gem}) \1\b,\1 ː,2,,,
