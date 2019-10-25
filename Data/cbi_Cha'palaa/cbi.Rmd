@@ -11,87 +11,111 @@ Last Updated: 2019-07-25
 
 **Language Family**: Barbacoan / Cayapa-Colorado / Cha'palaa
 
-Also known as Chachi or Cayapa.
+* Also known as Chachi or Cayapa, Cha'palaa is spoken in norther Ecuador.
 
 # Phonology
 
 ## Consonants
 
-* /f/ exists in free variation with [ɸ]. [@CbiLindskoog1962, p. 36]
+* /f/ exists in free variation with [ɸ] [@CbiLindskoog1962, p. 36].
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /b/, /m/, /f/, /v/, /w/  
-Alveolar: /t/, /tʲ/, /d/, /dʲ/, /ts/, /n/, /s/, /ɾ/, /l/  
-Postalveolar: /tʃ/, /ʃ/  
-Palatal: /ɲ/, /ʎ/, /j/  
-Velar: /k/, /ɡ/, /ŋ/  
-Glottal: /ʔ/, /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /b/, /t/, /tʲ/, /d/, /dʲ/, /k/, /ɡ/, /ʔ/  
-Affricates: /ts/, /tʃ/  
-Nasals: /m/, /n/, /ɲ/, /ŋ/  
-Fricatives: /f/, /v/, /s/, /ʃ/, /h/  
-Flaps: /ɾ/  
-Approximants: /w/, /l/, /ʎ/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Labial   Alveolar  Postalveolar  Palatal   Velar  Glottal
+Stops                         "p b"    "t d"     "tʲ dʲ"       ""        "k ɡ"  "ʔ"
+Affricates                    ""       "ts"      "tʃ"          ""        ""     ""
+Fricatives                    "f v"    "s"       "ʃ"           ""        ""     "h"
+Nasals                        "m"      "n"       ""            "ɲ"       "ŋ"    ""
+Flaps                         ""       "ɾ"       ""            ""        ""     ""
+Approximants                  "w"      "l"       ""            "j ʎ"     ""     ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  footnote(general = "Note: Phonemes to the left of each cell are voiceless and phonemes to the right of each cell are voiced; the exception is the approximant row, where phonemes on the right are lateral.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /i/, /u/, /e/, /a/  
+* Vowel length is contrastive [@CbiFloyd2014, p. 80]. Vowel length is written by doubling the vowel character.
+* @CbiLindskoog1962 argues that vowel clusters do not form diphthongs (pp. 38-39).
 
-Vowel length is contrastive. [@CbiFloyd2014, p. 80]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front   Central   Back
+High   "i"     ""        "u"
+Mid    "e"     ""        ""
+Low    ""      "a"       ""
+'), TRUE)
 
-@CbiLindskoog1962 argues that vowel clusters do not form diphthongs. (pp. 38-39)
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
 
 # Alphabet
 
-a - /a/  
-b - /b/  
-ch - /tʃ/  
-d - /d/  
-  dy - /dʲ/  
-e - /e/  
-f - /f/  
-g - /ɡ/  
-i - /i/  
-j - /h/  
-k - /k/  
-l - /l/  
-ll - /ʎ/  
-m - /m/  
-n - /n/  
-ng - /ŋ/  
-ñ - /ɲ/  
-p - /p/  
-r - /ɾ/  
-s - /s/  
-sh - /ʃ/  
-t - /t/  
-  ty - /tʲ/  
-ts - /ts/  
-u - /u/  
-v - /v/  
-w - /w/  
-y - /j/  
-' - /ʔ/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Vowel length is written by doubling the vowel character.
+alphabet <- read.table(textConnection('
+Grapheme     Phoneme
+"a"           "/a/"  
+"b"           "/b/"    
+"d"          "/d/"    
+"e"          "/e/"  
+"f"          "/f/"  
+"g"          "/ɡ/"  
+"i"          "/i/"  
+"j"          "/h/"  
+"k"          "/k/"  
+"l"          "/l/"    
+"m"          "/m/"  
+"n"          "/n/"   
+"ñ"          "/ɲ/"  
+"p"          "/p/"  
+"r"          "/ɾ/"  
+"s"          "/s/"    
+"t"          "/t/"    
+"u"          "/u/"  
+"v"          "/v/"  
+"w"          "/w/"  
+"y"          "/j/"  
+"\'"          "/ʔ/"  
+**Digraph**   ""
+"ch"         "/tʃ/"
+"dy"         "/dʲ/"
+"ll"         "/ʎ/"
+"ng"         "/ŋ/"
+"sh"         "/ʃ/"
+"ty"         "/tʲ/"  
+"ts"         "/ts/"
+'), TRUE)
 
-# Lenition Rules
-
-* Stops voice post-nasally. [@CbiFloyd2014, p. 79]
-* /h/ sometimes deletes word-medially. [@CbiTapuyo2009, p. xvii]
-
-# Misc. Rules
-
-* /w/ becomes [v] before front vowels. [@CbiFloyd2014, p. 79]
-* /n/ adapts to the place of following bilabials. [@CbiFloyd2014, p. 80]
-* The contrast between alveolar consonants and their palatalized equivalents collapses before /i/. [@CbiLindskoog1962, p. 34]
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 ## Syllable Structure
 
-The syllable structure of Cha'palaa is CV(V)(C). [@CbiFloyd2014, p. 80] [@CbiLindskoog1962, p. 37]
+* The syllable structure of Cha'palaa is CV(V)(C) [@CbiFloyd2014, p. 80; @CbiLindskoog1962, p. 37].
+
+# Lenition Rules
+
+* Stops voice post-nasally [@CbiFloyd2014, p. 79].
+* /h/ sometimes deletes word-medially [@CbiTapuyo2009, p. xvii].
+
+# Misc. Rules
+
+* /w/ becomes [v] before front vowels [@CbiFloyd2014, p. 79].
+* /n/ adapts to the place of following bilabials [@CbiFloyd2014, p. 80].
+* The contrast between alveolar consonants and their palatalized equivalents collapses before /i/ [@CbiLindskoog1962, p. 34].
 
 # References

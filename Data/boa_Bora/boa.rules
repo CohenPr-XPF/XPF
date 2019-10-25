@@ -33,6 +33,7 @@ sub,ú,ɯ ˦,4,,,
 sub,v,β,4,,,
 sub,w,kp,4,,,
 sub,y,j,4,,,
+sub,({passthrough}),\1,0.1,,,
 # Digraphs
 sub,c,tʃʰ,6,,h,"<ch>"
 sub,h,,6,c,,"<ch> cleanup"
@@ -45,4 +46,3 @@ sub,s,,6,{pre-s},,"<ds> and <ts> cleanup"
 sub,ɨ,ɨ ˦,5,,́,"high-tone <ɨ>"
 sub,́,,5,,,"cleanup of the diacritic from high <ɨ>"
 ipasub,({v-output}) ({tone}) \1 \2,\1 \2 ː,2,,,
-sub,({passthrough}),\1,0.1,,,

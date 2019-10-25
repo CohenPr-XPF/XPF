@@ -11,104 +11,131 @@ Last Updated: 2019-06-12
 
 **Language Family**: Turkic / Common Turkic / Oghuz / Western Oghuz / Azerbaijani
 
+* Azerbaijani is spoken in Iran and Azerbaijan, a country located between Eastern Europe and Western Asia.
+
 # Phonology
 
 ## Consonants
 
-Although some sources argue for /c/ and /k/ as distinct phonemes, they do not have overlapping distributions, making it plausible that [c] only manifests as a fronted allophone of /k/. I have included /c/ in my consonant chart below, but do not include it by default in the ruleset.
-
-* Southern dialects only retain /c/ and /k/ in loanwords. [@AzMokari2017, p. 209]
-  * In words where northern dialects retain /c/, southern dialect speakers tend to realize the consonant as /ts/ or /tʃ/. (ibid.)
-* @AzSalimi1976 argues for /ts/ and /dz/ only existing as fronted allophones of their postalveolar counterparts. (p. 72)
-* @AzFraenkel1962 posits /ʔ/ as existing as a non-phonemic "juncture feature" that sometimes marks syllable boundaries or appears in Arabic loans. (p. 451)
+* Although some sources argue for /c/ and /k/ as distinct phonemes, they do not have overlapping distributions, making it plausible that [c] only manifests as a fronted allophone of /k/. I have included /c/ in my consonant chart below, but do not include it by default in the ruleset.
+    - Southern dialects only retain /c/ and /k/ in loanwords [@AzMokari2017, p. 209].
+    - In words where northern dialects retain /c/, southern dialect speakers tend to realize the consonant as /ts/ or /tʃ/ (ibid.).
+* @AzSalimi1976 argues for /ts/ and /dz/ only existing as fronted allophones of their postalveolar counterparts (p. 72).
+* @AzFraenkel1962 posits /ʔ/ as existing as a non-phonemic "juncture feature" that sometimes marks syllable boundaries or appears in Arabic loans (p. 451).
 * /ts/ and /dz/ are likely to be peripheral phonemes, as they are significantly less common than any other phonemes in the Crubadan corpus.
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /b/, /m/, /f/, /v/  
-Alveolar: /t/, /d/, /ts/, /dz/, /n/, /s/, /z/, /ɾ/, /l/  
-Postalveolar: /ʃ/, /ʒ/, /tʃ/, /dʒ/  
-Palatal: /c/, /ɟ/, /j/  
-Velar: /k/, /ɡ/, /x/, /ɣ/  
-Glottal: /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /b/, /t/, /d/, /c/, /ɟ/, /k/, /ɡ/  
-Affricates: /ts/, /dz/, /tʃ/, /dʒ/  
-Nasals: /m/, /n/  
-Fricatives: /f/, /v/, /s/, /z/, /ʃ/, /ʒ/, /x/, /ɣ/, /h/  
-Taps: /ɾ/  
-Approximants: /l/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Labial     Alveolar  Postalveolar  Palatal   Velar     Glottal
+Stops                       "p b"      "t d"     ""            "c ɟ"     "k ɡ"     ""
+Affricates                  ""         "ts dz"   "tʃ dʒ"       ""        ""        ""
+Fricatives                  "f v"      "s z"     "ʃ ʒ"         ""        "x ɣ"     "h"
+Nasals                      "m"        "n"       ""            ""        ""        ""
+Taps                        ""         "ɾ"       ""            ""        ""        ""
+Approximants                ""         "l"       ""            "j"       ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  footnote(general = "Note: Phonemes to the left of each cell are voiceless and phonemes to the right of each cell are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Unrounded: /i/, /e/, /æ/, /ɯ/, /ɑ/  
-Rounded: /y/, /œ/, /u/, /o/  
+* Vowel length is non-contrastive [@AzMokari2017, p. 210].
+    - @AzSalimi1976 argues for the existence of underlying long vowels (pp. 89-91), but he describes them as being rather marginal, so I have opted to prefer Mokari's analysis.
 
-* Vowel length is non-contrastive. [@AzMokari2017, p. 210]
-  * @AzSalimi1976 argues for the existence of underlying long vowels (pp. 89-91), but he describes them as being rather marginal, so I have opted to prefer Mokari's analysis.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front   Back
+High   "i y"   "ɯ u"
+Mid    "e œ"   "o"
+Low    "æ"     "ɑ"
+'), TRUE)
+
+kable(consonants, align = ('c')) %>%
+  kable_styling("bordered") %>%
+  footnote(general = "Note: Phonemes to the left of each cell are unrounded and phonemes to the right of each cell are rounded.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 # Alphabet
 
-a - /ɑ/  
-b - /b/  
-c - /dʒ/  
-ç - /tʃ/  
-d - /d/  
-e - /e/  
-ə - /æ/  
-f - /f/  
-g - /ɟ/  
-ğ - /ɣ/  
-h - /h/  
-x - /x/  
-ı - /ɯ/  
-i - /i/  
-j - /ʒ/  
-k - /c/, /k/ (non-overlapping distribution)  
-q - /ɡ/  
-l - /l/  
-m - /m/  
-n - /n/  
-o - /o/  
-ö - /œ/  
-p - /p/  
-r - /ɾ/  
-s - /s/  
-ş - /ʃ/  
-t - /t/  
-u - /u/  
-ü - /y/  
-v - /v/  
-y - /j/  
-z - /z/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-# Lenition Rules
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme     Comment
+"a"           "/ɑ/"         ""
+"b"           "/b/"         ""
+"c"           "/dʒ/"        ""
+"ç"           "/tʃ/"        ""
+"d"           "/d/"         ""
+"e"           "/e/"         ""
+"ə"           "/æ/"         ""
+"f"           "/f/"         ""
+"g"           "/ɟ/"         ""
+"ğ"           "/ɣ/"         ""
+"h"           "/h/"         ""
+"x"           "/x/"         ""
+"ı"           "/ɯ/"         ""
+"i"           "/i/"         ""
+"j"           "/ʒ/"         ""
+"k"        "/c/; /k/" "non-overlapping distribution"  
+"q"           "/ɡ/"         ""
+"l"           "/l/"         ""
+"m"           "/m/"         ""
+"n"           "/n/"         ""
+"o"           "/o/"         ""
+"ö"           "/œ/"         ""
+"p"           "/p/"         ""
+"r"           "/ɾ/"         ""
+"s"           "/s/"         ""
+"ş"           "/ʃ/"         ""
+"t"           "/t/"         ""
+"u"           "/u/"         ""
+"ü"           "/y/"         ""
+"v"           "/v/"         ""
+"y"           "/j/"         ""
+"z"           "/z/"         ""
+'), TRUE)
 
-* Word-final affricates tend to weaken: the alveolar affricates go to [ʃ], and /tʃ/ debuccalizes to [h]. [@AzMokari2017, p. 209]
-* Stem-final /tʃ/ approximantizes to [j] before vowel-initial suffixes. (ibid.)
-  * Stem-final /x/ voices to [ɣ] in the same circumstances. (ibid.)
-* Velar stops palatalize when adjacent to a front vowel. (ibid.)
-* Vowels undergo vowel harmony based on frontness and rounding. [@AzMokari2017, pp. 210-11]
-* /l/ palatalizes slightly near front vowels, and velarizes slightly near back vowels. [@AzSalimi1976, p. 70]
-* Postvocalic /v/ sometimes approximantizes to [w]. (ibid.)
-  * Voiced dorsal stops similarly approximantize to [w] after round vowels. (ibid.)
-* /ɾ/ sometimes spirantizes initially or before non-low vowels. (ibid.)
-* Word-final /ɡ/ spirantizes, and sometimes also devoices, depending on dialect. [@AzSalimi1976, p. 83]
-* /c/ spirantizes to [ç] in preconsonantal and word-final contexts. [@AzSalimi1976, p. 85]
-* Stops occasionally spirantize intervocalically. [@AzFraenkel1962, pp. 447-448]
-* /n/ sometimes reduces to a nasalization of its preceding vowel, most commonly when word-final or preceding a continuant. [@AzFraenkel1962, p. 449]
-
-# Misc. Rules
-
-* Voiceless stops are realized with aspiration. [@AzMokari2017, p. 209]
-* Stops devoice word-finally [@AzMokari2017, p. 209]; @AzFraenkel1962 argues that stops devoice word-initially as well (pp. 447-448).
-* Word-finally or preconsonantally, /ɾ/ tends to be realized as [ʐ]. [@AzSalimi1976, pp. 70-71]
-* Many speakers realize /ʒ/ as [dʒ]. [@AzFraenkel1962, p. 450]
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 ## Syllable Structure
 
-Azerbaijani has a (C)V(C) syllable structure. [@AzMokari2017, p. 211]
+* Azerbaijani has a (C)V(C) syllable structure [@AzMokari2017, p. 211].
+
+# Lenition Rules
+
+* Word-final affricates tend to weaken: the alveolar affricates go to [ʃ], and /tʃ/ debuccalizes to [h] [@AzMokari2017, p. 209].
+* Stem-final /tʃ/ approximantizes to [j] before vowel-initial suffixes (ibid.).
+  * Stem-final /x/ voices to [ɣ] in the same circumstances (ibid.).
+* Velar stops palatalize when adjacent to a front vowel (ibid.).
+* Vowels undergo vowel harmony based on frontness and rounding [@AzMokari2017, pp. 210-11].
+* /l/ palatalizes slightly near front vowels, and velarizes slightly near back vowels [@AzSalimi1976, p. 70].
+* Postvocalic /v/ sometimes approximantizes to [w] (ibid.).
+  * Voiced dorsal stops similarly approximantize to [w] after round vowels (ibid.).
+* /ɾ/ sometimes spirantizes initially or before non-low vowels (ibid.).
+* Word-final /ɡ/ spirantizes, and sometimes also devoices, depending on dialect [@AzSalimi1976, p. 83].
+* /c/ spirantizes to [ç] in preconsonantal and word-final contexts [@AzSalimi1976, p. 85].
+* Stops occasionally spirantize intervocalically [@AzFraenkel1962, pp. 447-448].
+* /n/ sometimes reduces to a nasalization of its preceding vowel, most commonly when word-final or preceding a continuant [@AzFraenkel1962, p. 449].
+
+# Misc. Rules
+
+* Voiceless stops are realized with aspiration [@AzMokari2017, p. 209].
+* Stops devoice word-finally [@AzMokari2017, p. 209]; @AzFraenkel1962 argues that stops devoice word-initially as well (pp. 447-448).
+* Word-finally or preconsonantally, /ɾ/ tends to be realized as [ʐ] [@AzSalimi1976, pp. 70-71].
+* Many speakers realize /ʒ/ as [dʒ] [@AzFraenkel1962, p. 450].
 
 # References

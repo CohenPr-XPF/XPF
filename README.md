@@ -9,7 +9,6 @@
 | agg           | Angor                     |
 | amn           | Amanab                    |
 | arl           | Arabela                   |
-| arn           | Mapudungun                |
 | ast           | Asturian                  |
 | ay            | Aymara                    |
 | az            | Azerbaijani               |
@@ -26,9 +25,10 @@
 | cbi           | Cha'palaa                 |
 | cbt           | Chayahuita                |
 | cho           | Choctaw                   |                               |
-| cs            | Czech                     | under revision                |
+| cs            | Czech                     |                               |
+| ctu           | Chol                      |
 | cv            | Chuvash                   |
-| dgz           | Daga                      | under revision; lacks lenition|
+| dgz           | Daga                      |
 | djr           | Djambarrpuyngu            |                               |
 | el            | Greek                     | lacks lenition                |
 | emi           | Mussau-Emira              |

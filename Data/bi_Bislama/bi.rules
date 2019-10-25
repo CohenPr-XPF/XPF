@@ -1,11 +1,15 @@
+# Bislama Rule Set
+# Written by: Becky
+# Last Updated: 2019-10-24
 type,sfrom,sto,weight,precede,follow,comment
-class,passthrough,[aeioupbmfvtdnslkgwh],,,,
-
-sub,n,ŋ,2,,g,ng digraph
-sub,g,,2,n,,ng digraph
-
+# Class Rules
+class,passthrough,[aeioupbmfvtdnslkwh],,,,
+# Individual Letters
+sub,g,ɡ,1,,,
 sub,j,tʃ,1,,,
 sub,r,ɾ,1,,,
 sub,y,j,1,,,
-
 sub,({passthrough}),\1,0.1,,,
+# Digraphs
+sub,n,ŋ,2,,g,
+sub,g,,2,n,,"clean-up"

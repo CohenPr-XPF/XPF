@@ -5,7 +5,7 @@ type,sfrom,sto,weight,precede,follow,comment
 # Pre Rules
 pre,(Ď|Ť),(ď|ť),1,,,,
 # Classes
-class,passthrough,[abdfgjklmnoprstuvz],,,,
+class,passthrough,[abdfjklmnoprstuvz],,,,
 class,dipvowel,[aeo],,,,
 # Individual Letters
 sub,á,a ː,2,,,
@@ -15,6 +15,7 @@ sub,ď,ɟ,2,,,
 sub,e,ɛ,2,,,
 sub,é,ɛ ː,2,,,
 sub,ě,ɛ,2,,,
+sub,g,ɡ,2,,,
 sub,h,ɦ,2,,,
 sub,i,ɪ,2,,,
 sub,í,i ː,2,,,
@@ -31,12 +32,13 @@ sub,x,k s,2,,,
 sub,y,ɪ,2,,,
 sub,ý,i ː,2,,,
 sub,ž,ʒ,2,,,
+sub,({passthrough}),\1,1,,,
 # Digraphs
 sub,c,x,3,,h,
-sub,h,,3,c,,
+sub,h,,3,c,,"clean-up"
 sub,a,au̯,3,,u,
 sub,e,eu̯,3,,u,
 sub,o,ou̯,3,,u,
-sub,u,,3,{dipvowel},
-sub,({passthrough}),\1,1,,,
+sub,u,,3,{dipvowel},,"clean-up"
+# Punctuation
 sub,-,,2,,,

@@ -3,7 +3,7 @@
 # Last Updated: 2019-04-30
 type,sfrom,sto,weight,precede,follow,comment
 # Classes
-class,apostrophe,[ꞌ'‘’],,,,
+class,apostrophe,[ꞌ'ˈ‘’],,,,
 class,passthrough,[aimnpst],,,,
 # Individual Letters
 sub,c,k,4,,,
@@ -16,8 +16,8 @@ sub,{apostrophe},ʔ,4,,,
 sub,c,tʃ,6,,h,"ch"
 sub,s,ʃ,6,,h,"sh"
 sub,u,w,6,h,,"hu"
-sub,h,,6,,,"covers all cases of h"
+sub,h,,6,,,"clean-up: covers all cases of h"
 sub,q,k,6,,,"qu"
-sub,u,,6,q,,
+sub,u,,6,q,,"clean-up"
 # Misc. Rules
 sub,({passthrough}),\1,0.1,,,

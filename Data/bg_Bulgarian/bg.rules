@@ -39,3 +39,4 @@ sub,ъ,ə,4,,,
 sub,ь,j,4,,,
 sub,ю,j u,4,,,
 sub,я,j a,4,,,
+sub,-,,4,,,"a hyphen with no phonetic value occurs on occasion"

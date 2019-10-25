@@ -11,70 +11,107 @@ Last Updated: 2019-08-06
 
 **Language Family**: Altaic / Turkic / Bolgar
 
+* Chuvash, also called Bulgar, is spoken in the Chuvashia republic in western Russia.
+
 # Phonology
 
 ## Consonants
 
-* /b/, /d/, /g/, /f/, /z/, /ʒ/, /ts/, and /dʒ/ are preserved only in loanwords (Russian) [@johanson_chuvash_2006, pg. 434]. Therefore, voicing is not phonemic within the Chuvash language.
+* /b/, /d/, /g/, /f/, /z/, /ʒ/, /ts/, and /dʒ/ are preserved only in loanwords (Russian) [@johanson_chuvash_2006, p. 434]. Therefore, voicing is not phonemic within the Chuvash language.
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /v/, /m/            
-Alveodental: /t/, /s/, /n/, /l/, /r/       
-Alveopalatal: /ʃ/, /tʃ/, /ɕ/, /j/     
-Velar: /k/, /χ/      
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stop: /p/, /t/, /k/      
-Fricative: /v/, /s/, /ʃ/, /ɕ/, /χ/    
-Affricate: /tʃ/     
-Nasal: /m/, /n/     
-Liquid: /l/, /r/      
-Glide: /j/     
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar    Alveolo-Palatal  Postalveolar  Palatal   Velar
+Stops                       "p"         "t"           ""               ""         ""       "k"
+Affricates                   ""         ""            ""              "tʃ"        ""       ""  
+Fricatives                  "v"         "s"           "ɕ"             "ʃ"         ""       "χ"
+Nasals                       "m"        "n"           ""               ""         ""       ""
+Trills                       ""         "r"           ""               ""         ""       ""
+Approximants                 ""         "l"           ""               ""         "j"      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Alveolo-Palatal", "Postalveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE)
+```
+
 
 ## Vowels
 
-/a/, /ӑ/, /e/, /ӗ/, /i/, /u/, /ɯ/, /y/
+* There is some debate concerning /ӗ/ and /ӑ/ in terms of what phonemes they actually represent. They are said to be reduced, with /ӑ/ being a back-to-central vowel and /ӗ/ being a front to central vowel [@johanson_chuvash_2006, p. 434]. I have opted for these transcriptions given that @johanson_chuvash_2006 and @kruger_chuvash_1997 did as well.
+* /o/ does not seem to be included in the phonemic inventory; however, it is often mentioned as appearing heavily through Russian loanwords (and in the Crubadan corpus) [@johanson_chuvash_2006, p. 434], thus, I will include it in the ruleset.
 
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front       Back
+High     "i  y"     "ɯ  u"
+Mid      "e  ӗ"       ""
+Low        ""       "a  ӑ"
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: The high front and back vowel are ordered unrounded and rounded. Both the mid front and low back vowels are unrounded.", general_title = "")
+```    
 
 # Alphabet
 
 * Much of the grapheme to phoneme mapping was inferred from @kruger_chuvash_1997.
 
-a - a  
-ӑ - ӑ     
-в - /v/           
-e - /je/ initially; /e/ elsewhere           
-ӗ	- /ӗ/                    
-и - /i/     
-й - /j/        
-к - /k/         
-л - /l/       
-м - /m/         
-н - /n/               
-п - /p/   
-р - /r/       
-с - /s/          
-ҫ - /ɕ/            
-т - /t/          
-у - /u/         
-ӳ - /y/                
-х - /χ/             
-ч - /tʃ/       
-ш - /ʃ/                         
-ы - /ɯ/      
-э - /e/
-ю - /ju/
-я	- /ja/       
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                      Comment
+"a"            "/a/"                          ""
+"ӑ"            "/ӑ/"                          ""
+"в"            "/v/"                          ""
+"e"         "/je/; /e/"      "/je/: word-initially; /e/: elsewhere"           
+"ӗ"	           "/ӗ/"                          ""                           
+"и"            "/i/"                          ""
+"й"            "/j/"                          ""
+"к"            "/k/"                          ""
+"л"            "/l/"                          ""
+"м"            "/m/"                          ""
+"н"            "/n/"                          ""
+"п"            "/p/"                          ""
+"о"             "o"               "appears heavily in loanwords"
+"р"            "/r/"                          ""
+"с"            "/s/"                          ""
+"ҫ"            "/ɕ/"                          ""
+"т"            "/t/"                          ""
+"у"            "/u/"                          ""
+"ӳ"            "/y/"                          ""
+"х"            "/χ/"                          ""
+"ч"            "/tʃ/"                         ""
+"ш"            "/ʃ/"                          ""
+"ы"            "/ɯ/"                          ""
+"э"            "/e/"                          ""
+"ю"            "/ju/"                         ""
+"я"	           "/ja/"                         ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
-* Voiceless consonants are voiced intervocalically, after sonorants, and before vowels [@johanson_chuvash_2006, pg. 435]     
-* Consonants palatalize preceding and following front vowels [@johanson_chuvash_2006, pg. 435].
+* Voiceless consonants are voiced intervocalically, after sonorants, and before vowels [@johanson_chuvash_2006, p. 435]     
+* Consonants palatalize preceding and following front vowels [@johanson_chuvash_2006, p. 435].
 
 # Misc. Rules
 
-* The Chuvash language requires vowel harmony [@johanson_chuvash_2006, pg. 436].    
-* Gemination can occur with any consonant (specification only on native phonemes) [@dobrovolsky_chuvash_1996, pg. 31].    
-* Geminate obstruents are voiceless [@dobrovolsky_chuvash_1996, pg. 31].
+* The Chuvash language requires vowel harmony [@johanson_chuvash_2006, p. 436].    
+* Gemination can occur with any consonant (specification only on native phonemes) [@dobrovolsky_chuvash_1996, p. 31].    
+* Geminate obstruents are voiceless [@dobrovolsky_chuvash_1996, p. 31].
+
+# References

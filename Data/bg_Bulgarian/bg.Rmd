@@ -11,96 +11,110 @@ Last Updated: 2019-04-12
 
 **Language Family**: Indo-European / Balto-Slavic / Slavic / South Slavic / Eastern South Slavic / Bulgarian
 
+* Bulgarian is spoken in Bulgaria, Greece, Serbia, and Turkey.
+
 # Phonology
 
 ## Consonants
 
-All consonants (except for postalveolars) also have palatalized forms in Bulgarian. The palatalization distinctions are frequently held to be phonemic, but due to their relative scarcity (fairly few words with >100 instances in Crubadan) and their limited distribution (the contrast only occurs before non-front vowels, per @BgScatton1983, p. 64), such an analysis would be problematic for this project. Instead, I have opted to follow an alternate analysis that treats the palatalized consonants as sequences of the non-palatalized form and /j/.
+* All consonants (except for postalveolars) also have palatalized forms in Bulgarian. The palatalization distinctions are frequently held to be phonemic, but due to their relative scarcity (fairly few words with >100 instances in Crubadan) and their limited distribution (the contrast only occurs before non-front vowels, per @BgScatton1983, p. 64), such an analysis would be problematic for this project. Instead, I have opted to follow an alternate analysis that treats the palatalized consonants as sequences of the non-palatalized form and /j/.
+* @BgHauge1999 lists the non-palatalized lateral approximant in Bulgarian as /ɫ/, while most other authors prefer /l/; however, Scatton describes the same approximant as "markedly velarized except before front vowels" [@BgScatton1993, p. 190]. The combination of these opinions has made the /ɫ/ analysis more compelling to me.
+* Outside of the aforementioned palatalization sequences, /j/ mostly appears immediately after vowels [@BgScatton1983, p. 65], but can also appear word-initially [@BgScatton1993, p. 191].
 
-@BgHauge1999 lists the non-palatalized lateral approximant in Bulgarian as /ɫ/, while most other authors prefer /l/; however, Scatton describes the same approximant as "markedly velarized except before front vowels" [@BgScatton1993, p. 190]. The combination of these opinions has made the /ɫ/ analysis more compelling to me.
 
-Outside of the aforementioned palatalization sequences, /j/ mostly appears immediately after vowels [@BgScatton1983, p. 65], but can also appear word-initially [@BgScatton1993, p. 191].
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-### By place of articulation
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-**Nonpalatalized**
 
-Labial: /p/, /b/, /m/, /f/, /v/  
-Alveodental: /t/, /d/, /n/, /s/, /z/, /ts/, /r/, /ɫ/  
-Postalveolar: /ʃ/, /ʒ/, /tʃ/, /dʒ/  
-Velar: /k/, /ɡ/, /x/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"      Labial     Alveolar  Postalveolar   Velar
+Stops                         "p b"      "t d"     ""             "k ɡ"
+Affricates                     ""         "ts"      "tʃ dʒ"        ""
+Fricatives                    "f v"      "s z"     "ʃ ʒ"          "x"
+Nasals                         "m"        "n"       ""             ""
+Trills                         ""         "r"       ""             ""
+Approximants                   ""         "ɫ"       ""             ""
+'), TRUE)
 
-### By manner of articulation
-
-**Nonpalatalized**
-
-Stops: /p/, /b/, /t/, /d/, /k/, /ɡ/  
-Nasals: /m/, /n/  
-Fricatives: /f/, /v/, /s/, /z/, /ʃ/, /ʒ/, /x/  
-Affricates: /ts/, /tʃ/, /dʒ/  
-Trills: /r/  
-Approximants: /ɫ/  
-
-Voiceless stops are aspirated in word-initial prevocalic contexts. [@BgKlagstad1958, p. 47, 49]
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  footnote(general = "Note: Phonemes to the left of each cell are voiceless and phonemes to the right of each cell are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Front: /i/, /e/  
-Central: /ə/, /a/  
-Back: /u/, /o/  
+* Klagstad describes many of the listed vowel phonemes as not in fact being the underlying allophones of their phonemes: his analysis sees [ɛ], [ɔ], and [ɑ] as being underlying rather than /e/, /o/, and /a/. He also describes /ə/ as being realized as [ɯ] in "all positions" [@BgKlagstad1958, pp. 44-45].
+* /ə/ is described in a wide variety of ways by different sources, including /ŭ/ [@BgScatton1983] and /ā/ [@BgScatton1993]; I have opted for /ə/, the preferred choice of @BgKlagstad1958 and @BgGroen1988, as a realistic "median" answer.
+* Geminate vowels do not phonemically reduce in Bulgarian [@BgGroen1988, p. 186].
 
-Klagstad describes many of the listed vowel phonemes as not in fact being the underlying allophones of their phonemes: his analysis sees [ɛ], [ɔ], and [ɑ] as being underlying rather than /e/, /o/, and /a/. He also describes /ə/ as being realized as [ɯ] in "all positions." [@BgKlagstad1958, pp. 44-45]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front   Central   Back
+High   "i"     ""        "u"
+Mid    "e"     "ə"       "o"
+Low    ""      "a"       ""
+'), TRUE)
 
-/ə/ is described in a wide variety of ways by different sources, including /ŭ/ [@BgScatton1983] and /ā/ [@BgScatton1993]; I have opted for /ə/, the preferred choice of @BgKlagstad1958 and @BgGroen1988, as a realistic "median" answer.
-
-Geminate vowels do not phonemically reduce in Bulgarian. [@BgGroen1988, p. 186]
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Stress
 
-Stress can occur on any syllable of a word. [@BgScatton1993, p. 193]
-
-Stress is sometimes orthographically marked with an acute accent, but does not seem to carry any phonemically contrastive content. [@BgHauge1999, preface]
-
-Unstressed vowels reduce to one of /i/, /ə/, or /u/, based on their degree of backing. [@BgHauge1999, p. 1]
+* Stress can occur on any syllable of a word [@BgScatton1993, p. 193].
+* Stress is sometimes orthographically marked with an acute accent, but does not seem to carry any phonemically contrastive content [@BgHauge1999, preface].
+* Unstressed vowels reduce to one of /i/, /ə/, or /u/, based on their degree of backing [@BgHauge1999, p. 1].
 
 # Alphabet
 
-Non-palatalized variants of each character are listed as the "default" in this section; for rules on how to mark palatalization, see the following subsection.
+* Non-palatalized variants of each character are listed as the "default" in this section; for rules on how to mark palatalization, see the following subsection.
+    - Palatalized consonants are not represented by specific standalone graphemes; instead, specific characters are used to mark that the preceding consonant should be palatalized [@BgHauge1999, p. 8]. Such examples are detailed below in the chart.
 
-а - /a/  
-б - /b/  
-в - /v/  
-г - /ɡ/  
-д - /d/  
-е - /e/  
-ж - /ʒ/  
-з - /z/  
-и - /i/  
-й - /j/  
-к - /k/  
-л - /ɫ/  
-м - /m/  
-н - /n/  
-о - /o/  
-п - /p/  
-р - /r/  
-с - /s/  
-т - /t/  
-у - /u/  
-ф - /f/  
-х - /x/  
-ц - /ts/  
-ч - /tʃ/  
-ш - /ʃ/  
-щ - /ʃt/  
-ъ - /ə/  
-ь - no phonemic value; marks palatalization of preceding consonant  
-ю - /ju/; marks palatalization of preceding consonant  
-я - /ja/; marks palatalization of preceding consonant  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-## Palatalization Orthography
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                    Comment
+"а"            "/a/"                       ""
+"б"            "/b/"                       ""
+"в"            "/v/"                       ""
+"г"            "/ɡ/"                       ""
+"д"            "/d/"                       ""
+"е"            "/e/"                       ""
+"ж"            "/ʒ/"                       ""
+"з"            "/z/"                       ""
+"и"            "/i/"                       ""
+"й"            "/j/"                       ""
+"к"            "/k/"                       ""
+"л"            "/ɫ/"                       ""
+"м"            "/m/"                       ""
+"н"            "/n/"                       ""
+"о"            "/o/"                       ""
+"п"            "/p/"                       ""
+"р"            "/r/"                       ""
+"с"            "/s/"                       ""
+"т"            "/t/"                       ""
+"у"            "/u/"                       ""
+"ф"            "/f/"                       ""
+"х"            "/x/"                       ""
+"ц"           "/ts/"                       ""
+"ч"           "/tʃ/"                       ""
+"ш"           "/ʃ/"                        ""
+"щ"          "/ʃtʃ/"                       ""
+"ъ"            "/ə/"                       ""
+"ь"             ""         "marks palatalization of preceding consonant"  
+"ю"           "/ju/"       "marks palatalization of preceding consonant"  
+"я"           "/ja/"       "marks palatalization of preceding consonant"
+'), TRUE)
 
-Palatalized consonants are not represented by specific standalone graphemes; instead, specific characters are used to mark that the preceding consonant should be palatalized [@BgHauge1999, p. 8]. Such examples are detailed above.
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```  
 
 # Lenition Rules
 
@@ -117,3 +131,7 @@ Palatalized consonants are not represented by specific standalone graphemes; ins
 * /u/ fronts to [y] after palatalized consonants [@BgKlagstad1958, p. 44]
 * Palatalized consonants followed by /a/ tend to alternate with their non-palatalized counterparts before /e/. [@BgHauge1999, p. 9]
 * Consonants devoice word-finally. [@BgScatton1983, p. 73]
+* Voiceless stops are aspirated in word-initial prevocalic contexts. [@BgKlagstad1958, p. 47, 49]
+
+
+# References

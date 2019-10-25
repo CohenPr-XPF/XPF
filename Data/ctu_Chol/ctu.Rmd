@@ -1,0 +1,143 @@
+---
+title: "Chol"
+author: "Emily Strand"
+bibliography: ctu.bib
+output: html_document
+---
+
+Last updated: 2019-10-15
+
+# Background
+
+**Language family**: Mayan / Cholan-Tzeltalan / Cholan / Chol-Chontal
+
+* Chol is spoken within the Chiapas state located in southern Mexico.
+
+# Phonology
+
+## Consonants
+
+* Chol is heavily influenced by the Spanish language, thus many phonemes not present within the native inventory appear (/g/, /d/, /t/, /n/) [@Alvarez2011, p. 35; @Hopkins2008, p. 89].
+* Although not often recognized in the phonemic inventory, @Hopkins2008 specifically states that unpalatalized /t/ and /n/ have been introduced into the language, where some but not all Chol speakers pronounce them as palatalized (p. 89). ⟨t⟩ and ⟨n⟩ also seem to have been adopted into the Chol orthography, corresponding to such unpalatalized phonemes; however, because they are not often recognized as part of the inventory I will transcribe ⟨t⟩ and ⟨n⟩ as palatalized /tʲ/ and /ɲ/.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Labial    Alveolar    Postalveolar  Palatal    Velar    Glottal
+Stops                      "p  pʼ  b"     ""           ""       "tʲ  tʲʼ"   "k  kʼ"     "ʔ"
+Affricates                    ""       "ts  tsʼ"    "tʃ  tʃʼ"       ""        ""        ""
+Fricatives                    ""          "s"          "ʃ"          ""       "x"        ""
+Nasals                       "m"          ""           ""           "ɲ"       ""        ""
+Trills                        ""          "r"          ""           ""        ""        ""
+Approximants                  "w"         "l"          ""           "j"       ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are plain (voiceless) and those on the right are ejective (voiceless). The labial stops are ordered plain (voiceless), ejective (voiceless), voiced.", general_title = "")
+```
+
+## Vowels
+
+* Vowel length was once contrastive in Chol, but it has since been lost [@Alvarez2011, p. 41].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         "ɨ"          "u"
+Mid       "e"         ""           "o"
+Low       ""          "a"           ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```    
+
+# Alphabet
+
+* Although the Chol alphabet was normalized in 2010 [@Alvarez2011, p. 42], represented by the alphabet below, the Crubadan corpus seems to represent older orthographies (see Orthographic Variations). Since there appears to be no conflation of the phonemes with any of the transcriptions, I will include all in the ruleset.
+* As seen with the orthographic variations, an apostrophe indicates a glottal stop except when following a consonant, indicating an ejective [@Coon2017, p. 2].
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"             "/a/"
+"b"             "/b/"
+"e"             "/e/"
+"i"             "/i/"
+"j"             "/x/"
+"k"             "/k/"
+"k’"            "/kʼ/"
+"l"             "/l/"
+"m"             "/m/"
+"n"             "/ɲ/"
+"ñ"             "/ɲ/"
+"o"             "/o/"
+"p"             "/p/"
+"p’"            "/pʼ/"
+"r"             "/r/"
+"s"             "/s/"
+"t"             "/tʲ/"
+"u"             "/u/"
+"w"             "/w/"
+"x"             "/ʃ/"
+"y"             "/j/"
+"ä"             "/ɨ/"
+"\\-"             "/ʔ/"
+**Digraphs**     ""
+"ch"           "/tʃ/"
+"ch’"         "/tʃʼ/"
+"ts"           "/ts/"
+"ts’"          "/tsʼ/"
+"ty"           "/tʲ/"
+"ty’"         "/tʲʼ/"
+"**Orthographic variations**"  ""
+"c"            "/k/"
+"qu"           "/k/"
+"tz"           "/ts/"
+"tz’"         "/tsʼ/"
+"ü"            "/ɨ/"
+"ʌ"            "/ɨ/"
+"\'"            "/ʔ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+
+# Syllable Structure
+
+* Syllables in Chol consist of the following structures [@Alvarez2011, p. 46], the consonant clusters of which do not consist of geminate consonants [ibid. p. 58]:
+    - CV  
+    - CVC  
+    - CVCC  
+    - CCVC  
+    - CCVCC  
+
+# Lenition Rules
+
+* /b/ and /l/ are often deleted word-finally [@Alvarez2011, p. 40].
+
+# Misc. Rules
+
+* /b/, /l/, /w/, /n/, and /ɲ/ are devoiced word-finally [@Alvarez2011, p. 39].
+* Glottal stops precede vowels in word-initial positions [@Alvarez2011. p. 38].
+* /ɲ/ assimilates in place when followed by a /b/ or /k/ [@Alvarez2011. p. 48].
+* Vowel harmony is present in Chol [@Alvarez2011. p. 50].
+* In some dialects there is free variation between /k/ and /tʃ/, /l/ and /ʔ/, as well as /k/ and /ʃ/ [@Alvarez2011. pp. 50-51].
+* /tʃ/ changes to /ʃ/ preceding /tʲ/ [@Alvarez2011. p. 59].
+* /ʃ/ changes to /x/ preceding palatal consonants [@Alvarez2011. p 60].
+* Epenthetic glides appear intervocalically as vowel clusters are prohibited in Chol [@Alvarez2011. pp. 51-54].
+
+# References

@@ -3,13 +3,14 @@
 # Last Updated: 2019-09-12
 type,sfrom,sto,weight,precede,follow,comment
 # Classes
-class,passthrough,[abdegiklmnoprstuw],,,,
+class,passthrough,[abdeiklmnoprstuw],,,,
 class,apostrophe,[ꞌ'ˈ‘’],,,,
 class,ejective,(b|k|t|tʃ|ts),,,,
 class,vowel,[aeiou],,,
 # Individual Letters
 sub,b,ɓ,2,,{apostrophe},
-sub,{apostrophe},,2,b,,
+sub,{apostrophe},,2,b,,"clean-up",
+sub,g,ɡ,2,,,
 sub,j,h,2,,,
 sub,x,ʃ,2,,,
 sub,y,j,2,,,
@@ -17,22 +18,21 @@ sub,{apostrophe},ʔ,1,,,
 sub,({passthrough}),\1,2,,,
 # Digraphs
 sub,c,tʃ,2,,h,
-sub,h,,2,c,,
+sub,h,,2,c,,"clean-up",
 sub,t,ts,3,,z,
-sub,z,,2,t,,
+sub,z,,2,t,,"clean-up",
 # Ejectives
 ipasub,({ejective}) ʔ,\1ʼ,1,,,
 # Orthographic Variation
 sub,c,k,2,,,
 sub,q,k,2,,u,
-sub,u,,3,q,,
+sub,u,,3,q,,"clean-up",
 sub,{apostrophe},k ʔ,3,q,u,
-sub,q,,2,,{apostrophe},
+sub,q,,2,,{apostrophe},"clean-up",
 # Non-long Vowels
 sub,á,a,2,,,
 sub,é,e,2,,,
 sub,í,i,2,,,
 sub,ó,o,2,,,
 sub,ú,u,2,,,
-# Postvocalic <h>
-sub,h,,1,{vowel},,
+sub,h,,1,{vowel},,"postvocalic <h> also indicates length - for purposes of this project, it will be transcribed out",

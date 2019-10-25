@@ -1,7 +1,7 @@
 ---
 title: "Chʼortiʼ"
 author: "Emily Strand"
-bib: caa.bib
+bibliography: caa.bib
 output: html_document
 ---
 
@@ -11,85 +11,113 @@ Last updated: 09-12-2019
 
 **Language family**: Mayan / Cholan-Tzeltalan / Cholan / Chorti
 
+* Chʼortiʼ is spoken in eastern Guatemala, specifically within the Chiquimul and Zacapa departments and along the border with Honduras.
+
 # Phonology
 
 ## Consonants
 
-* Although /g/ and /w/ were once considered allophones in Chʼortiʼ and still occur in free variation in some environments (eg. preceding /o/), they are classified as distinct phonemes [@hull_dictionary_2016, pg. 8].
-* There is some ambiguity around the phonemes /h/ and /x/. Sources indicate either as being represented by ⟨j⟩, but I have opted to follow @hull_dictionary_2016 and @dugan_grammar_2013 in using /h/ (pg. 7; pg. 18).
-* /b/, /d/, and /g/ are said to appear mainly in Spanish loanwords [@dugan_grammar_2013, pg. 18]; however, I have opted to include them, just as @hull_dictionary_2016 does (pg. 7).
+* Although /ɡ/ and /w/ were once considered allophones in Chʼortiʼ and still occur in free variation in some environments (eg. preceding /o/), they are classified as distinct phonemes [@hull2016, p. 8].
+* There is some ambiguity around the phonemes /h/ and /x/. Sources indicate either as being represented by ⟨j⟩, but I have opted to follow @hull2016 and @dugan2013 in using /h/ (p. 7; p. 18).
+* /b/, /d/, and /ɡ/ are said to appear mainly in Spanish loanwords [@dugan2013, p. 18]; however, I have opted to include them, just as @hull2016 does (p. 7).
 
-### By place of articulation
 
-Bilabial: /p/, /b/, /ɓ/, /m/  
-Alveolar: /t/, /tʼ/, /d/, /s/, /ts/, /tsʼ/, /n/, /r/, /l/  
-Post-alveolar: /ʃ/, /tʃ/, /tʃʼ/, /j/  
-Velar: /k/, /kʼ/, /g/, /w/  
-Glottal: /ʔ/, /h/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-### By manner of articulation
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-Stop: /p/, /b/, /ɓ/, /t/, /tʼ/, /d/, /k/, /kʼ/, /g/, /ʔ/  
-Fricative: /s/, /ʃ/, /h/  
-Affricate: /ts/, /tsʼ/, /tʃ/, /tʃʼ/  
-Nasal: /m/, /n/  
-Trill: /r/  
-Approximant: /l/, /j/, /w/  
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Bilabial   Alveolar  Postalveolar   Palatal   Velar      Glottal
+Stops                       "p  b  ɓ"  "t  tʼ d"       ""          ""    "k  kʼ  ɡ"      "ʔ"
+Affricates                      ""      "ts  tsʼ"   "tʃ  tʃʼ"       ""        ""          ""  
+Fricatives                      ""        "s"         "ʃ"          ""        ""          "h"
+Nasals                         "m"        "n"         ""           ""        ""          ""
+Trills                          ""        "r"         ""           ""        ""          ""
+Approximants                    ""        "l"         ""           "j"       "w"         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  footnote(general = "Note: The bilabial stops are ordered voiceless, voiced, implosive. The alveolar and velar stops are ordered voiceless, ejective, voiced. The alveolar and postalveolar affricates are ordered voiceless, ejective.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```  
 
 ## Vowels
 
-* Vowel length is not necessarily contrastive in Chʼortiʼ. Although long vowels can arise in the environment where a glottal stop follows, it's not obligatory [@marhenke_typescript_2019, pg. 8]. In fact, the glottal stop in such positions is pronounced lenis, often followed by rearticulation of the vowel (ibid.). Therefore, I will be treating all vowels (⟨a'⟩, ⟨e'⟩, ⟨i'⟩, ⟨o'⟩, ⟨u'⟩) as the vowel followed by a glottal stop.
-* Vowel length is sometimes indicated by an accent mark over the vowel or by a postvocalic ⟨h⟩ [@Fought2012, pg. 45]. However, given that vowel length is not contrastive, such accented vowels will be transcribed as short vowels. In addition, the postvocalic ⟨h⟩ is purely used to separate elements, thus it has no phonemic realization (ibid.).  
-* Diphthongs are said to be present in Chʼortiʼ [@marhenke_typescript_2019, pg. 10], which are always written with a vowel and a glide [@dugan_grammar_2013, pg. 28]. @dugan_grammar_2013 expresses the fact that they are largely uncommon in the language (pg. 18); so, given this and the fact that there isn't a wide consensus on the inventory, I won't include them in the analysis.
+* Vowel length is not necessarily contrastive in Chʼortiʼ. Although long vowels can arise in the environment where a glottal stop follows, it's not obligatory [@marhenke2019, p. 8]. In fact, the glottal stop in such positions is pronounced lenis, often followed by rearticulation of the vowel (ibid.). Therefore, I will be treating all vowels (⟨a'⟩, ⟨e'⟩, ⟨i'⟩, ⟨o'⟩, ⟨u'⟩) as the vowel followed by a glottal stop.
+* Vowel length is sometimes indicated by an accent mark over the vowel or by a postvocalic ⟨h⟩ [@Fought2012, p. 45]. However, given that vowel length is not contrastive, such accented vowels will be transcribed as short vowels. In addition, the postvocalic ⟨h⟩ is purely used to separate elements, thus it has no phonemic realization (ibid.).  
+* Diphthongs are said to be present in Chʼortiʼ [@marhenke2019, p. 10], which are always written with a vowel and a glide [@dugan2013, p. 28]. @dugan2013 expresses the fact that they are largely uncommon in the language (p. 18); so, given this and the fact that there isn't a wide consensus on the inventory, I won't include them in the analysis.
 
-Vowels: /i/, /e/, /a/, /o/, /u/
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front   Central   Back
+High    "i"       ""      "u"
+Mid     "e"       ""      "o"
+Low     ""        "a"     ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
 
 # Alphabet
 
-a - /a/  
-b - /b/  
-b' - /ɓ/   
-d - /d/    
-e - /e/  
-g - /g/  
-i - /i/  
-j - /h/  
-k -  /k/  
-k' - /kʼ/   
-l - /l/  
-m - /m/  
-n - /n/  
-o - /o/  
-p - /p/  
-r - /r/  
-s - /s/  
-t - /t/  
-t' - /tʼ/  
-u - /u/  
-w - /w/  
-x - /ʃ/   
-y - /j/  
-ʼ - /ʔ/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-## Digraphs
+alphabet <- read.table(textConnection('
+Grapheme     Phoneme                        Comment
+"a"           "/a/"                           ""
+"b"           "/b/"                           ""
+"b\'"          "/ɓ/"                           ""
+"d"           "/d/"                           ""
+"e"           "/e/"                           ""
+"g"           "/ɡ/"                           ""
+"i"           "/i/"                           ""
+"j"           "/h/"                           ""
+"k"           "/k/"                           ""
+"k\'"          "/kʼ/"                          ""
+"l"           "/l/"                           ""
+"m"           "/m/"                           ""
+"n"           "/n/"                           ""
+"o"           "/o/"                           ""
+"p"           "/p/"                           ""
+"r"           "/r/"                           ""
+"s"           "/s/"                           ""
+"t"           "/t/"                           ""
+"t\'"          "/tʼ/"                          ""
+"u"           "/u/"                           ""
+"w"           "/w/"                           ""
+"x"           "/ʃ/"                           ""
+"y"           "/j/"                           ""
+"\'"           "/ʔ/"                           ""
+**Digraph**   ""                             ""
+"ch"          "/tʃ/"                          ""
+"ch\'"        "/tʃʼ/"                          ""
+"tz"         "/ts/"                           ""
+"tz\'"        "/tsʼ/"                          ""
+"**Orthographic Variations**"  ""                ""
+"c"          "/k/"              "realized as /s/ in Spanish loanwords"
+"c\'"         "/kʼ/"                           ""
+"qu"         "/k/"                            ""
+"q\'u"        "/kʼ/"                           ""
+'), TRUE)
 
-ch - /tʃ/   
-chʼ - /tʃʼ/    
-tz - /ts/    
-tzʼ - /tsʼ/
-
-## Orthographic Variation
-
-c - /k/ (realized as /s/ in Spanish loanwords)
-c' - /kʼ/
-qu - /k/
-q'u - /kʼ/   
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
-* /h/ is often deleted word-initially [@hull_dictionary_2016, pg. 8].
-* Glottal stops are often unpronounced within the first syllable and word-finally [@hull_dictionary_2016, pg. 8-9].
+* /h/ is often deleted word-initially [@hull2016, p. 8].
+* Glottal stops are often unpronounced within the first syllable and word-finally [@hull2016, pp. 8-9].
 
-# Misc Rules
+# Misc. Rules
 
-* /l/ and /r/ often appear in free variation [@hull_dictionary_2016, pg. 7].
+* /l/ and /r/ often appear in free variation [@hull2016, p. 7].
+
+# References

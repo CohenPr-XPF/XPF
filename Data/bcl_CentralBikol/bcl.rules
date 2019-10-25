@@ -16,6 +16,7 @@ sub,r,ɾ,4,,,
 sub,w,ʋ,4,,,
 sub,y,j,4,,,
 sub,{punctuation},ʔ,4,,,
+sub,({passthrough}),\1,0.1,,,
 # Letters in Loanwords
 sub,f,p,4,,,
 sub,v,b,4,,,
@@ -23,18 +24,17 @@ sub,z,s,4,,,
 # Digraphs
 sub,a,au,6,,w,"aw"
 sub,i,iu,6,,w,"iw"
-sub,w,,6,{w-preceder},,"w-final diphthongs"
+sub,w,,6,{w-preceder},,"w-final diphthongs clean-up",
 sub,a,ai,6,,y,"ay"
 sub,o,ui,6,,y,"oy"
 sub,u,ui,6,,y,"uy"
-sub,y,,6,{y-preceder},,"y-final diphthongs"
+sub,y,,6,{y-preceder},,"y-final diphthongs clean-up",
 sub,n,ŋ,6,,g,
-sub,g,,6,n,,
-# Non-Diphthongs
+sub,g,,6,n,,"clean-up",
+# Non-Diphthongs (sequences of three vowels realized independently)
 ipasub,au ({vowel}),a u \1,3,,,
 ipasub,iu ({vowel}),i u \1,3,,,
 ipasub,ai ({vowel}),a i \1,3,,,
 ipasub,ui ({vowel}),u i \1,3,,,
 # Misc. Rules
-ipasub,({vowel}) ({vowel}),\1 ʔ \2,2,,,
-sub,({passthrough}),\1,0.1,,,
+ipasub,({vowel}) ({vowel}),\1 ʔ \2,2,,,"intervocalic glottal stop",

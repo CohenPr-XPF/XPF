@@ -11,82 +11,111 @@ Last Updated: 2019-06-17
 
 **Language Family**: Austronesian / Malayo-Polynesian / Greater Central Philippine / Central Philippine / Bikol / Coastal Bikol / Central Bikol
 
+* Central Bikol, or Bikol, is spoken throughout the Bikol provinces within the Philippines.
+
 # Phonology
 
 ## Consonants
 
-* Loans from Spanish and English have introduced /f v z ʃ ʒ ɲ ʎ tʃ dʒ/ to Bicol, although not all speakers use those sounds. [@BclMattes2014, p. 8]
+* Loans from Spanish and English have introduced /f v z ʃ ʒ ɲ ʎ tʃ dʒ/ to Bikol, although not all speakers use those sounds [@BclMattes2014, p. 8].
 
-### By place of articulation
+```{r echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
 
-Labial: /p/, /b/, /m/, /ʋ/  
-Alveolar: /t/, /d/, /n/, /s/, /ɾ/, /l/  
-Palatal: /j/  
-Velar: /k/, /ɡ/, /ŋ/  
-Glottal: /ʔ/, /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /b/, /t/, /d/, /k/, /ɡ/, /ʔ/  
-Nasals: /m/, /n/, /ŋ/  
-Fricatives: /s/, /h/  
-Flaps: /ɾ/  
-Approximants: /ʋ/, /l/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar   Palatal    Velar    Glottal
+Stops                      "p  b"    "t  d"       ""      "k  g"     "ʔ"
+Nasals                      "m"       "n"        ""        "ŋ"       ""
+Fricatives                   ""       "s"        ""        ""        "h"
+Flaps                        ""       "ɾ"        ""        ""        ""
+Approximants                "ʋ"       "l"        "j"       ""        "" '), header = TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "") %>%
+  add_header_above(c("", "Place of Articulation" = 5))
+
+```
 
 ## Vowels
 
-Vowels: /i/, /u/, /a/  
-Diphthongs: /iu/, /ui/, /ai/, /au/  
+* Although the orthography includes <e> and <o>, [e] and [o] only exist as allophones of /i/ and /u/ respectively [@BclMattes2014, pg. 8].
 
-Although the orthography includes <e> and <o>, [e] and [o] only exist as allophones of /i/ and /u/ respectively. [@BclMattes2014, p. 8]
+```{r echo = FALSE}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""          "u"
+Mid       ""          ""          ""
+Low       ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+diphthongs <- read.table(textConnection('
+        Diphthongs   
+"/iu/,  /ui/,  /ai/,  /au/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Alphabet
 
-a - /a/  
-b - /b/  
-d - /d/  
-e - /i/  
-g - /ɡ/  
-h - /h/  
-i - /i/  
-k - /k/  
-l - /l/  
-m - /m/  
-n - /n/  
-o - /u/  
-p - /p/  
-r - /ɾ/  
-s - /s/  
-t - /t/  
-u - /u/  
-w - /ʋ/  
-y - /j/  
+```{r echo = FALSE}
 
-## Digraphs
+alphabet <- read.table(textConnection('
+Grapheme  Phoneme    
+  "a"      "/a/"       
+  "b"      "/b/"       
+  "d"      "/d/"       
+  "e"      "/i/"       
+  "g"      "/ɡ/"       
+  "h"      "/h/"       
+  "i"      "/i/"        
+  "k"      "/k/"       
+  "l"      "/l/"        
+  "m"      "/m/"        
+  "n"      "/n/"       
+  "o"      "/u/"        
+  "p"      "/p/"       
+  "r"      "/ɾ/"        
+  "s"      "/s/"       
+  "t"      "/t/"        
+  "u"      "/u/"       
+  "w"      "/ʋ/"        
+  "y"      "/j/"
+  "\' ; -" "/ʔ/"
+  **Digraph** ""        
+  "ng"     "/ŋ/"
+  "aw"     "/au/"
+  "ay"     "/ai/"
+  "iw"     "/iu/"
+  "oy"     "/ui/"
+  "uy"     "/ui/"'), header = TRUE)
 
-aw - /au/  
-ay - /ai/  
-iw - /iu/  
-ng - /ŋ/  
-oy - /ui/  
-uy - /ui/  
+knitr::kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+# Syllable Structure
 
-## Orthographic Notes
-
-* /ʔ/ is typically represented by an apostrophe or hyphen. [@BclMattes2014, p. 11]
-* Glottal stops are always inserted between orthographically adjacent vowels. [@BclMattes2014, p. 12]
+* Bicol syllable structure is CV(C), where V can be either a single vowel or a diphthong [@BclMattes2014, p. 10].
 
 # Lenition Rules
 
-* Prefix-final /ŋ/ tends to assimilate, to varying degrees, to the first consonant of the stem. [@BclMattes2014, p. 9]
+* Prefix-final /ŋ/ tends to assimilate, to varying degrees, to the first consonant of the stem [@BclMattes2014, p. 9].
 
 # Misc. Rules
 
-* Epenthesis of [h] occurs between stem-final and suffix-initial vowels. [@BclMattes2014, p. 9]
-* /u/ is pronounced [o] in the final syllable of a word. [@BclMintzD1971, p. 17]
-
-## Syllable Structure
-
-Bicol syllable structure is CV(C), where V can be either a single vowel or a diphthong. [@BclMattes2014, p. 10]. In the rules, where three vowels occur in succession, rather than staying consistent with the syllable structure and transcribing the intervocalic vowel as a glide /j/ or /w/, which is not a phoneme of the language, all three vowels are transcribed as they would have been otherwise.  
+* Epenthesis of [h] occurs between stem-final and suffix-initial vowels [@BclMattes2014, p. 9].
+* /u/ is pronounced [o] in the final syllable of a word [@BclMintzD1971, p. 17].
+* Glottal stops are always inserted between orthographically adjacent vowels [@BclMattes2014, p. 12].
 
 # References

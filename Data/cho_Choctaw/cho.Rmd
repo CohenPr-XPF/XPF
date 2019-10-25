@@ -11,137 +11,145 @@ Last Updated: 2019-04-22
 
 **Language Family**: Muskogean / Western Muskogean / Choctaw
 
+* Choctaw is a Native American languages spoken in the southeastern United States (Louisiana, Mississippi, Oklahoma, Tennessee).
+
 # Phonology
 
 ## Consonants
 
 * @ChoUlrich1986 argues for /ʂ/ instead of /ʃ/ (p. 7).
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /b/, /m/, /f/, /w/  
-Alveolar: /t/, /n/, /s/, /l/, /ɬ/  
-Postalveolar: /tʃ/, /ʃ/  
-Palatal: /j/  
-Velar: /k/  
-Glottal: /ʔ/, /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /b/, /t/, /k/, /ʔ/  
-Nasals: /m/, /n/  
-Fricatives: /f/, /s/, /ʃ/, /h/, /ɬ/  
-Affricates: /tʃ/  
-Approximants: /w/, /j/, /l/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Labial   Alveolar  Postalveolar  Palatal   Velar  Glottal
+Stops                         "p b"    "t"       ""            ""        "k"    "ʔ"
+Affricates                    ""       ""        "tʃ"          ""        ""     ""
+Fricatives                    "f"      "s ɬ"     "ʃ"           ""        ""     "h"
+Nasals                        "m"      "n"       ""            ""        ""     ""
+Approximants                  "w"      "l"       ""            "j"       ""     ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  footnote(general = "Note: Phonemes to the right of a cell are voiced (in the stop row) or lateral (in the fricative row).", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Front: /i/, /iː/, /ĩ/  
-Back: /o/, /oː/, /õ/  
-Low: /a/, /aː/, /ã/  
+* Length is not contrastive in nasal vowels, but they are most commonly realized as long [@ChoUlrich1986, p. 8]. Long vowels are indicated by repeated graphemes.
+* Nasal vowels might have originated as allophonic in /VN/ clusters [@ChoBroadwell2005, p. 17]; @ChoNicklas1975 seems to bolster this view (pp. 237-8). Between this and the relatively rare usage of their unique characters, I have decided to treat the nasal vowels as allophonic and exclude them from the ruleset.
+* In short closed syllables, the vowels tend to be produced more laxly, being realized closer to [ɪ], [ʌ~ə], and [ʊ] [@ChoUlrich1986, p. 8; @ChoBroadwell2005, p. 17].
 
-Length is not contrastive in nasal vowels, but they are most commonly realized as long.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+             Front     Central   Back
+High       "i iː ĩ"     ""        ""
+Mid          ""         ""     "o oː õ"
+Low          ""       "a aː ã"    ""
+'), TRUE)
 
-Nasal vowels might have originated as allophonic in /VN/ clusters [@ChoBroadwell2005, p. 17]; @ChoNicklas1975 seems to bolster this view (pp. 237-8). Between this and the relatively rare usage of their unique characters, I have decided to treat the nasal vowels as allophonic and exclude them from the ruleset.
-
-In short closed syllables, the vowels tend to be produced more laxly, being realized closer to [ɪ], [ʌ~ə], and [ʊ]. [@ChoUlrich1986, p. 8] [@ChoBroadwell2005, p. 17]
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: The vowels in each cell are ordered short, long, nasal.", general_title = "")
+```
 
 ## Tone
 
-A pitch accent exists in Choctaw, but there are virtually no minimal pairs that differ wholly on tone, so I currently intend to proceed with the language without marking tones [@ChoBroadwell2005, p. 17].
-
-Tones are sometimes attested orthographically on nonfinal syllables [@ChoBroadwell2005, p. 6, 17], but this seems to be an academic notation that is not commonly used by actual speakers.
+* A pitch accent exists in Choctaw, but there are virtually no minimal pairs that differ wholly on tone, so I currently intend to proceed with the language without marking tones [@ChoBroadwell2005, p. 17].
+* Tones are sometimes attested orthographically on nonfinal syllables [@ChoBroadwell2005, pp. 6, 17], but this seems to be an academic notation that is not commonly used by actual speakers.
+* Pitch accent, when marked, is marked with an acute accent [@ChoBroadwell2005, p. 6].
 
 # Alphabet
 
-The alphabet I am using is the Modified Traditional orthography (sometimes also called the modern linguistic variant), which is used by most contemporary linguists [@ChoBroadwell2005, p. 6] as well as by Crubadan. The ruleset will also support the Mississippi Choctaw orthography, which is also popularly used today, but it will not support the Traditional orthography since the Traditional orthography does not distinguish vowel length [@ChoBroadwell2005, p. 4].
+* The alphabet I am using is the Modified Traditional orthography (sometimes also called the modern linguistic variant), which is used by most contemporary linguists [@ChoBroadwell2005, p. 6] as well as by Crubadan. The ruleset will also support the Mississippi Choctaw orthography, which is also popularly used today, but it will not support the Traditional orthography since the Traditional orthography does not distinguish vowel length [@ChoBroadwell2005, p. 4].
+* All consonants (except /ʔ/) can occur as geminates, in which case they are just written by doubling their character [@ChoUlrich1986, p. 8]. This does not seem to be contrastive, so my ruleset does not incorporate it.
+* <'> seems to be mostly attested in academic sources rather than used by ordinary speakers, but I have included it in the ruleset so that it can be incorporated if necessary.
+* Within the Mississippi orthography, nasalized vowels are marked with hooks: <a̧, i̧, o̧>.
+* <r> appears periodically in the Crubadan corpus but does not appear to correspond to any actual Choctaw phonemes.
+* When /l/ is followed by /h/, the cluster is written as <l.h> to distinguish from /ɬ/[@ChoBroadwell2005, p. 16]. This sequence is exceedingly rare, though, with sources disagreeing on whether it natively occurs at all; therefore I have not included it in the ruleset.
 
-a - /a/  
-a̲ - /ã/  
-b - /b/  
-f - /f/  
-h - /h/  
-i - /i/  
-i̲ - /ĩ/  
-k - /k/  
-l - /l/  
-m - /m/  
-n - /n/  
-o - /o/  
-o̲ - /õ/  
-p - /p/  
-s - /s/  
-t - /t/  
-w - /w/  
-y - /j/  
-' - /ʔ/ (rare)  
 
-<'> seems to be mostly attested in academic sources rather than used by ordinary speakers, but I have included it in the ruleset so that it can be incorporated if necessary.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-## Digraphs
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme       Comment
+"a"            "/a/"          ""
+"a̲"            "/ã/"          ""
+"b"            "/b/"          ""
+"f"            "/f/"          ""
+"h"            "/h/"          ""
+"i"            "/i/"          ""
+"i̲"            "/ĩ/"          ""
+"k"            "/k/"          ""
+"l"            "/l/"          ""
+"m"            "/m/"          ""
+"n"            "/n/"          ""
+"o"            "/o/"          ""
+"o̲"            "/õ/"          ""
+"p"            "/p/"          ""
+"s"            "/s/"          ""
+"t"            "/t/"          ""
+"w"            "/w/"          ""
+"y"            "/j/"          ""
+"\'"            "/ʔ/"        "rare"  
+**Digraph**     ""           ""
+"ch"           "/tʃ/"         ""
+"lh"           "/ɬ/"          ""
+"sh"           "/ʃ/"          ""
+"**Mississippi orthography**" "" "Exceptions to the Modified Traditional"
+"č"           "/tʃ/"          ""
+"ł"           "/ɬ/"           ""
+"š"           "/ʃ/"           ""
+"**Other supported symbols**" "" ""
+"c"           "/k/"           ""
+"e"           "/i/"           ""
+"u"           "/o/"           ""
+"v"           "/a/"           ""
+'), TRUE)
 
-aa - /aː/  
-ch - /tʃ/  
-ii - /iː/  
-lh - /ɬ/  
-oo - /oː/  
-sh - /ʃ/  
-
-All consonants (except /ʔ/) can occur as geminates, in which case they are just written by doubling their character [@ChoUlrich1986, p. 8]. This does not seem to be contrastive, so my ruleset does not incorporate it.
-
-## Mississippi orthography
-
-The same as Modified Traditional, except as follows:
-
-č - /tʃ/  
-ł - /ɬ/  
-š - /ʃ/  
-
-Nasalized vowels are marked with hooks in this orthography: <a̧, i̧, o̧>.
-
-## Other supported symbols
-
-c - /k/  
-e - /i/  
-u - /o/  
-v - /a/  
-
-<r> appears periodically in the Crubadan corpus but does not appear to correspond to any actual Choctaw phonemes.
-
-## Notes
-
-When /l/ is followed by /h/, the cluster is written as <l.h> to distinguish from /ɬ/[@ChoBroadwell2005, p. 16]. This sequence is exceedingly rare, though, with sources disagreeing on whether it natively occurs at all; therefore I have not included it in the ruleset.
-
-Pitch accent, when marked, is marked with an acute accent. [@ChoBroadwell2005, p. 6]
-
-# Lenition Rules
-
-* For some speakers, /k/ spirantizes to [ɣ]. [@ChoBroadwell2005, p. 15]
-* /h/ sometimes assimilates to [ç] when preceding /tʃ/. [@ChoBroadwell2005, p. 16]
-* Along morpheme boundaries, vowels delete if followed by another vowel. [@ChoBroadwell2005, p. 26]
-* Long vowels shorten when followed by /hC/ or /lC/. [@ChoNicklas1975, p. 242]
-* When followed by a "stem consonant" (an obstruent?), nasal clusters reduce to the final sound in the cluster. [@ChoNicklas1975, p. 242]
-* /j/ deletes before /l/; /w/ does likewise if preceded by a high back vowel. [@ChoNicklas1975, p. 243]
-* /ɬ/ debuccalizes to [h] when followed by a fricative or affricate. [@ChoNicklas1975, p. 243]
-
-## /l/ assimilations
-
-* Full assimilation to preceding labial consonants, except /p/. [@ChoNicklas1975, p. 243]
-* Full assimilation to preceding /ɬ/ or following /n/. [@ChoNicklas1975, p. 243]
-* Spirantization to [ɬ] before a voiceless consonant. [@ChoNicklas1975, p. 243]
-
-# Misc. Rules
-
-* Some younger speakers produce /ɬ/ as [θ]. [@ChoBroadwell2005, p. 16]
-* When /k/ or /h/ is followed by a voiced consonant, an epenthetic vowel (closest to [ə] in realization) is inserted between the two sounds. [@ChoBroadwell2005, p. 16]
-* /ʔ/ does not appear word-initially. [@ChoBroadwell2005, p. 19]
-* The following consonants cannot be word-final: /b ɬ w j tʃ/ [@ChoBroadwell2005, p. 19]
-* Some speakers render words with a /CVCVCV/ form as /CVCVːCV/. [@ChoBroadwell2005, p. 24]
-* [ʔ] is inserted at the end of vowel-final words. [@ChoUlrich1986, pp. 14-15]
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 ## Syllable Structure
 
-Light syllables: (C)V  
-Heavy syllables: (C)VV, (C)V[+nasal], (C)VC  
-Superheavy syllables: (C)VVC, (C)V[+nasal]C  
-[@ChoUlrich1986, p. 12]
+* Syllables in Choctaw fall under three different categories [@ChoUlrich1986, p. 12]:
+    - Light syllables: (C)V  
+    - Heavy syllables: (C)VV, (C)V[+nasal], (C)VC  
+    - Superheavy syllables: (C)VVC, (C)V[+nasal]C  
+
+# Lenition Rules
+
+* For some speakers, /k/ spirantizes to [ɣ] [@ChoBroadwell2005, p. 15].
+* /h/ sometimes assimilates to [ç] when preceding /tʃ/ [@ChoBroadwell2005, p. 16].
+* Along morpheme boundaries, vowels delete if followed by another vowel [@ChoBroadwell2005, p. 26].
+* Long vowels shorten when followed by /hC/ or /lC/ [@ChoNicklas1975, p. 242].
+* When followed by a "stem consonant" (an obstruent?), nasal clusters reduce to the final sound in the cluster [@ChoNicklas1975, p. 242].
+* /j/ deletes before /l/; /w/ does likewise if preceded by a high back vowel [@ChoNicklas1975, p. 243].
+* /ɬ/ debuccalizes to [h] when followed by a fricative or affricate [@ChoNicklas1975, p. 243].
+
+## /l/ assimilations
+
+* Full assimilation to preceding labial consonants, except /p/ [@ChoNicklas1975, p. 243].
+* Full assimilation to preceding /ɬ/ or following /n/ [@ChoNicklas1975, p. 243].
+* Spirantization to [ɬ] before a voiceless consonant [@ChoNicklas1975, p. 243].
+
+# Misc. Rules
+
+* Some younger speakers produce /ɬ/ as [θ] [@ChoBroadwell2005, p. 16].
+* When /k/ or /h/ is followed by a voiced consonant, an epenthetic vowel (closest to [ə] in realization) is inserted between the two sounds  [@ChoBroadwell2005, p. 16].
+* /ʔ/ does not appear word-initially [@ChoBroadwell2005, p. 19].
+* The following consonants cannot be word-final: /b ɬ w j tʃ/ [@ChoBroadwell2005, p. 19].
+* Some speakers render words with a /CVCVCV/ form as /CVCVːCV/ [@ChoBroadwell2005, p. 24].
+* [ʔ] is inserted at the end of vowel-final words [@ChoUlrich1986, pp. 14-15].
+
+# References

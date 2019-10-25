@@ -11,103 +11,140 @@ Last updated: 2019-08-29
 
 **Language family**: Indo-European / Slavic / West / Czech-Slovak
 
+* Speakers of Czech reside in a multitude of places included, but not limited to, the Czech Republic, Bosnia, Croatia, Slovenia, and Serbia.
+
 # Phonology
 
 ## Consonants
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /b/, /m/, /f/, /v/  
-Alveolar: /t/, /d/, /n/, /s/, /z/, /ts/, /r/, /r̝/, /l/  
-Post-Alveolar: /ʃ/, /ʒ/, /tʃ/  
-Palatal: /j/, /ɲ/, /c/, /ɟ/   
-Velar: /k/, /g/, /x/  
-Glottal: /ɦ/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /b/, /t/, /d/, /c/, /ɟ/, /k/, /g/  
-Nasals: /m/, /n/, /ɲ/  
-Fricatives: /f/, /v/, /s/, /z/, /ʃ/, /ʒ/, /x/, /ɦ/  
-Affricatives: /ts/, /tʃ/  
-Liquids: /r/, /r̝/, /l/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar  Postalveolar  Palatal     Velar    Glottal
+Stops                     "p  b"     "t  d"        ""        "c  ɟ"     "k  ɡ"       ""
+Affricates                   ""        "ts"       "tʃ"         ""         ""         ""
+Fricatives                 "f  v"    "s  z"      "ʃ  ʒ"        ""         "x"        "ɦ"
+Nasals                      "m"        "n"         ""          "ɲ"       ""         ""
+Trills                      ""        "r  r̝"       ""          ""         ""         ""  
+Approximants                ""         "l"         ""          "j"        ""         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Both alveolar trills are voiced, but the phoneme on the right is pronounced with frication.", general_title = "")
+```
 
 ## Vowels
 
-* Vowel length is contrastive in Czech. Long vowels are indicated by an acute accent (´). An overring (˚) over /u/ also indicates lengthening [@harkins_modern_1980, pg. 7].  
-* /eu̯/ and /au̯/ were introduced into the Czech language through loanwords; however, now days they are included in the vowel inventory [@bican_phonotactics_2011, pg. 21; @simackova_czech_2012, pg. 23].  
+* Vowel length is contrastive in Czech. Although each vowel has a long counterpart phonemically identical in terms of place, the long counterpart of /ɪ/ is /iː/. Long vowels are indicated by an acute accent (´). An overring (˚) over /u/ also indicates lengthening [@harkins_modern_1980, p. 7].  
+* /eu̯/ and /au̯/ were introduced into the Czech language through loanwords; however, now days they are included in the vowel inventory [@bican_phonotactics_2011, p. 21; @simackova_czech_2012, p. 23].
 
-Short: /ɪ/, /ɛ/, /a/, /o/, /u/  
-Long: /iː/, /ɛː/, /aː/, /oː/, /uː/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Dipthongs: /eu̯/, /au̯/, /ou̯/  
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High     "ɪ"          ""           "u"         
+Mid      "ɛ"          ""           "o"
+Low      ""           "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+diphthongs <- read.table(textConnection('
+Diphthongs   
+"/eu̯/, /au̯/, /ou̯/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered") %>%
+  row_spec(0, bold = TRUE)
+```    
 
 # Alphabet
 
-* Notice that ⟨Ď⟩ and ⟨Ť⟩ are the upper case forms of ⟨ď⟩ and ⟨ť⟩	respectively.  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-A	a	- /a/  
-Á	á	- /aː/  
-B	b	- /b/  
-C	c	- /ts/  
-Č	č	- /tʃ/  
-D	d	- /d/  
-Ď	ď	- /ɟ/  
-E	e	- /ɛ/  
-É	é	- /ɛː/  
-Ě	ě	- /ɛ/  
-F	f	- /f/  
-G	g	- /g/  
-H	h	- /ɦ/  
-Ch ch	- /x/  
-I	i	- /ɪ/  
-Í	í	- /iː/  
-J	j	- /j/  
-K	k	- /k/  
-L	l	- /l/  
-M	m	- /m/  
-N	n	- /n/  
-Ň	ň	- /ɲ/  
-O	o	- /o/  
-Ó	ó	- /oː/ (only used in loanwords)  
-P	p	- /p/  
-Q	q	- /kv/ (only used in loanwords)  
-R	r	- /r/  
-Ř	ř	- /r̝/  
-S	s	- /s/  
-Š š	- /ʃ/  
-T	t	- /t/  
-Ť ť	- /c/  
-U	u	- /u/  
-Ú	ú	- /uː/  
-Ů	ů	- /uː/  
-V	v	- /v/ (only used in loanwords)  
-W	w	- /v/ (only used in loanwords)  
-X	x	- /ks/  
-Y	y	- /ɪ/  
-Ý	ý	- /iː/  
-Z	z	- /z/  
-Ž ž - /ʒ/  
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme          Comment
+"a"	           "/a/"             ""
+"á"	           "/aː/"            ""
+"b"	           "/b/"             ""
+"c"	          "/ts/"             ""
+"č"	          "/tʃ/"             ""
+"d"	           "/d/"             ""
+"ď"	           "/ɟ/"   "the uppercase form is ⟨Ď⟩"
+"e"	           "/ɛ/"             ""
+"é"	           "/ɛː/"            ""
+"ě"          	 "/ɛ/"             ""
+"f"	           "/f/"             ""
+"g"	           "/ɡ/"             ""
+"h"	           "/ɦ/"             ""
+"i"	           "/ɪ/"             ""
+"í"	           "/iː/"            ""
+"j"	           "/j/"             ""
+"k"	           "/k/"             ""
+"l"	           "/l/"             ""
+"m"	           "/m/"             ""
+"n"	           "/n/"             ""
+"ň"	           "/ɲ/"             ""
+"o"	           "/o/"             ""
+"ó"	           "/oː/"   "only used in loanwords"  
+"p"	           "/p/"             ""
+"q"	           "/kv/"   "only used in loanwords"  
+"r"	           "/r/"             ""
+"ř"	           "/r̝/"             ""
+"s"	           "/s/"             ""
+"š"	           "/ʃ/"             ""
+"t"	           "/t/"             ""
+"ť"	           "/c/"    "the uppercase form is ⟨Ť⟩"
+"u"	           "/u/"             ""
+"ú"	           "/uː/"            ""
+"ů"	           "/uː/"            ""
+"v"	           "/v/"     "only used in loanwords"  
+"w"	           "/v/"     "only used in loanwords"  
+"x"	           "/ks/"            ""
+"y"	           "/ɪ/"             ""
+"ý"	           "/iː/"            ""
+"z"         	 "/z/"             ""
+"ž"            "/ʒ/"             ""
+**Digraphs**    ""              ""
+"ch"	         "/x/"             ""
+"au"          "/au̯/"             ""
+"eu"          "/eu̯/"             ""
+"ou"          "/ou̯/"             ""
+'), TRUE)
 
-## Dipthongs
-
-au - /au̯/  
-eu - /eu̯/  
-ou - /ou̯/  
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Syllable Structure
 
-* Czech prefers empty codas, but it's not obligatory in the language [@harkins_modern_1980, pg. 9].  
+* Czech prefers empty codas, but it's not obligatory in the language [@harkins_modern_1980, p. 9].  
 
 # Lenition Rules
 
-* Voiced word-final consonants generally neutralize [@harkins_modern_1980, pg. 10].  
-* /j/ may delete word-initially if preceding a consonant [@harkins_modern_1980, pg. 14].  
-* Voiceless consonants become voiced if followed by voiced consonants [@harkins_modern_1980, pg. 10].  
-* /ɦ/ appeared due to the lenition of /g/, which is common within the Slavic languages [@sussex_slavic_2006, pg. 143].  
+* Voiced word-final consonants generally neutralize [@harkins_modern_1980, p. 10].  
+* /j/ may delete word-initially if preceding a consonant [@harkins_modern_1980, p. 14].  
+* Voiceless consonants become voiced if followed by voiced consonants [@harkins_modern_1980, p. 10].  
+* /ɦ/ appeared due to the lenition of /ɡ/, which is common within the Slavic languages [@sussex_slavic_2006, p. 143].  
 
 # Misc Rules
 
-* Glottal epenthesis occurs preceding a vowel in word-initial positions [@harkins_modern_1980, pg. 13].  
-* Repetition of consonants is typically avoided in Czech [@harkins_modern_1980, pg. 9].  
-* The voiceless plosives are often aspirated, but it's not contrastive to their non-aspirated counterparts [@harkins_modern_1980, pg. 5].  
+* Glottal epenthesis occurs preceding a vowel in word-initial positions [@harkins_modern_1980, p. 13].  
+* Repetition of consonants is typically avoided in Czech [@harkins_modern_1980, p. 9].  
+* The voiceless plosives are often aspirated, but it's not contrastive to their non-aspirated counterparts [@harkins_modern_1980, p. 5].
+
+# References  

@@ -4,40 +4,118 @@ author: "Justin Bai"
 bibliography: dgz.bib
 output: html_document
 ---
+
+Last updated: 2019-12-16
+
 # Background
+
 **Language family**: Trans–New Guinea / Dagan
 
-# Alphabet
-## Vowels
-* ⟨a⟩ = /a/
-* ⟨e⟩ = /e/
-* ⟨i⟩ = /i/
-* ⟨o⟩ = /o/
-* ⟨u⟩ = /u/
-## Consonants
-* ⟨b⟩ = /b/
-* ⟨d⟩ = /d/
-* ⟨g⟩ = /g/
-* ⟨k⟩ = /k/
-* ⟨m⟩ = /m/
-* ⟨n⟩ = /n/
-* ⟨p⟩ = /p/
-* ⟨r⟩ = /r/
-* ⟨s⟩ = /t/
-* ⟨t⟩ = /t/
-* ⟨v⟩ = /w/
-* ⟨w⟩ = /w/
-* ⟨y⟩ = /j/
+* Daga is spoken in Papua New Guinea, specifically in the Central, Milne Bay, and Oro province.
 
 # Phonology
-## Vowels
-* @murane1974daga shows ⟨a⟩ as /a/ whereas @sil2011daga shows /ɑ/. The rules
-will represent ⟨a⟩ as /a/.
 
 ## Consonants
-* /t/ is [s] before /i/ and /e/. The rules represent ⟨s⟩ as /t/.
-* /w/ is [v] before /i/ and /e/. The rules represent ⟨v⟩ as /w/.
-* Free variation in the representation of ⟨r⟩, which can either be [r] or [l]. The rules represent it as /r/.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Biabial    Alveolar    Palatal     Velar
+Stops                       "p  b"     "t  d"       ""        "k  ɡ"
+Nasals                       "m"        "n"         ""         ""
+Trills                       ""         "r"         ""         ""
+Approximants                 "w"        ""          "j"        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* Like many Trans-New Guinea languages, Daga includes a large amount of diphthongs [@sil2011daga, pp. 2-3].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low       ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ei/, /ai/, /ae/, /ao/, /au/, /oi/, /oe/, /oa/, /ou/, /ui/, /ue/, /ua/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Alphabet
+
+* There is some debate as to how ⟨a⟩ is realized: @Murane1974 transcribes it as /a/ whereas @sil2011daga uses /ɑ/ (p. 5; p. 1). I have opted to use /a/ in the ruleset.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"             "/a/"
+"b"             "/b/"
+"d"             "/d/"
+"e"             "/e/"
+"g"             "/ɡ/"
+"i"             "/i/"
+"k"             "/k/"
+"m"             "/m/"
+"n"             "/n/"
+"o"             "/o/"
+"p"             "/p/"
+"r"             "/r/"
+"s"             "/t/"
+"t"             "/t/"
+"u"             "/u/"
+"v"             "/w/"
+"w"             "/w/"
+"y"             "/j/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Daga include the following structures [@sil2011daga, p. 3]:
+    - V
+    - VV
+    - VC
+    - CV
+    - CVV
+    - CVC
+    - CVVC
 
 # Lenition
-No information available.
+
+* /t/ spirantizes to [s] and [v] preceding front vowels [@sil2011daga, p. 3].
+
+
+# Misc Rules
+
+* There is free variation between /r/ and [l] [@sil2011daga, p. 3].
+
+# References

@@ -11,86 +11,117 @@ Last updated: 2019-08-28
 
 **Language family**: Indo-European / Italic / Romance / Western / West Ibero-Romance / Asturo-Leonese
 
+* Asturian is spoken in north-west Spain.
+
 # Phonology
 
 ## Consonants
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Bilabial: /p/, /b/, /m/  
-Labio-dental: /f/  
-Dental: /t/, /d/, /θ/  
-Alveolar: /n/, /r/, /ɾ/, /s/, /l/  
-Post-alveolar: /ʃ/  
-Palatal: /tʃ/, /ɲ/, /ʎ/, /ʝ/  
-Velar: /k/, /g/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /b/, /t/, /d/, /k/, /g/  
-Affricates: /tʃ/  
-Nasals: /m/, /n/, /ɲ/  
-Trills: /r/  
-Tap: /ɾ/  
-Fricative: /f/, /θ/, /s/, /ʃ/, /ʝ/  
-Lateral Approximant: /l/, /ʎ/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Dental   Alveolar    Palatal     Velar   
+Stops                      "p  b"     "t̪  d̪"     ""          ""       "k  ɡ"
+Affricates                   ""         ""       ""         "tʃ"        ""
+Fricatives                  "f"        "θ"       "s"        "ʃ"         ""
+Nasals                      "m"        ""        "n"        "ɲ"         ""
+Trills                      ""         ""        "r"        ""          ""
+Taps                        ""         ""        "ɾ"        ""          ""
+Approximants                ""         ""        "l"      "j  ʎ"        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Both palatal approximants are voiced, but the one on the right is lateral.", general_title = "")
+```
+
 
 ## Vowels
 
-* /i/ and /u/ become glides [j] and [w] respectively, when unstressed, forming dipthongs and triphthongs with adjoining vowels [@muniz-cachon_asturian_2018, pg. 6].
+* /i/ and /u/ become glides [j] and [w] respectively, when unstressed, forming dipthongs and triphthongs with adjoining vowels [@muniz-cachon_asturian_2018, p. 6].
 
-Front: /i/, /e/  
-Back: /u/, /o/, /a/    
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```    
 
 # Alphabet
 
-* In some dialects the digraphs ⟨ḷḷ⟩, ⟨ḥ⟩, ⟨ts⟩, ⟨yy⟩ appear, corresponding to a variety of different phonemes [@academia_de_la_llingua_asturiana_gramatica_2001, pg. 15].  
-* ⟨j⟩, ⟨k⟩, and ⟨w⟩ appear in loanwords [@academia_de_la_llingua_asturiana_gramatica_2001, pg. 15].   
+* In some dialects the digraphs ⟨ḷḷ⟩, ⟨ḥ⟩, ⟨ts⟩, ⟨yy⟩ appear, corresponding to a variety of different phonemes [@academia_de_la_llingua_asturiana_gramatica_2001, p. 15].  
+* ⟨j⟩, ⟨k⟩, and ⟨w⟩ appear in loanwords [@academia_de_la_llingua_asturiana_gramatica_2001, p. 15].   
 
-a - /a/  
-b - /b/  
-c - /k/ (preceding back vowels); /θ/ (preceding front vowels)  
-  ch - /tʃ/  
-d - /d/  
-e - /e/  
-f - /f/  
-g - /g/  
-  gu - /g/ (preceding front vowels)  
-h - ∅  
-i - /i/  
-l - /l/  
-  ll - /ʎ/  
-m - /m/  
-n - /n/  
-ñ - /ɲ/  
-o - /o/  
-p - /p/  
-qu - /k/ (preceding front vowels)
-r - /r/ or /ɾ/  
-  rr - /r/  
-s - /s/  
-t - /t/  
-u - /u/  
-  ü - /u/  
-v - /b/  
-x - /ʃ/  
-y - /ʝ/  
-z - /θ/  
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                              Comment
+"a"            "/a/"                                 ""
+"b"            "/b/"                                 ""
+"c"          "/k/; /θ/"    "/k/: preceding back vowels; /θ/: preceding front vowels"    
+"d"            "/d̪/"                                 ""
+"e"            "/e/"                                 ""
+"f"            "/f/"                                 ""
+"g"            "/ɡ/"                                 ""
+"h"            "∅"                                   ""
+"i"            "/i/"                                 ""
+"l"            "/l/"                                 ""
+"m"            "/m/"                                 ""
+"n"            "/n/"                                 ""
+"ñ"            "/ɲ/"                                 ""
+"o"            "/o/"                                 ""
+"p"            "/p/"                                 ""
+"r"          "/r/; /ɾ/"                      "/r/: word-initially"    
+"s"            "/s/"                                 ""
+"t"            "/t̪/"                                 ""
+"u"            "/u/"                                 ""
+"ü"            "/u/"                                 ""
+"v"            "/b/"                                 ""
+"x"            "/ʃ/"                                 ""
+"y"            "/j/"                                 ""
+"z"            "/θ/"                                 ""
+**Digraph**    ""                                   ""
+"ch"           "/tʃ/"                                ""                          
+"gu"           "/ɡ/"                     "preceding front vowels"
+"ll"           "/ʎ/"                                 ""
+"qu"           "/k/"                     "preceding front vowels"
+"rr"           "/r/"                                 ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Stress
 
-* Primary stress is indicated by an accented vowel [@academia_de_la_llingua_asturiana_gramatica_2001, pg. 18].  
+* Primary stress is indicated by an accented vowel [@academia_de_la_llingua_asturiana_gramatica_2001, p. 18].  
 
 # Lenition Rules
 
-* Fricatives /θ/, /s/, /ʃ/ and tend to become voiced in coda positions [@academia_de_la_llingua_asturiana_gramatica_2001, pg. 39-40].  
-* /d/ spirantizes intervocalically and followed by /r/ [@academia_de_la_llingua_asturiana_gramatica_2001, pg. 38].  
-* /b/, /d/, /g/ become approximates word-medially, following obstruents [@muniz-cachon_asturian_2018, pg. 3].    
-* In addition to approximating, /g/ often spirantizes to /ɣ/ [@muiz-cachon_asturian_2018, pg. 3].  
-
+* Fricatives /θ/, /s/, /ʃ/ and tend to become voiced in coda positions [@academia_de_la_llingua_asturiana_gramatica_2001, pp. 39-40].  
+* /d/ spirantizes intervocalically and followed by /r/ [@academia_de_la_llingua_asturiana_gramatica_2001, p. 38].  
+* /b/, /d/, /ɡ/ become approximates word-medially, following obstruents [@muniz-cachon_asturian_2018, p. 3].    
+* In addition to approximating, /ɡ/ often spirantizes to /ɣ/ (ibid.).  
 
 # Misc Rules
 
-* An apostrophe indicates a sound is missing - synonymous with a contraction [@academia_de_la_llingua_asturiana_gramatica_2001, pg. 18].  
-* Dashes are used to separate sounds that would otherwise be altered due to specified digraphs (retention of pronouns) [@academia_de_la_llingua_asturiana_gramatica_2001, pg. 18].  
-* /r/ and /ɾ/ are contrastive word - medially. Otherwise, /r/ occurs word initially and /ɾ/ occurs word finally [@muniz-cachon_asturian_2018, pg. 3].  
+* An apostrophe indicates a sound is missing - synonymous with a contraction [@academia_de_la_llingua_asturiana_gramatica_2001, p. 18].  
+* Dashes are used to separate sounds that would otherwise be altered due to specified digraphs (retention of pronouns) [@academia_de_la_llingua_asturiana_gramatica_2001, p. 18].  
+* /r/ and /ɾ/ are contrastive word - medially. Otherwise, /r/ occurs word initially and /ɾ/ occurs word finally [@muniz-cachon_asturian_2018, p. 3].  
+
+# References

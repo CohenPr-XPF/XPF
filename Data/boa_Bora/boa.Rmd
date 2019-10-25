@@ -11,6 +11,8 @@ Last Updated: 2019-07-02
 
 **Language Family**: Witotoan / Boran / Bora
 
+* Bora is spoken in five villages within the Loreto Region of Peru.
+
 # Phonology
 
 ## Consonants
@@ -19,80 +21,104 @@ Last Updated: 2019-07-02
 * Different authors have interpreted the flap differently: opinions have ranged from /r/ to /ɾ/ to /ɽ/ [@BoaRoe2014, p. 9]. I have opted to prefer /ɾ/ in my ruleset.
 * Consonants followed by /j/ palatalize, and the /j/ deletes. @BoaThiesen2012 does not make a firm decision on whether these palatalized consonants are contrastive (p. 33); @BoaRoe2014 argues against it (pp. 8-9), and I follow her lead in my ruleset.
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Bilabial: /p/, /pʰ/, /m/, /β/  
-Alveolar: /t/, /tʰ/, /ts/, /tsʰ/, /n/, /ɾ/  
-Postalveolar: /tʃ/, /tʃʰ/  
-Palatal: /j/  
-Velar: /k/, /kʰ/, /kp/, /x/  
-Glottal: /ʔ/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /pʰ/, /t/, /tʰ/, /k/, /kʰ/, /kp/, /ʔ/  
-Affricates: /ts/, /tsʰ/, /tʃ/, /tʃʰ/  
-Nasals: /m/, /n/  
-Fricatives: /β/, /x/  
-Flaps: /ɾ/  
-Semivowels: /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Bilabial   Alveolar  Postalveolar  Palatal   Velar      Glottal
+Stops                        "p pʰ"     "t tʰ"    ""            ""        "k kʰ kp"  "ʔ"
+Affricates                   ""         "ts tsʰ"  "tʃ tʃʰ"      ""        ""         ""
+Fricatives                   "β"        ""        ""            ""        "x"        ""
+Nasals                       "m"        "n"       ""            "ɲ"        ""         ""
+Flaps                        ""         "ɾ"       ""            ""        ""         ""
+Approximants                 ""         ""        ""            "j"       ""         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are unaspirated and those on the right are aspirated; the third phoneme in the velar stop cell is a voiceless labiovelar stop.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /i/, /ɨ/, /ɯ/, /ɛ/, /o/, /a/  
+* Bora has two contrastive tones, high and low [@BoaThiesen2012, p. 27].
+  - High tone is marked with an acute accent on the vowel; low tone is unmarked [@BoaThiesen2012, p. 27].
+* Vowel length is contrastive in Bora. Long vowels are written by repeating the vowel character [@BoaThiesen2012, p. 31].
 
-Bora has two contrastive tones, high and low. [@BoaThiesen2012, p. 27]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front   Central   Back
+High   "i"     "ɨ"       "ɯ"
+Mid    "ɛ"     ""        "o"
+Low    ""      "a"       ""
+'), TRUE)
 
-Vowel length is contrastive in Bora.
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
 
 # Alphabet
 
-a - /a/  
-b - /p/  
-c - /kʰ/  
-ch - /tʃʰ/  
-d - /t/  
-ds - /ts/  
-e - /ɛ/  
-g - /k/  
-h - /ʔ/  
-i - /i/  
-ɨ - /ɨ/  
-j - /x/  
-k - /kʰ/  
-ll - /tʃ/  
-m - /m/  
-n - /n/  
-ñ - /ɲ/  
-o - /o/  
-p - /pʰ/  
-r - /ɾ/  
-t - /tʰ/  
-ts - /tsʰ/  
-u - /ɯ/  
-v - /β/  
-w - /kp/  
-y - /j/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-* High tone is marked with an acute accent on the vowel; low tone is unmarked. [@BoaThiesen2012, p. 27]
-* Long vowels are written by repeating the vowel character. (ibid.)
+alphabet <- read.table(textConnection('
+Grapheme     Phoneme
+"a"           "/a/"  
+"b"           "/p/"  
+"c"           "/kʰ/"  
+"d"           "/t/"    
+"e"           "/ɛ/"  
+"g"           "/k/"  
+"h"           "/ʔ/"  
+"i"           "/i/"  
+"ɨ"           "/ɨ/"  
+"j"           "/x/"  
+"k"           "/kʰ/"  
+"m"           "/m/"  
+"n"           "/n/"  
+"ñ"           "/ɲ/"  
+"o"           "/o/"  
+"p"           "/pʰ/"  
+"r"           "/ɾ/"  
+"t"           "/tʰ/"    
+"u"           "/ɯ/"  
+"v"           "/β/"  
+"w"           "/kp/"  
+"y"           "/j/"
+**Digraph**   ""
+"ch"         "/tʃʰ/"
+"ds"          "/ts/"
+"ll"          "/tʃ/"
+"ts"         "/tsʰ/"
+'), TRUE)
 
-# Lenition Rules
-
-* Postconsonantal /j/ tends to delete, and instead just palatalizes the previous consonant. [@BoaThiesen2012, p. 27]
-* In syllable codas, /x/ is simply produced as a preaspiration of the following consonant (written by Thiesen as [ˣ]). [@BoaThiesen2012, p. 40]
-* Syllable-final /ʔ/ is produced as simply a glottalization of the vowel (written as [ˀ]). [@BoaThiesen2012, p. 28]
-* /kp/ becomes [kʷ] in fast speech, particularly among younger speakers. [@BoaRoe2014, p. 9]
-
-# Misc. Rules
-
-* /i/ lowers in /x/-final syllables, and centralizes to [ɨ] when /ɨ/ is present in the following syllable. [@BoaThiesen2012, p. 30]
-* /ɛ/ lowers to [æ] before syllables that contain /i/. [@BoaThiesen2012, p. 31]
-* Epenthesis of [ʔ] occurs at the beginning of vowel-initial phrases, and the end of vowel-final phrases. [@BoaThiesen2012, p. 36]
-* In Bora, two low-tone vowels cannot occur consecutively unless they are word-final. [@BoaThiesen2012, p. 69]
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 ## Syllable Structure
 
-Bora syllables mostly take the form of (C)V, although /x/ and /ʔ/ can appear as syllable codas. [@BoaRoe2014, p. 9]
+* Bora syllables mostly take the form of (C)V, although /x/ and /ʔ/ can appear as syllable codas [@BoaRoe2014, p. 9].
+
+# Lenition Rules
+
+* Postconsonantal /j/ tends to delete, and instead just palatalizes the previous consonant [@BoaThiesen2012, p. 27].
+* In syllable codas, /x/ is simply produced as a preaspiration of the following consonant (written by Thiesen as ⟨ˣ⟩) [@BoaThiesen2012, p. 40].
+* Syllable-final /ʔ/ is produced as simply a glottalization of the vowel (written as ⟨ˀ⟩) [@BoaThiesen2012, p. 28].
+* /kp/ becomes [kʷ] in fast speech, particularly among younger speakers [@BoaRoe2014, p. 9].
+
+# Misc. Rules
+
+* /i/ lowers in /x/-final syllables, and centralizes to [ɨ] when /ɨ/ is present in the following syllable [@BoaThiesen2012, p. 30].
+* /ɛ/ lowers to [æ] before syllables that contain /i/ [@BoaThiesen2012, p. 31].
+* Epenthesis of [ʔ] occurs at the beginning of vowel-initial phrases, and the end of vowel-final phrases [@BoaThiesen2012, p. 36].
+* In Bora, two low-tone vowels cannot occur consecutively unless they are word-final [@BoaThiesen2012, p. 69].
 
 # References
