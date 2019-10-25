@@ -4,55 +4,93 @@ author: "Justin Bai"
 bibliography: gil.bib
 output: html_document
 ---
+
+Last-updated: 2019-10-25
+
 # Background
 
-**Language family**: Austronesian
+**Language family**: Austronesian / Malayo-Polynesian / Central-Eastern/ Eastern Malayo-Polynesian / Oceanic / Micronesian / Nuclear Micronesian / Central Micronesian
 
-Also referred to as Gilbertese.
+* Also referred to as Gilbertese, Kiribati is spoken on the Solomon Islands, located just east of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Bilabial     Alveolar    Velar
+Stops                      "p pˠ"        "t"        "k"       
+Fricatives                  "βˠ"         ""          ""
+Nasals                   "m  mː  mˠ"    "n  nː"    "ŋ  ŋː"
+Flaps                        ""           "ɾ"        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 3)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Phonemes that share a cell match in voicing. Those transcribed with /ˠ/ are velarized and those transcribed with /ː/ are phonemically long.", general_title = "")
+```
+
+## Vowels
+
+* Vowel length is contrastive, where long vowels are represented orthographically by doubling the vowel [@blevins1999trimoraic, p. 206].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```   
 
 # Alphabet
 
-## Consonants
-* ⟨b⟩ = /p/
-* ⟨bw⟩ = /pˠ/
-* ⟨k⟩ = /k/
-* ⟨m⟩ = /m/
-* ⟨mm⟩ = /mː/
-* ⟨mw⟩ = /mˠ/
-* ⟨n⟩ = /n/
-* ⟨nn⟩ = /nː/
-* ⟨ng⟩ = /ŋ/
-* ⟨ngng⟩ = /ŋː/
-* ⟨r⟩ = /ɾ/
-* ⟨t⟩ = /t/
-* ⟨w⟩ = /βˠ/
 
-Consonants transcribed with /ˠ/ are velarized-labials.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-## Vowels
-* ⟨a⟩ = /a/
-* ⟨e⟩ = /e/
-* ⟨i⟩ = /i/
-* ⟨o⟩ = /o/
-* ⟨u⟩ = /u/
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"           "/a/"   
+"b"           "/p/"
+"e"           "/e/"
+"i"           "/i/"
+"k"           "/k/"
+"m"           "/m/"
+"n"           "/n/"
+"o"           "/o/"
+"r"           "/ɾ/"
+"t"           "/t/"
+"u"           "/u/"
+"w"           "/βˠ/"
+**Multigraph**  ""
+"bw"          "/pˠ/"
+"mm"          "/mː/"
+"mw"          "/mˠ/"
+"nn"          "/nː/"
+"ng"          "/ŋ/"
+"ngng"        "/ŋː/"
+'), TRUE)
 
-Long vowels are represented orthographically by
-doubling the vowel.
-* ⟨aa⟩ = /aː/
-* ⟨ee⟩ = /eː/
-* ⟨ii⟩ = /iː/
-* ⟨oo⟩ = /oː/
-* ⟨uu⟩ = /uː/
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
-# Phonology
-## Consonants
-Some observations noted in @blevins1999trimoraic,
-* "Voicing is nondistinctive in Gilbertese."
-* "Note that _r_ represents an alveolar tap or flap,
-while _w_ represents a voiced labiovelar fricative that has both flap and approximant
-allophones."
-* "The stop _t_ is realized as [s] when followed by i in all dialects."
+# Lenition Rules
 
-## Vowels
-* "Quantity is distinctive for vowels and nasal consonants, but not for obstruents,
-or for /r, w/. Length is indicated by double symbols: _aa_, _oo_, and so forth."
+  * /t/ spirantizes to [s] when followed by i in all dialects [@blevins1999trimoraic, p. 206].
+
+# References

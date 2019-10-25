@@ -5,91 +5,120 @@ bibliography: guo.bib
 output: html_document
 ---
 
-Last updated: 2019-09-30
+Last updated: 2019-10-17
 
 # Background
 
 **Language family**: Guahiboan
 
+* Guayabero is spoken in the Meta and Guaviare departments of central and southern Colombia, respectively.
+
 # Phonology
 
 ## Consonants
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /b/, /ɸ/, /m/, /w/  
-Alveolar: /t/, /d/, /s/, /n/, /l/, /ɾ/  
-Palatal: /tʃ/, /j/  
-Velar: /k/, /x/  
-Glottal: /h/, /ʔ/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stop: /p/, /b/, /t/, /d/, /k/, /ʔ/  
-Affricate: /tʃ/  
-Fricative: /ɸ/, /s/, /x/, /h/  
-Nasal: /m/, /n/  
-Approximant: /l/, /j/, /w/  
-Flap: /ɾ/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar   Postalveolar   Palatal    Velar    Glottal
+Stops                      "p  b"    "t  d"         ""           ""        "k"       "ʔ"
+Affricates                   ""        ""          "tʃ"          ""         ""       ""
+Fricatives                   "ɸ"       "s"          ""           ""        "x"       "h"
+Nasals                       "m"       "n"          ""           ""         ""       ""
+Flaps                        ""        "ɾ"          ""           ""         ""       ""  
+Approximants                 "w"       "l"          ""          "j"         ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
 
 ## Vowels
 
-* /i/ and /a/ are the only vowels that have long counterparts in Guayabero [@Keels1985, pg. 67]. Although /aa/ is said to be contrastive with /a/, nothing is mentioned about the contrastiveness of /ii/ with /i/.
-* Several diphthongs occur in Guayabero [@Keels1985, pg. 66, 67]; however, given that they can also appear as vowel sequences [@Waller1976, pg. 53], they will not be included in the rules.
+* /i/ and /a/ are the only vowels that have long counterparts in Guayabero [@Keels1985, p. 67]. Although /aa/ is said to be contrastive with /a/, nothing is mentioned about the contrastiveness of /ii/ with /i/. Long vowels are represented by duplicate graphemes.
+* Several diphthongs occur in Guayabero [@Keels1985, p. 66, 67]; however, given that they can also appear as vowel sequences [@Waller1976, p. 53], they will not be included in the rules.
 
-/a/, /e/, /i/, /ɨ/, /o/, /u/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         "ɨ"          "u"
+Mid       "e"         ""           "o"
+Low        ""        "a aː"         ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: The low central vowels are ordered short and long.", general_title = "")
+```    
 
 # Alphabet
 
-a - /a/  
-b - /b/  
-c - /k/  
-d - /d/  
-e - /e/  
-f - /ɸ/  
-i - /i/  
-j - /h/  
-k - /k/  
-l - /l/  
-m - /m/  
-n - /n/  
-o - /o/  
-p - /p/  
-r - /ɾ/  
-s - /s/  
-t - /t/  
-u - /u/  
-ʉ - /ɨ/  
-w - /w/  
-x - /x/  
-y - /j/  
-' - /ʔ/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-## Digraphs
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "/a/"  
+"b"            "/b/"  
+"c"            "/k/"  
+"d"            "/d/"  
+"e"            "/e/"  
+"f"            "/ɸ/"  
+"i"            "/i/"  
+"j"            "/h/"  
+"k"            "/k/"  
+"l"            "/l/"  
+"m"            "/m/"  
+"n"            "/n/"  
+"o"            "/o/"  
+"p"            "/p/"  
+"r"            "/ɾ/"  
+"s"            "/s/"  
+"t"            "/t/"  
+"u"            "/u/"  
+"ʉ"            "/ɨ/"  
+"w"            "/w/"  
+"x"            "/x/"  
+"y"            "/j/"  
+"\'"            "/ʔ/"  
+**Digraph**     ""
+"ch"          "/tʃ/"  
+"qu"          "/k/"  
+'), TRUE)
 
-ch - /tʃ/  
-qu - /k/  
-
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Syllable Structure
 
-* The syllable structures permitted in Guayabero include [@Keels1985, pg. 59]:
-
-    CV  
-    CVC  
-    CVCC  
-    CVV   
-    CVVC   
-    CVVCC  
+* The syllable structures permitted in Guayabero include [@Keels1985, p. 59]:
+    - CV  
+    - CVC  
+    - CVCC  
+    - CVV   
+    - CVVC   
+    - CVVCC  
 
 # Lenition Rules
 
-* Unstressed /a/ is deleted preceding /ɾ/ and following an obstruent [@Keels1985, pg. 79].
-* Unstressed vowels are deleted immediately preceding stress [@Keels1985, pg. 80, 81].
+* Unstressed /a/ is deleted preceding /ɾ/ and following an obstruent [@Keels1985, p. 79].
+* Unstressed vowels are deleted immediately preceding stress [@Keels1985, p. 80, 81].
 
 # Misc Rules
 
-* Voiceless stops become aspirated preceding vowels [@Waller1976, pg. 49].
-* Consonants may be labialized preceding a stressed, rounded vowel [@Keels1985, pg. 71, 72].
-* Vowel epenthesis occurs preceding voiced consonant suffixes [@Keels1985, pg. 82].
-* Geminate consonants seem to appear in the orthography through affixation; however long consonants are not present in the language [@Keels1985, pg. 84]. Vowel epenthesis occurs to prevent the realization of such long consonants (ibid.). 
+* Voiceless stops become aspirated preceding vowels [@Waller1976, p. 49].
+* Consonants may be labialized preceding a stressed, rounded vowel [@Keels1985, p. 71, 72].
+* Vowel epenthesis occurs preceding voiced consonant suffixes [@Keels1985, p. 82].
+* Geminate consonants seem to appear in the orthography through affixation; however long consonants are not present in the language [@Keels1985, p. 84]. Vowel epenthesis occurs to prevent the realization of such long consonants (ibid.).
+
+# References

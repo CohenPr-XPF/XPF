@@ -11,78 +11,103 @@ Last Updated: 2019-07-03
 
 **Language Family**: Pama-Nyungan / Yolngu / Southern Yolngu / Dhuwal / Djambarrpuyngu
 
+* Djambarrpuyngu is spoken in the Northern Territory of Australia.
+
 # Phonology
 
 ## Consonants
 
-* Voicing distinctions are only contrastive intervocalically or between sonorants. [@DjrWilkinson1991, p. 42]
+* Voicing distinctions are only contrastive intervocalically or between sonorants [@DjrWilkinson1991, p. 42].
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /b/, /m/, /w/  
-Dental: /t̪/, /d̪/, /n̪/  
-Alveolar: /t/, /d/, /n/, /r/, /l/  
-Retroflex: /ʈ/, /ɖ/, /ɳ/, /ɻ/, /ɭ/  
-Palatal: /c/, /ɟ/, /ɲ/, /j/  
-Velar: /k/, /ɡ/  
-Glottal: /ʔ/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /b/, /t̪/, /d̪/, /t/, /d/, /ʈ/, /ɖ/, /c/, /ɟ/, /k/, /ɡ/, /ʔ/  
-Nasals: /m/, /n̪/, /n/, /ɳ/, /ɲ/, /ŋ/  
-Trills: /r/  
-Approximants: /w/, /ɻ/, /l/, /ɭ/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Labial  Dental   Alveolar  Retroflex  Palatal   Velar  Glottal
+Stops                        "p b"   "t̪ d̪"    "t d"     "ʈ ɖ"      "c ɟ"     "k ɡ"  "ʔ"
+Nasals                        "m"     "n̪"      "n"       "ɳ"        "ɲ"       "ŋ"    ""
+Trills                        ""      ""       "r"       ""         ""        ""     ""
+Approximants                  "w"     ""       "l"       "ɻ  ɭ"     "j"       ""     ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  footnote(general = "Note: Phonemes to the right of a cell are either voiced (in the stop row) or lateral (in the approximant row).", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /i/, /u/, /a/  
+* Vowel length is contrastive in Djambarrpuyngu [@DjrWilkinson1991, p. 44].
 
-Vowel length is contrastive in Djambarrpuyngu. [@DjrWilkinson1991, p. 44]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front   Central   Back
+High   "i"     ""        "u"
+Low    ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
 
 # Alphabet
 
-a - /a/  
-ä - /aː/  
-b - /b/  
-d - /d/  
-  dh - /d̪/  
-  dj - /ɟ/  
-ḏ - /ɖ/  
-e - /iː/  
-g - /ɡ/  
-i - /i/  
-k - /k/  
-l - /l/  
-ḻ - /ɭ/  
-m - /m/  
-n - /n/  
-  nh - /n̪/  
-  ny - /ɲ/  
-ṉ - /ɳ/  
-ŋ - /ŋ/  
-o - /uː/  
-p - /p/  
-r - /ɻ/  
-rr - /r/  
-t - /t/  
-  th - /t̪/  
-  tj - /c/  
-ṯ - /ʈ/  
-u - /u/  
-w - /w/  
-y - /j/  
-' - /ʔ/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "/a/"  
+"ä"            "/aː/"  
+"b"            "/b/"  
+"d"            "/d/"   
+"ḏ"            "/ɖ/"  
+"e"            "/iː/"  
+"g"            "/ɡ/"  
+"i"            "/i/"  
+"k"            "/k/"  
+"l"            "/l/"  
+"ḻ"            "/ɭ/"  
+"m"            "/m/"  
+"n"            "/n/"  
+"ṉ"            "/ɳ/"
+"ŋ"            "/ŋ/"  
+"o"            "/uː/"  
+"p"            "/p/"  
+"r"            "/ɻ/"    
+"t"            "/t/"   
+"ṯ"            "/ʈ/"  
+"u"            "/u/"  
+"w"            "/w/"  
+"y"            "/j/"  
+"\'"            "/ʔ/"
+**Digraph**    ""
+"dh"           "/d̪/"  
+"dj"           "/ɟ/"
+"nh"           "/n̪/"  
+"ny"           "/ɲ/"
+"rr"           "/r/"  
+"th"           "/t̪/"  
+"tj"           "/c/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Djambarrpuyngu has a CV(C)(C)(ʔ) syllable structure [@DjrWilkinson1991, p. 45].
 
 # Lenition Rules
 
-* Intramorphemic labial and velar stops often approximantize to [w], while intramorphemic dental and palatal stops often approximantize to [j]. [@DjrWilkinson1991, p. 42]
-* /ɖ/ usually becomes the flap [ɾ] in the sequences /jɖ/ and /rɖ/. (ibid.)
-
-# Misc. Rules
-
-## Syllable Structure
-
-Djambarrpuyngu has a CV(C)(C)(ʔ) syllable structure. [@DjrWilkinson1991, p. 45]
+* Intramorphemic labial and velar stops often approximantize to [w], while intramorphemic dental and palatal stops often approximantize to [j] [@DjrWilkinson1991, p. 42].
+* /ɖ/ usually becomes the flap [ɾ] in the sequences /jɖ/ and /rɖ/ (ibid.).
 
 # References

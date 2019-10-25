@@ -5,82 +5,110 @@ bibliography: guc.bib
 output: html_document
 ---
 
+Last updated: 2019-10-17
+
 # Background
 
 **Language family**: Arawakan / Maipuran / Northern / Caribbean / Guajiro-Paraujano
 
-Also referred to as Goajiro and Wayuunaiki.
+* Also referred to as Goajiro and Wayuunaiki, Wayuu is spoken within the Guajira department, along the Guajira Peninsula located in the northern tip of South America.
 
 # Phonology
 
 ## Consonants
 
-* Some documentation includes /β/ and /ɲ/ as phonemes corresponding to ⟨v⟩ and ⟨ñ⟩ respectively [Hildebrandt and de Uterga in @sabogal_variable_2018, pg. 50-52]. However, given that other authors omit them from the phonemic inventory, citing them as allophones of /w/ and /n/ respectively, forming no minimal pairs [@alvarez_manual_2017, pg. 18; @sabogal_variable_2018, pg. 50, 52], I have also chosen to exclude them.
-* Excluding /h/, /r/, /w/, and /j/, consonants can geminate [@holmer_goajiro_1949, pg. 49].
+* Some documentation includes /β/ and /ɲ/ as phonemes corresponding to ⟨v⟩ and ⟨ñ⟩ respectively [Hildebrandt and de Uterga in @sabogal_variable_2018, pp. 50-52]. However, given that other authors omit them from the phonemic inventory, citing them as allophones of /w/ and /n/ respectively, forming no minimal pairs [@alvarez_manual_2017, p. 18; @sabogal_variable_2018, pp. 50, 52], I have also chosen to exclude them.
+* Excluding /h/, /r/, /w/, and /j/, consonants can geminate [@holmer_goajiro_1949, p. 49].
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /m/, /w/  
-Alveolar: /n/, /t/, /s/, /r/  
-Post-alveolar: /ɺ/, /tʃ/, /ʃ/  
-Palatal: /j/  
-Velar: /k/  
-Glottal: /ʔ/, /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stop: /p/, /t/, /k/, /ʔ/  
-Nasal: /m/, /n/  
-Affricate: /tʃ/  
-Fricative: /s/, /ʃ/, /h/  
-Flap: /ɺ/  
-Trill: /r/  
-Approximant: /w/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar    Postalveolar    Palatal     Velar     Glottal
+Stops                        "p"       "t"           ""            ""         "k"        "ʔ"  
+Affricates                    ""       ""            "tʃ"          ""         ""         ""
+Fricatives                    ""       "s"           "ʃ"           ""         ""         "h"
+Nasals                       "m"       "n"           ""            ""         ""         ""
+Flaps                         ""       "ɺ"           ""            ""         ""         ""
+Trills                        ""       "r"           ""            ""         ""         ""
+Approximants                  "w"       ""           ""            "j"        ""         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-* Vowel length is contrastive. Long vowels are indicated by repeated graphemes [@sabogal_variable_2018, pg. 49].
-* There is some debate as to whether /ɯ/ or /ɨ/ corresponds to ⟨ü⟩. Whereas @mansen_aprendamos_1984 opts for /ɨ/ (pg. 4), @alvarez_manual_2017 and @sabogal_variable_2018 opt for /ɯ/ (pg. 18; pg. 49). I have chosen to use /ɯ/, which is more consistent with recent documentation.
-* Rising vowel sequences can be pronounced as diphthongs or independent monophthongs - the pronunciation is in free variation [@sabogal_variable_2018, pg. 50].
-* Vowel harmony is present in Wayuu, structured on the basis of fronting and rounding [@sabogal_variable_2018, pg. 53].
-* Vowels often become nasalized; however, the meaning does not change whether they are pronounced orally or nasally [@mansen_aprendamos_1984, pg. 9].
+* Vowel length is contrastive. Long vowels are indicated by repeated graphemes [@sabogal_variable_2018, p. 49].
+* There is some debate as to whether /ɯ/ or /ɨ/ corresponds to ⟨ü⟩. Whereas @mansen_aprendamos_1984 opts for /ɨ/ (p. 4), @alvarez_manual_2017 and @sabogal_variable_2018 opt for /ɯ/ (p. 18; p. 49). I have chosen to use /ɯ/, which is more consistent with recent documentation.
+* Rising vowel sequences can be pronounced as diphthongs or independent monophthongs - the pronunciation is in free variation [@sabogal_variable_2018, p. 50].
+* Vowel harmony is present in Wayuu, structured on the basis of fronting and rounding [@sabogal_variable_2018, p. 53].
+* Vowels often become nasalized; however, the meaning does not change whether they are pronounced orally or nasally [@mansen_aprendamos_1984, p. 9].
 
-/i/, /e/, /ɯ/, /a/, /u/, /o/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""         "ɯ  u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: The high back vowel on the left is unrounded and the high back vowel on the right is rounded.", general_title = "")
+```     
 
 # Alphabet
 
-a - /a/  
-e - /e/  
-i - /i/  
-j - /h/  
-k - /k/  
-l - /ɺ/  
-m - /m/  
-n - /n/  
-o - /o/  
-p - /p/  
-r - /r/  
-s - /s/  
-t - /t/  
-u - /u/  
-ü - /ɯ/  
-w - /w/  
-y - /j/  
-' - /ʔ/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-# Digraphs
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "/a/"  
+"e"            "/e/"  
+"i"            "/i/"  
+"j"            "/h/"  
+"k"            "/k/"  
+"l"            "/ɺ/"  
+"m"            "/m/"  
+"n"            "/n/"  
+"o"            "/o/"  
+"p"            "/p/"  
+"r"            "/r/"  
+"s"            "/s/"  
+"t"            "/t/"  
+"u"            "/u/"  
+"ü"            "/ɯ/"  
+"w"            "/w/"  
+"y"            "/j/"  
+"\'"            "/ʔ/"  
+**Digraph**     ""
+"ch"           "/tʃ/"  
+"sh"           "/ʃ/"  
+'), TRUE)
 
-ch - /tʃ/  
-sh - /ʃ/  
-
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
-* /k/ and /p/ become voiced preceding /ɺ/ [@holmer_goajiro_1949, pg. 49].
-* /ɺ/ becomes /r/ preceding front vowels [@sabogal_variable_2018, pg. 60].
-* /ɺ/ is unpronounced when preceding a monomaraic (short) /i/ [@sabogal_variable_2018, pg. 60].
-* Word-final vowels and vowels preceding /s/, /tʃ/, and /ʃ/ are often pronounced lenis or unpronounced [@holmer_goajiro_1949, pg. 50].
+* /k/ and /p/ become voiced preceding /ɺ/ [@holmer_goajiro_1949, p. 49].
+* /ɺ/ becomes /r/ preceding front vowels [@sabogal_variable_2018, p. 60].
+* /ɺ/ is unpronounced when preceding a monomaraic (short) /i/ [@sabogal_variable_2018, p. 60].
+* Word-final vowels and vowels preceding /s/, /tʃ/, and /ʃ/ are often pronounced lenis or unpronounced [@holmer_goajiro_1949, p. 50].
 
 # Misc Rules
 
-* Vowel elision and liquid fortition often occur in tandem [@sabogal_variable_2018, pg. 59,60]. First, vowels are elided when preceding a liquid and following an obstruent. Then, with the resulting liquid-obstruent sequence, the liquid becomes /t/ (or assimilates to /n/ if the obstruent was an /n/).
+* Vowel elision and liquid fortition often occur in tandem [@sabogal_variable_2018, p. 59,60]. First, vowels are elided when preceding a liquid and following an obstruent. Then, with the resulting liquid-obstruent sequence, the liquid becomes /t/ (or assimilates to /n/ if the obstruent was an /n/).
+
+# References

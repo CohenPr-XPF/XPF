@@ -1,66 +1,122 @@
 ---
-title: Basque
+title: "Basque"
+author: "Justin Bai"
+bibliography: eu.bib
+output: html_document
 ---
 # Background
-**Language family**: language isolate  
+
+**Language family**: isolate
+
+* Basque is spoken in Basque Country, a region in western Pyrenees between France and Spain.
+
+# Phonology
+
+## Consonants
+
+* /r/ and /ɾ/ only contrast intervocalically. Although this may be seen purely as a phonological process of /r/ becoming a flap, the flap is actually attested as an actual phonemes [@hualde2004basque, p. 10].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Dental   Alveolar  Postalveolar   Palatal     Velar  
+Stops                      "p  b"     "t̪  d̪"     ""          ""         "c  ɟ"     "k  ɡ"      
+Affricates                   ""      "ts̻  ts̺"    ""         "tʃ"          ""         ""     
+Fricatives                   "f"      "s̻ s̺"      ""          "ʃ"          ""         "x"
+Nasals                       "m"        ""      "n"          ""           "ɲ"        ""
+Flaps                        ""         ""      "ɾ"          ""           ""         ""
+Trills                       ""         ""      "r"          ""           ""         ""
+Appoximants                  ""         ""      "l"          ""          "j ʎ"       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For stop phonemes that share a cell, those on the left are voiceless and those on the right are voiced. The dental affricates and fricatives are both voiceless, but those on the left are laminal and those on the right are apical. The palatal approximants are both voiced, but the one on the right is lateral.", general_title = "")
+```
+
+## Vowels
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low       ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ai/,  /ei/,  /oi/,  /au/,  /eu/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```    
 
 # Alphabet
-## Vowels
-⟨a⟩ = /a/  
-⟨e⟩ = /e/  
-⟨i⟩ = /i/  
-⟨o⟩ = /o/  
-⟨u⟩ = /u/  
-## Consonants
-⟨b⟩ = /b/  
-⟨d⟩ = /d̪/  
-⟨f⟩ = /f/  
-⟨g⟩ = /ɡ/  
-⟨h⟩ = Ø  
-⟨j⟩ = /x/   
-⟨k⟩ = /k/  
-⟨l⟩ = /l/  
-⟨m⟩ = /m/   
-⟨n⟩ = /n/   
-⟨ñ⟩ = /ɲ/  
-⟨p⟩ = /p/    
-⟨-r-⟩ = /ɾ/  
-⟨r-⟩ = /r/  
-⟨s⟩ = /s̺/  
-⟨t⟩ = /t̪/  
-⟨x⟩ = /ʃ/  
-⟨y⟩ = /j/  
-⟨z⟩ = /s̻/  
-## Digraphs
-⟨dd⟩ = /ɟ/  
-⟨tt⟩ = /c/  
-⟨ts⟩ = /ts̺/  
-⟨tz⟩ = /ts̻/  
-⟨tx⟩ = /tʃ/  
-⟨rr⟩ = /r/  
-⟨ll⟩ = /ʎ/  
 
-In borrowings: c, ç, q, v, w, y
-# Phonology
-## Consonants
-⟨r⟩ -> [ɾ] / V__V
-## Vowels
-Diphthongs  
-ai  
-ei  
-oi  
-au  
-eu  
+* ⟨c⟩, ⟨ç⟩, ⟨q⟩, ⟨v⟩, ⟨w⟩, ⟨y⟩ appear in loanwords.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                 Comment
+"a"            "/a/"                     ""
+"b"            "/b/"                     ""
+"d"            "/d̪/"                     ""
+"e"            "/e/"                     ""
+"f"            "/f/"                     ""
+"g"            "/ɡ/"                     ""
+"h"            "Ø"                       ""
+"i"            "/i/"                     ""
+"j"            "/x/"                     ""
+"k"            "/k/"                     ""
+"l"            "/l/"                     ""
+"m"            "/m/"                     ""
+"n"            "/n/"                     ""
+"ñ"            "/ɲ/"                     ""
+"o"            "/o/"                     ""
+"p"            "/p/"                     ""
+"r"         "/r/; /ɾ/"   "/r/: word-initially; /ɾ/: word-medially"  
+"s"            "/s̺/"                     ""
+"t"            "/t̪/"                     ""
+"u"            "/u/"                     ""
+"x"            "/ʃ/"                     ""
+"y"            "/j/"                     ""
+"z"            "/s̻/"                     ""
+**Digraph**     ""                       ""
+"dd"           "/ɟ/"                     ""
+"tt"           "/c/"                     ""
+"ts"           "/ts̺/"                    ""
+"tz"           "/ts̻/"                    ""
+"tx"           "/tʃ/"                    ""
+"rr"           "/r/"                     ""
+"ll"           "/ʎ/"                     ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition
-### Spirantization
-* X -> [β,ð,ɣ] / {V,tap,trill}__V when X = b,̪d,ɡ
 
-### Voicing
-* /h/ -> voiced / X__X when X=i,u,e,o,a
-* X -> voiced / __Voiced C for segments X = ̥s, s
-* /̥ss, s/ -> voiced / __X (no other voiced Cs occur here) for segments X = m, ̪n, l
+* Several lenition processes are noted in @Saltarelli1988 :
+    - /b/, /d/, and /g/ may spirantize to [β], [ð], and [ɣ], respectively, intervocalically, or following a tap or trill while also preceding a vowel.
+    - /h/ becomes voiced intervocalically
+    - /s̻/ and /s̺/ become voiced following a voiced consonant.
+    - /b/, /d/, /g/, and /ɾ/ may delete intervocalically.
+    - /h/ deletes when preceded by an aspirated consonant of when followed by another /h/.
 
-### Deletion
-* /b,̪d,g,ɾ/ -> 0 / X__X in colloguial relaxed speech for when X = i,u,e,o,a
-* /h/ -> 0 / when preceded in a word by aspirated X, or when followed by another /h/
+# References

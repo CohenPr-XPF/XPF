@@ -18,7 +18,7 @@ sub,({passthrough}),\1,2,,,
 # Digraphs
 sub,c,tʃ,2,,h,
 sub,s,ʃ,3,,h,
-sub,h,,2,{h-preceder},,
+sub,h,,2,{h-preceder},,"clean-up",
 # Gemination
 ipasub,({longv}) \1\b,\1 ː,2,,,
 ipasub,({gem}) \1\b,\1 ː,2,,,

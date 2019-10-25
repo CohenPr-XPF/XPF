@@ -30,7 +30,7 @@
 | cv            | Chuvash                   |
 | dgz           | Daga                      |
 | djr           | Djambarrpuyngu            |                               |
-| el            | Greek                     | lacks lenition                |
+| el            | Greek                     | lacks lenition; under revision                |
 | emi           | Mussau-Emira              |
 | eu            | Basque                    |
 | ff            | Fula                      |                               |

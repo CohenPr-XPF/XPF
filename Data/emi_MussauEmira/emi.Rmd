@@ -11,72 +11,107 @@ Last Updated: 2019-07-23
 
 **Language Family**: Austronesian / Malayo-Polynesian / Eastern Malayo-Polynesian / Oceanic / St. Matthias / Mussau-Emira
 
+* Mussau-Emira is spoken in Papua New Guinea, specifically in the province of New Ireland.
+
 # Phonology
 
 ## Consonants
 
-Consonant gemination occurs contrastively. [@EmiBrownie2007, p. 13]
+* Consonant gemination occurs contrastively [@EmiBrownie2007, p. 13].
+* @EmiBrownie2007 argues for the flap /ɾ/ rather than /r/ (p. 13).
+* @EmiRoss2002 argues that the phonemes I have listed as voiced fricatives are actually stops in their underlying forms (p. 149).
 
-* @EmiBrownie2007 argues for the flap /ɾ/ rather than /r/. (p. 13)
-* @EmiRoss2002 argues that the phonemes I have listed as voiced fricatives are actually stops in their underlying forms. (p. 149)
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-### By place of articulation
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-Bilabial: /p/, /m/, /β/  
-Alveolar: /t/, /n/, /s/, /r/, /l/  
-Velar: /k/, /ŋ/, /ɣ/  
 
-### By manner of articulation
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Bilabial   Alveolar   Velar
+Stops                       "p"        "t"        "k"
+Fricatives                  "β"        "s"        "ɣ"
+Nasals                      "m"        "n"        "ŋ"
+Trills                      ""         "r"        ""
+Approximants                ""         "l"        ""
+'), TRUE)
 
-Stops: /p/, /t/, /k/  
-Nasals: /m/, /n/, /ŋ/  
-Fricatives: /β/, /s/, /ɣ/  
-Trills: /r/  
-Approximants: /l/  
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 3)) %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /i/, /u/, /ɛ/, /ɔ/, /ɑ/  
-Diphthongs: /ɑi/, /ɑu/, /ɑɛ/, /ɑɔ/, /ɛi/, /ɔi/, /ɔu/  
+* Vowel length is contrastive [@EmiBrownie2007, p. 13].
+* @EmiRoss2002 argues for the more traditional five-vowel system of /i u e o a/ (p. 149).
+* Because Crubadan has instances of three vowel sequences, leaving diphthongs to be determined by syllable structure, they aren't included in the rule set.
 
-Vowel length is contrastive. [@EmiBrownie2007, p. 13]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+vowels <- read.table(textConnection('
+       Front   Back
+High   "i"     "u"
+Mid    "ɛ"     "ɔ"
+Low    ""      "ɑ"
+'), TRUE)
 
-@EmiRoss2002 argues for the more traditional five-vowel system of /i u e o a/. (p. 149)
+kable(vowels, align = ('c')) %>%
+  kable_styling("bordered")
 
-Because Crubadan has instances of three vowel sequences, leaving diphthongs to be determined by syllable structure, they aren't included in the rule set.
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ɑi/, /ɑu/, /ɑɛ/, /ɑɔ/, /ɛi/, /ɔi/, /ɔu/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Alphabet
 
-a - /ɑ/  
-b - /β/  
-e - /ɛ/  
-g - /ɣ/  
-gh - /ɣ/  
-i - /i/  
-k - /k/  
-l - /l/  
-m - /m/  
-n - /n/  
-ng - /ŋ/  
-o - /ɔ/  
-p - /p/  
-r - /r/  
-s - /s/  
-t - /t/  
-u - /u/  
-v - /β/  
+* Gemination and vowel length are written by doubling the relevant character.
+* The Seventh-Day Adventist orthography varies slightly, using ⟨q⟩ for /ɣ/ and ⟨g⟩ for /ŋ/ [@EmiRoss2002, p. 151]; I have opted not to support that orthography by default, given that it is unused by the Crubadan corpus.
 
-Gemination and vowel length are written by doubling the relevant character.
 
-The Seventh-Day Adventist orthography varies slightly, using <q> for /ɣ/ and <g> for /ŋ/ [@EmiRoss2002, p. 151]; I have opted not to support that orthography by default, given that it is unused by the Crubadan corpus.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme   
+"a"           "/ɑ/"  
+"b"           "/β/"  
+"e"           "/ɛ/"  
+"g"           "/ɣ/"   
+"i"           "/i/"  
+"k"           "/k/"  
+"l"           "/l/"  
+"m"           "/m/"  
+"n"           "/n/"   
+"o"           "/ɔ/"  
+"p"           "/p/"  
+"r"           "/r/"  
+"s"           "/s/"  
+"t"           "/t/"  
+"u"           "/u/"  
+"v"           "/β/"
+**Digraph**    ""  
+"gh"          "/ɣ/"
+"ng"          "/ŋ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
-* Final vowels are frequently dropped. [@EmiBrownie2007, p. 15] [@EmiBrownie2009, p. 11]
-* In casual speech, syncope of vowels occurs between identical consonants. [@EmiBrownie2007, p. 16]
+* Final vowels are frequently dropped [@EmiBrownie2007, p. 15; @EmiBrownie2009, p. 11].
+* In casual speech, syncope of vowels occurs between identical consonants [@EmiBrownie2007, p. 16].
 
 # Misc. Rules
 
-* Voiced fricatives become stops when geminated, and sometimes when word-initial. [@EmiBrownie2007, p. 13] [@EmiRoss2002, p. 149]
+* Voiced fricatives become stops when geminated, and sometimes when word-initial [@EmiBrownie2007, p. 13; @EmiRoss2002, p. 149].
 
 # References

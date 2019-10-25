@@ -24,9 +24,9 @@ sub,({passthrough}),\1,2,,,
 sub,-,,2,,,
 # Digraphs
 sub,c,tʃ,3,,h,
-sub,h,,3,c,,
+sub,h,,3,c,,"clean-up",
 sub,q,k,2,,u,
-sub,u,,3,q,,
+sub,u,,3,q,,"clean-up",
 # Long /a/
 ipasub,a a,aː,2,,,
 # Non-geminates

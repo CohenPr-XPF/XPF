@@ -1,58 +1,93 @@
 ---
-title: Hawaiian
+title: "Hawaiian"
+author: "Justin Bai"
 bibliography: haw.bib
+output: html_document
 ---
+
+Last updated: 2019-10-17
+
 # Background
-**Language family**: Austronesian
-# Alphabet
-The Hawaiian alphabet has 13 letters. There are five vowel qualities and eight consonants.
-## Vowels
-Hawaiian has five vowel qualities, each with their own letter.
-* ⟨a⟩ = /a/  
-* ⟨e⟩ = /e/  
-* ⟨i⟩ = /i/  
-* ⟨o⟩ = /o/  
-* ⟨u⟩ = /u/  
 
-Hawaiian makes a vowel length distinction. Long vowels are indicated with a macron ⟨¯⟩.
-* ⟨ā⟩ = /aː/  
-* ⟨ē⟩ = /eː/  
-* ⟨ī⟩ = /iː/  
-* ⟨ō⟩ = /oː/  
-* ⟨ū⟩ = /uː/
+**Language family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Central Pacific linkage / Tokelau-Fijian / Polynesian / Nuclear / East / Central / Marquesic
 
-## Consonants
-The Hawaiian consonants are as follows:
-* ⟨h⟩ = /h/
-* ⟨k⟩ = /k~t/
-* ⟨l⟩ = /l/
-* ⟨m⟩ = /m/
-* ⟨n⟩ = /n/
-* ⟨p⟩ = /p/
-* ⟨w⟩ = /w~v/
-* ⟨ʻ⟩ = /ʔ/  
-
-All of the consonants have capital letters as distinct from the lowercase ⟨H K L M N P W⟩
-with the exception of ⟨ʻ⟩, which does not have a capital form. When a word begins with ⟨ʻ⟩
-and the word is capitalized, the following letter receives the capital form.
+* Hawaiian is spoken throughout the Hawaiian Islands, located in the Pacific Ocean.
 
 # Phonology
-## Vowels
-|      |   Front   |  Central  |    Back   |
-|------|:---------:|:---------:|:---------:|
-| High | /i/, /iː/ |           | /u/, /uː/ |
-| Mid  | /e/, /eː/ |           | /o/, /oː/ |
-| Low  |           | /a/, /aː/ |           ‍|
 
 ## Consonants
-Hawaiian for the most part has a one-to-one mapping of letter to phoneme.
-The letter ⟨k⟩ can be used to represent either [k] or [t],
-but this is not a phonemic contrast—for example,
-[kapa] and [tapa] both refer to the same thing ("a type of ‘cloth beaten from the bark of . . . trees’"), but "both word forms are acceptable and neither is uncommon" [@jones2018hawaiian]. I have chosen to represent ⟨k⟩ as /k/.
 
-Another letter that may surface in more than one way is ⟨w⟩, which may surface as [w] or [v].
-However, [w] and [v] are not contrastive. Per @jones2018hawaiian, the rules treat ⟨w⟩ as [v].
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
 
-# Lenition
-h > ∅ / V_V [@elbert1986hawaiian]
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar   Velar   Glottal
+Stops                       "p"        ""       "k"       "ʔ"
+Fricatives                  "v"        ""       ""        "h"
+Nasals                      "m"        "n"      ""        ""
+Liquids                     ""         "l"      ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Vowel length is contrastive in Hawaiian [@elbert1986hawaiian, p. 14]. Long vowels are indicated with a macron ⟨¯⟩.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "/a/"
+"e"            "/e/"
+"h"            "/h/"
+"i"            "/i/"
+"k"            "/k/"
+"l"            "/l/"
+"m"            "/m/"
+"n"            "/n/"
+"o"            "/o/"
+"p"            "/p/"
+"u"            "/u/"
+"w"            "/v/"
+"ʻ"            "/ʔ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /h/ deletes intervocalically [@Lavoie1996, p. 287].
+* In a few instances /k/ may debuccalize to /ʔ/ [@elbert1986hawaiian, p. 12].
+
+# Misc. Rules
+
+* /k/ varies freely with /t/ [@jones2018hawaiian, pp. 105-106]. Because most sources don't indicate /t/ as being part of the phonemic inventory, I have chosen to transcribe ⟨k⟩ as /k/. Similarly, /p/ varies freely with [b], /w/ with [v], and /l/ with [d] and [r].
+
+# References
