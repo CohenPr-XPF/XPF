@@ -1,17 +1,17 @@
 ---
 title: "Carib"
 author: "Bill Mizgerd"
-bibliography: cbt.bib
+bibliography: car.bib
 output: html_document
 ---
 
-Last Updated: 2019-06-24
+Last Updated: 2019-10-28
 
 # Background
 
 **Language Family**: Cariban / Guianan / Carib
 
-Also known as Galibi.
+* Also known as Galibi, Carib is spoken in the north end of South America in French Guiana, Suriname, Guyana, and Venezuela.
 
 # Phonology
 
@@ -19,87 +19,110 @@ Also known as Galibi.
 
 * /ʔ/ only occurs in syllable codas, while no other stops appear in that position [@CarCourtz2008, p. 32]. It seems likely that /ʔ/ historically entered the language through a debuccalization process; however, because it is unclear where any specific instance of /ʔ/ may have occurred, and because /ʔ/ is distinctively marked in the orthography, I have opted to treat it as a full phoneme.
 * Syllable-final nasals assimilate to the place of following stops, but before /s/ they are realized as [ŋ] rather than the alveolar [n] [@CarCourtz2008, p. 32]. For this reason, my ruleset will be treating /ŋ/ as a distinct phoneme that occurs in syllable codas.
+* Per @CarPeasgood1972, /m/ and /ŋ/ are the only nasals that occur word-finally (p. 40); otherwise, they agree with Courtz's analysis.
 * @CarHoff1968 sees /b d ɡ/ as contrasting with the voiceless series of stops, but he sees the contrast as marginal, so I have found @CarCourtz2008's argument for allophonic voicing to be more compelling.
 * @CarPeasgood1972 also argues for contrastive /b d ɡ/ (p. 36).
 
-see peasgood 39-40 and hoff 45-47
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-### By place of articulation
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-Labial: /p/, /m/, /w/  
-Alveolar: /t/, /n/, /s/  
-Retroflex: /ɽ/  
-Palatal: /j/  
-Velar: /k/, /ŋ/  
-Glottal: /ʔ/  
 
-### By manner of articulation
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Labial   Alveolar  Retroflex  Palatal   Velar  Glottal
+Stops                        "p"      "t"       ""         ""        "k"    "ʔ"
+Fricatives                   ""       "s"       ""         ""        ""     ""
+Nasals                       "m"      "n"       ""         ""        "ŋ"    ""
+Flaps                        ""       ""        "ɽ"        ""        ""     ""
+Approximants                 "w"      ""        ""         "j"       ""     ""
+'), TRUE)
 
-Stops: /p/, /t/, /k/, /ʔ/   
-Nasals: /m/, /n/, /ŋ/  
-Fricatives: /s/  
-Flaps: /ɽ/  
-Approximants: /w/, /j/  
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-High: /i/, /ɨ/, /u/  
-Non-High: /e/, /a/, /o/  
+* In diphthongs, /i/ can follow any non-identical vowel; the other permissible diphthong is /au/ [@CarCourtz2008, p. 23].
+* Older texts record vowel length as significant, but @CarCourtz2008 argues that it is unnecessary because vowel length can be predicted based on stress, which is itself predictable (p. 38).
 
-In diphthongs, /i/ can follow any non-identical vowel; the other permissible diphthong is /au/. [@CarCourtz2008, p. 23]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front   Central   Back
+High   "i"     "ɨ"       "u"
+Mid    "e"     ""        "o"
+Low    ""      "a"       ""
+'), TRUE)
 
-Older texts record vowel length as significant, but @CarCourtz2008 argues that it is unnecessary because vowel length can be predicted based on stress, which is itself predictable (p. 38).
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
 
 # Alphabet
 
-a - /a/  
-e - /e/  
-i - /i/  
-j - /j/  
-k - /k/  
-m - /m/  
-n - /ŋ/ (in syllable codas)  
-n - /n/ (elsewhere)  
-o - /o/  
-p - /p/  
-r - /ɽ/  
-s - /s/  
-t - /t/  
-u - /u/  
-w - /w/  
-y - /ɨ/  
-' - /ʔ/  
+* Some orthographies use ⟨b d g⟩ for postnasal stops [@CarCourtz2008, p. 37].
 
-Some orthographies use <b d g> for postnasal stops. [@CarCourtz2008, p. 37]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme     Phoneme        Comment
+"a"           "/a/"           ""
+"e"           "/e/"           ""
+"i"           "/i/"           ""
+"j"           "/j/"           ""
+"k"           "/k/"           ""
+"m"           "/ŋ/"   "in word-medial syllable codas"
+"m"           "/m/"        "elsewhere"
+"n"           "/ŋ/"    "in syllable codas"  
+"n"           "/n/"       "elsewhere"  
+"o"           "/o/"           ""
+"p"           "/p/"           ""
+"r"           "/ɽ/"           ""
+"s"           "/s/"           ""
+"t"           "/t/"           ""
+"u"           "/u/"           ""
+"w"           "/w/"           ""
+"y"           "/ɨ/"           ""
+"\'"           "/ʔ/"           ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Carib has a (C)V(V)(C) syllable structure [@CarCourtz2008, p. 23].
+* Any consonant can occur syllable-initially, but the sequence /ji/ never occurs [@CarCourtz2008, p. 23].
 
 # Lenition Rules
 
-* Unstressed word-initial /ɨ/ deletes. [@CarCourtz2008, p. 31]
-* High non-back vowels sometimes delete word-finally when preceded by /m/. (ibid.)
-* Stops voice after unstressed nasals or /CV/ sequences. (ibid.)
-* Syllable-final nasals sometimes delete, leaving behind just a nasalization of the preceding vowel. [@CarCourtz2008, p. 32]
-* /ʔ/ spirantizes to [h] before voiceless consonants. (ibid.)
-* @CarHoff1968, conversely, sees /ʔ/ as going to [x] instead before voiceless consonants. (p. 48)
-* Nasals delete before /j/; when this happens, the /j/ undergoes compensatory lengthening, and the preceding vowel may be nasalized. [@CarCourtz2008, p. 33]
-* /ʔ/ is produced less distinctly before /s/. [@CarCourtz2008, pp. 44-45]
+* Unstressed word-initial /ɨ/ deletes [@CarCourtz2008, p. 31].
+* High non-back vowels sometimes delete word-finally when preceded by /m/ (ibid.).
+* Stops voice after unstressed nasals or /CV/ sequences (ibid.).
+* Syllable-final nasals sometimes delete, leaving behind just a nasalization of the preceding vowel [@CarCourtz2008, p. 32].
+* /ʔ/ spirantizes to [h] before voiceless consonants (ibid.).
+* @CarHoff1968, conversely, sees /ʔ/ as going to [x] instead before voiceless consonants (p. 48).
+* Nasals delete before /j/; when this happens, the /j/ undergoes compensatory lengthening, and the preceding vowel may be nasalized [@CarCourtz2008, p. 33].
+* /ʔ/ is produced less distinctly before /s/ [@CarCourtz2008, pp. 44-45].
 
 # Misc. Rules
 
-* Epenthesis of glottal consonants occurs between stressed vowels and following syllable-initial stops: if the stressed vowel is short, [ʔ] is inserted, while if long [h] is inserted. [@CarCourtz2008, p. 31]
-* /s/ palatalizes to [ʃ] near /i/. [@CarCourtz2008, p. 32]
-* /ɽ/ becomes [ɾ] after front vowels. [@CarCourtz2008, p. 32] [@CarPeasgood1972, p. 37]
-* /Nɽ/ sequences collapse to [n]. [@CarCourtz2008, pp. 33-34]
-* /j/ is sometimes realized as [w], most often between a back vowel and /a/. [@CarCourtz2008, p. 34]
-* Root-initial /a/ is realized as [o] when stressed; similarly, some verb stems with stressed /o/ in the first syllable reduce it to [a] when unstressed. [@CarCourtz2008, pp. 35-36]
-* Epenthesis of [ʔ] occurs between adjacent vowels in different syllables. [@CarCourtz2008, p. 43] [@CarPeasgood1972, p. 38]
-* Consonants palatalize when in a syllable with /i/ or a diphthong that includes /i/. [@CarHoff1968, pp. 31-32] [@CarPeasgood1972, pp. 36-37]
-* Non-labial obstruents are backed after back vowels. [@CarPeasgood1972, p. 37]
-* /o/ centralizes to [ɵ] after palatalized consonants. [@CarPeasgood1972, p. 39]
+* Epenthesis of glottal consonants occurs between stressed vowels and following syllable-initial stops: if the stressed vowel is short, [ʔ] is inserted, while if long [h] is inserted [@CarCourtz2008, p. 31].
+* /s/ palatalizes to [ʃ] near /i/ [@CarCourtz2008, p. 32].
+* /ɽ/ becomes [ɾ] after front vowels [@CarCourtz2008, p. 32; @CarPeasgood1972, p. 37].
+* /Nɽ/ sequences collapse to [n] [@CarCourtz2008, pp. 33-34].
+* /j/ is sometimes realized as [w], most often between a back vowel and /a/ [@CarCourtz2008, p. 34].
+* Root-initial /a/ is realized as [o] when stressed; similarly, some verb stems with stressed /o/ in the first syllable reduce it to [a] when unstressed [@CarCourtz2008, pp. 35-36].
+* Epenthesis of [ʔ] occurs between adjacent vowels in different syllables [@CarCourtz2008, p. 43; @CarPeasgood1972, p. 38].
+* Consonants palatalize when in a syllable with /i/ or a diphthong that includes /i/ [@CarHoff1968, pp. 31-32; @CarPeasgood1972, pp. 36-37].
+* Non-labial obstruents are backed after back vowels [@CarPeasgood1972, p. 37].
+* /o/ centralizes to [ɵ] after palatalized consonants [@CarPeasgood1972, p. 39].
 
-## Syllable Structure
-
-Carib has a (C)V(V)(C) syllable structure. [@CarCourtz2008, p. 23]
-
-Any consonant can occur syllable-initially, but the sequence /ji/ never occurs. [@CarCourtz2008, p. 23]
 
 # References

@@ -1,0 +1,14 @@
+# Au Rule Set
+# Written by: Emily
+# Last updated: 10-29-2019
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[aiɨkmnoprstuw],,,,
+# Individual Letters
+sub,e,ə,2,,,
+sub,h,ɣ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Long /a/
+sub,a,aː,2,,a,
+sub,a,,3,a,,"clean-up",

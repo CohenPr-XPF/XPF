@@ -10,6 +10,7 @@
 | amn           | Amanab                    |
 | arl           | Arabela                   |
 | ast           | Asturian                  |
+| avt           | Au                        |
 | ay            | Aymara                    |
 | az            | Azerbaijani               |
 | ba            | Bashkir                   |

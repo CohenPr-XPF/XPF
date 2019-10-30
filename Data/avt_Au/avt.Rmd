@@ -1,0 +1,99 @@
+---
+title: "Au"
+author: "Emily Strand"
+bibliography: avt.bib
+output: html_document
+---
+
+Last updated: 2019-10-29
+
+# Background
+
+**Language family**: Torricelli / Wapei-Palei / Wapei
+
+* Au is spoken in the Sandaun province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"  Bilabial    Alveolar  Palatal     Velar    
+Stops                       "p"        "t"        ""         "k"      
+Fricatives                  ""         "s"        ""         "ɣ"        
+Nasals                      "m"        "n"        ""         ""       
+Trills                      ""         "r"        ""         ""        
+Approximants                "w"        ""        "j"         ""        
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* There are four possible vowel combinations (/ai/, /əi/, /au/, /iu/); however, they are seen as separate units rather than complex phonemes [@scorza_phonemes_1971, p. 6].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"        "ɨ"           "u"
+Mid       ""         "ə"           "o"
+Low       ""       "a  aː"         ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: The low central vowels are ordered short and long.", general_title = "")
+```    
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"             "a"
+"e"             "ə"
+"h"             "ɣ"
+"i"             "i"
+"ɨ"             "ɨ"
+"k"             "k"
+"m"             "m"
+"n"             "n"
+"o"             "o"
+"p"             "p"
+"r"             "r"
+"s"             "s"
+"t"             "t"
+"u"             "u"
+"w"             "w"
+"y"             "j"
+**Digraph**     ""
+"aa"            "aː"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* Voiceless stops may become voiced word-medially; in such contexts the voiced and voiceless counterparts are said to alternate freely [@scorza_phonemes_1971, pp. 7-8].
+
+# Misc. Rules
+
+* /n/ varies freely with /l/ word-medially [@scorza_au_1992, p. 3].
+
+# References
