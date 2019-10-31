@@ -8,6 +8,7 @@
 | aey           | Amele                     |
 | agg           | Angor                     |
 | amn           | Amanab                    |
+| an            | Aragonese                 |
 | arl           | Arabela                   |
 | ast           | Asturian                  |
 | avt           | Au                        |
@@ -48,11 +49,12 @@
 | hy            | Armenian                  |
 | ilo           | Ilocano                   |
 | iu            | Inuktitut                 |
-| jam           | Jamaican Creole           | lacks lenition                |
+| jam           | Jamaican Creole           |                               |
 | jv            | Javanese                  |
 | ka            | Georgian                  |
 | kbd           | Kabardian                 | under revision                |
 | kk            | Kazakh                    | under revision                |
+| kki           | Kagulu                    | lacks lenition                |
 | kl            | Kalaallisut               |
 | kmo           | Kwoma                     | under revision                |
 | kn            | Kannada                   | under revision                |

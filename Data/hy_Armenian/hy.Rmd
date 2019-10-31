@@ -11,115 +11,139 @@ Last Updated: 2019-06-13
 
 **Language Family**: Indo-European / Armenian / Eastern Armenian
 
-Where Armenian dialects diverge, I will be preferring Eastern Armenian, since it is the most widely spoken variant of the language.
+* Where Armenian dialects diverge, I will be preferring Eastern Armenian, since it is the most widely spoken variant of the language.
+* Speakers of Armenia reside in a multitude of places. They include Armenia, Azerbaijan, Georgia, Russia, the United States, France, Argentina, and many more countries.
 
 # Phonology
 
 ## Consonants
 
-* The plain voiceless stops glottalize in some dialects, but these are generally considered to be nonstandard realizations. [@HyDumTragut2009, pp. 17-18]
-* Minimal pairs can be found on @HyDumTragut2009, pages 18-20.
+* The plain voiceless stops glottalize in some dialects, but these are generally considered to be nonstandard realizations [@HyDumTragut2009, pp. 17-18].
+* Minimal pairs of the phonemes below can be found in @HyDumTragut2009 (pp. 18-20).
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /pʰ/, /b/, /f/, /v/, /m/  
-Alveolar: /t/, /tʰ/, /d/, /ts/, /tsʰ/, /dz/, /s/, /z/, /n/, /ɾ/, /r/, /l/  
-Postalveolar: /ʃ/, /ʒ/, /tʃ/, /tʃʰ/, /dʒ/  
-Palatal: /j/  
-Velar: /k/, /kʰ/, /ɡ/  
-Uvular: /χ/, /ʁ/  
-Glottal: /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /pʰ/, /b/, /t/, /tʰ/, /d/, /k/, /kʰ/, /ɡ/  
-Affricates: /ts/, /tsʰ/, /dz/, /tʃ/, /tʃʰ/, /dʒ/  
-Fricatives: /f/, /v/, /s/, /z/, /ʃ/, /ʒ/, /χ/, /ʁ/, /h/  
-Nasals: /m/, /n/  
-Flaps: /ɾ/  
-Trills: /r/  
-Approximants: /l/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Labial       Alveolar    Postalveolar   Palatal    Velar     Uvular   Glottal
+Stops                     "p  pʰ  b"    "t  tʰ  d"        ""          ""    "k  kʰ  ɡ"     ""        ""
+Affricates                    ""      "ts  tsʰ  dz"  "tʃ  tʃʰ  dʒ"    ""        ""         ""        ""  
+Fricatives                  "f  v"       "s  z"         "ʃ  ʒ"        ""        ""       "χ  ʁ"      "h"  
+Nasals                        "m"          "n"            ""          ""        ""         ""        ""
+Flaps                         ""           "ɾ"            ""          ""        ""         ""        ""  
+Trills                        ""           "r"            ""          ""        ""         ""        ""  
+Approximants                  ""           "l"            ""          "j"       ""         ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Where two phonemes share a cell, those on the left are voiceless and those on the right are voiced. Where three phonemes share a cell, they are ordered voicless, aspirated, voiced.", general_title = "")
+```
 
 ## Vowels
 
-High: /i/, /u/  
-Mid: /ɛ/, /ə/, /ɔ/  
-Low: /ɑ/  
+* Armenian does not have diphthongs, but it does have pseudo-diphthongs through vowel-glide combinations [@HyDumTragut2009, p. 21].
 
-Armenian does not have diphthongs, but it does have pseudo-diphthongs through vowel-glide combinations. [@HyDumTragut2009, p. 21]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "ɛ"         "ə"          "ɔ"
+Low        ""         ""           "ɑ"
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```    
 
 # Alphabet
 
-ա - /ɑ/  
-բ - /b/  
-գ - /ɡ/  
-դ - /d/  
-ե - /ɛ/  
-զ - /z/  
-է - /ɛ/  
-ը - /ə/  
-թ - /tʰ/  
-ժ - /ʒ/  
-ի - /i/  
-լ - /l/  
-խ - /χ/  
-ծ - /ts/  
-կ - /k/  
-հ - /h/  
-ձ - /dz/  
-ղ - /ʁ/  
-ճ - /tʃ/  
-մ - /m/  
-յ - /j/  
-ն - /n/  
-շ - /ʃ/  
-ո - /ɔ/  
-չ - /tʃʰ/  
-պ - /p/  
-ջ - /dʒ/  
-ռ - /r/  
-ս - /s/  
-վ - /v/  
-տ - /t/  
-ր - /ɾ/  
-ց - /tsʰ/  
-ու - /u/  
-փ - /pʰ/  
-ք - /kʰ/  
-և - /ɛv/  
-օ - /ɔ/  
-ֆ - /f/  
+* Older forms of the orthography used to include <ւ> as a standalone character representing /w/, but that has fallen out of usage; the sound has diverged, with different realizations of it merging with either <վ> /v/ or <ու> /u/ [@HyDumTragut2009, p. 12].
 
-* Older forms of the orthography used to include <ւ> as a standalone character representing /w/, but that has fallen out of usage; the sound has diverged, with different realizations of it merging with either <վ> /v/ or <ու> /u/. [@HyDumTragut2009, p. 12]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme  
+"ա"           "/ɑ/"  
+"բ"           "/b/"  
+"գ"           "/ɡ/"  
+"դ"           "/d/"  
+"ե"           "/ɛ/"
+"զ"           "/z/"  
+"է"           "/ɛ/"  
+"ը"           "/ə/"  
+"թ"           "/tʰ/"  
+"ժ"           "/ʒ/"  
+"ի"           "/i/"  
+"լ"           "/l/"  
+"խ"           "/χ/"  
+"ծ"           "/ts/"  
+"կ"           "/k/"  
+"հ"           "/h/"  
+"ձ"           "/dz/"  
+"ղ"           "/ʁ/"  
+"ճ"           "/tʃ/"  
+"մ"           "/m/"  
+"յ"           "/j/"  
+"ն"           "/n/"  
+"շ"           "/ʃ/"  
+"ո"           "/ɔ/"  
+"չ"           "/tʃʰ/"  
+"պ"           "/p/"  
+"ջ"           "/dʒ/"  
+"ռ"           "/r/"  
+"ս"           "/s/"  
+"վ"           "/v/"  
+"տ"           "/t/"  
+"ր"           "/ɾ/"  
+"ց"           "/tsʰ/"  
+"ու"          "/u/"  
+"փ"           "/pʰ/"  
+"ք"           "/kʰ/"  
+"և"           "/ɛv/"  
+"օ"           "/ɔ/"  
+"ֆ"           "/f/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```  
 
 # Lenition Rules
 
-* /u/ centralizes to [ʉ] after /j/. [@HyDumTragut2009, p. 14]
-* /n/ assimilates to the place of following stops or affricates. [@HyDumTragut2009, pp. 19, 27]
-* The /ɛv/ cluster typically approximantizes to [ɛʋ]. [@HyDumTragut2009, p. 20]
-* In consonant clusters, fricatives undergo voicing assimilation, and affricates undergo both voicing and aspiration assimilation. [@HyDumTragut2009, p. 24]
-* In a few specific words, /h/ deletes after /ɾ/. [@HyDumTragut2009, p. 28]
-* In colloquial speech, /ɾ/ deletes in the coda of closed syllables. (ibid.)
-* Alveolar stops palatalize before front vowels or /j/. [@HyDumTragut2009, p. 29]
-* /l/ palatalizes preconsonantally. (ibid.)
-* During the inflection process, non-high back vowels delete in some circumstances. [@HyDumTragut2009, p. 39]
-* Initial /i/ reduces to [ə] in monosyllabic words. [@HyDumTragut2009, p. 41]
-* Unstressed high vowels reduce to [ə] or delete during word formation and inflection. [@HyDumTragut2009, pp. 41-42] [@HyKozintseva1995, p. 6]
+* /u/ centralizes to [ʉ] after /j/ [@HyDumTragut2009, p. 14].
+* /n/ assimilates to the place of following stops or affricates [@HyDumTragut2009, pp. 19, 27].
+* The /ɛv/ cluster typically approximantizes to [ɛʋ] [@HyDumTragut2009, p. 20].
+* In consonant clusters, fricatives undergo voicing assimilation, and affricates undergo both voicing and aspiration assimilation [@HyDumTragut2009, p. 24].
+* In a few specific words, /h/ deletes after /ɾ/ [@HyDumTragut2009, p. 28].
+* In colloquial speech, /ɾ/ deletes in the coda of closed syllables (ibid.).
+* Alveolar stops palatalize before front vowels or /j/ [@HyDumTragut2009, p. 29].
+* /l/ palatalizes preconsonantally (ibid.).
+* During the inflection process, non-high back vowels delete in some circumstances [@HyDumTragut2009, p. 39].
+* Initial /i/ reduces to [ə] in monosyllabic words [@HyDumTragut2009, p. 41].
+* Unstressed high vowels reduce to [ə] or delete during word formation and inflection [@HyDumTragut2009, pp. 41-42; @HyKozintseva1995, p. 6].
 
 # Misc. Rules
 
-* [j] is inserted before /ɛ/ when it follows /ɑ/ or is word-initial. [@HyDumTragut2009, pp. 14-15]
-* [ʋ] is inserted before /ɔ/ in the same circumstances. [@HyDumTragut2009, p. 16]
-* [j] is inserted before /ɛv/ word-initially. [@HyDumTragut2009, p. 20]
-* Stops devoice and aspirate in the following circumstances:
+* [j] is inserted before /ɛ/ when it follows /ɑ/ or is word-initial [@HyDumTragut2009, pp. 14-15].
+* [ʋ] is inserted before /ɔ/ in the same circumstances [@HyDumTragut2009, p. 16].
+* [j] is inserted before /ɛv/ word-initially [@HyDumTragut2009, p. 20].
+* Stops devoice and aspirate in the following circumstances [@HyDumTragut2009, pp. 22-23; @HySakayan2007, pp. 37, 60, 83]:
   * After /ɾ/, usually
   * In postvocalic final or intervocalic positions, occasionally
   * Following nasals with the same place of articulation
-  * Citations for all of the above: [@HyDumTragut2009, pp. 22-23] [@HySakayan2007, pp. 37, 60, 83]
-* Voiceless stops sometimes devoice when followed by sibilants. (ibid.)
-* /ɾ/ trills to [r] before /n/. [@HyDumTragut2009, p. 27]
-* Final flaps palatalize in some dialects, especially in the east. [@HyDumTragut2009, p. 28]
-* Schwas are frequently inserted to syllabify consonant clusters. [@HyDumTragut2009, p. 30]
-* Medial /e/ raises to [i] in inflected forms of monosyllabic roots. [@HyDumTragut2009, p. 40]
+* Voiceless stops sometimes devoice when followed by sibilants (ibid.).
+* /ɾ/ trills to [r] before /n/ [@HyDumTragut2009, p. 27].
+* Final flaps palatalize in some dialects, especially in the east [@HyDumTragut2009, p. 28].
+* Schwas are frequently inserted to syllabify consonant clusters [@HyDumTragut2009, p. 30].
+* Medial /e/ raises to [i] in inflected forms of monosyllabic roots [@HyDumTragut2009, p. 40].
 
 # References

@@ -7,46 +7,68 @@ output: html_document
 
 Last Updated: 2019-07-10
 
-There are two rulesets (and, accordingly, two verify files): one for the Latin-alphabet orthography of Inuktitut, and one for the Inuktitut syllabary.
-
 # Background
 
 **Language Family**: Eskimo-Aleut / Eskimo / Inuit / Inuktitut
 
-Where dialects diverge, this analysis will be preferring Eastern Canadian Inuktitut.
+* Where dialects diverge, this analysis will be preferring Eastern Canadian Inuktitut.
+* Inuktitut is spoken in Canada, specifically in the provinces of Newfoundland and Labrador, Nunavut, and Quebec.
 
 # Phonology
 
 ## Consonants
 
-* /r/ survives in a small number of dialects. [@IuDorais1990, p. 215]
+* /r/ survives in a small number of dialects [@IuDorais1990, p. 215].
+* /h/ is not normally included in the phonemic inventory given that it is quite infrequent and only appears in some dialects [@IuDorais1986, p. 29]. I have chosen not to include it in the inventory here, and likewise it will not be represented in the rules.
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /m/, /v/  
-Alveolar: /t/, /n/, /s/, /ɬ/, /l/  
-Palatal: /j/  
-Velar: /k/, /ŋ/, /ɣ/  
-Uvular: /q/, /ʁ/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /t/, /k/, /q/  
-Nasals: /m/, /n/, /ŋ/  
-Fricatives: /v/, /s/, /ɬ/, /ɣ/, /ʁ/  
-Approximants: /l/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Alveolar    Palatal     Velar     Uvular
+Stops                       "p"         "t"          ""        "k"       "q"
+Fricatives                  "v"        "s  ɬ"        ""        "ɣ"       "ʁ"
+Nasals                      "m"         "n"          ""        "ŋ"       ""
+Approximants                 ""         "l"          "j"       ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Uvular"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: The alveolar fricative on the right is lateral.", general_title = "")
+```
 
 ## Vowels
 
-Vowels: /i/, /u/, /a/  
+* Vowel length is contrastive [@IuDorais1990, p. 214]. Long vowels are indicated by doubling the vowel character [@IuDorais2010, p. 56].
 
-Vowel length is contrastive. [@IuDorais1990, p. 214]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"        ""           "u"
+Mid       ""         ""           ""
+Low       ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```   
 
 # Alphabet
 
+* Regarding the transcription, there are two rulesets (and, accordingly, two verify files): one for the Latin-alphabet orthography of Inuktitut, and one for the Inuktitut syllabary.
+
 ## Inuit Syllabary
 
-See @IuDorais1990 (p. 241) for details. A dot can be appended above a character to indicate a long syllable.
+* A dot can be appended above a character to indicate a long syllable.
+* See @IuDorais1990 (p. 241) for details.
 
 | ᐃ - /i/  | ᐅ - /u/  | ᐊ - /a/  | ᐁ - /ai/  |  Final   |
 |:--------:|:--------:|:--------:|:---------:|:--------:|
@@ -62,43 +84,50 @@ See @IuDorais1990 (p. 241) for details. A dot can be appended above a character 
 | ᕕ - /vi/ | ᕗ - /vu/ | ᕙ - /va/ | ᕓ - /vai/ | ᕝ - /v/ |
 | ᕆ - /ʁi/ | ᕈ - /ʁu/ | ᕋ - /ʁa/ | ᕃ - /ʁai/ | ᕐ - /ʁ/ |
 | ᕿ - /qi/ | ᖁ - /qu/ | ᖃ - /qa/ | ᙯ - /qai/ | ᖅ - /q/ |
-| ᖏ - /ŋi/ | ᖑ - /ŋu/ | ᖓ - /ŋa/ | ᙰ - /ŋai/ | ᖕ - /ŋ/ |
-| ᖠ - /ɬi/ | ᖢ - /ɬu/ | ᖤ - /ɬa/ |    N/A    | ᖦ - /ɬ/ |
+| ᖏ - /ŋi/ | ᖑ - /ŋu/ | ᖓ - /ŋa/ | ᙰ - /ŋai/| ᖕ - /ŋ/ |
+| ᖠ - /ɬi/ | ᖢ - /ɬu/ | ᖤ - /ɬa/ |            | ᖦ - /ɬ/ |
 
 ## Roman Alphabet
 
-a - /a/  
-g - /ɣ/  
-h - /h/ (in some dialects)  
-i - /i/  
-j - /j/  
-k - /k/  
-l - /l/  
-& - /ɬ/  
-m - /m/  
-n - /n/  
-ng - /ŋ/  
-p - /p/  
-q - /q/  
-r - /ʁ/  
-s - /s/  
-t - /t/  
-u - /u/  
-v - /v/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Vowel length is shown by doubling the vowel character [@IuDorais2010, p. 56].
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme       
+"a"            "/a/"         
+"g"            "/ɣ/"          
+"i"            "/i/"         
+"j"            "/j/"         
+"k"            "/k/"         
+"l"            "/l/"         
+"&"            "/ɬ/"         
+"m"            "/m/"         
+"n"            "/n/"       
+"p"            "/p/"       
+"q"            "/q/"      
+"r"            "/ʁ/"      
+"s"            "/s/"      
+"t"            "/t/"     
+"u"            "/u/"      
+"v"            "/v/"       
+**Digraph**     ""          
+"ng"           "/ŋ/"       
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
-* In some dialects, /s/ debuccalizes to [h]. [@IuDorais1990, pp. 215-216]
-* In some dialects, /t/ spirantizes to [s] - or reduces even farther to [h] - when preceded by /i/. [@IuDorais1990, pp. 216-217]
-* In some Alaskan dialects, /p/ spirantizes to [v] and /v/ approximantizes to [w] when preceded by unstressed syllables. [@IuDorais1986, p. 25]
-* In some dialects, /q/ spirantizes to [χ] or [ʁ]. (ibid.)
-* In some Greenlandic dialects, intervocalic /ŋ/ deletes. [@IuDorais1986, p. 27]
-* In dialects in Greenland and western Canada, word-final /i/ deletes. [@IuDorais1986, p. 31]
+* In some dialects, /s/ debuccalizes to [h] [@IuDorais1990, pp. 215-216].
+* In some dialects, /t/ spirantizes to [s] - or reduces even farther to [h] - when preceded by /i/ [@IuDorais1990, pp. 216-217].
+* In some Alaskan dialects, /p/ spirantizes to [v] and /v/ approximantizes to [w] when preceded by unstressed syllables [@IuDorais1986, p. 25].
+* In some dialects, /q/ spirantizes to [χ] or [ʁ] (ibid.).
+* In some Greenlandic dialects, intervocalic /ŋ/ deletes [@IuDorais1986, p. 27].
+* In dialects in Greenland and western Canada, word-final /i/ deletes [@IuDorais1986, p. 31].
 
 # Misc. Rules
 
-* Regressive assimilation occurs in consonant clusters, with the extent of the assimilation varying based on dialect. [@IuDorais1986, pp. 34-35]
+* Regressive assimilation occurs in consonant clusters, with the extent of the assimilation varying based on dialect [@IuDorais1986, pp. 34-35].
 
 # References

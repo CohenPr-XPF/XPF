@@ -4,7 +4,7 @@
 type,sfrom,sto,weight,precede,follow,comment
 # Classes
 class,vowel,[aiu],,,,
-class,passthrough,[ahijklmnpqstuv],,,,
+class,passthrough,[aijklmnpqstuv],,,,
 class,punct,['‘’-],,,,
 # Individual Letters
 sub,g,ɣ,4,,,

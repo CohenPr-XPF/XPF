@@ -1,78 +1,99 @@
 ---
-title: "Llocano"
+title: "Ilocano"
 author: "Emily Strand"
 bibliography: ilo.bib
 output: html_document
 ---
 
-Last Updated: 2019-07-31
+Last Updated: 2019-10-17
 
 # Background
 
 **Language Family**: Austronesian / Malayo-Polynesian / Northern Luzon
 
-Also known as Iloko.
-
-The northern dialect is represented below.
+* Also known as Iloko, Ilocano is spoken throughout the Northern Philippines.
+* The northern dialect is represented below.
 
 # Phonology
 
 ## Consonants
 
-* /h/ appears in only one native word "haán," but it is not recognized as a phoneme in the inventory [@yamamoto_phonological_2017, pg. 23].
+* /h/ appears in only one native word "haán," but it is not recognized as a phoneme in the language [@yamamoto_phonological_2017, pg. 23].
 
-### By manner of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /b/, /m/    
-Dental: /t/, /d/, /n/      
-Alveolar: /s/, /ɾ/, /l/     
-Palatal: /j/      
-Velar: /k/, /g/, /ŋ/, /w/     
-Glottal: /ʔ/     
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By place of articulation
 
-Stops: /p/, /b/, /t/, /d/, /k/, /g/, /ʔ/   
-Nasals: /m/, /n/, /ŋ/   
-Fricatives: /s/     
-Laterals: /l/    
-Tap: /ɾ/     
-Glides: /w/, /j/        
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Dental   Alveolar    Palatal     Velar    Glottal
+Stops                      "p  b"     "t̪  d̪"      ""         ""        "k  ɡ"     "ʔ"
+Fricatives                   ""         ""        "s"        ""         ""        ""
+Nasals                       "m"        "n̪"       ""         ""         "ŋ"       ""
+Taps                         ""         ""        "ɾ"        ""         ""        ""
+Approximants                 "w"        ""        "l"        "j"        ""        ""
+'), TRUE)
 
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```            
 
 ## Vowels
 
 * Although /o/ was historically recognized as an allophone of /u/, it is now considered a phoneme due to the adoption of several Spanish loanwords [@rubino_ilocano_2000, pg. xxviii].
-* There is some debate as to how many dipthongs are present in Ilocano. @constantino_ilokano_1971 specifies 14 (pg. 6), while @rubino_ilocano:_1998 specifies 5 (pg. xxix). On the other hand, @yamamoto_phonological_2017 argues that such combinations actually represent sequences of consonants and vowels rather than dipthongs (pg. 32). Due to a lack of consensus, I will not account for them.
+* There is some debate as to how many dipthongs are present in Ilocano. @constantino_ilokano_1971 specifies 14 (pg. 6), while @rubino_ilocano:_1998 specifies 5 (pg. xxix). @yamamoto_phonological_2017 argues that such combinations actually represent sequences of consonants and vowels rather than dipthongs (pg. 32). Due to a lack of consensus, I will not account for them.
 
-Vowels: /i/, /ɛ/, /a/, /u/, /o/
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "ɛ"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
 
 # Alphabet
 
-a - /a/     
-b - /b/           
-d - /d/     
-e - /ɛ/             
-g - /g/          
-i - /i/       
-k - /k/        
-l - /l/      
-m - /m/           
-n - /n/        
-ng - /ŋ/       
-o - /o/      
-p - /p/        
-r - /ɾ/         
-s - /s/           
-t - /t/          
-u - /u/        
-w - /w/         
-y - /j/      
-(-) - /ʔ/       
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-# Stress
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "/a/"     
+"b"            "/b/"           
+"d"            "/d̪/"     
+"e"            "/ɛ/"             
+"g"            "/ɡ/"          
+"i"            "/i/"       
+"k"            "/k/"        
+"l"            "/l/"      
+"m"            "/m/"           
+"n"            "/n̪/"              
+"o"            "/o/"      
+"p"            "/p/"        
+"r"            "/ɾ/"         
+"s"            "/s/"           
+"t"            "/t̪/"          
+"u"            "/u/"        
+"w"            "/w/"         
+"y"            "/j/"      
+"\\-"          "/ʔ/"
+**Digraph**     ""
+"ng"           "/ŋ/"
+'), TRUE)
 
-* Although stress is phonemic in Ilocano, @rubino_ilocano_2000 argues that it only differentiates meaning in very few words (pg.xxix).
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```       
 
 # Lenition Rules
 
@@ -84,5 +105,7 @@ y - /j/
 
 * Glottal stops occur preceding word initial vowels [@rubino_ilocano:_1998, pg.12].       
 * Glottal stops occur intervocalically (except with ia, ie, iu, and ua) [@rubino_ilocano:_1998, pg. 12].      
-* Gemination can occur with every consonant except /ʔ/ and/h/ [@rubino_ilocano_2000, pg. xxv, xxxiv].        
+* Gemination can occur with every consonant except /ʔ/ and /h/ [@rubino_ilocano_2000, pg. xxv, xxxiv].        
 * /u/ is sometimes realized as /o/ word finally [@constantino_ilokano_1971, pg. 4]
+
+# References

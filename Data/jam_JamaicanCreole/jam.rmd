@@ -5,59 +5,111 @@ bibliography: jam.bib
 output: html_document
 ---
 # Background
+
 **Language family**: English creole
 
-As stated by @harry2006jamaican, "Jamaican Creole is one of the major Atlantic
-English-lexifier creoles spoken in the Caribbean." Though one may consider a
-continuum between Jamaican Creole and Jamaican English, the form considered
-here is after @harry2006jamaican, which is "basilectal Jamaican Creole and
-radically different phonologically from the acrolectal form, Jamaican English,
-a regionally distinctive dialect of English."
-
-# Alphabet
-## Consonants
-* ⟨b⟩ = /b/
-* ⟨d⟩ = /d/
-* ⟨ch⟩ = /tʃ/
-* ⟨f⟩ = /f/
-* ⟨g⟩ = /g/
-* ⟨h⟩ = /h/
-* ⟨j⟩ = /dʒ/
-* ⟨k⟩ = /k/
-* ⟨l⟩ = /l/
-* ⟨m⟩ = /m/
-* ⟨n⟩ = /n/
-* ⟨ng⟩ = /ŋ/
-* ⟨p⟩ = /p/
-* ⟨r⟩ = /ɹ/
-* ⟨s⟩ = /s/
-* ⟨sh⟩ = /ʃ/
-* ⟨t⟩ = /t/
-* ⟨v⟩ = /v/
-* ⟨w⟩ = /w/
-* ⟨y⟩ = /j/
-* ⟨z⟩ = /z/
-
-## Vowels
-Jamaican Creole has long and short vowels. The short
-vowels are:
-* ⟨a⟩ = /a/
-* ⟨e⟩ = /e/
-* ⟨i⟩ = /i/
-* ⟨o⟩ = /o/
-* ⟨u⟩ = /u/
-
-The long vowels are:
-* ⟨aa⟩ = /aa/
-* ⟨ii⟩ = /ii/
-* ⟨uu⟩ = /uu/
-
-Jamaican Creole has diphthongs. The only diphthong that is not transparent orthographically is /au/,
-which is spelled ⟨ou⟩.
+* Also referred to as Jamaican Patois, Patwa, or Patwah, Jamaican Creole is spoken in a multitude of places. These include Jamaica, the United Kingdom, the United States, Canada, other Caribbean islands, and throughout the Caribbean coast of Central America.
 
 # Phonology
+
 ## Consonants
-There is some debate about the status of /h/ in
-Jamaican Creole. It appears that "[h] may be phonetic in Eastern varieties" but "is phonemic in the Western varieties" (@harry2006jamaican).
+
+* There is some debate about the status of /h/ in Jamaican Creole. It appears that "[h] may be phonetic in Eastern varieties" but "is phonemic in the Western varieties" [@harry2006jamaican, p. 126]. I have chosen to include it below.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Alveolar   Postalveolar   Palatal     Velar    Glottal
+Stops                      "p  b"     "t  d"         ""           ""       "k  ɡ"      ""
+Affricates                   ""         ""        "tʃ  dʒ"        ""         ""        ""
+Fricatives                 "f  v"     "s  z"         "ʃ"          ""         ""        "h"
+Nasals                       "m"        "n"          ""           ""         "ŋ"       ""
+Approximants                 "w"      "ɹ  l"         ""           "j"        ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Both alveolar approximants are voiced, but the one on the right is lateral.", general_title = "")
+```
+
 ## Vowels
-According to @harry2006jamaican, "The long vowels are represented phonemically as a sequence of short vowels."
+
+* Jamaican Creole makes a vowel length distinction. Long vowels are indicated by repeated graphemes (/e/ and /o/ do not have long counterparts) [@harry2006jamaican, p. 128].
+* Jamaican Creole has diphthongs. The only diphthong that is not transparent orthographically is /au/, which is spelled ⟨ou⟩ (ibid.).
+* There is some uncertainty regarding the concept of contrastive tone in Jamaican Creole. @Lawton1968 argues that tone is contrastive, whereas @Parsard explains that speakers of creole languages do not make use of it (p. 23; p. 7). Due to this uncertainty, I will proceed with the language not accounting for tone.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ai/, /ua/, /ia/, /au/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```   
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "/a/"
+"b"            "/b/"
+"d"            "/d/"
+"e"            "/e/"
+"f"            "/f/"
+"g"            "/ɡ/"
+"h"            "/h/"
+"i"            "/i/"
+"j"            "/dʒ/"
+"k"            "/k/"
+"l"            "/l/"
+"m"            "/m/"
+"n"            "/n/"
+"o"            "/o/"
+"p"            "/p/"
+"r"            "/ɹ/"
+"s"            "/s/"
+"t"            "/t/"
+"u"            "/u/"
+"v"            "/v/"
+"w"            "/w/"
+"y"            "/j/"
+"z"            "/z/"
+**Digraph**     ""
+"ch"           "/tʃ/"
+"ng"           "/ŋ/"
+"sh"           "/ʃ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* Obstruents become palatalized preceding high vowels /i/ and /u/ [@harry2006jamaican, p. 127].
+* /b/, /d/, and /ɡ/ are pronounced lenis (specifically as implosives) word-initially (ibid.).
+
+# References

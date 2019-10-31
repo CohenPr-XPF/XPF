@@ -1,0 +1,116 @@
+---
+title: "Aragonese"
+author: "Abi Creighton"
+bibliography: an.bib
+output: html_document
+---
+
+Last updated: 2019-10-24
+
+# Background
+
+**Language family**: Indo-European / Italic / Romance / Western / Ibero-Romance / Aragonese
+
+* Aragonese is spoken in Portugal and Spain.
+
+# Phonology
+
+## Consonants
+```{r echo=FALSE, message=FALSE, warning=FALSE, restults = 'asis'}                                                                               
+consonants <- read.table(textConnection('
+"Manner of Articulation"          Labial   Dental Alveolar Postalveolar Palatal Velar     
+Stops                             "p b"   "t̪  d̪"    ""         ""         ""    "k ɡ"    
+Affricates                         ""       ""      ""        "tʃ"        ""     ""
+Fricatives                         "f"      "θ"     "s"       "ʃ"         ""     ""
+Nasals                             "m"      ""      "n"        ""         "ɲ"    ""
+Flaps                              ""       ""      "ɾ"        ""         ""     ""
+Trills                             ""       ""      "r"        ""         ""     ""
+Approximants                       ""       ""      "l"        ""        "ʝ ʎ"   ""            
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Both palatal approximants are voiced, but the one on the right is lateral.", general_title = "")
+```
+
+## Vowels
+
+* There is an abundance of diphthongs and triphthongs in Aragonese; however it is unclear how they are treated (as complex phonemes or sequences). @mott_chistabino_2007 explains that in order to preserve the CV syllable structure, thus avoiding "vowels in hiatus," dipthongs and triphthongs are present whenever juxtaposing vowels are in succession (pp. 108-110). On the other hand, @Aragonesa2017 explains that consecutive juxtaposing vowels are not always part of the same syllable, implying that vowel combinations can merely be sequences (p. 4). Because of this ambiguity, diphthongs and triphthongs will not be represented in the rules.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+        Front Central Back     
+High     "i"     ""    "u"
+Mid      "e"     ""    "o"
+Low      ""     "a"     ""                
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* ⟨k⟩, ⟨j⟩, and ⟨w⟩ appear in loanwords [@Ledgeway2016, pp. 393-395].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                           Comment
+"a"            "/a/"                              ""
+"b"            "/b/"                              ""
+"c"         "/k/; /θ/"                "/θ/: preceding front vowels"
+"d"            "/d̪/"                              ""
+"e"            "/e/"                              ""
+"f"            "/f/"                              ""
+"g"            "/ɡ/"                              ""
+"h"             "∅"                               ""
+"i"            "/i/"                              ""
+"l"            "/l/"                              ""
+"m"            "/m/"                              ""
+"n"            "/n/"                              ""
+"o"            "/o/"                              ""
+"p"            "/p/"                              ""
+"q"            "/k/"                              ""
+"r"         "/r/; /ɾ/"                   "/r/: word-initially"
+"s"            "/s/"                              ""
+"t"            "/t̪/"                              ""
+"u"            "/u/"                              ""
+"v"            "/b/"                              ""
+"x"            "/ʃ/"                              ""
+"y"            "/ʝ/"                              ""
+"z"            "/θ/"                              ""
+**Digraph**     ""                                ""
+"ch"           "/tʃ/"                             ""
+"gu"         "/ɡ/; /ɡu/"  "/ɡ/: preceding front vowels; /ɡu/ preceding back vowels"
+"gü"           "/ɡu/"                     "preceding front vowels"
+"ix"           "/ʃ/"                              ""
+"ll"           "/ʎ/"                              ""
+"ny"           "/ɲ/"                              ""
+"qu"         "/k/; /ku/"  "/k/: preceding front vowels; /ku/ preceding back vowels"      
+"qü"           "/ku/"                       "preceding front vowels"      
+"rr"           "/r/"                               ""
+"tz"           "/θ/"                          "word-finally"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /k/ is often deleted word-finally [@sanchez_pitarch_propuesta_2010, p. 5].
+* Voiced stops become fricatives between vowels and /d/ is often deleted completely between vowels [@mott_chistabino_2007, pp. 104-105].
+* Very often, the voiced approximants in Chistabino are reduced to zero by assimilation to following consonants, as in ilesia [i'lesja] 'church' < iglesia" [@mott_chistabino_2007, p. 105].
+* In syllable-final positions, /s/ may become voiced preceding voiced consonants [@Ledgeway2016, p. 389].
+
+# Misc. Rules
+
+* Nasal consonants assimilate to the place of articulation of the following obstruent [@mott_chistabino_2007, p. 106].
+* The alveolar lateral assimilates to the place of the following interdental, dental, or palatalized consonant [@mott_chistabino_2007, p. 7].
+
+# References
