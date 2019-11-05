@@ -1,0 +1,31 @@
+# Piapoco Rule Set
+# Written by: Emily
+# Last Updated: 2019-04-11
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdeilmnpstuw],,,,
+class,vowel,[aeiu],,,,
+class,tone,(˥|˩),,,,
+# Individual Letters
+sub,c,k,2,,,
+sub,j,h,2,,,
+sub,r,ɾ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,ts,3,,h,
+sub,h,,3,c,,"clean-up",
+sub,q,k,3,,u,
+sub,u,,3,q,,"clean-up",
+# Tone
+sub,á,a ˥,2,,,
+sub,é,e ˥,2,,,
+sub,í,i ˥,2,,,
+sub,ú,u ˥,2,,,
+sub,à,a ˩,2,,,
+sub,è,e ˩,2,,,
+sub,ì,i ˩,2,,,
+sub,ù,u ˩,2,,,
+# Long Vowels
+ipasub,({vowel}) \1,\1 ː,2,,,
+ipasub,({vowel}) ({tone}) \1,\1 ː \2,2,,,

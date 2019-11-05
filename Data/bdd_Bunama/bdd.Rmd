@@ -1,0 +1,116 @@
+---
+title: "Bunama"
+author: "Emily Strand"
+bibliography: bdd.bib
+output: html_document
+---
+
+Last updated: 2019-10-29
+
+# Background
+
+**Language family**: Austronesia / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Western Oceanic / Papuan Tip / Nuclear / North Papuan Mainland-D'Entrecasteaux / Dobu-Duau
+
+* Bunama is spoken in the Milne Bay province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar  Palatal   Velar   Glottal
+"Stops (plain)"            "p  b"    "t  d"     ""      "k  ɡ"    "ʔ"
+"Stops (labialized)"      "pʷ  bʷ"     ""       ""       "ɡʷ"     "ʔʷ"
+Fricatives                  ""        "s"       ""       ""      "h  hʷ"
+Nasals                    "m  mʷ"     "n"       ""       ""        ""
+Approximants                "w"       "l"       "j"      ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. The exceptions are the glottal fricatives (both voiceless) and (bi)labial nasals (both voiced), where the phonemes on the left are plain and the phonemes on the right are labialized. ", general_title = "")
+```
+
+## Vowels
+
+* Although vowels may appear consecutively, they are not always interpreted as complex phonemes, so they will not be accounted for in the rules [@leckie_bunama_1976, pp. 7-8].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme  
+"a"            "a"
+"b"            "b"
+"d"            "d"
+"e"            "e"
+"g"            "ɡ"
+"h"            "h"
+"i"            "i"
+"k"            "k"
+"l"            "l"
+"m"            "m"
+"n"            "n"
+"o"            "o"
+"p"            "p"
+"s"            "s"
+"t"            "t"
+"u"            "u"
+"w"            "w"
+"y"            "j"
+"\'"           "ʔ"
+**Digraph**    ""
+"bw"           "bʷ"
+"gw"           "ɡʷ"
+"hw"           "hʷ"
+"mw"           "mʷ"
+"pw"           "pʷ"
+"\'w"          "ʔʷ"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Bunama consist of the following structures [@leckie_bunama_1976, p. 61]:
+    - CV
+    - CVC
+    - V
+    - VC
+
+# Lenition Rules
+
+* /h/ is often deleted intervocalically [@leckie_bunama_1976, p. 7].
+
+# Misc. Rules
+
+* In some instances, the labialized consonants can occur in free variation with their non-labialized counterparts [@leckie_bunama_1976, p. 15].
+* The labialized consonants seem to only appear preceding /a/ and /e/ [@leckie_bunama_1976, p. 15].
+
+# References

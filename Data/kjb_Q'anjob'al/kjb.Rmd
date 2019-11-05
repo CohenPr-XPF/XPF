@@ -1,0 +1,127 @@
+---
+title: "Qʼanjobʼal"
+author: "Emily Strand"
+bibliography: kjb.bib
+output: html_document
+---
+
+Last updated: 2019-11-01
+
+# Background
+
+**Language family**: Mayan / Kanjobalan-Chujean / Kanjobalan / Kanjobal-Jacaltec
+
+* Qʼanjobʼal is spoken in the Huehuetenango and Quiché departments of Guatemala.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"  Bilabial   Alveolar   Postalveolar   Retroflex  Palatal   Velar     Uvular   Glottal
+Stops                      "p  ɓ"     "t  tʼ"        ""           ""        ""      "k  k’"   "q  q’"    "ʔ"
+Affricates                  ""       "ts  tsʼ"   "tʃ  tʃ’"     "tʂ   tʂ’"   ""        ""        ""       ""
+Fricatives                  ""         "s"          "ʃ"           "ʂ"       ""        "x"       ""       ""
+Nasals                      "m"        "n"          ""            ""        ""        ""        ""       ""
+Flaps                       ""         "ɾ"          ""            ""        ""        ""        ""       ""
+Approximants                "w"        "l"          ""            ""        "j"       ""        ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Retroflex", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 8)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Phonemes that have the diacritic (ʼ) are ejectives. The bilabial stop on the right is an implosive.", general_title = "")
+```
+
+## Vowels
+
+* In general, vowel length and vowel nasalization are not contrastive [@Lichtman2010, p. 13].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```   
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme           Comment
+"a"            "a"                ""
+"b\'"          "ɓ"                ""
+"e"            "e"                ""
+"h"            "Ø"   "represents the absence of a glottal stop before a vowel [@Lichtman2010, p. 3]"
+"i"            "i"                ""
+"j"            "x"                ""
+"k"            "k"                ""
+"k\'"          "k’"               ""
+"l"            "l"                ""
+"m"            "m"                ""
+"n"            "n"                ""
+"o"            "o"                ""
+"p"            "p"                ""
+"q"            "q"                ""
+"q\'"          "q’"               ""
+"r"            "ɾ"                ""
+"s"            "s"                ""
+"t"            "t"                ""
+"t\'"          "tʼ"               ""
+"u"            "u"                ""
+"w"            "w"                ""
+"x"            "ʂ"                ""
+"y"            "j"                ""
+"\'"           "ʔ"                ""
+**Digraph**    ""                 ""
+"ch"           "tʃ"               ""
+"ch\'"         "tʃ’"              ""
+"tx"           "tʂ"               ""
+"tx\'"         "tʂ’"              ""
+"tz"           "ts"               ""
+"tz\'"         "tsʼ"              ""
+"xh"           "ʃ"                ""
+"**Orthographic Variations**"  "" ""
+"ẍ"            "ʃ"                ""
+"c"            "k"                ""
+"c\'"          "k’"               ""
+"b"            "ɓ"                ""
+ '), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Qʼanjobʼal follow the order of (C)(C)V(C) [@Toledo2017, p. 535].
+
+# Lenition Rules
+
+* Stops tend to become voiced and spirantize between voiced stops [@Lichtman2010, p. 18].
+* Nasals and vowels word-finally tend to be deleted [@Lichtman2010, p. 20]. Word-medial vowels may also be deleted.
+* /t/ (word-finally) and /ɓ/ (word and syllable-finally) tend to delete (ibid.).
+
+# Misc. Rules
+
+* /w/ fricates, becoming [β] preceding front vowels [@Toledo2017, p. 534].
+* Vowels in word-initial positions are preceding by a glottal stop [@Lichtman2010, p. 3].
+* Consonant gemination does not occur [@Lichtman2010, p. 19].
+
+# References

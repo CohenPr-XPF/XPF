@@ -1,0 +1,38 @@
+# Q'anjob'al Rule Set
+# Written by: Emily
+# Last Updated: 2019-11-01
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aeiklmnopqstuw],,,,
+class,vowel,[aeiou],,,,
+class,ejective,(k|q|t|tʃ|tʂ|ts),,,,
+class,apostrophe,[''‘’],,,,
+# Individual Rules
+sub,b,ɓ,2,,{apostrophe},
+sub,{apostrophe},,3,b,,"clean-up",
+sub,h,,2,,,
+sub,j,x,2,,,
+sub,r,ɾ,2,,,
+sub,x,ʂ,2,,,
+sub,y,j,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,tʃ,2,,h,
+sub,h,,3,c,,"clean-up",
+sub,t,tʂ,3,,x,
+sub,x,,3,t,,"clean-up",
+sub,t,ts,3,,z,
+sub,z,,3,t,,"clean-up",
+sub,x,ʃ,3,,h,
+sub,h,,3,x,,"clean-up",
+# Ejectives
+ipasub,({ejective}) ʔ,\1’,2,,,
+# Word-Initial Glottal Stop
+sub,({vowel}),ʔ \1,3,^,,
+sub,({vowel}),\1,4,^h,,"<h> indicates that no glottal stop is present",
+sub,h,,3,^,{vowel},"clean-up",
+# Orthographic Variants
+sub,ẍ,ʃ,2,,,
+sub,c,k,2,,,
+sub,b,ɓ,2,,,

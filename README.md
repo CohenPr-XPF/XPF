@@ -16,6 +16,7 @@
 | az            | Azerbaijani               |
 | ba            | Bashkir                   |
 | bcl           | Central Bikol             |
+| bdd           | Bunama                    |
 | be            | Belarusan                 |
 | bef           | Benabena                  |
 | bg            | Bulgarian                 |
@@ -53,6 +54,7 @@
 | jv            | Javanese                  |
 | ka            | Georgian                  |
 | kbd           | Kabardian                 | under revision                |
+| kjb           | Q'anjob'al                |
 | kk            | Kazakh                    | under revision                |
 | kki           | Kagulu                    | lacks lenition                |
 | kl            | Kalaallisut               |
@@ -77,6 +79,7 @@
 | or            | Oriya                     | under revision; lacks lenition|
 | pa            | Punjabi                   | under revision; lacks lenition|
 | pau           | Palauan                   |
+| pio           | Piapoco                   |
 | qub           | Huallaga Huánuco Quechua  |
 | quz           | Cusco Quechua             | under revision                |
 | roo           | Rotokas                   |
@@ -105,6 +108,7 @@
 | var           | Huarjío                   |
 | vi            | Vietnamese                | under revision                |
 | viv           | Iduna                     |
+| way           | Wayana                    |
 | wbp           | Warlpiri                  |
 | wo            | Wolof                     |
 | ycn           | Yucuna                    |

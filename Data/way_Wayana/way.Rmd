@@ -1,0 +1,119 @@
+---
+title: "Wayana"
+author: "Emily Strand"
+bibliography: way.bib
+output: html_document
+---
+
+Last updated: 2019-11-05
+
+# Background
+
+**Language family**: Carib / Northern / East-West Guiana / Wayana-Trio
+
+* Wayana is spoken in Suriname, a country off the coast of South America.
+
+# Phonology
+
+## Consonants
+
+* /s/ is said to have neutralized with /h/ [@Jackson1972, p. 48]; however, I have chosen to include both in the phonemic inventory, given that the distinction is still made by the majority of speakers.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Retroflex  Palatal  Velar  Glottal
+Stops                       "p"      "t"        ""        ""      "k"      ""
+Fricatives                  ""       "s"        ""        ""       ""      "h"
+Nasals                      "m"      "n"        ""        ""       ""      ""
+Flaps                       ""       ""         "ɽ"       ""       ""      ""
+Approximants                "w"      ""         ""        "j"      ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Vowels
+
+* Although, long vowels (duplicate graphemes) are apparent in the language, @SilvaTavares2005 explains that there are no minimal pairs between long and short vowels (p. 11). Long vowels are likely to result as a by-product from syllable reduction. In the rules, instances of long vowels will be transcribed as short.
+* Vowels that occur consecutively are interpreted as sequences rather than complex phonemes [@SilvaTavares2005, p. 29].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         "ɨ"          "u"
+Mid       "e"         "ə"          "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```   
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "a"
+"e"            "e"
+"ë"            "ə"
+"h"            "h"
+"i"            "i"
+"ï"            "ɨ"
+"j"            "j"
+"k"            "k"
+"l"            "ɽ"
+"m"            "m"
+"n"            "n"
+"o"            "o"
+"p"            "p"
+"s"            "s"
+"t"            "t"
+"u"            "u"
+"w"            "w"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Wayana include the following structures [@Jackson1972, p. 25]:
+    - V
+    - VC
+    - CV
+    - CVC
+
+# Lenition Rules
+
+* /p/, /t/, and /k/ are voiced preceding voiced consonants [@Jackson1972, p. 48].
+* /p/, /t/, and /k/ primarily debuccalize preceding /p/, /t/, and /k/, respectively (ibid.).
+    - /p/ can also debuccalize preceding (sometimes) /m/.
+    - /t/ can also debuccalize preceding /l/ and (sometimes) /n/.
+* /t/ occasionally palatalizes preceding /i/ [@SilvaTavares2005, p. 18].
+* /w/ and /j/ are deleted preceding /u/ and /i/, respectively [@SilvaTavares2005, p. 30].
+* Vowels and whole syllables are often deleted, which is consistent with other Carib languages [@SilvaTavares2005, p. 31].
+
+# Misc. Rules
+
+* /h/ varies freely with several different places of articulation (e.g. voiceless bilabial fricative preceding /p/, voiceless dental fricative preceding /m/, and voiceless velar fricative preceding velar consonants) [@Jackson1972, p. 48].
+* /p/, /t/, and /k/ can change to nasals, maintaining place of articulation (e.g. /p/ goes to /m/), preceding other nasal consonants [@Jackson1972, pp. 48-49].
+* Vowels often nasalize preceding nasal consonants [@SilvaTavares2005, p. 14].
+* Consonants do not geminate in Wayana [@SilvaTavares2005, p. 17]. Phonological processes, such as the debuccalization, mentioned above, seem to remedy these potential consonant clusters. @SilvaTavares2005 explains that there is one instance of consonant gemination (⟨kk⟩); however, he does posit that it's merely due to a mis-transcription (p. 17). Therefore, geminates will not be accounted for in the rules.
+* [r] and [l] vary freely with /ɽ/ [@SilvaTavares2005, p. 24].
+* /w/ varies freely with /β/ preceding front vowels (ibid.).
+
+# References

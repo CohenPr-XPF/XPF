@@ -1,0 +1,111 @@
+---
+title: "Piapoco"
+author: "Emily Strand"
+bibliography: pio.bib
+output: html_document
+---
+
+Last updated: 2019-11-04
+
+# Background
+
+**Language family**: Arawakan / Maipuran / Northern / Inland
+
+* Piapoco is spoken in Guainía and Vichada departments of Eastern Columbia.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Palatal   Velar   Glottal
+Stops                      "p  b"  "t  d"      ""       "k"      ""
+Affricates                   ""     "ts"       ""       ""       ""
+Fricatives                  ""      "s"        ""       ""       "h"
+Nasals                      "m"     "n"        ""       ""       ""
+Flaps                       ""      "ɾ"        ""       ""       ""
+Approximants                "w"     "l"        "j"      ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* /o/ appears in some loanwords [@Klumpp2019, p. 4].
+* Vowel length is phonemic in Piapoco [@Klumpp1985, pp. 22-23]. Long vowels are indicated by duplicate graphemes (accents are only atop the first vowel of a long vowel sequence [@Klumpp2019, p. 5]).
+* Stress and tone appear to be one in the same (i.e. the suprasegmental features overlap) [@Klumpp2019, p. 5]. That is, high stress/high tone is marked by an acute accent (´) over the vowel, while low stress/low tone is marked by a grave accent (\`) over the vowel. @Klumpp1995 explains that stress is the contrastive feature that is accompanied by changes in tone (p. vi), suggesting that tonal differences may be a by-product of the stress. Although there is this ambiguity, I have opted to include tone as a contrastive feature in the rules.
+    - Syllables (vowels) not marked with either accent fluctuate freely in terms of tone [@Klumpp2019, p. 2].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           ""
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```   
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"             "a"
+"b"             "b"
+"c"             "k"
+"d"             "d"
+"e"             "e"
+"i"             "i"
+"j"             "h"
+"l"             "l"
+"m"             "m"
+"n"             "n"
+"p"             "p"
+"r"             "ɾ"
+"s"             "s"
+"t"             "t"
+"u"             "u"
+"w"             "w"
+"y"             "j"
+**Digraph**     ""
+"ch"            "ts"
+"qu"            "k"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Piapoco follow the order of (C)V [@Klumpp2019, p. 2].
+
+# Lenition Rules
+
+* /k/ often palatalizes between /i/ and /a/ [@Klumpp2019, p. 2].
+* /h/ is often deleted, especially by younger generations [@Klumpp2019, p. 3].
+
+# Misc. Rules
+
+* /ts/ and [tʃ] are said to be in free variation [@Klumpp2019, p. 3].
+* /w/ becomes a fricative [β] preceding front vowels [@Klumpp2019, p. 4].
+
+# References
