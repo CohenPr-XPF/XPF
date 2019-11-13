@@ -1,0 +1,121 @@
+---
+title: "Yuracare"
+author: "Emily Strand"
+bibliography: yuz.bib
+output: html_document
+---
+
+Last updated: 2019-10-04
+
+# Background
+
+**Language family**: language isolate
+
+* Yuracare is spoken in central Bolivia.
+
+# Phonology
+
+## Consonants
+
+* All consonants can geminate [@VanGijn2006, p. 21], represented by duplicate graphemes.
+* @VanGijn2006 explains that /dʲ/ is an affricate without fricativization (p. 23); however, this implies that it is merely a palatalized stop, which I have opted to treat as such in the inventory.
+* Although /h/ is said to be in complementary distribution with /k/ most of the time, there are instances where the distribution is not predictable, thus I will treat /h/ as an independent phoneme, just as @VanGijn2006 does (pp. 24-25).
+* Consonants that appear in loanwords from other language inventories are often altered [@VanGijn2006, pp. 26-27]:
+    - /f/ is realized as /p/   
+    - /ʎ/ is realized as /l/   
+    - /r/ is realized as /ɹ/   
+    - /g/ is realized as /h/ or /k/  
+    
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+  library(dplyr)
+  library(knitr)
+  library(kableExtra)
+
+
+  consonants <- read.table(textConnection('
+  "Manner of Articulation"   Labial       Alveolar     Postalveolar    Palatal    Velar    Glottal   
+  Stops                      "p  b"      "t  d  dʲ"        ""            ""        "k"       ""
+  Affricates                   ""            ""           "tʃ"           ""        ""        ""
+  Fricatives                   ""            "s"         "ʃ  ɹ̝"          ""        ""        "h"
+  Nasals                       "m"           "n"           ""            "ɲ"       ""        ""
+  Approximants                 "w"           "l"           ""            "j"       ""        ""
+  '), TRUE)
+
+  kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+    kable_styling("bordered") %>%
+    add_header_above(c("", "Place of Articulation" = 6)) %>%
+    column_spec(1, bold = TRUE) %>%
+    footnote(general = "Note: The labial stops are ordered voiceless and voiced. The alveolar stops are ordered voiceless, voiced, and palatalized. The postalveolar fricatives are ordered voiceless and voiced, but the one on the right is a non-sibilant.", general_title = "")
+```
+
+## Vowels
+
+* Orthographically, duplicate vowels exist [@VanGijn2006, pp. 27-28]; however, vowel length is not contrastive. Rather, they are realized as part of different syllables (p. 44).
+* Vowel harmony is present during affixation among non-high vowels [@VanGijn2006, pg. 35].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         "ɨ"          "u"
+Mid       "e"         ""           "o"
+Low       "æ"         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```      
+
+# Alphabet
+
+* The Crubadan corpus seems to follow the orthography of @Ribera1991 [as cited in @VanGijn2006, p. 30] Therefore, I will base my transcription off that source.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme           Comment
+"a"              "/a/"              ""
+"b"              "/b/"              ""
+"c"              "/k/"              ""
+"d"              "/d/"              ""
+"e"              "/e/"              ""
+"ë"              "/æ/"              ""
+"i"              "/i/"              ""
+"j"              "/h/"              ""
+"l"              "/l/"              ""
+"m"              "/m/"              ""
+"n"              "/n/"              ""
+"ñ"              "/ɲ/"              ""
+"o"              "/o/"              ""
+"p"              "/p/"              ""
+"r"              "/ɹ̝/"              ""
+"s"              "/s/"              ""
+"t"              "/t/"              ""
+"u"          "/u/ or /w/"   "/w/: syllable finally"  
+"ü"              "/ɨ/"              ""
+"y"              "/j/"              ""
+**Digraph**       ""                ""
+"ch"             "/tʃ/"             ""
+"dy"             "/dʲ/"             ""
+"hu"             "/w/"        "syllable initially"    
+"qu"             "/k/"       "preceding /i/ and /e/"    
+"sh"             "/ʃ/"              ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```  
+
+
+# Lenition Rules
+
+* /k/ often changes to [h] following a vowel [@VanGijn2006, p. 24].
+* Word-final vowels and syllables may be deleted [@VanGijn2006, p. 37].
+
+# Misc. Rules
+
+* Glottal stop epenthesis optionally occurs between duplicate vowels [@VanGijn2006, p. 22]; however, it is often unpronounced.
+
+# References

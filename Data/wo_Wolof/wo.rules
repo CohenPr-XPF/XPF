@@ -6,7 +6,7 @@ type,sfrom,sto,weight,precede,follow,comment
 # class,lab-stop,[bp],,,,"These classes can be uncommented if you want to incorporate prenasalized voiceless consonants"
 # class,vel-stop,[kg],,,,"the class is input-based so I'm not using the IPA g"
 # class,affricate,[cj],,,,
-class,output,[abdeɛəfɡiklmnɲŋoɔpqɾstuwxj],,,,
+class,geminate,[abdeɛəfɡiklmnɲŋoɔpqɾstuwxj],,,,
 class,alv-stop,[dt],,,,
 class,postalv,[ʃʒ],,,,
 class,superscript,[ᵐⁿᶮᵑ],,,,
@@ -32,7 +32,7 @@ sub,n,ᵑ,6,,g,
 sub,n,ᶮ,6,,j,
 ipasub,({superscript}) ,\1,5,,,
 # Geminates / Long Vowels
-ipasub,({output}) \1,\1 ː,2,,,"covers both lengthening of vowels and gemination of consonants"
+ipasub,({geminate}) \1,\1 ː,2,,,"covers both lengthening of vowels and gemination of consonants"
 sub,c,tʃ ː,5,,c,"I found it cleanest/easiest to make separate gemination rules for the affricates"
 sub,c,,5,c,,
 sub,j,dʒ ː,5,,j,

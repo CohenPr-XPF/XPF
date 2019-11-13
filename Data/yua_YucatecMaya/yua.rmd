@@ -5,71 +5,120 @@ bibliography: yua.bib
 output: html_document
 ---
 # Background
-**Language family**: Mayan
 
-# Alphabet
-Yucatec Maya (YM) is written using the Latin alphabet with some modifications to represent ejectives and the glottal stop.
+**Language family**: Mayan / Yucatecan / Yucatec-Lacandon
 
-## Consonants
-* ⟨b⟩ = /ɓ/
-* ⟨ch⟩ = /tʃʰ/
-* ⟨chʼ⟩ = /tʃʼ/
-* ⟨j⟩ = /h/
-* ⟨k⟩ = /kʰ/
-* ⟨kʼ⟩ = /kʼ/
-* ⟨l⟩ = /l/
-* ⟨m⟩ = /m/
-* ⟨n⟩ = /n/
-* ⟨p⟩ = /pʰ/
-* ⟨pʼ⟩ = /pʼ/
-* ⟨r⟩ = /ɾ/  
-* ⟨s⟩ = /s/  
-* ⟨t⟩ = /tʰ/  
-* ⟨tʼ⟩ = /tʼ/  
-* ⟨tz⟩ = /tsʰ/  
-* ⟨tzʼ⟩ = /tsʼ/  
-* ⟨x⟩ = /ʃ/  
-* ⟨w⟩ = /w/  
-* ⟨y⟩ = /j/  
-* ⟨ʼ⟩ = /ʔ/  
-
-## Vowels
-YM has short vowels and long vowels.
-The short vowels are shown below.
-* ⟨a⟩ = /a/  
-* ⟨e⟩ = /e/  
-* ⟨i⟩ = /i/  
-* ⟨o⟩ = /o/  
-* ⟨u⟩ = /u/
-
-@frazier2009production describes four "vowel shapes" defined as "each contrastive combination of suprasegmental features (length, pitch, and
-glottalization)". Orthographically, the vowel shapes are summarized below. (Further discussion of vowel shapes is in the phonology section.)
-* SHORT = \<v>
-* LOW TONE = \<vv>
-* HIGH TONE = \<v́v>
-* GLOTTALIZED = \<v’v>
+* Yucatec Maya is spoken in the Quintana Roo, Yucatán, Campeche, and Tabasco states of Mexico.
 
 # Phonology
+
 ## Consonants
-All obstruents are voiceless except for the implosive /ɓ/.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial       Alveolar     Postalveolar   Palatal   Velar    Glottal   
+Stops                     "pʰ pʼ ɓ"     "tʰ  tʼ"         ""            ""    "kʰ  kʼ"    "ʔ"
+Affricates                   ""        "tsʰ  tsʼ"     "tʃʰ  tʃʼ"       ""       ""       ""
+Fricatives                  ""            "s"             "ʃ"          ""       ""       "h"
+Nasals                      "m"           "n"             ""           ""       ""       ""
+Flaps                       ""            "ɾ"             ""           ""       ""       ""
+Approximants                "w"           "l"             ""          "j"       ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Consonants with the diacritics (ʰ) and (ʼ) are aspirates and ejectives, respectively. The labial stop on the right is an implosive.", general_title = "")
+```
 
 ## Vowels
-In terms of vowel quality, YM has a five-vowel system.
 
-|      |   Front   |  Central  |    Back   |
-|------|:---------:|:---------:|:---------:|
-| High |    /i/    |           |    /u/    |
-| Mid  |    /e/    |           |    /o/    |
-| Low  |           |    /a/    |           ‍|
+* Although there are only five vowel qualities, for every vowel, "each vowel quality can occur with four contrastive sets of suprasegmental features, resulting in 20 unique possible syllable heads" [@frazier2009production, pp. 18-19].
+* As summarized by @frazier2009production, these are the four vowel shapes in terms of length, pitch, and glottalization (p. 19):
+    - SHORT: short, unmarked for tone, modal voice
+    - LOW TONE: long, low tone, modal voice
+    - HIGH TONE: long, high tone, modal voice
+    - GLOTTALIZED: long, high tone followed by creaky voice
+* @frazier2009production also states, "The GLOTTALIZED vowels are unanimously described as being produced with initial high pitch and modal voice that is interrupted by a glottal stop (i.e. [v́ʔv]), though B&VS and B et al. recognized that this glottal stop does not always have a full realization, especially in rapid speech" (p. 20).
+* Per discussions with Scott AnderBois, an expert on the language, the rules will represent "glottalized" vowels as a long, high tone vowel followed by creaky voice rather than a vowel interrupted by a glottal stop.
 
-Although there are only five vowel qualities, for every vowel, "each vowel quality can occur with four contrastive sets of suprasegmental features, resulting in 20 unique possible syllable heads" (@frazier2009production).
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-As summarized by @frazier2009production, these are the four vowel shapes:
-* SHORT: short, unmarked for tone, modal voice
-* LOW TONE: long, low tone, modal voice
-* HIGH TONE: long, high tone, modal voice
-* GLOTTALIZED: long, high tone followed by creaky voice
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
 
-@frazier2009production also states, "The GLOTTALIZED vowels are unanimously described as being produced with initial high pitch and modal voice that is interrupted by a glottal stop (i.e. [v́ʔv]), though B&VS and B et al. recognized that this glottal stop does not always have a full realization, especially in rapid speech."
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 
-Per discussions with Scott AnderBois, the rules will represent "glottalized" vowels as a long, high tone vowel followed by creaky voice rather than a vowel interrupted by a glottal stop.
+
+  vowel_shapes <- read.table(textConnection('
+  "Vowel Shapes"  "Orthographic Representation"     "Our Transcription"
+  Short                      "V"                            "V"
+  "Low Tone"                "VV"                          "V ː ˨"
+  "High Tone"               "V́V"                          "V ː ˦"
+  "Glottalized"            "V\'V"                         "V ː ˦ ˷"
+
+  '), TRUE)
+
+  kable(vowel_shapes, col.names = c("Vowel Shapes", "Orthographic Representation", "Our Transcription"), align = 'c') %>%
+    kable_styling("bordered")%>%
+    column_spec(1, bold = TRUE)
+
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "/a/"
+"b"            "/ɓ/"
+"e"            "/e/"
+"i"            "/i/"
+"j"            "/h/"
+"k"            "/kʰ/"
+"k\'"          "/kʼ/"
+"l"            "/l/"
+"m"            "/m/"
+"n"            "/n/"
+"o"            "/o/"
+"p"            "/pʰ/"
+"p\'"          "/pʼ/"
+"r"            "/ɾ/"  
+"s"            "/s/"  
+"t"            "/tʰ/"  
+"t\'"          "/tʼ/"
+"u"            "/u/"  
+"x"            "/ʃ/"  
+"w"            "/w/"  
+"y"            "/j/"  
+"\'"           "/ʔ/"
+**Digraph**     ""  
+"ch"           "/tʃʰ/"
+"ch\'"         "/tʃʼ/"
+"tz"           "/tsʰ/"  
+"tz\'"         "/tsʼ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /k/ debuccalizes to /h/ preceding another consonant [@rogers2016, p. 81].
+
+# References

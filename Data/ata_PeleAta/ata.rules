@@ -1,0 +1,19 @@
+# Pele-Ata Rule Set
+# Written by: Emily
+# Last updated: 11-08-2019
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[iklmnopstux],,,,
+class,vowels,[ɑɛiou],,,
+class,apostrophe,[''‘’],,,,
+# Individual Letters
+sub,a,ɑ,2,,,
+sub,e,ɛ,2,,,
+sub,v,β,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,n,ŋ,3,,g,
+sub,g,,2,n,,"clean-up",
+# Long Vowels
+ipasub,({vowels}) \1,\1 ː,2,,,

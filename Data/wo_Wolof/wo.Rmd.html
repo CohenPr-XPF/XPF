@@ -29,31 +29,75 @@ bibliography: wo.bib</p>
 <p>Last Updated: 2019-07-02</p>
 <h1 id="background">Background</h1>
 <p><strong>Language Family</strong>: Niger-Congo / Atlantic-Congo / Atlantic / Senegambian / Fula-Wolof / Wolof</p>
+<ul>
+<li>Wolf is spoken throughout Senegal.</li>
+</ul>
 <h1 id="phonology">Phonology</h1>
 <h2 id="consonants">Consonants</h2>
-<h3 id="by-place-of-articulation">By place of articulation</h3>
-<p>Labial: /p/, /b/, /&#x1D50;b/, /m/, /f/, /w/<br>Alveolar: /t/, /d/, /&#x207F;d/, /n/, /s/, /l/, /&#x27E;/<br>Postalveolar: /t&#x283;/, /d&#x292;/, /&#x1DAE;d&#x292;/<br>Palatal: /&#x272;/, /j/<br>Velar: /k/, /&#x261;/, /&#x1D51;&#x261;/, /&#x14B;/, /x/<br>Uvular: /q/  </p>
-<h3 id="by-manner-of-articulation">By manner of articulation</h3>
-<p>Stops (plain): /p/, /b/, /t/, /d/, /k/, /&#x261;/, /q/<br>Stops (pre-nas): /&#x1D50;b/, /&#x207F;d/, /&#x1DAE;d&#x292;/, /&#x1D51;&#x261;/<br>Affricates: /t&#x283;/, /d&#x292;/<br>Nasals: /m/, /n/, /&#x272;/, /&#x14B;/<br>Fricatives: /f/, /s/, /x/<br>Flaps: /&#x27E;/<br>Approximants: /w/, /l/, /j/  </p>
-<h2 id="vowels">Vowels</h2>
-<p>Front: /i/, /e/, /&#x25B;/<br>Central: /&#x259;/, /a/<br>Back: /u/, /o/, /&#x254;/  </p>
-<h1 id="alphabet">Alphabet</h1>
-<p>a - /a/<br>&#xE0; - /a&#x2D0;/<br>b - /b/<br>c - /t&#x283;/<br>d - /d/<br>e - /&#x25B;/<br>&#xE9; - /e/<br>&#xEB; - /&#x259;/<br>f - /f/<br>g - /&#x261;/<br>i - /i/<br>j - /d&#x292;/<br>k - /k/<br>l - /l/<br>m - /m/<br>n - /n/<br>&#xF1; - /&#x272;/<br>&#x14B; - /&#x14B;/<br>o - /&#x254;/<br>&#xF3; - /o/<br>p - /p/<br>q - /q/<br>r - /&#x27E;/<br>s - /s/<br>t - /t/<br>u - /u/<br>w - /w/<br>x - /x/<br>y - /j/  </p>
-<p>Long vowels are written by doubling the vowel character. When accented vowels are doubled, the diacritic is sometimes omitted on the second. [@WoDiop2012, p. 5]</p>
-<p>Some older orthographies use <ny> instead of &lt;&#xF1;&gt;. [@WoGamble1985, p. v]</ny></p>
-<h2 id="prenasalized-consonants">Prenasalized Consonants</h2>
-<p>mb - /&#x1D50;b/<br>mp - /&#x1D50;p/<br>nc - /&#x1DAE;t&#x283;/<br>nd - /&#x207F;d/<br>ng - /&#x1D51;&#x261;/<br>nj - /&#x1DAE;d&#x292;/<br>nk - /&#x1D51;k/<br>nt - /&#x207F;t/  </p>
-<p>Voiceless prenasalized consonants do not occur word-initially. [@WoCamara2006, p. 2]</p>
-<p>The authors I have read disagree about which of the prenasalized consonants exist in Wolof; I have opted to include all of the prenasalized voiced consonants in my analysis, but to exclude the prenasalized voiceless consonants, as those were less widely attested.</p>
+<ul>
+<li>The authors I have read disagree about which of the prenasalized consonants exist in Wolof; I have opted to include all of the prenasalized voiced consonants in my analysis, but to exclude the prenasalized voiceless consonants, as those were less widely attested.<ul>
+<li>Voiceless prenasalized consonants do not occur word-initially [@WoCamara2006, p. 2].</li>
+</ul>
+</li>
+<li>Consonants geminate, which is indicated by repetition of the grapheme [@WoCamara2006, pp. 1-2].</li>
+</ul>
+<p><code>`</code>{r echo=FALSE, message=FALSE, warning=FALSE, results = &apos;asis&apos;}</p>
+<p>library(dplyr)
+library(knitr)
+library(kableExtra)</p>
+<p>consonants &lt;- read.table(textConnection(&apos;
+&quot;Manner of Articulation&quot;   Labial       Alveolar     Postalveolar     Palatal     Velar      Uvular<br>Stops                    &quot;p  b  &#x1D50;b&quot;    &quot;t  d  &#x207F;d&quot;        &quot;&quot;             &quot;&quot;     &quot;k  &#x261;  &#x1D51;&#x261;&quot;     &quot;q&quot;
+Affricates                   &quot;&quot;            &quot;&quot;       &quot;t&#x283;  d&#x292;  &#x1DAE;d&#x292;&quot;       &quot;&quot;         &quot;&quot;         &quot;&quot;
+Fricatives                  &quot;f&quot;           &quot;s&quot;             &quot;&quot;            &quot;&quot;         &quot;x&quot;        &quot;&quot;
+Nasals                      &quot;m&quot;           &quot;n&quot;             &quot;&quot;            &quot;&#x272;&quot;        &quot;&#x14B;&quot;        &quot;&quot;
+Flaps                       &quot;&quot;            &quot;&#x27E;&quot;             &quot;&quot;            &quot;&quot;         &quot;&quot;         &quot;&quot;
+Approximants                &quot;w&quot;           &quot;l&quot;             &quot;&quot;            &quot;j&quot;        &quot;&quot;         &quot;&quot;
+&apos;), TRUE)</p>
+<p>kable(consonants, col.names = c(&quot;Manner of Articulation&quot;, &quot;Labial&quot;, &quot;Alveolar&quot;, &quot;Postalveolar&quot;, &quot;Palatal&quot;, &quot;Velar&quot;, &quot;Uvular&quot;), align = &apos;c&apos;) %&gt;%
+  kable_styling(&quot;bordered&quot;) %&gt;%
+  add_header_above(c(&quot;&quot;, &quot;Place of Articulation&quot; = 6)) %&gt;%
+  column_spec(1, bold = TRUE) %&gt;%
+  footnote(general = &quot;Note: Where three phonemes share a cell, they are ordered voiceless, voiced, and pre-nasal.&quot;, general_title = &quot;&quot;)</p>
+<pre><code>
+## Vowels
+
+* Vowel length is contrastive in Wolof. Long vowels are written by doubling the vowel character [@WoDiop2012, p. 5].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = &apos;asis&apos;}
+
+vowels &lt;- read.table(textConnection(&apos;
+           Front      Central       Back
+High        &quot;i&quot;         &quot;&quot;           &quot;u&quot;
+&quot;High-Mid&quot;  &quot;e&quot;         &quot;&quot;           &quot;o&quot;
+Mid         &quot;&quot;          &quot;&#x259;&quot;          &quot;&quot;
+&quot;Low-Mid&quot;   &quot;&#x25B;&quot;         &quot;&quot;           &quot;&#x254;&quot;
+Low         &quot;&quot;          &quot;a&quot;          &quot;&quot;
+&apos;), TRUE)
+
+kable(vowels, align = &apos;c&apos;) %&gt;%
+  kable_styling(&quot;bordered&quot;) %&gt;%
+  column_spec(1, bold = TRUE)</code></pre><h1 id="alphabet">Alphabet</h1>
+<ul>
+<li>Some older orthographies use &#x27E8;ny&#x27E9; instead of &#x27E8;&#xF1;&#x27E9; [@WoGamble1985, p. v].</li>
+<li>When accented vowels are doubled, the diacritic is sometimes omitted on the second [@WoDiop2012, p. 5].</li>
+</ul>
+<p><code>`</code>{r echo=FALSE, message=FALSE, warning=FALSE, results = &apos;asis&apos;}</p>
+<p>alphabet &lt;- read.table(textConnection(&apos;
+Grapheme        Phoneme<br>&quot;a&quot;               &quot;/a/&quot;<br>&quot;&#xE0;&quot;               &quot;/a&#x2D0;/&quot;<br>&quot;b&quot;               &quot;/b/&quot;<br>&quot;c&quot;               &quot;/t&#x283;/&quot;<br>&quot;d&quot;               &quot;/d/&quot;<br>&quot;e&quot;               &quot;/&#x25B;/&quot;<br>&quot;&#xE9;&quot;               &quot;/e/&quot;<br>&quot;&#xEB;&quot;               &quot;/&#x259;/&quot;<br>&quot;f&quot;               &quot;/f/&quot;<br>&quot;g&quot;               &quot;/&#x261;/&quot;<br>&quot;i&quot;               &quot;/i/&quot;<br>&quot;j&quot;               &quot;/d&#x292;/&quot;<br>&quot;k&quot;               &quot;/k/&quot;<br>&quot;l&quot;               &quot;/l/&quot;<br>&quot;m&quot;               &quot;/m/&quot;<br>&quot;n&quot;               &quot;/n/&quot;<br>&quot;&#xF1;&quot;               &quot;/&#x272;/&quot;<br>&quot;&#x14B;&quot;               &quot;/&#x14B;/&quot;<br>&quot;o&quot;               &quot;/&#x254;/&quot;<br>&quot;&#xF3;&quot;               &quot;/o/&quot;<br>&quot;p&quot;               &quot;/p/&quot;<br>&quot;q&quot;               &quot;/q/&quot;<br>&quot;r&quot;               &quot;/&#x27E;/&quot;<br>&quot;s&quot;               &quot;/s/&quot;<br>&quot;t&quot;               &quot;/t/&quot;<br>&quot;u&quot;               &quot;/u/&quot;<br>&quot;w&quot;               &quot;/w/&quot;<br>&quot;x&quot;               &quot;/x/&quot;<br>&quot;y&quot;               &quot;/j/&quot;
+<strong>Digraph</strong>        &quot;&quot;
+&quot;mb&quot;              &quot;/&#x1D50;b/&quot;<br>&quot;mp&quot;              &quot;/&#x1D50;p/&quot;<br>&quot;nc&quot;              &quot;/&#x1DAE;t&#x283;/&quot;<br>&quot;nd&quot;              &quot;/&#x207F;d/&quot;<br>&quot;ng&quot;              &quot;/&#x1D51;&#x261;/&quot;<br>&quot;nj&quot;              &quot;/&#x1DAE;d&#x292;/&quot;<br>&quot;nk&quot;              &quot;/&#x1D51;k/&quot;<br>&quot;nt&quot;              &quot;/&#x207F;t/&quot;<br>&apos;), TRUE)</p>
+<p>kable(alphabet, align = &apos;c&apos;) %&gt;%
+  kable_styling(&quot;bordered&quot;)
+<code>`</code></p>
 <h1 id="lenition-rules">Lenition Rules</h1>
 <ul>
-<li>Short /u/ is generally realized as lax [&#x28A;]. [@WoCamara2006, p. 3]</li>
-<li>/a/ reduces to [&#x259;] in the final syllable of a word, unless the preceding syllable has a low or mid-low vowel. [@WoCamara2006, p. 4]</li>
+<li>Short /u/ is generally realized as lax [&#x28A;] [@WoCamara2006, p. 3].</li>
+<li>/a/ reduces to [&#x259;] in the final syllable of a word, unless the preceding syllable has a low or mid-low vowel [@WoCamara2006, p. 4].</li>
 </ul>
 <h1 id="misc-rules">Misc. Rules</h1>
 <ul>
-<li>Epenthesis of [&#x259;] occurs after word-final geminated consonants; if the consonant is a voiceless stop, that [&#x259;] is also realized as voiceless. [@WoCamara2006, p. 1]</li>
-<li>Vowels nasalize before nasal or prenasalized consonants. [@WoCamara2006, p. 4]</li>
+<li>Epenthesis of [&#x259;] occurs after word-final geminated consonants; if the consonant is a voiceless stop, that [&#x259;] is also realized as voiceless [@WoCamara2006, p. 1].</li>
+<li>Vowels nasalize before nasal or prenasalized consonants [@WoCamara2006, p. 4].</li>
 </ul>
 <h1 id="references">References</h1>
 </article></div><div style="background-color: #b4b2b2;width: 50px;height:50px;line-height: 50px;text-align: center;position: fixed;bottom: 10px;right: 10px;padding-top:5px;" onclick="document.documentElement.scrollTop = document.body.scrollTop =0;">

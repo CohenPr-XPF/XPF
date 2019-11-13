@@ -11,114 +11,145 @@ Last Updated: 2019-07-19
 
 **Language Family**: Indo-European / Indo-Iranian / Iranian / Western Iranian / Northwestern Iranian / Zaza-Gorani / Zaza
 
-The language is also sometimes known as Zazaki or Dimli.
+* The language is also sometimes known as Zazaki or Dimli and it is spoken throughout Turkey.
 
 # Phonology
 
 ## Consonants
 
-* /ʕ/ appears in Arabic loans. [@ZzaTodd2002, p. 1]
+* /ʕ/ appears in Arabic loans [@ZzaTodd2002, p. 1].
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /b/, /m/, /f/, /v/, /w/  
-Dental: /t̪/, /t̪ˤ/, /d̪/  
-Alveolar: /n/, /s/, /sˤ/, /z/, /ɾ/, /r/, /l/, /ɫ/  
-Postalveolar: /tʃ/, /dʒ/, /ʃ/, /ʒ/  
-Palatal: /j/  
-Velar: /k/, /ɡ/, /x/, /ɣ/  
-Uvular: /q/  
-Pharyngeal: /ħ/  
-Glottal: /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /b/, /t̪/, /t̪ˤ/, /d̪/, /k/, /ɡ/, /q/  
-Affricates: /tʃ/, /dʒ/  
-Nasals: /m/, /n/  
-Fricatives: /f/, /v/, /s/, /sˤ/, /z/, /ʃ/, /ʒ/, /x/, /ɣ/, /ħ/, /h/  
-Taps: /ɾ/  
-Trills: /r/  
-Approximants: /w/, /l/, /ɫ/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Dental     Alveolar    Postalveolar   Palatal     Velar   Uvular  Pharyngeal    Glottal
+Stops                      "p  b"   "t̪  t̪ˤ  d̪"     ""            ""           ""       "k  ɡ"    "q"       ""            ""
+Affricates                   ""         ""         ""         "tʃ  dʒ"        ""         ""      ""        ""            ""
+Fricatives                 "f  v"       ""      "s  sˤ  z"     "ʃ  ʒ"         ""       "x  ɣ"    ""        "ħ"           "h"
+Nasals                      "m"         ""         "n"           ""           ""         ""      ""        ""            ""
+Trills                      ""          ""         "r"           ""           ""         ""      ""        ""            ""
+Flaps                       ""          ""         "ɾ"           ""           ""         ""      ""        ""            ""
+Approximants                "w"         ""       "l  ɫ"          ""           "j"        ""      ""        ""            ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Pharyngeal", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 9)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For cells that have two phonemes, those on the left are voiceless and those on the right are voiced. Phonemes that have the diacritic (ˤ) are pharyngealized. Both alveolar approximants are voiced, but the one on the right is velarized.", general_title = "")
+```
 
 ## Vowels
 
-High: /i/, /ɨ/, /ʊ/, /u/  
-Mid: /e/, /ə/, /o/  
-Low: /ɑ/  
+* @ZzaPaul2009 seems to depict /ə/ as a sound closer to /ɛ/ (p. 547).
+* Zaza has a number of diphthongs, all of which are spelled as a sequence of the two sounds that comprise them (e.g. /əj/ is written as ⟨ey⟩ and so forth) [@ZzaTodd2002, p. 16].
 
-Zaza has the following diphthongs: /oj/, /ʊj/, /ɑj/, /ɑw/, /əj/, /əw/.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-@ZzaPaul2009 seems to depict /ə/ as a sound closer to /ɛ/. (p. 547)
+vowels <- read.table(textConnection('
+              Front      Central       Back
+High          "i"         "ɨ"          "u"
+"Near-High"   ""          ""           "ʊ"
+Mid           "e"         "ə"          "o"
+Low           ""          ""           "ɑ"
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/oj/, /ʊj/, /ɑj/, /ɑw/, /əj/, /əw/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```  
 
 # Alphabet
 
-**NOTE:** This orthography is somewhat compromised because the pronunciation of <i> differs depending on the orthography. By default, my ruleset only supports the orthography that maps <i> to /i/; however, rules for the other orthography are included but commented out in the ruleset, so by uncommenting those lines, the other orthography can be represented.
+**NOTE:** This orthography is somewhat compromised because the pronunciation of ⟨i⟩ differs depending on the orthography. By default, my ruleset only supports the orthography that maps ⟨i⟩ to /i/; however, rules for the other orthography are included but commented out in the ruleset, so by uncommenting those lines, the other orthography can be represented.
 
-a - /ɑ/  
-b - /b/  
-c - /dʒ/  
-ç - /tʃ/  
-d - /d̪/  
-e - /ə/  
-ê - /e/  
-f - /f/  
-g - /ɡ/  
-ğ - /ɣ/  
-h - /h/  
-  'h - /ħ/  
-ı - /ɨ/  
-i - /i/ (in orthographies with <ı>)  
-i - /ɨ/ (in orthographies with <î>)  
-î - /i/ (in some orthographies)  
-j - /ʒ/  
-k - /k/  
-l - /l/  
-  'l - /ɫ/ (in some orthographies)  
-  lh - /ɫ/ (in some orthographies)  
-m - /m/  
-n - /n/  
-o - /o/  
-p - /p/  
-q - /q/  
-r - /ɾ/  
-  rr - /r/  
-s - /s/  
-  's - /sˤ/ (in some orthographies)  
-  sh - /sˤ/ (in some orthographies)  
-ş	- /ʃ/  
-t - /t̪/  
-  't - /t̪ˤ/ (in some orthographies)  
-  th - /t̪ˤ/ (in some orthographies)  
-u - /ʊ/  
-û - /u/ (in some orthographies)  
-ü - /u/ (in some orthographies)  
-v - /v/  
-w - /w/  
-x - /x/  
-y - /j/  
-z - /z/  
-' - /ʕ/ (in loanwords)  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Diphthongs are simply spelled as a sequence of the two sounds that comprise them (e.g. /əj/ is written as <ey> and so forth). [@ZzaTodd2002, p. 16]
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme          Comment
+"a"            "/ɑ/"             ""
+"b"            "/b/"             ""
+"c"            "/dʒ/"            ""
+"ç"            "/tʃ/"            ""
+"d"            "/d̪/"             ""
+"e"            "/ə/"             ""
+"ê"            "/e/"             ""
+"f"            "/f/"             ""
+"g"            "/ɡ/"             ""
+"ğ"            "/ɣ/"             ""
+"h"            "/h/"             ""
+"\'h"           "/ħ/"             ""
+"ı"            "/ɨ/"             ""
+"i"            "/i/"      "in orthographies with ⟨ı⟩"  
+"i"            "/ɨ/"      "in orthographies with ⟨î⟩"  
+"î"            "/i/"        "in some orthographies"  
+"j"            "/ʒ/"             ""
+"k"            "/k/"             ""
+"l"            "/l/"             ""
+"\'l"          "/ɫ/"        "in some orthographies"   
+"m"            "/m/"             ""
+"n"            "/n/"             ""
+"o"            "/o/"             ""
+"p"            "/p/"             ""
+"q"            "/q/"             ""
+"r"            "/ɾ/"             ""
+"s"            "/s/"             ""
+"\'s"           "/sˤ/"        "in some orthographies"    
+"ş"	           "/ʃ/"             ""
+"t"            "/t̪/"             ""
+"\'t"          "/t̪ˤ/"        "in some orthographies"    
+"u"            "/ʊ/"             ""
+"û"            "/u/"         "in some orthographies"  
+"ü"            "/u/"         "in some orthographies"  
+"v"            "/v/"             ""
+"w"            "/w/"             ""
+"x"            "/x/"             ""
+"y"            "/j/"             ""
+"z"            "/z/"             ""
+"\'"           "/ʕ/"             "in loanwords"
+**Digraph**     ""               ""
+"lh"           "/ɫ/"        "in some orthographies"
+"rr"           "/r/"             ""
+"sh"           "/sˤ/"        "in some orthographies"
+"th"           "/t̪ˤ/"        "in some orthographies"
+'), TRUE)
 
-# Lenition Rules
-
-* /b/ spirantizes to [v] in postvocalic position, as well as in a handful of loanwords. [@ZzaTodd2002, pp. 10-11]
-* /dʒ/ spirantizes to [ʒ] postvocalically. [@ZzaTodd2002, p. 11]
-* Word-final /ng/ collapses to [ŋ]. [@ZzaTodd2002, p. 12]
-* Word-final /n/, if preceded by /ɑ/ or /ə/, is realized only as a nasalization of the vowel. This pattern also holds if there's an intervening /j/. (ibid.)
-* Word-final /n/, if preceded by a vowel *not* mentioned in the previous rule, deletes entirely. [@ZzaTodd2002, p. 13]
-* The sequence /ii/ shortens to [i]. [@ZzaTodd2002, p. 18]
-
-# Misc. Rules
-
-* Vowels become marginally lower and farther back when following a pharyngeal or pharyngealized consonant, or when following /ɫ/. [@ZzaTodd2002, p. 17]
-* Postvocalic /i/ is realized as [j]. (ibid.)
-* Epenthesis of [w] occurs between /u/ and front vowels. (ibid.)
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 ## Syllable Structure
 
-Zaza has a (C)(C)V(C)(C) syllable structure; note, however, that - with the exception of the word <psing> - Zaza does not allow syllables to contain both an onset cluster and a coda cluster. [@ZzaTodd2002, pp. 24-25]
+* Zaza has a (C)(C)V(C)(C) syllable structure.
+    - Note, however, that - with the exception of the word <psing> - Zaza does not allow syllables to contain both an onset cluster and a coda cluster [@ZzaTodd2002, pp. 24-25].
+
+# Lenition Rules
+
+* /b/ spirantizes to [v] in postvocalic position, as well as in a handful of loanwords [@ZzaTodd2002, pp. 10-11].
+* /dʒ/ spirantizes to [ʒ] postvocalically [@ZzaTodd2002, p. 11].
+* Word-final /ng/ collapses to [ŋ] [@ZzaTodd2002, p. 12].
+* Word-final /n/, if preceded by /ɑ/ or /ə/, is realized only as a nasalization of the vowel. This pattern also holds if there's an intervening /j/ (ibid.).
+* Word-final /n/, if preceded by a vowel *not* mentioned in the previous rule, deletes entirely [@ZzaTodd2002, p. 13].
+* The sequence /ii/ shortens to [i] [@ZzaTodd2002, p. 18].
+
+# Misc. Rules
+
+* Vowels become marginally lower and farther back when following a pharyngeal or pharyngealized consonant, or when following /ɫ/ [@ZzaTodd2002, p. 17].
+* Postvocalic /i/ is realized as [j] (ibid.).
+* Epenthesis of [w] occurs between /u/ and front vowels (ibid.).
 
 # References

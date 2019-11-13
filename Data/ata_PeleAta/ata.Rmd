@@ -1,0 +1,113 @@
+---
+title: "Pele-Ata"
+author: "Emily Strand"
+bibliography: ata.bib
+output: html_document
+---
+
+Last updated: 2019-11-08
+
+# Background
+
+**Language family**: The classification of Pele-Ata is not very clear. Ethnologue classifies it as:
+
+    East Papuan / Yele-Solomons-New Britain / New Britain / Wasi
+
+However, @campbell2017 classifies it as a language isolate, stating that similarities among such languages within the (tentative) family are far too small to warrant any genealogical relation [also noted in @Campbell2010, pp. 6-7].
+
+* Pele-Ata is spoken in the East and West New Britain provinces of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar    Velar   Glottal
+Stops                       "p"       "t"        "k"      "ʔ"
+Affricates                   ""       ""         ""       ""
+Fricatives                  "β"       "s"        "x"      ""
+Nasals                      "m"       "n"        "ŋ"      ""
+Approximants                ""        "l"        ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Vowel length is phonemic in Pele-Ata [@hashimoto2003, p. 2]. Long vowels are indicated by duplicate graphemes.
+* Pele-Ata has a large number of possible diphthongs, which, depending on the syllable structure, can be interpreted as either a complex nucleus or a sequence of vowels [@hashimoto2003, p. 3]. Thus, they will not be transcribed in the rules.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front        Back
+High      "i"         "u"
+Mid       "ɛ"         "o"
+Low        ""         "ɑ"
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```   
+
+# Alphabet
+
+* Orthographically, ⟨w⟩ and ⟨j⟩ are used are sometimes used to represent /u/ and /i/ respectively, which will be transcribed as such [@hashimoto2003, p. 3].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme  
+"a"             "/ɑ/"
+"e"             "/ɛ/"
+"i"             "/i/"
+"k"             "/k/"
+"l"             "/l/"
+"m"             "/m/"
+"n"             "/n/"
+"o"             "/o/"
+"p"             "/p/"
+"s"             "/s/"
+"t"             "/t/"
+"u"             "/u/"
+"v"             "/β/"
+"x"             "/x/"
+"\'"            "/ʔ/"
+**Digraph**     ""
+"ng"            "/ŋ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Pele-Ata consist of the following structures [@hashimoto2003, p. 3]:
+    - V
+    - CV
+    - CVV
+
+# Lenition Rules  
+
+* /s/ is palatalized preceding /i/ [@hashimoto2003, p. 3].
+* /x/ becomes voiced intervocalically (ibid.).
+
+# Misc. Rules
+
+* /i/ and /u/ become [j] and [w] word-initially preceding /o/ and /ɑ/ [@hashimoto2003, p. 3].
+* Epenthetic [j] and [w] are inserted intervocalically (agreeing with the first vowel), in the sequences /io/, /iɑ/, /uo/, and /uɑ/ (ibid.).
+
+# References

@@ -11,6 +11,7 @@
 | an            | Aragonese                 |
 | arl           | Arabela                   |
 | ast           | Asturian                  |
+| ata           | Pele-Ata                  |
 | avt           | Au                        |
 | ay            | Aymara                    |
 | az            | Azerbaijani               |
@@ -113,9 +114,9 @@
 | wo            | Wolof                     |
 | ycn           | Yucuna                    |
 | yi            | Yiddish                   |
-| yua           | Yucatec Maya              | under revision; lacks lenition|
+| yua           | Yucatec Maya              | under revision                |
+| yuz           | Yuracare                  |
 | yva           | Yawa                      |
-| zu            | Zulu                      | under revision                |
 | zza           | Zaza                      |                               |
 
 
@@ -231,3 +232,4 @@
 | yo  | Yoruba           | non-transparent spelling with tones                         |
 | xh  | Xhosa            | non-transparent spelling with tones                         |
 | zai | Zapotec          | non-transparent spelling with tones                         |
+| zu  | Zulu             | non-transparent spelling with tones                         |

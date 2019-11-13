@@ -1,0 +1,33 @@
+# Yuracare Rule Set
+# Written by: Emily
+# Last Updated: 2019-10-09
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[abdeilmnopstu],,,,
+class,gem,(b|k|d|h|l|m|n|ɲ|p|ɹ̝|s|t|j|tʃ|dʲ|w|ʃ),,,,
+class,f-vowel,[ie],,,,
+class,vowels,[aeioëü],,,,
+# Individual Letters
+sub,c,k,2,,,
+sub,ë,æ,2,,,
+sub,j,h,2,,,
+sub,ñ,ɲ,2,,,
+sub,r,ɹ̝,2,,,
+sub,ü,ɨ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+sub,-,,2,,,
+sub,u,w,2,{vowels},,"<u> to /w/ syllable-finally",
+# Digraphs
+sub,c,tʃ,3,,h,
+sub,h,,2,c,,"clean-up",
+sub,d,dʲ,3,,y,
+sub,y,,3,d,,"clean-up",
+sub,h,w,3,,u{vowels},"<hu> transcribes to /w/ syllable-initially"
+sub,u,,3,h,,"clean-up",
+sub,q,k,3,,u{f-vowel},
+sub,u,,3,q,,"clean-up",
+sub,s,ʃ,3,,h,
+sub,h,,2,s,,"clean-up",
+# Consonant Gemination
+ipasub,({gem}) \1\b,\1 ː,2,,,

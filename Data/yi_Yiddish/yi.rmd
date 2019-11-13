@@ -1,121 +1,122 @@
 ---
-title: "yi.rmd"
+title: "Yiddish"
 author: "Abi Creighton"
-date: "September 26, 2019"
 bibliography: yi.bib
 output: html_document
 ---
+
+Last updated: 2019-11-12
 
 # Background
 
 **Language family**: Indo-European / Germanic / West Germanic / Elbe Germanic / High German  
 
-Though Yiddish is descended a Germanic language, it borrows elements extensively from Hebrew, Aramaic, Romance languages, and Slavic languages, including the use of the Hebrew script. Yiddish has two major distinct dialects: Eastern and Western. Eastern Yiddish is more broadly spoken and contains more words of Slavic origin than Western Yiddish. [@kleine_illustrations_2003]
-
-Yiddish has both a Hebrew script and a romanized scipt. Because the Hebrew alphabet contains diacritics which differentiate between letters but are not always recorded in written Yiddish, the Hebrew alphabet cannot be used to construct a rule set with a one-to-one correspondence between graphemes and phonemes. Therefore, only the Latin script is addressed here.  
+* Though Yiddish is descended a Germanic language, it borrows elements extensively from Hebrew, Aramaic, Romance languages, and Slavic languages, including the use of the Hebrew script. Yiddish has two major distinct dialects: Eastern and Western. Where dialects diverge, I will favor the Eastern dialect, as it is more broadly spoken and contains more words of Slavic origin than Western Yiddish [@kleine_illustrations_2003, p. 261].
 
 # Phonology
 
-Sources for inventory and orthography: [@kleine_illustrations_2003], [@kahn_phonology_2015], and [@kahn_orthography_2015]
-
 ## Consonants
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Bilabial: /p/, /b/, /m/  
-Labiodental: /f/, /v/  
-Alveolar: /t/, /d/, /n/, /ɾ/, /s/, /z/, /l/, /ts/, /tʃ/, /dʒ/   
-Post-alveolar: /ʃ/, /ʒ/
-Palatalized: /j/
-Velar: /k/, /g/, /χ/
-Glottal: /h/
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stop: /p/, /b/, /t/, /d/
-Nasal: /m/, /n/
-Trill/Tap: /ɾ/
-Fricative: /f/, /v/, /s/, /z/, /ʃ/, /ʒ/, /χ/
-Affricates: /ts/, /tʃ/, /dʒ/
-Approximant: /j/
-Lateral approximant: /l/
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial      Alveolar     Postalveolar   Palatal    Velar    Glottal   
+Stops                      "p  b"       "t  d"           ""           ""      "k  ɡ"     ""
+Affricates                   ""          "ts"         "tʃ  dʒ"        ""        ""       ""
+Fricatives                 "f  v"       "s  z"         "ʃ  ʒ"         ""        "x"      "h"
+Nasals                       "m"          "n"            ""           ""        ""       ""
+Flaps                        ""           "ɾ"            ""           ""        ""       ""
+Approximants                 ""           "l"            ""           "j"       ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
 
 ## Vowels
 
-High: /ɪ/, /ʊ/  
-Mid: /ɛ/, /ɔ/  
-Low: /a/
-Diphthongs: /aɪ/, /ɛɪ/, /ɔɪ/
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-# Latin Alphabet
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "ɪ"         ""           "ʊ"
+Mid       "ɛ"         ""           "ɔ"
+Low        ""         "a"          ""
+'), TRUE)
 
-A a: /a/
-B b: /b/
-D d: /d/
-DZH dzh: /dʒ/
-E e: /ɛ/
-F f: /f/
-G g: /g/
-H h: /h/
-I i: /ɪ/
-K k: /k/
-L l: /l/
-Y y: /j/
-M m: /m/
-N n: /n/
-O o: /ɔ/
-P p: /p/
-R r: /ɾ/
-S s: /s/
-SH sh: /ʃ/
-T t: /t/
-TS ts: /ts/
-TSH tsh: /tʃ/
-U u: /ʊ/
-V v: /v/
-KH kh: /χ/
-Z z: /z/
-ZH zh: /ʒ/
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 
-# Hebrew Alphabet
 
-א: silent
-אַ: /a/
-אָ: /ɔ/
-ב: /b/
-בֿ: /v/
-ג: /g/
-ד: /d/
-ה: /h/
-ו: /ʊ/
-וּ: /ʊ/
-ז: /z/
-ח: /χ/
-ט: /t/
-י: /j/
-כּ: /k/
-כ: /χ/
-ך: /χ/
-ל: /l/ (or /ʎ/ in some speakers)
-מ: /m/
-ם: /m/
-נ: /n/
-ן: /n/
-ס: /s/
-ע: /ɛ/
-פּ: /p/
-פֿ: /f/
-ף: /f/
-צ: /ts/
-ץ: /ts/
-ק: /k/
-ר: /ʀ/
-ש: /ʃ/
-שׂ: /s/
-תּ: /t/
-ת: /s/
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/aɪ/, /ɛɪ/, /ɔɪ/"
+'), TRUE)
 
-# Rules
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```    
 
--"Obstruent sequences in Yiddish are homogeneous for voice, in a such a way that the rightmost obstruent determines the voice value of the entire cluster." [@wetzels_typology_2001]
+# Alphabet
 
+* Yiddish has both a Hebrew script and a romanized scipt. Because the Hebrew alphabet contains diacritics which differentiate between letters but are not always recorded in written Yiddish, the Hebrew alphabet cannot be used to construct a rule set with a one-to-one correspondence between graphemes and phonemes. Therefore, only the Latin script is addressed here.  
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "/a/"
+"b"            "/b/"
+"d"            "/d/"
+"e"            "/ɛ/"
+"f"            "/f/"
+"g"            "/ɡ/"
+"h"            "/h/"
+"i"            "/ɪ/"
+"k"            "/k/"
+"l"            "/l/"
+"m"            "/m/"
+"n"            "/n/"
+"o"            "/ɔ/"
+"p"            "/p/"
+"r"            "/ɾ/"
+"s"            "/s/"
+"t"            "/t/"
+"u"            "/ʊ/"
+"v"            "/v/"
+"y"            "/j/"
+"z"            "/z/"
+**Multigraph**  ""
+"dzh"          "/dʒ/"
+"sh"           "/ʃ/"
+"ts"           "/ts/"
+"tsh"          "/tʃ/"
+"kh"           "/χ/"
+"zh"           "/ʒ/"
+"ay"           "/aɪ/"
+"ey"           "/ɛɪ/"
+"oy"           "/ɔɪ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* Voiceless obstruents become voiced preceding voiced obstruents [@wetzels_typology_2001, p. 217].
+
+# Misc. Rules
+
+* Voiced obstruents become voiceless preceding voiceless obstruents [@wetzels_typology_2001, p. 217].
+
+# References
