@@ -1,0 +1,114 @@
+---
+title: "Usarufa"
+author: "Jordan Schuster"
+bibliography: usa.bib
+output: html_document
+---
+
+Last Updated: 2019-11-15
+
+# Background
+
+**Language Family:** Trans-New Guinea, East New Guinea Highlands, Eastern (Kainantu), Gadsup-Auyana-Awa
+
+* Usarufa is spoken in the Eastern Highlands province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Labial       Alveolar    Palatal     Velar      Glottal    
+Stops                        "p"           "t"        ""          "k"         "ʔ"
+Nasals                       "m"           "n"        ""          ""          ""
+Trills                       ""            "r"        ""          ""          ""
+Approximants                 "w"           ""         "j"         ""          ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* There are three phonemic tones superimposed on vowels [@bee1965, p. 59]:
+    - High: marked by an acute accent (´)
+    - Low: unmarked
+    - Falling: marked by a circumflex (ˆ)
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         ""           "u"
+Mid           "e"         ""           "o"
+Low           ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```     
+
+# Alphabet
+
+* /ʔ/ is left unwritten when occurring before /p/, /t/ and /k/ because these sounds occur word medially only after the glottal stop [@chenoveth2004, p. 3]. Disagreement exists around these series as clusters (i.e., /ˀp/, /ˀt/, /ˀk/) or as independent phonemes. I have chosen to see them as independent, allowing the syllable structure to be left unaffected [@bee1965, pp. 42-44].
+* Similarly, there is disagreement about nasal clusters being long (/mː/, /nː/) or separate. Again, I have chosen to see them as separate [@bee1965, pp. 42-44].
+* /p/ is written ⟨p⟩ word-initially and after a glottal stop; /p/ is written ⟨b⟩ when it occurs intervocalically [@chenoveth2004, p. 3].
+* /k/ is written ⟨k⟩ word initially and after a glottal stop; /k/ is written ⟨g⟩ when it occurs intervocalically [@chenoveth2004, p. 3].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme
+"a"              "/a/"
+"b"              "/p/"
+"p"              "/p/"
+"e"              "/e/"
+"g"              "/k/"
+"k"              "/k/"
+"i"              "/i/"
+"m"              "/m/"
+"n"              "/n/"
+"o"              "/o/"
+"q"              "/ʔ/"
+"r"              "/r/"
+"t"              "/t/"
+"u"              "/u/"
+"w"              "/w/"
+"y"              "/j/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Usarufa include the following structures [@chenoveth2004, p. 3]:
+    - V
+    - VC
+    - CV
+    - CVC
+* Vowel sequences occur as separate syllables [@chenoveth2004, p. 2].
+* Consonants do not occur word-finally [@chenoveth2004, p. 3].
+
+# Lenition Rules
+
+* /p/ and /k/ spirantizes to [β] and [ɣ], respectively, intervocalically [@chenoveth2004, p. 3].
+* In some words /t/ varies freely with [s] (ibid.).
+
+# Misc. Rules
+
+* /r/ is realized as [l] following /i/ and /a/ [@chenoveth2004, p. 3].
+
+# References

@@ -11,71 +11,101 @@ Last updated: 9-6-2019
 
 **Language family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Western / Papuan Tip / Peripheral / Central Papuan / Sinagoro-Keapara
 
+* Sinaugoro is spoken in the Central province of Papua New Guinea.
+
 # Phonology
 
 ## Consonants
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /b/, /f/, /v/, /m/
-Alveolar: /t/, /d/, /s/, /n/, /r/, /l/
-Velar: /k/, /g/, /ɣ/, /kʷ/, /gʷ/, /ɣʷ/
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stop: /b/, /t/, /d/, /k/, /g/, /kʷ/, /gʷ/
-Fricative: /f/, /v/, /s/, /ɣ/, /ɣʷ/
-Nasal: /m/, /n/
-Approximant: /l/, /r/
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar     Velar   
+Stops                      "b"     "t d"      "k kʷ ɡ ɡʷ"  
+Fricatives                 "f v"   "s"          "ɣ ɣʷ"     
+Nasals                     "m"     "n"            ""    
+Trills                     ""      "r"            ""     
+Approximants               ""      "l"            ""    
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 3)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless, whereas those on the right are voiced. Phonemes with the diacritic (ʷ) are labialized.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-/i/, /e/, /a/, /o/, /u/
+* The diphthongs listed below are interpreted as complex phonemes [@tauberschmidt_grammar_1999, p. 4].
 
-Dipthongs: /ae/, /ai/, /ao/, /au/, /oe/, /oi/
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     ""        "u"
+Mid       "e"     ""        "o"
+Low       ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered")
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ae/, /ai/, /ao/, /au/, /oe/, /oi/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Alphabet
 
-a - /a/
-b - /b/
-d - /d/
-e - /e/
-f - /f/
-g - /g/
-ḡ - /ɣ/
-i - /i/
-k - /k/
-l - /l/
-m - /m/
-n - /n/
-o - /o/
-r - /r/
-s - /s/
-t - /t/
-u - /u/
-v - /v/
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-# Digraphs
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme
+"a"              "/a/"  
+"b"              "/b/"  
+"d"              "/d/"  
+"e"              "/e/"  
+"f"              "/f/"  
+"g"              "/ɡ/"  
+"ḡ"              "/ɣ/"  
+"i"              "/i/"  
+"k"              "/k/"  
+"l"              "/l/"  
+"m"              "/m/"  
+"n"              "/n/"  
+"o"              "/o/"  
+"r"              "/r/"  
+"s"              "/s/"  
+"t"              "/t/"  
+"u"              "/u/"  
+"v"              "/v/"  
+**Digraph**       ""
+"gw"             "/ɡʷ/"  
+"kw"             "/kʷ/"  
+"ḡw"             "/ɣʷ/"
+'), TRUE)
 
-gw -/gʷ/
-kw - /kʷ/
-ḡw - /ɣʷ/
-ai - /ai/
-ae - /ae/
-ao - /ao/
-au - /au/
-ei - /ei/
-oi - /oi/
-ou - /ou/
-
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```   
 
 # Syllable Structure
 
 * Syllables in Sinaugoro require empty codas and prohibit consonant clusters, leaving CV and V as the inherent structures [@tauberschmidt_grammar_1999, pg. 4].
 
-# Lenition Rules
-
 # Misc Rules
 
 * /i/ is realized as [j] in syllable onsets [@tauberschmidt_grammar_1999, pg. 4].
 * /ɣ/ palatalizes preceding front vowels [@tauberschmidt_grammar_1999, pg. 7].
+
+# References

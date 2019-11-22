@@ -41,3 +41,4 @@ sub,ю,j u,4,,,
 sub,я,j a,4,,,
 # Misc. Rules
 sub,е,j e,6,^,,
+sub,-,,4,,,"hyphens have no phonemic value",

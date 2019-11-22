@@ -1,0 +1,32 @@
+# Latin Tatar Rule Set
+# Written by: Emily
+# Last Updated: 2019-11-21
+type,sfrom,sto,weight,precede,follow,comment
+# Pre Rules
+pre,"Iİ","ıi",,,,
+# Class Rules
+class,passthrough,[bdefhiklmnoprstuwxz],,,,
+class,apostrophe,[''‘’],,,,
+# Individual Letters
+sub,a,ɑ,2,,,
+sub,ä,a,2,,,
+sub,c,ʑ,2,,,
+sub,ç,ɕ,2,,,
+sub,g,ɡ,2,,,
+sub,ğ,ɡ,2,,,
+sub,ı,ɤ,2,,,
+sub,j,ʒ,2,,,
+sub,ñ,ŋ,2,,,
+sub,ö,ø,2,,,
+sub,q,k,2,,,
+sub,ş,ʃ,2,,,
+sub,ü,y,2,,,
+sub,v,w,2,,,
+sub,y,j,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,y,ɯ,3,,u,
+sub,u,,3,y,,"clean-up",
+# Misc. Rules
+sub,-,,2,,,

@@ -1,12 +1,16 @@
-# Tok Pisin
+# Tok Pisin Rule Set
 # Written by: Justin
 # Last Updated: 2019-08-02
 type,sfrom,sto,weight,precede,follow,comment
-class,passthrough,[aeioubdfghklmprstvw],,,
-sub,j,d ʒ,1,,,
+# Class Rules
+class,passthrough,[aeioubdfhklmnprstvw],,,
+# Individual Letters
+sub,g,ɡ,1,,,
+sub,j,dʒ,1,,,
 sub,y,j,1,,,
-sub,n,n,1,,,
-sub,n,ŋ,2,,g,
-sub,g,,2,n,,
-sub,-,,1,,,
 sub,({passthrough}),\1,0.1,,,
+# Digraphs
+sub,n,ŋ,2,,g,
+sub,g,,2,n,,"clean-up",
+# Misc. Rules
+sub,-,,1,,,"hyphens have no phonemic value",

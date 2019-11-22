@@ -1,0 +1,119 @@
+---
+title: "Francisco León Zoque"
+author: "Emily Strand"
+bibliography: zos.bib
+output: html_document
+---
+
+Last Updated: 2019-11-18
+
+# Background
+
+**Language Family**: Mixe-Zoque / Zoque / Chiapas Zoque
+
+* Francisco León Zoque is spoken in southern Mexico.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial        Dental    Alveolar     Postalveolar     Palatal     Velar      Glottal    
+Stops                      "p  b"        "t̪  d̪"      ""             ""             ""       "k  ɡ"        "ʔ"
+Affricates                   ""            ""     "ts  dz"          "tʃ"           ""         ""          ""
+Fricatives                  "f"            ""       "s"             "ʃ"            ""         ""          "h"
+Nasals                      "m"            ""       "n"             ""             "ɲ"        "ŋ"         ""
+Trills                       ""            ""       "r"             ""             ""         ""          ""
+Approximants                 ""            ""       "l"             ""             "j"        "w"         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         "ɨ"          "u"
+Mid           "e"         ""           "o"
+Low           ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+* A superscript ⟨n⟩ is sometimes written word-initially, indicating nasalization of the word [@Bartholomew1987, pp. 334-335]. This is only in cases where words do no contain stops or affricates or where words that contain stops or affricates occur in combination with other consonants. These environments seem to prevent standard affixation of nasals where assimilation to stops and affricates generally occurs (see Misc. Rules). Given that this suprasegmental feature seems to pose no contrastiveness in terms of when it does and does not occur, I have opted to not include it in the transcription.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme         Phoneme              Comment
+"a"               "/a/"                  ""
+"b"               "/b/"                  ""
+"c"             "/s/; /k/"   "/s/: preceding front vowels; /k/: elsewhere"
+"d"               "/d̪/"                  ""
+"e"               "/e/"                  ""
+"f"               "/f/"                  ""
+"g"               "/ɡ/"                  ""
+"i"               "/i/"                  ""
+"j"               "/h/"                  ""
+"l"               "/l/"                  ""
+"m"               "/m/"                  ""
+"n"               "/n/"                  ""
+"ñ"               "/ɲ/"                  ""
+"ṉ"               "/ŋ/"                  ""
+"o"               "/o/"                  ""
+"ø"               "/ɨ/"                  ""
+"p"               "/p/"                  ""
+"r"               "/r/"                   ""
+"s"               "/s/"                  ""
+"t"               "/t̪/"                  ""
+"u"               "/u/"                  ""
+"v"               "/w/"                  ""
+"y"               "/j/"                  ""
+"\'"              "/ʔ/"                  ""
+**Digraph**       ""                   ""
+"ch"              "/tʃ/"                 ""
+"dz"              "/dz/"                 ""
+"tz"              "/ts/"                 ""
+"gu"              "/ɡ/"           "preceding front vowels"
+"qu"              "/k/"           "preceding front vowels"
+"sy"              "/ʃ/"                  ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /p/, /t/, /ts/, and /k/ become voiced preceding nasals (not necessarily homorganic) [@Bartholomew1987, p. 334].
+* Affixation involving /j/ generally results in palatalization of stops and affricates [@Bartholomew1987, p. 335].
+* Word-final vowels tend to be deleted [@Bartholomew1987, pp. 338-339].
+
+# Misc. Rules
+
+* Through affixation, nasals tend to assimilate in place to stops and affricates [@Bartholomew1987, pp. 334-335].
+* For words that are vowel initial, a glottal stop always precedes them [@Bartholomew1987, pp. 335-336].
+* Glottal stops, present in suffixes, become /h/ when affixed to morphemes [@Bartholomew1987, pp. 336-337].
+* /ŋ/ root-finally changes to /w/ when (non back() vowel- initial suffixes are added [@Bartholomew1987, p. 338].
+* Vowel harmony is apparent in the language in terms of height [@Bartholomew1987, p. 340].
+
+# References

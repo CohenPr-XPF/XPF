@@ -11,95 +11,122 @@ Last Updated: 2019-06-14
 
 **Language Family**: Indo-European / Indo-Iranian / Iranian / Western Iranian / Southwestern Iranian / Persian / Tajik
 
+* Tajik is predominantly spoken in Tajikistan and Uzbekistan.
+
 # Phonology
 
 ## Consonants
 
-* @TgKhojayori2009 argues for /ɽ/ rather than /r/. (p. 4)
+* @TgKhojayori2009 argue for /ɽ/ rather than /r/ (p. 4).
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /b/, /m/, /f/, /v/  
-Alveolar: /t/, /d/, /n/, /s/, /z/, /r/, /l/  
-Postalveolar: /ʃ/, /ʒ/, /tʃ/, /dʒ/  
-Palatal: /j/  
-Velar: /k/, /ɡ/  
-Uvular: /q/, /χ/, /ʁ/  
-Glottal: /ʔ/, /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /b/, /t/, /d/, /k/, /ɡ/, /q/, /ʔ/  
-Affricates: /tʃ/, /dʒ/  
-Nasals: /m/, /n/  
-Fricatives: /f/, /v/, /s/, /z/, /ʃ/, /ʒ/, /χ/, /ʁ/, /h/  
-Trills: /r/  
-Approximants: /l/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Postalveolar  Palatal  Velar  Uvular  Glottal
+Stops                      "p b"   "t d"     ""            ""       "k ɡ"  "q"     "ʔ"
+Affricates                 ""      ""        "tʃ dʒ"       ""       ""     ""      ""
+Fricatives                 "f v"   "s z"     "ʃ ʒ"         ""       ""     "χ ʁ"   "h"
+Nasals                     "m"     "n"       ""            ""       ""     ""      ""
+Trills                     ""      "r"       ""            ""       ""     ""      ""
+Approximants               ""      "l"       ""            "j"      ""     ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless, whereas those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /i/, /u/, /e/, /ɵ/, /ɔ/, /a/  
+* Some older sources describe /iː/ as a separate phoneme, but modern scholars tend to argue that length is wholly non-contrastive in Tajik [@TgIdo2005, p. 11].
 
-Some older sources describe /iː/ as a separate phoneme, but modern scholars tend to argue that length is wholly non-contrastive in Tajik. [@TgIdo2005, p. 11]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     ""        "u"
+Mid       "e"     "ɵ"       "ɔ"
+Low       ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Alphabet
 
-а - /a/  
-б - /b/  
-в - /v/  
-г - /ɡ/  
-ғ - /ʁ/  
-д - /d/  
-е - /e/ (/je/ if word-initial [@TgBaizoyev2004, p. 2])  
-ё - /jɔ/  
-ж - /ʒ/  
-з - /z/  
-и - /i/  
-ӣ - /i/ (only used word-finally [@TgBaizoyev2004, p. 2])  
-й - /j/  
-к - /k/  
-қ - /q/  
-л - /l/  
-м - /m/  
-н - /n/  
-о - /ɔ/  
-п - /p/  
-р - /r/  
-с - /s/  
-т - /t/  
-у - /u/  
-ӯ - /ɵ/  
-ф - /f/  
-х - /χ/  
-ҳ - /h/  
-ч - /tʃ/  
-ҷ	- /dʒ/  
-ш - /ʃ/  
-ъ - /ʔ/  
-э - /e/ (used word-initially where initial glides are absent [@TgBaizoyev2004, p. 2])  
-ю - /ju/  
-я - /ja/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme                  Comment
+"а"              "/a/"                      ""
+"б"              "/b/"                      ""
+"в"              "/v/"                      ""
+"г"              "/ɡ/"                      ""
+"ғ"              "/ʁ/"                      ""
+"д"              "/d/"                      ""
+"е"            "/e/; /je/"   "/je/: word-initially [@TgBaizoyev2004, p. 2]"  
+"ё"              "/jɔ/"                     ""
+"ж"              "/ʒ/"                      ""
+"з"              "/z/"                      ""
+"и"              "/i/"                      ""
+"ӣ"              "/i/"        "word-finally [@TgBaizoyev2004, p. 2]"  
+"й"              "/j/"                      ""
+"к"              "/k/"                      ""
+"қ"              "/q/"                      ""
+"л"              "/l/"                      ""
+"м"              "/m/"                      ""
+"н"              "/n/"                      ""
+"о"              "/ɔ/"                      ""
+"п"              "/p/"                      ""
+"р"              "/r/"                      ""
+"с"              "/s/"                      ""
+"т"              "/t/"                      ""
+"у"              "/u/"                      ""
+"ӯ"              "/ɵ/"                      ""
+"ф"              "/f/"                      ""
+"х"              "/χ/"                      ""
+"ҳ"              "/h/"                      ""
+"ч"              "/tʃ/"                     ""
+"ҷ"	             "/dʒ/"                     ""
+"ш"              "/ʃ/"                      ""
+"ъ"              "/ʔ/"                      ""
+"э"              "/e/"    "used word-initially where initial glides are absent [@TgBaizoyev2004, p. 2]"  
+"ю"              "/ju/"                     ""        
+"я"              "/ja/"                     ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```  
+
+# Syllable Structure
+
+* Tajik has a (C)V(C)(C) syllable structure [@TgIdo2005, p. 14].
 
 # Lenition Rules
 
-* Loanwords with the affricate /ts/ typically reduce it to /s/. [@TgIdo2005, p. 13]
-* /n/ assimilates to the place of following bilabials. [@TgIdo2005, p. 13] [@TgKhojayori2009, p. 7]
-* /q/ spirantizes in some words. (ibid.)
-* Consonant clusters assimilate to the voicing of the final one. [@TgKhojayori2009, p. 3]
-* /a u i/ reduce to [ə] in unstressed syllables. [@TgKhojayori2009, p. 6]
-* The middle consonant is often deleted in three-consonant clusters. [@TgKhojayori2009, p. 7]
-  * However, sometimes [ə] is inserted between the second and third consonant instead. (ibid.)
-* In word-final consonant clusters, the last consonant is sometimes deleted. (ibid.)
-* /ʔ/ deletes intervocalically; /v/ does as well, if the vowels are identical. [@TgKhojayori2009, p. 8]
-* Word-final /h/ deletes. (ibid.)
+* Loanwords with the affricate /ts/ typically reduce it to /s/ [@TgIdo2005, p. 13].
+* /n/ assimilates to the place of following bilabials [@TgIdo2005, p. 13; @TgKhojayori2009, p. 7].
+* /q/ spirantizes in some words (ibid.).
+* Consonant clusters assimilate to the voicing of the final one [@TgKhojayori2009, p. 3].
+* /a u i/ reduce to [ə] in unstressed syllables [@TgKhojayori2009, p. 6].
+* The middle consonant is often deleted in three-consonant clusters [@TgKhojayori2009, p. 7].
+  * However, sometimes [ə] is inserted between the second and third consonant instead (ibid.).
+* In word-final consonant clusters, the last consonant is sometimes deleted (ibid.).
+* /ʔ/ deletes intervocalically; /v/ does as well, if the vowels are identical [@TgKhojayori2009, p. 8].
+* Word-final /h/ deletes (ibid.).
 
 # Misc. Rules
 
-* Obstruents devoice word-finally. [@TgKhojayori2009, p. 3]
-* Glides, typically /j/, are often added between vowel clusters. [@TgKhojayori2009, p. 8] [@TgIdo2005, p. 12]
+* Obstruents devoice word-finally [@TgKhojayori2009, p. 3].
+* Glides, typically /j/, are often added between vowel clusters [@TgKhojayori2009, p. 8; @TgIdo2005, p. 12].
 
-## Syllable Structure
-
-Tajik has a (C)V(C)(C) syllable structure. [@TgIdo2005, p. 14]
 
 # References

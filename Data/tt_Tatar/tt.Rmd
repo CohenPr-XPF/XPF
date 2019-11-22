@@ -1,5 +1,8 @@
 ---
-title: Tatar
+title: "Tatar"
+author: "Bill Mizgerd"
+bibliography: tt.bib
+output: html_document
 ---
 
 Last Updated: 2018-11-27
@@ -8,169 +11,185 @@ Last Updated: 2018-11-27
 
 **Language Family**: Turkic / Common Turkic / Kipchak / North Kipchak / Tatar
 
-Although this language is usually simply called Tatar, it is sometimes also known as Kazan Tatar or Volga Tatar, in order to differentiate it from the Crimean Tatar and Siberian Tatar languages.
+* Although this language is usually simply called Tatar, it is sometimes also known as Kazan Tatar or Volga Tatar, in order to differentiate it from the Crimean Tatar and Siberian Tatar languages.
+* Tatar is spoken in Russia, specifically in Saint Petersburg, Moscow, and the Bashkortostan and Tatarstan republics.
 
 # Phonology
 
 ## Consonants
 
-### By place of articulation
+* Bilabial and labiodental consonants are non-contrastive in Turkic languages [@TtBaitchura1975, p. 244], so /f/ could theoretically also be /ɸ/. Comrie explicitly describes this consonant as bilabial [@TtComrie1997, p. 901], but he diverges from a general consensus of using /f/. I have opted for the labiodental /f/ in the phonemic inventory below.
 
-Labial: /p/, /b/, /m/, /f/, /w/
-Dental/Alveolar: /t/, /d/, /n/, /s/, /z/, /l/, /r/
-Alveolo-Palatal: /ɕ/, /ʑ/, /j/
-Palato-Alveolar: /ʃ/, /ʒ/
-Velar: /k/, /g/, /ŋ/, /x/
-Glottal: /ʔ/, /h/
+* /ɕ/ and /ʑ/ should not be replaced with affricates [@TtComrie1997, p. 902].
 
-In this documentation, "dorsal" will be used to refer to velar and uvular consonants, but not to alveolo-palatal consonants.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-### By manner of articulation
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-Stops: /p/, /b/, /t/, /d/, /k/, /g/, /ʔ/
-Nasals: /m/, /n/, /ŋ/
-Fricatives: /f/, /s/, /z/, /ɕ/, /ʑ/, /ʃ/, /ʒ/, /x/, /h/
-Approximants: /w/, /l/, /r/, /j/
 
-(/ɕ/ and /ʑ/ should not be replaced with affricates, per Comrie 1997, p. 902)
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Postalveolar  Alveolo-Palatal  Palatal   Velar   Glottal
+Stops                      "p b"   "t d"     ""            ""                 ""       "k ɡ"   "ʔ"
+Fricatives                 "f"     "s z"     "ʃ ʒ"         "ɕ ʑ"              ""       "x"     "h"
+Nasals                     "m"     "n"       ""            ""                 ""       "ŋ"     ""
+Trills                     ""      "r"       ""            ""                 ""       ""      ""
+Approximants               "w"     "l"       ""            ""                 "j"      ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Alveolo-Palatal", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless, whereas those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Front vowels: /i/, /y/, /e/, /ø/, /a/
-Back vowels: /ɯ/, /u/, /ɤ/, /o/, /ɑ/
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i y"   ""        "ɯ u"
+Mid       "e ø"   ""        "ɤ o"
+Low       ""      "a"       "ɑ"
+'), TRUE)
 
-## Stress
-
-Stress typically falls on the final syllable.
-
-In compounds, stress falls on the last syllable *of the first component*; reduplicated prefixes count as a separate component for this criterion.
-
-In the following exceptions, stress falls on the initial syllable:
-* Second-person imperative forms of verbs
-* Interrogative pronouns and adverbs
-* Adverbs and conjunctions
-
-Postpositions go wholly unstressed.
-
-The following suffixes are clitics, which are unstressed and leave their stress on the preceding syllable: /-mE/, /-mA/, /-dA/, /-ɕA/, /-dAj/, and all predicative clitics.
-
-/-lAr/ is a stressed suffix, except in the third person plural of the present tense, in which it behaves like a clitic.
-
-Russian loanwords (especially recent ones) disregard these rules and retain the Russian stress patterns, even if inflectional suffixes are appended.
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  footnote("Note: For phonemes that share a cell, those on the left are unrounded, whereas those on the right are rounded.", general_title = "")
+```
 
 # Alphabet
 
-## Phonemic
+* Tatar can be represented by both the Cyrillc and Latin scripts. However, the Latin alphabet was made illegal by the Tatarstani government [@Wertheim2012, p. 75]. I have chosen to include both alphabets below as well as both rulesets.
 
-а - /ɑ/
-ә - /a/ (some authors prefer to use /æ/)
-б - /b/
-в - /w/; [v] in Russian loanwords
-г - /g/; [ʁ] in a syllable with a back vowel; see {1} re: [ʁ]
-д - /d/
-е - /e/; [je] word-initially (per Poppe p. 20, not a diphthong)
-ё - /o/; [jo] word-initially (letter only used in Rus. loanwords)
-ж - /ʒ/ (letter only used in Russian loanwords)
-җ - /ʑ/
-з - /z/
-и - /i/
-й - /j/
-к - /k/; [q] in a syllable with a back vowel
-л - /l/
-м - /m/
-н - /n/
-ң - /ŋ/
-о - /o/
-ө - /ø/
-п - /p/
-р - /r/
-с - /s/
-т - /t/
-у - /u/; [uw] word-finally
-ү - /y/; [yw] word-finally
-ф - /f/; (see {2} for specifics)
-х - /x/
-һ - /h/
-ц - /t͡s/ (letter only used in Russian loanwords)
-ч - /ɕ/
-ш - /ʃ/
-щ - /ʃɕ/ (letter only used in Russian loanwords)
-ъ - /ʔ/ (indicates phonetic backing of associated vowels)
-ы - /ɤ/
-ь - /ʔ/ (indicates phonetic fronting of associated vowels)
-э - /e/
-ю - /ɯ/ (phonemic status is controversial; some writers prefer /ju/ or /jy/)
-я - /jɑ/
+## Cyrillic
 
-{1}: /ʁ/ is most often written as /ɣ/, but because it is a "post-velar" sound that acts as a farther-back contrast to /g/, I felt that /ʁ/ more accurately described the character of the phoneme.
-{2}: Bilabial and labiodental consonants are non-contrastive in Turkic languages (Baitchura, p. 244), so this consonant could theoretically also be /ɸ/. Comrie explicitly describes this consonant as bilabial (Comrie, p. 901), but he diverges from a general consensus of using /f/.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-* rounded reduced vowels in non-initial syllables are written as unrounded
-* velar vs. uvular sounds are not orthographically distinguished
-* <ь> used to mark frontness in ambiguous vowels (<е>, <я>, <ю>)
-* nasal assimilation to following consonants is not orthographically reflected
+cyrillic_alphabet <- read.table(textConnection('
+Grapheme        Phoneme              Comment
+"а"              "/ɑ/"                 ""
+"ә"              "/a/"       "some authors prefer to use /æ/"  
+"б"              "/b/"                 ""  
+"в"              "/w/"         "/v/ in Russian loanwords"  
+"г"              "/ɡ/"                 ""  
+"д"              "/d/"                 ""
+"е"           "/e/; /je/"  "/je/: word-initially [@TtPoppe1963, p. 20]"  
+"ё"           "/o/; /jo/"  "/jo/: word-initially (only appears in Russian loanwords)"  
+"ж"              "/ʒ/"        "only appears in Russian loanwords"  
+"җ"              "/ʑ/"                 ""
+"з"              "/z/"                 ""
+"и"              "/i/"                 ""
+"й"              "/j/"                 ""
+"к"              "/k/"                 ""  
+"л"              "/l/"                 ""
+"м"              "/m/"                 ""
+"н"              "/n/"                 ""
+"ң"              "/ŋ/"                 ""
+"о"              "/o/"                 ""
+"ө"              "/ø/"                 ""
+"п"              "/p/"                 ""
+"р"              "/r/"                 ""
+"с"              "/s/"                 ""
+"т"              "/t/"                 ""
+"у"              "/u/"                 ""
+"ү"              "/y/"                 ""  
+"ф"              "/f/"                 ""  
+"х"              "/x/"                 ""
+"һ"              "/h/"                 ""
+"ц"              "/ts/"  "only appears in Russian loanwords"  
+"ч"              "/ɕ/"                 ""
+"ш"              "/ʃ/"                 ""
+"щ"              "/ʃɕ/"  "only appears in Russian loanwords"  
+"ъ"              "/ʔ/"   "indicates phonetic backing of associated vowels"  
+"ы"              "/ɤ/"                 ""
+"ь"              "/ʔ/"   "indicates phonetic fronting of associated vowels"  
+"э"              "/e/"                 ""
+"ю"              "/ɯ/" "phonemic status is controversial; some writers prefer /ju/ or /jy/"
+"я"              "/jɑ/"                ""
+'), TRUE)
 
-## Morphophonemes
+kable(cyrillic_alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```  
 
-These are characters used to represent back-front vowel pairs, as follows:
+## Latin
 
-/a/ & /ɑ/ → A (low vowels)
-/e/, /ø/, /ɤ/, & /o/ → E (mid vowels)
-/i/ & /ɯ/ → I (unrounded high vowels)
-/y/ & /u/ → U (rounded high vowels)
+* The capital of ⟨i⟩ is ⟨İ⟩ and the capital of ⟨ı⟩ is ⟨I⟩.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+latin_alphabet <- read.table(textConnection('
+Grapheme        Phoneme               Comment
+"a"              "/ɑ/"                  ""
+"ä"              "/a/"                  ""
+"b"              "/b/"                  ""
+"c"              "/ʑ/"                  ""
+"ç"              "/ɕ/"                  ""
+"d"              "/d/"                  ""
+"e"              "/e/"                  ""
+"f"              "/f/"                  ""
+"g"              "/ɡ/"                  ""
+"ğ"              "/ɡ/"                  ""
+"h"              "/h/"                  ""
+"i"              "/i/"                  ""
+"ı"              "/ɤ/"                  ""
+"j"              "/ʒ/"                  ""
+"k"              "/k/"                  ""
+"l"              "/l/"                  ""
+"m"              "/m/"                  ""
+"n"              "/n/"                  ""
+"ñ"              "/ŋ/"                  ""
+"o"              "/o/"                  ""
+"ö"              "/ø/"                  ""
+"p"              "/p/"                  ""
+"q"              "/k/"                  ""
+"r"              "/r/"                  ""
+"s"              "/s/"                  ""
+"ş"              "/ʃ/"                  ""
+"t"              "/t/"                  ""
+"u"              "/u/"                  ""
+"ü"              "/y/"                  ""
+"v"              "/w/"                  ""
+"w"              "/w/"                  ""
+"x"              "/x/"                  ""
+"y"              "/j/"                  ""
+"z"              "/z/"                  ""
+"\'"             "/ʔ/"                  ""
+**Digraph**       ""                    ""
+"ts"             "/ts/"    "only appears in loanwords"
+"şç"             "/ʃɕ/"    "only appears in loanwords"
+"yu"             "/ɯ/"                  ""
+"ya"             "/ja/"                 ""
+'), TRUE)
+
+kable(latin_alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```  
+
+# Syllable Structure
+
+* Syllables in Tatar follow the order of (C)V(C)(C) [@TtComrie1997, pp. 905-906]. However, such structures could also be described as CV(C)(C), since syllables without an initial consonant only occur word-initially and are phonetically introduced by a [ʔ].
 
 # Lenition Processes
 
-* back-movement of velar stops adjacent to back vowels
-* devoicing of word-final stops
-* voicing rules for stem-final stops followed by vowels:
-  * devoicing of stem-final dental stops
-  * voicing of stem-final labial stops
-  * voicing of intervocalic stem-final dorsal stops
+* Velar stops adjacent to back vowels become backed [@TtPoppe1963, pp. 10-11].
+    - /k/ goes to [q].
+    - /ɡ/ is said to go to [ʁ]; however it is often indicated as [ɣ]. Because it is a "post-velar" sound that acts as a farther-back contrast to /ɡ/, I felt that [ʁ] more accurately described the character of the phoneme.
+* Stem-final voiceless labial stops become voiced when followed by a vowel [@TtPoppe1963, p. 18].
+* Stem-final voiceless dorsal stops become voiced intervocalically (ibid.).
 
 # Misc. Rules
 
-* /a/ is semi-rounded in initial syllables (including stem-initial syllables in prefixed words)
-* The mid vowels (/e/, /ø/, /ɤ/, /o/) are short and relatively centralized
-* Velar/uvular contrasts (/k/ vs. /q/ and /g/ vs. /ʁ/) occur only in words of Arabic or Persian origin
-* Palatal harmony in consonants: in native (i.e., Turkic?) words, velar stops occur in the context of front vowels, while their uvular counterparts occur in the context of back vowels
-* Palatal harmony in vowels: if a word's first vowel is front, all the subsequent vowels must also be front; likewise, if a word's first vowel is back then all subsequent vowels must be back
-* Where the initial vowel is a rounded mid vowel, subsequent mid vowels will also be rounded; otherwise, non-initial vowels are never rounded
-* The exception to the above is <-(E)w>, the verbal noun ending, which typically ends up phonetically at [u]
-* Word-final stops devoice; word-final /ʑ/ only occurs in words of Arabic/Persian origin
-* Stem-final voicing rules (only applicable before vowels)
-  * Stem-final dental stops always devoice
-  * Stem-final labial stops always voice
-  * Stem-final dorsal stops voice if consistently preceded by a vowel; they also voice in Turkic-origin nominals where the penultimate vowel is variable
-* Stems ending in CEC often (but not always) drop the E before a vowel
-  * The rule (Comrie 1997, pp. 907–08) is kind of confusing, but it exists
-* Voicing assimilation occurs in clusters of obstruents, defaulting to voiceless
-* In the suffixes /-lAn/ and /-dAn/, the initial consonant assimilates to [n] after a preceding nasal
+* /l/ becomes velarized in the presence of back vowels [@TtPoppe1963, p. 11].
+* /w/ is realized as a fricative word-initially [@TtComrie1997, p. 902].
+* Velar/uvular contrasts (/k/ vs. /q/ and /g/ vs. /ʁ/) occur only in words of Arabic or Persian origin [@TtComrie1997, p. 901].
+* Voiced consonants become voiceless word-finally [@TtPoppe1963, p. 18].
+    - Stem-final dental stops devoice when followed by a vowel.
+* Palatal harmony in consonants: velar stops occur in the context of front vowels, while their uvular counterparts occur in the context of back vowels [@TtComrie1997, pp. 904-905].
+* Palatal harmony in vowels: if a word's first vowel is front, all the subsequent vowels must also be front; likewise, if a word's first vowel is back then all subsequent vowels must be back [@TtComrie1997, p. 903].
+* Voicing assimilation occurs in clusters of obstruents, defaulting to voiceless [@TtComrie1997, p. 980].
 
-## Syllable structure
-
-(C)V(C)(C), except in Russian loanwords
-
-Could alternately be written as CV(C)(C), since syllables without an initial consonant only occur word-initially and are phonetically introduced by a [ʔ].
-
-Rules about which sounds can be word-initial or word-final are found on Comrie 1997, p. 906. These probably don't need to be taken down unless the orthography reflects illegal sounds.
-
-# Examples
-
-**Voicing of stem-final labial stops:**
-/tɑp/ - find; /tɑbɑ/ - finding (pres. gerund)
-
-**Stem-final dorsal voicing:**
-/bɑlɤq/ - fish; /bɑlʁɤ/ - unknown form
-
-**Minimal pairs distinguished by stress:**
-/ɑlmɑ́/ - apple; /ɑ́l-mɑ/ - do not take!
-/sin-dá/ - you (locative case); /sín-da/ - you also
-
-# Sources
-
-@TtBaitchura1975
-@TtBerta1998
-@TtComrie1997
-@TtPoppe1963
-@TtOmniglot
+# References

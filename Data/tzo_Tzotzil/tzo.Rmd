@@ -11,96 +11,122 @@ Last Updated: 2019-06-27
 
 **Language Family**: Mayan / Core Mayan / Cholan-Tzeltalan / Tzeltalan / Tzotzil
 
+* Tzotzil is spoken in the State of Chiapas located in southern Mexico.
+
 # Phonology
 
 ## Consonants
 
-* /d f ɡ β/ appear in some recent loanwords. [@TzoLaughlin1975, p. 22]
-* @TzoCowan1969 describes the affricates as sequences of two distinct phones, but she ultimately opts to "reserve judgment as to their phonemic status," so I have opted to follow Laughlin's more recent and decisive analysis. (p. 4)
+* /d f ɡ β/ appear in some recent loanwords [@TzoLaughlin1975, p. 22].
+* @TzoCowan1969 describes the affricates as sequences of two distinct phones, but she ultimately opts to "reserve judgment as to their phonemic status," so I have opted to follow Laughlin's more recent and decisive analysis (p. 4).
 * @TzoCowan1969 argues for /x/ rather than /h/.
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /pʰ/, /pʼ/, /b/, /m/, /v/  
-Alveolar: /tʰ/, /tʼ/, /ts/, /tsʼ/, /n/, /s/, /ɾ/, /l/  
-Postalveolar: /tʃ/, /tʃʼ/, /ʃ/  
-Palatal: /j/  
-Velar: /kʰ/, /kʼ/  
-Glottal: /ʔ/, /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /pʰ/, /pʼ/, /b/, /tʰ/, /tʼ/, /kʰ/, /kʼ/, /ʔ/  
-Affricates: /ts/, /tsʼ/, /tʃ/, /tʃʼ/  
-Nasals: /m/, /n/  
-Fricatives: /v/, /s/, /ʃ/, /h/  
-Flaps: /ɾ/  
-Approximants: /l/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial      Alveolar    Postalveolar  Palatal  Velar    Glottal
+Stops                      "pʰ pʼ b"   "tʰ tʼ"     ""            ""       "kʰ kʼ"  "ʔ"
+Affricates                 ""          "ts tsʼ"    "tʃ tʃʼ"      ""       ""       ""
+Fricatives                 "v"         "s"         "ʃ"           ""       ""       "h"
+Nasals                     "m"         "n"         ""            ""       ""       ""
+Flaps                      ""          "ɾ"         ""            ""       ""       ""
+Approximants               ""          "l"         ""            "j"      ""     ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  footnote("Note: In cells with multiple phonemes, the leftmost is plain or aspirated; the second is ejective; and where a third phoneme is present, it is voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /i/, /e/, /u/, /o/, /a/  
+* Some speakers realize all of their vowels without rounding [@TzoLaughlin1975, p. 22].
+* The claim has been made that tone is developing in Tzotzil, but as of 2010 there is no evidence for any tones in Tzotzil being contrastive [@TzoAvelino2011, pp. 1-2].
 
-Some speakers realize all of their vowels without rounding. [@TzoLaughlin1975, p. 22]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     ""        "u"
+Mid       "e"     ""        "o"
+Low       ""      "a"       ""
+'), TRUE)
 
-The claim has been made that tone is developing in Tzotzil, but as of 2010 there is no evidence for any tones in Tzotzil being contrastive. [@TzoAvelino2011, pp. 1-2]
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Alphabet
 
-a - /a/  
-b - /b/  
-c - /kʰ/  
-  c' - /kʼ/  
-ch - /tʃ/  
-  ch' - /tʃʼ/  
-e - /e/  
-i - /i/  
-j - /h/  
-l - /l/  
-m - /m/  
-n - /n/  
-o - /o/  
-p - /pʰ/  
-  p' - /pʼ/  
-qu - /kʰ/  
-  q'u - /kʼ/  
-r - /ɾ/  
-s - /s/  
-t - /tʰ/  
-  t' - /tʼ/  
-ts - /ts/  
-  ts' - /tsʼ/  
-u - /u/  
-v - /v/  
-x - /ʃ/  
-y - /j/  
-' - /ʔ/  
+* Some orthographies just use ⟨k⟩ and ⟨k'⟩ rather than ⟨c⟩, ⟨qu⟩, ⟨c'⟩, and ⟨q'u⟩ for representing velar stops.
 
-Some orthographies just use <k> and <k'> rather than <c>, <qu>, <c'>, and <q'u> for representing velar stops.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme
+"a"              "/a/"  
+"b"              "/b/"  
+"c"              "/kʰ/"  
+"c\'"            "/kʼ/"  
+"ch"             "/tʃ/"  
+"ch\'"           "/tʃʼ/"  
+"e"              "/e/"  
+"i"              "/i/"  
+"j"              "/h/"  
+"l"              "/l/"  
+"m"              "/m/"  
+"n"              "/n/"  
+"o"              "/o/"  
+"p"              "/pʰ/"  
+"p\'"            "/pʼ/"  
+"qu"             "/kʰ/"  
+"q\'u"           "/kʼ/"  
+"r"              "/ɾ/"  
+"s"              "/s/"  
+"t"              "/tʰ/"  
+"t\'"            "/tʼ/"  
+"ts"             "/ts/"  
+"ts\'"           "/tsʼ/"  
+"u"              "/u/"  
+"v"              "/v/"  
+"x"              "/ʃ/"  
+"y"              "/j/"  
+"\'"             "/ʔ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```   
 
 # Lenition Rules
 
-* /h/ is weakly realized when followed by [ʔ]. [@TzoLaughlin1975, p. 22]
-* /j/ deletes after /ʃ/ or before sibilant fricatives. [@TzoCowan1969, p. 111]
-* Before stressed syllables that begin with consonants (other than /ʔ/), /k/ spirantizes to [x] and /v/ deletes entirely. (ibid.)
-* /ʔ/ deletes after the following consonants: /k v j/. [@TzoCowan1969, p. 112]
-* /ʔ/ and /ʃ/ delete when followed by two consecutive non-/ʔ/ consonants. [@TzoCowan1969, pp. 112-113]
-* Mid vowels delete before non-front vowels. [@TzoCowan1969, p. 114]
-* Unstressed /i/ deletes before /a/ or /u/. (ibid.)
-* /t/ spirantizes to [ʃ] before the /-uk/ suffix. [@TzoCowan1969, p. 115]
-* /h/ deletes before consonant clusters, or when preceded by an unstressed vowel and followed by a stressed vowel. (ibid.)
+* /h/ is weakly realized when followed by [ʔ] [@TzoLaughlin1975, p. 22].
+* /j/ deletes after /ʃ/ or before sibilant fricatives [@TzoCowan1969, p. 111].
+* Before stressed syllables that begin with consonants (other than /ʔ/), /k/ spirantizes to [x] and /v/ deletes entirely (ibid.).
+* /ʔ/ deletes after the following consonants: /k v j/ [@TzoCowan1969, p. 112].
+* /ʔ/ and /ʃ/ delete when followed by two consecutive non-/ʔ/ consonants [@TzoCowan1969, pp. 112-113].
+* Mid vowels delete before non-front vowels [@TzoCowan1969, p. 114].
+* Unstressed /i/ deletes before /a/ or /u/ (ibid.).
+* /t/ spirantizes to [ʃ] before the /-uk/ suffix [@TzoCowan1969, p. 115].
+* /h/ deletes before consonant clusters, or when preceded by an unstressed vowel and followed by a stressed vowel (ibid.).
 
 # Misc. Rules
 
-* Epenthesis of [ʔ] occurs before intervocalic /b/. [@TzoLaughlin1975, p. 22]
-* Preconsonantal or word-final /b/ is realized as [ʔm], and the vowel preceding that /b/ is nasalized and glottalized. (ibid.)
-* Word-final /ɾ/ is trilled to [r]. (ibid.)
-* Word-medial /v/ moves to [β] before /a/. (ibid.)
-* Doubled consonants (e.g. identical root-final and suffix-initial consonants) are realized identically to their single counterparts, except for /b/. [@TzoCowan1969, p. 111]
-* Before stressed syllables that begin with consonants (other than /ʔ/), /j/ deapproximantizes to /s/. (ibid.)
-* /ʃ/ moves to [s] before affricates. [@TzoCowan1969, p. 112]
-* In the sequence /tʃkC/, where C is any consonant other than /ʔ/, /tʃ/ vocalizes to [ti]. (ibid.)
-* /n/ assimilates to the place of following /b/. [@TzoCowan1969, p. 115]
-* /m/ moves to [n] after /VmV/ sequences. [@TzoCowan1969, p. 116]
+* Epenthesis of [ʔ] occurs before intervocalic /b/ [@TzoLaughlin1975, p. 22].
+* Preconsonantal or word-final /b/ is realized as [ʔm], and the vowel preceding that /b/ is nasalized and glottalized (ibid.).
+* Word-final /ɾ/ is trilled to [r] (ibid.).
+* Word-medial /v/ moves to [β] before /a/ (ibid.).
+* Doubled consonants (e.g. identical root-final and suffix-initial consonants) are realized identically to their single counterparts, except for /b/ [@TzoCowan1969, p. 111].
+* Before stressed syllables that begin with consonants (other than /ʔ/), /j/ deapproximantizes to /s/ (ibid.).
+* /ʃ/ moves to [s] before affricates [@TzoCowan1969, p. 112].
+* In the sequence /tʃkC/, where C is any consonant other than /ʔ/, /tʃ/ vocalizes to [ti] (ibid.).
+* /n/ assimilates to the place of following /b/ [@TzoCowan1969, p. 115].
+* /m/ moves to [n] after /VmV/ sequences [@TzoCowan1969, p. 116].
 
 # References

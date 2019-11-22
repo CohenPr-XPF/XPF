@@ -1,0 +1,119 @@
+---
+title: "Nabak"
+author: "Emily Strand"
+bibliography: naf.bib
+output: html_document
+---
+
+Last Updated: 2019-11-19
+
+# Background
+
+**Language Family**: Nuclear Trans New Guinea / Finisterre-Huon / Huon / Western Huon / Nabak-Momolili
+
+* Nabak is spoken in the Morobe province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial       Alveolar    Palatal        Velar     
+Stops                      "p  b"       "t  d"        ""       "k  kʷ  ɡ  ɡʷ"
+Fricatives                   ""         "s  z"        ""            ""  
+Nasals                      "m"           "n"         ""           "ŋ"  
+Approximants                "w"           "l"         "j"           ""   
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. The velar stops that have the diacritic (ʷ) are labialized.", general_title = "")
+```
+
+## Vowels
+
+* Vowel sequences are interpreted as such, never as complex nuclei [@Fabian1971, p. 8].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         ""           "u"
+"High-Mid"    "e"         ""           "o"
+"Low-Mid"     ""          ""           "ɔ"
+Low           ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme         Phoneme
+"a"               "/a/"
+"â"               "/ɔ/"
+"b"               "/b/"
+"d"               "/d/"
+"e"               "/e/"
+"g"               "/ɡ/"
+"i"               "/i/"
+"k"               "/k/"
+"l"               "/l/"
+"m"               "/m/"
+"n"               "/n/"
+"ŋ"               "/ŋ/"
+"o"               "/o/"
+"p"               "/p/"
+"s"               "/s/"
+"t"               "/t/"
+"u"               "/u/"
+"w"               "/w/"
+"y"               "/j/"
+"z"               "/z/"
+**Digraph**       ""
+"gw"              "/ɡʷ/"
+"kw"              "/kʷ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Nabak have the following structures [@Fabian1998, p. 3]:
+    - V
+    - VC
+    - CV
+    - CVC
+    - C (see note below)
+
+* Syllabic nasals are present in Nabak [@Fabian1971, p. 5]; however, in word-initial and word-medial positions, most speakers epenthesis a vowel between it and the following consonant.
+
+# Lenition Rules
+
+* /ɡ/ spirantizes to [ɣ] between like vowels [@Fabian1998, p. 3].
+
+# Misc. Rules
+
+* /s/ and /z/ vary freely with [ts] and [dz], respectively [@Fabian1998, p. 3].
+* /kʷ/ and /ɡʷ/ vary freely with [kp] and [gb], respectively (ibid.).
+* /l/ varies freely with [r] word-medially (ibid.).
+* /w/ varies freely with [v] (ibid.).
+* ⟨kw⟩ and ⟨gw⟩ are always realized as /kʷ/ and /ɡʷ/ as such sequences do not occur across syllable boundaries [@Fabian1971, p. 7].
+
+# References

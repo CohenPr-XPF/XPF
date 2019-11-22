@@ -30,3 +30,4 @@ ipasub,^t,ʈ,4,,,"retroflexion of word-initial <t>"
 ipasub,^n,ɳ,4,,,"retroflexion of word-initial <n>"
 ipasub,^l,ɭ,4,,,"retroflexion of word-initial <l>"
 sub,({passthrough}),\1,0.1,,,
+sub,-,,1,,,

@@ -1,0 +1,35 @@
+# Usarufa Rule Set
+# Written by Jordan
+# Last Updated: 2019-11-11
+type,sfrom,sto,weight,precede,follow,comment
+# Class rules
+class,passthrough,[pkmnrtw],,,,
+class,vowel,[aeiou],,,,
+class,ptk,[ptk],,,,
+class,anything,[pkmnrtwbgqyaeiouáéíóúâêîôû],,,,
+# Sub rules
+sub,b,p,3,,,
+sub,g,k,3,,,
+sub,q,ʔ,3,,,
+sub,y,j,3,,,
+sub,({passthrough}),\1,2,,,
+# Tone
+## Low
+sub,({vowel}),\1 ˨,3,,,
+## High
+sub,á,a ˦,3,,,
+sub,é,e ˦,3,,,
+sub,í,i ˦,3,,,
+sub,ó,o ˦,3,,,
+sub,ú,u ˦,3,,,
+## Falling
+sub,â,a ˥˩,3,,,
+sub,ê,e ˥˩,3,,,
+sub,î,i ˥˩,3,,,
+sub,ô,o ˥˩,3,,,
+sub,û,u ˥˩,3,,,
+# Glottal Stop (Additional) "Glottal stop not written before <p>, <t>, or <k> word-medially"
+sub,({ptk}),ʔ \1,3,{anything},,
+sub,({ptk}),ʔ \1,3,,{anything},
+# Punctuation
+sub,-,,1,,,"hyphens have no phonemic value",

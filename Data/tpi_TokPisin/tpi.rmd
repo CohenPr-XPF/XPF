@@ -4,47 +4,99 @@ author: "Justin Bai"
 bibliography: tpi.bib
 output: html_document
 ---
+
+Last Updated: 2019-11-21
+
 # Background
+
 **Language family**: English Creole
 
-Although the "Pisin" of the language's name does indeed come from the English words
+* Although the "Pisin" of the language's name does indeed come from the English words
 "pidgin," the language is more accurately characterized as a creole as there are
-native speakers and the system has become grammaticized.
-
-# Alphabet
-Tok Pisin has twenty-two letters, some of which may be used in digraphs.
-
-The letters are: ⟨a⟩, ⟨b⟩, ⟨d⟩, ⟨e⟩, ⟨f⟩, ⟨g⟩, ⟨h⟩, ⟨i⟩, ⟨j⟩, ⟨k⟩, ⟨l⟩, ⟨m⟩, ⟨n⟩, ⟨o⟩, ⟨p⟩, ⟨r⟩, ⟨s⟩, ⟨t⟩, ⟨u⟩, ⟨v⟩, ⟨w⟩, ⟨y⟩.
-
-## Consonants
-* ⟨b⟩ = /b/
-* ⟨d⟩ = /d/
-* ⟨f⟩ = /f/
-* ⟨g⟩ = /g/
-* ⟨h⟩ = /h/
-* ⟨j⟩ = /dʒ/
-* ⟨k⟩ = /k/
-* ⟨l⟩ = /l/
-* ⟨m⟩ = /m/
-* ⟨n⟩ = /n/
-* ⟨p⟩ = /p/
-* ⟨r⟩ = /r/
-* ⟨s⟩ = /s/
-* ⟨t⟩ = /t/
-* ⟨v⟩ = /v/
-* ⟨w⟩ = /w/
-* ⟨y⟩ = /j/
-* ⟨ng⟩ = /ŋ/
-
-## Vowels
-* ⟨a⟩ = /a/
-* ⟨e⟩ = /e/
-* ⟨i⟩ = /i/
-* ⟨o⟩ = /o/
-* ⟨u⟩ = /u/
+native speakers and the system has become grammaticized [@Smith2008, p. 192].
 
 # Phonology
-The correspondences presented in the section above represents the core phonemes
-of Tok Pisin. There is much variation as many speakers learn Tok Pisin as a
-second language or also speak English, in which case such speakers may have additional
-vowels [@22]. The rules reflect the core (somewhat idealized) phonemic inventory above.
+
+* There is much variation in the phonemic inventory as many speakers learn Tok Pisin as a second language or also speak English [@Smith2008, p. 199]. The analysis below reflects the core (somewhat idealized) phonemic inventory.
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Postalveolar  Palatal   Velar   Glottal
+Stops                      "p b"   "t d"         ""           ""       "k ɡ"   ""
+Affricates                 ""      ""            "dʒ"         ""       ""      ""
+Fricatives                 "f v"   "s"           ""           ""       ""      "h"
+Nasals                     "m"     "n"           ""           ""       "ŋ"     ""
+Trills                     ""      "r"           ""           ""       ""      ""
+Approximants               "w"     "l"           ""           "j"      ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless, whereas those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     ""        "u"
+Mid       "e"     ""        "o"
+Low       ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme
+"a"              "/a/"
+"b"              "/b/"
+"d"              "/d/"
+"e"              "/e/"
+"f"              "/f/"
+"g"              "/ɡ/"
+"h"              "/h/"
+"i"              "/i/"
+"j"              "/dʒ/"
+"k"              "/k/"
+"l"              "/l/"
+"m"              "/m/"
+"n"              "/n/"
+"o"              "/o/"
+"p"              "/p/"
+"r"              "/r/"
+"s"              "/s/"
+"t"              "/t/"
+"u"              "/u/"
+"v"              "/v/"
+"w"              "/w/"
+"y"              "/j/"
+**Digraph**       ""
+"ng"             "/ŋ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Misc. Rules
+
+* Epenthetic vowels are often inserted between consonant clusters [@Smith2008, p. 204].
+
+# References

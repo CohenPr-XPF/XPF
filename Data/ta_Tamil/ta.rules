@@ -1,77 +1,69 @@
+# Tamil Rule Set
+# Written by: Becky
+# Edited by: Emily
+# Last updated: 2019-11-21
 type,sfrom,sto,weight,precede,follow,comment
-# Rules made by Becky Mathew
-# consonant class rules
-class,"KA",க,,,,
-class,"NGA",ங,,,,
-class,"CHA",ச,,,,
-class,"NJA",ஞ,,,,
-class,"RETROFLEXTA",ட,,,,
-class,"RETROFLEXNA",ண,,,,
-class,"DENTALTA",த,,,,
-class,"DENTALNA",ந,,,,
-class,"PA",ப,,,,
-class,"MA",ம,,,,
-class,"RA",ற,,,,
-class,"NA",ன,,,,
-class,"TAP",ர,,,,
-class,"LA",ல,,,,
-class,"RETROFLEXL",ள,,,,
-class,"RETROFLEXAPPROXIMANT",ழ,,,,
-class,"YA",ய,,,,
-class,"VA",வ,,,,
-class,"XA",ஃ,,,,
-
-# grantha consonant class rules
-class,"JA",ஜ,,,,
-class,"HA",ஹ,,,,
-class,"SA",ஸ,,,,
-class,"RETROFLEXSA",ஷ,,,,
-class,"SHA",ஶ,,,,
-
-# initial vowel class rules
-class,"A",அ,,,,
-class,"AA",ஆ,,,,
-class,"I",இ,,,,
-class,"II",ஈ,,,,
-class,"U",உ,,,,
-class,"UU",ஊ,,,,
-class,"E",எ,,,,
-class,"EE",ஏ,,,,
-class,"AI",ஐ,,,,
-class,"O",ஒ,,,,
-class,"OO",ஓ,,,,
-class,"AU",ஔ,,,,
-
-# diacritic class rules
-class,"DIACRITICAA",ா,,,,
-class,"DIACRITICI",ி,,,,
-class,"DIACRITICII",ீ,,,,
-class,"DIACRITICU",ு,,,,
-class,"DIACRITICUU",ூ,,,,
-class,"DIACRITICE",ெ,,,,
-class,"DIACRITICEE",ே,,,,
-class,"DIACRITICAI",ை,,,,
-class,"DIACRITICO",ொ,,,,
-class,"DIACRITICOO",ோ,,,,
-class,"DIACRITICAU",ௌ,,,,
-class,"DIACRITICAU2",ௗ,,,,
-class,"DIACRITICPULLI",்,,,,erases the inherent vowel [a] after a consonant
-
-# consonant sub rules
-# word-initially, stops and affricates are voiceless
-# intervocalically, a single character represents a voiced form
-# and geminates represent the voiceless form intervocalically
+# General Class Rules
+class,gem,(p|m|ʋ|t̪|n|l|tʃ|ʈ|ɳ|ɭ|j|k),,,,
+# Consonant Class Rules
+class,KA,[க],,,,
+class,NGA,[ங],,,,
+class,CHA,[ச],,,,
+class,NJA,[ஞ],,,,
+class,RETROFLEXTA,[ட],,,,
+class,RETROFLEXNA,[ண],,,,
+class,DENTALTA,[த],,,,
+class,DENTALNA,[ந],,,,
+class,PA,[ப],,,,
+class,MA,[ம],,,,
+class,RA,[ற],,,,
+class,NA,[ன],,,,
+class,TAP,[ர],,,,
+class,LA,[ல],,,,
+class,RETROFLEXL,[ள],,,,
+class,RETROFLEXAPPROXIMANT,[ழ],,,,
+class,YA,[ய],,,,
+class,VA,[வ],,,,
+class,XA,[ஃ],,,,
+# Word-Initial Vowel Class Rules
+class,A,[அ],,,,
+class,AA,[ஆ],,,,
+class,I,[இ],,,,
+class,II,[ஈ],,,,
+class,U,[உ],,,,
+class,UU,[ஊ],,,,
+class,E,[எ],,,,
+class,EE,[ஏ],,,,
+class,AI,[ஐ],,,,
+class,O,[ஒ],,,,
+class,OO,[ஓ],,,,
+class,AU,[ஔ],,,,
+# Vowel Diacritic Class Rules
+class,DIACRITICAA,[ா],,,,
+class,DIACRITICI,[ி],,,,
+class,DIACRITICII,[ீ],,,,
+class,DIACRITICU,[ு],,,,
+class,DIACRITICUU,[ூ],,,,
+class,DIACRITICE,[ெ],,,,
+class,DIACRITICEE,[ே],,,,
+class,DIACRITICAI,[ை],,,,
+class,DIACRITICO,[ொ],,,,
+class,DIACRITICOO,[ோ],,,,
+class,DIACRITICAU,[ௌ],,,,
+class,DIACRITICAU2,[ௗ],,,,
+class,DIACRITICPULLI,[்],,,,"erases the inherent vowel [a] after a consonant",
+# Consonant Sub Rules
 sub,{KA},k a,1,,,
-sub,{NGA},n a,1,,,velar nasal is an allophone of /n/
+sub,{NGA},n a,1,,,"velar nasal is an allophone of /n/",
 sub,{CHA},tʃ a,1,,,
-sub,{NJA},n a,1,,,palatal nasal is an allophone of /n/
+sub,{NJA},n a,1,,,"palatal nasal is an allophone of /n/",
 sub,{RETROFLEXTA},ʈ a,1,,,
 sub,{RETROFLEXNA},ɳ a,1,,,
 sub,{DENTALTA},t̪ a,1,,,
-sub,{DENTALNA},n a,1,,,dental nasal is an allophone of /n/
+sub,{DENTALNA},n a,1,,,"dental nasal is an allophone of /n/",
 sub,{PA},p a,1,,,
 sub,{MA},m a,1,,,
-sub,{RA},ɾ a,1,,,there is no phonemic contrast between tap and trill
+sub,{RA},ɾ a,1,,,"there is no phonemic contrast between tap and trill"
 sub,{NA},n a,1,,,
 sub,{TAP},ɾ a,1,,,
 sub,{LA},l a,1,,,
@@ -79,52 +71,39 @@ sub,{RETROFLEXL},ɭ a,1,,,
 sub,{RETROFLEXAPPROXIMANT},ɻ a,1,,,
 sub,{YA},j a,1,,,
 sub,{VA},ʋ a,1,,,
-sub,{XA},k a,1,,,it's an allophone of /k/
-
-# grantha consonant sub rules
-# grantha consonants represent phonemes only found in sanskrit loanwords
-sub,{JA},dʒ a,1,,,
-sub,{HA},h a,1,,,
-sub,{SA},s a,1,,,
-sub,{RETROFLEXSA},ʂ a,1,,,
-sub,{SHA},ʃ a,1,,,
-
-# initial vowel sub rules
+sub,{XA},k a,1,,,"the velar fricative is an allophone of /k/"
+# Word-Initial Vowel Sub Rules
 sub,{A},a,1,,,
-sub,{AA},aː,1,,,
+sub,{AA},a ː,1,,,
 sub,{I},i,1,,,
-sub,{II},iː,1,,,
+sub,{II},i ː,1,,,
 sub,{U},u,1,,,
-sub,{UU},uː,1,,,
+sub,{UU},u ː,1,,,
 sub,{E},e,1,,,
-sub,{EE},eː,1,,,
+sub,{EE},e ː,1,,,
 sub,{AI},aɪ,1,,,
 sub,{O},o,1,,,
-sub,{OO},oː,1,,,
+sub,{OO},o ː,1,,,
 sub,{AU},aʊ,1,,,
-
-# diacritic sub rules
-sub,{DIACRITICAA},ERASE aː,1,,,
+# Vowel Diacritic sub rules
+sub,{DIACRITICAA},ERASE a ː,1,,,
 sub,{DIACRITICI},ERASE i,1,,,
-sub,{DIACRITICII},ERASE iː,1,,,
+sub,{DIACRITICII},ERASE i ː,1,,,
 sub,{DIACRITICU},ERASE u,1,,,
-sub,{DIACRITICUU},ERASE uː,1,,,
+sub,{DIACRITICUU},ERASE u ː,1,,,
 sub,{DIACRITICE},ERASE e,1,,,
-sub,{DIACRITICEE},ERASE eː,1,,,
+sub,{DIACRITICEE},ERASE e ː,1,,,
 sub,{DIACRITICAI},ERASE aɪ,1,,,
 sub,{DIACRITICO},ERASE o,1,,,
-sub,{DIACRITICOO},ERASE oː,1,,,
+sub,{DIACRITICOO},ERASE o ː,1,,,
 sub,{DIACRITICAU},ERASE aʊ,1,,,
-sub,{DIACRITICAU2},AU2,1,,,
+sub,{DIACRITICAU2},ERASE AU2,1,,,
 sub,{DIACRITICPULLI},ERASE,1,,,
-
-class,"vowelsIPA",(a|aː|i|iː|u|uː|e|eː|aɪ|o|oː|aʊ),,,,
-class,"consonantsIPA",(k|n|tʃ|ʈ|ɳ|t̪|p|m|r|ɾ|l|ɭ|ɻ|j|ʋ|s),,,,
-
-# ipasub rules about vowels
-ipasub,a ERASE,,7,,,removing the inherent vowel when there's a diacritic after
-ipasub,ERASE,@,0.5,,,there's a mistake
-ipasub,e AU2,aʊ,6,,,combining two diacritics for [aʊ]
-ipasub,eː ERASE aː,oː,6,,,combining two diacritics for [oː] 
-ipasub,e ERASE aː,o,6,,,combining two diacritics for [o]
-ipasub,({consonantsIPA}) a ERASE \1,\1 ː,8,,,consonant gemination
+# Ipasub Rules
+ipasub,a ERASE,,3,,,"removes the inherent /a/ and removes it completely or replaces it with another vowel",
+ipasub,({gem}) a ERASE \1,\1 ː,4,,,"consonant gemination - occurs when inherent vowel is removed and not replace with anything",
+sub,ற,ɾ ː,2,,ற,"exception to gemination rule, given that the designated flap cannot geminate (see Misc. Rules in ta.rmd)",
+sub,ற,,2,ற,,"clean-up",
+# Problematic Diacritics (Combinations)
+ipasub,e ERASE AU2,aʊ,2,,,"combing two diacritics for /aʊ/",
+ipasub,ERASE,@,1,,,"left over ERASE results from combinations not legal in the language",

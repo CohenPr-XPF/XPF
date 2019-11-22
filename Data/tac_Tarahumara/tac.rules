@@ -24,8 +24,8 @@ sub,ó,o,4,,,
 sub,ú,u,4,,,
 # Digraphs
 sub,c,tʃ,6,,h,"<ch> = /tʃ/"
-sub,h,,6,c,,
+sub,h,,6,c,,"clean-up",
 sub,h,w,5,,u,"<hu> = /w/"
-sub,u,,5,{u-preceder},,
+sub,u,,5,{u-preceder},,"clean-up",
 # Misc. Rules
 sub,({passthrough}),\1,0.1,,,

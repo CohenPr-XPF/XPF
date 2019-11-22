@@ -11,71 +11,95 @@ Last Updated: 2019-08-09
 
 **Language Family**: Pama-Nyungan / Ngumpin-Yapa / Warlpiri
 
+* Warlpiri is spoken in the Northern Territory and Western state of Australia.
+
 # Phonology
 
 ## Consonants
 
-* @WbpJagst1975 includes a series of prenasalized stops in his analysis. (p. 21)
+* @WbpJagst1975 includes a series of prenasalized stops in his analysis (p. 21).
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /m/, /w/  
-Alveolar: /t/, /n/, /ɾ/, /l/  
-Retroflex: /ʈ/, /ɳ/, /ɽ/, /ɭ/, /ɻ/  
-Palatal: /ɟ/, /ɲ/, /ʎ/, /j/  
-Velar: /k/, /ŋ/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /t/, /ʈ/, /ɟ/, /k/  
-Nasals: /m/, /n/, /ɳ/, /ɲ/, /ŋ/  
-Flaps: /ɾ/, /ɽ/  
-Laterals: /l/, /ɭ/, /ʎ/  
-Approximants: /w/, /ɻ/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Retroflex     Palatal  Velar
+Stops                      "p"     "t"       "ʈ"           "ɟ"      "k"
+Nasals                     "m"     "n"       "ɳ"           "ɲ"      "ŋ"
+Flaps                      ""      "ɾ"       "ɽ"           ""       ""
+Laterals                   ""      "l"       "ɭ"           "ʎ"      ""
+Approximants               "w"     ""        "ɻ"           "j"      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Retroflex", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /i/, /u/, /a/  
+* Vowel length is contrastive [@WbpNash1980, p. 65].
+* Long vowels are represented by doubling the vowel character [@WbpNash1980, p. 65].
 
-Vowel length is contrastive. [@WbpNash1980, p. 65]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     ""        "u"
+Low       ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Alphabet
 
-a - /a/  
-i - /i/  
-j - /ɟ/  
-k - /k/  
-l - /l/  
-  rl - /ɭ/  
-  ly - /ʎ/  
-m - /m/  
-n - /n/  
-  rn - /ɳ/  
-  ny - /ɲ/  
-  ng - /ŋ/  
-p - /p/  
-r - /ɻ/  
-rd - /ɽ/  
-rr - /ɾ/  
-t - /t/  
-  rt - /ʈ/  
-u - /u/  
-w - /w/  
-y - /j/  
+* Word-initial /ʈ/, /ɳ/, and /ɭ/ are simply written as <t>, <n>, and <l> [@WbpNash1983, p. 2]. Because alveolar consonants do not appear word-initially [@WbpHale1977, pp. 2-3], this does not create any ambiguity. (See also @WbpJagst1975, p. 26, for this issue.)
 
-Long vowels are represented by doubling the vowel character. [@WbpNash1980, p. 65]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Word-initial /ʈ/, /ɳ/, and /ɭ/ are simply written as <t>, <n>, and <l> [@WbpNash1983, p. 2]; however, because alveolar consonants do not appear word-initially [@WbpHale1977, pp. 2-3], this does not create any ambiguity. (See also @WbpJagst1975, p. 26, for this issue.)
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme  
+"a"            "/a/"  
+"i"            "/i/"  
+"j"            "/ɟ/"  
+"k"            "/k/"  
+"l"            "/l/"   
+"m"            "/m/"  
+"n"            "/n/"   
+"p"            "/p/"  
+"r"            "/ɻ/"   
+"t"            "/t/"  
+"rt"           "/ʈ/"  
+"u"            "/u/"  
+"w"            "/w/"  
+"y"            "/j/"
+**Digraph**     ""
+"rl"           "/ɭ/"  
+"ly"           "/ʎ/"
+"rn"           "/ɳ/"  
+"ny"           "/ɲ/"  
+"ng"           "/ŋ/"
+"rd"           "/ɽ/"  
+"rr"           "/ɾ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+``` 
+
+# Syllable Structure
+
+* Warlpiri has a CV(C) syllable structure, except word-initially, where it becomes CV(V)(C) [@WbpNash1980, p. 78].
 
 # Lenition Rules
 
 * Stops often gain voicing in unstressed syllables [@WbpHale1977, p. 3]; the specific conditions under which these voicing processes occur differ slightly by consonant [@WbpJagst1975, p. 22].
-* Retroflex sonorants flap (/ɭ/ to [ɺ], /ɳ/ to [ɾ̃]?) after non-front vowels. [@WbpJagst1975, pp. 25-26]
-
-# Misc. Rules
-
-## Syllable Structure
-
-Warlpiri has a CV(C) syllable structure, except word-initially, where it becomes CV(V)(C). [@WbpNash1980, p. 78]
+* Retroflex sonorants flap (/ɭ/ to [ɺ], /ɳ/ to [ɾ̃]?) after non-front vowels [@WbpJagst1975, pp. 25-26].
 
 # References

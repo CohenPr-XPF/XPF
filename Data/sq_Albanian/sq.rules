@@ -27,9 +27,9 @@ sub,g,ɟ,6,,j,"gj"
 sub,n,ɲ,6,,j,"nj"
 sub,j,,6,{j-preceder},,"eliminates j from each of the above"
 sub,l,ɫ,6,,l,"ll"
-sub,l,,6,l,,
+sub,l,,6,l,,"clean-up",
 sub,r,r,6,,r,"rr"
-sub,r,,6,r,,
+sub,r,,6,r,,"clean-up",
 # Diphthongs
 ipasub,({e-pair}) e,\1e,2,,,"ie/ue/ye"
 ipasub,u a,ua,2,,,"ua"

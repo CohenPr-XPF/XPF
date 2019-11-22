@@ -4,55 +4,96 @@ author: "Justin Bai"
 bibliography: to.bib
 output: html_document
 ---
+
+Last Updated: 2019-11-21
+
 # Background
-**Language family**: Austronesian / Polynesian
 
+**Language family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Central-Eastern Oceanic / Remote Oceanic / Central Pacific / East Fijian-Polynesian / Polynesian / Tongic
 
-# Alphabet
-Tongan uses the Latin alphabet along with an additional letter to represent the glottal stop.
-
-## Consonants
-The Tongan consonants are as follows:
-* ⟨f⟩ = /f/
-* ⟨h⟩ = /h/
-* ⟨k⟩ = /k/
-* ⟨l⟩ = /l/
-* ⟨m⟩ = /m/
-* ⟨n⟩ = /n/
-* ⟨ng⟩ = /ŋ/
-* ⟨p⟩ = /p/
-* ⟨s⟩ = /s/
-* ⟨t⟩ = /t/
-* ⟨v⟩ = /v/
-* ⟨ʻ⟩ = /ʔ/  
-
-## Vowels
-Tongan has five vowel qualities, each with their own letter.
-* ⟨a⟩ = /a/  
-* ⟨e⟩ = /e/  
-* ⟨i⟩ = /i/  
-* ⟨o⟩ = /o/  
-* ⟨u⟩ = /u/  
-
-Tongan makes a vowel length distinction. Long vowels are indicated with a macron ⟨¯⟩.
-* ⟨ā⟩ = /aː/  
-* ⟨ē⟩ = /eː/  
-* ⟨ī⟩ = /iː/  
-* ⟨ō⟩ = /oː/  
-* ⟨ū⟩ = /uː/
-
-Stress is sometimes marked by an acute accent on the vowel that is stressed.
+* Tongan is spoken throughout the Kindgdom of Tonga, a sovereign state northeast of New Zealand comprised of over one hundred islands.
 
 # Phonology
+
 ## Consonants
-* As stated in @garellektongan, "Tongan has a three-way laryngeal contrast in initial position; words may begin with
-///, /h/, or a vowel. This is a rare contrast across languages".
-* Consonants to not appear word-finally.
-* "Due to a sound change * t → /s/ before /i/ (Morton 1962), sequences of /ti/ are rare and are restricted to loanwords." [@garellektongan]
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Velar  Glottal
+Stops                       "p"      "t"      "k"     "ʔ"
+Affricates                  ""       ""       ""      ""
+Fricatives                "f  v"     "s"      ""      "h"
+Nasals                      "m"      "n"      "ŋ"     ""
+Approximants                ""       "l"      ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless, whereas those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
-|      |   Front   |  Central  |    Back   |
-|------|:---------:|:---------:|:---------:|
-| High | /i/, /iː/ |           | /u/, /uː/ |
-| Mid  | /e/, /eː/ |           | /o/, /oː/ |
-| Low  |           | /a/, /aː/ |           ‍|
+
+* Vowel length is phonemic in Tongan [@Anderson2006, p. 27]. Long vowels are indicated by a macron (¯).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     ""        "u"
+Mid       "e"     ""        "o"
+Low       ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Alphabet
+
+* An acute accent is also used in the orthography to indicate stress, but it will be transcribed out in the rule set [@Anderson2006, p. 23].
+* The grapheme indicating the glottal stop is called a fakauʻa - it is not a standard apostrophe [@Schutz1994, p. 267].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme
+"a"              "/a/"
+"e"              "/e/"
+"f"              "/f/"
+"h"              "/h/"
+"i"              "/i/"
+"k"              "/k/"
+"l"              "/l/"
+"m"              "/m/"
+"n"              "/n/"
+"o"              "/o/"
+"p"              "/p/"
+"s"              "/s/"
+"t"              "/t/"
+"v"              "/v/"
+"ʻ"              "/ʔ/"
+**Digraph**       ""
+"ng"             "/ŋ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /t/ regularly changes to /s/ preceding /i/ [@Morton1962 as cited in @Garellek2019, p. 2].
+
+# Misc. Rules  
+
+* Tongan has a rare three-way laryngeal contrast between /ʔ/, /h/, and vowels in initial positions [@Garellek2019, p. 3].
+
+# References

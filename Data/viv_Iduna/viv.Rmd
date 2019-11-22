@@ -11,71 +11,96 @@ Last Updated: 2019-07-15
 
 **Language Family**: Austronesian / Malayo-Polynesian / Eastern Malayo-Polynesian / Oceanic / Western Oceanic / Papuan Tip / Nuclear Papuan Tip / North Papuan Mainland-D'Entrecasteaux / Bwaidoga / Iduna
 
-The language is also known as Vivigani.
+* Also known as Vivigani, Iduna is spoken in the Milne Bay province of Papua New Guinea.
 
 # Phonology
 
 ## Consonants
 
-* [p] occurs in free variation with /b/. [@VivSampson1965, p. 10]
+* [p] occurs in free variation with /b/ [@VivSampson1965, p. 10].
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /b/, /m/, /f/, /v/, /w/  
-Alveolar: /t/, /d/, /n/, /l/  
-Palatal: /j/  
-Velar: /k/, /ɡ/  
-Glottal: /ʔ/, /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /b/, /t/, /d/, /k/, /ɡ/, /ʔ/  
-Nasals: /m/, /n/  
-Fricatives: /f/, /v/, /h/  
-Approximants: /w/, /l/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Palatal  Velar  Glottal
+Stops                      "b"     "t d"     ""       "k ɡ"  "ʔ"
+Fricatives                 "f v"   ""        ""       ""     "h"
+Nasals                     "m"     "n"       ""       ""     ""
+Approximants               "w"     "l"       "j"      ""     ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless, whereas those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /i/, /u/, /e/, /o/, /ɑ/  
+* @VivSampson1965 argues for /a/ rather than /ɑ/ (p. 21).
 
-@VivSampson1965 argues for /a/ rather than /ɑ/. (p. 21)
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Back
+High      "i"     "u"
+Mid       "e"     "o"
+Low       ""      "ɑ"
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Alphabet
 
-a - /ɑ/  
-b - /b/  
-d - /d/  
-e - /e/  
-f - /f/  
-g - /ɡ/  
-h - /h/  
-i - /i/  
-k - /k/  
-l - /l/  
-m - /m/  
-n - /n/  
-o - /o/  
-s - /t/ (spirantized allophone)  
-t - /t/  
-u - /u/  
-v - /v/  
-w - /u/ (in C_V position)  
-w - /w/ (elsewhere)  
-y - /j/  
-' - /ʔ/  
+* /u/ (rather than /w/) is held to be the underlying phoneme for consonant labialization, because Iduna disallows consonant clusters [@VivSampson1965, p. 30; @VivLucht1992, p. 3].
 
-/u/ (rather than /w/) is held to be the underlying phoneme for consonant labialization, because Iduna disallows consonant clusters. [@VivSampson1965, p. 30] [@VivLucht1992, p. 3]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                 Comment
+"a"            "/ɑ/"                    ""
+"b"            "/b/"                    ""
+"d"            "/d/"                    ""
+"e"            "/e/"                    ""
+"f"            "/f/"                    ""
+"g"            "/ɡ/"                    ""
+"h"            "/h/"                    ""
+"i"            "/i/"                    ""
+"k"            "/k/"                    ""
+"l"            "/l/"                    ""
+"m"            "/m/"                    ""
+"n"            "/n/"                    ""
+"o"            "/o/"                    ""
+"s"            "/t/"      "[s] is just a spirantized allophone of /t/"  
+"t"            "/t/"                    ""
+"u"            "/u/"                    ""
+"v"            "/v/"                    ""
+"w"            "/u/; /w/"     "/u/: in C_V position; /w/: elsewhere"
+"y"            "/j/"                    ""
+"\'"           "/ʔ/"                    ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
-* /t/ spirantizes to [s] before front vowels. [@VivLucht1992, p. 3] [@VivSampson1965, p. 9]
-* Word-medial /ɡ/ spirantizes to [ɣ]. (ibid.)
-* In C_V contexts, /u/ is realized as simply a labialization of the preceding consonant. [@VivSampson1965, p. 6]
+* /t/ spirantizes to [s] before front vowels [@VivLucht1992, p. 3; @VivSampson1965, p. 9].
+* Word-medial /ɡ/ spirantizes to [ɣ] (ibid.).
+* In C_V contexts, /u/ is realized as simply a labialization of the preceding consonant [@VivSampson1965, p. 6].
 
 # Misc. Rules
 
-* Phrase-final /d/ devoices and aspirates, yielding [tʰ]. [@VivLucht1992, p. 3]
-* /u/ nasalizes after /m/. [@VivSampson1965, p. 20]
-* Unstressed /ɑ/ raises to [ʌ]. [@VivSampson1965, p. 21]
+* Phrase-final /d/ devoices and aspirates, yielding [tʰ] [@VivLucht1992, p. 3].
+* /u/ nasalizes after /m/ [@VivSampson1965, p. 20].
+* Unstressed /ɑ/ raises to [ʌ] [@VivSampson1965, p. 21].
 
 # References

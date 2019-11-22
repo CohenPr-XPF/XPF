@@ -22,6 +22,7 @@
 | bef           | Benabena                  |
 | bg            | Bulgarian                 |
 | bi            | Bislama                   |
+| bmu           | Somba-Siawari             |
 | boa           | Bora                      |
 | ca            | Catalan                   | under revision                |
 | caa           | Ch'orti'                  |
@@ -69,6 +70,7 @@
 | ml            | Malayalam                 | under revision                |
 | mt            | Maltese                   | under revision                |
 | mto           | Totontepec Mixe           | under revision                |
+| naf           | Nabak                     |
 | ne            | Nepali                    | under revision                |
 | nhe           | Nahuatl                   |
 | nhr           | Naro                      | under revision                |
@@ -88,23 +90,19 @@
 | shi           | Shilha                    | under revision                |
 | shp           | Shipibo Konibo            |
 | si            | Sinhala                   | under revision                |
-| sk            | Slovak                    |
 | snc           | Sinaugoro                 |
 | sq            | Albanian                  |
-| suz           | Sunwar                    | under revision                |
-| sw            | Swahili                   | under revision                |
-| ta            | Tamil                     | under revision                |
+| ta            | Tamil                     |                               |
 | tac           | Western Tarahumara        |
-| te            | Telugu                    | under revision                |
 | tg            | Tajik                     |
-| tl            | Tagalog                   | under revision                |
-| to            | Tongan                    | lacks lenition                |
+| to            | Tongan                    |                               |
 | tpi           | Tok Pisin                 | lacks lenition                |
-| tr            | Turkish                   | under revision                |
-| tt            | Tatar                     | under revision                |
+| tr            | Turkish                   |                               |
+| tt            | Tatar                     |                               |
 | tzo           | Tzotzil                   |
 | ug            | Uyghur                    | under revision                |
 | uk            | Ukrainian                 |
+| usa           | Usarufa                   |
 | uz            | Uzbek                     |
 | var           | Huarjío                   |
 | vi            | Vietnamese                | under revision                |
@@ -117,6 +115,7 @@
 | yua           | Yucatec Maya              | under revision                |
 | yuz           | Yuracare                  |
 | yva           | Yawa                      |
+| zos           | Francisco León Zoque      |
 | zza           | Zaza                      |                               |
 
 
@@ -214,11 +213,14 @@
 | so  | Somali           | non-transparent spelling with tones                         |
 | ss  | Swati            | non-transparent spelling with tones                         |
 | st  | Sesotho          | non-transparent spelling with tones                         |
+| suz | Sunwar           | non-transaprent spelling with glottal stop                  |
 | sv  | Swedish          | non-transparent spelling                                    |
+| sw  | Swahili          | under non-transparent spelling with nasals and prenasalized stops|
 | tcy | Tulu             | non-transparent spelling with vowels                        |
 | tcz | Thadou Chin      | non-transparent spelling with tones                         |
 | ti  |Tigrinya          | non-transparent spelling with gemination                    |
 | tk  | Turkmen          | non-transparent spelling with vowel length                  |
+| tl  | Tagalog          | non-transparent spalling with vowel length                  |
 | tn  | Tswana           | non-transparent spelling with tones                         |     
 | ts  | Tsonga           | non-transparent spelling with tones                         |   
 | vro | Võro             | non-transparent spelling with vowels and palatalization     |
@@ -233,3 +235,6 @@
 | xh  | Xhosa            | non-transparent spelling with tones                         |
 | zai | Zapotec          | non-transparent spelling with tones                         |
 | zu  | Zulu             | non-transparent spelling with tones                         |
+
+
+## Compromised Languages

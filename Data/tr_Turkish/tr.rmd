@@ -1,63 +1,130 @@
 ---
-title: Turkish
+title: "Turkish"
+author: "Justin Bai"
+edited by: "Emily Strand"
+bibliography: tr.bib
+output: html_document
 ---
+
+Last Updated: 2019-11-21
+
 # Background
-**Language family**: Turkic
 
-# Alphabet
-A B C Ç D E F G Ğ H I İ J K L M N O Ö P R S Ş T U Ü V Y Z  
-a b c ç d e f g ğ h ı i j k l m n o ö p r s ş t u ü v y z    
-* Note that the capital of ⟨i⟩ is ⟨İ⟩ and the capital of ⟨ı⟩ is ⟨I⟩.
+**Language family**: Turkic / Common Turkic / Oghuz / Nuclear Oghuz / West Oghuz
 
-## Vowels
-* ⟨a⟩ = /a/
-* ⟨e⟩ = /e/
-* ⟨ı⟩ = /ɯ/
-* ⟨i⟩ = /i/
-* ⟨o⟩ = /o/
-* ⟨ö⟩ = /œ/
-* ⟨u⟩ = /u/
-* ⟨ü⟩ = /y/
-
-## Consonants
-* ⟨b⟩ = /b/
-* ⟨c⟩ = /dʒ/
-* ⟨ç⟩ = /tʃ/
-* ⟨d⟩ = /d/
-* ⟨f⟩ = /f/
-* ⟨g⟩ = /g/, /gʲ/
-* ⟨ğ⟩ = /ɣ/
-* ⟨h⟩ = /h/
-* ⟨j⟩ = /ʒ/
-* ⟨k⟩ = /k/, /kʲ/
-* ⟨l⟩ = /l/
-* ⟨m⟩ = /m/
-* ⟨n⟩ = /n/
-* ⟨p⟩ = /p/
-* ⟨r⟩ = /ɾ/
-* ⟨s⟩ = /s/
-* ⟨ş⟩ = /ʃ/
-* ⟨t⟩ = /t/
-* ⟨v⟩ = /v/
-* ⟨y⟩ = /j/
-* ⟨z⟩ = /z/
+* Speakers of Turkish reside in a multitude of countries spanning across southeast Europe and western Asia.
 
 # Phonology
+
 ## Consonants
-/k/ and /g/ do not contrast with /c/ and /ɟ/ respectively in the native vocabulary, but they do in some loanwords  
-* _kar_ /kaɾ/ 'snow'
-* _kâr_ /car/ 'profit'  
 
-The circumflex above the vowel indicates that the preceding consonant is palatalized.  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-/l/ is velarized next to back vowels, but again, there are exceptions with loanwords.
-* _lala_ [ɫaɫa] 'tutor'
-* _lâle_ [lale] 'tulip'
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-Doubled consonants are used to represent gemination.
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Postalveolar  Palatal  Velar   Glottal
+Stops                      "p b"   "t d"     ""            ""       "k ɡ"     ""
+Affricates                 ""      ""        "tʃ dʒ"       ""       ""        ""
+Fricatives                 "f v"   "s z"     "ʃ  ʒ"        ""       ""        "h"
+Nasals                     "m"     "n"       ""            ""       ""        ""
+Flaps                      ""      "ɾ"       ""            ""       ""        ""
+Approximants               ""      "l"       ""            "j"      ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless, whereas those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
-* Vowel length may be indicated by ⟨ğ⟩. Zimmer and Orgun: "/ɣ/ corresponds to the "soft g" (ğ) in Turkish orthography; its use finds its main justification in accounting for morphological alternations. /ɣ/ between front vowels is pronounced as a weak front-velar or palatal approximant. When the /ɣ/ is word-final or followed by a consonant it is realized phonetically as a lengthening of the preceding vowel; elsewhere when intervocalic, it is phonetically zero"
 
-# Lenition
-/v/ -> [β̞] / V_V
+* Long vowels occur in loanwords from Persian and Arabic, but it does not seem to be a contrastive feature of native words in Turkish [@Goeksel2005, p. 11].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i y"   ""        "ɯ u"
+Mid       "e œ"   ""        "o"
+Low       ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Alphabet
+
+* The capital of ⟨i⟩ is ⟨İ⟩ and the capital of ⟨ı⟩ is ⟨I⟩.
+* A circumflex (^) placed over a vowel may indicate lengthening or palatalization of the preceding consonant [@Goeksel2005, p. x].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme       Comment
+"a"               "/a/"         ""
+"b"               "/b/"         ""
+"c"               "/dʒ/"        ""
+"ç"               "/tʃ/"        ""
+"d"               "/d/"         ""
+"e"               "/e/"         ""
+"f"               "/f/"         ""
+"g"               "/ɡ/"         ""
+"ğ"               ""        "See {1} below for details"
+"h"               "/h/"         ""
+"ı"               "/ɯ/"         ""
+"i"               "/i/"         ""
+"j"               "/ʒ/"         ""
+"k"               "/k/"         ""
+"l"               "/l/"         ""
+"m"               "/m/"         ""
+"n"               "/n/"         ""
+"o"               "/o/"         ""
+"ö"               "/œ/"         ""
+"p"               "/p/"         ""
+"r"               "/ɾ/"         ""
+"s"               "/s/"         ""
+"ş"               "/ʃ/"         ""
+"t"               "/t/"         ""
+"u"               "/u/"         ""
+"ü"               "/y/"         ""
+"v"               "/v/"         ""
+"y"               "/j/"         ""
+"z"               "/z/"         ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+* {1} There seems to be some controversy around the grapheme ⟨ğ⟩. @Yavuz2011 states that some sources identify it as having a distinct sound whereas others do not (p. 22). They have the stance that there is no corresponding phoneme. Although @Goeksel2005 does provide a corresponding sound /ɣ/ for some dialects, they also support the claim that the grapheme lacks a consonantal sound (p. 7). In actuality, the realization of the grapheme seems largely dependent and predictable based on the environment, often alternating with zero (inaudible realization). The main rules outlined by @Goeksel2005 are described below:  
+    - Word-finally or syllable-finally, it lengthens a preceding back vowel.  
+    - Following front vowels in Word-final or syllable-final positions, it may be realized as a palatal glide.  
+    - Most often inaudible intervocalically (may be realized as a palatal glide between like front vowels).  
+* For the sake of the transcription rules, I have opted to transcribe it to nothing.
+
+
+# Syllable Structure
+
+* Syllables in Turkish follow the order of (C)V(C) [@Hulst1991, p. 4].  
+
+# Lenition Rules
+
+* /v/ is realized as [β̞] or a [w] when preceded by a vowel [ibid.; @Gurevich2004, p. 252].
+
+# Misc. Rules
+
+* There is no contrast between velar and palatal stops in native Turkish words [@Zimmer1992, p. 155]. Rather, the palatal stops are allophones, occurring in syllables that have front vowels [@Yavuz2011, p. 25].
+* /l/ is velarized in the environment of back vowels
+* /h/, /ɾ/, and /l/ often devoice word-finally (ibid.). /ɾ/ and /l/ may also devoice when followed by a voiceless consonant.
+* In word-initial and word-final positions, /ɾ/ is often fricated [@Yavuz2011, p. 25].
+* /f/ may be realized as [ɸ] in word-final positions and preceding rounded vowels [@Goeksel2005, p. 6].
+* In between a front vowel and consonant or after a front vowel in word-final positions, /h/ becomes a voiceless palatal fricative. In the same environments, but with back vowels, /h/ becomes a voiceless velar fricative [@Goeksel2005, p. 8].
+* Consonants geminate [@Lewis1967, p. 8].
+
+# References

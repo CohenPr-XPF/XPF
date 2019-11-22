@@ -11,85 +11,106 @@ Last Updated: 2019-06-24
 
 **Language Family**: Uto-Aztecan / Southern Uto-Aztecan / Tarahumaran / Tarahumara
 
-Where dialects diverge, I will be preferring Western Tarahumara, which is only the second most widely spoken dialect but is the dialect with the most robust Crubadan corpus.
+* Where dialects diverge, I will be preferring Western Tarahumara, which is only the second most widely spoken dialect but is the dialect with the most robust Crubadan corpus.
+* Western Tarahumara is spoken in the Chihuahua state in northern Mexico.
 
 # Phonology
 
 ## Consonants
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /m/, /β/, /w/  
-Alveolar: /t/, /n/, /s/  
-Postalveolar: /tʃ/  
-Retroflex: /ɽ/, /ɭ/  
-Palatal: /j/  
-Velar: /k/, /ɣ/  
-Glottal: /ʔ/, /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /t/, /k/, /ʔ/  
-Affricates: /tʃ/  
-Nasals: /m/, /n/  
-Fricatives: /β/, /s/, /ɣ/, /h/  
-Flaps: /ɽ/  
-Approximants: /w/, /ɭ/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Postalveolar  Retroflex  Palatal  Velar   Glottal
+Stops                      "p"     "t"       ""            ""         ""       "k"     "ʔ"
+Affricates                 ""      ""        "tʃ"          ""         ""       ""      ""
+Fricatives                 "β"     "s"       ""            ""         ""       "ɣ"     "h"
+Nasals                     "m"     "n"       ""            ""         ""       ""      ""
+Flaps                      ""      ""        ""            "ɽ"        ""       ""      ""
+Approximants               "w"     ""        ""            "ɭ"        "j"      ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /i/, /e/, /u/, /o/, /a/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     ""        "u"
+Mid       "e"     ""        "o"
+Low       ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Alphabet
 
-a - /a/  
-b - /β/  
-ch - /tʃ/  
-e - /e/  
-g - /ɣ/  
-h - /h/  
-i - /i/  
-k - /k/  
-l - /ɭ/  
-m - /m/  
-n - /n/  
-o - /o/  
-p - /p/  
-r - /ɽ/  
-s - /s/  
-t - /t/  
-u - /u/  
-w - /w/  
-y - /j/  
-' - /ʔ/  
+* Loanwords sometimes contain ⟨f q z⟩ [@TacThordGray1955, pp. 26-27].
 
-Loanwords sometimes contain <f q z>. [@TacThordGray1955, pp. 26-27]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-## Spanish Orthography
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme
+"a"              "/a/"  
+"b"              "/β/"    
+"e"              "/e/"  
+"g"              "/ɣ/"  
+"h"              "/h/"  
+"i"              "/i/"  
+"k"              "/k/"  
+"l"              "/ɭ/"  
+"m"              "/m/"  
+"n"              "/n/"  
+"o"              "/o/"  
+"p"              "/p/"  
+"r"              "/ɽ/"  
+"s"              "/s/"  
+"t"              "/t/"  
+"u"              "/u/"  
+"w"              "/w/"  
+"y"              "/j/"  
+"\'"             "/ʔ/"
+**Digraph**       ""
+"ch"             "/tʃ/"
+"**(Spanish) Orthographic Variations**"   "[@TacThordGray1955, p. 1157]"
+"c"              "/k/"  
+"hu"             "/w/"  
+"j"              "/h/"  
+"qu"             "/k/"
+'), TRUE)
 
-Some orthographies use spellings more based on the Spanish orthography, as shown below. [@TacThordGray1955, p. 1157]
-
-c - /k/  
-hu - /w/  
-j - /h/  
-qu - /k/  
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```   
 
 # Lenition Rules
 
-* When between stressed high vowels and glottal stops, word-initial /a/ reduces to [ə]. [@TacBurgess1984, p. 8]
-* Unstressed vowels often delete in fast speech. (ibid.)
-* Unstressed vowels in non-initial syllables delete when preceded by a nasal and followed by a stop. (ibid.)
-* Word-initial stops are sometimes voiced. [@TacThordGray1955, pp. 26-27]
-* /t/ sometimes approximantizes to [ɽ]. (ibid.)
-* Before high or front vowels, /tʃ/ spirantizes to [ʃ]. [@TacValdezJara2013, p. 20]
+* When between stressed high vowels and glottal stops, word-initial /a/ reduces to [ə] [@TacBurgess1984, p. 8].
+* Unstressed vowels often delete in fast speech (ibid.).
+* Unstressed vowels in non-initial syllables delete when preceded by a nasal and followed by a stop (ibid.).
+* Word-initial stops are sometimes voiced [@TacThordGray1955, pp. 26-27].
+* /t/ sometimes approximantizes to [ɽ] (ibid.).
+* Before high or front vowels, /tʃ/ spirantizes to [ʃ] [@TacValdezJara2013, p. 20].
 
 # Misc. Rules
 
-* /β/ and /ɣ/ despirantize word-initially to [b] and [ɡ] respectively. [@TacBurgess1984, p. 7]
-* Phrase-initial /ɽ/ is often produced as [r] or, less commonly, [ɾ]. (ibid.)
-* In phrase-initial syllables, unstressed vowels lengthen unless they're followed by a vowel or glottal consonant. [@TacBurgess1984, p. 8]
-* /i/ lowers in unstressed non-initial syllables. (ibid.)
-* Epenthesis of [j] typically occurs before word-initial vowels. [@TacThordGray1955, pp. 26-27]
-* /h/ is often realized as [x]. [@TacValdezJara2013, p. 21]
+* /β/ and /ɣ/ despirantize word-initially to [b] and [ɡ] respectively [@TacBurgess1984, p. 7].
+* Phrase-initial /ɽ/ is often produced as [r] or, less commonly, [ɾ] (ibid.).
+* In phrase-initial syllables, unstressed vowels lengthen unless they're followed by a vowel or glottal consonant [@TacBurgess1984, p. 8].
+* /i/ lowers in unstressed non-initial syllables (ibid.).
+* Epenthesis of [j] typically occurs before word-initial vowels [@TacThordGray1955, pp. 26-27].
+* /h/ is often realized as [x] [@TacValdezJara2013, p. 21].
 
 # References

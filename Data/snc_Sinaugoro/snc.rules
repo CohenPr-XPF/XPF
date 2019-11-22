@@ -3,16 +3,18 @@
 # Last Updated: 2019-09-09
 type,sfrom,sto,weight,precede,follow,comment
 # Classes
-class,passthrough,[abdefgiklmnorstuv],,,,
-class,labial,[gk],,,,
+class,passthrough,[abdefiklmnorstuv],,,,
+class,labial,[kg],,,,
 # Individual Letters
+sub,g,ɡ,1,,,
 sub,ḡ,ɣ,1,,,
-sub,ḡ,ɣʷ,2,,w,exception
-sub,w,,2,ḡ,,,
 sub,({passthrough}),\1,1,,,
 # Digraphs
-sub,({labial}),\1ʷ,3,,w,
-sub,w,,3,{labial},,
+sub,k,kʷ,3,,w,
+sub,g,ɡʷ,3,,w,
+sub,w,,3,{labial},,"clean-up",
+sub,ḡ,ɣʷ,2,,w,"exception to labial rule"m
+sub,w,,2,ḡ,,,"clean-up",
 # ipasub rules
 ipasub,a e,ae,1,,,
 ipasub,a i,ai,1,,,
@@ -20,5 +22,5 @@ ipasub,a o,ao,1,,,
 ipasub,a u,au,1,,,
 ipasub,e i,ei,1,,,
 ipasub,o i,oi,1,,,
-
+# Misc. Rules
 sub,-,,1,,,
