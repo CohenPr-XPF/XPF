@@ -1,10 +1,10 @@
 # Uyghur Rule Set
 # Written by: Bill
-# Last Updated: 2019-03-15
+# Last Updated: 2019-07-29
 type,sfrom,sto,weight,precede,follow,comment
 # Classes
 class,a,[اа],,,,
-class,e,[ەә],,,,
+class,low-e,[ەә],,,,
 class,b,[بб],,,,
 class,p,[پп],,,,
 class,t,[تт],,,,
@@ -32,7 +32,7 @@ class,u,[ۇу],,,,
 class,e-round,[ۆө],,,,
 class,y,[ۈү],,,,
 class,w,[ۋв],,,,
-class,e,[ېе],,,,
+class,high-e,[ېе],,,,
 class,i,[ىи],,,,
 class,j-glide,[يй],,,,
 class,vowelmarker,[ئ],,,,""
@@ -63,15 +63,17 @@ sub,{w},w,4,,,
 sub,{j-glide},j,4,,,
 # Vowels
 sub,{vowelmarker},,2,,,
-sub,،,,2,,,"this character is punctuation and adds no phonetic value"
 sub,{a},ɑ,4,,,
-sub,{e},æ,4,,,
+sub,{low-e},æ,4,,,
 sub,{o},o,4,,,
 sub,{u},u,4,,,
 sub,{e-round},ø,4,,,
 sub,{y},y,4,,,
-sub,{e},e,4,,,
+sub,{high-e},e,4,,,
 sub,{i},i,4,,,
 # Characters Unique to Cyrillic
 sub,ю,j u,4,,,
 sub,я,j ɑ,4,,,
+# Misc. Rules
+sub,-,,2,,,"hyphens have no phonemic value"
+sub,،,,2,,,"this character is punctuation and adds no phonemic value"

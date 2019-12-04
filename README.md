@@ -35,7 +35,8 @@
 | cv            | Chuvash                   |
 | dgz           | Daga                      |
 | djr           | Djambarrpuyngu            |                               |
-| el            | Greek                     | lacks lenition; under revision                |
+| dv            | Maldivian                 |
+| el            | Greek                     |                               |
 | emi           | Mussau-Emira              |
 | eu            | Basque                    |
 | ff            | Fula                      |                               |
@@ -88,8 +89,8 @@
 | roo           | Rotokas                   |
 | sah           | Yakut                     | under revision                |
 | shi           | Shilha                    | under revision                |
-| shp           | Shipibo Konibo            |
-| si            | Sinhala                   | under revision                |
+| shp           | Shipibo Konibo            | under revision                |
+| si            | Sinhala                   |                               |
 | snc           | Sinaugoro                 |
 | sq            | Albanian                  |
 | ta            | Tamil                     |                               |
@@ -100,12 +101,12 @@
 | tr            | Turkish                   |                               |
 | tt            | Tatar                     |                               |
 | tzo           | Tzotzil                   |
-| ug            | Uyghur                    | under revision                |
+| ug            | Uyghur                    |                               |
 | uk            | Ukrainian                 |
 | usa           | Usarufa                   |
 | uz            | Uzbek                     |
 | var           | Huarjío                   |
-| vi            | Vietnamese                | under revision                |
+| vi            | Vietnamese                |                               |
 | viv           | Iduna                     |
 | way           | Wayana                    |
 | wbp           | Warlpiri                  |

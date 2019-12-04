@@ -1,0 +1,169 @@
+---
+title: "Maldivian"
+author: "Emily Strand"
+bibliography: dv.bib
+output: html_document
+---
+
+Last Updated: 2019-12-03
+
+# Background
+
+**Language family**: Indo-European / Indo-Iranian / Indo-Aryan / Sinhalese-Maldivian
+
+* Also referred to as Dhivehi, Maldivian is spoken in a multitude of places, but primarily in the Republic of Maldives, a country in South Asia southwest of Sri Lanka.
+
+# Phonology
+
+## Consonants
+
+* Although the glottal stop appears in Maldivian, it is not considered phonemic [@DeSilva1969, p. 204]. Rather, only appearing word-finally, it is treated as an allophone of /k/.
+* The palatal nasal appears as well; however, @DeSilva1969 explains that it is not phonemic. @Cain2000 explain that it is a fusion of /n̪/ and /i/, which I have chosen to treat the corresponding grapheme as such.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Dental   Retroflex   Palatal    Velar   Glottal
+"Stops (plain)"            "p b"      "t̪ d̪"     "ʈ ɖ"      "c ɟ"     "k ɡ"   ""
+"Stops (prenasalized)"     "ᵐb"       "ⁿd̪"      "ᶯɖ"        ""       "ᵑɡ"    ""
+Affricates                 ""         ""         ""         ""        ""     ""
+Fricatives                 "f"        "s̪ z̪"      "ʂ"        ""        ""     "h"
+Nasals                     "m"        "n̪"        ""         ""        ""     ""
+Flaps                      ""         ""         "ɽ"        ""        ""     ""
+Approximants               "ʋ"        "l̪"        "ɭ"        "j"       ""     ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. .", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Vowel length is contrastive in Maldivian [@DeSilva1969, p. 204]. Long vowels are indicated by duplicate vowel diacritics called fili.
+* Although many diphthongs may occur [@DeSilva1969, p. 205], only /ai/ and /au/ are considered to be complex nuclei [@Cain2000, p. 11].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     ""        "u"
+Mid       "e"     ""        "o"
+Low       ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered")
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ai/, /au/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Alphabet
+
+* The Thaana script is used to represent Maldivian [@Cain2000, p. 9]. It is read from right to left.
+* Consonant graphemes do not carry an inherent vowel [@Cain2000, p. 9]. The vowels are represented as diacritics above or below the consonant.
+* Diphthongs are represented with an inflected alifu ⟨އ⟩ following a consonant with a fili or with two fili on an alifu (above and below) [@Gnanadesikan2012, pp. 94, 96].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+"Consonant Grapheme"        Phoneme                    Comment
+"ހ"                          "/h/"                       ""
+"ށ"                         "/ʂ/"                        ""
+"ނ"                         "/n̪/"                        ""
+"ރ"                         "/ɽ/"                        ""
+"ބ"                         "/b/"                        ""
+"ޅ"                         "/ɭ/"                        ""
+"ކ"                         "/k/"                        ""
+"އ"                          ""       "called an alifu, this grapheme needs inflection from fili to have phonemic value [@Cain2000, p. 9]"
+"ވ"                         "/ʋ/"                        ""
+"މ"                         "/m/"                        ""
+"ފ"                         "/f/"                        ""
+"ދ"                         "/d̪/"                        ""
+"ތ"                         "/t̪/"                        ""
+"ލ"                         "/l̪/"                        ""
+"ގ"                         "/ɡ/"                        ""
+"ޏ"                         "/n̪i/"                       ""
+"ސ"                        "/s̪/"                        ""
+"ޑ"                         "/ɖ/"                        ""
+"ޒ"                         "/z̪/"                        ""
+"ޓ"                         "/ʈ/"                        ""
+"ޔ"                         "/j/"                        ""
+"ޕ"                         "/p/"                        ""
+"ޖ"                         "/ɟ/"                        ""
+"ޗ"                         "/c/"                        ""
+**Digraph**                  ""                          ""
+"ނބ"                      "/ᵐb/"                        ""
+"ނދ"                      "/ⁿd̪/"                        ""
+"ނޑ"                      "/ᶯɖ/"                        ""
+"ނގ"                      "/ᵑɡ/"                        ""
+"**Plain Vowel**"           ""                           ""
+"އަ"                        "/a/"                         ""
+"އާ"                       "/aː/"                         ""
+"އި"                        "/i/"                         ""
+"އީ"                       "/iː/"                         ""
+"އު"                        "/u/"                         ""
+"އޫ"                       "/uː/"                         ""
+"އެ"                       "/e/"                          ""
+"އޭ"                       "/eː/"                         ""
+"އޮ"                       "/o/"                          ""
+"އޯ"                       "/oː/"                         ""
+"އް"                        ""               "this grapheme is a geminate marker or /k/ word-finally (see Misc. Rules below)"
+"**Vowel Diacritic**"        ""                            ""
+"ަ"                        "/a/"                          ""
+"ާ"                       "/aː/"                          ""
+"ި"                        "/i/"                          ""
+"ީ"                       "/iː/"                          ""
+"ު"                       "/u/"                           ""
+"ޫ"                       "/uː/"                          ""
+"ެ"                       "/e/"                           ""
+"ޭ"                       "/eː/"                          ""
+"ޮ"                       "/o/"                           ""
+"ޯ"                       "/oː/"                          ""
+"ް"                        ""           "called a sukun, this diacritic indicates that the base character is vowel-less [@Cain2000, p. 9]"
+'), TRUE)
+
+kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Maldivian generally follow the order of CV [@Cain2000, p. 11]; however, the following structures are present:
+    - V
+    - VC
+    - CVC
+    - CVV
+    - VV
+    - CVVC
+    - VVC
+* Consonant clusters only appear word-medially (ibid.).
+
+# Lenition Rules
+
+* /k/, /ʂ/, and /t̪/ debuccalize to glottal stops prepausally or to velar nasals word-finally preceding word-initial vowels or /h/ [@Cain2000, pp. 11-12].
+* /s̪/ becomes /h/ morpheme-finally preceding a vowel-initial suffix [@Gnanadesikan2016, p. 44].
+* Morpheme-final /u/ deletes preceding a vowel-initial suffix (ibid.).
+
+# Misc. Rules
+
+* Consonants, except /f/, /ʂ/, and /h/, geminate [@Cain2000, p. 13]. This is represented orthographically by duplicate graphemes, with a sukun on the first consonant (no inflection for vowel). They may also be represented by an alifu sukun followed by a consonant. Otherwise, the empty vowel marker with a sukun indicates a word-final /k/.
+* Word-initial /ʋ/ becomes [w] preceding /a/ [@Cain2000, p. 7]. It also becomes [w] following /u/.
+* Nasals assimilate in place to following consonants (excluding /h/), even across word boundaries [@Cain2000, p. 12].
+* Consonants /t̪/, /d̪/, /ⁿd̪/, /n̪/, and /l̪/ palatalize preceding /i/ [@Gnanadesikan2016, p. 46]. In doing so they become geminates.
+* /h/ and /ʂ/ become geminated [s] and [t] preceding /i/ [@Gnanadesikan2016, pp. 45-46].
+
+# References

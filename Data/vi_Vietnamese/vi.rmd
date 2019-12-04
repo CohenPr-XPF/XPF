@@ -1,110 +1,182 @@
 ---
 title: "Vietnamese"
 author: "Abi Creighton"
+edited by: "Emily Strand"
 bibliography: vi.bib
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+Last Updated: 2019-11-24
 
 #Background
-**Language family**: Austroasiatic / Vietic / Viet-Muong / Vietnamese 
 
-There is much disagreement between sources about the phonemic inventory of Vietnamese. While Thompson (1965) recognizes the palatal stop /c/, Kirby @kirby_vietnamese_2011 claims that the segment is consistently realized as /tɕ/ in younger native Hanoi Vietnamese speakers. Thompson and Kirby also conflict in their analysis of final <ch> and <nh>. While Thompson argues that that they are the phonemes /c/ and /ɲ/ respectively, Kirby argues that they are allophonic variants of /k/ and /ŋ/. I follow Kirby's analysis and suggest that /k/ and /ŋ/ are palatalized word finally. 
+**Language family**: Austroasiatic / Vietic / Viet-Muong / Vietnamese
 
-Kirby also does not recognize the existence of retroflex consonants in Vietnamese, though these are recognized by other sources including Michaud et al. @michaud_strata_2015. Linguists also disagree extensively on how many vowels there are Vietnamese; almost every source provides a different answer. Some of the differences between sources are simply the result of dialect variation, but even within the sources which focus specifically on Hanoi Vietnamese, there is much variation. I will draw primarily from Kirby's illustration of the IPA in the Journal of the International Phonetic Association, but my account of the phonology of Hanoi Vietnamese phonology does diverge from Kirby's. I, for example, include /p/ in the phonemic inventony though Kirby acknowledges that for many speakers, it is realized as /ɓ/.
+* I have chosen to address the differences between Northern Vietnamese which is spoken in Hanoi and Southern Vietnamese which is spoken in Ho Chi Minh City. They are extremely similar, however there are some differences between phonemes (e.g. /s/ and /ʂ/ have merged in the Hanoi dialect). Given that the Crubadan corpus is more inline with the Northern dialect (see Tones below), I have chosen to only create a ruleset for that dialect.
 
+# Phonology
 
-I will also address the differences between Northern Vietnamese which is spoken in Hanoi and Southern Vietnamese which is spoken in Ho Chi Minh City. They are the same for the most part, but the HCMC dialect differentiates between some phonemes such as /s/ and /ʂ/ which have merged in the Hanoi dialect. 
+* There is much disagreement between sources about the phonemic inventory of Vietnamese. While Thompson (1965) recognizes the palatal stop /c/ [as cited in @Kirby2011, p. 382], @Kirby2011 claims that the segment is rather /tɕ/ in Hanoi Vietnamese (p. 382). Thompson and Kirby also conflict in their analysis of word-final ⟨ch⟩ and ⟨nh⟩. While Thompson argues that they represent the phonemes /c/ and /ɲ/ respectively, Kirby argues that they are allophonic variants of /k/ and /ŋ/. I follow Kirby's analysis and suggest that /k/ and /ŋ/ are underlying and they are palatalized word finally.
+* Kirby also does not recognize the existence of retroflex consonants in Vietnamese, though these are recognized by other sources including @Michaud2015 (p. 5). With respect to the southern dialect, I have chosen to include them in the inventory merely for comparison.
+*  Linguists also disagree extensively on how many vowels there are in Vietnamese [@Emerich2012, pp. 32-33]. Almost every source provides a different answer. Some of the differences between sources are simply the result of dialectal variation, but even within the sources which focus specifically on Hanoi Vietnamese, there is much variation.
+* I will draw primarily from Kirby's illustration, but my phonological account does diverge from Kirby's. I, for example, include /p/ in the phonemic inventory although Kirby does not.
+* Although the glottal stop is predictably pronounced word-initially preceding vowels (and /w/ in Northern Vietnamese), it is proven to be phonemic based on the analysis done by @Pham2009.
 
-#Phonology
+## Consonants
 
-##Consonants
-###Consonants by place
-Bilabial: /m/, /p/, /ɓ/, /w/
-Labiodental: /f/, /v/ (only in Hanoi)
-Dental: /t/, /tʰ/, /n/
-Alveolar: /ɗ/, /s/, /z/, /r/, /l/, /j/
-Palatal: /ɲ/, /tɕ/ (only in Hanoi), /c/ (only in HCMC)
-Retroflex (only in HCMC): /ʈ/, /ʂ/
-Velar: /ŋ/, /k/, /x/, /ɣ/
-Glottal: /ʔ/, /h/
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-###Consonants by manner
-Stop: /p/, /ɓ/, /t/, /tʰ/, /ɗ/, /tɕ/, /k/, /ʈ/, /c/
-Nasal: /m/, /n/, /ɲ/, /ŋ/
-Fricative: /f/, /v/, /s/, /z/, /x/, /ɣ/, /h/, /ʂ/
-Approximant: /l/, /j/, /w/
-Rhotic: /r/
-
-##Vowels
-Close front: /i/
-Close back rounded: /u/
-Close back unrounded: /ɯ/
-Mid front: /e/
-Mid back rounded: /o/
-Mid back unrounded: /ɤː/ and /ɤ/
-Open front: /ɛ/
-Open central: /aː/ and /a/
-Open back: /ɔ/
-Centering diphthongs: /iə/, /ɯə/, /uə/
-
-###Tones
-Mid level: no mark
-Low falling: `
-High rising: ´
-Mid dipping-rising: ̉
-High breaking-rising: ~
-Low falling constricted: .
-
-#Alphabet
-A, a: /aː/
-Ă, ă: /a/
-Â, â: /ɤ/
-B, b: /ɓ/
-C, c: /k/
-D, d: /z/ in Hanoi, /j/ in Ho Chi Minh City
-Đ, đ: /ɗ/
-E, e: /ɛ/
-Ê, ê: /e/
-G, g: /ɣ/
-H, h: /h/
-I, i: /i/
-K, k: /k/
-L, l: /l/
-M, m: /m/
-N, n: /n/
-O, o: /ɔ/
-Ô, ô: /o/
-Ơ, ơ: /ɤː/
-P, p: /p/ (only occurs word initially in loanwords and is often pronounced as [b])
-Q, q: /k/
-R, r: /z/ in Hanoi, /r/ in HCMC
-S, s: /s/ in Hanoi, /ʂ/ in HCMC
-T, t: /t/, /k/ word finally in HCMC
-U, u: /u/
-Ư, ư: /ɯ/
-V, v: /v/ in Hanoi, /j/ in HCMC
-X, x: /s/
-Y, y: /iː/
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
 
-#Rules
-##Hanoi
-k > c /_#
-ŋ >  ɲ/ _#
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Dental   Alveolar  Retroflex  Palatal  Velar  Glottal
+Stops                      "p ɓ"  "t̪ t̪ʰ"      "ɗ"     "**ʈ**"     "**c**"  "k"     "ʔ"
+Affricates                 ""      ""         ""        ""         "tɕ"    ""      ""
+Fricatives                 "f v"   ""        "s z"    "**ʂ**"       ""    "x ɣ"    "h"
+Nasals                     "m"     "n̪"        ""        ""          "ɲ"    "ŋ"     ""
+Trills                     ""      ""       "**r**"     ""          ""     ""      ""
+Approximants               "w"     ""         "l"       ""          "j"    ""      ""
+'), TRUE)
 
-###Hanoi lenition processes
-k > x /_h
-g > z /_i
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  footnote("Note: The phonemes in bold appear only in the Southern dialect. Where phonemes share a cell those on the left are voiceless and those on the right are voiced. The labial stop on the right is an implosive.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Vowel length is distinctive for /a/ and /ɤ/ [@Kirby2011, p. 384].
+* The diphthongs listed below are referred to as contour vowels [@Emerich2012, p. 36]. In open syllables, the second vowel of each pairing is more centralized; otherwise, the level of frontness/backness is maintained.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+            Front   Central   Back
+High         "i"     ""        "ɯ u"
+"High-Mid"   "e"     ""        "ɤ o"
+"Low-Mid"    "ɛ"     ""        "ɔ"
+Low          ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 
 
-##Ho Chi Minh City
-n > ŋ / _# if not following i or ê
-ɲ > n / _#
-t > k / _#
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ie/, /ɯɤ/, /uo/"
+'), TRUE)
 
-##Ho Chi Minh City lenition processes
-g > j /_i
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+## Tones
+
+* Vietnamese has six tones [@Tang2007, p. 6] (in parentheses are alternative specifications):
+    - Level (mid level): unmarked
+    - Falling (low falling): marked with a grave accent (\`)
+    - Rising (mid rising): marked with an acute accent (´)
+    - Dipping-rising (mid falling-rising): marked with a hook above (  ̉ )
+    - Creaky (mid rising, glottalized): marked with a tilde (~)
+    - Constricted (low falling, glottalized): marked with a dot below (  ̣ )
+* The creaky and dipping-rising tones have merged in the southern dialect, resulting in just the dipping-rising tone (ibid.).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+tones <- read.table(textConnection('
+Specification                     "Orthographic Representation"           "IPA Transcription"
+"Level (mid-level)"                            "e"                             "ɛ ˧"            
+"Falling (low falling)"                        "è"                             "ɛ ˨˩"
+"Rising (mid rising)"                          "é"                             "ɛ ˧˥"
+"Dipping-rising (mid falling-rising)"          "ẻ"                             "ɛ ˧˩˧"
+"Creaky (mid rising, glottalized)"             "ẽ"                             "ɛ ˧˥ˀ"
+"Constricted (low falling, glottalized)"       "ẹ"                             "ɛ ˨˩ˀ"
+'), TRUE)
+
+kable(tones, col.names = c("Specification", "Orthographic Representation", "Chosen IPA Transcription"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("Tone Examples" = 3)) %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* Although I have listed the transcription for both dialects (see the Comments column), I have chosen to create a ruleset for the Northern (Hanoi) dialect only, given that both the creaky and dipping-rising tones are present in Crubadan (they have merged in the Southern dialect).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                    Comment
+"a"            "/aː/"                     ""
+"ă"            "/a/"                      ""
+"â"            "/ɤ/"                      ""
+"b"            "/ɓ/"                      ""
+"c"            "/k/"                      ""
+"d"          "/z/; /j/"     "/z/: in northern dialect; /j/: in southern dialect"
+"đ"            "/ɗ/"                      ""
+"e"            "/ɛ/"                      ""
+"ê"            "/e/"                      ""
+"g"            "/ɣ/"                      ""
+"h"            "/h/"                      ""
+"i"            "/i/; /j/"       "/j/: following any vowel"
+"k"            "/k/"                      ""
+"l"            "/l/"                      ""
+"m"            "/m/"                      ""
+"n"            "/n̪/; /ŋ/"    "/ŋ/ word-finally in southern dialect"
+"o"            "/ɔ/; /w/"   "/w/: preceding ⟨a⟩, ⟨ă⟩, and ⟨e⟩ (not after ⟨q⟩); /w/ following ⟨a⟩ and ⟨e⟩"
+"ô"            "/o/"                      ""
+"ơ"            "/ɤː/"                      ""
+"p"            "/p/"           "predominantly realized as /ɓ/"
+"r"          "/z/; /r/"         "/z/: in northern dialect; /r/: in southern dialect"
+"s"          "/s/; /ʂ/"         "/s/: in northern dialect; /ʂ/: in southern dialect"
+"t"          "/t̪/, /k/"          "/k/: word-finally in southern dialect"
+"u"            "/u/"                      ""
+"ư"            "/ɯ/"                      ""
+"v"          "/v/ /j/"          "/v/: in northern dialect; /j/: in southern dialect"
+"x"            "/s/"                      ""
+"y"            "/i/; /j/"          "/j/: following any vowel except /u/"
+""             "/ʔ/"              "word-initially preceding vowels and /w/ in northern dialect; word-initially preceding vowels in southern dialect"
+**Multigraph**  ""                        ""
+"ch"           "/tɕ/; /c/"     "/tɕ/: word-initially in northern dialect; /c/: word-initially in southern dialect; /k/: word-finally in northern dialect; /t/ word-finally in southern dialect."
+"gh"           "/ɣ/"                      ""
+"gi"         "/z/; /j/"          "/z/: in northern dialect; /j/ in southern dialect"
+"kh"           "/x/"                      ""
+"ng"           "/ŋ/"                      ""
+"ngh"          "/ŋ/"                      ""         
+"nh"           "/ɲ/; /ŋ/; /n̪/"   "/ŋ/: word-finally in northern dialect; /n̪/ word-finally in southern dialect"
+"ph"           "/f/"                      ""
+"qu"           "/kw/"                     ""
+"th"           "/t̪ʰ/"                     ""
+"tr"           "/tɕ/; /ʈ/"    "/tɕ/: in northern dialect; /ʈ/ in southern dialect"
+"iȇ"           "/ie/"                    ""          
+"yȇ"           "/ie/"                    ""
+"ia"           "/ie/"                    ""
+"ươ"           "/ɯɤ/"                    ""
+"ưa"           "/ɯɤ/"                    ""
+"uȏ"           "/uo/"                    ""
+"ua"           "/uo/"                    ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* Over time, stops have fully spirantized between consonants and vowels [@Michaud2015, p. 6]:
+    - /p/ changed to [β]
+    - /t/ changed to [ð]
+    - /c/ changed to [ʝ]
+    - /k/ changed to [ɣ]  
+which lead to the stabilization of:
+    - [β] to /v/
+    - [ð] and [ʝ] to /z/ in the northern dialect
+    - [ð] and [ʝ] to /j/ in the southern dialect
+* In the southern dialect, the retroflex consonant /ʈ/ and the palatal consonant /c/ slightly spirantize to [ʈʂ] and [tɕ], respectively.
+
+# References

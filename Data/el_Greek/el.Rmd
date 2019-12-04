@@ -1,121 +1,125 @@
 ---
 title: "Greek"
 author: "Shiying Yang"
-date: "4/29/2019"
-output:
-  pdf_document:
-    dev: cairo_pdf
-    keep_tex: yes
-    latex_engine: xelatex
-    number_sections: yes
-  html_document:
-    df_print: paged
-geometry: margin=1.2in
-header-includes:
-- \usepackage{setspace}\doublespacing
-- \usepackage{tipa}
-mainfont: DejaVu Serif
-fontsize: 12pt
-tables: yes
+edited by: "Emily Strand"
 bibliography: el.bib
+output: html_document
 ---
+
+Last-updated: 2019-12-03
+
 # Background
 
-**Language family:** 
+**Language family**: Indo-European / Hellenic/ Greek
 
-* Indo-European
-  + Hellenic/Greek
-
-**Adopted variety:** 
-Standard Modern Greek
+* The adopted variety is Standard Modern Greek.
+* Speakers reside in a multitude of places, including Albania, Macedonia, Montenegro, Cyprus, Greece, and Ukraine.
 
 # Phonology
-```{r, echo=F, include=FALSE}
-library(tidyverse)
+
+## Consonants
+
+* There is some controversy around the phonemic status of voiced stops. Although some authors categorize them surfacing allophonically from homorganic nasal-voiceless stop sequences [@Newton1961 as cited in @Arvaniti2007, p. 7], @Antoniou2008 explain that diachronically speaking, native speakers have come to perceive voiced stops as phonemic (p. 1). Given that @Arvaniti2007, @Mirambel1959, and @Householder1964 [both cited in @Arvaniti2007, p. 7] identify the voiced stops as independent phonemes, I have chosen to as well.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
 library(knitr)
 library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Labial   Dental    Alveolar   Velar
+Stops                       "p  b"   "t̪  d̪"       ""      "k  ɡ"
+Fricatives                  "f  v"   "θ  ð"     "s  z"    "x  ɣ"
+Nasals                        "m"      "n̪"        ""        ""
+Flaps                         ""       ""         "ɾ"       ""
+Approximants                  ""       ""         "l"       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE)
 ```
 
-## Consonants [@IPA, p 1] {#con}
-general mapping of phonemes and orthography
+## Vowels
 
-```{r el_con, echo=F, tab.cap = NULL, results='asis'}
-el_c <- read.csv('el_c.csv')
-#colnames(jp_c)[c(1:2,5)] <- c(' ', '  ', 'alveolo-palatal')
-c_position <- c('labial', 'dental', 'alveolar', 'velar')
-c_colname <- paste(c_position, 'O', sep = ',')
-c_colname_in_table <- unlist(strsplit(c_colname, ','))
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front   Central   Back
+High   "i"     ""        "u"
+Mid    "ε"     ""        "o"
+Low    ""      "ɐ"       ""
+'), TRUE)
 
-kable(el_c, caption = 'Consonants', 
-      align = "c", longtable = T, 
-      digits = 3, format = 'latex', 
-      booktabs = T, col.names = c(' ', 'Voicing', c_colname_in_table)) %>% 
-  collapse_rows(columns = c(1), valign = 'middle', latex_hline = 'custom', custom_latex_hline = 1) %>%
-  kable_styling("striped", full_width = T)
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 ```
 
-## Vowels [@IPA] {#v}
-/i ε  ɐ o u/
+# Alphabet
 
-# Orthography
-Α,α,ά  
-Β,β  
-Γ,γ   
-Δ,δ  
-Ε,ε,Έ,έ    
-Ζ,ζ  
-Η,η,Ή,ή  
-Θ,θ  
-Ι,ι,Ί,ί,Ϊ,ϊ,Ḯ,ΐ  
-Κ,κ  
-Λ,λ   
-Μ,μ  
-Ν,ν  
-Ξ,ξ  
-Ο,ο,Ό,ό  
-Π,π  
-Σ,ς/σ  
-Τ,τ  
-Υ,υ,Ύ,ύ,Ϋ,ϋ,Ϋ́,ΰ      
-Φ,φ  
-Χ,χ  
-Ψ,ψ  
-Ω,ω,Ώ,ώ   
+* Modern Greek includes two diacritics: the acute accent (΄) and the diaresis (¨) [@Ktori2008, p. 774]. The acute accent marks stress, and the diaresis marks the hiatus or the enunciation of two independent adjacent vowels.
 
-## Correspondence between orthography and phonemes
-* Most consonant mappings are shown in table \ref{tab:el_con}, here are mappings for vowels, as well as consonant combinations that do not correspond to single phonemes.
-* Stressed vowels (shown by stress markings as seen in ά,έ,ή,ί,ό,ύ,ώ) are represented as the ipa symbol followed by a "1". e.g. /i1/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-|orthography|pronunciation|
-|-----------|-------------|
-|ξ|/ks/|
-|ψ|/ps/|
-|α|/ɐ/|
-|ά|/ɐ1/|
-|ω/ο|/o/|
-|ώ/ό|/o1/|
-|ι/ϊ/η/υ/ϋ/οι/ει|/i/|
-|ί/ΐ/ή/ύ/ΰ/οί/εί|/i1/
-|ε/αι|/ε/|
-|έ/αί|/ε1/|
-|ου|/u/|
-|ού|/u1/|
-|αυ|/ɐf/|
-|αύ|/ɐ1f/|
-|ευ|/εv/|
-|εύ|/ε1v/|
+alphabet <- read.table(textConnection('
+"Uppercase"   "Lowercase"      ""                         ""
+"Α"              "α"          "/ɐ/"                       ""
+"Β"              "β"          "/v/"                       ""
+"Γ"              "γ"          "/ɣ/"                       ""
+"Δ"              "δ"          "/ð/"                       ""
+"Ε"              "ε"          "/ε/"                       ""
+"Ζ"              "ζ"          "/z/"                       ""
+"Η"              "η"          "/i/"                       ""
+"Θ"              "θ"          "/θ/"                       ""
+"Ι"              "ι"          "/i/"                       ""
+"Κ"              "κ"          "/k/"                       ""
+"Λ"              "λ"          "/l/"                       ""
+"Μ"              "μ"          "/m/"                       ""
+"Ν"              "ν"          "/n̪/"                       ""
+"Ξ"              "ξ"          "/ks/"                      ""
+"Ο"              "ο"          "/o/"                       ""
+"Π"              "π"          "/p/"                       ""
+"Ρ"              "ρ"          "/ɾ/"                       ""
+"Σ"            "ς; σ"         "/s/"                       ""
+"Τ"              "τ"          "/t̪/"                       ""
+"Υ"              "υ"          "/i/"                       ""
+"Φ"              "φ"          "/f/"                       ""
+"Χ"              "χ"          "/x/"                       ""
+"Ψ"              "ψ"          "/ps/"                      ""
+"Ω"              "ω"          "/o/"                       ""
+**Digraph**      ""            ""                         ""
+"ΕΙ"             "ει"         "/i/"                       ""
+"ΟΙ"             "οι"         "/i/"                       ""
+"ΥΙ"             "υι"         "/i/"                       ""
+"ΑΙ"             "αι"         "/ɛ/"                       ""
+"ΟΥ"             "ου"         "/u/"                       ""
+"ΑΥ"             "αυ"         "/ɐv/; /ɐf/"   "/ɐv/: preceding vowels or voiced consonants [@Dawkins1908, p. 218]"
+"ΕΥ"             "ευ"         "/εv/; /εf/"   "/εv/: preceding vowels or voiced consonants [@Dawkins1908, p. 218]"
+"ΜΠ"             "μπ"         "/b/"                       ""
+"ΝΤ"             "ντ"         "/d̪/"                       ""
+"ΓΚ"             "γκ"         "/ɡ/"                       ""
+"ΓΓ"             "γγ"         "/ɡ/"                       ""
+'), TRUE)
 
-# Rules
+kable(alphabet, col.names = c("Uppercase", "Lowercase", "", ""), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("Grapheme" = 2, "Phoneme" = 1, "Comment" = 1))
+```  
 
-## Issues and representative phonological processes
-1. All but two diacritics are kept in the Standard Modern Greek
-- stress marking
-- umlaut
-2. Palatalization of velar consonants
-- Velar consonants /k/, /g/, /x/, /ɣ/ surface as palatal allophones [c], [ɟ], [ç], [ʝ] in front of high vowels /i/ and /ε/
-- [+velar, +consonantal] -> [+palatal]/__[+high, -consonantal]{\$ or [-back, -consonantal]}
-- [+velar, +consonantal][+high, -consonantal] -> [+palatal]/__[+back, -consonantal]
+# Lenition Rules
 
-## Lenition Processes
+* In fast speech, adjacent identical vowels across word boundaries degeminate [@Arvaniti1999, p. 4].
+* Word-final /s/ becomes voiced when preceding a word-initial voiced consonant (ibid.).
+* Although rare, in fast speech, voiced stops may be realized as fricatives [@Arvaniti2000, as cited in @Arvaniti1999, p. 2].
+* /ɾ/ may be realized as an alveolar approximant [@Arvaniti1999, pp. 2-3].
 
-# References {-}
+# Misc. Rules
+
+* /k/, /g/, /x/, /ɣ/ surface as palatal allophones [c], [ɟ], [ç], [ʝ] in front of high vowels /i/ and /ε/ [@Arvaniti1999, p. 3].
+* In formal speech, voiced stops are pronounced with some prenasalization [@Arvaniti1999, p. 2], although this is becoming more obselete with younger generations.
+* In consonant clusters, nasals often assimilate in place to the following consonant [@Arvaniti1999, p. 2].
+
+# References

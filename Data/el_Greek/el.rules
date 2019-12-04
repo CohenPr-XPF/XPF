@@ -1,110 +1,79 @@
 # Greek Rule Set
-# Shiying Yang
-# Last Updated: 2019-04-24
+# Written by: Shiying Yang
+# Edited by: Emily Strand
+# Last Updated: 2019-12-03
 type,sfrom,sto,weight,precede,follow,comment
-#
-# class rules
-#
-##consonants
-#
-class,m,[µμ],,,,
-class,p,π,,,,
-class,f,φ,,,,
-class,v,β,,,,
-class,n,ν,,,,
-class,t,τ,,,,
-class,s,[σς],,,,
-class,z,ζ,,,,
-class,ɾ,ρ,,,,
-class,l,λ,,,,
-class,k,κ,,,,
-class,x,χ,,,,
-class,ɣ,γ,,,,
-class,ks,ξ,,,,
-class,ps,ψ,,,,
-class,dh,δ,,,,
-#
-##vowels
-#
-class,a,[α],,,,
-class,a1,[ά],,,,
-class,o,[ωο],,,,
-class,o1,[ώό],,,,
-class,i,[ηιυϊϋ],,,,
-class,i1,[ήίύΐΰ],,,,
-class,preceding_i,[εο],,,,#segments preceding ι and become /i/
-#
-#class,passthrough,[θε],,,,
+# Class Rules
+class,preceding-i,[εου],,,,
+class,i-digraph,[ιί],,,,
+class,u-digraph,[υύ],,,,
+class,voiceless-c,[πτκφθςσχξψ],,,,
+class,g-digraph,[γκ],,,,
 class,punct,[-'],,,,
-#
-# sub rules
-#
-##consonants
-#
-sub,{m},m,2,,,
-sub,{p},p,2,,,
-sub,{f},f,2,,,
+## Individual Letters
+class,a,[αά],,,,
+class,v,β,,,,
+class,ɣ,γ,,,,
+class,dh,δ,,,,
+class,ɛ,[εέ],,,,
+class,z,ζ,,,,
+class,i,[ηήιίυύϊΐϋΰ],,,,
+class,θ,θ,,,,
+class,k,κ,,,,
+class,l,λ,,,,
+class,m,[µμ],,,,
+class,n̪,ν,,,,
+class,ks,ξ,,,,
+class,o,[ωώοό],,,,
+class,p,π,,,,
+class,ɾ,ρ,,,,
+class,s,[σς],,,,
+class,t̪,τ,,,,
+class,f,φ,,,,
+class,x,χ,,,,
+class,ps,ψ,,,,
+# Sub Rules
+## Individual Letters
+sub,{a},ɐ,2,,,
 sub,{v},v,2,,,
-sub,{n},n,2,,,
-sub,{t},t,2,,,
-sub,{s},s,2,,,
-sub,{z},z,2,,,
-sub,{ɾ},ɾ,2,,,
-sub,{l},l,2,,,
-sub,{k},k,2,,,
-sub,{x},x,2,,,
 sub,{ɣ},ɣ,2,,,
 sub,{dh},ð,2,,,
-sub,{ks},k s,2,,,
-sub,{ps},p s,2,,,
-sub,{m},b,3,,{p},#μπ
-sub,{n},d,3,,{t},#ντ
-sub,{ɣ},g,3,,{k},#γκ
-sub,{p},,3,{m},,
-sub,{t},,3,{n},,
-sub,{k},,3,{ɣ},,
-##vowels
-#
-#singletons
-#
-sub,{a},ɐ,2,,,
-sub,{a1},ɐ1,2,,,
-sub,{o},o,2,,,
-sub,{o1},o1,2,,,
+sub,{ɛ},ɛ,2,,,
+sub,{z},z,2,,,
 sub,{i},i,2,,,
-sub,{i1},i1,2,,,
-sub,έ,ɛ1,2,,,
-#
-#combinations
-#
-sub,{preceding_i},i,3,,ι,#οι, ει
-sub,{preceding_i},i1,3,,ί,#οί, εί
-sub,ι,,3,{preceding_i},,
-sub,ί,,3,{preceding_i},,
-sub,{a},ɛ,3,,ι,#αι
-sub,{a},ɛ1,3,,ί,#αί
-sub,ι|ί,,3,{a},,
-#
-#υ and ύ
-#
-sub,ο,u,3,,υ,#ου
-sub,ο,u1,3,,ύ,#ού
-sub,υ,,3,ο,,
-sub,ύ,,3,ο,,
-sub,ύ,f,3,{a},,
-sub,ύ,v,3,ε,,
-sub,υ,f,3,{a},,#αυ
-sub,υ,v,3,ε,,#ευ
-sub,{a},ɐ1,3,,ύ,#αύ
-sub,ε,ɛ1,3,,ύ,#εύ
-#
-sub,θ,θ,1,,,
-sub,ε,ɛ,1,,,
-#sub,({passthrough}),\1,1,,,
+sub,{θ},θ,2,,,
+sub,{k},k,2,,,
+sub,{l},l,2,,,
+sub,{m},m,2,,,
+sub,{n̪},n̪,2,,,
+sub,{ks},k s,2,,,
+sub,{o},o,2,,,
+sub,{p},p,2,,,
+sub,{ɾ},ɾ,2,,,
+sub,{s},s,2,,,
+sub,{t̪},t̪,2,,,
+sub,{f},f,2,,,
+sub,{x},x,2,,,
+sub,{ps},p s,2,,,
+## Digraphs
+sub,{preceding-i},i,4,,{i-digraph},
+sub,{i-digraph},,4,{preceding-i},,"clean-up",
+sub,α,ɛ,4,,{i-digraph},
+sub,{i-digraph},,4,α,,"clean-up",
+sub,ο,u,5,,{u-digraph},
+sub,{u-digraph},,4,ο,,"clean-up",
+sub,α,ɐ f,5,,{u-digraph}{voiceless-c},
+sub,α,ɐ v,4,,{u-digraph},
+sub,{u-digraph},,4,α,,"clean-up",
+sub,ε,ɛ f,5,,{u-digraph}{voiceless-c},
+sub,ε,ɛ v,4,,{u-digraph},
+sub,{u-digraph},,4,ε,,"clean-up",
+sub,{m},b,6,,{p},
+sub,{n̪},d̪,6,,{t̪},
+sub,{ɣ},ɡ,6,,{g-digraph},
+sub,{p},,5,{m},,"clean-up",
+sub,{t̪},,5,{n̪},,"clean-up",
+sub,{g-digraph},,5,{ɣ},,"clean-up",
+# Misc. Rules
 sub,{punct},,1,,,
-#
-## ipasub
-#
-# no geminations
-#
-ipasub,(.) \1,\1,2,,,
+ipasub,(.) \1,\1,2,,,"gemination does not occur",
