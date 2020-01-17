@@ -26,12 +26,12 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial    Alveolar  Postalveolar  Palatal     Velar    Glottal
-Stops                     "p  b"     "t  d"        ""        "c  ɟ"     "k  ɡ"       ""
-Affricates                   ""        "ts"       "tʃ"         ""         ""         ""
-Fricatives                 "f  v"    "s  z"      "ʃ  ʒ"        ""         "x"        "ɦ"
-Nasals                      "m"        "n"         ""          "ɲ"       ""         ""
-Trills                      ""        "r  r̝"       ""          ""         ""         ""  
-Approximants                ""         "l"         ""          "j"        ""         ""
+Stops                     "p  b"     "t  d"      ""           "c  ɟ"     "k  ɡ"     ""
+Affricates                ""         "ts"        "tʃ"         ""         ""         ""
+Fricatives                "f  v"     "s  z"      "ʃ  ʒ"       ""         "x"        "ɦ"
+Nasals                    "m"        "n"         ""           "ɲ"        ""         ""
+Trills                    ""         "r  r̝"      ""           ""         ""         ""
+Approximants              ""         "l"         ""           "j"        ""         ""
 '), TRUE)
 
 kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
@@ -139,9 +139,9 @@ kable(alphabet, align = 'c') %>%
 * Voiced word-final consonants generally neutralize [@harkins_modern_1980, p. 10].  
 * /j/ may delete word-initially if preceding a consonant [@harkins_modern_1980, p. 14].  
 * Voiceless consonants become voiced if followed by voiced consonants [@harkins_modern_1980, p. 10].  
-* /ɦ/ appeared due to the lenition of /ɡ/, which is common within the Slavic languages [@sussex_slavic_2006, p. 143].  
+* /ɦ/ is present in the language due to the lenition of /ɡ/, which is common within the Slavic languages [@sussex_slavic_2006, p. 143].  
 
-# Misc Rules
+# Misc. Rules
 
 * Glottal epenthesis occurs preceding a vowel in word-initial positions [@harkins_modern_1980, p. 13].  
 * Repetition of consonants is typically avoided in Czech [@harkins_modern_1980, p. 9].  

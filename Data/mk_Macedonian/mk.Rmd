@@ -1,0 +1,118 @@
+---
+title: "Macedonian"
+author: "Jordan Schuster"
+bibliography: mk.bib
+output: html_document
+---
+
+Last Updated: October 7, 2019
+
+# Background
+
+**Language Family:** Indo-European, Balto-Slavic, Slavic, South Slavic, Eastern South Slavic, Macedonian
+
+* Macedonian is spoken in a multitude of places, including, but not limited to, Macedonia, Albania, Montenegro, Bulgaria, and Greece.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Dental   Alveolar    Postalveolar    Palatal     Velar
+Stops                      "p  b"   "t̪  d̪"     ""             ""          "c  ɟ"     "k  ɡ"
+Affricates                   ""    "ts̪  dz̪"    ""          "tʃ  dʒ"         ""          ""
+Fricatives                 "f  v"   "s̪  z̪"     ""           "ʃ  ʒ"          ""         "x"
+Nasals                       "m"      "n̪"      ""             ""           "ɲ"         ""
+Trills                       ""       ""       "r"            ""            ""         ""
+Approximants                 ""       "ɫ̪"      "l"            ""            "j"        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+
+## Vowels
+
+* /ə/ is phonemic in many dialects, but very marginal in the standard language [@Friedman2001, p. 10], thus it will not be included in the phonemic inventory.
+* Where adjacent like-vowels occur, they're either interpreted as independent vowels or one long vowel (ibid.). Where three adjacent vowels occur, the second and third are often separated with /j/. Thus, vowel length is not phonemic.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "ɛ"         ""           "ɔ"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+* There is much variation regarding the realization of ⟨л⟩ and ⟨љ⟩ [@Friedman2001, pp. 11-12; @Kramer2011, pp. 3-4]. ⟨л⟩ is said to represent /l/ preceding front vowels and /j/ and represent /ɫ/ elsewhere. However, younger generations have started to be more liberal with using /ɫ/. This would suggest that the two represented phonemes are actually allophones; however, ⟨љ⟩ represents /l/ (before back vowels, consonants (except /j/) and word-finally). Younger speakers extend velarization to this environment as well. Given that both phonemes can occur in the same environment, it's important to keep the distinction.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+"Cyrllic Grapheme"    "Romanized Grapheme/Multigraph"    Phoneme               Comment
+      "а"	                     "a"                       "/a/"                  ""
+      "б"	                     "b"                       "/b/"                  ""
+      "в"	                     "v"                       "/v/"                  ""
+      "г"	                     "g"                       "/ɡ/"                  ""
+      "д"	                     "d"                       "/d̪/"                  ""
+      "ѓ"                      "gj"                      "/ɟ/"                  ""
+      "е"	                     "e"                       "/ɛ/"                  ""
+      "ж"	                     "zh"                      "/ʒ/"                  ""
+      "з"	                     "z"                       "/z̪/"                  ""
+      "s"                      "dz"                      "/dz̪/"                 ""
+      "и"	                     "i"                       "/i/"                  ""
+      "j"                      "j"                       "/j/"                  ""
+      "к"	                     "k"                       "/k/"                  ""
+      "л"	                     "l"                    "/ɫ̪/; /l/"     "/l/ before front vowels and /j/"
+      "љ"                      "lj"                      "/l/"                 "/l/ before back vowels, consonants (except /j/), and word-finally"
+      "м"	                     "m"                       "/m/"                  ""
+      "н"	                     "n"                       "/n̪/"                  ""
+      "њ"	                     "nj"                      "/ɲ/"                  ""
+      "о"	                     "o"                       "/ɔ/"                  ""
+      "п"	                     "p"                       "/p/"                  ""
+      "р"	                     "r"                       "/r/"                  ""
+      "с"	                     "s"                       "/s̪/"                  ""
+      "т"	                     "t"                       "/t̪/"                  ""
+      "ḱ"                      "kj"                      "/c/"                  ""
+      "у"	                     "u"                       "/u/"                  ""
+      "ф"	                     "f"                       "/f/"                  ""
+      "х"	                     "h"                       "/x/"                  ""
+      "ц"	                    "ts; c"                    "/ts̪/"                 ""
+      "ч"	                     "ch"                      "/tʃ/"                 ""
+      "џ"                    "dj; dzh"                   "/dʒ/"                 ""
+      "ш"	                     "sh"                      "/ʃ/"                  ""
+      '), TRUE)
+
+      kable(alphabet, col.names = c("Cyrillic Grapheme", "Romanized Grapheme/Multigraph", "Phoneme", "Comment"), align = 'c') %>%
+        kable_styling("bordered")
+      ```
+
+# Lenition Rules
+
+* Voiceless consonants becomes voiced preceding voiced consonants [@Friedman2001, p. 12].
+
+# Misc. Rules
+
+* Voiced consonants devoice word-finally and before voiceless consonants [@Friedman2001, p. 12].
+* /t̪/, /d̪/, /s̪/, /z̪/, /l/, /m/, and /j/ can geminate at morpheme boundaries (ibid.).
+
+# References

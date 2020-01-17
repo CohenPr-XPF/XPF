@@ -43,7 +43,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Although the orthography includes <e> and <o>, [e] and [o] only exist as allophones of /i/ and /u/ respectively [@BclMattes2014, pg. 8].
+* Although the orthography includes ⟨e⟩ and ⟨o⟩, [e] and [o] only exist as allophones of /i/ and /u/ respectively [@BclMattes2014, pg. 8].
 
 ```{r echo = FALSE}
 

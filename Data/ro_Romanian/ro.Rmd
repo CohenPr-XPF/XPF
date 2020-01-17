@@ -1,0 +1,129 @@
+---
+title: "Romanian"
+author: "Emily Strand"
+bibliography: ro.bib
+output: html_document
+---
+
+Last Updated: 2019-08-21
+
+# Background
+
+**Language family**: Indo-European / Italic / Romance / Easatern
+
+* Romanian is predominantly spoken in Romania and Moldova, but in other countries as well.
+
+# Phonology
+
+## Consonants
+
+* There is some debate regarding the existence of palatal consonants as phonemes. @Petrovici1950 [as cited in @Dezsi2008, p. 439] includes them, but he also includes labialized and labio-palatalized consonants which proves too elaborate an analysis [@Dezsi2008, p. 440]. @Dezsi2008 states that palatalization is predictable (morphological conditioning), with /i/ surfacing as such a marker [ʲ] [p. 447; @Renwick2012, p. 81].
+* @Dezsi2008 explains that the phonemic attestation of /j/ and /w/ is rather unclear, given a lack of analysis (p. 438). @Chitoran2002 [as cited in @Dezsi2008, p. 441] states that the /j/ is a surface realization of /i/. @Dezsi2008 seems to support this analysis (p. 447). I have chosen not to include /j/ and /w/ below.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Labial   Dental   Postalveolar   Velar  Glottal
+Stops                        "p b"    "t d"         ""        "k ɡ"    ""
+Affricates                    ""       "ts"      "tʃ dʒ"       ""      ""
+Fricatives                   "f v"     "s z"      "ʃ ʒ"        ""      "h"
+Nasals                        "m"      "n"          ""         ""      ""
+Trills                        ""       "r"          ""         ""      ""
+Approximants                  ""       "l"          ""         ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Postalveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  footnote(general = "Note: From left to right, phonemes in a cell are plain, aspirated, and voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Although Romanian has frequent vowel sequences (constituting possible diphthongs and triphthongs), only the ones listed below are always considered as complex nuclei [@Renwick2012, p. 438].
+* Several sources use /ə/ to represent the mid-central vowel [@Dezsi2008, p. 438; @Chitoran2002, p. 208]; however, @Renwick2012 explains that the vowel for which this phoneme represents is not reduced, and shouldn't be treated as such. He opts for /ʌ/, but I have chosen to use /ɜ/ as it's more central.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         "ɨ"          "u"
+Mid         "e"         "ɜ"          "o"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ea/, /oa/"
+'), TRUE)
+
+kable(diphthongs, align = "c") %>%
+  kable_styling("bordered")
+```
+
+# Alphabet
+
+* In the sequences ⟨c(i/e)⟩, ⟨g(i/e)⟩, ⟨ch(i/e)⟩, and ⟨gh(i/e)⟩, the front vowels may or may not be transcribed. @Ordean2009 breaks down the environments in which they're transcribed (p. 403). I have included these rules in the rule set.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme                 Comment
+"a"              "/a/"                    ""
+"ă"              "/ɜ/"                    ""
+"â"              "/ɨ/"                    ""
+"b"              "/b/"                    ""
+"c"            "/k/; /tʃ/"      "/tʃ/: preceding front vowels"
+"d"              "/d/"                    ""
+"e"              "/e/"                    ""
+"f"              "/f/"                    ""
+"g"            "/ɡ/; /dʒ/"      "/dʒ/: preceding front vowels"
+"h"              "/h/"                    ""
+"i"              "/i/"                    ""
+"î"              "/ɨ/"                    ""
+"j"              "/ʒ/"                    ""
+"k"              "/k/"             "appears in loanwords"
+"l"              "/l/"                    ""
+"m"              "/m/"                    ""
+"n"              "/n/"                    ""
+"o"              "/o/"                    ""
+"p"              "/p/"                    ""
+"q"              "/k/"             "appears in loanwords"
+"r"              "/r/"                    ""
+"s"              "/s/"                    ""
+"ș"              "/ʃ/"                    ""
+"t"              "/t/"                    ""
+"ț"              "/ts/"                   ""
+"u"              "/u/"                    ""
+"v"              "/v/"                    ""
+"w"              "/v/"             "appears in loanwords"
+"x"              "/ks/"                   ""
+"y"              "/i/"             "appears in loanwords"
+"z"              "/z/"                    ""
+**Digraph**       ""                      ""
+"ea"             "/ea/"                   ""
+"oa"             "/oa/"                   ""
+"ch"             "/k/"             "preceding front vowels [@Dindelegan2013, p. 14]"
+"gh"             "/ɡ/"             "preceding front vowels (ibid.)"
+'), TRUE)
+
+kable(alphabet, align = "c") %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* In spontaneous speech, consonant deletion occurs [@Chitoran, p. 1].
+
+# References

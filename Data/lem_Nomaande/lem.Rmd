@@ -11,81 +11,105 @@ Last Updated: 2019-07-12
 
 **Language Family**: Niger-Congo / Atlantic-Congo / Volta-Congo / Benue-Congo / Bantoid / Southern Bantoid / Narrow Bantu / Mbam / West Mbam / Nomaande
 
-The language is also known as Mandi.
+* The language is also known as Mandi and is spoken in the Centre and Littoral regions of Cameroon.
 
 # Phonology
 
 ## Consonants
 
-* /p/ exists in free variation with /b/. [@LemWilkendorf1998, p. 6] [@LemBoyd2015, p. 39]
+* /p/ exists in free variation with /b/ [@LemWilkendorf1998, p. 6; @LemBoyd2015, p. 39].
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /ᵐb/, /m/, /f/, /w/  
-Alveolar: /t/, /ⁿd/, /n/, /s/, /l/  
-Postalveolar: /tʃ/, /ᶮdʃ/  
-Palatal: /ɲ/, /j/  
-Velar: /k/, /ᵑɡ/, /ŋ/  
-Glottal: /ʔ/, /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /ᵐb/, /t/, /ⁿd/, /k/, /ᵑɡ/, /ʔ/  
-Affricates: /tʃ/, /ᶮdʃ/  
-Nasals: /m/, /n/, /ɲ/, /ŋ/  
-Fricatives: /f/, /s/, /h/  
-Approximants: /w/, /l/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Alveolar    Postalveolar     Palatal     Velar    Glottal
+Stops                      "p  ᵐb"   "t  ⁿd"          ""              ""      "k  ᵑɡ"     "ʔ"
+Affricates                   ""         ""         "tʃ  ᶮdʃ"          ""        ""        ""
+Fricatives                   "f"        "s"           ""              ""        ""        "h"
+Nasals                       "m"        "n"           ""              "ɲ"       "ŋ"       ""
+Approximants                 "w"        "l"           ""              "j"       ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Phonemes that contain the diacritics /ᵐ/, /ⁿ/, /ᶮ/, and /ᵑ/ are prenasalized.", general_title = "")
+```
 
 ## Vowels
 
-Short: /i/, /ɨ/, /u/, /ɛ/, /o/, /ɔ/, /a/  
-
-Vowel length is contrastive in Nomaande. Wilkendorf argues that only non-front vowels are present in long forms [@LemWilkendorf1998, p. 6] [@LemWilkendorf2004, p. 4]; however, Boyd argues for all vowels being able to be long [@LemBoyd2015, p. 43], and her analysis is better borne out by the corpus.
-
-Nomaande has two tones: high and low. [@LemWilkendorf1998, p. 6]
-
-* The vowel that I have written as /ɨ/ has varying interpretations: @LemWilkendorf1998 argues for /ɨ/(p. 6), @LemWilkendorf2004 argues for /ə/ (p. 3), and @LemBoyd2015 argues for /ɪ/ (p. 42). I have preferred /ɨ/ as a middle ground, which captures some aspects of each of the different interpretations.
+* Vowel length is contrastive in Nomaande. Wilkendorf argues that only non-front vowels are present in long forms [@LemWilkendorf1998, p. 6; @LemWilkendorf2004, p. 4]; however, Boyd argues for all vowels being able to be long [@LemBoyd2015, p. 43], and her analysis is better borne out by the corpus. Long vowels are written by doubling the vowel character [@LemWilkendorf1998, p. 6].
+* The vowel that I have written as /ɨ/ has varying interpretations: @LemWilkendorf1998 argues for /ɨ/ (p. 6), @LemWilkendorf2004 argues for /ə/ (p. 3), and @LemBoyd2015 argues for /ɪ/ (p. 42). I have preferred /ɨ/ as a middle ground, which captures some aspects of each of the different interpretations.
 * @LemBoyd2015 argues for a contrastive /ʊ/ (p. 42), but this does not appear to be a widely held opinion.
+* Nomaande has two tones: high and low [@LemWilkendorf1998, p. 6]. High tones are marked with an acute accent (´) on the vowel; low tones are unmarked [@LemWilkendorf2004, p. 4].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         "ɨ"          "u"
+High-Mid  ""          ""           "o"
+Low-Mid   "ɛ"         ""           "ɔ"
+Low       ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```    
 
 # Alphabet
 
-a - /a/  
-b - /p/  
-c - /tʃ/  
-e - /ɨ/  
-ɛ - /ɛ/  
-f - /f/  
-h - /h/  
-i - /i/  
-k - /k/  
-l - /l/  
-m - /m/  
-  mb - /ᵐb/  
-n - /n/  
-  nd - /ⁿd/  
-  nj - /ᶮdʒ/  
-ny - /ɲ/  
-ŋ - /ŋ/  
-  ŋg - /ᵑɡ/  
-o - /o/  
-ɔ - /ɔ/  
-s - /s/  
-t - /t/  
-u - /u/  
-w - /w/  
-y - /j/  
-' - /ʔ/ (rare)  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-* Long vowels are written by doubling the vowel character. [@LemWilkendorf1998, p. 6]
-* High tones are marked with an acute accent on the vowel; low tones are unmarked. [@LemWilkendorf2004, p. 4]
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme        Comment  
+"a"            "/a/"           ""
+"b"            "/p/"           ""
+"c"            "/tʃ/"          ""
+"e"            "/ɨ/"           ""
+"ɛ"            "/ɛ/"           ""
+"f"            "/f/"           ""
+"h"            "/h/"           ""
+"i"            "/i/"           ""
+"k"            "/k/"           ""
+"l"            "/l/"           ""
+"m"            "/m/"           ""
+"n"            "/n/"           ""
+"ŋ"            "/ŋ/"           ""
+"o"            "/o/"           ""
+"ɔ"            "/ɔ/"           ""
+"s"            "/s/"           ""
+"t"            "/t/"           ""
+"u"            "/u/"           ""
+"w"            "/w/"           ""
+"y"            "/j/"           ""
+"\'"           "/ʔ/"          "rare"
+**Digraph**     ""             ""
+"mb"          "/ᵐb/"           ""
+"nd"          "/ⁿd/"           ""
+"nj"          "/ᶮdʒ/"          ""
+"ny"          "/ɲ/"            ""
+"ŋg"          "/ᵑɡ/"           ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
-* @LemWilkendorf1998 argues for an allophonic process where post-nasal stops gain voicing, rather than interpreting the prenasalized stops as independent phonemes. (p. 6)
-* Word-final vowels are often deleted. [@LemWilkendorf2004, p. 5]
+* @LemWilkendorf1998 argues for an allophonic process where post-nasal stops gain voicing, rather than interpreting the prenasalized stops as independent phonemes (p. 6).
+* Word-final vowels are often deleted [@LemWilkendorf2004, p. 5].
 
 # Misc. Rules
 
-* When non-identical vowels are adjacent, the first vowel in the cluster is realized instead as a glide. [@LemBoyd2015, pp. 54-56]
+* When non-identical vowels are adjacent, the first vowel in the cluster is realized instead as a glide [@LemBoyd2015, pp. 54-56].
 
 # References

@@ -43,8 +43,6 @@ class,i,[ಿಇ],,,,
 class,i-long,[ೀಈ],,,,
 class,u,[ುಉ],,,,
 class,u-long,[ೂಊ],,,,
-class,r-syllabic,[ೃಋ],,,,
-class,r-syl-long,[ೄೠ],,,,
 class,e,[ೆಎ],,,,
 class,e-long,[ೇಏ],,,,
 class,aj,[ೈಐ],,,,
@@ -106,8 +104,6 @@ sub,{o},o,4,,,
 sub,{o-long},o ː,4,,,
 sub,{aj},a j,4,,,
 sub,{aw},a ʋ,4,,,
-sub,{r-syllabic},SYLr u,4,,,
-sub,{r-syl-long},SYLr u ː,4,,,
 sub,{zw},,4,,,
 # Anusvara
 sub,{anusvara},MAYBEn,4,,,
@@ -120,12 +116,11 @@ ipasub,({anyvowel}) ALTh,\1 h \1,6,,,"visarga after short vowels"
 ipasub,ː ALTh,ː h,5,,,"visarga after long vowels"
 # IPASub Rules
 ipasub,a ({anyvowel})\b,\1,4,,,"replaces automatic /a/ with a marked vowel"
-ipasub,a SYLr,r,4,,,"replaces automatic /a/ with syllabic /r/"
 ipasub, a NULL,,4,,,"replaces automatic /a/ with null"
+ipasub,NULL,@,3,,,"removes unnatested combos (e.g. occurrence word-medially)"
 ipasub,REAL,a,2,,,"protects marked /a/"
-ipasub,SYLr,r,2,,,"corrects syllabic /r/ that wasn't caught by the rule above"
 ipasub,({cons-output}) \1\b,\1 ː,1,,,"consonant gemination"
 ipasub,d̪ d̪ ,d̪ ː ,1.5,,,"d-gemination - for reasons I haven't been able to place, the cons-output class doesn't like standalone <d̪> and <t̪>, so I use this workaround instead"
 ipasub,t̪ t̪ ,t̪ ː ,1.5,,,"t-gemination"
-
+# Misc. Rules
 sub,-,,4,,,

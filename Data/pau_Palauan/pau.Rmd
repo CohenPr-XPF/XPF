@@ -1,83 +1,114 @@
 ---
 title: "Palauan"
 author: "Bill Mizgerd"
+edited by: "Emily Strand"
 bibliography: pau.bib
 output: html_document
 ---
 
-Last Updated: 2019-07-22
+Last Updated: 2020-01-17
 
 # Background
 
 **Language Family**: Austronesian / Malayo-Polynesian / Palauan
 
+* Palauan is spoken in Palau, an archipelagic country off the coast of the Philippines.
+
 # Phonology
 
 ## Consonants
 
-### By place of articulation
+* Only liquids ⟨r⟩ and ⟨l⟩ geminate in Palauan [@Carlson1968, p. 27].
 
-Bilabial: /b/, /m/  
-Alveolar: /t/, /d/, /s/, /ɾ/, /r/, /l/  
-Velar: /k/, /ŋ/  
-Glottal: /ʔ/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-### By manner of articulation
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-Stops: /b/, /t/, /d/, /k/, /ʔ/  
-Nasals: /m/, /ŋ/  
-Fricatives: /s/  
-Taps: /ɾ/  
-Trills: /r/  
-Approximants: /l/  
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Bilabial Alveolar  Velar   Glottal
+Stops                      "b"      "t d"     "k"     "ʔ"
+Fricatives                 ""       "s"       ""      ""
+Nasals                     "m"      ""        "ŋ"     ""
+Taps                       ""       "ɾ"       ""      ""
+Trills                     ""       "r"       ""      ""
+Approximants               ""       "l"       ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  footnote(general = "Note: Phonemes to the left of each cell are voiceless and phonemes to the right of each cell are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /i/, /u/, /ɛ/, /ə/, /o/, /a/  
+* /ə/ only appears in unstressed syllables, and consequently, it is not universally considered to be phonemic in Palauan [@PauJosephs1975, p. 22]. It is interpreted as an allophone of /ɛ/, or a phonetic realization based on context [@Carlson1968, p. 36]. It is represented by ⟨ȩ⟩ in the alphabet; however, it's not present in the Crúbadán corpus. Nonetheless, I have chosen to represent it in the rule set as /ɛ/.
+* Vowel length is contrastive for non-central vowels. Long front vowels glide into [j], while long back vowels glide into [w] [@PauJosephs1975, pp. 25-26]. Long vowels are represented by doubling the vowel character.
 
-/ə/ only appears in unstressed syllables, and consequently, it is not universally considered to be phonemic in Palauan [@PauJosephs1975, p. 22]. For this reason, my ruleset will include /ə/ where the orthography unambiguously identifies it (i.e. with <ȩ>), but will not account for /ə/ otherwise.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     ""        "u"
+Mid       "ɛ"     ""        "o"
+Low       ""      "a"       ""
+'), TRUE)
 
-Vowel length is contrastive for non-central vowels. Long front vowels glide into [j], while long back vowels glide into [w]. [@PauJosephs1975, pp. 25-26]
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
 
 # Alphabet
 
-a - /a/  
-b - /b/  
-ch - /ʔ/  
-d - /d/  
-e - /ɛ/  
-ȩ - /ə/  
-i - /i/  
-k - /k/  
-l - /l/  
-ll - /lː/  
-m - /m/  
-n - /n/ (only in loanwords)  
-ng - /ŋ/  
-o - /o/  
-r - /ɾ/  
-rr - /r/  
-s - /s/  
-t - /t/  
-u - /u/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Long vowels are represented by doubling the vowel character.
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme           Comment  
+"a"              "/a/"               ""
+"b"              "/b/"               ""
+"d"              "/d/"               ""
+"e"              "/ɛ/"               ""
+"ȩ"              "/ɛ/"        "realized as /ə/"
+"i"              "/i/"               ""
+"k"              "/k/"               ""
+"l"              "/l/"               ""
+"m"              "/m/"               ""
+"n"              "/n/"        "only in loanwords"
+"o"              "/o/"               ""
+"r"              "/ɾ/"               ""
+"s"              "/s/"               ""
+"t"              "/t/"               ""
+"u"              "/u/"               ""
+**Digraph**       ""                 ""
+"ch"             "/ʔ/"               ""
+"ll"             "/lː/"              ""
+"ng"             "/ŋ/"               ""
+"rr"             "/r/"               ""
+'), TRUE)
+
+kable(alphabet, align = "c") %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
-* Word-initial /d/ spirantizes to [ð], particularly in careful speech. [@PauJosephs1975, p. 8]
-* Intervocalic and word-final /d/ spirantize to [ð]. [@PauJosephs1975, p. 9]
-* /k/ voices to [ɡ] intervocalically. [@PauJosephs1975, p. 10]
+* Word-initial /d/ spirantizes to [ð], particularly in careful speech [@PauJosephs1975, p. 8].
+* Intervocalic and word-final /d/ spirantize to [ð] [@PauJosephs1975, p. 9].
+* /k/ voices to [ɡ] intervocalically [@PauJosephs1975, p. 10].
 
 # Misc. Rules
 
-* When adjacent to another consonant - except /l/ - /b/ devoices to [p]. [@PauJosephs1975, p. 6]
-* Word-final voiceless stops aspirate. [@PauJosephs1975, pp. 7, 10]
-* Word-initial preconsonantal /d/ devoices to [t]; this rule can also co-occur with the spirantization rule mentioned above, resulting in [θ]. [@PauJosephs1975, p. 9]
-* Epenthesis of [ʔ] occurs at the beginning of vowel-initial utterances. [@PauJosephs1975, pp. 11-12]
-* /ŋ/ assimilates to the place of subsequent alveolar consonants. [@PauJosephs1975, p. 13]
-* Word-initial preconsonantal sonorants are syllabic, except in the word <mlai>. [@PauJosephs1975, pp. 17-18]
-* Epenthesis of [ə] occurs after word-final consonant clusters. [@PauJosephs1975, p. 24]
-* In vowel clusters, unstressed vowels turn to glides in various contexts. [@PauJosephs1975, pp. 27-28]
+* When adjacent to another consonant - except /l/ - /b/ devoices to [p] [@PauJosephs1975, p. 6].
+* Word-final voiceless stops aspirate [@PauJosephs1975, pp. 7, 10].
+* Word-initial preconsonantal /d/ devoices to [t]; this rule can also co-occur with the spirantization rule mentioned above, resulting in [θ] [@PauJosephs1975, p. 9].
+* Epenthesis of [ʔ] occurs at the beginning of vowel-initial utterances [@PauJosephs1975, pp. 11-12].
+* /ŋ/ assimilates to the place of subsequent alveolar consonants [@PauJosephs1975, p. 13].
+* Word-initial preconsonantal sonorants are syllabic, except in the word ⟨mlai⟩ [@PauJosephs1975, pp. 17-18].
+* Epenthesis of [ə] occurs after word-final consonant clusters [@PauJosephs1975, p. 24].
+* In vowel clusters, unstressed vowels turn to glides in various contexts [@PauJosephs1975, pp. 27-28].
 
 # References

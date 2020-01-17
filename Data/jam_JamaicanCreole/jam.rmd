@@ -112,4 +112,8 @@ kable(alphabet, align = 'c') %>%
 * Obstruents become palatalized preceding high vowels /i/ and /u/ [@harry2006jamaican, p. 127].
 * /b/, /d/, and /ɡ/ are pronounced lenis (specifically as implosives) word-initially (ibid.).
 
+# Misc. Rules
+
+* Vowels nasalize preceding nasal consonants [@harry2006jamaican, p. 261].
+
 # References

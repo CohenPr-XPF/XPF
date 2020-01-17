@@ -11,69 +11,98 @@ Last Updated: 2019-08-06
 
 **Language Family**: Trans-New Guinea / Koiarian / Baraic / Ese
 
-The language is also known as Managalasi.
+* The language is also known as Managalasi and is spoken in the Oro province of Papua New Guinea.
 
 # Phonology
 
 ## Consonants
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Bilabial: /p/, /m/, /β/  
-Alveolar: /t/, /n/, /s/, /ɾ/  
-Postalveolar: /tɕ/, /dʑ/  
-Velar: /k/  
-Glottal: /ʔ/, /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /t/, /k/, /ʔ/  
-Affricates: /tɕ/, /dʑ/  
-Nasals: /m/, /n/  
-Fricatives: /β/, /s/, /h/  
-Flaps: /ɾ/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Bilabial      Alveolar      Alveopalatal     Velar      Glottal
+Stops                        "p"           "t"             ""            "k"          "ʔ"
+Affricates                    ""           ""            "tɕ  dʑ"         ""          ""
+Fricatives                   "β"           "s"             ""             ""          "h"
+Nasals                       "m"           "n"             ""             ""          ""
+Flaps                        ""            "ɾ"             ""             ""          ""   
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Alveopalatal", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Both palatal approximants are voiced.", general_title = "")
+```
 
 ## Vowels
 
-Vowels: /i/, /ʉ/, /u/, /e/, /o/, /ɑ/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"        "ʉ"           "u"
+Mid       "e"         ""           "o"
+Low        ""         ""           "ɑ"
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
 
 # Alphabet
 
-a - /ɑ/  
-ch - /tɕ/  
-e - /e/  
-h - /h/  
-i - /i/  
-j - /dʑ/  
-k - /k/  
-m - /m/  
-n - /n/  
-o - /o/  
-p - /p/  
-r - /ɾ/  
-s - /s/  
-t - /t/  
-u - /u/  
-ú - /ʉ/  
-v - /β/  
-' - /ʔ/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme  
+"a"            "/ɑ/"    
+"e"            "/e/"  
+"h"            "/h/"  
+"i"            "/i/"  
+"j"            "/dʑ/"  
+"k"            "/k/"  
+"m"            "/m/"  
+"n"            "/n/"  
+"o"            "/o/"  
+"p"            "/p/"  
+"r"            "/ɾ/"  
+"s"            "/s/"  
+"t"            "/t/"  
+"u"            "/u/"  
+"ú"            "/ʉ/"  
+"v"            "/β/"  
+"\'"           "/ʔ/"
+**Digraph**     ""
+"ch"           "/tɕ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Ese has a (C)V syllable structure [@McqParlier1992, p. 2].
 
 # Lenition Rules
 
-* Postvocalic /a/ reduces to [ə], except when followed by /ne/ or /nɑ/. [@McqParlier1963, p. 19]
+* Postvocalic /a/ reduces to [ə], except when followed by /ne/ or /nɑ/ [@McqParlier1963, p. 19].
 
 # Misc. Rules
 
-* Word-initial /ɾ/ lateralizes to [ɺ]. [@McqParlier1992, p. 3]
-* @McqParlier1963 also attests this process as occurring after /i/. (p. 10)
-* /u/ becomes [w] before stressed vowels. [@McqParlier1992, p. 3] [@McqParlier1981, p. viii]
-* /β/ goes to [b] before unstressed /u/. [@McqParlier1963, p. 7]
-* /tɕ/ alternates with [ts] before /ɑ/. [@McqParlier1963, p. 8]
-* /dʑ/ retroflexes (to [ɖʑ], supposedly) before non-high back vowels. [@McqParlier1963, p. 9]
-* Word-final mid vowels lower to be mid-open. [@McqParlier1963, pp. 18-20]
-
-## Syllable Structure
-
-Ese has a (C)V syllable structure. [@McqParlier1992, p. 2]
+* Word-initial /ɾ/ lateralizes to [ɺ] [@McqParlier1992, p. 3].
+* @McqParlier1963 also attests this process as occurring after /i/ (p. 10).
+* /u/ becomes [w] before stressed vowels [@McqParlier1992, p. 3; @McqParlier1981, p. viii].
+* /β/ goes to [b] before unstressed /u/ [@McqParlier1963, p. 7].
+* /tɕ/ alternates with [ts] before /ɑ/ [@McqParlier1963, p. 8].
+* /dʑ/ retroflexes (to [ɖʑ], supposedly) before non-high back vowels [@McqParlier1963, p. 9].
+* Word-final mid vowels lower to be mid-open [@McqParlier1963, pp. 18-20].
 
 # References

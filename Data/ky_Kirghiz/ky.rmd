@@ -5,81 +5,112 @@ bibliography: ky.bib
 output: html_document
 ---
 
+Last Updated: 2019-12-19
+
 # Background
 
 **Language family**: Altaic / Turkic / Kipchak
 
+* Also spelled Kyrgyz, speakers reside in a multitude of places, including but not limited to Kyrgyzstan, Afghanistan, China, and Tajikistan.
+
 # Phonology
 
-## consonants
+## Consonants
 
-*
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-### By place of articulation
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-Labial: /v/, /b/, /p/, /m/     
-Alveo-dental: /d/, /t/, /z/, /s/, /n/, /r/, /l/       
-Alveo-palatal: /tʃ/, /dʒ/, /ʃ/, /ʒ/, /j/      
-Velar: /g/, /k/, /ŋ/      
 
-### By manner of articulation
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Alveolar    Postalveolar    Palatal     Velar
+Stops                      "p  b"      "t  d"         ""            ""        "k  ɡ"
+Affricates                   ""          ""        "tʃ  dʒ"         ""         ""
+Fricatives                   "v"       "s  z"       "ʃ  ʒ"          ""         ""
+Nasals                       "m"         "n"          ""            ""         "ŋ"
+Trills                        ""         "r"          ""            ""         ""
+Approximants                  ""         "l"          ""            "j"        ""       
+'), TRUE)
 
-Stops: /b/, /p/, /d/, /t/, /g/, /k/   
-Affricates: /tʃ/, /dʒ/  
-Fricatives: /v/, /z/, /s/, /ʃ/, /ʒ/      
-Nasals: /m/, /n/, /ŋ/     
-Glides: /j/      
-Liquids: /r/, /l/      
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Both palatal approximants are voiced.", general_title = "")
+```
 
 ## Vowels
 
 * Vowel length is phonemic [@johanson_kirghiz_2006, pg. 344].    
 * Long vowels are represented by repeated graphemes or macrons (¯) [@johanson_kirghiz_2006, pg. 345].
 
-Short: /ɑ/, /e/, /i/, /o/, /ø/, /u/, /y/, /ɯ/
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front        Back
+High     "i  y"      "ɯ  u"
+Mid      "e  ø"       "o"
+Low        ""         "ɑ"
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "For phonemes that share a cell, those on the left are unrounded and those on the right are rounded.", general_title = "")
+```    
 
 # Alphabet
 
-* Although a Roman-based alphabet was introduced following the Soviet era, the Cyrillic-based script is widely used [@brown_kirghiz_2009, pg. 611].
-* Much of the one-to-one mapping of grapheme to phoneme was inferred from @herbert_kirghiz_1997 (pg. 3 - 7).
+* Although a Roman-based alphabet was introduced following the Soviet era, the Cyrillic-based script is primarily used [@brown_kirghiz_2009, pg. 611].
+* Much of the one-to-one mapping of grapheme to phoneme was inferred from @Hebert1997 (pg. 3 - 7).
 
-A; a - /ɑ/    
-Б; б - /b/
-В; в - /v/  
-Г; г - /g/       
-Д; д - /d/   
-Е; е - /e/  
-Ё; ё - /jo/   
-Ж; ж - /dʒ/     
-З; з - /z/   
-И; и - /i/    
-Й; й - /j/     
-К; к - /k/     
-Л; л - /l/    
-М; м - /m/       
-Н; н - /n/     
-Ң; ң - /ŋ/     
-О; о - /o/    
-Ө; ө - /ø/     
-П; п - /p/   
-Р; р - /r/         
-С; с - /s/     
-Т; т - /t/        
-У; у - /u/        
-Ү; ү - /y/    
-Ф; ф - /f/ (only used in loanwords)
-Х; х - /χ/      
-Ц; ц - /ts/ (only used in loanwords)
-Ч; ч - /tʃ/     
-Ш; ш - /ʃ/      
-Щ; щ - /ʃtʃ/ (only used in loanwords)    
-Ъ; ъ - no phonemic representation (indicates non-palatalization of the preceding consonant - only used in loanwords)    
-Ы; ы - /ɯ/    
-Ь; ь - no phonemic representation (indicates palatilazation of the preceding consonant - only used in loanwords)    
-Э; э - /e/   
-Ю; ю - /ju/    
-Я; я - /jɑ/     
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                                        Comment
+"a"            "/ɑ/"                                           ""
+"б"            "/b/"                                           ""
+"в"            "/v/"                                           ""
+"г"            "/ɡ/"                                           ""
+"д"            "/d/"                                           ""
+"е"            "/e/"                                           ""
+"ё"            "/jo/"                                          ""
+"ж"            "/dʒ/"                                          ""
+"з"            "/z/"                                           ""
+"и"            "/i/"                                           ""
+"й"            "/j/"                                           ""
+"к"            "/k/"                                           ""
+"л"            "/l/"                                           ""
+"м"            "/m/"                                           ""
+"н"            "/n/"                                           ""
+"ң"            "/ŋ/"                                           ""
+"о"            "/o/"                                           ""
+"ө"            "/ø/"                                           ""
+"п"            "/p/"                                           ""
+"р"            "/r/"                                           ""
+"с"            "/s/"                                           ""
+"т"            "/t/"                                           ""   
+"у"            "/u/"                                           ""
+"ү"            "/y/"                                           ""
+"ф"            "/f/"                                 "only used in loanwords"
+"х"            "/χ/"                                           ""
+"ц"            "/ts/"                                "only used in loanwords"  
+"ч"            "/tʃ/"                                          ""
+"ш"            "/ʃ/"                                           ""
+"щ"            "/ʃtʃ/"                               "only used in loanwords"      
+"ъ"             ""        "indicates non-palatalization of the preceding consonant - only used in loanwords"      
+"ы"            "/ɯ/"                                           ""
+"ь"             ""        "indicates palatilazation of the preceding consonant - only used in loanwords"     
+"э"            "/e/"                                           ""
+"ю"            "/ju/"                                          ""
+"я"            "/jɑ/"                                          ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
@@ -88,5 +119,7 @@ A; a - /ɑ/
 
 # Misc. Rules
 
-* /k/, /g/, and /l/ are realized as [q], [ɢ], and [ɫ] respectively preceding back vowels [@johanson_kirghiz_2006, pg. 345].    
-* The Kirghiz language implements two types of vowel harmony [@herbert_kirghiz_1997, pg. 7].
+* /k/, /ɡ/, and /l/ are realized as [q], [ɢ], and [ɫ] respectively preceding back vowels [@johanson_kirghiz_2006, pg. 345].    
+* The Kirghiz language implements vowel harmony (specifically two different types) [@Hebert1997, pg. 7].
+
+# References

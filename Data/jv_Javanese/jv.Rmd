@@ -11,209 +11,202 @@ Last Updated: 2019-02-08
 
 **Language Family**: Austronesian / Malayo-Polynesian / Javanese
 
+* Also called Djawa, Javanese is spoken in the Banten, Central Java, and East Java provinces of Indonesia. It is also spoken in Yogyakarta and Sumatra island, which are also located within Indonesia.
+
 # Phonology
 
 ## Consonants
 
-### By place of articulation
+* @JvSuharno1982 uses /q/ instead of /ʔ/, but describes the consonant as glottal; @JvNothofer1975 also uses /q/, but in his table gives it the same place of articulation as /h/. For these reasons, I have followed the pattern of the authors (Wolff, Horne, Robson) who prefer /ʔ/.
+* I have chosen to include dental and retroflex stops, but not alveolar stops. The authors I've read have disagreed about which of the aforementioned stops do occur in Javanese; all agree, however, that exactly two of the three places of articulation are represented. Dental and retroflex is the pair that I find to be likeliest.
 
-Bilabial: /p/, /b/, /mb/, /m/, /w/  
-Dental/Alveolar: /t̪/, /d̪/, /nd̪/, /n/, /s/, /l/, /r/  
-Retroflex: /ʈ/, /ɖ/, /nɖ/  
-Palatal: /c/, /ɟ/, /nɟ/, /ɲ/, /j/  
-Velar: /k/, /ɡ/, /ŋ/, /ŋɡ/  
-Glottal: /ʔ/, /h/  
+    - @JvHorne1974: Dental, alveolar  
+    - @JvNothofer1975: Alveolar, retroflex(?)  
+    - @JvRobson2014: Dental, retroflex  
+    - @JvSuharno1982: Dental, retroflex  
+    - @JvWolffChart1982: Dental, alveolar  
+<br/><br/>
 
-@JvSuharno1982 uses /q/ instead of /ʔ/, but describes the consonant as glottal; @JvNothofer1975 also uses /q/, but in his table gives it the same place of articulation as /h/. For these reasons, I have followed the pattern of the authors (Wolff, Horne, Robson) who prefer /ʔ/.
+* Regarding the prenasalized stops, @JvWolffChart1982 does not depict /ᵑɡ/ as assimilating, although @JvNothofer1975 and @JvHorne1974 do. Given that (at least some) other prenasalized stops feature nasal assimilation, and given that /ŋ/ is phonemic in Javanese, I have followed Wolff's example. Although I have not seen explicit attestation of nasal assimilation in the rest of the prenasalized stops, I find it to be likely enough that I have included it in my ruleset.
+* Although @JvWolffChart1982 accounts for the lenis continuants (pharyngealized) /wh/, /nh/, /lh/, /rh/, /jh/, they are unattested elsewhere, so I have not included them in the ruleset.  
+* /f/ and /z/ appear in loanwords [@JvWolffChart1982].
 
-### By manner of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Stops: /p/, /b/, /t̪/, /d̪/, /ʈ/, /ɖ/, /c/, /ɟ/, /k/, /ɡ/, /ʔ/
-Stops (pre-nasalize): /mb/, /nd̪/, /nɖ/, /nɟ/, /ŋɡ/
-Nasals: /m/, /n/, /ɲ/, /ŋ/  
-Fricatives: /s/, /h/  
-Laterals: /l/  
-Trills: /r/  
-Glides: /w/, /j/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-I have chosen to include dental and retroflex stops, but not alveolar stops. The authors I've read have disagreed about which of the aforementioned stops do occur in Javanese; all agree, however, that exactly two of the three places of articulation are represented. Dental and retroflex is the pair that I find to be likeliest.
 
-@JvHorne1974: Dental, alveolar  
-@JvNothofer1975: Alveolar, retroflex(?)  
-@JvRobson2014: Dental, retroflex  
-@JvSuharno1982: Dental, retroflex  
-@JvWolffChart1982: Dental, alveolar  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Dental   Alveolar   Retroflex    Palatal     Velar    Glottal
+Stops                      "p  b"    "t̪  d̪"      ""       "ʈ  ɖ"       "c  ɟ"    "k  ɡ"      "ʔ"
+"Stops (prenasalized)"      "ᵐb"      "ⁿd̪"       ""        "ⁿɖ"         "ⁿɟ"      "ᵑɡ"       ""
+Fricatives                   ""        ""        "s"        ""           ""        ""        "h"  
+Nasals                       "m"       ""        "n"        ""           "ɲ"       "ŋ"       ""
+Trills                       ""        ""        "r"        ""           ""        ""        ""
+Approximants                 "w"       ""        "l"        ""           "j"       ""        ""
+'), TRUE)
 
-### Other notes on consonants
-
-Additional phonemes, per @JvWolffChart1982:  
-Prenasalized stops: /mb/, /nd̪/, /nɖ/, /nɟ/, /ŋɡ/{1}  
-Lenis continuants (pharyngealized): /wh/, /nh/, /lh/, /rh/, /jh/ (Unattested elsewhere, so I have not included them in the ruleset)  
-Sounds found only in loanwords: /f/, /z/  
-
-{1}: Wolff does not depict this consonant as assimilating, but Nothofer and Horne do. Because (at least some) other prenasalized stops feature nasal assimilation, and because /ŋ/ is phonemic in Javanese, I have followed his example. Although I have not seen explicit attestation of nasal assimilation in the rest of the prenasalized stops, I find it to be likely enough that I have included it in my ruleset.
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
 
 ## Vowels
 
-High vowels: /i/, /u/  
-Mid vowels: /e/, /o/  
-Mid-low vowels: /ɛ/, /ə/, /ɔ/  
-Low vowels: /a/  
+* Vowels may occur successively, but they do not form diphthongs when doing so [@JvSuharno1982, page 2].
 
-Vowels may occur successively, but they do not form diphthongs when doing so. [@JvSuharno1982, page 2]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-## Stress
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+High-Mid  "e"         ""           "o"
+Low-Mid   "ɛ"         "ə"          "ɔ"
+Low        ""         "a"          ""
+'), TRUE)
 
-Stress falls on the penult, unless the vowel of the penult is /ə/, which is never stressed in Javanese. [@JvRobson2014, page xvi]
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
 
 # Alphabet
 
-## Phonemic
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-a - /a/  
-b - /b/  
-c - /c/ (described by Horne as /t̪s/)  
-d - /d̪/  
-e - /ə/  
-é - /e/  
-è - /ɛ/  
-f - /f/ (only in loanwords; sometimes replaced by /p/; see @JvHorne1974, page xi)  
-g - /ɡ/  
-h - /h/  
-i - /i/  
-j - /ɟ/ (described by Horne as /d̪z/)  
-k - /k/  
-l - /l/  
-m - /m/  
-n - /n/  
-o - /o/  
-ô - /ɔ/ (unattested in Crubadan corpus, and hence omitted from ruleset)  
-p - /p/  
-q - /ʔ/ (only in loanwords)  
-r - /r/  
-s - /s/  
-t - /t̪/  
-u - /u/  
-v - /f/ (only in loanwords; per Horne, is an alternate spelling of <f>)  
-w - /w/  
-y - /j/  
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                                Comment
+"a"            "/a/"                                   ""
+"b"            "/b/"                                   ""
+"c"            "/c/"                   "described by @JvHorne1974 as /t̪s/"  
+"d"            "/d̪/"                                   ""
+"e"            "/ə/"                                   ""
+"é"            "/e/"                                   ""
+"è"            "/ɛ/"                                   ""
+"f"            "/f/"  "only in loanwords; sometimes replaced by /p/ (see @JvHorne1974, p. xi)"  
+"g"            "/ɡ/"                                   ""
+"h"            "/h/"                                   ""
+"i"            "/i/"                                   ""
+"j"            "/ɟ/"                    "described by @JvHorne1974 as /d̪z/"  
+"k"            "/k/"                                   ""
+"l"            "/l/"                                   ""
+"m"            "/m/"                                   ""
+"n"            "/n/"                                   ""
+"o"            "/o/"                                   ""
+"ô"            "/ɔ/"                   "not present in the Crúbadán corpus"  
+"p"            "/p/"                                   ""
+"q"            "/ʔ/"                           "only in loanwords"  
+"r"            "/r/"                                   ""
+"s"            "/s/"                                   ""
+"t"            "/t̪/"                                   ""
+"u"            "/u/"                                   ""
+"v"            "/f/"        "only in loanwords; per @JvHorne1974, is an alternate spelling of ⟨f⟩"
+"w"            "/w/"                                   ""
+"y"            "/j/"                                   ""
+**Multigraph**  ""                                     ""
+"dh"           "/ɖ/"                       "some transcriptions use ⟨ḍ⟩"
+"mb"           "/ᵐb/"                                  ""
+"nd"           "/ⁿd̪/"                                  ""
+"ng"           "/ŋ/"                                   ""
+"nj"           "/ᶮɟ/"                                  ""
+"ny"           "/ɲ/"                                   ""
+"th"           "/ʈ/"                        "some transcriptions use ⟨ṭ⟩"
+"ndh"          "/ⁿɖ/"                                  ""  
+"ngg"          "/ᵑɡ/"                                  ""
+'), TRUE)
 
-### Digraphs
-
-dh - /ɖ/  
-mb - /ᵐb/  
-nd - /ⁿd̪/  
-ng - /ŋ/  
-nj - /ᶮɟ/  
-ny - /ɲ/  
-th - /ʈ/  
-
-Some transcriptions use <ḍ> and <ṭ> in place of <dh> and <th>.
-
-### Trigraphs
-
-ndh - /ⁿɖ/  
-ngg - /ᵑɡ/  
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Javanese Script
 
-A ruleset for the Javanese abugida is also provided at jv-jscript.rules. Note that, because Crubadan's only Javanese corpus uses the Latin script, the Javanese-script ruleset is not as thoroughly tested as its Latin-script counterpart.
+* A ruleset for the Javanese abugida is also provided (jv-jscript.rules). Because Crúbadán's only Javanese corpus uses the Latin script, the Javanese-script ruleset is not as thoroughly tested as its Latin-script counterpart (no corresponding verify file).
+* The phonology of the Javanese script is taken from @JvOmniglot and @JvRomanization.
+* Despite being present in the Latin script, /ɛ/ does not seem to be attested in the Javanese script.
 
-The phonology of the Javanese script is taken from @JvOmniglot and @JvRomanization.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-## Consonants
+alphabet <- read.table(textConnection('
+"Consonant Grapheme"      Phoneme                          Comment
+"ꦲ"                      "/h/"    "also used as the zero consonant in word-initial contexts"  
+"ꦤ"                      "/n/"                              ""
+"ꦕ"                      "/c/"                              ""
+"ꦫ"                      "/r/"                              ""
+"ꦏ"                     "/k/"                               ""
+"ꦢ"                     "/d̪/"                               ""
+"ꦠ"                     "/t̪/"                               ""
+"ꦱ"                     "/s/"                                ""
+"ꦮ"                     "/w/"                               ""
+"ꦭ"                    "/l/"                                ""
+"ꦥ"                     "/p/"                                ""
+"ꦣ"                    "/ɖ/"                                ""
+"ꦗ"                     "/ɟ/"                               ""
+"ꦪ"                    "/j/"                                ""
+"ꦚ"                   "/ɲ/"                                ""
+"ꦩ"                    "/m/"                                ""
+"ꦒ"                   "/ɡ/"                                ""
+"ꦧ"                    "/b/"                               ""
+"ꦛ"                    "/ʈ/"                                ""
+"ꦔ"                    "/ŋ/"                                ""
+"**Consonant Diacritic**"   ""      "these predominantly form the codas of their syllables"
+ꦀ                     "/m/"                                 ""
+ꦁ                      "/ŋ/"                                 ""
+ꦂ                      "/r/"                                 ""
+ꦃ                     "/h/"                                  ""
+ꦽ                     "/rə/"                                 ""
+ꦾ                     "/j/"                                 ""
+ꦿ                      "/r/"                                ""
+꧀                       "∅"                 "nullifies the vowel in its syllable"
+"**Vowel Grapheme**"     ""                                 ""                  
+"ꦄ"                  "/a/"                                 ""
+"ꦆ"                  "/i/"                                 ""
+"ꦈ"                  "/u/"                                 ""
+"ꦌ"                  "/e/"                                 ""
+"ꦎ"                  "/o/"                                 ""
+"**Vowel Diacritic**"  ""    "In the absence of a vowel diacritic, /a/ is taken as the \'default\' vowel for a syllable"
+ꦶ                    "/i/"                                 ""
+ꦸ                    "/u/"                                 ""
+ꦺ                   "/e/"                                 ""
+ꦺ                  "/o/"                                  ""
+ꦼ                    "/ə/"                                 ""
+"**Newer Orthographic Variation (Aksara)**"    ""         ""
+"ꦉ"                 "/rə/"                                ""
+"ꦊ"                 "/lə/"                                ""
+'), TRUE)
 
-ꦲ - /h/ (also used as the zero consonant in word-initial contexts)  
-ꦤ - /n/  
-ꦕ - /c/  
-ꦫ - /r/  
-ꦏ - /k/  
-ꦢ - /d̪/  
-ꦠ - /t̪/  
-ꦱ - /s/  
-ꦮ - /w/  
-ꦭ - /l/  
-ꦥ - /p/  
-ꦣ - /ɖ/  
-ꦗ - /ɟ/  
-ꦪ - /j/  
-ꦚ - /ɲ/  
-ꦩ - /m/  
-ꦒ - /ɡ/  
-ꦧ - /b/  
-ꦛ - /ʈ/  
-ꦔ - /ŋ/
+kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align = 'c') %>%
+  kable_styling("bordered")
+```
 
-### Consonant Diacritics
+# Syllable Structure
 
-These predominantly form the codas of their syllables.
+* Syllables take the format (CC)V(C) [@JvHorne1974, p. xiv].
 
-ꦀ - /m/  
-ꦁ - /ŋ/  
-ꦂ - /r/  
-ꦃ - /h/  
-ꦽ - /rə/  
-ꦾ - /j/  
-ꦿ - /r/
+# Lenition rules
 
-꧀ - ∅ (nullifies the vowel in its syllable)
+* /h/ deleted intervocalically if between non-identical vowels [@JvRobson2014, p. xvi].
+* word-final /k/ debuccalizes to [ʔ] (ibid.).
+* Tense vowels become lax in closed syllables [@JvHorne1974, p. xi].
 
-## Vowels
+# Misc. Rules
 
-ꦄ - /a/  
-ꦆ - /i/  
-ꦈ - /u/  
-ꦌ - /e/  
-ꦎ - /o/
-
-### Vowel Diacritics
-
-In the absence of a vowel diacritic, /a/ is taken as the "default" vowel for a syllable.
-
-ꦶ - /i/  
-ꦸ - /u/  
-ꦺ - /e/  
-ꦺ - /o/  
-ꦼ - /ə/  
-
-Despite being present in the Latin script, /ɛ/ does not seem to be attested in the Javanese script.
-
-## Newer Aksara
-
-ꦉ - /rə/  
-ꦊ - /lə/
-
-# More Rules
-
-Syllables take the format (CC)V(C).
-
-* The following consonants do not occur word-finally [@JvSuharno1982, page 6]:
-  * Voiced stops (due to word-final devoicing)
-  * Palatal and retroflex consonants
-  * Glides
-  * /h/
-  * Any consonant cluster
-* Conversely,
-* /e/ and /ɛ/ do not occur word-finally; /a/ only occurs word-finally in the word <ora> [@JvSuharno1982, page 6]
-* Except in interjections, /ə/ never occurs word-finally or before /ʔ/ [@JvNothofer1975, page 9]
-* /ʔ/ always appears word-finally, except in interjections where it can be intervocalic [@JvNothofer1975, page 9]
-* /h/ only occurs word-initially in interjections or loanwords [@JvRobson2014, page xvi]
-* /ʔ/ inserted before the suffix <-aké> or after the prefix <sa-> [@JvRobson2014, page xvi]
-* Nasal prefixes added to many verb forms [@JvRobson2014, p. 12]
-
-## Lenition rules
-
-* /h/ deleted intervocalically if between non-identical vowels [@JvRobson2014, page xvi]
-* word-final /k/ debuccalizes to [ʔ]
-
-### Vowel Lenition
-
-* tense vowels become lax in closed syllables [@JvHorne1974, page xi]
-
-# Examples
-
-**/h/-deletion:**  
-lungguh - /luᵑɡuh/ - to sit; lungguhan - /luᵑɡuan/ - sitting  
-mulih - /mulih/ - to return home; mulihé - /mulie/ - his return
+* The following consonants do not occur word-finally [@JvSuharno1982, p. 6]:
+    - Voiced stops (due to word-final devoicing)
+    - Palatal and retroflex consonants
+    - Glides
+    - /h/
+    - Any consonant cluster
+* Conversely:
+    - /e/ and /ɛ/ do not occur word-finally; /a/ only occurs word-finally in the word <ora> [@JvSuharno1982, p. 6].
+    - Except in interjections, /ə/ never occurs word-finally or before /ʔ/ [@JvNothofer1975, p. 9].
+    - /ʔ/ always appears word-finally, except in interjections where it can be intervocalic [@JvNothofer1975, p. 9].
+    - /h/ only occurs word-initially in interjections or loanwords [@JvRobson2014, p. xvi].
+    - /ʔ/ inserted before the suffix <-aké> or after the prefix <sa-> [@JvRobson2014, p. xvi].
+    - Nasal prefixes added to many verb forms [@JvRobson2014, p. 12].
 
 # References

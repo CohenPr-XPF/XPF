@@ -1,0 +1,27 @@
+# Nobonob Rule Set
+# Written by: Emily
+# Last Updated: 2019-11-06
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdehiklmnoptuw],,,,
+class,vowels,[aeiou],,,,
+class,prob,[pg],,,,
+# Individual Letters
+sub,q,ɓ,2,,,
+sub,ḏ,ɗ,2,,,
+sub,g,ɡ,2,,,
+sub,g̱,ɠ,2,,,
+sub,ḵ,k ː,2,,,
+sub,p̱,p ː,2,,,
+sub,ṯ,t ː,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Long Vowels
+ipasub,({vowels}) \1,\1 ː,2,,,
+# Implosives/Geminates (the macron under the characters is sometimes interpreted as separate from the character)
+sub,k,k ː,3,,̱,
+sub,p,p ː,3,,̱,
+sub,t,t ː,3,,̱,
+sub,d,ɗ,3,,̱,
+sub,g,ɠ,3,,̱,
+sub,̱,,2,{prob},,

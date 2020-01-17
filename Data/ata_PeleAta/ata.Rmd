@@ -11,7 +11,7 @@ Last updated: 2019-11-08
 
 **Language family**: The classification of Pele-Ata is not very clear. Ethnologue classifies it as:
 
-    East Papuan / Yele-Solomons-New Britain / New Britain / Wasi
+East Papuan / Yele-Solomons-New Britain / New Britain / Wasi
 
 However, @campbell2017 classifies it as a language isolate, stating that similarities among such languages within the (tentative) family are far too small to warrant any genealogical relation [also noted in @Campbell2010, pp. 6-7].
 
@@ -31,7 +31,6 @@ library(kableExtra)
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial   Alveolar    Velar   Glottal
 Stops                       "p"       "t"        "k"      "ʔ"
-Affricates                   ""       ""         ""       ""
 Fricatives                  "β"       "s"        "x"      ""
 Nasals                      "m"       "n"        "ŋ"      ""
 Approximants                ""        "l"        ""       ""
@@ -46,7 +45,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 ## Vowels
 
 * Vowel length is phonemic in Pele-Ata [@hashimoto2003, p. 2]. Long vowels are indicated by duplicate graphemes.
-* Pele-Ata has a large number of possible diphthongs, which, depending on the syllable structure, can be interpreted as either a complex nucleus or a sequence of vowels [@hashimoto2003, p. 3]. Thus, they will not be transcribed in the rules.
+* Pele-Ata has a large number of possible diphthongs, which, depending on the syllable structure, can be interpreted as either complex nuclei or sequences of vowels [@hashimoto2003, p. 3]. Thus, they will not be transcribed in the rules.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -64,7 +63,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* Orthographically, ⟨w⟩ and ⟨j⟩ are used are sometimes used to represent /u/ and /i/ respectively, which will be transcribed as such [@hashimoto2003, p. 3].
+* Orthographically, ⟨w⟩ and ⟨j⟩ are sometimes used to represent /u/ and /i/ respectively, which will be transcribed as such [@hashimoto2003, p. 3].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -102,11 +101,11 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules  
 
-* /s/ is palatalized preceding /i/ [@hashimoto2003, p. 3].
-* /x/ becomes voiced intervocalically (ibid.).
+* /x/ becomes voiced intervocalically [@hashimoto2003, p. 3].
 
 # Misc. Rules
 
+* /s/ is palatalized preceding /i/ [@hashimoto2003, p. 3].
 * /i/ and /u/ become [j] and [w] word-initially preceding /o/ and /ɑ/ [@hashimoto2003, p. 3].
 * Epenthetic [j] and [w] are inserted intervocalically (agreeing with the first vowel), in the sequences /io/, /iɑ/, /uo/, and /uɑ/ (ibid.).
 

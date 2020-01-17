@@ -102,7 +102,7 @@ kable(alphabet, align = 'c') %>%
 
 * /n/ and /r/ occur in free variation in some instances [@Rich1963, p. 194].
 * /t/, /n/, /ʃ/, /r/, and /k/ geminate allophonically between homorganic consonants [@Rich1963, p. 195].
-* /w/ and /y/ are nasalized following nasals or nasal-vowel sequences [@Rich1963, pp. 196, 197].
+* /w/ and /j/ are nasalized following nasals or nasal-vowel sequences [@Rich1963, pp. 196, 197].
 * Vowels are nasalized following nasals and /h/ (most often) [@Rich1963, p. 197].
 
 # References

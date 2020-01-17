@@ -17,7 +17,7 @@ sub,g,ɡ,1,,,
 sub,h,,1,,,
 sub,ñ,ɲ,1,,,
 sub,r,ɾ,1,,,
-sub,r,r,2,^,,
+sub,r,r,2,^,,"<r> is a trill word-initially"
 sub,t,t̪,1,,,
 sub,ü,u,1,,,
 sub,v,b,1,,,

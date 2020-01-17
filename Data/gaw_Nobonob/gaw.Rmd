@@ -1,0 +1,110 @@
+---
+title: "Nobonob"
+author: "Emily Strand"
+bibliography: gaw.bib
+output: html_document
+---
+
+Last updated: 2019-11-06
+
+# Background
+
+**Language family**: Trans-New Guinea / Madang / Croisilles / Mabuso / Hanseman / Garuh-Foran
+
+* Nobonob is spoken in the Madang province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+* /r/ and /s/ appear only in loanwords [@aeschliman_nobonob_1992, p. 4].
+* Nobonob makes an interesting four way distinction between stops. That is, not only does it have the standard voiceless and voiced series, it also has a voiceless geminate series and a voiced implosive series [@aeschliman_nobonob_1992, p. 1].
+* @reesink_structures_1987 states that prenasalized stops are present in the language, which is consistent with others within the language family (p. 12); however it seems that such consonants are very marginal. Also, given that other documentation on the matter could not be found, I have opted for the inventory described in @aeschliman_nobonob_1992.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Alveolar    Palatal     Velar    Glottal
+"Stops (voiceless)"        "p  pː"     "t  tː"      ""       "k  kː"     ""     
+"Stops (voiced)"           "b  ɓ"      "d  ɗ"       ""       "ɡ  ɠ"      ""
+Fricatives                  ""           ""         ""         ""        "h"
+Nasals                      "m"         "n"         ""         ""        ""
+Approximants                "w"         "l"         "j"        ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: The voiceless stops are ordered plain and long and the voiced stops are ordered plain and implosive.", general_title = "")
+```
+
+## Vowels
+
+* Vowel length is contrastive in Nobonob [@aeschliman_nobonob_1992, p. 4]. Long vowels are indicated by repeated graphemes.
+* Just like other Trans-New Guinea languages, Nobonob has an abundance of vowel sequences [@aeschliman_nobonob_1992, p. 3]. It is, however, unclear whether they are realized as complex phonemes or independent vowels. Therefore, they will not be transcribed in the rules.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```   
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"             "a"
+"b"             "b"
+"q"             "ɓ"
+"d"             "d"
+"ḏ"             "ɗ"
+"e"             "e"
+"g"             "ɡ"
+"g̱"             "ɠ"
+"h"             "h"
+"i"             "i"
+"k"             "k"
+"ḵ"             "kː"
+"l"             "l"
+"m"             "m"
+"n"             "n"
+"o"             "o"
+"p"             "p"
+"p̱"             "pː"
+"t"             "t"
+"ṯ"             "tː"
+"u"             "u"
+"w"             "w"
+"y"             "j"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* Following a vowel or a nasal consonant, /ɓ/ debuccalizes [@aeschliman_nobonob_1992, p. 3].
+
+# Misc. Rules
+
+* /l/ is rounded preceding /u/ [@aeschliman_nobonob_1992, p. 4].
+* /ɗ/ is realized as [t̪ʰ] in some dialects (ibid.).
+
+# References

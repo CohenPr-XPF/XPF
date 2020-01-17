@@ -11,106 +11,115 @@ Last Updated: 2019-06-24
 
 **Language Family**: Mixe-Zoque / Mixean / Mixe / Oaxaca Mixe / Totontepec Mixe
 
+* Totontepec Mixe is spoken within 10 villages in the state of Oaxaca, located in Southern Mexico.
+
 # Phonology
 
 ## Consonants
 
-### By place of articulation
+* /ʐ/ is said to be a phoneme by @MtoCrawford1963, occurring intervocalically and following nasals (p. 44). However, I feel that occurrences of this is a due to a voicing process. @MtoSchoenhals1965 states that the phonemes only occurs in loanwords (p. 300). For these reasons, I have chosen not to include it below.
 
-Labial: /p/, /m/, /v/  
-Alveolar: /t/, /d/, /ts/, /n/, /s/  
-Retroflex: /ʂ/, /ʐ/  
-Palatal: /j/  
-Velar: /k/, /ɡ/  
-Glottal: /ʔ/, /h/  
+```{r echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
 
-### By manner of articulation
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-Stops: /p/, /t/, /d/, /k/, /ɡ/, /ʔ/  
-Affricates: /ts/  
-Nasals: /m/, /n/  
-Fricatives: /v/, /s/, /ʂ/, /ʐ/, /h/  
-Approximants: /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar   Retroflex   Palatal    Velar   Glottal
+Stops                      "p"      "t  d"     ""          ""         "k  g"  "ʔ"
+Affricates                 ""       "ts"       ""          ""         ""      ""
+Fricatives                 "v"      "s"        "ʂ"         ""         ""      "h"
+Nasals                     "m"      "n"        ""          ""         ""      ""
+Approximants               ""       ""         ""          "j"        ""      ""
+'), header = TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless, whereas those on the right are voiced.", general_title = "")
+```
 
 ## Vowels
 
-Front: /i/, /e/, /æ/  
-Central: /ɨ/, /ʌ/, /a/  
-Back: /u/, /ʊ/, /o/  
+* Vowel length is contrastive in Totontepec Mixe [@MtoCrawford1963, p. 32]. Long vowels are showed by doubling the vowel characters [@MtoSchoenhals1965, p. 301].
 
-Vowel length is contrastive in Totontepec Mixe. [@MtoCrawford1963, p. 32]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front    Central   Back
+High   "i"      "ɨ"       "u ʊ"
+Mid    "e"      ""        "o"
+Low    "æ"      "a"       "ʌ"
+'), TRUE)
 
-Stress is lexically significant, and generally falls upon the last complex vowel in a word. [@MtoSchoenhals1965, pp. 302-303]
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote("Note: The high back vowels are ordered tense and lax.", general_title = "")
+```
 
 # Alphabet
 
-a - /a/  
-a̱ - /ʌ/  
-c - /k/  
-d - /d/  
-e - /e/  
-e̱ - /æ/  
-g - /ɡ/  
-i - /i/  
-j - /h/  
-k - /k/  
-m - /m/  
-n - /n/  
-ñ - /n/ (since [ɲ] is not contrastive)  
-o - /ʊ/  
-o̱ - /o/ (described by @MtoSchoenhals1965 as more open than <o> (p. 300))  
-p - /p/  
-s - /s/  
-t - /t/  
-' - /ʔ/  
-u - /u/  
-u̱ - /ɨ/  
-v - /v/  
-x - /ʂ/  
-y - /j/  
+* ⟨b⟩, ⟨f⟩, ⟨k⟩, ⟨l⟩, ⟨ll⟩, ⟨r⟩, and ⟨z⟩ appear in loanwords [@MtoSchoenhals1965, pp. 299-300].  
 
-## Digraphs
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-ch - /ʂ/  
-qu - /k/  
-ts - /ts/  
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                      Comment
+"a"            "/a/"                         ""
+"a̱"            "/ʌ/"                         ""
+"c"            "/k/"                         ""
+"d"            "/d/"                         ""
+"e"            "/e/"                         ""
+"e̱"            "/æ/"                         ""
+"g"            "/ɡ/"                         ""
+"i"            "/i/"                         ""
+"j"            "/h/"                         ""
+"k"            "/k/"                         ""
+"m"            "/m/"                         ""
+"n"            "/n/"                         ""
+"ñ"            "/n/"             "since [ɲ] is not contrastive"
+"o"            "/ʊ/"                         ""
+"o̱"            "/o/" "described by @MtoSchoenhals1965 as more open than ⟨o⟩ (p. 300)"  
+"p"            "/p/"                         ""
+"s"            "/s/"                         ""
+"t"            "/t/"                         ""
+"\'"           "/ʔ/"                         ""
+"u"            "/u/"                         ""
+"u̱"            "/ɨ/"                         ""
+"v"            "/v/"                         ""
+"x"            "/ʂ/"                         ""
+"y"            "/j/"                         ""
+**Digraph**     ""                           ""
+"ch"           "/ʂ/"                         ""
+"qu"           "/k/"                         ""
+"ts"           "/ts/"                        ""
+'), TRUE)
 
-## Letters Exclusive to Loanwords
-
-b - /b/  
-f - /f/  
-k - /k/  
-l - /l/  
-ll - /ʎ/  
-r - /ɾ/  
-z - /z/  
-
-## Orthographic Notes
-
-Long vowels are showed by doubling the vowel characters. [@MtoSchoenhals1965, p. 301]
-
-Words in Totontepec Mixe must be consonant-initial; words written with initial vowels have unwritten /ʔ/ at the beginning. [@MtoSchoenhals1965, p. 302]
-
-@MtoCrawford1963 describes /ʐ/ as phonemic, but it only appears in limited distribution [@MtoCrawford1963, p. 44] and does not seem to be clearly reflected in the orthography, so I have decided to exclude it from my ruleset.
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
-* /v/ approximantizes to [w] in some contexts. [@MtoCrawford1963, p. 37]
-* /p/ and /ts/ voice syllable-initially when preceded by nasals, or when in syllable-initial clusters. [@MtoCrawford1963, p. 38, 42]
-* In unstressed syllables, the contrast collapses between each of the following pairs of vowels: /u ʊ/ /ɨ ʌ/ /e æ/ [@MtoCrawford1963, p. 40]
-* In the coda of unstressed non-final syllables, voiceless stops are unreleased. [@MtoCrawford1963, p. 42]
-* At the beginning of a non-stop-final coda cluster, voiceless stops are unreleased. [@MtoCrawford1963, p. 43]
-* /n/ assimilates to the place of following velar or palatal consonants. [@MtoCrawford1963, p. 44]
-* When intervocalic, following a long vowel, or as part of a syllable-initial cluster, /ʔ/ reduces to a laryngealization of the preceding vowel. [@MtoCrawford1963, p. 45]
-* Central vowels tend to be fronted near /j/ or /ts/. [@MtoCrawford1963, p. 47]
+* /v/ approximantizes to [w] in some contexts [@MtoCrawford1963, p. 37].
+* /p/ and /ts/ voice syllable-initially when preceded by nasals, or when in syllable-initial clusters [@MtoCrawford1963, p. 38, 42].
+* In unstressed syllables, the contrast collapses between each of the following pairs of vowels: /u ʊ/ /ɨ ʌ/ /e æ/ [@MtoCrawford1963, p. 40].
+* In the coda of unstressed non-final syllables, voiceless stops are unreleased [@MtoCrawford1963, p. 42].
+* At the beginning of a non-stop-final coda cluster, voiceless stops are unreleased [@MtoCrawford1963, p. 43].
+* /n/ assimilates to the place of following velar or palatal consonants [@MtoCrawford1963, p. 44].
+* When intervocalic, following a long vowel, or as part of a syllable-initial cluster, /ʔ/ reduces to a laryngealization of the preceding vowel [@MtoCrawford1963, p. 45].
+* Central vowels tend to be fronted near /j/ or /ts/ [@MtoCrawford1963, p. 47].
 
 # Misc. Rules
 
-* /v/ devoices in some coda clusters, and syllable-finally after a non-low vowel. [@MtoCrawford1963, p. 38]
-* Postconsonantal /j/ is usually realized as palatalization of the prior consonant. [@MtoCrawford1963, p. 39]
-  * The most dramatic case of this is that the sequence /ts j/ is realized as [tʃ]. [@MtoCrawford1963, p. 41]
-* Voiceless stops aspirate when word-final or in the coda of a stressed syllable. [@MtoCrawford1963, p. 42]
-* Voiceless stops at the beginning of a stop-final coda cluster aspirate. [@MtoCrawford1963, p. 43]
-* Nasals devoice when in the same cluster as /h/, or when in clusters of three or more consonants. [@MtoCrawford1963, pp. 44-45]
+* Words in Totontepec Mixe must be consonant-initial; words written with initial vowels have unwritten /ʔ/ at the beginning [@MtoSchoenhals1965, p. 302].
+* /v/ devoices in some coda clusters, and syllable-finally after a non-low vowel [@MtoCrawford1963, p. 38].
+* Postconsonantal /j/ is usually realized as palatalization of the prior consonant [@MtoCrawford1963, p. 39].
+  * The most dramatic case of this is that the sequence /ts j/ is realized as [tʃ] [@MtoCrawford1963, p. 41].
+* Voiceless stops aspirate when word-final or in the coda of a stressed syllable [@MtoCrawford1963, p. 42].
+* Voiceless stops at the beginning of a stop-final coda cluster aspirate [@MtoCrawford1963, p. 43].
+* Nasals devoice when in the same cluster as /h/, or when in clusters of three or more consonants [@MtoCrawford1963, pp. 44-45].
 
 # References

@@ -3,7 +3,7 @@
 # Edited by: Emily
 # Last updated: 2019-09-18
 type,sfrom,sto,weight,precede,follow,comment
-class,passthrough,[abdefghiklmnprstvz],,,,
+class,passthrough,[abdefhiklmnprstvz],,,,
 class,n-follower,(t|d|g|k|ts|j),,,,
 class,bi-stop,[pb],,,,
 class,alv,[td],,,,
@@ -13,6 +13,7 @@ class,i,[ìíî],,,,
 class,o,[oòó],,,,
 class,punct,['ꞌˈ‘’-],,,,
 # Individual Letters
+sub,g,ɡ,2,,,
 sub,j,dz,2,,,
 sub,o,u,2,,,
 sub,y,i,2,,$,
@@ -22,24 +23,24 @@ sub,b,ᵐb,2,m,,
 sub,p,ᵐp,2,m,,
 sub,d,ⁿd,2,n,,
 sub,t,ⁿt,2,n,,
-sub,g,ᵑg,2,n,,
+sub,g,ᵑɡ,2,n,,
 sub,k,ᵑk,2,n,,
 sub,j,ⁿdz,2,n,,
 sub,t,tʳ,2,,r,
 sub,d,dʳ,2,,r,
 sub,t,ts,2,,s,
-sub,m,,3,,{bi-stop},
-sub,n,,3,,{n-follower},
-sub,s,,3,t,,
+sub,m,,3,,{bi-stop},"clean-up",
+sub,n,,3,,{n-follower},"clean-up",
+sub,s,,3,t,,"clean-up",
 # Trigraphs
 sub,t,ⁿtʳ,3,n,r
 sub,d,ⁿdʳ,3,n,r
 sub,t,ⁿts,4,n,s,
-sub,r,,2,{alv},,
+sub,r,,2,{alv},,"clean-up",
 # Vowels
 sub,({a}),a,2,,,
 sub,({e}),e,2,,,
 sub,({i}),i,2,,,
 sub,({o}),u,2,,,
-
-sub,{punct},,1,,,hyphens and apostrophes are use to join compounds; apostrophes are also used to indicate the elision of a vowel
+# Misc. Rules
+sub,{punct},,1,,,"hyphens and apostrophes are use to join compounds; apostrophes are also used to indicate the elision of a vowel"

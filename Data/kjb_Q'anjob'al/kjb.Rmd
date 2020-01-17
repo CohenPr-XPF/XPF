@@ -68,7 +68,7 @@ Grapheme      Phoneme           Comment
 "a"            "a"                ""
 "b\'"          "ɓ"                ""
 "e"            "e"                ""
-"h"            "Ø"   "represents the absence of a glottal stop before a vowel [@Lichtman2010, p. 3]"
+"h"            "Ø"   "represents the absence of a glottal stop before a vowel word-initially [@Lichtman2010, p. 3]"
 "i"            "i"                ""
 "j"            "x"                ""
 "k"            "k"                ""
@@ -97,7 +97,7 @@ Grapheme      Phoneme           Comment
 "tz"           "ts"               ""
 "tz\'"         "tsʼ"              ""
 "xh"           "ʃ"                ""
-"**Orthographic Variations**"  "" ""
+"**Orthographic Variation**"  "" ""
 "ẍ"            "ʃ"                ""
 "c"            "k"                ""
 "c\'"          "k’"               ""
@@ -117,6 +117,7 @@ kable(alphabet, align = 'c') %>%
 * Stops tend to become voiced and spirantize between voiced stops [@Lichtman2010, p. 18].
 * Nasals and vowels word-finally tend to be deleted [@Lichtman2010, p. 20]. Word-medial vowels may also be deleted.
 * /t/ (word-finally) and /ɓ/ (word and syllable-finally) tend to delete (ibid.).
+* Word-initial glottal stops tend to be elided in fast speech [@Lichtman2010, p. 3].
 
 # Misc. Rules
 

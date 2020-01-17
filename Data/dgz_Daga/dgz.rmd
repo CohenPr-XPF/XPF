@@ -11,7 +11,7 @@ Last updated: 2019-12-16
 
 **Language family**: Trans–New Guinea / Dagan
 
-* Daga is spoken in Papua New Guinea, specifically in the Central, Milne Bay, and Oro province.
+* Daga is spoken in Papua New Guinea, specifically in the Central, Milne Bay, and Oro provinces.
 
 # Phonology
 
@@ -41,7 +41,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar"
 
 ## Vowels
 
-* Like many Trans-New Guinea languages, Daga includes a large amount of diphthongs [@sil2011daga, pp. 2-3].
+* Like many Trans-New Guinea languages, Daga includes a large amount of diphthongs (and some triphthongs) [@sil2011daga, pp. 2-3]. However, these can also be interpreted as vowel sequences [@John1972, p. 24], so they won't be accounted for in the rules.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -55,15 +55,6 @@ Low       ""          "a"          ""
 kable(vowels, align = 'c') %>%
   kable_styling("bordered") %>%
   column_spec(1, bold = TRUE)
-
-
-diphthongs <- read.table(textConnection('
-Diphthongs
-"/ei/, /ai/, /ae/, /ao/, /au/, /oi/, /oe/, /oa/, /ou/, /ui/, /ue/, /ua/"
-'), TRUE)
-
-kable(diphthongs, align = 'c') %>%
-  kable_styling("bordered")
 ```
 
 # Alphabet
@@ -111,11 +102,14 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition
 
-* /t/ spirantizes to [s] and [v] preceding front vowels [@sil2011daga, p. 3].
+* /t/ spirantizes to [s] preceding front vowels [@sil2011daga, p. 3].
 
 
-# Misc Rules
+# Misc. Rules
 
-* There is free variation between /r/ and [l] [@sil2011daga, p. 3].
+* There is free variation between /r/, [ɾ], and [l] [@John1972, p. 20].
+* /n/ assimilates to velar stops (ibid.).
+* /w/ becomes [β] preceding front vowels (ibid.).
+* A phonetic glottal stop is epenthesized preceding word-initial vowels, between like-vowels, and following all word-final vowels (ibid.).
 
 # References

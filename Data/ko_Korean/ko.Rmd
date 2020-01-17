@@ -1,0 +1,139 @@
+---
+title: "Korean"
+author: "Justin Bai"
+bibliography: ko.bib
+output: html_document
+---
+# Background
+
+**Language family**: Language isolate
+
+* Korean a language isolate, but it is heavily influenced by Mandarin.
+* Korean is spoken in Korea, but also in China, Russia, and other regions of Central Asia.
+
+# Phonology
+
+## Consonants
+
+* There is some disagreement within the literature about the nature of the affricates, with some sources considering it postalveolar [@lee1993korean, p. 28] and others considering it alveopalatal [@ahn2009korean, p. 26; @brown2015handbook, p. 7]. We have decided to categorized the affricate as postalveolar.
+* @lee1993korean explains that /j/ and /w/ are not separate phonemes, only appearing as a by-product of diphthongs (p. 30); however, I have chosen to include them in the inventory just as @ahn2009korean and @Kim1999 do (p. 41; p. 315).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Bilabial      Alveolar   Postalveolar   Palatal     Velar         Glottal
+Stops                     "p  p͈  pʰ"   "t  t͈  tʰ"       ""            ""     "k  k͈  kʰ"        ""
+Affricates                   ""            ""      "tʃ  t͈ʃ  tʃʰ"      ""        ""             ""
+Fricatives                   ""          "s  s͈"         ""            ""        ""             "h"
+Nasals                       "m"           "n"          ""            ""        "ŋ"            ""
+Approximants                 ""            "l"          ""            "j"       "w"            ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Where three phonemes share a cell, they are ordered plain, tense, and aspirated.", general_title = "")
+```
+
+## Vowels
+
+* In some dialects of Korean, /e/ and /ɛ/ have merged [@choo2003sounds, pp. 11-12]. Our rules preserve the contrast.
+* Vowel length is traditionally contrastive, but it is not obvious from the orthography [@KoreanGrammarLee]. So, our rules will only output normal length vowels (and no long vowels). This reflects the Seoul dialect as spoken by young speakers who do not consistently distinguish length.
+* There are two types of diphthongs marked in the Korean orthography.
+    - One type of diphthong is sometimes referred to as "y" diphthongs because they have a /j/ sound [@choo2003sounds].
+    - The other type of diphthong is the "w" diphthong.
+    - However, these can be interpreted as vowel-glide sequences [@Berrjod2014, p. 18], so they will be separated in the transcription.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"        "ɨ"          "u"
+High-Mid "e  ø"      ""           "o"
+Low-Mid   "ɛ"        ""           "ʌ"
+Low       ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```    
+
+# Alphabet
+
+* The Korean alphabet is known as Hangul. The individual letters are known as jamo,
+which are composed into syllable blocks.
+* There are some notes to be made about how certain sounds have been transcribed
+as there is some debate in the literature about how best to transcribe particular
+segments in Korean.
+    - As for representing a transcription for the tense stops, there are various methods employed within the literature. Some authors use an apostrophe (e.g. /p’/). However, we have decided to use /◌͈/, which is a diacritic used to indicate "strong articulation."
+    - ⟨ㅚ⟩ is sometimes transcribed as /wɛ/. However, following the traditional vowel
+  system of Korean [@brown2015handbook], our rules transcribe it as /ø/.
+    - ⟨ㅡ⟩ has been transcribed in one of two ways within the literature: /ɨ/ or /ɯ/. Our rules use /ɨ/ as "ㅡ is produced with the tongue more forward [than ㅜ]" [@choo2003sounds].
+    - ⟨ㅢ⟩ is often transcribed as /ɰi/; however, /ɰi/ is only found at the beginning
+  of words. Elsewhere, ⟨ㅢ⟩ represents /i/, which is reflected in our rules [@choo2003sounds].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+"**Consonant Grapheme**" ""
+"ㄱ"                   "/k/"
+"ㄲ"                   "/k͈/"
+"ㅋ"                   "/kʰ/"
+"ㄷ"                   "/t/"
+"ㄸ"                   "/t͈/"
+"ㅌ"                   "/tʰ/"
+"ㅂ"                   "/p/"
+"ㅃ"                   "/p͈/"
+"ㅍ"                   "/pʰ/"
+"ㅅ"                   "/s/"
+"ㅆ"                   "/s͈/"
+"ㅈ"                   "/tʃ/"
+"ㅉ"                   "/t͈ʃ/"
+"ㅊ"                   "/tʃʰ/"
+"ㅁ"                   "/m/"
+"ㄴ"                   "/n/"
+"ㅇ"                   "/ŋ/"
+"ㄹ"                   "/l/"
+"ㅎ"                   "/h/"
+"Vowel Grapheme"      Phoneme   
+"ㅏ"                   "/a/"
+"ㅔ"                   "/e/"
+"ㅐ"                   "/ɛ/"
+"ㅣ"                   "/i/"
+"ㅗ"                   "/o/"
+"ㅜ"                   "/u/"
+"ㅡ"                   "/ɨ/"
+"ㅓ"                   "/ʌ/"
+"ㅚ"                   "/ø/"
+"**Diphthong Grapheme**" ""
+"ㅑ"                   "/ja/"
+"ㅖ"                   "/je/"
+"ㅒ"                   "/jɛ/"
+"ㅛ"                   "/jo/"
+"ㅠ"                   "/ju/"
+"ㅕ"                   "/jʌ/"
+"ㅢ"                   "/ɨi/"
+"ㅟ"                   "/wi/"
+"ㅞ"                   "/we/"
+"ㅙ"                   "/wɛ/"
+"ㅘ"                   "/wa/"
+"ㅝ"                   "/wʌ/"
+'), TRUE)
+
+kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme"), align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* Voiceless stops become voiced following sonorants and preceding vowels [@ahn2009korean, pp. 26-31]. They also become voiced intervocalically.
+* /l/ is realized as a flap intervocalically [@ahn2009korean, p. 28].
+
+# References

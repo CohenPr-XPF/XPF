@@ -11,7 +11,7 @@ Last updated: 2019-08-28
 
 **Language family**: Indo-European / Italic / Romance / Western / West Ibero-Romance / Asturo-Leonese
 
-* Asturian is spoken in north-west Spain.
+* Asturian is spoken in northwestern Spain.
 
 # Phonology
 
@@ -31,7 +31,7 @@ Affricates                   ""         ""       ""         "tʃ"        ""
 Fricatives                  "f"        "θ"       "s"        "ʃ"         ""
 Nasals                      "m"        ""        "n"        "ɲ"         ""
 Trills                      ""         ""        "r"        ""          ""
-Taps                        ""         ""        "ɾ"        ""          ""
+Flaps                       ""         ""        "ɾ"        ""          ""
 Approximants                ""         ""        "l"      "j  ʎ"        ""
 '), TRUE)
 
@@ -107,21 +107,17 @@ kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
 
-# Stress
-
-* Primary stress is indicated by an accented vowel [@academia_de_la_llingua_asturiana_gramatica_2001, p. 18].  
-
 # Lenition Rules
 
-* Fricatives /θ/, /s/, /ʃ/ and tend to become voiced in coda positions [@academia_de_la_llingua_asturiana_gramatica_2001, pp. 39-40].  
+* Fricatives /θ/, /s/, and /ʃ/ tend to become voiced in coda positions [@academia_de_la_llingua_asturiana_gramatica_2001, pp. 39-40].  
 * /d/ spirantizes intervocalically and followed by /r/ [@academia_de_la_llingua_asturiana_gramatica_2001, p. 38].  
 * /b/, /d/, /ɡ/ become approximates word-medially, following obstruents [@muniz-cachon_asturian_2018, p. 3].    
 * In addition to approximating, /ɡ/ often spirantizes to /ɣ/ (ibid.).  
 
-# Misc Rules
+# Misc. Rules
 
 * An apostrophe indicates a sound is missing - synonymous with a contraction [@academia_de_la_llingua_asturiana_gramatica_2001, p. 18].  
 * Dashes are used to separate sounds that would otherwise be altered due to specified digraphs (retention of pronouns) [@academia_de_la_llingua_asturiana_gramatica_2001, p. 18].  
-* /r/ and /ɾ/ are contrastive word - medially. Otherwise, /r/ occurs word initially and /ɾ/ occurs word finally [@muniz-cachon_asturian_2018, p. 3].  
+* /r/ and /ɾ/ are contrastive word-medially. Otherwise, /r/ occurs word-initially and /ɾ/ occurs word-finally [@muniz-cachon_asturian_2018, p. 3].  
 
 # References

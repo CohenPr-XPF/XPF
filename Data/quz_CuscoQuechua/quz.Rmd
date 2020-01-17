@@ -1,7 +1,7 @@
 ---
 title: "Cusco Quechua"
 author: "Bill Mizgerd"
-bibliography: sq.bib
+bibliography: quz.bib
 output: html_document
 ---
 
@@ -15,83 +15,105 @@ Last Updated: 2019-06-20
 
 ## Consonants
 
-* The voiced stops /b d ɡ/ appear, but only in Spanish loanwords. [@QuzParker1996, p. 71]
-* [ŋ] is traditionally held to be an allophone of /n/, but @QuzEbina2011 argues for it being a distinct phoneme. (p. 4)
+* The voiced stops /b d ɡ/ appear, but only in Spanish loanwords [@QuzParker1996, p. 71].
+* [ŋ] is traditionally held to be an allophone of /n/, but @QuzEbina2011 argues for it being a distinct phoneme (p. 4). I have opted not to include it.
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /pʰ/, /p'/, /m/, /w/  
-Alveolar: /t/, /tʰ/, /t'/, /n/, /s/, /ɾ/, /l/  
-Postalveolar: /tʃ/, /tʃʰ/, /tʃ'/  
-Palatal: /ɲ/, /ʎ/, /j/  
-Velar: /k/, /kʰ/, /k'/  
-Uvular: /q/, /qʰ/, /q'/  
-Glottal: /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops (ejective): /p'/, /t'/, /k'/, /q'/  
-Stops (pulmonic): /p/, /pʰ/, /t/, /tʰ/, /k/, /kʰ/, /q/, /qʰ/  
-Affricates: /tʃ/, /tʃʰ/, /tʃ'/  
-Nasals: /m/, /n/, /ɲ/  
-Fricatives: /s/, /ʃ/, /h/  
-Taps: /ɾ/  
-Approximants: /w/, /l/, /ʎ/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Postalveolar  Palatal  Velar   Uvular   Glottal
+"Stops (pulmonic)"         "p pʰ"  "t tʰ"    ""            ""       "k kʰ"  "q qʰ"   ""
+"Stops (ejective)"         "pʼ"    "tʼ"      ""            ""       "kʼ"    "qʼ"     ""
+"Affricates (pulmonic)"    ""      ""        "tʃ tʃʰ"      ""       ""      ""       ""
+"Affricates (ejective)"    ""      ""        "tʃʼ"         ""       ""      ""       ""
+Fricatives                 ""      "s"       "ʃ"           ""       ""      ""       "h"
+Nasals                     "m"     "n"       ""            "ɲ"      ""      ""       ""
+Taps                       ""      "ɾ"       ""            ""       ""      ""       ""
+Approximants               "w"     "l"       ""            "j ʎ"    ""      ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  footnote(general = "Note: In the stop and affricate rows, phonemes to the left of the cell are plain and phonemes to the right are aspirated. In the approximant row, phonemes to the left of the cell are plain and phonemes to the right are lateral.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /i/, /u/, /a/  
+* The status of /e/ and /o/ is controversial. The sounds first entered the language after contact with Spanish, but @QuzParker1996 argues that they have become contrastive since then (p. 71); conversely, @QuzEbina2011 argues that [e] and [o] are only produced as allophones of /i/ and /u/ near uvular consonants (p. 5). I have opted to prefer the three-vowel analysis in my ruleset.
 
-The status of /e/ and /o/ is controversial. The sounds first entered the language after contact with Spanish, but @QuzParker1996 argues that they have become contrastive since then (p. 71); conversely, @QuzEbina2011 argues that [e] and [o] are only produced as allophones of /i/ and /u/ near uvular consonants (p. 5). I have opted to prefer the three-vowel analysis in my ruleset.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     ""        "u"
+Low       ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Alphabet
 
-a - /a/  
-ch - /tʃ/  
-  chh - /tʃʰ/  
-  ch' - /tʃ'/  
-h - /h/  
-i - /i/  
-k - /k/  
-  kh - /kʰ/  
-  k' - /k'/  
-l - /l/  
-ll - /ʎ/  
-m - /m/  
-n - /n/  
-ñ - /ɲ/  
-p - /p/  
-  ph - /pʰ/  
-  p' - /p'/  
-q - /q/  
-  qh - /qʰ/  
-  q' - /q'/  
-r - /ɾ/  
-s - /s/  
-sh - /ʃ/  
-t - /t/  
-  th - /tʰ/  
-  t' - /tʰ/  
-u - /u/  
-w - /w/  
-y - /j/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-## Notes
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme
+"a"              "/a/"   
+"h"              "/h/"  
+"i"              "/i/"  
+"k"              "/k/"   
+"k\'"            "/kʼ/"  
+"l"              "/l/"   
+"m"              "/m/"  
+"n"              "/n/"  
+"ñ"              "/ɲ/"  
+"p"              "/p/"    
+"p\'"            "/pʼ/"  
+"q"              "/q/"    
+"q\'"            "/qʼ/"  
+"r"              "/ɾ/"  
+"s"              "/s/"  
+"t"              "/t/"    
+"t\'"            "/tʼ/"  
+"u"              "/u/"  
+"w"              "/w/"  
+"y"              "/j/"
+**Multigraph**    ""
+"ch"             "/tʃ/"  
+"chh"            "/tʃʰ/"  
+"ch\'"           "/tʃʼ/"
+"kh"             "/kʰ/"
+"ll"             "/ʎ/"
+"ph"             "/pʰ/"
+"qh"             "/qʰ/"
+"sh"             "/ʃ/"  
+"th"             "/tʰ/"
+'), TRUE)
 
-* Ejective consonants are marked by following the consonant with <'>.
-* Aspiration of a phoneme is typically marked by following the consonant with <h>. [@QuzEbina2011, p. 5]
+kable(alphabet, align = "c") %>%
+    kable_styling("bordered")
+```
+
+
+# Syllable Structure
+
+* Cusco Quechua has a (C)V(C) structure in word-initial syllables, and a CV(C) structure in word-medial syllables [@QuzParker1996, p. 71; @QuzEbina2011, p. 5].
 
 # Lenition Rules
 
-* Syllable-final /k/ and /q/ tend to spirantize to [x] and [χ] respectively; intervocalic /qʰ/ also spirantizes to [χ]. [@QuzEbina2011, p. 4]
-* /pʰ/ spirantizes to [ɸ] in some contexts. [@QuzEbina2011, p. 4] [@QuzMannheim1982, p. 214]
+* Syllable-final /k/ and /q/ tend to spirantize to [x] and [χ] respectively; intervocalic /qʰ/ also spirantizes to [χ] [@QuzEbina2011, p. 4].
+* /pʰ/ spirantizes to [ɸ] in some contexts [@QuzEbina2011, p. 4; @QuzMannheim1982, p. 214].
 
 # Misc. Rules
 
-* Aspirated and ejective stops occur only in syllable onsets, always as the first syllable-initial stop in the root, and only in consonant-initial words. [@QuzParker1996, p. 72]
+* Aspirated and ejective stops occur only in syllable onsets, always as the first syllable-initial stop in the root, and only in consonant-initial words [@QuzParker1996, p. 72].
 
-## Syllable Structure
-
-Cusco Quechua has a (C)V(C) structure in word-initial syllables, and a CV(C) structure in word-medial syllables. [@QuzParker1996, p. 71] [@QuzEbina2011, p. 5]
 
 # References

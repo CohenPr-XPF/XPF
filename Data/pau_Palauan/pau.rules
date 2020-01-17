@@ -4,16 +4,16 @@
 type,sfrom,sto,weight,precede,follow,comment
 # Classes
 # class,apostrophe,['ꞌˈ‘’],,,,
-class,vowel-output,[aɛəiou],,,,
-class,passthrough,[abdiklmnostu],,,,
+class,vowel-output,[aɛiou],,,,
+class,passthrough,[abdiklmostu],,,,
 # Individual Letters
 sub,e,ɛ,4,,,
-sub,ȩ,ə,4,,,
+sub,ȩ,ɛ,4,,,
 sub,r,ɾ,4,,,
 # Digraphs
 sub,c,ʔ,6,,h,"<ch>"
 sub,h,,6,c,,"<ch> cleanup"
-sub,l,lː,6,,l,"<ll>"
+sub,l,l ː,6,,l,"<ll>"
 sub,l,,6,l,,"<ll> cleanup"
 sub,n,ŋ,6,,g,"<ng>"
 sub,g,,6,n,,"<ng> cleanup"

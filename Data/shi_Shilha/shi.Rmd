@@ -11,93 +11,116 @@ Last Updated: 2019-07-09
 
 **Language Family**: Afro-Asiatic / Berber / Northern Berber / Atlas / Shilha
 
-The name of the language is spelled in a variety of ways, including Shilha, Tashelheet, and Tachelhit.
+* The name of the language is spelled in a variety of ways, including Shilha, Tashelheet, and Tachelhit.
+* Shilha is spoken in Morocco.
 
 # Phonology
 
 ## Consonants
 
-* All Shilha consonants can be geminated. [@ShiRidouane2008, p. 323]
-* @ShiApplegate1958 argues for the labialized consonants as allophones that occur before /u/, although he also describes them as having relatively free variation. (pp. 2-3)
-* @ShiKossmann1996 argues for the absence of /nˤ/ and /ʒˤ/. (p. 467)
-* @ShiKossmann1996 argues for velar rather than uvular fricatives. (ibid.)
-* @ShiKossmann1996 states that no minimal pairs exist between labialized consonants and their non-labialized counterparts (p. 468). I will include labialized in my ruleset only if they are orthographically marked.
+* All Shilha consonants can be geminated [@ShiRidouane2008, p. 323].
+* @ShiApplegate1958 argues for the labialized consonants as allophones that occur before /u/, although he also describes them as having relatively free variation (pp. 2-3).
+* @ShiKossmann1996 argues for the absence of /nˤ/ and /ʒˤ/ (p. 467).
+* @ShiKossmann1996 argues for velar rather than uvular fricatives (ibid.).
+* @ShiKossmann1996 states that no minimal pairs exist between labialized consonants and their non-labialized counterparts (p. 468). I have chosen to include labialized consonants in the rule set for those that have been attested, thus represented below.
+* **/ʒˤ/, /nˤ/, /rˤ/, and /lˤ/ don't appear in Crúbadán.**
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /b/, /m/, /f/, /w/  
-Alveolar: /t/, /d/, /n/, /s/, /z/, /r/, /l/  
-Alv. (pharyngealized): /tˤ/, /dˤ/, /nˤ/, /sˤ/, /zˤ/, /rˤ/, /lˤ/  
-Postalveolar: /ʃ/, /ʒ/, /ʒˤ/  
-Palatal: /j/  
-Velar: /k/, /kʷ/, /ɡ/, /ɡʷ/  
-Uvular: /q/, /qʷ/, /χ/, /χʷ/, /ʁ/, /ʁʷ/  
-Pharyngeal: /ħ/, /ʕ/  
-Glottal: /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /b/, /t/, /tˤ/, /d/, /dˤ/, /k/, /kʷ/, /ɡ/, /ɡʷ/, /q/, /qʷ/  
-Nasals: /m/, /n/, /nˤ/  
-Fricatives: /f/, /s/, /sˤ/, /z/, /zˤ/, /ʃ/, /ʒ/, /ʒˤ/, /χ/, /χʷ/, /ʁ/, /ʁʷ/, /ħ/, /ʕ/, /h/  
-Trills: /r/, /rˤ/  
-Approximants: /w/, /l/, /lˤ/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  "Alveolar (pharyngealized)"  Postalveolar  "Postalveolar (pharyngealized)"  Palatal  Velar  Labiovelar  Uvular  Labio-uvular  Pharyngeal   Glottal
+Stops                      "b"      "t d"             "tˤ dˤ"                ""                      ""                    ""     "k ɡ"   "kʷ ɡʷ"     "q"      "qʷ"         ""           ""
+Fricatives                 "f"      "s z"             "sˤ zˤ"                "ʃ ʒ"                   "ʒˤ"                  ""     ""      ""          "χ ʁ"    "χʷ ʁʷ"      "ħ ʕ"       "h"
+Nasals                     "m"      "n"               "nˤ"                   ""                      ""                    ""     ""      ""          ""       ""           ""           ""
+Trills                     ""       "r"               "rˤ"                   ""                      ""                    ""     ""      ""          ""       ""           ""           ""
+Approximants               ""       "l"               "lˤ"                   ""                      ""                    "j"    ""      "w"         ""       ""           ""           ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Alveolar (pharyngealized)", "Postalveolar", "Postalveolar (pharyngealized)", "Palatal", "Velar", "Labiovelar", "Uvular", "Labio-uvular", "Pharyngeal", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 12)) %>%
+  footnote(general = "Note: Phonemes to the left of each cell are voiceless and phonemes to the right of each cell are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /i/, /u/, /a/  
+* [ə] is added through epenthesis in some contexts, but is not a phoneme in its own right [@ShiKossmann1996, p. 468].
+* There are no diphthongs or vowel clusters in Shilha [@ShiKossmann1996, p. 463].
+* @ShiApplegate1958 attests two tonal contours, but does not appear to find them contrastive (p. 6).
 
-* [ə] is added through epenthesis in some contexts, but is not a phoneme in its own right. [@ShiKossmann1996, p. 468]
-* There are no diphthongs or vowel clusters in Shilha. [@ShiKossmann1996, p. 463]
-* @ShiApplegate1958 attests two tonal contours, but does not appear to find them contrastive. (p. 6)
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     ""        "u"
+Low       ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Alphabet
 
-a - /a/   
-b - /b/  
-d - /d/  
-ḍ - /dˤ/  
-e - [ə] (<e> will go to null in the ruleset, due to [ə]'s non-phonemic status in Shilha)  
-ɛ - /ʕ/  
-f - /f/  
-g - /ɡ/  
-ġ - /ʁ/  
-h - /h/  
-ḥ - /ħ/  
-h̬ - /χ/ (in some orthographies)  
-i - /i/  
-j - /ʒ/  
-j̣ - /ʒˤ/  
-k - /k/  
-l - /l/  
-ḷ - /lˤ/  
-m - /m/  
-n - /n/  
-ṇ - /nˤ/  
-q - /q/  
-r - /r/  
-ṛ - /rˤ/  
-s - /s/  
-ṣ - /sˤ/  
-š - /ʃ/  
-t - /t/  
-ṭ - /tˤ/  
-u - /u/  
-w - /w/  
-ʷ - marks labialization of preceding consonant  
-x - /χ/ (in some orthographies)  
-y - /j/  
-z - /z/  
-ẓ - /zˤ/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme               Comment
+"a"              "/a/"                  ""
+"b"              "/b/"                  ""
+"d"              "/d/"                  ""
+"ḍ"              "/dˤ/"                 ""
+"e"              "[ə]"     "⟨e⟩ will go to null in the ruleset due to [ə]\'s non-phonemic status in Shilha"  
+"ɛ"              "/ʕ/"                  ""
+"f"              "/f/"                  ""
+"g"              "/ɡ/"                  ""
+"ġ"              "/ʁ/"                  ""
+"h"              "/h/"                  ""
+"ḥ"              "/ħ/"                  ""
+"h̬"              "/χ/"          "in some orthographies"  
+"i"              "/i/"                  ""
+"j"              "/ʒ/"                  ""
+"j̣"              "/ʒˤ/"                 ""
+"k"              "/k/"                  ""
+"l"              "/l/"                  ""
+"ḷ"              "/lˤ/"                 ""
+"m"              "/m/"                  ""
+"n"              "/n/"                  ""
+"ṇ"              "/nˤ/"                 ""
+"q"              "/q/"                  ""
+"r"              "/r/"                  ""
+"ṛ"              "/rˤ/"                 ""
+"s"              "/s/"                  ""
+"ṣ"              "/sˤ/"                 ""
+"š"              "/ʃ/"                  ""
+"t"              "/t/"                  ""
+"ṭ"              "/tˤ/"                 ""
+"u"              "/u/"                  ""
+"w"              "/w/"                  ""
+"ʷ"               ""          "marks labialization of preceding consonant"  
+"x"              "/χ/"          "in some orthographies"
+"y"              "/j/"                  ""
+"z"              "/z/"                  ""
+"ẓ"              "/zˤ/"                 ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
-* Some dialects spirantize bilabial and velar stops; other dialects spirantize the alveolar stops. [@ShiRidouane2008, p. 323]
+* Some dialects spirantize bilabial and velar stops; other dialects spirantize the alveolar stops [@ShiRidouane2008, p. 323].
 
 # Misc. Rules
 
-* Epenthetic [ə] occurs interconsonantally, except in VCCV or #CCV sequences, where adding [ə] would yield an open syllable. [@ShiKossmann1996, p. 463]
-  * Where there exist more than two consecutive consonants, epenthesis first occurs between the final two consonants in the cluster, and proceeds backwards, adding [ə] in any permissible positions. For instance, the word /iʃrz/ becomes [iʃrəz] rather than \*[iʃərəz] or \*[iʃərz]. (ibid.)
-* A few consonants undergo fortition when they lengthen. /dː/ devoices to [tː], /ʁː/ despirantizes and devoices to [qː], and /wː/ deapproximantizes to [ɡʷː]. [@ShiKossmann1996, p. 465]
+* Epenthetic [ə] occurs interconsonantally, except in VCCV or #CCV sequences, where adding [ə] would yield an open syllable [@ShiKossmann1996, p. 463].
+    - Where there exist more than two consecutive consonants, epenthesis first occurs between the final two consonants in the cluster, and proceeds backwards, adding [ə] in any permissible positions. For instance, the word /iʃrz/ becomes [iʃrəz] rather than \*[iʃərəz] or \*[iʃərz] (ibid.).
+* A few consonants undergo fortition when they lengthen. /dː/ devoices to [tː], /ʁː/ despirantizes and devoices to [qː], and /wː/ deapproximantizes to [ɡʷː] [@ShiKossmann1996, p. 465].
 
 # References

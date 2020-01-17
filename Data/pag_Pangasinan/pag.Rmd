@@ -1,0 +1,114 @@
+---
+title: "Pangasinan"
+author: "Abi Creighton"
+edited by: "Emily Strand"
+bibliography: pag.bib
+output: html_document
+---
+
+Last Updated: 2020-01-17
+
+# Background
+
+**Language family**: Austronesian / Malayo-Polynesian / Northern Philippine / Northern Luzon /South-Central Cordilleran / Southern Cordilleran / Pangasinic / Pangasinan
+
+* Pangasinan is spoken in the Philippines.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"         Bilabial Dental Alveolar Postalveolar Palatal Velar Glottal      
+Stops                             "p b"   "t̪ d̪"     ""        ""         ""    "k ɡ"   ""       
+Affricates                         ""      ""       ""       "tʃ"        ""     ""     ""
+Nasals                             "m"     "n̪"      ""        ""         ""     "ŋ"    ""   
+Fricatives                         ""      ""       "s"       ""         ""     ""     "h"    
+Trills                             ""      "r̪"      ""        ""         ""     ""     ""   
+Approximants                       ""      ""       ""        ""         ""     "w"    ""   
+Laterals                           ""      "l̪"      ""        ""         "j"     ""    ""                 
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced..", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front    Central  Back
+High      "i"        ""     "u"
+Mid       "ɛ"        ""     "ɔ"
+Low       ""         "a"     ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                           Comment
+"a"           "/a/"                               ""
+"b"           "/b/"                               ""
+"c"           "/k/; /s/"   "/s/: preceding front vowels; /k/: preceding back vowels"
+"d"           "/d̪/"                               ""
+"e"           "/ɛ/"                               ""
+"f"           "/p/"                   "appears in Spanish loanwords"
+"g"           "/ɡ/"                               ""
+"k"           "/k/"                               ""
+"h"           "/h/"                               ""
+"i"           "/i/"                               ""
+"j"           "/h/"                   "appears in Spanish loanwords"
+"l"           "/l̪/"                               ""
+"m"           "/m/"                               ""
+"n"           "/n̪/"                               ""
+"o"           "/ɔ/"                               ""
+"p"           "/p/"                               ""
+"q"           "/k/"                               ""
+"r"           "/r̪/"                               ""
+"s"           "/s/"                               ""
+"t"           "/t̪/"                               ""
+"u"           "/u/"                               ""
+"v"           "/b/"                  "appears in Spanish loanwords"
+"w"           "/w/"                               ""
+"y"           "/j/"                               ""
+"z"           "/s/"                  "appears in Spanish loanwords"
+**Digraph**     ""                                ""
+"ch"          "/tʃ/"                              ""
+"ng"          "/ŋ/"                               ""
+"qu"          "/k/"                               ""
+'), TRUE)
+
+kable(alphabet) %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /d/ may be realized intervocalically as a flap [@BentonP1971, p. 16]; /d/ and [ɾ] vary freely word-finally.
+* /t/ and /k/ may be realized as [ʔ] syllable-finally, preceding a consonant [@BentonP1971, pp. 17-18].
+* /k/ may be realized as a fricative intervocalically [@BentonP1971, pp. 18-19].
+
+# Misc. Rules
+
+* Nasals assimilate in place to the following consonant [@BentonP1971, p. 21].
+* /l/ may be realized as [d] word-finally [@BentonP1971, p. 17].
+* A non-phonemic glottal stop is epenthesized word-initially and can be epenthesized intervocalically [@BentonP1971, p. 13].
+
+# References

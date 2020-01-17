@@ -11,6 +11,7 @@ output: html_document
 
 * Bislama is a relatively new language (from the mid 19th century) that is the national language of Vanuatu, a Pacific island country. Bislama is a creole language that has some basis in English [@crowley2004, pp. 1-2].
 
+# Phonology
 ## Consonants
 
 * Not all speakers make a contrast between voiced and voiceless stops. Not all speakers make a contrast between /v/ and /f/ [@crowley2004, p. 14].

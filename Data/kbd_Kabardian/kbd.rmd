@@ -1,121 +1,145 @@
 ---
 title: "Kabardian"
 author: "Emily Strand"
-bibliography: ast.bib
+bibliography: kbd.bib
 output: html_document
 ---
 
-Last Updated: 2019-08-09
+Last Updated: 2019-10-18
 
 # Background
 
-**Language Family**: North Caucasian / Northwest / Circassian
+ **Language Family**: North Caucasian / Northwest / Circassian
+
+* Kabardian is spoken in Western Russia, specifically in the Kabardino-Balkar republic, North Ossetia-Alania republic, and Stavropol Krai.
 
 # Phonology
 
 ## Consonants
 
-* The phonemes were primarily extracted from @hewitt_north_2005, pg. 98] and [@colarusso_grammar_1992, pg. 9].
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-### By place of articulation
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-Bilabial: /p/, /pʼ/, /b/, /m/, /w/  
-Labial-Dental: /f/, /fʼ/, /v/  
-Alveolar: /t/, /tʼ/, /d/, /ts/, /tsʼ/, /dz/, /s/, /z/, /n/, /r/, /ɬ/, /ɬʼ/, /l/  
-Alveolo-palatal: /ɕ/, /ʑ/, /ɕʼ/  
-Palato-alveolar: /ʃ/, /ʒ/, /tʃ/, /tʃʼ/, /dʒ/  
-Palatal: /j/  
-Velar: /kʷ/, /kʷʼ/, /xʷ/, /ɣ/, /gʷ/, /x/  
-Uvular: /q/, /qʷ/, /qʼ/, /qʷʼ/, /χ/, /χʷ/, /ʁ/, /ʁʷ/  
-Pharyngeal: /ħ/  
-Glottal: /ʔ/, /ʔʷ/  
 
-### By manner of articulation
+consonants <- read.table(textConnection('
+ "Manner of Articulation"   Labial       Alveolar      Alveopalatal     Postalveolar   Palatal      Velar            Uvular         Pharyngeal    Glottal
+ Stops                    "p  pʼ  b"     "tʼ  d"            ""               ""          ""      "kʷ  kʷʼ  ɡʷ"  "q  qʷ  qʼ  qʷʼ"        ""        "ʔ  ʔʷ"
+ Affricates                   ""       "ts  tsʼ  dz"        ""         "tʃ  tʃʼ  dʒ"     ""          ""                ""               ""          ""
+ Fricatives               "f  fʼ  v"     "s  z"         "ɕ  ɕʼ  ʑ"        "ʃ  ʒ"         ""        "xʷ  ɣ"       "χ  χʷ  ʁ  ʁʷ"         "ħ"         "h"   
+ Nasals                      "m"           "n"              ""               ""          ""          ""                ""               ""          ""
+ Trills                      ""            "r"              ""               ""          ""          ""                ""               ""          ""
+ Approximants                ""        "ɬ  ɬʼ  ɮ"           ""               ""          "j"         ""                ""               ""          ""
+ '), TRUE)
 
-Stop: /p/, /pʼ/, /b/, /tʼ/, /d/, /gʷ/, /kʷ/, /kʷʼ/, /qʷ/, /qʼ/, /qʷʼ/, /ʔ/, /ʔʷ/, /q/  
-Nasal: /m/, /n/  
-Affricates: /ts/, /tsʼ/, /dz/, /tʃ/, /tʃʼ/, /dʒ/  
-Fricatives: /f/, /fʼ/, /v/, /s/, /z/, /ʃ/, /ʒ/, /xʷ/, /ɣ/, /χ/, /χʷ/, /ʁ/, /ʁʷ/, /ħ/, /h/, /ɕ/, /ʑ/, /ɕʼ/  
-Nasals: /m/, /n/  
-Laterals: /ɬ/, /ɬʼ/, /l/  
-Trill: /r/  
-Glides: /j/  
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Alveopalatal", "Postalveolar", "Palatal", "Velar", "Uvular", "Pharyngeal", "Glottal"), align = 'c') %>%
+ kable_styling("bordered") %>%
+ add_header_above(c("", "Place of Articulation" = 9)) %>%
+ column_spec(1, bold = TRUE) %>%
+ footnote(general = "Note: Phonemes that have the diacritic /ʼ/ are ejectives; phonemes that have the diacritic /ʷ/ are labialized; phonemes that have /ʷʼ/ are labialized ejectives. The alveolar approximants are lateral fricatives.", general_title = "")
+ ```
 
 ## Vowels
 
 * Vowel height is the only contrastive feature among Kabardian vowels (backness is not phonemic) [@gordon_phonetic_2006, pg. 28].  
-* There is some debate of whether or not /aː/ is a phoneme in Kabardian, however, @gordon_phonetic_2006 explains that it's not entirely predictable. I will treat it as a phoneme (pg. 28).   
+* There is some debate as to whether or not /aː/ is a phoneme in Kabardian, however, @gordon_phonetic_2006 explains that it's not entirely predictable (pg. 28). I will treat it as a phoneme.   
 * A lot of free variation occurs with the production of vowels, so many of the vowels that are phonemic in other languages do arise in Kabardian [@pittman_phoneme_1963, pg. 22].  
 * /ə/ can also be epenthetic given certain environments [@colarusso_grammar_1992, pg. 18].  
 
-/a/, /ə/, /aː/
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
+vowels <- read.table(textConnection('
+          Central  
+ High      ""      
+ Mid       "ə"     
+ Low     "a  aː"   
+ '), TRUE)
+
+kable(vowels, align = 'c') %>%
+ kable_styling("bordered") %>%
+ column_spec(1, bold = TRUE) %>%
+ footnote(general = "Note: The low central vowel on the right is long.", general_title = "")
+ ```
 
 # Alphabet
 
 * [e] often appears to represent the grapheme ⟨e⟩; however, it's realized as an allophone of /a/. I will use /a/ for the transcription of ⟨e⟩.
 
-а - /aː/      
-э - /a/         
-б - /b/     
-в - /v/        
-г - /ɣ/       
-  гу - /gʷ/          
-  гъ - /ʁ/        
-  гъу - /ʁʷ/    
-д - /d/       
-  дж  - /dʒ/         
-  дз - /dz/         
-е - /a/
-ё - /jo/ (only used in Russian loanwords)          
-ж - /ʒ/          
-  жь - /ʑ/         
-з - /z/        
-и - /jə/         
-й - /j/          
-к - /k/        
-  ку - /kʷ/          
-  къ - /q/           
-  къу - /qʷ/        
-  кхъ - /qχ/          
-  кхъу - /qχʷ/           
-  кӏ - /tʃʼ/ or /kʼ/            
-  кӏу - /kʷʼ/           
-л - /ɮ/ or /l/             
-  лъ - /ɬ/             
-  лӏ - /ɬ'/                
-м - /m/            
-н - /n/           
-о - /aw/ (rarely used)       
-п - /p/        
-  пӏ - /p'/         
-р - /r/          
-с - /s/          
-т - /t/          
-  тӏ - /t'/           
-у - /w/; indicates labialization      
-ф - /f/           
-  фӏ - /f'/        
-х - /x/         
-  ху - /xʷ/         
-  хъ - /χ/          
-  хъу - /χʷ/          
-  хь - /ħ/           
-ц - /ts/          
-  цӏ - /ts'/           
-ч - /tʃ/          
-  чӏ - /tʃ'/          
-ш - /ʃ/            
-щ - /ɕ/            
-  Щӏ - /ɕ'/             
-ъ - used in combination to indicate uvularization (otherwise used in Russian loanwords)        
-ы - /ə/            
-ь - used in combination to indicate palatalization (otherwise used in Russian loanwords)       
-ю - /ju/       
-я - /jaː/       
-ӏ - /ʔ/; indicates ejectivization in combination      
-  ӏу - /ʔʷ/      
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+ Grapheme      Phoneme                                         Comment        
+ "а"           "/aː/"                                            ""
+ "э"           "/a/"                                             ""
+ "б"           "/b/"                                             ""
+ "в"           "/v/"                                             ""
+ "г"           "/ɣ/"                                             ""
+ "д"           "/d/"                                             ""
+ "е"           "/a/"                                             ""
+ "ё"          "/jo/"                               "only used in Russian loanwords"         
+ "ж"           "/ʒ/"                                             ""
+ "з"           "/z/"                                             ""
+ "и"          "/jə/"                                             ""
+ "й"          "/j/"                                              ""
+ "к"          "/k/"                                              ""
+ "л"           "/ɮ/"                                             ""
+ "м"           "/m/"                                             ""
+ "н"          "/n/"                                              ""
+ "о"         "/aw/"                                         "rarely used"       
+ "п"          "/p/"                                              ""
+ "р"          "/r/"                                              ""
+ "с"          "/s/"                                              ""
+ "т"          "/t/"                                              ""
+ "у"          "/w/"                                   "indicates labialization"      
+ "ф"          "/f/"                                              ""
+ "х"          "/x/"                                              ""
+ "ц"         "/ts/"                                              ""
+ "ч"         "/tʃ/"                                              ""
+ "ш"          "/ʃ/"                                              ""
+ "щ"          "/ɕ/"                                              ""                 
+ "ъ"           ""           "used in combination to indicate uvularization (otherwise used in Russian loanwords)"        
+ "ы"          "/ə/"                                              ""      
+ "ь"           ""           "used in combination to indicate palatalization (otherwise used in Russian loanwords)"       
+ "ю"         "/ju/"                                              ""
+ "я"         "/jaː/"                                             ""
+ "ӏ"         "/ʔ/"                             "indicates ejectivization in combination"      
+ **Multigraph**   ""                                             ""  
+ "гу"        "/ɡʷ/"                                              ""        
+ "гъ"        "/ʁ/"                                               ""
+ "гъу"      "/ʁʷ/"                                               ""
+ "дж"       "/dʒ/"                                               ""
+ "дз"       "/dz/"                                               ""
+ "жь"        "/ʑ/"                                               ""
+ "ку"       "/kʷ/"                                               ""
+ "къ"       "/q/"                                                ""
+ "къу"      "/qʷ/"                                               ""
+ "кхъ"      "/qχ/"                                               ""
+ "кхъу"     "/qχʷ/"                                              ""
+ "кӏ"       "/tʃʼ/"                                              ""
+ "кӏу"      "/kʷʼ/"                                              ""
+ "лъ"        "/ɬ/"                                               ""
+ "лӏ"       "/ɬʼ/"                                               ""
+ "пӏ"       "/pʼ/"                                               ""
+ "тӏ"       "/tʼ/"                                               ""
+ "фӏ"       "/fʼ/"                                               ""
+ "ху"       "/xʷ/"                                               ""
+ "хъ"       "/χ/"                                                ""
+ "хъу"      "/χʷ/"                                               ""
+ "хь"       "/ħ/"                                                ""
+ "цӏ"       "/tsʼ/"                                              ""
+ "чӏ"      "/tʃʼ/"                                               ""
+ "Щӏ"       "/ɕʼ/"                                               ""
+ "ӏу"      "/ʔʷ/"                                                ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+ ```
 
 # Lenition Rules
 
- * /ɕ'/, /ts'/, and /tʃ'/ are sometimes voiced in the middle of a word [@pittman_phoneme_1963, pg.19]
+* /ɕ'/, /ts'/, and /tʃ'/ are sometimes voiced in the word-medially [@pittman_phoneme_1963, pg.19]
+
+# References

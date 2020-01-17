@@ -1,156 +1,132 @@
 ---
 title: "Hungarian"
 author: "Shiying Yang"
-date: "4/1/2019"
-output:
-  html_document:
-    df_print: paged
-  pdf_document:
-    dev: cairo_pdf
-    keep_tex: yes
-    latex_engine: xelatex
-    number_sections: yes
-geometry: margin=1.2in
-header-includes:
-- \usepackage{setspace}\doublespacing
-- \usepackage{tipa}
-mainfont: DejaVu Serif
-fontsize: 12pt
-tables: yes
+edited by: "Emily Strand"
 bibliography: hu.bib
+output: html_document
 ---
+
+Last Updated: 2019-12-18
+
 # Background
 
-**Language family:** 
+**Language family:** Uralic / Finnic
 
-* Uralic 
-  + Finno-Ugric
-
-**Adopted variety:** 
-ECH (Educated Colloquial Hungarian) [@ST]
+* Hungarian is spoken in Hungary and in several surrounding countries as well as in the United States, Canada, and Israel.
+* I have chosen to represent Educated Colloquial Hungarian (ECH), the dialect spoken in Budapest, Hungary.
 
 # Phonology
 
-## Consonants [@ST, p 18-19; @IPA] {#con}
+## Consonants
 
-```{r, echo=F, include=FALSE}
-library(tidyverse)
+* /m/ and /ɲ/ are consistently listed as phonemes in Hungarian [@Szende1994, p. 91; @Siptar2000, p. 207]; however, there is some debate around /n/. @Siptar2000 explain that rather than having a nasal phoneme specified for place, Hungarian has a placeless /N/ that preconsonantally assimilates (p. 207). I have chosen to follow @Szende1994 and use the alveolar nasal (p. 91).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
 library(knitr)
 library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar   Postalveolar   Palatal  Velar  Glottal  
+Stops                       "p b"    "t d"         ""          "c ɟ"   "k ɡ"    ""
+Affricates                  ""      "ts dz"       "tʃ dʒ"       ""      ""      ""
+Fricatives                  "f v"    "s z"         "ʃ ʒ"        ""      ""      "h"
+Nasals                      "m"       "n"          ""           "ɲ"     ""      ""
+Trills                      ""        "r"          ""           ""      ""      ""
+Approximants                ""        "l"          ""           "j"     ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
 ```
 
-```{r hu_con, echo=F, tab.cap = NULL, results='asis'}
-hu_c <- read.csv('hu_c.csv')
-#colnames(jp_c)[c(1:2,5)] <- c(' ', '  ', 'alveolo-palatal')
-c_position <- c('labial', 'alveolar', 'post-alveolar', 'palatal', 'velar', 'glottal')
-c_colname <- paste(c_position, 'O', sep = ',')
-c_colname_in_table <- unlist(strsplit(c_colname, ','))
+## Vowels
 
-kable(hu_c, caption = 'Consonants', 
-      align = "c", longtable = T, 
-      digits = 3, format = 'latex', 
-      booktabs = T, col.names = c(' ', 'Voicing', c_colname_in_table)) %>% 
-  collapse_rows(columns = c(1), valign = 'middle', latex_hline = 'custom', custom_latex_hline = 1) %>% 
-  footnote(alphabet = c('placeless /N/ appears preconsonantally and receives place from the following consonant', 'The [O] columns stands for orthography.', '[vs] and [vd] in the second column stands for voiceless and voiced'),footnote_as_chunk = F) %>%
-  kable_styling("striped", full_width = T)
+* Vowel length is contrastive in Hungarian [@Szende1994, p. 92]. Long vowels are indicated by an acute (´) or double acute (˝) accent.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+              Front         Central       Back
+High        "i iː y yː"       ""         "u uː"
+High-Mid     "eː ø øː"        ""         "o oː"
+Low-Mid        "ɛ"            ""          ""
+Low            ""             "aː"        "ɑ"
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Phonemes with the diacritic (ː) are phonemeically long. The two high front vowels on the left are unrounded and the two on the right are rounded. The high-mid front vowel on the left is unrounded and the two on the right are rounded.", general_title = "")
 ```
 
-## Vowels [@IPA] {#v}
-||IPA | Writing | Example | Gloss|
-|-|----|-------|---------|------|
-1 |\textipa{A}|a |agy|brain|
-2 |a\textipa{:}|á |ágy|bed|
-3 |\textipa{E}|e |egy|one|
-4 |e\textipa{:}|é |ért|understand|
-5 |i|i |irt|eradicate|
-6 |i\textipa{:}|í |ír|write|
-7 |o|o |orr|nose|
-8 |o\textipa{:}|ó |ól|sty|
-9 |\o|ö |öl|kill|
-10|\o\textipa{:}|ő |őr|guard|
-11|u|u |ujj|finger|
-12|u\textipa{:}|ú |úgy|like that|
-13|y|ü |ügy|affair|
-14|y\textipa{:}|ű |űrr|space|
-Marginal[^1]|a, e, \textipa{O:}, \textipa{E:}|
+# Alphabet
 
-[^1]: typically used for pronuncing letters in abbreviations and borrowed words [@ST, p 280]
+* ⟨q⟩, ⟨w⟩, ⟨x⟩, ⟨y⟩ appear only in loanwords and in traditional surnames [@Rounds2001, p. 3].  
 
-# Orthography
-A, a  
-Á, á  
-B, b  
-C, c  
-Cs, cs  
-D, d  
-Dz, dz  
-Dzs, dzs  
-E, e  
-É, é  
-F, f  
-G, g  
-Gy, gy  
-H, h  
-I, i  
-Í, í  
-J, j  
-K, k  
-L, l  
-Ly, ly  
-M, m  
-N, n  
-Ny, ny  
-O, o  
-Ó, ó  
-Ö, ö  
-Ő, ő  
-P, p  
-Q, q  
-R, r  
-S, s  
-Sz, sz  
-T, t  
-Ty, ty  
-U, u  
-Ú, ú  
-Ü, ü  
-Ű, ű  
-V, v  
-W, w  
-X, x  
-Y, y  
-Z, z  
-Zs, zs  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-## Note on the Alphabet
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme
+"a"             "/ɑ/"
+"á"             "/aː/"
+"b"             "/b/"
+"c"             "/ts/"
+"d"             "/d/"
+"e"             "/ɛ/"
+"é"             "/eː/"
+"f"             "/f/"
+"g"             "/ɡ/"
+"h"             "/h/"
+"i"             "/i/"
+"í"             "/iː/"
+"j"             "/j/"
+"k"             "/k/"
+"l"             "/l/"
+"m"             "/m/"
+"n"             "/n/"
+"o"             "/o/"
+"ó"             "/oː/"
+"ö"             "/ø/"
+"ő"             "/øː/"
+"p"             "/p/"
+"r"             "/r/"
+"s"             "/ʃ/"
+"t"             "/t/"
+"u"             "/u/"
+"ú"             "/uː/"
+"ü"             "/y/"
+"ű"             "/yː/"
+"v"             "/v/"
+"z"             "/z/"
+**Multigraph**   ""
+"cs"            "/tʃ/"
+"dz"            "/dz/"
+"dzs"           "/dʒ/"
+"gy"            "/ɟ/"
+"ly"            "/j/"
+"ny"            "/ɲ/"
+"sz"            "/s/"
+"ty"            "/c/"
+"zs"            "/ʒ/"
+'), TRUE)
 
-Letters q, x, y, w as well as the combination 'ch' are excluded in hu.rules since they only occur in borrowed words like homoszexuális, and traditional surnames e.g. Andrássy.
-
-# Rules 
-<!--(Correspondence between orthography and phonemes)-->
-
-see hu.rules written based on Section \ref{con} and \ref{v}
-
-## Controversies and choices
-1. Whether "ty", "dy" are affricates or stops as seen in \ref{con}
-- stops [see @ST, p 82]
-- does not changed the result of translation
-2. Whether there are dipthongs 
-- no [see @ST, p 16-18]
-3. Whether [dz] is a phoneme or just a surface sound
-- surface [see @ST, p 87-89]
-- underlying [see @IPA]
-4. The placeless [N] as the underlying default nasal preconsonantally that undergoes progressive nasal assimilation vs. [m], [n] as the same with surface and underlying forms
-- [see @ST, p 207-212]
-- decide on keeping [m] and [n] as underlying forms due to words such as háromdimenziós which is három+dimenziós. m keeps its place in this example.
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition Processes
 
-- Degemination [@ST, p 83]: Across word boundaries, affricates remain unmerged in careful speech. In colloquial speech, the first affricate may lenite into a fricative due to OCP
+* Degemination [@Siptar2000, p 83]: Across word boundaries, affricates remain unmerged in careful speech. In colloquial speech, the first affricate may lenite into a fricative.
+* Geminates also weaken intervocalically [@Bauer1988, p. 383].
 
-|| Writing | careful speech | colloquial speech|
-|-|--------|-------------|-----------|
-  ||rác cég|[raːts-tseːg]|[raːs-tseːg]|
-  ||bölcs csere|[bøltʃ-tʃɛrɛ]|[bølʃ-tʃɛrɛ]|
+# Misc. Rules
 
-# References {-}
+* All consonant can geminate in Hungarian [@Magyar2015, p. 288]. Orthographically this involves repetition of graphemes. For multigraphs, geminates are indicated by duplication of the first consonant [@Korompay2012, p. 341].
+
+# References

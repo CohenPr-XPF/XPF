@@ -11,123 +11,167 @@ Last Updated: 2019-07-24
 
 **Language Family**: Hmong-Mien / Hmongic / Chuanqiandian / Hmong
 
-The Hmong language comprises a number of dialects with some phonological differences. Where they diverge, I will be prioritizing Hmong Daw (also known as White Hmong).
+* The Hmong language comprises a number of dialects with some phonological differences. Where they diverge, I will be prioritizing Hmong Daw (also known as White Hmong).
+* Hmong Daw is predominantly spoken in Laos and the United States.
 
 # Phonology
 
 ## Consonants
 
-The only consonant clusters to occur in Hmong are obstruent-lateral sequences [@HmnMortensen2004, p. 3]. Some authors (e.g. @HmnGolston2001) argue that, rather than being a cluster, these are just single consonants with lateral release; however, I follow Mortensen in analyzing these as clusters.
+* The only consonant clusters to occur in Hmong are obstruent-lateral sequences [@HmnMortensen2004, p. 3]. Some authors (e.g. @HmnGolston2001) argue that, rather than being a cluster, these are just single consonants with lateral release; however, I follow Mortensen in analyzing these as clusters.
+* In prenasalized stops, the prenasalization fully assimilates to the place of the consonant [@HmnGolston2001, p. 4].
+* Although the series that I have described as retroflex fricatives and affricates are widely described as postalveolar, I have found that the retroflex place of articulation is more in keeping with the actual sounds described by the authors. Similarly, although the sound I have described as /lʰ/ is frequently transcribed as /ɬ/, I have found /lʰ/ to be more in keeping with the characteristics of the sound.
 
-In prenasalized stops, the prenasalization fully assimilates to the place of the consonant [@HmnGolston2001, p. 4].
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Although the series that I have described as retroflex fricatives and affricates are widely described as postalveolar, I have found that the retroflex place of articulation is more in keeping with the actual sounds described by the authors. Similarly, although the sound I have described as /lʰ/ is frequently written as /ɬ/, I have found /lʰ/ to be more in keeping with the characteristics of the sound.
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By place of articulation
 
-Labial: /p/, /pʰ/, /ᵐb/, /ᵐbʱ/, /m/, /m̥/, /f/, /v/  
-Alveolar: /t/, /tʰ/, /d/, /ⁿd/, /ⁿdʱ/, /ts/, /tsʰ/, /ⁿdz/, /ⁿdzʱ/, /n/, /n̥/, /s/, /l/, /lʰ/  
-Retroflex: /ʈ/, /ʈʰ/, /ᶯɖ/, /ᶯɖʱ/, /tʂ/, /tʂʰ/, /ⁿdʐ/, /ⁿdʐʱ/, /ʂ/, /ʐ/  
-Palatal: /c/, /cʰ/, /ᶮɟ/, /ᶮɟʱ/, /ɲ/, /ɲ̥/, /ç/, /ʝ/  
-Velar: /k/, /kʰ/, /ᵑɡ/, /ᵑɡʱ/  
-Uvular: /q/, /qʰ/, /ᶰɢ/, /ᶰɢʱ/  
-Glottal: /ʔ/, /h/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"      Labial   Alveolar    Retroflex  Palatal   Velar     Uvular    Glottal
+"Stops (unaspirated)"         "p ᵐb"   "t d ⁿd"    "ʈ ᶯɖ"     "c ᶮɟ"    "k ᵑɡ"    "q ᶰɢ"    ""
+"Stops (aspirated)"           "pʰ ᵐbʱ" "tʰ dʱ ⁿdʱ" "ʈʰ ᶯɖʱ"   "cʰ ᶮɟʱ"  "kʰ ᵑɡʱ"  "qʰ ᶰɢʱ"  ""
+"Affricates (unaspirated)"    ""       "ts ⁿdz"    "tʂ ⁿdʐ"   ""        ""        ""        ""
+"Affricates (aspirated)"      ""       "tsʰ ⁿdzʱ"  "tʂʰ ⁿdʐʱ" ""        ""        ""        ""
+"Fricatives"                  "f v"    "s"         "ʂ ʐ"      "ç ʝ"     ""        ""        "h"
+"Nasals"                      "m̥ m"    "n̥ n"       ""         "ɲ̥ ɲ"     ""        ""        ""
+"Approximants"                ""       "l lʰ"      ""         ""        ""        ""        ""
+'), TRUE)
 
-### By manner of articulation
-
-Stops (unasp.): /p/, /ᵐb/, /t/, /d/, /ⁿd/, /ʈ/, /ᶯɖ/, /c/, /ᶮɟ/, /k/, /ᵑɡ/, /q/, /ᶰɢ/, /ʔ/  
-Stops (asp.): /pʰ/, /ᵐbʱ/, /tʰ/, /ⁿdʱ/, /ʈʰ/, /ᶯɖʱ/, /cʰ/, /ᶮɟʱ/, /kʰ/, /ᵑɡʱ/, /qʰ/, /ᶰɢʱ/  
-Affricates: /ts/, /tsʰ/, /ⁿdz/, /ⁿdzʱ/, /tʂ/, /tʂʰ/, /ⁿdʐ/, /ⁿdʐʱ/  
-Nasals: /m/, /m̥/, /n/, /n̥/, /ɲ/, /ɲ̥/  
-Fricatives: /f/, /v/, /s/, /ʂ/, /ʐ/, /ç/, /ʝ/, /h/  
-Approximants: /l/, /lʰ/  
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Retroflex", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  footnote(general = "Note: Phonemes to the left of each cell are voiceless and phonemes to the right of each cell are voiced. The alveolar stops (unaspirated and aspirated) are ordered voiceless, voiced, pre-nasalized.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Oral: /i/, /ɨ/, /u/, /e/, /o/, /a/  
-Nasal: /ẽ/, /õ/, /ã/  
-Diphthongs: /ai/, /aɨ/, /au/, /ia/, /ua/  
+* @HmnBurt2010 argues for /ɔ/ rather than /o/ (p. 245).
 
-Hmong has seven contrastive tones: high, high falling, high rising, mid, low, falling breathy, and falling creaky. There also exists an eighth tone, low rising, that is morphologically formed in some scenarios. [@HmnMortensen2004, p. 4]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+vowels <- read.table(textConnection('
+      Front  Central  Back
+High  "i"    "ɨ"      "u"
+Mid   "e ẽ"  ""       "o õ"
+Low   ""     "a ã"    ""
+'), TRUE)
 
-@HmnBurt2010 argues for /ɔ/ rather than /o/. (p. 245)
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are oral and those on the right are nasal.", general_title = "")
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ai/, /aɨ/, /au/, /ia/, /ua/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Alphabet
 
-a - /a/  
-  aa - /ã/  
-c - /c/  
-  ch - /cʰ/  
-  nc - /ᶮɟ/  
-  nch - /ᶮɟʱ/  
-e - /e/  
-  ee - /ẽ/  
-f - /f/  
-h - /h/  
-i - /i/  
-k - /k/  
-  kh - /kʰ/  
-  nk - /ᵑɡ/  
-  nkh - /ᵑɡʱ/  
-l - /l/  
-  hl - /lʰ/  
-m - /m/  
-  hm - /m̥/  
-n - /n/  
-  hn - /n̥/  
-ny - /ɲ/  
-  hny - /ɲ̥/  
-o - /o/  
-  oo - /õ/  
-p - /p/  
-  ph - /pʰ/  
-  np - /ᵐb/  
-  nph - /ᵐbʱ/  
-q - /q/  
-  qh - /qʰ/  
-  nq - /ᶰɢ/  
-  nqh - /ᶰɢʱ/  
-r - /ʈ/  
-  rh - /ʈʰ/  
-  nr - /ᶯɖ/  
-  nrh - /ᶯɖʱ/  
-s - /ʂ/  
-t - /t/  
-  th - /tʰ/  
-  nt - /ⁿd/  
-  nth - /ⁿdʱ/  
-ts - /tʂ/  
-  tsh - /tʂʰ/  
-  nts - /ⁿdʐ/  
-  ntsh - /ⁿdʐʱ/  
-tx - /ts/  
-  txh - /tsʰ/  
-  ntx - /ⁿdz/  
-  ntxh - /ⁿdzʱ/  
-u - /u/  
-v - /v/  
-w - /ɨ/  
-x - /s/  
-xy - /ç/  
-y - /ʝ/  
-z - /ʐ/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-## Tone Markers
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme   
+"a"           "/a/"    
+"c"           "/c/"
+"d"           "/d/"   
+"e"           "/e/"    
+"f"           "/f/"  
+"h"           "/h/"  
+"i"           "/i/"  
+"k"           "/k/"    
+"l"           "/l/"   
+"m"           "/m/"    
+"n"           "/n/"     
+"o"           "/o/"   
+"p"           "/p/"   
+"q"           "/q/"    
+"r"           "/ʈ/"   
+"s"           "/ʂ/"  
+"t"           "/t/"      
+"u"           "/u/"  
+"v"           "/v/"  
+"w"           "/ɨ/"  
+"x"           "/s/"    
+"y"           "/ʝ/"  
+"z"           "/ʐ/"
+**Multigraph** ""
+"aa"          "/ã/"
+"ch"          "/cʰ/"
+"dh"          "/dʱ/"  
+"nc"          "/ᶮɟ/"  
+"nch"         "/ᶮɟʱ/"
+"ee"          "/ẽ/"
+"kh"          "/kʰ/"  
+"nk"          "/ᵑɡ/"  
+"nkh"         "/ᵑɡʱ/"
+"hl"          "/lʰ/"
+"hm"          "/m̥/"
+"hn"          "/n̥/"
+"ny"          "/ɲ/"  
+"hny"         "/ɲ̥/"
+"oo"          "/õ/"
+"ph"          "/pʰ/"  
+"np"          "/ᵐb/"  
+"nph"         "/ᵐbʱ/"
+"qh"          "/qʰ/"  
+"nq"          "/ᶰɢ/"  
+"nqh"         "/ᶰɢʱ/"
+"rh"          "/ʈʰ/"  
+"nr"          "/ᶯɖ/"  
+"nrh"         "/ᶯɖʱ/"
+"th"          "/tʰ/"  
+"nt"          "/ⁿd/"  
+"nth"         "/ⁿdʱ/"
+"ts"          "/tʂ/"  
+"tsh"         "/tʂʰ/"  
+"nts"         "/ⁿdʐ/"  
+"ntsh"        "/ⁿdʐʱ/"  
+"tx"          "/ts/"  
+"txh"         "/tsʰ/"  
+"ntx"         "/ⁿdz/"  
+"ntxh"        "/ⁿdzʱ/"
+"xy"          "/ç/"
+'), TRUE)
 
-b - /˥/ (high tone)  
-j - /˥˨/ (high falling tone)  
-v - /˨˦/ (high rising tone)  
-s - /˨/ (low tone)  
-g - /˦˨/ (breathy falling tone)  
-m - /˨˩/ (creaky falling tone)
-d - /˨˩/ (low rising tone; allophone of creaky falling)  
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
-Mid tone (/˧/) is unmarked. [@HmnBurt2010, p. 246]
+# Tone
 
-All tone-marking characters appear after the vowel they modify. Because consonants cannot occur in Hmong syllable codas, consonants that precede other consonants can thus be identified as tone-markers; this allows us to distinguish whether a given <v>, <s>, or <m> represents a consonant or a tone.
+* Hmong has seven contrastive tones: high, high falling, high rising, mid, low, falling breathy, and falling creaky. There also exists an eighth tone, low rising, that is morphologically formed in some scenarios [@HmnMortensen2004, p. 4].
+* All tone-marking characters appear after the vowel they modify. Because consonants cannot occur in Hmong syllable codas, consonants that precede other consonants can thus be identified as tone-markers; this allows us to distinguish whether a given ⟨v⟩, ⟨s⟩, or ⟨m⟩ represents a consonant or a tone.
+* Some analyses describe the creaky falling tone as terminating in a glottal stop. [@HmnHuffman1987, p. 496] [@HmnMortensen2004, p. 4]
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+tone <- read.table(textConnection('
+Grapheme     Tone                       Comment
+"b"          "/˥/"                    "high tone"  
+"j"          "/˥˨/"                 "high falling tone"  
+"v"          "/˨˦/"                 "high rising tone"  
+"s"          "/˨/"                    "low tone"
+"g"          "/˦˨/"                "breathy falling tone"  
+"m"          "/˨˩/"                "creaky falling tone"
+"d"          "/˨˩/"      "low rising tone (allophone of creaky falling)"  
+""           "/˧/"      "mid tone (unmarked) [@HmnBurt2010, p. 246]"
+'), TRUE)
+
+kable(tone, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Misc. Rules
 
-* Epenthesis of [ŋ] occurs after word-final nasal vowels. [@HmnWhitelock1982, p. 24]
+* Epenthesis of [ŋ] occurs after word-final nasal vowels [@HmnWhitelock1982, p. 24].
+* Epenthetic glottal stops occur word-initially preceding vowels in borrowed words [@HmnGolston2001, p. 5].
 
 # References

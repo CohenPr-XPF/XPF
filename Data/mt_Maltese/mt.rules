@@ -1,93 +1,83 @@
 # Maltese Rule Set
 # Written by: Bill
-# Last Updated: 2018-12-03
+# Last Updated: 2019-07-29
 type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,pre-j,[ao],,,,
+class,pre-w,[aei],,,,
 class,anyh,(għ|h),,,,
 class,vowel,(a|e|i|ie|ɪ|o|u),,,,
 class,highvowel,[iu],,,,
+class,glide,[jw],,,,
 class,consonant,[bċdfgġhħjklmnpqrstvwxzż],,,,
-class,cons-output,(b|tʃ|d̪|f|g|dʒ|ħ|j|k|l|m|n|p|ʔ|r|s|t̪|v|w|ʃ|z|ts),,,,
-class,punctuation,[-'‘’],,,,
+class,cons-output,(b|tʃ|d̪|f|ɡ|dʒ|ħ|j|k|l|m|n|p|ʔ|r|s|t̪|v|w|ʃ|z|ts),,,,
+class,punctuation,[-'ꞌ‘’],,,,
 class,passthrough,[abefħijklmnoprsuvw],,,,
+# Individual Letters
 sub,à,a,4,,,"vowels with grave accents appear occasionally in loanwords, but only <à> appears with enough frequency to be worth including"
-sub,a,aj,6,,j,
-sub,j,,6,a,,
-sub,a,aw,6,,w,
-sub,w,,6,a,,
 sub,ċ,tʃ,2,,,
 sub,d,d̪,4,,,
-sub,e,ew,6,,w,
-sub,w,,6,e,,
 sub,g,ɡ,4,,,
 sub,ġ,dʒ,2,,,
 sub,q,ʔ,4,,,
 sub,t,t̪,4,,,
-sub,u,uː,6,,{consonant}{vowel}$,
+sub,u,u ː,6,,{consonant}{vowel}$,
 sub,x,ʃ,4,,,
 sub,z,ts,2,,,
 sub,ż,z,1.9,,,
 sub,{punctuation},,4,,,
-# Affricate gemination rules begin here
-sub,ċ,tːʃ,2.2,,ċ,
-sub,ġ,dːʒ,2.2,,ġ,
-sub,z,tːs,2.2,,z,
-sub,ċ,,2.2,ċ,,
-sub,ġ,,2.2,ġ,,
-sub,z,,2.2,z,,
-# Affricate gemination rules end here
-# Collapsing of <għi> and <għu> begins here
-sub,g,,9,,ħ{highvowel},
-sub,ħ,,9,g,{highvowel},
-sub,i,ej,9,għ,,
-sub,u,ow,9,għ,,
-# Collapsing of <għi> and <għu> ends here
-# Configuration of the <-ha> and <-hom> suffixes begins here
-sub,g,ħ aː,8,,ħha$,
+# Digraphs / Trigraphs
+sub,a,aj,9,,j,"<aj>"
+sub,o,oj,9,,j,"<oj>"
+sub,j,,9,{pre-j},,"cleanup of j-final digraphs"
+sub,a,aw,9,,w,"<aw>"
+sub,e,ew,9,,w,"<ew>"
+sub,i,iw,9,,w,"<iw>"
+sub,w,,9,{pre-w},,"cleanup of w-final digraphs"
+sub,i,ɪ ː,4.1,,e,"<ie>"
+sub,e,,4.1,i,,"<ie> cleanup"
+sub,ċ,tʃ REALː,2.2,,ċ,"<ċċ>; see line 72 re: REALː"
+sub,ċ,,2.2,ċ,,"<ċċ> cleanup"
+sub,ġ,dʒ REALː,2.2,,ġ,"<ġġ>; see line 72 re: REALː"
+sub,ġ,,2.2,ġ,,"<ġġ> cleanup"
+sub,z,ts REALː,2.2,,z,"<zz>; see line 72 re: REALː"
+sub,z,,2.2,z,,"<zz> cleanup"
+sub,i,ej,9,għ,,"<għi>"
+sub,u,ow,9,għ,,"<għu>"
+sub,g,,9,,ħ{highvowel},"cleanup of għ-initial trigraphs (1)"
+sub,ħ,,9,g,{highvowel},"cleanup of għ-initial trigraphs (2)"
+# <-għha> and <-għhom> Suffixes
+sub,g,ħ a ː,8,,ħha$,"-ha suffix rules begin here"
 sub,ħ,,8,g,ha$,
 sub,h,,8,għ,a$,
-sub,a,,8,għh,$,"end of -ha portion"
-sub,g,ħ oː m,8,,ħhom$,"beginning of -hom portion"
+sub,a,,8,għh,$,
+sub,g,ħ o ː m,8,,ħhom$,"-hom suffix rules begin here"
 sub,ħ,,8,g,hom$,
 sub,h,,8,għ,om$,
 sub,o,,8,għh,m$,
 sub,m,,8,għho,$,
-# Configuration of the <-ha> and <-hom> suffixes ends here
-# Correction of vowel length adjacent to <għ> begins here
-sub,({vowel}),\1ː,7,,għ.,
-sub,g,,7,{vowel},ħ,
-sub,ħ,,7,{vowel}g,,"end of before section"
-sub,({vowel}),\1ː,7,għ,,"beginning of after section"
-sub,g,,7,,ħ{vowel},
-sub,ħ,,7,g,{vowel},
-# Correction of vowel length adjacent to <għ> ends here
-# Start of the standard <għ> and <h> rules
+# Miscellaneous <għ> and <h> Rules
 sub,g,ħ,7,,ħ$,
 sub,ħ,,7,g,$,
 sub,h,ħ,8,,$,
 sub,g,ː,7,,ħ.,
 sub,ħ,,7,g,.,
 sub,h,ː,7,,,
-# End of the standard <għ> and <h> rules
-# Collapsing of word-initial <hV> begins here
-sub,({vowel}),\1ː,8,^{anyh},,
-sub,{anyh},,8,^,{vowel},
-# Collapsing of word-initial <hV> ends here
-# Collapsing of <ie> begins here
-sub,i,ɪː,4.1,,e,
-sub,e,,4.1,i,,
-# Collapsing of <ie> ends here
-# Beginning of ipasub rules
-ipasub,({vowel}) ː,\1ː,1.6,,,"phonemization of long vowels"
-ipasub,({vowel}) {anyh} \1,\1ː,1.6,,,"collapsing of VhV"
-ipasub,({vowel})ː \1,\1ː,1.6,,,"collapsing of Vː V"
-ipasub,({vowel}) ː \1,\1ː,1.6,,,"collapsing of V ː V"
-ipasub,({vowel}) \1,\1ː,1.6,,,"collapsing of VV"
-ipasub,({cons-output}) \1,\1ː,1.6,,,"lengthening of double consonants"
-ipasub,({vowel})ː ħ aː$,\1 ħː a,6.9,,,"correcting long vowels before -għha"
-ipasub,({vowel})ː ħ oː m$,\1 ħː o m,6.9,,,"likewise for -għhom"
-ipasub,({cons-output}) ː ({vowel}),\1 \2ː,1.1,,,"fixing length distribution"
-ipasub,^ː ({vowel}),\1ː,1.1,,,"correcting lengthening of word-initial vowels"
-ipasub,(ː |ː)ː+,ː,1,,,"collapsing of multi-length"
-ipasub,({vowel})ː \1ː,\1ː,0.9,,,"collapsing of multiple consecutive long vowels"
-sub,({highvowel}),\1ː,6,,({consonant}|għ)$,"lengthening of high vowel penult"
+# Ipasub Rules - Collapsing Length Rules
+ipasub,({vowel}) {anyh} \1,\1 ː,1.6,,,"collapsing of VhV"
+ipasub,({vowel}) ː \1,\1 ː,1.6,,,"collapsing of V ː V"
+ipasub,({vowel}) \1,\1 ː,1.6,,,"collapsing of VV"
+ipasub,({vowel}) ː \1 ː,\1 ː,0.9,,,"collapsing of multiple consecutive long vowels"
+ipasub,(ː |ː)ː+,ː,0.5,,,"collapsing of multi-length"
+# Ipasub Rules - Consonant Gemination (and non-gemination)
+ipasub,^({cons-output}) \1,\1 REALː,1.6,,,"lengthening of word-initial double consonants"
+ipasub, ({cons-output}) \1, \1 REALː,1.6,,,"lengthening of other double consonants (the initial space lets us avoid catching diphthongs)"
+ipasub,REALː ː ({vowel}),REALː \1 ː,1.4,,,"should allow for the appropriate establishment of CːVː sequences"
+ipasub,REALː,ː,0.9,,,"prevents consonant-lengthening ː from getting inappropriately moved by the rule in line 73"
+ipasub,({cons-output}) ː ({vowel}),\1 \3 ː,1.1,,,"fixing length distribution"
+# Misc. Rules
+ipasub,^ː ({vowel}) ,\1 ː ,1.1,,,"correcting lengthening of word-initial vowels"
+ipasub,^ː ({vowel})({cons-output}),\1\3 ː,1.1,,,"correcting lengthening of word-initial diphthongs"
+ipasub,ː({glide}),ː \1,0.4,,,"fixes a few odd cases of <ːj> and <ːw>"
+sub,({highvowel}),\1 ː,6,,({consonant}|għ)$,"lengthening of high vowel penult"
 sub,({passthrough}),\1,0.1,,,

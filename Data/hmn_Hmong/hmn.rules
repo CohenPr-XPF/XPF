@@ -6,12 +6,12 @@ type,sfrom,sto,weight,precede,follow,comment
 class,input-cons,[cdfhklmnpqrstvxyz],,,,
 class,input-vowel,[aeiouw],,,,
 class,output-cons,[cçdfhʝklᵐmⁿnᶯᶮɲᵑᶰpqsʂtʈvʐ],,,,
-class,voiced-cons,[bdɖɟɡɢzʐ],,,,
+class,voiceless-asp,(p|t|ʈ|c|k|q|ts|tʂ),,,,
+class,voiced-asp,(ᵐb|d|ⁿd|ᶯɖ|ᶮɟ|ᵑɡ|ᶰɢ|ⁿdz|dʐ),,,,
 class,output-vowel,[a|ã|e|ẽ|i|o|õ|u|ɨ],,,,
 class,pre-y,[nx],,,,
 class,pre-a,[aiu],,,,
 class,post-a,[iuw],,,,
-class,pre-h,[cdklpqrtsx],,,,
 class,post-h,[lmn],,,,
 class,passthrough,[acdefhiklmnopqtuv],,,,
 # Individual Letters
@@ -68,12 +68,14 @@ ipasub,n ts,ⁿdz,3.5,,,
 ipasub,n tʂ,ᶯdʐ,3.5,,,
 # Aspiration
 sub,l,lʰ,8,h,,"<hl> - priority is raised to ensure it happens before aspiration rules occur"
+sub,l,lʰ,6,p,h,"exception to <hl> rule"
+sub,h,,8,l,,"clean-up"
 sub,m,m̥,6,h,,"<hm>"
 sub,n,n̥,6,h,,"<hn>"
 sub,n,ɲ̥,6,h,y,"<hny> - the <y> is erased in line 50, so it doesn't need to be erased here"
 sub,h,,6,,{post-h},"cleanup of h-initial clusters"
-sub,h,ʰ,7,{pre-h},,"turns h into aspiration of stops"
-ipasub, ʰ,ʰ,5,,,"attaches aspiration to consonants"
-ipasub,({voiced-cons})ʰ,\1ʱ,4.5,,,"changes aspiration to murmuring on voiced consonants"
+ipasub,({voiceless-asp}) h,\1ʰ,2,,,"attaches aspiration to consonants"
+ipasub,({voiced-asp}) h,\1ʱ,2.5,,,"changes aspiration to murmuring on voiced consonants"
 # Misc. Rules
 sub,({passthrough}),\1,0.1,,,
+sub,-,,1,,,

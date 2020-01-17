@@ -36,3 +36,5 @@ sub,n,ɲ,3,,y,
 sub,y,,3,n,,"clean-up",
 sub,s,ʃ,3,,h,
 sub,h,,3,s,,"clean-up",
+# Misc. Rules
+sub,-,,2,,,

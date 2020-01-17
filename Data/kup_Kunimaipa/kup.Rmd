@@ -1,0 +1,110 @@
+---
+title: "Kunimaipa"
+author: "Emily Strand"
+bibliography: kup.bib
+output: html_document
+---
+
+Last Updated: 2019-10-23
+
+# Background
+
+**Language Family**: Trans-New Guinea / Goilalan
+
+* Kunimaipa is spoken in the Central, Morobe, and Oro provinces of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar    Velar    
+Stops                      "p  b"    "t  d"    "k  ɡ"     
+Fricatives                  "β"      "s  z"      "ɣ"    
+Nasals                      "m"       "n"        "ŋ"     
+Trills                      ""        "r"        ""     
+Approximants                ""        "l"        ""    
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 3)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* Although diphthongs are prevalent in the Kunimaipa language, such vowels can also appear in sequence [@Pence1966], thus, diphthongs will not be accounted for nor transcribed (p. 55).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front   Central     Back
+High     "i"       ""        "u"
+Mid      "e"       ""        "o"
+Low      ""        "a"        ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```    
+
+# Alphabet
+
+* The orthography does include the symbols ⟨ë⟩, ⟨ï⟩, ⟨ö⟩, and ⟨ü⟩, representing silent vowels in word-final positions [@Geary1992, p. 2]. However, this does not appear to be phonemic, and rather a phonological devoicing process, so I will transcribe such graphemes as voiced.
+* Repetition of vowel graphemes is also represented in the orthography [@Pence1966, p. 64]. Given that vowel length is non-contrastive, it is unclear what such sequences indicate, whether it be phonetic length or independently pronounced vowels. @Pence1966 does describe such occurrences as vowel sequences, leading me to believe that each vowel is pronounced independently, so I will transcribe them as such.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"             "a"
+"b"             "b"
+"d"             "d"
+"e"             "e"
+"g"             "ɡ"
+"h"             "ɣ"
+"i"             "i"
+"k"             "k"
+"l"             "l"
+"m"             "m"
+"n"             "n"
+"ñ"             "ŋ"
+"o"             "o"
+"p"             "p"
+"r"             "r"
+"s"             "s"
+"z"             "z"
+"t"             "t"
+"u"             "u"
+"v"             "β"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Kunimaipa follow the order of (C)V(C) [@Pence1966, p. 56], with stress normally occurring on the penultimate syllable [@Geary1992, p.3].
+
+# Lenition Rules
+
+* /b/, /d/, and /ɡ/ can spirantize word-medially and word-finally in fast speech [@Geary1992, p. 3; @Pence1966, p. 60].
+* /p/ and /k/ can be pronounced with frication or fully spirantize word-medially [@Geary1992, p. 4].
+* /β/ and /z/ may be realized as glides [w] and [j] [@Pence1966, p. 60].
+* /ɣ/ is said to be backed [@Pence1966, p. 61; @Geary1992, p. 4], making way for the deduction that it may debuccalize.
+
+# Misc. Rules
+
+* /b/, /d/, and /ɡ/ may be voiceless word-initially [@Geary1992, p. 3; @Pence1966, p. 60].
+
+# References

@@ -11,65 +11,93 @@ Last Updated: 2019-07-18
 
 **Language Family**: North Bougainville / Rotokas-Askopan / Rotokas
 
-The Aita dialect of Rotokas has a few significant differences in its phoneme inventory; I will note these differences in this file, but my ruleset will only reflect the phonology of Central Rotokas.
+* The Aita dialect of Rotokas has a few significant differences in its phoneme inventory; I will note these differences in this file, but my ruleset will only reflect the phonology of Central Rotokas.
+* Rotokas is spoken in the Bougainville province of Papua New Guinea.
 
 # Phonology
 
 ## Consonants
 
-The voiced consonants of Rotokas undergo a considerable degree of free variation, making the choice of underlying form - in the words of @RooRobinson2006 - "somewhat arbitrary" (p. 207). The bilabial and velar consonants are realized as either a stop, fricative, or nasal; the alveolar voiced consonant is realized as either a stop, nasal, flap, or lateral approximant. @RooFirchow1969 lists /β ɾ ɡ/ as the underlying voiced phonemes at each place of articulation (pp. 273-274); I have chosen to follow this analysis.
+* The voiced consonants of Rotokas undergo a considerable degree of free variation, making the choice of underlying form - in the words of @RooRobinson2006 - "somewhat arbitrary" (p. 207). The bilabial and velar consonants are realized as either a stop, fricative, or nasal; the alveolar voiced consonants are realized as either a stop, nasal, flap, or lateral approximant. @RooFirchow1969 lists /β ɾ ɡ/ as the underlying voiced phonemes at each place of articulation (pp. 273-274); I have chosen to follow this analysis.
+* For a more detailed explanation of the role of nasals in Rotokas, see the Misc. Rules section.
 
-For a more detailed explanation of the role of nasals in Rotokas, see the Misc. Rules section.
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-### By place of articulation
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-Bilabial: /p/, /β/  
-Alveolar: /t/, /ɾ/  
-Velar: /k/, /ɡ/  
 
-### By manner of articulation
+consonants <- read.table(textConnection('
+              Bilabial   Alveolar   Velar
+Stops         "p"        "t"        "k ɡ"
+Fricatives    "β"        ""         ""
+Flaps         ""         "ɾ"        ""
+'), TRUE)
 
-Stops: /p/, /t/, /k/, /ɡ/  
-Fricatives: /β/  
-Flaps: /ɾ/  
+kable(consonants, align = ('c')) %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 3)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Phonemes to the left of each cell are voiceless and phonemes to the right of each cell are voiced.", general_title = "")
+```
 
 ## Vowels
 
-Vowels: /i/, /u/, /e/, /o/, /a/  
+* Vowel length is contrastive in Rotokas [@RooFirchow1969, p. 271]; however, this contrast has been lost in the Aita dialect [@RooRobinson2006, p. 209].
+    - Vowel length is written by doubling the vowel character. [@RooFirchow1992, p. 1]
+* @RooFirchow1992 argues for /ɑ/ rather than /a/ (p. 2).
 
-Vowel length is contrastive in Rotokas [@RooFirchow1969, p. 271]; however, this contrast has been lost in the Aita dialect [@RooRobinson2006, p. 209].
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front   Central   Back
+High   "i"     ""        "u"
+Mid    "e"     ""        "o"
+Low    ""      "a"       ""
+'), TRUE)
 
-@RooFirchow1992 argues for /ɑ/ rather than /a/ (p. 2).
+kable(consonants, align = ('c')) %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
 
 # Alphabet
 
-a - /a/  
-e - /e/  
-g - /ɡ/  
-i - /i/  
-k - /k/  
-o - /o/  
-p - /p/  
-r - /ɾ/  
-s - /t/  
-t - /t/  
-u - /u/  
-v - /β/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Vowel length is written by doubling the vowel character. [@RooFirchow1992, p. 1]
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme
+"a"              "/a/"  
+"e"              "/e/"  
+"g"              "/ɡ/"  
+"i"              "/i/"  
+"k"              "/k/"
+"o"              "/o/"  
+"p"              "/p/"  
+"r"              "/ɾ/"  
+"s"              "/t/"  
+"t"              "/t/"  
+"u"              "/u/"  
+"v"              "/β/"
+'), TRUE)
+
+kable(alphabet, align = "c") %>%
+    kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* The structure of Rotokas syllables is (C)V(V) [@RooFirchow1969, pp. 274-275].
 
 # Lenition Rules
 
-* /t/ spirantizes to [s], or sometimes goes to [ts], before /i/. [@RooFirchow1969, p. 274]
-  * However, in recent years this process has become less frequent; @RooRobinson2006 theorizes that this trend is because of bilingualism with Tok Pisin, which has contrastive /t/ and /s/. (p. 207)
-* /d/ is most commonly realized as [ɾ]. [@RooRobinson2006, p. 207]
+* /t/ spirantizes to [s], or sometimes goes to [ts], before /i/ [@RooFirchow1969, p. 274].
+    - In recent years, however, this process has become less frequent; @RooRobinson2006 theorizes that this trend is because of bilingualism with Tok Pisin, which has contrastive /t/ and /s/ (p. 207).
+* /d/ is most commonly realized as [ɾ] [@RooRobinson2006, p. 207].
 
 # Misc. Rules
 
-In the Aita dialect of Rotokas, voiced consonants are nasalized so often that the nasals /m n ŋ/ are held to be the underlying forms of those sounds; however, other dialects of Rotokas rarely nasalize voiced consonants unless deliberately trying to replicate foreign speech patterns [@RooFirchow1969, p. 274]. @RooRobinson2006, meanwhile, actually finds the nasals to be contrastive with the voiced stops in the Aita dialect (p. 208); in his view, there was a historical contrast between those two series that has since collapsed in standard Central Rotokas.
-
-## Syllable Structure
-
-The structure of Rotokas syllables is (C)V(V). [@RooFirchow1969, pp. 274-275]
+* In the Aita dialect of Rotokas, voiced consonants are nasalized so often that the nasals /m n ŋ/ are held to be the underlying forms of those sounds; however, other dialects of Rotokas rarely nasalize voiced consonants unless deliberately trying to replicate foreign speech patterns [@RooFirchow1969, p. 274].
+* @RooRobinson2006, meanwhile, actually finds the nasals to be contrastive with the voiced stops in the Aita dialect (p. 208); in his view, there was a historical contrast between those two series that has since collapsed in standard Central Rotokas.
 
 # References

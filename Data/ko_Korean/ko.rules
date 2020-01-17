@@ -1,6 +1,7 @@
+# Korean Rule Set
+# Written by: Shiyin, Justin, and Becky
+# Last Updated: 2019-5-28
 "type","sfrom","sto","weight","precede","follow","comment"
-class,punct,['’-],1,,,,
-sub,{punct},,1,,,,
 "class","G","k",,,,""
 "class","GG","k͈",,,,"Becky"
 "class","N","n",,,,""

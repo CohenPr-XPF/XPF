@@ -19,10 +19,10 @@ Last Updated: 2019-02-25
 ## Consonants
 
 * In nasal syllables, the prenasalized stops assimilate to become fully nasal. Taps and approximants similarly nasalize in nasal syllables [@GnWalker1999, page 68].
-   * Gregores records the nasals as the underlying forms of the phonemes [@GnGregores1967].
+    - Gregores records the nasals as the underlying forms of the phonemes [@GnGregores1967].
 * /x/ exists in free variation with /h/ [@GnWalker1999, page 68]; all the sources I have seen, except @GnOrthography, prefer /x/ as the underlying form.
-* @GnPhonemesUCB records /ɣ/ instead of /ɰ/. @GnGregores1967 uses the character for ɣ, but labels it a sonorant, indicating that they too are referring to the velar approximant.
-* Sources differ on whether /t/ and /ⁿd/ are dental or alveolar; for now I have stuck with alveolar for simplicity.
+* @GnPhonemesUCB records /ɣ/ instead of /ɰ/. @GnGregores1967 use the character for ɣ, but labels it a sonorant, indicating that they too are referring to the velar approximant.
+* Sources differ on whether /t/ and /ⁿd/ are dental or alveolar. For now, I have stuck with alveolar for simplicity.
 * The labiovelars seem to only emerge when followed by ⟨u⟩, and their attestation is inconsistent, so I am treating them as allophones of the velar sounds and excluding them from the ruleset.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -113,11 +113,6 @@ Grapheme      Phoneme                                     Comment
 kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
-
-# Stress
-
-* Stress falls on syllables with nasalized vowels; in a word that has no nasalized vowels, stress falls on the final syllable.
-* Vowels are sometimes marked with an acute accent to indicate that their syllable is stressed, but those accents do not carry any phonemic value.
 
 # Syllable structure
 

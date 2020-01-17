@@ -30,7 +30,7 @@ consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial    Alveolar    Alveolo-Palatal  Postalveolar  Palatal   Velar
 Stops                       "p"         "t"           ""               ""         ""       "k"
 Affricates                   ""         ""            ""              "tʃ"        ""       ""  
-Fricatives                  "v"         "s"           "ɕ"             "ʃ"         ""       "χ"
+Fricatives                   "v"        "s"           "ɕ"             "ʃ"         ""       "χ"
 Nasals                       "m"        "n"           ""               ""         ""       ""
 Trills                       ""         "r"           ""               ""         ""       ""
 Approximants                 ""         "l"           ""               ""         "j"      ""
@@ -45,22 +45,23 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* There is some debate concerning /ӗ/ and /ӑ/ in terms of what phonemes they actually represent. They are said to be reduced, with /ӑ/ being a back-to-central vowel and /ӗ/ being a front to central vowel [@johanson_chuvash_2006, p. 434]. I have opted for these transcriptions given that @johanson_chuvash_2006 and @kruger_chuvash_1997 did as well.
-* /o/ does not seem to be included in the phonemic inventory; however, it is often mentioned as appearing heavily through Russian loanwords (and in the Crubadan corpus) [@johanson_chuvash_2006, p. 434], thus, I will include it in the ruleset.
+* There is some debate concerning /ӗ/ and /ӑ/ in terms of what phonemes they actually represent. They are said to be reduced, with /ӑ/ being a back-to-central vowel and /ӗ/ being a front to central vowel [@johanson_chuvash_2006, p. 434]. Based on this description and the diagram he provides, I have chosen to use /ɛ/ and /ʌ/.
+* /o/ does not seem to be included in the phonemic inventory; however, it is often mentioned as appearing heavily through Russian loanwords (and in the Crúbadán corpus) [@johanson_chuvash_2006, p. 434], thus, I will include it in the ruleset.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 vowels <- read.table(textConnection('
          Front       Back
 High     "i  y"     "ɯ  u"
-Mid      "e  ӗ"       ""
-Low        ""       "a  ӑ"
+High-Mid  "e"         ""
+Low-Mid   "ɛ"        "ʌ"
+Low        ""        "ɑ"
 '), TRUE)
 
 kable(vowels, align = 'c') %>%
   kable_styling("bordered") %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: The high front and back vowel are ordered unrounded and rounded. Both the mid front and low back vowels are unrounded.", general_title = "")
+  footnote(general = "Note: The high front and back vowel are ordered unrounded and rounded. The rest of the vowels are unrounded.", general_title = "")
 ```    
 
 # Alphabet
@@ -71,11 +72,11 @@ kable(vowels, align = 'c') %>%
 
 alphabet <- read.table(textConnection('
 Grapheme      Phoneme                      Comment
-"a"            "/a/"                          ""
-"ӑ"            "/ӑ/"                          ""
+"a"            "/ɑ/"                          ""
+"ӑ"            "/ʌ/"                          ""
 "в"            "/v/"                          ""
 "e"         "/je/; /e/"      "/je/: word-initially; /e/: elsewhere"           
-"ӗ"	           "/ӗ/"                          ""                           
+"ӗ"	           "/ɛ/"                          ""                           
 "и"            "/i/"                          ""
 "й"            "/j/"                          ""
 "к"            "/k/"                          ""
@@ -83,7 +84,7 @@ Grapheme      Phoneme                      Comment
 "м"            "/m/"                          ""
 "н"            "/n/"                          ""
 "п"            "/p/"                          ""
-"о"             "o"               "appears heavily in loanwords"
+"о"            "/o/"               "appears heavily in loanwords"
 "р"            "/r/"                          ""
 "с"            "/s/"                          ""
 "ҫ"            "/ɕ/"                          ""
@@ -96,7 +97,7 @@ Grapheme      Phoneme                      Comment
 "ы"            "/ɯ/"                          ""
 "э"            "/e/"                          ""
 "ю"            "/ju/"                         ""
-"я"	           "/ja/"                         ""
+"я"	           "/jɑ/"                         ""
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
@@ -106,10 +107,10 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * Voiceless consonants are voiced intervocalically, after sonorants, and before vowels [@johanson_chuvash_2006, p. 435]     
-* Consonants palatalize preceding and following front vowels [@johanson_chuvash_2006, p. 435].
 
 # Misc. Rules
 
+* Consonants palatalize preceding and following front vowels [@johanson_chuvash_2006, p. 435].
 * The Chuvash language requires vowel harmony [@johanson_chuvash_2006, p. 436].    
 * Gemination can occur with any consonant (specification only on native phonemes) [@dobrovolsky_chuvash_1996, p. 31].    
 * Geminate obstruents are voiceless [@dobrovolsky_chuvash_1996, p. 31].

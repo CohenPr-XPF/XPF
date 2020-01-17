@@ -1,0 +1,118 @@
+---
+title: "Komba"
+author: "Emily Strand"
+bibliography: kpf.bib
+output: html_document
+---
+
+Last Updated: 2019-08-08
+
+# Background
+
+**Language Family**: Trans-New Guinea / Main Section / Central and Western / Huon-Finisterre / Huon / Western
+
+* Komba is spoken in Papua New Guinea.
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar   Palatal   Velar
+"Stops"                     "p b"     "t d"       ""   "k kʷ ɡ ɡʷ"
+"Affricates"                 ""        ""         ""       ""
+Fricatives                   ""       "s z"       ""       ""
+Nasals                       "m"       "n"        ""       "ŋ"
+Approximants                 "w"       "l"        "j"      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Phonemes with the diacritic (ʷ) are labialized.", general_title = "")
+```  
+
+## Vowels
+
+* Vowel length is phonemic in Komba [@Southwell1972, p. 5]. Long vowels are represented by duplicate graphemes.
+* Adjacent like-vowels can represent one of two series word-initially, which are contrastive [@Southwell1972, p. 5; @1981, p. 2]:
+    - Voiceless-voiced (represented by an ⟨h⟩ preceding the vowel)
+        * These will be transcribed as long voiceless vowels (ex. /ḁ ː/)
+    - Voiced-voiced
+* Adjacent vowels are interpreted as a complex nucleus only when a high vowel (/u/ or /i/) follows a mid or low vowel [@Southwell1972, p. 7]. This allows for the combinations listed in the table below. /ou/ is not represented in Crúbadán.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""           "u"
+High-Mid    "e"         ""           "o"
+Low-Mid     ""          "ɐ"          ""
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ɐi/, /ɐu/, /ai/, /au/, /ei/, /eu/, /oi/, /ou/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme          Comment
+"a"              "/a/"             ""
+"â"              "/ɐ/"             ""
+"b"              "/b/"             ""
+"d"              "/d/"             ""
+"e"              "/e/"             ""
+"g"              "/ɡ/"             ""
+"i"              "/i/"             ""
+"k"              "/k/"             ""
+"l"              "/l/"             ""
+"m"              "/m/"             ""
+"n"              "/n/"             ""
+"ŋ"              "/ŋ/"             ""
+"o"              "/o/"             ""
+"p"              "/p/"             ""
+"r"              "/d/"    "written intervocalically"
+"s"              "/s/"             ""
+"t"              "/t/"             ""
+"u"              "/u/"             ""
+"w"              "/w/"             ""
+"y"              "/j/"             ""
+"z"              "/z/"             ""
+**Digraph**       ""               ""
+"gw"             "/ɡʷ/"            ""
+"kw"             "/kʷ/"            ""
+'), TRUE)
+
+kable(alphabet, align = "c") %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* Voiced stops /b/, /d/, and /ɡ/ are realized as /β/, /ɾ/, and /ɣ/ intervocalically [@Southwell1972, p. 10; @1981, p. 4].
+
+# Misc. Rules
+
+* Voiced stops may me realized as prenasalized word-initially (only in some words) [@Southwell1972, p. 10; @1981, p. 4].
+* /s/ and /z/ may be realized as [ts] and [dz] respectively [@1981, p. 4].
+
+# References

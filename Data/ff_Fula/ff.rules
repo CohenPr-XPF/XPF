@@ -5,9 +5,9 @@ type,sfrom,sto,weight,precede,follow,comment
 # Classes
 class,apostrophe,['ꞌˈ‘’],,,,
 class,post-n,[dgjy],,,,
-class,output,[abɓcdɗefɡɠhiɟklmnɲŋoprstuwjʔ],,,,
+class,output,[abɓcdɗefɡhiɟklmnɲŋoprstuwjʔ],,,,
 class,pre-ng-gem,[nŋ],,,,
-class,passthrough,[abɓcdɗefɠhiklmnɲŋoprstuw],,,,
+class,passthrough,[abɓcdɗefhiklmnɲŋoprstuw],,,,
 # Individual Letters
 sub,g,ɡ,4,,,
 sub,j,ɟ,4,,,

@@ -31,7 +31,6 @@ consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial    Dental   Retroflex   Palatal    Velar   Glottal
 "Stops (plain)"            "p b"      "t̪ d̪"     "ʈ ɖ"      "c ɟ"     "k ɡ"   ""
 "Stops (prenasalized)"     "ᵐb"       "ⁿd̪"      "ᶯɖ"        ""       "ᵑɡ"    ""
-Affricates                 ""         ""         ""         ""        ""     ""
 Fricatives                 "f"        "s̪ z̪"      "ʂ"        ""        ""     "h"
 Nasals                     "m"        "n̪"        ""         ""        ""     ""
 Flaps                      ""         ""         "ɽ"        ""        ""     ""

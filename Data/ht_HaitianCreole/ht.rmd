@@ -4,74 +4,109 @@ author: "Justin Bai"
 bibliography: ht.bib
 output: html_document
 ---
+
+Last Updated: 2019-12-19
+
 # Background
+
 **Language family**: French Creole
 
-# Alphabet
-The alphabet of Haitian Creole is a Latin-based writing system. Per @faraclas2010orthography, there are 32 letters: ⟨a⟩, ⟨an⟩, ⟨b⟩, ⟨ch⟩, ⟨d⟩, ⟨e⟩, ⟨è⟩, ⟨en⟩, ⟨f⟩, ⟨g⟩, ⟨h⟩, ⟨i⟩, ⟨j⟩, ⟨k⟩, ⟨l⟩, ⟨m⟩, ⟨n⟩, ⟨ng⟩, ⟨o⟩, ⟨ò⟩, ⟨on⟩, ⟨ou⟩, ⟨oun⟩, ⟨p⟩, ⟨r⟩, ⟨s⟩, ⟨t⟩, ⟨ui⟩, ⟨v⟩, ⟨w⟩, ⟨y⟩, and ⟨z⟩.
-## Vowels
-Haitian Creole has both oral and nasal vowels, which are distinguished orthographically.
-
-### Oral Vowels
-The oral vowels are:
-* ⟨a⟩ = /a/
-* ⟨e⟩ = /e/
-* ⟨è⟩ = /ɛ/
-* ⟨i⟩ = /i/
-* ⟨o⟩ = /o/
-* ⟨ò⟩ = /ɔ/
-* ⟨ou⟩ = /u/
-
-### Nasal Vowels
-Nasal vowels are orthographically represented with ⟨n⟩ after the vowel, and not all oral vowels have a nasal counterpart. The nasal vowels are:
-* ⟨an⟩ = /ã/
-* ⟨en⟩ = /ɛ̃/
- * Note that this is NOT /ẽ/.
-* ⟨on⟩ = /õ/
-* ⟨oun⟩ = /ũ/
-
-### Semivowels
-* ⟨w⟩ = /w/
-* ⟨y⟩ = /j/
-* ⟨ui⟩ = /ɥi/
-
-## Consonants
-* ⟨b⟩ = /b/
-* ⟨ch⟩ = /ʃ/
-* ⟨d⟩ = /d/
-* ⟨f⟩ = /f/
-* ⟨g⟩ = /g/
-* ⟨h⟩ = /h/
-* ⟨j⟩ = /ʒ/
-* ⟨k⟩ = /k/
-* ⟨l⟩ = /l/
-* ⟨m⟩ = /m/
-* ⟨n⟩ = /n/
-* ⟨ng⟩ = /ŋ/
-* ⟨p⟩ = /p/
-* ⟨r⟩ = /ɣ/
-* ⟨s⟩ = /s/
-* ⟨t⟩ = /t/
-* ⟨v⟩ = /v/
-* ⟨z⟩ = /z/
+* Speakers of Haitian Creole reside in a multitude of places, including, but not limited to, Haiti, Canada, the United States, France, the Dominican Republic, Cuba, and the Bahamas.
 
 # Phonology
-## Vowels
-⟨an⟩, ⟨en⟩, and ⟨on⟩ are oral vowels + /n/ when a vowel appears after them.
-
-The grave accent is used on ⟨a⟩ to prevent it from turning into a nasal vowel. For example,
-* van /vã/ 'breeze'
-* vàn /van/ 'flood gate'
-
-The same principle applies to ⟨è⟩ and ⟨ò⟩.
-* ⟨èn⟩ = /ɛn/
-* ⟨òn⟩ = /ɔn/
-
-A nasalized vowel followed by /n/ is written with two ⟨n⟩s.
-* aprann /apɣãn/ 'learn'
 
 ## Consonants
-* ⟨ng⟩ (/ŋ/) is only found at the end of words.
-* All other consonants can be found initially, medially, and finally.
 
-# Lenition
+* /ɥ/ is a widely debated phoneme in Haitian Creole, as it only appears in succession with /i/ and can appear in free variation with /w/ [@Kraemer2016, p. 67; @Pindziak2012, pp. 3-4]. I have chosen to treat it as a variant of /w/ and not include it in the phoneme inventory.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Alveolar   Postalveolar   Palatal   Velar      Glottal
+Stops                      "p  b"     "t  d"         ""           ""      "k  ɡ"       ""
+Fricatives                 "f  v"     "s  z"       "ʃ  ʒ"         ""       "ɣ"         "h"  
+Nasals                       "m"        "n"          ""           ""       "ŋ"         ""
+Approximants                 "w"        "l"          ""           "j"      ""          ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* Haitian Creole makes a distinction between oral and nasal vowels. Nasal vowels are orthographically represented with ⟨n⟩ after the vowel [@faraclas2010orthography, p. 97].
+* Nasal vowels may also be indicated when preceding two ⟨n⟩s [@faraclas2010orthography, p. 101].
+* /an/, /en/, /on/, and /un/ appear as vowel-consonant sequences when followed by a vowel.
+* The grave accent (\`) on vowels is also used to indicate non-nasality of vowels when followed by ⟨n⟩ [@faraclas2010orthography, p. 101].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""         "u  ũ"
+Mid       "e"         ""         "o  õ"
+""      "ɛ  ɛ̃"        ""          "ɔ"
+Low       ""        "a  ã"         ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme  
+"a"           "/a/"
+"b"           "/b/"
+"d"           "/d/"
+"e"           "/e/"
+"è"           "/ɛ/"
+"f"           "/f/"
+"g"           "/ɡ/"
+"h"           "/h/"
+"i"           "/i/"
+"j"           "/ʒ/"
+"k"           "/k/"
+"l"           "/l/"
+"m"           "/m/"
+"n"           "/n/"
+"o"           "/o/"
+"ò"           "/ɔ/"
+"p"           "/p/"
+"r"           "/ɣ/"
+"s"           "/s/"
+"t"           "/t/"
+"v"           "/v/"
+"w"           "/w/"
+"y"           "/j/"
+"z"           "/z/"
+**Digraph**    ""
+"ch"          "/ʃ/"
+"ng"          "/ŋ/"
+"ou"          "/u/"
+"ui"          "/wi/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /j/ deletes word-finally following /i/ [@Gurevich2004, p. 112].
+* /ʒ/ becomes /j/ word-finally (ibid.).
+
+# References

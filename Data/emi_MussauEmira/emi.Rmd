@@ -47,7 +47,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar"
 
 * Vowel length is contrastive [@EmiBrownie2007, p. 13].
 * @EmiRoss2002 argues for the more traditional five-vowel system of /i u e o a/ (p. 149).
-* Because Crubadan has instances of three vowel sequences, leaving diphthongs to be determined by syllable structure, they aren't included in the rule set.
+* Because Crúbadán has instances of three vowel sequences, leaving diphthongs to be determined by syllable structure, they aren't included in the rule set.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 vowels <- read.table(textConnection('
@@ -58,22 +58,14 @@ Low    ""      "ɑ"
 '), TRUE)
 
 kable(vowels, align = ('c')) %>%
-  kable_styling("bordered")
-
-
-diphthongs <- read.table(textConnection('
-Diphthongs
-"/ɑi/, /ɑu/, /ɑɛ/, /ɑɔ/, /ɛi/, /ɔi/, /ɔu/"
-'), TRUE)
-
-kable(diphthongs, align = 'c') %>%
-  kable_styling("bordered")
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 ```
 
 # Alphabet
 
 * Gemination and vowel length are written by doubling the relevant character.
-* The Seventh-Day Adventist orthography varies slightly, using ⟨q⟩ for /ɣ/ and ⟨g⟩ for /ŋ/ [@EmiRoss2002, p. 151]; I have opted not to support that orthography by default, given that it is unused by the Crubadan corpus.
+* The Seventh-Day Adventist orthography varies slightly, using ⟨q⟩ for /ɣ/ and ⟨g⟩ for /ŋ/ [@EmiRoss2002, p. 151]; I have opted not to support that orthography by default, given that it is unused by the Crúbadán corpus. However, my rule set provides the option for alternation between the two orthographies.
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}

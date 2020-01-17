@@ -45,14 +45,13 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Vowel length is contrastive [@IuDorais1990, p. 214]. Long vowels are indicated by doubling the vowel character [@IuDorais2010, p. 56].
+* Vowel length is contrastive [@IuDorais1990, p. 214].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 vowels <- read.table(textConnection('
          Front      Central       Back
 High      "i"        ""           "u"
-Mid       ""         ""           ""
 Low       ""         "a"          ""
 '), TRUE)
 
@@ -64,11 +63,10 @@ kable(vowels, align = 'c') %>%
 # Alphabet
 
 * Regarding the transcription, there are two rulesets (and, accordingly, two verify files): one for the Latin-alphabet orthography of Inuktitut, and one for the Inuktitut syllabary.
+    - Long vowels in the Roman alphabet are indicated by doubling the vowel character [@IuDorais2010, p. 56].
+    - Long vowels in the Inuit syllabary are indicated by a dot appended above a character [@IuDorais1990, p. 241].
 
 ## Inuit Syllabary
-
-* A dot can be appended above a character to indicate a long syllable.
-* See @IuDorais1990 (p. 241) for details.
 
 | ᐃ - /i/  | ᐅ - /u/  | ᐊ - /a/  | ᐁ - /ai/  |  Final   |
 |:--------:|:--------:|:--------:|:---------:|:--------:|
@@ -86,6 +84,7 @@ kable(vowels, align = 'c') %>%
 | ᕿ - /qi/ | ᖁ - /qu/ | ᖃ - /qa/ | ᙯ - /qai/ | ᖅ - /q/ |
 | ᖏ - /ŋi/ | ᖑ - /ŋu/ | ᖓ - /ŋa/ | ᙰ - /ŋai/| ᖕ - /ŋ/ |
 | ᖠ - /ɬi/ | ᖢ - /ɬu/ | ᖤ - /ɬa/ |            | ᖦ - /ɬ/ |
+|           |          |          |             |         |
 
 ## Roman Alphabet
 
@@ -120,7 +119,7 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * In some dialects, /s/ debuccalizes to [h] [@IuDorais1990, pp. 215-216].
-* In some dialects, /t/ spirantizes to [s] - or reduces even farther to [h] - when preceded by /i/ [@IuDorais1990, pp. 216-217].
+* In some dialects, /t/ spirantizes to [s] (or reduces even farther to [h]) when preceded by /i/ [@IuDorais1990, pp. 216-217].
 * In some Alaskan dialects, /p/ spirantizes to [v] and /v/ approximantizes to [w] when preceded by unstressed syllables [@IuDorais1986, p. 25].
 * In some dialects, /q/ spirantizes to [χ] or [ʁ] (ibid.).
 * In some Greenlandic dialects, intervocalic /ŋ/ deletes [@IuDorais1986, p. 27].

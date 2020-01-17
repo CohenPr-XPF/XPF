@@ -1,0 +1,29 @@
+# Dedua Rule Set
+# Written by Jordan
+# Last Updated: 2019-10-22
+type,sfrom,sto,weight,precede,follow,comment
+# Class rules
+class,passthrough,[abdefikmnoprstuw],,,,
+class,i-u-dip,[eao],,,,
+class,misc,[-],,,,
+# Individual Letters
+sub,c,ʔ,3,,,
+sub,g,ɡ,3,,,
+sub,h,ʔ,3,,,
+sub,y,j,3,,,
+# Digraphs
+sub,d,dʑ,4,,z,
+sub,z,,4,d,,"clean-up",
+sub,g,ɡb,4,,b,
+sub,b,,4,g,,"clean-up",
+sub,k,kp,4,,p,
+sub,p,,4,k,,"clean-up",
+sub,n,ŋ,4,,g,
+sub,g,,4,n,,"clean-up",
+# Passthrough
+sub,({passthrough}),\1,2,,,
+# Diphthongs
+ipasub,({i-u-dip}) i,\1i,2,,,
+ipasub,({i-u-dip}) u,\1u,2,,,
+# Misc. Rules
+sub,{misc},,2,,,

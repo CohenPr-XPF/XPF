@@ -11,7 +11,8 @@ Last Updated: 2019-06-10
 
 **Language Family**: Eskimo-Aleut / Eskimo / Inuit / Kalaallisut
 
-Kalaallisut is the autonym of the Greenlandic language; it is also used specifically to refer to the West Greenlandic dialect of the language. Therefore, where dialects diverge, I intend to follow the phonology of West Greenlandic.
+* Kalaallisut is the autonym of the Greenlandic language; it is also used specifically to refer to the West Greenlandic dialect of the language. Therefore, where dialects diverge, I intend to follow the phonology of West Greenlandic.
+* Kalaallisut is spoken in Greenland, but also in Denmark.
 
 # Phonology
 
@@ -19,77 +20,99 @@ Kalaallisut is the autonym of the Greenlandic language; it is also used specific
 
 * @KlRischel1974 describes /ɴ/ as being of a "marginal status" (p. 22).
 * @KlRischel1974 posits /h/ as appearing in some interjections, but not normally being contrastive (p. 23).
-* /l/ is sometimes rendered as [ʟ]. [@KlRischel1974, p. 246]
-* [ts] is the only non-geminate consonant cluster to be attested in modern Greenlandic. [@KlCollis1990, p. 311]
+* /l/ is sometimes rendered as [ʟ] [@KlRischel1974, p. 246].
+* [ts] is the only non-geminate consonant cluster to be attested in modern Greenlandic [@KlCollis1990, p. 311].
 * /ʃ/ is attested in some dialects, but because of its limited usage and lack of orthographic attestation [@KlCollis1990, p. 301], I have opted to omit it.
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /p/, /m/, /v/  
-Alveolar: /t/, /n/, /s/, /l/  
-Palatal: /j/  
-Velar: /k/, /ŋ/, /ɣ/  
-Uvular: /q/, /ɴ/, /ʁ/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /t/, /k/, /q/  
-Nasals: /m/, /n/, /ŋ/, /ɴ/  
-Fricatives: /v/, /s/, /ɣ/, /ʁ/  
-Approximants: /l/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Alveolar    Palatal     Velar     Uvular
+Stops                       "p"         "t"         ""         "k"       "q"
+Fricatives                  "v"         "s"         ""         "ɣ"       "ʁ"
+Nasals                      "m"         "n"         ""         "ŋ"       "ɴ"
+Approximants                ""          "l"         "j"        ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Uvular"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE)
+```  
 
 ## Vowels
 
-/i/, /u/, /a/
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```    
 
 # Alphabet
 
-a - /a/  
-e - /i/ (only appears before uvulars)  
-g - /ɣ/  
-i - /i/  
-j - /j/  
-k - /k/  
-l - /l/  
-m - /m/  
-n - /n/  
-o - /u/ (only appears before uvulars)  
-p - /p/  
-q - /q/  
-r - /ʁ/  
-s - /s/  
-t - /t/  
-u - /u/  
-v - /v/  
+* Long vowels and geminated consonants are written with double letters [@KlCollis1990, p. 301].
+  * Geminated /ŋ/ is written ⟨nng⟩ [@KlCollis1990, p. 317].
+* ⟨e⟩ and ⟨o⟩ were used more widely in earlier orthographies, but in the modern orthography they only survive in pre-uvular contexts [@KlCollis1990, p. 301].
+* ⟨f⟩ is sometimes used to represent /v/.
 
-## Digraphs
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-ng - /ŋ/  
-rn - /ɴ/  
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme            Comment
+"a"            "/a/"               ""
+"e"            "/i/"    "only appears before uvulars"  
+"g"            "/ɣ/"               ""
+"i"            "/i/"               ""
+"j"            "/j/"               ""
+"k"            "/k/"               ""
+"l"            "/l/"               ""
+"m"            "/m/"               ""
+"n"            "/n/"               ""
+"o"            "/u/"     "only appears before uvulars"
+"p"            "/p/"               ""
+"q"            "/q/"               ""
+"r"            "/ʁ/"               ""
+"s"            "/s/"               ""
+"t"            "/t/"               ""
+"u"            "/u/"               ""
+"v"            "/v/"               ""
+**Digraph**     ""                 ""
+"ng"           "/ŋ/"               ""   
+"rn"           "/ɴ/"               ""
+'), TRUE)
 
-## Orthographic Notes
-
-* Long vowels and geminated consonants are written with double letters. [@KlCollis1990, p. 301]
-  * Geminated /ŋ/ is written <nng>. [@KlCollis1990, p. 317]
-* <e> and <o> were used more widely in earlier orthographies, but in the modern orthography they only survive in pre-uvular contexts. [@KlCollis1990, p. 301]
-* <f> is sometimes used to represent /v/.
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
-* In the diphthongs /ai/ and /au/, the second vowel assimilates to yield [aa]; however, /ai/ is preserved word-finally. [@KlRischel1974, p. 32]
-* In consonant clusters, the first fully assimilates to the second, yielding a geminate. [@KlRischel1974, p. 35]
-* Stem-final uvulars delete when followed by /ɣ/ or /ʁ/. [@KlRischel1974, p. 36]
-* Vowels pharyngealize before uvular consonants. [@KlRischel1974, p. 38]
-* Long consonants shorten after long vowels, especially for speakers in southern dialect areas. [@KlRischel1974, p. 59]
-* Intervocalic /q/ is often closed incompletely, leading to some degree of spirantization. [@KlRischel1974, p. 131]
-* /ŋ/ nasalizes preceding vowels, sometimes at the expense of its own realization; this process is more advanced in East Greenlandic than in other dialects. [@KlRischel1974, p. 132]
-* /t/ becomes an affricate when followed by /i/. [@KlCollis1990, p. 300]
+* In the diphthongs /ai/ and /au/, the second vowel assimilates to yield [aa]; however, /ai/ is preserved word-finally [@KlRischel1974, p. 32].
+* In consonant clusters, the first fully assimilates to the second, yielding a geminate [@KlRischel1974, p. 35].
+* Stem-final uvulars delete when followed by /ɣ/ or /ʁ/ [@KlRischel1974, p. 36].
+* Vowels pharyngealize before uvular consonants [@KlRischel1974, p. 38].
+* Long consonants shorten after long vowels, especially for speakers in southern dialect areas [@KlRischel1974, p. 59].
+* Intervocalic /q/ is often closed incompletely, leading to some degree of spirantization [@KlRischel1974, p. 131].
+* /ŋ/ nasalizes preceding vowels, sometimes at the expense of its own realization; this process is more advanced in East Greenlandic than in other dialects [@KlRischel1974, p. 132].
+* /t/ becomes an affricate when followed by /i/ [@KlCollis1990, p. 300].
 
 # Misc. Rules
 
-* In some dialects, /ɣ/ is replaced entirely by /ŋ/; geminates of /ɣ/ tend to collapse instead to [kk]. [@KlRischel1974, p. 167]
-* Suffix-initial consonants alternate between stops and fricatives; they are stops when preceded by a consonant, fricatives when preceded by a vowel. [@KlRischel1974, p. 242]
-* Intervocalic, stem-internal single fricatives tend to despirantize when they become geminates. [@KlRischel1974, p. 242]
-* For the aforementioned stop/fricative alternations, the fricative seems to be the underlying form. [@KlRischel1974, p. 249]
+* In some dialects, /ɣ/ is replaced entirely by /ŋ/; geminates of /ɣ/ tend to collapse instead to [kk] [@KlRischel1974, p. 167].
+* Suffix-initial consonants alternate between stops and fricatives; they are stops when preceded by a consonant, fricatives when preceded by a vowel [@KlRischel1974, p. 242].
+* Intervocalic, stem-internal single fricatives tend to despirantize when they become geminates [@KlRischel1974, p. 242].
+* For the aforementioned stop/fricative alternations, the fricative seems to be the underlying form [@KlRischel1974, p. 249].
 
 # References

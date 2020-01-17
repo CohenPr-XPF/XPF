@@ -50,7 +50,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 * There is some debate as to whether /ɯ/ or /ɨ/ corresponds to ⟨ü⟩. Whereas @mansen_aprendamos_1984 opts for /ɨ/ (p. 4), @alvarez_manual_2017 and @sabogal_variable_2018 opt for /ɯ/ (p. 18; p. 49). I have chosen to use /ɯ/, which is more consistent with recent documentation.
 * Rising vowel sequences can be pronounced as diphthongs or independent monophthongs - the pronunciation is in free variation [@sabogal_variable_2018, p. 50].
 * Vowel harmony is present in Wayuu, structured on the basis of fronting and rounding [@sabogal_variable_2018, p. 53].
-* Vowels often become nasalized; however, the meaning does not change whether they are pronounced orally or nasally [@mansen_aprendamos_1984, p. 9].
+* Vowels often become nasalized; however, this is not a phonemic feature [@mansen_aprendamos_1984, p. 9].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

@@ -4,8 +4,10 @@
 type,sfrom,sto,weight,precede,follow,comment
 # Classes
 class,cons-output,(b|d|dˤ|ʕ|f|ɡ|ɡʷ|ʁ|ʁʷ|h|ħ|ʒ|ʒˤ|k|kʷ|l|lˤ|m|n|nˤ|q|qʷ|r|rˤ|s|sˤ|ʃ|t|tˤ|w|χ|χʷ|j|z|zˤ),,,,
-class,passthrough,[abdfhiklmnqrstuwʷz],,,,
+class,passthrough,(a|b|d|f|h|i|k|l|m|n|q|r|s|t|u|w|ʷ|z),,,,
 class,pharyngeal,"[̣]",,,,
+class,labial-out,[kɡqχʁ],,,,
+class,pharyngeal-out,[tdszʒnrl],,,,
 # Individual Letters
 sub,ḍ,dˤ,4,,,
 sub,e,,4,,,"<e> is used to mark [ə], which is non-phonemic in Shilha"
@@ -28,12 +30,15 @@ sub,-,,4,,,"some words have a hyphen with no phonetic value"
 # Diacritics that get read separately
 sub,h,χ,8,,̬,"<h̬>"
 sub,̬,,8,,,"cleans up the diacritic from <h̬>"
-sub,{pharyngeal},"ˤ",1,,,"pharyngealization diacritic"
 ipasub,ʷ χ,χʷ,3.5,,,"for some reason, <ʷ> usually comes before <h̬>"
+sub,{pharyngeal},"ˤ",1,,,"pharyngealization diacritic"
 # Gemination
-ipasub,({cons-output}) \1,\1 ː,2,,,
-ipasub,({cons-output}) ːˤ,\1 \1ˤ,1,,,"corrects mistaken gemination of plain/pharyngealized consonant sequences"
+ipasub,({cons-output}) \1,\1 ː,3,,,
+ipasub,({cons-output}) ːˤ,\1 \1ˤ,2,,,"corrects mistaken gemination of plain/pharyngealized consonant sequences"
 # Misc. Rules
-ipasub, ʷ,ʷ,3,,,"attaches labialization to the preceding character"
-ipasub,({cons-output}) ːʷ,\1 \1ʷ,1,,,"fixes clusters of regular + labialized consonants"
+ipasub,({labial-out}) ʷ,\1ʷ,4,,,"attaches labialization to the preceding character"
+ipasub,({pharyngeal-out}) ˤ,\1ˤ,4,,,"attaches pharyngealization to the preceding character"
+ipasub,({cons-output}) ːʷ,\1 \1ʷ,2,,,"fixes clusters of regular + labialized consonants"
+ipasub, ʷ, @,1,,,"removes (59) occurrences of labialized consonants that aren't attested as phonemic - could be transcribed as plain consonants or included if documentation of the language changes"
+sub,ʷ,@,5,^,,,"removes (5) occurrences of word-initial diacritic (not attested)"
 sub,({passthrough}),\1,0.1,,,

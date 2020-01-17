@@ -42,7 +42,7 @@ Approximants                    ""        "l"         ""           "j"       "w"
 kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 6)) %>%
-  footnote(general = "Note: The bilabial stops are ordered voiceless, voiced, implosive. The alveolar and velar stops are ordered voiceless, ejective, voiced. The alveolar and postalveolar affricates are ordered voiceless, ejective.", general_title = "") %>%
+  footnote(general = "Note: The bilabial stops are ordered voiceless, voiced, and implosive. The alveolar and velar stops are ordered voiceless, ejective, and voiced. The alveolar and postalveolar affricates are ordered voiceless and ejective.", general_title = "") %>%
   column_spec(1, bold = TRUE)
 ```  
 
@@ -73,14 +73,14 @@ alphabet <- read.table(textConnection('
 Grapheme     Phoneme                        Comment
 "a"           "/a/"                           ""
 "b"           "/b/"                           ""
-"b\'"          "/ɓ/"                           ""
+"b\'"         "/ɓ/"                           ""
 "d"           "/d/"                           ""
 "e"           "/e/"                           ""
 "g"           "/ɡ/"                           ""
 "i"           "/i/"                           ""
 "j"           "/h/"                           ""
 "k"           "/k/"                           ""
-"k\'"          "/kʼ/"                          ""
+"k\'"         "/kʼ/"                          ""
 "l"           "/l/"                           ""
 "m"           "/m/"                           ""
 "n"           "/n/"                           ""
@@ -89,22 +89,22 @@ Grapheme     Phoneme                        Comment
 "r"           "/r/"                           ""
 "s"           "/s/"                           ""
 "t"           "/t/"                           ""
-"t\'"          "/tʼ/"                          ""
+"t\'"         "/tʼ/"                          ""
 "u"           "/u/"                           ""
 "w"           "/w/"                           ""
 "x"           "/ʃ/"                           ""
 "y"           "/j/"                           ""
-"\'"           "/ʔ/"                           ""
-**Digraph**   ""                             ""
+"\'"          "/ʔ/"                           ""
+**Digraph**   ""                              ""
 "ch"          "/tʃ/"                          ""
-"ch\'"        "/tʃʼ/"                          ""
-"tz"         "/ts/"                           ""
-"tz\'"        "/tsʼ/"                          ""
-"**Orthographic Variations**"  ""                ""
-"c"          "/k/"              "realized as /s/ in Spanish loanwords"
-"c\'"         "/kʼ/"                           ""
-"qu"         "/k/"                            ""
-"q\'u"        "/kʼ/"                           ""
+"ch\'"        "/tʃʼ/"                         ""
+"tz"          "/ts/"                          ""
+"tz\'"        "/tsʼ/"                         ""
+"**Orthographic Variation**"  ""              ""
+"c"           "/k/"              "realized as /s/ in Spanish loanwords"
+"c\'"         "/kʼ/"                          ""
+"qu"          "/k/"                           ""
+"q\'u"        "/kʼ/"                          ""
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%

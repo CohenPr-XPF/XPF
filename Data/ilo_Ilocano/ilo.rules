@@ -17,7 +17,7 @@ sub,r,ɾ,1,,,
 sub,t,t̪,1,,,
 sub,y,j,1,,,
 sub,-,ʔ,1,,,
-sub,({vowel-in}),ʔ \1,1,^,,,
+sub,({vowel-in}),ʔ \1,1,^,,,"glottal stop occur word-initially preceding vowels",
 sub,({passthrough}),\1,0.5,,,
 # Digraphs
 sub,n,ŋ,2,,g,

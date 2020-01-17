@@ -43,6 +43,9 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 
 ## Vowels
 
+* Hiatus between vowels is generally avoided, so diphthongs and triphthongs occur regularly [@Trask2008, p. 12]. The diphthongs below are treated as complex nuclei.
+    - Sequences of three vowels also occurs; however, since the treatment of them varies, I have opted to still form diphthongs between two vowels (with /au/ and /ai/ taking priority) [@Trask2008, p. 31].
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 vowels <- read.table(textConnection('
@@ -58,7 +61,7 @@ kable(vowels, align = 'c') %>%
 
 diphthongs <- read.table(textConnection('
 Diphthongs
-"/ai/,  /ei/,  /oi/,  /au/,  /eu/"
+"/ai/,  /ei/,  /oi/,  /ui/,  /au/,  /eu/"
 '), TRUE)
 
 kable(diphthongs, align = 'c') %>%
@@ -114,7 +117,7 @@ kable(alphabet, align = 'c') %>%
 
 * Several lenition processes are noted in @Saltarelli1988 :
     - /b/, /d/, and /g/ may spirantize to [β], [ð], and [ɣ], respectively, intervocalically, or following a tap or trill while also preceding a vowel.
-    - /h/ becomes voiced intervocalically
+    - /h/ becomes voiced intervocalically.
     - /s̻/ and /s̺/ become voiced following a voiced consonant.
     - /b/, /d/, /g/, and /ɾ/ may delete intervocalically.
     - /h/ deletes when preceded by an aspirated consonant of when followed by another /h/.

@@ -1,0 +1,13 @@
+# Sepik Ramu Rule Set
+# Written by: Emily
+# Last Update: 2020-01-07
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[abdehiɨkmnoprstuw],,,,
+class,h-preceder,[wmny],,,,
+# Individual Letters
+sub,g,ɡ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# <wh>, <mh>, <nh>, <yh>
+ipasub,({h-preceder}) h,h \1,2,,,

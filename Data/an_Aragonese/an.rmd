@@ -104,13 +104,14 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * /k/ is often deleted word-finally [@sanchez_pitarch_propuesta_2010, p. 5].
-* Voiced stops become fricatives between vowels and /d/ is often deleted completely between vowels [@mott_chistabino_2007, pp. 104-105].
-* Very often, the voiced approximants in Chistabino are reduced to zero by assimilation to following consonants, as in ilesia [i'lesja] 'church' < iglesia" [@mott_chistabino_2007, p. 105].
+* Voiced stops become fricatives between vowels [@mott_chistabino_2007, pp. 104-105].
+* /d/ is often deleted completely between vowels (ibid.).
+* Very often, the voiced approximants in Chistabino are reduced to zero by assimilation to following consonants, as in "ilesia" [i'lesja] ("church" = iglesia") [@mott_chistabino_2007, p. 105].
 * In syllable-final positions, /s/ may become voiced preceding voiced consonants [@Ledgeway2016, p. 389].
 
 # Misc. Rules
 
 * Nasal consonants assimilate to the place of articulation of the following obstruent [@mott_chistabino_2007, p. 106].
-* The alveolar lateral assimilates to the place of the following interdental, dental, or palatalized consonant [@mott_chistabino_2007, p. 7].
+* /l/ assimilates to the place of the following interdental, dental, or palatalized consonant [@mott_chistabino_2007, p. 7].
 
 # References

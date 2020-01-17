@@ -41,14 +41,14 @@ Approximants                 ""         ""        ""            "j"       ""    
 kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 6)) %>%
-  footnote(general = "Note: For phonemes that share a cell, those on the left are unaspirated and those on the right are aspirated; the third phoneme in the velar stop cell is a voiceless labiovelar stop.", general_title = "") %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are unaspirated and those on the right are aspirated. The third phoneme in the velar stop cell is a voiceless labiovelar stop.", general_title = "") %>%
   column_spec(1, bold = TRUE)
 ```
 
 ## Vowels
 
 * Bora has two contrastive tones, high and low [@BoaThiesen2012, p. 27].
-  - High tone is marked with an acute accent on the vowel; low tone is unmarked [@BoaThiesen2012, p. 27].
+  - High tone is marked with an acute accent on the vowel, whereas low tone is unmarked [@BoaThiesen2012, p. 27].
 * Vowel length is contrastive in Bora. Long vowels are written by repeating the vowel character [@BoaThiesen2012, p. 31].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -111,7 +111,7 @@ kable(alphabet, align = 'c') %>%
 
 * Postconsonantal /j/ tends to delete, and instead just palatalizes the previous consonant [@BoaThiesen2012, p. 27].
 * In syllable codas, /x/ is simply produced as a preaspiration of the following consonant (written by Thiesen as ⟨ˣ⟩) [@BoaThiesen2012, p. 40].
-* Syllable-final /ʔ/ is produced as simply a glottalization of the vowel (written as ⟨ˀ⟩) [@BoaThiesen2012, p. 28].
+* Syllable-final /ʔ/ is produced simply as a glottalization of the vowel (written as ⟨ˀ⟩) [@BoaThiesen2012, p. 28].
 * /kp/ becomes [kʷ] in fast speech, particularly among younger speakers [@BoaRoe2014, p. 9].
 
 # Misc. Rules

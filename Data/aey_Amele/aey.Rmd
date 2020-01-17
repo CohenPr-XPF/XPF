@@ -31,6 +31,7 @@ consonants <- read.table(textConnection('
 Stops                       "b"     "t d"     ""       "k ɡ"  "ɡb"        "ʔ"
 Fricatives                  "f"     "s"       ""       ""     ""          "h"
 Nasals                      "m"     "n"       ""       ""     ""          ""
+Trills                      ""      "r"       ""       ""     ""          ""
 Approximants                ""      "l"       "j"      ""     "w"         ""
 '), TRUE)
 
@@ -43,7 +44,8 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Amele contains the following diphthongs: /ai/, /au/, /ei/, /eu/, /oi/, /ou/; @AeyRoberts2016 interprets these as sequences of consecutive vowels rather than as complex phonemes. Other sequences of vowels can also occur (including consecutive identical vowels), but only across syllable boundaries [@AeyRoberts2016, pp. 66-68]. (@AeyRoberts1998 also argues for the existence of /ae/ and /ao/ as diphthongs (p. 3), but he seems to have moved away from that analysis by 2016.)
+* Amele contains the following diphthongs: /ai/, /au/, /ei/, /eu/, /oi/, /ou/
+    - @AeyRoberts2016 interprets these as sequences of consecutive vowels rather than as complex phonemes. Other sequences of vowels can also occur (including consecutive identical vowels), but only across syllable boundaries [@AeyRoberts2016, pp. 66-68]. (@AeyRoberts1998 also argues for the existence of /ae/ and /ao/ as diphthongs (p. 3), but he seems to have moved away from that analysis by 2016). I have chosen not to account for them in the rules.
 * Mid vowels sometimes lengthen, but @AeyRoberts2016 finds the length to be a realization of an underlying sequence of identical vowels (p. 75).
 
 
@@ -63,7 +65,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* The alphabet used is of the modern Amele orthography (developed ca. 1990), as the older orthography (developed in the 1920s) has several ambiguities; the modern orthography is also the one used by Crubadan, making it all the more preferable.
+* The alphabet used is of the modern Amele orthography (developed ca. 1990), as the older orthography (developed in the 1920s) has several ambiguities. The modern orthography is also the one used by Crubadan, making it all the more preferable.
 * Older orthography also uses ⟨p⟩, but because [p] is non-phonemic in Amele, I have excluded ⟨p⟩ from my ruleset.
 
 
@@ -104,7 +106,7 @@ kable(alphabet, align = 'c') %>%
 
 # Misc. Rules
 
-* Word-final non-alveolar stops devoice, if the word is multisyllabic; contrast between /ɡb/ and /b/ also collapses in such position, with both phonemes being realized as [p] [@AeyRoberts2016, pp. 52-53, 64].
+* Word-final non-alveolar stops devoice if the word is multisyllabic; contrast between /ɡb/ and /b/ also collapses in such position, with both phonemes being realized as [p] [@AeyRoberts2016, pp. 52-53, 64].
 * /j/ goes to [ʒ] in certain circumstances: word-initially, when surrounded on both sides by /a/, word-finally after /i/, and intervocalically before /i/ [@AeyRoberts2016, p. 57].
 * Word-final /w/ is realized as [ʋ] [@AeyRoberts2016, p. 64].
 * Consonant clusters can only occur word-medially [@AeyRoberts2016, p. 65].

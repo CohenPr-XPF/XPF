@@ -62,11 +62,6 @@ kable(consonants, align = 'c') %>%
   column_spec(1, bold = TRUE)
 ```
 
-## Stress
-
-* Stress falls on the penultimate syllable of words [@AyBriggs1976, p. 89].
-* Stress is not phonemic in Aymara [@AyHardman1981, p. 8].
-
 # Alphabet
 
 * The orthography I will be using is the Unified Alphabet, which was made official by the governments of Bolivia and Peru in 1984 and 1985 respectively [@AyColer2014, pp. 31-32]. Older sources, such as Wexler and Hardman, will use different orthographies.
@@ -111,7 +106,7 @@ kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
 
-## Syllable structure
+# Syllable structure
 
 * Roots are typically either CV(C)CV or (less commonly) V(C)CV. Most suffixes are CV but there are several other options [@AyColer2014, p. 29].
 * Vowel clusters are avoided [@AyHardman1981, p. 190].

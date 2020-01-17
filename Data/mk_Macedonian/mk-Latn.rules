@@ -1,0 +1,46 @@
+# Macedonian - Latin Rule Set
+# Written by Jordan
+# Last Updated: 2019-12-19
+type,sfrom,sto,weight,precede,follow,comment
+# Class rules
+class,passthrough,[abvijkmpruf],,,,
+class,frontV-j,[ieј],,,,
+class,backV-C,[abvkmprufgdzosthc],,,,
+class,j-preceder,[glnkd],,,,
+class,h-preceder,[csz],,,,
+class,gem,[t̪d̪s̪z̪lmj],,,,
+# Individual Letters
+sub,g,ɡ,3,,,
+sub,d,d̪,3,,,
+sub,e,ɛ,3,,,
+sub,z,z̪,3,,,
+sub,l,l,4,,{frontV-j},
+sub,l,ɫ̪,3,,,
+sub,n,n̪,3,,,
+sub,o,ɔ,3,,,
+sub,s,s̪,3,,,
+sub,t,t̪,3,,,
+sub,h,x,3,,,
+sub,c,ts̪,3,,,
+sub,({passthrough}),\1,2,,,
+# Multigraphs
+sub,g,ɟ,4,,j,
+sub,l,l,4,,j{backV-C},
+sub,l,l,4,,j$,
+sub,n,ɲ,4,,j,
+sub,k,c,4,,j,
+sub,d,dʒ,4,,j,
+sub,j,,4,{j-preceder},,"clean-up",
+sub,d,dz̪,4,,z,
+sub,z,,5,d,,"clean-up",
+sub,z,ʒ,4,,h,
+sub,c,tʃ,4,,h,
+sub,s,ʃ,4,,h,
+sub,d,dʒ,6,,zh,
+sub,h,,4,{h-preceder},,"clean-up",
+sub,t,ts̪,4,,s,
+sub,s,,4,t,,"clean-up",
+# Consonant Gemination
+ipasub,({gem}) \1,\1 ː,2,,,
+# Misc. Rules
+sub,-,,3,,,

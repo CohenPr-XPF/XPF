@@ -6,14 +6,13 @@ bibliography: mg.bib
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-Last updated: 09-18-2019
+Last updated: 2019-10-18
 
 # Background
 
 **Language family**: Austronesian / Malayo-Polynesian / East Barito / Malagasy
+
+* Malagasy is spoken in Madagascar.
 
 # Phonology
 
@@ -23,90 +22,116 @@ Last updated: 09-18-2019
 * Although the pre-nasalized /g/ occurs in Malagasy, /ŋ/ is not attributed as being part of the official language [@rasoloson_malagasy_2005, pg. 459]. It is, however, said to be realized through nasal assimilation in the official language and part of the phonemic inventories in other dialects (eg. Betsimisaraka) [@oneill_phonology_2015, pg. 13].
 * Geminate consonant do not occur in the language [@rasoloson_malagasy_2005, pg. 460].
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Bilabial: /m/, /p/, /b/, /ᵐb/, /ᵐp/  
-Labiodental: /f/, /v/  
-Dental: /t/, /ⁿt/, /d/, /ⁿd/  
-Alveolar: /n/, /ts/, /dz/, /ⁿts/, /ⁿdz/, /s/, /z/, /l/, /r/  
-Rhotic: /tʳ/, /ⁿtʳ/, /dʳ/, /ⁿdʳ/  
-Velar: /k/, /ᵑk/, /g/, /ᵑg/  
-Glottal: /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Nasal: /m/, /n/  
-Stop: /p/, /b/, /ᵐb/, /ᵐp/, /t/, /d/, /ⁿt/, /ⁿd/, /ts/, /dz/, /ⁿts/, /ⁿdz/, /tʳ/, /ⁿtʳ/,  /dʳ/,  /ⁿdʳ/, /k/, /ᵑk/, /g/, /ᵑg/  
-Fricative: /f/, /v/, /s/, /z/, /h/  
-Lateral: /l/  
-Trill: /r/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"                 Labial     Dental    Alveolar       Velar    Glottal
+"Stops (plain)"                          "p  b"     "t̪  d̪"    "ts  dz"      "k  ɡ"      ""
+"Stops (prenasalized)"                   "ᵐp  ᵐb"   "ⁿt̪  ⁿd̪"  "ⁿts  ⁿdz"    "ᵑk  ᵑɡ"     ""
+"Affricates (trilled)"                     ""         ""      "tʳ  dʳ"        ""        ""
+"Affricates (prenasalized and trilled)"    ""         ""     "ⁿtʳ  ⁿdʳ"       ""        ""
+Fricatives                               "f  v"       ""       "s  z"         ""        "h"  
+Nasals                                     "m"        ""        "n"           ""        ""
+Trills                                     ""         ""        "r"           ""        ""
+Approximants                               ""         ""        "l"           ""        ""
+'), TRUE)
 
-##Vowels
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
 
-* There is some controversy around the phoneme /o/. Although it appears to occur as a dialectal variant (eg. Betsimisaraka) [@oneill_phonology_2015, pg. 13, 43], it is not attested as being part of the official inventory. Rather, authors argue that it's phonetically realized as a result of reduced vowel duration [@rasoloson_malagasy_2005, pg. 460], or as a result of /u/ being in environments with non-high vowels [@oneill_phonology_2015, pg. 42, 43].
-* @rasoloson_malagasy_2005 exclaims that /o/ does occur in loanwords, which is represented by <ô> (pg. 460).
-* There is a lack of consensus regarding the diphthongs of Malagasy [@oneill_phonology_2015, pg. 43-45]. Therefore, I won't account for them. However, it is important to note that some vowel sequences are actually realized on the surface as monophthongs (eg. /ia/ and /ai/ as /e/, and /ua/ as /o/) [@rasoloson_malagasy_2005, pg. 460].
+## Vowels
 
-/i/, /e/, /a/, /u/
+* There is some controversy around the phoneme /o/. Although it appears to occur as a dialectal variant (eg. Betsimisaraka) [@oneill_phonology_2015, pp. 13, 43], it is not attested as being part of the official inventory. Rather, authors argue that it's phonetically realized as a result of reduced vowel duration [@rasoloson_malagasy_2005, p. 460], or as a result of /u/ being in environments with non-high vowels [@oneill_phonology_2015, pp. 42, 43].
+* @rasoloson_malagasy_2005 exclaims that /o/ does occur in loanwords, which is represented by ⟨ô⟩ (p. 460).
+* There is a lack of consensus regarding the diphthongs of Malagasy [@oneill_phonology_2015, pp. 43-45]. Therefore, I won't account for them. However, it is important to note that some vowel sequences are actually realized on the surface as monophthongs (eg. /ia/ and /ai/ as [e], and /ua/ as [o]) [@rasoloson_malagasy_2005, p. 460].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           ""
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```    
 
 # Alphabet
 
-* The Malagasy alphabet is referred to as the Abidy [@griffiths_grammar_1854, pg. 11].
+* The Malagasy alphabet is referred to as the Abidy [@griffiths_grammar_1854, p. 11].
 
-a - /a/  
-b - /b/  
-d - /d/  
-e - /e/  
-f - /f/  
-g - /g/  
-h - /h/  
-i - /i/  
-j - /dz/  
-k - /k/  
-l - /l/  
-m - /m/  
-n - /n/  
-o - /u/  
-p - /p/  
-r - /r/  
-s - /s/  
-t - /t/  
-v - /v/  
-y - /i/ (word-finally)  
-z - /z/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-# Digraphs
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme         Comment
+"a"           "/a/"             ""
+"b"           "/b/"             ""
+"d"           "/d̪/"             ""
+"e"           "/e/"             ""
+"f"           "/f/"             ""
+"g"           "/ɡ/"             ""
+"h"           "/h/"             ""
+"i"           "/i/"             ""
+"j"           "/dz/"            ""
+"k"           "/k/"             ""
+"l"           "/l/"             ""
+"m"           "/m/"             ""
+"n"           "/n/"             ""
+"o"           "/u/"             ""
+"p"           "/p/"             ""
+"r"           "/r/"             ""
+"s"           "/s/"             ""
+"t"           "/t̪/"             ""
+"v"           "/v/"             ""
+"y"           "/i/"       "word-finally"  
+"z"           "/z/"             ""
+**Multigraph** ""               ""
+"mb"          "/ᵐb/"            ""
+"mp"          "/ᵐp/"            ""
+"nd"          "/ⁿd̪/"            ""
+"ng"          "/ᵑɡ/"            ""
+"nj"          "/ⁿdz/"           ""
+"nk"          "/ᵑk/"            ""
+"nt"          "/ⁿt̪/"            ""
+"dr"          "/dʳ/"            ""
+"tr"          "/tʳ/"            ""
+"ts"          "/ts/"            ""
+"ntr"         "/ⁿtʳ/"           ""  
+"ndr"         "/ⁿdʳ/"           ""
+"nts"         "/ⁿts/"           ""
+'), TRUE)
 
-mb - /ᵐb/  
-mp - /ᵐp/  
-nd - /ⁿd/  
-ng - /ᵑg/  
-nj - /ⁿdz/  
-nk - /ᵑk/  
-nt - /ⁿt/  
-dr - /dʳ/  
-tr - /tʳ/  
-ts - /ts/  
-
-# Trigraphs
-
-ntr - /ⁿtʳ/  
-ndr - /ⁿdʳ/  
-nts - /ⁿts/  
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
 
 # Syllable Structure
 
-* Syllables in Malagasy follow a (C)V structure - codas are prohibited [@rasoloson_malagasy_2005, pg. 460].
-* Aside from the consonants that appear in succession with the digraphs and trigraphs, no consonant clusters are allowed in syllable onsets (loanwords are exempt) [@rasoloson_malagasy_2005, pg. 460].
+* Syllables in Malagasy follow a (C)V structure - codas are prohibited [@rasoloson_malagasy_2005, p. 460].
+* Aside from the consonants that appear in succession with the digraphs and trigraphs, no consonant clusters are allowed in syllable onsets (loanwords are exempt) [@rasoloson_malagasy_2005, p. 460].
 
 ## Lenition Rules
 
-* All velar stops palatalize following a vowel [@rasoloson_malagasy_2005, pg. 459].
-* Vowels often become nasalized when preceding nasal or pre-nasalized consonants [@rasoloson_malagasy_2005, pg. 460].
-* Vowels are often elided word-finally and intervocalically [@tench_malagasy_2008, pg. 2].
-* /h/ is almost always elided except intervocalically [@oneill_phonology_2015, pg. 36].
+* All velar stops palatalize following a vowel [@rasoloson_malagasy_2005, p. 459].
+* Vowels often become nasalized when preceding nasal or pre-nasalized consonants [@rasoloson_malagasy_2005, p. 460].
+* Vowels are often elided word-finally and intervocalically [@tench_malagasy_2008, p. 2].
+* /h/ is almost always elided except intervocalically [@oneill_phonology_2015, p. 36].
 
-# Misc Rules
+# Misc. Rules
 
 * Fricatives become stops in possessive and verbal constructions, reduplication, and compounding [@rasoloson_malagasy_2005].
-* Pre-nasalized stops occur word-medially. Word-initially, the nasal is unpronounced and the oral stop is voiceless [@rasoloson_malagasy_2005, pg. 459].
+* Pre-nasalized stops occur word-medially. Word-initially, the nasal is unpronounced and the oral stop is voiceless [@rasoloson_malagasy_2005, p. 459].
+
+# References

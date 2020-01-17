@@ -7,11 +7,14 @@ output: html_document
 
 Last Updated: 2019-10-17
 
+
+**Note: Roughly 30% of Crúbadán not transcribed - possibly due to phonetic adaptation of the orthography**
+
 # Background
 
 **Language Family**: Pama-Nyungan / Yalandyic / Kuku-Yalanji
 
-* This language can be spelled in a handful of ways, including Gugu-Yalanji and Guugu Yalandji.
+* This language has a number of different names, including Gugu-Yalanji and Guugu Yalandji.
 * Kuku-Yalanji is spoken in the Queensland state of Northern Australia.
 
 # Phonology
@@ -48,7 +51,6 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 vowels <- read.table(textConnection('
          Front      Central       Back
 High      "i"        ""           "u"
-Mid       ""         ""           ""
 Low       ""         "a"          ""
 '), TRUE)
 

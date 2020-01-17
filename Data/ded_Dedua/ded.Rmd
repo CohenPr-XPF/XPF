@@ -1,0 +1,130 @@
+---
+title: "Dedua"
+author: "Jordan Schuster"
+bibliography: ded.bib
+output: html_document
+---
+
+Last Updated: 2019-12-21
+
+# Background
+
+**Language Family:** Trans-New Guinea, Main Section, Central and Western, Huon-Finisterre, Huon, Eastern
+
+* Dedua is spoken in the Morobe province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Alveolar  Alveopalatal    Palatal     Velar    Glottal  
+Stops                      "p  b"     "t  d"        ""            ""     "k kp ɡ ɡb"   "ʔ"
+Affricates                  ""         ""           "dʑ"          ""          ""       ""
+Fricatives                  "f"        "s"          ""            ""          ""       ""
+Nasals                      "m"        "n"          ""            ""          "ŋ"      ""
+Trills                      ""         "r"          ""            ""          ""       ""
+Approximants                "w"        ""           ""            "j"         ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Alveopalatal", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. /kp/ and /ɡb/ are labiovelar stops.", general_title = "")
+```
+
+## Vowels
+
+* The diphthongs listed below are always seen as complex nuclei according to @McEvoy2005 (p. 270).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""          "u"
+Mid       "e"         ""          "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ei/, /eu/, /ai/, /au/, /oi/, /ou/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme        Comment
+"a"             "/a/"           ""
+"b"             "/b/"           ""
+"c"             "/ʔ/"        "syllable-finally"
+"d"             "/d/"           ""
+"e"             "/e/"           ""
+"f"             "/f/"           ""
+"g"             "/ɡ/"           ""
+"h"             "/ʔ/"         "syllable-initially"
+"i"             "/i/"           ""
+"k"             "/k/"           ""
+"m"             "/m/"           ""
+"n"             "/n/"           ""
+"o"             "/o/"           ""
+"p"             "/p/"           ""
+"r"             "/r/"           ""
+"s"             "/s/"           ""
+"t"             "/t/"           ""
+"u"             "/u/"           ""
+"w"             "/w/"           ""
+"y"             "/j/"           ""
+**Diphthong**    ""             ""
+"dz"            "/dʑ/"          ""
+"gb"            "/ɡb/"          ""
+"kp"            "/kp/"          ""
+"ng"            "/ŋ/"           ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Dedua consist of the following structures [@ceder_dedua_2003, p. 3]:
+    - V
+    - VV
+    - VC
+    - CV
+    - CVV
+    - CVC
+    - CVVC
+
+* Glottal stops and /ŋ/ are the only phonemes that can appear in syllable codas [@McEvoy2005, p. 268], so complex consonants are always realized as such.
+
+# Lenition Rules
+
+* /ʔ/ becomes [h] syllable-initially [@ceder_dedua_2003, p. 3].
+
+# Misc. Rules
+
+* /r/ varies freely with [l] intervocalically [@ceder_dedua_2003, p. 3].
+* /w/ varies freely with [v] (ibid.).
+
+# References

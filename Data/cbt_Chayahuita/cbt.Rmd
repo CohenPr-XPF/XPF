@@ -22,7 +22,7 @@ Last Updated: 2019-05-03
 * Neither glottal consonant is attested as phonemic in @CbtHart1976.
 * @CbtHart1976 and @CbtBarraza2005 both list /r/ as a "vibrant," a general term that could mean either a trill or a tap; because @CbtPhonemesUCB comes down decisively on the side of the tap, I have opted for that analysis.
 * /ɾ/ and the glottal consonants do not occur word-initially [@CbtBarraza2005, p. 47].
-* /ʔ/ and /h/ only contrast before voiceless consonants; otherwise, only /ʔ/ is attested [@CbtBarraza2005, p. 53]. Because of this, and because of the lack of clear attestation of /h/ in the orthography, I have opted to only use /ʔ/ in the ruleset.
+* /ʔ/ and /h/ only contrast before voiceless consonants; otherwise, only /ʔ/ is attested [@CbtBarraza2005, p. 53]. Because of this, and because of the lack of clear attestation of /h/ in the orthography, I have opted to only use /ʔ/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -35,7 +35,7 @@ consonants <- read.table(textConnection('
 "Manner of Articulation"      Labial   Alveolar  Postalveolar  Palatal   Velar  Glottal
 Stops                          "p"      "t"       ""            ""        "k"    "ʔ"
 Affricates                     ""       ""        "tʃ"          ""        ""     ""
-Fricatives                     ""       "s"       "ʃ"           ""        ""     "h"
+Fricatives                     ""       "s"       "ʃ"           ""        ""     ""
 Nasals                         "m"      "n"       ""            ""        ""     ""
 Taps                           ""       "ɾ"       ""            ""        ""     ""
 Approximants                   "w"      ""        ""            "j"       ""     ""
