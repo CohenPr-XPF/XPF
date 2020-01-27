@@ -1,128 +1,158 @@
 # XPF
 
 ## Available Languages
-| language code | language                  | comments                      |
+
+| Language Code | Language                  | Comments                      |
 |---------------|---------------------------| ------------------------------|
-| aak           | Ankave                    |
-| ab            | Abkhaz                    |
+| aak           | Ankave                    |                               |
+| ab            | Abkhaz                    |                               |
 | acf           | Saint Lucian Creole French| lacks lenition                |
-| aey           | Amele                     |
+| aey           | Amele                     |                               |
 | agg           | Angor                     | under revision                |
-| amn           | Amanab                    |
-| an            | Aragonese                 |
-| apu           | Apurinã                   |
-| arl           | Arabela                   |
-| ast           | Asturian                  |
-| ata           | Pele-Ata                  |
-| avt           | Au                        |
-| ay            | Aymara                    |
-| az            | Azerbaijani               |
-| ba            | Bashkir                   | under revision                |
-| bcl           | Central Bikol             |
-| bdd           | Bunama                    |
-| be            | Belarusan                 |
-| bef           | Benabena                  |
+| aia           | Arosi                     |                               |
+| amn           | Amanab                    |                               |
+| an            | Aragonese                 |                               |
+| apu           | Apurinã                   |                               |
+| arl           | Arabela                   |                               |
+| ast           | Asturian                  |                               |
+| ata           | Pele-Ata                  |                               |
+| avt           | Au                        |                               |
+| ay            | Aymara                    |                               |
+| az            | Azerbaijani               |                               |
+| ba            | Bashkir                   |                               |
+| bcl           | Central Bikol             |                               |
+| bdd           | Bunama                    |                               |
+| be            | Belarusan                 |                               |
+| bef           | Benabena                  |                               |
 | bg            | Bulgarian                 | under revision                |
-| bi            | Bislama                   |
-| boa           | Bora                      |
-| caa           | Ch'orti'                  |
-| car           | Carib                     |
-| cav           | Cavineña                  | under revision                |
-| cbi           | Cha'palaa                 |
-| cbt           | Chayahuita                |
-| cs            | Czech                     | under revision                |
-| ctu           | Chol                      |
-| cv            | Chuvash                   |
-| ded           | Dedua                     |
-| dgz           | Daga                      |
+| bi            | Bislama                   |                               |
+| boa           | Bora                      |                               |
+| caa           | Ch'orti'                  |                               |
+| car           | Carib                     |                               |           
+| cav           | Cavineña                  | under revision; lacks lenition|
+| cbi           | Cha'palaa                 |                               |
+| cbt           | Chayahuita                |                               |
+| cs            | Czech                     |                               |
+| ctu           | Chol                      |                               |
+| cv            | Chuvash                   |                               |
+| ded           | Dedua                     |                               |
+| dgz           | Daga                      |                               |
 | djr           | Djambarrpuyngu            |                               |
-| dv            | Maldivian                 |
+| dv            | Maldivian                 |                               |
 | el            | Greek                     |                               |
-| emi           | Mussau-Emira              |
-| eu            | Basque                    |
+| emi           | Mussau-Emira              |                               |
+| eu            | Basque                    |                               |
 | ff            | Fula                      |                               |
-| gil           | Kiribati                  |
-| gn            | Guarani                   |
-| guc           | Wayuu                     |
-| guo           | Guayabero                 |
+| gaw           | Nobonob                   |                               |
+| gil           | Kiribati                  |                               |
+| gn            | Guarani                   |                               |
+| guc           | Wayuu                     |                               |
+| guo           | Guayabero                 |                               |
 | gvn           | Kuku-Yalanji              |                               |
-| haw           | Hawaiian                  |
-| hch           | Huichol                   |
+| haw           | Hawaiian                  |                               |
 | hmn           | Hmong                     | lacks lenition                |
-| ht            | Haitian Creole            |
+| ht            | Haitian Creole            |                               |
 | hu            | Hungarian                 | under revision                |
-| hy            | Armenian                  |
-| ilo           | Ilocano                   |
-| iu            | Inuktitut                 |
-| iws           | Sepik Iwam                |
+| hy            | Armenian                  | under revision                |
+| ilo           | Ilocano                   |                               |
+| iu            | Inuktitut                 |                               |
+| iws           | Sepik Iwam                | under revision                |
 | jam           | Jamaican Creole           |                               |
-| jv            | Javanese                  |
-| ka            | Georgian                  |
+| jv            | Javanese                  | under revision                |
+| ka            | Georgian                  |                               |
 | kbd           | Kabardian                 | under revision                |
-| kjb           | Q'anjob'al                |
+| kjb           | Q'anjob'al                |                               |
 | kk            | Kazakh                    | under revision                |
 | kki           | Kagulu                    | lacks lenition                |
-| kl            | Kalaallisut               |
+| kl            | Kalaallisut               |                               |
 | kn            | Kannada                   |                               |
-| ko            | Korean                    |                
-| kup           | Kunimaipa                 |
-| ky            | Kirghiz                   |
-| lem           | Nomaande                  |
-| mcq           | Ese                       |
-| mg            | Malagasy                  |
-| mk            | Macedonian                |
+| ko            | Korean                    |                               |
+| kpf           | Komba                     |                               |
+| kup           | Kunimaipa                 |                               |
+| ky            | Kirghiz                   |                               |
+| lem           | Nomaande                  |                               |
+| mcq           | Ese                       |                               |
+| mg            | Malagasy                  |                               |
+| mk            | Macedonian                |                               |
 | mt            | Maltese                   | under revision                |
-| mto           | Totontepec Mixe           |
-| naf           | Nabak                     |
+| mto           | Totontepec Mixe           |                               |
+| naf           | Nabak                     |                               |
 | ne            | Nepali                    | under revision                |
-| nhe           | Nahuatl                   |
-| nhr           | Naro                      |
-| not           | Nomatsiguenga             |
-| nuy           | Nunggubuyu                |
-| ny            | Chichewa                  | under revision                |
-| om            | Oromo                     |
-| omw           | South Tairora             | lacks lenition                |
+| nhe           | Nahuatl                   |                               |
+| nhr           | Naro                      |                               |
+| nsn           | Nehan                     | lacks lenition                |
+| nuy           | Nunggubuyu                |                               |
+| omw           | South Tairora             | under revision; lacks lenition|
 | or            | Oriya                     | under revision; lacks lenition|
-| pau           | Palauan                   |
-| pio           | Piapoco                   |
-| qub           | Huallaga Huánuco Quechua  |
-| quz           | Cusco Quechua             | under revision                |
-| roo           | Rotokas                   |
-| sah           | Yakut                     | under revision                |
-| shi           | Shilha                    | under revision                |
-| shp           | Shipibo Konibo            |
+| pa            | Punjabi                   | under revision; lacks lenition|
+| pag           | Pangasinan                |                               |
+| pau           | Palauan                   |                               |
+| pio           | Piapoco                   |                               |
+| pot           | Potawatomi                | under revision                |
+| quz           | Cusco Quechua             |                               |
+| ro            | Romanian                  |                               |
+| roo           | Rotokas                   |                               |
+| shi           | Shilha                    |                               |
+| shp           | Shipibo Konibo            |                               |
 | si            | Sinhala                   |                               |
-| snc           | Sinaugoro                 |
-| sq            | Albanian                  |
+| snc           | Sinaugoro                 | lacks lenition                |
+| sq            | Albanian                  |                               |
 | ta            | Tamil                     |                               |
-| tac           | Western Tarahumara        |
-| tg            | Tajik                     |
+| tac           | Western Tarahumara        |                               |
+| te            | Telugu                    |                               |
+| tg            | Tajik                     |                               |
 | to            | Tongan                    |                               |
 | tpi           | Tok Pisin                 | lacks lenition                |
 | tr            | Turkish                   |                               |
 | tt            | Tatar                     |                               |
-| tzo           | Tzotzil                   |
+| tzo           | Tzotzil                   |                               |
 | ug            | Uyghur                    |                               |
-| uk            | Ukrainian                 |
-| usa           | Usarufa                   |
-| uz            | Uzbek                     |
-| var           | Huarjío                   |
+| uk            | Ukrainian                 |                               |
+| usa           | Usarufa                   |                               |
+| uz            | Uzbek                     |                               |
+| var           | Huarjío                   |                               |
 | vi            | Vietnamese                |                               |
-| viv           | Iduna                     |
-| way           | Wayana                    |
-| wbp           | Warlpiri                  |
-| wo            | Wolof                     |
-| ycn           | Yucuna                    |
-| yi            | Yiddish                   |
-| yua           | Yucatec Maya              |
-| yuz           | Yuracare                  |
-| yva           | Yawa                      |
-| zos           | Francisco León Zoque      |
-| zza           | Zaza                      |                               |
+| viv           | Iduna                     |                               |
+| way           | Wayana                    |                               |
+| wbp           | Warlpiri                  |                               |
+| wo            | Wolof                     |                               |
+| ycn           | Yucuna                    |                               |
+| yi            | Yiddish                   |                               |
+| yua           | Yucatec Maya              |                               |
+| yuz           | Yuracare                  |                               |
+| yva           | Yawa                      |                               |
+| zos           | Francisco León Zoque      |                               |
+| zza           | Zaza                      | under revision                |
+
+
+## Compromised Languages
+
+| Language Code   | Language                 | Reason (more thorough explanation in Rmd files)                                                           |
+|-----------------|--------------------------|-----------------------------------------------------------------------------------------------------------|
+| aoj             | Mufian                   | conflation among vowels; ambiguity regarding vowel length and labialized consonant clusters               |
+| arn             | Mapudungun               | ambiguous orthography; conflation between dental and alveolar consonants                                  |
+| ar-x-diacritics | Arabic                   | ambiguous transcription of alif; conflation between vowels and glides                                     |
+| bmu             | Somba Siawari            | phonetic alphabet                                                                                         |
+| bzd             | Bribri                   | phonetic alphabet; contradicting documentation                                                            |
+| cho             | Choctaw                  | phonetic alphabet                                                                                         |
+| con             | Cofan                    | conflation between consonants                                                                             |
+| crm             | Moose Cree               | /h/ represented only when contrast is required                                                            |
+| diq             | Dimli                    | orthography is suspect                                                                                    |
+| kek             | Qeqchi                   | ambiguity between ejective stops and stop-glottal stop sequences                                          |
+| kmo             | Kwoma                    | non-transparent spelling with glottal stops                                                               |
+| mcf             | Matsés                   | conflation between alveolar and retroflex consonants; conflation between vowels                           |
+| mek             | Mekeo                    | non-transparent spelling with glottal stops                                                               |
+| mnb             | Muna                     | orthography is suspect                                                                                    |
+| qub             | Huallaga Huanuco Quechua | orthography is suspect; conflation between vowels and glides                                              |
+| sah             | Yakut                    | conflation between /j/ and /j̃/                                                                            |
+| sk              | Slovak                   | non-transparent spelling with palatal consonants; ambiguity whether digraphs represent one phoneme or two |
+| sm              | Samoan                   | marking of long vowels and glottal stops is suspect                                                       |
+| sw              | Swahili                  | conflation between syllabic nasals and non-syllabic counterparts                                          |
 
 
 ## Abandoned Languages
-| language code | language | reason                                                                |
+
+| Language Code | Language | Reason                                                                |
 |-----|--------------------|-----------------------------------------------------------------------|
 | ace | Acehnese           | non-transparent spelling with vowel nasalization                      |
 | ach | Acholi             | non-transparent spelling with tones                                   |
@@ -153,18 +183,16 @@
 | chr | Cherokee           | non-transparent spelling with vowel length                            |
 | cnh | Haka Chin          | non-transparent spelling with tones                                   |
 | coe | Koreguaja          | non-transparent spelling with tones                                   |
-| cot | Caquinte           |                                                           
 | ctd | Tedim Chin         | non-transparent spelling with tones                                   |
 | cub | Cubeo              | non-transparent spelling with tones                                   |
-| cuk | San Blas Kuna      | inconsistent orthographies                                            |
+| cuk | San Blas Kuna      | non-transparent spelling                                              |
 | cy  | Welsh              | non-transparent spelling with vowel length                            |
 | da  | Danish             | non-transparent spelling with vowels                                  |
 | daa | Dangaléat          | non-transparent spelling with tones                                   |
 | des | Desano             | non-transparent spelling with tones                                   |
 | dgo | Dogri              | non-transparent spelling with tones                                   |
-| dgr | Dogrib             |
-| din | Dinka              |
-| dz  | Dzongkha           |
+| din | Dinka              | non-transparent spelling with tones                                   |
+| dz  | Dzongkha           | non-transparent spelling                                              |
 | ee  | Ewe                | non-transparent spelling with tones                                   |
 | efi | Efik               | non-transparent spelling with tones                                   |
 | emp | Northern Emberá    | non-transparent spelling                                              |
@@ -180,120 +208,109 @@
 | gah | Alekano            | non-transparent spelling with tones                                   |
 | gd  | Scottish Gaelic    | non-transparent spelling with consonants and vowels                   |
 | gl  | Galician           | non-transparent spelling                                              |
-| gmo | Gamo-Gofa-Dawro    |
+| gmo | Gamo-Gofa-Dawro    | three languages seen as linguistically separate                       |
 | grt | Garo               | non-transparent spelling with vowels                                  |
 | gub | Guajajara          | non-transparent spelling with vowel nasalization                      |
 | gum | Guambiano          | non-standardized orthography                                          |
 | gv  | Manx Gaelic        | non-transparent spelling with consonants and vowels                   |
 | ha  | Hausa              | non-transparent spelling with vowel length                            |
-| hch | Huichol            |
-| hil | Hiligaynon         |
-| hr  | Croatian           |
-| hui | Huli               |
+| hch | Huichol            | non-transparent spelling with tones                                   |
+| hr  | Croatian           | non-transparent spelling with vowel length                            |
+| hui | Huli               | non-transparent spelling with tones                                   |
 | huv | Huave              | inconsistent phonological documentation                               |
 | hz  | Herero             | non-transparent spelling with tones                                   |
-| ian | Iatmul             |
 | ig  | Igbo               | non-transparent spelling with tones                                   |
-| ik  | Inupiaq            |
-| irk | Iraqw              |
+| ik  | Inupiaq            | insufficient tokens                                                   |
 | is  | Icelandic          | non-transparent spelling with vowel length                            |
-| jiv | Shuar              |
-| kab | Kabyle             |
+| jiv | Shuar              | non-transparent spelling with vowel nasalization                      |
+| kab | Kabyle             | non-transparent spelling with consonants                              |
 | kac | Jingpho            | non-transparent spelling with tones                                   |
 | kbc | Kadiweu            | non-transparent spelling with consonant gemination                    |
-| kbr |
-#| kek | Qeqchi            | non-transparent spelling with ejectivization                         |
+| kbr | Kafa               | non-transparent spelling with tones                                   |
 | kha | Khasi              | non-transparent spelling with vowel length                            |
 | khk | Khalkha Mongolian  | non-transparent spelling with vowels                                  |
 | ki  | Gikuyu             | non-transparent spelling with tones                                   |
 | kj  | Kwanyama           | non-transparent spelling with tones                                   |
-| kew | West Kewa          |
+| kew | West Kewa          | non-transparent spelling with tones                                   |
 | kmr | Northern Kurdish   | non-transparent spelling with consonants                              |
-| kmu | Kanite             |
+| kmu | Kanite             | non-transparent spelling with tones                                   |
 | kw  | Cornish            | non-transparent spelling with vowel length                            |
-| kus | Kusaal             |
-| kyu | Western Kayah      |
+| kus | Kusaal             | non-transparent spelling with tones and vowel length                  |
 | lb  | Luxembourgish      | non-transparent spelling with vowels                                  |
 | lg  | Luganda            | non-transparent spelling with tones                                   |
-| ln  | Lingala            |
-| loz | Lozi               |
+| ln  | Lingala            | non-transparent spelling with tones                                   |
+| loz | Lozi               | non-transparent spelling with tones                                   |
 | lt  | Lithuanian         | non-transparent spelling with tones                                   |
-| luo | Dholuo             |
+| luo | Dholuo             | non-transparent spelling with tones                                   |
 | lus | Mizo               | non-transparent spelling with tones                                   |
 | lv  | Latvian            | non-transparent spelling with tones                                   |
 | lvs | Standard Latvian   | non-transparent spelling with tones                                   |
-| mai | Maithili           |
-| man | Mandingo           |
+| man | Mandingo           | non-transparent spelling with tones                                   |
 | mas | Maasai             | insufficient tokens                                                   |
-| mcd | Sharanahua         |
+| mcd | Sharanahua         | non-transparent spelling with tones                                   |
 | meu | Motu               | non-transparent spelling with vowel length                            |
-| mfi | Wandala            |
-| mfz | Mabaan             |
+| mfi | Wandala            | non-transparent spelling with tones                                   |
+| mfz | Mabaan             | non-transparent spelling with tones                                   |
 | mhr | Eastern Mari       | non-transparent spelling with palatalization                          |
 | mi  | Maori              | non-transparent spelling with vowel length                            |
 | miq | Miskito            | non-transparent spelling with vowel nasalization and length           |
-| mni | Meitei             |
+| mni | Meitei             | non-transparent spelling with tones                                   |
 | mos | Mossi              | non-transparent spelling with tones                                   |
 | mps | Dadibi             | non-transparent spelling with tones and vowel nasalization            |
 | ms  | Malay              | non-transparent spelling with vowels                                  |
-| my  | Burmese            |
-| myu | Mundurukú          |
+| my  | Burmese            | non-transparent spelling with tones                                   |
+| myu | Mundurukú          | non-transparent spelling with tones and creaky vowels                 |
 | nd  | Northern Ndebele   | insufficient tokens                                                   |
 | nds | Low Saxon          | non-transparent spelling                                              |
 | nfr | Nafaanra           | non-transparent spelling with tones                                   |
-| nhg | Tetelcingo Nahuatl |
+| nhg | Tetelcingo Nahuatl | non-transparent spelling with vowel length                            |
 | no  | Norwegian          | non-transparent spelling with tones and vowel length                  |
 | nv  | Navajo             | non-transparent spelling with vowel nasalization                      |
-| nyn | Nyankore           |
+| ny  | Chichewa           | non-transparent spelling with tones                                   |
+| nyn | Nyankore           | non-transparent spelling with tones                                   |
+| om  | Oromo              | non-transparent spelling with tones                                   |
 | opm | Oksapmin           | non-transparent spelling with vowels                                  |
-| ood | Tohono O'odham     |
-#| os  | Ossetian          | non-transparent spelling                                             |
-| pab | Parecís            |
+| ood | Tohono O'odham     | non-transparent spelling                                              |
+| pab | Parecís            | non-transparent spelling with vowel length and nasalization           |
 | pao | Northern Paiute    | non-transparent spelling with vowel length                            |
 | pap | Papiamentu         | non-transparent spelling with vowels                                  |
 | pir | Wanano             | non-transparent spelling with tones                                   |
 | pl  | Polish             | non-transparent spelling                                              |
 | pms | Piedmontese        | non-transparent spelling                                              |
 | poh | Poqomchi'          | insufficient documentation                                            |
-| pot | Potawatomi         |
 | rw  | Kinyarwanda        | non-transparent spelling with tones and vowel length                  |
-| sd  | Sindhi             |
+| sd  | Sindhi             | non-transparent spelling with vowels                                  |
 | se  | Northern Sami      | non-transparent spelling                                              |
-| sim | Mende              |
+| sim | Mende              | non-transparent spelling with tones                                   |
 | sn  | Shona              | non-transparent spelling with tones                                   |
 | so  | Somali             | non-transparent spelling with tones                                   |
-| spp | Supyire Senoufo    |
+| spp | Supyire Senoufo    | non-transparent spelling with tones                                   |
 | ss  | Swati              | non-transparent spelling with tones                                   |
 | st  | Sesotho            | non-transparent spelling with tones                                   |
-| su  | Sunda              |
-#| suz | Sunwar            | non-transaprent spelling with glottal stop                  |
 | sv  | Swedish            | non-transparent spelling                                              |
-#| sw  | Swahili           | under non-transparent spelling with nasals and prenasalized stops|
-| sxb | Suba               |
-| tav | Tatuyo             |
-| tcc | Datooga            |
+| sxb | Suba               | non-transparent spelling with tones                                   |
+| tav | Tatuyo             | non-transparent spelling with tones                                   |
+| tcc | Datooga            | non-transparent spelling with tones                                   |
 | tcy | Tulu               | non-transparent spelling with vowels                                  |
 | tcz | Thadou Chin        | non-transparent spelling with tones                                   |
-| th  | Thai               |
 | ti  | Tigrinya           | non-transparent spelling with gemination                              |
 | tk  | Turkmen            | non-transparent spelling with vowel length                            |
 | tl  | Tagalog            | non-transparent spalling with vowel length                            |
 | tn  | Tswana             | non-transparent spelling with tones                                   |
-| trp | Kok Borok          |  
+| trp | Kok Borok          | non-transparent spelling with tones                                   |
 | ts  | Tsonga             | non-transparent spelling with tones                                   |   
-| ttc | Tekiteko           |
-| tw  | Twi                |
-| ubu | Umbu-Ungu          |
-| udu | Uduk               |
-| ur  | Urdu               |
-| ura | Urarina            |
-| ve  | Venda              |
+| ttc | Tekiteko           | non-transparent spelling with vowel length                            |
+| tw  | Twi                | non-transparent spelling with tones                                   |
+| ubu | Umbu-Ungu          | non-transparent spelling with tones                                   |
+| udu | Uduk               | non-transparent spelling with tones                                   |
+| ur  | Urdu               | non-transparent spelling with vowels                                  |
+| ura | Urarina            | non-transparent spelling with tones                                   |
+| ve  | Venda              | non-transparent spelling with tones                                   |
 | vro | Võro               | non-transparent spelling with vowels and palatalization               |
-| wa  | Walloon            |
+| wa  | Walloon            | non-transparent spelling                                              |
 | wal | Wolaytta           | non-transparent spelling with tones                                   |
 | war | Waray-Waray        | insufficient documentation                                            |
 | wiu | Wiru               | non-transparent spelling with tones                                   |
-| wrs | Waris              |
 | xav | Xavánte            | non-transparent spelling with vowel length                            |
 | xbi | Kombio             | non-transparent spelling with vowels                                  |
 | xh  | Xhosa              | non-transparent spelling with tones                                   |
@@ -305,6 +322,3 @@
 | yo  | Yoruba             | non-transparent spelling with tones                                   |
 | zai | Zapotec            | non-transparent spelling with tones                                   |
 | zu  | Zulu               | non-transparent spelling with tones                                   |
-
-
-## Compromised Languages

@@ -1,0 +1,143 @@
+---
+title: "Bribri"
+author: "Emily Strand"
+bibliography: bzd.bib
+output: html_document
+---
+
+Last updated: 2019-11-06
+
+**Heavily Compromised: alphabet is heavily phonetic based; documentation is rather contradicting and ambiguous**
+
+# Background
+
+**Language family**: Chibchan / Talamanca
+
+* Bribri is spoken in the Limón and Puntarenas provinces of Costa Rica.
+* Where dialects diverge, I will follow the Coroma dialect (represented in Crúbadán).
+
+# Phonology
+
+## Consonants
+
+* Bribri has a geminate series of voiceless affricates and stops, which are realized phonetically as aspirated in the Salitre dialect [@Garcia1995, p. 35; @Jara1995, p. 16].
+    - The documentation regarding the gemination and aspiration across dialects is rather contradicting. @Schlabach1974 [as cited in @Murillo2004, pp. 97-98
+      ] lists phonemic aspirated consonants in the Amubre dialect; @Wilson1982 [as cited in @Murillo2004, pp. 97-98] list phonemic aspirated consonants in the Salitre dialect and phonemic geminate consonants in the Amubre dialect. @Schlabach1974 does explain that in the Coroma dialect, geminate consonants rather than aspirated consonants are present, although accompanied by little to no aspiration. I have opted for the analysis of underlying geminates.  
+* Notice that Bribri does not have phonemic nasals; rather, they manifest phonetically [@Yasugi1995, p. 36; @Murillo2004, p. 95; @Wetzels2018, p. 20; @Chevrier2017].
+* There is some debate around the phonemic status of /j/ and /w/, which also extends to other Chibchan languages (e.g. Cabécar). @Yasugi1995 and @Constenla1981 do not include them as part of the inventory (p. 43; p. 115); @Constenla1981 explains that such phonemes are allophones that arise preceding vowels. @Garcia1995, however, does include /j/ and /w/ as separate phonemes along with the nasal consonants (p. 35). I have opted for Constenla's approach to not include them in the phonemic inventory.
+* There is also some debate around the phonemic status of /x/ and /h/. @Murillo2004 and @Jara1995 opt for /h/ (p. 96; p. 13), whereas @Garcia1995 and @Constenla1981 opt for /x/ (p. 35; p. 106). @Constenla1981 does express that /x/ is pronounced lenis, which would make for frequent debuccalization to /h/. Since I find this the more likely phonological process, I have opted to include /x/ rather than /h/ in the phonemic inventory.
+* Although it's relatively clear that the alveolar flap is realized as an allophone of /d/ [@Constenla1981, p. 12; @Murillo2004, p. 95l; @Peña1996, p. xxi], the phonemic status of other such trills and approximants isn't as clear. @Constenla1981 only accounts for an alveolar lateral flap (p. 113), @Garcia1995 accounts for an alveolar trill, approximant, and flap (p. 35), and @Murillo2004, @Jara1995, and @Peña1996 account for both an alveolar trill and a retroflex lateral approximant (p. 94; p. 13; p. xxii). I have opted to go with the majority, and include both the alveolar trill and the retroflex lateral approximant in the inventory.
+* Bribri's phonemic inventory includes the rather interesting phoneme /tk/ [@Constenla1981, p. 111; @Murillo2004, pp. 96-97]. @Constenla1981 describes it as a co-articulated voiceless dental-palatal stop accompanied with fricative release (p. 111) and @Yasugi1995 describes it as a dento-velar stop (p. 748). Although @Murillo2004 describe it similar to @Constenla1981 as a dental-palatal stop, his explanation makes it seem that it's underlyingly more velar, but arises more alveopalatal in the Coroma dialect (p. 96). Therefore, I have decided to classify it as a dento-velar stop.
+    - The cluster always appears as a phoneme (i.e. /t/ and /k/ are never adjacent belonging to different syllables) [@Constenla1981, p. 111].
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Alveolar   Retroflex  Postalveolar   Dento-Velar   Velar    Glottal
+Stops                    "p  pː  b"  "t  tː  d"     ""          ""             "tk"       "k  kː"     "ʔ"
+Affricates                  ""        "ts  tsː"     ""     "tʃ  tʃː  dʒ"       ""           ""        ""
+Fricatives                  ""          "s"         ""          "ʃ"            ""           "x"       ""
+Trills                      ""          "r"         ""          ""             ""           ""        ""  
+Approximants                ""          ""          "ɭ"         ""             ""           ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Retroflex", "Postalveolar", "Dento-Velar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Cells with three phonemes are ordered voiceless, geminate, and voiced. Cells with two phonemes are ordered voiceless and geminate.", general_title = "")
+```
+
+## Vowels
+
+* Nasal vowels are phonemic in Bribri [@Jara1995, p. 13]. They are indicated by a macron below each vowel. /ɪ/ and /ʊ/ don't have nasal counterparts.
+* Bribri has three contrastive tones presented atop each vowel [@Jara1995, p. 13]:
+    - High tone: marked by a grave accent (\`)
+    - Falling tone: marked by an acute accent (´)
+    - Low tone: unmarked
+* A rising tone, represented with a circumflex (ˆ), is said to be present only in the Amubre dialect [@Murillo2009, p. 8; @Murillo2004, p. 111]. The high tone and rising tone are said to vary freely in both the Coroma and Salitre dialect. Crúbadán does not mark rising tone, which is consistent with my analysis of the Coromo dialect.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+          Front      Central       Back
+High     "i  ĩ"         ""        "u  ũ"
+High-Mid   "ɪ"          ""          "ʊ"
+Low-Mid  "ɛ  ɛ̃"         ""        "ɔ  ɔ̃"
+Low        ""         "a  ã"        ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Cells that have two phonemes are ordered oral and nasal.", general_title = "")
+```  
+
+# Alphabet
+
+* Although [ɾ], [m], [n], and [ɲ] are represented explicitly in the orthography with ⟨r⟩, ⟨m⟩, ⟨n⟩, and ⟨ñ⟩, respectively [@Murillo2004, p. 95], I will transcribe them to their underlying phonemes (/d/, /b/, /d/, and /dʒ/). Based on my analysis of [w] and [j], I will also transcribe ⟨w⟩ to /u/).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme
+"a"             "/a/"
+"b"             "/b/"
+"d"             "/d/"
+"e"             "/ɪ/"
+"ë"             "/ɛ/"     
+"i"             "/i/"
+"j"             "/x/"
+"k"             "/k/"
+"l"             "/ɭ/"
+"m"             "/b/"
+"n"             "/d/"
+"ñ"             "/dʒ/"
+"o"             "/ɔ/"
+"ö"             "/ʊ/"
+"p"             "/p/"
+"r"             "/d/"
+"s"             "/s/"
+"t"             "/t/"
+"u"             "/u/"
+"w"             "/u/"
+"y"             "/dʒ/"
+"\'"             "/ʔ/"
+**Multigraph**  ""
+"ch"            "/tʃ/"
+"pp"            "/pː/"
+"rr"            "/r/"
+"sh"            "/ʃ/"
+"tch"           "/tʃː/"
+"tt"            "/tː/"
+"tk"            "/tk/"
+"ts"            "/ts/"
+"tts"           "/tsː/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Bribri follow the order of (C)V(C) [@Constenla1981, p. 117].
+
+# Lenition Rules
+
+* /p/, /t/, and /k/ are pronounced lenis and unreleased in syllable codas [@Constenla1981, p. 111].
+* /k/ varies freely with [ɡ] intervocalically (ibid.).
+* /d/ tends to become a flap [ɾ] word-medially following vowels and intervocalically [@Constenla1981, pp. 112-113; @Peña1996, p. xxi].
+* /s/ and /ʃ/ can become voiced preceding voiced stops [@Constenla1981, p. 113].
+
+# Misc. Rules
+
+* /b/, /d/, /dʒ/, and /k/ change to [m], [n], [ɲ], and [ŋ] preceding or following nasal vowels and in syllable codas [@Murillo2004, p. 95; @Constenla1981, pp. 112-113; @Peña1996, p. xxi].
+
+# References

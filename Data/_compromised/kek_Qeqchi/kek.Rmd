@@ -1,0 +1,122 @@
+---
+title: "Qeqchi"
+author: "Bill Mizgerd"
+bibliography: kek.bib
+output: html_document
+---
+
+Last Updated: 2019-08-07
+
+**Slightly Compromised: orthographic ambiguity between ejective stops and stop-glottal stop sequences**
+
+# Background
+
+**Language Family**: Mayan / Core Mayan / Quichean-Mamean / Greater Quichean / Qeqchi
+
+* The language has several different names, including Kekchi, K'ekchi', and Q'eqchi'.
+* Qeqchi is spoken in Guatemala and Brazil.
+
+# Phonology
+
+## Consonants
+
+* @KekStewart2015 describes the dorsal fricative as both velar (p. 16) and uvular (p. 12) at different points in the document. I have followed the lead of @KekPinkerton1976 in preferring to describe it as velar (p. 10).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar    Postalveolar     Palatal     Velar     Uvular    Glottal
+Stops                     "p  ɓ"     "t  t’"         ""             ""       "k  k’"   "q  q’"      "ʔ"
+Affricates                   ""      "ts  ts’"    "tʃ  tʃ’"         ""         ""        ""         ""
+Fricatives                   ""        "s"           "ʃ"            ""         "x"       ""         "h"
+Nasals                      "m"        "n"           ""             ""         ""        ""         ""
+Trills                      ""         "r"           ""             ""         ""        ""         ""
+Approximants                "w"        "l"           ""             "j"        ""        ""         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Phonemes that share a cell match in voicing, but those on the right are ejectives. The exception is the labial stops, which contrast in voicing (/ɓ/ is an implosive).", general_title = "")
+```
+
+## Vowels
+
+* Vowel length is contrastive in Qeqchi [@KekStewart2015, p. 12]. Long vowels are written by doubling the vowel character.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "ɔ"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```   
+
+# Alphabet
+
+* /ʔ/ can follow plain stops, which creates possible ambiguity. For example, ⟨t'⟩ might represent an ejective consonant or a sequence of a plain stop and a glottal stop. In such cases, I have opted to prefer the ejective-consonant analysis, as it is significantly more common in Qeqchi than the stop/glottal sequence is [@KekDeChicchis2011, p. 3].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme              Comment
+"a"           "/a/"                  ""
+"b\'"         "/ɓ/"                  ""
+"e"           "/e/"                  ""
+"h"           "/h/"                  ""
+"i"           "/i/"                  ""
+"j"           "/x/"                  ""
+"k"           "/k/"                  ""
+"k\'"         "/k’/"                 ""
+"l"           "/l/"                  ""
+"m"           "/m/"                  ""
+"n"           "/n/"                  ""
+"o"           "/ɔ/"                  ""
+"p"           "/p/"                  ""
+"q"           "/q/"                  ""
+"q\'"         "/q’/"                 ""
+"r"           "/r/"                  ""
+"s"           "/s/"                  ""
+"t"           "/t/"                  ""
+"t\'"         "/t’/"                 ""
+"u"           "/u/"                  ""
+"w"           "/w/"                  ""
+"x"           "/ʃ/"                  ""
+"y"           "/j/"                  ""
+"\'"          "/ʔ/"       "⟨-⟩ is also used on occasion"
+**Digraph**    ""                    ""
+"ch"         "/tʃ/"                  ""
+"ch\'"       "/tʃ’/"                 ""
+"tz"         "/ts/"                  ""
+"tz\'"       "/ts’/"                 ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /h/ voices to [ɦ] intervocalically, and sometimes deletes entirely in non-final postconsonantal positions [@KekStewart2015, p. 16].
+
+# Misc. Rules
+
+* Preconsonantal and word-final plain stops (besides /ʔ/) are realized with aspiration [@KekStewart2015, p. 13].
+* Non-pulmonic consonants are realized as preglottalized when in postvocalic position (e.g. /k’/ → [ʔk’], /ɓ/ - [ʔb’]) [@KekStewart2015, pp. 14-15; @KekPinkerton1976, p. 12].
+* /n/ assimilates to [ŋ] before dorsal consonants [@KekStewart2015, p. 17].
+* @KekPinkerton1976 argues that /r/ is typically realized as [ʂ], with voicing and trilling occurring intermittently for some speakers (p. 16).
+* Glides "obstruentize" word-initially and in postconsonantal syllable-initial positions; this results in what @KekPinkerton1976 describes as [ẘ] and [j̊], but what some other sources describe as [kʷ] and [tʲ] (pp. 17, 26).
+
+# References

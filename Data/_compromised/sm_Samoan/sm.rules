@@ -1,0 +1,19 @@
+# Samoan Rule Set
+# Written by: Emily
+# Last Updated: 2020-01-06
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aefilmnopstuv],,,,
+class,apostrophe,['ꞌˈ‘’ʻ],,,,
+# Individual Letters
+sub,g,ŋ,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Long vowels
+sub,ā,a ː,2,,,
+sub,ē,e ː,2,,,
+sub,ī,i ː,2,,,
+sub,ō,o ː,2,,,
+sub,ū,u ː,2,,,
+# Misc. Rules
+sub,-,,2,,,

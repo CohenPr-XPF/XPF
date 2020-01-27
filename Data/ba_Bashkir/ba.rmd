@@ -25,18 +25,18 @@ library(kableExtra)
 
 
 consonants <- read.table(textConnection('
-"Manner of Articulation"    Bilabial    Labiodental    Dental     Alveolar    Postalveolar   Palatal     Velar   Uvular    Glottal
-Stops                       "p  b"         ""            ""       "t  d"          ""           ""        "k  ɡ"    "q"       "ʔ"
-Affricates                    ""           ""            ""         "ts"         "tʃ"           ""        ""        ""       ""
-Fricatives                    ""         "f  v"       "θ  ð"      "s  z"        "ʃ  ʒ"         ""        "x  ɣ"     ""      "h"
-Nasals                       "m"           ""            ""         "n"           ""           "ŋ"         ""       ""       ""
-Trills                        ""           ""            ""         "r"           ""           ""          ""       ""       ""
-Approximants                 "w"           ""            ""         "l"           ""           "j"         ""       ""       ""
+"Manner of Articulation"    Labial     Dental     Alveolar    Postalveolar   Palatal     Velar   Uvular    Glottal
+Stops                       "p  b"       ""       "t  d"          ""           ""        "k  ɡ"    "q"       "ʔ"
+Affricates                    ""         ""         "ts"         "tʃ"          ""          ""       ""       ""
+Fricatives                  "f v"      "θ  ð"      "s  z"       "ʃ  ʒ"         ""        "x  ɣ"     ""       "h"
+Nasals                       "m"         ""         "n"           ""           "ŋ"         ""       ""       ""
+Trills                        ""         ""         "r"           ""           ""          ""       ""       ""
+Approximants                 "w"         ""         "l"           ""           "j"         ""       ""       ""
 '), TRUE)
 
-kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Labiodenatal", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
-  add_header_above(c("", "Place of Articulation" = 9)) %>%
+  add_header_above(c("", "Place of Articulation" = 8)) %>%
   column_spec(1, bold = TRUE)%>%
   footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
 ```
@@ -45,15 +45,14 @@ kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Labiodena
 
 * Vowels do not occur consecutively [@poppe_bashkir_1997, p. 12].  
 * /e/ and /ɔ/ only appear in loanwords [@poppe_bashkir_1997, p. 6].
-* Vowel harmony also occurs, making the distinction between front and back vowels [@poppe_bashkir_1997, pg. 19].
+* Vowel harmony also occurs [@poppe_bashkir_1997, pg. 19].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 vowels <- read.table(textConnection('
          Front      Central       Back
 High    "i  y"        ""           "u"
-Mid        ""         "ɵ"        "ɤ  o"
-"Low-Mid"  ""         "ə"          ""
+Mid        ""        "ɘ ɵ"        "ɤ  o"
 Low        ""         "a"          "ɑ"
 '), TRUE)
 
@@ -65,8 +64,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* Bashkir appears to be heavily influenced by Russian [@poppe_bashkir_1997], such that the phonemic inventory includes phonemes that are only present through Russian loanwords (p. 6). Although the loanwords (graphemes) themselves are not native to Bashkir, the sounds are, so the transcription of them will be included.
-* The word-initial/word-final distinction for the realization of ⟨и⟩ will be made in the rules, however, the syllable-initial/elsewhere distinction will not.
+* Bashkir appears to be heavily influenced by Russian [@poppe_bashkir_1997], such that the phonemic inventory includes phonemes that are only present through Russian loanwords (p. 6). Although loanwords (graphemes) themselves are not native to Bashkir, the sounds are, so the transcription of them will be included.
 * Following standard Russian orthography, ⟨ъ⟩ and ⟨ь⟩ do indicate non-palatalization and palatalization, respectively, of the preceding consonant; however, this is not native to Bashkir, so it will not be represented in the rules.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -80,11 +78,11 @@ Grapheme      Phoneme                                    Comment
 "ғ"            "/ɣ/"                                       ""
 "д"            "/d/"                                       ""
 "ҙ"            "/ð/"                                       ""
-"е"            "/jə/"                          "/jə/: word initially; /ə/ elsewhere"  
+"е"            "/jɘ/"                          "/jɘ/: word initially; /ɘ/ elsewhere"  
 "ё"            "/jo/"                            "only occurs in loanwords"  
 "ж"            "/ʒ/"                             "only occurs in loanwords"
 "з"            "/z/"                             "only occurs in loanwords"
-"и"            "/i/"   "/i/: word initially and within the first syllable; /əj/ word finally and appearing in non-initial syllables"  
+"и"            "/i/"   "/i/: word initially and within the first syllable; /ɘj/ word finally and appearing in non-initial syllables"  
 "й"            "/j/"                                       ""
 "к"            "/k/"                                       ""
 "ҡ"            "/q/"                                       ""
@@ -111,7 +109,7 @@ Grapheme      Phoneme                                    Comment
 "ъ"            "/ʔ/"                            "following back vowels"      
 "ы"            "/ɤ/"                                       ""
 "ь"            "/ʔ/"                            "following front vowels"      
-"э"            "/ə/"                                       ""
+"э"            "/ɘ/"                                       ""
 "ә"            "/a/"                                       ""
 "ю"            "/ju/"                                      ""
 "я"            "/jɑ/"                                      ""
@@ -136,13 +134,13 @@ kable(alphabet, align = 'c') %>%
 * /b/ can undergo spirantization in fast speech [@poppe_bashkir_1997, p. 8].
 * /b/ becomes a glide /w/ word-initially (ibid.).  
 * /d/ undergoes spirantization in suffix onsets [@poppe_bashkir_1997, p. 23].
-* In the presence of vowels (e.g. intervocalically, or following a vowel), /u/ and /y/ are realized as /w/ [@poppe_bashkir_1997, pp. 28-29].  
 
-# Misc Rules
+# Misc. Rules
 
 * Depending on the syllable structure, mid-vowels are consistently reduced or unpronounced [@poppe_bashkir_1997, p.22].  
 * /n/ assimilates to /m/ or /ŋ/ when preceding bilabial or velar consonants respectively [@poppe_bashkir_1997, p. 24].  
 * There is apparent consonant harmony between /g/ and /k/ in words containing front vowels and between /ɣ/ and /q/ in words containing back vowels [@poppe_bashkir_1997, p. 22].  
 * /l/ and /n/ are often realized as /t/, /d/, or /ð/ in the presence of suffixation [@poppe_bashkir_1997, p. 23].
+* In the presence of vowels (e.g. intervocalically, or following a vowel), /u/ and /y/ are realized as /w/ [@poppe_bashkir_1997, pp. 28-29].
 
 # References

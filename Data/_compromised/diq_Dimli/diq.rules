@@ -1,0 +1,52 @@
+# Dimli Ruleset
+# Written by: Becky Mathew
+# Updated: 2019-09-30
+type,sfrom,sto,weight,precede,follow,comment
+# Pre-Rules
+pre,(I|Î),(i|î),,,,
+# Class Rules
+class,passthrough,[bfhklmopqvwx],,,
+class,apostrophe,"[’'‘`-]",,,,
+# Consonants
+sub,ç,tʃ,1,,,
+sub,c,dʒ,1,,,
+sub,d,d̪,1,,,
+sub,ş,ʃ,1,,,
+sub,g,ɡ,1,,,
+sub,ğ,ɣ,1,,,
+sub,n,n̪,1,,,
+sub,r,ɾ,1,,,
+sub,s,s̪,1,,,
+sub,t,t̪,1,,,
+sub,y,j,1,,,
+sub,j,ʒ,1,,,
+sub,z,z̪,1,,,
+sub,{apostrophe},ʕ,1,,,"voiced pharyngeal fricative",
+sub,({passthrough}),\1,0.1,,,
+# Vowels
+sub,ê,e,1,,,
+sub,a,ɑ,1,,,
+sub,e,ɜ,1,,,
+sub,i,ɨ,1,,,
+sub,î,i,1,,,
+sub,û,u,1,,,
+sub,u,ʊ,1,,,
+# Pharyngealized Consonants
+sub,t,t̪ˤ,2,{apostrophe},,"pharyngealized t",
+sub,{apostrophe},,2,,t,"clean-up",
+sub,l,ɫ,2,{apostrophe},,"velarized l",
+sub,{apostrophe},,2,,l,"clean-up",
+sub,s,s̪ˤ,2,{apostrophe},,"pharyngealized s",
+sub,{apostrophe},,2,,s,"clean-up",
+sub,h,ħ,2,{apostrophe},,"voiceless pharyngeal fricative",
+sub,{apostrophe},,2,,h,"clean-up",
+# Digraphs
+sub,r,r,2,r,,
+sub,r,,2,,r,"clean-up",
+# Diphthongs
+ipasub,o j,oj,1,,,
+ipasub,ʊ j,ʊj,1,,,
+ipasub,ɑ j,ɑj,1,,,
+ipasub,ɑ w,ɑw,1,,,
+ipasub,ɜ j,ɜj,1,,,
+ipasub,ɜ w,ɜw,1,,,

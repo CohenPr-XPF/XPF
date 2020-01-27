@@ -1,0 +1,91 @@
+---
+title: "Moose Cree"
+author: "Emily Strand"
+bibliography: crm.bib
+output: html_document
+---
+
+Last updated: 2019-10-28
+
+**Slightly Compromised: /h/ only represented orthographically when contrast is required**
+
+# Background
+
+**Language family**: Algic / Algonquian / Central / Cree-Montagnais-Naskapi
+
+* Moose Cree is spoken in Ontario, Canada.
+
+# Phonology
+
+## Consonants
+
+* /r/ appears in loanwords [@Ellis2000, p. 468].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar    Postalveolar    Palatal    Velar    Glottal
+Stops                       "p"       "t"            ""           ""        "k"       ""
+Affricates                  ""        ""            "tʃ"          ""        ""        ""
+Fricatives                  ""        "s"           "ʃ"           ""        ""        "h"
+Nasals                      "m"       "n"            ""           ""        ""        ""
+Approximants                "w"       "l"            ""           "j"       ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Vowel length is contrastive in Moose Cree. A small dot atop each character indicates length [@gaudry2005].
+    - Notice that /e/ is always long (a dot is never affixed to the character).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+            Front    Central     Back
+High       "i  iː"     ""         ""
+Mid         "eː"       ""       "o  oː"
+Low          ""      "a aː"       ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: The vowels marked with (ː) are long.", general_title = "")
+```   
+
+# Syllabary
+
+* /h/ is said to be included orthographically only when contrast or emphasis is necessary [@Ellis2000, p. 465]. Thus, the language is compromised to some extent.
+
+| ᐃ - /i/   | ᐅ - /o/  | ᐊ - /a/  | ᐁ - /eː/   |  Final  |
+|:---------:|:---------:|:--------:|:----------:|:-------:|
+| ᐱ	- /pi/  | ᐳ - /po/ | ᐸ - /pa/ | ᐯ - /peː/ | ᑉ - /p/  |
+| ᑎ - /ti/  | ᑐ - /to/ | ᑕ - /ta/ | ᑌ - /teː/ | ᑦ - /t/  |
+| ᑭ - /ki/  | ᑯ - /ko/  | ᑲ - /ka/ | ᑫ - /keː/  | ᒃ - /k/  |
+| ᒋ - /tʃi/ | ᒍ - /tʃo/ | ᒐ - /tʃa/| ᒉ - /tʃeː/ | ᒡ - /tʃ/ |
+| ᒥ - /mi/  | ᒧ - /mo/  | ᒪ - /ma/ | ᒣ - /meː/  | ᒻ - /m/  |
+| ᓂ - /ni/ | ᓄ - /no/  | ᓇ - /na/ | ᓀ - /neː/ | ᓐ - /n/  |
+| ᓯ - /si/  | ᓱ - /so/  | ᓴ - /sa/  | ᓭ - /seː/ | ᔅ - /s/  |
+| ᔑ - /ʃi/ | ᔓ - /ʃo/  | ᔕ - /ʃa/ | ᔐ - /ʃeː/ | ᔥ - /ʃ/ |
+| ᔨ - /ji/  | ᔪ - /jo/  | ᔭ - /ja/  | ᔦ - /jeː/ | ᔾ - /j/  |   
+| ᓕ - /li/ | ᓗ - /lo/  | ᓚ - /la/ | ᓓ - /leː/ | ᓪ - /l/  |
+| ᐎ - /wi/ | ᐒ - /wo/  | ᐗ - /wa/ | ᐌ - /weː/ | ᐤ - /w/  |
+| ᐦᐃ - /hi/ | ᐦᐅ - /ho/ | ᐦᐊ - /ha/ | ᐦᐁ - /heː/ | ᐦ - /h/  |
+|           |           |           |           | ᔉ - /sk/ |
+|           |           |           |           |          |
+
+* /w/ can also appear between a consonant and a vowel, the transcription of which involves a dot (like in the /w/ + vowel sequence) on the left of any character (ex. ᑄ = /pwa/) [@gaudry2005].
+    - Based on [@syllabics], which also seems consistent with Crúbadán, /w/ does not appear following /n/ and /h/, except in the sequences /nwa/ and /nwaː/.
+* A small ring above a word-final syllable indicates /j/; however, Crúbadán doesn't seem to follow this convention, opting for ⟨ᔾ⟩, the convention of which is consistent with the other word-final consonants [@Ellis2000, p. 465].
+
+# References

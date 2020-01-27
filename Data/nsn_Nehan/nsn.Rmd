@@ -1,0 +1,104 @@
+---
+title: "Nehan"
+author: "Emily Strand"
+bibliography: nsn.bib
+output: html_document
+---
+
+Last updated: 2020-01-24
+
+# Background
+
+**Language family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Western Oceanic / Meso Melanesian / New Ireland / South New Ireland-Northwest Solomonic / Nehan-North Bougainville / Nehan
+
+* Nehan is spoken in the Bougainville province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar   Velar   Glottal
+Stops                       "p b"     "t d"     "k ɡ"     ""
+Fricatives                   ""        "s"       ""      "h"
+Nasals                       "m"       "n"       "ŋ"      ""
+Trills                       ""        "r"       ""       ""
+Approximants                 ""        "l"       ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```  
+
+## Vowels
+
+* Vowels often appear adjacent to one another in Nehan; however, based on the syllable structure discussed below, it appears that they are interpreted as separate [@SIL, p. 3].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""          "u"
+Mid         "ɛ"         ""          "ɔ"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme
+"a"              "/a/"
+"b"              "/b/"
+"d"              "/d/"
+"e"              "/ɛ/"
+"g"              "/ɡ/"
+"h"              "/h/"
+"i"              "/i/"
+"k"              "/k/"
+"l"              "/l/"
+"m"              "/m/"
+"n"              "/n/"
+"o"              "/ɔ/"
+"p"              "/p/"
+"r"              "/r/"
+"s"              "/s/"
+"t"              "/t/"
+"u"              "/u/"
+**Digraph**       ""
+"ng"             "/ŋ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Nehan consist of the following structures [@SIL, p. 3]:
+    - V
+    - VC
+    - CV
+    - CVC
+
+# Misc. Rules
+
+* All stops, /m/, /s/ and /h/ labialize preceding /uV/ [@SIL, p. 3].
+
+# References

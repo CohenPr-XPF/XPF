@@ -1,0 +1,136 @@
+---
+title: "Huallaga Huánuco Quechua"
+author: "Emily Strand"
+bibliography: qub.bib
+output: html_document
+---
+
+Last Updated: 2019-08-21
+
+**Compromised: unclear documentation pertaining to the orthography; possible conflation with vowels and glides**
+
+# Background
+
+**Language Family**: Quechuan / Quechua I
+
+* Huallaga Huánuco Quechua is spoken in the Huanuco region of Peru.
+
+# Phonology
+
+## Consonants
+
+* /b/, /d/, /ɡ/, /f/, and /ʐ/ appear in loanwords [@weber_grammar_1989, p. 450].
+* Some sources indicate that /r/ is in fact an alveolar flap. Although @weber_rimaycuna_2008 and @weber_grammar_1989 don't make this distinction, I have opted to treat it as a flap, given that other dialects of Quechua (e.g. Cuzco Quechua) classify it as such.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar  Postalveolar   Palatal  Velar   Uvular  Glottal
+Stops                      "p"         "t"        ""            ""      "k"     "q"      ""
+Affricates                 ""          ""         "tʃ"          ""      ""      ""       ""
+Fricatives                 ""          "s"        "ʃ"           ""      ""      ""       "h"
+Nasals                     "m"         "n"        ""            "ɲ"     ""      ""       ""
+Flaps                      ""          "ɾ"        ""            ""      ""      ""       ""
+Approximants               ""          "l"        ""           "j ʎ"    "w"     ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  footnote(general = "Note: The palatal approximant on the right is lateral.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```   
+
+## Vowels
+
+* Vowel length is contrastive. Long vowels are either marked with a diareses (¨) or duplicate vowels, depending on the orthography [@weber_rimaycuna_2008, p. 14; @weber_grammar_1989, p. 456].
+* [e] and [o] are allophones of /i/ and /u/ respectively, and used in loanwords [@weber_grammar_1989, p. 450].
+* Apart from long vowels (duplicate graphemes), vowels do not occur in succession [@weber_grammar_1989, p. 455].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""           "u"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* It's somewhat unclear as to what constitutes the Huallaga Huánuco Quechua alphabet. The Peruvian Ministry of Education publicly recognized the language in 2015, but the resources don't seem to be accessible. @weber_grammar_1989 lists variations between the Peruvian Ministry of Education (PME), the Departmental Office of Education (DOE), and Hispanic orthography (p. 456), of which I have noted below. Crúbadán uses graphemes from all three systems, so all those listed below will be represented in the rule set.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme            Comment
+"a"              "/a/"               ""
+"ä"              "/aː/"             "PME"        
+"c"              "/k/"           "Hispanic"         
+"e"              "/i/"               ""
+"ë"              "/iː/"              ""
+"g"              "/q/"          "DOE; Hispanic"
+"h"              "/h/"              "PME"
+"i"              "/i/"               ""
+"i"              "/j/"            "Hispanic"
+"ï"              "/iː/"              ""
+"j"              "/h/"          "DOE; Hispanic"
+"k"              "/k/"            "PME; DOE"
+"l"              "/l/"               ""
+"m"              "/m/"               ""
+"n"              "/n/"               ""
+"ñ"              "/ɲ/"               ""
+"o"              "/u/"               ""
+"ö"              "/uː/"              ""
+"p"              "/p/"               ""
+"q"              "/q/"              "PME"
+"r"              "/ɾ/"               ""
+"s"              "/s/"               ""
+"t"              "/t/"               ""
+"u"              "/u/"               ""
+"u"              "/w/"            "Hispanic"
+"ü"              "/uː/"              ""
+"w"              "/w/"               ""
+"y"              "/j/"               ""
+**Digraph**       ""                 ""
+"ch"             "/tʃ/"              ""
+"ll"             "/ʎ/"               ""
+"qu"             "/k/"     "Hispanic: preceding front vowels"
+"sh"             "/ʃ/"               ""
+"hu"             "/w/"           "Hispanic"
+"gu"             "/q/"     "Hispanic: preceding front vowels"
+"aa"             "/aː/"             "DOE"
+"ee"             "/iː/"             "DOE"
+"ii"             "/iː/"             "DOE"
+"oo"             "/uː/"             "DOE"
+"uu"             "/uː/"             "DOE"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* The syllable structure consists of (C)V(C). The onset is required except in an initial syllable [@weber_grammar_1989, p. 454].
+
+# Lenition Rules
+
+* /q/ fricates word-finally or preceding a voiceless obstruent [@weber_grammar_1989, p. 452].
+* /q/ becomes voiced intervocalically, spirantizes preceding a voiceless consonant, and deletes word-finally [@weber_grammar_1989, p. 452].
+
+# Misc. Rules
+
+* /n/ assimilates in place to the following consonant [@weber_grammar_1989, p. 452].
+* /r/ becomes a retroflex fricative word-initially and in sequences ⟨rr⟩ [@weber_grammar_1989, p. 453].
+
+# References

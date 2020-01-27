@@ -1,0 +1,139 @@
+---
+title: "Dimli"
+author: "Becky Mathew"
+bibliography: diq.bib
+output: html_document
+---
+
+Last update: 2019-10-16
+
+**Compromised: Crúbadán seems to use several graphemes from other languages (e.g. Turkish), which make up roughly 30% of the corpus**
+
+# Background
+
+**Language family**: Indo-European, Indo-Iranian, Iranian, Western, Northwestern, Zaza-Gorani
+
+* Also referred to as Zaza, Dimli is spoken in eastern Turkey.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Labial     Dental     Alveolar   Postalveolar   Palatal     Velar    Uvular    Glottal   Pharyngeal
+Stops                      "p  b"     "t̪ t̪ˤ d̪"       ""          ""           ""        "k ɡ"    "q"         ""         ""      
+Affricates                   ""         ""           ""       "tʃ  dʒ"        ""         ""       ""         ""         ""
+Fricatives                 "f  v"     "s̪ s̪ˤ z̪"       ""        "ʃ  ʒ"         ""       "x  ɣ"     ""         "h"      "ħ  ʕ"
+Nasals                      "m"         "n̪"          ""          ""           ""         ""       ""         ""         ""
+Flaps                        ""         ""           "ɾ"         ""           ""         ""       ""         ""         ""
+Trills                       ""         ""           "r"         ""           ""         ""       ""         ""         ""
+Approximants                "w"         ""          "l ɫ"        ""           "j"        ""      ""         ""         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal", "Pharyngeal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 9)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Phonemes that have the diacritic (ˤ) are glottalized. The alveolar approximants are both voiced, but the one on the right is velarized.", general_title = "")
+```
+
+## Vowels
+
+* @Todd1985 includes /ə/ rather than /ɜ/ (p. 21); however, I went with /ɜ/ given that they describe it as a mid open central vowel, which is lower than schwa.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+            Front      Central      Back
+High         "i"         "ɨ"         "u"
+"Near-High"   ""         ""          "ʊ"
+Mid          "e"         ""          "o"
+"Low-Mid"     ""         "ɜ"         ""
+Low           ""         ""          "ɑ"       
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/oj/, /ʊj/, /ɑj/, /ɑw/, /ɜj/, /ɜw/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```    
+
+# Alphabet
+
+* Dimli is written in both the Latin and Arabic script. I have not included the Arabic transcription because it does not have a one-to-one correspondence between graphemes and phonemes.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme  
+"a"             "/ɑ/"
+"b"             "/b/"
+"c"             "/dʒ/"
+"ç"             "/tʃ/"
+"d"             "/d̪/"
+"e"             "/ɜ/"
+"ê"             "/e/"
+"f"             "/f/"
+"g"             "/ɡ/"
+"ğ"             "/ɣ/"
+"h"             "/h/"
+"\'h"           "/ħ/"
+"i"             "/ɨ/"
+"î"             "/i/"
+"j"             "/ʒ/"
+"k"             "/k/"
+"l"             "/l/"
+"\'l"           "/ɫ/"
+"m"             "/m/"
+"n"             "/n̪/"
+"o"             "/o/"
+"p"             "/p/"
+"q"             "/q/"
+"r"             "/ɾ/"
+"s"             "/s̪/"
+"ş"             "/ʃ/"
+"\'s"           "/s̪ˤ/"
+"t"             "/t̪/"
+"\'t"           "/t̪ˤ/"
+"u"             "/ʊ/"
+"û"             "/u/"
+"v"             "/v/"
+"w"             "/w/"
+"x"             "/x/"
+"y"             "/j/"
+"z"             "/z̪/"
+"\'"            "/ʕ/"
+**Digraph**     ""
+"rr"            "/r/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /b/ spirantizes to /v/ in postvocalic positions [@Todd1985, p. 10].
+* /dʒ/ becomes /ʒ/ in postvocalic positions [@Todd1985, p. 11].
+* /ɡ/ is often unpronounced word-finally when preceded by /n/ [@Todd1985, p. 12].
+
+# Misc. Rules
+
+* /n/ assimilates in place when followed by /ɡ/ [@Todd1985, p. 12].
+
+# References

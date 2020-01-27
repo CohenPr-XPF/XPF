@@ -1,0 +1,27 @@
+# Matsés Rule Set
+# Written by: Emily
+# Last Updated: 2019-10-08
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[abdeikmnopstuw],,,,
+class,h-preceder,[scşç],,,,
+class,qu-vowel,[eië],,,,
+class,gem,[knsʂʃ],,,,
+# Individual Letters
+sub,c,k,2,,,
+sub,ë,ɨ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+sub,-,,2,,,"hyphens indicate morpheme boundaries",
+# Digraphs
+sub,s,ʃ,3,,h,
+sub,ş,ʂ,3,,h,
+sub,c,tʃ,3,,h,
+sub,ç,tʂ,3,,h,
+sub,h,,3,{h-preceder},,"clean-up",
+sub,t,ts,3,,s,
+sub,s,,4,t,,"clean-up",
+sub,q,k,3,,u{qu-vowel},
+sub,u,,3,q,,"clean-up",
+# Consonant Gemination
+ipasub,({gem}) \1\b,\1 ː,2,,,

@@ -1,0 +1,110 @@
+---
+title: "Samoan"
+author: "Emily Strand"
+bibliography: sm.bib
+output: html_document
+---
+
+Last Updated: 2020-01-07
+
+**Slightly Compromised - @Alderete2012 states that macrons and apostrophes (marking long vowels and glottal stops respectively) aren't generally used in orthography. Crúbadán appears to use the conventions quite frequently, but it is unclear if they're used exhaustively**
+
+# Background
+
+**Language Family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Central-Eastern Oceanic / Remote Oceanic / Central Pacific / East Fijian-Polynesian / Polynesian / Nuclear / Samoic-Outlier / Samoan
+
+* Samoan is spoken throughout the Samoan Islands.
+* The formal style is represented below.
+
+# Phonology
+
+## Consonants
+
+* /k/, /h/, and /ɹ/ appear in loanwords [@Zuraw2014, p. 277].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar    Velar   Glottal
+Stops                        "p"       "t"        ""       "ʔ"
+Affricates                   ""        ""         ""       ""
+Fricatives                  "f v"      "s"        ""       ""
+Nasals                       "m"       "n"        "ŋ"      ""
+Approximants                 ""        "l"        ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```  
+
+## Vowels
+
+* Vowel length is phonemic [@Kernan1974, p. 107]. Long vowels are marked with a macron (¯).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme  
+"a"             "/a/"
+"e"             "/e/"
+"f"             "/f/"
+"g"             "/ŋ/"
+"i"             "/i/"
+"l"             "/l/"
+"m"             "/m/"
+"n"             "/n/"
+"o"             "/o/"
+"p"             "/p/"
+"s"             "/s/"
+"t"             "/t/"
+"u"             "/u/"
+"v"             "/v/"
+"‘"             "/ʔ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* In fast speech, voiceless stops (including /k/), are voiced intervocalically [@Alderete2012, p. 3].
+* /t/ tends to become [ts] preceding /i/ (ibid.).
+* /k/ may palatalize in the environment of /i/ or /e/ (ibid.).
+* Glottal stops are often deleted intervocalically in fast speech (ibid.).
+* /f/ may debuccalize to /h/ (ibid.).
+* In fast speech, /s/ may become [ts] or [ʃ] (ibid.).
+* Short vowels may be deleted word-finally [@Alderete2012, p. 6].
+
+# Misc. Rules
+
+* In the colloquial style [@Kernan1974., p. 108]:
+    - /t/ is realized as [k]
+    - /n/ is realized as [ŋ]
+
+# References

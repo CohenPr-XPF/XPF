@@ -1,0 +1,139 @@
+---
+title: "Swahili"
+author: "Delphine Morse Mahos"
+edited by: "Emily Strand"
+bibliography: sw.bib
+output: html_document
+---
+
+Last Updated: 2020-01-10
+
+**Slightly Compromised: possible conflation among syllabic nasals and non-syllabic counterparts**
+
+# Background
+
+**Language family**: Niger-Congo / Atlantic-Congo / Volta-Congo / Benue-Congo / Bantoid / Southern / Narrow Bantu / Central / G / Swahili (G. 40)
+
+* Also referred to as Kiswahili, it is spoken throughout Africa.
+
+# Phonology
+
+## Consonants
+
+* There is some controversy around the phonemic status of aspirated stops. @Polome1967 states that there are inconsistencies among dialects, where some maintain the distinction and others do not (pp. 39-41). He also states that the contrast is neutralizing, especially among educated speakers, largely dictated by stress patterns and word placement. I have chosen to not include them in the phonemic inventory below.
+* @Polome1967 states that the phonemes /θ/, /ð/, and /ɣ/ appear only in loanwords; however, they have become part of the phonemic system, especially in that of educated speakers (more uneducated speakers or speakers that are less influenced by Arabic substitute native phonemes) (p. 42). I have chosen to include them below.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Dental   Alveolar  Postalveolar  Palatal     Velar   Glottal
+Stops                     "p b ᵐb"   ""      "t d ⁿd"       ""         ""      "k ɡ ᵑɡ"    ""
+Affricates                 ""        ""         ""      "tʃ dʒ ⁿdʒ"    ""         ""       ""
+Fricatives                "f v ᶬv"   "θ ð"    "s z ⁿz"      "ʃ"        ""        "x ɣ"     "h"
+Nasals                     "m"       ""         "n"         ""         "ɲ"        "ŋ"      ""
+Trills                     ""        ""         "r"         ""         ""         ""       ""
+Approximants               ""        ""         "l"         ""         "j"        "w"      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Where three phonemes share a cell, they are ordered voiceless, voiced, and prenasalized.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Double vowels occur; however, they are independent of one another and do not constitute a single (long) phoneme [@Maw1999, p. 44].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front    Back
+High      "i"      "u"
+Mid       "ɛ"      "ɔ"
+Low       ""       "ɑ"
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme
+"a"              "/ɑ/"
+"b"              "/b/"
+"d"              "/d/"
+"e"              "/ɛ/"
+"f"              "/f/"
+"g"              "/ɡ/"
+"h"              "/h/"
+"i"              "/i/"
+"j"              "/dʒ/"
+"k"              "/k/"
+"l"              "/l/"
+"m"              "/m/"
+"n"              "/n/"
+"o"              "/ɔ/"
+"p"              "/p/"
+"r"              "/r/"
+"s"              "/s/"
+"t"              "/t/"
+"u"              "/u/"
+"v"              "/v/"
+"w"              "/w/"
+"y"              "/j/"
+"z"              "/z/"
+**Digraph**       ""
+"mb"             "/ᵐb/"
+"nd"             "/ⁿd/"
+"nj"             "/ⁿdʒ/"
+"ny"             "/ɲ/"
+"mv"             "/ᶬv/"
+"nz"             "/ⁿz/"
+"ng"             "/ᵑɡ/"
+"ng\'"           "/ŋ/"
+"ch"             "/tʃ/"
+"dh"             "/ð/"
+"gh"             "/ɣ/"
+"kh"             "/x/"
+"sh"             "/ʃ/"
+"th"             "/θ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Swahili have the following structures [@mohamed2001, pp. 11-12]:
+    - V
+    - CV
+    - CCV
+    - CCCV
+* Although @mohamed2001 also indicates that a syllable can consist of just a nasal (p. 11), @Polome1967 states that such occurrences are merely variants of the non-syllabic nasals, predictable by stress patterns (p. 43). However, there are occurrences where syllabic /m/ and non-syllabic /m/ contrast, making the distinction between (ex. /mb/ and /m b/) unpredictable [@Polome1967, p. 43].
+
+# Lenition Processes
+
+* /n/ becomes the glide /j/ preceding a noun or adjective with a vowel stem [@mohamed2001, p. 24].
+* /l/ deletes preceding /u/ [@Meinhof1932, p. 118].
+* /v/ becomes the glide /w/ preceding /i/ (ibid.).
+* /r/ is often realized as a flap [@Polome1967, p. 44].
+* The contrast between voiced and voiceless consonants is sometimes (unpredictably) neutralized [@Polome1967, p. 46].
+
+# Misc. Rules
+
+* The voiced stops vary freely with their implosive variants [@Polome1967, p. 41].
+* /v/ and /z/ vary freely in some unpredictable environments [@Polome1967, p. 46].
+
+# References

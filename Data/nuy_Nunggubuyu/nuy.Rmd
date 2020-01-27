@@ -11,77 +11,102 @@ Last Updated: 2019-08-07
 
 **Language Family**: Gunwinyguan / Wubuy-Anindilyakwa / Nunggubuyu
 
+* Nunggubuyu is spoken in the Northern Territory of Australia.
+
 # Phonology
 
 ## Consonants
 
-* /n̪/ appears only rarely, in a handful of animal-related nouns. [@NuyHeath1984, p. 12]
+* /n̪/ appears only rarely, in a handful of animal-related nouns [@NuyHeath1984, p. 12]. It does not appear in the Crúbadán corpus.
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Labial: /b/, /m/, /w/  
-Dental: /d̪/, /n̪/, /l̪/  
-Alveolar: /d/, /n/, /ɾ/, /l/  
-Retroflex: /ɖ/, /ɳ/, /ɭ/, /ɻ/  
-Palatal: /ɟ/, /ɲ/, /j/  
-Velar: /ɡ/, /ŋ/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
-
-Stops: /b/, /d̪/, /d/, /ɖ/, /ɟ/, /ɡ/  
-Nasals: /m/, /n̪/, /n/, /ɳ/, /ɲ/, /ŋ/  
-Taps: /ɾ/  
-Laterals: /l̪/, /l/, /ɭ/  
-Approximants: /w/, /ɻ/, /j/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"  Labial  Dental   Alveolar  Retroflex  Palatal   Velar
+Stops                     "b"     "d̪"      "d"       "ɖ"        "ɟ"       "ɡ"
+Nasals                    "m"     "n̪"      "n"       "ɳ"        "ɲ"       "ŋ"
+Taps                      ""      ""       "ɾ"       ""         ""        ""
+Approximants              "w"     ""       ""        "ɻ"        "j"       ""
+"Lateral approximants"    ""      "l̪"      "l"       "ɭ"        ""        ""
+'), TRUE)
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Retroflex", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Vowels: /i/, /u/, /a/, /aː/  
+* Vowel lengthening is present in Nunggubuyu, but only /aː/ has minimal pairs with its short counterpart [@NuyHeath1984, p. 9].
+* Tone does not appear to be contrastive [@NuyHeath1984, p. 32].
+* @NuyHughes1971 lists /æ/ as part of the vowel inventory, albeit only marginally (p. 72). Other authors do not share this view, so I have opted not to include it below.
 
-Vowel lengthening is present in Nunggubuyu, but only /aː/ has minimal pairs with its short counterpart. [@NuyHeath1984, p. 9]
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Tone does not appear to be contrastive. [@NuyHeath1984, p. 32]
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"       ""            "u"
+Low       ""        "a aː"        ""
+'), TRUE)
 
-@NuyHughes1971 lists /æ/ as present, albeit only marginally (p. 72); this does not seem to be borne out by the other authors, though.
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Where phonemes share a cell, the phoneme on the left is short and the one on the right is long.", general_title = "")
+```    
 
 # Alphabet
 
-a - /a/  
-  aa - /aː/  
-b - /b/  
-d - /d/  
-  dh - /d̪/  
-  ḏ - /ɖ/  
-g - /ɡ/  
-i - /i/  
-j - /ɟ/  
-l - /l/  
-  lh - /l̪/  
-  ḻ - /ɭ/  
-m - /m/  
-n - /n/  
-  nh - /n̪/  
-  ṉ - /ɳ/  
-  ny - /ɲ/  
-  ng - /ŋ/  
-r - /ɻ/  
-  rr - /ɾ/  
-u - /u/  
-w - /w/  
-y - /j/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme          Phoneme
+"a"                "/a/"    
+"b"                "/b/"  
+"d"                "/d/"    
+"ḏ"                "/ɖ/"  
+"g"                "/ɡ/"  
+"i"                "/i/"  
+"j"                "/ɟ/"   
+"l"                "/l/"    
+"ḻ"                "/ɭ/"  
+"m"                "/m/"  
+"n"                "/n/"    
+"ṉ"                "/ɳ/"   
+"r"                "/ɻ/"  
+"u"                "/u/"  
+"w"                "/w/"
+"y"                "/j/"  
+**Digraph**         ""
+"aa"               "/aː/"
+"dh"               "/d̪/"
+"lh"               "/l̪/"
+"nh"               "/n̪/"
+"ny"               "/ɲ/"  
+"ng"               "/ŋ/"
+"rr"               "/ɾ/"  
+'), TRUE)
+
+kable(alphabet, align = "c") %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Nunggubuyu has a (C)V(C)(C) syllable structure [@NuyHughes1971, pp. 75-76].
 
 # Lenition Rules
 
-* /ɟ/ undergoes an affricate release when non-syllable-final. [@NuyHeath1984, p. 13]
-* Word-final /ɡ/ is weakly realized when preceded by a liquid or vowel. (ibid.)
+* /ɟ/ undergoes an affricate release when non-syllable-final [@NuyHeath1984, p. 13].
+* Word-final /ɡ/ is weakly realized when preceded by a liquid or vowel (ibid.).
 
 # Misc. Rules
 
-* /au/ sequences are sometimes realized as [oː]. [@NuyHeath1984, p. 33]
-* /ɾ/ trills to [r] in preconsonantal and word-final positions. [@NuyHughes1971, p. 75]
-
-## Syllable Structure
-
-Nunggubuyu has a (C)V(C)(C) syllable structure. [@NuyHughes1971, pp. 75-76]
+* /au/ sequences are sometimes realized as [oː] [@NuyHeath1984, p. 33].
+* /ɾ/ trills to [r] in preconsonantal and word-final positions [@NuyHughes1971, p. 75].
 
 # References

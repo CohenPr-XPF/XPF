@@ -1,0 +1,25 @@
+# Arosi Rule Set
+# Written by: Emily
+# Last Updated: 2020-01-22
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdehikmnopstuw],,,,
+class,apostrophe,['ꞌ‘’],,,,
+class,w-preceder,[pbm],,,
+class,vowels,[aeiou],,,,
+# Individual Letters
+sub,g,ɡ,2,,,
+sub,r,ɾ,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,p,pʷ,3,,w,
+sub,b,bʷ,3,,w,
+sub,m,mʷ,3,,w,
+sub,w,,3,{w-preceder},,"clean-up",
+sub,n,ŋ,3,,g,
+sub,g,,3,n,,"clean-up",
+# Long Vowels
+ipasub,({vowels}) \1,\1 ː,2,,,
+# Misc. Rules
+sub,-,,2,,,

@@ -1,0 +1,135 @@
+---
+title: "Somba-Siawari"
+author: "Emily Strand"
+bibliography: bmu.bib
+output: html_document
+---
+
+Last Updated: 2019-11-19
+
+**Slightly Compromised: ambiguity due to phonetic transcription of /p/, /t/, and /k/ intervocalically (ex. ⟨kapa⟩ and ⟨kawa⟩ both transcribe to /kapa/)**
+
+# Background
+
+**Language Family**: Nuclear Trans New Guinea / Finisterre-Huon / Huon / Western Huon / Kosorong-Burum-Mindik
+
+* Also referred to as Burum, Somba-Siawari is spoken in the Morobe province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+* /f/ is not a native phoneme of Somba-Siawari [@Olkkonen1985, p. 33]. However, after much influence from other languages (Kâte and Pidgin), it has become prevalent in the language. I have chosen to include it in the phonemic inventory.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial       Alveolar    Palatal        Velar     
+Stops                      "p  b"       "t  d"        ""       "k  kʷ  ɡ  ɡʷ"
+Affricates                   ""         "ts  dz"      ""            ""
+Fricatives                  "f"           "s"         ""           "ɣ"  
+Nasals                      "m"           "n"         ""           "ŋ"  
+Trills                       ""           "r"         ""            ""
+Approximants                "w"           "l"         "j"           ""   
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. The velar stops that have the diacritic (ʷ) are labialized.", general_title = "")
+```
+
+## Vowels
+
+* Both @Olkkonen1985 and @Gasaway1997 represent the mid central vowel as /ə/ (p. 35; p. 59); however, I have chosen to use /ɵ/ as @Olkkonen1985 describes it as a close mid-high central rounded vowel.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         ""           "u"
+Mid           "e"         "ɵ"          "o"
+Low           ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+* Intervocalically, /p/, /t/, and /k/ are written ⟨w⟩, ⟨r⟩, and ⟨h⟩, respectively (see Lenition Rules below) [@Olkkonen1994, p. 4].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme         Phoneme
+"a"               "/a/"
+"b"               "/b/"
+"d"               "/d/"
+"e"               "/e/"
+"f"               "/f/"
+"g"               "/ɡ/"
+"h"               "/ɣ/"
+"i"               "/i/"
+"j"               "/dz/"
+"k"               "/k/"
+"l"               "/l/"
+"m"               "/m/"
+"n"               "/n/"
+"ŋ"               "/ŋ/"
+"o"               "/o/"
+"ö"               "/ɵ/"
+"p"               "/p/"
+"q"               "/kʷ/"
+"r"               "/r/"
+"s"               "/s/"
+"t"               "/t/"
+"u"               "/u/"
+"w"               "/w/"
+"y"               "/j/"
+"z"               "/ts/"
+**Digraph**       ""
+"gw"              "/ɡʷ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Somba-Siawari have the following structures [@Olkkonen1985, pp. 35-36]:
+    - V
+    - VC
+    - CV
+    - CVC
+    - VV
+    - VVC
+    - CVV
+    - CVVC
+
+# Lenition Rules
+
+* Intervocalically /p/, /t/, and /k/ are realized as [w], [r], and [h] (@Gasaway1997 argues for [ɣ] (p. 63)), respectively [@Olkkonen1994, p. 4].
+* Voiceless stops become voiced following voiced consonants [@Gasaway1997, p. 67].
+* Degemination of consonants occurs through affixation [@Gasaway1997, p. 62].
+
+# Misc. Rules
+
+* /ɣ/ is realized as [h] word-initially [@Olkkonen1994, p. 4].
+* /w/ becomes [β] preceding front vowels [@Gasaway1997, p. 60].
+* Voiced stops become voiceless following voiceless consonants [@Gasaway1997, p. 67].
+* [j] epenthesis occurs intervocalically at morpheme boundaries if the second vowel is not high [@Gasaway1997, p. 69].
+* /i/ and /u/ are realized as glides when occurring in syllable onsets and /w/ and /j/ are realized as vowels when occurring in syllable nuclei [@Olkkonen1985, p. 30].
+* Voiceless stops are aspirated word-initially and unreleased word-finally [@Olkkonen1985, p. 31].
+* /kʷ/ and /ɡʷ/ are realized as [kp] and [ɡb] in the Yaknge and Siawari dialects [@Olkkonen1994, p. 4].
+
+# References

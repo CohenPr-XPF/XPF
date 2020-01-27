@@ -1,0 +1,15 @@
+# Mekeo Rule Set
+# Written by: Emily Strand
+# Last updated: 2020-01-24
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aefiklmnopstu],,,,
+class,apostrophe,[''‘’],,,,
+class,vowels,[aeiou],,,,
+# Individual Letters
+sub,g,ŋ,2,,,
+sub,v,f,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Long Vowels
+ipasub,({vowels}) \1,\1 ː,2,,,

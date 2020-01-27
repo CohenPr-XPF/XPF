@@ -1,0 +1,34 @@
+# Qeqchi Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-30
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,ejectable,[t|tz|ch|k|q],,,,
+class,vowel,[aeiɔu],,,,
+class,apostrophe,['ꞌˈ‘’],,,,
+class,passthrough,[aehiklmnpqrstuw],,,,
+# Individual Letters
+sub,c,k,4,,,"standalone <c> is present in some older orthographies"
+sub,j,x,4,,,
+sub,o,ɔ,4,,,
+sub,x,ʃ,4,,,
+sub,y,j,4,,,
+sub,{apostrophe},ʔ,4,,,
+sub,-,ʔ,4,,,"rare"
+# Digraphs
+sub,c,tʃ,5,,h,"<ch>"
+sub,h,,5,c,,"<ch> cleanup"
+sub,t,ts,5,,z,"<tz>"
+sub,z,,5,t,,"<tz> cleanup"
+# Ejectives
+sub,b,ɓ,6,,,"<b'>; occasionally the apostrophe is omitted, so I haven't included it in the context"
+sub,{apostrophe},,6,b,,"<b'> cleanup"
+sub,t,t’,6,,{apostrophe},"<t'>"
+sub,t,ts’,6,,z{apostrophe},"<tz'>; the z is cleaned up in line 22"
+sub,c,tʃ’,6,,h{apostrophe},"<ch'>; the h is cleaned up in line 20"
+sub,k,k’,6,,{apostrophe},"<k'>"
+sub,q,q’,6,,{apostrophe},"<q'>"
+sub,{apostrophe},,6,{ejectable},,
+# Misc. Rules
+ipasub,({vowel}) \1,\1 ː,2,,,"vowel lengthening"
+sub,({passthrough}),\1,0.1,,,

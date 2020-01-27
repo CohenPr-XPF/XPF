@@ -1,0 +1,129 @@
+---
+title: "Muna"
+author: "Emily Strand"
+bibliography: mnb.bib
+output: html_document
+---
+
+Last Updated: 2019-11-19
+
+
+**Compromised: Crúbadán seems to represent a different dialect possibly (apostrophes occur more often then dictated by the documentation and the uvular fricative is not represented). No additional information could be found to determine which dialect is represented, so I'm classifying this language as compromised**
+
+# Background
+
+**Language Family**: Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Sulawesi / Muna-Buton / Muna
+
+* Muna is spoken throughout the Muna and Buton islands, located in the Philippines.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial      Dental    Alveolar     Velar     Uvular  Glottal
+Stops                     "p  b  ɓ"     "d̪"      "t  d"      "k  ɡ"       ""      ""
+"Stops (prenasalized)"    "ᵐp  ᵐb"      ""      "ⁿt  ⁿd"    "ᵑk  ᵑɡ"      ""      ""
+Fricatives                  "f"         ""       "s  ⁿs"       ""         "ʁ"     "h"
+Nasals                      "m"         ""         "n"         "ŋ"        ""      ""
+Trills                      ""          ""         "r"         ""         ""      ""
+Approximants                "w"         ""         "l"         ""         ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. The bilabial stops are ordered voiceless, voiced, and implosive. The alveolar fricatives are both voiceless, but the one on the right is prenasalized.", general_title = "")
+```
+
+## Vowels
+
+* Vowel sequences are interpreted as such, rather than complex nuclei [@vandenBerg1989, p. 25].
+* Sequences of like vowels also occur in the language. The may be realized phonetically long as a result of stress patterns, but they are not phonemic [@vandenBerg1989, p. 26].
+* Although rare, sequences of three vowels also occur. An optional glottal stop (sometimes marked as an apostrophe) may be epenthesized between the first two vowels [@vandenBerg1989, p. 27].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         ""           "u"
+Mid           "ɛ"         ""           "ɔ"
+Low           ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+* ⟨j⟩ is often used in Indonesian loanwords. Pronunciation varies widely between [d̪], [ɟ], and [dʒ] [@vandenBerg1989, p. 18].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme         Phoneme
+"a"               "/a/"
+"b"               "/b/"
+"d"               "/d/"
+"e"               "/ɛ/"
+"f"               "/f/"
+"g"               "/ɡ/"
+"h"               "/h/"
+"i"               "/i/"
+"k"               "/k/"
+"l"               "/l/"
+"m"               "/m/"
+"n"               "/n/"
+"o"               "/ɔ/"
+"p"               "/p/"
+"r"               "/r/"
+"s"               "/s/"
+"t"               "/t/"
+"u"               "/u/"
+"w"               "/w/"
+**Multigraph**     ""
+"mp"              "/ᵐp/"
+"mb"              "/ᵐb/"
+"bh"              "/ɓ/"
+"dh"              "/d̪/"
+"gh"              "/ʁ/"
+"nt"              "/ⁿt/"
+"nd"              "/ⁿd/"
+"ns"              "/ⁿs/"
+"ng"              "/ŋ/"
+"ngk"             "/ᵑk/"
+"ngg"             "/ᵑɡ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Muna follow the order of (C)V [@vandenBerg1989, p. 24].
+
+# Lenition Rules
+
+* Just like other Austronesian languages, Muna underwent the loss of final consonants, resulting in the syllable structure it has today [@Blevins2004, pp. 208, 210].
+
+# Misc. Rules
+
+* /w/ is often realized as the labio-dental approximant [ʋ], especially preceding /a/, /ɛ/, and /ɔ/ [@vandenBerg1989, p. 17].
+* /w/ varies freely with [β] preceding /u/ [@vandenBerg1989, p. 18].
+* /d/ may be realized as an implosive mainly preceding /a/, /i/, and /ɛ/ [@vandenBerg1989, p. 19].
+* /k/ and /ɡ/ are fronted preceding front vowels and backed preceding back vowels [@vandenBerg1989, pp. 19-20].
+* /ɛ/ and /ɔ/ are realized as [e] and [o] preceding when adjacent to another vowel [@vandenBerg1989, p. 21].
+* Glottal stops may be epenthesized word-initially preceding vowels [@vandenBerg1989, p. 21].
+
+# References

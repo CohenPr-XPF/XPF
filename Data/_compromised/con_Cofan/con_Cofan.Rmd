@@ -1,0 +1,183 @@
+---
+title: "Cofán"
+author: "Justin Bai"
+bibliography: con_Cofan.bib
+output: html_document
+---
+
+Last Updated: 2020-01-23
+
+**Compromised: Conflation between some consonants**
+
+# Background
+
+**Language family**: isolate
+
+* Cofán (autonym: A'ingae) is a linguistic isolate spoken in parts of Ecuador and Colombia.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial      Alveolar     Postalveolar  Palatal    Velar     Glottal
+Stops                     "p pʰ ᵐb"    "t tʰ ⁿd"         ""          ""    "k kʰ ᵑɡ"     "ʔ"
+Affricates                   ""      "ts tsʰ ⁿdz"   "tʃ tʃʰ ⁿdʒ"     ""       ""         ""
+Fricatives                   "f"         "s"            "ʃ"         ""       ""         "h"
+Nasals                       "m"         "n"             ""          "ɲ"      ""         ""
+Flaps                        ""          "ɾ"             ""          ""       ""         ""
+Approximants                 "ʋ"         ""              ""          "j"      "ɰ"        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Where three phonemes share a cell, they are ordered voiceless, aspirated, and prenasalized.", general_title = "")
+```  
+
+
+## Vowels
+
+* Cofán consists of both oral and nasal vowels [@fischeraingae, p. 9]. Nasal vowels are represented orthographically either with a preceding or following nasal consonant or with a following prenasalized consonant. If the following (word-final) nasal consonant is an ⟨n⟩, the ⟨n⟩ is dropped.
+* The diphthongs listed below also contrast in nasality. Nasal diphthongs, like the monophthongs are indicated orthographically either with a preceding or following nasal consonant or with a following prenasalized consonant [@fischeraingae, p. 3]. If the following (word-final) nasal consonant is an ⟨n⟩, the ⟨n⟩ is dropped.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High       "i ĩ"       "ɨ ɨ̃"         ""
+Mid        "e ẽ"        ""          "o õ"
+Low         ""         "a ã"         ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ai/, /oe/, /oa/, /oi/, /ɨi/, /ao/, /ae/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Alphabet
+
+* Cofán has two orthographies, both of which are based on the Latin alphabet. One orthography was developed under M. B. Borman and will be referred to as the Borman orthography. There has been a new orthography developed by the community in Ecuador which will be referred to as the new orthography [@fischeraingae, pp. 8-9].
+* There is some conflation in both alphabets due to a lack of 1:1 correspondences for certain graphemes. The first phonemes listed (the ones on the left of the column) will be the default phonemes transcribed.
+* Crúbadán appears to use the Borman orthography, but I have provided an additional rule set to account for the New orthography.
+
+## Borman orthography
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+borman_alphabet <- read.table(textConnection('
+Grapheme        Phoneme            Comment
+"a"              "/a/"               ""
+"b"              "/ᵐb/"              ""
+"c"              "/k/"               ""
+"d"              "/ⁿd/"              ""
+"e"              "/e/"               ""
+"f"              "/f/"               ""
+"g"           "/ᵑɡ/; /ɰ/"            ""
+"i"              "/i/"               ""
+"j"              "/h/"               ""
+"m"            "/m/; /ʋ/"            ""
+"n"              "/n/"               ""
+"ñ"            "/ɲ/; /j/"            ""
+"o"              "/o/"               ""
+"p"              "/p/"               ""
+"r"              "/ɾ/"               ""
+"s"              "/s/"               ""
+"t"              "/t/"               ""
+"u"              "/ɨ/"               ""
+"v"              "/ʋ/"               ""
+"y"              "/j/"               ""
+"z"              "/ⁿdz/"             ""
+"\'"             "/ʔ/"               ""
+**Multigraph**    ""                 ""
+"mb"             "/ᵐb/"              ""
+"cc"             "/kʰ/"              ""
+"ch"             "/tʃ/"              ""
+"chh"            "/tʃʰ/"             ""
+"nd"             "/ⁿd/"              ""
+"ng"             "/ᵑɡ/"              ""
+"dy; ndy"        "/ⁿdʒ/"             ""
+"pp"             "/pʰ/"              ""
+"qu"             "/k/"        "preceding /i/ or /e/"
+"qqu"            "/kʰ/"       "preceding /i/ or /e/"
+"sh"             "/ʃ/"               ""
+"tt"             "/tʰ/"              ""
+"ts"             "/ts/"              ""
+"tss"            "/tsʰ/"             ""
+"nz"             "/ⁿdz/"             ""
+'), TRUE)
+
+kable(borman_alphabet, align = "c") %>%
+  kable_styling("bordered")
+```
+
+## New orthography
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+new_alphabet <- read.table(textConnection('
+Grapheme        Phoneme
+"a"              "/a/"
+"b"              "/ᵐb/"
+"d"              "/ⁿd/"
+"e"              "/e/"
+"f"              "/f/"
+"g"            "/ᵑɡ/; /ɰ/"
+"i"              "/i/"
+"j"              "/h/"
+"k"              "/k/"
+"m"            "/m/; /ʋ/"
+"n"              "/n/"
+"ñ"            "/ɲ/; /j/"
+"p"              "/p/"
+"r"              "/ɾ/"
+"s"              "/s/"
+"t"              "/t/"
+"u"              "/o/"
+"û"              "/ɨ/"
+"v"              "/ʋ/"
+"y"              "/j/"
+"z"              "/ⁿdz/"
+"\'"             "/ʔ/"
+**Multigraph**    ""
+"mb"             "/ᵐb/"              
+"nd"             "/ⁿd/"              
+"ng"             "/ᵑɡ/"              
+"ch"             "/tʃ/"
+"chh"            "/tʃʰ/"
+"dy; ndy"        "/ⁿdʒ/"
+"kh"             "/kʰ/"
+"ph"             "/pʰ/"
+"sh"             "/ʃ/"
+"th"             "/tʰ/"
+"ts"             "/ts/"
+"tsh"            "/tsʰ/"
+"nz"             "/ⁿdz/"
+'), TRUE)
+
+kable(new_alphabet, align = "c") %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /p/ and /t/ may be realized as prenasalized voiced stops following nasal vowels [@fischeraingae, p. 4].
+
+# References

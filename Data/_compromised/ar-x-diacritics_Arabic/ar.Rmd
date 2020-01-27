@@ -1,0 +1,154 @@
+---
+title: "Arabic"
+author: "Emily Strand"
+bibliography: ar.bib
+output: html_document
+---
+
+Last Updated: 2019-12-05
+
+**Compromised: some ambiguity in the transcription of alif; some conflation between /w/ and /uː/ and between /j/ and /iː/**
+
+# Background
+
+**Language family**: Afro-Asiatic / Semitic / Central / South / Arabic
+
+* Arabic is considered an overarching classification of all the dialectal varieties [@Boudelaa2010, p. 482]. Given this, I have chosen to address the Modern Standard variety, which is predominantly written or used in formal communication. Thus, Arabic exhibits diglossia, such that written text (and formal communication) differs from what is actually spoken in everyday life. @Boudelaa2010 explain that Modern Standard Arabic is considered the "high" variety, and all the regional dialects are considered the "low" varieties (p. 482). Because of this distinction, the phoneme inventory for Modern Standard Arabic differs somewhat from those of the regional dialects.
+* Arabic is a widely spoken language with speakers primarily residing in either Asia, the Middle East, or North Africa.
+
+# Phonology
+
+## Consonants
+
+* Arabic includes what are called emphatic consonants, which are produced when the back, or the root, of the tongue retracts towards the pharynx [@Amayreh1998, p. 643].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Dental   Alveolar   Postalveolar   Palatal    Velar   Uvular    Pharyngeal    Glottal
+"Stops (plain)"            "b"       ""    "t tˤ d dˤ"    ""            ""        "k"      "q"         ""          "ʔ"
+Affricates                 ""        ""       ""          "dʒ"          ""        ""       ""          ""          ""
+Fricatives                 "f"    "θ ð ðˤ"  "s sˤ z"      "ʃ"           ""       "x ɣ"     ""         "ħ ʕ"        "h"
+Nasals                     "m"       ""       "n"         ""            ""        ""       ""          ""          ""
+Trills                     ""        ""       "r"         ""            ""        ""       ""          ""          ""
+Approximants               "w"       ""       "l"         ""            "j"       ""       ""          ""          ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Pharyngeal", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 9)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Phonemes that have the diacritic (ˤ) are emphatic.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Vowel length is contrastive in Arabic [@Amayreh1998, p. 643].
+* /e/ and /o/ exist in spoken varieties of Arabic, but not in Standard Modern Arabic [@Ibrahim2002, p. 323].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     ""        "u"
+Low       ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/aj/, /aw/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Alphabet
+
+* Arabic is written from right to left [@Ibrahim2002, p. 323].
+* The majority of the graphemes have different forms depending on where they appear in a word in relation to other graphemes (ibid.). Graphemes may have up to four different forms for the word initial, medial, and final position as well as for the isolated form. The isolated forms for all the graphemes are represented below.
+* Long vowels are indicated by specific graphemes, however, short vowels are indicated by diacritics [@Awde2000, p. 18].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme  Phoneme      Comment
+"ا"       "/aː/; /ʔ/"   "/ʔ/: word-initially (not always though, which somewhat compromises the language)"
+"ب"       "/b/"         ""
+"ت"       "/t/"         ""
+"ث"       "/θ/"         ""
+"ج"       "/dʒ/"        ""
+"ح"       "/ħ/"         ""
+"خ"       "/x/"         ""
+"د"       "/d/"         ""
+"ذ"       "/ð/"         ""
+"ر"       "/r/"         ""
+"ز"       "/z/"         ""
+"س"       "/s/"         ""
+"ش"       "/ʃ/"         ""
+"ص"       "/sˤ/"        ""
+"ض"       "/dˤ/"        ""
+"ط"       "/tˤ/"        ""
+"ظ"       "/ðˤ/"        ""
+"ع"       "/ʕ/"         ""
+"غ"       "/ɣ/"         ""
+"ف"       "/f/"         ""
+"ق"       "/q/"         ""
+"ك"       "/k/"         ""
+"ل"       "/l/"         ""
+"م"       "/m/"         ""
+"ن"       "/n/"         ""
+"ه"       "/h/"         ""
+"و"       "/w/; /uː/"   "/w/: word-initially (used as default in the rules); /uː/: preceded by a short /u/ diacritic"
+"ي"       "/j/; /iː/"   "/j/: word -initially (used as default in the rules); /iː/ preceded by a short /i/ diacritic"
+"ء"       "/ʔ/"         "called a hamza, this grapheme also exists as a diacritic (explained below)"
+"ة"       "∅; /t/"      "called a ta-marbuta, this grapheme appears word-finally, corresponding to /t/ if followed by a diacritic or ∅ otherwise [@Biadsy2009, p. 3]"
+"ى"       "/a/"         "called an alif-maqsura, this diacritic occurs word-finally [@Habash2010, p. 11; @Biadsy2009, p. 3]"      
+**Diacritic**    ""     ""
+"ُ"       "/u/"          "this diacritic is called a dammah [@Yurtbasi2016, p. 146]"
+"َ"       "/a/"          "this diacritic is called a fatḥah (ibid.)"
+"ِ"       "/i/"          "this diacritic is called a kasrah (ibid.)"
+"ٰ"       "/aː/"         "this diacritic is called an alif khanjariyah (ibid.)"
+"ٔ"       "/ʔ/"          "this diacritic is called a hamza, and only appears (as a diacritic) in combination with ⟨ا⟩ ,⟨ي⟩, and ⟨و⟩ [@Habash2010, pp. 5-6]"
+"ٕ"       "/ʔi/"         ""
+"ٓ"       "/ʔ/"          "this diacritic is called a madda (a variant of the hamza), appearing in combination with ⟨ا⟩ [@Habash2010, p. 6]"
+"ّ"        ""            "called a shadda, this diacritic indicates gemination of consonants [@Habash2010, p. 11]"
+"ْ"        ""            "called a sukun, this diacritic indicates that no vowel follows the consonant in which it\'s attached to; it also typically marks syllable boundaries [@Habash2012, p. 712]"
+"ٌ"       "/an/"         "indicates a word-final /an/ (nunnation) [@Habash2012, p. 713]"
+"ٍ"       "/in/"         "indicates a word-final /in/ (nunnation) (ibid.)"
+"ً"       "/un/"         "indicates a word-final /un/ (nunnation) (ibid.)"
+'), TRUE)
+
+kable(alphabet, col.names = c("Grapheme", "Phoneme", "Comment"), align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Modern Standard Arabic tend to have CV or CVC structures; however, CVCC syllables exist word-finally [@Habash2012, p. 712].
+* Word-initial vowels are written as an inflected alif, or a hamza watsl, produced with a glottal stop. This glottal stop vowel is considered an allophone of vowels, so word-initial vowels will be transcribed as just vowels (ibid.).
+    - A plain alif may indicate an optional allophonic glottal stop word-initially, but it may also indicate an obligatory glottal stop (noted in the chart above), which results in a compromised language [@Ibrahim2019, p. 293].  
+
+# Lenition Rules
+
+* According to @Amayreh1998 (p. 643):
+    - Glottal stops delete word-medially.
+    - Emphatic /s/ becomes voiced word-finally.
+    - /j/ debuccalizes to a glottal stop word-initially.
+    - /dʒ/ may fully spirantize to [ʒ].
+    - /q/ may debuccalize to a glottal stop or become a voiced velar or uvular stop.
+
+# Misc. Rules
+
+* Emphatic consonants tend to affect vowels and consonants around them, resulting in lower back vowels and velarization of consonants [@Saiegh-Haddad2014, p. 5].
+
+# References

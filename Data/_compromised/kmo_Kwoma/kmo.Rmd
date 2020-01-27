@@ -1,0 +1,133 @@
+---
+title: "Kwoma"
+author: "Bill Mizgerd"
+bibliography: kmo.bib
+output: html_document
+---
+
+Last Updated: 2019-07-24
+
+**Slightly Compromised: glottal stop not orthographically marked**
+
+# Background
+
+**Language Family**: Sepik / Middle Sepik / Nukuma / Kwoma
+
+* Also referred to as Washkuk, Kwoma is spoken in the East Sepik province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial     Alveolar    Postalveolar     Palatal     Velar     Glottal
+Stops                       "ᵐb"      "t  ⁿd"         ""             ""       "k  ᵑɡ"      "ʔ"
+Affricates                  ""           ""        "tʃ  ⁿdʒ"         ""         ""         ""
+Fricatives                 "ɸ  β"       "s"           "ʃ"            ""         ""         "h"
+Nasals                      "m"         "n"           ""             "ɲ"        ""         ""
+Flaps                       ""          "ɾ"           ""             ""         ""         ""
+Approximants                "w"         ""            ""             "j"        ""         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Phonemes that contain a diacritic /ᵐ/, /ⁿ/, or /ᵑ/ are prenasalized.", general_title = "")
+```
+
+## Vowels
+
+* Based on the description of @KmoBowden1997, there appears to be three diphthongs (p. xxx). Based on the syllable structure (see Syllable Structure below), it would seem that they'd be realized as complex nuclei.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         "ɨ"         "u"
+High-Mid  "e"         ""          "o"
+Low-Mid   "ɛ"         ""          ""
+Low       ""          "a"         ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ai/, /ei/, /ou/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```    
+
+# Alphabet
+
+* Although @KmoBowden1997 indicates that the glottal stop is represented by an apostrophe (p. xxx), @1981 states that it is not marked (p. 1). The Crúbadán corpus does not mark it, so the language is somewhat compromised.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme  
+"a"            "/a/"
+"b"            "/ᵐb/"    
+"d"            "/ⁿd/"  
+"e"            "/e/"  
+"g"            "/ᵑɡ/"  
+"h"            "/h/"  
+"i"            "/i/"  
+"j"            "/ⁿdʒ/"  
+"k"            "/k/"  
+"m"            "/m/"  
+"n"            "/n/"   
+"o"            "/o/"  
+"p"            "/ɸ/"  
+"r"            "/ɾ/"  
+"s"            "/s/"    
+"t"            "/t/"  
+"u"            "/u/"  
+"v"            "/β/"  
+"w"            "/w/"  
+"y"            "/j/"  
+"\'"            "/ʔ/"  
+**Digraph**     ""
+"ch"           "/tʃ/"
+"ny"           "/ɲ/"
+"sh"           "/ʃ/"
+"ay"           "/ai/"  
+"ee"           "/ɛ/"  
+"ey"           "/ei/"  
+"ii"           "/ɨ/"  
+"iy"           "/i/"  
+"ow"           "/ou/"  
+"uw"           "/u/"  
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Kwoma follow the order of CV(C)(C) [@1981, p. 3].
+
+# Lenition Rules
+
+* The suffix /-ta/ spirantizes to /-tʃa/ after certain morphemes [@KmoKooyers1974, p. 9].
+* The suffix /-tawa/ collapses to one of four shortened versions, depending on preceding morphemes [@KmoKooyers1974, p. 10].
+
+# Misc. Rules
+
+* The glottal stop only occurs word-initially or intervocalically [@1981, p. 3].
+
+# References

@@ -1,0 +1,109 @@
+---
+title: "Arosi"
+author: "Emily Strand"
+bibliography: aia.bib
+output: html_document
+---
+
+Last Updated: 2020-01-22
+
+# Background
+
+**Language Family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Central-Eastern Oceanic / Southeast Solomonic / Malaita-San Cristobal / San Cristobal
+
+* Arosi is spoken in the Makira province of the Solomon Islands.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Bilabial    Alveolar  Velar   Glottal
+Stops                     "p pʷ b bʷ"    "t d"    "k ɡ"     "ʔ"
+Fricatives                     ""         "s"      ""       "h"
+Nasals                       "m mʷ"       "n"      "ŋ"      ""
+Flaps                          ""         "ɾ"      ""       ""
+Approximants                   "w"        ""       ""       ""  
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  footnote(general = "Note: The alveolar and velar stops are ordered voiceless and voiced. Phonemes that have the diacritic (ʷ) are labialized.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Vowel length is contrastive in Arosi [@Lynch2001, p. 562]. Long vowels are indicated by duplicate graphemes.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High     "i"      ""        "u"
+Mid      "e"      ""        "o"
+Low       ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme         Phoneme
+"a"               "/a/"
+"b"               "/b/"
+"d"               "/d/"
+"e"               "/e/"
+"g"               "/ɡ/"
+"h"               "/h/"
+"i"               "/i/"
+"k"               "/k/"
+"m"               "/m/"
+"n"               "/n/"
+"o"               "/o/"
+"p"               "/p/"
+"r"               "/ɾ/"
+"s"               "/s/"
+"t"               "/t/"
+"u"               "/u/"
+"w"               "/w/"
+"\'"              "/ʔ/"
+**Digraph**        ""
+"pw"              "/pʷ/"
+"bw"              "/bʷ/"
+"mw"              "/mʷ/"
+"ng"              "/ŋ/"
+'), TRUE)
+
+kable(alphabet, align = "c") %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Arosi consist of either /V/ or /CV/ [@Capell1971, p. 6].
+* Apart from the digraphs above, consonant clusters are not permitted in Arosi (ibid.).
+
+# Lenition Rules
+
+* /t/ is realized as [s] preceding /i/ [@Lynch2001, p. 562].
+
+# Misc. Rules
+
+* /k/ and /ɡ/ are labialized preceding back vowels [@Lynch2001, p. 562].
+* /i/ is realized as [j] intervocalically (ibid.).
+
+# References

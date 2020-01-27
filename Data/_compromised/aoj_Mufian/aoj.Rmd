@@ -1,0 +1,110 @@
+---
+title: "Mufian"
+author: "Emily Strand"
+bibliography: aoj.bib
+output: html_document
+---
+
+Last Updated: 2020-01-09
+
+**Compromised: conflation among /a/, /æ/, and /ɘ/, between /ɘ/ and /o/, and between /e/ and /ɘ/; ambiguity among long vowels; ambiguity related to whether phonemic (labialized) clusters are always realized as such**
+
+# Background
+
+**Language Family**: Torricelli / Kombio-Arapesh / Arapesh
+
+* Mufian is spoken in the East Sepik province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+* @Conrad1977 do not include the labialized consonants as part of the phonemic inventory, but notes that they contrast with their non-labialized counterparts (p. 3). Given this and that @1992 and @Conrad1978 include them, I have chosen to include them below.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar   Velar     Glottal
+Stops                       "p b"     "t d"  "kʷ k ɡ ɡʷ"   "ʔ ʔʷ"
+Affricates                   ""        ""        ""         ""
+Fricatives                   "f"       "s"       ""         "h"
+Nasals                       "m"       "n"       ""         ""
+Approximants                 "w"       "l"       ""         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Phonemes that have the diacritic (ʷ) are labialized.", general_title = "")
+```  
+
+## Vowels
+
+* @1992 as well as @Conrad1977 include /ə/ as a phoneme in Mufian (p. 2; p. 3); however, I've opted for /ɘ/ given that @Conrad1978 describe it as a high to mid-central vowel (p. 90).
+* Adjacent vowels are interpreted as sequences [@Conrad1977, pp. 6-7].
+* The documentation for long vowels is ambiguous. @Conrad1977 state that, although contrastive, they are rather infrequent, citing length for only /i/, /a/, and /æ/ (contrastive occurrences for only /a/ and /æ/) [@Conrad1977, pp. 9-10, 23]. @1992 also lists long vowels, but for /a/, /e/, and /æ/ (p. 2). @1992 also notes that long vowels are transcribed just as short vowels are. Because they are rather infrequent and have a low functional load, I have opted not to include them.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         "ɘ"          "o"
+Low       "æ"         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* The digraphs ⟨mb⟩ and ⟨nd⟩ transcribe to word-medial phonetic prenasalization, so I will transcribe them to /b/ and /d/ respectively [@Conrad1977, p. 6]. The prenasalized /ɡ/ is transcribed as ⟨g⟩, so it poses no correction.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme  
+"a"        "/a/; /æ/; /ɘ/"
+"b"             "/b/"
+"d"             "/d/"
+"e"           "/e/; /ɘ/"
+"f"             "/f/"
+"g"             "/ɡ/"
+"h"             "/h/"
+"i"             "/i/"
+"k"             "/k/"
+"l"             "/l/"
+"m"             "/m/"
+"n"             "/n/"
+"o"           "/o/; /ɘ/"
+"p"             "/p/"
+"s"             "/s/"
+"t"             "/t/"
+"u"             "/u/"
+"w"             "/w/"
+"\'"            "/ʔ/"
+**Digraph**      ""
+"mb"            "/b/"
+"nd"            "/d/"
+"gw"            "/ɡʷ/"
+"kw"            "/kʷ/"
+"\'w"           "/ʔʷ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Misc. Rules
+
+* Voiceless consonants are aspirated word-finally [@Conrad1977, pp. 12-13].
+
+# References
