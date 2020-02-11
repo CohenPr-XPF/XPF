@@ -116,12 +116,12 @@ kable(alphabet, align = 'c') %>%
 * Word-final vowels sometimes are sometimes devoiced or dropped [@AyHardman1981, p. 190].
 * In certain morphological contexts, word-medial vowels are dropped [@AyHardman1981, p. 8].
 * /x/ debuccalizes to [h] in some dialects [@AyBriggs1976, p. 84].
-* High vowels are lowered in uvular environments [@AyBriggs1976, p. 85].
-* Nasals assimilate to following consonants [@AyColer2014, pp. 41-42].
 
 # Misc. Rules
 
 * /χ/ and /ɾ/ rarely if ever occur word-initially [@AyBriggs1976, p. 87].
 * Glides and vowels do not occur adjacent to each other [@AyBriggs1976, p. 89].
+* High vowels are lowered in uvular environments [@AyBriggs1976, p. 85].
+* Nasals assimilate to following consonants [@AyColer2014, pp. 41-42].
 
 # References

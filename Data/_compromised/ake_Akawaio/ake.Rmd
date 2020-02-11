@@ -1,0 +1,112 @@
+---
+title: "Akawaio"
+author: "Emily Strand"
+bibliography: ake.bib
+output: html_document
+---
+
+Last updated: 2020-02-04
+
+**Compromised: graphemes normally representing voiced stops and /z/ are not present in the orthography - ambiguity when voiceless stops and /s/ transcribe to voiced counterparts (underlying vs. surface level)**
+
+# Background
+
+**Language family**: Carib / Northern / East-West Guiana / Macushi-Kapon / Kapon
+
+* Akawaio is spoken in Guyana.
+
+# Phonology
+
+* Although voiced consonants are said to be originally conditioned (voiceless to voiced) intervocalically or between vowels and nasals, they are considered phonemes of the language [@Gildea2012, p. 450; @Edwards1978, p. 78].
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar   Palatal    Velar      
+Stops                      "p  b"    "t  d"      ""      "k  ɡ"     
+Fricatives                  ""       "s  z"      ""        ""       
+Nasals                      "m"        "n"       ""        ""       
+Flaps                       ""         "ɾ"       ""        ""       
+Approximants                "w"        ""        "j"       ""       
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels   
+
+* Rather than using their symbol /ʌ/ to represent the mid-central unrounded vowel [@Edwards1978, p. 77], I have opted for /ɘ/. /ə/ is not a suitable option given that all underlying vowels in Akawaio occur in stressed syllables.
+* Diphthongs are present in Akawaio; however, because they are often interpreted as being separated by off-glides, or part of separate syllables, I have chosen not to include them below (ibid).  
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         "ɨ"          "u"
+Mid         "e"         "ɘ"          "o"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+```
+
+# Alphabet
+
+* Apostrophes indicate glottal stops [@Stegeman2014]; however, the glottal stop is not phonemic (see Lenition Rules below). It will be transcribed as /k/.
+* The orthography doesn't represent the voiced stops [@Stegeman2014, p. 2], and it is unclear when the voiceless stops should transcribe to the voiced stops (ie. there is too much ambiguity whether the resulting (voiced consonant) transcription is underlying or a surface representation - see Lenition Rules below), thus the languages is compromised. I have chosen to transcribe ⟨p⟩, ⟨t⟩, ⟨k⟩, and ⟨s⟩ to their voiceless variants by default given their originating status in the language, but this means that /b/, /d/, /ɡ/, and /z/ are not represented by the rules.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme         
+"a"             "/a/"            
+"e"             "/e/"            
+"i"             "/i/"            
+"ɨ"             "/ɨ/"            
+"k"             "/k/"            
+"m"             "/m/"            
+"n"             "/n/"            
+"o"             "/o/"            
+"p"             "/p/"            
+"r"             "/ɾ/"            
+"s"             "/s/"            
+"t"             "/t/"            
+"u"             "/u/"            
+"ʉ"             "/ɘ/"            
+"w"             "/w/"            
+"y"             "/j/"     
+"\'"            "/k/"     
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /k/ debuccalizes to [ʔ] syllable-finally [@Edwards1978, p. 79].
+* Voiceless stops and /s/ become voiced intervocalically [@Edwards1978, p. 81].
+* Unstressed vowels are often deleted, especially word-initially [@Edwards1978, p. 82].
+* Voiced stops optionally spirantize [@Gildea2012, p. 450].
+
+# Misc. Rules
+
+* /n/ is realized as [ŋ] word-finally and syllable finally, preceding velar consonants and /w/ [@Edwards1978, p. 79].
+* /k/ becomes palatalized or labialized when preceding /i/ or /u/, respectively (ibid.).
+* /s/ and /z/ are realized as [tʃ] and [dʒ], respectively, preceding /i/ (ibid.).
+
+# References

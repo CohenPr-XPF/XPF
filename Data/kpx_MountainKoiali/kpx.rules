@@ -1,0 +1,13 @@
+# Mountain Koiali Rule Set
+# Written by: Emily Strand
+# Last updated: 2020-02-07
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdiklmnotu],,,,
+# Individual Letters
+sub,e,ɛ,2,,,
+sub,g,ɡ,2,,,
+sub,h,x,2,,,
+sub,s,ʂ,2,,,
+sub,v,ɸ,2,,,
+sub,({passthrough}),\1,2,,,

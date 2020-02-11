@@ -1,0 +1,119 @@
+---
+title: "Cavineña "
+author: "Emily Strand"
+bibliography: cav.bib
+output: html_document
+---
+
+Last Updated: 2019-12-05
+
+**Slightly Compromised: some ambiguity pertaining to whether a digraph represents one phoneme or two depending on syllable structure**
+
+# Background
+
+**Language family**: Tacanan / Araona-Tacana / Cavinena-Tacana / Cavinena
+
+* Cavineña is spoken Bolivia.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar    Alveopalatal   Palatal    Velar    Glottal
+Stops                      "p b"    "t d"          ""          "c ɟ"     "k kʷ"      ""
+Affricates                  ""      "ts"          "tɕ"          ""         ""        ""
+Fricatives                  ""      "s"           "ɕ"           ""         ""        "h"
+Nasals                     "m"      "n"           ""            "ɲ"        ""        ""
+Flaps                       ""      "ɺ"           ""            ""         ""        ""
+Approximants               "w"      ""            ""           "j ʎ"       ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Alveopalatal", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Both velar stops are voiceless, but the one on the right is labialized. Both palatal approximants are voiced, but the one on the right is lateral.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Although like-vowel sequences occur in Cavineña, vowel length is not considered to be contrastive [@Guillaume2008, pp. 28, 34; @Key1968 as cited in @Hayes1994, p. 202].
+    * Rather, adjacent vowels are interpreted as being part of distinct syllables [@Guillaume2008, pp. 35-36].
+* /e/ and /u/ are sometimes realized as [ɛ] and [ʊ], respectively [@Guillaume2008, p. 29].
+* Cavineña is said to have a pitch-accent system (high and mid) [@Guillaume2008, p. 42]; however, it's not contrastive.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     ""        "u"
+Mid       "e"     ""        ""
+Low       ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* There seems to be four different writing systems laid out by @Guillaume2008 (p. 48).
+    * Crúbadán appears to follow @Camp1989 [as cited in @Guillaume2008, pp. 47-48], so I have based my transcription on that source.
+* /l/ is said to appear only in Spanish loanwords [@Guillaume2008, p. 47].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme     
+"a"             "/a/"
+"b"             "/b/"
+"c"             "/k/"
+"d"             "/d/"
+"e"             "/e/"
+"i"             "/i/"
+"j"             "/h/"
+"m"             "/m/"
+"n"             "/n/"
+"ñ"             "/ɲ/"
+"p"             "/p/"
+"r"             "/ɺ/"
+"s"             "/s/"
+"t"             "/t/"
+"u"             "/u/"
+"y"             "/j/"
+**Digraph**      ""
+"cu"            "/kʷ/"
+"ch"            "/tɕ/"
+"dy"            "/ɟ/"
+"ll"            "/ʎ/"
+"sh"            "/ɕ/"
+"ts"            "/ts/"
+"ty"            "/c/"
+"hu"            "/w/"
+"qu"            "/k/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Cavineña follow the order of (C)V [@Guillaume2008, 30].
+    * @Guillaume2008 explains that this isn't problematic in terms of the complex consonants as they **ALWAYS** fall within a single syllable [@Guillaume2008, p. 36]. However, @Camp1989 explain that this is problematic (for the ⟨cu⟩ digraph at least) (p. xi). Depending on the syllable structure, it is said to be realized as either a complex consonant (/kʷ/) or a sequence of phonemes (/k u/). Thus, the language may be compromised to some extent.
+
+# Misc. Rules
+
+* /w/ becomes [β] preceding front vowels [@Guillaume2008, p. 47].
+* A glottal stop is sometimes epenthesized between vowels [@Guillaume2008, p. 47].
+* With the exception of the fortition process with /w/ becoming [β], @Guillaume2008 explains that phonological processes are virtually obsolete within the language, hence the lack of lenition rules (p. 24).
+
+# References

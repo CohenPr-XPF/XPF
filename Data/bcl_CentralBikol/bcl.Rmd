@@ -108,14 +108,11 @@ knitr::kable(alphabet, align = 'c') %>%
 
 * Bicol syllable structure is CV(C), where V can be either a single vowel or a diphthong [@BclMattes2014, p. 10].
 
-# Lenition Rules
-
-* Prefix-final /ŋ/ tends to assimilate, to varying degrees, to the first consonant of the stem [@BclMattes2014, p. 9].
-
 # Misc. Rules
 
 * Epenthesis of [h] occurs between stem-final and suffix-initial vowels [@BclMattes2014, p. 9].
 * /u/ is pronounced [o] in the final syllable of a word [@BclMintzD1971, p. 17].
 * Glottal stops are always inserted between orthographically adjacent vowels [@BclMattes2014, p. 12].
+* Prefix-final /ŋ/ tends to assimilate, to varying degrees, to the first consonant of the stem [@BclMattes2014, p. 9].
 
 # References

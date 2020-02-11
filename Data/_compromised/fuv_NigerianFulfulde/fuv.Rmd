@@ -1,0 +1,128 @@
+---
+title: "Nigerian Fulfulde"
+author: "Emily Strand"
+bibliography: fuv.bib
+output: html_document
+---
+
+Last updated: 2020-02-07
+
+**Slightly Compromised: glottal stop not always represented; ambiguity concerning the transcription of the palatalized glottal stop**
+
+# Background
+
+**Language family**: Niger-Congo / Atlantic-Congo / Atlantic / Northern / Senegambian / Fula-Wolof / Fulani / East Central
+
+* Nigerian Fulfulde is spoken in Nigeria.
+
+# Phonology
+
+## Consonants
+
+* Length is a contrastive feature for consonants intervocalically [@Ahmad2014, p. 5]. Geminate consonants are indicated by duplicated graphemes.
+    - Fricatives, /ⁿdʒ/, and /ŋ/ do not geminate.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Postalveolar  Palatal  Velar   Glottal   
+"Stops (plain)"            "p b"    "t d"        ""          ""     "k ɡ"   "ʔ ʔʲ"
+"Stops (implosives)"        "ɓ"      "ɗ"         ""          ""      ""       ""
+"Stops (prenasalized)"      "ᵐb"     "ⁿd"        ""          ""      "ᵑɡ"     ""
+Affricates                  ""       ""      "tʃ dʒ ⁿdʒ"     ""      ""       ""
+Fricatives                  "f"      "s"         ""          ""      ""       "h"
+Nasals                      "m"      "n"         ""          "ɲ"     "ŋ"      ""
+Trills                      ""       "r"         ""          ""      ""       ""
+Approximants                ""       "l"         ""          "j"     "w"      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. The postalveolar affricate on the right is prenasalized. The glottal stop on the right is palatalized.", general_title = "")
+```
+
+## Vowels
+
+* Vowel length is contrastive in Nigerian Fulfulde [@Ahmad2014, p. 8]. Long vowels are indicated by duplicate graphemes.
+* @McIntosh1982 explains diphthongs as phonetic realizations of vowel glide sequences (p. 22); thus, I have chosen not to include them below.
+* Fulfulde is not a tonal language; rather, it exhibits pitch contours based off predictable intonational patterns [@Ahmad2014, p. 13].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""           "u"
+Mid         "e"         ""           "o"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* Glottal stops are not always represented word-initially, which compromizes the language slightly [@McIntosh1982, p. 25].
+* There is also some ambiguity related to how the palatalized glottal stop (including geminate form) is represented. I've listed the different forms below. I have gone with the transcription represented in @Ahmad2014 (pp. 5, 7), given that such forms (non-geminate) appear in the Crúbadán corpus, whereas the forms based on the transcription of @McIntosh1982 do not appear (p. 23).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme          Comment
+"a"             "/a/"             ""
+"b"             "/b/"             ""
+"ɓ"             "/ɓ/"             ""
+"c"             "/tʃ/"            ""
+"d"             "/d/"             ""
+"ɗ"             "/ɗ/"             ""
+"e"             "/ɨ/"             ""
+"f"             "/f/"             ""
+"g"             "/ɡ/"             ""
+"h"             "/h/"             ""
+"i"             "/i/"             ""
+"j"             "/dʒ/"            ""
+"k"             "/k/"             ""
+"l"             "/l/"             ""
+"m"             "/m/"             ""
+"n"             "/n/"             ""
+"ŋ"             "/ŋ/"             ""
+"o"             "/o/"             ""
+"p"             "/p/"             ""
+"r"             "/r/"             ""
+"s"             "/s/"             ""
+"t"             "/t/"             ""
+"u"             "/u/"             ""
+"w"             "/w/"             ""
+"y"             "/j/"             ""
+"\'"            "/ʔ/"             ""
+"ƴ; y\'"        "/ʔʲ/"  "geminate form: ⟨\'y\'y⟩ or ⟨ƴƴ⟩ [@Ahmad2014, pp. 5, 7]"
+"\'y"           "/ʔʲ/"  "geminate form: ⟨\'\'y⟩ [@McIntosh1982, p. 23]"
+**Digraph**      ""               ""
+"mb"            "/ᵐb/"            ""
+"nd"            "/ⁿd/"            ""
+"nj"            "/ⁿdʒ/"           ""
+"ny"            "/ɲ/"             ""
+"ng"            "/ᵑɡ/"            ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Nigerian Fulfulde follow the order of CV(V)(C)(C) [@Ahmad2014, p. 11].
+
+# Lenition Rules
+
+* Long vowels may undergo degemination when occurring in word-final unstressed syllables (ie. the length distinction in this position is neutralized) [@McIntosh1982, p. 25].
+
+# References

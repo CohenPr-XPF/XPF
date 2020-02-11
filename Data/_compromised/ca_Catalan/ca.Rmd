@@ -1,0 +1,143 @@
+---
+title: "Catalan"
+author: "Abi Creighton"
+bibliography: ca.bib
+output: html_document
+---
+
+Last Updated: 2020-01-08
+
+**Slightly Compromised: conflation between /e/ and /ɛ/ and between /o/ and /ɔ/, depending on stress; possible conflation between vowels and glides (/j/ and /w/); some ambiguity pertaining to whether a transcription is underlying or the result of a phonological process**
+
+# Background
+
+**Language family**: Indo-European / Italic / Romance / Western / Gallo-Romance / Occitano-Romance / Catalan / Central Catalan dialect
+
+* Catalan is predominantly spoken in eastern Spain, specifically in the regions of Catalonia, Valencia, and the Balearic Islands. It is also spoken in parts of France and Italy, as well as in Andorra, which is a principality between France and Spain.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Labial   Alveolar  Postalveolar Palatal   Velar
+Stops                        "p  b"   "t  d"         ""        ""      "k  ɡ"
+Affricates                     ""    "ts  dz"     "tʃ  dʒ"     ""        ""
+Fricatives                     "f"    "s  z"       "ʃ  ʒ"      ""        ""
+Nasals                         "m"     "n"           ""        "ɲ"       ""
+Taps                            ""     "ɾ"           ""        ""        ""
+Trills                          ""     "r"           ""        ""        ""
+Approximants                    ""     "l"           ""      "j  ʎ"      "w"
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Both palatal approximants are voiced, but the one on the right is lateral.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High       "i"       ""      "u"
+High-Mid   "e"       ""      "o"
+Low-Mid    "ɛ"       ""      "ɔ"
+Low        ""        "a"     ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* Whether ⟨v⟩ transcribes to /b/ or /v/ is a dialectal difference. I opted for /b/ due to it being more reflective of the standardized language [@wheeler_phonology_2005, p. 13].
+* Notice that conflation exists among /e/ and /ɛ/ and /o/ and /ɔ/, when ⟨e⟩ and ⟨o⟩ are transcribed without grave or acute accents [@Hualde1992, p. xxix].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme     Phoneme                 Comment
+"a"           "/a/"                    ""
+"à"           "/a/"                    ""
+"b"           "/b/"                    ""
+"c"         "/k/; /s/"         "/s/: preceding front vowels"
+"ç"           "/s/"                    ""
+"d"           "/d/"                    ""
+"e"         "/e/; /ɛ/"         "/e/ is used as default in the rules"
+"è"           "/ɛ/"                    ""
+"é"           "/e/"                    ""
+"f"           "/f/"                    ""
+"g"         "/ɡ/; /ʒ/"         "/ɡ/: preceding back vowels; /ʒ/: preceding front vowels"
+"h"           "∅"                      ""
+"i"          "/i/"                     ""
+"í"          "/i/"                     ""
+"ï"          "/i/"                     ""
+"j"          "/ʒ/"                     ""
+"k"          "/k/"              "only appears in loanwords"
+"l"          "/l/"                     ""
+"m"          "/m/"                     ""
+"n"          "/n/"                     ""
+"o"        "/o/; /ɔ/"           "/o/ is used as default in the rules"
+"ò"          "/ɔ/"                     ""
+"ó"          "/o/"                     ""
+"p"          "/p/"                     ""
+"q"          "/k/"                     ""
+"r"        "/ɾ/; /r/"           "/r/: word-initially"
+"s"          "/s/"                     ""
+"t"          "/t/"                     ""
+"u"          "/u/"                     ""
+"ú"          "/u/"                     ""
+"ü"          "/u/"                     ""
+"v"          "/b/"                     ""
+"w"          "/w/"              "only used in loan words"
+"x"          "/ʃ/"                     ""
+"y"        "/i/; /j/"           "only used in loan words; /j/: following a vowel"
+"z"          "/z/"                     ""
+**Digraph**   ""                       ""
+"gu"       "/ɡ/; /ɡw/"          "/ɡ/: preceding front vowels; /ɡw/: preceding back vowels"
+"gü"         "/ɡw/"             "preceding front vowels"
+"ig"         "/tʃ/"             "word-finally"
+"ll"         "/ʎ/"                     ""
+"ŀl"         "/lː/"                    ""
+"ny"         "/ɲ/"                     ""
+"qu"       "/k/; /kw/"          "/k/: preceding front vowels; /kw/: preceding back vowels"
+"qü"         "/kw/"             "preceding front vowels"
+"rr"         "/r/"              "intervocalically"
+"ss"         "/s/"              "intervocalically"
+"tg"         "/dʒ/"             "preceding front vowels"
+"tj"         "/dʒ/"                    ""
+"ts"         "/ts/"                    ""
+"tz"         "/dz/"                    ""
+"tx"         "/tʃ/"                    ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /b/, /d/, and /ɡ/ spirantize in syllable onsets following continuants [@wheeler_phonology_2005, p. 10].
+* /ɾ/ deletes word-finally [@mascaro_catalan_1972, p. 94].
+* /b/ can sometimes be realized as [w] [@mascaro_catalan_1972, p. 99].
+* ⟨ŀl⟩ generally undergoes degemination [@Hualde1992, p. xxviii].
+* /s/ is voiced intervocalically and preceding voiced consonants (ibid.).
+
+# Misc. Rules
+
+* /i/ and /u/ (sometimes /o/) are realized as [j] and [w], respectively, through diphthongization (ie. in the vicinity of other vowels) [@Hualde1992, p. 375].
+* /n/ assimilates in place when preceding velar obstruents [@wheeler_phonology_2005, p. 24].
+
+# References

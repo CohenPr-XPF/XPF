@@ -1,0 +1,98 @@
+---
+title: "Mountain Koiali"
+author: "Emily Strand"
+bibliography: kpx.bib
+output: html_document
+---
+
+Last updated: 2020-02-07
+
+# Background
+
+**Language family**: Trans-New Guinea / Main Section / Eastern / Central and Southeastern / Koiarian / Koiaric
+
+* Umanakaina is spoken in the Central province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+* Rather than including /ɸ/ and /x/ [@1981, p. 1], @Garland2008 and @Garland1975 use /v/ and /h/ respectively (p. 3; p. 416). I have chosen to stick with /ɸ/ and /x/ because @Garland2008 state that the use of /v/ and /h/ merely makes for simpler phonemic symbolization. The descriptions of the phonemes later on in the paper are consistent with the use of /ɸ/ and /x/ rather than the alternative (pp. 6-7).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar  Retroflex   Velar         
+Stops                       "b"      "t d"       ""       "k ɡ"   
+Fricatives                  "ɸ"       ""         "ʂ"       "x"    
+Nasals                      "m"       "n"        ""        ""  
+Approximants                ""        "l"        ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Retroflex", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""           "u"
+High-Mid    ""          ""           "o"
+Low-Mid     "ɛ"         ""           ""
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme
+"a"             "/a/"
+"b"             "/b/"
+"d"             "/d/"
+"e"             "/ɛ/"
+"g"             "/ɡ/"
+"h"             "/x/"
+"i"             "/i/"
+"k"             "/k/"
+"l"             "/l/"
+"m"             "/m/"
+"n"             "/n/"
+"o"             "/o/"
+"s"             "/ʂ/"
+"t"             "/t/"
+"u"             "/u/"
+"v"             "/ɸ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Mountain Koiali follow the order of (C)V [@Garland2008, p. 17].
+
+# Lenition Rules
+
+* Fricatives /ʂ/, /ɸ/, and /x/ become voiced word-medially [@Garland2008, pp. 6-8].
+* /ʂ/ varies freely with [ɾ] word-medially [@Garland2008, p. 8].
+
+# References

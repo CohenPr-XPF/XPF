@@ -1,0 +1,32 @@
+# Rikbaktsa Rule Set
+# Written by: Emily Strand
+# Last updated: 2020-02-04
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aãbdeẽhiĩjkmnoõptuũw],,,,
+class,nm_vowel,[nm],,,,
+class,voicedC,[bdjmnw],,,,
+class,vowels,[aeiouy],,,,
+# Individual Letters
+sub,y,ɨ,2,,,
+sub,ỹ,ɨ̃,2,,,
+sub,r,ɾ,2,,,
+sub,s,ʃ,2,,,
+sub,z,ɾ̪,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,t,tʃ,3,,s,
+sub,s,,3,t,,"clean-up",
+# Vowel Nasalization
+sub,a,ã,2,,{nm_vowel},
+sub,i,ĩ,2,,{nm_vowel},
+sub,o,õ,2,,{nm_vowel},
+sub,u,ũ,2,,{nm_vowel},
+sub,e,ẽ,2,,{nm_vowel},
+sub,y,ɨ̃,2,,{nm_vowel},
+# Orthographic Variation
+sub,g,k,3,,{voicedC},"<g> represents /k/ preceding voiced consonants",
+ipasub,g,k,3,{vowels},{vowels},"<g> represents /k/ between like-vowels",
+sub,c,k,3,,,
+sub,q,k,3,,u,
+sub,u,,3,q,,"clean-up",

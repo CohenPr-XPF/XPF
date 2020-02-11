@@ -1,0 +1,113 @@
+---
+title: "Guhu-Samane"
+author: "Emily Strand"
+bibliography: ghs.bib
+output: html_document
+---
+
+Last updated: 2020-01-31
+
+# Background
+
+**Language family**: Trans-New Guinea / Main Section / Eastern / Binanderean / Guhu-Samane
+
+* Guhu-Samane is spoken in the Oro and Morobe provinces of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Dental   Alveolar   Retroflex  Velar   Glottal   
+Stops                      "p  b"     "t̪"      "t"          ""     "k ɡ"     "ʔ"
+Affricates                  ""        ""       "dz"         ""      "kx"      ""
+Fricatives                  ""        ""       "s"          ""       ""       "h"
+Nasals                      "m"       ""       "n"          ""       "ŋ"      ""
+Flaps                       ""        ""       ""           "ɽ"      ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Retroflex", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* Vowel length is phonemic [@Richert2002, p. 11]. Long vowels are represented by duplicate graphemes.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""           "u"
+Mid         "e"         ""           "o"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ae/, /ai/, /ao/, /au/, /ei/, /eo/, /eu/, /iu/, /oe/, /oi/, /ou/, /ui/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme
+"a"             "/a/"
+"b"             "/b/"
+"e"             "/e/"
+"g"             "/ɡ/"
+"h"             "/h/"
+"i"             "/i/"
+"k"             "/k/"
+"m"             "/m/"
+"n"             "/n/"
+"o"             "/o/"
+"p"             "/p/"
+"q"             "/ʔ/"
+"r"             "/ɽ/"
+"s"             "/s/"
+"t"             "/t/"
+"u"             "/u/"
+**Digraph**      ""
+"dz"            "/dz/"
+"kh"            "/kx/"
+"ng"            "/ŋ/"
+"tt"            "/t̪/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /b/ is realized as /β/ intervocalically [@Richert2002, p. 12].
+* /t/ varies with /s/ frequently in the Garaina dialect (ibid.).
+
+# Misc. Rules
+
+* /ɽ/ is realized as [ɗ] following /i/ [@Richert2002, p. 13].
+* /ɽ/ is realized as [ɭ] following /u/ (ibid.).
+
+# References

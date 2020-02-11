@@ -11,7 +11,7 @@ Last Updated: 2019-10-22
 
 **Language Family**: Trans-New Guinea / Senagi
 
-* Angor is spoken in 11 villages within the Sandaun province located in Northern Papua New Guinea.
+* Angor is spoken in within the Sandaun province in Northern Papua New Guinea.
 
 # Phonology
 
@@ -37,13 +37,14 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 4)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: The cells that contain three phonemes are ordered voiceless, voiced, pre-nasalized.", general_title = "")
+  footnote(general = "Note: The cells that contain three phonemes are ordered voiceless, voiced, and prenasalized.", general_title = "")
 ```
 
 ## Vowels
 
 * Vowel harmony is present in Angor [@litteral_features_2008, p. 25].
-* Given that the diphthongs can also be realized as vowel sequences [@litteral_angor_1997, p. 4], they won't be represented in the transcription.
+* Diphthongs can also be realized as vowel sequences [@litteral_angor_1997, p. 4], so they won't be represented in the transcription.
+* Based on the description of stress by @litteral_features_2008, such that the mid central vowel present in the language occurs only in unstressed syllables (pp. 23-24), I have chosen to stick with their analysis of using /ə/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -57,15 +58,6 @@ Low        ""         "a"          ""
 kable(vowels, align = 'c') %>%
   kable_styling("bordered") %>%
   column_spec(1, bold = TRUE)
-
-
-diphthongs <- read.table(textConnection('
-Diphthongs
-"/ai/, /au/, /oe/, /oa/, /ou/, /ui/"
-'), TRUE)
-
-kable(diphthongs, align = 'c') %>%
-  kable_styling("bordered")
 ```
 
 # Alphabet
@@ -108,7 +100,7 @@ kable(alphabet, align = 'c') %>%
 
 # Syllable Structure
 
-* Syllables in Angor include the following structures [@litteral_angor_1997, p. 4]:
+* Syllables in Angor have the following structures [@litteral_angor_1997, p. 4]:
     - V  
     - VV  
     - VC  

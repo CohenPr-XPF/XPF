@@ -52,6 +52,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 * Vowel length is non-contrastive [@AzMokari2017, p. 210].
     - @AzSalimi1976 argues for the existence of underlying long vowels (pp. 89-91), but he describes them as being rather marginal, so I have opted to prefer Mokari's analysis.
+* Vowels undergo vowel harmony based on frontness and rounding [@AzMokari2017, pp. 210-11].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('
@@ -121,7 +122,6 @@ kable(alphabet, align = 'c') %>%
 * Stem-final /tʃ/ approximantizes to [j] before vowel-initial suffixes (ibid.).
   * Stem-final /x/ voices to [ɣ] in the same circumstances (ibid.).
 * Velar stops palatalize when adjacent to a front vowel (ibid.).
-* Vowels undergo vowel harmony based on frontness and rounding [@AzMokari2017, pp. 210-11].
 * /l/ palatalizes slightly near front vowels, and velarizes slightly near back vowels [@AzSalimi1976, p. 70].
 * Postvocalic /v/ sometimes approximantizes to [w] (ibid.).
   * Voiced dorsal stops similarly approximantize to [w] after round vowels (ibid.).
