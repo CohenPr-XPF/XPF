@@ -1,0 +1,34 @@
+# Oriya Rule Set
+# Written by: Emily Strand
+# Last updated: 2020-02-13
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aeilmnopstu],,,,
+class,apostrophe,['ꞌˈ‘’],,,,
+# Individual Letters
+sub,c,k,2,,,
+sub,j,h,2,,,
+sub,k,q,2,,,
+sub,x,ʃ,2,,,
+sub,y,j,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,tʃ,3,,h,
+sub,h,,3,c,,"clean-up",
+sub,l,ɬ,3,,h,
+sub,h,,3,l,,"clean-up",
+sub,q,k,3,,u,
+sub,u,,3,q,,"clean-up",
+sub,t,tɬ,3,,l,
+sub,l,,3,t,,"clean-up",
+sub,t,ts,3,,z,
+sub,z,,3,t,,"clean-up",
+sub,h,w,3,,u,
+sub,u,,3,h,,"clean-up",
+# Long Vowels
+sub,ā,a ː,2,,,
+sub,ē,e ː,2,,,
+sub,ī,i ː,2,,,
+sub,ō,o ː,2,,,
+sub,ū,u ː,2,,,

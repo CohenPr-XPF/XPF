@@ -1,0 +1,118 @@
+---
+title: "Pisaflores Tepehua"
+author: "Emily Strand"
+bibliography: tpp.bib
+output: html_document
+---
+
+Last updated: 2020-02-07
+
+**Slightly Compromised: unclear how reliably vowel length is marked**
+
+# Background
+
+**Language family**: Totonacan / Tepehua
+
+* Pisaflores Tepehua is spoken in the Veracruz state in eastern Mexico.
+
+# Phonology
+
+## Consonants
+
+* Gemination of consonants does not occur in this language [@MacKay2013, p. 194].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar  Alveopalatal  Palatal  Velar   Glottal   
+Stops                      "p p’"    "t t’"       ""          ""     "k k’"    "ʔ"     
+Affricates                  ""      "ts ts’"    "tɕ tɕʼ"      ""       ""      ""
+Fricatives                  ""       "s ɬ"        "ɕ"         ""       ""      "h"
+Nasals                      "m"       "n"         ""          ""       ""      ""
+Approximants                "w"       "l"         ""          "j"      ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Alveopalatal", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are plain and those on the right are ejectives. The alveolar fricative on the right is lateral.", general_title = "")
+```
+
+## Vowels
+
+* Although Proto-Totonac-Tepehua only consists of a three vowel contrast, with /e/ and /o/ occurring in loanwords [@MacKay2013, p. 203; @Kryder1978, p. 46], @MacKay2013 state that Pisaflores Tepehua, in particular, has a five vowel contrast. This being said, the frequency of /e/ and /o/ are vastly reduced compared to the other three, which is very apparent in the Crúbadán corpus.
+* Vowel length is a contrastive feature in this language [@MacKay2013, p. 203]; however, it seems rather marginal based on the Crúbadán corpus output. This is consistent with the explanations given by @Kryder1978 and @Watters2017:    
+    - @Kryder1978 (a source on Tepehua as a whole) was only able to find few minimal pairs (pp. 51-52).
+    - @Watters2017 states that vowel length affecting comprehension is quite subtle (p. 44).
+* That being said, @Watters2017 explains that those proficient in the language don't agree with marking vowel length distinctions, only doing so when there's ambiguity. Given this, there is some skepticism in terms of how reliably vowel length is marked, compromising the language to some degree.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""           "u"
+Mid         "e"         ""           "o"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+```
+
+# Alphabet
+
+* Like other Totonac-Tepehua languages, it is common for ⟨r⟩, ⟨b⟩, ⟨d⟩, and ⟨g⟩ to appear in Spanish loanwords [@Kryder1978, pp. 45, 156-165; @OMeara2019, p. 179].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme
+"a"             "/a/"
+"e"             "/e/"
+"i"             "/i/"
+"j"             "/h/"
+"k"             "/k/"
+"l"             "/l/"
+"m"             "/m/"
+"n"             "/n/"
+"o"             "/o/"
+"p"             "/p/"
+"s"             "/s/"
+"t"             "/t/"
+"u"             "/u/"
+"w"             "/w/"
+"x"             "/ɕ/"
+"y"             "/j/"
+"\'"            "/ʔ/"
+**Digraph**      ""
+"ch"            "/tɕ/"
+"lh"            "/ɬ/"
+"ts"            "/ts/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Pisaflores Tepehua follow the order of (C)CV(V)(C)(C) [@MacKay2013, pp. 197, 211].
+    - A phonetic glottal stop is inserted syllable-initially when a vowel lacks an onset.
+
+# Lenition Rules
+
+* Voiceless ejectives may be realized as implosives syllable-initially [@MacKay2013, pp. 191-193].
+
+# Misc. Rules
+
+* /n/ assimilates in place to the following consonants [@MacKay2013, p. 202].
+
+# References

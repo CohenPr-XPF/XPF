@@ -92,6 +92,7 @@
 | pau           | Palauan                   |                               |
 | pio           | Piapoco                   |                               |
 | pot           | Potawatomi                | under revision                |
+| pwg           | Gapapaiwa                 |                               |
 | quz           | Cusco Quechua             |                               |
 | rkb           | Rikbaktsa                 |                               |
 | ro            | Romanian                  |                               |
@@ -131,32 +132,36 @@
 
 ## Compromised Languages
 
-| Language Code   | Language                 | Reason (more thorough explanation in Rmd files)                                                                      |
-|-----------------|--------------------------|----------------------------------------------------------------------------------------------------------------------|
-| ake             | Akawaio                  | conflation between voiceless and voiced consonants                                                                   |
-| aoj             | Mufian                   | conflation among vowels; ambiguity regarding vowel length and labialized consonant clusters                          |
-| arn             | Mapudungun               | ambiguous orthography; conflation between dental and alveolar consonants                                             |
-| ar-x-diacritics | Arabic                   | ambiguous transcription of alif; conflation between vowels and glides                                                |
-| bmu             | Somba Siawari            | phonetic alphabet                                                                                                    |
-| bzd             | Bribri                   | phonetic alphabet; contradicting documentation                                                                       |
-| ca              | Catalan                  | conflation among vowels and glides; ambiguous phonological interpretations                                           |
-| cav             | Cavineña                 | ambiguity whether a digraph represents one phoneme or two, depending on syllable structure                           |
-| chm             | Mari                     | conflation with some palatalized and non-palatalized consonants; some vowels not always represented orthographically |
-| cho             | Choctaw                  | phonetic alphabet                                                                                                    |
-| con             | Cofan                    | conflation between consonants                                                                                        |
-| crm             | Moose Cree               | /h/ represented only when contrast is required                                                                       |
-| fuv             | Nigerian Fulfulde        | glottal stop not always represented; unclear transcription of palatalized glottal stop                               |
-| kek             | Qeqchi                   | ambiguity between ejective stops and stop-glottal stop sequences                                                     |
-| kmo             | Kwoma                    | non-transparent spelling with glottal stops                                                                          |
-| mcf             | Matsés                   | conflation between alveolar and retroflex consonants; conflation between vowels                                      |
-| mek             | Mekeo                    | non-transparent spelling with glottal stops                                                                          |
-| mnb             | Muna                     | orthography is suspect                                                                                               |
-| qub             | Huallaga Huanuco Quechua | orthography is suspect; conflation between vowels and glides                                                         |
-| sah             | Yakut                    | conflation between /j/ and /j̃/                                                                                       |
-| sk              | Slovak                   | non-transparent spelling with palatal consonants; ambiguity whether digraphs represent one phoneme or two            |
-| sm              | Samoan                   | marking of long vowels and glottal stops is suspect                                                                  |
-| sw              | Swahili                  | conflation between syllabic nasals and non-syllabic counterparts                                                     |
-| zza             | Zaza                     | conflicting orthographies make for conflation of vowels                                                              |
+| Language Code   | Language                    | Reason (more thorough explanation in Rmd files)                                                                      |
+|-----------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------|
+| ake             | Akawaio                     | conflation between voiceless and voiced consonants                                                                   |
+| aoj             | Mufian                      | conflation among vowels; ambiguity regarding vowel length and labialized consonant clusters                          |
+| arn             | Mapudungun                  | ambiguous orthography; conflation between dental and alveolar consonants                                             |
+| ar-x-diacritics | Arabic                      | ambiguous transcription of alif; conflation between vowels and glides                                                |
+| bmu             | Somba Siawari               | phonetic alphabet                                                                                                    |
+| bzd             | Bribri                      | phonetic alphabet; contradicting documentation                                                                       |
+| ca              | Catalan                     | conflation among vowels and glides; ambiguous phonological interpretations                                           |
+| cav             | Cavineña                    | ambiguity whether a digraph represents one phoneme or two, depending on syllable structure                           |
+| chm             | Mari                        | conflation with some palatalized and non-palatalized consonants; some vowels not always represented orthographically |
+| cho             | Choctaw                     | phonetic alphabet                                                                                                    |
+| con             | Cofan                       | conflation between consonants                                                                                        |
+| crm             | Moose Cree                  | /h/ represented only when contrast is required                                                                       |
+| fuv             | Nigerian Fulfulde           | glottal stop not always marked; unclear transcription of palatalized glottal stop                                    |
+| ixl             | Ixil                        | word-initial glottal stop not always marked; somewhat ambiguous orthography                                          |
+| kek             | Qeqchi                      | ambiguity between ejective stops and stop-glottal stop sequences                                                     |
+| kmo             | Kwoma                       | non-transparent spelling with glottal stops                                                                          |
+| mcf             | Matsés                      | conflation between alveolar and retroflex consonants; conflation between vowels                                      |
+| mek             | Mekeo                       | non-transparent spelling with glottal stops                                                                          |
+| mnb             | Muna                        | orthography is suspect                                                                                               |
+| not             | Nomatsiguenga               | conflation among nasals                                                                                              |
+| qub             | Huallaga Huanuco Quechua    | orthography is suspect; conflation between vowels and glides                                                         |
+| sah             | Yakut                       | conflation between /j/ and /j̃/                                                                                       |
+| sk              | Slovak                      | non-transparent spelling with palatal consonants; ambiguity whether digraphs represent one phoneme or two            |
+| sm              | Samoan                      | marking of long vowels and glottal stops is suspect                                                                  |
+| sw              | Swahili                     | conflation between syllabic nasals and non-syllabic counterparts                                                     |
+| too             | Xicotepec de Juárez Totonac | somewhat unclear transcription                                                                                       |      
+| tpp             | Pisaflores Tepehua          | unclear how reliably vowel length is marked                                                                          |
+| zza             | Zaza                        | conflicting orthographies make for conflation of vowels                                                              |
 
 
 ## Abandoned Languages
@@ -185,6 +190,7 @@
 | bm  | Bambara                        | non-transparent spelling with tones                                   |
 | bmr | Muinane                        | non-transparent spelling with tones                                   |
 | bs  | Bosnian                        | non-transparent spelling with vowel length and tones                  |
+| bsn | Barasana-Eduria                | non-transparent spelling with tones                                   |
 | bua | Buryat                         | non-transparent spelling with palatalization                          |
 | byr | Baruya                         | non-transparent spelling with tones                                   |
 | cax | Chiquitano                     | non-transparent spelling with vowel nasalization                      |
@@ -192,6 +198,7 @@
 | ce  | Chechen                        | non-transparent spelling with vowel length                            |
 | ceb | Cebuano                        | non-transparent spelling with vowel length                            |
 | chr | Cherokee                       | non-transparent spelling with vowel length                            |
+| cwk | Western Kaqchikel              | non-transparent spelling with vowels                                  |
 | cnh | Haka Chin                      | non-transparent spelling with tones                                   |
 | coe | Koreguaja                      | non-transparent spelling with tones                                   |
 | ctd | Tedim Chin                     | non-transparent spelling with tones                                   |
@@ -203,6 +210,7 @@
 | des | Desano                         | non-transparent spelling with tones                                   |
 | dgo | Dogri                          | non-transparent spelling with tones                                   |
 | din | Dinka                          | non-transparent spelling with tones                                   |
+| dts | Toro So Dogon                  | non-transparent spelling with tones                                   |
 | dz  | Dzongkha                       | non-transparent spelling                                              |
 | ee  | Ewe                            | non-transparent spelling with tones                                   |
 | efi | Efik                           | non-transparent spelling with tones                                   |
@@ -313,6 +321,7 @@
 | tk  | Turkmen                        | non-transparent spelling with vowel length                            |
 | tl  | Tagalog                        | non-transparent spalling with vowel length                            |
 | tn  | Tswana                         | non-transparent spelling with tones                                   |
+| toi | Tonga                          | non-transparent spelling with tones                                   |
 | trp | Kok Borok                      | non-transparent spelling with tones                                   |
 | ts  | Tsonga                         | non-transparent spelling with tones                                   |   
 | ttc | Tekiteko                       | non-transparent spelling with vowel length                            |
@@ -322,6 +331,7 @@
 | udu | Uduk                           | non-transparent spelling with tones                                   |
 | ur  | Urdu                           | non-transparent spelling with vowels                                  |
 | ura | Urarina                        | non-transparent spelling with tones                                   |
+| usp | Uspanteko                      | non-transparent spelling with tones                                   |
 | ve  | Venda                          | non-transparent spelling with tones                                   |
 | vro | Võro                           | non-transparent spelling with vowels and palatalization               |
 | wa  | Walloon                        | non-transparent spelling                                              |

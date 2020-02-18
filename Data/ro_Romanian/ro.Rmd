@@ -17,7 +17,7 @@ Last Updated: 2019-08-21
 
 ## Consonants
 
-* There is some debate regarding the existence of palatal consonants as phonemes. @Petrovici1950 [as cited in @Dezsi2008, p. 439] includes them, but he also includes labialized and labio-palatalized consonants which proves too elaborate an analysis [@Dezsi2008, p. 440]. @Dezsi2008 states that palatalization is predictable (morphological conditioning), with /i/ surfacing as such a marker [ʲ] [p. 447; @Renwick2012, p. 81].
+* There is some debate regarding the existence of palatal consonants as phonemes. @Petrovici1950 [as cited in @Dezsi2008, p. 439] includes them, but he also includes labialized and labio-palatalized consonants which proves too elaborate an analysis, as stated by @Dezsi2008 (p. 440). @Dezsi2008 states that palatalization is predictable (morphologically conditioned), with /i/ surfacing as such a marker [ʲ] [p. 447; @Renwick2012, p. 81].
 * @Dezsi2008 explains that the phonemic attestation of /j/ and /w/ is rather unclear, given a lack of analysis (p. 438). @Chitoran2002 [as cited in @Dezsi2008, p. 441] states that the /j/ is a surface realization of /i/. @Dezsi2008 seems to support this analysis (p. 447). I have chosen not to include /j/ and /w/ below.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -29,18 +29,18 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"     Labial   Dental   Postalveolar   Velar  Glottal
-Stops                        "p b"    "t d"         ""        "k ɡ"    ""
-Affricates                    ""       "ts"      "tʃ dʒ"       ""      ""
-Fricatives                   "f v"     "s z"      "ʃ ʒ"        ""      "h"
-Nasals                        "m"      "n"          ""         ""      ""
-Trills                        ""       "r"          ""         ""      ""
-Approximants                  ""       "l"          ""         ""      ""
+Stops                        "p b"    "t̪ d̪"         ""        "k ɡ"    ""
+Affricates                    ""       "t̪s"      "tʃ dʒ"       ""      ""
+Fricatives                   "f v"     "s̪ z̪"      "ʃ ʒ"        ""      "h"
+Nasals                        "m"      "n̪"          ""         ""      ""
+Trills                        ""       "r̪"          ""         ""      ""
+Approximants                  ""       "l̪"          ""         ""      ""
 '), TRUE)
 
 kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Postalveolar", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 5)) %>%
-  footnote(general = "Note: From left to right, phonemes in a cell are plain, aspirated, and voiced.", general_title = "") %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "") %>%
   column_spec(1, bold = TRUE)
 ```
 
@@ -85,7 +85,7 @@ Grapheme        Phoneme                 Comment
 "â"              "/ɨ/"                    ""
 "b"              "/b/"                    ""
 "c"            "/k/; /tʃ/"      "/tʃ/: preceding front vowels"
-"d"              "/d/"                    ""
+"d"              "/d̪/"                    ""
 "e"              "/e/"                    ""
 "f"              "/f/"                    ""
 "g"            "/ɡ/; /dʒ/"      "/dʒ/: preceding front vowels"
@@ -94,23 +94,23 @@ Grapheme        Phoneme                 Comment
 "î"              "/ɨ/"                    ""
 "j"              "/ʒ/"                    ""
 "k"              "/k/"             "appears in loanwords"
-"l"              "/l/"                    ""
+"l"              "/l̪/"                    ""
 "m"              "/m/"                    ""
-"n"              "/n/"                    ""
+"n"              "/n̪/"                    ""
 "o"              "/o/"                    ""
 "p"              "/p/"                    ""
 "q"              "/k/"             "appears in loanwords"
-"r"              "/r/"                    ""
-"s"              "/s/"                    ""
+"r"              "/r̪/"                    ""
+"s"              "/s̪/"                    ""
 "ș"              "/ʃ/"                    ""
-"t"              "/t/"                    ""
-"ț"              "/ts/"                   ""
+"t"              "/t̪/"                    ""
+"ț"              "/t̪s/"                   ""
 "u"              "/u/"                    ""
 "v"              "/v/"                    ""
 "w"              "/v/"             "appears in loanwords"
-"x"              "/ks/"                   ""
+"x"              "/ks̪/"                   ""
 "y"              "/i/"             "appears in loanwords"
-"z"              "/z/"                    ""
+"z"              "/z̪/"                    ""
 **Digraph**       ""                      ""
 "ea"             "/ea/"                   ""
 "oa"             "/oa/"                   ""

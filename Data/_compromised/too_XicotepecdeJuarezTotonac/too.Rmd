@@ -1,0 +1,114 @@
+---
+title: "Xicotepec de Juárez Totonac"
+author: "Emily Strand"
+bibliography: too.bib
+output: html_document
+---
+
+Last updated: 2020-02-07
+
+**Slightly Compromised: correspondences between grapheme and phoneme are somewhat unclear; phonological analysis of the language within the acquired documentation was lacking**
+
+# Background
+
+**Language family**: Totonacan / Totonac
+
+* This dialect of Totonac is spoken in the Puebla state of Mexico.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar  Postalveolar  Palatal  Velar  Uvular  Glottal   
+Stops                       "p"       "t"         ""          ""      "k"    "q"      "ʔ"
+Affricates                  ""      "ts tɬ"       "tʃ"        ""      ""     ""       ""
+Fricatives                  ""       "s ɬ"        "ʃ"         ""      ""     ""       "h"
+Nasals                      "m"       "n"         ""          ""      ""     ""       ""
+Approximants                "w"       "l"         ""          "j"     ""     ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: The alveolar affricate and fricative on the right are lateral.", general_title = "")
+```
+
+## Vowels
+
+* Vowel length is contrastive [@Reid1974, p. 6]. Long vowels are indicated by a macron (¯).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""           "u"
+Mid         "e"         ""           "o"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+```
+
+# Alphabet
+
+* ⟨b⟩, ⟨d⟩, ⟨f⟩, ⟨g⟩, ⟨ñ⟩, ⟨r⟩, ⟨rr⟩, ⟨v⟩, and ⟨z⟩ appear in Spanish loanwords [@Reid1974, p. 6].
+* There is some ambiguity in terms of the transcription, given that the correspondences weren't exactly clear. I have opted to classify this language as compromised, given that I am not 100% certain on the transcription.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme
+"a"             "/a/"
+"c"             "/k/"
+"e"             "/e/"
+"i"             "/i/"
+"j"             "/h/"
+"k"             "/q/"
+"l"             "/l/"
+"m"             "/m/"
+"n"             "/n/"
+"o"             "/o/"
+"p"             "/p/"
+"s"             "/s/"
+"t"             "/t/"
+"u"             "/u/"
+"x"             "/ʃ/"
+"y"             "/j/"
+"\'"            "/ʔ/"
+**Digraph**      ""
+"ch"            "/tʃ/"
+"hu"            "/w/"
+"lh"            "/ɬ/"
+"qu"            "/k/"
+"tl"            "/tɬ/"
+"tz"            "/ts/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* In other dialects of Totonac (eg. Misantla) it's found that [@MacKay1994, pp. 374-376]:
+    - Voiceless stops and affricates may become voiced between voiced consonants.
+    -  /q/ may spirantize following vowels.  
+**It is unclear whether the same processes are observed in the dialect under analysis**
+
+# Misc. Rules
+
+* In other dialects of Totonac (eg. Misantla), /n/ assimilates in place to following consonants [@MacKay1994, p. 380].
+
+# References

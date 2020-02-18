@@ -1,0 +1,135 @@
+---
+title: "Ixil"
+author: "Emily Strand"
+bibliography: ixl.bib
+output: html_document
+---
+
+Last updated: 2020-02-18
+
+**Slightly Compromised: word-initial glottal stop not always marked; slightly ambiguous orthography**
+
+# Background
+
+**Language family**: Mayan/ Quichean-Mamean / Greater Mamean / Ixilan
+
+* Ixil is spoken in the Quiché department of Guatemala.
+* The Chajul dialect (as opposed to the Nebaj dialect) is represented below (i.e. the Crúbadán corpus reflects it better).
+
+# Phonology
+
+## Consonants
+
+* Chajul Ixil is rather unique in that it has alveo-postalveolar consonants, which are said not to be represented in any other language [@Adell2019, p. 62]. In terms of the terminology and IPA symbols, I have chosen to use those represented in both @Adell2019 (p. 38) and @Adell2016 (p. 3).
+* /q/ is said to be undergoing sound change to /χ/, so the phonemic status of /χ/ is somewhat unclear [@Adell2019, p. 83]. @Ayres1991 treats it as a distinct phoneme (p. 2); however, @Adell2019 does not, stating that, depending on the age group, speakers often treat it as if it's in free variation with /q/ (p. 86).
+      - With such sound change, /χ/, especially with younger generations, is said to be merging with /h/.
+      - I have chosen to follow the more recent source, not treating /χ/ as a distinct phoneme [@Adell2019, p. 38].
+* /d/ and /ɡ/ appear in loanwords [@Ayres1991, p. 1].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar  Alveo-Postalveolar  Postalveolar  Retroflex  Palatal  Velar    Uvular  Glottal   
+Stops                      "p ɓ"     "t t’"          ""                ""          ""        ""     "k k’"   "q q’"    "ʔ"
+Affricates                  ""      "ts ts’"      "tsʃ tsʃ’"         "tʃ tʃ’"    "ʈʂ ʈʂ’"    ""      ""        ""      ""
+Fricatives                  ""        "s"           "sʃ"               ""          "ʂ"       ""      ""        ""     "h"
+Nasals                      "m"       "n"            ""                ""          ""        ""      ""        ""      ""
+Flaps                       ""        "ɾ"            ""                ""          ""        ""      ""        ""      ""
+Approximants                "ʋ"       "l"            ""                ""          ""        "j"     ""        ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Alveo-Postalveolar", "Postalveolar", "Retroflex", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 9)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are plain and those on the right are ejectives. The labial stop on the right is an implosive.", general_title = "")
+```
+
+## Vowels
+
+* Vowel length is contrastive in Ixil [@Ayres1991, p. 1]. Long vowels are indicated by duplicate vowels.
+    - When two consecutive like-vowels appear that don't constitute a long vowel, a hyphen is inserted between them.
+* In native words, adjacent vowels do not represent complex nuclei (ibid.).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""           "u"
+Mid         "e"         ""           "o"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+```
+
+# Alphabet
+
+* Word-initial glottal stop (the phonemic status of which is in question in this position) is not always written, which compromises the language to some extent [@Ayres1991, p. 5; @Adell2019, pp. 89-96].
+* @Adell2019 also indicates variation in the orthography for some consonants (p. 23), which is also problematic. However, I have chosen to use the orthography represented in @Ayres1991, which seems largely consistent with what is used in Crúbadán (p. 1).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme
+"a"            "/a/"
+"b\'"          "/ɓ/"
+"e"            "/e/"
+"h"            "/h/"
+"i"            "/i/"
+"j"            "/h/"
+"k"            "/k/"
+"k\'"          "/k’/"
+"l"            "/l/"
+"m"            "/m/"
+"n"            "/n/"
+"o"            "/o/"
+"p"            "/p/"
+"q"            "/q/"
+"q\'"          "/q’/"
+"r"            "/ɾ/"
+"s"            "/s/"
+"t"            "/t/"
+"t\'"          "/t’/"
+"u"            "/u/"
+"v"            "/ʋ/"
+"x"            "/ʂ/"
+"y"            "/j/"
+"\'"           "/ʔ/"
+**Multigraph**  ""
+"ch"           "/tʃ/"
+"ch\'"         "/tʃ’/"
+"tch"          "/tsʃ/"
+"tch\'"        "/tsʃ’/"
+"tx"           "/ʈʂ/"
+"tx\'"         "/ʈʂ’/"
+"tz"           "/ts/"
+"tz\'"         "/ts’/"
+"xh"           "/sʃ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /h/ is often deleted [@Ayres1991, p. 20].
+* /l/ sometimes deletes preceding consonants [@Ayres1991, p. 21].
+
+# Misc. Rules
+
+* /n/ assimilates in place to the following consonant [@Ayres1991, pp. 24-25].
+* /ʋ/ has several phonetic realizations that frequently vary freely [@Adell2019, pp. 50-51].
+* /ɾ/ is said to be realized as [r] in some environments, but it's not exactly clear when this occurs. @Adell2019 explains that [r] occurs word-initially (p. 53), but @Ayres1991 states that it occurs word-finally, following a vowel (p. 3). However, this specification is not very relevant to this project.
+    - After a glottal stop, /ɾ/ varies freely with [r] [@Ayres1991, p. 3].
+
+# References
