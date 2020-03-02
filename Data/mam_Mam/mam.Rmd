@@ -1,0 +1,119 @@
+---
+title: "Mam"
+author: "Emily Strand"
+bibliography: mam.bib
+output: html_document
+---
+
+Last updated: 2020-03-02
+
+# Background
+
+**Language family**: Mayan / Quichean-Mamean / Greater Mamean / Mamean
+
+* Mam is spoken in Guatemala.
+
+# Phonology
+
+## Consonants
+
+* /b/, /d/, /ɡ/, and /f/ appear in Spanish loanwords [@Baayil2001, pp. 17-18].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)    
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar  Postalveolar  Retroflex  Palatal  Velar    Uvular   Glottal
+Stops                      "p ɓ"     "t t’"    ""            ""         "c c’"   "k k’"   "q q’"   "ʔ"
+Affricates                 ""        "ts ts’"  "tʃ tʃ’"      "ʈʂ ʈʂ’"   ""       ""       ""       ""
+Fricatives                 ""        "s"       "ʃ"           "ʂ"        ""       ""       "χ"      ""
+Nasals                     "m"       "n"       ""            ""         ""       ""       ""       ""
+Trills                     ""        "r"       ""            ""         ""       ""       ""       ""
+Approximants               "w"       "l"       ""            ""         "j"      ""       ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Retroflex", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 8)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are plain and those on the right are ejectives. The labial stop on the right is an implosive.", general_title = "")
+```
+
+## Vowels
+
+* Vowel length is contrastive in Mam [@Baayil2001, p. 6]. Long vowels are represented by duplicate graphemes.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High     "i"          ""           "u"         
+Mid      "e"          ""           "o"
+Low      ""           "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "/a/"
+"b\'"          "/ɓ/"
+"e"            "/e/"
+"i"            "/i/"
+"j"            "/χ/"                   
+"k"            "/k/"
+"k\'"          "/k’/"
+"l"            "/l/"
+"m"            "/m/"
+"n"            "/n/"
+"o"            "/o/"
+"p"            "/p/"
+"q"            "/q/"
+"q\'"          "/q’/"
+"r"            "/r/"
+"s"            "/s/"
+"t"            "/t/"
+"t\'"          "/t’/"
+"u"            "/u/"
+"w"            "/w/"
+"x"            "/ʂ/"
+"y"            "/j/"
+"\'"           "/ʔ/"
+**Digraph**    ""
+"ch"           "/tʃ/"
+"ch\'"         "/tʃ’/"
+"ky"           "/c/"
+"ky\'"         "/c’/"
+"tx"           "/ʈʂ/"
+"tx\'"         "/ʈʂ’/"
+"tz"           "/ts/"
+"tz\'"         "/ts’/"
+"xh; ẍ"        "/ʃ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /t’/ tends to vary freely with /ɗ/ [@Baayil2001, p. 11].
+
+# Misc. Rules
+
+* In some dialects of Mam, the palatalized stop and ejective are the result of predictable palatalization [@Baayil2001, p. 10].
+* A phonetic glottal stop occurs preceding word-initial vowels (ibid.).
+* /n/ assimilates (not always) in place to following consonants [@Baayil2001, p. 15].
+
+# References

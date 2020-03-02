@@ -1,8 +1,14 @@
+# Nepali Rule Set
+# Written by: Becky Mathew
+# Last updated: 2020/02/27
 type,sfrom,sto,weight,precede,follow,comment
-# Rules made by Becky Mathew
-# Last updated on July 20 2019
-
-# consonant class rules
+# Zero Width Joiners
+sub,‌,,1,,,"removing zero width non-joiner",
+sub,‍,,1,,,"removing zero width joiner",
+# Class Rules
+class,vowels,(ʌ|a|i|u|e),,,,
+class,consonants,(k|kʰ|g|gʱ|ŋ|ts|tsʰ|dz|dzʱ|ɲ|ʈ|ʈʰ|ɖ|ɖʱ|ɳ|t̪|t̪ʰ|d̪|d̪ʱ|n̪|p|pʰ|b|bʱ|m|r|l|s),,,,
+## Consonants
 class,KUH,क,,,,
 class,KHUH,ख,,,,
 class,GUH,ग,,,,
@@ -12,43 +18,37 @@ class,TSUH,च,,,,
 class,TSHUH,छ,,,,
 class,DZUH,ज,,,,
 class,DZHUH,झ,,,,
-class,NJUH,ञ,,,,
 class,RETROFLEXTUH,ट,,,,
 class,RETROFLEXTHUH,ठ,,,,
 class,RETROFLEXDUH,ड,,,,
 class,RETROFLEXDHUH,ढ,,,,
-class,RETROFLEXNUH,ण,,,,
 class,DENTALTUH,त,,,,
 class,DENTALTHUH,थ,,,,
 class,DENTALDUH,द,,,,
 class,DENTALDHUH,ध,,,,
-class,DENTALNUH,न,,,,
+class,DENTALNUH,(न|ञ|ण),,,,
 class,PUH,प,,,,
 class,PHUH,फ,,,,
 class,BUH,ब,,,,
-class,BHUH,(व|भ),,,,
+class,BHUH,भ,,,,
 class,MUH,म,,,,
 class,YUH,य,,,,
-class,RUH,(र|ऱ),,,,I'm not sure about the second character
+class,RUH,र,,,,
 class,LUH,ल,,,,
 class,WUH,व,,,,
-class,SHUH,श,,,,
-class,RETROFLEXSUH,ष,,,,
-class,SUH,स,,,,
+class,SUH,(स|ष|श),,,,
 class,HUH,ह,,,,
-
-# standalone vowel class rules
+## Independent Characters
 class,UH,अ,,,,
 class,A,आ,,,,
-class,I,(इ|ई),,,,
-class,U,(उ|ऊ),,,,
+class,I,(इ|ई),,,,"includes short and long form, since vowel length is not contrastive",
+class,U,(उ|ऊ),,,,"includes short and long form, since vowel length is not contrastive",
 class,RI,ऋ,,,,
 class,E,ए,,,,
 class,AI,ऐ,,,,
 class,O,ओ,,,,
 class,AU,औ,,,,
-
-# diacritic class rules
+## Diacritics
 class,DIACRITICA,ा,,,,
 class,DIACRITICI,(ि|ी),,,,
 class,DIACRITICU,(ु|ू),,,,
@@ -57,27 +57,24 @@ class,DIACRITICE,े,,,,
 class,DIACRITICAI,ै,,,,
 class,DIACRITICO,ो,,,,
 class,DIACRITICAU,ौ,,,,
-class,HAL,्,,,,
-class,CHANDRABINDU,ँ,,,,
-class,SHIRBINDU,ं,,,,
-class,BISARGA,ः,,,,
-
-# consonant sub rules
+class,VIRAMA,्,,,,
+class,CANDRABINDU,ँ,,,,
+class,SIRBINDU,ं,,,,
+# Sub Rules
+## Consonants
 sub,{KUH},k ʌ,1,,,
 sub,{KHUH},kʰ ʌ,1,,,
-sub,{GUH},g ʌ,1,,,
-sub,{GHUH},gʱ ʌ,1,,,
+sub,{GUH},ɡ ʌ,1,,,
+sub,{GHUH},ɡʱ ʌ,1,,,
 sub,{NGUH},ŋ ʌ,1,,,
 sub,{TSUH},ts ʌ,1,,,
 sub,{TSHUH},tsʰ ʌ,1,,,
 sub,{DZUH},dz ʌ,1,,,
 sub,{DZHUH},dzʱ ʌ,1,,,
-sub,{NJUH},ɲ ʌ,1,,,
 sub,{RETROFLEXTUH},ʈ ʌ,1,,,
 sub,{RETROFLEXTHUH},ʈʰ ʌ,1,,,
 sub,{RETROFLEXDUH},ɖ ʌ,1,,,
 sub,{RETROFLEXDHUH},ɖʱ ʌ,1,,,
-sub,{RETROFLEXNUH},ɳ ʌ,1,,,
 sub,{DENTALTUH},t̪ ʌ,1,,,
 sub,{DENTALTHUH},t̪ʰ ʌ,1,,,
 sub,{DENTALDUH},d̪ ʌ,1,,,
@@ -92,12 +89,9 @@ sub,{YUH},j ʌ,1,,,
 sub,{RUH},r ʌ,1,,,
 sub,{LUH},l ʌ,1,,,
 sub,{WUH},w ʌ,1,,,
-sub,{SHUH},s ʌ,1,,,
-sub,{RETROFLEXSUH},s ʌ,1,,,
 sub,{SUH},s ʌ,1,,,
 sub,{HUH},ɦ ʌ,1,,,
-
-# standalone vowel sub rules
+## Independent Characters
 sub,{UH},ʌ,1,,,
 sub,{A},a,1,,,
 sub,{I},i,1,,,
@@ -107,8 +101,7 @@ sub,{E},e,1,,,
 sub,{AI},ai,1,,,
 sub,{O},o,1,,,
 sub,{AU},au,1,,,
-
-# diacritic sub rules
+## Diacritics
 sub,{DIACRITICA},ERASE a,1,,,
 sub,{DIACRITICI},ERASE i,1,,,
 sub,{DIACRITICU},ERASE u,1,,,
@@ -117,27 +110,18 @@ sub,{DIACRITICE},ERASE e,1,,,
 sub,{DIACRITICAI},ERASE ai,1,,,
 sub,{DIACRITICO},ERASE o,1,,,
 sub,{DIACRITICAU},ERASE au,1,,,
-sub,{HAL},ERASE,1,,,removes inherent vowel
-sub,{CHANDRABINDU},NASAL,1,,,"makes previous vowel nasal"
-sub,{SHIRBINDU},n,1,,,"a nasal of unspecified place"
-sub,{BISARGA},ɦ,1,,,
-
-# zero width rules
-sub,‌,,1,,,removing zero width non joiner
-sub,‍,,1,,,removing zero width joiner 
-
-class,"vowelsIPA",(ʌ|a|i|u|e|o),,,,
-class,"consonantsIPA",(k|kʰ|g|gʱ|ŋ|ts|tsʰ|dz|dzʱ|ɲ|ʈ|ʈʰ|ɖ|ɖʱ|ɳ|t̪|t̪ʰ|d̪|d̪ʱ|n̪|p|pʰ|b|bʱ|m|j|r|w|l|s|ɦ),,,,
-
-# diacritic vowels ipasub rules
-ipasub,ʌ ERASE,,7,,,removing the inherent vowel when there's a diacritic after
-ipasub,ERASE,,0.5,,,sometimes the hal comes between a consonant and vowel diacritic
-
-# chandrabindu ipasub rules
-ipasub,({vowelsIPA}) NASAL, \1̃,6,,,chandrabindu makes previous vowel nasal
-ipasub,ai NASAL,ãĩ,6,,,chandrabindu makes previous vowel nasal
-ipasub,au NASAL,ãũ,6,,,chandrabindu makes previous vowel nasal
-ipasub,NASAL,@,0.5,,,there's a mistake
-
-# gemination ipasub rule
-ipasub,({consonantsIPA}) ʌ ERASE \1,\1 ː,8,,,consonant gemination fix me no consonantsIPA class rn
+sub,{VIRAMA},ERASE,1,,,"removes inherent vowel",
+sub,{CANDRABINDU},NASAL,1,,,"makes previous vowel nasal",
+sub,{SIRBINDU},n̪,1,,,
+# ipasub Rules
+ipasub,ʌ ERASE,,8,,,"removes the inherent vowel when there's a diacritic after",
+ipasub,({vowels}) NASAL, \1̃,6,,,"candrabindu makes previous vowel nasal",
+ipasub,ai NASAL,ãĩ,7,,,
+ipasub,au NASAL,ãũ,7,,,
+ipasub,o NASAL,o,6,,,"/o/ doesn't have a contrastive nasal variant, but they may vary freely (this rule excludes that nasal variation)",
+ipasub,({consonants}) ʌ ERASE \1,\1 ː,9,,,"consonant gemination",
+ipasub,({consonants}) ʌ ERASE \1ʰ,\1ʰ ː,9.5,,,"fixes gemination rule",
+ipasub,({consonants}) ʌ ERASE \1ʱ,\1ʱ ː,9.5,,,"fixes gemination rule",
+# Misc. Rules
+ipasub,NASAL,@,1,,,"accounts for unattested combos (one occurrence of a nasal consonant)",
+ipasub,ERASE,@,1,,,"accounts for unattested combos",

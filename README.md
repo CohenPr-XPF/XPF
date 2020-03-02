@@ -74,19 +74,17 @@
 | kup           | Kunimaipa                 |                               |
 | ky            | Kirghiz                   |                               |
 | lem           | Nomaande                  |                               |
+| mam           | Mam                       |                               |
 | mcq           | Ese                       |                               |
 | mg            | Malagasy                  |                               |
 | mk            | Macedonian                |                               |
-| mt            | Maltese                   | under revision                |
 | mto           | Totontepec Mixe           |                               |
 | naf           | Nabak                     |                               |
-| ne            | Nepali                    | under revision                |
 | nhe           | Nahuatl                   |                               |
 | nhr           | Naro                      |                               |
 | nsn           | Nehan                     | lacks lenition                |
 | nuy           | Nunggubuyu                |                               |
-| omw           | South Tairora             | under revision; lacks lenition|
-| or            | Oriya                     | under revision; lacks lenition|
+| omw           | South Tairora             |                               |
 | pa            | Punjabi                   | under revision; lacks lenition|
 | pag           | Pangasinan                |                               |
 | pau           | Palauan                   |                               |
@@ -147,13 +145,18 @@
 | con             | Cofan                       | conflation between consonants                                                                                        |
 | crm             | Moose Cree                  | /h/ represented only when contrast is required                                                                       |
 | fuv             | Nigerian Fulfulde           | glottal stop not always marked; unclear transcription of palatalized glottal stop                                    |
+| hi              | Hindi                       | conflation between /æ/ and /ɛ/; vowel nasalization ambiguity; unreliable marking of some consonants                  |     
 | ixl             | Ixil                        | word-initial glottal stop not always marked; somewhat ambiguous orthography                                          |
 | kek             | Qeqchi                      | ambiguity between ejective stops and stop-glottal stop sequences                                                     |
 | kmo             | Kwoma                       | non-transparent spelling with glottal stops                                                                          |
 | mcf             | Matsés                      | conflation between alveolar and retroflex consonants; conflation between vowels                                      |
 | mek             | Mekeo                       | non-transparent spelling with glottal stops                                                                          |
+| mlp             | Bargam                      | conflation between /n/ and /ŋ/                                                                                       |
 | mnb             | Muna                        | orthography is suspect                                                                                               |
+| mt              | Maltese                     | conflation between /ts/ and /dz/ and between /ʃ/ and /ʒ/                                                             |
+| ne              | Nepali                      | certain diacritics used interchangeably and inconsistently marked                                                    |
 | not             | Nomatsiguenga               | conflation among nasals                                                                                              |
+| or              | Oriya                       | diacritics not always marked; some diacritics used interchangeably                                                   |                 
 | qub             | Huallaga Huanuco Quechua    | orthography is suspect; conflation between vowels and glides                                                         |
 | sah             | Yakut                       | conflation between /j/ and /j̃/                                                                                       |
 | sk              | Slovak                      | non-transparent spelling with palatal consonants; ambiguity whether digraphs represent one phoneme or two            |
@@ -161,6 +164,7 @@
 | sw              | Swahili                     | conflation between syllabic nasals and non-syllabic counterparts                                                     |
 | too             | Xicotepec de Juárez Totonac | somewhat unclear transcription                                                                                       |      
 | tpp             | Pisaflores Tepehua          | unclear how reliably vowel length is marked                                                                          |
+| tzj             | Tz'utujil                   | uncertainty around the marking of the glottal stop and the orthography                                               |
 | zza             | Zaza                        | conflicting orthographies make for conflation of vowels                                                              |
 
 
@@ -179,6 +183,7 @@
 | ak  | Akan                           | non-transparent spelling with tones                                   |
 | alq | Algonquin                      | non-transparent spelling with vowel length                            |
 | am  | Amharic                        | non-transparent spelling with consonant gemination                    |
+| anv | Denya                          | non-transparent spelling with tones                                   |
 | as  | Assamese                       | non-transparent spelling with vowels                                  |
 | aso | Dano                           | non-transparent spelling with tones                                   |
 | avt | Avar                           | non-transparent spelling with consonant gemination                    |
@@ -193,6 +198,7 @@
 | bsn | Barasana-Eduria                | non-transparent spelling with tones                                   |
 | bua | Buryat                         | non-transparent spelling with palatalization                          |
 | byr | Baruya                         | non-transparent spelling with tones                                   |
+| cao | Chácobo                        | non-transparent spelling with tones                                   |
 | cax | Chiquitano                     | non-transparent spelling with vowel nasalization                      |
 | cbc | Carapan                        | non-transparent spelling with tones                                   |
 | ce  | Chechen                        | non-transparent spelling with vowel length                            |
@@ -235,6 +241,7 @@
 | gur | Farefare                       | non-transparent spelling with tones                                   |
 | gv  | Manx Gaelic                    | non-transparent spelling with consonants and vowels                   |
 | ha  | Hausa                          | non-transparent spelling with vowel length                            |
+| hbs | Serbo-Croatian                 | non-transparent spelling with tones                                   |
 | hch | Huichol                        | non-transparent spelling with tones                                   |
 | heh | Hehe                           | non-transparent spelling with tones                                   |
 | hr  | Croatian                       | non-transparent spelling with vowel length                            |
@@ -247,6 +254,7 @@
 | jiv | Shuar                          | non-transparent spelling with vowel nasalization                      |
 | kab | Kabyle                         | non-transparent spelling with consonants                              |
 | kac | Jingpho                        | non-transparent spelling with tones                                   |
+| kaq | Capanahua                      | non-transparent spelling with tones                                   |
 | kbc | Kadiweu                        | non-transparent spelling with consonant gemination                    |
 | kbr | Kafa                           | non-transparent spelling with tones                                   |
 | kha | Khasi                          | non-transparent spelling with vowel length                            |
@@ -260,6 +268,7 @@
 | kus | Kusaal                         | non-transparent spelling with tones and vowel length                  |
 | kw  | Cornish                        | non-transparent spelling with vowel length                            |
 | lb  | Luxembourgish                  | non-transparent spelling with vowels                                  |
+| lef | Lelemi                         | non-transparent spelling with tones                                   |
 | lg  | Luganda                        | non-transparent spelling with tones                                   |
 | ln  | Lingala                        | non-transparent spelling with tones                                   |
 | loz | Lozi                           | non-transparent spelling with tones                                   |
@@ -268,6 +277,7 @@
 | lus | Mizo                           | non-transparent spelling with tones                                   |
 | lv  | Latvian                        | non-transparent spelling with tones                                   |
 | lvs | Standard Latvian               | non-transparent spelling with tones                                   |
+| lwo | Luwo                           | non-transparent spelling with tones and breathy vowels                |
 | man | Mandingo                       | non-transparent spelling with tones                                   |
 | mas | Maasai                         | insufficient tokens                                                   |
 | mcd | Sharanahua                     | non-transparent spelling with tones                                   |
@@ -280,6 +290,7 @@
 | mni | Meitei                         | non-transparent spelling with tones                                   |
 | mos | Mossi                          | non-transparent spelling with tones                                   |
 | mps | Dadibi                         | non-transparent spelling with tones and vowel nasalization            |
+| mpt | Mian                           | non-transparent spelling with tones                                   |
 | ms  | Malay                          | non-transparent spelling with vowels                                  |
 | my  | Burmese                        | non-transparent spelling with tones                                   |
 | myu | Mundurukú                      | non-transparent spelling with tones and creaky vowels                 |
@@ -305,13 +316,16 @@
 | rw  | Kinyarwanda                    | non-transparent spelling with tones and vowel length                  |
 | sd  | Sindhi                         | non-transparent spelling with vowels                                  |
 | se  | Northern Sami                  | non-transparent spelling                                              |
+| sg  | Sango                          | non-transparent spelling with tones                                   |
 | sim | Mende                          | non-transparent spelling with tones                                   |
 | sn  | Shona                          | non-transparent spelling with tones                                   |
 | so  | Somali                         | non-transparent spelling with tones                                   |
+| soq | Kanasi                         | non-transparent spelling with glottal stops                           |
 | spp | Supyire Senoufo                | non-transparent spelling with tones                                   |
 | ss  | Swati                          | non-transparent spelling with tones                                   |
 | st  | Sesotho                        | non-transparent spelling with tones                                   |
 | sv  | Swedish                        | non-transparent spelling                                              |
+| swp | Suau                           | non-transparent spelling                                              |
 | sxb | Suba                           | non-transparent spelling with tones                                   |
 | tav | Tatuyo                         | non-transparent spelling with tones                                   |
 | tcc | Datooga                        | non-transparent spelling with tones                                   |
@@ -348,5 +362,7 @@
 | yby | Yaweyuha                       | non-transparent spelling with tones                                   |
 | yo  | Yoruba                         | non-transparent spelling with tones                                   |
 | zai | Zapotec                        | non-transparent spelling with tones                                   |
+| zca | Coatecas Altas Zapotec         | non-transparent spelling with tones                                   |
 | zpi | Santa María Quiegolani Zapotec | non-transparent spelling with tones                                   |
+| zpq | Zoogocho Zapotec               | non-transparent spelling with tones                                   |              
 | zu  | Zulu                           | non-transparent spelling with tones                                   |

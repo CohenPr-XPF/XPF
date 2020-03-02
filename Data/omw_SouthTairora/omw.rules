@@ -6,6 +6,7 @@ type,sfrom,sto,weight,precede,follow,comment
 class,post-a,[aiu],,,,
 class,post-m,[pw],,,,
 class,post-n,[krt],,,,
+class,pal,(t|ⁿt|k|n|ᵑk),,,,
 class,passthrough,[hikmnpstu],,,,
 # Individual Letters
 sub,a,ɘ,4,,,
@@ -14,7 +15,8 @@ sub,o,ɔː,4,,,
 sub,q,ʔ,4,,,
 sub,r,ɾ,4,,,
 sub,v,β,4,,,
-sub,y,ʲ,4,,,
+sub,y,PALʲ,4,,,
+sub,({passthrough}),\1,0.1,,,
 # Digraphs
 sub,a,aː,6,a,,"<aa>"
 sub,i,ɘj,6,a,,"<ai>"
@@ -28,5 +30,5 @@ sub,r,ɾ̃,6,n,,"<nr>"
 sub,t,ⁿt,6,n,,"<nt>"
 sub,n,,6,,{post-n},"cleanup of n-initial diphthongs"
 # Misc. Rules
-ipasub, ʲ,ʲ,2,,,"attaches palatalization to consonants"
-sub,({passthrough}),\1,0.1,,,
+ipasub,({pal}) PALʲ,\1ʲ,3,,,"attaches palatalization to consonants"
+ipasub,PALʲ,@,2,,,"cleans up occurrences of unattested palatalization",

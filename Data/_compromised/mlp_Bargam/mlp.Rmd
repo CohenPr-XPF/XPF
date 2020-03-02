@@ -1,0 +1,112 @@
+---
+title: "Bargam"
+author: "Emily Strand"
+bibliography: mlp.bib
+output: html_document
+---
+
+Last updated: 2020-02-20
+
+**Slightly Compromised: conflation between /n/ and /ŋ/**
+
+# Background
+
+**Language family**: Trans-New Guinea / Madang-Adelbert Range / Adelbert Range / Pihom-Isumrud-Mugil / Mugil
+
+# Phonology
+
+## Consonants
+
+* /ŋ/ is marginal [@Hepner1989, p. 18].
+* /p/ and /f/ are also rare (not to the extent of /ŋ/) [@Hepner1989, p. 25].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Palatal  Velar   Glottal   
+Stops                       "p b"   "t d"      ""     "k ɡ"     "ʔ"
+Fricatives                  "f"     "s z"      ""      ""       "h"
+Nasals                      "m"      "n"       ""      "ŋ"      ""
+Flaps                       ""       "ɾ"       ""      ""       ""
+Approximants                "w"      "l"       "j"     ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* Glides /w/ and /j/ preceding or following vowels are always interpreted as consonants and never part of complex nuclei with adjacent vowels [@Hepner1992, p. 3].
+    - Consecutive vowels constitute separate syllables [@Hepner1989, p. 24].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""           "u"
+Mid         "e"         ""           "o"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+```
+
+# Alphabet
+
+* The orthographic contrast for /n/ versus /ŋ/ is somewhat convoluted. @Hepner1992 represents /ŋ/ with ⟨ng⟩ (p. 1). @Hepner1989, however, state that /n/ preceding velar consonants is phonetically realized as [ŋ]. While @Hepner1989 identify /ŋ/ as a distinctive phoneme, it appears that the sequence ⟨ng⟩ may represent both the underlying form and surface realization of /ŋ/, compromising the language. Given that /ŋ/ is rare underlyingly in this language, I have chosen to transcribe ⟨ng⟩ sequences as /nɡ/.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme
+"a"             "/a/"      
+"b"             "/b/"
+"d"             "/d/"
+"e"             "/e/"
+"f"             "/f/"
+"g"             "/ɡ/"  
+"h"             "/h/"
+"i"             "/i/"
+"k"             "/k/"
+"l"             "/l/"
+"m"             "/m/"
+"n"             "/n/"
+"o"             "/o/"
+"p"             "/p/"
+"q"             "/ʔ/"
+"r"             "/ɾ/"
+"s"             "/s/"
+"t"             "/t/"
+"u"             "/u/"
+"w"             "/w/"
+"y"             "/j/"
+"z"             "/z/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure  
+
+* Syllables in Bargam follow the order of (C)(C)V(C)(C) [@Hepner1989, p. 31].
+
+# Misc. Rules
+
+* /ɾ/ may vary freely with /r/ word-initially and word-medially [@Hepner1989, p. 19].
+* Phonetic glottal stops occur preceding word-initial vowels [@Hepner1989, p. 8].
+* Consonant clusters generally are realized with an intervening epenthetic vowel [@Hepner1989, p. 15].
+
+# References

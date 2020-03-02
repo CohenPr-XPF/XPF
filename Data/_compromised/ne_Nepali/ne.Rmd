@@ -1,0 +1,168 @@
+---
+title: "Nepali"
+author: "Becky Mathew"
+edited by: "Emily Strand"
+bibliography: ne.bib
+output: html_document
+---
+
+Last Updated: 2020-02-27
+
+**Compromised: certain diacritics used interchangeably and inconsistently marked**
+
+# Background
+
+**Language family**: Indo-European / Indo-Iranian / Indo-Aryan / Northern Zone / Eastern Pahari
+
+* Nepali is the official language of Nepal and is also spoken in India and Bhutan and by members of the Nepalese diaspora [@JIPA2009, p. 373]. My rules are written based on the eastern Nepali dialect. Like many other Indic languages it has a left-to-right abugida alphabet.
+
+# Phonology
+
+## Consonants
+
+* @Acharya1991 identifies palatal stops rather than alveolar affricates (p. 19).
+    - I opted for the analysis done by @JIPA2009, given that it was the most recent.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"             Labial     Dental   Alveolar     Retroflex   Palatal     Velar     Glottal
+"Stops (plain)"                      "p  b"     "t̪  d̪"      ""         "ʈ  ɖ"       ""       "k  ɡ"       ""
+"Stops (aspirated)"                 "pʰ  bʱ"    "t̪ʰ d̪ʱ"     ""         "ʈʰ  ɖʱ"     ""       "kʰ  ɡʱ"     ""
+"Affricates (plain)"                  ""          ""      "ts  dz"       ""         ""         ""         ""
+"Affricates (aspirated)"              ""          ""      "tsʰ dzʱ"      ""         ""         ""         ""
+Fricatives                            ""          ""        "s"          ""         ""         ""         "ɦ"
+Nasals                                "m"        "n̪"        ""           ""         ""         "ŋ"        ""
+Trills                                ""         ""         "r"          ""         ""         ""         ""
+Approximants                          "w"        ""         "l"          ""         "j"        ""         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```  
+
+## Vowels
+
+* Nasal vowels are considered phonemic in Nepali [@JIPA2009, p. 377]. /o/ does not have a contrastive nasal counterpart, but it may vary freely with it.
+* I have chosen to follow the vowel outline by @JIPA2009, such that /ʌ/ is used rather than /ə/ (p. 377). This is based on the description that the vowel in question is lower and more back than schwa.
+* Vowel length is not considered a phonemic feature [@JIPA2009, p. 378].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low-Mid    ""         ""           "ʌ"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ai/, /au/"
+'), TRUE)
+
+  kable(diphthongs, align = 'c') %>%
+    kable_styling("bordered")
+  ```
+
+# Alphabet
+
+* Nepali is written using the Devanagari script [@Bal2004, pp. 333-334]. Each consonant comes with an inherent /ʌ/ following.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                   Comment
+"क"           "/kʌ/"                      ""
+"ख"           "/kʰʌ/"                      ""
+"ग"           "/ɡʌ/"                       ""
+"घ"           "/ɡʱʌ/"                       ""
+"ङ"           "/ŋʌ/"                       ""
+"च"           "/tsʌ/"                      ""
+"छ"           "/tsʰʌ/"                      ""
+"ज"           "/dzʌ/"                      ""
+"झ"           "/dzʱʌ/"                      ""
+"ट"           "/ʈʌ/"                       ""
+"ठ"           "/ʈʰʌ/"                      ""
+"ड"           "/ɖʌ/"                       ""
+"ढ"           "/ɖʱʌ/"                      ""
+"त"           "/t̪ʌ/"                       ""
+"थ"           "/t̪ʰʌ/"                      ""
+"द"           "/d̪ʌ/"                       ""
+"ध"           "/d̪ʱʌ/"                      ""
+"न; ञ; ण"    "/n̪ʌ/"     "the palatal and retroflex nasals are considered allophones of /n̪/ [@Acharya1991, p. 13]"
+"प"           "/pʌ/"                       ""
+"फ"           "/pʰʌ/"                     ""
+"ब"           "/bʌ/"                      ""
+"भ"           "/bʱʌ/"                     ""     
+"म"           "/mʌ/"                      ""
+"य"           "/jʌ/"                      ""       
+"र"           "/rʌ/"                      ""
+"ल"           "/lʌ/"                      ""
+"व"           "/wʌ/"                      ""  
+"श; ष; स"    "sʌ/"     "the voiceless retroflex and postalveolar fricatives are considered allophones of /s/ [@Acharya1991, p. 13]"
+"ह"           "/ɦʌ/"                      ""
+"**Independent Character**"    ""         ""       
+"अ"           "/ʌ/"                      ""
+"आ"          "/a/"                       ""
+"इ; ई"        "/i/"          "includes both the short and long variants given that vowel length is not contrastive"
+"उ; ऊ"       "/u/"          "includes both the short and long variants given that vowel length is not contrastive"
+"ऋ"          "/ri/"                      ""
+"ए"           "/e/"                       ""
+"ओ"          "/o/"                       ""
+"ऐ"          "/ai/"                       ""
+"औ"         "/au/"                       ""
+"**Diacritic**" ""                        ""
+"ा"           "/a/"                       ""
+"ि; ी"       "/i/"         "includes both the short and long variants given that vowel length is not contrastive"
+"ु; ू"        "/u/"         "includes both the short and long variants given that vowel length is not contrastive"
+"ृ"           "/ri/"                       ""
+"े"           "/e/"                        ""
+"ै"           "/ai/"                       ""
+"ो"          "/o/"                         ""
+"ौ"          "/au/"                        ""
+"ँ"            ""                 "called a candrabindu, this diacritic indicates nasalization of the preceding vowel [@Bal2004, p. 333]"
+"ं"           "/n/"               "called an anusvar or sirabindu, this diacritic indicates a homoorganic nasal with following stops (/n/ appears to be underlying); however, it is inconsistently marked and used interchangeably with the candrabindu [@Bal2004, p. 333] - this compromises the language to some extent"
+"्"           "∅"                "called a viram or halanta, this diacritic removes the inherent vowel /ʌ/ after a consonant [@Bal2004, p. 334]"
+"ः"          "/ɦ/"              "called the visarga, this diacritic only appears in Sanskrit loanwords, so it won\'t be transcribed in the rule set [@Bal2004, p. 334]"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /ɖ/ is realized as a retroflex flap when preceded by a vowel [@JIPA2009, p. 374].
+* /pʰ/, /bʱ/, /kʰ/, and /ɡʱ/ may spirantize in spontaneous speech [@JIPA2009, p. 376].
+* /r/ may be realized as a flap [@JIPA2009, p. 377]:
+    - Intervocalically [@Pokharel1989 as cited in @JIPA2009, p. 377]
+    - Word-initially
+    - Word-finally
+* Voiced aspirates may be realized without aspiration intervocalically and word-finally [@JIPA2009, p. 376].
+* /b/, /d/, and /ɡ/ may be realized as nasals postvocalically, preceding nasal vowels [@Acharya1991, p. 26].
+* One consonant within a cluster may be deleted (unclear whether this is only word-initially) [@Acharya1991, p. 33].
+
+# Misc. Rules
+
+* Consonants, apart from /ɦ/, /j/, and /w/, undergo gemination [@JIPA2009, p. 376].
+* /d/ and /ɡ/ may be devoiced word-finally [@Acharya1991, p. 26].
+* Velar stops become fronted preceding front vowels [@Acharya1991, p. 26].
+* Non-syllabic /i/ and /u/ are realized as [j] and [w], respectively [@JIPA2009, p. 373].
+* Vowel epenthesis occurs within consonant clusters [@Acharya1991, p. 32].
+
+# References

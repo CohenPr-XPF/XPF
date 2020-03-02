@@ -1,0 +1,150 @@
+---
+title: "Oriya"
+author: "Becky Mathew"
+edited by: "Emily Strand"
+bibliography: or.bib
+output: html_document
+---
+
+Last Updated: 2020-02-25
+
+**Compromised: diacritics not always marked, creating phonemic ambiguity; certain diacritics used interchangeably**
+
+# Background
+
+**Language family**: Indo-European, Indo-Iranian, Indo-Aryan, Eastern zone, Oriya
+
+* Oriya (now romanized as Odia) is the official language of Orissa, an eastern Indian state. There are four major dialects of Oriya, and this project focuses on Standard Oriya [@Ray2003, p. 485].
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Bilabial    Dental    Alveolar   Retroflex    Palatal   Velar    Glottal
+"Stops (plain)"             "p b"      "t̪ d̪"       ""         "ʈ ɖ"       "c ɟ"    "k ɡ"      ""
+"Stops (aspirated)"        "pʰ bʱ"    "t̪ʰ d̪ʱ"      ""        "ʈʰ ɖʱ"     "cʰ ɟʱ"  "kʰ ɡʱ"     ""
+Fricatives                   ""         ""         "s"         ""          ""       ""        "h"
+Nasals                       "m"        "n̪"        ""          "ɳ"         ""       "ŋ"       ""
+Flaps                        ""         ""         "ɾ"         ""          ""       ""        ""
+Approximants                 "w"        ""         "l"         "ɭ"         "j"      ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Dental", "Alveolar", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```  
+
+## Vowels
+
+* Nasal vowels are contrastive in Oriya [@Ray2003, p. 448]; however, they don't always contrast with their oral counterparts [@Pattanayak1959 as cited in @Ray2003, p. 448]. /o/ does not have a nasal counterpart.
+* Vowel length is said to be a phonetic feature rather than a phonemic one [@Ray2003, p. 447]. Long vowels will be transcribed as short.
+* The two diphthongs generally associated with Indo-Aryan languages /ɔi/ and /ɔu/ (variants of /ai/ and /au/), may be interpreted as separate monophthongs [@Ray2003, p. 447]. So, I have chosen not to transcribe them as complex nuclei.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""           "u"
+Mid         "e"         ""           "o"
+Low-Mid     ""          ""           "ɔ"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+```
+
+# Alphabet
+
+* Oriya is descended from the Brahmi script, but it does not hang from a horizontal line. It is a left-to-right abugida script without capital letters. As an abugida script, every consonant carries an inherent /ɔ/ following it [@Ray2003, p. 487].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+"Consonant Grapheme"        Phoneme         Comment
+"କ"                         "/kɔ/"            ""
+"ଖ"                         "/kʰɔ/"           ""
+"ଗ"                         "/ɡɔ/"            ""
+"ଘ"                         "/ɡʱɔ/"           ""
+"ଙ"                         "/ŋɔ/"            ""
+"ଚ"                         "/cɔ/"            ""
+"ଛ"                         "/cʰɔ/"           ""
+"ଜ; ଯ"                      "/ɟɔ/"            ""
+"ଝ"                         "/ɟʱɔ/"           ""
+"ଟ"                         "/ʈɔ/"            ""
+"ଠ"                         "/ʈʰɔ/"           ""
+"ଡ"                         "/ɖɔ/"            ""
+"ଢ"                         "/ɖʱɔ/"           ""
+"ଣ"                         "/ɳɔ/"            ""
+"ତ"                         "/t̪ɔ/"            ""
+"ଥ"                         "/t̪ʰɔ/"           ""
+"ଦ"                         "/d̪ɔ/"            ""
+"ଧ"                         "/d̪ʱɔ/"           ""
+"ନ; ଞ"                      "/n̪ɔ/"            ""
+"ପ"                         "/pɔ/"            ""
+"ଫ"                         "/pʰɔ/"           ""
+"ବ"                          "/bɔ/"           ""
+"ଭ"                          "/bʱɔ/"          ""
+"ମ"                          "/mɔ/"           ""
+"ର"                          "/ɾɔ/"           ""
+"ଳ"                          "/ɭɔ/"           ""
+"ୱ; ଵ"                       "/wɔ/"           ""
+"ଶ; ଷ; ସ"                   "/sɔ/"            ""
+"ହ"                          "/hɔ/"           ""
+"ୟ"                          "/jɔ/"           ""
+"ଲ"                          "/lɔ/"           ""
+"**Independent Grapheme**"     ""      "vowels and syllabic consonants"
+"ଅ"                           "/ɔ/"           ""
+"ଆ"                           "/a/"          ""
+"ଇ; ଈ"                        "/i/"          ""
+"ଉ; ଊ"                        "/u/"          ""
+"ଋ; ୠ"                        "/ɾu/"          ""
+"ଌ; ୡ"                         "/lu/"          ""
+"ଏ"                            "/e/"          ""
+"ଐ"                           "/ɔi/"          ""
+"ଓ"                            "/o/"          ""
+"ଔ"                           "/ɔu/"          ""
+**Diacritic**                   ""            ""
+"ା"                            "/a/"          ""
+"ି; ୀ"                         "/i/"          ""
+"ୁ; ୂ"                         "/u/"          ""
+"ୃ; ୄ"                         "/ɾu/"          ""
+"ୢ; ୣ"                         "/lu/"         ""
+"େ"                           "/e/"          ""
+"ୈ"                           "/ɔi/"         ""
+"ୋ"                           "/o/"         ""
+"ୌ"                           "/ɔu/"        ""
+"ଁ"                              ""       "called a candrabindu, this diacritic indicates vowel nasalization [@Mahapatra1996, p. 405]; however, @Giri2011 states that it may be used in place of the anusvara, which represents a separate phonemic feature, compromising the language. It also denotes nasalization of preceding consonants [@NBGP2018, p. 5], but given that nasal consonants aren\'t contrastive, the diacritic in these instances will be removed in the rules."
+"ଂ"                            "/m/"     "called an anusvara, this diacritic represents a nasal, either word-finally or in homoorganic sequences (/m/ appears to be underlying) [@Mahapatra1996, p. 404; @Mohapatra2016, p. 23]"
+"ଃ"                            "/h/"     "called a visarga, this diacritic represents a word-final /h/ [@Mohapatra2016, p. 23]"
+"୍"                              ""       "called a halanta, this diacritic removes the inherent vowel from a consonant [@Mahapatra1996, p. 404]; however, it is not always marked, which compromises the language [@Ray2003, p. 447]"
+"◌़"                              ""      "called a nukta, this diacritic indicates non-native sounds [@Ishida2002, p. 4]. Given this, the diacritic will not be accounted for in the rules."
+'), TRUE)
+
+kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align = "c") %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules  
+
+* Consonant gemination occurs in Odia [@Ray2003, pp. 449-450].
+    - For many speakers, duplicate consonants undergo degemination [@Ray2003].
+* /ɖ/ and /ɖʱ/ may become flaps intervocalically and word-finally [@Ray2003, p. 449].
+
+# Misc. Rules
+
+* Aspirated consonants are deaspirated when preceded by /s/ and followed by a vowel [@Ray2003, p. 449].
+
+# References

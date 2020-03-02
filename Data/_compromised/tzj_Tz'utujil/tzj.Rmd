@@ -1,0 +1,126 @@
+---
+title: "Tz'utujil"
+author: "Emily Strand"
+bibliography: tzj.bib
+output: html_document
+---
+
+Last updated: 2020-02-28
+
+**Compromised: uncertainty related to how reliable the glottal stop is marked; uncertainty surrounding the orthography (Crúbadán includes symbols not present in the alphabet)**
+
+# Background
+
+**Language family**: Mayan / Quichean-Mamean / Greater Quichean / Quichean / Tzutujil
+
+* Tz'utujil is spoken in Guatemala.
+
+# Phonology
+
+## Consonants
+
+* /b/, /d/, and /ɡ/ appear in loanwords [@Dayley1985, p. 22].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar Postalveolar  Palatal  Velar  Uvular Glottal
+"Stops (plain)"            "p"     "t"      ""            ""       "k"    "q"    "ʔ"
+"Stops (ejective)"         "p’"    "t’"     ""            ""       "k’"   "q’"   ""
+"Affricates (plain)"       ""      "ts"     "tʃ"          ""       ""     ""     ""
+"Affricates (ejective)"    ""      "ts’"    "tʃ’"         ""       ""     ""     ""
+Fricatives                 ""      "s"      "ʃ"           ""       ""     "χ"    ""
+Nasals                     "m"     "n"      ""            ""       ""     ""     ""
+Trills                     ""      "r"      ""            ""       ""     ""     ""
+Approximants               "w"     "l"      ""            "j"      ""     ""     ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are plain and those on the right are implosives.", general_title = "")
+```
+
+## Vowels
+
+* Vowel length is contrastive in Tz'utujil [@Dayley1985, p. 25]. Long vowels are represented by duplicate graphemes.
+* /ie/ and /uo/ are present in the Santiago Atitlan dialect [@Dayley1985, p. 27]. However, I have not included them, given that I'm not focusing on a specific dialect.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High     "i"          ""           "u"         
+Mid      "e"          ""           "o"
+Low      ""           "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+* **/t’/ does not appear in the Crúbadán corpus.**
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "/a/"
+"b\'"          "/p’/"
+"d\'"          "/t’/"
+"e"            "/e/"
+"i"            "/i/"
+"j"            "/χ/"
+"k"            "/k/"
+"k\'"          "/k’/"
+"l"            "/l/"
+"m"            "/m/"
+"n"            "/n/"
+"o"            "/o/"
+"p"            "/p/"
+"q"            "/q/"
+"q\'"          "/q’/"
+"r"            "/r/"
+"s"            "/s/"
+"t"            "/t/"
+"u"            "/u/"
+"w"            "/w/"
+"x"            "/ʃ/"
+"y"            "/j/"
+"\'"           "/ʔ/"
+**Digraph**    ""
+"ch"           "/tʃ/"
+"ch\'"         "/tʃ’/"
+"tz"           "/ts/"
+"tz\'"         "/ts’/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /p’/ and /t’/ become voiced and implosive preceding vowels [@Dayley1985, p. 15]. Ejective /q/ may become voiced and implosive in the same environment, but it's optional.
+* /χ/ is realized as [h] syllable-internally (i.e. following a vowel and preceding a consonant) [@Dayley1985, p. 19].
+
+# Misc. Rules
+
+* Word-initial vowels are often preceded by a phonetic glottal stop [@Dayley1985, pp. 17-18].
+    - Some word-initial vowels are preceded by a phonemic glottal stop [@Dayley1985, p. 19], and it is unclear whether these are marked consistently, which compromises the language to some extent.
+* /l/, /r/, /w/, /j/, /m/, and /n/ devoice word-finally [@Dayley1985, p. 20].
+    - /m/ and /n/ are also voiceless preceding consonants.
+    - Word-final /w/, /j/, /l/, and /r/ from Spanish loanwords contrast with the same consonants in native words, due to the fact that the Spanish phonemes don't undergo the same devoicing rule that the native phonemes do [@Dayley1985, p. 23]. This is only specific to the Santiago Atitlan dialect; in all other dialects, these Spanish phonemes fully assimilate to the native phonemes.
+* /w/ is realized as [β] preceding front vowels [@Dayley1985, p. 21].
+* /a/ varies freely with /e/ in several words [@Dayley1985, p. 26].
+
+# References

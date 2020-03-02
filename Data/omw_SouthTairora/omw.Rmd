@@ -11,77 +11,111 @@ Last Updated: 2019-07-19
 
 **Language Family**: Trans-New Guinea / Kainantu-Goroka / Kainantu / Tairora / South Tairora
 
+* South Tairora is spoken in the Eastern Highlands province of Papua New Guinea.
+
 # Phonology
 
 ## Consonants
 
-* /ᵐp/ and /ⁿt/ can be realized with voicing in the Suwaira dialect. [@OmwLVincent2010, p. 578]
-* The contrast between /s/ and /h/ is minor, and is most clearly realized in loanwords. [@OmwLVincent2010, p. v]
-* The palatalized consonants only occur in some dialects. [@OmwAVincent2003, p. 1]
+* The contrast between /s/ and /h/ is minor, and is most clearly realized in loanwords [@OmwLVincent2010, p. v].
+* The palatalized consonants only occur in some dialects [@OmwAVincent2003, p. 1].
+* **/tʲ/ and /ⁿtʲ/ do not appear in the Crúbadán corpus.**
 
-### By place of articulation
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
-Bilabial: /p/, /ᵐp/, /m/, /β/, /β̃/  
-Alveolar: /t/, /ⁿt/, /tʲ/, /ⁿtʲ/, /n/, /nʲ/, /s/, /ɾ/, /ɾ̃/  
-Velar: /k/, /ᵑk/, /kʲ/  
-Glottal: /ʔ/, /h/  
+library(dplyr)
+library(knitr)
+library(kableExtra)
 
-### By manner of articulation
 
-Stops: /p/, /ᵐp/, /t/, /ⁿt/, /tʲ/, /ⁿtʲ/, /k/, /ᵑk/, /kʲ/, /ʔ/  
-Nasals: /m/, /n/, /nʲ/  
-Fricatives: /β/, /s/, /h/  
-Flaps: /ɾ/, /ɾ̃/  
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Bilabial   Alveolar  Velar     Glottal
+"Stops (plain)"            "p ᵐp"     "t ⁿt"    "k ᵑk"    "ʔ"
+"Stops (palatalized)"      ""         "tʲ ⁿtʲ"  "kʲ ᵑkʲ"  ""
+Fricatives                 "β β̃"      "s"       ""        "h"
+"Nasals (plain)"           "m"        "n"       ""        ""
+"Nasals (palatalized)"     ""         "nʲ"      ""        ""
+Flaps                      ""         "ɾ ɾ̃"     ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left of each cell are plain, and phonemes to the right of each cell are nasalized or prenasalized.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
 
 ## Vowels
 
-Short: /i/, /ɘ/, /u/  
-Long: /ɛː/, /aː/, /ɔː/  
-Diphthongs: /ɘj/, /ɘw/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High     "i"      ""        "u"
+Mid      "ɛː"     "ɘ"       "ɔː"
+Low       ""      "aː"      ""
+'), TRUE)
 
-The transcription of the diphthongs is somewhat speculative, because all the sources I have found describe the diphthongs by analogy to English rather than in IPA terms. Both sources compare <au> to the first vowel in "over"; for <ai>, @OmwAVincent2003 compares it to the first vowel in "iron", while @OmwLVincent2010 describes it as between that vowel and the vowel in "may."
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 
-Depending on the dialect of English, the vowel in "over" can be either /oʊ/ or /əʊ/; I preferred the second pronunciation for <au>, because /o/ is not present in any dialect of Tairora. Then, I preferred the analysis of @OmwLVincent2010 for <ai>; I chose /ɘɪ/ as a compromise between the /aɪ/ of "iron" and the /eɪ/ of "may", which had the additional benefit of paralleling with the other /ɘ/-initial Tairora diphthong. This interpretation also maps neatly onto the orthography, since a standalone <a> in Tairora represents /ɘ/.
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ɘj/, /ɘw/"
+'), TRUE)
 
-Finally, I opted for /ɘj/ and /ɘw/ rather than /ɘɪ/ or /ɘʊ/, because @OmwLVincent2010 describes <ai> and <au> as "glides" (p. vi).
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```  
 
 # Alphabet
 
-a - /ɘ/  
-  ai - /ɘj/  
-  au - /ɘw/  
-aa - /aː/  
-e - /ɛː/  
-h - /h/  
-i - /i/  
-k - /k/  
-  ky - /kʲ/  
-m - /m/  
-  mp - /ᵐp/  
-  mw - /β̃/  
-n - /n/  
-  nk - /ᵑk/  
-    nky - /ᵑkʲ/  
-  nr - /ɾ̃/  
-  nt - /ⁿt/  
-    nty - /ⁿtʲ/  
-  ny - /nʲ/  
-o - /ɔː/  
-p - /p/  
-q - /ʔ/  
-r - /ɾ/  
-s - /s/  
-t - /t/  
-  ty - /tʲ/  
-u - /u/  
-v - /β/  
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme
+"a"              "/ɘ/"   
+"e"              "/ɛː/"  
+"h"              "/h/"  
+"i"              "/i/"  
+"k"              "/k/"   
+"m"              "/m/"  
+"n"              "/n/"   
+"o"              "/ɔː/"  
+"p"              "/p/"  
+"q"              "/ʔ/"  
+"r"              "/ɾ/"  
+"s"              "/s/"  
+"t"              "/t/"   
+"u"              "/u/"  
+"v"              "/β/"  
+**Multigraph**    ""
+"ai"             "/ɘj/"  
+"au"             "/ɘw/"  
+"aa"             "/aː/"
+"ky"             "/kʲ/"
+"mp"             "/ᵐp/"  
+"mw"             "/β̃/"  
+"nk"             "/ᵑk/"  
+"nky"            "/ᵑkʲ/"  
+"nr"             "/ɾ̃/"  
+"nt"             "/ⁿt/"  
+"nty"            "/ⁿtʲ/"  
+"ny"             "/nʲ/"
+"ty"             "/tʲ/"
+'), TRUE)
+
+kable(alphabet, align = "c") %>%
+  kable_styling("bordered")
+```
 
 # Lenition Rules
 
-* Prenasalization is often omitted in the Suwaira dialect. [@OmwLVincent2010, p. 578]
+* Prenasalization is often omitted in the Suwaira dialect [@OmwLVincent2010, p. 578].
+* /ᵐp/ and /ⁿt/ can be realized with voicing in the Suwaira dialect [@OmwLVincent2010, p. 578].
 
 # Misc. Rules
 
-* Word-initial /β/ is realized as [b]. [@OmwLVincent2010, p. 578]
+* Word-initial /β/ is realized as [b] [@OmwLVincent2010, p. 578].
 
 # References

@@ -1,0 +1,181 @@
+---
+title: "Hindi"
+author: "Becky Mathew"
+edited by: "Emily Strand"
+bibliography: hi.bib
+output: html_document
+---
+
+Last Updated: 2020-02-24
+
+**Compromised: Conflation between /æ/ and /ɛ/; slight ambiguity between vowel nasalization and underlying /n/; unreliable marking of attested phonemes brought in through loanwords**
+
+# Background
+
+**Language family**: Indo-European / Indo-Iranian / Indo-Aryan / Central zone / Western Hindi / Hindustani
+
+* Hindi is one of the most popular languages in India, and is primarily spoken in the northern states of Uttar Pradesh, Madhya Pradesh, Rajasthan, etc. Hindi and Urdu share many similarities and are sometimes considered to be a single language, Hindustani. Hindi has been influenced by many languages, including Sanskrit, Persian, and English [@Masica1991, pp. 1-32].
+
+# Phonology
+
+## Consonants
+
+* All consonants can appear as geminates word-medially [@Ohala1999, p. 101].
+* Although /f/, /ʃ/, and /z/ only occur in loanwords, they are well established phonemes within the language [@Ohala1999, p. 101].
+* The phonemic inventory below is largely based off @Ohala1999 (p. 100).
+    - However, possibly due to dialectal variation, the analysis done by @Koul2008 is somewhat different (pp. 12, 19). He argues:
+        - for an alveolar trill rather than a flap
+        - that /s/ and /z/ are the only alveolar consonants  
+        - for /ɳ/
+        - for /x/
+        - that velar and palatal nasals are allophones of /n/, assimilating in place to following consonants
+    - Given that @Ohala1983 treats nasals, excluding /m/ and /n/, as allophones, I have opted to do the same (p. 2).
+    - Everything else is kept consistent with @Ohala1999 (p. 100).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Dental  Alveolar  Postalveolar Retroflex Palatal  Velar  Glottal
+"Stops (plain)"            "p b"   "t̪ d̪"      ""         ""         "ʈ ɖ"     ""     "k ɡ"     ""        
+"Stops (aspirated)"       "pʰ bʱ"  "t̪ʰ d̪ʱ"    ""         ""        "ʈʰ ɖʱ"    ""    "kʰ ɡʱ"    ""
+"Affricates (plain)"        ""      ""        ""       "tʃ dʒ"       ""       ""      ""       ""
+"Affricates (aspirated)"    ""      ""        ""       "tʃʰ dʒʱ"     ""       ""      ""       ""
+"Fricatives"                "f"     ""       "s z"       "ʃ"         ""       ""      ""       "h"
+"Nasals"                    "m"     ""        "n"        ""          ""       ""      ""       ""
+"Flaps (plain)"             ""      ""        "ɾ"        ""          "ɽ"      ""      ""       ""
+"Flaps (aspirated)"         ""      ""        ""         ""          "ɽʱ"     ""      ""       ""
+"Approximants"              "ʋ"     ""        "l"        ""          ""       "j"     ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Postalveolar", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 8)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```  
+
+## Vowels
+
+* The vowel /æ/ only appears in English loanwords and is not orthographically distinct (ie. /æ/ and /ɛ/ are represented by the same character); I only account for /ɛ/ in the rules [@Ohala1999, p. 101]. However, given that English loanwords are fairly prominent in Hindi, such that some sources include the phoneme in the inventory [e.g. @Ohala1999], I've marked this language as compromised.
+* Vowel nasalization is contrastive [@Ohala1999, p. 102].
+    - **Nasal /ɐ/ and /ɛ/ don't appear in the Crúbadán corpus.**
+* Vowel length is contrastive for /i/, /a/, and /u/ [@Koul2008, p. 26].
+    - /i/, /u/, and /ɑ/ are considered long, whereas /ɪ/, /ʊ/, and /ɐ/ are short.
+* Adjacent vowels are not realized as complex nuclei [@Ohala1999, p. 101]. This applies to /ɐi/ and /ɐu/, commonly interpreted as diphthongs in related languages.
+* Although several sources represent the inherent vowel as /ə/ [e.g. @Kachru2006, p. xix], I have chosen to use /ɐ/, as other sources [e.g. @Ohala1983, p. 1] infer that it is actually lower than the mid central position. Even @Ohala1999, who uses /ə/, states that /ɐ/ would be more appropriate (p. 102).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+            Front  Central   Back
+High         "i"     ""      "u"
+Near-High    "ɪ"     ""      "ʊ"    
+High-Mid     "e"     ""      "o"
+Low-Mid      "ɛ"     ""      "ɔ"
+Near-Low     ""      "ɐ"     ""
+Low          "æ"     ""      "ɑ"
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* Hindi has an abugida alphabet and is written left to right in the Devanagari script [@Agnihotri2007, p. xviii].
+    - Many other Indo-Aryan languages (such as Marathi, Konkani, Sindhi, etc.) use this alphabet, so it's possible that corpora of Hindi words may accidentally include words from other languages.
+    - The inherent vowel that accompanies every consonant is not realized word-finally (ibid.).
+* The anusvara diacritic seems to have two functions: one being that it indicates nasalization of the preceding vowel [@Language2007, p. 4] and the other being that it represents /n/ (or phonetic variants) following a vowel (i.e. stronger nasalization) [@Shapiro2014, p. 25; @Kellogg2008, p. 10].
+    - Since the anusvara is used more than the anunasik to represent preceding vowel nasalization, I have opted to treat the anusvara as that rather than a following /n/. This also compromised the language to some extent.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+"Consonant Grapheme"        Phoneme               Comment
+"ब"                         "/bɐ/"                  ""
+"भ"                         "/bʱɐ/"                 ""
+"द"                         "/dɐ/"                  ""
+"ध"                         "/dʱɐ/"                 ""
+"ज"                         "/dʒɐ/"                 ""
+"ज़"                         "/zɐ/"                  ""
+"झ"                         "/dʒʱɐ/"                ""
+"ड"                         "/ɖɐ/"                  ""
+"ढ"                         "/ɖʱɐ/"                 ""
+"ड़"                         "/ɽɐ/"   "indicated orthographically with an adjoining nutka diacritic (see Diacritic section below)"
+"ढ़"                         "/ɽʱɐ/"  "indicated orthographically with an adjoining nutka diacritic (see Diacritic section below)"
+"ग"                         "/ɡɐ/"                  ""
+"घ"                         "/ɡʱɐ/"                 ""
+"ह"                         "/hɐ/"                  ""
+"य"                         "/jɐ/"                  ""
+"क"                         "/kɐ/"                 ""
+"ख"                         "/kʰɐ/"                ""
+"ल"                         "/lɐ/"                 ""
+"म"                         "/mɐ/"                 ""
+"न; ण; ञ; ङ"               "/nɐ/"                 ""
+"प"                         "/pɐ/"                 ""
+"फ"                        "/pʰɐ/"                 ""
+"फ़"                         "/fɐ/"  "indicated orthographically with an adjoining nutka diacritic (see Diacritic section below)"
+"र"                         "/ɾɐ/"                 ""
+"स"                         "/sɐ/"                 ""
+"ष; श"                     "/ʃɐ/"   "⟨ष⟩ originally referred to /ʂ/, but the contrast has merged [@Mishra2011ACP, p. 1393]"
+"त"                         "/t̪ɐ/"                 ""  
+"थ"                         "/t̪ʰɐ/"                ""
+"च"                         "/tʃɐ/"                ""
+"छ"                        "/tʃʰɐ/"                ""
+"ट"                         "/ʈɐ/"                 ""
+"ठ"                         "/ʈʰɐ/"                ""
+"व"                         "/ʋɐ/"                 ""
+"ज़"                        "/za/"  "indicated orthographically with an adjoining nutka diacritic (see Diacritic section below)"
+"**Independent Character**"  ""                    ""
+"आ"                         "/ɑ/"                 ""
+"ए"                          "/e/"                 ""
+"ऐ"                          "/ɛ/"                 ""
+"अ"                          "/ɐ/"                 ""
+"ई"                          "/i/"                 ""
+"इ"                          "/ɪ/"                 ""
+"ओ"                         "/o/"                 ""
+"औ"                         "/ɔ/"                 ""
+"ऊ"                         "/u/"                 ""
+"उ"                         "/ʊ/"                 ""
+"ऋ"                         "/ɾɪ/"                ""
+**Diacritic**                 ""                   ""
+"ा"                         "/ɑ/"                 ""
+"े"                          "/e/"                ""
+"ै"                          "/ɛ/"                ""
+"ी"                         "/i/"                 ""
+"ि"                         "/ɪ/"                 ""
+"ो"                         "/o/"                 ""
+"ौ"                         "/ɔ/"                 ""
+"ू"                          "/u/"                ""
+"ु"                          "/ʊ/"                ""
+"ृ"                          "/ɾɪ/"               ""
+"ँ; ं"                        ""         "called an anunasik and an anusvara, respectively, these diacritics indicate nasalization of the preceding vowel [@Kellogg2008, p. 6]. The anusvara is generally used more so than the anunasik [@Language2007, p. 4]."
+"ं"                          "/n/"       "called an anusvara, this diacritic indicates an /n/ following a vowel (has phonetic variants based on the following consonant). This diacritic represents stronger nasalization than the anunasik [@Shapiro2014, p. 25]."
+"्"                           ""         "called a virama, this diacritic deletes the inherent vowel [@Shapiro2014, p. 24]"
+"॰; ॱ; ।; ॥"                   ""         "punctuation - no phonemic realization [@Shapiro2014, p. 26]"
+"़"                           ""          "called a nukta, this diacritic adjoins with consonants, indicating attested phonemes of loanword origin (e.g. /f/) [@Lehal2010, p. 3]. This diacritic is not always written, compromising the language."
+'), TRUE)
+
+kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Hindi follow the order of (C)(C)V(C)(C) [@Koul2008, p. 24].
+
+# Lenition Rules
+
+* The inherent vowel is often elided word-finally [@Kellogg2008, p. 7].
+
+# Misc. Rules
+
+* /ʋ/ is in free variation with [v] and [w] [@Ohala1999, p. 102].
+
+# References
