@@ -56,6 +56,7 @@
 | ht            | Haitian Creole            |                               |
 | hu            | Hungarian                 | under revision                |
 | hy            | Armenian                  | under revision                |
+| inb           | Inga                      |                               |
 | ilo           | Ilocano                   |                               |
 | iu            | Inuktitut                 |                               |
 | iws           | Sepik Iwam                | under revision                |
@@ -78,6 +79,7 @@
 | mcq           | Ese                       |                               |
 | mg            | Malagasy                  |                               |
 | mk            | Macedonian                |                               |
+| mqj           | Mamasa                    |                               |
 | mto           | Totontepec Mixe           |                               |
 | naf           | Nabak                     |                               |
 | nhe           | Nahuatl                   |                               |
@@ -86,6 +88,7 @@
 | nuy           | Nunggubuyu                |                               |
 | omw           | South Tairora             |                               |
 | pa            | Punjabi                   | under revision; lacks lenition|
+| pad           | Paumarí                   | lacks lenition                |
 | pag           | Pangasinan                |                               |
 | pau           | Palauan                   |                               |
 | pio           | Piapoco                   |                               |
@@ -156,7 +159,8 @@
 | mt              | Maltese                     | conflation between /ts/ and /dz/ and between /ʃ/ and /ʒ/                                                             |
 | ne              | Nepali                      | certain diacritics used interchangeably and inconsistently marked                                                    |
 | not             | Nomatsiguenga               | conflation among nasals                                                                                              |
-| or              | Oriya                       | diacritics not always marked; some diacritics used interchangeably                                                   |                 
+| or              | Oriya                       | diacritics not always marked; some diacritics used interchangeably                                                   |   
+| pib             | Yine                        | conflation between /n/ and /h̃/                                                                                       |              
 | qub             | Huallaga Huanuco Quechua    | orthography is suspect; conflation between vowels and glides                                                         |
 | sah             | Yakut                       | conflation between /j/ and /j̃/                                                                                       |
 | sk              | Slovak                      | non-transparent spelling with palatal consonants; ambiguity whether digraphs represent one phoneme or two            |
@@ -221,6 +225,7 @@
 | ee  | Ewe                            | non-transparent spelling with tones                                   |
 | efi | Efik                           | non-transparent spelling with tones                                   |
 | emp | Northern Emberá                | non-transparent spelling                                              |
+| enb | Markweeta                      | non-transparent spelling with tones                                   |
 | enq | Enga                           | non-transparent spelling with tones                                   |
 | et  | Estonian                       | non-transparent spelling with contrastive syllable length             |
 | faa | Fasu                           | non-transparent spelling with tones                                   |
@@ -280,6 +285,7 @@
 | lwo | Luwo                           | non-transparent spelling with tones and breathy vowels                |
 | man | Mandingo                       | non-transparent spelling with tones                                   |
 | mas | Maasai                         | insufficient tokens                                                   |
+| mcb | Machiguenga                    | non-transparent spelling with tones                                   |
 | mcd | Sharanahua                     | non-transparent spelling with tones                                   |
 | meu | Motu                           | non-transparent spelling with vowel length                            |
 | mfi | Wandala                        | non-transparent spelling with tones                                   |
@@ -300,12 +306,14 @@
 | nfr | Nafaanra                       | non-transparent spelling with tones                                   |
 | nhg | Tetelcingo Nahuatl             | non-transparent spelling with vowel length                            |
 | no  | Norwegian                      | non-transparent spelling with tones and vowel length                  |
+| ntp | Northern Tepehuan              | non-transparent spelling with tones                                   |
 | nv  | Navajo                         | non-transparent spelling with vowel nasalization                      |
 | ny  | Chichewa                       | non-transparent spelling with tones                                   |
 | nyn | Nyankore                       | non-transparent spelling with tones                                   |
 | om  | Oromo                          | non-transparent spelling with tones                                   |
 | opm | Oksapmin                       | non-transparent spelling with vowels                                  |
 | ood | Tohono O'odham                 | non-transparent spelling                                              |
+| ots | Estado de México Otomi         | non-transparent spelling with tones                                   |
 | pab | Parecís                        | non-transparent spelling with vowel length and nasalization           |
 | pao | Northern Paiute                | non-transparent spelling with vowel length                            |
 | pap | Papiamentu                     | non-transparent spelling with vowels                                  |

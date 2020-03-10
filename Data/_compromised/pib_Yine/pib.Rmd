@@ -1,0 +1,105 @@
+---
+title: "Yine"
+author: "Emily Strand"
+bibliography: pib.bib
+output: html_document
+---
+
+Last Updated: 2020-03-05
+
+**Slightly Compromised: possible conflation between /n/ and /h̃/ (see Misc. Rules)**
+
+# Background
+
+**Language family**: Arawakan / Maipuran / Southern Maipuran / Purus
+
+* Also referred to as Pira, Yine is spoken in Peru.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Labial   Alveolar Postalveolar  Palatal  Velar  Glottal
+Stops                        "p"      "t"      ""            ""       "k"    ""
+Affricates                   ""       "ts"     "tʃ"          "tç"     ""     ""
+Fricatives                   ""       "s"      "ʃ"           "ç"      ""     "h̃"
+Nasals                       "m"      "n"      ""            ""       ""     ""
+Flaps                        ""       "ɾ"      ""            ""       ""     ""
+Approximants                 ""       "l"      ""            "j"      "w"    ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Vowel length is said to be a phonemic feature, but rather marginal [@Sebastian2008, p. 367]. Long vowels are indicated by duplicate graphemes.
+    - Other than duplicate like-vowels, consecutive vowels do not occur in Yine.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""          "ɯ"
+Mid       "e"         ""          "o"         
+Low       ""          "a"         ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme
+"a"              "/a/"         
+"e"              "/e/"
+"g"              "/h̃/"      
+"i"              "/i/"
+"j"              "/ç/"
+"k"              "/k/"
+"l"              "/l/"
+"m"              "/m/"
+"n"              "/n/"
+"o"              "/o/"
+"p"              "/p/"
+"r"              "/ɾ/"
+"s"              "/s/"
+"t"              "/t/"
+"u"              "/ɯ/"
+"w"              "/w/"
+"x"              "/tʃ/"
+"y"              "/j/"
+**Digraph**      ""
+"ch"             "/tç/"
+"sh"             "/ʃ/"
+"ts"             "/ts/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```  
+
+# Misc. Rules
+
+* /ɡ/ is realized as [n] preceding /ç/ and /k/ [@Bisso2009, p. 66]. In this environment, both ⟨n⟩ and ⟨g⟩ are sometimes used to indicate the phonetic realization, thus, there is some conflation between /n/ and /h̃/.
+* Vowels nasalize following nasals or /h̃/ [@Sebastian2008, p. 367].
+* /ɾ/ may be trilled word-initially (ibid.).
+* /w/ is realized as [β] preceding front vowels [@Nies2008, p. 1].
+
+# References

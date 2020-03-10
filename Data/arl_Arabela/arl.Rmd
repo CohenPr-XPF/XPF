@@ -25,17 +25,17 @@ library(kableExtra)
 
 
 consonants <- read.table(textConnection('
-"Manner of Articulation"    Bilabial    Alveolar    Postalveolar    Velar    Glottal
-Stops                         "p"          "t"           ""          "k"       ""
-Fricatives                     ""          "s"           "ʃ"          ""       "h"
-Nasals                        "m"          "n"           ""           ""       ""
-Trills                        ""           "r"            ""          ""        ""
-Approximants                  "w"           ""            ""          "j"       ""
+"Manner of Articulation"    Bilabial    Alveolar    Postalveolar    Palatal  Velar    Glottal
+Stops                         "p"          "t"           ""           ""      "k"       ""
+Fricatives                     ""          "s"           "ʃ"          ""      ""        "h"
+Nasals                        "m"          "n"           ""           ""      ""        ""
+Trills                        ""           "r"           ""           ""      ""        ""
+Approximants                  "w"           ""           ""           "j"     ""        ""
 '), TRUE)
 
-kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Velar", "Glottal"), align = 'c') %>%
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
-  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
   column_spec(1, bold = TRUE)
 ```
 

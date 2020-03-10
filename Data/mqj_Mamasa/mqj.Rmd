@@ -1,0 +1,105 @@
+---
+title: "Mamasa"
+author: "Emily Strand"
+bibliography: mqj.bib
+output: html_document
+---
+
+Last updated: 2020-03-03
+
+# Background
+
+**Language family**: Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Sulawesi / South Sulawesi / Northern / Toraja-Sa'dan
+
+* Mamasa is spoken in the South Sulawesi and West Sulawesi provinces of Indonesia.
+
+# Phonology
+
+## Consonants
+
+* Voiceless stops, nasals, /s/, /l/, and /r/ geminate [@Matti1991, p. 57].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar  Palatal     Velar    Glottal
+Stops                      "p b"     "t d"     ""          "k ɡ"    "ʔ"
+Fricatives                 ""        "s"       ""          ""       ""
+Nasals                     "m"       "n"       ""          "ŋ"      ""
+Trills                     ""        "r"       ""          ""       ""
+Approximants               "w"       "l"       "j"         ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* Vowel length is not considered to be a phonemic feature [@Matti1991, p. 58]. Rather, adjacent like-vowels are interpreted separately with an intervening epenthetic glottal stop.
+* Additionally, adjacent vowels do not constitute complex nuclei (ibid.).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High     "i"          ""           "u"         
+Mid      "e"          ""           "o"
+Low      ""           "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "/a/"
+"b"            "/b/"
+"d"            "/d/"
+"e"            "/e/"
+"g"            "/ɡ/"
+"i"            "/i/"
+"k"            "/k/"
+"l"            "/l/"
+"m"            "/m/"
+"n"            "/n/"
+"o"            "/o/"
+"p"            "/p/"
+"r"            "/r/"
+"s"            "/s/"
+"t"            "/t/"
+"u"            "/u/"
+"w"            "/w/"
+"y"            "/j/"
+"\'"           "/ʔ/"
+**Digraph**    ""
+"ng"           "/ŋ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Mamasa follow the order of (C)V(C) [@Matti1991, p. 69].
+
+# Lenition Rules
+
+* /t/ varies freely with [tʃ] [@Matti1991, p. 58].
+
+# References

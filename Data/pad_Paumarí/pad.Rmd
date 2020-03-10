@@ -1,0 +1,108 @@
+---
+title: "Paumarí"
+author: "Emily Strand"
+bibliography: pad.bib
+output: html_document
+---
+
+Last updated: 2020-03-06
+
+# Background
+
+**Language family**: Arauan
+
+* Paumarí is spoken in the Amazonas state of Brazil.
+
+# Phonology
+
+## Consonants
+
+* The Paumarí language is very interesting as it contrasts stops on three different dimensions, two of which (implosives and aspirates) are not homogeneous [@Everett2003, p. 23].
+* @Chapman1998 and @Chapman1991 (p. 346) include /ʃ/ in the phonemic inventory, whereas @Everett2003 (p. 23) doesn't. I have chosen to include it, given that it is represented specifically in the orthography, but it seems extremely marginal (only present in 0.1% of the Crúbadán corpus).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar  Postalveolar  Velar   Glottal
+"Stops (plain)"            "p b"     "t d"     ""            "k ɡ"   "ʔ"
+"Stops (aspirated)"        ""        "tʰ"      ""            "kʰ"    ""
+"Stops (implosive)"        "ɓ"       "ɗ"       ""            ""      ""
+Affricates                 ""        ""        "tʃ dʒ"       ""      ""
+Fricatives                 "f"       "s"       "ʃ"           ""      "h"
+Nasals                     "m"       "n"       ""            ""      ""
+Flaps                      ""        "ɾ"       ""            ""      ""
+Approximants               ""        "w"       ""            ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* Adjacent vowels are interpreted as separate nuclei [@Chapman1991, p. 346].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High     "i"          ""           ""         
+Mid      ""           ""           "o"
+Low      ""           "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "/a/"
+"b"            "/b/"
+"\'b"          "/ɓ/"
+"d"            "/d/"
+"\'d"          "/ɗ/"
+"f"            "/f/"
+"g"            "/ɡ/"
+"h"            "/h/"
+"i"            "/i/"
+"j"            "/dʒ/"
+"k"            "/k/"
+"m"            "/m/"
+"n"            "/n/"
+"o"            "/o/"
+"p"            "/p/"
+"r"            "/ɾ/"
+"s"            "/s/"
+"t"            "/t/"
+"v"            "/w/"
+"x"            "/ʃ/"
+"\'"           "/ʔ/"
+**Digraph**    ""
+"kh"           "/kʰ/"
+"th"           "/tʰ/"
+"tx"           "/tʃ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Misc. Rules
+
+* Predictable stress patterns elicit phonetic lengthening of both vowels and consonants [@Chapman1991, p. 346].
+
+# References

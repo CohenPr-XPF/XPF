@@ -43,15 +43,16 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 # Vowels
 
-* Although, long vowels (duplicate graphemes) are apparent in the language, @SilvaTavares2005 explains that there are no minimal pairs between long and short vowels (p. 11). Long vowels are likely to result as a by-product from syllable reduction. In the rules, instances of long vowels will be transcribed as short.
-* Vowels that occur consecutively are interpreted as sequences rather than complex phonemes [@SilvaTavares2005, p. 29].
+* Although, long vowels (duplicate graphemes) are apparent in the language, @SilvaTavares2005 explains that there are no minimal pairs between long and short vowels (p. 11). Long vowels likely result as a by-product from syllable reduction. In the rules, instances of long vowels will be transcribed as short.
+* (Non-like) vowels that occur consecutively are interpreted as sequences rather than complex phonemes [@SilvaTavares2005, p. 29].
+* I hove chosen to use /ɘ/ rather than /ə/ (used in @SilvaTavares2005, pp. 9, 38) to represent the mid central vowel, given that it doesn't appear to be a true reduced vowel (e.g. /əpə/ -> arm).
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 vowels <- read.table(textConnection('
          Front      Central       Back
 High      "i"         "ɨ"          "u"
-Mid       "e"         "ə"          "o"
+Mid       "e"         "ɘ"          "o"
 Low        ""         "a"          ""
 '), TRUE)
 
@@ -68,7 +69,7 @@ alphabet <- read.table(textConnection('
 Grapheme      Phoneme
 "a"            "/a/"
 "e"            "/e/"
-"ë"            "/ə/"
+"ë"            "/ɘ/"
 "h"            "/h/"
 "i"            "/i/"
 "ï"            "/ɨ/"
@@ -101,19 +102,18 @@ kable(alphabet, align = 'c') %>%
 
 * /p/, /t/, and /k/ are voiced preceding voiced consonants [@Jackson1972, p. 48].
 * /p/, /t/, and /k/ primarily debuccalize preceding /p/, /t/, and /k/, respectively (ibid.).
-    - /p/ can also debuccalize preceding (sometimes) /m/.
-    - /t/ can also debuccalize preceding /l/ and (sometimes) /n/.
-* /t/ occasionally palatalizes preceding /i/ [@SilvaTavares2005, p. 18].
+    - /p/ can also debuccalize preceding /m/.
+    - /t/ can also debuccalize preceding /l/ and /n/.
 * /w/ and /j/ are deleted preceding /u/ and /i/, respectively [@SilvaTavares2005, p. 30].
 * Vowels and whole syllables are often deleted, which is consistent with other Carib languages [@SilvaTavares2005, p. 31].
 
 # Misc. Rules
 
-* /h/ varies freely with several different places of articulation (e.g. voiceless bilabial fricative preceding /p/, voiceless dental fricative preceding /m/, and voiceless velar fricative preceding velar consonants) [@Jackson1972, p. 48].
 * /p/, /t/, and /k/ can change to nasals, maintaining place of articulation (e.g. /p/ goes to /m/), preceding other nasal consonants [@Jackson1972, pp. 48-49].
 * Vowels often nasalize preceding nasal consonants [@SilvaTavares2005, p. 14].
 * Consonants do not geminate in Wayana [@SilvaTavares2005, p. 17]. Phonological processes, such as the debuccalization, mentioned above, seem to remedy these potential consonant clusters. @SilvaTavares2005 explains that there is one instance of consonant gemination (⟨kk⟩); however, he does posit that it's merely due to a mis-transcription (p. 17). Therefore, geminates will not be accounted for in the rules.
 * [r] and [l] vary freely with /ɽ/ [@SilvaTavares2005, p. 24].
 * /w/ varies freely with /β/ preceding front vowels (ibid.).
+* /t/ occasionally palatalizes preceding /i/ [@SilvaTavares2005, p. 18].
 
 # References

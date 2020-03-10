@@ -124,7 +124,7 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * Voiceless stops can become voiced following nasal vowels [@facundes_language_2000, p. 73].
-* /h/ deletes when followed by a vowel (ibid.).
+* /h/ deletes when followed by a vowel [@facundes_language_2000, p. 83].
 
 # Misc. Rules
 

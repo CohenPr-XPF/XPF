@@ -1,0 +1,26 @@
+# Yine Rule Set
+# Written by: Emily
+# Last Updated: 2020-03-05
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aeiklmnopstw],,,,
+class,vowels,[aeioɯ],,,,
+# Individual Letters
+sub,g,h̃,2,,,
+sub,j,ç,2,,,
+sub,r,ɾ,2,,,
+sub,u,ɯ,2,,,
+sub,x,tʃ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,tç,3,,h,
+sub,h,,3,c,,"clean-up",
+sub,s,ʃ,3,,h,
+sub,h,,3,s,,"clean-up",
+sub,t,ts,3,,s,
+sub,s,,3,t,,"clean-up",
+# Vowel Length
+ipasub,({vowels}) \1,\1 ː,2,,,
+# Misc. Rules
+sub,-,,2,,,

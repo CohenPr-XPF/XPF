@@ -1,0 +1,121 @@
+---
+title: "Inga"
+author: "Emily Strand"
+bibliography: inb.bib
+output: html_document
+---
+
+Last updated: 2020-03-06
+
+# Background
+
+**Language family**: Quechuan / Quechua II / B.
+
+* Inga is spoken in Colombia.
+
+# Phonology
+
+## Consonants
+
+* /b/, /d/, /ɡ/, and /f/ appear in Spanish loanwords [@Caudmont1953, p. 363].
+    - @Levinsohn1976 (p. 23) and @McDowell2014 (p. 194) include the voiced stops in the phonemic inventory, most likely because the language has been majorly influenced by them (voiced stops make up 44.5% of the Crúbadán corpus).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Dental  Postalveolar  Palatal     Velar    
+Stops                      "p"       "t̪"     ""            ""          "k"     
+Affricates                 ""        ""      "tʃ"          ""          ""         
+Fricatives                 ""        "s̪"     "ʃ"           ""          "x"       
+Nasals                     "m"       "n̪"     ""            "ɲ"         ""          
+Flaps                      ""        "ɾ"     ""            ""          ""        
+Approximants               "w"       "l̪"     ""            "j ʎ"       ""        
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Postalveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: The palatal approximant on the right is lateral.", general_title = "")
+```
+
+## Vowels
+
+* /e/ and /o/ appear in Spanish loanwords [@Caudmont1953, p. 363].
+* Based on the syllable structure of the language (see Syllable Structure below), adjacent vowels are interpreted as independent nuclei (one of which generally bears stress) [@Levinsohn1976, p. 21].  
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High     "i"          ""           "u"         
+Low      ""           "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme        Comment  
+"a"            "/a/"           ""
+"c"            "/k/"     "preceding back vowels"
+"i"            "/i/"           ""
+"j"            "/x/"           ""
+"k"            "/k/"           ""
+"l"            "/l̪/"           ""
+"m"            "/m/"           ""
+"n"            "/n̪/"           ""
+"ñ"            "/ɲ/"           ""
+"p"            "/p/"           ""
+"r"            "/ɾ/"           ""
+"s"            "/s̪/"           ""
+"t"            "/t̪/"           ""
+"u"            "/u/"           ""
+"w"            "/w/"           ""
+"y"            "/j/"           ""
+**Digraph**    ""              ""
+"ch"           "/tʃ/"          ""
+"ll"           "/ʎ/"           ""
+"qu"           "/k/"     "preceding front vowels"
+"sh"           "/ʃ/"           ""
+"hu"           "/w/"           ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Inga follow the order of (C)(C)V(C) [@Levinsohn1976, p. 21].
+
+# Lenition Rules
+
+* Voiceless stops become voiced following nasal consonants [@Bilbao1976, p. 21].
+* /p/ may spirantize preceding /x/ (ibid.).
+* /s/ may become voiced preceding /n/ [@Bilbao1976, p. 22].
+* In loanwords [@Levinsohn1976, p. 24]:
+    - /b/ becomes [ɸ] preceding voiceless consonants.
+    - /b/ varies freely with [v] word-initially.
+    - /d/ varies freely with [ð] intervocalically.
+    - /ɡ/ becomes [ɣ] preceding /w/.
+    - /ɡ/ becomes [x] word-initially (preceding high vowels), word-finally, intervocalically, or preceding voiceless consonants.
+
+# Misc. Rules
+
+* /n/ assimilates in place preceding velar consonants [@Bilbao1976, p. 22].
+* /i/ and /u/ are realized as [j] and [w] postvocalically [@Bilbao1976, p. 23].
+* Vowels may become nasalized preceding nasal consonants [@Levinsohn1976, p. 25].
+
+# References
