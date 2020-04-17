@@ -1,0 +1,112 @@
+---
+title: "Rabinal Achi'"
+author: "Emily Strand"
+bibliography: acr-x-rabinal.bib
+output: html_document
+---
+
+Last Updated: 2020-03-30
+
+**Slightly Compromised: suspect marking of vowel length**
+
+# Background
+
+**Language family**: Mayan / Quichean-Mamean / Greater Quichean / Quichean / Quiche-Achi
+
+* Rabinal Achi' is spoken in Guatemala. It is one of two dialects of Achi. The other dialect is known as Cubulco.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Labial   Alveolar  Postalveolar  Palatal  Velar  Uvular  Glottal
+Stops                       "p ɓ"     "t t’"       ""          ""    "k k’"  "q q’"    "ʔ"
+Affricates                   ""      "ts ts’"   "tʃ tʃ’"       ""      ""     ""       ""  
+Fricatives                   ""        "s"        "ʃ"          ""      ""     ""       "h"  
+Nasals                       "m"       "n"         ""          ""      ""     ""       ""
+Flaps                        ""        "ɾ"         ""          ""      ""     ""       ""  
+Approximants                 "w"       "l"         ""          "j"     ""     ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are plain and those on the right are ejectives. The labial stop on the right is an implosive.", general_title = "")
+```
+
+## Vowels
+
+* Vowel length is contrastive in Rabinal Achi' [@Pellicer2005, p. 15]. Long vowels are indicated by duplicate vowel graphemes.
+    - All the literature pertaining to the language suggests the marking of vowel length; however, the output of the Crúbadán corpus (only 33 accounts reflecting vowel length) makes this suspect.
+    - Unlike the languages in the Western branch of Proto-Mayan that have undergone neutralization of vowel length, languages in the Eastern branch (including Achi) have not [@England2017].
+    - I have chosen to categorize this language as compromised, given the suspect nature of the vowel length marking.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme
+"a"             "/a/"
+"b; b\'"        "/ɓ/"
+"e"             "/e/"
+"i"             "/i/"
+"j"             "/h/"
+"k"             "/k/"
+"k\'"           "/k’/"
+"l"             "/l/"
+"m"             "/m/"
+"n"             "/n/"
+"o"             "/o/"
+"p"             "/p/"
+"q"             "/q/"  
+"q\'"           "/q’/"
+"r"             "/ɾ/"
+"s"             "/s/"
+"t"             "/t/"
+"t\'"           "/t’/"
+"u"             "/u/"
+"w"             "/w/"
+"x"             "/ʃ/"
+"y"             "/j/"
+"\'"            "/ʔ/"
+**Digraph**     ""
+"ch"            "/tʃ/"
+"ch\'"          "/tʃ’/"
+"tz"            "/ts/"
+"tz\'"          "/ts’/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Misc. Rules
+
+* Voiceless stops are aspirated word-finally and following consonants [@Solares2008, pp. 18-20].
+* Phonetic glottal stops precede vowels in word-initial positions [@Solares2008, p. 21].
+
+# References

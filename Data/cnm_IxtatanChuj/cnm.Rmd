@@ -1,0 +1,113 @@
+---
+title: "Ixtatán Chuj"
+author: "Bill Mizgerd"
+bibliography: cnm.bib
+output: html_document
+---
+
+Last Updated: 2020-03-05
+
+# Background
+
+**Language Family**: Mayan / Kanjobalan-Chujean / Chujean / Chuj
+
+The Crúbadán code for the entire Chuj language is cac; however, I will be principally focusing on the Ixtatán dialect of Chuj (cnm) because it has a larger corpus in Crúbadán.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Labial     Alveolar  Postalveolar  Palatal   Velar      Uvular  Glottal
+Stops                        "p ɓ"      "t tʼ"    ""            ""        "k kʼ"     ""      "ʔ"
+Affricates                   ""         "ts tsʼ"  "tʃ tʃʼ"      ""        ""         ""      ""
+Fricatives                   ""         "s"       "ʃ"           ""        ""         "χ"      ""
+Nasals                       "m"        "n"       ""            ""        "ŋ"        ""      ""
+Flaps                        ""         "ɾ"       ""            ""        ""         ""      ""
+Approximants                 "w"        "l"       ""            "j"       ""         ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are plain and those on the right are implosive (labial stop) or ejective.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* @CnmWilliams1965 lists /aː/ as phonemic (p. 225), but this does not appear in my other sources.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front   Central   Back
+High   "i"     ""        "u"
+Mid    "e"     ""        "o"
+Low    ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* Chuj has multiple orthographies, which represent some phonemes in different ways; however, these orthographies do not have any overlap that would create ambiguity, meaning that the language is not compromised.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme  
+"a"             "/a/"
+"b’"            "/ɓ/"
+"c"             "/k/"
+"c’"            "/kʼ/"
+"d’"            "/tʼ/"
+"e"             "/e/"
+"i"             "/i/"
+"j"             "/χ/"
+"k"             "/k/"
+"k’"            "/kʼ/"
+"l"             "/l/"
+"m"             "/m/"
+"n"             "/n/"
+"n̈"             "/ŋ/"
+"o"             "/o/"
+"p"             "/p/"
+"r"             "/ɾ/"
+"s"             "/s/"
+"t"             "/t/"
+"t’"            "/tʼ/"
+"u"             "/u/"
+"v"             "/w/"
+"w"             "/w/"
+"x"             "/ʃ/"
+"y"             "/j/"
+"\'"            "/ʔ/"
+**Digraph**      ""
+"ch"            "/tʃ/"
+"ch’"           "/tʃʼ/"
+"nh"            "/ŋ/"
+"qu"            "/k/"
+"q’u"           "/kʼ/"
+"tz"            "/ts/"
+"tz’"           "/tsʼ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* Some instances of historic /q/ have spirantized to become /χ/ in modern Chuj [@CnmRaymundo2014, pp. 21-22].
+
+# References

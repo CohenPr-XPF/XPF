@@ -1,0 +1,21 @@
+# Misima-Panaeati Rule Set
+# Written by: Allison
+# Last Updated: 2020-03-05
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abehikmopuw-],,,,
+class,labial,[pbm],,,,
+# Individual Letters
+sub,d,d̪,2,,,
+sub,g,ɡ,2,,,
+sub,l,ɭ,2,,,
+sub,n,n̪,2,,,
+sub,s,s̪,2,,,
+sub,t,t̪,2,,,
+sub,v,β,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,1,,,
+# Digraphs
+ipasub,({labial}) w,\1ʷ,2,,,
+# Misc. Rules
+sub,-,,2,,,

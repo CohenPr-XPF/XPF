@@ -6,7 +6,7 @@ bibliography: hu.bib
 output: html_document
 ---
 
-Last Updated: 2019-12-18
+Last Updated: 2020-03-18
 
 # Background
 
@@ -62,7 +62,7 @@ Low            ""             "aː"        "ɑ"
 kable(vowels, align = 'c') %>%
   kable_styling("bordered") %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: Phonemes with the diacritic (ː) are phonemeically long. The two high front vowels on the left are unrounded and the two on the right are rounded. The high-mid front vowel on the left is unrounded and the two on the right are rounded.", general_title = "")
+  footnote(general = "Note: Phonemes with the diacritic (ː) are phonemically long. The two high front vowels on the left are unrounded and the two on the right are rounded. The high-mid front vowel on the left is unrounded and the two on the right are rounded.", general_title = "")
 ```
 
 # Alphabet

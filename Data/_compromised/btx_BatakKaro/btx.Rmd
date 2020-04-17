@@ -1,0 +1,122 @@
+---
+title: "Batak Karo"
+author: "Daniela Wiepert"
+edited by: "Emily Strand"
+bibliography: btx.bib
+output: html_document
+---
+
+Last Updated: 2020-04-08
+
+**Compromised: conflation among /e/, /ɘ/, and /ɯ/**
+
+# Background
+
+**Language Family**: Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Sundic / Sumatra / Batak / Northern
+
+* Batak Karo is spoken in the Aceh and North Sumatra provinces of Indonesia.
+
+# Phonology
+
+## Consonants
+
+* @Woollams1996 argues for /t̪/ rather than /t/ (p. 15).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Labial  Alveolar  Alveopalatal  Palatal  Velar  Glottal
+Stops                        "p b"    "t d"        ""          ""     "k ɡ"    ""
+Affricates                    ""       ""        "tɕ dʑ"       ""      ""      ""
+Fricatives                    ""       "s"         ""          ""      ""      "h"
+Nasals                        "m"      "n"         ""          ""      "ŋ"     ""
+Trill                         ""       "r"         ""          ""      ""      ""
+Approximants                  "w"      "l"         ""          "j"     ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Alveopalatal", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* @Woollams1996 specifies a high central vowel /ɨ/, but represents it as the high back unrounded vowel /ɯ/ (pp. 18-19). In his 2004 book, he also specifies it as back rather than central [@Woollams2004, p. 536]. I have chosen to use /ɯ/, as it is more consistent with the literature.
+* @Woollams1996 also specifies /ə/ as a phoneme (pp. 19, 22). Schwa, however, doesn't seem to be appropriate in this case as it doesn't represent a truly reduced vowel (i.e. it sometimes appears in stressed syllables). I have chosen to use /ɘ/ instead.
+* Adjacent vowels are interpreted as sequences rather than complex nuclei [@Woollams1996, p. 27].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""          "ɯ u"
+Mid         "e"         "ɘ"          "o"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: The high back vowel on the left is unrounded and the one on the right is rounded.", general_title = "")
+```
+
+# Alphabet
+
+* Although @Woollams2004 specifies one-to-one correspondences between the graphemes ⟨é⟩, ⟨e⟩, and ⟨ë⟩ and the respective phonemes /e/, /ɘ/, and /ɯ/ (p. 536), he also states that all three phonemes are represented by ⟨e⟩ [@Woollams1996, p. 23]. Therefore, the language is compromised.
+    - Although the Crúbadán corpus does not include the graphemes ⟨é⟩ and ⟨ë⟩, I have included rules for them in the rule set. I have decided to transcribe ⟨e⟩ to /ɘ/ as the default rule, given that /ɘ/ seems to be the most frequently occurring phoneme of the three (based on the phonemic representations in @Woollams1996).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme                 Comment
+"a"              "/a/"                    ""
+"b"              "/b/"                    ""
+"c"              "/tɕ/"                   ""
+"d"              "/d/"                    ""
+"e"          "/e/,/ɯ/,/ɘ/"            "/ɘ/: default"
+"g"              "/ɡ/"                    ""
+"h"              "/h/"                    ""
+"i"              "/i/"                    ""
+"j"              "/dʑ/"                   ""
+"k"              "/k/"                    ""
+"l"              "/l/"                    ""
+"m"              "/m/"                    ""
+"n"              "/n/"                    ""
+"o"              "/o/"                    ""
+"p"              "/p/"                    ""
+"r"              "/r/"                    ""
+"s"              "/s/"                    ""
+"t"              "/t/"                    ""
+"u"              "/u/"                    ""
+"w"              "/w/"                    ""
+"y"              "/j/"                    ""
+**Digraph**       ""                      ""
+"ng"             "/ŋ/"                    ""
+'), TRUE)
+kable(alphabet, align = "c") %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /h/ is normally elided word-initially [@Woollams1996, p. 30].
+* /k/ is realized as voiceless glottal stop word-finally and preceding consonants [@Woollams1996, p. 16].
+* Vowels are often elided in fast speech [@Woollams1996, p. 30].
+* In unstressed syllables, /ɯ/ is generally realized as [ə] [@Woollams1996, p. 22].
+
+# Misc. Rules
+
+* Voiceless stops tend to be unreleased word-finally [@Woollams1996, p. 16].
+* /h/ is sometimes realized as /x/ syllable-finally [@Woollams2004, p. 536].
+* Syllable-initially, /r/ may be realized as a flap (ibid.).
+* Consonant gemination occurs with voiceless stops (including /tɕ/), nasals, /s/ and /r/ [@Woollams1996, p. 26].
+* [j] and [w] epenthesis may occur intervocalically [@Woollams1996, p. 29].
+
+# References

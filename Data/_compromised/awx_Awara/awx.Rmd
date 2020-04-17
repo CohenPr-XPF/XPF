@@ -1,0 +1,119 @@
+---
+title: "Awara"
+author: "Becky Mathew"
+bibliography: awx.bib
+output: html_document
+---
+
+Last Updated: 2020-04-13
+
+**Compromised: conflation between /nd/, /mb/, /nɡ/ and /d/, /b/, /ɡ/, respectively**
+
+# Background
+
+**Language Family**: Trans-New Guinea, Main Section, Central and Western, Huon-Finisterre, Finisterre, Wantoat
+
+* Awara is spoken in the Morobe province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+* @Quigley2002 and @Quigley2003 disagree slightly on the consonant inventory of Awara; I have chosen to follow more closely the more recent source (p. 4; p. 14).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Labial     Alveolar  Palatal     Velar      Glottal
+Stops                        "p b"      "t d"     ""       "k kʷ ɡ ɡʷ"     ""
+Fricatives                   "β"        "s"       ""           "ɣ"        "h"
+Nasals                       "m"        "n"       ""         "ŋ ŋʷ"        ""
+Approximants                 ""         "l"       "j"          ""          ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Velar consonants that have the diacritic (ʷ) are labialized.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Both @Quigley2002 and @Quigley2003 indicate a mid central vowel (p. 4; p. 35, 37); however, they represent it as /ʌ/. I have chosen to use /ɘ/, as it's more reflective of the description.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front   Central   Back
+High   "i"     ""        "u"
+Mid    "e"     "ɘ"       "o"
+Low    ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* Surface level prenasalization of consonants /b/, /d/, and /ɡ/ is orthographically represented intervocalically [@Quigley2003, p. 155]. This compromises the language because there is uncertainty whether the sequence ⟨ambi⟩, for example, represents /ambi/ or /abi/ ([ambi] realization). I have chosen to transcribe the language how it appears; that is, every ⟨mb⟩ sequence, for example, transcribes to /mb/.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme               Comment
+"a"             "/a/"                 ""
+"ä"             "/ɘ/"                 ""
+"b"             "/b/"                 ""
+"d"             "/d/"                 ""
+"e"             "/e/"                 ""
+"g"             "/ɡ/"                 ""
+"h"             "/h/"                 ""
+"i"             "/i/"                 ""
+"k"             "/k/"                 ""
+"l; r"          "/l/"          "intervocalically"
+"m"             "/m/"                 ""
+"n"             "/n/"                 ""
+"o"             "/o/"                 ""
+"p"             "/p/"                 ""
+"s"             "/s/"                 ""
+"t"             "/t/"                 ""
+"u"             "/u/"                 ""
+"w"             "/β/"                 ""
+"x"             "/ɣ/"                 ""
+"y"             "/j/"                 ""
+**Multigraph**   ""                   ""
+"gw"            "/ɡʷ/"                ""
+"kw"            "/kʷ/"                ""
+"ng"            "/ŋ/"                 ""
+"ngw"           "/ŋʷ/"                ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Awara follow the order of (C)V(C) [@Quigley2003, p. 175].
+
+# Lenition Rules
+
+* Voiceless stops (including /kʷ/) lenite intervocalically at morpheme boundaries [@Quigley2003, p. 26].
+* /t/ and /k/ may be realized as [l] and [ɣ] word-initially [@Quigley2003, pp. 20-21].
+* /k/, /p/, and /t/ are realized as [ɣ], [w], and [l] intervocalically [@Quigley2002, p. 6].
+* /pu/ may be realized as [βu] or [wu] word-initially [@Quigley2003, p. 22].
+
+# Misc. Rules
+
+* Voiced stops have prenasalized variants [@Quigley2003, pp. 16-17].
+    - Word-initially, they are realized as prenasalized consonants.
+    - Syllable-initially, following open syllables, the homorganic nasal is realized as the coda of the preceding syllable and the voiced stop is realized as the onset of the following syllable.
+* Voiceless stops tend to be aspirated word-initially and syllable-initially intervocalically [@Quigley2003, p. 17].
+* Glottal stop epenthesis may occur word-initially, preceding vowels [@Quigley2003, p. 18].
+
+# References

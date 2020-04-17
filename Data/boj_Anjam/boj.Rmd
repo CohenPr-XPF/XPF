@@ -1,0 +1,108 @@
+---
+title: "Anjam"
+author: "Daniela Wiepert"
+bibliography: boj.bib
+output: html_document
+---
+
+Last Updated: 2020-02-19
+
+# Background
+
+**Language Family**: Trans New Guinea / Madang-Adelbert Range / Mindjim
+
+* Anjam is spoken in the Madanp province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+* /j/ and /w/ are considered consonants in non-syllabic positions (i.e. the onset or coda) [@rucker1990, p. 2].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Bilabial   Alveolar    Palatal   Velar      Uvular
+Stops                        "p b"      "t d"       ""        "k ɡ"      "q"
+Affricates                   ""         "dʑ"        ""        ""         ""
+Fricatives                   ""         "s"         ""        ""         ""
+Nasals                       "m"        "n"         "ɲ"       "ŋ"        ""
+Trills                       ""         "r"         ""        ""         ""
+Approximants                 ""         "l"         "j"       "w"        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Palatal", "Velar", "Uvular"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""           "u"
+Mid         "e"         ""           "o"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* /ŋ/ does not appear in the Crúbadán corpus.
+* A large percentage of the corpus (roughly 20%) seems to consist of ⟨ý⟩; however, it is not clear what this grapheme represents. I first thought it indicated stress or phonetic vowel length, however stress is not orthographically marked and the acute accent only appears atop this grapheme [@rucker2000, p. 4]. It seems as if it's present only in scripture [@Anjam2013], so I have opted not to include it.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme                 
+"a"              "/a/"                    
+"b"              "/b/"                    
+"d"              "/d/"                    
+"e"              "/e/"                    
+"g"              "/ɡ/"                    
+"i"              "/i/"                    
+"j"              "/dʑ/"                   
+"k"              "/k/"                    
+"l"              "/l/"                    
+"m"              "/m/"                    
+"n"              "/n/"                    
+"ñ"              "/ɲ/"                    
+"ŋ"              "/ŋ/"                    
+"o"              "/o/"                    
+"p"              "/p/"                    
+"q"              "/q/"                      
+"r"              "/r/"                    
+"s"              "/s/"                    
+"t"              "/t/"                    
+"u"              "/u/"                    
+"w"              "/w/"                    
+"y"              "/j/"                    
+'), TRUE)
+
+kable(alphabet, align = "c") %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Anjam follow the order of (C)(C)V(V)(C)(C) [@rucker2000, p. 4].
+
+# Misc. Rules
+
+* /p/ and /b/ neutralize to /p/ word finally [@rucker2000, p. 4].
+* /dʑ/ devoices word-finally [@rucker2000, p.4].
+
+# References

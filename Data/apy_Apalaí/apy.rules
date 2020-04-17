@@ -1,0 +1,13 @@
+# Apalaí Rule Set
+# Written by: Emily
+# Last Updated: 2020-03-30
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aãeẽiĩjkmnoõpstuũwz],,,,
+# Individual Letters
+sub,h,ʔ,2,,,
+sub,r,ɾ,2,,,
+sub,x,ʃ,2,,,
+sub,y,ɨ,2,,,
+sub,ỹ,ɨ̃,2,,,
+sub,({passthrough}),\1,2,,,

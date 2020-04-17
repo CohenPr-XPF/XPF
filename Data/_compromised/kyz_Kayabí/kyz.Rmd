@@ -1,0 +1,121 @@
+---
+title: "Kayabí"
+author: "Emily Strand"
+bibliography: kyz.bib
+output: html_document
+---
+
+Last Updated: 2019-12-16
+
+
+**Slightly Compromised: possible conflation with /i/ and /j/ due to syllable structure**
+
+
+# Background
+
+**Language family**: Tupi / Tupi-Guarani / Kayabi-Arawete (V)
+
+* Kayabí is spoken in Brazil.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Palatal   Velar    Glottal
+Stops                      "p"     "t"         ""     "k kʷ ɡ"    "ʔ"
+Fricatives                 "f"     "s"         ""       ""        ""
+Nasals                     "m"     "n"         ""       "ŋ"       ""
+Flaps                      ""      "ɾ"         ""       ""        ""
+Approximants               "w"     ""          "j"      ""        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: The velar stop with the diacritic (ʷ) is labialized.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Kayabí makes a contrastive distinction between oral and nasal vowels [@Souza2004, p. 24].
+* It appears that like-vowel sequences appear [based on vocab in @Dobson1997]; however, vowel length is never mentioned as a distinctive feature. They will be treated as sequences.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     "ɨ"       "u"
+Mid       "e"     ""        "o"
+Low       ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* /ŋ/ does not appear in the Crúbadán corpus.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme            Comment
+"a"              "/a/"               ""
+"ã"              "/ã/"               ""
+"e"              "/e/"               ""
+"ẽ"              "/ẽ/"               ""
+"f"              "/f/"               ""
+"g"              "/ɡ/"               ""
+"i"            "/i/; /j/"    "/j/: syllable-finally"
+"ĩ"              "/ĩ/"               ""
+"j"              "/j/"               ""
+"k"              "/k/"               ""
+"m"              "/m/"               ""
+"n"              "/n/"               ""
+"o"              "/o/"               ""
+"õ"              "/õ/"               ""
+"p"              "/p/"               ""
+"r"              "/ɾ/"               ""
+"s"              "/s/"               ""
+"t"              "/t/"               ""
+"u"              "/u/"               ""
+"ũ"              "/ũ/"               ""
+"w"              "/w/"               ""
+"y"              "/ɨ/"               ""
+"ỹ"              "/ɨ̃/"               ""
+"\'"             "/ʔ/"               ""
+**Digraph**       ""                 ""
+"kw"             "/kʷ/"              ""
+"ng"             "/ŋ/"               ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Kayabí follow the order of (C)V(C) [@Souza2004, p. 26].
+    * Given the varying syllable structures, /j/ can't always be transcribed accurately. The rules take into account the environment in which ⟨i⟩ goes to /j/ when followed by CV; however, this doesn't encompass all the environments in which ⟨i⟩ becomes /j/. Thus, the language is slightly compromised.
+
+# Misc. Rules
+
+* /p/, /t/, and /k/ become [w], [ɾ], and [ɡ], respectively, when preceding a vowel-initial morpheme [@Souza2004, p. 27].
+* Consonants may also weaken when morpheme-initial [@Souza2004, pp. 27-28]:
+    * /p/, /f/, and /m/ may become [w].
+    * /n/ and /t/ may become [ɾ].
+    * /k/ may become [ŋ].
+* Morpheme-final consonants may become elided when preceded by a morpheme-initial consonant [@Souza2004, p. 28].
+
+# References

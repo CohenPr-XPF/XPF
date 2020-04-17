@@ -1,0 +1,116 @@
+---
+title: "Borong"
+author: "Allison Shao"
+bibliography: ksr.bib
+output: html_document
+---
+
+Last updated: 2020-03-28
+
+# Background
+
+**Language family**: Trans-New Guinean / Huon-Finisterre / Huon / Eastern Huon
+
+* Also referred to as Kosorong, it is spoken by approximately 2000 speakers in Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+* /ts/ is rather marginal [@Olkkonen2000, p. 4].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"      Labial    Alveolar   Palatal    Velar  Labiovelar  Glottal
+Stops                         "p b"      "t d"       ""       "k ɡ"   "kp ɡb"      ""
+Affricates                     ""       "ts dz"      ""        ""       ""         ""
+Fricatives                     "f"        "s"        ""        ""       ""         "h"
+Nasals                         "m"        "n"        ""        "ŋ"      ""         ""
+Trills                         ""         "r"        ""        ""       ""         ""
+Approximants                   "w"        "l"        "j"       ""       ""         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Labiovelar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* Vowel length is contrastive in Borong [@Olkkonen2000, p. 5]. Long vowels are represented by duplicate graphemes.
+* Adjacent vowels are extremely common in Borong; however, they are interpreted as sequences rather than complex nuclei [@Olkkonen2000, p. 5].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""          "u"        
+Mid       "e"         ""          "o"
+Low        ""         "a"         ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```   
+
+# Alphabet
+
+* @Olkkonen2000 uses ⟨ŋ⟩ to represent /ŋ/ (p. 4), while @Olkkonen2001 uses ⟨ng⟩ (p. 1). I have chosen to use ⟨ŋ⟩ given that it is present in the Crúbadán corpus.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"	           "/a/"
+"b"	           "/b/"
+"d"	           "/d/"
+"e"	           "/e/"
+"f"            "/f/"
+"g"	           "/ɡ/"
+"h"	           "/h/"
+"i"	           "/i/"
+"j"            "/dz/"
+"k"	           "/k/"
+"l"	           "/l/"
+"m"	           "/m/"
+"n"	           "/n/"
+"ŋ"            "/ŋ/"
+"o"	           "/o/"
+"p"	           "/p/"
+"q"            "/kp/"
+"r"            "/r/"
+"s"	           "/s/"
+"t"	           "/t/"
+"u"	           "/u/"
+"w"	           "/w/"
+"y"	           "/j/"
+"z"            "/ts/"
+**Digraph**     ""
+"gb"           "/ɡb/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Borong follow the order of (C)V(V)(C) [@Olkkonen2000, p. 6].
+    - CV and CVC are the most common structures.
+
+# Misc. Rules
+
+* /p/, /t/, and /k/ are aspirated in syllable-initial positions [@Olkkonen2001, p. 5].
+* /w/ may be realized as [v] [@Olkkonen2000, p. 4].
+* Nasals assimilate in place to following consonants [@Olkkonen2000, p. 8].
+
+# References  

@@ -1,0 +1,108 @@
+---
+title: "Apalaí"
+author: "Emily Strand"
+bibliography: apy.bib
+output: html_document
+---
+
+Last Updated: 2020-03-30
+
+# Background
+
+**Language family**: Carib / Northern / East-West Guiana / Wayana-Trio
+
+* Apalaí is spoken in Brazil.
+
+# Phonology
+
+## Consonants
+
+* @Koehn1995 argues for /b/ as an extremely marginal phoneme (p. iii).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Labial  Alveolar  Postalveolar  Palatal  Velar  Glottal
+Stops                         "p"     "t"          ""         ""      "k"     "ʔ"
+Affricates                    ""       ""          ""         ""      ""      ""  
+Fricatives                    ""      "s z"        "ʃ"        ""      ""      ""  
+Nasals                        "m"      "n"         ""         ""      ""      ""
+Flaps                         ""       "ɾ"         ""         ""      ""      ""  
+Approximants                  "w"      ""          ""         "j"     ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Where two phonemes share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* Nasal vowels are contrastive in Apalaí [@Koehn1971, p. 3]. Nasal vowels are indicated by a tilde (˜) [@Koehn1995, p. iii].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         "ɨ"          "u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"            "/a/"
+"e"            "/e/"
+"h"            "/ʔ/"
+"i"            "/i/"
+"j"            "/j/"
+"k"            "/k/"
+"m"            "/m/"
+"n"            "/n/"
+"o"            "/o/"
+"p"            "/p/"
+"r"            "/ɾ/"
+"s"            "/s/"
+"t"            "/t/"
+"u"            "/u/"
+"w"            "/w/"
+"x"            "/ʃ/"
+"y"            "/ɨ/"
+"z"            "/z/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Apalaí follow the order of (C)V(C) [@Koehn1971, p. 4].
+
+# Lenition Rules
+
+* The palatalization of /t/ may result in some frication [@Koehn1971, p. 3].
+* /k/ may be realized as [ɣ] in unstressed final syllables preceding word beginning with stressed /a/ (ibid.).
+
+# Misc. Rules
+
+* In some dialects, /t/ and /k/ may palatalize following /i/ [@Koehn1971, p. 3].
+* /n/ may be realized as [ɲ] when contiguous with /i/ (ibid.).
+
+# References

@@ -32,7 +32,7 @@ consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial    Alveolar  Postalveolar   Retroflex   Palatal   Velar    
 Stops                       "p b"     "t d"        ""            ""         ""       "k"     
 Affricates                   ""       "ts"         "tʃ"         "tʂ"        ""       ""
-Fricatives                   ""        "s"         "ʃ           "ʂ"         ""       ""
+Fricatives                   ""        "s"         "ʃ"           "ʂ"        ""       ""
 Nasals                       "m"       "n"         ""            ""         ""       ""
 Approximants                 "w"       ""          ""            ""        "j"       ""       
 '), TRUE)

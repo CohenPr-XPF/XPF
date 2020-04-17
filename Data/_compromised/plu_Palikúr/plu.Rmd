@@ -1,0 +1,142 @@
+---
+title: "Palikúr"
+author: "Emily Strand"
+bibliography: plu.bib
+output: html_document
+---
+
+Last updated: 2019-11-04
+
+**Slightly Compromised: conflation between /ɡ/ and /ɣ/**
+
+# Background
+
+**Language family**: Arawakan / Maipuran / Eastern Maipuran
+
+* Palikúr is spoken in Brazil and French Guiana.
+
+# Phonology
+
+## Consonants
+
+* /f/, /v/, /l/, /ʒ/ and /z/ appear in loanwords [@launey2003, p. 37].
+* @launey2003 and @launey2001 specify Palikúr as having a "light consonant," although the phonemic representation seems somewhat unclear (p. 35; p. 10). They describe it in terms of its realization, which ranges from lenited [ɡ] to [ʁ], but they also explicitly classify it as a velar fricative. For this reason, I have chosen to use /ɣ/.
+    - Although /ɡ/ undergoes lenition to [ɣ] word-medially, /ɣ/ is recognized as a separate phoneme.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar  Postalveolar   Palatal    Velar   Glottal   
+Stops                      "p b"     "t d"        ""           ""       "k ɡ"     ""
+Fricatives                  ""        "s"         "ʃ"          ""        "ɣ"      "h"
+Nasals                      "m"       "n"         ""           ""        ""       ""
+Approximants                "w"        ""         ""           "j"       ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* Nasal vowels are phonemic in Palikúr [@launey2001, p. 6]. They appear in syllable-final positions and are indicated by a following ⟨h⟩ (i.e. ⟨h⟩ indicates vowel nasalization word-finally or preceding consonants) [@launey2003, p. 35].
+* There are also a several oral and nasal diphthongs present in the language [@launey2001, pp. 6-7]. The oral diphthongs are composed of a vowel followed by a glide and the nasal diphthongs are composed of a vowel followed by a glide and ⟨h⟩. Like the nasal vowels, these diphthongs are said to be present only in syllable-final positions [@launey2003, p. 30].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High     "i  ĩ"       ""         "u  ũ"
+Mid      "e  ẽ"       ""         "o  õ"
+Low        ""       "a  ã"         ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Vowels on the left of each cell are oral and vowels on the right of each cell are nasal.", general_title = "")
+
+diphthongs <- read.table(textConnection('
+Oral                                                             Nasal
+"/aj/, /ej/, /ij/, /uj/, /aw/, /ew/, /iw/, /ow/, /uw/"     "/ãj/, /ãw/, /ĩw/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("Diphthongs" = 2))
+
+```  
+
+# Alphabet
+
+* Depending on the documentation, older sources tend to represent /ɣ/ as ⟨g⟩, whereas newer sources tend to represent it as ⟨r⟩ [@launey2001, p. 10]. Therefore, there is some conflation between /ɣ/ and /ɡ/, compromising the language. In the rule set, I have chosen to transcribe ⟨g⟩ to /ɡ/ and ⟨r⟩ to /ɣ/.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme       Comment
+"a"             "/a/"          ""
+"b"             "/b/"          ""
+"d"             "/d/"          ""
+"e"             "/e/"          ""
+"g"          "/ɡ/; /ɣ/"     "/ɡ/: default in the rule set"
+"h"           "/h/; ∅"   "∅: following vowels in syllable-final positions (indicates nasalization)"
+"i"             "/i/"          ""
+"k"             "/k/"          ""
+"m"             "/m/"          ""
+"n"             "/n/"          ""
+"o"             "/o/"          ""
+"p"             "/p/"          ""
+"r"             "/ɣ/"          ""
+"s"             "/s/"          ""
+"t"             "/t/"          ""
+"u"             "/u/"          ""
+"w"             "/w/"          ""
+"x"             "/ʃ/"          ""
+"y"             "/j/"          ""
+**Multigraph**  ""             ""
+"ah"            "/ã/"          ""
+"eh"            "/ẽ/"          ""
+"ih"            "/ĩ/"          ""
+"oh"            "/õ/"          ""
+"uh"            "/ũ/"          ""
+"ay"            "/aj/"         ""
+"ey"            "/ej/"         ""
+"iy"            "/ij/"         ""
+"uy"            "/uj/"         ""
+"aw"            "/aw/"         ""
+"ew"            "/ew/"         ""
+"iw"            "/iw/"         ""
+"ow"            "/ow/"         ""
+"uw"            "/uw/"         ""
+"ayh"           "/ãj/"         ""
+"awh"           "/ãw/"         ""
+"iwh"           "/ĩw/"         ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /p/ often spirantizes and becomes voiced word-medially [@launey2003, p. 39].
+* /p/ may become voiced word-medially following a nasal vowel [@launey2003, p. 41].
+* /ɡ/ often spirantizes to [ɣ] word-medially (ibid.).
+    - /ɡ/ may also be realized as [ŋ] in this position, but it is far more rare.
+
+# Misc. Rules
+
+* /t/ and /d/ often palatalize preceding /i/ and /ĩ/ [@launey2003, pp. 37-38].
+* Duplicate consonants (occurring word-initially) are realized separately [@launey2001, p. 9]. This is noted only for nasal-consonant sequences /nn/ and /mm/.
+    - It is implied that other nasal-consonant sequences (/nd/, /nt/, /mp/, /mb/, /mt/, and /ms/) are also interpreted in this way rather than as complex phonemes.
+
+# References

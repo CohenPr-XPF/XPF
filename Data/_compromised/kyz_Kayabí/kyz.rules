@@ -1,0 +1,22 @@
+# Kayabí Rule Set
+# Written by: Emily
+# Last Updated: 2019-12-16
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[aãeẽfiĩjkmnoõpstuũw],,,,
+class,vowels,[aãeẽiĩoõuũyỹ],,,,
+class,consonants,[fgkmnprstw],,,,
+class,apostrophe,[ꞌ'ˈ‘’ʼ],,,,
+# Individual Letters
+sub,g,ɡ,2,,,
+sub,i,j,4,{vowels},{consonants}{vowels},
+sub,r,ɾ,2,,,
+sub,y,ɨ,2,,,
+sub,ỹ,ɨ̃,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,k,kʷ,3,,w,
+sub,w,,3,k,,"clean-up",
+sub,n,ŋ,3,,g,
+sub,g,,3,n,,"clean-up",

@@ -1,0 +1,27 @@
+# Awara Rule Set
+# Written by: Becky Mathew
+# Last updated: 2020-04-13
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdehikmnopstu],,,,
+class,w-preceder,[gk],,,,
+class,vowels,[aeiouä],,,,
+# Individual Letters
+sub,ä,ɘ,3,,,
+sub,g,ɡ,2,,,
+sub,l,l,3,{vowels},{vowels},"/l/ only occurs intervocalically",
+sub,r,l,3,{vowels},{vowels},"<r> may also be used to represent /l/",
+sub,w,β,3,,,
+sub,x,ɣ,3,,,
+sub,y,j,3,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,g,ɡʷ,4,,w,
+sub,k,kʷ,4,,w,
+sub,w,,4,{w-preceder},,"clean-up",
+sub,n,ŋ,5,,g,
+sub,g,,5,n,,"clean-up",
+# Trigraphs
+sub,n,ŋʷ,6,,gw,
+sub,g,,6,n,w,"clean-up",
+sub,w,,6,ng,,"clean-up",

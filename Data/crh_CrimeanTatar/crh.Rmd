@@ -1,0 +1,137 @@
+---
+title: "Crimean Tatar"
+author: "Allison Shao"
+bibliography: crh.bib
+output: html_document
+---
+
+Last updated: 2020-04-10
+
+# Background
+
+**Language family**: Turkic / Kipchak / West Kipchak
+
+* Crimean Tatar is spoken primarily in Crimea and Uzbekistan, but small communities of speakers can also be found in Russia, Bulgaria, Romania, and Turkey [@Kavitskaya2010, p. 1].
+* For an estimation of the number of speakers, around 250,000 Crimean Tatars reside in Crimea, and another 250,000 live outside Crimea due to massive deportation in 1944 [@Kavitskaya2010, p.1].
+* Crimean Tatar is divided into Central, Northern, and Southern varieties. This account focuses on the Central variety, which is considered the standard [@Kavitskaya2010, p. 1].
+
+# Phonology
+
+## Consonants
+
+* There is some controversy over the phonemic status of /q/ and /ɣ/, such that they are sometimes viewed as allophones of /k/ and /ɡ/, respectively, where /k/ and /ɡ/ precede front vowels and /q/ and /ɣ/ precede back vowels [@Berta1998, p. 302]. However, I have chosen to recognize all four phonemes, given that @Kavitskaya2010 finds instances where /k/ is found in words preceding back vowels (p. 10).
+* Glottal stops and palatalized /nʲ/ can be found in some loanwords [@Kavitskaya2010, p. 10].
+* @Kavitskaya2010 describes /lʲ/ and /kʲ/ as marginally phonemic, with contrasts occurring in loanwords; I have chosen to treat them as allophones of /l/ and /k/, respectively, given that they appear in complementary distribution with /l/ and /k/, respectively, in native words (pp. 10, 14, 17).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"      Labial    Dental   Alveolar  Postalveolar   Palatal    Velar   Uvular
+"Stops (plain)"               "p b"     "t̪ d̪"       ""         ""           ""       "k ɡ"    "q"
+Affricates                      ""        ""        ""       "tʃ dʒ"        ""        ""       ""
+Fricatives                    "f v"       ""      "s z"        "ʃ"          ""       "x ɣ"     ""
+Nasals                         "m"        ""       "n"         ""           ""       "ŋ"       ""
+Trills                          ""        ""       "r"         ""           ""        ""       ""
+Approximants                    ""        ""       "l"         ""           "j"       ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* Like other Turkic languages, Crimean Tatar exhibits vowel harmony based on backness and rounding. Vowel harmony varies moderately between the three dialects [@Kavitskaya2014, pp. 224-225].
+* According to @Kavitskaya2010, long vowels are present in some loanwords. Some speakers treat them as two short vowels separated by a glottal stop (p. 8).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front        Back
+High     "i y"       "ɯ u"       
+Mid      "e ø"        "o"
+Low        ""         "ɑ"
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are unrounded and those on the right are rounded.", general_title = "")
+```   
+
+# Alphabet
+
+* According to @Kavitskaya2010, the grapheme ⟨â⟩ represents palatalization of preceding consonants or the sequence /jɑ/ (p. 4). Since Crimean Tatar does not have phonemic palatalized consonants, I will use /jɑ/.
+* The language can be written with both the Latin and Cyrillic scripts; however, due to ambiguity related to the correspondences between graphemes and phonemes using the Cyrillic script, I have chosen only to represent the Latin script below [@Kavitskaya2010, p. 4].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                Comment
+"a"	           "/ɑ/"                   ""
+"â"	           "/jɑ/"                  ""
+"b"	           "/b/"                   ""
+"c"            "/dʒ/"                  ""
+"ç"            "/tʃ/"                  ""
+"d"	           "/d̪/"                   ""
+"e"	           "/e/"                   ""
+"f"            "/f/"                   ""
+"g"	           "/ɡ/"                   ""
+"ğ"            "/ɣ/"                   ""
+"h"	           "/x/"                   ""
+"j"            "/ʒ/"        "only appears in loanwords"
+"i"	           "/i/"                   ""
+"ı"            "/ɯ/"                   ""
+"k"	           "/k/"                   ""
+"l"	           "/l/"                   ""
+"m"	           "/m/"                   ""
+"n"	           "/n/"                   ""
+"ñ"            "/ŋ/"                   ""
+"o"	           "/o/"                   ""
+"ö"	           "/ø/"                   ""
+"p"	           "/p/"                   ""
+"q"            "/q/"                   ""
+"r"            "/r/"                   ""
+"s"	           "/s/"                   ""
+"ş"            "/ʃ/"                   ""
+"t"	           "/t̪/"                   ""
+"u"	           "/u/"                   ""
+"ü"            "/y/"                   ""
+"v"	           "/v/"                   ""
+"y"	           "/j/"                   ""
+"z"            "/z/"                   ""
+**Digraph**     ""                     ""
+"ts"           "/ts/"      "only appears in loanwords"
+"şç"           "/ʃʲ/"      "only appears in loanwords"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /p/, /k/, /x/, and /tʃ/ may become voiced intervocalically [@Berta1998, p. 303].
+* The second consonant in a coda consonant-cluster may be deleted if the coda does not exhibit falling sonority [@Kavitskaya2010, p. 20]. This does not occur if a vowel immediately follows the consonant cluster.
+    - If a coda consonant-cluster consists of more than two vowels, the medial one will be deleted.
+
+# Misc. Rules
+
+* Consonant gemination occurs in Crimean Tatar; however, it is extremely marginal (not present in the Crúbadán corpus), occurring primarily in loanwords [@Kavitskaya2010, pp. 13-14].
+* Voiced stops and voiced fricatives are devoiced word-finally [@Kavitskaya2010, p. 10].
+* There is evidence of monophthongization of diphthongs, as seen in sequences /uv/, which can be realized as /uw/ or /u:/, and /ij/, which is realized as /i:/ [@Kavitskaya2010, pp. 8-9].
+* Syncope of high vowels is common word-initially and word-medially [@Kavitskaya2014, p. 225].
+* In suffixes, /l/ undergoes progressive nasal assimilation and surfaces as [n] [@Kavitskaya2010, p. 32-33].
+* /v/ may be realized as [w] [@Kavitskaya2010, p.12].
+* /x/ often surfaces as uvular [χ] (ibid.).
+* /p/, /b/, /m/, /s/, /z/, /l/, /k/, and /ɡ/ have palatalized allophonic forms when preceding front vowels [@Kavitskaya2010, p. 14].
+
+# References  

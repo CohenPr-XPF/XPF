@@ -58,6 +58,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 ## Vowels
 
 * Vowels may occur successively, but they do not form diphthongs when doing so [@JvSuharno1982, page 2].
+* Javanese is characterized as having a "neutral" vowel [@JvRobson2014, p. xii], often represented as /ɘ/. However, this neutral vowel in Javanese is not truly reduced, and based on the chart by @JvWolffChart1982, it appears to represent a sound lower than that of schwa (p. 3). For this reason, I have opted to use /ɜ/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -65,7 +66,7 @@ vowels <- read.table(textConnection('
          Front      Central       Back
 High      "i"         ""           "u"
 High-Mid  "e"         ""           "o"
-Low-Mid   "ɛ"         "ə"          "ɔ"
+Low-Mid   "ɛ"         "ɜ"          "ɔ"
 Low        ""         "a"          ""
 '), TRUE)
 
@@ -84,7 +85,7 @@ Grapheme      Phoneme                                Comment
 "b"            "/b/"                                   ""
 "c"            "/c/"                   "described by @JvHorne1974 as /t̪s/"  
 "d"            "/d̪/"                                   ""
-"e"            "/ə/"                                   ""
+"e"            "/ɜ/"                                   ""
 "é"            "/e/"                                   ""
 "è"            "/ɛ/"                                   ""
 "f"            "/f/"  "only in loanwords; sometimes replaced by /p/ (see @JvHorne1974, p. xi)"  
@@ -158,7 +159,7 @@ alphabet <- read.table(textConnection('
 ꦁ                      "/ŋ/"                                 ""
 ꦂ                      "/r/"                                 ""
 ꦃ                     "/h/"                                  ""
-ꦽ                     "/rə/"                                 ""
+ꦽ                     "/rɜ/"                                 ""
 ꦾ                     "/j/"                                 ""
 ꦿ                      "/r/"                                ""
 ꧀                       "∅"                 "nullifies the vowel in its syllable"
@@ -173,10 +174,10 @@ alphabet <- read.table(textConnection('
 ꦸ                    "/u/"                                 ""
 ꦺ                   "/e/"                                 ""
 ꦺ                  "/o/"                                  ""
-ꦼ                    "/ə/"                                 ""
+ꦼ                    "/ɜ/"                                 ""
 "**Newer Orthographic Variation (Aksara)**"    ""         ""
-"ꦉ"                 "/rə/"                                ""
-"ꦊ"                 "/lə/"                                ""
+"ꦉ"                 "/rɜ/"                                ""
+"ꦊ"                 "/lɜ/"                                ""
 '), TRUE)
 
 kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align = 'c') %>%

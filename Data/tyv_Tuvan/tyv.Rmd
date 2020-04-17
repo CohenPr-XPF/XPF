@@ -1,0 +1,127 @@
+---
+title: "Tuvan"
+author: "Abi Creighton"
+bibliography: tyv.bib
+output: html_document
+---
+
+Last Updated: 2020-02-12
+
+# Background
+
+**Language family**: Turkic / Common Turkic / Siberian Turkic / South Siberian / Sayan Turkic / Tuvan
+
+* Tuvan, also know as Tuvinian, Tyvan, or Tuvin, is spoken in the Tuva Republic in Russia.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"          Labial  Alveolar Palatal Velar     
+Stops                             "p b"    "t d"    ""     "k ɡ"
+Affricates                         ""       ""     "cç"     ""      
+Fricatives                         ""      "s z"   "ç ʝ"    "x"     
+Nasals                             "m"      "n"     ""      "ŋ"    
+Trills                             ""       "r"     ""      ""      
+Approximants                       "ʋ"      "l"     "j"     ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Vowel length is contrastive in Tuvan [@harrison_topics_2000, p. 11]. Long vowels are indicated by duplicate graphemes.
+* Low tone (vs. no tone) is contrastive syllable-initially [@OBrien2010, pp. 1-2]; however, it's rather marginal, such that very few words display this distinction (although the prevalence depends on the dialect). It is not marked in Crúbadán, so I have chosen to proceed with the language, not accounting for it in the rules.
+* Vowel harmony is present in Tuvan [@harrison_topics_2000, p. 111].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front      Back
+High      "i y"      "ɯ u"
+Mid       "e ø"      "o"
+Low       ""         "ɑ"
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are unrounded and those on the right are rounded.", general_title = "")
+```
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                           Comment
+"а"            "/ɑ/"                              ""
+"б"            "/b/"                              ""
+"в"            "/ʋ/"                              ""
+"г"            "/ɡ/"                              ""
+"д"            "/d/"                              ""
+"e"            "/e/; /je/"                              "/e/: word-medially and word-finally; /je/: word-initially in Russian loanwords"
+"ё"            "/jo/"                             ""
+"ж"            "/ʝ/"                              ""
+"з"            "/z/"                              ""
+"и"            "/i/"                              ""
+"й"            "/j/"                              ""
+"к"            "/k/"                              ""
+"л"            "/l/"                              ""
+"м"            "/m/"                              ""
+"н"            "/n/"                              ""
+"ң"            "/ŋ/"                              ""
+"о"            "/o/"                              ""
+"ө"            "/ø/"                              ""
+"п"            "/p/"                              ""
+"р"            "/r/"                              ""
+"с"            "/s/"                              ""
+"т"            "/t/"                              ""
+"у"            "/u/"                              ""
+"ү"            "/y/"                              ""
+"ф"            "/f/"                    "appears in Russian loanwords"
+"х"            "/x/"                              ""
+"ц"            "/ts/"                   "appears in Russian loanwords"
+"ч"            "/cç/"                             ""
+"ш"            "/ç/"                              ""
+"щ"            "/çcç/"                  "appears in Russian loanwords"
+"ъ"            ""                        "indicates pitch accent"
+"ы"            "/ɯ/"                              ""
+"ь"            ""                 "represents where there was a reduced vowel"
+"э"            "/e/"                              "word-initially"
+"ю"            "/ju/"                    "appears in Russian loanwords"
+"я"            "/jɑ/"                    "appears in Russian loanwords"
+'), TRUE)
+
+kable(alphabet) %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Tuvan follow the order of (C)V(V)(C)(C) [@harrison_topics_2000, p. 18].
+
+# Lenition Rules
+
+* /ɡ/ may spirantize to [ɣ] [@harrison_topics_2000, p. 13].
+* Velar consonants are often elided intervocalically [@harrison_topics_2000, p. 87].
+* Voiceless stops become voiced intervocalically [@harrison_topics_2000, p. 83].
+    - In this position /b/ and /ɡ/ become [ʋ] and [ɣ], respectively.
+
+# Misc. Rules
+
+* Voiceless stops (and voiced velar stops) can geminate [@harrison_topics_2000, p. 82].
+
+# References

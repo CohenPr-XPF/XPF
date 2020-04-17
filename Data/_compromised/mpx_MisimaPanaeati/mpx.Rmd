@@ -1,0 +1,120 @@
+---
+title: "Misima-Panaeati"
+author: "Allison Shao"
+bibliography: mpx.bib
+output: html_document
+---
+
+Last updated: 2020-03-05
+
+**Slightly Compromised: conflation between /e/ and /ɛ/ and between /o/ and /ɔ/**
+
+# Background
+
+**Language family**: Austronesian / Malayo-Polynesian / Oceanic / Kilivila-Misima
+
+* Speakers of Misima-Panaeati reside in Papua New Guinea, mostly on Misima Island, which is part of the Calvados Chain. Speakers also live on the nearby Panaeti Island.
+
+# Phonology
+
+## Consonants
+
+* For some speakers, /j/ is closer to [ʝ] [@Callister_1993, pp. 5-6].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation" Labial      Dental    Retroflex    Palatal    Velar     Glottal
+"Stops (plain)"          "p  b"      "t̪  d̪"       ""          ""       "k  ɡ"      ""
+"Stop (labialized)"     "pʷ  bʷ"      ""          ""          ""        ""         ""
+Fricatives                "β"         "s̪"         ""          ""        ""         "h"
+"Nasals (plain)"          "m"         "n̪"         ""          ""        ""         ""
+"Nasals (labialized)"     "mʷ"        ""          ""          ""        ""         ""
+Approximants              "w          ""          "ɭ"         "j"       ""         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* @SIL_Misima and @Callister_1993 disagree on whether Misima-Panaeati has a low back vowel /ɑ/ or a low front vowel /a/ (p. 1; p. 2). I have opted to use /a/.
+* Adjacent vowels are not interpreted as complex nuclei [@Callister_1993, pp. 3-4].  
+* Phonemes /e/ and /ɛ/, and phonemes /o/ and /ɔ/ contrast in closed syllables [@SIL_Misima, p. 3]. However, this is rather marginal [@Callister_1993, pp. 6-7].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High     "i"          ""          "u"         
+High-Mid "e"          ""          "o"
+Low-Mid  "ɛ"          ""          "ɔ"
+Low      ""           "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```    
+
+# Alphabet
+
+* Phonemes /e/ and /ɛ/ and phonemes /o/ and /ɔ/ are represented by ⟨e⟩ and ⟨o⟩, respectively [@SIL_Misima, p. 1]. Given this, the language is somewhat compromised. I have opted to use /e/ and /o/ as the default phonemes in the rule set.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme
+"a"	           "/a/"
+"b"	           "/b/"
+"d"	           "/d̪/"
+"e"	           "/e/; /ɛ/"
+"g"	           "/ɡ/"
+"h"	           "/h/"
+"i"	           "/i/"
+"k"	           "/k/"
+"l"	           "/ɭ/"
+"m"	           "/m/"
+"n"	           "/n̪/"
+"o"	           "/o/; /ɔ/"
+"p"	           "/p/"
+"s"	           "/s̪/"
+"t"	           "/t̪/"
+"u"	           "/u/"
+"v"	           "/β/"
+"w"	           "/w/"
+"y"	           "/j/"
+**Digraph**     ""
+"bw"	         "/bʷ/"
+"mw"	         "/mʷ/"
+"pw"	         "/pʷ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Misima-Panaeati follow the order of (C)V(C) [@SIL_Misima, p. 3].
+
+# Misc. Rules
+
+* /n/ is realized as /ŋ/ before velar stops [@Callister_1993, p. 5].
+* /i/ and /u/ will surface as [j] and [w], respectively, when a vowel-initial suffix is added to a stem ending in /i/ or /u/ [@Callister_1993, p. 15].
+* Stem-final /m/ is labialized when followed by a vowel via reduplication or addition of a suffix. This is typically not that case for stem-final /p/ and /b/ [@Callister_1993,p. 15].
+* Prefixes /pa/ and /ma/ surface as [pʷa] and [mʷa], respectively, when the word stem begins with a labialized consonant or /mu/, /mo/, /bu/ or /bo/ [@Callister_1993, p. 16].
+* /a/ is typically realized as [ʌ]. It is realized as [a] when in a stressed syllable and preceding /β/, /w/, /k/, or /g/. When it is not in a stressed syllable and precedes /m/, /s̪/, /n̪/, or /ɭ/, it is realized as [ə] [@Callister_1993, p. 6].
+* Stress is phonemic, but stress will not be accounted for here [@SIL_Misima, p. 3].
+* Codas can only be occupied by nasals, /s̪/, /ɭ/, /h/, and nonlabialized stops (excluding /d/) [@Callister_1993, p. 18].
+
+# References  

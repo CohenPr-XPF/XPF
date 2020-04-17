@@ -30,8 +30,8 @@ sub,ꦔ,ŋ a,4,,,
 # Distinct Pasangan
 sub,ꦝ,ɖ a,4,,,
 # New or Loaned Aksara
-sub,ꦉ,r ə,4,,,
-sub,ꦊ,l ə,4,,,
+sub,ꦉ,r ɜ,4,,,
+sub,ꦊ,l ɜ,4,,,
 # Vowels
 sub,ꦄ,a,4,,,
 sub,ꦆ,i,4,,,
@@ -43,7 +43,7 @@ sub,ꦶ,i,4,,,
 sub,ꦸ,u,4,,,
 sub,ꦺ,e,4,,,
 sub,ꦴ,o,5,,,
-sub,ꦼ,ə,4,,,
+sub,ꦼ,ɜ,4,,,
 ipasub,a ({ipavowel}),\1,3,,,"the simplest way to incorporate diacritics is by putting them on top of the existing rule"
 # Other Diacritics
 sub,ꦀ,m,4,,,

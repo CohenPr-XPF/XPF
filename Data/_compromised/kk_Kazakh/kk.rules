@@ -1,0 +1,44 @@
+# Kazakh Rule Set
+# Written by: Abi Creighton
+# Last Updated: 2019-09-24
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,gem,(b|k|s̪|l̪|m|p|t̪|d̪|ɡ|q|ʃ|ʒ|z̪|χ|ʁ|h|n̪|ŋ|r|w|j),,,,
+# Individual Letters
+sub,а,ɑ,2,,,
+sub,ә,æ,2,,,
+sub,б,b,2,,,
+sub,г,ɡ,2,,,
+sub,ғ,ʁ,2,,,
+sub,д,d̪,2,,,
+sub,е,e,2,,,
+sub,ж,ʒ,2,,,
+sub,з,z̪,2,,,
+sub,и,i,2,,,
+sub,й,j,2,,,
+sub,к,k,2,,,
+sub,қ,q,2,,,
+sub,л,l̪,2,,,
+sub,м,m,2,,,
+sub,н,n̪,2,,,
+sub,ң,ŋ,2,,,
+sub,о,o,2,,,
+sub,ө,ø,2,,,
+sub,п,p,2,,,
+sub,р,r,2,,,
+sub,с,s̪,2,,,
+sub,т,t̪,2,,,
+sub,у,u,2,,,
+sub,ұ,ʊ,2,,,
+sub,ү,y,2,,,
+sub,х,χ,2,,,
+sub,һ,h,2,,,
+sub,ш,ʃ,2,,,
+sub,ы,ɯ,2,,,
+sub,і,ɪ,2,,,
+sub,ю,j u,2,,,
+sub,я,j ɑ,2,,,
+# Consonant Gemination
+ipasub,({gem}) \1,\1 ː,2,,,
+# Misc. Rules
+sub,-,,2,,,

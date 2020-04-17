@@ -12,7 +12,7 @@ Last Updated: 2019-06-13
 **Language Family**: Indo-European / Armenian / Eastern Armenian
 
 * Where Armenian dialects diverge, I will be preferring Eastern Armenian, since it is the most widely spoken variant of the language.
-* Speakers of Armenia reside in a multitude of places. They include Armenia, Azerbaijan, Georgia, Russia, the United States, France, Argentina, and many more countries.
+* Speakers of Armenian reside in a multitude of places. They include Armenia, Azerbaijan, Georgia, Russia, the United States, France, Argentina, and many more countries.
 
 # Phonology
 
@@ -43,7 +43,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 7)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: Where two phonemes share a cell, those on the left are voiceless and those on the right are voiced. Where three phonemes share a cell, they are ordered voicless, aspirated, voiced.", general_title = "")
+  footnote(general = "Note: Where two phonemes share a cell, those on the left are voiceless and those on the right are voiced. Where three phonemes share a cell, they are ordered voicless, aspirated, and voiced.", general_title = "")
 ```
 
 ## Vowels
@@ -137,9 +137,9 @@ kable(alphabet, align = 'c') %>%
 * [ʋ] is inserted before /ɔ/ in the same circumstances [@HyDumTragut2009, p. 16].
 * [j] is inserted before /ɛv/ word-initially [@HyDumTragut2009, p. 20].
 * Stops devoice and aspirate in the following circumstances [@HyDumTragut2009, pp. 22-23; @HySakayan2007, pp. 37, 60, 83]:
-  * After /ɾ/, usually
-  * In postvocalic final or intervocalic positions, occasionally
-  * Following nasals with the same place of articulation
+    - After /ɾ/, usually
+    - In postvocalic final or intervocalic positions, occasionally
+    - Following nasals with the same place of articulation
 * Voiceless stops sometimes devoice when followed by sibilants (ibid.).
 * /ɾ/ trills to [r] before /n/ [@HyDumTragut2009, p. 27].
 * Final flaps palatalize in some dialects, especially in the east [@HyDumTragut2009, p. 28].

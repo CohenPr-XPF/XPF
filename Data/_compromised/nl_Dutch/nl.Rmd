@@ -1,0 +1,164 @@
+---
+title: "Dutch"
+author: "Abi Creighton"
+edited by: "Emily Strand"
+bibliography: nl.bib
+output: html_document
+---
+
+Last Updated: 2020-04-08
+
+**Compromised: Conflation among /ə/ and other vowels; conflation between /ø/ and /œy/; conflation between voiced and voiceless consonants; some orthographic ambiguity**
+
+# Background
+
+**Language family**: Indo-European / Germanic / West Germanic / Low Franconian / Dutch
+
+* Dutch is predominantly spoken in the Netherlands and in Belgium.
+
+# Phonology
+
+## Consonants
+
+* /ɡ/ occurs in loanwords; however, it is often realized as [k] or [x] [@Mees1982, p. 4].
+* The voicing distinction between /f/ and /v/ and between /x/ and /ɣ/ is often neutralized, with the voiceless variants being favored [@Booij1999, pp. 7-8].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar   Palatal  Velar  Glottal
+Stops                       "p b"     "t d"       ""      "k"     ""
+Fricatives                  "f v"     "s z"       ""     "x ɣ"    "h"
+Nasals                       "m"       "n"        ""      "ŋ"     ""
+Trills                       ""        "r"        ""      ""      ""
+Approximants                 "ʋ"       "l"        "j"     ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```  
+
+## Vowels
+
+* Vowel length is considered a phonemic feature in Dutch [@Booij1999, pp. 4-5].
+    - Long vowels: /i/, /y/, /u/, /e/, /ø/, /o/, /a/
+    - Short vowels: /ɪ/, /ʏ/, /ɛ/, /ɔ/, /ɑ/, /ə/
+* Schwa, representing a reduced vowel, seems to be appropriate in Dutch, given that it never bears stress and appears in locations that other short vowels do not (e.g. word-finally) [@Booij1999, p. 5].
+* Vowels, in native words, may appear with acute accents (´), which indicate stress [@Donaldson1997, p. 11]. They have been accounted for in the rule set.
+    - ⟨e⟩ may additionally appear with a grave accent (\`).
+* Vowels may also appear with a dieresis (¨) [@Donaldson1997, p. 12]. This indicates a hiatus between the vowel with the dieresis and the preceding vowel.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High       "i y"        ""           "u"
+Near-High  "ɪ ʏ"        ""           ""
+High-Mid   "e ø"        ""           "o"
+Mid         ""          "ə"          ""
+Low-Mid     "ɛ"         ""           "ɔ"
+Low         ""          "a"          "ɑ"
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ɛi/, /œy/, /ɔu/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Alphabet
+
+* Long vowels /a/, /e/, /o/, and /y/ are represented by duplicate graphemes (⟨uu⟩ for /y/) in closed syllables and singletons (⟨u⟩ for /y/) in open syllables. The long vowels /u/, /ø/, and /i/ are represented by digraphs. Fortunately, the syllable structure of Dutch is predictable. In intervocalic positions, a lone consonant is interpreted as the syllabic onset for the following vowel, leaving the preceding syllable open (i.e. long vowel environment). On the other hand, a digraph in intervocalic positions is split. That is, the first consonant is interpreted as the coda for the preceding syllable (i.e. short vowel environment) and the second consonant is interpreted as the onset for the following syllable [@Booij1999, p. 183]. Geminate consonants, which are prohibited in Dutch, are used as an orthographic tool in these cases to distinguish between short and long vowels. For example, "kikker" is represented underlyingly as /kɪkər/; the first "k" serves merely as a coda placeholder (i.e. it has no phonemic representation) (p. 182).
+    - The general syllable structure rule that can be used to distinguish between long and short vowels does not appear to be applicable when vowels with diereses occur. Instead, it seems the general rule of thumb is that if the preceding vowel is a singleton (rather than a duplicate vowel), the preceding vowel is short. The vowel with the dieresis, if otherwise followed by a duplicate grapheme (without the dieresis), is also short [@Booij1999, p. 184]. It is unclear how robust this transcription is. Vowels with diereses make up 1% of the Crúbadán corpus.
+* Schwa is said to be represented orthographically in a number of ways, primarily with ⟨e⟩ [@Booij1999, p. 183]. This means that /ə/ conflates with a lot of different vowels, which compromises the language. However, we can consistently account for schwa word-finally: short vowels do no occur word-finally, so ⟨e⟩ in this position indicates /ə/; ⟨ee⟩ (generally reserved for closed syllables) is used to represent /e/ in this position, so the distinction between /e/ and /ə/ is clear.
+* There are several exceptions to the orthography of both the vowels and consonants [noted in @Booij1999, p. 182]. It is evident that some of these orthographic exceptions are attributed to native words as well as loanwords, so such ambiguity compromises the language. I have included some exceptions in the rule set; however, I feel it is not an exhaustive list. The standard transcription is listed below.  
+* Both /œy/ and /ø/ are represented by ⟨eu⟩, which compromizes the language even more [@Booij1999, pp. 184-185]. I have prioritized the monophthong rather than the diphthong in the rule set.
+* There is also some conflation between /f/ and /v/ and between /s/ and /z/ [@Booij1999, p. 186]. Dutch has a final consonant devoicing process, which is reflected in the orthography for /v/ and /z/. Although other phonemes that have a voicing distinction also undergo this process, it is not apparent orthographically.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme                Comment
+"a"            "/ɑ/; /a/"        "/a/: in open syllables (described above)"
+"b"            "/b/"                     ""
+"c"            "/k/; /s/"        "/s/: preceding front vowels"
+"d"            "/d/"                     ""
+"e"            "/ɛ/; /e/"        "/e/: in open syllables (described above)"
+"f"            "/f/; /v/"           "/f/: default"
+"g"            "/ɣ/"                     ""
+"h"            "/h/"                     ""
+"i"            "/ɪ/; /i/"         "/i/: in open syllables (described above)"
+"j"            "/j/"                     ""
+"k"            "/k/"                     ""
+"l"            "/l/"                     ""
+"m"            "/m/"                     ""
+"n"            "/n/"                     ""
+"o"            "/ɔ/; /o/"          "/o/: in open syllables (described above)"
+"p"            "/p/"                     ""
+"r"            "/r/"                     ""
+"s"            "/s/; /z/"            "/s/: default"
+"t"            "/t/"                     ""
+"u"            "/ʏ/; /y/"          "/y/: in open syllables (described above)"
+"v"            "/v/"                     ""
+"w"            "/ʋ/"                     ""
+"z"            "/z/"                     ""
+**Digraph**    ""                        ""
+"ch"           "/x/"                     ""
+"ng"           "/ŋ/"                     ""
+"qu"           "/kʋ/"                    ""
+"ie"           "/i/"                     ""
+"eu"           "/ø/"                     ""
+"oe"           "/u/"                     ""
+"ei"           "/ɛi/"                    ""
+"ou"           "/ɔu/"                    ""
+"ui"           "/œy/"                    ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /s/, /z/, /t/, /k/, /x/, and /n/ are often palatalized preceding /j/ [@Booij1999, pp. 7-8; @Mees1982, p. 4].
+    - In this environment, /t/ and /k/ are said to be realized with some frication.
+* Voiceless consonants may become voiced preceding voiced consonants [@Mees1982, pp. 4-5].
+* Intervocalically, /f/ and /x/ are realized with some voicing [@Mees1982, p. 5].
+* Geminate consonants are prohibited in Dutch, and are therefore often degeminated (ibid.).
+* Where homorganic consonants occur (voiceless followed by voiced), the voiceless stop often becomes voiced and elided (ibid.).
+* /n/ is often deleted word-finally (ibid.).
+* Vowels become nasalized preceding nasals (ibid.). This may result in the elision of the nasal consonant all together.
+* /n/ followed by a homorganic stop or fricative is often deleted, resulting in nasalized diphthongal glide.
+* /h/ is often realized with some voicing when occurring between voiced consonants [@Mees1982, p. 7]. It is also sometimes deleted.
+* /t/ is often pronounced lenis following /s/ and preceding bilabial consonants [@Mitterer2005, p. 73].
+* /t/ is also often lenited word-finally, especially as part of a cluster [@Mitterer2005, p. 77].
+
+# Misc. Rules
+
+* /x/ is often realized somewhere between a velar and uvular place of articulation [@Mees1982, p. 7].
+* Word-finally, Schwa epenthesis often occurs between /l/ and non-homorganic consonants [@Mees1982, p. 8].
+* /j/ may be realized as the fricative [ʝ] (ibid.).
+* Intervocalically, /ʋ/ varies freely with /u/ (ibid.).
+* /r/ appears to have a range of realizations. These include: [ɾ], [ʀ], [χ], [ʁ], or [j] [@Mees1982, pp. 9-10; @Booij1999, p. 8].
+* Vowel hiatus is generally avoided in Dutch [@Booij1999, p. 65]. Although adjacent vowels are rather rare, when they do occur, one of three process occur:
+    1. Glottal stop epenthesis
+    2. Glide insertion
+    3. Vowel elision
+
+# References

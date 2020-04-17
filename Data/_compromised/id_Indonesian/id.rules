@@ -1,0 +1,29 @@
+# Indonesian Rule Set
+# Written by: Becky and Justin
+# Last Updated: 2020-03-26
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aeioubfdhklmnprstwz],,,,
+class,apostrophe,['ꞌˈ‘’],,,,
+# Individual Letters
+sub,c,tʃ,1,,,
+sub,é,e,1,,,
+sub,g,ɡ,1,,,
+sub,j,dʒ,1,,,
+sub,q,k,1,,,
+sub,v,f,1,,,
+sub,x,k s,1,,,
+sub,({passthrough}),\1,0.1,,,
+sub,y,j,1,,,
+# Digraphs
+sub,n,ŋ,2,,g,
+sub,g,,2,n,,"clean-up",
+sub,n,ɲ,2,,y,
+sub,y,,2,n,,"clean-up",
+sub,k,x,2,,h,
+sub,h,,2,k,,"clean-up",
+sub,s,ʃ,2,,y,
+sub,y,,2,s,,"clean-up"
+# Misc. Rules
+sub,-,,2,,,
+sub,{apostrophe},,2,,,

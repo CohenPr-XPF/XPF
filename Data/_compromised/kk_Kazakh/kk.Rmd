@@ -1,0 +1,136 @@
+---
+title: "Kazakh"
+author: "Abi Creighton"
+bibliography: kk.bib
+output: html_document
+---
+
+Last Updated: 2019-09-24
+
+**Compromised: conflation between vowels and glides; widely contrasting phonological documentation of the language**
+
+# Background
+
+**Language family**: Turkic / Common Turkic / Kipchak / Kipchak-Nogai / Kazakh
+
+* Kazakh is spoken within Central Asia, specifically in China, Kazakhstan, Mongolia, Turkmenistan, and Uzbekistan.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Dental  Alveolar  Postalveolar  Palatal  Velar   Uvular  Glottal
+Stops                      "p b"    "t̪ d̪"      ""         ""          ""    "k  ɡ"    "q"      ""
+Fricatives                   ""     "s̪ z̪"      ""        "ʃ ʒ"         ""      ""      "χ ʁ"   "h"
+Nasals                       "m"     "n̪"       ""         ""          ""      "ŋ"      ""      ""
+Trills                        ""     ""        "r"         ""          ""      ""       ""     ""
+Approximants                 "w"     "l̪"       ""         ""          "j"     ""       ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 8)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* No two accounts of the Kazakh vowel inventory (ranging between 9 and 12 vowel phonemes) seem to agree [@McCollum2020, p. 7]. I have chosen to follow the analysis done by @Bowman2013 (p. 1).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+            Front     Back
+High         "i y"   "ɯ u"
+Near-High    "ɪ"      "ʊ"
+Mid          "e ø"    "o"
+Near-Low     "æ"      ""
+Low          ""       "ɑ"
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are unrounded and those on the right are rounded.", general_title = "")
+```
+
+# Alphabet
+
+* Although Kazakh can be written with the Arabic, Latin, and Cyrillic scripts, I have opted to represent only the Cyrillic script below, as the others pose more conflation between phonemes [@Vajda1994, pp. 606-607].
+
+* ⟨в⟩, ⟨ё⟩, ⟨ф⟩, ⟨х⟩, ⟨ц⟩, ⟨ч⟩, ⟨щ⟩, ⟨ъ⟩, ⟨ь⟩, and ⟨э⟩ appear in loanwords [@Vajda1994, pp. 608, 609].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme         Comment                        
+"а"            "/ɑ/"            ""                
+"ә"            "/æ/"            ""               
+"б"            "/b/"            ""               
+"г"            "/ɡ/"            ""               
+"ғ"            "/ʁ/"            ""               
+"д"            "/d̪/"            ""               
+"е"            "/e/"            ""               
+"ж"            "/ʒ/"            ""              
+"з"            "/z̪/"            ""               
+"и"          "/i/; /j/"   "/i/: default in rule set"                   
+"й"            "/j/"            ""                   
+"к"            "/k/"            ""                
+"қ"            "/q/"            ""              
+"л"            "/l̪/"            ""               
+"м"            "/m/"            ""             
+"н"            "/n̪/"            ""               
+"ң"            "/ŋ/"            ""               
+"о"            "/o/"            ""               
+"ө"            "/ø/"            ""               
+"п"            "/p/"            ""               
+"р"            "/r/"            ""               
+"с"            "/s̪/"            ""                
+"т"            "/t̪/"            ""              
+"у"          "/u/; /w/"    "/u/: default in rule set"                  
+"ұ"            "/ʊ/"            ""               
+"ү"            "/y/"            ""               
+"х"            "/χ/"            ""               
+"һ"            "/h/"            ""               
+"ш"            "/ʃ/"            ""               
+"ы"            "/ɯ/"            ""               
+"і"            "/ɪ/"            ""               
+"ю"            "/ju/"           ""               
+"я"            "/jɑ/"           ""               
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Kazakh follow the order of (C)V(C)(C) [@McCollum2020, p. 23].
+
+# Lenition Rules
+
+* /b/, /ɡ/, and /q/ may spirantize intervocalically [@kirchner_kazakh_1998].
+    - /d̪/ does spirantize as well to [ð] for some speakers, but it is far more rare [@McCollum2020, p. 5].
+* In fast speech /q/ tends to be realized as [χ] [@McCollum2020, p. 4].
+    - This process tends to neutralize the contrast between /q/ and /χ/.
+* /r/ may be realized as a flap in fast speech [@McCollum2020, p. 6].
+
+# Misc. Rules
+
+* A type of vowel harmony is present with velar and uvular stops; front vowels tend to appear in the vicinity of velar stops, while back vowels tend to appear in the vicinity of uvular stops [@McCollum2020, p. 4].
+* /χ/ is sometimes realized as [x] due to Russian influence (ibid.).
+* /n̪/ assimilates in place to following obstruents [@McCollum2020, p. 5].
+* /l/ becomes velarized in the vicinity of back vowels [@McCollum2020, p. 6].
+* An epenthetic vowel tends to appear preceding word-initial /r/ (ibid.).
+* Consonant gemination appears to occur [@Dotton2018, p. 16].
+
+# References

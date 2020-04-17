@@ -1,0 +1,12 @@
+# Anjam Rule Set
+# Written by: Daniela Wiepert
+# Last Updated: 2020-02-19
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdeiklmnŋopqrstuw],,,,
+# Individual
+sub,g,ɡ,4,,,
+sub,j,dʑ,4,,,
+sub,ñ,ɲ,4,,,
+sub,y,j,4,,,
+sub,({passthrough}),\1,0.1,,,

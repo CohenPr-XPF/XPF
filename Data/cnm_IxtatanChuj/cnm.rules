@@ -1,0 +1,40 @@
+# Chuj Rule Set
+# Written by: Bill
+# Last Updated: 2020-02-29
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,apostrophe,[ꞌ'‘’],,,,
+class,post-n,[ḧ],,,,
+class,pre-apost,[cdhktz],,,,
+class,passthrough,[aeiklmnopstuw],,,,
+# Individual Letters
+sub,b,ɓ,4,,{apostrophe},
+sub,c,k,4,,,"an alternate orthography for <k>"
+sub,d,t,4,,{apostrophe},"<d'> is sometimes used in place of <t'>"
+sub,j,χ,4,,,
+sub,r,ɾ,4,,,
+sub,v,w,4,,,
+sub,x,ʃ,4,,,
+sub,y,j,4,,,
+sub,{apostrophe},ʔ,4,,,
+sub,{apostrophe},,6,b,,"<b'> collectively marks the implosive b"
+sub,-,,4,,,"some words have hyphens with no phonetic value"
+# Ejectives
+sub,{apostrophe},ʼ,6,{pre-apost},,
+ipasub, ʼ,ʼ,2,,,"closing the space"
+# <qu>
+sub,q,k,5,,u,"<qu>"
+sub,u,,5,q,,"<qu> cleanup"
+sub,q,kʼ,5,,{apostrophe}u,"<q'u>"
+sub,{apostrophe},,5,q,u,"<q'u> cleanup part 1"
+sub,u,,5,q{apostrophe},,"<q'u> cleanup part 2"
+# Other Digraphs
+sub,c,tʃ,6,,h,"<ch>"
+sub,h,,6,c,,"<ch> cleanup"
+sub,n,ŋ,6,,{post-n},"/ŋ/ digraphs"
+sub,h,,6,n,,"<nh> cleanup"
+sub,̈,,6,n,,"<n̈> cleanup"
+sub,t,ts,6,,z,"<tz>"
+sub,z,,6,t,,"<tz> cleanup"
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,

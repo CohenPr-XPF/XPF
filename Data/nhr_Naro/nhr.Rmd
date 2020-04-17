@@ -28,28 +28,27 @@ Last Updated: 2019-07-02
     - He does not see the velar-released stops as occurring phonemically.
     - He identifies /h/ as an allophone of /x/.
     - He sees syllabic nasals for /m/, /n/, and /ŋ/ as existing contrastively [@NhrKagaya1978, p. 39].
-    
+
     **(All aforementioned bullet points on @NhrKagaya1978, p. 34, except where mentioned)**
-* The position of /w/ and /j/ is unclear; they only occur intervocalically, so their realization may be just an epenthetic process rather than the production of a distinct phoneme [@NhrKagaya1978, pp. 37-38].
+* The position of /w/ and /j/ is somewhat unclear; they only occur intervocalically, so their realization may just be due to an epenthetic or reduction process rather than the production of a distinct phoneme [@NhrKagaya1978, pp. 37-38]. I have chosen to treat them as phonetic realizations.
 
 ```{r echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
 library(dplyr)
 library(knitr)
 library(kableExtra)
 consonants <- read.table(textConnection('
-"Manner of Articulation"               Labial     Alveolar         Palatal    Velar       Glottal
-"Stops (normal release)"                "p pʰ b"   "t tʰ tʼ d"      ""         "k kʰ ɡ"    ""
-"Stops (velar fricative release)"       ""         "tx"             ""         "kx kxʼ"    ""
-"Affricates (normal release)"           ""         "ts tsʰ tsʼ dz"  ""         ""          ""
-"Affricates (velar fricative release)"  ""         "tsx"            ""         ""          ""
-Fricatives                              ""         "s"              ""         "x"         "h"
-Nasals                                  "m"        "n"              ""         ""          ""
-Flaps                                   ""         "ɾ"              ""         ""          ""
-Approximants                            "w"        ""               "j"        ""          ""
+"Manner of Articulation"               Labial     Alveolar           Velar       Glottal
+"Stops (normal release)"                "p pʰ b"   "t tʰ tʼ d"       "k kʰ ɡ"    ""
+"Stops (velar fricative release)"       ""         "tx"              "kx kxʼ"    ""
+"Affricates (normal release)"           ""         "ts tsʰ tsʼ dz"   ""          ""
+"Affricates (velar fricative release)"  ""         "tsx"             ""          ""
+Fricatives                              ""         "s"               "x"         "h"
+Nasals                                  "m"        "n"               ""          ""
+Flaps                                   ""         "ɾ"               ""          ""
 '), header = TRUE)
-kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
-  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
   column_spec(1, bold = TRUE) %>%
   footnote("Note: Phonemes with the diacritics (ʰ) and (ʼ) are aspirates and ejectives, respectively.", general_title = "")
 ```
@@ -106,70 +105,72 @@ kable(consonants, align = 'c') %>%
 
 # Alphabet
 
+* ⟨w⟩ and ⟨y⟩ are used orthographically to represent [w] and [j], sounds which I have decided to treat not as phonemes. I have opted to treat them as epenthetic vowels occurring intervocalically [@NhrKagaya1978, pp. 37-38], thus, the graphemes will transcribe to nothing in the rule set.  
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
-Grapheme      Phoneme
-"a"            "/a/"  
-"a̱"            "/aˤ/"  
-"b"            "/b/"  
-"c"            "/ǀ/"   
-"c\'"          "/ǀʼ/"   
-"d"            "/d/"  
-"e"            "/e/"  
-"f"            "/f/"  
-"g"            "/x/"   
-"h"            "/h/"  
-"i"            "/i/"  
-"k"            "/k/"   
-"m"            "/m/"  
-"n"            "/n/"  
-"o"            "/o/"  
-"o̱"            "/oˤ/"  
-"p"            "/p/"
-"q"            "/ǃ/"   
-"q\'"          "/ǃʼ/"    
-"r"            "/ɾ/"  
-"s"            "/s/"  
-"t"            "/t/"   
-"u"            "/u/"  
-"w"            "/w/"   
-"x"            "/ǁ/"   
-"x\'"          "/ǁʼ/"   
-"y"            "/j/"  
-"z"            "/dz/"
-**Multigraph**  ""  
-"cg"           "/ǀx/"  
-"cg\'"         "/ǀxʼ/"  
-"ch"           "/ǀʰ/"
-"dc"           "/ᶢǀ/"  
-"nc"           "/ⁿǀ/"
-"gh"           "/ɡ/"
-"kg"           "/kx/"  
-"kg\'"         "/kxʼ/"  
-"kh"           "/kʰ/"
-"ph"           "/pʰ/"  
-"qg"           "/ǃx/"  
-"qg\'"         "/ǃxʼ/"  
-"qh"           "/ǃʰ/"
-"dq"           "/ᶢǃ/"  
-"nq"           "/ⁿǃ/"
-"tg"           "/tx/"  
-"th"           "/tʰ/"  
-"tc"           "/ǂ/"  
-"tcg"          "/ǂx/"  
-"tcg\'"        "/ǂxʼ/"  
-"tch"          "/ǂʰ/"  
-"tc\'"         "/ǂʼ/"  
-"dtc"          "/ᶢǂ/"  
-"ntc"          "/ⁿǂ/"  
-"ts"           "/ts/"  
-"tsh"          "/tsʰ/"
-"xg"           "/ǁx/"  
-"xg\'"         "/ǁxʼ/"  
-"xh"           "/ǁʰ/"
-"dx"           "/ᶢǁ/"  
-"nx"           "/ⁿǁ/"
+Grapheme      Phoneme          Comment
+"a"            "/a/"             ""
+"a̱"            "/aˤ/"            ""
+"b"            "/b/"             ""
+"c"            "/ǀ/"             ""
+"c\'"          "/ǀʼ/"            ""
+"d"            "/d/"             ""
+"e"            "/e/"             ""
+"f"            "/f/"             ""
+"g"            "/x/"             ""
+"h"            "/h/"             ""
+"i"            "/i/"             ""
+"k"            "/k/"             ""
+"m"            "/m/"             ""
+"n"            "/n/"             ""
+"o"            "/o/"             ""
+"o̱"            "/oˤ/"            ""
+"p"            "/p/"             ""
+"q"            "/ǃ/"             ""
+"q\'"          "/ǃʼ/"            ""
+"r"            "/ɾ/"             ""
+"s"            "/s/"             ""
+"t"            "/t/"             ""
+"u"            "/u/"             ""
+"w"             ""       "no phonemic representations: [w] intervocalically"
+"x"            "/ǁ/"             ""
+"x\'"          "/ǁʼ/"            ""
+"y"             ""       "no phonemic representation: [j] intervocalically"
+"z"            "/dz/"            ""
+**Multigraph**  ""               ""
+"cg"           "/ǀx/"            ""
+"cg\'"         "/ǀxʼ/"           ""
+"ch"           "/ǀʰ/"            ""
+"dc"           "/ᶢǀ/"            ""
+"nc"           "/ⁿǀ/"            ""
+"gh"           "/ɡ/"             ""
+"kg"           "/kx/"            ""
+"kg\'"         "/kxʼ/"           ""
+"kh"           "/kʰ/"            ""
+"ph"           "/pʰ/"            ""
+"qg"           "/ǃx/"            ""
+"qg\'"         "/ǃxʼ/"           ""
+"qh"           "/ǃʰ/"            ""
+"dq"           "/ᶢǃ/"            ""
+"nq"           "/ⁿǃ/"            ""
+"tg"           "/tx/"            ""
+"th"           "/tʰ/"            ""
+"tc"           "/ǂ/"             ""
+"tcg"          "/ǂx/"            ""
+"tcg\'"        "/ǂxʼ/"           ""
+"tch"          "/ǂʰ/"            ""
+"tc\'"         "/ǂʼ/"            ""
+"dtc"          "/ᶢǂ/"            ""
+"ntc"          "/ⁿǂ/"            ""
+"ts"           "/ts/"            ""
+"tsh"          "/tsʰ/"           ""
+"xg"           "/ǁx/"            ""
+"xg\'"         "/ǁxʼ/"           ""
+"xh"           "/ǁʰ/"            ""
+"dx"           "/ᶢǁ/"            ""
+"nx"           "/ⁿǁ/"            ""
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%

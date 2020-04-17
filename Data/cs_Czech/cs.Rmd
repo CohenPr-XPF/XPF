@@ -5,7 +5,7 @@ bibliography: cs.bib
 output: html_document
 ---
 
-Last updated: 2019-08-29
+Last updated: 2020-03-18
 
 # Background
 
@@ -16,6 +16,9 @@ Last updated: 2019-08-29
 # Phonology
 
 ## Consonants
+
+* @harkins_modern_1980 argue for /t/, /d/, and /n/ as dental consonants (p. 4); however, @simackova_czech_2012 and @bican_phonotactics_2011 do not (p. 226; p. 14).
+* @bican_phonotactics_2011 argues for /ɣ/ rather than /ɦ/ (p. 15).
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -43,15 +46,15 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Vowel length is contrastive in Czech. Although each vowel has a long counterpart phonemically identical in terms of place, the long counterpart of /ɪ/ is /iː/. Long vowels are indicated by an acute accent (´). An overring (˚) over /u/ also indicates lengthening [@harkins_modern_1980, p. 7].  
-* /eu̯/ and /au̯/ were introduced into the Czech language through loanwords; however, now days they are included in the vowel inventory [@bican_phonotactics_2011, p. 21; @simackova_czech_2012, p. 23].
+* Vowel length is contrastive in Czech, although /oː/ only appears in loanwords. Long vowels are indicated by an acute accent (´). An overring (˚) atop ⟨u⟩ also indicates length [@harkins_modern_1980, p. 7].  
+* /eu/ and /au/ were introduced into the Czech language through loanwords; however, now days they are included in the vowel inventory [@bican_phonotactics_2011, p. 21; @simackova_czech_2012, p. 23].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 vowels <- read.table(textConnection('
          Front      Central       Back
-High     "ɪ"          ""           "u"         
-Mid      "ɛ"          ""           "o"
+High     "i"          ""           "u"         
+Mid      "e"          ""           "o"
 Low      ""           "a"          ""
 '), TRUE)
 
@@ -64,7 +67,7 @@ kable(vowels, align = 'c') %>%
 
 diphthongs <- read.table(textConnection('
 Diphthongs   
-"/eu̯/, /au̯/, /ou̯/"
+"/eu/, /au/, /ou/"
 '), TRUE)
 
 kable(diphthongs, align = 'c') %>%
@@ -74,6 +77,10 @@ kable(diphthongs, align = 'c') %>%
 
 # Alphabet
 
+* Preceding /i/, ⟨ť⟩, ⟨ď⟩, and ⟨ň⟩ are written as ⟨t⟩, ⟨d⟩, and ⟨n⟩, respectively [@harkins_modern_1980, p. 6]. This does not pose any ambiguity related to whether the alveolar or palatal consonants are underlying because ⟨t⟩, ⟨d⟩, and ⟨n⟩, representing /t/, /d/, and /n/, respectively (in native words), are never followed by ⟨i⟩ or ⟨í⟩ [@harkins_modern_1980, p. 12].
+    - Also, preceding /e/, ⟨ť⟩, ⟨ď⟩, and ⟨ň⟩ are written as ⟨t⟩, ⟨d⟩, and ⟨n⟩, respectively, + ⟨ě⟩ (ibid.). This also does not create ambiguity, given that ⟨t⟩, ⟨d⟩, and ⟨n⟩, representing /t/, /d/, and /n/, respectively (in native words), are never followed by ⟨ě⟩.
+* ⟨ó⟩, ⟨q⟩, ⟨w⟩, and ⟨x⟩ appear in loanwords [@harkins_modern_1980, pp. 2-3].
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
@@ -81,17 +88,17 @@ Grapheme      Phoneme          Comment
 "a"	           "/a/"             ""
 "á"	           "/aː/"            ""
 "b"	           "/b/"             ""
-"c"	          "/ts/"             ""
-"č"	          "/tʃ/"             ""
+"c"	           "/ts/"            ""
+"č"	           "/tʃ/"            ""
 "d"	           "/d/"             ""
 "ď"	           "/ɟ/"   "the uppercase form is ⟨Ď⟩"
-"e"	           "/ɛ/"             ""
-"é"	           "/ɛː/"            ""
-"ě"          	 "/ɛ/"             ""
+"e"	           "/e/"             ""
+"é"	           "/eː/"            ""
+"ě"          	 "/je/"             ""
 "f"	           "/f/"             ""
 "g"	           "/ɡ/"             ""
 "h"	           "/ɦ/"             ""
-"i"	           "/ɪ/"             ""
+"i"	           "/i/"             ""
 "í"	           "/iː/"            ""
 "j"	           "/j/"             ""
 "k"	           "/k/"             ""
@@ -100,9 +107,7 @@ Grapheme      Phoneme          Comment
 "n"	           "/n/"             ""
 "ň"	           "/ɲ/"             ""
 "o"	           "/o/"             ""
-"ó"	           "/oː/"   "only used in loanwords"  
 "p"	           "/p/"             ""
-"q"	           "/kv/"   "only used in loanwords"  
 "r"	           "/r/"             ""
 "ř"	           "/r̝/"             ""
 "s"	           "/s/"             ""
@@ -112,14 +117,12 @@ Grapheme      Phoneme          Comment
 "u"	           "/u/"             ""
 "ú"	           "/uː/"            ""
 "ů"	           "/uː/"            ""
-"v"	           "/v/"     "only used in loanwords"  
-"w"	           "/v/"     "only used in loanwords"  
-"x"	           "/ks/"            ""
-"y"	           "/ɪ/"             ""
+"v"	           "/v/"             ""  
+"y"	           "/i/"             ""
 "ý"	           "/iː/"            ""
 "z"         	 "/z/"             ""
 "ž"            "/ʒ/"             ""
-**Digraphs**    ""              ""
+**Digraph**    ""               ""
 "ch"	         "/x/"             ""
 "au"          "/au̯/"             ""
 "eu"          "/eu̯/"             ""
@@ -130,21 +133,19 @@ kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
 
-# Syllable Structure
-
-* Czech prefers empty codas, but it's not obligatory in the language [@harkins_modern_1980, p. 9].  
-
 # Lenition Rules
 
-* Voiced word-final consonants generally neutralize [@harkins_modern_1980, p. 10].  
 * /j/ may delete word-initially if preceding a consonant [@harkins_modern_1980, p. 14].  
 * Voiceless consonants become voiced if followed by voiced consonants [@harkins_modern_1980, p. 10].  
 * /ɦ/ is present in the language due to the lenition of /ɡ/, which is common within the Slavic languages [@sussex_slavic_2006, p. 143].  
+* Repetition (gemination) of consonants is typically avoided in Czech [@harkins_modern_1980, p. 9], but when they occur, they typically undergo degemination.
+* /d/ may be realized intervocalically as a flap [@Machac2009 as cited in @simackova_czech_2012, p. 226].
+* /v/ may approximantize to [ʋ] [@Skarnitzl2005 as cited in @simackova_czech_2012, p. 226].
 
 # Misc. Rules
 
-* Glottal epenthesis occurs preceding a vowel in word-initial positions [@harkins_modern_1980, p. 13].  
-* Repetition of consonants is typically avoided in Czech [@harkins_modern_1980, p. 9].  
+* Glottal epenthesis occurs preceding vowels in word-initial positions [@harkins_modern_1980, p. 13].   
 * The voiceless plosives are often aspirated, but it's not contrastive to their non-aspirated counterparts [@harkins_modern_1980, p. 5].
+* /n/ assimilates in place preceding velar consonants and /m/ assimilates in place preceding labio-dental consonants [@simackova_czech_2012, pp. 226-227].
 
 # References  

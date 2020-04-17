@@ -1,0 +1,121 @@
+---
+title: "Indonesian"
+author: "Justin Bai"
+edited by: "Emily Strand"
+bibliography: id.bib
+output: html_document
+---
+
+Last Updated: 2020-03-26
+
+**Slightly Compromised: conflation between /e/ and /ə/**
+
+# Background
+
+**Language family**: Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Sundic / Malayic / Malayan / Local Malay
+
+# Phonology
+
+## Consonants
+
+* /f/, /z/, /x/, and /ʃ/ only appear in loanwords, but due to major influence, they have phonemic status in the language [@tadmor2009malay, p. 795].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Labial   Alveolar  Postalveolar   Palatal  Velar   Glottal
+Stops                        "p b"    "t d"        ""          ""      "k ɡ"     ""
+Affricates                    ""       ""        "tʃ dʒ"       ""       ""       ""
+Fricatives                    "f"     "s z"        "ʃ"         ""       "x"      "h"
+Nasals                        "m"      "n"         ""          "ɲ"      "ŋ"      ""
+Trills                        ""       "r"         ""          ""       ""       ""
+Approximants                  "w"      "l"         ""          "j"      ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Where two phonemes share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* Adjacent vowels don't typically form complex nuclei [@tadmor2009malay, p. 796].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         "ə"          "o"
+Low        ""         "a"           ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+* The languages is somewhat compromised as ⟨e⟩ can represent two different vowels /e/ and /ə/. The rules use /e/ as the default [@soderberg2008indonesian, p. 211].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme         Comment
+"a"             "/a/"            ""
+"b"             "/b/"            ""
+"c"             "/tʃ/"           ""
+"d"             "/d/"            ""
+"e"          "/e/; /ə/"     "/e/: default"
+"é"             "/e/"            ""
+"f"             "/f"       "only in loanwords - varies freely with [p]"
+"g"             "/ɡ/"            ""
+"h"             "/h/"            ""
+"j"             "/dʒ/"           ""
+"k"             "/k/"            ""
+"l"             "/l/"            ""
+"m"             "/m/"            ""
+"n"             "/n/"            ""
+"p"             "/p/"            ""
+"q"             "/k/"      "only in loanwords"
+"r"             "/r/"            ""
+"s"             "/s/"            ""
+"t"             "/t/"            ""
+"v"             "/f/"      "only in loanwords - varies freely with [v]"
+"w"             "/w/"            ""
+"x"             "/ks/"     "only in loanwords"
+"y"             "/j/"            ""
+"z"             "/z/"      "only in loanwords"
+**Digraph**      ""              ""
+"ng"            "/ŋ/"            ""
+"ny"            "/ɲ/"            ""
+"kh"            "/x/"      "only in loanwords - replaced with /k/ in younger generations [@soderberg2008indonesian, p. 211]"
+"sy"            "/ʃ/"      "only in loanwords"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```  
+
+# Syllable Structure
+
+* Syllables in Indonesian follow the order of (C)V(C) [@tadmor2009malay, p. 796].
+
+# Lenition Rules
+
+* /k/ is realized as a glottal stop syllable finally [@soderberg2008indonesian, p. 211].
+
+# Misc. Rules
+
+* Epenthesis of glottal stop occurs depending on loanword origin (e.g. Arabic) and affixation [@soderberg2008indonesian, p. 211].
+* Word-final voiced stops become voiceless in loanwords (voiced stops word-finally aren't present in native words) (ibid.).
+
+# References

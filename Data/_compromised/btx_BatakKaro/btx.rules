@@ -1,0 +1,24 @@
+# Batak Karo Rule Set
+# Written by: Daniela Wiepert
+# Edited by: Emily Strand
+# Last Updated: 2020-04-08
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdhiklmnoprstuw],,,,
+class,gem,(p|t|tɕ|k|m|n|ŋ|s|r),,,,
+# Individual Letters
+sub,c,tɕ,2,,,
+sub,e,ɘ,2,,,
+sub,é,e,2,,,
+sub,ë,ɯ,2,,,
+sub,g,ɡ,2,,,
+sub,j,dʑ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,n,ŋ,3,,g,
+sub,g,,3,n,,"clean-up",
+# Consonant Gemination
+ipasub,({gem}) \1\b,\1 ː,2,,,
+# Misc. Rules
+sub,-,,2,,,

@@ -8,11 +8,12 @@
 | ab            | Abkhaz                    |                               |
 | acf           | Saint Lucian Creole French| lacks lenition                |
 | aey           | Amele                     |                               |
-| agg           | Angor                     | under revision                |
+| agg           | Angor                     |                               |
 | aia           | Arosi                     |                               |
 | amn           | Amanab                    |                               |
 | an            | Aragonese                 |                               |
 | apu           | Apurinã                   |                               |
+| apy           | Apalaí                    |                               |
 | arl           | Arabela                   |                               |
 | ast           | Asturian                  |                               |
 | ata           | Pele-Ata                  |                               |
@@ -24,15 +25,18 @@
 | bdd           | Bunama                    |                               |
 | be            | Belarusan                 |                               |
 | bef           | Benabena                  |                               |
-| bg            | Bulgarian                 | under revision                |
+| bg            | Bulgarian                 |                               |
 | bi            | Bislama                   |                               |
 | boa           | Bora                      |                               |
+| boj           | Anjam                     | lacks lenition                |
 | bvr           | Burarra                   |                               |
 | caa           | Ch'orti'                  |                               |
 | car           | Carib                     |                               |           
-| cav           | Cavineña                  | under revision; lacks lenition|
+| cav           | Cavineña                  | lacks lenition                |
 | cbi           | Cha'palaa                 |                               |
 | cbt           | Chayahuita                |                               |
+| cnm           | Ixtatán Chuj              | lacks lenition                |
+| crh           | Crimean Tatar             |                               |
 | cs            | Czech                     |                               |
 | ctu           | Chol                      |                               |
 | cv            | Chuvash                   |                               |
@@ -53,25 +57,26 @@
 | gvn           | Kuku-Yalanji              |                               |
 | haw           | Hawaiian                  |                               |
 | hmn           | Hmong                     | lacks lenition                |
+| hsb           | Upper Sorbian             |                               |
 | ht            | Haitian Creole            |                               |
-| hu            | Hungarian                 | under revision                |
+| hu            | Hungarian                 |                               |
 | hy            | Armenian                  | under revision                |
 | inb           | Inga                      |                               |
 | ilo           | Ilocano                   |                               |
 | iu            | Inuktitut                 |                               |
-| iws           | Sepik Iwam                | under revision                |
+| iws           | Sepik Iwam                |                               |
 | jam           | Jamaican Creole           |                               |
-| jv            | Javanese                  | under revision                |
+| jv            | Javanese                  |                               |
 | ka            | Georgian                  |                               |
 | kbd           | Kabardian                 | under revision                |
 | kjb           | Q'anjob'al                |                               |
-| kk            | Kazakh                    | under revision                |
 | kki           | Kagulu                    | lacks lenition                |
 | kl            | Kalaallisut               |                               |
 | kn            | Kannada                   |                               |
 | ko            | Korean                    |                               |
 | kpf           | Komba                     |                               |
 | kpx           | Mountain Koiali           |                               |
+| ksr           | Borong                    | lacks lenition                |
 | kup           | Kunimaipa                 |                               |
 | ky            | Kirghiz                   |                               |
 | lem           | Nomaande                  |                               |
@@ -111,6 +116,7 @@
 | tpi           | Tok Pisin                 | lacks lenition                |
 | tr            | Turkish                   |                               |
 | tt            | Tatar                     |                               |
+| tyv           | Tuvan                     |                               |
 | tzo           | Tzotzil                   |                               |
 | ug            | Uyghur                    |                               |
 | uk            | Ukrainian                 |                               |
@@ -135,11 +141,14 @@
 
 | Language Code   | Language                    | Reason (more thorough explanation in Rmd files)                                                                      |
 |-----------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------|
+| acr-x-rabinal   | Rabinal Achi'               | suspect marking of vowel length                                                                                      |
 | ake             | Akawaio                     | conflation between voiceless and voiced consonants                                                                   |
 | aoj             | Mufian                      | conflation among vowels; ambiguity regarding vowel length and labialized consonant clusters                          |
 | arn             | Mapudungun                  | ambiguous orthography; conflation between dental and alveolar consonants                                             |
 | ar-x-diacritics | Arabic                      | ambiguous transcription of alif; conflation between vowels and glides                                                |
+| awx             | Awara                       | conflation between /nd/, /mb/, /nɡ/ and /d/, /b/, /ɡ/, respectively                                                  |
 | bmu             | Somba Siawari               | phonetic alphabet                                                                                                    |
+| btx             | Batak Karo                  | conflation among /e/, /ɘ/, and /ɯ/                                                                                   |
 | bzd             | Bribri                      | phonetic alphabet; contradicting documentation                                                                       |
 | ca              | Catalan                     | conflation among vowels and glides; ambiguous phonological interpretations                                           |
 | cav             | Cavineña                    | ambiguity whether a digraph represents one phoneme or two, depending on syllable structure                           |
@@ -148,19 +157,25 @@
 | con             | Cofan                       | conflation between consonants                                                                                        |
 | crm             | Moose Cree                  | /h/ represented only when contrast is required                                                                       |
 | fuv             | Nigerian Fulfulde           | glottal stop not always marked; unclear transcription of palatalized glottal stop                                    |
-| hi              | Hindi                       | conflation between /æ/ and /ɛ/; vowel nasalization ambiguity; unreliable marking of some consonants                  |     
+| hi              | Hindi                       | conflation between /æ/ and /ɛ/; vowel nasalization ambiguity; unreliable marking of some consonants                  |   
+| id              | Indonesian                  | conflation between /e/ and /ə/                                                                                       |  
 | ixl             | Ixil                        | word-initial glottal stop not always marked; somewhat ambiguous orthography                                          |
 | kek             | Qeqchi                      | ambiguity between ejective stops and stop-glottal stop sequences                                                     |
+| kk              | Kazakh                      | conflation between vowels and glides; widely contrastive phonological accounts of the language                       |
 | kmo             | Kwoma                       | non-transparent spelling with glottal stops                                                                          |
+| kyz             | Kayabí                      | conflation between /i/ and /j/                                                                                       |
 | mcf             | Matsés                      | conflation between alveolar and retroflex consonants; conflation between vowels                                      |
 | mek             | Mekeo                       | non-transparent spelling with glottal stops                                                                          |
 | mlp             | Bargam                      | conflation between /n/ and /ŋ/                                                                                       |
 | mnb             | Muna                        | orthography is suspect                                                                                               |
+| mpx             | Misima-Panaeati             | conflation between /e/ and /ɛ/ and between /o/ and /ɔ/                                                               |
 | mt              | Maltese                     | conflation between /ts/ and /dz/ and between /ʃ/ and /ʒ/                                                             |
 | ne              | Nepali                      | certain diacritics used interchangeably and inconsistently marked                                                    |
+| nl              | Dutch                       | conflation among vowels; conflation between voiced and voiceless consonants; orthographic ambiguity                  |
 | not             | Nomatsiguenga               | conflation among nasals                                                                                              |
 | or              | Oriya                       | diacritics not always marked; some diacritics used interchangeably                                                   |   
-| pib             | Yine                        | conflation between /n/ and /h̃/                                                                                       |              
+| pib             | Yine                        | conflation between /n/ and /h̃/                                                                                       |    
+| plu             | Palikúr                     | conflation between /ɡ/ and /ɣ/                                                                                       |          
 | qub             | Huallaga Huanuco Quechua    | orthography is suspect; conflation between vowels and glides                                                         |
 | sah             | Yakut                       | conflation between /j/ and /j̃/                                                                                       |
 | sk              | Slovak                      | non-transparent spelling with palatal consonants; ambiguity whether digraphs represent one phoneme or two            |
@@ -250,6 +265,7 @@
 | hch | Huichol                        | non-transparent spelling with tones                                   |
 | heh | Hehe                           | non-transparent spelling with tones                                   |
 | hr  | Croatian                       | non-transparent spelling with vowel length                            |
+| hub | Huambisa                       | non-transparent spelling with vowel nasalization                      |
 | hui | Huli                           | non-transparent spelling with tones                                   |
 | huv | Huave                          | inconsistent phonological documentation                               |
 | hz  | Herero                         | non-transparent spelling with tones                                   |
@@ -266,12 +282,14 @@
 | khk | Khalkha Mongolian              | non-transparent spelling with vowels                                  |
 | ki  | Gikuyu                         | non-transparent spelling with tones                                   |
 | kj  | Kwanyama                       | non-transparent spelling with tones                                   |
+| kjs | East Kewa                      | non-transparent spelling with tones                                   |
 | kew | West Kewa                      | non-transparent spelling with tones                                   |
 | kmr | Northern Kurdish               | non-transparent spelling with consonants                              |
 | kmu | Kanite                         | non-transparent spelling with tones                                   |
 | ksd | Kuanua                         | non-transparent spelling with vowel length                            |
 | kus | Kusaal                         | non-transparent spelling with tones and vowel length                  |
 | kw  | Cornish                        | non-transparent spelling with vowel length                            |
+| lac | Lacandon                       | non-transparent spelling with vowel length                            |
 | lb  | Luxembourgish                  | non-transparent spelling with vowels                                  |
 | lef | Lelemi                         | non-transparent spelling with tones                                   |
 | lg  | Luganda                        | non-transparent spelling with tones                                   |
@@ -360,6 +378,7 @@
 | wal | Wolaytta                       | non-transparent spelling with tones                                   |
 | war | Waray-Waray                    | insufficient documentation                                            |
 | wiu | Wiru                           | non-transparent spelling with tones                                   |
+| xal | Kalmyk-Oirat                   | non-transparent spelling with vowels                                  |
 | xav | Xavánte                        | non-transparent spelling with vowel length                            |
 | xbi | Kombio                         | non-transparent spelling with vowels                                  |
 | xh  | Xhosa                          | non-transparent spelling with tones                                   |
