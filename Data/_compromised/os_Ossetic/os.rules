@@ -1,0 +1,54 @@
+# Ossetic Rule Set
+# Written by: Bill
+# Last Updated: 2020-02-08
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,can-harden,[гх],,,
+class,can-labialize,(г|к|х|гъ|къ|хъ),,,,
+class,punctuation,['’-],,,,
+class,ejectives,(p|t|k|ts|tʃ),,,,
+class,labialized,(k|ɡ|q|χ|ʁ),,,,
+# Individual Letters
+sub,а,a,4,,,
+sub,ӕ,æ,4,,,
+sub,б,b,4,,,
+sub,в,v,4,,,
+sub,г,ɡ,4,,,
+sub,д,d,4,,,
+sub,е,e,4,,,
+sub,з,z,4,,,
+sub,и,i,4,,,
+sub,й,j,4,,,
+sub,к,k,4,,,
+sub,л,l,4,,,
+sub,м,m,4,,,
+sub,н,n,4,,,
+sub,о,o,4,,,
+sub,п,p,4,,,
+sub,р,r,4,,,
+sub,с,s,4,,,
+sub,т,t,4,,,
+sub,у,u,4,,,"can be either /u/ or /w/; I selected /u/ as the default; to make /w/ the default..."
+# sub,у,w,4,,,"...uncomment this line and comment out the preceding line"
+sub,ф,f,4,,,
+sub,х,χ,4,,,
+sub,ц,ts,4,,,
+sub,ч,tʃ,4,,,
+sub,ы,ɨ,4,,,
+sub,ъ,’,4,,,"marks ejectives"
+sub,{punctuation},,4,,,
+# Digraphs
+sub,г,ʁ,6,,ъ,
+sub,х,q,6,,ъ,
+sub,ъ,,6,{can-harden},,
+sub,д,dʒ,6,,ж,
+sub,ж,,6,д,,"clean-up",
+# Labialization
+sub,у,ʷ,8,{can-labialize},,"marks labiovelar and labiouvular stops"
+# Collapsing of Spaces
+ipasub,d z,dz,3,,,"<дз> becomes /dz/"
+ipasub,({labialized}) ʷ,\1ʷ,2,,,"attaches labialization to preceding phonemes"
+ipasub,({ejectives}) ’,\1’,2,,,"attaches ejectivization to preceding phonemes"
+ipasub,k ’ ʷ,kʷ’,3,,,
+ipasub, ’ , @ ,1,,,"rules out unattested ejectivization",
+ipasub, ’, @,1,,,"rules out unattested ejectivization",

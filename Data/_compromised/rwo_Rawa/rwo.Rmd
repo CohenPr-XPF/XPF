@@ -1,0 +1,123 @@
+---
+title: "Rawa"
+author: "Emily Strand"
+bibliography: rwo.bib
+output: html_document
+---
+
+Last Updated: 2020-04-17
+
+**Slightly Compromised: conflation between /l/ and /r/**
+
+# Background
+
+**Language Family:** Trans-New Guinea / Main Section / Central and Western / Huon-Finisterre / Finisterre / Gusap-Mot
+
+* Rawa is spoken in the Madang province of Papua New Guinea.
+* Rawa has two dialects: Rawa and Karo. The main differences are [@Toland1991, p. 2]:
+    - The Karo dialect has voiced stops, whereas the Rawa dialect has aspirated voiceless stops.
+    - /l/ is much more frequent than /r/ in the Karo dialect, and /r/ is much more frequent than /l/ in the Rawa dialect.
+
+* I have opted to go with the analysis that includes voiced stops, so the Karo dialect is reflected more closely below.
+
+# Phonology
+
+## Consonants
+
+* /h/ is considered a marginal phoneme [@Toland1992, p. 3].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"       Bilabial   Alveolar    Palatal    Velar    Glottal
+"Stops (plain)"                 "p b"      "t d"        ""       "k ɡ"      ""
+"Stops (prenasalized)"           "ᵐb"       "ⁿd"        ""       "ᵑɡ"       ""
+Fricatives                       ""         "s"         ""       ""         "h"
+Nasals                           "m"        "n"         ""       "ŋ"        ""
+Trills                           ""         "r"         ""       ""         ""
+Approximants                     "w"        "l"         "j"      ""         ""
+
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5))  %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Vowels cannot occur in succession [@Toland1991, p. 2].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+            Front   Central   Back
+High         "i"      ""      "u"
+High-Mid     "e"      ""      "o"
+Low-Mid      ""       ""      "ɔ"
+Low          ""       "a"      ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* Depending on the dialect, /r/ can be written with either ⟨l⟩ or ⟨r⟩ [@Toland1992, p. 3]. ⟨r⟩ is said to be used to transcribe /r/ in the Rawa dialect, whereas ⟨l⟩ is said to be used to transcribe /r/ in the Karo dialect. This is somewhat suspect, as the corresponding Crúbadán corpus of the Karo dialect contains instances of both ⟨r⟩ and ⟨l⟩ (only ⟨l⟩ is expected). Given this, I think there is high likelihood of both ⟨r⟩ and ⟨l⟩ being used to represent /r/ in the other Crúbadán corpora for the language as well (the general corpus and the Rawa dialect corpus). This means that conflation between /r/ and /l/ cannot be avoided, resulting in a somewhat compromised language.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme          Comment
+"a"              "/a/"             ""
+"b"              "/b/"             ""
+"d"              "/d/"             ""
+"e"              "/e/"             ""
+"g"              "/ɡ/"             ""
+"h"              "/h/"             ""
+"i"              "/i/"             ""
+"k"              "/k/"             ""
+"l"           "/l/; /r/"    "/l/: default in rule set"
+"m"              "/m/"             ""
+"n"              "/n/"             ""
+"o"              "/o/"             ""
+"p"              "/p/"             ""
+"r; l"           "/r/"       "⟨r⟩: default in rule set"
+"s"              "/s/"             ""
+"t"              "/t/"             ""
+"u"              "/u/"             ""
+"w"              "/w/"             ""
+"y"              "/j/"             ""
+**Multigraph**    ""               ""
+"mb"             "/ᵐb/"            ""
+"nd"             "/ⁿd/"            ""
+"ng"             "/ŋ/"             ""
+"ngg"            "/ᵑɡ/"            ""
+"oo"             "/ɔ/"             ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Rawa generally have a CV structure [@Toland1991, p. 2].
+    - Syllables consisting of only a vowel can occur word-initially.
+
+# Lenition Rules
+
+* /h/ may be elided word-initially [@Toland1992, p. 3].
+
+# Misc. Rules
+
+* /r/ may be realized as [l] [@Toland1992, p. 3].
+
+# References

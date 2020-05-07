@@ -1,0 +1,17 @@
+# Manam Rule Set
+# Written by: Emily
+# Last Updated: 2020-05-05
+type,sfrom,sto,weight,precede,follow,comment
+# Class rules
+class,passthrough,[abdeilmnoprstuz],,,,
+class,apostrophe,[ꞌ'ˈ‘’ʼ],,,,
+# Individual Letters
+sub,g,ɡ,2,,,
+sub,k,ʔ,2,,,
+sub,{apostrophe},ʔ,2,,,"apostrophes are not used in present Manam (strictly used in biblical texts) - comment out if need be",
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,n,ŋ,3,,g,
+sub,g,,3,n,,"clean-up",
+# Misc. Rules
+sub,-,,2,,,"dashes indicate morpheme boundaries",

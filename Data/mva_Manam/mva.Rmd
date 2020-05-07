@@ -1,0 +1,116 @@
+---
+title: "Manam"
+author: "Emily Strand"
+bibliography: mva.bib
+output: html_document
+---
+
+Last Updated: 2020-05-06
+
+# Background
+
+**Language Family:** Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Western Oceanic / North New Guinea / Schouten / Kairiru-Manam / Manam
+
+* Manam is spoken in the Madang province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+* Manam is currently undergoing sound change from /k/ to /ʔ/, with glottal stops being used more freely by younger generations [@Turner1995, p. 675]. Although some sources [e.g. @Gregersen1976, p. 102] indicate /k/ as the underlying form, I have opted to follow the analysis of newer sources [e.g. @Turner1995, p. 674] and represent /ʔ/ as underlying.
+    - @Lichtenberk1983 argues the change is from /q/ to /ʔ/ (p. 12).
+* @Gregersen1976 expresses the lack of clarity around the phonemic status of glides /j/ and /w/. I have chosen to treat them as allophones of /i/ and /o/, just as @Lichtenberk1983 does, given their predictable manifestations (see Misc. Rules; pp. 14-15).
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"       Bilabial   Alveolar  Velar    Glottal
+Stops                           "p b"      "t d"     "ɡ"       "ʔ"
+Fricatives                       ""        "s z"     ""        ""
+Nasals                           "m"        "n"      "ŋ"       ""
+Trills                           ""         "r"      ""        ""
+Approximants                     ""         "l"      ""        ""
+
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4))  %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Adjacent vowels are interpreted as separate from one another [@Lichtenberk1983, p. 21].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"      ""        "u"
+Mid       "e"      ""        "o"
+Low       ""       "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* 0.4% of the Crúbadán corpus contains apostrophes, which aren't typical of the Manam orthography. Upon speculation, these occurances seem to appear only in biblical texts, most likely representing the glottal stop, just as in other Austronesian languages. In the rule set, I transcribe apostrophes to glottal stops, but it can be excluded if need be.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme  
+"a"              "/a/"
+"b"              "/b/"
+"d"              "/d/"
+"e"              "/e/"
+"g"              "/ɡ/"
+"i"              "/i/"
+"k"              "/ʔ/"
+"l"              "/l/"
+"m"              "/m/"
+"n"              "/n/"
+"o"              "/o/"
+"p"              "/p/"
+"r"              "/r/"
+"s"              "/s/"
+"t"              "/t/"
+"u"              "/u/"
+"z"              "/z/"
+
+**Digraph**       ""
+"ng"             "/ŋ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Manam follow the order of (C)V(N) [@Lichtenberk1983, p. 21].
+    - There are instances, due to affixation, where syllabic nasals occur [@Gregersen1976, p. 103; @Martens1985, pp. 125-126].
+
+# Lenition Rule
+
+* /ɡ/ spirantizes intervocalically [@Gregersen1976, p. 103].
+* /q/ (and I'm assuming /k/), if used by older generations, may be spirantized intervocalically [@Lichtenberk1983, p. 13].
+* /s/ and (more commonly) /z/ may be realized as affricates (ibid.).
+
+# Misc. Rules
+
+* The contrast between /m/ and /n/ and between /n/ and /ŋ/ neutralizes word-finally [@Turner1995, p. 675].
+* With no morpheme boundaries intervening, /i/ is realized as [j] intervocalically, and word-initially preceding /a/ or /u/ [@Lichtenberk1983, p. 14].
+* With no morpheme boundaries intervening, /o/ is realized as [w] intervocalically, word-initially preceding /a/, and following non-initial bilabial consonants while also preceding morpheme final /a/ [@Lichtenberk1983, p. 15].
+
+# References

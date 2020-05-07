@@ -1,0 +1,129 @@
+---
+title: "Spanish"
+author: "Abi Creighton"
+bibliography: es.bib
+output: html_document
+---
+
+Last Updated: 2020-04-23
+
+**Compromised: orthographic ambiguity related to diphthongs**
+
+# Background
+
+**Language family**: Indo-European / Italic / Romance / Italo-Western / Western / Gallo-Iberian / Ibero-Romance / West-Iberian / Castilian
+
+* Spanish has over 483 million native speakers around the world, though it is mainly spoken in Spain and parts of Latin America. Because Spanish is so broadly spoken, a number of dialects exist with slight phonemic inventory variations. (Standard) Castilian Spanish is represented below.
+
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"          Labial  Dental Alveolar Palatal  Velar     
+Stops                             "p b"   "t̪ d̪"    ""       ""     "k ɡ"
+Affricates                         ""      ""      ""      "tʃ"     ""
+Fricatives                         "f"     "θ"     "s"      "ʝ"     "x"
+Nasals                             "m"     ""      "n"      "ɲ"     ""
+Trills                             ""      ""      "r"      ""      ""
+Flaps                              ""      ""      "ɾ"      ""      ""
+Approximants                       "w"     ""      "l"      "ʎ"     ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front Central Back
+High      "i"     ""    "u"
+Mid       "e"     ""    "o"
+Low       ""      "a"   ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+### Diphthongs
+
+* Varieties of Spanish differ in whether or not sequences of vowels are realized separately or as diphthongs. Even in varieties that do have preferences for diphthongs, the same sequence may be realized differently in different words. For example, in the word 'biólogo' there is a hiatus between /i/ and /o/, but in 'radiólogo,' ⟨i⟩ and ⟨o⟩ form the diphthong /jo/ [@chitoran_hiatus_2007, pp. 45-46]. Because the rules for diphthongization are not consistent across or even within Spanish dialects, I will not account for them in my rules. This results in a compromised language.
+
+# Alphabet
+
+**Note:** Presently, ⟨x⟩ is used to denote the sequence /ks/; however, the once corresponding phoneme /x/ is still retained in some proper names such as México [@Coester1925, pp. 111-112]. In the rule set, although I have accounted for such occurrences, it might not be exhaustive.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                           Comment
+"a"            "/a/"                              ""
+"b"            "/b/"                              ""
+"c"            "/k/; /θ/"                "/θ/: preceding front vowels"
+"d"            "/d̪/"                              ""
+"e"            "/e/"                              ""
+"f"            "/f/"                              ""
+"g"            "/ɡ/; /x/"                "/x/: preceding front vowels"
+"h"            ""                              "silent"
+"i"            "/i/"                              ""
+"j"            "/x/"                              ""
+"k"            "/k/"                              ""
+"l"            "/l/"                              ""
+"m"            "/m/"                              ""
+"n"            "/n/"                              ""
+"ñ"            "/ɲ/"                              ""
+"o"            "/o/"                              ""
+"p"            "/p/"                              ""
+"r"            "/ɾ/; /r/"                  "/r/: word-initially"
+"s"            "/s/"                              ""
+"t"            "/t̪/"                              ""
+"u"            "/u/"                              ""
+"v"            "/b/"                              ""
+"w"            "/w/"                              ""
+"x"            "/ks/; /s/; /x/"       "/s/: word-initially; see note above about /x/"
+"y"            "/ʝ/"                         ""
+"z"            "/θ/"                              ""
+**Digraph**    ""                                 ""
+"ch"           "/tʃ/"                             ""
+"ll"           "/ʎ/"                              ""
+"rr"           "/r/"                              ""
+"gu"           "/ɡ/"                      "preceding front vowels"
+"gü"           "/ɡw/"                     "preceding front vowels"
+"qu"           "/k/"                      "preceding front vowels"
+'), TRUE)
+
+kable(alphabet) %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /s/ can be deleted or aspirated in the coda or word-final position [@vasilescu_exploring_2018, p. 2729].
+* /s/ may become voiced preceding voiced consonants [@Schmidt2011, p. 1].
+* /n/ may be deleted or velarized word-finally [@salcedo_phonological_2010, pp. 203-204].
+* In Chicano Spanish, the first vowel in a vowel sequence in deleted [@salcedo_phonological_2010, p. 207].
+* /b/, /d/, and /ɡ/ often spirantize [@Martnez-Celdrn2003, p. 257].
+* /x/ is realized as [h] by some speakers (ibid.).
+
+# Misc. Rules
+
+* Nasals assimilate to the place of the following obstruent in fast speech [@harris_spanish_1967, pp. 8-19].
+* /l/ becomes a dental when preceding /t̪/ or /d̪/ [@harris_spanish_1967, p. 20].
+* /r/ can be lateralized in the coda or word-final position [@salcedo_phonological_2010, p. 204]
+
+# References

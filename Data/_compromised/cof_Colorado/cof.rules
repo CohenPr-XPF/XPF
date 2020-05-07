@@ -1,0 +1,52 @@
+# Colorado Rule Set
+# Written by: Emily
+# Last Updated: 2020-05-04
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[bdklmnprstw],,,,
+class,apostrophe,[ꞌ'ˈ‘’],,,,
+class,high-V,[iíuú],,,,
+class,front-V,[iíeé],,,,
+class,vowels-output,[aeiou],,,,
+class,consonants-output,(p|b|ɸ|m|w|t|d|ts|s|n|r|l|j|k|h|ʔ),,,,
+class,a,[aá],,,"stress is indicated by acute accents - not relevant for this project",
+class,e,[eé],,,,
+class,i,[ií],,,,
+class,o,[oó],,,,
+class,u,[uú],,,,
+# Individual Letters
+sub,{a},a,2,,,
+sub,c,k,2,,,
+sub,{e},e,2,,,
+sub,h,NAS,2,,,,
+sub,{i},i,2,,,
+sub,f,ɸ,2,,,
+sub,j,h,2,,,
+sub,{o},o,2,,,
+sub,{u},u,2,,,
+sub,y,j,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,ts,4,,h{high-V},
+sub,h,,4,c,{high-V},"clean-up",
+sub,q,k,3,,u{front-V},
+sub,u,,3,q,{front-V},"clean-up",
+sub,t,ts,3,,s,
+sub,s,,3,t,,"clean-up",
+sub,h,w,3,,u,
+sub,u,,3,h,,"clean-up",
+sub,s,s,4,,h{high-V},
+sub,h,,4,s,{high-V},"clean-up",
+sub,c,ts u,5,,hu,"need separate rule for <chu> sequences due to <ch> and <hu> being digraphs",
+sub,h,,5,c,u,"clean-up",
+sub,u,,5,ch,,"clean-up",
+sub,s,s u,5,,hu,"need separate rule for <shu> sequences due to <sh> and <hu> being digraphs",
+sub,h,,5,s,u,"clean-up",
+sub,u,,5,sh,,"clean-up",
+# Nasal Vowels
+ipasub,({vowels-output}) n$,\1̃,6,,,"word-final nasal vowels",
+ipasub,({vowels-output}) n ({consonants-output}),\1̃ \2,7,,,"word-medial nasal vowels (nasal vowel followed by a consonant)",
+ipasub,({vowels-output}) n NAS ({vowels-output}),\1̃ \2,8,,,"word-medial nasal vowels (nasal vowel followed immediately by oral vowel)",
+# Misc. Rules
+ipasub,NAS,@,1,,,

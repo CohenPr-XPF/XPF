@@ -1,0 +1,47 @@
+# Mapos Buang Rule Set
+# Written by: Emily
+# Last Updated: 2020-05-06
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aikmpuw],,,,
+class,w-preceder,[kg],,,,
+class,g-preceder,[ng],,,,
+class,vowels,[aeɛioɔu],,,,
+# Individual Letters
+sub,b,ᵐb,2,,,
+sub,d,ⁿd̪,2,,,
+sub,e,ɛ,2,,,
+sub,ë,e,2,,,
+sub,g,ᵑɡ,2,,,
+sub,ġ,ᶰɢ,2,,,
+sub,h,ʁ,2,,,
+sub,j,ⁿdʒ,2,,,
+sub,ḳ,q,2,,,
+sub,l,l̪,2,,,
+sub,n,n̪,2,,,
+sub,o,ɔ,2,,,
+sub,ö,o,2,,,
+sub,r,ɽ,2,,,
+sub,s,tʃ,2,,,
+sub,t,t̪,2,,,
+sub,v,β,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Multigraphs
+sub,k,kʷ,3,,w,
+sub,g,ᵑɡʷ,3,,w,
+sub,w,,3,{w-preceder},,"clean-up",
+sub,g,ɣ,3,,g,
+sub,n,ŋ,3,,g,
+sub,g,,3,{g-preceder},,"clean-up",
+sub,n,ɴ,3,,ġ,
+sub,ġ,,3,n,,"clean-up",
+sub,n,ɲ,3,,y,
+sub,y,,3,n,,"clean-up",
+sub,n,ŋʷ,4,,gw,
+sub,g,,4,n,w,"clean-up",
+sub,w,,4,gn,,"clean-up",
+# Long Vowels
+ipasub,({vowels}) \1,\1 ː,2,,,
+# Misc. Rules
+sub,-,,2,,,

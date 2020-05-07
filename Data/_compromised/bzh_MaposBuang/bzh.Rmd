@@ -1,0 +1,120 @@
+---
+title: "Mapos Buang"
+author: "Emily Strand"
+bibliography: bzh.bib
+output: html_document
+---
+
+Last Updated: 2020-05-06
+
+**Slightly Compromised: conflation between /ɛ/ and other vowels**
+
+# Background
+
+**Language Family:** Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Western Oceanic / North New Guinea / Huon Gulf / South / Hote-Buang / Buang
+
+* Mapos Buang, also referred to as Central Buang, is spoken in the Morobe province of Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"       Bilabial  Dental  Postalveolar Retroflex  Palatal  Velar  Labiovelar  Uvular
+Stops                           "p ᵐb"   "t̪ ⁿd̪"      ""          ""        ""    "k ᵑɡ"   "kʷ ᵑɡʷ"   "q ᶰɢ"
+Affricates                       ""        ""     "tʃ ⁿdʒ"       ""        ""      ""       ""         ""
+Fricatives                       "β"       ""        ""          ""        ""      "ɣ"      ""         "ʁ"
+Nasals                           "m"       "n̪"       ""          ""        "ɲ"     "ŋ"      "ŋʷ"       "ɴ"
+Flaps                            ""        ""        ""          "ɽ"       ""      ""       ""         ""
+Approximants                     ""        "l̪"       ""          ""        "j"     ""       "w"        ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Dental", "Palatal", "Retroflex", "Palatal", "Velar", "Labiovelar", "Uvular"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 8))  %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```  
+
+## Vowels
+
+* Vowel length is contrastive in Mapos Buang [@Hooley2006, pp. 5-6]. Long vowels are indicated by duplicate graphemes.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+             Front   Central   Back
+High         "i"      ""        "u"
+High-Mid     "e"      ""        "o"
+Low-Mid      "ɛ"      ""        "ɔ"
+Low          ""       "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* Schwa is represented orthographically by ⟨e⟩, however it is not contrastive with other vowels [@Hooley2006, p. 6]; ⟨e⟩ also represents /ɛ/, and has been used as the default transcription in the rule set. Because of this, the rule set is somewhat skewed in its representation of /ɛ/, conflating it with other vowels. Thus, the language is compromised to some degree.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme
+"a"              "/a/"
+"b"              "/ᵐb/"     
+"d"              "/ⁿd̪/"
+"e"              "/ɛ/"
+"ë"              "/e/"
+"g"              "/ᵑɡ/"
+"ġ"              "/ᶰɢ/"
+"h"              "/ʁ/"
+"i"              "/i/"
+"j"              "/ⁿdʒ/"
+"k"              "/k/"
+"ḳ"              "/q/"
+"l"              "/l̪/"
+"m"              "/m/"
+"n"              "/n̪/"
+"o"              "/ɔ/"
+"ö"              "/o/"
+"p"              "/p/"
+"r"              "/ɽ/"
+"s"              "/tʃ/"
+"t"              "/t̪/"
+"u"              "/u/"
+"v"              "/β/"
+"w"              "/w/"
+"y"              "/j/"
+**Multigraph**    ""
+"kw"             "/kʷ/"
+"gg"             "/ɣ/"
+"gw"             "/ᵑɡʷ/"
+"ng"             "/ŋ/"
+"nġ"             "/ɴ/"
+"ny"             "/ɲ/"
+"ngw"            "/ŋʷ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* Vowels are realized as [ə] in unstressed syllables [@Hooley2006, p. 6].
+
+# Misc. Rules
+
+* /ɽ/ may be realized by some speakers as [ɭ] [@Hooley2006, p. 4].
+* /l̪/ and /j/ may be realized with some frication [@Hooley2006, pp. 4-5].
+
+# References

@@ -1,0 +1,118 @@
+---
+title: "Asháninka"
+author: "Emily Strand"
+bibliography: cni.bib
+output: html_document
+---
+
+Last updated: 2020-04-22
+
+**Slightly Compromised: Conflation among placeless /N/, /m/, and /n/**
+
+# Background
+
+**Language family**: Arawakan / Maipuran / Southern Maipuran / Campa
+
+* Asháninka is spoken in Peru.
+
+# Phonology
+
+## Consonants
+
+* Asháninka is said to have a placeless nasal phoneme /N/ that occurs in word-medial codas, assimilating in place to following stops and affricates [@Mihas2019, p. 3583; @Chen2019, p. 3]. In the rules, I transcribe ⟨m⟩ to /m/ and ⟨n⟩ to /n/, meaning there is conflation among /N/, /m/, and /n/, so the language is compromised.
+* Accounts of the phonemic inventory somewhat differ, seemingly rooted in the overlap with the closely related language Ashéninka [@Mihas2019, p. 3583]. I have chosen to follow the analysis done by @Chen2019 (p. 5).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Bilabial  Alveolar  Postalveolar  Palatal  Velar   Glottal
+Stops                        "p"       "t"         ""          ""      "k"      ""
+Affricates                   ""        "ts"       "tʃ"         ""      ""       ""
+Fricatives                   "β"       "s"        "ʃ"          ""      ""       "h"
+Nasals                       "m"       "n"         ""          ""      ""       ""
+Flaps                        ""        "ɾ"         ""          ""      ""       ""
+Approximants                 ""        ""          ""          "j"     ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Asháninka also has a placeless /N/ (described above the chart).", general_title = "")
+```  
+
+## Vowels
+
+* Vowel length is contrastive in Asháninka [@Chen2019, pp. 4-5]. Long vowels are indicated by duplicate graphemes.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""           ""
+Mid         "e"         ""           "o"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ai/, /ao/, /oi/, /ei/, /io/, /ea/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+
+```  
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme         
+"a"              "/a/"            
+"c"              "/k/"            
+"e"              "/e/"            
+"i"              "/i/"            
+"k"              "/k/"            
+"j"              "/h/"            
+"m"              "/m/"            
+"n"              "/n/"              
+"o"              "/o/"            
+"p"              "/p/"            
+"r"              "/ɾ/"            
+"s"              "/s/"            
+"t"              "/t/"            
+"v"              "/β/"
+"y"              "/j/"            
+**Multigraph**    ""              
+"ch"             "/tʃ/"           
+"sh"             "/ʃ/"            
+"qu"             "/k/"            
+"ts"             "/ts/"           
+'), TRUE)
+
+kable(alphabet, align = "c") %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* Voiceless stops may become voiced following nasals and intervocalically [@Buttner1991, p. 57; @Mihas2019, p. 3584].
+
+# Misc. Rules
+
+* /n/ assimilates in place preceding /k/ [@Buttner1991, p. 57].
+* /t/, /n/, and /s/ may palatalize preceding front vowels [ibid.; @Chen2019, p. 8].
+
+# References

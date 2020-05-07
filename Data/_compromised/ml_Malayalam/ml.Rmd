@@ -1,0 +1,178 @@
+---
+title: "Malayalam"
+author: "Becky Mathew"
+bibliography: ml.bib
+output: html_document
+---
+
+Last Updated: 2020-03-26
+
+**Slightly Compromised: conflation between dental and alveolar /n/**
+
+# Background
+
+**Language family**: Dravidian / Southern / Tamil-Kannada / Tamil-Kodagu / Tamil-Malayalam / Malayalam
+
+* Malayalam, the official language of Kerala and Lakshadweep, is a Dravidian language from South India. It is also heavily influenced by Sanskrit, and has become influenced by English with the introduction of /f/.
+* It is spoken in the states of Karnataka, Kerala, Lakshadweep, Puducherry, and Tamil Nadu located in southern India.
+
+# Phonology
+
+## Consonants
+
+* Consonant length is contrastive for voiceless (unaspirated) stops (including /tʃ/), nasals, and laterals /l/ and /ɭ/ [@Panel2018, p. 6; @Jiang2010, p. 8].
+* /t̪ʰ/, /d̪ʱ/, /ʈʰ/, and /ɖʱ/ are very marginal [@Jiang2010, p. 17].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"         Labial        Dental     Alveolar    Retroflex   Postalveolar   Palatal       Velar       Glottal
+"Stops (plain)"                  "p  b"        "t̪  d̪"      ""          "ʈ  ɖ"        ""           "ɟ"         "k  ɡ"         ""
+"Stops (aspirated)"              "pʰ  bʱ"      "t̪ʰ  d̪ʱ"    ""         "ʈʰ  ɖʱ"       ""           "ɟʱ"        "kʰ  ɡʱ"       ""
+Affricates                       ""            ""          ""            ""        "tʃ tʃʰ"       ""            ""           ""
+Fricatives                       "ʋ"           ""          "s"          "ʂ"          "ʃ"          ""            ""           "h"
+Nasals                           "m"           "n̪"         "n"          "ɳ"          ""           "ɲ"           "ŋ"          ""
+Flaps                            ""            ""          "ɾ"          ""           ""           ""            ""           ""
+Trills                           ""            ""          "r"          ""           ""           ""            ""           ""
+Approximants                     ""            ""          "l"        "ɻ  ɭ"         ""           "j"           ""           ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Retroflex", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 8)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Both retroflex approximants are voiced, but the one on the right is lateral.", general_title = "")
+```
+
+## Vowels
+
+* Vowel length is contrastive. The diphthongs listed below do not have a length contrast [@Jiang2010, p. 18].
+* Most sources [e.g. @Jiang2010, p. 18] include schwa as part of the vowel inventory; however, its phonemic status is somewhat vague. The only minimal pairs @Jiang2010 lists involve contrast word-finally (pp. 18-19), which some sources argue merely as the reduction of /u/ [@Swenson2016, p. 133; @Malayalam, p. 2]. I have chosen not to include /ə/ below, treating /u/ as the underlying form.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         ""           "o"
+Low        ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ai/, /au/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```   
+
+## Alphabet
+
+* **Note**: /n/ and /ɟʱ/ are not represented in the Crúbadán corpus.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+"Consonant Grapheme"       Phoneme           Comment
+"ക"                       "/ka/"              ""
+"ഖ"                       "/kʰa/"             ""
+"ഗ"                       "/ɡa/"              ""
+"ഘ"                      "/ɡʱa/"             ""
+"ങ"                       "/ŋa/"              ""
+"ച"                       "/tʃa/"             ""
+"ഛ"                     "/tʃʰa/"             ""
+"ജ"                       "/ɟa/"              ""
+"ഝ"                     "/ɟʱ/"              ""
+"ഞ"                     "//ɲa/"             ""
+"ട"                       "/ʈa/"              ""
+"ഠ"                      "/ʈʰa/"              ""
+"ഡ"                      "/ɖa/"              ""
+"ഢ"                     "/ɖʱa/"              ""
+"ണ"                     "/ɳa/"               ""
+"ത"                      "/t̪a/"               ""
+"ഥ"                     "/t̪ʰa/"               ""
+"ദ"                      "/d̪a/"               ""
+"ധ"                     "/d̪ʱa/"               ""
+"ന"                   "/n̪a/; /na/"   "/n̪a/: used as default in the rules"
+"ഩ"                      "/na/"             "rare"
+"പ"                      "/pa/"               ""
+"ഫ"                     "/pʰa/"              ""
+"ബ"                     "/ba/"               ""
+"ഭ"                      "/bʱa/"              ""
+"മ"                      "/ma/"               ""
+"യ"                      "/ja/"              ""
+"ര"                      "/ɾa/"               ""
+"റ"                      "/ra/"               ""
+"ല"                      "/la/"               ""
+"ള"                      "/ɭa/"               ""
+"ഴ"                      "/ɻa/"               ""
+"വ"                     "/ʋa/"                ""
+"ശ"                     "/ʃa/"                ""
+"ഷ"                     "/ʂa/"               ""
+"സ"                     "/sa/"               ""
+"ഹ"                     "/ha/"               ""
+"**Consonant Grapheme**"   ""          "called chillaksharams, these characters don\'t carry an inherent vowel [@Panel2018, p. 9]"
+"ൺ"                     "/ɳ/"               ""  
+"ൻ"                      "/n̪/"               ""
+"ർ"                       "/r/"               ""
+"ൽ"                      "/l/"               ""
+"ൾ"                      "/ɭ/"               ""
+"ൿ"                      "/k/"               ""
+"**Vowel Grapheme (word-initial)**"  ""        ""
+"അ"                     "/a/"                ""
+"ആ"                    "/aː/"                ""
+"ഇ"                      "/i/"                ""
+"ഈ"                    "/iː/"                ""
+"എ"                     "/e/"                ""
+"ഏ"                     "/eː/"               ""
+"ഉ"                      "/u/"                ""
+"ഊ"                    "/uː/"               ""
+"ഐ"                   "/ai/"               ""
+"ഒ"                     "/o/"                ""
+"ഓ"                    "/oː/"               ""
+"ഔ"                    "/au/"               ""
+**Diacritic**             ""                  ""
+"ാ"                     "/aː/"               ""
+"ി"                     "/i/"                ""
+"ീ"                     "/iː/"               ""
+"െ"                    "/e/"                ""
+"േ"                    "/eː/"                ""
+"ു"                     "/u/"                ""
+"ൂ"                    "/uː/"                ""
+"ൃ"                    "/ai/"                ""
+"ൊ"                   "/o/"                ""
+"ോ"                   "/oː/"               ""
+"ൌ; ൗ"             "/au/"               ""
+"്"                    "∅; /u/"     "called a virama, this diacritic either removes the inherent vowel or reduces word-final /u/ to [ə] [@Malayalam, p. 2]"  
+"ം"                    "/m/"       "called an anusvara(m), this character follows a vowel, often resulting in assimilation to the following consonant [@Panel2018, p. 9]"  
+"ഃ"                    "/h/"       "called a visarga(m), this character follows a vowel (ibid.)"  
+'), TRUE)
+
+kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Malayalam follow the order of (C)(C)(C)V(V)(C) [@Jiang2010, p. 24].
+
+# Lenition Rules
+
+* Voiceless stops become voiced intervocalically [@Jiang2010, p. 22].
+
+# Misc. Rules
+
+* Nasals and lateral approximants are unreleased word-finally [@Jiang2010, p. 22].
+
+# References

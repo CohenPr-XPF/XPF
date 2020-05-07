@@ -1,0 +1,123 @@
+---
+title: "Colorado"
+author: "Emily Strand"
+bibliography: cof.bib
+output: html_document
+---
+
+Last Updated: 2020-05-04
+
+**Compromised: orthographic ambiguity around glottal stops**
+
+# Background
+
+**Language Family**: Barbacoan / Cayapa-Colorado
+
+* Also known as Tsafiki, Colorado is spoken in Ecuador.
+
+# Phonology
+
+## Consonants
+
+* @Adelaar2007 as well as @Curnow1998 express the ambiguous phonemic status of /ʔ/ (p. 145; p. 387); however, they do not expand on the matter or state how it's ambiguous. @Moore1962 [as cited in @Curnow1998, p. 387] classifies it as a phoneme, but @Moore1966 doesn't even mention it. It is clear from @Dickinson2011 that glottal stops occur intervocalically (p. 311), which may be the point of confusion, but there isn't a clear consensus on whether its a phoneme in Colorado or not. Nevertheless, I have chosen to include it below
+* There is also mention of aspiration being a phonemic suprasegmental feature, preceding consonants [@Moore1966, p. 96]. @Adelaar2007 note that because of this, the inventory might include other fricatives or preaspirated consonants; however, although this feature used to show contrast, it has become entirely predictable [@Moore1962 as cited in @Curnow1998, p. 387; @Moore1966, p. 96].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Labial   Alveolar  Palatal   Velar  Glottal
+Stops                         "p b"    "t d"      ""       "k"     "ʔ"
+Affricates                    ""       "ts"       ""       ""      ""
+Fricatives                    "ɸ"      "s"        ""       ""      "h"
+Nasals                        "m"      "n"        ""       ""      ""
+Trills                        ""       "r"        ""       ""      ""
+Approximants                  "w"      "l"        "j"      ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+
+```
+
+# Vowels
+
+* Although @Adelaar2007 see vowel nasalization as a phonetic feature, conditioned by syllable-final nasals (p. 143), most sources indicate that it is contrastive  [@Aikhenvald2007, p. 194; @Moore1966 as cited in @Curnow1998, p. 387; @Aikhenvald2011, p. 127].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+       Front   Central   Back
+High   "i"     ""        "u"
+Mid    "e"     ""        "o"
+Low    ""      "a"       ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+
+# Alphabet
+
+* Contributing to the ambiguity centered around the phonemic status of /ʔ/, there is also uncertainty in terms of how its represented orthographically. @Dickinson2011 states that (non-intervocalic/supposedly phonemic) glottal stops are indicated by apostrophes (p. 311); however, @Curnow1998 state that apostrophes mark the once contrastive aspiration and glottal stops aren't marked (p. 387). In the rule set I have opted to transcribe apostrophes as glottal stops.   
+* @Dickinson2011 states that nasal vowels are indicated by a following, syllable-final ⟨n⟩ (p. 311). This is made clear through the syllable structure, given that syllables consist of V or CV [@Walls, p. 15]. ⟨VnC⟩ sequences are transcribed as /ṼC/, and ⟨VnhV⟩ sequences are transcribed as /ṼV/; the ⟨h⟩ following the ⟨n⟩ in intervocalic positions merely serves as an indicator for the nasalization of the preceding vowel [@Moore1966, p. 96]. That is, ⟨VnV⟩ sequences (i.e. those without the ⟨h⟩) are transcribed as /VnV/.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme     Phoneme          Comment
+"a"           "/a/"             ""
+"b"           "/b/"             ""
+"c"           "/k/"             ""
+"d"           "/d/"             ""
+"e"           "/e/"             ""
+"f"           "/ɸ/"             ""
+"i"           "/i/"             ""
+"k"           "/k/"             ""
+"j"           "/h/"             ""
+"l"           "/l/"             ""
+"m"           "/m/"             ""
+"n"           "/n/"             ""
+"o"           "/o/"             ""
+"p"           "/p/"             ""
+"r"           "/r/"             ""
+"s"           "/s/"             ""
+"t"           "/t/"             ""
+"u"           "/u/"             ""
+"w"           "/w/"             ""
+"y"           "/j/"             ""
+"\'"          "/ʔ/"             ""
+**Digraph**    ""               ""
+"ch"          "/ts/"       "phonetically [tʃ]: precedes /i/ or /u/"
+"qu"          "/k/"       "precedes front vowels"
+"sh"          "/s/"         "phonetically [ʃ]: precedes /i/ or /u/"
+"ts"          "/ts/"            ""
+"hu"          "/w/"             ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /r/ is realized as a flap word-initially [@Moore1966, p. 96].
+* /k/ is voiced intervocalically [@Walls, p. 11].
+
+# Misc. Rules
+
+* /w/ is realized as [ʋ] preceding /i/ [@Moore1966, p. 95].
+* /b/ and /d/ are realized as implosives word-medially (ibid.).
+* /ts/ and /s/ are realized as [tʃ] and [ʃ], respectively, preceding high vowels (ibid.).
+    - /s/ is also realized as [ʃ] following /i/.
+* Glottal stop epenthesis occurs intervocalically [@Dickinson2011, p. 311].
+
+# References

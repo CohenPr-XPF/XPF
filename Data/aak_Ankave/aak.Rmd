@@ -5,11 +5,11 @@ bibliography: aak.bib
 output: html_document
 ---
 
-Last Updated: 2019/12/16
+Last Updated: 2019-12-16
 
 # Background
 
-**Language Family:** Trans-New Guinea, Main Section, Central and Western, Angan, Angan Proper
+**Language Family:** Trans-New Guinea / Main Section / Central and Western / Angan / Angan Proper
 
 * Also referred to as Angave, this language is spoken in the Gulf Province of Papua New Guinea.
 
@@ -28,7 +28,7 @@ library(kableExtra)
 consonants <- read.table(textConnection('
 "Manner of Articulation"       Bilabial   Alveolar    Palatal    Velar    Glottal
 "Stops (plain)"                  "p"        "t"          ""       "k"       "ʔ"
-"Stops (prenasalized)"           "ᵐb"       "ⁿd"         ""       "ᵑg"      ""
+"Stops (prenasalized)"           "ᵐb"       "ⁿd"         ""       "ᵑɡ"      ""
 "Affricates (prenasalized)"      ""         "ⁿdz"        ""       ""        ""
 Fricatives                       ""         "s"          ""       "x"       ""
 Nasals                           "m"        "n"          ""       "ŋ"       ""

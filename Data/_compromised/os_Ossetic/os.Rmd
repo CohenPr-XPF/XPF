@@ -1,0 +1,131 @@
+---
+title: "Ossetic"
+author: "Bill Mizgerd"
+bibliography: os.bib
+output: html_document
+---
+
+Last Updated: 2019-12-02
+
+**COMPROMISED: conflation among /u/, /w/, /ʷ/; some orthographic ambiguity related to consonant gemination**
+
+# Background
+
+**Language Family**: Indo-European / Indo-Iranian / Iranian / Eastern Iranian / Northeastern / Ossetic
+
+* Also known as Ossetian, it is spoken in Russia and Georgia.
+* Where dialects diverge, I will be following the more widely spoken Iron dialect.
+
+# Phonology
+
+## Consonants
+
+* A small number of southern dialects include /ʃ/ and /ʒ/. [@OsTesten1997, p. 710]
+* @OsAbaev1964 (p. 6) and @OsTesten1997 (p. 711) regard /j/ and /w/ as distinct phonemes, while @OsThordarson1989 (p. 462) argues that they are just allophones of [i] and [u] respectively. I have chosen to include them in the inventory below.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Alveolar     Postalveolar  Palatal  Velar     Labiovelar    Uvular  Labiouvular
+Stops                      "p b p’"  "t d t’"     ""            ""       "k ɡ k’"  "kʷ gʷ kʷ’"   "q"     "qʷ"
+Affricates                 ""        "ts dz ts’"  "tʃ dʒ tʃ’"   ""       ""        ""            ""      ""
+Fricatives                 "f v"     "s z"        ""            ""       ""        ""            "χ ʁ"   "χʷ ʁʷ"
+Nasals                     "m"       "n"          ""            ""       ""        ""            ""      ""
+Trills                     ""        "r"          ""            ""       ""        ""            ""      ""
+Approximants               ""        "l"          ""            "j"      ""        "w"           ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Labiovelar", "Uvular", "Labiouvular"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 8)) %>%
+  footnote("Note: From left to right, phonemes that share a cell are voiceless, voiced, and ejective.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* @OsThordarson1989 argues that /æ/ is actually realized closer to [ɐ] (p. 459).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+consonants <- read.table(textConnection('
+          Front   Central   Back
+High      "i"     "ɨ"        "u"
+Mid       "e"     ""         "o"
+Low       "æ"     "a"        ""
+'), TRUE)
+
+kable(consonants, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* There is some amount of orthographic confusion regarding ⟨y⟩, which can be /u/, /w/, or simply a marker of labialization. Therefore, the language is compromised. In the ruleset, I use ⟨y⟩ to mark labialization wherever possible, and default to /u/ otherwise.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme                  Comment
+"а"              "/a/"                      ""
+"ӕ"              "/æ/"                      ""
+"б"              "/b/"                      ""
+"в"              "/v/"                      ""
+"г"              "/ɡ/"                      ""
+"гу"             "/ɡʷ/"                     ""
+"гъ"             "/ʁ/"                      ""
+"гъу"            "/ʁʷ/"                     ""
+"д"              "/d/"                      ""
+"дж"             "/dʒ/"                     ""
+"дз"             "/dz/"                     ""
+"е"              "/e/"                      ""
+"з"              "/z/"                      ""
+"и"              "/i/"                      ""
+"й"              "/j/"                      ""
+"к"              "/k/"                      ""
+"ку"             "/kʷ/"                     ""
+"къ"             "/k’/"                     ""
+"къу"            "/kʷ’/"                    ""
+"л"              "/l/"                      ""
+"м"              "/m/"                      ""
+"н"              "/n/"                      ""
+"о"              "/o/"                      ""
+"п"              "/p/"                      ""
+"пъ"             "/p’/"                     ""
+"р"              "/r/"                      ""
+"с"              "/s/"                      ""
+"т"              "/t/"                      ""
+"тъ"             "/t’/"                     ""
+"у"              "/u/; /w/"            "/u/: default"
+"ф"              "/f/"                      ""
+"х"              "/χ/"                      ""
+"ху"             "/χʷ/"                     ""
+"хъ"             "/q/"                      ""
+"хъу"            "/qʷ/"                     ""
+"ц"              "/ts/"                     ""
+"цъ"             "/ts’/"                    ""
+"ч"              "/tʃ/"                     ""
+"чъ"             "/tʃ’/"                    ""
+"ы"              "/ɨ/"                      ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```  
+
+# Lenition Rules
+
+* Word-medial consonants voice after voiced consonants or vowels [@OsAbaev1964, p. 8].
+* In a few specific words, /z/ approximantizes to [r] and /n/ approximantizes to [l] (ibid.).
+
+# Misc. Rules
+
+* Epenthesis of [h] occurs before word-initial vowels [@OsThordarson1989, p. 465].
+* Gemination (which systematically occurs morphophonologically) causes stops to devoice [@OsTesten1997, pp. 711, 713-15]. It however is not consistently marked orthographically [@OsAbaev1964, p. 9]; thus, it is not reflected in the rule set.
+
+# References
