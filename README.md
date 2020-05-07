@@ -2,196 +2,194 @@
 
 ## Available Languages
 
-| Language Code | Language                  | Comments                      |
-|---------------|---------------------------| ------------------------------|
-| aak           | Ankave                    |                               |
-| ab            | Abkhaz                    |                               |
-| acf           | Saint Lucian Creole French| lacks lenition                |
-| aey           | Amele                     |                               |
-| agg           | Angor                     |                               |
-| aia           | Arosi                     |                               |
-| amn           | Amanab                    |                               |
-| an            | Aragonese                 |                               |
-| apu           | Apurinã                   |                               |
-| apy           | Apalaí                    |                               |
-| arl           | Arabela                   |                               |
-| ast           | Asturian                  |                               |
-| ata           | Pele-Ata                  |                               |
-| avt           | Au                        |                               |
-| ay            | Aymara                    |                               |
-| az            | Azerbaijani               |                               |
-| ba            | Bashkir                   |                               |
-| bcl           | Central Bikol             |                               |
-| bdd           | Bunama                    |                               |
-| be            | Belarusan                 |                               |
-| bef           | Benabena                  |                               |
-| bg            | Bulgarian                 |                               |
-| bi            | Bislama                   |                               |
-| boa           | Bora                      |                               |
-| boj           | Anjam                     | lacks lenition                |
-| bvr           | Burarra                   |                               |
-| caa           | Ch'orti'                  |                               |
-| car           | Carib                     |                               |           
-| cav           | Cavineña                  | lacks lenition                |
-| cbi           | Cha'palaa                 |                               |
-| cbt           | Chayahuita                |                               |
-| cnm           | Ixtatán Chuj              | lacks lenition                |
-| crh           | Crimean Tatar             |                               |
-| cs            | Czech                     |                               |
-| ctu           | Chol                      |                               |
-| cv            | Chuvash                   |                               |
-| ded           | Dedua                     |                               |
-| dgz           | Daga                      |                               |
-| djr           | Djambarrpuyngu            |                               |
-| dv            | Maldivian                 |                               |
-| el            | Greek                     |                               |
-| emi           | Mussau-Emira              |                               |
-| eu            | Basque                    |                               |
-| ff            | Fula                      |                               |
-| gaw           | Nobonob                   |                               |
-| ghs           | Guhu-Samane               |                               |
-| gil           | Kiribati                  |                               |
-| gn            | Guarani                   |                               |
-| guc           | Wayuu                     |                               |
-| guo           | Guayabero                 |                               |
-| gvn           | Kuku-Yalanji              |                               |
-| haw           | Hawaiian                  |                               |
-| hmn           | Hmong                     | lacks lenition                |
-| hsb           | Upper Sorbian             |                               |
-| ht            | Haitian Creole            |                               |
-| hu            | Hungarian                 |                               |
-| hy            | Armenian                  |                               |
-| inb           | Inga                      |                               |
-| ilo           | Ilocano                   |                               |
-| iu            | Inuktitut                 |                               |
-| iws           | Sepik Iwam                |                               |
-| jam           | Jamaican Creole           |                               |
-| jv            | Javanese                  |                               |
-| ka            | Georgian                  |                               |
-| kjb           | Q'anjob'al                |                               |
-| kki           | Kagulu                    | lacks lenition                |
-| kl            | Kalaallisut               |                               |
-| kn            | Kannada                   |                               |
-| ko            | Korean                    |                               |
-| kpf           | Komba                     |                               |
-| kpx           | Mountain Koiali           |                               |
-| ksr           | Borong                    | lacks lenition                |
-| kup           | Kunimaipa                 |                               |
-| ky            | Kirghiz                   |                               |
-| lem           | Nomaande                  |                               |
-| mam           | Mam                       |                               |
-| mcq           | Ese                       |                               |
-| mg            | Malagasy                  |                               |
-| mhl           | Mauwake                   |                               |
-| mk            | Macedonian                |                               |
-| mqj           | Mamasa                    |                               |
-| mto           | Totontepec Mixe           |                               |
-| mva           | Manam                     |                               |
-| naf           | Nabak                     |                               |
-| nhe           | Nahuatl                   |                               |
-| nhr           | Naro                      |                               |
-| nsn           | Nehan                     | lacks lenition                |
-| nuy           | Nunggubuyu                |                               |
-| omw           | South Tairora             |                               |
-| pad           | Paumarí                   | lacks lenition                |
-| pag           | Pangasinan                |                               |
-| pau           | Palauan                   |                               |
-| pio           | Piapoco                   |                               |
-| pwg           | Gapapaiwa                 |                               |
-| quz           | Cusco Quechua             |                               |
-| rkb           | Rikbaktsa                 |                               |
-| ro            | Romanian                  |                               |
-| roo           | Rotokas                   |                               |
-| shi           | Shilha                    |                               |
-| shp           | Shipibo Konibo            |                               |
-| si            | Sinhala                   |                               |
-| snc           | Sinaugoro                 | lacks lenition                |
-| sq            | Albanian                  |                               |
-| ta            | Tamil                     |                               |
-| tac           | Western Tarahumara        |                               |
-| te            | Telugu                    |                               |
-| tg            | Tajik                     |                               |
-| to            | Tongan                    |                               |
-| tpi           | Tok Pisin                 | lacks lenition                |
-| tr            | Turkish                   |                               |
-| tt            | Tatar                     |                               |
-| tyv           | Tuvan                     |                               |
-| tzo           | Tzotzil                   |                               |
-| ug            | Uyghur                    |                               |
-| uk            | Ukrainian                 |                               |
-| usa           | Usarufa                   |                               |
-| uz            | Uzbek                     |                               |
-| var           | Huarjío                   |                               |
-| vi            | Vietnamese                |                               |
-| viv           | Iduna                     |                               |
-| way           | Wayana                    |                               |
-| wbp           | Warlpiri                  |                               |
-| wo            | Wolof                     |                               |
-| ycn           | Yucuna                    |                               |
-| yi            | Yiddish                   |                               |
-| yua           | Yucatec Maya              |                               |
-| yuz           | Yuracare                  |                               |
-| yva           | Yawa                      |                               |
-| zos           | Francisco León Zoque      |                               |
+| Language Code | Language                   | Comments                      |
+|---------------|----------------------------| ------------------------------|
+| aak           | Ankave                     |                               |
+| ab            | Abkhaz                     |                               |
+| acf           | Saint Lucian Creole French | lacks lenition                |
+| aey           | Amele                      |                               |
+| agg           | Angor                      |                               |
+| aia           | Arosi                      |                               |
+| amn           | Amanab                     |                               |
+| an            | Aragonese                  |                               |
+| apu           | Apurinã                    |                               |
+| apy           | Apalaí                     |                               |
+| arl           | Arabela                    |                               |
+| ast           | Asturian                   |                               |
+| ata           | Pele-Ata                   |                               |
+| avt           | Au                         |                               |
+| ay            | Aymara                     |                               |
+| az            | Azerbaijani                |                               |
+| ba            | Bashkir                    |                               |
+| bcl           | Central Bikol              | lacks lenition                |
+| bdd           | Bunama                     |                               |
+| be            | Belarusan                  |                               |
+| bef           | Benabena                   |                               |
+| bg            | Bulgarian                  |                               |
+| bi            | Bislama                    |                               |
+| boa           | Bora                       |                               |
+| boj           | Anjam                      | lacks lenition                |
+| bvr           | Burarra                    |                               |
+| caa           | Ch'orti'                   |                               |
+| car           | Carib                      |                               |           
+| cbi           | Cha'palaa                  |                               |
+| cbt           | Chayahuita                 |                               |
+| cnm           | Ixtatán Chuj               |                               |
+| crh           | Crimean Tatar              |                               |
+| cs            | Czech                      |                               |
+| ctu           | Chol                       |                               |
+| cv            | Chuvash                    |                               |
+| ded           | Dedua                      |                               |
+| dgz           | Daga                       |                               |
+| djr           | Djambarrpuyngu             |                               |
+| dv            | Maldivian                  |                               |
+| el            | Greek                      |                               |
+| emi           | Mussau-Emira               |                               |
+| eu            | Basque                     |                               |
+| ff            | Fula                       |                               |
+| gaw           | Nobonob                    |                               |
+| ghs           | Guhu-Samane                |                               |
+| gil           | Kiribati                   |                               |
+| gn            | Guarani                    |                               |
+| guc           | Wayuu                      |                               |
+| guo           | Guayabero                  |                               |
+| gvn           | Kuku-Yalanji               |                               |
+| haw           | Hawaiian                   |                               |
+| hmn           | Hmong                      | lacks lenition                |
+| hsb           | Upper Sorbian              |                               |
+| ht            | Haitian Creole             |                               |
+| hu            | Hungarian                  |                               |
+| hy            | Armenian                   |                               |
+| ilo           | Ilocano                    |                               |
+| inb           | Inga                       |                               |
+| iu            | Inuktitut                  |                               |
+| iws           | Sepik Iwam                 |                               |
+| jam           | Jamaican Creole            |                               |
+| jv            | Javanese                   |                               |
+| ka            | Georgian                   |                               |
+| kjb           | Q'anjob'al                 |                               |
+| kki           | Kagulu                     | lacks lenition                |
+| kl            | Kalaallisut                |                               |
+| kn            | Kannada                    |                               |
+| ko            | Korean                     |                               |
+| kpf           | Komba                      |                               |
+| kpx           | Mountain Koiali            |                               |
+| ksr           | Borong                     | lacks lenition                |
+| kup           | Kunimaipa                  |                               |
+| ky            | Kirghiz                    |                               |
+| lem           | Nomaande                   |                               |
+| mam           | Mam                        |                               |
+| mcq           | Ese                        |                               |
+| mg            | Malagasy                   |                               |
+| mhl           | Mauwake                    |                               |
+| mk            | Macedonian                 |                               |
+| mqj           | Mamasa                     |                               |
+| mto           | Totontepec Mixe            |                               |
+| mva           | Manam                      |                               |
+| naf           | Nabak                      |                               |
+| nhe           | Nahuatl                    |                               |
+| nhr           | Naro                       |                               |
+| nsn           | Nehan                      | lacks lenition                |
+| nuy           | Nunggubuyu                 |                               |
+| omw           | South Tairora              |                               |
+| pad           | Paumarí                    | lacks lenition                |
+| pag           | Pangasinan                 |                               |
+| pau           | Palauan                    |                               |
+| pio           | Piapoco                    |                               |
+| pwg           | Gapapaiwa                  |                               |
+| quz           | Cusco Quechua              |                               |
+| rkb           | Rikbaktsa                  |                               |
+| ro            | Romanian                   |                               |
+| roo           | Rotokas                    |                               |
+| shi           | Shilha                     |                               |
+| shp           | Shipibo Konibo             |                               |
+| si            | Sinhala                    |                               |
+| snc           | Sinaugoro                  | lacks lenition                |
+| sq            | Albanian                   |                               |
+| ta            | Tamil                      |                               |
+| tac           | Western Tarahumara         |                               |
+| te            | Telugu                     |                               |
+| tg            | Tajik                      |                               |
+| to            | Tongan                     |                               |
+| tpi           | Tok Pisin                  | lacks lenition                |
+| tr            | Turkish                    |                               |
+| tt            | Tatar                      |                               |
+| tyv           | Tuvan                      |                               |
+| tzo           | Tzotzil                    |                               |
+| ug            | Uyghur                     |                               |
+| uk            | Ukrainian                  |                               |
+| usa           | Usarufa                    |                               |
+| uz            | Uzbek                      |                               |
+| var           | Huarjío                    |                               |
+| vi            | Vietnamese                 |                               |
+| viv           | Iduna                      |                               |
+| way           | Wayana                     |                               |
+| wbp           | Warlpiri                   |                               |
+| wo            | Wolof                      |                               |
+| ycn           | Yucuna                     |                               |
+| yi            | Yiddish                    |                               |
+| yua           | Yucatec Maya               |                               |
+| yuz           | Yuracare                   |                               |
+| yva           | Yawa                       |                               |
+| zos           | Francisco León Zoque       |                               |
 
 
 ## Compromised Languages
 
-| Language Code   | Language                    | Reason (more thorough explanation in Rmd files)                                                                      |
-|-----------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------|
-| acr             | Rabinal Achi'               | suspect marking of vowel length                                                                                      |
-| ake             | Akawaio                     | conflation between voiceless and voiced consonants                                                                   |
-| aoj             | Mufian                      | conflation among vowels; ambiguity regarding vowel length and labialized consonant clusters                          |
-| arn             | Mapudungun                  | ambiguous orthography; conflation between dental and alveolar consonants                                             |
-| ar              | Arabic                      | ambiguous transcription of alif; conflation between vowels and glides                                                |
-| awx             | Awara                       | conflation between /nd/, /mb/, /nɡ/ and /d/, /b/, /ɡ/, respectively                                                  |
-| bmu             | Somba Siawari               | phonetic alphabet                                                                                                    |
-| btx             | Batak Karo                  | conflation among /e/, /ɘ/, and /ɯ/                                                                                   |
-| bzd             | Bribri                      | phonetic alphabet; contradicting documentation                                                                       |
-| bzh             | Mapos Buang                 | conflation between /ɛ/ and other vowels                                                                              |
-| ca              | Catalan                     | conflation among vowels and glides; ambiguous phonological interpretations                                           |
-| cav             | Cavineña                    | ambiguity whether a digraph represents one phoneme or two, depending on syllable structure                           |
-| chf             | Tabasco Chontal             | conflation between ejectives and stop-glottal stop sequences                                                         |
-| chm             | Mari                        | conflation with some palatalized and non-palatalized consonants; some vowels not always represented orthographically |
-| cho             | Choctaw                     | phonetic alphabet                                                                                                    |
-| cni             | Asháninka                   | conflation among nasals                                                                                              |
-| cof             | Colorado                    | orthographic ambiguity with glottal stops                                                                            |
-| con             | Cofan                       | conflation between consonants                                                                                        |
-| crm             | Moose Cree                  | /h/ represented only when contrast is required                                                                       |
-| es              | Spanish                     | non-transparent spelling with diphthongs                                                                             |
-| fuv             | Nigerian Fulfulde           | glottal stop not always marked; unclear transcription of palatalized glottal stop                                    |
-| hi              | Hindi                       | conflation between /æ/ and /ɛ/; vowel nasalization ambiguity; unreliable marking of some consonants                  |   
-| id              | Indonesian                  | conflation between /e/ and /ə/                                                                                       |  
-| ixl             | Ixil                        | word-initial glottal stop not always marked; somewhat ambiguous orthography                                          |
-| kek             | Qeqchi                      | ambiguity between ejective stops and stop-glottal stop sequences                                                     |
-| kk              | Kazakh                      | conflation between vowels and glides; widely contrastive phonological accounts of the language                       |
-| kmo             | Kwoma                       | non-transparent spelling with glottal stops                                                                          |
-| kyz             | Kayabí                      | conflation between /i/ and /j/                                                                                       |
-| mcf             | Matsés                      | conflation between alveolar and retroflex consonants; conflation between vowels                                      |
-| mek             | Mekeo                       | non-transparent spelling with glottal stops                                                                          |
-| ml              | Malayalam                   | conflation between dental and alveolar /n/                                                                           |
-| mlp             | Bargam                      | conflation between /n/ and /ŋ/                                                                                       |
-| mnb             | Muna                        | orthography is suspect                                                                                               |
-| mpx             | Misima-Panaeati             | conflation between /e/ and /ɛ/ and between /o/ and /ɔ/                                                               |
-| mt              | Maltese                     | conflation between /ts/ and /dz/ and between /ʃ/ and /ʒ/                                                             |
-| ne              | Nepali                      | certain diacritics used interchangeably and inconsistently marked                                                    |
-| nl              | Dutch                       | conflation among vowels; conflation between voiced and voiceless consonants; orthographic ambiguity                  |
-| not             | Nomatsiguenga               | conflation among nasals                                                                                              |
-| or              | Oriya                       | diacritics not always marked; some diacritics used interchangeably                                                   |
-| os              | Ossetic                     | conflation among /u/, /w/, and /ʷ/; inconsistent marking of consonant gemination                                     |   
-| pib             | Yine                        | conflation between /n/ and /h̃/                                                                                       |    
-| plu             | Palikúr                     | conflation between /ɡ/ and /ɣ/                                                                                       |          
-| qub             | Huallaga Huanuco Quechua    | orthography is suspect; conflation between vowels and glides                                                         |
-| rwo             | Rawa                        | conflation between /l/ and /r/                                                                                       |
-| sah             | Yakut                       | conflation between /j/ and /j̃/                                                                                       |
-| sk              | Slovak                      | non-transparent spelling with palatal consonants; ambiguity whether digraphs represent one phoneme or two            |
-| sm              | Samoan                      | marking of long vowels and glottal stops is suspect                                                                  |
-| suz             | Sunwar                      | conflation between /ɾ/, /ɭ/, and possibly /l̪/; glottal stop not always orthographically marked                       |
-| sw              | Swahili                     | conflation between syllabic nasals and non-syllabic counterparts                                                     |
-| too             | Xicotepec de Juárez Totonac | somewhat unclear transcription                                                                                       |      
-| tpp             | Pisaflores Tepehua          | unclear how reliably vowel length is marked                                                                          |
-| tzj             | Tz'utujil                   | uncertainty around the marking of the glottal stop and the orthography                                               |
-| zza             | Zaza                        | conflicting orthographies make for conflation of vowels                                                              |
+| Language Code   | Language                    | Reason (more thorough explanation in Rmd files)                                                                      | Comment        |
+|-----------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------|----------------|
+| acr             | Rabinal Achi'               | suspect marking of vowel length                                                                                      | lacks lenition |
+| ake             | Akawaio                     | conflation between voiceless and voiced consonants                                                                   |                |
+| aoj             | Mufian                      | conflation among vowels; ambiguity regarding vowel length and labialized consonant clusters                          | lacks lenition |
+| ar              | Arabic                      | ambiguous transcription of alif; conflation between vowels and glides                                                |                |
+| arn             | Mapudungun                  | ambiguous orthography; conflation between dental and alveolar consonants                                             |                |
+| awx             | Awara                       | conflation between /nd/, /mb/, /nɡ/ and /d/, /b/, /ɡ/, respectively                                                  |                |
+| bmu             | Somba Siawari               | phonetic alphabet                                                                                                    |                |
+| btx             | Batak Karo                  | conflation among /e/, /ɘ/, and /ɯ/                                                                                   |                |
+| bzd             | Bribri                      | phonetic alphabet; contradicting documentation                                                                       |                |
+| bzh             | Mapos Buang                 | conflation between /ɛ/ and other vowels                                                                              |                |
+| ca              | Catalan                     | conflation among vowels and glides; ambiguous phonological interpretations                                           |                |
+| cav             | Cavineña                    | ambiguity whether a digraph represents one phoneme or two, depending on syllable structure                           | lacks lenition |
+| chf             | Tabasco Chontal             | conflation between ejectives and stop-glottal stop sequences                                                         |                |
+| chm             | Mari                        | conflation with some palatalized and non-palatalized consonants; some vowels not always represented orthographically | lacks lenition |
+| cho             | Choctaw                     | phonetic alphabet                                                                                                    |                |
+| cni             | Asháninka                   | conflation among nasals                                                                                              |                |
+| cof             | Colorado                    | orthographic ambiguity with glottal stops                                                                            |                |
+| con             | Cofan                       | conflation between consonants                                                                                        |                |
+| crm             | Moose Cree                  | /h/ represented only when contrast is required                                                                       | lacks lenition |
+| es              | Spanish                     | non-transparent spelling with diphthongs                                                                             |                |
+| fuv             | Nigerian Fulfulde           | glottal stop not always marked; unclear transcription of palatalized glottal stop                                    |                |
+| hi              | Hindi                       | conflation between /æ/ and /ɛ/; vowel nasalization ambiguity; unreliable marking of some consonants                  |                |
+| id              | Indonesian                  | conflation between /e/ and /ə/                                                                                       |                |
+| ixl             | Ixil                        | word-initial glottal stop not always marked; somewhat ambiguous orthography                                          |                |
+| kek             | Qeqchi                      | ambiguity between ejective stops and stop-glottal stop sequences                                                     |                |
+| kk              | Kazakh                      | conflation between vowels and glides; widely contrastive phonological accounts of the language                       |                |
+| kmo             | Kwoma                       | non-transparent spelling with glottal stops                                                                          |                |
+| kyz             | Kayabí                      | conflation between /i/ and /j/                                                                                       | lacks lenition |
+| mcf             | Matsés                      | conflation between alveolar and retroflex consonants; conflation between vowels                                      |                |
+| mek             | Mekeo                       | non-transparent spelling with glottal stops                                                                          |                |
+| ml              | Malayalam                   | conflation between dental and alveolar /n/                                                                           |                |
+| mlp             | Bargam                      | conflation between /n/ and /ŋ/                                                                                       | lacks lenition |
+| mnb             | Muna                        | orthography is suspect                                                                                               |                |
+| mpx             | Misima-Panaeati             | conflation between /e/ and /ɛ/ and between /o/ and /ɔ/                                                               | lacks lenition |
+| mt              | Maltese                     | conflation between /ts/ and /dz/ and between /ʃ/ and /ʒ/                                                             |                |
+| ne              | Nepali                      | certain diacritics used interchangeably and inconsistently marked                                                    |                |
+| not             | Nomatsiguenga               | conflation among nasals                                                                                              |                |
+| or              | Oriya                       | diacritics not always marked; some diacritics used interchangeably                                                   |                |
+| os              | Ossetic                     | conflation among /u/, /w/, and /ʷ/; inconsistent marking of consonant gemination                                     |                |
+| pib             | Yine                        | conflation between /n/ and /h̃/                                                                                       | lacks lenition |    
+| plu             | Palikúr                     | conflation between /ɡ/ and /ɣ/                                                                                       |                |   
+| qub             | Huallaga Huanuco Quechua    | orthography is suspect; conflation between vowels and glides                                                         |                |
+| rwo             | Rawa                        | conflation between /l/ and /r/                                                                                       |                |
+| sah             | Yakut                       | conflation between /j/ and /j̃/                                                                                       |                |
+| sk              | Slovak                      | non-transparent spelling with palatal consonants; ambiguity whether digraphs represent one phoneme or two            |                |
+| sm              | Samoan                      | marking of long vowels and glottal stops is suspect                                                                  |                |
+| suz             | Sunwar                      | conflation between /ɾ/, /ɭ/, and possibly /l̪/; glottal stop not always orthographically marked                       |                |
+| sw              | Swahili                     | conflation between syllabic nasals and non-syllabic counterparts                                                     |                |
+| too             | Xicotepec de Juárez Totonac | somewhat unclear transcription                                                                                       |                |
+| tpp             | Pisaflores Tepehua          | unclear how reliably vowel length is marked                                                                          |                |
+| tzj             | Tz'utujil                   | uncertainty around the marking of the glottal stop and the orthography                                               |                |
+| zza             | Zaza                        | conflicting orthographies make for conflation of vowels                                                              |                |
 
 
 ## Abandoned Languages
