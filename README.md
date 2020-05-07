@@ -68,7 +68,6 @@
 | jam           | Jamaican Creole           |                               |
 | jv            | Javanese                  |                               |
 | ka            | Georgian                  |                               |
-| kbd           | Kabardian                 | under revision                |
 | kjb           | Q'anjob'al                |                               |
 | kki           | Kagulu                    | lacks lenition                |
 | kl            | Kalaallisut               |                               |
@@ -140,11 +139,11 @@
 
 | Language Code   | Language                    | Reason (more thorough explanation in Rmd files)                                                                      |
 |-----------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------|
-| acr-x-rabinal   | Rabinal Achi'               | suspect marking of vowel length                                                                                      |
+| acr             | Rabinal Achi'               | suspect marking of vowel length                                                                                      |
 | ake             | Akawaio                     | conflation between voiceless and voiced consonants                                                                   |
 | aoj             | Mufian                      | conflation among vowels; ambiguity regarding vowel length and labialized consonant clusters                          |
 | arn             | Mapudungun                  | ambiguous orthography; conflation between dental and alveolar consonants                                             |
-| ar-x-diacritics | Arabic                      | ambiguous transcription of alif; conflation between vowels and glides                                                |
+| ar              | Arabic                      | ambiguous transcription of alif; conflation between vowels and glides                                                |
 | awx             | Awara                       | conflation between /nd/, /mb/, /nɡ/ and /d/, /b/, /ɡ/, respectively                                                  |
 | bmu             | Somba Siawari               | phonetic alphabet                                                                                                    |
 | btx             | Batak Karo                  | conflation among /e/, /ɘ/, and /ɯ/                                                                                   |
