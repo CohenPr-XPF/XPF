@@ -8,7 +8,7 @@ output: html_document
 Last Updated: 2019-10-17
 
 
-**Note: Roughly 30% of Crúbadán not transcribed - possibly due to phonetic adaptation of the orthography**
+**Note: Roughly 30% of Crúbadán not transcribed - possibly due to loanwords or phonetic adaptation of the orthography**
 
 # Background
 
@@ -21,6 +21,8 @@ Last Updated: 2019-10-17
 
 ## Consonants
 
+* Kuku-Yalanji does not have a phonemic voicing distinction for stops [@GvnPatz1982, p. 34]. The voiced and voieless allophones vary freely; however, stops tend to be voiced in intervocalic positions and in some consonant clusters, and voiceless elsewhere.
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 library(dplyr)
@@ -30,7 +32,7 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial    Alveolar   Retroflex    Palatal     Velar
-Stops                        "b"       "d"         ""          "ɟ"        "ɡ"
+Stops                        "p"       "t"         ""          "c"        "k"
 Nasals                       "m"       "n"         ""          "ɲ"        "ŋ"
 Trills                        ""       "r"         ""          ""         ""
 Approximants                 "w"       "l"         "ɻ"         "j"        ""
@@ -66,11 +68,11 @@ kable(vowels, align = 'c') %>%
 alphabet <- read.table(textConnection('
 Grapheme      Phoneme     
 "a"           "/a/"  
-"b"           "/b/"  
-"d"           "/d/"  
+"b"           "/p/"  
+"d"           "/t/"  
 "i"           "/i/"  
-"j"           "/ɟ/"  
-"k"           "/ɡ/"  
+"j"           "/c/"  
+"k"           "/k/"  
 "l"           "/l/"  
 "m"           "/m/"  
 "n"           "/n/"   
@@ -94,14 +96,13 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* Intervocalic /d/ often taps to [ɾ] [@GvnPatz1982, p. 32].
-* /ɟ/ is typically realized as an affricate [@GvnPatz1982, p. 33].
+* Intervocalic /t/ often taps to [ɾ] [@GvnPatz1982, p. 32].
+* /c/ is typically realized as an affricate [@GvnPatz1982, p. 33].
 * Intervocalic /r/ typically taps to [ɾ] [@GvnPatz1982, p. 34].
 * Word-initial /j/ can be dropped before /i/ or /a/; word-initial /w/ can be dropped before /u/ [@GvnPatz1982, p. 36].
 
 # Misc. Rules
 
-* Kuku-Yalanji stops have both voiced and voiceless allophones - the voiced allophones tend to surface intervocalically and after most sonorants (/l/, /ɻ/, and nasals), while the voiceless ones surface elsewhere [@GvnPatz1982, p. 34].
 * /l/ tends to velarize after /a/ or /u/ (ibid.).
 
 # References

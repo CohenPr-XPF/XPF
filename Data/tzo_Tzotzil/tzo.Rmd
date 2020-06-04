@@ -30,18 +30,18 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial      Alveolar    Postalveolar  Palatal  Velar    Glottal
-Stops                      "pʰ pʼ b"   "tʰ tʼ"     ""            ""       "kʰ kʼ"  "ʔ"
+Stops                      "p pʼ b"    "t tʼ"      ""            ""       "k kʼ"   "ʔ"
 Affricates                 ""          "ts tsʼ"    "tʃ tʃʼ"      ""       ""       ""
 Fricatives                 "v"         "s"         "ʃ"           ""       ""       "h"
 Nasals                     "m"         "n"         ""            ""       ""       ""
 Flaps                      ""          "ɾ"         ""            ""       ""       ""
-Approximants               ""          "l"         ""            "j"      ""     ""
+Approximants               ""          "l"         ""            "j"      ""       ""
 '), TRUE)
 
 kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 6)) %>%
-  footnote("Note: In cells with multiple phonemes, the leftmost is plain or aspirated; the second is ejective; and where a third phoneme is present, it is voiced.", general_title = "") %>%
+  footnote("Note: For phonemes that share a cell, those on the left are plain and those on the right are ejective. The labial stops are ordered voiceless, ejective, and voiced.", general_title = "") %>%
   column_spec(1, bold = TRUE)
 ```
 
@@ -72,10 +72,8 @@ alphabet <- read.table(textConnection('
 Grapheme        Phoneme
 "a"              "/a/"  
 "b"              "/b/"  
-"c"              "/kʰ/"  
-"c\'"            "/kʼ/"  
-"ch"             "/tʃ/"  
-"ch\'"           "/tʃʼ/"  
+"c"              "/k/"  
+"c\'"            "/kʼ/"   
 "e"              "/e/"  
 "i"              "/i/"  
 "j"              "/h/"  
@@ -83,21 +81,24 @@ Grapheme        Phoneme
 "m"              "/m/"  
 "n"              "/n/"  
 "o"              "/o/"  
-"p"              "/pʰ/"  
+"p"              "/p/"  
 "p\'"            "/pʼ/"  
-"qu"             "/kʰ/"  
-"q\'u"           "/kʼ/"  
 "r"              "/ɾ/"  
 "s"              "/s/"  
-"t"              "/tʰ/"  
-"t\'"            "/tʼ/"  
-"ts"             "/ts/"  
-"ts\'"           "/tsʼ/"  
+"t"              "/t/"  
+"t\'"            "/tʼ/"   
 "u"              "/u/"  
 "v"              "/v/"  
 "x"              "/ʃ/"  
 "y"              "/j/"  
 "\'"             "/ʔ/"
+**Digraph**      ""
+"ch"             "/tʃ/"  
+"ch\'"           "/tʃʼ/"
+"qu"             "/k/"  
+"q\'u"           "/kʼ/"  
+"ts"             "/ts/"  
+"ts\'"           "/tsʼ/"
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
@@ -120,6 +121,7 @@ kable(alphabet, align = 'c') %>%
 
 * Epenthesis of [ʔ] occurs before intervocalic /b/ [@TzoLaughlin1975, p. 22].
 * Preconsonantal or word-final /b/ is realized as [ʔm], and the vowel preceding that /b/ is nasalized and glottalized (ibid.).
+* /b/ is generally realized as [ɓ] word-initially and intervocalically (ibid.).
 * Word-final /ɾ/ is trilled to [r] (ibid.).
 * Word-medial /v/ moves to [β] before /a/ (ibid.).
 * Doubled consonants (e.g. identical root-final and suffix-initial consonants) are realized identically to their single counterparts, except for /b/ [@TzoCowan1969, p. 111].

@@ -4,6 +4,9 @@ author: "Justin Bai"
 bibliography: yua.bib
 output: html_document
 ---
+
+Last Updated: 05-12-2020
+
 # Background
 
 **Language family**: Mayan / Yucatecan / Yucatec-Lacandon
@@ -14,6 +17,8 @@ output: html_document
 
 ## Consonants
 
+* /b/, /d/, /ɡ/, /f/, and /r/ occur in Spanish loanwords [@bohnemeyer2002grammar, p. 65].
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 library(dplyr)
@@ -23,31 +28,32 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial       Alveolar     Postalveolar   Palatal   Velar    Glottal   
-Stops                     "pʰ pʼ ɓ"     "tʰ  tʼ"         ""            ""    "kʰ  kʼ"    "ʔ"
-Affricates                   ""        "tsʰ  tsʼ"     "tʃʰ  tʃʼ"       ""       ""       ""
-Fricatives                  ""            "s"             "ʃ"          ""       ""       "h"
-Nasals                      "m"           "n"             ""           ""       ""       ""
-Flaps                       ""            "ɾ"             ""           ""       ""       ""
-Approximants                "w"           "l"             ""          "j"       ""       ""
+Stops                     "p pʼ ɓ"      "t  tʼ"         ""            ""     "k  kʼ"    "ʔ"
+Affricates                   ""         "ts  tsʼ"     "tʃ  tʃʼ"       ""       ""       ""
+Fricatives                   ""           "s"            "ʃ"          ""       ""       "h"
+Nasals                       "m"          "n"            ""           ""       ""       ""
+Flaps                        ""           "ɾ"            ""           ""       ""       ""
+Approximants                 "w"          "l"            ""           "j"      ""       ""
 '), TRUE)
 
 kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 6)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: Consonants with the diacritics (ʰ) and (ʼ) are aspirates and ejectives, respectively. The labial stop on the right is an implosive.", general_title = "")
+  footnote(general = "Note: For phonemes that share a cell, those on the left are plain and those on the right are ejctive. The labial stops are ordered plain, ejective, and implosive.", general_title = "")
 ```
 
 ## Vowels
 
-* Although there are only five vowel qualities, for every vowel, "each vowel quality can occur with four contrastive sets of suprasegmental features, resulting in 20 unique possible syllable heads" [@frazier2009production, pp. 18-19].
-* As summarized by @frazier2009production, these are the four vowel shapes in terms of length, pitch, and glottalization (p. 19):
-    - SHORT: short, unmarked for tone, modal voice
-    - LOW TONE: long, low tone, modal voice
-    - HIGH TONE: long, high tone, modal voice
-    - GLOTTALIZED: long, high tone followed by creaky voice
-* @frazier2009production also states, "The GLOTTALIZED vowels are unanimously described as being produced with initial high pitch and modal voice that is interrupted by a glottal stop (i.e. [v́ʔv]), though B&VS and B et al. recognized that this glottal stop does not always have a full realization, especially in rapid speech" (p. 20).
+* Vowels can occur with four contrastive sets of suprasegmental features [@frazier2009production, pp. 18-19].
+    - As summarized by @frazier2009production, these are the four vowel shapes in terms of length, pitch, and glottalization (p. 19):
+        - SHORT: short, unmarked for tone, modal voice
+        - LOW TONE: long, low tone, modal voice
+        - HIGH TONE: long, high tone, modal voice
+        - GLOTTALIZED: long, high tone followed by creaky voice
+            - @frazier2009production also states that the glottalized vowels are produced with an intervening glottal stop (i.e. [v́ʔv]); however, in fast speech, this glottal stop is not always realized (p. 20)
 * Per discussions with Scott AnderBois, an expert on the language, the rules will represent "glottalized" vowels as a long, high tone vowel followed by creaky voice rather than a vowel interrupted by a glottal stop.
+
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -80,6 +86,8 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
+* **Note:** /tsʼ/ does not appear in the Crúbadán corpus.
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
@@ -89,17 +97,17 @@ Grapheme      Phoneme
 "e"            "/e/"
 "i"            "/i/"
 "j"            "/h/"
-"k"            "/kʰ/"
+"k"            "/k/"
 "k\'"          "/kʼ/"
 "l"            "/l/"
 "m"            "/m/"
 "n"            "/n/"
 "o"            "/o/"
-"p"            "/pʰ/"
+"p"            "/p/"
 "p\'"          "/pʼ/"
 "r"            "/ɾ/"  
 "s"            "/s/"  
-"t"            "/tʰ/"  
+"t"            "/t/"  
 "t\'"          "/tʼ/"
 "u"            "/u/"  
 "x"            "/ʃ/"  
@@ -107,9 +115,9 @@ Grapheme      Phoneme
 "y"            "/j/"  
 "\'"           "/ʔ/"
 **Digraph**     ""  
-"ch"           "/tʃʰ/"
+"ch"           "/tʃ/"
 "ch\'"         "/tʃʼ/"
-"tz"           "/tsʰ/"  
+"tz"           "/ts/"  
 "tz\'"         "/tsʼ/"
 '), TRUE)
 

@@ -4,10 +4,11 @@
 type,sfrom,sto,weight,precede,follow,comment
 # Classes
 class,post-n,[gy],,,,
-class,passthrough,[abdilmnuw],,,,
+class,passthrough,[aiklmnuw],,,,
 # Individual Letters
-sub,j,ɟ,4,,,
-sub,k,ɡ,4,,,
+sub,b,p,4,,,
+sub,d,t,4,,,
+sub,j,c,4,,,
 sub,r,ɻ,4,,,
 sub,y,j,4,,,
 sub,-,,4,,,"some words have a hyphen with no phonetic value"

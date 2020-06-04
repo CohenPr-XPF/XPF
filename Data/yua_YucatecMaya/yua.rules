@@ -3,7 +3,7 @@
 # Last Updated: 2019-08-02
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
-class,passthrough,[aeilmnosuw],,,,
+class,passthrough,[aeiklmnopstuw],,,,
 class,ejectives,[kpt],,,,
 class,apostrophe,"[’'‘`ʻ]",,,,
 # Individual Letters
@@ -14,13 +14,10 @@ sub,x,ʃ,1,,,
 sub,y,j,1,,,
 sub,{apostrophe},ʔ,0.5,,,
 sub,({passthrough}),\1,0.1,,,
-# Aspirates
-sub,k,kʰ,1,,,
-sub,p,pʰ,1,,,
-sub,t,tʰ,1,,,
-sub,c,tʃʰ,2,,h,
+# Digraphs
+sub,c,tʃ,2,,h,
 sub,h,,2,c,,"clean-up",
-sub,t,tsʰ,2,,z,
+sub,t,ts,2,,z,
 sub,z,,2,t,,"clean-up",
 # Ejectives
 sub,({ejectives}),\1ʼ,2,,{apostrophe}

@@ -30,10 +30,8 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial  Alveolar Postalveolar  Palatal  Velar  Uvular Glottal
-"Stops (plain)"            "p"     "t"      ""            ""       "k"    "q"    "ʔ"
-"Stops (ejective)"         "p’"    "t’"     ""            ""       "k’"   "q’"   ""
-"Affricates (plain)"       ""      "ts"     "tʃ"          ""       ""     ""     ""
-"Affricates (ejective)"    ""      "ts’"    "tʃ’"         ""       ""     ""     ""
+Stops                      "p p’"  "t t’"   ""            ""       "k k’" "q q’" "ʔ"
+Affricates                 ""      "ts ts’" "tʃ tʃ’"      ""       ""     ""     ""
 Fricatives                 ""      "s"      "ʃ"           ""       ""     "χ"    ""
 Nasals                     "m"     "n"      ""            ""       ""     ""     ""
 Trills                     ""      "r"      ""            ""       ""     ""     ""
@@ -44,13 +42,13 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 7)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: For phonemes that share a cell, those on the left are plain and those on the right are implosives.", general_title = "")
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are ejective.", general_title = "")
 ```
 
 ## Vowels
 
 * Vowel length is contrastive in Tz'utujil [@Dayley1985, p. 25]. Long vowels are represented by duplicate graphemes.
-* /ie/ and /uo/ are present in the Santiago Atitlan dialect [@Dayley1985, p. 27]. However, I have not included them, given that I'm not focusing on a specific dialect.
+* /ie/ and /uo/ are present in the Santiago Atitlan dialect [@Dayley1985, p. 27]. However, I have not included them, given that the focus is not on a specific dialect.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
