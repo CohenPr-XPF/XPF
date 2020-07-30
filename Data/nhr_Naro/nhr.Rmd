@@ -5,11 +5,11 @@ bibliography: nhr.bib
 output: html_document
 ---
 
-Last Updated: 2019-07-02
+Last Updated: 2020-07-01
 
 # Background
 
-**Language Family**: Khoe-Kwadi / Khoe / Kalahari Khoe / Southwest / Naro
+**Language Family:** Khoisan / Southern Africa / Central / Tshu-Khwe / Southwest
 
 * Also spelled Nharo and Naron, it is spoken in the Ghanzi district of Botswana.
 
@@ -22,14 +22,12 @@ Last Updated: 2019-07-02
 * Loanwords also include /f/ and /l/ [@NhrVisser1998, p. 120].
 * /x/ and /h/ only contrast word-initially [@NhrKagaya1978, p. 37].
 * /m/ is the only consonant that can occur root-finally [@NhrVisser1998, p. 123].
-* @NhrKagaya1978 diverges from Visser's analysis (which I have followed) in several places:
+* @NhrKagaya1978 diverges from Visser's analysis (which I have followed) in several places (p. 34):
     - He finds /s/ to be an allophone of /ʃ/.
     - He identifies the aspirated stops (as well as /t'/) as allophones of the plain voiceless stops. (Largely based on frequency, per @NhrKagaya1978 (pp. 35-36), although he does find /tʰ/ and /t/ to exist in complementary distribution.)
     - He does not see the velar-released stops as occurring phonemically.
     - He identifies /h/ as an allophone of /x/.
     - He sees syllabic nasals for /m/, /n/, and /ŋ/ as existing contrastively [@NhrKagaya1978, p. 39].
-
-    **(All aforementioned bullet points on @NhrKagaya1978, p. 34, except where mentioned)**
 * The position of /w/ and /j/ is somewhat unclear; they only occur intervocalically, so their realization may just be due to an epenthetic or reduction process rather than the production of a distinct phoneme [@NhrKagaya1978, pp. 37-38]. I have chosen to treat them as phonetic realizations.
 
 ```{r echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
@@ -81,7 +79,7 @@ kable(consonants, col.names = c("Manner of Release", "Dental", "Alveolar", "Pala
 ## Vowels
 
 * Vowel length is contrastive [@NhrKagaya1978, p. 31]; however, to better reflect the various suprasegmental features of Naro vowels, I will be following the patterns of the authors I have referenced by representing long vowels as sequences of consecutive vowels rather than by using the ː symbol.
-* Vowel nasalization is also contrastive. Although my sources have argued that any vowel can be nasalized, nasalized high vowels are not attested in the Crúbadán corpus, so I have excluded them from my ruleset. Nasal vowels are marked with a tile (◌̃).
+* Vowel nasalization is also contrastive. Although my sources have argued that any vowel can be nasalized, nasalized high vowels are not attested in the Crúbadán corpus, so I have excluded them from my ruleset. Nasal vowels are marked with a tilde (◌̃).
 * Only the first vowel in a Naro word can be pharyngealized [@NhrVisser1998, p. 124].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -105,7 +103,8 @@ kable(consonants, align = 'c') %>%
 
 # Alphabet
 
-* ⟨w⟩ and ⟨y⟩ are used orthographically to represent [w] and [j], sounds which I have decided to treat not as phonemes. I have opted to treat them as epenthetic vowels occurring intervocalically [@NhrKagaya1978, pp. 37-38], thus, the graphemes will transcribe to nothing in the rule set.  
+* ⟨w⟩ and ⟨y⟩ are used orthographically to represent [w] and [j], sounds which I have decided to treat not as phonemes. I have opted to treat them as epenthetic vowels occurring intervocalically [@NhrKagaya1978, pp. 37-38], thus, the graphemes will transcribe to nothing in the rule set.
+* **Note:** /pʰ/ is not represented in the Crúbadán corpus.  
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -181,14 +180,14 @@ kable(alphabet, align = 'c') %>%
 
 * Some speakers spirantize /dz/ to [z] [@NhrVisser1998, p. 120].
 * /d/ becomes [ɾ] root-medially [@NhrVisser1998, p. 122].
-  * @NhrKagaya1978 observes the same process, but argues that it's a phonemic /ɾ/ that only occurs intervocalically (p. 37).
-* The contrasts between /i e/ and /u o/ collapse when the vowels are nasalized [@NhrVisser1998, p. 124].
-* In words that begin with a labial or alveolar consonant and have a front vowel in the second syllable, /a/ in the first syllable tends to raise [@NhrVisser1998, p. 128].
-  * This consequently collapses the vowel sequences /ai/ and /ae/ to [ii] and [ee] respectively (ibid.).
+    - @NhrKagaya1978 observes the same process, but argues that it's a phonemic /ɾ/ that only occurs intervocalically (p. 37).
 * Intervocalic /b/ spirantizes to [β] [@NhrKagaya1978, p. 34].
 
 # Misc. Rules
 
 * Some interrogative words feature word-initial syllabic /n/ [@NhrVisser1998, p. 123].
+* The contrasts between /i e/ and /u o/ collapse when the vowels are nasalized [@NhrVisser1998, p. 124].
+* In words that begin with a labial or alveolar consonant and have a front vowel in the second syllable, /a/ in the first syllable tends to raise [@NhrVisser1998, p. 128].
+    - This consequently collapses the vowel sequences /ai/ and /ae/ to [ii] and [ee] respectively (ibid.).
 
 # References

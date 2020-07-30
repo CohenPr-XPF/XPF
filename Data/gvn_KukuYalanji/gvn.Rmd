@@ -5,23 +5,24 @@ bibliography: gvn.bib
 output: html_document
 ---
 
-Last Updated: 2019-10-17
+Last Updated: 2020-06-29
 
 
-**Note: Roughly 30% of Crúbadán not transcribed - possibly due to loanwords or phonetic adaptation of the orthography**
+**Note: Roughly 30% of Crúbadán is not transcribed - possibly due to loanwords or phonetic adaptation of the orthography**
 
 # Background
 
-**Language Family**: Pama-Nyungan / Yalandyic / Kuku-Yalanji
+**Language Family**: Australian / Pama-Nyungan / Yalandyic
 
 * This language has a number of different names, including Gugu-Yalanji and Guugu Yalandji.
 * Kuku-Yalanji is spoken in the Queensland state of Northern Australia.
+* Kuku-Yalanji contains many English loanwords. According to @GvnPatz1982, in recent decades, these loanwords have ceased being adapted to native phonology (p. 49).
 
 # Phonology
 
 ## Consonants
 
-* Kuku-Yalanji does not have a phonemic voicing distinction for stops [@GvnPatz1982, p. 34]. The voiced and voieless allophones vary freely; however, stops tend to be voiced in intervocalic positions and in some consonant clusters, and voiceless elsewhere.
+* Kuku-Yalanji does not have a phonemic voicing distinction for stops [@GvnPatz1982, p. 34]. The voiced and voiceless allophones vary freely; however, stops tend to be voiced in intervocalic positions and in some consonant clusters, and voiceless elsewhere.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -96,13 +97,15 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
+* Stops tend to be voiced intervocalically and in consonant clusters following /l/, /ɻ/, and the nasals [@GvnPatz1982, p. 34].
 * Intervocalic /t/ often taps to [ɾ] [@GvnPatz1982, p. 32].
 * /c/ is typically realized as an affricate [@GvnPatz1982, p. 33].
 * Intervocalic /r/ typically taps to [ɾ] [@GvnPatz1982, p. 34].
-* Word-initial /j/ can be dropped before /i/ or /a/; word-initial /w/ can be dropped before /u/ [@GvnPatz1982, p. 36].
 
 # Misc. Rules
 
+* /r/ is often realized as a tap in normal speech [@GvnPatz1982, p. 34].
 * /l/ tends to velarize after /a/ or /u/ (ibid.).
+* Word-initial /j/ can be dropped before /i/ or /a/; word-initial /w/ can be dropped before /u/ [@GvnPatz1982, p. 36].
 
 # References

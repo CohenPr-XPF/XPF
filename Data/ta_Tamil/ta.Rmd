@@ -9,7 +9,7 @@ Last Updated: 2019-11-21
 
 # Background
 
-**Language family**: Dravidian / Southern / Tamil-Kannada / Tamil-Kodagu / Tamil-Malayalam / Tamil
+**Language Family:** Dravidian / Southern / Tamil-Kannada / Tamil-Kodagu / Tamil-Malayalam / Tamil
 
 * Tamil is a language primarily spoken in the Indian state Tamil Nadu, as well in the countries Sri Lanka, Malayasia, and Singapore. Tamil exhibits diglossia, wherein the written variety of the language is formal or literal, and the spoken variety of the language (which is more colloquial) is used in most other contexts. We used Standard Spoken Tamil for this project [@Keane2004, p. 111].
 
@@ -20,7 +20,7 @@ Last Updated: 2019-11-21
 * Unlike other related languages, Tamil doesn't have voiced obstruents or aspirated consonants [@Keane2004, pp. 111-112].
 * Like other Dravidian languages, Tamil has multiple rhotic sounds and makes use of the retroflex place of articulation (ibid.).
 * All consonants carry an inherent /a/ following the consonant [@Shulman2016, p. 22].
-* /dʒ/, /h/, /ʂ/, /ʃ/, /s/, /f/, and /z/ appear in Sanskirt loanwords, their corresponding graphemes of which come from the Grantha writing system [@Keane2004, p. 112]. In terms of standard Tamil, @Keane2004 explains them to be rather marginal, so they won't be accounted for.
+* /dʒ/, /h/, /ʂ/, /ʃ/, /s/, /f/, and /z/ appear in Sanskirt loanwords, and their corresponding graphemes come from the Grantha writing system [@Keane2004, p. 112]. In terms of standard Tamil, @Keane2004 explains them to be rather marginal, so they won't be accounted for.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -58,7 +58,8 @@ Low       ""      "a"       ""
 '), TRUE)
 
 kable(consonants, align = 'c') %>%
-  kable_styling("bordered")
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 
 
 diphthongs <- read.table(textConnection('
@@ -78,25 +79,25 @@ kable(diphthongs, align = 'c') %>%
 
 alphabet <- read.table(textConnection('
 "Consonant Grapheme"         Phoneme                                   Comment
-"க"                         "/k a/"                                      ""
-"ங"                         "/n a/"        "always precedes nasal consonants, so it represents the allophone [ŋ]"
-"ச"                         "/tʃ a/"                                     ""
-"ஞ"                        "/n a/"                         "represents the allophone [ɲ]"
-"ட"                         "/ʈ a/"                                      ""
-"ண"                       "/ɳ a/"                                       ""
-"த"                         "/t̪ a/"                                      ""
-"ந"                         "/n a/"                        "represents the allophone [n̪]"
-"ப"                        "/p a/"                                       ""
-"ம"                        "/m a/"                                       ""
-"ற"                        "/ɾ a/"               "in some dialects, this is pronounced with the trill [r]"
-"ன"                       "/n a/"                                       ""
-"ர"                        "/ɾ a/"                                       ""
-"ல"                        "/l a/"                                      ""
-"ள"                       "/ɭ a/"                                       ""
-"ழ"                       "/ɻ a/"                                       ""
-"ய"                       "/j a/"                                       ""
-"வ"                       "/ʋ a/"                                       ""
-"ஃ"                       "/k a/"       "in some dialects, this is pronounced as [x] but in Standard Spoken Tamil [x] is an allophone of /k/ (often used to show aspiration from English loanwords)"
+"க"                         "/ka/"                                      ""
+"ங"                         "/na/"        "always precedes nasal consonants; represents the allophone [ŋ]"
+"ச"                         "/tʃa/"                                     ""
+"ஞ"                        "/na/"                         "represents the allophone [ɲ]"
+"ட"                         "/ʈa/"                                      ""
+"ண"                       "/ɳa/"                                       ""
+"த"                         "/t̪a/"                                      ""
+"ந"                         "/na/"                        "represents the allophone [n̪]"
+"ப"                        "/pa/"                                       ""
+"ம"                        "/ma/"                                       ""
+"ற"                        "/ɾa/"               "in some dialects, this is realized as a trill [r]"
+"ன"                       "/na/"                                       ""
+"ர"                        "/ɾa/"                                       ""
+"ல"                        "/la/"                                      ""
+"ள"                       "/ɭa/"                                       ""
+"ழ"                       "/ɻa/"                                       ""
+"ய"                       "/ja/"                                       ""
+"வ"                       "/ʋa/"                                       ""
+"ஃ"                       "/ka/"       "in some dialects, this is realized as [x], but in Standard Spoken Tamil, [x] is an allophone of /k/ (often used to show aspiration from English loanwords)"
 "**(Word-initial) Vowel Grapheme**"   ""                                 ""
 "அ"                       "/a/"                                         ""
 "ஆ"                      "/aː/"                                         ""
@@ -122,7 +123,7 @@ alphabet <- read.table(textConnection('
 "ொ"                  "/o/"                                           ""
 "ோ"                  "/oː/"                                          ""
 "ௌ"                 "/aʊ/"                                          ""
-"்"                      "∅"                          "erases the inherent vowel /a/ after a consonant"
+"்"                      ""                          "erases the inherent vowel /a/ after a consonant"
 '), TRUE)
 
 kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align = 'c') %>%
@@ -131,7 +132,7 @@ kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align
 
 # Lenition Rules
 
-* Voiceless obstruents become voiced folling nasals [@Keane2004, p. 112].
+* Voiceless obstruents become voiced following nasals [@Keane2004, p. 112].
     - Geminate voiceless obstruents remain voiceless.
 * Intervocalically [@Schiffman1999, p. 10]:
     - /t̪/ fricates

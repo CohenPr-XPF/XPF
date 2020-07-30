@@ -2,6 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-01-28
 type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
 class,vowel,[aeio],,,,
 class,frontvowel,[ie],,,,
 class,backvowel,[ao],,,,
@@ -15,19 +16,21 @@ sub,j,h,4,,,
 sub,x,ʃ,4,,,
 sub,y,j,4,,,
 sub,z,s,4,,,
+sub,({passthrough}),\1,0.1,,,
 # Accented Letters (only appear in loanwords)
 sub,á,a,4,,,
 sub,é,e,4,,,
 sub,í,i,4,,,
 sub,ó,o,4,,,
-# Beginning of Digraph Section
+# Beginning of Multigraph Section
 sub,c,tʃ,6,,h,"ch"
 sub,h,,6,c,,"clean-up",
 sub,c,kʷ,6,,u,"cu"
 sub,h,w,6,,u,"hu"
 sub,j,w,6,,u,"ju - this seems to only be in loanwords, but it comes up repeatedly in Crubadan"
 sub,k,kʷ,6,,u,"ku"
-sub,q,k,6,,u,"qu"
+sub,q,k,6,,u{frontvowel},"qu"
+sub,q,kʷ,6,,u{backvowel}, "qu"
 sub,u,,6,{u-preceder},,"clean-up",
 sub,t,tɬ,6,,l,"tl"
 sub,l,,6,t,,"clean-up",
@@ -35,6 +38,11 @@ sub,t,ts,6,,z,"tz"
 sub,z,,6,t,,"clean-up",
 sub,u,w,6,,h,"uh"
 sub,h,,6,u,,"clean-up",
+sub,c,kʷ,7,,uh,
+sub,u,,7,c,h,"clean-up",
+sub,h,,7,cu,,"clean-up",
+sub,u,kʷ,7,,hc,
+sub,h,,7,u,c,"clean-up",
+sub,c,,7,uh,,"clean-up",
+# Vowel Length
 ipasub,({vowel}) \1,\1 ˑ,3,,,"vowel lengthening"
-# End of Digraph Section
-sub,({passthrough}),\1,0.1,,,

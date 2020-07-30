@@ -9,7 +9,7 @@ Last Updated: 2019-07-09
 
 # Background
 
-**Language Family**: Afro-Asiatic / Berber / Northern Berber / Atlas / Shilha
+**Language Family**: Afro-Asiatic / Berber / Northern / Atlas
 
 * The name of the language is spelled in a variety of ways, including Shilha, Tashelheet, and Tachelhit.
 * Shilha is spoken in Morocco.
@@ -21,9 +21,8 @@ Last Updated: 2019-07-09
 * All Shilha consonants can be geminated [@ShiRidouane2008, p. 323].
 * @ShiApplegate1958 argues for the labialized consonants as allophones that occur before /u/, although he also describes them as having relatively free variation (pp. 2-3).
 * @ShiKossmann1996 argues for the absence of /nˤ/ and /ʒˤ/ (p. 467).
-* @ShiKossmann1996 argues for velar rather than uvular fricatives (ibid.).
-* @ShiKossmann1996 states that no minimal pairs exist between labialized consonants and their non-labialized counterparts (p. 468). I have chosen to include labialized consonants in the rule set for those that have been attested, thus represented below.
-* **/ʒˤ/, /nˤ/, /rˤ/, and /lˤ/ don't appear in Crúbadán.**
+* @ShiKossmann1996 argue for velar rather than uvular fricatives (ibid.).
+* @ShiKossmann1996 state that no minimal pairs exist between labialized consonants and their non-labialized counterparts (p. 468). I have chosen to include labialized consonants in the rule set for those that have been attested, thus represented below.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -66,6 +65,8 @@ kable(consonants, align = 'c') %>%
 ```
 
 # Alphabet
+
+* **Note:** /ʒˤ/, /nˤ/, /rˤ/, and /lˤ/ are not represented in Crúbadán.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

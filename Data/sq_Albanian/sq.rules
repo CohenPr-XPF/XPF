@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-06-11
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules 
 class,e-pair,[iuy],,,,
 class,h-preceder,[dstxz],,,,
 class,j-preceder,[gn],,,,

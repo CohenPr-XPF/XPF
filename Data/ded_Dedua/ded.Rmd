@@ -5,7 +5,7 @@ bibliography: ded.bib
 output: html_document
 ---
 
-Last Updated: 2019-12-21
+Last Updated: 2020-06-02
 
 # Background
 
@@ -16,6 +16,8 @@ Last Updated: 2019-12-21
 # Phonology
 
 ## Consonants
+
+* Based on the comparison with other languages in the same language family, @McEvoy2005 concludes that voiceless stops in syllable codas are neutralized and realized as glottal stops (p. 269). Thus, the phonemic status of the glottal stop is called into question. However, I have opted to treat it as a phoneme here because this seems to be the common practice found in the literature.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -43,7 +45,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* The diphthongs listed below are always seen as complex nuclei according to @McEvoy2005 (p. 270).
+* According to @McEvoy2005, the diphthongs listed below are always interpreted as complex nuclei (p. 270).
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -81,7 +83,7 @@ Grapheme       Phoneme        Comment
 "e"             "/e/"           ""
 "f"             "/f/"           ""
 "g"             "/ɡ/"           ""
-"h"             "/ʔ/"         "syllable-initially"
+"h"             "/ʔ/"        "syllable-initially"
 "i"             "/i/"           ""
 "k"             "/k/"           ""
 "m"             "/m/"           ""
@@ -94,7 +96,7 @@ Grapheme       Phoneme        Comment
 "u"             "/u/"           ""
 "w"             "/w/"           ""
 "y"             "/j/"           ""
-**Diphthong**    ""             ""
+**Digraph**      ""             ""
 "dz"            "/dʑ/"          ""
 "gb"            "/ɡb/"          ""
 "kp"            "/kp/"          ""
@@ -115,8 +117,7 @@ kable(alphabet, align = 'c') %>%
     - CVV
     - CVC
     - CVVC
-
-* Glottal stops and /ŋ/ are the only phonemes that can appear in syllable codas [@McEvoy2005, p. 268], so complex consonants are always realized as such.
+* Glottal stops and /ŋ/ are the only phonemes that appear in syllable codas [@McEvoy2005, p. 268]. This makes for the inference that complex consonants are always realized as such rather than two separate phonemes.
 
 # Lenition Rules
 
@@ -126,5 +127,6 @@ kable(alphabet, align = 'c') %>%
 
 * /r/ varies freely with [l] intervocalically [@ceder_dedua_2003, p. 3].
 * /w/ varies freely with [v] (ibid.).
+* In syllable coda position, the velar nasal undergoes assimilation to the place of articulation of the following consonant if present. This assimilation is reflected in written Dedua [@McEvoy2005, p. 268]; however, it has been accounted for in the rules to reflect /ŋ/ as underlying.
 
 # References

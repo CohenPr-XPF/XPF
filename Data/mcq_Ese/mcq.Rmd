@@ -5,11 +5,11 @@ bibliography: mcq.bib
 output: html_document
 ---
 
-Last Updated: 2019-08-06
+Last Updated: 2020-06-30
 
 # Background
 
-**Language Family**: Trans-New Guinea / Koiarian / Baraic / Ese
+**Language Family:** Trans-New Guinea / Main Section / Eastern / Central and Southeastern / Koiarian / Baraic
 
 * The language is also known as Managalasi and is spoken in the Oro province of Papua New Guinea.
 
@@ -25,7 +25,7 @@ library(kableExtra)
 
 
 consonants <- read.table(textConnection('
-"Manner of Articulation"   Bilabial      Alveolar      Alveopalatal     Velar      Glottal
+"Manner of Articulation"   Labial      Alveolar      Alveopalatal     Velar      Glottal
 Stops                        "p"           "t"             ""            "k"          "ʔ"
 Affricates                    ""           ""            "tɕ  dʑ"         ""          ""
 Fricatives                   "β"           "s"             ""             ""          "h"
@@ -33,11 +33,11 @@ Nasals                       "m"           "n"             ""             ""    
 Flaps                        ""            "ɾ"             ""             ""          ""   
 '), TRUE)
 
-kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Alveopalatal", "Palatal", "Velar"), align = 'c') %>%
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Alveopalatal", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 5)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Both palatal approximants are voiced.", general_title = "")
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
 ```
 
 ## Vowels
@@ -98,7 +98,7 @@ kable(alphabet, align = 'c') %>%
 # Misc. Rules
 
 * Word-initial /ɾ/ lateralizes to [ɺ] [@McqParlier1992, p. 3].
-* @McqParlier1963 also attests this process as occurring after /i/ (p. 10).
+* @McqParlier1963 also attest this process as occurring after /i/ (p. 10).
 * /u/ becomes [w] before stressed vowels [@McqParlier1992, p. 3; @McqParlier1981, p. viii].
 * /β/ goes to [b] before unstressed /u/ [@McqParlier1963, p. 7].
 * /tɕ/ alternates with [ts] before /ɑ/ [@McqParlier1963, p. 8].

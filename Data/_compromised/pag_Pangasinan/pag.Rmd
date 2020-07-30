@@ -6,11 +6,13 @@ bibliography: pag.bib
 output: html_document
 ---
 
-Last Updated: 2020-01-17
+Last Updated: 2020-06-18
+
+**Slightly Compromised: Possible conflation between /ŋ/ and /nɡ/**
 
 # Background
 
-**Language family**: Austronesian / Malayo-Polynesian / Northern Philippine / Northern Luzon /South-Central Cordilleran / Southern Cordilleran / Pangasinic / Pangasinan
+**Language Family:** Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Northern Philippine / Northern Luzon / South-Central Cordilleran / Southern Cordilleran / Pangasinic
 
 * Pangasinan is spoken in the Philippines.
 
@@ -32,14 +34,13 @@ Affricates                         ""      ""       ""       "tʃ"        ""    
 Nasals                             "m"     "n̪"      ""        ""         ""     "ŋ"    ""   
 Fricatives                         ""      ""       "s"       ""         ""     ""     "h"    
 Trills                             ""      "r̪"      ""        ""         ""     ""     ""   
-Approximants                       ""      ""       ""        ""         ""     "w"    ""   
-Laterals                           ""      "l̪"      ""        ""         "j"     ""    ""                 
+Approximants                       ""      "l̪"      ""        ""         "j"    "w"    ""   
 '), TRUE)
 
 kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 7)) %>%
-  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced..", general_title = "") %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "") %>%
   column_spec(1, bold = TRUE)
 ```
 
@@ -59,6 +60,10 @@ kable(consonants, align = 'c') %>%
 ```
 
 # Alphabet
+
+* Stress is sometimes marked with an acute accent (´) over a vowel [@BentonP1971, p. 7].
+* Some graphemes appearing in Spanish loanwords are often pronounced as they would be in Spanish. For example, ⟨f⟩ may be realized as [f] instead of [p] [@BentonP1971, p. 10].
+* There is some ambiguity as to whether ⟨ng⟩ represents phoneme /ŋ/ or sequence /nɡ/. I will default to /ŋ/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -91,7 +96,7 @@ Grapheme      Phoneme                           Comment
 "z"           "/s/"                  "appears in Spanish loanwords"
 **Digraph**     ""                                ""
 "ch"          "/tʃ/"                              ""
-"ng"          "/ŋ/"                               ""
+"ng"          "/ŋ/"             "also written ⟨ñg⟩ to distinguish /ŋ/ from /nɡ/ - however, this is not present in the Crúbadán corpus"
 "qu"          "/k/"                               ""
 '), TRUE)
 
@@ -102,7 +107,7 @@ kable(alphabet) %>%
 # Lenition Rules
 
 * /d/ may be realized intervocalically as a flap [@BentonP1971, p. 16]; /d/ and [ɾ] vary freely word-finally.
-* /t/ and /k/ may be realized as [ʔ] syllable-finally, preceding a consonant [@BentonP1971, pp. 17-18].
+* /t/ and /k/ may be neutralized to [ʔ] syllable-finally, preceding a consonant [@BentonP1971, pp. 17-18].
 * /k/ may be realized as a fricative intervocalically [@BentonP1971, pp. 18-19].
 
 # Misc. Rules

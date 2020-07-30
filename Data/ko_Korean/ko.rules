@@ -1,6 +1,6 @@
 # Korean Rule Set
-# Written by: Shiyin, Justin, and Becky
-# Last Updated: 2019-5-28
+# Written by: Shiying, Justin, and Becky
+# Last Updated: 2019-05-28
 "type","sfrom","sto","weight","precede","follow","comment"
 "class","G","k",,,,""
 "class","GG","k͈",,,,"Becky"

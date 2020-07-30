@@ -9,7 +9,7 @@ Last Updated: 2020-02-04
 
 # Background
 
-**Language family**: Macro-Ge / Rikbaktsa
+**Language Family:** Macro-Ge / Rikbaktsa
 
 * Rikbaktsa is spoken in Brazil.
 
@@ -33,7 +33,7 @@ Stops                      "p b"      ""     "t d"        ""             ""     
 Affricates                  ""        ""      ""         "tʃ"            ""        ""       ""
 Fricatives                  ""        ""      ""         "ʃ"             ""        ""       "h"
 Nasals                      "m"       ""      "n"         ""             ""        ""       ""
-Trills                      ""        "ɾ̪"     "ɾ"         ""             ""        ""       ""
+Flaps                       ""        "ɾ̪"     "ɾ"         ""             ""        ""       ""
 Approximants                "w"       ""      ""          ""             "j"       ""       ""
 '), TRUE)
 

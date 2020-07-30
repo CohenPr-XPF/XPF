@@ -5,11 +5,11 @@ bibliography: kl.bib
 output: html_document
 ---
 
-Last Updated: 2019-06-10
+Last Updated: 2020-06-30
 
 # Background
 
-**Language Family**: Eskimo-Aleut / Eskimo / Inuit / Kalaallisut
+**Language Family**: Eskimo-Aleut / Eskimo / Inuit
 
 * Kalaallisut is the autonym of the Greenlandic language; it is also used specifically to refer to the West Greenlandic dialect of the language. Therefore, where dialects diverge, I intend to follow the phonology of West Greenlandic.
 * Kalaallisut is spoken in Greenland, but also in Denmark.
@@ -47,6 +47,8 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
+* Vowel length is contrastive [@KlCollis1990, p. 301]. Long vowels are indicated by duplicate graphemes.
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 vowels <- read.table(textConnection('
@@ -62,8 +64,8 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* Long vowels and geminated consonants are written with double letters [@KlCollis1990, p. 301].
-  * Geminated /ŋ/ is written ⟨nng⟩ [@KlCollis1990, p. 317].
+* Geminated consonants are written with double letters [@KlCollis1990, p. 301].
+    - Geminated /ŋ/ is written ⟨nng⟩ [@KlCollis1990, p. 317].
 * ⟨e⟩ and ⟨o⟩ were used more widely in earlier orthographies, but in the modern orthography they only survive in pre-uvular contexts [@KlCollis1990, p. 301].
 * ⟨f⟩ is sometimes used to represent /v/.
 
@@ -99,20 +101,20 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* In the diphthongs /ai/ and /au/, the second vowel assimilates to yield [aa]; however, /ai/ is preserved word-finally [@KlRischel1974, p. 32].
-* In consonant clusters, the first fully assimilates to the second, yielding a geminate [@KlRischel1974, p. 35].
 * Stem-final uvulars delete when followed by /ɣ/ or /ʁ/ [@KlRischel1974, p. 36].
-* Vowels pharyngealize before uvular consonants [@KlRischel1974, p. 38].
 * Long consonants shorten after long vowels, especially for speakers in southern dialect areas [@KlRischel1974, p. 59].
 * Intervocalic /q/ is often closed incompletely, leading to some degree of spirantization [@KlRischel1974, p. 131].
-* /ŋ/ nasalizes preceding vowels, sometimes at the expense of its own realization; this process is more advanced in East Greenlandic than in other dialects [@KlRischel1974, p. 132].
-* /t/ becomes an affricate when followed by /i/ [@KlCollis1990, p. 300].
 
 # Misc. Rules
 
+* In the diphthongs /ai/ and /au/, the second vowel assimilates to yield [aa]; however, /ai/ is preserved word-finally [@KlRischel1974, p. 32].
+* In consonant clusters, the first fully assimilates to the second, yielding a geminate [@KlRischel1974, p. 35].
+* Vowels pharyngealize before uvular consonants [@KlRischel1974, p. 38].
+* /ŋ/ nasalizes preceding vowels, sometimes at the expense of its own realization; this process is more advanced in East Greenlandic than in other dialects [@KlRischel1974, p. 132].
 * In some dialects, /ɣ/ is replaced entirely by /ŋ/; geminates of /ɣ/ tend to collapse instead to [kk] [@KlRischel1974, p. 167].
 * Suffix-initial consonants alternate between stops and fricatives; they are stops when preceded by a consonant, fricatives when preceded by a vowel [@KlRischel1974, p. 242].
 * Intervocalic, stem-internal single fricatives tend to despirantize when they become geminates [@KlRischel1974, p. 242].
 * For the aforementioned stop/fricative alternations, the fricative seems to be the underlying form [@KlRischel1974, p. 249].
+* /t/ becomes an affricate when followed by /i/ [@KlCollis1990, p. 300].
 
 # References

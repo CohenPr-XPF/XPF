@@ -5,11 +5,11 @@ bibliography: mqj.bib
 output: html_document
 ---
 
-Last updated: 2020-03-03
+Last Updated: 2020-07-01
 
 # Background
 
-**Language family**: Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Sulawesi / South Sulawesi / Northern / Toraja-Sa'dan
+**Language Family:** Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Sulawesi / South Sulawesi / Northern / Toraja-Sa'dan
 
 * Mamasa is spoken in the South Sulawesi and West Sulawesi provinces of Indonesia.
 
@@ -99,6 +99,10 @@ kable(alphabet, align = 'c') %>%
 * Syllables in Mamasa follow the order of (C)V(C) [@Matti1991, p. 69].
 
 # Lenition Rules
+
+* Stem-final /k/ debuccalizes to a glottal stop when followed by a non-back consonant [@Matti1991, p. 85].
+
+# Misc. Rules
 
 * /t/ varies freely with [tʃ] [@Matti1991, p. 58].
 

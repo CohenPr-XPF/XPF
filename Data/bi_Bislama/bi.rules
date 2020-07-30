@@ -13,3 +13,5 @@ sub,({passthrough}),\1,0.1,,,
 # Digraphs
 sub,n,ŋ,2,,g,
 sub,g,,2,n,,"clean-up"
+# Misc. Rules
+sub,-,,2,,,

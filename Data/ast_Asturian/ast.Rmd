@@ -9,7 +9,7 @@ Last updated: 2019-08-28
 
 # Background
 
-**Language family**: Indo-European / Italic / Romance / Western / West Ibero-Romance / Asturo-Leonese
+**Language family**: Indo-European / Italic / Romance / Italo-Western / Western / Gallo-Iberian / Ibero-Romance / West Iberian / Asturo-Leonese
 
 * Asturian is spoken in northwestern Spain.
 
@@ -30,9 +30,9 @@ Stops                      "p  b"     "t̪  d̪"     ""          ""       "k  ɡ
 Affricates                   ""         ""       ""         "tʃ"        ""
 Fricatives                  "f"        "θ"       "s"        "ʃ"         ""
 Nasals                      "m"        ""        "n"        "ɲ"         ""
-Trills                      ""         ""        "r"        ""          ""
-Flaps                       ""         ""        "ɾ"        ""          ""
-Approximants                ""         ""        "l"      "j  ʎ"        ""
+Trills                      ""         ""        "r"         ""         ""
+Flaps                       ""         ""        "ɾ"         ""         ""
+Approximants                ""         ""        "l"       "j  ʎ"       ""
 '), TRUE)
 
 kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Palatal", "Velar"), align = 'c') %>%
@@ -45,7 +45,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 
 ## Vowels
 
-* /i/ and /u/ become glides [j] and [w] respectively, when unstressed, forming dipthongs and triphthongs with adjoining vowels [@muniz-cachon_asturian_2018, p. 6].
+* /i/ and /u/ become glides [j] and [w] respectively when unstressed, forming diphthongs and triphthongs with adjoining vowels [@muniz-cachon_asturian_2018, p. 6].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -117,7 +117,7 @@ kable(alphabet, align = 'c') %>%
 # Misc. Rules
 
 * An apostrophe indicates a sound is missing - synonymous with a contraction [@academia_de_la_llingua_asturiana_gramatica_2001, p. 18].  
-* Dashes are used to separate sounds that would otherwise be altered due to specified digraphs (retention of pronouns) [@academia_de_la_llingua_asturiana_gramatica_2001, p. 18].  
+* Dashes are used to separate sounds that would otherwise be altered due to specified digraphs (e.g. retention of pronouns) [@academia_de_la_llingua_asturiana_gramatica_2001, p. 18].  
 * /r/ and /ɾ/ are contrastive word-medially. Otherwise, /r/ occurs word-initially and /ɾ/ occurs word-finally [@muniz-cachon_asturian_2018, p. 3].  
 
 # References

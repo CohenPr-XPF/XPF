@@ -7,9 +7,11 @@ output: html_document
 
 Last Updated: 2019-06-17
 
+**Slightly Compromised: glottal stops are not transcribed consistently**
+
 # Background
 
-**Language Family**: Austronesian / Malayo-Polynesian / Greater Central Philippine / Central Philippine / Bikol / Coastal Bikol / Central Bikol
+**Language Family**: Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Meso Philippine / Central Philippine / Bikol / Coastal / Naga
 
 * Central Bikol, or Bikol, is spoken throughout the Bikol provinces within the Philippines.
 
@@ -28,11 +30,12 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial   Alveolar   Palatal    Velar    Glottal
-Stops                      "p  b"    "t  d"       ""      "k  g"     "ʔ"
+Stops                      "p  b"    "t  d"      ""       "k  ɡ"     "ʔ"
 Nasals                      "m"       "n"        ""        "ŋ"       ""
 Fricatives                   ""       "s"        ""        ""        "h"
 Flaps                        ""       "ɾ"        ""        ""        ""
-Approximants                "ʋ"       "l"        "j"       ""        "" '), header = TRUE)
+Approximants                "ʋ"       "l"        "j"       ""        ""
+'), header = TRUE)
 
 kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
@@ -58,6 +61,7 @@ kable(vowels, align = 'c') %>%
   kable_styling("bordered") %>%
   column_spec(1, bold = TRUE)
 
+
 diphthongs <- read.table(textConnection('
         Diphthongs   
 "/iu/,  /ui/,  /ai/,  /au/"
@@ -68,6 +72,8 @@ kable(diphthongs, align = 'c') %>%
 ```
 
 # Alphabet
+
+* Glottal stops are not always reflected in the spelling of a word [@BclMattes2014, p. 12]. Occurrences in at least the intervocalic positions are predictable (i.e. phonetic), which isn't problematic for the language (as we don't account for them); however, occurrences of glottal stops elsewhere aren't transcribed consistently, which compromises the language to some degree. 
 
 ```{r echo = FALSE}
 
@@ -104,9 +110,10 @@ Grapheme  Phoneme
 knitr::kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
+
 # Syllable Structure
 
-* Bicol syllable structure is CV(C), where V can be either a single vowel or a diphthong [@BclMattes2014, p. 10].
+* Bikol syllable structure is CV(C), where V can be either a single vowel or a diphthong [@BclMattes2014, p. 10].
 
 # Misc. Rules
 

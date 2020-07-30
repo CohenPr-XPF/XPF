@@ -5,11 +5,11 @@ bibliography: nhe.bib
 output: html_document
 ---
 
-Last Updated: 2018-12-03
+Last Updated: 2020-07-01
 
 # Background
 
-**Language Family**: Uto-Aztecan / Nahuan / Nahuatl / Huasteca Nahuatl
+**Language Family:** Uto-Aztecan / Southern Uto-Aztecan / Aztecan / General Aztec / Aztec
 
 * Nahuatl has 31 varieties, many of which are mutually non-intelligible; I have chosen to focus on Huasteca Nahuatl, since it's the most widely spoken variety. Huasteca Nahuatl is sometimes divided into three languages (Eastern, Western, and Central), but according to Ethnologue the Huasteca Nahuatl languages have about 85% mutual intelligibility; where differences have been drawn, I have preferred Eastern Huasteca Nahuatl (ISO code [nhe]), since that is the most spoken variant.
 
@@ -17,9 +17,9 @@ Last Updated: 2018-12-03
 
 ## Consonants
 
-* @NheKimball1990 uses /λ/, which indicates /dɮ/, in place of /tɬ/ (p. 196); however, this seems to be a minority view. (For instance, @NheBeller1979 outright states that /t͡ɬ/ is voiceless (p. 204).)
-* @NheBeller1979 includes /ɡ/ as a phoneme that occurs, although rarely, in native words (p. 204); however, the Crúbadán corpus does not feature ⟨g⟩ except in loaned proper nouns, so based on current evidence I have opted to omit it.
-* /ʔ/ is phonemic, but only in rare contexts [@NheBeller1979, page 204]; [@NheKimball1990, page 197].
+* @NheKimball1990 uses /λ/, which indicates /dɮ/, in place of /tɬ/ (p. 196); however, this seems to be a minority view. For instance, @NheBeller1979 outright states that /t͡ɬ/ is voiceless (p. 204).
+* @NheBeller1979 include /ɡ/ as a phoneme that occurs, although rarely, in native words (p. 204); however, the Crúbadán corpus does not feature ⟨g⟩ except in loaned proper nouns, so based on current evidence I have opted to omit it.
+* /ʔ/ is phonemic, but only in rare contexts [@NheBeller1979, p. 204; @NheKimball1990, p. 197].
 
 ```{r echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
 library(dplyr)
@@ -96,6 +96,7 @@ Grapheme      Phoneme                   Comment
 "\'"           "/ʔ/"                       ""
 **Multigraph**  ""                        ""
 "ch"           "/tʃ/"                      ""
+"cu"           "/kʷ/"                      ""
 "hu"           "/w/"                "syllable-initially"  
 "ku"           "/kʷ/"                      ""
 "qu"        "/k/; /kʷ/"      "/k/: before a front vowel; /kʷ/: before a back vowel"  
@@ -114,8 +115,6 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * According to @NheBeller1979 (p. 205):
-    - Syllable-final /l/ devoices.
-    - /w/ devoices when preceded by /l/.
     - /w/ becomes [h] when followed by a stop.
     - /w/ and /j/ become [ʔ] when word-final.
     - Degemination of /ll/.
@@ -124,5 +123,8 @@ kable(alphabet, align = 'c') %>%
 
 * Glottal stops are appended after word-final vowels [@NheKimball1990, p. 197].
 * Glottal stops occur intervocalically that straddle morpheme boundaries (ibid.).
+* Syllable-final /l/ devoices [@NheBeller1979, p. 205].
+* /w/ devoices when preceded by /l/ (ibid.).
+
 
 # References

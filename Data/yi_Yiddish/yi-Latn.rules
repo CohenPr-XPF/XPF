@@ -1,6 +1,6 @@
 # Yiddish (Romanization)
 # Written by Abi Creighton
-# Updated 7 Oct. 2019
+# Last Updated: 2019-10-07
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
 class,passthrough,[abdfhklmnpstvz],,,,

@@ -5,7 +5,7 @@ bibliography: ghs.bib
 output: html_document
 ---
 
-Last updated: 2020-01-31
+Last updated: 2020-06-03
 
 # Background
 
@@ -17,6 +17,8 @@ Last updated: 2020-01-31
 
 ## Consonants
 
+* /ŋ/ is only found initially and medially [@Richert2002, p. 13].
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 library(dplyr)
@@ -26,7 +28,7 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial   Dental   Alveolar   Retroflex  Velar   Glottal   
-Stops                      "p  b"     "t̪"      "t"          ""     "k ɡ"     "ʔ"
+Stops                      "p  b"     "t̪"      "t"          ""     "k ɡ"      "ʔ"
 Affricates                  ""        ""       "dz"         ""      "kx"      ""
 Fricatives                  ""        ""       "s"          ""       ""       "h"
 Nasals                      "m"       ""       "n"          ""       "ŋ"      ""
@@ -42,7 +44,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 
 ## Vowels
 
-* Vowel length is phonemic [@Richert2002, p. 11]. Long vowels are represented by duplicate graphemes.
+* Vowel length is phonemic. Long vowels are represented by duplicate graphemes [@Richert2002, p. 11].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

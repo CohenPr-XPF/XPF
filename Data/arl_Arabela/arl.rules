@@ -1,8 +1,8 @@
 # Arabela Rule Set
 # Written by: Emily
-# Last Updated: 2019-10-03
+# Last Updated: 2020-06-25
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,passthrough,[aeimnoprstu],,,,
 class,vowels,[aeiou],,,,
 # Individual Letters
@@ -17,5 +17,6 @@ sub,q,k,2,,u,
 sub,u,,3,q,,"clean-up",
 sub,s,ʃ,3,,h,
 sub,h,,3,s,,"clean-up",
+sub,u,u,4,sh,,"prevents u from being deleted in <shu> sequences"
 # Long Vowels
 ipasub,({vowels}) \1,\1 ː,2,,,

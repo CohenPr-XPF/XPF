@@ -1,0 +1,138 @@
+---
+title: "Bugis"
+author: "Allison Shao"
+bibliography: bug.bib
+output: html_document
+---
+
+Last Updated: 2020-07-16
+
+# Background
+
+**Language family**: Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Sulawesi / South Sulawesi / Bugis
+
+* The Bugis language is also known as Buginese and is spoken throughout Sulawesi, Indonesia.
+
+# Phonology
+
+## Consonants
+
+* Not all sources agree on the phonemic inventory of Bugis. I have chosen to include the phonemes that the majority of the sources agreed on. The differences, however, are listed below:
+    - @jaya2018 additionally includes /tʃ/ and /dʒ/ but omits /c/, /ɟ/, and /ɲ/.
+    - @talaohu2019 additionally includes /f/ and /ɸ/.
+    - @wolff2010 omits /ʔ/ and /j/.
+    - @valls2014 additionally includes /ʃ/ and /ʒ/.
+    - @pedroscaballero2014 lists /ɾ/ instead of /r/ and omits /ʔ/.
+* Additionally, @pedroscaballero2014 states that the phonemes presented as /c/ and /ɟ/ may actually be /tʃ/ and /dʒ/ (p. 10). This may explain why @jaya2018 includes /tʃ/ and /dʒ/ instead of /c/ and /ɟ/.
+* According to @valls2014, /h/ is only found in Indonesian loanwords (p. 8). However, due to the significant influence, it is recognized as a phoneme of Bugis.
+* Geminate consonants /pp/, /bb/, /tt/, /dd/, /kk/, /ss/, /mm/, /nn/, /ll/, /cc/, and /ɟɟ/ are constrastive [@valls2014, p. 9; @pedroscaballero2014, p. 8].
+* @talaohu2019 argues that instead of two phonemes /k/ and /ɡ/, [ɡ] is actually an allophone of /k/ (pp. 31-32). However, @pedroscaballero2014 presents minimal pairs for these phonemes, so I will treat them as distinct (p. 11).
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Labial   Alveolar  Palatal  Velar   Glottal
+Stops                        "p b"    "t d"     "c ɟ"   "k ɡ"     "ʔ"
+Fricatives                    ""       "s"       ""      ""       "h"
+Nasals                        "m"      "n"       "ɲ"     "ŋ"      ""
+Trills                        ""       "r"       ""      ""       ""
+Approximants                  "w"      "l"       "j"     ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Where two phonemes share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```
+
+## Vowels
+
+* Vowels /i/, /e/, /a/, /o/, and /u/ also have long counterparts, which are indicated by duplicate graphemes [@valls2014, p. 8]. However, vowel length is not actually contrastive in Bugis, so I have chosen to treat this feature as allophonic and transcribe such instances of long vowels as short in the rules.
+* Though sequences of consecutive vowels occur in Bugis, they are not always realized as complex phonemes [@pedroscaballero2014, p. 6]. Therefore, I have not accounted for them as diphthongs in the rules.
+* The status of schwa as a phoneme in Bugis is somewhat unclear. All sources recognize /ə/ as a distinct phoneme. However, according to @pedroscaballero2014, [ə] may be a possible allophone of both /a/ and /e/ in unstressed syllables (p. 7). It is important to note that it is not uncommon for a phoneme of a language to also be an allophone, so this lenition of /a/ and /e/ is most likely coincidence rather than evidence against schwa being a phoneme. There do however appear to be words in which /ə/ appears in stressed syllables [@pedroscaballero2014, p. 7], which would serve as evidence against the language having a truly reduced phonemic vowel. Furthermore, @valls2014 describes this mid central vowel as "rounded," which suggests it could actually be /ɵ/ or /ɞ/ (p. 12). Based on this, I have chosen to represent this mid central vowel as /ɵ/ rather than /ə/.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"
+Mid       "e"         "ɵ"          "o"
+Low        ""         "a"           ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+* /f/ and /v/ can be found in loanwords, and are most often realized as [p] [@jaya2018, p. 62].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme       Phoneme         
+"a"             "/a/"          
+"b"             "/b/"          
+"c"             "/c/"          
+"d"             "/d/"          
+"e"             "/e/"          
+"è"             "/ɵ/"          
+"g"             "/ɡ/"          
+"h"             "/h/"          
+"i"             "/i/"          
+"j"             "/ɟ/"          
+"k"             "/k/"          
+"l"             "/l/"          
+"m"             "/m/"          
+"n"             "/n/"          
+"o"             "/o/"          
+"p"             "/p/"          
+"r"             "/r/"          
+"s"             "/s/"          
+"t"             "/t/"          
+"u"             "/u/"          
+"w"             "/w/"          
+"y"             "/j/"          
+"\'"            "/ʔ/"          
+**Digraph**      ""            
+"ng"            "/ŋ/"          
+"ny"            "/ɲ/"          
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```  
+
+# Syllable Structure
+
+* Syllables in Bugis are of the type (C)(C)V(C) [@pedroscaballero2014, p. 13].
+    - In syllables with a CC onset, the second consonant is often glide /j/.
+    - The coda is predominantly either a nasal or /ʔ/.
+
+# Lenition Rules
+
+* Stops tend to vary freely with their fricative (or flap) counterparts [@valls2014, pp. 11-12]:
+    - /b/ varies freely with [β] intervocalically and in onset position
+    - /p/ varies freely with [f] and [ɸ]
+    - /d/ varies freely with [ɾ] and [ð] intervocalically
+    - /ɡ/ varies freely with [ɣ] intervocalically
+* According to @jaya2018, /p/, /b/, /t/, /d/, /k/, and /h/ are generally realized as [ʔ] word-finally (pp. 57-58).
+
+# Misc. Rules
+
+* /ŋ/ assimilates to the place of the following consonant [@valls2014, p. 12].
+* All vowels have nasal allophones that surface when in proximity to nasals (ibid.).
+* Nasals /m/, /n/, and most likely /ɲ/ are often realized as [ŋ] word-finally (@jaya2018, p. 59).
+* /s/ may be realized as [θ] [@pedroscaballero2014, p. 10].
+* /w/ may be realized as [β] [@pedroscaballero2014, p. 11].
+
+# References

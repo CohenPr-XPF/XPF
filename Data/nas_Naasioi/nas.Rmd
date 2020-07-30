@@ -1,0 +1,108 @@
+---
+title: "Naasioi"
+author: "Abi Creighton"
+bibliography: nas.bib
+output: html_document
+---
+
+Last Updated: 2020-07-27
+
+# Background
+
+**Language Family:** East Papuan / South Bougainville / East / Nasioi
+
+* Naasioi is also known as Nasioi, Kieta, Kieta Talk, or Aunge. It is spoken in Papua New Guinea in parts of the Kieta District in the Bougainville Province.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar    Velar   Glottal
+Stops                      "p b"    "t d"       "k"       "ʔ"
+Nasals                      "m"      "n"        ""         ""         
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```  
+
+## Vowels
+
+* Vowel sequences are prevalent in Naasioi, with words consisting of up to six vowels [@hurd_nasioi_1970, p. 38].
+* (Up to four) like-vowels can occur in sequences as well. Length is said to correspond with the number of vowels present in such sequences (i.e. three like-vowels would be longer than two like-vowels). However, instances of these lengthy sequences are not present in the Crúbadán corpus (only sequences of two like-vowels were found).
+    - Based on this and the fact that @hurd_nasioi_2004 specifies long vowels as sequences of two vowels (p. 2), it puts into question the phonemic status of vowel length. However, @Crothers1979 and Phoible's listing of the language attest the phonemic status of long vowels [@hurdhurd1966]. I have chosen to treat vowel length as phonemic, with long vowels represented by duplicate graphemes.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         ""          "u"
+Mid           "e"         ""          "o"
+Low           ""          "a"         ""    
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```     
+
+# Alphabet
+
+* ⟨v⟩, ⟨s⟩, and ⟨r⟩ represent allophones of /b/, /t/ and /d/ respectively [@hurd_nasioi_2004, p. 3].
+* ⟨j⟩ and ⟨l⟩ appear in loanwords [@hurd_nasioi_2004, p. 3].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme           
+"a"             "/a/"              
+"b"             "/b/"              
+"d"             "/d/"               
+"e"             "/e/"              
+"i"             "/i/"              
+"k"             "/k/"              
+"m"             "/m/"              
+"n"             "/n/"              
+"o"             "/o/"              
+"p"             "/p/"              
+"r"             "/d/"              
+"s"             "/t/"              
+"t"             "/t/"              
+"u"             "/u/"               
+"v"             "/b/"               
+"\'"            "/ʔ/"               
+**Digraph**      ""                   
+"ts"            "/t/"               
+"ng"            "/n/"               
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Naasioi take the form of (C)V(C) or N, a syllabic nasal [@hurd_nasioi_1970, p. 38].
+
+# Lenition Rules
+
+* When /b/ and /d/ are neither word-initial nor following a glottal stop, /b/ spirantizes and /d/ becomes the alveolar flap [@hurd_nasioi_1970, p. 37].
+
+# Misc. Rules
+
+* When followed by /i/, /t/ is pronounced as [s] [@hurd_nasioi_1970, p. 37].
+* In slow speech, /d/ can become [r] word-medially [@hurd_nasioi_2004, p. 3]
+* /n/ assimilates to [ŋ] preceding /k/ (ibid.).
+
+# References

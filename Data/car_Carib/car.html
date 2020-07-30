@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -147,6 +146,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -184,10 +184,10 @@ summary {
 </div>
 
 
-<p>Last Updated: 2019-10-28</p>
+<p>Last Updated: 2020-06-26</p>
 <div id="background" class="section level1">
 <h1>Background</h1>
-<p><strong>Language Family</strong>: Cariban / Guianan / Carib</p>
+<p><strong>Language Family</strong>: Carib / Northern / Galibi</p>
 <ul>
 <li>Also known as Galibi, Carib is spoken in the north end of South America in French Guiana, Suriname, Guyana, and Venezuela.</li>
 </ul>
@@ -200,8 +200,7 @@ summary {
 <li>/ʔ/ only occurs in syllable codas, while no other stops appear in that position <span class="citation">(Courtz 2008, 32)</span>. It seems likely that /ʔ/ historically entered the language through a debuccalization process; however, because it is unclear where any specific instance of /ʔ/ may have occurred, and because /ʔ/ is distinctively marked in the orthography, I have opted to treat it as a full phoneme.</li>
 <li>Syllable-final nasals assimilate to the place of following stops, but before /s/ they are realized as [ŋ] rather than the alveolar [n] <span class="citation">(Courtz 2008, 32)</span>. For this reason, my ruleset will be treating /ŋ/ as a distinct phoneme that occurs in syllable codas.</li>
 <li>Per <span class="citation">Peasgood (1972)</span>, /m/ and /ŋ/ are the only nasals that occur word-finally (p. 40); otherwise, they agree with Courtz’s analysis.</li>
-<li><span class="citation">Hoff (1968)</span> sees /b d ɡ/ as contrasting with the voiceless series of stops, but he sees the contrast as marginal, so I have found <span class="citation">Courtz (2008)</span>’s argument for allophonic voicing to be more compelling.</li>
-<li><span class="citation">Peasgood (1972)</span> also argues for contrastive /b d ɡ/ (p. 36).</li>
+<li><span class="citation">Hoff (1968)</span> and <span class="citation">Peasgood (1972)</span> see /b d ɡ/ as contrasting with the voiceless series of stops, but he sees the contrast as marginal, so I have found <span class="citation">Courtz (2008)</span>’s argument for allophonic voicing to be more compelling.</li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -402,12 +401,28 @@ a
 </tr>
 </tbody>
 </table>
+<table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:center;">
+Diphthongs
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+/ai/, /ei/, /ɨi/, /ui/, /oi/, /au/
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div id="alphabet" class="section level1">
 <h1>Alphabet</h1>
 <ul>
-<li>Some orthographies use ⟨b d g⟩ for postnasal stops <span class="citation">(Courtz 2008, 37)</span>.</li>
+<li>Some orthographies use ⟨b d g⟩ for postnasal stops <span class="citation">(Courtz 2008, 37)</span>, which I have accounted for in the rules.</li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -479,21 +494,10 @@ k
 m
 </td>
 <td style="text-align:center;">
-/ŋ/
+/ŋ/; /m/
 </td>
 <td style="text-align:center;">
-in word-medial syllable codas
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-m
-</td>
-<td style="text-align:center;">
-/m/
-</td>
-<td style="text-align:center;">
-elsewhere
+/ŋ/: in word-medial syllable codas; /m/: elsewhere
 </td>
 </tr>
 <tr>
@@ -501,21 +505,10 @@ elsewhere
 n
 </td>
 <td style="text-align:center;">
-/ŋ/
+/ŋ/; /n/
 </td>
 <td style="text-align:center;">
-in syllable codas
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-n
-</td>
-<td style="text-align:center;">
-/n/
-</td>
-<td style="text-align:center;">
-elsewhere
+/ŋ/: in syllable codas; /n/: elsewhere
 </td>
 </tr>
 <tr>
@@ -615,15 +608,13 @@ y
 <h1>Syllable Structure</h1>
 <ul>
 <li>Carib has a (C)V(V)(C) syllable structure <span class="citation">(Courtz 2008, 23)</span>.</li>
-<li>Any consonant can occur syllable-initially, but the sequence /ji/ never occurs <span class="citation">(Courtz 2008, 23)</span>.</li>
+<li>Any consonant can occur syllable-initially, but the sequence /ji/ never occurs (ibid.).</li>
 </ul>
 </div>
 <div id="lenition-rules" class="section level1">
 <h1>Lenition Rules</h1>
 <ul>
-<li>Unstressed word-initial /ɨ/ deletes <span class="citation">(Courtz 2008, 31)</span>.</li>
-<li>High non-back vowels sometimes delete word-finally when preceded by /m/ (ibid.).</li>
-<li>Stops voice after unstressed nasals or /CV/ sequences (ibid.).</li>
+<li>Stops voice after unstressed nasals or /CV/ sequences <span class="citation">(Courtz 2008, 31)</span>.</li>
 <li>Syllable-final nasals sometimes delete, leaving behind just a nasalization of the preceding vowel <span class="citation">(Courtz 2008, 32)</span>.</li>
 <li>/ʔ/ spirantizes to [h] before voiceless consonants (ibid.).</li>
 <li><span class="citation">Hoff (1968)</span>, conversely, sees /ʔ/ as going to [x] instead before voiceless consonants (p. 48).</li>
@@ -635,6 +626,8 @@ y
 <h1>Misc. Rules</h1>
 <ul>
 <li>Epenthesis of glottal consonants occurs between stressed vowels and following syllable-initial stops: if the stressed vowel is short, [ʔ] is inserted, while if long [h] is inserted <span class="citation">(Courtz 2008, 31)</span>.</li>
+<li>Unstressed word-initial /ɨ/ deletes (ibid).</li>
+<li>High non-back vowels sometimes delete word-finally when preceded by /m/ (ibid.).</li>
 <li>/s/ palatalizes to [ʃ] near /i/ <span class="citation">(Courtz 2008, 32)</span>.</li>
 <li>/ɽ/ becomes [ɾ] after front vowels <span class="citation">(Courtz 2008, 32; Peasgood 1972, 37)</span>.</li>
 <li>/Nɽ/ sequences collapse to [n] <span class="citation">(Courtz 2008, 33–34)</span>.</li>

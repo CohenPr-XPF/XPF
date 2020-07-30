@@ -9,7 +9,7 @@ Last Updated: 2019-12-19
 
 # Background
 
-**Language family**: Altaic / Turkic / Kipchak
+**Language Family:** Turkic / Kipchak / Kyrgyz-Kipchak
 
 * Also spelled Kyrgyz, speakers reside in a multitude of places, including but not limited to Kyrgyzstan, Afghanistan, China, and Tajikistan.
 
@@ -34,17 +34,17 @@ Trills                        ""         "r"          ""            ""         "
 Approximants                  ""         "l"          ""            "j"        ""       
 '), TRUE)
 
-kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Palatal", "Velar"), align = 'c') %>%
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 5)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Both palatal approximants are voiced.", general_title = "")
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
 ```
 
 ## Vowels
 
-* Vowel length is phonemic [@johanson_kirghiz_2006, pg. 344].    
-* Long vowels are represented by repeated graphemes or macrons (¯) [@johanson_kirghiz_2006, pg. 345].
+* Vowel length is phonemic [@johanson_kirghiz_2006, p. 344].    
+* Long vowels are represented by repeated graphemes in Cyrillic, or macrons (¯) in the Romanized alphabet [@johanson_kirghiz_2006, p. 345].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -63,8 +63,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* Although a Roman-based alphabet was introduced following the Soviet era, the Cyrillic-based script is primarily used [@brown_kirghiz_2009, pg. 611].
-* Much of the one-to-one mapping of grapheme to phoneme was inferred from @Hebert1997 (pg. 3 - 7).
+* Although a Roman-based alphabet was introduced following the Soviet era, the Cyrillic-based script is primarily used [@brown_kirghiz_2009, p. 611].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -102,7 +101,7 @@ Grapheme      Phoneme                                        Comment
 "щ"            "/ʃtʃ/"                               "only used in loanwords"      
 "ъ"             ""        "indicates non-palatalization of the preceding consonant - only used in loanwords"      
 "ы"            "/ɯ/"                                           ""
-"ь"             ""        "indicates palatilazation of the preceding consonant - only used in loanwords"     
+"ь"             ""        "indicates palatalization of the preceding consonant - only used in loanwords"     
 "э"            "/e/"                                           ""
 "ю"            "/ju/"                                          ""
 "я"            "/jɑ/"                                          ""
@@ -115,7 +114,6 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * Spirantization occurs with most stops intervocalically [@johanson_kirghiz_2006, pg. 345].
-
 
 # Misc. Rules
 

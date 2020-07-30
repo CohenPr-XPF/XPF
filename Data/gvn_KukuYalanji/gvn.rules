@@ -1,10 +1,11 @@
 # Kuku-Yalanji Rule Set
 # Written by: Bill
-# Last Updated: 2019-07-26
+# Last Updated: 2020-06-11
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,post-n,[gy],,,,
 class,passthrough,[aiklmnuw],,,,
+# class,loanwords,[oestchpvfzx],,,,
 # Individual Letters
 sub,b,p,4,,,
 sub,d,t,4,,,
@@ -20,3 +21,5 @@ sub,r,r,6,,r,"<rr>"
 sub,r,,6,r,,"<rr> cleanup"
 # Misc. Rules
 sub,({passthrough}),\1,0.1,,,
+# sub,({loanwords}),\1,0.1,,,
+# sub,g,ɡ,0.1,,,"loanword /ɡ/"

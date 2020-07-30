@@ -1,6 +1,6 @@
 # Tuvan
 # Written by Abi Creighton
-# Updated: 2020-02-12
+# Updated: 2020-06-19
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
 class,vowel,[ɑeioøuɯ],,,,
@@ -12,6 +12,7 @@ sub,в,ʋ,2,,,
 sub,г,ɡ,2,,,
 sub,д,d,2,,,
 sub,е,e,2,(?<!^),,"<e> goes to /e/ word-medially and word-finally",
+sub,е,j e,2,^,,
 sub,э,e,2,^,,
 sub,ё,j o,2,,,
 sub,ж,ʝ,2,,,
@@ -39,8 +40,8 @@ sub,ы,ɯ,2,,,
 sub,ь,,2,,,"represents a reduced vowel",
 # Vowel Length
 ipasub,({vowel}) \1,\1 ː,2,,,
-sub,э,e ː,3,,э,
-sub,э,,2,э,,"clean-up",
+sub,э,e ː,4,,э,
+sub,э,,3,э,,"clean-up",
 # Consonant Gemination
 ipasub,({gem}) \1,\1 ː,2,,,
 # Misc. Rules

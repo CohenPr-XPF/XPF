@@ -1,6 +1,6 @@
 # Czech Rule Set
 # Written by: Emily
-# Last Updated: 2020-03-18
+# Last Updated: 2020-06-11
 type,sfrom,sto,weight,precede,follow,comment
 # Pre Rules
 pre,(Ď|Ť),(ď|ť),1,,,,
@@ -8,15 +8,17 @@ pre,(Ď|Ť),(ď|ť),1,,,,
 class,passthrough,[abdfjklmnoprstuvz],,,,
 class,dipvowel,[aeo],,,,
 class,i,[ií],,,,
-class,pal,[tdn],,,,
+class,frontV_preceder,[tdn],,,,
+class,pal,[ňďť],,,,
 # Individual Letters
 sub,á,a ː,2,,,
 sub,c,ts,2,,,
 sub,č,tʃ,2,,,
 sub,ď,ɟ,2,,,
-sub,e,e,2,,,
-sub,é,e ː,2,,,
-sub,ě,e,2,,,
+sub,e,ɛ,2,,,
+sub,é,ɛ ː,2,,,
+sub,ě,j ɛ,2,,,
+sub,ě,ɛ,3,{pal},,"preceding palatal consonants <ě> transcribes to /ɛ/"
 sub,g,ɡ,2,,,
 sub,h,ɦ,2,,,
 sub,i,i,2,,,
@@ -38,13 +40,13 @@ sub,h,,3,c,,"clean-up"
 sub,t,c,4,,{i},
 sub,d,ɟ,4,,{i},
 sub,n,ɲ,4,,{i},
-sub,t,c e,4,,ě,
-sub,d,ɟ e,4,,ě,
-sub,n,ɲ e,4,,ě,
-sub,ě,,4,{pal},,"clean-up",
+sub,t,c ɛ,4,,ě,
+sub,d,ɟ ɛ,4,,ě,
+sub,n,ɲ ɛ,4,,ě,
+sub,ě,,4,{frontV_preceder},,"clean-up",
 # Diphthongs
 sub,a,au,3,,u,
-sub,e,eu,3,,u,
+sub,e,ɛu,3,,u,
 sub,o,ou,3,,u,
 sub,u,,3,{dipvowel},,"clean-up"
 # Punctuation

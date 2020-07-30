@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-07-12
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,apostrophe,[ꞌ'ˈ‘’ʼ],,,,
 class,v-midlow,[ɛɔ],,,,
 class,n-follower,[djy],,,,
@@ -26,7 +26,7 @@ sub,u,u ˨,4,,,
 sub,ú,u ˦,4,,,
 sub,y,j,4,,,
 sub,{apostrophe},ʔ,4,,,
-sub,-,,4,,,"a handful of words have hyphens with no phonetic value"
+sub,({passthrough}),\1,0.1,,,
 # Accented <ɛ> and <ɔ>
 sub,́,˦,4,,,"acute accent = high tone"
 ipasub,({v-midlow}) ˨ ˦,\1 ˦,2,,,"attaches the high tone to the vowel"
@@ -41,4 +41,4 @@ sub,j,ᶮdʒ,6,n,,"<nj>"
 sub,y,ɲ,6,n,,"<ny>"
 # Misc. Rules
 ipasub,({ipavowel}) ({tone}) \1 \2,\1 \2 ː,1,,,"vowel lengthening"
-sub,({passthrough}),\1,0.1,,,
+sub,-,,4,,,"a handful of words have hyphens with no phonetic value"

@@ -5,11 +5,11 @@ bibliography: gn.bib
 output: html_document
 ---
 
-Last Updated: 2019-02-25
+Last Updated: 2020-06-29
 
 # Background
 
-**Language Family**: Tupian / Tupi-Guarani / Guarani subgroup I / Guarani
+**Language Family**: Tupi / Tupi-Guarani / Guarani (I)
 
 * Where there are differences along the Guarani dialect continuum, Paraguayan Guarani will be preferred.
 * Guarani is spoken in South America, specifically in Paraguay and in parts of Argentina, Bolivia, and Brazil.
@@ -18,9 +18,9 @@ Last Updated: 2019-02-25
 
 ## Consonants
 
-* In nasal syllables, the prenasalized stops assimilate to become fully nasal. Taps and approximants similarly nasalize in nasal syllables [@GnWalker1999, page 68].
-    - Gregores records the nasals as the underlying forms of the phonemes [@GnGregores1967].
-* /x/ exists in free variation with /h/ [@GnWalker1999, page 68]; all the sources I have seen, except @GnOrthography, prefer /x/ as the underlying form.
+* In nasal syllables, the prenasalized stops assimilate to become fully nasal. Taps and approximants similarly nasalize in nasal syllables [@GnWalker1999, p. 68].
+    - @GnGregores1967 records the nasals as the underlying forms of the phonemes.
+* /x/ exists in free variation with /h/ [@GnWalker1999, p. 68]; all the sources I have seen, except @GnOrthography, prefer /x/ as the underlying form.
 * @GnPhonemesUCB records /ɣ/ instead of /ɰ/. @GnGregores1967 use the character for ɣ, but labels it a sonorant, indicating that they too are referring to the velar approximant.
 * Sources differ on whether /t/ and /ⁿd/ are dental or alveolar. For now, I have stuck with alveolar for simplicity.
 * The labiovelars seem to only emerge when followed by ⟨u⟩, and their attestation is inconsistent, so I am treating them as allophones of the velar sounds and excluding them from the ruleset.
@@ -37,7 +37,7 @@ consonants <- read.table(textConnection('
 Stops                      "p ᵐb"   "t ⁿd"    ""             "k ᵑɡ"  "kʷ ᵑɡʷ"    "ʔ"
 Affricates                 ""       ""        "dʒ"           ""      ""          ""
 Fricatives                 ""       "s"       "ʃ"            "x"     ""          ""
-Taps                       ""       "ɾ"       ""             ""      ""          ""
+Flaps                      ""       "ɾ"       ""             ""      ""          ""
 Approximants               "ʋ"      "l"       ""             "ɰ"     ""          ""
 '), TRUE)
 
@@ -50,8 +50,8 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* All of these vowels have both an oral and a nasal version; nasalization is only phonemic in stressed syllables [@GnWalker1999, page 69].
-* Although /ɯ/ is a minority view in the sources I have seen, with /ɨ/ appearing more commonly, I have preferred /ɯ/ because Walker provided a chart of vowel realizations that shows /ɯ/ to be backed nearly as far as /u/ [@GnWalker1999, page 69].
+* All of these vowels have both an oral and a nasal version; nasalization is only phonemic in stressed syllables [@GnWalker1999, p. 69].
+* Although /ɯ/ is a minority view in the sources I have seen, with /ɨ/ appearing more commonly, I have preferred /ɯ/ because Walker provided a chart of vowel realizations that shows /ɯ/ to be backed nearly as far as /u/ [@GnWalker1999, p. 69].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('
@@ -69,9 +69,9 @@ kable(consonants, align = 'c') %>%
 # Alphabet
 
 * The character ⟨g̃⟩ is sometimes used to represent the nasalized velar approximant, but its use is controversial and not consistent, so in my ruleset I will be treating ⟨g̃⟩ as if it were simply ⟨g⟩.
-* The digraph ⟨nt⟩ is listed as a consonant pronounced /ⁿt/, but that sound rarely occurs and does not seem to be phonemic. However, @GnGregores1967 argues that prenasalized voiceless stops, including ⟨nt⟩, occur before specific vowels (p. 84).
+* The digraph ⟨nt⟩ is listed as a consonant pronounced /ⁿt/, but that sound rarely occurs and does not seem to be phonemic. However, @GnGregores1967 argue that prenasalized voiceless stops, including ⟨nt⟩, occur before specific vowels (p. 84).
 * Similarly to the above point, ⟨m⟩, ⟨n⟩ and ⟨ñ⟩ are listed as consonants, even though nasals only exist as allophones of prenasalized voiced stops (or affricates, in the case of ⟨ñ⟩). For this reason, my ruleset converts each character's phoneme to the appropriate underlying form.
-* Prior to 1950, Guarani used a different orthographical system [@GnOrthography, pp. 4-5]. Because the grapheme ⟨y⟩ represents a different phoneme in each Guarani orthography (/dʒ/ in the old orthography vs. /ɯ/ in the current one), it is impossible to represent both systems in a single ruleset, so I have opted only to include the current orthography.
+* Prior to 1950, Guarani used a different orthographic system [@GnOrthography, pp. 4-5]. Because the grapheme ⟨y⟩ represents a different phoneme in each Guarani orthography (/dʒ/ in the old orthography vs. /ɯ/ in the current one), it is impossible to represent both systems in a single ruleset, so I have opted only to include the current orthography.
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -116,11 +116,14 @@ kable(alphabet, align = 'c') %>%
 
 # Syllable structure
 
-* The syllable structure is principally (C)V, although prenasalized stops are able to occur as a syllable coda [@GnGregores1967, page 61]
+* The syllable structure is principally (C)V, although prenasalized stops are able to occur as a syllable coda [@GnGregores1967, p. 61].
 
 # Lenition Rules
 
-* The free variation between [x] and [h] may indicate a lenition process in progress [@GnWalker1999, page 68].
-* Nasal harmony: when a stressed syllable has a nasal vowel, nasalization spreads to voiced segments in both directions; it is only blocked by a stressed syllable containing an oral vowel [@GnWalker1999, page 69].
+* The free variation between [x] and [h] may indicate a lenition process in progress [@GnWalker1999, p. 68].
+
+# Misc. Rules
+
+* Nasal harmony: when a stressed syllable has a nasal vowel, nasalization spreads to voiced segments in both directions; it is only blocked by a stressed syllable containing an oral vowel [@GnWalker1999, p. 69].
 
 # References

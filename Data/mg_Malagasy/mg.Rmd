@@ -6,11 +6,11 @@ bibliography: mg.bib
 output: html_document
 ---
 
-Last updated: 2019-10-18
+Last Updated: 2020-06-30
 
 # Background
 
-**Language family**: Austronesian / Malayo-Polynesian / East Barito / Malagasy
+**Language Family:** Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Borneo / Barito / East / Malagasy
 
 * Malagasy is spoken in Madagascar.
 
@@ -18,9 +18,9 @@ Last updated: 2019-10-18
 
 ## Consonants  
 
-* Pre-nasalized stops are proposed by @oneill_phonology_2015 as being allophones of their oral counterparts brought about through nasal assimilation (pg. 38). That being said, it's widely documented that Malagasy doesn't allow for consonant clusters (discussed under Syllable Structure). Therefore, if such stops were treated as allophones, the underlying transcription would violate that very restriction. Based on this and on the fact that @rasoloson_malagasy_2005 includes pre-nasalized stops as part of the phonemic inventory (pg. 459), I will too.  
-* Although the pre-nasalized /g/ occurs in Malagasy, /ŋ/ is not attributed as being part of the official language [@rasoloson_malagasy_2005, pg. 459]. It is, however, said to be realized through nasal assimilation in the official language and part of the phonemic inventories in other dialects (eg. Betsimisaraka) [@oneill_phonology_2015, pg. 13].
-* Geminate consonant do not occur in the language [@rasoloson_malagasy_2005, pg. 460].
+* Pre-nasalized stops are proposed by @oneill_phonology_2015 as being allophones of their oral counterparts brought about through nasal assimilation (p. 38). That being said, it's widely documented that Malagasy doesn't allow for consonant clusters (see Syllable Structure). Therefore, if such stops were treated as allophones, the underlying transcription would violate that very restriction. Based on this and on the fact that @rasoloson_malagasy_2005 include pre-nasalized stops as part of the phonemic inventory (p. 459), I will too.  
+* Although the pre-nasalized /ɡ/ occurs in Malagasy, /ŋ/ is not attributed as being part of the official language [@rasoloson_malagasy_2005, p. 459]. It is, however, said to be realized through nasal assimilation in the official language and part of the phonemic inventories in other dialects (e.g. Betsimisaraka) [@oneill_phonology_2015, p. 13].
+* Geminate consonant do not occur in the language [@rasoloson_malagasy_2005, p. 460].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -50,9 +50,8 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 
 ## Vowels
 
-* There is some controversy around the phoneme /o/. Although it appears to occur as a dialectal variant (eg. Betsimisaraka) [@oneill_phonology_2015, pp. 13, 43], it is not attested as being part of the official inventory. Rather, authors argue that it's phonetically realized as a result of reduced vowel duration [@rasoloson_malagasy_2005, p. 460], or as a result of /u/ being in environments with non-high vowels [@oneill_phonology_2015, pp. 42, 43].
-* @rasoloson_malagasy_2005 exclaims that /o/ does occur in loanwords, which is represented by ⟨ô⟩ (p. 460).
-* There is a lack of consensus regarding the diphthongs of Malagasy [@oneill_phonology_2015, pp. 43-45]. Therefore, I won't account for them. However, it is important to note that some vowel sequences are actually realized on the surface as monophthongs (eg. /ia/ and /ai/ as [e], and /ua/ as [o]) [@rasoloson_malagasy_2005, p. 460].
+* There is some controversy around the phoneme /o/. Although it appears to occur as a dialectal variant (e.g. Betsimisaraka) [@oneill_phonology_2015, pp. 13, 43], it is not attested as being part of the official inventory. Rather, authors argue that it's phonetically realized as a result of reduced vowel duration [@rasoloson_malagasy_2005, p. 460], or as a result of /u/ being in environments with non-high vowels [@oneill_phonology_2015, pp. 42, 43].
+* There is a lack of consensus regarding the diphthongs of Malagasy [@oneill_phonology_2015, pp. 43-45]. Therefore, I won't account for them. However, it is important to note that some vowel sequences are actually realized on the surface as monophthongs (e.g. /ia/ and /ai/ as [e], and /ua/ as [o]) [@rasoloson_malagasy_2005, p. 460].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -71,6 +70,7 @@ kable(vowels, align = 'c') %>%
 # Alphabet
 
 * The Malagasy alphabet is referred to as the Abidy [@griffiths_grammar_1854, p. 11].
+* ⟨ô⟩ is used for the sound [o] in loanwords [@rasoloson_malagasy_2005, p. 460].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -122,16 +122,16 @@ kable(alphabet, align = 'c') %>%
 * Syllables in Malagasy follow a (C)V structure - codas are prohibited [@rasoloson_malagasy_2005, p. 460].
 * Aside from the consonants that appear in succession with the digraphs and trigraphs, no consonant clusters are allowed in syllable onsets (loanwords are exempt) [@rasoloson_malagasy_2005, p. 460].
 
-## Lenition Rules
+# Lenition Rules
 
-* All velar stops palatalize following a vowel [@rasoloson_malagasy_2005, p. 459].
-* Vowels often become nasalized when preceding nasal or pre-nasalized consonants [@rasoloson_malagasy_2005, p. 460].
-* Vowels are often elided word-finally and intervocalically [@tench_malagasy_2008, p. 2].
 * /h/ is almost always elided except intervocalically [@oneill_phonology_2015, p. 36].
 
 # Misc. Rules
 
-* Fricatives become stops in possessive and verbal constructions, reduplication, and compounding [@rasoloson_malagasy_2005].
+* Fricatives become stops in possessive and verbal constructions, reduplication, and compounding [@rasoloson_malagasy_2005, pp. 461-462].
 * Pre-nasalized stops occur word-medially. Word-initially, the nasal is unpronounced and the oral stop is voiceless [@rasoloson_malagasy_2005, p. 459].
+* All velar stops palatalize following a vowel [@rasoloson_malagasy_2005, p. 459].
+* Vowels often become nasalized when preceding nasal or pre-nasalized consonants [@rasoloson_malagasy_2005, p. 460].
+* Vowels are often elided word-finally and intervocalically [@tench_malagasy_2008, p. 2].
 
 # References

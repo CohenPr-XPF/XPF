@@ -2,14 +2,15 @@
 # Written by: Bill
 # Last Updated: 2019-06-10
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,output,[aɣijklmnŋɴpqʁstuv],,,,
 class,passthrough,[aijklmnpqstuv],,,,
+class,uvulars,(q|r|rn),,,,
 # Individual Letters
-sub,e,i,4,,,
+sub,e,i,4,,{uvulars},
 sub,f,v,4,,,
 sub,g,ɣ,4,,,
-sub,o,u,4,,,
+sub,o,u,4,,{uvulars},
 sub,r,ʁ,4,,,
 # Digraphs
 sub,n,ŋ,6,,g,"ng"

@@ -5,11 +5,11 @@ bibliography: tg.bib
 output: html_document
 ---
 
-Last Updated: 2019-06-14
+Last Updated: 2020-07-02
 
 # Background
 
-**Language Family**: Indo-European / Indo-Iranian / Iranian / Western Iranian / Southwestern Iranian / Persian / Tajik
+**Language Family:** Indo-European / Indo-Iranian / Iranian / Western / Southwestern / Persian
 
 * Tajik is predominantly spoken in Tajikistan and Uzbekistan.
 
@@ -56,7 +56,8 @@ Low       ""      "a"       ""
 '), TRUE)
 
 kable(consonants, align = 'c') %>%
-  kable_styling("bordered")
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 ```
 
 # Alphabet
@@ -113,10 +114,7 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * Loanwords with the affricate /ts/ typically reduce it to /s/ [@TgIdo2005, p. 13].
-* /n/ assimilates to the place of following bilabials [@TgIdo2005, p. 13; @TgKhojayori2009, p. 7].
 * /q/ spirantizes in some words (ibid.).
-* Consonant clusters assimilate to the voicing of the final one [@TgKhojayori2009, p. 3].
-* /a u i/ reduce to [ə] in unstressed syllables [@TgKhojayori2009, p. 6].
 * The middle consonant is often deleted in three-consonant clusters [@TgKhojayori2009, p. 7].
   * However, sometimes [ə] is inserted between the second and third consonant instead (ibid.).
 * In word-final consonant clusters, the last consonant is sometimes deleted (ibid.).
@@ -126,7 +124,9 @@ kable(alphabet, align = 'c') %>%
 # Misc. Rules
 
 * Obstruents devoice word-finally [@TgKhojayori2009, p. 3].
+* Consonant clusters assimilate to the voicing of the final one [@TgKhojayori2009, p. 3].
+* /a u i/ reduce to [ə] in unstressed syllables [@TgKhojayori2009, p. 6].
+* /n/ assimilates to the place of following bilabials [@TgIdo2005, p. 13; @TgKhojayori2009, p. 7].
 * Glides, typically /j/, are often added between vowel clusters [@TgKhojayori2009, p. 8; @TgIdo2005, p. 12].
-
 
 # References

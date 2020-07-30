@@ -5,7 +5,7 @@ bibliography: aia.bib
 output: html_document
 ---
 
-Last Updated: 2020-01-22
+Last Updated: 2020-06-24
 
 # Background
 
@@ -16,6 +16,8 @@ Last Updated: 2020-01-22
 # Phonology
 
 ## Consonants
+
+* It's interesting that the Arosi language includes the glide /w/ but not /j/. Although @Capell1971 [as cited in @Lynch2001, p. 562] includes /j/ as a separate phoneme (along with /kʷ/ and /ɡʷ/), @Lynch2001 explain that, due to a lack of evidence, they are not explicitly contrastive, but rather allophones of intervocalic /i/, /k/, and /ɡ/, respectively.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -95,15 +97,13 @@ kable(alphabet, align = "c") %>%
 # Syllable Structure
 
 * Syllables in Arosi consist of either /V/ or /CV/ [@Capell1971, p. 6].
-* Apart from the digraphs above, consonant clusters are not permitted in Arosi (ibid.).
+* Consonant clusters are not permitted in Arosi (ibid.).
 
-# Lenition Rules
-
-* /t/ is realized as [s] preceding /i/ [@Lynch2001, p. 562].
 
 # Misc. Rules
 
 * /k/ and /ɡ/ are labialized preceding back vowels [@Lynch2001, p. 562].
 * /i/ is realized as [j] intervocalically (ibid.).
+* /t/ is realized as [s] preceding /i/ (ibid).
 
 # References

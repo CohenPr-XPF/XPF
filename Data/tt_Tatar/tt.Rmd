@@ -5,11 +5,11 @@ bibliography: tt.bib
 output: html_document
 ---
 
-Last Updated: 2018-11-27
+Last Updated: 2020-07-02
 
 # Background
 
-**Language Family**: Turkic / Common Turkic / Kipchak / North Kipchak / Tatar
+**Language Family:** Turkic / Common Turkic / Kipchak / North Kipchak / Tatar
 
 * Although this language is usually simply called Tatar, it is sometimes also known as Kazan Tatar or Volga Tatar, in order to differentiate it from the Crimean Tatar and Siberian Tatar languages.
 * Tatar is spoken in Russia, specifically in Saint Petersburg, Moscow, and the Bashkortostan and Tatarstan republics.
@@ -18,8 +18,7 @@ Last Updated: 2018-11-27
 
 ## Consonants
 
-* Bilabial and labiodental consonants are non-contrastive in Turkic languages [@TtBaitchura1975, p. 244], so /f/ could theoretically also be /ɸ/. Comrie explicitly describes this consonant as bilabial [@TtComrie1997, p. 901], but he diverges from a general consensus of using /f/. I have opted for the labiodental /f/ in the phonemic inventory below.
-
+* Bilabial and labiodental consonants are non-contrastive in Turkic languages [@TtBaitchura1975, p. 244], so /f/ could theoretically also be /ɸ/. @TtComrie1997 explicitly describes this consonant as bilabial (p. 901), but he diverges from a general consensus of using /f/. I have opted for the labiodental /f/ in the phonemic inventory below.
 * /ɕ/ and /ʑ/ should not be replaced with affricates [@TtComrie1997, p. 902].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -30,7 +29,7 @@ library(kableExtra)
 
 
 consonants <- read.table(textConnection('
-"Manner of Articulation"   Labial  Alveolar  Postalveolar  Alveolo-Palatal  Palatal   Velar   Glottal
+"Manner of Articulation"   Labial  Alveolar  Postalveolar  Alveopalatal      Palatal   Velar   Glottal
 Stops                      "p b"   "t d"     ""            ""                 ""       "k ɡ"   "ʔ"
 Fricatives                 "f"     "s z"     "ʃ ʒ"         "ɕ ʑ"              ""       "x"     "h"
 Nasals                     "m"     "n"       ""            ""                 ""       "ŋ"     ""
@@ -57,7 +56,8 @@ Low       ""      "a"       "ɑ"
 
 kable(consonants, align = 'c') %>%
   kable_styling("bordered") %>%
-  footnote("Note: For phonemes that share a cell, those on the left are unrounded, whereas those on the right are rounded.", general_title = "")
+  footnote("Note: For phonemes that share a cell, those on the left are unrounded, whereas those on the right are rounded.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
 ```
 
 # Alphabet
@@ -173,16 +173,16 @@ kable(latin_alphabet, align = 'c') %>%
 
 * Syllables in Tatar follow the order of (C)V(C)(C) [@TtComrie1997, pp. 905-906]. However, such structures could also be described as CV(C)(C), since syllables without an initial consonant only occur word-initially and are phonetically introduced by a [ʔ].
 
-# Lenition Processes
+# Lenition Rules 
 
-* Velar stops adjacent to back vowels become backed [@TtPoppe1963, pp. 10-11].
-    - /k/ goes to [q].
-    - /ɡ/ is said to go to [ʁ]; however it is often indicated as [ɣ]. Because it is a "post-velar" sound that acts as a farther-back contrast to /ɡ/, I felt that [ʁ] more accurately described the character of the phoneme.
 * Stem-final voiceless labial stops become voiced when followed by a vowel [@TtPoppe1963, p. 18].
 * Stem-final voiceless dorsal stops become voiced intervocalically (ibid.).
 
 # Misc. Rules
 
+* Velar stops adjacent to back vowels become backed [@TtPoppe1963, pp. 10-11].
+    - /k/ goes to [q].
+    - /ɡ/ is said to go to [ʁ]; however it is often indicated as [ɣ]. Because it is a "post-velar" sound that acts as a farther-back contrast to /ɡ/, I felt that [ʁ] more accurately described the character of the phoneme.
 * /l/ becomes velarized in the presence of back vowels [@TtPoppe1963, p. 11].
 * /w/ is realized as a fricative word-initially [@TtComrie1997, p. 902].
 * Velar/uvular contrasts (/k/ vs. /q/ and /g/ vs. /ʁ/) occur only in words of Arabic or Persian origin [@TtComrie1997, p. 901].

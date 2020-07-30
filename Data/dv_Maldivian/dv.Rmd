@@ -5,11 +5,11 @@ bibliography: dv.bib
 output: html_document
 ---
 
-Last Updated: 2019-12-03
+Last Updated: 2020-06-29
 
 # Background
 
-**Language family**: Indo-European / Indo-Iranian / Indo-Aryan / Sinhalese-Maldivian
+**Language Family**: Indo-European / Indo-Iranian / Indo-Aryan / Sinhalese-Maldivian
 
 * Also referred to as Dhivehi, Maldivian is spoken in a multitude of places, but primarily in the Republic of Maldives, a country in South Asia southwest of Sri Lanka.
 
@@ -18,7 +18,7 @@ Last Updated: 2019-12-03
 ## Consonants
 
 * Although the glottal stop appears in Maldivian, it is not considered phonemic [@DeSilva1969, p. 204]. Rather, only appearing word-finally, it is treated as an allophone of /k/.
-* The palatal nasal appears as well; however, @DeSilva1969 explains that it is not phonemic. @Cain2000 explain that it is a fusion of /n̪/ and /i/, which I have chosen to treat the corresponding grapheme as such.
+* The palatal nasal appears as well; however, @DeSilva1969 explains that it is not phonemic. @Cain2000 explain that it is a fusion of /n̪/ and /i/, and I have chosen to treat the corresponding grapheme as such.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -40,7 +40,7 @@ Approximants               "ʋ"        "l̪"        "ɭ"        "j"       ""    
 kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 6)) %>%
-  footnote("Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. .", general_title = "") %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "") %>%
   column_spec(1, bold = TRUE)
 ```
 
@@ -74,7 +74,7 @@ kable(diphthongs, align = 'c') %>%
 
 * The Thaana script is used to represent Maldivian [@Cain2000, p. 9]. It is read from right to left.
 * Consonant graphemes do not carry an inherent vowel [@Cain2000, p. 9]. The vowels are represented as diacritics above or below the consonant.
-* Diphthongs are represented with an inflected alifu ⟨އ⟩ following a consonant with a fili or with two fili on an alifu (above and below) [@Gnanadesikan2012, pp. 94, 96].
+* Diphthongs are represented with an inflected alifu ⟨އ⟩ following a consonant with a fili, or with two fili on an alifu (one above and one below) [@Gnanadesikan2012, pp. 94, 96].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -109,7 +109,7 @@ alphabet <- read.table(textConnection('
 "ނދ"                      "/ⁿd̪/"                        ""
 "ނޑ"                      "/ᶯɖ/"                        ""
 "ނގ"                      "/ᵑɡ/"                        ""
-"**Plain Vowel**"           ""                           ""
+"**Vowel Grapheme**"        ""                           ""
 "އަ"                        "/a/"                         ""
 "އާ"                       "/aː/"                         ""
 "އި"                        "/i/"                         ""
@@ -153,15 +153,16 @@ kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align
 
 # Lenition Rules
 
-* /k/, /ʂ/, and /t̪/ debuccalize to glottal stops prepausally or to velar nasals word-finally preceding word-initial vowels or /h/ [@Cain2000, pp. 11-12].
+* /k/, /ʂ/, and /t̪/ debuccalize to glottal stops prepausally [@Cain2000, pp. 11-12].
 * /s̪/ becomes /h/ morpheme-finally preceding a vowel-initial suffix [@Gnanadesikan2016, p. 44].
-* Morpheme-final /u/ deletes preceding a vowel-initial suffix (ibid.).
 
 # Misc. Rules
 
+* After /k/, /ʂ/, and /t̪/ debuccalize, the allophonic glottal stop becomes a velar nasal word-finally preceding word-initial vowels or /h/ [@Cain2000, pp. 11-12].
 * Consonants, except /f/, /ʂ/, and /h/, geminate [@Cain2000, p. 13]. This is represented orthographically by duplicate graphemes, with a sukun on the first consonant (no inflection for vowel). They may also be represented by an alifu sukun followed by a consonant. Otherwise, the empty vowel marker with a sukun indicates a word-final /k/.
 * Word-initial /ʋ/ becomes [w] preceding /a/ [@Cain2000, p. 7]. It also becomes [w] following /u/.
 * Nasals assimilate in place to following consonants (excluding /h/), even across word boundaries [@Cain2000, p. 12].
+* Morpheme-final /u/ deletes preceding a vowel-initial suffix  [@Gnanadesikan2016, p. 44].
 * Consonants /t̪/, /d̪/, /ⁿd̪/, /n̪/, and /l̪/ palatalize preceding /i/ [@Gnanadesikan2016, p. 46]. In doing so they become geminates.
 * /h/ and /ʂ/ become geminated [s] and [t] preceding /i/ [@Gnanadesikan2016, pp. 45-46].
 

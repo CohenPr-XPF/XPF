@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -147,6 +146,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -184,10 +184,10 @@ summary {
 </div>
 
 
-<p>Last Updated: 2019-05-03</p>
+<p>Last Updated: 2020-06-26</p>
 <div id="background" class="section level1">
 <h1>Background</h1>
-<p><strong>Language Family</strong>: Cahuapanan / Chayahuita</p>
+<p><strong>Language Family</strong>: Cahuapanan</p>
 <ul>
 <li>The language is known by several names, the most common of which are Chayahuita and Shawi.</li>
 <li>Chayahuita is spoken within the Loreto and San Martin regions in northern Peru, and along the Paranapura, Cahuapanas, Sillay, and Shanusi rivers.</li>
@@ -199,10 +199,12 @@ summary {
 <h2>Consonants</h2>
 <ul>
 <li>/β/ is attested as phonemic in <span class="citation">(“Shawi Phoneme Inventory,” n.d.)</span>, but is described as allophonic in <span class="citation">Julia Barraza de García (2005)</span> (see the Misc. Rules section).</li>
+<li><span class="citation">Hart, George and Powlinson, Esther (1976)</span> and <span class="citation">Julia Barraza de García (2005)</span> both list /r/ as a “vibrant,” a general term that could mean either a trill or a flap; because <span class="citation">(“Shawi Phoneme Inventory,” n.d.)</span> comes down decisively on the side of the flap, I have opted for that analysis.</li>
+<li>/ʔ/ and /h/ only contrast before voiceless consonants; otherwise, only /ʔ/ is attested <span class="citation">(Julia Barraza de García 2005, 53)</span>. Because of this, and because of the lack of clear attestation of /h/ in the orthography (i.e. sometimes, but not always, ⟨h⟩ is marked), I have opted to only use /ʔ/.
+<ul>
 <li>Neither glottal consonant is attested as phonemic in <span class="citation">Hart, George and Powlinson, Esther (1976)</span>.</li>
-<li><span class="citation">Hart, George and Powlinson, Esther (1976)</span> and <span class="citation">Julia Barraza de García (2005)</span> both list /r/ as a “vibrant,” a general term that could mean either a trill or a tap; because <span class="citation">(“Shawi Phoneme Inventory,” n.d.)</span> comes down decisively on the side of the tap, I have opted for that analysis.</li>
+</ul></li>
 <li>/ɾ/ and the glottal consonants do not occur word-initially <span class="citation">(Julia Barraza de García 2005, 47)</span>.</li>
-<li>/ʔ/ and /h/ only contrast before voiceless consonants; otherwise, only /ʔ/ is attested <span class="citation">(Julia Barraza de García 2005, 53)</span>. Because of this, and because of the lack of clear attestation of /h/ in the orthography, I have opted to only use /ʔ/.</li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -319,7 +321,7 @@ n
 </tr>
 <tr>
 <td style="text-align:center;font-weight: bold;">
-Taps
+Flaps
 </td>
 <td style="text-align:center;">
 </td>
@@ -360,7 +362,7 @@ j
 <div id="vowels" class="section level2">
 <h2>Vowels</h2>
 <ul>
-<li><span class="citation">Hart, George and Powlinson, Esther (1976)</span> lists four suprasegmental features that can be added to vowels: /ˑ/, /ʰ/, /ˀ/, and /ⁿ/ (p. 2). These do not seem, however, to be phonemic.</li>
+<li><span class="citation">Hart, George and Powlinson, Esther (1976)</span> list four suprasegmental features that can be added to vowels: (length) /ː/, (aspiration) /ʰ/, (glottalization) /ˀ/, and (nasalization) /◌̃/ (p. 2). These do not seem, however, to be phonemic.</li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -412,8 +414,7 @@ a
 <div id="alphabet" class="section level1">
 <h1>Alphabet</h1>
 <ul>
-<li>I have opted to omit /h/, which does not seem to be consistently written and which is only contrastive in a handful of situations. See the “Consonants” section above for more details.</li>
-<li>Spanish loanwords into Chayahuita incorporate several letters not used in native words: ⟨d e f j l ñ u z⟩. <span class="citation">(Hart 1988)</span> However, these rarely occur, so I have omitted them from the ruleset.</li>
+<li>Spanish loanwords into Chayahuita incorporate several letters not used in native words: ⟨d e f j l ñ u z⟩ <span class="citation">(Hart 1988)</span>. However, these rarely occur, so I have omitted them from the ruleset.</li>
 <li>The acute accent indicates “emphasis or intensity” but does not carry phonemic value <span class="citation">(Hart 1988)</span>.</li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
@@ -623,30 +624,34 @@ sh
 <div id="lenition-rules" class="section level1">
 <h1>Lenition Rules</h1>
 <ul>
-<li>/w/ deletes in the following sequences: /uwa, uwi/ <span class="citation">(Julia Barraza de García 2005, 44)</span>.</li>
-<li>/j/ deletes when preceded by /i/ and followed by /a/ (ibid.).</li>
 <li>Root-final nasals delete in suffixed words <span class="citation">(Julia Barraza de García 2005, 45–46)</span>.</li>
-<li>Consonants voice when (1) preceded by a nasal or (2) occurring in the third or later syllable of a word <span class="citation">(Julia Barraza de García 2005, 48–49; Hart, George and Powlinson, Esther 1976, 5–6)</span>.</li>
-<li>However, consonants will not voice in /ʔ/-final syllables (ibid.).</li>
+<li>Consonants voice when (1) preceded by a nasal or (2) occurring in the third or later syllable of a word <span class="citation">(Julia Barraza de García 2005, 48–49; Hart, George and Powlinson, Esther 1976, 5–6)</span>.
+<ul>
+<li>However, consonants do not voice in /ʔ/-final syllables (ibid.).</li>
 <li>For some speakers, especially near the Cahuapanas River, consonants in such positions weaken even farther, either becoming a glide or deleting completely <span class="citation">(Julia Barraza de García 2005, 49)</span>.</li>
+</ul></li>
 <li>Suffix-initial consonants are deleted when between two identical vowels. In such cases, the adjacent vowels are produced as a single long vowel <span class="citation">(Julia Barraza de García 2005, 50)</span>.</li>
-<li>Nasals assimilate to the place of articulation of following consonants <span class="citation">(Julia Barraza de García 2005, 51; Hart, George and Powlinson, Esther 1976, 7)</span>.</li>
-<li>/s/ palatalizes to [ʃ] before /i/; in this environment, the contrast between /s/ and /ʃ/ is neutralized <span class="citation">(Julia Barraza de García 2005, 52)</span>.</li>
-<li>Similarly, word-medial /t/ goes to [tʃ] before /i/ <span class="citation">(Julia Barraza de García 2005, 52–53)</span>.</li>
-<li>When occurring after a consonant-final syllable, /ɾ/ nasalizes to [n] <span class="citation">(Julia Barraza de García 2005, 55)</span>.</li>
 <li>Word-final nasals delete, and nasalize their preceding vowel <span class="citation">(Julia Barraza de García 2005, 56)</span>.</li>
-<li>In the sequence /tuɾu/, the first /u/ deletes <span class="citation">(Julia Barraza de García 2005, 57)</span>.</li>
-<li>The sequence /wɨ/ collapses to [u] word-finally (ibid.).</li>
 </ul>
 </div>
 <div id="misc.-rules" class="section level1">
 <h1>Misc. Rules</h1>
 <ul>
+<li>/w/ deletes in the following sequences: /uwa, uwi/ <span class="citation">(Julia Barraza de García 2005, 44)</span>.</li>
+<li>/w/ spirantizes to [β] before /i/ <span class="citation">(Julia Barraza de García 2005, 51–52; Hart, George and Powlinson, Esther 1976, 7)</span>.</li>
+<li>/j/ deletes when preceded by /i/ and followed by /a/ (ibid.).</li>
 <li>Various minimal pairs can be found on pages 39-42 of <span class="citation">Julia Barraza de García (2005)</span>.</li>
 <li>When a vowel-initial suffix is added onto the end of a vowel-final root, the consecutive vowels are reanalyzed into a diphthong <span class="citation">(Julia Barraza de García 2005, 45)</span>.</li>
-<li>/p/ and /m/ are produced as /pʷ/ and /mʷ/ when before /ɨ/ <span class="citation">(Julia Barraza de García 2005, 51; Hart, George and Powlinson, Esther 1976, 5)</span>.</li>
-<li>/w/ spirantizes to [β] before /i/ <span class="citation">(Julia Barraza de García 2005, 51–52; Hart, George and Powlinson, Esther 1976, 7)</span>.</li>
+<li>/p/ and /m/ are produced as [pʷ] and [mʷ] when before /ɨ/ <span class="citation">(Julia Barraza de García 2005, 51; Hart, George and Powlinson, Esther 1976, 5)</span>.</li>
 <li>Epenthesis of /ʔ/ occurs at the end of monosyllabic roots, as well as between root-medial identical vowels <span class="citation">(Julia Barraza de García 2005, 53)</span>.</li>
+<li>Nasals assimilate to the place of articulation of following consonants <span class="citation">(Julia Barraza de García 2005, 51; Hart, George and Powlinson, Esther 1976, 7)</span>.</li>
+<li>/s/ palatalizes to [ʃ] before /i/; in this environment, the contrast between /s/ and /ʃ/ is neutralized <span class="citation">(Julia Barraza de García 2005, 52)</span>.
+<ul>
+<li>Similarly, word-medial /t/ goes to [tʃ] before /i/ <span class="citation">(Julia Barraza de García 2005, 52–53)</span>.</li>
+</ul></li>
+<li>When occurring after a consonant-final syllable, /ɾ/ nasalizes to [n] <span class="citation">(Julia Barraza de García 2005, 55)</span>.</li>
+<li>In the sequence /tuɾu/, the first /u/ deletes <span class="citation">(Julia Barraza de García 2005, 57)</span>.</li>
+<li>The sequence /wɨ/ collapses to [u] word-finally (ibid.).</li>
 </ul>
 </div>
 <div id="references" class="section level1 unnumbered">

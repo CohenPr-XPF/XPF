@@ -28,6 +28,7 @@ sub,q,k,2,,u,
 sub,u,,3,q,,"clean-up",
 sub,{apostrophe},k ʔ,3,q,u,
 sub,q,,2,,{apostrophe},"clean-up",
+sub,u,,4,q{apostrophe},,"clean-up",
 # Non-long Vowels
 sub,á,a,2,,,
 sub,é,e,2,,,

@@ -1,6 +1,6 @@
 # Latin Tatar Rule Set
 # Written by: Emily
-# Last Updated: 2019-11-21
+# Last Updated: 2020-06-19
 type,sfrom,sto,weight,precede,follow,comment
 # Pre Rules
 pre,"Iİ","ıi",,,,
@@ -28,5 +28,7 @@ sub,({passthrough}),\1,2,,,
 # Digraphs
 sub,y,ɯ,3,,u,
 sub,u,,3,y,,"clean-up",
+sub,y,j a,3,,a,
+sub,a,,3,y,,"clean-up",
 # Misc. Rules
 sub,-,,2,,,

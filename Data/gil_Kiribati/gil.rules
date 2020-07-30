@@ -3,19 +3,17 @@
 # Last Updated: 2019-08-02
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
-class,passthrough,[ktaeiou],,,
+class,passthrough,[kmntaeiou],,,
 class,vowels,[aeiou],,,,
 # Individual Letters
 sub,b,p,1,,,
-sub,b,pˠ,2,,w,
-sub,w,,2,b,,
-sub,m,m,1,,,
-sub,n,n,1,,,
 sub,r,ɾ,1,,,
 sub,w,βˠ,1,,,
 sub,({passthrough}),\1,0.1,,,
 sub,-,,1,,,
 # Digraphs
+sub,b,pˠ,2,,w,
+sub,w,,2,b,,"clean-up",
 sub,m,m ː,2,,m,
 sub,m,,2,m,,"clean-up",
 sub,m,mˠ,2,,w,
@@ -25,7 +23,7 @@ sub,n,,2,n,,"clean-up",
 sub,n,ŋ,2,,g,
 sub,g,,2,n,,"clean-up",
 sub,n,ŋ ː,3,,gng,
-sub,g,,3,n,n,"clean-up",
-sub,n,,3,g,g,"clean-up",
+sub,g,,3,n,ng,"clean-up",
+sub,n,,3,ng,g,"clean-up",
 # Vowel Gemination
 ipasub,({vowels}) \1,\1 ː,2,,,

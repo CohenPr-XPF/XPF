@@ -2,8 +2,9 @@
 # Written by: Emily
 # Last Updated: 2019-08-05
 type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
 class,vowels,[ɑeiɯoøuy],,,,
-class,misc,[ъь-],,,,
+# Individual Letters
 sub,а,ɑ,1,,,,
 sub,б,b,1,,,,
 sub,в,v,1,,,,
@@ -35,6 +36,7 @@ sub,э,e,1,,,,
 sub,х,χ,1,,,,
 sub,ю,j u,1,,,,
 sub,я,j ɑ,1,,,,
-sub,({misc}),,1,,,,
 # ipasub Rules
 ipasub,({vowels}) \1,\1 ː,2,,,,
+# Misc. Rules
+sub,-,,1,,,,

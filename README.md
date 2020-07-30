@@ -9,11 +9,11 @@
 | acf           | Saint Lucian Creole French | lacks lenition                |
 | aey           | Amele                      |                               |
 | agg           | Angor                      |                               |
-| aia           | Arosi                      |                               |
+| aia           | Arosi                      | lacks lenition                |
 | amn           | Amanab                     |                               |
 | an            | Aragonese                  |                               |
 | apu           | Apurinã                    |                               |
-| apy           | Apalaí                     |                               |
+| apy           | Apalaí                     | lacks lenition                |
 | arl           | Arabela                    |                               |
 | ast           | Asturian                   |                               |
 | ata           | Pele-Ata                   |                               |
@@ -21,17 +21,17 @@
 | ay            | Aymara                     |                               |
 | az            | Azerbaijani                |                               |
 | ba            | Bashkir                    |                               |
-| bcl           | Central Bikol              | lacks lenition                |
 | bdd           | Bunama                     |                               |
-| be            | Belarusan                  |                               |
+| be            | Belarusan                  | lacks lenition                |
 | bef           | Benabena                   |                               |
 | bg            | Bulgarian                  |                               |
 | bi            | Bislama                    |                               |
 | boa           | Bora                       |                               |
 | boj           | Anjam                      | lacks lenition                |
+| bug           | Bugis                      |                               |
 | bvr           | Burarra                    |                               |
 | caa           | Ch'orti'                   |                               |
-| car           | Carib                      |                               |           
+| car           | Carib                      |                               |
 | cbi           | Cha'palaa                  |                               |
 | cbt           | Chayahuita                 |                               |
 | cnm           | Ixtatán Chuj               |                               |
@@ -44,17 +44,17 @@
 | djr           | Djambarrpuyngu             |                               |
 | dv            | Maldivian                  |                               |
 | el            | Greek                      |                               |
-| emi           | Mussau-Emira               |                               |
+| emi           | Mussau-Emira               | lacks lenition                |
 | eu            | Basque                     |                               |
-| ff            | Fula                       |                               |
 | gaw           | Nobonob                    |                               |
 | ghs           | Guhu-Samane                |                               |
-| gil           | Kiribati                   |                               |
+| gil           | Kiribati                   | lacks lenition                |
 | gn            | Guarani                    |                               |
 | guc           | Wayuu                      |                               |
 | guo           | Guayabero                  |                               |
 | gvn           | Kuku-Yalanji               |                               |
 | haw           | Hawaiian                   |                               |
+| hil           | Hiligaynon                 |                               |
 | hmn           | Hmong                      | lacks lenition                |
 | hsb           | Upper Sorbian              |                               |
 | ht            | Haitian Creole             |                               |
@@ -87,13 +87,13 @@
 | mto           | Totontepec Mixe            |                               |
 | mva           | Manam                      |                               |
 | naf           | Nabak                      |                               |
+| nas           | Naasioi                    |                               |
 | nhe           | Nahuatl                    |                               |
 | nhr           | Naro                       |                               |
 | nsn           | Nehan                      | lacks lenition                |
 | nuy           | Nunggubuyu                 |                               |
 | omw           | South Tairora              |                               |
 | pad           | Paumarí                    | lacks lenition                |
-| pag           | Pangasinan                 |                               |
 | pau           | Palauan                    |                               |
 | pio           | Piapoco                    |                               |
 | pwg           | Gapapaiwa                  |                               |
@@ -110,8 +110,8 @@
 | tac           | Western Tarahumara         |                               |
 | te            | Telugu                     |                               |
 | tg            | Tajik                      |                               |
-| to            | Tongan                     |                               |
-| tpi           | Tok Pisin                  | lacks lenition                |
+| to            | Tongan                     | lacks lenition                |
+| tpi           | Tok Pisin                  |                               |
 | tr            | Turkish                    |                               |
 | tt            | Tatar                      |                               |
 | tyv           | Tuvan                      |                               |
@@ -125,12 +125,12 @@
 | viv           | Iduna                      |                               |
 | way           | Wayana                     |                               |
 | wbp           | Warlpiri                   |                               |
-| wo            | Wolof                      |                               |
+| wo            | Wolof                      | lacks lenition                |
 | ycn           | Yucuna                     |                               |
 | yi            | Yiddish                    |                               |
 | yua           | Yucatec Maya               |                               |
 | yuz           | Yuracare                   |                               |
-| yva           | Yawa                       |                               |
+| yva           | Yawa                       | lacks lenition                |
 | zos           | Francisco León Zoque       |                               |
 
 

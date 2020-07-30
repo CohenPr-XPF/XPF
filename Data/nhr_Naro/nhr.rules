@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-07-03
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,tone,[˧˨˦],,,,
 class,click-input,(c|q|tc|x),,,,
 class,click-output,[ǀǃǂǁ],,,,
@@ -10,7 +10,7 @@ class,pre-h,[kptsg],,,,
 class,pre-g-cons,[kt],,,,
 class,apostrophe,['ꞌ‘’],,,,
 class,underline,[̱],,,,
-class,passthrough,[ãbdẽẽfhíkmnõpst],,,,
+class,passthrough,[ãbdẽfhíkmnõpst],,,,
 class,phar_vowel,[aoãõ],,,,
 class,glides,[wy],,,,
 # Vowels
@@ -30,6 +30,7 @@ sub,í,i ˦,4,,,
 sub,ó,o ˦,4,,,
 sub,ú,u ˦,4,,,
 sub,ã,ã,4,,,"nasals",
+sub,ẽ,ẽ,4,,,
 sub,õ,õ,4,,,
 sub,{underline},ˤ,4,,,"pharyngealization marker",
 ipasub,({phar_vowel}) {tone} ˤ,\1ˤ,2,,,"attaches the pharyngealization to the previous vowel; pharyngealization does not appear to coexist with tones on vowels",
@@ -78,3 +79,4 @@ ipasub,aˤ ̃,ãˤ,1,,,"fixes a vowel that translate04 misreads",
 ipasub,e ˧ ̃,ẽ,1,,,"fixes a vowel that translate04 misreads",
 ipasub,oˤ ̃,õˤ,1,,,"fixes a vowel that translate04 misreads",
 sub,{glides},,6,,,,
+ipasub,ⁿǀx,ⁿǀ x,1,,,"three instances of <ncg> sequences - resulting output needed changing to reflect an actual click in the language (<nc> was prioritized by default)"

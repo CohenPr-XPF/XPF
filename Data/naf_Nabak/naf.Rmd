@@ -9,7 +9,7 @@ Last Updated: 2019-11-19
 
 # Background
 
-**Language Family**: Nuclear Trans New Guinea / Finisterre-Huon / Huon / Western Huon / Nabak-Momolili
+**Language Family:** Trans-New Guinea / Main Section / Central and Western / Huon-Finisterre / Huon / Western
 
 * Nabak is spoken in the Morobe province of Papua New Guinea.
 
@@ -102,7 +102,7 @@ kable(alphabet, align = 'c') %>%
     - CVC
     - C (see note below)
 
-* Syllabic nasals are present in Nabak [@Fabian1971, p. 5]; however, in word-initial and word-medial positions, most speakers epenthesis a vowel between it and the following consonant.
+* Syllabic nasals are present in Nabak [@Fabian1971, p. 5]; however, in word-initial and word-medial positions, most speakers insert a vowel between it and the following consonant.
 
 # Lenition Rules
 

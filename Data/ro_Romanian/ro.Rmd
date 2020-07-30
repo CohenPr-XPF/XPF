@@ -9,7 +9,7 @@ Last Updated: 2019-08-21
 
 # Background
 
-**Language family**: Indo-European / Italic / Romance / Easatern
+**Language Family:** Indo-European / Italic / Romance / Eastern Romance / Balkan Romance / Romanian
 
 * Romanian is predominantly spoken in Romania and Moldova, but in other countries as well.
 
@@ -18,7 +18,7 @@ Last Updated: 2019-08-21
 ## Consonants
 
 * There is some debate regarding the existence of palatal consonants as phonemes. @Petrovici1950 [as cited in @Dezsi2008, p. 439] includes them, but he also includes labialized and labio-palatalized consonants which proves too elaborate an analysis, as stated by @Dezsi2008 (p. 440). @Dezsi2008 states that palatalization is predictable (morphologically conditioned), with /i/ surfacing as such a marker [ʲ] [p. 447; @Renwick2012, p. 81].
-* @Dezsi2008 explains that the phonemic attestation of /j/ and /w/ is rather unclear, given a lack of analysis (p. 438). @Chitoran2002 [as cited in @Dezsi2008, p. 441] states that the /j/ is a surface realization of /i/. @Dezsi2008 seems to support this analysis (p. 447). I have chosen not to include /j/ and /w/ below.
+* @Dezsi2008 explains that the phonemic attestation of /j/ and /w/ is rather unclear, given the lack of analysis (p. 438). @Chitoran2002 [as cited in @Dezsi2008, p. 441] states that the [j] is a surface realization of /i/. @Dezsi2008 seems to support this analysis (p. 447). I have chosen not to include /j/ and /w/ below.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

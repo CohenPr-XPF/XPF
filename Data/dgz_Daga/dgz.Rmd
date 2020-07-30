@@ -9,9 +9,9 @@ Last updated: 2019-12-16
 
 # Background
 
-**Language family**: Trans–New Guinea / Dagan
+**Language family**: Trans–New Guinea / Main Section / Eastern / Central and Southeastern / Dagan
 
-* Daga is spoken in Papua New Guinea, specifically in the Central, Milne Bay, and Oro provinces.
+* Daga is spoken in the Central, Milne Bay, and Oro provinces of Papua New Guinea.
 
 # Phonology
 
@@ -25,7 +25,7 @@ library(kableExtra)
 
 
 consonants <- read.table(textConnection('
-"Manner of Articulation"   Biabial    Alveolar    Palatal     Velar
+"Manner of Articulation"   Bilabial    Alveolar    Palatal     Velar
 Stops                       "p  b"     "t  d"       ""        "k  ɡ"
 Nasals                       "m"        "n"         ""         ""
 Trills                       ""         "r"         ""         ""
@@ -60,6 +60,7 @@ kable(vowels, align = 'c') %>%
 # Alphabet
 
 * There is some debate as to how ⟨a⟩ is realized: @Murane1974 transcribes it as /a/ whereas @sil2011daga uses /ɑ/ (p. 5; p. 1). I have opted to use /a/ in the ruleset.
+* ⟨l⟩ appears in loanword proper nouns [@sil2011daga, p. 3].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -103,7 +104,6 @@ kable(alphabet, align = 'c') %>%
 # Lenition
 
 * /t/ spirantizes to [s] preceding front vowels [@sil2011daga, p. 3].
-
 
 # Misc. Rules
 

@@ -1,6 +1,6 @@
 # Sinhala Rule Set
 # Written by: Becky Mathew
-# Last updated 01/29/19
+# Last Updated: 2019-01-29
 type,sfrom,sto,weight,precede,follow,comment
 # General Class Rules
 class,gem,(k|ɡ|ŋ|ᵑɡ|tʃ|dʒ|ʈ|ɖ|n|ⁿɖ|t̪|d̪|ⁿd̪|p|b|m|ᵐb|j|r|l|ʋ|ʃ|s|h|f),,,,

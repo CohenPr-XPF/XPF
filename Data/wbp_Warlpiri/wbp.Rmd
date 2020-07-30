@@ -9,7 +9,7 @@ Last Updated: 2019-08-09
 
 # Background
 
-**Language Family**: Pama-Nyungan / Ngumpin-Yapa / Warlpiri
+**Language Family:** Australian / Pama-Nyungan / South-West / Ngarga
 
 * Warlpiri is spoken in the Northern Territory and Western state of Australia.
 
@@ -43,8 +43,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Vowel length is contrastive [@WbpNash1980, p. 65].
-* Long vowels are represented by doubling the vowel character [@WbpNash1980, p. 65].
+* Vowel length is contrastive [@WbpNash1980, p. 65]. Long vowels are represented by doubling the vowel character.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('
@@ -54,12 +53,13 @@ Low       ""      "a"       ""
 '), TRUE)
 
 kable(consonants, align = 'c') %>%
-  kable_styling("bordered")
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 ```
 
 # Alphabet
 
-* Word-initial /ʈ/, /ɳ/, and /ɭ/ are simply written as <t>, <n>, and <l> [@WbpNash1983, p. 2]. Because alveolar consonants do not appear word-initially [@WbpHale1977, pp. 2-3], this does not create any ambiguity. (See also @WbpJagst1975, p. 26, for this issue.)
+* Word-initial /ʈ/, /ɳ/, and /ɭ/ are simply written as ⟨t⟩, ⟨n⟩, and ⟨l⟩ [@WbpNash1983, p. 2]. Because alveolar consonants do not appear word-initially [@WbpHale1977, pp. 2-3], this does not create any ambiguity. [See also @WbpJagst1975, p. 26, for this issue.]
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -74,24 +74,24 @@ Grapheme      Phoneme
 "n"            "/n/"   
 "p"            "/p/"  
 "r"            "/ɻ/"   
-"t"            "/t/"  
-"rt"           "/ʈ/"  
+"t"            "/t/"    
 "u"            "/u/"  
 "w"            "/w/"  
 "y"            "/j/"
 **Digraph**     ""
-"rl"           "/ɭ/"  
-"ly"           "/ʎ/"
-"rn"           "/ɳ/"  
-"ny"           "/ɲ/"  
+"ly"           "/ʎ/"  
 "ng"           "/ŋ/"
-"rd"           "/ɽ/"  
+"ny"           "/ɲ/"
+"rd"           "/ɽ/"
+"rl"           "/ɭ/"  
+"rn"           "/ɳ/"
 "rr"           "/ɾ/"
+"rt"           "/ʈ/"  
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
-``` 
+```
 
 # Syllable Structure
 

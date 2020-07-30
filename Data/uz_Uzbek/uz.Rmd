@@ -5,11 +5,11 @@ bibliography: uz.bib
 output: html_document
 ---
 
-Last Updated: 2019-08-02
+Last Updated: 2020-07-02
 
 # Background
 
-**Language Family**: Turkic / Common Turkic / Karluk / Uzbek
+**Language Family:** Turkic / Common Turkic / Karluk / Uzbek
 
 * Uzbek is spoken throughout Uzbekistan and Central Asia.
 
@@ -17,7 +17,7 @@ Last Updated: 2019-08-02
 
 ## Consonants
 
-* /ʒ/ and /ts/ appear in Russian loanwords [@UzIsmatulla1992, pp. vii-viii]; @UzSjoberg1963, pp. 7-8].
+* /ʒ/ and /ts/ appear in Russian loanwords [@UzIsmatulla1992, pp. vii-viii; @UzSjoberg1963, pp. 7-8].
 * /ʔ/ appears in some Arabic loanwords [@UzSjoberg1963, pp. 20-21].
 * @UzSjoberg1963 argues for /ɸ/ rather than /f/; /f/, in her view, is limited to loans (pp. 7-8).
 * @UzSjoberg1963 writes /x/ rather than /χ/, but describes it as "postvelar, almost uvular" (p. 11), so I have chosen to follow @UzBoeschoten1998 in interpreting the sound as /χ/ (p. 359).
@@ -63,7 +63,8 @@ Low       ""      "a"       ""
 '), TRUE)
 
 kable(consonants, align = 'c') %>%
-  kable_styling("bordered")
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 ```
 
 # Alphabet
@@ -118,12 +119,12 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * Many speakers spirantize /k/ and /q/ [@UzBoeschoten1998, p. 359].
-* /j/ is produced with lax articulation next to high front vowels [@UzSjoberg1963, p. 13].
 * /ɡ/ sometimes approximantized to [j] in casual speech [@UzSjoberg1963, p. 21].
 
 # Misc. Rules
 
 * Velar stops palatalize before front vowels, especially rounded ones [@UzSjoberg1963, p. 10].
+* /j/ is produced with lax articulation next to high front vowels [@UzSjoberg1963, p. 13].
 * Some speakers lower /ɔ/ to [a] in various words [@UzSjoberg1963, p. 39].
 
 # References

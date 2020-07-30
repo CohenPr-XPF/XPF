@@ -3,7 +3,7 @@
 # Last Updated: 2019-10-25
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
-class,passthrough,[bdɡkmnprtwaeiou],,,
+class,passthrough,[bdkmnprtwaeiou],,,
 # Individual Letters
 sub,g,ɡ,1,,,
 sub,s,t,1,,,

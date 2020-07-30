@@ -5,13 +5,11 @@ bibliography: apu.bib
 output: html_document
 ---
 
-Last updated: 09-11-2019
-
-**Note: /ɨ̃/, /ɲ/, /j/, and /ɰ/ do not appear in the Crúbadán corpus.**
+Last Updated: 2019-09-11
 
 # Background
 
-**Language family**: Arawakan / Maipuran / Southern Maipuran / Purus
+**Language Family:** Arawakan / Maipuran / Southern Maipuran / Purus
 
 * Apurinã is spoken throughout the Amazon Basin in Central Brazil.
 
@@ -20,7 +18,7 @@ Last updated: 09-11-2019
 ## Consonants
 
 * /ɲ/ and /h/ are sometimes omitted from the consonantal inventory depending on the dialect; I have chosen to include them below @facundes_language_2000 does (pp. 55, 71).
-* Voicing is not contrastive in Apurinã [@facundes_language_2000, p. 70].
+* Voicing is not a contrastive feature in Apurinã [@facundes_language_2000, p. 70].
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -36,7 +34,7 @@ Stops                         "p"        "t"           ""            ""      "k"
 Affricates                    ""         "ts"         "tʃ"           ""      ""         ""
 Fricatives                    ""         "s"          "ʃ"            ""      ""         "h"
 Nasals                        "m"        "n"           ""            "ɲ"     ""         ""
-Flaps                          ""        "ɾ"           ""            ""      ""         ""
+Flaps                         ""         "ɾ"           ""            ""      ""         ""
 Approximants                  ""         ""            ""            "j"     "ɰ"        ""
 '), TRUE)
 
@@ -49,8 +47,8 @@ kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar"
 ## Vowels
 
 * Vowels are contrastive in terms of length and nasality [@facundes_language_2000, p. 55].
-* Long vowels (both oral and nasal) are indicated by repeated graphemes.
-* In addition to oral diphthongs, Apurinã includes nasal diphthongs, although these are extremely infrequent (these won't be accounted for) [@facundes_language_2000, pp. 85-87].
+    - Long vowels (both oral and nasal) are indicated by repeated graphemes.
+* In addition to oral diphthongs, Apurinã includes nasal diphthongs, although these are extremely infrequent (I have not accounted for the nasal diphthongs in the rules) [@facundes_language_2000, pp. 85-87].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -66,6 +64,7 @@ kable(vowels, align = 'c') %>%
   column_spec(1, bold = TRUE) %>%
   footnote(general = "Note: Phonemes on the left of each cell are oral and phonemes on the right are nasal.", general_title = "")
 
+
 diphthongs <- read.table(textConnection('
         Diphthongs   
 "/ai/,  /ei/,  /oi/,  /ao/,  /io/"
@@ -76,6 +75,8 @@ kable(diphthongs, align = 'c') %>%
 ```
 
 # Alphabet
+
+* **Note:** /ɨ̃/, /ɲ/, /j/, and /ɰ/ are not represented in the Crúbadán corpus.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -119,7 +120,7 @@ kable(alphabet, align = 'c') %>%
     - CVV  
     - VV  
     - V  
-* Based on this, it would seem that Apurinã does not allow complex onsets and consonant clusters. They also seem to require empty codas.
+* Based on this, it would seem that Apurinã does not allow for complex onsets and consonant clusters. They also seem to require empty codas.
 
 # Lenition Rules
 

@@ -5,13 +5,13 @@ bibliography: tpi.bib
 output: html_document
 ---
 
-Last Updated: 2019-11-21
+Last Updated: 2020-07-02
 
 # Background
 
-**Language family**: English Creole
+**Language Family:** Creole / English based / Pacific
 
-* Although the "Pisin" of the language's name does indeed come from the English words
+* Although the "Pisin" of the language's name does indeed come from the English word
 "pidgin," the language is more accurately characterized as a creole as there are
 native speakers and the system has become grammaticized [@Smith2008, p. 192].
 
@@ -56,7 +56,8 @@ Low       ""      "a"       ""
 '), TRUE)
 
 kable(consonants, align = 'c') %>%
-  kable_styling("bordered")
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 ```
 
 # Alphabet
@@ -94,6 +95,10 @@ Grapheme        Phoneme
 kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
+
+#Lenition Rules
+
+* /dʒ/ spirantizes to [s] non-word-initally [@Boer2017, p.60].
 
 # Misc. Rules
 

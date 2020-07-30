@@ -5,11 +5,11 @@ bibliography: ay.bib
 output: html_document
 ---
 
-Last Updated: 2019-02-26
+Last Updated: 2020-06-26
 
 # Background
 
-**Language Family**: Aymaran / Aymara
+**Language Family**: Aymaran
 
 * Aymara is a Native American language spoken along the Andean Mountains in Bolivia, Peru, and Chile.
 
@@ -29,13 +29,13 @@ library(kableExtra)
 
 
 consonants <- read.table(textConnection('
-"Manner of Articulation"     Labial     Alveolar  Postalveolar  Palatal   Velar     Uvular
-Stops                        "p pʰ pʼ"  "t tʰ tʼ" ""            ""        "k kʰ kʼ" "q qʰ qʼ"
-Affricates                   ""         ""        "tʃ tʃʰ tʃʼ"  ""        ""        ""
-Fricatives                   ""         "s"       ""            ""        "x"       "χ"
-Nasals                       "m"        "n"       ""            "ɲ"       ""        ""
-Flaps                        ""         "ɾ"       ""            ""        ""        ""
-Approximants                 "w"        "l"       ""            "j ʎ"     ""        ""
+"Manner of Articulation"     Labial     Alveolar    Postalveolar   Palatal   Velar       Uvular
+Stops                        "p pʰ pʼ"  "t tʰ tʼ"   ""             ""        "k kʰ kʼ"   "q qʰ qʼ"
+Affricates                   ""         ""          "tʃ tʃʰ tʃʼ"   ""        ""          ""
+Fricatives                   ""         "s"         ""             ""        "x"         "χ"
+Nasals                       "m"        "n"         ""             "ɲ"       ""          ""
+Flaps                        ""         "ɾ"         ""             ""        ""          ""
+Approximants                 "w"        "l"         ""             "j ʎ"     ""          ""
 '), TRUE)
 
 kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular"), align = 'c') %>%
@@ -47,8 +47,8 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Older sources also include [e] and [o], but these are just allophones of /i/ and /u/ that emerge next to uvular obstruents [@AyWexler1967, p. xiv].
-* Vowel length is phonemic [@AyBriggs1976, p. 80]. Long vowels are marked with umlauts [@AyColer2014, p. 31].
+* Older sources also include [e] and [o], but these are allophones of /i/ and /u/ that emerge next to uvular obstruents [@AyWexler1967, p. xiv].
+* Vowel length is phonemic [@AyBriggs1976, p. 80]. Long vowels are marked with an umlaut (¨) [@AyColer2014, p. 31].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('
@@ -64,7 +64,7 @@ kable(consonants, align = 'c') %>%
 
 # Alphabet
 
-* The orthography I will be using is the Unified Alphabet, which was made official by the governments of Bolivia and Peru in 1984 and 1985 respectively [@AyColer2014, pp. 31-32]. Older sources, such as Wexler and Hardman, will use different orthographies.
+* The orthography I will be using is the Unified Alphabet, which was made official by the governments of Bolivia and Peru in 1984 and 1985 respectively [@AyColer2014, pp. 31-32]. Older sources, such as Wexler and Hardman, use different orthographies.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -74,34 +74,35 @@ Grapheme      Phoneme     Comment
 "i"            "/i/"        ""
 "j"            "/x/"        ""
 "k"            "/k/"        ""
-"k\'"          "/kʼ/"        ""
-"l"           "/l/"         ""
-"m"           "/m/"         ""
-"n"           "/n/"         ""
-"ñ"           "/ɲ/"         ""
-"p"           "/p/"         ""
-"p\'"         "/pʼ/"         ""
-"q"          "/q/"          ""
-"q\'"         "/qʼ/"         ""
-"r"          "/ɾ/"          ""
-"s"          "/s/"          ""
-"t"         "/t/"           ""
-"t\'"        "/tʼ/"          ""
-"u"         "/u/"           ""
-"w"         "/w/"           ""
-"x"         "/χ/"           ""
-"y"         "/j/"           ""
-**Multigraph** ""           ""
-"ch"       "/tʃ/"           ""
-"chh"      "/tʃʰ/"          ""
-"ch\'"      "/tʃʼ/"         ""
-"kh"       "/kʰ/"           ""
-"ll"       "/ʎ/"            ""
-"nh"       "/ŋ/" "only phonemic in some dialects"
-"ph"       "/pʰ/"           ""
-"qh"       "/qʰ/"           ""
-"th"       "/tʰ/"           ""
+"k\'"          "/kʼ/"       ""
+"l"            "/l/"        ""
+"m"            "/m/"        ""
+"n"            "/n/"        ""
+"ñ"            "/ɲ/"        ""
+"p"            "/p/"        ""
+"p\'"          "/pʼ/"       ""
+"q"            "/q/"        ""
+"q\'"          "/qʼ/"       ""
+"r"            "/ɾ/"        ""
+"s"            "/s/"        ""
+"t"            "/t/"        ""
+"t\'"          "/tʼ/"       ""
+"u"            "/u/"        ""
+"w"            "/w/"        ""
+"x"            "/χ/"        ""
+"y"            "/j/"        ""
+**Multigraph**  ""          ""
+"ch"           "/tʃ/"       ""
+"chh"          "/tʃʰ/"      ""
+"ch\'"         "/tʃʼ/"      ""
+"kh"           "/kʰ/"       ""
+"ll"           "/ʎ/"        ""
+"nh"           "/ŋ/"     "only phonemic in some dialects (given the option to transcribe in the rules)"
+"ph"           "/pʰ/"       ""
+"qh"           "/qʰ/"       ""
+"th"           "/tʰ/"       ""
 '), TRUE)
+
 kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
@@ -113,12 +114,11 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* Word-final vowels sometimes are sometimes devoiced or dropped [@AyHardman1981, p. 190].
-* In certain morphological contexts, word-medial vowels are dropped [@AyHardman1981, p. 8].
 * /x/ debuccalizes to [h] in some dialects [@AyBriggs1976, p. 84].
 
 # Misc. Rules
 
+* Word-final vowels can be devoiced and are sometimes dropped [@AyHardman1981, p. 190].
 * /χ/ and /ɾ/ rarely if ever occur word-initially [@AyBriggs1976, p. 87].
 * Glides and vowels do not occur adjacent to each other [@AyBriggs1976, p. 89].
 * High vowels are lowered in uvular environments [@AyBriggs1976, p. 85].

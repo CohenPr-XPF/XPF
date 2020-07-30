@@ -5,11 +5,11 @@ bibliography: emi.bib
 output: html_document
 ---
 
-Last Updated: 2019-07-23
+Last Updated: 2020-06-29
 
 # Background
 
-**Language Family**: Austronesian / Malayo-Polynesian / Eastern Malayo-Polynesian / Oceanic / St. Matthias / Mussau-Emira
+**Language Family**: Austronesian / Malayo-Polynesian / Eastern Malayo-Polynesian / Oceanic / Western Oceanic / St. Matthias
 
 * Mussau-Emira is spoken in Papua New Guinea, specifically in the province of New Ireland.
 
@@ -18,7 +18,7 @@ Last Updated: 2019-07-23
 ## Consonants
 
 * Consonant gemination occurs contrastively [@EmiBrownie2007, p. 13].
-* @EmiBrownie2007 argues for the flap /ɾ/ rather than /r/ (p. 13).
+* @EmiBrownie2007 argue for the flap /ɾ/ rather than the trill (p. 13).
 * @EmiRoss2002 argues that the phonemes I have listed as voiced fricatives are actually stops in their underlying forms (p. 149).
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -47,7 +47,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar"
 
 * Vowel length is contrastive [@EmiBrownie2007, p. 13].
 * @EmiRoss2002 argues for the more traditional five-vowel system of /i u e o a/ (p. 149).
-* Because Crúbadán has instances of three vowel sequences, leaving diphthongs to be determined by syllable structure, they aren't included in the rule set.
+* Because Crúbadán has instances of three vowel sequences, leaving diphthongs to be determined by syllable structure, they aren't included in the rule set. However, for reference, the diphthongs found in Mussau-Emira are: /ɑi/, /ɑɛ/, /ɑu/, /ɑɔ/, /ɛi/, /ɔi/, and /ɔu/ [@EmiBrownie2009, p. 4].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 vowels <- read.table(textConnection('
@@ -64,9 +64,9 @@ kable(vowels, align = ('c')) %>%
 
 # Alphabet
 
+* The Seventh-Day Adventist orthography varies slightly, using ⟨q⟩ for /ɣ/ and ⟨g⟩ for /ŋ/ [@EmiRoss2002, p. 151]. I have opted not to support that orthography by default, given that it is unused by the Crúbadán corpus. However, my rule set provides the option for alternation between the two orthographies.
+* Graphemes ⟨j⟩, ⟨d⟩, ⟨f⟩, ⟨z⟩, and ⟨h⟩ represent sounds not found in native words, but these graphemes are still commonly found in loanwords and proper nouns. They correspond to /dʒ/, /d/, /f/, /z/, and /h/, respectively. According to @EmiBrownie2009, other such graphemes and sounds also exist, but these five are some of the most common (p. 12).
 * Gemination and vowel length are written by doubling the relevant character.
-* The Seventh-Day Adventist orthography varies slightly, using ⟨q⟩ for /ɣ/ and ⟨g⟩ for /ŋ/ [@EmiRoss2002, p. 151]; I have opted not to support that orthography by default, given that it is unused by the Crúbadán corpus. However, my rule set provides the option for alternation between the two orthographies.
-
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -97,13 +97,10 @@ kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
 
-# Lenition Rules
-
-* Final vowels are frequently dropped [@EmiBrownie2007, p. 15; @EmiBrownie2009, p. 11].
-* In casual speech, syncope of vowels occurs between identical consonants [@EmiBrownie2007, p. 16].
-
 # Misc. Rules
 
 * Voiced fricatives become stops when geminated, and sometimes when word-initial [@EmiBrownie2007, p. 13; @EmiRoss2002, p. 149].
+* Final vowels are frequently dropped [@EmiBrownie2007, p. 15; @EmiBrownie2009, p. 11].
+* In casual speech, syncope of vowels occurs between identical consonants [@EmiBrownie2007, p. 16].
 
 # References

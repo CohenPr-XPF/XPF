@@ -1,4 +1,4 @@
-# Haitian Creole Rule Set
+# Georgian Rule Set
 # Written by: Maddie, Becky, Shiying
 # Last Updated: 2019-10-31
 type,sfrom,sto,weight,precede,follow,comment
@@ -56,26 +56,26 @@ sub,{kh},kʰ,1,,,,
 sub,{a},ɑ,1,,,,
 sub,{m},m,1,,,,
 sub,{z},z,1,,,,
-sub,{kejected},k’,1,,,,"Changed to ejective (Shosted & Chikovani 2006 paper)"
+sub,{kejected},kʼ,1,,,,"Changed to ejective (Shosted & Chikovani 2006 paper)"
 sub,{b},b,1,,,,
 sub,{n},n,1,,,,
 sub,{u},u,1,,,,
-sub,{qejected},q’,1,,,,"Changed to ejective (Shosted & Chikovani 2006 paper)",
+sub,{qejected},qʼ,1,,,,"Changed to ejective (Shosted & Chikovani 2006 paper)",
 sub,{ph},pʰ,1,,,,
-sub,{g},g,1,,,,
-sub,{tsejected},ts’,1,,,,
+sub,{g},ɡ,1,,,,
+sub,{tsejected},tsʼ,1,,,,
 sub,{sh},ʃ,1,,,,
 sub,{zh},ʒ,1,,,,
 sub,{dg},dʒ,1,,,,
 sub,{voicedvelarfric},ɣ,1,,,,
 sub,{v},v,1,,,,
-sub,{pejected},p’,1,,,,
+sub,{pejected},pʼ,1,,,,
 sub,{ts},ts,1,,,,
-sub,{chejected},tʃ’,1,,,,
+sub,{chejected},tʃʼ,1,,,,
 sub,{x},x,1,,,,
 sub,{h},h,1,,,,
 sub,{dz},dz,1,,,,
-sub,{tejected},t’,1,,,,
+sub,{tejected},tʼ,1,,,,
 # Misc. Sub Rules
 sub,{he},e i,1,,,,
 sub,{hie},i,1,,,,

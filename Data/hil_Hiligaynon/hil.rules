@@ -1,0 +1,30 @@
+# Hiligaynon Rule Set
+# Written by Abi Creighton
+# Last updated: 2020-07-27
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abkhilmpuw],,,,
+class,apostrophe,['ꞌ‘’],,,,
+# Individual Letters
+sub,á,a,1,,,"accents mark stress"
+sub,d,d̪,1,,,
+sub,e,i,1,,,
+sub,é,i,1,,,
+sub,g,ɡ,1,,,
+sub,í,i,1,,,
+sub,n,n̪,1,,,
+sub,o,u,1,,,
+sub,ó,u,1,,,
+sub,q,ʔ,1,,,
+sub,{apostrophe},ʔ,1,,,
+sub,r,ɾ,1,,,
+sub,s,s̪,1,,,
+sub,t,t̪,1,,,
+sub,ú,u,1,,,
+sub,y,j,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Digraphs
+sub,n,ŋ,2,,g,
+sub,g,,2,n,,"clean-up",
+# Misc. Rules
+sub,-,,1,,,"hyphens may be used to indicate morpheme boundaries"

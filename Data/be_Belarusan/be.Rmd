@@ -5,7 +5,7 @@ bibliography: be.bib
 output: html_document
 ---
 
-Last Updated: 2019-08-28
+Last Updated: 2020-06-25
 
 # Background
 
@@ -113,12 +113,10 @@ kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```   
 
-# Lenition Rules
+
+# Misc. Rules
 
 * Within the Slavic languages, it's common for /ɡ/ to lenite to /ɣ/ [@klein_86_2018, p. 1607]; although it seems as if Belarusan has permanently implemented this change.
-
-# Misc Rules
-
 * Palatalized consonants precede ⟨я⟩, ⟨е⟩, ⟨ё⟩, ⟨ю⟩, ⟨i⟩ [@stolz_human_2012, p. 73].  
 * Gemination of some consonants occurs [@bocek_relationship_2012, p. 166].
 

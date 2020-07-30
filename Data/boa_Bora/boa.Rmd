@@ -9,7 +9,7 @@ Last Updated: 2019-07-02
 
 # Background
 
-**Language Family**: Witotoan / Boran / Bora
+**Language Family**: Witotoan / Boran
 
 * Bora is spoken in five villages within the Loreto Region of Peru.
 
@@ -33,7 +33,7 @@ consonants <- read.table(textConnection('
 Stops                        "p pʰ"     "t tʰ"    ""            ""        "k kʰ kp"  "ʔ"
 Affricates                   ""         "ts tsʰ"  "tʃ tʃʰ"      ""        ""         ""
 Fricatives                   "β"        ""        ""            ""        "x"        ""
-Nasals                       "m"        "n"       ""            "ɲ"        ""         ""
+Nasals                       "m"        "n"       ""            "ɲ"        ""        ""
 Flaps                        ""         "ɾ"       ""            ""        ""         ""
 Approximants                 ""         ""        ""            "j"       ""         ""
 '), TRUE)
@@ -48,7 +48,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar"
 ## Vowels
 
 * Bora has two contrastive tones, high and low [@BoaThiesen2012, p. 27].
-  - High tone is marked with an acute accent on the vowel, whereas low tone is unmarked [@BoaThiesen2012, p. 27].
+    - High tone is marked with an acute accent (´) on the vowel, whereas low tone is unmarked [@BoaThiesen2012, p. 27].
 * Vowel length is contrastive in Bora. Long vowels are written by repeating the vowel character [@BoaThiesen2012, p. 31].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -103,7 +103,7 @@ kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
 
-## Syllable Structure
+# Syllable Structure
 
 * Bora syllables mostly take the form of (C)V, although /x/ and /ʔ/ can appear as syllable codas [@BoaRoe2014, p. 9].
 

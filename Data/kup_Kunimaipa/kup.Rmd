@@ -5,11 +5,11 @@ bibliography: kup.bib
 output: html_document
 ---
 
-Last Updated: 2019-10-23
+Last Updated: 2020-06-30
 
 # Background
 
-**Language Family**: Trans-New Guinea / Goilalan
+**Language Family:** Trans-New Guinea / Main Section / Eastern / Central and Southeastern / Goilalan / Kunimaipa
 
 * Kunimaipa is spoken in the Central, Morobe, and Oro provinces of Papua New Guinea.
 
@@ -41,7 +41,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Although diphthongs are prevalent in the Kunimaipa language, such vowels can also appear in sequence [@Pence1966], thus, diphthongs will not be accounted for nor transcribed (p. 55).
+* Although diphthongs are prevalent in the Kunimaipa language, such vowels also appear in sequences [@Pence1966], thus, diphthongs will not be accounted for nor transcribed (p. 55).
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -65,27 +65,27 @@ kable(vowels, align = 'c') %>%
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
-Grapheme      Phoneme
-"a"             "a"
-"b"             "b"
-"d"             "d"
-"e"             "e"
-"g"             "ɡ"
-"h"             "ɣ"
-"i"             "i"
-"k"             "k"
-"l"             "l"
-"m"             "m"
-"n"             "n"
-"ñ"             "ŋ"
-"o"             "o"
-"p"             "p"
-"r"             "r"
-"s"             "s"
-"z"             "z"
-"t"             "t"
-"u"             "u"
-"v"             "β"
+Grapheme       Phoneme
+"a"             "/a/"
+"b"             "/b/"
+"d"             "/d/"
+"e"             "/e/"
+"g"             "/ɡ/"
+"h"             "/ɣ/"
+"i"             "/i/"
+"k"             "/k/"
+"l"             "/l/"
+"m"             "/m/"
+"n"             "/n/"
+"ñ"             "/ŋ/"
+"o"             "/o/"
+"p"             "/p/"
+"r"             "/r/"
+"s"             "/s/"
+"z"             "/z/"
+"t"             "/t/"
+"u"             "/u/"
+"v"             "/β/"
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
@@ -101,10 +101,10 @@ kable(alphabet, align = 'c') %>%
 * /b/, /d/, and /ɡ/ can spirantize word-medially and word-finally in fast speech [@Geary1992, p. 3; @Pence1966, p. 60].
 * /p/ and /k/ can be pronounced with frication or fully spirantize word-medially [@Geary1992, p. 4].
 * /β/ and /z/ may be realized as glides [w] and [j] [@Pence1966, p. 60].
-* /ɣ/ is said to be backed [@Pence1966, p. 61; @Geary1992, p. 4], making way for the deduction that it may debuccalize.
 
 # Misc. Rules
 
 * /b/, /d/, and /ɡ/ may be voiceless word-initially [@Geary1992, p. 3; @Pence1966, p. 60].
+* /ɣ/ is said to be backed [@Pence1966, p. 61; @Geary1992, p. 4].
 
 # References

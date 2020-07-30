@@ -9,7 +9,7 @@ Last updated: 2019-10-08
 
 # Background
 
-**Language family**: Indo-European, Indo-Aryan, Sinhalese-Maldivian
+**Language Family:** Indo-European / Indo-Iranian / Indo-Aryan / Sinhalese-Maldivian
 
 * Sinhala exhibits diglossia, where the written form contrasts greatly with the spoken form of Sinhala. Written Sinhala is reserved for formal communication, and does not use Sinhala slang or taboo terms. Although spoken Sinhala has various dialects, I've chosen to base my phonology off of formal speech.
 * Sinhala is predomiantly spoken in Sri Lanka.
@@ -18,10 +18,10 @@ Last updated: 2019-10-08
 
 ## Consonants
 
-* Consonant letters have an inherent /a/ following it. For example, the letter representing /k/ would be pronounced [ka] [@Chandralal2010, p. 22].
-* Consonant length is contrastive, and long consonants are generally represented in the orthography as the same letter twice [@Chandralal2010, p. 32].
-* There are also special "clusters," which are the four prenasalized consonants. The first consonant (a nasal), is very short, and the second consonant is a stop. These "clusters" are thought of as single phonemes and are represented orthographically [@Chandralal2010, pp. 33-34].
-* /f/ exclusively appears in borrowed words from English [@Chandralal2010, p. 22]. Because it appears frequently in the Crubadan corpus and is "gaining ground" in terms of English's influence, I have decided to include it below. However, it is often substituted with [p] [@Herat2017, p. 13].
+* Consonant letters have an inherent /a/ following it. For example, the letter representing /k/ would actually reflect /ka/ [@Chandralal2010, p. 22].
+* Consonant length is contrastive, and long consonants are generally represented in the orthography as duplicate graphemes [@Chandralal2010, p. 32].
+* There are also special "clusters," which are the four prenasalized consonants. The first consonant (a nasal) is very short, and the second consonant is a stop. These "clusters" are thought of as single phonemes and are represented orthographically [@Chandralal2010, pp. 33-34].
+* /f/ exclusively appears in borrowed words from English [@Chandralal2010, p. 22]. Because it appears frequently in the Crúbadán corpus and is "gaining ground" in terms of English's influence, I have decided to include it below. However, it is often substituted with [p] [@Herat2017, p. 13].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -52,19 +52,27 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 * Vowel length is contrastive [@Chandralal2010, p. 29]. Long vowels are indicated by duplicate graphemes.
 * @Chandralal2010 includes /ə/ in the vowel inventory; however, he states that it occurs in complementary distribution with /a/ (p. 29). In spoken Sinhala, word-final positions pose problems between such vowels and /aː/ or any short and long vowel because vowels tend to be shortened word-finally. Given that we are transcribing written words, I have decided to move forward with the language.  
 * @Disanayaka1991 suggests that vowel clusters may occur in Sinhala (later references don't always agree with this).
-    - I interviewed a consultant (born and raised in Colombo, Sinhala) who speaks and reads Standard Sinhala, and the only vowel clusters she spoke was [ai] and [au] (which is consistent with the orthography).
-    - The other vowel clusters suggested by the book usually have a [j] or labiodental approximant in between them, pronounced quickly in speech.
+    - I interviewed a consultant (born and raised in Colombo, Sinhala) who speaks and reads Standard Sinhala, and the only vowel clusters she spoke were [ai] and [au] (which is consistent with the orthography).
+    - The other vowel clusters suggested by Disanayaka usually have a [j] or labiodental approximant in between them, pronounced quickly in speech.
 * I have chosen to include /ai/ and /au/ below, as they are represented in the orthography [@LOC2011]. Unlike the other vowels, these diphthongs do not have contrastive long variants.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('
           Front   Central   Back
-High      "i"     ""        "u"
-Mid       "e"     ""        "o"
+High      "i"      ""        "u"
+Mid       "e"      ""        "o"
 Low       "æ"      "a"       ""
 '), TRUE)
 
 kable(consonants, align = 'c') %>%
+  kable_styling("bordered")
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ai/, /au/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
   kable_styling("bordered")
 ```
 
@@ -76,28 +84,28 @@ kable(consonants, align = 'c') %>%
 
 alphabet <- read.table(textConnection('
 "Consonant Grapheme"        Phoneme                 Comment
-"ක ඛ"                       "/ka/"                  ""
-"ග ඝ"                       "/ɡa/"                  ""
+"ක; ඛ"                      "/ka/"                  ""
+"ග; ඝ"                      "/ɡa/"                  ""
 "ඞ"                          "/ŋa/"                  ""
 "ඟ"                         "/ᵑɡa/"                  ""
-"ච ඡ"                       "/tʃa/"                  ""
-"ජ ඣ"                      "/dʒa/"                  ""                
-"ට ඨ"                       "/ʈa/"                   ""
-"ඩ ඪ"                       "/ɖa/"                   ""
-"ණ න"                      "/na/"                   ""
+"ච; ඡ"                      "/tʃa/"                  ""
+"ජ; ඣ"                     "/dʒa/"                  ""                
+"ට; ඨ"                      "/ʈa/"                   ""
+"ඩ; ඪ"                      "/ɖa/"                   ""
+"ණ; න"                     "/na/"                   ""
 "ඬ"                         "/ⁿɖa/"                  ""
-"ත ථ"                       "/t̪a/"                   ""
-"ද ධ"                        "/d̪a/"                   ""
+"ත; ථ"                      "/t̪a/"                   ""
+"ද; ධ"                       "/d̪a/"                   ""
 "ඳ"                          "/ⁿd̪a/"                  ""
-"ප ඵ"                        "/pa/"                  ""
-"බ භ"                        "/ba/"                  ""
+"ප; ඵ"                       "/pa/"                  ""
+"බ; භ"                       "/ba/"                  ""
 "ම"                           "/ma/"                  ""
 "ඹ"                          "/ᵐba/"                  ""
 "ය"                          "/ja/"                   ""
 "ර"                           "/ra/"                  ""
-"ල ළ"                        "/la/"                  ""
+"ල; ළ"                       "/la/"                  ""
 "ව"                           "/ʋa/"                  ""
-"ශ ෂ"                        "/ʃa/"                  ""
+"ශ; ෂ"                       "/ʃa/"                  ""
 "ස"                           "/sa/"                  ""
 "හ"                           "/ha/"                 ""
 "ෆ"                           "/fa/"                  ""
@@ -136,7 +144,7 @@ alphabet <- read.table(textConnection('
 "ෞ"                            "/au/"                  ""
 "ං"                             "/ŋ/"   "this letter is called an anusvara and acts as an assimilating (by place) nasal to the following consonant, however, /ŋ/ is said to be the underlying form [@Nadungodage2018, p. 113]"
 "ඃ"                              "/h/"    "this diacritic is called a visarga (ibid.)"
-"්"                               "ø"    "this diacritic is called a virama deletes the inherent /a/ following a consonant"
+"්"                               "ø"    "this diacritic is called a virama and deletes the inherent /a/ following a consonant"
 '), TRUE)
 
 kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align = 'c') %>%

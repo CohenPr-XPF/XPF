@@ -9,7 +9,7 @@ Last Updated: 2019-07-03
 
 # Background
 
-**Language Family**: Pama-Nyungan / Yolngu / Southern Yolngu / Dhuwal / Djambarrpuyngu
+**Language Family**: Australian / Pama-Nyungan / Yuulngu / Dhuwal
 
 * Djambarrpuyngu is spoken in the Northern Territory of Australia.
 
@@ -86,7 +86,7 @@ Grapheme      Phoneme
 "u"            "/u/"  
 "w"            "/w/"  
 "y"            "/j/"  
-"\'"            "/ʔ/"
+"\'"           "/ʔ/"
 **Digraph**    ""
 "dh"           "/d̪/"  
 "dj"           "/ɟ/"

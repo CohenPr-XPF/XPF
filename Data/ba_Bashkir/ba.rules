@@ -1,11 +1,13 @@
 # Bashkir Rule Set
 # Written by: Emily
-# Last Updated: 2019-08-14
+# Last Updated: 2020-06-01
 type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
 class,consonant,[бвгғдҙжзйкҡлмнңпрсҫтфхһцчшщюя],,,,
 class,front-v,[iɘaɵy],,,,
 class,back-v,[ɤɑuo],,,,
 class,glottal,[ъь],1,,,,
+# Individual Letters
 sub,а,ɑ,1,,,,
 sub,б,b,1,,,,
 sub,в,w,2,^,,"<в> realized as /w/ word-initially",
@@ -21,7 +23,7 @@ sub,ж,ʒ,1,,,,
 sub,з,z,1,,,,
 sub,и,i,1,^,,,"<и> realized as /i/ word-initially",
 sub,и,i,3,^,{consonant},"<и> realized as /i/ in the first syllable",
-sub,и,ɘ j,2,,,"<и> realized as /ɘj/ word-finally",
+sub,и,ɘ j,2,,,"<и> realized as /ɘj/ elsewhere",
 sub,й,j,1,,,,
 sub,к,k,1,,,,
 sub,ҡ,q,1,,,,
@@ -31,6 +33,7 @@ sub,н,n,1,,,,
 sub,ң,ŋ,1,,,,
 sub,о,o,1,,,,
 sub,ө,ɵ,1,,,,
+sub,ѳ,ɵ,1,,,,"this rule is different than the one above, there seems to be two slight variants of this character in Crúbadán",
 sub,п,p,1,,,,
 sub,р,r,1,,,,
 sub,с,s,1,,,,
@@ -53,8 +56,9 @@ sub,я,j ɑ,1,,,,
 sub,({glottal}),\1,1,,,,
 # Punctuation
 sub,-,,1,,,,
+sub,́,,1,,,,
 # Glottal Stop
 ipasub,({back-v}) ъ,\1 ʔ,2,,,"<ъ> becomes a glottal stop following back vowels",
 ipasub,({front-v}) ь,\1 ʔ,2,,,"<ь> becomes a glottal stop following front vowels",
 # Retroactive Clean-up
-ipasub,({glottal}),,1,,,"<ъ> and <ь> serve no other purpose elsewhere in native words, so resulting glottal stops in not either preceded by a front or back vowel should be transcribed out",
+ipasub,({glottal}),,1,,,"<ъ> and <ь> serve no other purpose elsewhere in native words, so resulting glottal stops not either preceded by a front or back vowel are not transcribed",

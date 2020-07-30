@@ -5,11 +5,11 @@ bibliography: cs.bib
 output: html_document
 ---
 
-Last updated: 2020-03-18
+Last updated: 2020-06-26
 
 # Background
 
-**Language family**: Indo-European / Slavic / West / Czech-Slovak
+**Language Family**: Indo-European / Slavic / West / Czech-Slovak
 
 * Speakers of Czech reside in a multitude of places included, but not limited to, the Czech Republic, Bosnia, Croatia, Slovenia, and Serbia.
 
@@ -54,7 +54,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 vowels <- read.table(textConnection('
          Front      Central       Back
 High     "i"          ""           "u"         
-Mid      "e"          ""           "o"
+Mid      "ɛ"          ""           "o"
 Low      ""           "a"          ""
 '), TRUE)
 
@@ -67,18 +67,17 @@ kable(vowels, align = 'c') %>%
 
 diphthongs <- read.table(textConnection('
 Diphthongs   
-"/eu/, /au/, /ou/"
+"/ɛu/, /au/, /ou/"
 '), TRUE)
 
 kable(diphthongs, align = 'c') %>%
-  kable_styling("bordered") %>%
-  row_spec(0, bold = TRUE)
+  kable_styling("bordered")
 ```    
 
 # Alphabet
 
 * Preceding /i/, ⟨ť⟩, ⟨ď⟩, and ⟨ň⟩ are written as ⟨t⟩, ⟨d⟩, and ⟨n⟩, respectively [@harkins_modern_1980, p. 6]. This does not pose any ambiguity related to whether the alveolar or palatal consonants are underlying because ⟨t⟩, ⟨d⟩, and ⟨n⟩, representing /t/, /d/, and /n/, respectively (in native words), are never followed by ⟨i⟩ or ⟨í⟩ [@harkins_modern_1980, p. 12].
-    - Also, preceding /e/, ⟨ť⟩, ⟨ď⟩, and ⟨ň⟩ are written as ⟨t⟩, ⟨d⟩, and ⟨n⟩, respectively, + ⟨ě⟩ (ibid.). This also does not create ambiguity, given that ⟨t⟩, ⟨d⟩, and ⟨n⟩, representing /t/, /d/, and /n/, respectively (in native words), are never followed by ⟨ě⟩.
+    - Also, preceding /ɛ/, ⟨ť⟩, ⟨ď⟩, and ⟨ň⟩ are written as ⟨t⟩, ⟨d⟩, and ⟨n⟩, respectively, + ⟨ě⟩ (ibid.). This also does not create ambiguity, given that ⟨t⟩, ⟨d⟩, and ⟨n⟩, representing /t/, /d/, and /n/, respectively (in native words), are never followed by ⟨ě⟩.
 * ⟨ó⟩, ⟨q⟩, ⟨w⟩, and ⟨x⟩ appear in loanwords [@harkins_modern_1980, pp. 2-3].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -91,10 +90,10 @@ Grapheme      Phoneme          Comment
 "c"	           "/ts/"            ""
 "č"	           "/tʃ/"            ""
 "d"	           "/d/"             ""
-"ď"	           "/ɟ/"   "the uppercase form is ⟨Ď⟩"
-"e"	           "/e/"             ""
-"é"	           "/eː/"            ""
-"ě"          	 "/je/"             ""
+"ď"	           "/ɟ/"        "the uppercase form is ⟨Ď⟩"
+"e"	           "/ɛ/"             ""
+"é"	           "/ɛː/"            ""
+"ě"          	 "/ɛ/; /jɛ/"  "/ɛ/ following palatal consonants; /jɛ/ elsewhere"
 "f"	           "/f/"             ""
 "g"	           "/ɡ/"             ""
 "h"	           "/ɦ/"             ""
@@ -125,7 +124,7 @@ Grapheme      Phoneme          Comment
 **Digraph**    ""               ""
 "ch"	         "/x/"             ""
 "au"          "/au̯/"             ""
-"eu"          "/eu̯/"             ""
+"eu"          "/ɛu̯/"             ""
 "ou"          "/ou̯/"             ""
 '), TRUE)
 
@@ -135,12 +134,12 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* /j/ may delete word-initially if preceding a consonant [@harkins_modern_1980, p. 14].  
 * Voiceless consonants become voiced if followed by voiced consonants [@harkins_modern_1980, p. 10].  
+* /j/ may delete word-initially if preceding a consonant [@harkins_modern_1980, p. 14].  
 * /ɦ/ is present in the language due to the lenition of /ɡ/, which is common within the Slavic languages [@sussex_slavic_2006, p. 143].  
-* Repetition (gemination) of consonants is typically avoided in Czech [@harkins_modern_1980, p. 9], but when they occur, they typically undergo degemination.
+* Consonant gemination is typically avoided in Czech [@harkins_modern_1980, p. 9]. Instances of it typically undergo degemination.
 * /d/ may be realized intervocalically as a flap [@Machac2009 as cited in @simackova_czech_2012, p. 226].
-* /v/ may approximantize to [ʋ] [@Skarnitzl2005 as cited in @simackova_czech_2012, p. 226].
+* /v/ may approximate to [ʋ] [@Skarnitzl2005 as cited in @simackova_czech_2012, p. 226].
 
 # Misc. Rules
 

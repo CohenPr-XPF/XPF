@@ -6,11 +6,11 @@ bibliography: hu.bib
 output: html_document
 ---
 
-Last Updated: 2020-03-18
+Last Updated: 2020-06-29
 
 # Background
 
-**Language family:** Uralic / Finnic
+**Language Family:** Uralic / Finno-Ugric / Hungarian
 
 * Hungarian is spoken in Hungary and in several surrounding countries as well as in the United States, Canada, and Israel.
 * I have chosen to represent Educated Colloquial Hungarian (ECH), the dialect spoken in Budapest, Hungary.
@@ -19,7 +19,7 @@ Last Updated: 2020-03-18
 
 ## Consonants
 
-* /m/ and /ɲ/ are consistently listed as phonemes in Hungarian [@Szende1994, p. 91; @Siptar2000, p. 207]; however, there is some debate around /n/. @Siptar2000 explain that rather than having a nasal phoneme specified for place, Hungarian has a placeless /N/ that preconsonantally assimilates (p. 207). I have chosen to follow @Szende1994 and use the alveolar nasal (p. 91).
+* /m/ and /ɲ/ are consistently listed as phonemes in Hungarian [@Szende1994, p. 91; @Siptar2000, p. 207]; however, there is some debate around /n/. @Siptar2000 explain that rather than having a nasal phoneme specified for place, Hungarian has a placeless /N/ that preconsonantally assimilates (p. 207). I have, however, chosen to follow @Szende1994 and use the alveolar nasal (p. 91).
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -120,13 +120,13 @@ kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
 
-# Lenition Processes
+# Lenition Rules
 
-* Degemination [@Siptar2000, p 83]: Across word boundaries, affricates remain unmerged in careful speech. In colloquial speech, the first affricate may lenite into a fricative.
+* Degemination occurs across word boundaries, and affricates remain unmerged in careful speech. In colloquial speech, the first affricate may lenite into a fricative [@Siptar2000, p 83].
 * Geminates also weaken intervocalically [@Bauer1988, p. 383].
 
 # Misc. Rules
 
-* All consonant can geminate in Hungarian [@Magyar2015, p. 288]. Orthographically this involves repetition of graphemes. For multigraphs, geminates are indicated by duplication of the first consonant [@Korompay2012, p. 341].
+* All consonants can geminate in Hungarian [@Magyar2015, p. 288]. Orthographically this involves repetition of graphemes. For multigraphs, geminates are indicated by duplication of the first consonant [@Korompay2012, p. 341].
 
 # References

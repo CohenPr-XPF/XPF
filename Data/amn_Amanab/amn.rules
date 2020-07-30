@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-07-24
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,passthrough,[aefhikmnopstuw],,,,
 # Individual Letters
 sub,b,ᵐb,4,,,
@@ -11,7 +11,7 @@ sub,g,ᵑɡ,4,,,
 sub,l,ɾ,4,,,"[l] is an allophone of /ɾ/"
 sub,r,ɾ,4,,,
 sub,y,j,4,,,
+sub,({passthrough}),\1,0.1,,,
 # Misc. Rules
 sub,n,ŋ,6,,g,"<ng>"
 sub,g,,6,n,,"<ng> cleanup"
-sub,({passthrough}),\1,0.1,,,

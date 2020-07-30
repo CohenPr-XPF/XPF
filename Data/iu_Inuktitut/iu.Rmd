@@ -5,11 +5,11 @@ bibliography: iu.bib
 output: html_document
 ---
 
-Last Updated: 2019-07-10
+Last Updated: 2020-06-30
 
 # Background
 
-**Language Family**: Eskimo-Aleut / Eskimo / Inuit / Inuktitut
+**Language Family**: Eskimo-Aleut / Eskimo / Inuit
 
 * Where dialects diverge, this analysis will be preferring Eastern Canadian Inuktitut.
 * Inuktitut is spoken in Canada, specifically in the provinces of Newfoundland and Labrador, Nunavut, and Quebec.
@@ -119,14 +119,14 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * In some dialects, /s/ debuccalizes to [h] [@IuDorais1990, pp. 215-216].
-* In some dialects, /t/ spirantizes to [s] (or reduces even farther to [h]) when preceded by /i/ [@IuDorais1990, pp. 216-217].
 * In some Alaskan dialects, /p/ spirantizes to [v] and /v/ approximantizes to [w] when preceded by unstressed syllables [@IuDorais1986, p. 25].
 * In some dialects, /q/ spirantizes to [χ] or [ʁ] (ibid.).
-* In some Greenlandic dialects, intervocalic /ŋ/ deletes [@IuDorais1986, p. 27].
-* In dialects in Greenland and western Canada, word-final /i/ deletes [@IuDorais1986, p. 31].
+* In some Greenlandic dialects, intervocalic /ŋ/ deletes [@IuDorais1986, p. 27]
 
 # Misc. Rules
 
 * Regressive assimilation occurs in consonant clusters, with the extent of the assimilation varying based on dialect [@IuDorais1986, pp. 34-35].
+* In dialects in Greenland and western Canada, word-final /i/ deletes [@IuDorais1986, p. 31].
+* In some dialects, /t/ spirantizes to [s] (or reduces even farther to [h]) when preceded by /i/ [@IuDorais1990, pp. 216-217].
 
 # References

@@ -9,7 +9,7 @@ Last Updated: 2019-06-28
 
 # Background
 
-**Language Family**: Arawakan / Maipuran / Northern Maipuran / Upper Amazon / Western Nawiki / Yucuna
+**Language Family:** Arawakan / Maipuran / Northern Maipuran / Upper Amazon / Western Nawiki / Yucuna
 
 * Yucuna is spoken in southern Columbia.
 
@@ -55,12 +55,13 @@ Low       ""      "a"       ""
 '), TRUE)
 
 kable(consonants, align = 'c') %>%
-  kable_styling("bordered")
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 ```
 
 # Alphabet
 
-* Orthographies disagree slightly at a few points; older, more Spanish-influenced texts use ⟨hu, c, qu⟩ where newer orthographies tend to use ⟨w, k, k⟩ respectively. Based on the Crubadan corpus, both patterns are still in wide usage, so I have included rules for both.
+* Orthographies disagree slightly at a few points; older, more Spanish-influenced texts use ⟨hu, c, qu⟩ where newer orthographies tend to use ⟨w, k, k⟩ respectively. Based on the Crúbadán corpus, both patterns are still in wide usage, so I have included rules for both.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

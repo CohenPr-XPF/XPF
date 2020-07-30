@@ -5,11 +5,11 @@ bibliography: ht.bib
 output: html_document
 ---
 
-Last Updated: 2019-12-19
+Last Updated: 2020-06-29
 
 # Background
 
-**Language family**: French Creole
+**Language Family**: Creole / French based
 
 * Speakers of Haitian Creole reside in a multitude of places, including, but not limited to, Haiti, Canada, the United States, France, the Dominican Republic, Cuba, and the Bahamas.
 
@@ -43,18 +43,20 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Haitian Creole makes a distinction between oral and nasal vowels. Nasal vowels are orthographically represented with ⟨n⟩ after the vowel [@faraclas2010orthography, p. 97].
-* Nasal vowels may also be indicated when preceding two ⟨n⟩s [@faraclas2010orthography, p. 101].
-* /an/, /en/, /on/, and /un/ appear as vowel-consonant sequences when followed by a vowel.
-* The grave accent (\`) on vowels is also used to indicate non-nasality of vowels when followed by ⟨n⟩ [@faraclas2010orthography, p. 101].
+* Haitian Creole makes a distinction between oral and nasal vowels. Nasal vowels are orthographically represented with a following ⟨n⟩ [@faraclas2010orthography, p. 97].
+    - Where a nasal vowel is followed by /n/, it is represented orthographically by two ⟨n⟩s (e.g. ⟨ann⟩ = /ãn/).
+* The grave accent (\`) on vowels is used to indicate non-nasality of vowels when followed by ⟨n⟩ [@faraclas2010orthography, p. 101].
+    - E.g. ⟨àn⟩ = /an/
+* /an/, /en/, /on/, and /un/ also appear as vowel-consonant sequences when followed by a vowel.
+
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 vowels <- read.table(textConnection('
          Front      Central       Back
 High      "i"         ""         "u  ũ"
-Mid       "e"         ""         "o  õ"
-""      "ɛ  ɛ̃"        ""          "ɔ"
+High-Mid  "e"         ""         "o  õ"
+Low-Mid  "ɛ  ɛ̃"        ""          "ɔ"
 Low       ""        "a  ã"         ""
 '), TRUE)
 
@@ -106,7 +108,10 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
+* /ʒ/ becomes /j/ word-finally [@Gurevich2004, p. 112].
+
+# Misc. Rules
+
 * /j/ deletes word-finally following /i/ [@Gurevich2004, p. 112].
-* /ʒ/ becomes /j/ word-finally (ibid.).
 
 # References

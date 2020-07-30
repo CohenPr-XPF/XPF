@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-06-14
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 # Individual Letters
 sub,а,a,4,,,
 sub,б,b,4,,,
@@ -11,11 +11,12 @@ sub,г,ɡ,4,,,
 sub,ғ,ʁ,4,,,
 sub,д,d,4,,,
 sub,е,e,4,,,
+sub,е,j e,6,^,,"word-initially",
 sub,ё,j ɔ,4,,,
 sub,ж,ʒ,4,,,
 sub,з,z,4,,,
 sub,и,i,4,,,
-sub,ӣ,i,4,,,
+sub,ӣ,i,4,,$,"word-finally",
 sub,й,j,4,,,
 sub,к,k,4,,,
 sub,қ,q,4,,,
@@ -36,9 +37,8 @@ sub,ч,tʃ,4,,,
 sub,ҷ,dʒ,4,,,
 sub,ш,ʃ,4,,,
 sub,ъ,ʔ,4,,,
-sub,э,e,4,,,
+sub,э,e,4,^,,"word-initially",
 sub,ю,j u,4,,,
 sub,я,j a,4,,,
 # Misc. Rules
-sub,е,j e,6,^,,
 sub,-,,4,,,"hyphens have no phonemic value",

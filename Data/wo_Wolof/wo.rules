@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-07-02
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules 
 # class,lab-stop,[bp],,,,"These classes can be uncommented if you want to incorporate prenasalized voiceless consonants"
 # class,vel-stop,[kg],,,,"the class is input-based so I'm not using the IPA g"
 # class,affricate,[cj],,,,

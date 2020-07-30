@@ -1,6 +1,6 @@
 # Apurinã Rule Set
 # Written by: Emily
-# Last updated: 09-11-2019
+# Last Updated: 2019-09-11
 type,sfrom,sto,weight,precede,follow,comment
 # Classes
 class,passthrough,[aãeẽhiĩkmnoõpst],,,,
@@ -31,4 +31,4 @@ sub,o,,3,{o-dip},,"clean-up",
 # Long Vowels
 ipasub,({vowels}) \1\b,\1 ː,2,,,
 # Misc. Rules
-sub,{punct},,2,,,hyphens and dashes add no phonemic value
+sub,{punct},,2,,,hyphens and dashes add no phonemic value,

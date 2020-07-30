@@ -1,0 +1,112 @@
+---
+title: "Hiligaynon"
+author: "Abi Creighton"
+bibliography: hil.bib
+output: html_document
+---
+
+Last Updated: 2020-07-27
+
+# Background
+
+**Language Family:** Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Meso Philippine / Central Philippine / Bisayan / Central / Peripheral
+
+* Hiligaynon, also known as Ilonggo, is spoken in the Philippines. It is most widely spoken in the regions of Western Visayas and Soccsksargen.  
+
+# Phonology
+
+## Consonants
+
+* @wolfenden_1971 and @casperson_2010 both include /f/ and /v/ (although introduced through loanwords) in their phonemic inventory, while @motus_1971 claims they are allophones of /p/ and /b/, respectively, and are only used by some speakers as a sign of prestige (p. ix). Therefore, I have opted to omit /f/ and /v/ in the analysis below.
+* @casperson_2010 reports an alveolar place for /t/, /d/, /n/, and /s/, but other documentation suggests that they are dental [@wolfenden_1971, pp. 17-20; @motus_1971, p. ix].
+* The affricates /c/ and /ʝ/ appear in loanwords [@wolfenden_1971, p. 19].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Dental Alveolar Palatal Velar Glottal
+Stops                      "p b"   "t̪ d̪"     ""      ""    "k ɡ"   "ʔ"           
+Fricatives                  ""      "s̪"      ""      ""     ""     "h"
+Nasals                      "m"     "n̪"      ""      ""     "ŋ"    ""       
+Taps                        ""      ""       "ɾ"     ""     ""     ""       
+Approximants                ""      ""       "l"     "j"    "w"    ""   
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```  
+
+## Vowels
+
+* /e/ and /o/ are borrowed from Spanish and English, but only exist in Hiligaynon as allophones of /i/ and /u/ respectively [@motus_1971, p. ix].
+* In some orthographies, an acute accent on a vowel marks stress, which is phonemic in Hiligaynon (ibid.). However, stress is not relevant for the purposes of this project and will not be transcribed.
+* Possible Hiligaynon diphthongs include /ai/ and /au/ [@manzano_2016, p. 43]. Because they can also be interpreted as sequences of independent vowels rather than diphthongs, however, they will not be accounted for in the rules [@manzano_2016, p. 43].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         ""          "u"
+Low           ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```     
+
+# Alphabet
+
+* The glottal stop can be written with either ⟨q⟩ or an apostrophe depending on which orthographic convention is being followed. Both variations are included here.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme           
+"a"              "/a/"            
+"b"              "/b/"            
+"k"              "/k/"            
+"d"              "/d̪/"           
+"g"              "/ɡ/"            
+"h"              "/h/"            
+"i"              "/i/"            
+"l"              "/l/"            
+"m"              "/m/"            
+"n"              "/n̪/"           
+"p"              "/p/"            
+"q"              "/ʔ/"            
+"\'"             "/ʔ/"            
+"r"              "/ɾ/"              
+"s"              "/s̪/"             
+"t"              "/t̪/"             
+"u"              "/u/"              
+"w"              "/w/"              
+"y"              "/j/"              
+**Digraph**      ""                 
+"ng"             "/ŋ/"              
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* After nasal place assimilation occurs, the consonant following the nasal may be deleted [@wolfenden_1971, p. 28].
+* Stem-final /d̪/ becomes the tap [ɾ] when certain suffixes are added [@wolfenden_1971, p. 29].
+
+# Misc. Rules
+
+* Glottal stops are predictably inserted preceding word-initial vowels [@wolfenden_1971, p. 13].
+* When a suffix is added, a vowel may be deleted from a stem-final syllable, thus causing two consonants to become adjacent. The consonants may then metathesize [@wolfenden_1971, p. 27].
+* Nasals may assimilate to the place of the following consonant (ibid.).
+
+# References

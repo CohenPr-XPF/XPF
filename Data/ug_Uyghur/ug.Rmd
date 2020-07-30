@@ -5,11 +5,11 @@ bibliography: ug.bib
 output: html_document
 ---
 
-Last Updated: 2019-03-13
+Last Updated: 2020-07-02
 
 # Background
 
-**Language Family**: Turkic / Common Turkic / Karluk / Uyghur
+**Language Family:** Turkic / Common Turkic / Karluk / Uyghur
 
 * Uyghur is spoken in northwestern China.
 
@@ -18,8 +18,8 @@ Last Updated: 2019-03-13
 ## Consonants
 
 * @UgMemtimin2016 lists the aspirated forms of voiceless stops as their underlying phonemes; @UgHahn1991 does not, but does include aspirated forms of those sounds (plus /tʃ/) as common allophones. I have judged it more likely that the simple forms of these consonants are the underlying ones.
-* According to Hahn, /v/ is phonemic in some nonstandard dialects [@UgHahn1991, p. 59]; according to @UgMemtimin2016, it's an allophone of /w/. Either way, it does not appear to merit inclusion in the ruleset.
-* Hahn lists /χ/ and /ɢ/ rather than /x/ and /ɣ/ [@UgHahn1991, p. 59]; interestingly, though, he mentions that "in most environments /ɢ/ is phonetically realized as a fricative" (ibid., p. 60).
+* According to @UgHahn1991, /v/ is phonemic in some nonstandard dialects (p. 59); according to @UgMemtimin2016, it's an allophone of /w/. Either way, it does not appear to merit inclusion in the ruleset.
+* @UgHahn1991 lists /χ/ and /ɢ/ rather than /x/ and /ɣ/ (p. 59); interestingly though, he mentions that "in most environments /ɢ/ is phonetically realized as a fricative" (p. 60).
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -59,17 +59,19 @@ Low       "æ"     "ɑ"
 
 kable(consonants, align = 'c') %>%
   kable_styling("bordered") %>%
-    footnote("Note: For phonemes that share a cell, those on the left are unrounded, whereas those on the right are rounded.", general_title = "")
+    footnote("Note: For phonemes that share a cell, those on the left are unrounded, whereas those on the right are rounded.", general_title = "") %>%
+    column_spec(1, bold = TRUE)
 ```
 
 # Alphabet
 
-The Uyghur Arabic alphabet is the most common orthography in Uyghur; it has been the official script of the language since 1982, and it has by far the largest Crubadan corpus of the various Uyghur scripts. Cyrillic and Latin scripts do also exist, however, and will be factored into the rulesets.
+The Uyghur Arabic alphabet is the most common orthography in Uyghur; it has been the official script of the language since 1982, and it has by far the largest Crúbadán corpus of the various Uyghur scripts. Cyrillic and Latin scripts do also exist, however, and will be factored into the rulesets.
 
 ## Arabic
 
 * Vowels in the Uyghur Arabic alphabet are formed from the combination of two characters. The first is ⟨ئ⟩, which carries no phonetic value but serves as a "base" upon which different vowel characters are appended; the second is the affixed character, which marks *which* of the vowels is being written.
-* For each vowel, the alphabet shown here features both the affix and the full combined character. **The (column) representation for phonemes that have both a grapheme and an affix are switched. That is, in the .Rmd file, the affix is in the grapheme column and the grapheme is in the affix column. The rendering of the html_document flips them, thus having the correct representation.**
+* For each vowel, the alphabet shown here features both the affix and the full combined character. **The (column) representation for phonemes that have both a grapheme and an affix are switched in the Rmd file. That is, in the Rmd file, the affix is in the grapheme column and the grapheme is in the affix column. The rendering of the html document flips them, thus having the correct representation.**
+* **Note:** /ʒ/ is not represented in the Uyghur (Arabic script) Crúbadán corpus.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -159,7 +161,7 @@ kable(cyrillic_alphabet, align = 'c') %>%
 
 ## Latin
 
-* I opted not to build a ruleset for the Latin script, because the Crubadan corpus for Latin-script Uyghur only has around 150,000 words. See @UgJanbaz2006 for further insight on this script.
+* I opted not to build a ruleset for the Latin script, because the Crúbadán corpus for Latin-script Uyghur only has around 150,000 words. See @UgJanbaz2006 for further insight on this script.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -206,17 +208,19 @@ kable(latin_alphabet, align = 'c') %>%
 
 # Syllable Structure
 
-* Sentences are SOV.
 * Consonant clusters are prohibited in onsets; in codas, clusters are allowed if they comprise a nasal or a liquid followed by a stop [@UgMemtimin2016, pp. 15-16].
 
 # Lenition Rules
 
 * /r/ and /l/ are often dropped in casual speech [@UgMemtimin2016, p. 15].
 * /b/ spirantizes to [β] intervocalically or before liquids [@UgHahn1991, p. 61].
-* /t/ and /tʃ/ assimilate fully to following /s/ sounds [@UgHahn1991, pp. 62-63, 70].
 * /t/ is deleted word-finally, or when between two consonants [@UgHahn1991, p. 63].
 * /q/ spirantizes to [χ] before non-uvular consonants [@UgHahn1991, p. 67].
 * /tʃ/ and /dʒ/ reduce (to [ʃ] and [ʒ] respectively) syllable-finally [@UgHahn1991, p. 70].
+
+# Misc. Rules
+
+* /t/ and /tʃ/ assimilate fully to following /s/ sounds [@UgHahn1991, pp. 62-63, 70].
 * /ŋ/ backs to [ɴ] when followed by a back vowel or uvular consonant; this pattern also occurs word-finally if preceded by a back vowel or /i/ [@UgHahn1991, p. 76].
 
 # References

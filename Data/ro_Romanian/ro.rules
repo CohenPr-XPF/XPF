@@ -1,10 +1,11 @@
 # Romanian Rule Set
 # Written by: Emily
-# Last Updated: 2020-01-14
+# Last Updated: 2020-06-04
 type,sfrom,sto,weight,precede,follow,comment
 # Classes
-class,passthrough,[abefhikmopuv],,,,
+class,passthrough,[abefhimopuv],,,,
 class,dip-a,[eo],,,,
+class,before-a,(ce|ge|che|ghe),,,,
 class,punct,['‘’-],,,,
 # Individual Letters
 sub,ă,ɜ,2,,,
@@ -16,26 +17,23 @@ sub,î,ɨ,2,,,
 sub,j,ʒ,2,,,
 sub,l,l̪,2,,,
 sub,n,n̪,2,,,
-sub,q,k,2,,,
 sub,r,r̪,2,,,
 sub,s,s̪,2,,,
 sub,ș,ʃ,2,,,
 sub,t,t̪,2,,,
 sub,ț,t̪s,2,,,
-sub,w,v,2,,,
 sub,x,k s̪,2,,,
-sub,y,i,2,,,
 sub,z,z̪,2,,,
 sub,({passthrough}),\1,2,,,
 # Diphthongs
-sub,e,ea,3,,a,
-sub,o,oa,3,,a,
-sub,a,,3,{dip-a},,"clean-up",
+sub,e,ea,2.5,,a,
+sub,o,oa,2.5,,a,
+sub,a,,2.5,{dip-a},,"clean-up",
 # Multigraphs
 sub,c,tʃ,3,,e,
 sub,e,,3,c,a,"<e> not transcribed if /a/ follows",
 sub,c,tʃ,3,,i,
-sub,i,,3,c,(a|o|u|#),"<i> not transcribed if /a/, /o/, /u/, or the end of the word follows",
+sub,i,,3,c,(a|o|u|$),"<i> not transcribed if /a/, /o/, /u/, or the end of the word follows",
 sub,g,dʒ,3,,e,
 sub,e,,3,g,(a|o),"<e> not transcribed if /a/ or /o/ follows",
 sub,g,dʒ,3,,i,
@@ -49,6 +47,7 @@ sub,i,,5,ch,(a|o|u|$),"deletion of <i> follows the same form as <ci>",
 sub,g,ɡ,5,,he,
 sub,h,,4,g,e,"clean-up",
 sub,e,,5,gh,(a|o),"deletion of <e> follows the same form as <ge>",
+sub,a,a,3,{before-a},,"prevents <a> from being deleted by line 33 when in the sequence <cea>"
 sub,g,ɡ,5,,hi,
 sub,h,,4,g,i,"clean-up",
 sub,i,,5,gh,(a|o|u),"deletion of <i> follows the same form as <gi>",

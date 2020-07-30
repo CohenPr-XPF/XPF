@@ -5,11 +5,11 @@ bibliography: zos.bib
 output: html_document
 ---
 
-Last Updated: 2019-11-18
+Last Updated: 2020-07-06
 
 # Background
 
-**Language Family**: Mixe-Zoque / Zoque / Chiapas Zoque
+**Language Family:** Mixe-Zoque / Zoque / Chiapas Zoque
 
 * Francisco León Zoque is spoken in southern Mexico.
 
@@ -59,7 +59,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* A superscript ⟨n⟩ is sometimes written word-initially, indicating nasalization of the word [@Bartholomew1987, pp. 334-335]. This is only in cases where words do no contain stops or affricates or where words that contain stops or affricates occur in combination with other consonants. These environments seem to prevent standard affixation of nasals where assimilation to stops and affricates generally occurs (see Misc. Rules). Given that this suprasegmental feature seems to pose no contrastiveness in terms of when it does and does not occur, I have opted to not include it in the transcription.
+* A superscript ⟨n⟩ is sometimes written word-initially, indicating nasalization of the word [@Bartholomew1987, pp. 334-335]. This occurs only in cases where words do no contain stops or affricates or where words that contain stops or affricates occur in combination with other consonants. These environments seem to prevent standard affixation of nasals where assimilation to stops and affricates generally occurs (see Misc. Rules). Given that this suprasegmental feature seems to pose no contrastiveness in terms of when it does and does not occur, I have opted to not include it in the transcription.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -67,7 +67,7 @@ alphabet <- read.table(textConnection('
 Grapheme         Phoneme              Comment
 "a"               "/a/"                  ""
 "b"               "/b/"                  ""
-"c"             "/s/; /k/"   "/s/: preceding front vowels; /k/: elsewhere"
+"c"             "/s/; /k/"      "/s/: preceding front vowels"
 "d"               "/d̪/"                  ""
 "e"               "/e/"                  ""
 "f"               "/f/"                  ""
@@ -105,15 +105,15 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * /p/, /t/, /ts/, and /k/ become voiced preceding nasals (not necessarily homorganic) [@Bartholomew1987, p. 334].
-* Affixation involving /j/ generally results in palatalization of stops and affricates [@Bartholomew1987, p. 335].
-* Word-final vowels tend to be deleted [@Bartholomew1987, pp. 338-339].
 
 # Misc. Rules
 
 * Through affixation, nasals tend to assimilate in place to stops and affricates [@Bartholomew1987, pp. 334-335].
+* Affixation involving /j/ generally results in palatalization of stops and affricates [@Bartholomew1987, p. 335].
 * For words that are vowel initial, a glottal stop always precedes them [@Bartholomew1987, pp. 335-336].
 * Glottal stops, present in suffixes, become /h/ when affixed to morphemes [@Bartholomew1987, pp. 336-337].
-* /ŋ/ root-finally changes to /w/ when (non back() vowel- initial suffixes are added [@Bartholomew1987, p. 338].
+* /ŋ/ root-finally changes to [w] when non-back vowel-initial suffixes are added [@Bartholomew1987, p. 338].
+* Word-final vowels tend to be deleted [@Bartholomew1987, pp. 338-339].
 * Vowel harmony is apparent in the language in terms of height [@Bartholomew1987, p. 340].
 
 # References

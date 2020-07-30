@@ -9,7 +9,7 @@ Last Updated: 2019-08-07
 
 # Background
 
-**Language Family**: Gunwinyguan / Wubuy-Anindilyakwa / Nunggubuyu
+**Language Family:** Australian / Gunwinyguan / Nunggubuyu
 
 * Nunggubuyu is spoken in the Northern Territory of Australia.
 
@@ -17,7 +17,7 @@ Last Updated: 2019-08-07
 
 ## Consonants
 
-* /n̪/ appears only rarely, in a handful of animal-related nouns [@NuyHeath1984, p. 12]. It does not appear in the Crúbadán corpus.
+* /n̪/ appears only rarely, in a handful of animal-related nouns [@NuyHeath1984, p. 12].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -43,7 +43,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 
 * Vowel lengthening is present in Nunggubuyu, but only /aː/ has minimal pairs with its short counterpart [@NuyHeath1984, p. 9].
 * Tone does not appear to be contrastive [@NuyHeath1984, p. 32].
-* @NuyHughes1971 lists /æ/ as part of the vowel inventory, albeit only marginally (p. 72). Other authors do not share this view, so I have opted not to include it below.
+* @NuyHughes1971 list /æ/ as part of the vowel inventory, albeit only marginally (p. 72). Other authors do not share this view, so I have opted not to include it below.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -60,6 +60,8 @@ kable(vowels, align = 'c') %>%
 ```    
 
 # Alphabet
+
+* **Note:** /n̪/ is not represented in the Crúbadán corpus.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

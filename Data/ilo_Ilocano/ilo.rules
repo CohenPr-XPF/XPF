@@ -1,28 +1,28 @@
 # Ilocano Rule Set
 # Written by Emily
-# Last updated: 2019-08-22
+# Last updated: 2020-07-06
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
 class,passthrough,[abiklmopsuw],,,,
-class,gem,[pbt̪d̪kɡsmn̪ŋɾljw],,,,
-class,vowel-in,[aiou],,,,
-class,vowel-out,[aɛiou],,,,
+class,gem,(p|b|k|ɡ|s|m|ŋ|ɾ|l|j|w),,,,
 # Individual Letters
 sub,d,d̪,1,,,
 sub,e,ɛ,1,,,
-sub,e,ʔ ɛ,1,^,,,"need separate rule to change <e> and add glottal stop",
 sub,g,ɡ,1,,,
 sub,n,n̪,1,,,
 sub,r,ɾ,1,,,
 sub,t,t̪,1,,,
 sub,y,j,1,,,
 sub,-,ʔ,1,,,
-sub,({vowel-in}),ʔ \1,1,^,,,"glottal stop occur word-initially preceding vowels",
-sub,({passthrough}),\1,0.5,,,
+sub,({passthrough}),\1,2,,,
 # Digraphs
 sub,n,ŋ,2,,g,
 sub,g,,2,n,,"clean-up",
 # Gemination
 ipasub,({gem}) \1\b,\1 ː,2,,,
-# Intervocalic Glottal Stop
-ipasub,({vowel-out}) \1,\1 ʔ \1,1,,,
+sub,t,t̪ ː,2,,t,
+sub,t,,2,t,,"clean-up"
+sub,d,d̪ ː,2,,d,
+sub,d,,2,d,,"clean-up"
+sub,n,n̪ ː,2,,n,
+sub,n,,2,n,,"clean-up"

@@ -5,7 +5,7 @@ bibliography: mhl.bib
 output: html_document
 ---
 
-Last Updated: 2020-05-06
+Last Updated: 2020-06-30
 
 # Background
 
@@ -108,12 +108,12 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* Vowels preceding stressed syllables may be elided [@Berghaell2015, p. 41].
 * /r/ varies freely with [ɾ] [@Berghaell2015, p. 27].
 
 # Misc. Rules
 
 * In some dialects, /j/ is realized as [ʒ] [@Berghaell2015, p. 28].
 * /w/ may be realized as either [v] or [β] (ibid.).
+* Vowels preceding stressed syllables may be elided [@Berghaell2015, p. 41].
 
 # References

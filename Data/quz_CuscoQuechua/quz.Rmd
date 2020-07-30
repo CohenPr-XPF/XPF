@@ -9,7 +9,7 @@ Last Updated: 2019-06-20
 
 # Background
 
-**Language Family**: Quechuan / Quechua II / Southern Quechua / Cusco Quechua
+**Language Family**: Quechuan / Quechua II / C
 
 # Phonology
 
@@ -33,7 +33,7 @@ consonants <- read.table(textConnection('
 "Affricates (ejective)"    ""      ""        "tʃʼ"         ""       ""      ""       ""
 Fricatives                 ""      "s"       "ʃ"           ""       ""      ""       "h"
 Nasals                     "m"     "n"       ""            "ɲ"      ""      ""       ""
-Taps                       ""      "ɾ"       ""            ""       ""      ""       ""
+Flaps                      ""      "ɾ"       ""            ""       ""      ""       ""
 Approximants               "w"     "l"       ""            "j ʎ"    ""      ""       ""
 '), TRUE)
 
@@ -46,7 +46,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* The status of /e/ and /o/ is controversial. The sounds first entered the language after contact with Spanish, but @QuzParker1996 argues that they have become contrastive since then (p. 71); conversely, @QuzEbina2011 argues that [e] and [o] are only produced as allophones of /i/ and /u/ near uvular consonants (p. 5). I have opted to prefer the three-vowel analysis in my ruleset.
+* The status of /e/ and /o/ is controversial. The sounds first entered the language after contact with Spanish, but @QuzParker1996 argue that they have become contrastive since then (p. 71); conversely, @QuzEbina2011 argues that [e] and [o] are only produced as allophones of /i/ and /u/ near uvular consonants (p. 5). I have opted to prefer the three-vowel analysis in my ruleset.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('
@@ -56,7 +56,8 @@ Low       ""      "a"       ""
 '), TRUE)
 
 kable(consonants, align = 'c') %>%
-  kable_styling("bordered")
+  kable_styling("bordered")%>%
+  column_spec(1, bold = TRUE)
 ```
 
 # Alphabet

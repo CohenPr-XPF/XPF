@@ -5,11 +5,11 @@ bibliography: viv.bib
 output: html_document
 ---
 
-Last Updated: 2019-07-15
+Last Updated: 2020-07-02
 
 # Background
 
-**Language Family**: Austronesian / Malayo-Polynesian / Eastern Malayo-Polynesian / Oceanic / Western Oceanic / Papuan Tip / Nuclear Papuan Tip / North Papuan Mainland-D'Entrecasteaux / Bwaidoga / Iduna
+**Language Family:** Austronesian / Malayo-Polynesian / Eastern Malayo-Polynesian / Oceanic / Western Oceanic / Papuan Tip / Nuclear Papuan Tip / North Papuan Mainland-D'Entrecasteaux / Bwaidoga
 
 * Also known as Vivigani, Iduna is spoken in the Milne Bay province of Papua New Guinea.
 
@@ -43,7 +43,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* @VivSampson1965 argues for /a/ rather than /ɑ/ (p. 21).
+* @VivSampson1965 argue for /a/ rather than /ɑ/ (p. 21).
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('
@@ -54,7 +54,8 @@ Low       ""      "ɑ"
 '), TRUE)
 
 kable(consonants, align = 'c') %>%
-  kable_styling("bordered")
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 ```
 
 # Alphabet
@@ -95,12 +96,14 @@ kable(alphabet, align = 'c') %>%
 
 * /t/ spirantizes to [s] before front vowels [@VivLucht1992, p. 3; @VivSampson1965, p. 9].
 * Word-medial /ɡ/ spirantizes to [ɣ] (ibid.).
-* In C_V contexts, /u/ is realized as simply a labialization of the preceding consonant [@VivSampson1965, p. 6].
 
 # Misc. Rules
 
 * Phrase-final /d/ devoices and aspirates, yielding [tʰ] [@VivLucht1992, p. 3].
 * /u/ nasalizes after /m/ [@VivSampson1965, p. 20].
 * Unstressed /ɑ/ raises to [ʌ] [@VivSampson1965, p. 21].
+* In C_V contexts, /u/ is realized as simply a labialization of the preceding consonant [@VivSampson1965, p. 6].
+* The transcriptions provided in @VivSampson1965 show that /ʔ/ is predictably inserted word-initially before a vowel.
+* /d/ varies freely between [d] and [tʰ] before /i/ [@VivSampson1965, p. 10].
 
 # References

@@ -5,13 +5,13 @@ bibliography: kn.bib
 output: html_document
 ---
 
-Last Updated: 2019-08-01
+Last Updated: 2020-06-30
 
 # Background
 
-**Language Family**: Dravidian / South Dravidian / Tamil-Kannada / Badaga-Kannada / Kannada
+**Language Family:** Dravidian / South / Tamil-Kannada / Kannada
 
-* Kannada is spoken in southwester India, specifically in the states of Goa, Karnataka, Andhra Pradesh, Anantapur, Maharashtra, Tamil Nadu, and Kerala.
+* Kannada is spoken in southwestern India, specifically in the states of Goa, Karnataka, Andhra Pradesh, Anantapur, Maharashtra, Tamil Nadu, and Kerala.
 
 # Phonology
 
@@ -129,7 +129,7 @@ alphabet <- read.table(textConnection('
 "ಓ"                    "/oː/"                         ""
 "ಔ"                    "/aʋ/"                         ""
 "**Vowel Diacritic**"     ""                           ""
-"್"                      "∅"              "marks consonant-final syllables"  
+"್"                      ""               "marks consonant-final syllables"  
 "ಾ"                    "/aː/"                         ""
 "ಿ"                     "/i/"                          ""
 "ೀ"                    "/iː/"                         ""
@@ -144,7 +144,7 @@ alphabet <- read.table(textConnection('
 "ೋ"                  "/oː/"                         ""
 "ೌ"                  "/aʋ/"                          ""
 "**Diacritic Variations**"    ""                    ""
-"ಂ"                   ""          "anusvara - nasal with the same place as the following consonant [@KnKrishnamurti2003, p. 84]"  
+"ಂ"                   ""          "anusvara - represents a nasal with the same place as the following consonant [@KnKrishnamurti2003, p. 84]"  
 "ಃ"                 "/h/; /hV/"               "visarga - /h/: after long vowels; /hV/: after short vowels"
 '), TRUE)
 
@@ -158,8 +158,6 @@ kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align
 
 # Lenition Rules
 
-* Word-final short vowels often delete [@KnSridhar1990, p. 307].
-* Word-medial short vowels sometimes delete, especially in casual speech; this happens most often in a penultimate syllable, and never in the first or last syllable of a word (ibid.).
 * Consonants degeminate when followed by an unlike consonant [@KnSridhar1990, p. 308].
 * Preconsonantal stops delete after a nasal with the same place of articulation (ibid.).
 * Intervocalically or post-nasally, /d̪/ spirantizes to [ð] [@KnSchiffman1983, p. 12].
@@ -167,6 +165,8 @@ kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align
 # Misc. Rules
 
 * Epenthesis of [u] typically occurs after word-final consonants (although if the consonant is /j/, then [i] will be inserted instead) [@KnSridhar1990, p. 296].
+* Word-final short vowels often delete [@KnSridhar1990, p. 307].
+* Word-medial short vowels sometimes delete, especially in casual speech; this happens most often in a penultimate syllable, and never in the first or last syllable of a word (ibid.).
 * The final consonants of monosyllabic words undergo gemination [@KnSridhar1990, p. 310].
 
 # References

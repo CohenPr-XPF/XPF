@@ -1,12 +1,13 @@
 # Yuracare Rule Set
 # Written by: Emily
-# Last Updated: 2019-10-09
+# Last Updated: 2020-06-08
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,passthrough,[abdeilmnopstu],,,,
 class,gem,(b|k|d|h|l|m|n|ɲ|p|ɹ̝|s|t|j|tʃ|dʲ|w|ʃ),,,,
 class,f-vowel,[ie],,,,
 class,vowels,[aeioëü],,,,
+class,u-preceder,(ch|sh),,,,
 # Individual Letters
 sub,c,k,2,,,
 sub,ë,æ,2,,,
@@ -15,9 +16,9 @@ sub,ñ,ɲ,2,,,
 sub,r,ɹ̝,2,,,
 sub,ü,ɨ,2,,,
 sub,y,j,2,,,
-sub,({passthrough}),\1,2,,,
+sub,({passthrough}),\1,0.1,,,
 sub,-,,2,,,
-sub,u,w,2,{vowels},,"<u> to /w/ syllable-finally",
+sub,u,w,3,{vowels},,"<u> to /w/ syllable-finally",
 # Digraphs
 sub,c,tʃ,3,,h,
 sub,h,,2,c,,"clean-up",
@@ -29,5 +30,8 @@ sub,q,k,3,,u{f-vowel},
 sub,u,,3,q,,"clean-up",
 sub,s,ʃ,3,,h,
 sub,h,,2,s,,"clean-up",
+sub,u,u,3,{u-preceder},,"prevents u from being deleted following <ch> and <sh>"
 # Consonant Gemination
 ipasub,({gem}) \1\b,\1 ː,2,,,
+sub,r,ɹ̝ ː,3,,r,"the rule above can't handle <rr> for some reason"
+sub,r,,3,r,,"clean-up"

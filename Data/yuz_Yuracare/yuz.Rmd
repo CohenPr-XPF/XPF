@@ -9,7 +9,7 @@ Last updated: 2019-10-04
 
 # Background
 
-**Language family**: language isolate
+**Language Family:** Language Isolate
 
 * Yuracare is spoken in central Bolivia.
 
@@ -21,10 +21,10 @@ Last updated: 2019-10-04
 * @VanGijn2006 explains that /dʲ/ is an affricate without fricativization (p. 23); however, this implies that it is merely a palatalized stop, which I have opted to treat as such in the inventory.
 * Although /h/ is said to be in complementary distribution with /k/ most of the time, there are instances where the distribution is not predictable, thus I will treat /h/ as an independent phoneme, just as @VanGijn2006 does (pp. 24-25).
 * Consonants that appear in loanwords from other language inventories are often altered [@VanGijn2006, pp. 26-27]:
-    - /f/ is realized as /p/   
-    - /ʎ/ is realized as /l/   
-    - /r/ is realized as /ɹ/   
-    - /g/ is realized as /h/ or /k/  
+    - /f/ is realized as [p]   
+    - /ʎ/ is realized as [l]   
+    - /r/ is realized as [ɹ]   
+    - /ɡ/ is realized as [h] or [k]  
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -52,7 +52,7 @@ Last updated: 2019-10-04
 ## Vowels
 
 * Orthographically, duplicate vowels exist [@VanGijn2006, pp. 27-28]; however, vowel length is not contrastive. Rather, they are realized as part of different syllables (p. 44).
-* Vowel harmony is present during affixation among non-high vowels [@VanGijn2006, pg. 35].
+* Vowel harmony is present during affixation among non-high vowels [@VanGijn2006, p. 35].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -70,7 +70,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* The Crubadan corpus seems to follow the orthography of @Ribera1991 [as cited in @VanGijn2006, p. 30] Therefore, I will base my transcription off that source.
+* The Crúbadán corpus seems to follow the orthography of @Ribera1991 [as cited in @VanGijn2006, p. 30] Therefore, I will base my transcription off that source.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -93,7 +93,7 @@ Grapheme        Phoneme           Comment
 "r"              "/ɹ̝/"              ""
 "s"              "/s/"              ""
 "t"              "/t/"              ""
-"u"          "/u/ or /w/"   "/w/: syllable finally"  
+"u"            "/u/; /w/"   "/w/: syllable finally"  
 "ü"              "/ɨ/"              ""
 "y"              "/j/"              ""
 **Digraph**       ""                ""

@@ -5,11 +5,11 @@ bibliography: mk.bib
 output: html_document
 ---
 
-Last Updated: October 7, 2019
+Last Updated: 2020-06-15
 
 # Background
 
-**Language Family:** Indo-European, Balto-Slavic, Slavic, South Slavic, Eastern South Slavic, Macedonian
+**Language Family:** Indo-European / Balto-Slavic / Slavic / South / Eastern
 
 * Macedonian is spoken in a multitude of places, including, but not limited to, Macedonia, Albania, Montenegro, Bulgaria, and Greece.
 
@@ -63,7 +63,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* There is much variation regarding the realization of ⟨л⟩ and ⟨љ⟩ [@Friedman2001, pp. 11-12; @Kramer2011, pp. 3-4]. ⟨л⟩ is said to represent /l/ preceding front vowels and /j/ and represent /ɫ/ elsewhere. However, younger generations have started to be more liberal with using /ɫ/. This would suggest that the two represented phonemes are actually allophones; however, ⟨љ⟩ represents /l/ (before back vowels, consonants (except /j/) and word-finally). Younger speakers extend velarization to this environment as well. Given that both phonemes can occur in the same environment, it's important to keep the distinction.
+* There is much variation regarding the transcription of ⟨л⟩ and ⟨љ⟩ [@Friedman2001, pp. 11-12; @Kramer2011, pp. 3-4]. ⟨л⟩ is said to represent /l/ preceding front vowels and /j/, and represent /ɫ/ elsewhere. This would suggest that the two represented phonemes are actually allophones. However, younger generations have started to be more liberal with using /ɫ/. ⟨љ⟩ represents /l/ (before back vowels, consonants (except /j/) and word-finally). Younger speakers extend velarization to this environment as well, making it so /l/ and /ɫ/ appear in like-environments. It is unclear if this is reflective of a diachronic change with /l/ losing phonemic status in the language, but as of now, I have opted to keep/reflect the distinction.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -82,8 +82,8 @@ alphabet <- read.table(textConnection('
       "и"	                     "i"                       "/i/"                  ""
       "j"                      "j"                       "/j/"                  ""
       "к"	                     "k"                       "/k/"                  ""
-      "л"	                     "l"                    "/ɫ̪/; /l/"     "/l/ before front vowels and /j/"
-      "љ"                      "lj"                      "/l/"                 "/l/ before back vowels, consonants (except /j/), and word-finally"
+      "л"	                     "l"                    "/ɫ̪/; /l/"         "/l/: before front vowels and /j/"
+      "љ"                      "lj"                      "/l/"           "/l/: before back vowels, consonants (except /j/), and word-finally"
       "м"	                     "m"                       "/m/"                  ""
       "н"	                     "n"                       "/n̪/"                  ""
       "њ"	                     "nj"                      "/ɲ/"                  ""
@@ -104,7 +104,7 @@ alphabet <- read.table(textConnection('
 
       kable(alphabet, col.names = c("Cyrillic Grapheme", "Romanized Grapheme/Multigraph", "Phoneme", "Comment"), align = 'c') %>%
         kable_styling("bordered")
-      ```
+    ```
 
 # Lenition Rules
 

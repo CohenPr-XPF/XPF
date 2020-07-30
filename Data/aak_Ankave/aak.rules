@@ -1,11 +1,11 @@
 # Ankave Rule Set
-# Written by Jordan
+# Written by Jordan Schuster
 # Last Updated: 2019-11-18
 type,sfrom,sto,weight,precede,follow,comment
-# Class rules
+# Class Rules
 class,passthrough,[aeikxmnŋopstuw],,,,
 class,apostrophe,[ꞌ'ˈ‘’ʼ],,,,
-class,punct,[-–‘],,,,
+class,punct,[-–],,,,
 # Individual Letters
 sub,b,ᵐb,3,,,
 sub,d,ⁿd,3,,,
@@ -16,4 +16,5 @@ sub,j,ⁿdz,3,,,
 sub,y,j,3,,,
 sub,{apostrophe},ʔ,3,,,
 sub,({passthrough}),\1,2,,,
+# Misc. Rules
 sub,{punct},,1,,,

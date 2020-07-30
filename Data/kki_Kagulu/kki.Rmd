@@ -5,11 +5,11 @@ bibliography: kki.bib
 output: html_document
 ---
 
-Last updated: 2019-10-31
+Last updated: 2020-06-05
 
 # Background
 
-**Language family**: Niger-Congo / Atlantic-Congo / Volta-Congo / Benue-Congo / Bantoid / Southern / Narrow Bantu / East / Northeast Savanna Bantu / Northeast Coastal Bantu / Ruvu
+**Language Family:** Niger-Congo / Atlantic-Congo / Volta-Congo / Benue-Congo / Bantoid / Southern / Narrow Bantu / East / Northeast Savanna Bantu / Northeast Coastal Bantu / Ruvu
 
 * Kagulu is spoken in Eastern Tanzania.
 
@@ -37,7 +37,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 6)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: Where three phonemes share a cell, they are ordered voiceless, voiced, prenasalized. Where two phonemes share a cell, they are ordered voiceless and voiced.", general_title = "")
+  footnote(general = "Note: Where three phonemes share a cell, they are ordered voiceless, voiced, and prenasalized. Where two phonemes share a cell, they are ordered voiceless and voiced.", general_title = "")
 ```
 
 ## Vowels
@@ -63,39 +63,39 @@ kable(vowels, align = 'c') %>%
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
-Grapheme      Phoneme  
-"a"             "a"
-"b"             "b"
-"d"             "d"
-"e"             "e"
-"f"             "f"
-"g"             "ɡ"
-"h"             "h"
-"i"             "i"
-"j"             "dʒ"
-"k"             "k"
-"l"             "l"
-"m"             "m"
-"n"             "n"
-"o"             "o"
-"p"             "p"
-"s"             "s"
-"t"             "t"
-"u"             "u"
-"w"             "w"
-"y"             "j"
+Grapheme       Phoneme  
+"a"             "/a/"
+"b"             "/b/"
+"d"             "/d/"
+"e"             "/e/"
+"f"             "/f/"
+"g"             "/ɡ/"
+"h"             "/h/"
+"i"             "/i/"
+"j"             "/dʒ/"
+"k"             "/k/"
+"l"             "/l/"
+"m"             "/m/"
+"n"             "/n/"
+"o"             "/o/"
+"p"             "/p/"
+"s"             "/s/"
+"t"             "/t/"
+"u"             "/u/"
+"w"             "/w/"
+"y"             "/j/"
 **Multigraph**  ""
-"ch"            "tʃ"
-"mb"            "ᵐb"
-"mh"            "m̥"
-"nd"            "ⁿd"
-"nj"            "ⁿdʒ"
-"nh"            "n̥"
-"ng\'"           "ŋ"
-"ng"            "ᵑɡ"
-"ng\'h"          "ŋ̥"
-"ny"            "ɲ"
-"sh"            "ʃ"
+"ch"            "/tʃ/"
+"mb"            "/ᵐb/"
+"mh"            "/m̥/"
+"nd"            "/ⁿd/"
+"nj"            "/ⁿdʒ/"
+"nh"            "/n̥/"
+"ng\'"          "/ŋ/"
+"ng"            "/ᵑɡ/"
+"ng\'h"         "/ŋ̥/"
+"ny"            "/ɲ/"
+"sh"            "/ʃ/"
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
@@ -104,8 +104,8 @@ kable(alphabet, align = 'c') %>%
 
 # Misc. Rules
 
-* Excluding the digraphs listed above, consonant clusters are not permitted in Kagulu [@Petzell2008, p. 41]. Adjacent consonants (as in loanwords) are separated by an epenthetic vowel.
+* Consonant clusters are not permitted in Kagulu, which provides further evidence for the multigraphs listed above to be representative of single phonemes [@Petzell2008, p. 41]. Adjacent consonants (through in loanwords) are separated by an epenthetic vowel.
 * Adjacent vowels are also not allowed in Kagulu [@Petzell2008, pp. 42-45]. If this occurs, such that /i/ or /u/ precedes a vowel, they become the glides [j] and [w]. Also, if this occurs through affixation, the first vowel may be deleted or the two vowels coalesce.
-* Vowel harmony is present in the language [@Petzell2008, p. 45].
+* Vowel harmony based mainly on height is present in the language [@Petzell2008, p. 45].
 
 # References

@@ -9,7 +9,7 @@ Last updated: 2019-11-06
 
 # Background
 
-**Language family**: Trans-New Guinea / Madang / Croisilles / Mabuso / Hanseman / Garuh-Foran
+**Language Family**: Trans-New Guinea / Madang-Adelbert Range / Madang / Mabuso / Hanseman
 
 * Nobonob is spoken in the Madang province of Papua New Guinea.
 
@@ -41,7 +41,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 5)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: The voiceless stops are ordered plain and long and the voiced stops are ordered plain and implosive.", general_title = "")
+  footnote(general = "Note: The voiceless stops are ordered plain and geminate and the voiced stops are ordered plain and implosive.", general_title = "")
 ```
 
 ## Vowels

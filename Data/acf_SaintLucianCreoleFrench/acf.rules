@@ -1,9 +1,9 @@
 # St. Lucian Creole Rule Set
 # Written by: Emily
-# Last updated: 09-11-2019
+# Last Updated: 2019-09-11
 type,sfrom,sto,weight,precede,follow,comment
 # Classes
-class,passthrough,[abdfghiklmnopstvwz],,,,
+class,passthrough,[abdfhiklmnopstvwz],,,,
 class,nasalv,[aeo],,,,
 class,punct,[ꞌ'ˈ‘ʼ-],,,,
 # Individual Letters
@@ -32,5 +32,6 @@ sub,a,ã,3,,n,
 sub,e,ẽ,3,,n,
 sub,o,õ,4,,n,
 sub,n,,4,{nasalv},,
-# Unnecessary Punctuation
+sub,g,ɡ,4,{nasalv}n,,"prevents /g/ from being deleted after nasal vowels"
+# Misc. Rules
 sub,{punct},,2,,,

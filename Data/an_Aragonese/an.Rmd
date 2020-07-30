@@ -5,17 +5,18 @@ bibliography: an.bib
 output: html_document
 ---
 
-Last updated: 2019-10-24
+Last Updated: 2020-06-25
 
 # Background
 
-**Language family**: Indo-European / Italic / Romance / Western / Ibero-Romance / Aragonese
+**Language family**: Indo-European / Italic / Romance / Italo-Western / Western / Pyrenean-Mozarabic / Pyrenean
 
 * Aragonese is spoken in Portugal and Spain.
 
 # Phonology
 
 ## Consonants
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, restults = 'asis'}                                                                               
 consonants <- read.table(textConnection('
 "Manner of Articulation"          Labial   Dental Alveolar Postalveolar Palatal Velar     
@@ -37,7 +38,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 
 ## Vowels
 
-* There is an abundance of diphthongs and triphthongs in Aragonese; however it is unclear how they are treated (as complex phonemes or sequences). @mott_chistabino_2007 explains that in order to preserve the CV syllable structure, thus avoiding "vowels in hiatus," dipthongs and triphthongs are present whenever juxtaposing vowels are in succession (pp. 108-110). On the other hand, @Aragonesa2017 explains that consecutive juxtaposing vowels are not always part of the same syllable, implying that vowel combinations can merely be sequences (p. 4). Because of this ambiguity, diphthongs and triphthongs will not be represented in the rules.
+* There is an abundance of diphthongs and triphthongs in Aragonese; however it is unclear how they are treated (e.g. as complex phonemes or sequences). @mott_chistabino_2007 explains that in order to preserve the CV syllable structure, thus avoiding "vowels in hiatus," diphthongs and triphthongs are present whenever juxtaposing vowels are in succession (pp. 108-110). On the other hand, @Aragonesa2017 explains that consecutive juxtaposing vowels are not always part of the same syllable, implying that vowel combinations can merely be sequences (p. 4). Because of this ambiguity, diphthongs and triphthongs will not be represented in the rules.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -75,13 +76,12 @@ Grapheme      Phoneme                           Comment
 "n"            "/n/"                              ""
 "o"            "/o/"                              ""
 "p"            "/p/"                              ""
-"q"            "/k/"                              ""
 "r"         "/r/; /ɾ/"                   "/r/: word-initially"
 "s"            "/s/"                              ""
 "t"            "/t̪/"                              ""
 "u"            "/u/"                              ""
 "v"            "/b/"                              ""
-"x"            "/ʃ/"                              ""
+"x"            "/ʃ/"                  "may be realized as [ks]"
 "y"            "/ʝ/"                              ""
 "z"            "/θ/"                              ""
 **Digraph**     ""                                ""
@@ -106,11 +106,11 @@ kable(alphabet, align = 'c') %>%
 * /k/ is often deleted word-finally [@sanchez_pitarch_propuesta_2010, p. 5].
 * Voiced stops become fricatives between vowels [@mott_chistabino_2007, pp. 104-105].
 * /d/ is often deleted completely between vowels (ibid.).
-* Very often, the voiced approximants in Chistabino are reduced to zero by assimilation to following consonants, as in "ilesia" [i'lesja] ("church" = iglesia") [@mott_chistabino_2007, p. 105].
 * In syllable-final positions, /s/ may become voiced preceding voiced consonants [@Ledgeway2016, p. 389].
 
 # Misc. Rules
 
+* Very often, the voiced approximants in Chistabino are reduced to zero by assimilation to following consonants, as in "ilesia" [i'lesja] ("church") [@mott_chistabino_2007, p. 105].
 * Nasal consonants assimilate to the place of articulation of the following obstruent [@mott_chistabino_2007, p. 106].
 * /l/ assimilates to the place of the following interdental, dental, or palatalized consonant [@mott_chistabino_2007, p. 7].
 

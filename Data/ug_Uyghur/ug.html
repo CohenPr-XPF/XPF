@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -147,6 +146,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -184,10 +184,10 @@ summary {
 </div>
 
 
-<p>Last Updated: 2019-03-13</p>
+<p>Last Updated: 2020-07-02</p>
 <div id="background" class="section level1">
 <h1>Background</h1>
-<p><strong>Language Family</strong>: Turkic / Common Turkic / Karluk / Uyghur</p>
+<p><strong>Language Family:</strong> Turkic / Common Turkic / Karluk / Uyghur</p>
 <ul>
 <li>Uyghur is spoken in northwestern China.</li>
 </ul>
@@ -198,8 +198,8 @@ summary {
 <h2>Consonants</h2>
 <ul>
 <li><span class="citation">Memtimin (2016)</span> lists the aspirated forms of voiceless stops as their underlying phonemes; <span class="citation">Hahn (1991)</span> does not, but does include aspirated forms of those sounds (plus /tʃ/) as common allophones. I have judged it more likely that the simple forms of these consonants are the underlying ones.</li>
-<li>According to Hahn, /v/ is phonemic in some nonstandard dialects <span class="citation">(Hahn 1991, 59)</span>; according to <span class="citation">Memtimin (2016)</span>, it’s an allophone of /w/. Either way, it does not appear to merit inclusion in the ruleset.</li>
-<li>Hahn lists /χ/ and /ɢ/ rather than /x/ and /ɣ/ <span class="citation">(Hahn 1991, 59)</span>; interestingly, though, he mentions that “in most environments /ɢ/ is phonetically realized as a fricative” (ibid., p. 60).</li>
+<li>According to <span class="citation">Hahn (1991)</span>, /v/ is phonemic in some nonstandard dialects (p. 59); according to <span class="citation">Memtimin (2016)</span>, it’s an allophone of /w/. Either way, it does not appear to merit inclusion in the ruleset.</li>
+<li><span class="citation">Hahn (1991)</span> lists /χ/ and /ɢ/ rather than /x/ and /ɣ/ (p. 59); interestingly though, he mentions that “in most environments /ɢ/ is phonetically realized as a fricative” (p. 60).</li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -401,7 +401,7 @@ Back
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;font-weight: bold;">
 High
 </td>
 <td style="text-align:center;">
@@ -412,7 +412,7 @@ u
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;font-weight: bold;">
 Mid
 </td>
 <td style="text-align:center;">
@@ -423,7 +423,7 @@ o
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;font-weight: bold;">
 Low
 </td>
 <td style="text-align:center;">
@@ -446,12 +446,13 @@ Low
 </div>
 <div id="alphabet" class="section level1">
 <h1>Alphabet</h1>
-<p>The Uyghur Arabic alphabet is the most common orthography in Uyghur; it has been the official script of the language since 1982, and it has by far the largest Crubadan corpus of the various Uyghur scripts. Cyrillic and Latin scripts do also exist, however, and will be factored into the rulesets.</p>
+<p>The Uyghur Arabic alphabet is the most common orthography in Uyghur; it has been the official script of the language since 1982, and it has by far the largest Crúbadán corpus of the various Uyghur scripts. Cyrillic and Latin scripts do also exist, however, and will be factored into the rulesets.</p>
 <div id="arabic" class="section level2">
 <h2>Arabic</h2>
 <ul>
 <li>Vowels in the Uyghur Arabic alphabet are formed from the combination of two characters. The first is ⟨ئ⟩, which carries no phonetic value but serves as a “base” upon which different vowel characters are appended; the second is the affixed character, which marks <em>which</em> of the vowels is being written.</li>
-<li>For each vowel, the alphabet shown here features both the affix and the full combined character. <strong>The (column) representation for phonemes that have both a grapheme and an affix are switched. That is, in the .Rmd file, the affix is in the grapheme column and the grapheme is in the affix column. The rendering of the html_document flips them, thus having the correct representation.</strong></li>
+<li>For each vowel, the alphabet shown here features both the affix and the full combined character. <strong>The (column) representation for phonemes that have both a grapheme and an affix are switched in the Rmd file. That is, in the Rmd file, the affix is in the grapheme column and the grapheme is in the affix column. The rendering of the html document flips them, thus having the correct representation.</strong></li>
+<li><strong>Note:</strong> /ʒ/ is not represented in the Uyghur (Arabic script) Crúbadán corpus.</li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -1075,7 +1076,7 @@ Phoneme
 <div id="latin" class="section level2">
 <h2>Latin</h2>
 <ul>
-<li>I opted not to build a ruleset for the Latin script, because the Crubadan corpus for Latin-script Uyghur only has around 150,000 words. See <span class="citation">Janbaz, Waris Abdukerim and Duval, Jean Rahman (2006)</span> for further insight on this script.</li>
+<li>I opted not to build a ruleset for the Latin script, because the Crúbadán corpus for Latin-script Uyghur only has around 150,000 words. See <span class="citation">Janbaz, Saleh, and Duval (2006)</span> for further insight on this script.</li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -1340,7 +1341,7 @@ w
 /e/
 </td>
 <td style="text-align:center;">
-sometimes ⟨é⟩ <span class="citation">(Janbaz, Waris Abdukerim and Duval, Jean Rahman 2006, 9)</span>
+sometimes ⟨é⟩ <span class="citation">(Janbaz, Saleh, and Duval 2006, 9)</span>
 </td>
 </tr>
 <tr>
@@ -1429,7 +1430,6 @@ ng
 <div id="syllable-structure" class="section level1">
 <h1>Syllable Structure</h1>
 <ul>
-<li>Sentences are SOV.</li>
 <li>Consonant clusters are prohibited in onsets; in codas, clusters are allowed if they comprise a nasal or a liquid followed by a stop <span class="citation">(Memtimin 2016, 15–16)</span>.</li>
 </ul>
 </div>
@@ -1438,10 +1438,15 @@ ng
 <ul>
 <li>/r/ and /l/ are often dropped in casual speech <span class="citation">(Memtimin 2016, 15)</span>.</li>
 <li>/b/ spirantizes to [β] intervocalically or before liquids <span class="citation">(Hahn 1991, 61)</span>.</li>
-<li>/t/ and /tʃ/ assimilate fully to following /s/ sounds <span class="citation">(Hahn 1991, 62–63, 70)</span>.</li>
 <li>/t/ is deleted word-finally, or when between two consonants <span class="citation">(Hahn 1991, 63)</span>.</li>
 <li>/q/ spirantizes to [χ] before non-uvular consonants <span class="citation">(Hahn 1991, 67)</span>.</li>
 <li>/tʃ/ and /dʒ/ reduce (to [ʃ] and [ʒ] respectively) syllable-finally <span class="citation">(Hahn 1991, 70)</span>.</li>
+</ul>
+</div>
+<div id="misc.-rules" class="section level1">
+<h1>Misc. Rules</h1>
+<ul>
+<li>/t/ and /tʃ/ assimilate fully to following /s/ sounds <span class="citation">(Hahn 1991, 62–63, 70)</span>.</li>
 <li>/ŋ/ backs to [ɴ] when followed by a back vowel or uvular consonant; this pattern also occurs word-finally if preceded by a back vowel or /i/ <span class="citation">(Hahn 1991, 76)</span>.</li>
 </ul>
 </div>
@@ -1452,7 +1457,7 @@ ng
 <p>Hahn, Reinhard F. 1991. <em>Spoken Uyghur</em>. University of Washington Press.</p>
 </div>
 <div id="ref-UgJanbaz2006">
-<p>Janbaz, Waris Abdukerim, Saleh, Imad, and Duval, Jean Rahman. 2006. “An Introduction to Latin-Script Uyghur.”</p>
+<p>Janbaz, Waris Abdukerim, Imad Saleh, and Jean Rahman Duval. 2006. “An Introduction to Latin-Script Uyghur.” In.</p>
 </div>
 <div id="ref-UgMemtimin2016">
 <p>Memtimin, Aminem. 2016. <em>Language Contact in Modern Uyghur</em>. Harrassowitz Verlag.</p>

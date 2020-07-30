@@ -5,16 +5,19 @@ bibliography: bi.bib
 output: html_document
 ---
 
+Last Updated: 2020-06-23
+
 # Background
 
-**Language family**: Creole, English-based, Pacific
+**Language family**: Creole / English-based / Pacific
 
 * Bislama is a relatively new language (from the mid 19th century) that is the national language of Vanuatu, a Pacific island country. Bislama is a creole language that has some basis in English [@crowley2004, pp. 1-2].
 
 # Phonology
+
 ## Consonants
 
-* Not all speakers make a contrast between voiced and voiceless stops. Not all speakers make a contrast between /v/ and /f/ [@crowley2004, p. 14].
+* Not all speakers make a contrast between voiced and voiceless stops and between /v/ and /f/ [@crowley2004, p. 14].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -42,7 +45,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Although diphthongs are apparent in Bislama, there is much controversy around them being seen as complex phonemes or vowel sequences. I have chosen not to include them in the inventory based on the argument that they are vowel sequences [@Lynch1975, p. 195].
+* Although consecutive vowels are apparent in Bislama, there is much controversy around their interpretation as complex phonemes or vowel sequences. I have chosen not to include them in the inventory based on the argument that they are representative of vowel sequences [@Lynch1975, p. 195].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -72,22 +75,22 @@ Grapheme      Phoneme
 "g"            "/ɡ/"
 "h"            "/h/"
 "i"            "/i/"
-"j"           "/tʃ/"
-"k"           "/k/"
-"l"           "/l/"
-"m"           "/m/"
-"n"           "/n/"
-"o"           "/o/"
-"p"           "/p/"
-"r"           "/ɾ/"
-"s"           "/s/"
-"t"           "/t/"
-"u"           "/u/"
-"v"           "/v/"
-"w"           "/w/"
-"y"           "/j/"
-**Digraphs**   ""
-"ng"           "ŋ"
+"j"            "/tʃ/"
+"k"            "/k/"
+"l"            "/l/"
+"m"            "/m/"
+"n"            "/n/"
+"o"            "/o/"
+"p"            "/p/"
+"r"            "/ɾ/"
+"s"            "/s/"
+"t"            "/t/"
+"u"            "/u/"
+"v"            "/v/"
+"w"            "/w/"
+"y"            "/j/"
+**Digraph**    ""
+"ng"           "/ŋ/"
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%

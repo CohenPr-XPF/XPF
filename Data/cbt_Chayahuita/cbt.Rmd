@@ -5,11 +5,11 @@ bibliography: cbt.bib
 output: html_document
 ---
 
-Last Updated: 2019-05-03
+Last Updated: 2020-06-26
 
 # Background
 
-**Language Family**: Cahuapanan / Chayahuita
+**Language Family**: Cahuapanan
 
 * The language is known by several names, the most common of which are Chayahuita and Shawi.
 * Chayahuita is spoken within the Loreto and San Martin regions in northern Peru, and along the Paranapura, Cahuapanas, Sillay, and Shanusi rivers.
@@ -19,10 +19,10 @@ Last Updated: 2019-05-03
 ## Consonants
 
 * /β/ is attested as phonemic in @CbtPhonemesUCB, but is described as allophonic in @CbtBarraza2005 (see the Misc. Rules section).
-* Neither glottal consonant is attested as phonemic in @CbtHart1976.
-* @CbtHart1976 and @CbtBarraza2005 both list /r/ as a "vibrant," a general term that could mean either a trill or a tap; because @CbtPhonemesUCB comes down decisively on the side of the tap, I have opted for that analysis.
+* @CbtHart1976 and @CbtBarraza2005 both list /r/ as a "vibrant," a general term that could mean either a trill or a flap; because @CbtPhonemesUCB comes down decisively on the side of the flap, I have opted for that analysis.
+* /ʔ/ and /h/ only contrast before voiceless consonants; otherwise, only /ʔ/ is attested [@CbtBarraza2005, p. 53]. Because of this, and because of the lack of clear attestation of /h/ in the orthography (i.e. sometimes, but not always, ⟨h⟩ is marked), I have opted to only use /ʔ/.
+    - Neither glottal consonant is attested as phonemic in @CbtHart1976.
 * /ɾ/ and the glottal consonants do not occur word-initially [@CbtBarraza2005, p. 47].
-* /ʔ/ and /h/ only contrast before voiceless consonants; otherwise, only /ʔ/ is attested [@CbtBarraza2005, p. 53]. Because of this, and because of the lack of clear attestation of /h/ in the orthography, I have opted to only use /ʔ/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -37,7 +37,7 @@ Stops                          "p"      "t"       ""            ""        "k"   
 Affricates                     ""       ""        "tʃ"          ""        ""     ""
 Fricatives                     ""       "s"       "ʃ"           ""        ""     ""
 Nasals                         "m"      "n"       ""            ""        ""     ""
-Taps                           ""       "ɾ"       ""            ""        ""     ""
+Flaps                          ""       "ɾ"       ""            ""        ""     ""
 Approximants                   "w"      ""        ""            "j"       ""     ""
 '), TRUE)
 
@@ -49,7 +49,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* @CbtHart1976 lists four suprasegmental features that can be added to vowels: /ˑ/, /ʰ/, /ˀ/, and /ⁿ/ (p. 2). These do not seem, however, to be phonemic.
+* @CbtHart1976 list four suprasegmental features that can be added to vowels: (length) /ː/, (aspiration) /ʰ/, (glottalization) /ˀ/, and (nasalization) /◌̃/ (p. 2). These do not seem, however, to be phonemic.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('
@@ -65,32 +65,31 @@ kable(consonants, align = 'c') %>%
 
 # Alphabet
 
-* I have opted to omit /h/, which does not seem to be consistently written and which is only contrastive in a handful of situations. See the "Consonants" section above for more details.
-* Spanish loanwords into Chayahuita incorporate several letters not used in native words: ⟨d e f j l ñ u z⟩. [@CbtOrthography] However, these rarely occur, so I have omitted them from the ruleset.
+* Spanish loanwords into Chayahuita incorporate several letters not used in native words: ⟨d e f j l ñ u z⟩ [@CbtOrthography]. However, these rarely occur, so I have omitted them from the ruleset.
 * The acute accent indicates "emphasis or intensity" but does not carry phonemic value [@CbtOrthography].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
-Grapheme     Phoneme          Comment
-"a"           "/a/"             ""
-"c"           "/k/"             ""
-"ë"           "/ɨ/"             ""
-"i"          "/i/"              ""
-"m"          "/m/"              ""
-"n"          "/n/"              ""
-"o"          "/u/"              ""
-"p"          "/p/"              ""
-"q"          "/k/"   "typically followed by ⟨u⟩"  
-"r"          "/ɾ/"              ""
-"s"          "/s/"              ""
-"t"          "/t/"              ""
-"y"          "/j/"              ""
+Grapheme     Phoneme           Comment
+"a"           "/a/"              ""
+"c"           "/k/"              ""
+"ë"           "/ɨ/"              ""
+"i"           "/i/"              ""
+"m"           "/m/"              ""
+"n"           "/n/"              ""
+"o"           "/u/"              ""
+"p"           "/p/"              ""
+"q"           "/k/"     "typically followed by ⟨u⟩"  
+"r"           "/ɾ/"              ""
+"s"           "/s/"              ""
+"t"           "/t/"              ""
+"y"           "/j/"              ""
 "\'"          "/ʔ/"              ""
-**Digraph**   ""                ""
-"ch"         "/tʃ/"             ""
-"hu"          "/w/"             ""
-"sh"         "/ʃ/"              ""
+**Digraph**    ""                ""
+"ch"          "/tʃ/"             ""
+"hu"          "/w/"              ""
+"sh"          "/ʃ/"              ""
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
@@ -103,27 +102,27 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* /w/ deletes in the following sequences: /uwa, uwi/ [@CbtBarraza2005, p. 44].
-* /j/ deletes when preceded by /i/ and followed by /a/ (ibid.).
 * Root-final nasals delete in suffixed words [@CbtBarraza2005, p. 45-46].
 * Consonants voice when (1) preceded by a nasal or (2) occurring in the third or later syllable of a word [@CbtBarraza2005, pp. 48-49; @CbtHart1976, pp. 5-6].
-   * However, consonants will not voice in /ʔ/-final syllables (ibid.).
-   * For some speakers, especially near the Cahuapanas River, consonants in such positions weaken even farther, either becoming a glide or deleting completely [@CbtBarraza2005, p. 49].
+    * However, consonants do not voice in /ʔ/-final syllables (ibid.).
+    * For some speakers, especially near the Cahuapanas River, consonants in such positions weaken even farther, either becoming a glide or deleting completely [@CbtBarraza2005, p. 49].
 * Suffix-initial consonants are deleted when between two identical vowels. In such cases, the adjacent vowels are produced as a single long vowel [@CbtBarraza2005, p. 50].
-* Nasals assimilate to the place of articulation of following consonants [@CbtBarraza2005, p. 51; @CbtHart1976, p. 7].
-* /s/ palatalizes to [ʃ] before /i/; in this environment, the contrast between /s/ and /ʃ/ is neutralized [@CbtBarraza2005, p. 52].
-   * Similarly, word-medial /t/ goes to [tʃ] before /i/ [@CbtBarraza2005, pp. 52-53].
-* When occurring after a consonant-final syllable, /ɾ/ nasalizes to [n] [@CbtBarraza2005, p. 55].
 * Word-final nasals delete, and nasalize their preceding vowel [@CbtBarraza2005, p. 56].
-* In the sequence /tuɾu/, the first /u/ deletes [@CbtBarraza2005, p. 57].
-* The sequence /wɨ/ collapses to [u] word-finally (ibid.).
 
 # Misc. Rules
 
+* /w/ deletes in the following sequences: /uwa, uwi/ [@CbtBarraza2005, p. 44].
+* /w/ spirantizes to [β] before /i/ [@CbtBarraza2005, pp. 51-52; @CbtHart1976, p. 7].
+* /j/ deletes when preceded by /i/ and followed by /a/ (ibid.).
 * Various minimal pairs can be found on pages 39-42 of @CbtBarraza2005.
 * When a vowel-initial suffix is added onto the end of a vowel-final root, the consecutive vowels are reanalyzed into a diphthong [@CbtBarraza2005, p. 45].
-* /p/ and /m/ are produced as /pʷ/ and /mʷ/ when before /ɨ/ [@CbtBarraza2005, p. 51; @CbtHart1976, p. 5].
-* /w/ spirantizes to [β] before /i/ [@CbtBarraza2005, pp. 51-52; @CbtHart1976, p. 7].
+* /p/ and /m/ are produced as [pʷ] and [mʷ] when before /ɨ/ [@CbtBarraza2005, p. 51; @CbtHart1976, p. 5].
 * Epenthesis of /ʔ/ occurs at the end of monosyllabic roots, as well as between root-medial identical vowels [@CbtBarraza2005, p. 53].
+* Nasals assimilate to the place of articulation of following consonants [@CbtBarraza2005, p. 51; @CbtHart1976, p. 7].
+* /s/ palatalizes to [ʃ] before /i/; in this environment, the contrast between /s/ and /ʃ/ is neutralized [@CbtBarraza2005, p. 52].
+    * Similarly, word-medial /t/ goes to [tʃ] before /i/ [@CbtBarraza2005, pp. 52-53].
+* When occurring after a consonant-final syllable, /ɾ/ nasalizes to [n] [@CbtBarraza2005, p. 55].
+* In the sequence /tuɾu/, the first /u/ deletes [@CbtBarraza2005, p. 57].
+* The sequence /wɨ/ collapses to [u] word-finally (ibid.).
 
 # References

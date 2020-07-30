@@ -5,11 +5,11 @@ bibliography: gil.bib
 output: html_document
 ---
 
-Last-updated: 2019-10-25
+Last-updated: 2020-06-29
 
 # Background
 
-**Language family**: Austronesian / Malayo-Polynesian / Central-Eastern/ Eastern Malayo-Polynesian / Oceanic / Micronesian / Nuclear Micronesian / Central Micronesian
+**Language Family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Central-Eastern Oceanic / Remote Oceanic / Micronesian / Micronesian Proper / Ikiribati
 
 * Also referred to as Gilbertese, Kiribati is spoken on the Solomon Islands, located just east of Papua New Guinea.
 
@@ -29,7 +29,7 @@ consonants <- read.table(textConnection('
 Stops                      "p pˠ"        "t"        "k"       
 Fricatives                  "βˠ"         ""          ""
 Nasals                   "m  mː  mˠ"    "n  nː"    "ŋ  ŋː"
-Flaps                        ""           "ɾ"        ""
+Flaps                        ""          "ɾ"         ""
 '), TRUE)
 
 kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Velar"), align = 'c') %>%
@@ -89,8 +89,8 @@ kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
 
-# Lenition Rules
+# Misc. Rules
 
-  * /t/ spirantizes to [s] when followed by i in all dialects [@blevins1999trimoraic, p. 206].
+* /t/ spirantizes to [s] when followed by /i/ in all dialects [@blevins1999trimoraic, p. 206].
 
 # References

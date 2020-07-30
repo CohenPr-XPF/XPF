@@ -2,7 +2,7 @@
 # Written by: Emily
 # Last Updated: 2019-10-15
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,passthrough,[abeiklmoprsuw],,,,
 class,apostrophe,[ʼ'ꞌˈ‘’],,,,
 class,ejective,(p|tʲ|k|ts|tʃ),,,,
@@ -28,13 +28,13 @@ sub,y,,3,t,,"clean-up",
 # Orthographic Variations
 sub,c,k,2,,,
 sub,q,k,2,,u,
-sub,u,,2,q,,"clean-up"
-sub,{apostrophe},k’,3,q,u,"exception to ejective rule",
+sub,u,,3,q,,"clean-up"
+sub,{apostrophe},kʼ,3,q,u,"exception to ejective rule",
 sub,q,,2,,{apostrophe}u,"clean-up",
-sub,u,,2,q{apostrophe},,"clean-up",
+sub,u,,3,q{apostrophe},,"clean-up",
 sub,t,ts,4,,z,
 sub,z,,3,t,,
 sub,ü,ɨ,2,,,
 sub,ʌ,ɨ,2,,,
 # Ejectives/Glottal Stops
-ipasub,({ejective}) ʔ,\1’,2,,,
+ipasub,({ejective}) ʔ,\1ʼ,2,,,

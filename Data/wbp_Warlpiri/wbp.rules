@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-08-09
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules 
 class,post-r,[lndrt],,,,
 class,pre-y,[ln],,,,
 class,vowel,[aiu],,,,

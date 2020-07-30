@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-06-21
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,apostrophe,['ꞌˈ‘’],,,,
 class,u-preceder,[hq],,,,
 class,passthrough,[aikmnopstw],,,,

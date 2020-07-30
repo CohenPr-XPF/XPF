@@ -1,6 +1,6 @@
 # Cyrillic Tatar Rule Set
 # Written by: Bill
-# Last Updated: 2018-11-27
+# Last Updated: 2020-06-19
 type,sfrom,sto,weight,precede,follow,comment
 # Individual Letters
 sub,а,ɑ,4,,,
@@ -34,8 +34,10 @@ sub,ү,y,4,,,
 sub,ф,f,4,,,
 sub,х,x,4,,,
 sub,һ,h,4,,,
+#sub,ц,ts,4,,,
 sub,ч,ɕ,4,,,
 sub,ш,ʃ,4,,,
+#sub,щ,ʃɕ,4,,
 sub,ъ,ʔ,4,,,
 sub,ы,ɤ,4,,,
 sub,ь,ʔ,4,,,

@@ -4,9 +4,12 @@ author: "Emily Strand"
 bibliography: var.bib
 output: html_document
 ---
+
+Last Updated: 2020-07-02
+
 # Background
 
-**Language family**: Uto-Aztecan / Southern / Sonoran / Tarahumaran / Guarijio
+**Language Family:** Uto-Aztecan / Southern / Sonoran / Tarahumaran / Guarijio
 
 * Also referred to as Guarijío, Huarijío is spoken in northwestern Mexico.
 
@@ -14,8 +17,8 @@ output: html_document
 
 ## Consonants
 
-* Consonants do not geminate [@Caballero2007, pg. 5].
-* Glottal stops only appear word-medially [@FelixArmendariz2005, pg. 11].
+* Consonants do not geminate [@Caballero2007, p. 5].
+* Glottal stops only appear word-medially [@FelixArmendariz2005, p. 11].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -44,7 +47,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 * Vowel length is not contrastive [@Caballero2007, p. 5]. However, free variation among long and short vowels does occur [@FelixArmendariz2005, p. 15].
     - When the repetition of vowels occurs, if the second one is stressed, they are realized as individual syllabic vowels rather than a long vowel [@FelixArmendariz2005, p. 15]. Duplicate vowels will be transcribed as short if the second one does not have a stress marking.
-* Accents are put over the vowels to indicate stress, but there's no indication that it affects the realization of the phoneme [@Miller1993, p. 25].
+* Accents are put over the vowels to indicate stress [@Miller1993, p. 25].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -100,8 +103,6 @@ kable(alphabet, align = 'c') %>%
 
 * Voiceless stops /p/ and /k/ become voiced intervocalically if the following vowel is not accented [@Miller1993, p. 25].
 * /t/ becomes /ɾ/ intervocalically in environments following a stressed syllable [@Miller1993, p. 25].
-* /s/ palatalizes preceding /i/[@Miller1993, p. 27].
-* Preceding /i/, /e/, and /u/, /ɾ/ may be realized as retroflex [@Miller1993, p. 27].
 
 # Misc. Rules
 
@@ -109,5 +110,7 @@ kable(alphabet, align = 'c') %>%
 * Reduplication of prefixes is abundant in Huarijío [@Haugen2014, p. 5].
 * Word-initial vowels may be preceded by /h/ or a glottal stop (rare) [@Miller1993, p. 28].
 * /w/ word-initially can be realized as [b] [@Miller1993, p. 27].
+* /s/ palatalizes preceding /i/ (ibid.).
+* Preceding /i/, /e/, and /u/, /ɾ/ may be realized as retroflex (ibid.).
 
 # References

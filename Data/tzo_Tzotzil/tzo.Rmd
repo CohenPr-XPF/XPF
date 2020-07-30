@@ -5,11 +5,11 @@ bibliography: tzo.bib
 output: html_document
 ---
 
-Last Updated: 2019-06-27
+Last Updated: 2020-07-02
 
 # Background
 
-**Language Family**: Mayan / Core Mayan / Cholan-Tzeltalan / Tzeltalan / Tzotzil
+**Language Family:** Mayan / Cholan-Tzeltalan / Tzeltalan
 
 * Tzotzil is spoken in the State of Chiapas located in southern Mexico.
 
@@ -64,7 +64,7 @@ kable(consonants, align = 'c') %>%
 
 # Alphabet
 
-* Some orthographies just use ⟨k⟩ and ⟨k'⟩ rather than ⟨c⟩, ⟨qu⟩, ⟨c'⟩, and ⟨q'u⟩ for representing velar stops.
+* Some orthographies just use ⟨k⟩ and ⟨k'⟩ rather than ⟨c⟩, ⟨qu⟩, ⟨c'⟩, and ⟨q'u⟩ for representing velar stops, but I have chosen to represent all variations below.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -112,10 +112,8 @@ kable(alphabet, align = 'c') %>%
 * Before stressed syllables that begin with consonants (other than /ʔ/), /k/ spirantizes to [x] and /v/ deletes entirely (ibid.).
 * /ʔ/ deletes after the following consonants: /k v j/ [@TzoCowan1969, p. 112].
 * /ʔ/ and /ʃ/ delete when followed by two consecutive non-/ʔ/ consonants [@TzoCowan1969, pp. 112-113].
-* Mid vowels delete before non-front vowels [@TzoCowan1969, p. 114].
-* Unstressed /i/ deletes before /a/ or /u/ (ibid.).
-* /t/ spirantizes to [ʃ] before the /-uk/ suffix [@TzoCowan1969, p. 115].
 * /h/ deletes before consonant clusters, or when preceded by an unstressed vowel and followed by a stressed vowel (ibid.).
+* Sequences of like-consonants (e.g. identical root-final and suffix-initial consonants) are realized identically to their single counterparts, except for /b/ [@TzoCowan1969, p. 111].
 
 # Misc. Rules
 
@@ -124,11 +122,13 @@ kable(alphabet, align = 'c') %>%
 * /b/ is generally realized as [ɓ] word-initially and intervocalically (ibid.).
 * Word-final /ɾ/ is trilled to [r] (ibid.).
 * Word-medial /v/ moves to [β] before /a/ (ibid.).
-* Doubled consonants (e.g. identical root-final and suffix-initial consonants) are realized identically to their single counterparts, except for /b/ [@TzoCowan1969, p. 111].
-* Before stressed syllables that begin with consonants (other than /ʔ/), /j/ deapproximantizes to /s/ (ibid.).
+* Before stressed syllables that begin with consonants (other than /ʔ/), /j/ de-approximantizes to /s/ [@TzoCowan1969, p. 111].
 * /ʃ/ moves to [s] before affricates [@TzoCowan1969, p. 112].
 * In the sequence /tʃkC/, where C is any consonant other than /ʔ/, /tʃ/ vocalizes to [ti] (ibid.).
-* /n/ assimilates to the place of following /b/ [@TzoCowan1969, p. 115].
+* Mid vowels delete before non-front vowels [@TzoCowan1969, p. 114].
+* Unstressed /i/ deletes before /a/ or /u/ (ibid.).
+* /t/ spirantizes to [ʃ] before the /-uk/ suffix [@TzoCowan1969, p. 115].
+* /n/ assimilates to the place of following /b/ (ibid).
 * /m/ moves to [n] after /VmV/ sequences [@TzoCowan1969, p. 116].
 
 # References

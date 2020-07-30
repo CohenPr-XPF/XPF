@@ -9,7 +9,7 @@ Last Updated: 2019-09-30
 
 # Background
 
-**Language Family**: Trans-New Guinea / Kainantu-Goroka / Goroka / Gahuku-Benabena / Benabena
+**Language Family**: Trans-New Guinea / Main Section / Central and Western / East New Guinea Highlands / East-Central / Gahuku-Benabena
 
 * Some sources hyphenate the language as Bena-Bena.
 * Benabena is spoken throughout the Goroka district of the Eastern Highlands province of Papua New Guinea.  
@@ -86,7 +86,7 @@ kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
 
-## Syllable Structure
+# Syllable Structure
 
 * Benabena has a (C)V(ʔ) syllable structure [@BefYoung1992, p. 2].
 

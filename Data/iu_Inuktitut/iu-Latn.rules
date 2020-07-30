@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-07-10
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules 
 class,vowel,[aiu],,,,
 class,passthrough,[aijklmnpqstuv],,,,
 class,punct,['‘’-],,,,

@@ -26,7 +26,7 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial    Alveolar    Palatal   Velar   Glottal
-Stops                       "p b"      "t d"         ""     "k ɡ"     ""
+Stops                       "p b"      "t d"        ""     "k ɡ"     ""
 Fricatives                   ""        "s"          ""      ""       "h"
 Nasals                       "m"       "n"          ""      ""       ""
 Trills                       ""        "r"          ""      ""       ""
@@ -60,7 +60,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* The documentation is somewhat unclear regarding the phonemic status of voiceless /w/, /m/, /n/, and /y/. @Laszlo1970 indicate that the language has these voiceless variants (p. 8), but just like @2011 (p. 1) and @Laycock1965 (p. 115), they do not actually specify them as phonemes. It appears that they are consonant sequences (/hw/, /hm/, /hn/, and /hy/) that result in phonetic devoicing. Orthographically, these combinations (/hw/, /hm/, /hn/, and /hy/) are written ⟨wh⟩, ⟨mh⟩, ⟨nh⟩, and ⟨yh⟩, respectively [@2011, p. 4; @Laszlo1970, p. 31]. The reason for a following rather than a preceding ⟨h⟩ is to distinguish between the sequence /hw/ and the labialized realization [hʷ]; to maintain consistency, all "voiceless" consonants are written with a following ⟨h⟩.    
+* The documentation is somewhat unclear regarding the phonemic status of voiceless /w/, /m/, /n/, and /y/. @Laszlo1970 indicate that the language has these voiceless variants (p. 8), but just like @2011 and @Laycock1965, they do not actually specify them as phonemes (p. 1; p. 115). It appears that they are consonant sequences (/hw/, /hm/, /hn/, and /hy/) that result in phonetic devoicing. Orthographically, these combinations (/hw/, /hm/, /hn/, and /hy/) are written ⟨wh⟩, ⟨mh⟩, ⟨nh⟩, and ⟨yh⟩, respectively [@2011, p. 4; @Laszlo1970, p. 31]. The reason for a following rather than a preceding ⟨h⟩ is to distinguish between the sequence /hw/ and the labialized realization [hʷ]; to maintain consistency, all "voiceless" consonants are written with a following ⟨h⟩.    
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

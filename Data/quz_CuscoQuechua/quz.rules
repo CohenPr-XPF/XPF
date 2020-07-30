@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-06-20
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules 
 class,apostrophe,[ꞌ'ˈ‘’],,,,
 class,can-be-asp,(ch|k|p|q|t),,,,
 class,can-be-ejec,(p|t|k|q|ch),,,,

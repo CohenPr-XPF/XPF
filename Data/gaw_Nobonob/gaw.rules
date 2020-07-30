@@ -5,7 +5,7 @@ type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
 class,passthrough,[abdehiklmnoptuw],,,,
 class,vowels,[aeiou],,,,
-class,prob,[pg],,,,
+class,macron_preceder,[ptkdg],,,,
 # Individual Letters
 sub,q,ɓ,2,,,
 sub,ḏ,ɗ,2,,,
@@ -24,4 +24,4 @@ sub,p,p ː,3,,̱,
 sub,t,t ː,3,,̱,
 sub,d,ɗ,3,,̱,
 sub,g,ɠ,3,,̱,
-sub,̱,,2,{prob},,
+sub,̱,,2,{macron_preceder},,

@@ -1,5 +1,5 @@
 # Macedonian - Latin Rule Set
-# Written by Jordan
+# Written by: Jordan
 # Last Updated: 2019-12-19
 type,sfrom,sto,weight,precede,follow,comment
 # Class rules
@@ -8,7 +8,7 @@ class,frontV-j,[ieј],,,,
 class,backV-C,[abvkmprufgdzosthc],,,,
 class,j-preceder,[glnkd],,,,
 class,h-preceder,[csz],,,,
-class,gem,[t̪d̪s̪z̪lmj],,,,
+class,gem,(t̪|d̪|s̪|z̪|l|m|j),,,,
 # Individual Letters
 sub,g,ɡ,3,,,
 sub,d,d̪,3,,,

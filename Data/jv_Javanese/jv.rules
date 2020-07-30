@@ -1,12 +1,12 @@
 # Javanese Rule Set (Latin Script)
 # Written by: Bill
-# Last Updated: 2019-02-08
+# Last Updated: 2020-06-03
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,alv-stop,[dt],,,,
 class,n-follower,[dgjy],,,,
 class,n-trigraph,(dh|gg),,,,
-class,passthrough,[abcfhiklmnoprsuw],,,,
+class,passthrough,[abchiklmnoprsuw],,,,
 # Individual Letters
 sub,d,d̪,4,,,
 sub,ḍ,ɖ,4,,,
@@ -16,6 +16,7 @@ sub,è,ɛ,4,,,
 sub,g,ɡ,4,,,
 sub,j,ɟ,4,,,
 sub,ô,ɔ,4,,,
+sub,q,ʔ,4,,,
 sub,t,t̪,4,,,
 sub,ṭ,ʈ,4,,,
 sub,y,j,4,,,

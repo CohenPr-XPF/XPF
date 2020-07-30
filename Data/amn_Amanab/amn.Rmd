@@ -5,11 +5,11 @@ bibliography: amn.bib
 output: html_document
 ---
 
-Last Updated: 2019-07-24
+Last Updated: 2020-06-24
 
 # Background
 
-**Language Family**: (Trans-New Guinea - debated) / Border / Waris / Amanab
+**Language Family**: Trans-New Guinea / Northern / Border / Waris
 
 * Amanab is spoken on the Sandaun province of Papua New Guinea.
 
@@ -17,10 +17,10 @@ Last Updated: 2019-07-24
 
 ## Consonants
 
-* @AmnMinch1991 argues against the presence of /ⁿd/ (p. 107).
+* @AmnMinch1992 argues against the presence of /ⁿd/ (p. 107).
 * @AmnSIL2001 argues for /ɸ/ rather than /f/, as well as for a series of /ᵑɡ/ and /ɣ/ rather than /ŋ/ and /ᵑɡ/ (p. 1).
 * @AmnPalmer2017 presents a general consonant inventory of the Border family, rather than for Amanab specifically, so his inventory features a handful of differences from the other sources.
-* @AmnSIL2001 includes /l/ as a phoneme (p. 1), but it seems to actually be an allophone of /ɾ/ - even later in the same paper, the author lists [l] and [ɾ] as occurring in free variation (p. 4).
+* @AmnSIL2001 includes /l/ as a phoneme (p. 1), but it seems to actually be an allophone of /ɾ/ - later in the same paper, the author lists [l] and [ɾ] as occurring in free variation (p. 4).
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -38,10 +38,10 @@ Flaps                        ""        "ɾ"        ""       ""       ""
 Approximants                 "w"       ""         "j"      ""       ""
 '), TRUE)
 
-kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal", align = 'c') %>%
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 5)) %>%
-  footnote(general = "Phonemes to the left of each cell are voiceless and phonemes to the right of each cell are voiced", general_title = "") %>%
+  footnote(general = "Note: Phonemes to the left of each cell are voiceless and phonemes to the right of each cell are voiced.", general_title = "") %>%
   column_spec(1, bold = TRUE)
 ```
 
@@ -89,21 +89,20 @@ Grapheme     Phoneme       Comment
   "u"        "/u/"           ""
   "w"        "/w/"           ""
   "y"        "/j/"           ""
-  Digraph     ""             ""
+"**Digraph**" ""             ""
   "ng"       "/ŋ/"           ""
   '), TRUE)
 
 
   kable(alphabet, align = 'c') %>%
-    kable_styling("bordered") %>%
-    pack_rows("Digraph", 21)
-  ```
+    kable_styling("bordered")
+```
 
 # Lenition Rules
 
 * Word-medial /ᵑɡ/ sometimes spirantizes to [ɣ] [@AmnSIL2001, p. 4].
-* Word-medial /f/ sometimes voices to [v] (ibid.).
-* /x/, which is attested in other languages of the Border family [@AmnPalmer2017, p. 327], has historically debuccalized to [h] in Amanab [@AmnSIL2001, p. 4].
+* Word-medial /f/ sometimes voices to [v] word-medially (ibid.).
+* /x/, which is attested in other languages of the Border family [@AmnPalmer2017, p. 327], has historically debuccalized to [h] in Amanab. However, Amanab /h/ can surface as [x] word-finally [@AmnSIL2001, p. 4].
 
 # Misc. Rules
 

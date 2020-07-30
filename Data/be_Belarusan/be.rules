@@ -2,8 +2,8 @@
 # Written by: Emily
 # Last Updated: 2019-08-26
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
-class,num,[12],,,,"curtesy of Bill - used for palatalization",
+# Class Rules
+class,num,[12],,,,"courtesy of Bill - used for palatalization",
 class,gem,(l|n|t|d|s|z|ʃ|ʒ|tʃ|ts),,,,
 class,apostrophe,['ꞌ‘’],,,,
 class,pal,(p|b|m|f|v|n|ts|dz|s|z|l|k|x|ɣ),,,,
@@ -50,7 +50,7 @@ sub,д,dz,4,,з,
 sub,з,,3,д,,"clean-up",
 # Palatalization
 ipasub,({pal}) ʲ{num},\1ʲ,6,,,"attaches palatalization diacritic to consonant",
-ipasub,ʲ1\b,j,5,,,"change isolated palatalized diacritic to /j/",
+ipasub,ʲ1\b,j,5,,,"changes isolated palatalized diacritic to /j/",
 ipasub,ʲ2\b,,5,,,"deletes palatalization from <ь> when necessary",
 ipasub,no-pala,,4,,,"deletes apostrophe, maintaining non-palatalization",
 # Gemination

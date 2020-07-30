@@ -5,11 +5,11 @@ bibliography: yua.bib
 output: html_document
 ---
 
-Last Updated: 05-12-2020
+Last Updated: 2020-07-02
 
 # Background
 
-**Language family**: Mayan / Yucatecan / Yucatec-Lacandon
+**Language Family:** Mayan / Yucatecan / Yucatec-Lacandon
 
 * Yucatec Maya is spoken in the Quintana Roo, Yucatán, Campeche, and Tabasco states of Mexico.
 
@@ -40,7 +40,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 6)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: For phonemes that share a cell, those on the left are plain and those on the right are ejctive. The labial stops are ordered plain, ejective, and implosive.", general_title = "")
+  footnote(general = "Note: For phonemes that share a cell, those on the left are plain and those on the right are ejective. The labial stops are ordered plain, ejective, and implosive.", general_title = "")
 ```
 
 ## Vowels
@@ -51,7 +51,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
         - LOW TONE: long, low tone, modal voice
         - HIGH TONE: long, high tone, modal voice
         - GLOTTALIZED: long, high tone followed by creaky voice
-            - @frazier2009production also states that the glottalized vowels are produced with an intervening glottal stop (i.e. [v́ʔv]); however, in fast speech, this glottal stop is not always realized (p. 20)
+            - @frazier2009production also states that the glottalized vowels are produced with an intervening glottal stop (i.e. [v́ʔv]); however, in fast speech, this glottal stop is not always realized (p. 20).
 * Per discussions with Scott AnderBois, an expert on the language, the rules will represent "glottalized" vowels as a long, high tone vowel followed by creaky voice rather than a vowel interrupted by a glottal stop.
 
 
@@ -86,7 +86,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* **Note:** /tsʼ/ does not appear in the Crúbadán corpus.
+* **Note:** /tsʼ/ is not represented in the Crúbadán corpus.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -127,6 +127,14 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* /k/ debuccalizes to /h/ preceding another consonant [@rogers2016, p. 81].
+* When there exists two identical adjacent consonants:
+  - Sonorants and some fricatives undergo degemination
+  - For other consonant sounds, the first unit, if an ejective, debuccalizes to [ʔ] and if not an ejective, debuccalizes to [h] [@oriebricker2000, p. 295].
+* /k/ debuccalizes to [h] preceding any consonant [@rogers2016, p. 81].
+
+# Misc. Rules
+
+* On the morphophonemic level, Yucatec Maya has vowel deletion rules (creating consonant clusters) and elision rules that elide the first consonant in a cluster. These types of rules may operate in conjunction. However, @bohnemeyer2002grammar does not describe these rules in great detail (p. 66-67).
+* Glottal stops occur predictably preceding word-initial vowels [@bohnemeyer2002grammar, p. 65].
 
 # References

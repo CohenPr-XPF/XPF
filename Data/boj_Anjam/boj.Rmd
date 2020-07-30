@@ -5,19 +5,19 @@ bibliography: boj.bib
 output: html_document
 ---
 
-Last Updated: 2020-02-19
+Last Updated: 2020-06-26
 
 # Background
 
-**Language Family**: Trans New Guinea / Madang-Adelbert Range / Mindjim
+**Language Family:** Trans-New Guinea / Madang-Adelbert Range / Madang / Rai Coast / Mindjim
 
-* Anjam is spoken in the Madanp province of Papua New Guinea.
+* Anjam is spoken in the Madang province of Papua New Guinea.
 
 # Phonology
 
 ## Consonants
 
-* /j/ and /w/ are considered consonants in non-syllabic positions (i.e. the onset or coda) [@rucker1990, p. 2].
+* /j/ and /w/ are considered consonants in non-syllabic positions (i.e. in the onset or coda) [@rucker1990, p. 2].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -61,8 +61,8 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* /ŋ/ does not appear in the Crúbadán corpus.
-* A large percentage of the corpus (roughly 20%) seems to consist of ⟨ý⟩; however, it is not clear what this grapheme represents. I first thought it indicated stress or phonetic vowel length, however stress is not orthographically marked and the acute accent only appears atop this grapheme [@rucker2000, p. 4]. It seems as if it's present only in scripture [@Anjam2013], so I have opted not to include it.
+* A large percentage of the corpus (roughly 20%) seems to consist of ⟨ý⟩; however, it is unclear what this grapheme represents. At first glance, we thought it indicated stress or phonetic vowel length; however, stress is not orthographically marked and the acute accent only appears atop this one grapheme [@rucker2000, p. 4]. Looking deeper, we found that it's seemingly present only in scripture [@Anjam2013], so we have opted not to include it.
+* **Note:** /ŋ/ is not represented in the Crúbadán corpus.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -104,5 +104,6 @@ kable(alphabet, align = "c") %>%
 
 * /p/ and /b/ neutralize to /p/ word finally [@rucker2000, p. 4].
 * /dʑ/ devoices word-finally [@rucker2000, p.4].
+* /i/ deletes when followed by /r/ across a morpheme boundary [@rucker2000, p. 28].
 
 # References

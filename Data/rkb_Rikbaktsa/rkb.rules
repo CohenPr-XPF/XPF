@@ -26,7 +26,7 @@ sub,e,ẽ,2,,{nm_vowel},
 sub,y,ɨ̃,2,,{nm_vowel},
 # Orthographic Variation
 sub,g,k,3,,{voicedC},"<g> represents /k/ preceding voiced consonants",
-ipasub,g,k,3,{vowels},{vowels},"<g> represents /k/ between like-vowels",
+sub,g,k,3,{vowels},{vowels},"<g> represents /k/ between like-vowels",
 sub,c,k,3,,,
 sub,q,k,3,,u,
 sub,u,,3,q,,"clean-up",

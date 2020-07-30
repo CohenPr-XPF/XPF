@@ -9,7 +9,7 @@ Last Updated: 2019-08-08
 
 # Background
 
-**Language Family**: Trans-New Guinea / Main Section / Central and Western / Huon-Finisterre / Huon / Western
+**Language Family:** Trans-New Guinea / Main Section / Central and Western / Huon-Finisterre / Huon / Western
 
 * Komba is spoken in Papua New Guinea.
 
@@ -24,8 +24,8 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial    Alveolar   Palatal   Velar
-"Stops"                     "p b"     "t d"       ""   "k kʷ ɡ ɡʷ"
-"Affricates"                 ""        ""         ""       ""
+Stops                       "p b"     "t d"       ""   "k kʷ ɡ ɡʷ"
+Affricates                   ""        ""         ""       ""
 Fricatives                   ""       "s z"       ""       ""
 Nasals                       "m"       "n"        ""       "ŋ"
 Approximants                 "w"       "l"        "j"      ""
@@ -45,7 +45,8 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
     - Voiceless-voiced (represented by an ⟨h⟩ preceding the vowel)
         * These will be transcribed as long voiceless vowels (ex. /ḁ ː/)
     - Voiced-voiced
-* Adjacent vowels are interpreted as a complex nucleus only when a high vowel (/u/ or /i/) follows a mid or low vowel [@Southwell1972, p. 7]. This allows for the combinations listed in the table below. /ou/ is not represented in Crúbadán.
+* Adjacent vowels are interpreted as a complex nucleus only when a high vowel (/u/ or /i/) follows a mid or low vowel [@Southwell1972, p. 7]. This allows for the combinations listed in the table below.
+    - **Note:** /ou/ is not represented in Crúbadán.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -71,6 +72,8 @@ kable(diphthongs, align = 'c') %>%
 ```
 
 # Alphabet
+
+* Besides representing voiceless vowels, ⟨h⟩ is only found in loanwords and Biblical names [@1981, p. 4].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -114,5 +117,6 @@ kable(alphabet, align = "c") %>%
 
 * Voiced stops may me realized as prenasalized word-initially (only in some words) [@Southwell1972, p. 10; @1981, p. 4].
 * /s/ and /z/ may be realized as [ts] and [dz] respectively [@1981, p. 4].
+* Voiceless stops are aspirated word-initially [@Southwell1972, p. 9].
 
 # References

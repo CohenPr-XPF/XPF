@@ -5,7 +5,7 @@ bibliography: apy.bib
 output: html_document
 ---
 
-Last Updated: 2020-03-30
+Last Updated: 2020-06-25
 
 # Background
 
@@ -27,7 +27,7 @@ library(kableExtra)
 
 
 consonants <- read.table(textConnection('
-"Manner of Articulation"    Labial  Alveolar  Postalveolar  Palatal  Velar  Glottal
+"Manner of Articulation"  Bilabial  Alveolar  Postalveolar  Palatal  Velar  Glottal
 Stops                         "p"     "t"          ""         ""      "k"     "ʔ"
 Affricates                    ""       ""          ""         ""      ""      ""  
 Fricatives                    ""      "s z"        "ʃ"        ""      ""      ""  
@@ -36,7 +36,7 @@ Flaps                         ""       "ɾ"         ""         ""      ""      "
 Approximants                  "w"      ""          ""         "j"     ""      ""
 '), TRUE)
 
-kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 6)) %>%
   column_spec(1, bold = TRUE) %>%
@@ -95,14 +95,10 @@ kable(alphabet, align = 'c') %>%
 
 * Syllables in Apalaí follow the order of (C)V(C) [@Koehn1971, p. 4].
 
-# Lenition Rules
-
-* The palatalization of /t/ may result in some frication [@Koehn1971, p. 3].
-* /k/ may be realized as [ɣ] in unstressed final syllables preceding word beginning with stressed /a/ (ibid.).
-
 # Misc. Rules
 
-* In some dialects, /t/ and /k/ may palatalize following /i/ [@Koehn1971, p. 3].
+* /k/ may be realized as [ɣ] in unstressed final syllables preceding words beginning with stressed /a/ [@Koehn1971, p. 3].
+* In some dialects, /t/ and /k/ may palatalize following /i/. The palatalization of /t/ may result in some frication (ibid).
 * /n/ may be realized as [ɲ] when contiguous with /i/ (ibid.).
 
 # References

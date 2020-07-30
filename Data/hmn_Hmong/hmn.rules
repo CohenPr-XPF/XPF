@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-07-24
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,input-cons,[cdfhklmnpqrstvxyz],,,,
 class,input-vowel,[aeiouw],,,,
 class,output-cons,[cçdfhʝklᵐmⁿnᶯᶮɲᵑᶰpqsʂtʈvʐ],,,,
@@ -22,7 +22,7 @@ sub,x,s,4,,,
 sub,y,ʝ,4,,,
 sub,z,ʐ,4,,,
 # Tone Markers (Word-Medial)
-sub,b,˥,4,{input-vowel},{input-cons},"high tone"
+sub,b,˦,4,{input-vowel},{input-cons},"high tone"
 sub,d,˨˩,4,{input-vowel},{input-cons},"creaky falling tone (1)"
 sub,g,˦˨,4,{input-vowel},{input-cons},"breathy falling tone"
 sub,j,˥˨,4,{input-vowel},{input-cons},"high falling tone"
@@ -31,7 +31,7 @@ sub,s,˨,4,{input-vowel},{input-cons},"low tone"
 sub,v,˨˦,4,{input-vowel},{input-cons},"high rising tone"
 ipasub,({output-vowel}) ({output-cons}),\1 ˧ \2,1,,,"mid tone"
 # Tone Markers (Word-Final)
-sub,b,˥,4,{input-vowel},$,"high tone"
+sub,b,˦,4,{input-vowel},$,"high tone"
 sub,d,˨˩,4,{input-vowel},$,"creaky falling tone (1)"
 sub,g,˦˨,4,{input-vowel},$,"breathy falling tone"
 sub,j,˥˨,4,{input-vowel},$,"high falling tone"

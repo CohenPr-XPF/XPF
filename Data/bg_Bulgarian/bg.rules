@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-04-13
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,a,[aа],,,,
 class,e,[eе],,,,
 class,o,[oо],,,,
@@ -34,9 +34,14 @@ sub,{x},x,4,,,
 sub,ц,ts,4,,,
 sub,ч,tʃ,4,,,
 sub,ш,ʃ,4,,,
-sub,щ,ʃ t,4,,,
+sub,щ,ʃ tʃ,4,,,
 sub,ъ,ɤ,4,,,
 sub,ь,j,4,,,
 sub,ю,j u,4,,,
 sub,я,j a,4,,,
 sub,-,,4,,,"a hyphen with no phonetic value occurs on occasion"
+# Digraphs
+sub,д,dʒ,5,,ж,
+sub,ж,,5,д,,"clean-up",
+# Geminates
+ipasub,(.) \1\b,\1 ː,2,,,,

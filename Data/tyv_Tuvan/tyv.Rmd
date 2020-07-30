@@ -5,11 +5,11 @@ bibliography: tyv.bib
 output: html_document
 ---
 
-Last Updated: 2020-02-12
+Last Updated: 2020-07-02
 
 # Background
 
-**Language family**: Turkic / Common Turkic / Siberian Turkic / South Siberian / Sayan Turkic / Tuvan
+**Language Family:** Turkic / Common Turkic / Siberian Turkic / South Siberian / Sayan Turkic / Tuvan
 
 * Tuvan, also know as Tuvinian, Tyvan, or Tuvin, is spoken in the Tuva Republic in Russia.
 
@@ -72,7 +72,7 @@ Grapheme      Phoneme                           Comment
 "в"            "/ʋ/"                              ""
 "г"            "/ɡ/"                              ""
 "д"            "/d/"                              ""
-"e"            "/e/; /je/"                              "/e/: word-medially and word-finally; /je/: word-initially in Russian loanwords"
+"e"            "/e/; /je/"          "/e/: word-medially and word-finally; /je/: word-initially in Russian loanwords"
 "ё"            "/jo/"                             ""
 "ж"            "/ʝ/"                              ""
 "з"            "/z/"                              ""
@@ -116,6 +116,7 @@ kable(alphabet) %>%
 # Lenition Rules
 
 * /ɡ/ may spirantize to [ɣ] [@harrison_topics_2000, p. 13].
+* Intervocalically, /p/ is realized as [ʋ] (ibid).
 * Velar consonants are often elided intervocalically [@harrison_topics_2000, p. 87].
 * Voiceless stops become voiced intervocalically [@harrison_topics_2000, p. 83].
     - In this position /b/ and /ɡ/ become [ʋ] and [ɣ], respectively.
@@ -123,5 +124,6 @@ kable(alphabet) %>%
 # Misc. Rules
 
 * Voiceless stops (and voiced velar stops) can geminate [@harrison_topics_2000, p. 82].
+* Velars /k/ and /ɡ/ are predictably realized as [q] and [ɢ], respectively, before back vowels [@harrison_topics_2000, p. 13].
 
 # References

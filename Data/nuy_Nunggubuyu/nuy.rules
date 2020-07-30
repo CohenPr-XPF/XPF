@@ -2,10 +2,9 @@
 # Written by: Bill
 # Last Updated: 2019-08-07
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,alveolar-base,[dnl],,,,
 class,post-n,[gy],,,,
-# class,underline,[̱],,,,
 class,passthrough,[abdilmnuw],,,,
 # Individual Letters
 sub,ḏ,ɖ,4,,,

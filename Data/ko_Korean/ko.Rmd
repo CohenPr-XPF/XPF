@@ -4,9 +4,12 @@ author: "Justin Bai"
 bibliography: ko.bib
 output: html_document
 ---
+
+Last Updated: 2019-12-19
+
 # Background
 
-**Language family**: Language isolate
+**Language Family**: Isolate
 
 * Korean a language isolate, but it is heavily influenced by Mandarin.
 * Korean is spoken in Korea, but also in China, Russia, and other regions of Central Asia.
@@ -15,7 +18,7 @@ output: html_document
 
 ## Consonants
 
-* There is some disagreement within the literature about the nature of the affricates, with some sources considering it postalveolar [@lee1993korean, p. 28] and others considering it alveopalatal [@ahn2009korean, p. 26; @brown2015handbook, p. 7]. We have decided to categorized the affricate as postalveolar.
+* There is some disagreement within the literature about the nature of the affricates, with some sources considering it postalveolar [@lee1993korean, p. 28] and others considering it alveopalatal [@ahn2009korean, p. 26; @brown2015handbook, p. 7]. We have decided to categorize the affricate as postalveolar.
 * @lee1993korean explains that /j/ and /w/ are not separate phonemes, only appearing as a by-product of diphthongs (p. 30); however, I have chosen to include them in the inventory just as @ahn2009korean and @Kim1999 do (p. 41; p. 315).
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -73,11 +76,9 @@ which are composed into syllable blocks.
 as there is some debate in the literature about how best to transcribe particular
 segments in Korean.
     - As for representing a transcription for the tense stops, there are various methods employed within the literature. Some authors use an apostrophe (e.g. /p’/). However, we have decided to use /◌͈/, which is a diacritic used to indicate "strong articulation."
-    - ⟨ㅚ⟩ is sometimes transcribed as /wɛ/. However, following the traditional vowel
-  system of Korean [@brown2015handbook], our rules transcribe it as /ø/.
+    - ⟨ㅚ⟩ is sometimes transcribed as /wɛ/. However, following the traditional vowel system of Korean [@brown2015handbook], our rules transcribe it as /ø/.
     - ⟨ㅡ⟩ has been transcribed in one of two ways within the literature: /ɨ/ or /ɯ/. Our rules use /ɨ/ as "ㅡ is produced with the tongue more forward [than ㅜ]" [@choo2003sounds].
-    - ⟨ㅢ⟩ is often transcribed as /ɰi/; however, /ɰi/ is only found at the beginning
-  of words. Elsewhere, ⟨ㅢ⟩ represents /i/, which is reflected in our rules [@choo2003sounds].
+    - ⟨ㅢ⟩ is often transcribed as /ɰi/; however, /ɰi/ is only found at the beginning of words. Elsewhere, ⟨ㅢ⟩ represents /i/, which is reflected in our rules [@choo2003sounds].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

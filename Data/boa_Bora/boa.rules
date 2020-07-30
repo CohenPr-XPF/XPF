@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-07-03
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,pre-s,[dt],,,,
 class,v-output,[aɛiɨoɯ],,,,
 class,tone,[˨˦],,,,

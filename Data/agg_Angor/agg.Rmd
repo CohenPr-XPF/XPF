@@ -5,7 +5,7 @@ bibliography: agg.bib
 output: html_document
 ---
 
-Last Updated: 2019-10-22
+Last Updated: 2020-06-26
 
 # Background
 
@@ -37,14 +37,14 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 4)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: The cells that contain three phonemes are ordered voiceless, voiced, and prenasalized.", general_title = "")
+  footnote(general = "Note: Cells that contain three phonemes are ordered voiceless, voiced, and prenasalized.", general_title = "")
 ```
 
 ## Vowels
 
 * Vowel harmony is present in Angor [@litteral_features_2008, p. 25].
-* Diphthongs can also be realized as vowel sequences [@litteral_angor_1997, p. 4], so they won't be represented in the transcription.
-* Based on the description of stress by @litteral_features_2008, such that the mid central vowel present in the language occurs only in unstressed syllables (pp. 23-24), I have chosen to stick with their analysis of using /ə/.
+* Diphthongs can also be realized as vowel sequences [@litteral_angor_1997, p. 4], so I have chosen not to represent them in the transcription.
+* Based on the description of stress by @litteral_features_2008, such that the phonemic mid central vowel present in the language occurs only in unstressed syllables (pp. 23-24), I have chosen to stick with their analysis of using /ə/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -111,10 +111,10 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * /ɸ/ and /x/ can be voiced word-medially [@litteral_angor_1997, p. 4].
-* Unstressed word-final vowels are often deleted following either voiceless stops, nasals (including pre-nasals), or /x/ (ibid.).
 
 # Misc. Rules
 
 * /ɾ/ may be realized as retroflex following /a/ [@litteral_angor_1997, p. 4].
+* Unstressed word-final vowels are often deleted following either voiceless stops, nasals (including pre-nasals), or /x/ (ibid.).
 
 # References

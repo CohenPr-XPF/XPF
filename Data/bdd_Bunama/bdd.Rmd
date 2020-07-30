@@ -42,7 +42,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Although vowels may appear consecutively, they are not always interpreted as complex phonemes, so they will not be accounted for in the rules [@leckie_bunama_1976, pp. 7-8].
+* Although vowels may appear consecutively, they are not always interpreted as complex phonemes, so they will not be accounted for as diphthongs in the rules [@leckie_bunama_1976, pp. 7-8].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -63,33 +63,33 @@ kable(vowels, align = 'c') %>%
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
-Grapheme      Phoneme  
-"a"            "a"
-"b"            "b"
-"d"            "d"
-"e"            "e"
-"g"            "ɡ"
-"h"            "h"
-"i"            "i"
-"k"            "k"
-"l"            "l"
-"m"            "m"
-"n"            "n"
-"o"            "o"
-"p"            "p"
-"s"            "s"
-"t"            "t"
-"u"            "u"
-"w"            "w"
-"y"            "j"
-"\'"           "ʔ"
-**Digraph**    ""
-"bw"           "bʷ"
-"gw"           "ɡʷ"
-"hw"           "hʷ"
-"mw"           "mʷ"
-"pw"           "pʷ"
-"\'w"          "ʔʷ"
+Grapheme      Phoneme       Comment
+"a"            "/a/"          ""
+"b"            "/b/"          ""
+"d"            "/d/"          ""
+"e"            "/e/"          ""
+"g"            "/ɡ/"          ""
+"h"            "/h/"          ""
+"i"            "/i/"          ""
+"k"            "/k/"          ""
+"l"            "/l/"          ""
+"m"            "/m/"          ""
+"n"            "/n/"          ""
+"o"            "/o/"          ""
+"p"            "/p/"          ""
+"s"            "/s/"          ""
+"t"            "/t/"          ""
+"u"            "/u/"          ""
+"w"            "/w/"          ""
+"y"            "/j/"          ""
+"\'"           "/ʔ/"   "the corresponding uppercase grapheme is ⟨C⟩ [@leckie_bunama_1976, p. 69]"
+**Digraph**    ""             ""
+"bw"           "/bʷ/"         ""
+"gw"           "/ɡʷ/"         ""
+"hw"           "/hʷ/"         ""
+"mw"           "/mʷ/"         ""
+"pw"           "/pʷ/"         ""
+"\'w"          "/ʔʷ/"         ""
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%

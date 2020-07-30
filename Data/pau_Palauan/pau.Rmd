@@ -10,15 +10,13 @@ Last Updated: 2020-01-17
 
 # Background
 
-**Language Family**: Austronesian / Malayo-Polynesian / Palauan
+**Language Family:** Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Palauan
 
 * Palauan is spoken in Palau, an archipelagic country off the coast of the Philippines.
 
 # Phonology
 
 ## Consonants
-
-* Only liquids ⟨r⟩ and ⟨l⟩ geminate in Palauan [@Carlson1968, p. 27].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -46,7 +44,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar"
 
 ## Vowels
 
-* /ə/ only appears in unstressed syllables, and consequently, it is not universally considered to be phonemic in Palauan [@PauJosephs1975, p. 22]. It is interpreted as an allophone of /ɛ/, or a phonetic realization based on context [@Carlson1968, p. 36]. It is represented by ⟨ȩ⟩ in the alphabet; however, it's not present in the Crúbadán corpus. Nonetheless, I have chosen to represent it in the rule set as /ɛ/.
+* /ə/ only appears in unstressed syllables, and consequently, it is not universally considered to be phonemic in Palauan [@PauJosephs1975, p. 22]. It is interpreted as an allophone of /ɛ/, or a phonetic realization based on context [@Carlson1968, p. 36]. It is represented by ⟨ȩ⟩ in the alphabet; however, this grapheme is not present in the Crúbadán corpus. Nonetheless, I have chosen to represent it in the rule set as /ɛ/.
 * Vowel length is contrastive for non-central vowels. Long front vowels glide into [j], while long back vowels glide into [w] [@PauJosephs1975, pp. 25-26]. Long vowels are represented by doubling the vowel character.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -72,7 +70,7 @@ Grapheme        Phoneme           Comment
 "b"              "/b/"               ""
 "d"              "/d/"               ""
 "e"              "/ɛ/"               ""
-"ȩ"              "/ɛ/"        "realized as /ə/"
+"ȩ"              "/ɛ/"        "realized as [ə]"
 "i"              "/i/"               ""
 "k"              "/k/"               ""
 "l"              "/l/"               ""

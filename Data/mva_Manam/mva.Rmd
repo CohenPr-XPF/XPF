@@ -5,7 +5,7 @@ bibliography: mva.bib
 output: html_document
 ---
 
-Last Updated: 2020-05-06
+Last Updated: 2020-07-01
 
 # Background
 
@@ -64,7 +64,7 @@ kable(consonants, align = 'c') %>%
 
 # Alphabet
 
-* 0.4% of the Crúbadán corpus contains apostrophes, which aren't typical of the Manam orthography. Upon speculation, these occurances seem to appear only in biblical texts, most likely representing the glottal stop, just as in other Austronesian languages. In the rule set, I transcribe apostrophes to glottal stops, but it can be excluded if need be.
+* 0.4% of the Crúbadán corpus contains apostrophes, which aren't typical of the Manam orthography. Upon speculation, these occurrences seem to appear only in biblical texts, most likely representing the glottal stop, just as in other Austronesian languages. I have chosen not to account for them in the rule set.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -87,7 +87,6 @@ Grapheme        Phoneme
 "t"              "/t/"
 "u"              "/u/"
 "z"              "/z/"
-
 **Digraph**       ""
 "ng"             "/ŋ/"
 '), TRUE)
@@ -105,11 +104,11 @@ kable(alphabet, align = 'c') %>%
 
 * /ɡ/ spirantizes intervocalically [@Gregersen1976, p. 103].
 * /q/ (and I'm assuming /k/), if used by older generations, may be spirantized intervocalically [@Lichtenberk1983, p. 13].
-* /s/ and (more commonly) /z/ may be realized as affricates (ibid.).
 
 # Misc. Rules
 
 * The contrast between /m/ and /n/ and between /n/ and /ŋ/ neutralizes word-finally [@Turner1995, p. 675].
+* /s/ and (more commonly) /z/ may be realized as affricates [@Lichtenberk1983, p. 13].
 * With no morpheme boundaries intervening, /i/ is realized as [j] intervocalically, and word-initially preceding /a/ or /u/ [@Lichtenberk1983, p. 14].
 * With no morpheme boundaries intervening, /o/ is realized as [w] intervocalically, word-initially preceding /a/, and following non-initial bilabial consonants while also preceding morpheme final /a/ [@Lichtenberk1983, p. 15].
 

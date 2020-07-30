@@ -1,11 +1,11 @@
 # Au Rule Set
 # Written by: Emily
-# Last updated: 10-29-2019
+# Last Updated: 2019-10-29
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,passthrough,[aiɨkmnoprstuw],,,,
 # Individual Letters
-sub,e,ə,2,,,
+sub,e,ɜ,2,,,
 sub,h,ɣ,2,,,
 sub,y,j,2,,,
 sub,({passthrough}),\1,2,,,

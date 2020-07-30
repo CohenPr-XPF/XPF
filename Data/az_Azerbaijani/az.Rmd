@@ -5,11 +5,11 @@ bibliography: az.bib
 output: html_document
 ---
 
-Last Updated: 2019-06-12
+Last Updated: 2020-06-25
 
 # Background
 
-**Language Family**: Turkic / Common Turkic / Oghuz / Western Oghuz / Azerbaijani
+**Language Family:** Turkic / Common Turkic / Oghuz / Western Oghuz / Azerbaijani
 
 * Azerbaijani is spoken in Iran and Azerbaijan, a country located between Eastern Europe and Western Asia.
 
@@ -22,7 +22,7 @@ Last Updated: 2019-06-12
     - In words where northern dialects retain /c/, southern dialect speakers tend to realize the consonant as /ts/ or /tʃ/ (ibid.).
 * @AzSalimi1976 argues for /ts/ and /dz/ only existing as fronted allophones of their postalveolar counterparts (p. 72).
 * @AzFraenkel1962 posits /ʔ/ as existing as a non-phonemic "juncture feature" that sometimes marks syllable boundaries or appears in Arabic loans (p. 451).
-* /ts/ and /dz/ are likely to be peripheral phonemes, as they are significantly less common than any other phonemes in the Crubadan corpus.
+* /ts/ and /dz/ are likely to be peripheral phonemes, as they are significantly less common than any other phonemes in the Crúbadán corpus.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -120,11 +120,9 @@ kable(alphabet, align = 'c') %>%
 
 * Word-final affricates tend to weaken: the alveolar affricates go to [ʃ], and /tʃ/ debuccalizes to [h] [@AzMokari2017, p. 209].
 * Stem-final /tʃ/ approximantizes to [j] before vowel-initial suffixes (ibid.).
-  * Stem-final /x/ voices to [ɣ] in the same circumstances (ibid.).
-* Velar stops palatalize when adjacent to a front vowel (ibid.).
-* /l/ palatalizes slightly near front vowels, and velarizes slightly near back vowels [@AzSalimi1976, p. 70].
-* Postvocalic /v/ sometimes approximantizes to [w] (ibid.).
-  * Voiced dorsal stops similarly approximantize to [w] after round vowels (ibid.).
+    - Stem-final /x/ voices to [ɣ] in the same circumstances (ibid.).
+* Postvocalic /v/ sometimes approximantizes to [w] [@AzSalimi1976, p. 70].
+    - Voiced dorsal stops similarly approximantize to [w] after round vowels (ibid.).
 * /ɾ/ sometimes spirantizes initially or before non-low vowels (ibid.).
 * Word-final /ɡ/ spirantizes, and sometimes also devoices, depending on dialect [@AzSalimi1976, p. 83].
 * /c/ spirantizes to [ç] in preconsonantal and word-final contexts [@AzSalimi1976, p. 85].
@@ -134,7 +132,9 @@ kable(alphabet, align = 'c') %>%
 # Misc. Rules
 
 * Voiceless stops are realized with aspiration [@AzMokari2017, p. 209].
+* Velar stops palatalize when adjacent to a front vowel (ibid.).
 * Stops devoice word-finally [@AzMokari2017, p. 209]; @AzFraenkel1962 argues that stops devoice word-initially as well (pp. 447-448).
+* /l/ palatalizes slightly near front vowels, and velarizes slightly near back vowels [@AzSalimi1976, p. 70].
 * Word-finally or preconsonantally, /ɾ/ tends to be realized as [ʐ] [@AzSalimi1976, pp. 70-71].
 * Many speakers realize /ʒ/ as [dʒ] [@AzFraenkel1962, p. 450].
 

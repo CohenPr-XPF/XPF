@@ -5,11 +5,11 @@ bibliography: to.bib
 output: html_document
 ---
 
-Last Updated: 2019-11-21
+Last Updated: 2020-07-02
 
 # Background
 
-**Language family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Central-Eastern Oceanic / Remote Oceanic / Central Pacific / East Fijian-Polynesian / Polynesian / Tongic
+**Language Family:** Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Central-Eastern Oceanic / Remote Oceanic / Central Pacific / East Fijian-Polynesian / Polynesian / Tongic
 
 * Tongan is spoken throughout the Kindgdom of Tonga, a sovereign state northeast of New Zealand comprised of over one hundred islands.
 
@@ -53,7 +53,8 @@ Low       ""      "a"       ""
 '), TRUE)
 
 kable(consonants, align = 'c') %>%
-  kable_styling("bordered")
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 ```
 
 # Alphabet
@@ -78,6 +79,7 @@ Grapheme        Phoneme
 "p"              "/p/"
 "s"              "/s/"
 "t"              "/t/"
+"u"              "/u/"
 "v"              "/v/"
 "ʻ"              "/ʔ/"
 **Digraph**       ""
@@ -88,12 +90,9 @@ kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
 
-# Lenition Rules
-
-* /t/ regularly changes to /s/ preceding /i/ [@Morton1962 as cited in @Garellek2019, p. 2].
-
 # Misc. Rules  
 
 * Tongan has a rare three-way laryngeal contrast between /ʔ/, /h/, and vowels in initial positions [@Garellek2019, p. 3].
+* /t/ regularly changes to /s/ preceding /i/ [@Morton1962 as cited in @Garellek2019, p. 2].
 
 # References

@@ -4,11 +4,14 @@ author: "Justin Bai"
 bibliography: jam.bib
 output: html_document
 ---
+
+Last Updated: 2020-06-23
+
 # Background
 
-**Language family**: English creole
+**Language Family**: Creole / English based / Atlantic / Western
 
-* Also referred to as Jamaican Patois, Patwa, or Patwah, Jamaican Creole is spoken in a multitude of places. These include Jamaica, the United Kingdom, the United States, Canada, other Caribbean islands, and throughout the Caribbean coast of Central America.
+* Also referred to as Jamaican Patois, Patwa, or Patwah, Jamaican Creole is spoken in Jamaica, the United Kingdom, the United States, Canada, other Caribbean islands, and throughout the Caribbean coast of Central America.
 
 # Phonology
 
@@ -41,8 +44,8 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Jamaican Creole makes a vowel length distinction. Long vowels are indicated by repeated graphemes (/e/ and /o/ do not have long counterparts) [@harry2006jamaican, p. 128].
-* Jamaican Creole has diphthongs. The only diphthong that is not transparent orthographically is /au/, which is spelled ⟨ou⟩ (ibid.).
+* Jamaican Creole makes a vowel length distinction (/e/ and /o/ do not have long counterparts). Long vowels are indicated by repeated graphemes [@harry2006jamaican, p. 128].
+* Jamaican Creole has diphthongs. The only diphthong that is not transparent orthographically is /au/, which is transcribed ⟨ou⟩ (ibid.).
 * There is some uncertainty regarding the concept of contrastive tone in Jamaican Creole. @Lawton1968 argues that tone is contrastive, whereas @Parsard explains that speakers of creole languages do not make use of it (p. 23; p. 7). Due to this uncertainty, I will proceed with the language not accounting for tone.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -109,11 +112,11 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* Obstruents become palatalized preceding high vowels /i/ and /u/ [@harry2006jamaican, p. 127].
-* /b/, /d/, and /ɡ/ are pronounced lenis (specifically as implosives) word-initially (ibid.).
+* /b/, /d/, and /ɡ/ are pronounced lenis (specifically as implosives) word-initially [@harry2006jamaican, p. 127].
 
 # Misc. Rules
 
+* Obstruents become palatalized preceding high vowels /i/ and /u/ [@harry2006jamaican, p. 127].
 * Vowels nasalize preceding nasal consonants [@harry2006jamaican, p. 261].
 
 # References

@@ -1,11 +1,11 @@
 # Macedonian Rule Set
-# Written by Jordan
-# Last Updated: 2019-112-19
-type, sfrom, sto, weight, precede, follow, comment
+# Written by: Jordan
+# Last Updated: 2019-12-19
+type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
 class,frontV-j,[иеј],,,,
 class,backV-C,[абвгдѓжзѕкмнњопрстќуфхцчџш],,,,
-class,gem,[t̪d̪s̪z̪lmj],,,,
+class,gem,(t̪|d̪|s̪|z̪|l|m|j),,,,
 # Individual Letters
 sub,а,a,3,,,
 sub,б,b,3,,,

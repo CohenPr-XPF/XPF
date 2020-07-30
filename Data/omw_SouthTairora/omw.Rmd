@@ -19,7 +19,6 @@ Last Updated: 2019-07-19
 
 * The contrast between /s/ and /h/ is minor, and is most clearly realized in loanwords [@OmwLVincent2010, p. v].
 * The palatalized consonants only occur in some dialects [@OmwAVincent2003, p. 1].
-* **/tʲ/ and /ⁿtʲ/ do not appear in the Crúbadán corpus.**
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -69,6 +68,8 @@ kable(diphthongs, align = 'c') %>%
 ```  
 
 # Alphabet
+
+* **Note:** /tʲ/ and /ⁿtʲ/ are not represented in the Crúbadán corpus.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

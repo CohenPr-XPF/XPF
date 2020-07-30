@@ -10,7 +10,7 @@ Last Updated: 2019-1-10
 
 # Background
 
-**Language family**: Dravidian / South-Central / Telugu
+**Language Family:** Dravidian / South-Central / Telugu
 
 * Telugu is one of the most popular languages in India, particularly in the southern states of Andhra Pradesh and Telangana. Telugu is one of the official classical languages of India, and has significant influence from Sanskrit and Prakrit, as well as Perso-Arabic and English [@JIPA2016, p. 231].
 
@@ -18,7 +18,7 @@ Last Updated: 2019-1-10
 
 ## Consonants
 
-* @JIPA2016 claims the existence of affricates /ts/ and /dz/ (p. 232), but other sources do not include them [@Jagganath1981, p. 4; @Krishnamurti1985, p. xviii]. I have opted not to included them as well.
+* @JIPA2016 claim the existence of affricates /ts/ and /dz/ (p. 232), but other sources do not include them [@Jagganath1981, p. 4; @Krishnamurti1985, p. xviii]. I have opted not to included them as well.
 * Consonants contrast for gemination (excluding /f/, /ʂ/, /ʃ/, /h/, and /ɳ/) [@JIPA2016, p. 234].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -50,7 +50,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 ## Vowels
 
 * All Telugu vowel phonemes contrast in length [@Jagganath1981, p. 4].
-* @JIPA2016 claims that /ɛ/ and /æ ː/ are phonemes because they contrast in English loanwords (pp. 235-236). Older works on Telugu phonology do not include /ɛ/ and /æ ː/ as vowel phonemes [@Jagganath1981, p. 4; @Krishnamurti1985, p. xviii]. I've also chosen not to include /ɛ/ and /æ ː/.
+* @JIPA2016 claim that /ɛ/ and /æ ː/ are phonemes because they contrast in English loanwords (pp. 235-236). Older works on Telugu phonology do not include /ɛ/ and /æ ː/ as vowel phonemes [@Jagganath1981, p. 4; @Krishnamurti1985, p. xviii]. I've also chosen not to include /ɛ/ and /æ ː/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -69,7 +69,7 @@ kable(vowels, align = 'c') %>%
 # Alphabet
 
 * Like other Dravidian languages that have an abugida alphabet, Telugu consonants have a following inherent vowel [@Daniels1996, p. 416].
-* The candrabindu (ఁ; ఀ) generally indicates vowel nasalization [@NBGP2019, 6]; however, because vowel length is not phonemic and given that (present day) speakers don't use it, I have opted not to include it.  
+* The candrabindu (ఁ; ఀ) generally indicates vowel nasalization [@Telugu_2019, 6]; however, because vowel length is not phonemic and given that (present day) speakers don't use it, I have opted not to account for it.  
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -126,13 +126,17 @@ alphabet <- read.table(textConnection('
 "ీ"                        "/iː/"           ""
 "ు"                       "/u/"            ""
 "ూ"                      "/uː/"           ""
+"ృ"                      "/ru/"           ""
+"ౄ"                      "/ruː/"           ""
+"ౢ"                       "/lu/"           ""
+"ౣ"                       "/luː/"           ""
 "ె"                        "/e/"            ""
 "ే"                        "/eː/"           ""
 "ై"                        "/aj/"           ""
 "ొ"                        "/o/"            ""
 "ో"                        "/oː/"            ""
 "ౌ"                        "/aw/"            ""
-"ం"                       "/m/"       "called an anusvara, this diacritic represents a homoorganic nasal with the following consonant, but /m/ is used underlyingly [@Daniels1996, p. 415]"
+"ం"                       "/m/"       "called an anusvara, this diacritic represents a homorganic nasal with the following consonant, but /m/ is used underlyingly [@Daniels1996, p. 415]"
 "ః"                        "/h/"       "called the visarga, this diacritic occurs predominantly in Sanskrit loanwords, but also in Telugu (which is why I kept it in transcription) (ibid.)"
 "్"                         ""          "called the virama, this diacritic cancels the inherent vowel [@Daniels1996, p. 416]"
 '), TRUE)

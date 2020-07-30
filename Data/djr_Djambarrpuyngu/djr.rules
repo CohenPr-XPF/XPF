@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-07-12
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,apostrophe,['ꞌˈ‘’],,,,
 class,pre-h,[dnt],,,,
 class,pre-j,[dt],,,,
@@ -19,7 +19,7 @@ sub,r,ɻ,4,,,
 sub,ṯ,ʈ,4,,,
 sub,y,j,4,,,
 sub,{apostrophe},ʔ,4,,,
-sub,-,,4,,,"some words have a hyphen that carries no phonetic value"
+sub,({passthrough}),\1,0.1,,,
 # Digraphs
 sub,d,d̪,6,,h,"<dh>"
 sub,n,n̪,6,,h,"<nh>"
@@ -33,4 +33,4 @@ sub,y,,6,n,,"cleanup of <ny>"
 sub,r,r,6,,r,"<rr>"
 sub,r,,6,r,,"cleanup of <rr>"
 # Misc. Rules
-sub,({passthrough}),\1,0.1,,,
+sub,-,,4,,,"some words have a hyphen that carries no phonetic value"

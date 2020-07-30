@@ -11,7 +11,7 @@ Last Updated: 2019-08-15
 
 **Language Family**: Turkic / Western / Uralian
 
-* Bashkir is spoken around central and western Russia.
+* Bashkir is spoken in central and western Russia.
 
 # Phonology
 
@@ -45,15 +45,15 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 
 * Vowels do not occur consecutively [@poppe_bashkir_1997, p. 12].  
 * /e/ and /ɔ/ only appear in loanwords [@poppe_bashkir_1997, p. 6].
-* Vowel harmony also occurs [@poppe_bashkir_1997, pg. 19].
+* Vowel harmony also occurs [@poppe_bashkir_1997, p. 19].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 vowels <- read.table(textConnection('
          Front      Central       Back
 High    "i  y"        ""           "u"
-Mid        ""        "ɘ ɵ"        "ɤ  o"
-Low        ""         "a"          "ɑ"
+Mid       ""        "ɘ ɵ"        "ɤ  o"
+Low       ""         "a"          "ɑ"
 '), TRUE)
 
 kable(vowels, align = 'c') %>%
@@ -64,8 +64,8 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* Bashkir appears to be heavily influenced by Russian [@poppe_bashkir_1997], such that the phonemic inventory includes phonemes that are only present through Russian loanwords (p. 6). Although loanwords (graphemes) themselves are not native to Bashkir, the sounds are, so the transcription of them will be included.
-* Following standard Russian orthography, ⟨ъ⟩ and ⟨ь⟩ do indicate non-palatalization and palatalization, respectively, of the preceding consonant; however, this is not native to Bashkir, so it will not be represented in the rules.
+* Bashkir appears to be heavily influenced by Russian [@poppe_bashkir_1997], such that the phonemic inventory includes phonemes that are only present through Russian loanwords (p. 6). Although such loanwords (and respective graphemes) are not native to Bashkir, the sounds are, so the transcription of them will be included.
+* Following standard Russian orthography, ⟨ъ⟩ and ⟨ь⟩ indicate non-palatalization and palatalization, respectively, of the preceding consonant; however, this is not native to Bashkir, so it will not be represented in the rules.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -139,7 +139,7 @@ kable(alphabet, align = 'c') %>%
 
 * Depending on the syllable structure, mid-vowels are consistently reduced or unpronounced [@poppe_bashkir_1997, p.22].  
 * /n/ assimilates to /m/ or /ŋ/ when preceding bilabial or velar consonants respectively [@poppe_bashkir_1997, p. 24].  
-* There is apparent consonant harmony between /g/ and /k/ in words containing front vowels and between /ɣ/ and /q/ in words containing back vowels [@poppe_bashkir_1997, p. 22].  
+* There is apparent consonant harmony between /ɡ/ and /k/ in words containing front vowels and between /ɣ/ and /q/ in words containing back vowels [@poppe_bashkir_1997, p. 22].  
 * /l/ and /n/ are often realized as /t/, /d/, or /ð/ in the presence of suffixation [@poppe_bashkir_1997, p. 23].
 * In the presence of vowels (e.g. intervocalically, or following a vowel), /u/ and /y/ are realized as /w/ [@poppe_bashkir_1997, pp. 28-29].
 

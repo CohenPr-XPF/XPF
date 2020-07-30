@@ -9,7 +9,7 @@ Last updated: 2019-11-01
 
 # Background
 
-**Language family**: Mayan / Kanjobalan-Chujean / Kanjobalan / Kanjobal-Jacaltec
+**Language family:** Mayan / Kanjobalan-Chujean / Kanjobalan / Kanjobal-Jacaltec
 
 * Qʼanjobʼal is spoken in the Huehuetenango and Quiché departments of Guatemala.
 
@@ -26,8 +26,8 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"  Bilabial   Alveolar   Postalveolar   Retroflex  Palatal   Velar     Uvular   Glottal
-Stops                      "p  ɓ"     "t  tʼ"        ""           ""        ""      "k  k’"   "q  q’"    "ʔ"
-Affricates                  ""       "ts  tsʼ"   "tʃ  tʃ’"     "tʂ   tʂ’"   ""        ""        ""       ""
+Stops                      "p  ɓ"     "t  tʼ"        ""           ""        ""      "k  kʼ"   "q  qʼ"    "ʔ"
+Affricates                  ""       "ts  tsʼ"   "tʃ  tʃʼ"     "tʂ   tʂʼ"   ""        ""        ""       ""
 Fricatives                  ""         "s"          "ʃ"           "ʂ"       ""        "x"       ""       ""
 Nasals                      "m"        "n"          ""            ""        ""        ""        ""       ""
 Flaps                       ""         "ɾ"          ""            ""        ""        ""        ""       ""
@@ -43,7 +43,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar"
 
 ## Vowels
 
-* In general, vowel length and vowel nasalization are not contrastive [@Lichtman2010, p. 13].
+* In general, vowel length and vowel nasalization are not contrastive features [@Lichtman2010, p. 13].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -64,44 +64,44 @@ kable(vowels, align = 'c') %>%
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
-Grapheme      Phoneme           Comment
-"a"            "a"                ""
-"b\'"          "ɓ"                ""
-"e"            "e"                ""
-"h"            "Ø"   "represents the absence of a glottal stop before a vowel word-initially [@Lichtman2010, p. 3]"
-"i"            "i"                ""
-"j"            "x"                ""
-"k"            "k"                ""
-"k\'"          "k’"               ""
-"l"            "l"                ""
-"m"            "m"                ""
-"n"            "n"                ""
-"o"            "o"                ""
-"p"            "p"                ""
-"q"            "q"                ""
-"q\'"          "q’"               ""
-"r"            "ɾ"                ""
-"s"            "s"                ""
-"t"            "t"                ""
-"t\'"          "tʼ"               ""
-"u"            "u"                ""
-"w"            "w"                ""
-"x"            "ʂ"                ""
-"y"            "j"                ""
-"\'"           "ʔ"                ""
+Grapheme      Phoneme             Comment
+"a"            "/a/"                ""
+"b\'"          "/ɓ/"                ""
+"e"            "/e/"                ""
+"h"            ""    "represents the absence of a glottal stop before a vowel word-initially [@Lichtman2010, p. 3]"
+"i"            "/i/"                ""
+"j"            "/x/"                ""
+"k"            "/k/"                ""
+"k\'"          "/kʼ/"               ""
+"l"            "/l/"                ""
+"m"            "/m/"                ""
+"n"            "/n/"                ""
+"o"            "/o/"                ""
+"p"            "/p/"                ""
+"q"            "/q/"                ""
+"q\'"          "/qʼ/"               ""
+"r"            "/ɾ/"                ""
+"s"            "/s/"                ""
+"t"            "/t/"                ""
+"t\'"          "/tʼ/"               ""
+"u"            "/u/"                ""
+"w"            "/w/"                ""
+"x"            "/ʂ/"                ""
+"y"            "/j/"                ""
+"\'"           "/ʔ/"                ""
 **Digraph**    ""                 ""
-"ch"           "tʃ"               ""
-"ch\'"         "tʃ’"              ""
-"tx"           "tʂ"               ""
-"tx\'"         "tʂ’"              ""
-"tz"           "ts"               ""
-"tz\'"         "tsʼ"              ""
-"xh"           "ʃ"                ""
+"ch"           "/tʃ/"               ""
+"ch\'"         "/tʃʼ/"              ""
+"tx"           "/tʂ/"               ""
+"tx\'"         "/tʂʼ/"              ""
+"tz"           "/ts/"               ""
+"tz\'"         "/tsʼ/"              ""
+"xh"           "/ʃ/"                ""
 "**Orthographic Variation**"  "" ""
-"ẍ"            "ʃ"                ""
-"c"            "k"                ""
-"c\'"          "k’"               ""
-"b"            "ɓ"                ""
+"ẍ"            "/ʃ/"                ""
+"c"            "/k/"                ""
+"c\'"          "/kʼ/"               ""
+"b"            "/ɓ/"                ""
  '), TRUE)
 
 kable(alphabet, align = 'c') %>%
@@ -122,7 +122,7 @@ kable(alphabet, align = 'c') %>%
 # Misc. Rules
 
 * /w/ fricates, becoming [β] preceding front vowels [@Toledo2017, p. 534].
-* Vowels in word-initial positions are preceding by a glottal stop [@Lichtman2010, p. 3].
+* Vowels in word-initial positions are preceded by a glottal stop [@Lichtman2010, p. 3].
 * Consonant gemination does not occur [@Lichtman2010, p. 19].
 
 # References

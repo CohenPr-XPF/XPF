@@ -32,7 +32,7 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"      Labial    Dental   Alveolar  Postalveolar   Palatal    Velar   Uvular
-"Stops (plain)"               "p b"     "t̪ d̪"       ""         ""           ""       "k ɡ"    "q"
+Stops                         "p b"     "t̪ d̪"       ""         ""           ""       "k ɡ"    "q"
 Affricates                      ""        ""        ""       "tʃ dʒ"        ""        ""       ""
 Fricatives                    "f v"       ""      "s z"        "ʃ"          ""       "x ɣ"     ""
 Nasals                         "m"        ""       "n"         ""           ""       "ŋ"       ""
@@ -127,7 +127,7 @@ kable(alphabet, align = 'c') %>%
 
 * Consonant gemination occurs in Crimean Tatar; however, it is extremely marginal (not present in the Crúbadán corpus), occurring primarily in loanwords [@Kavitskaya2010, pp. 13-14].
 * Voiced stops and voiced fricatives are devoiced word-finally [@Kavitskaya2010, p. 10].
-* There is evidence of monophthongization of diphthongs, as seen in sequences /uv/, which can be realized as /uw/ or /u:/, and /ij/, which is realized as /i:/ [@Kavitskaya2010, pp. 8-9].
+* There is evidence of monophthongization of diphthongs, as seen in sequences /uv/, which can be realized as [uw] or [u:], and /ij/, which is realized as [i:] [@Kavitskaya2010, pp. 8-9].
 * Syncope of high vowels is common word-initially and word-medially [@Kavitskaya2014, p. 225].
 * In suffixes, /l/ undergoes progressive nasal assimilation and surfaces as [n] [@Kavitskaya2010, p. 32-33].
 * /v/ may be realized as [w] [@Kavitskaya2010, p.12].

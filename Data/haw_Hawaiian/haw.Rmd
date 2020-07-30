@@ -5,13 +5,14 @@ bibliography: haw.bib
 output: html_document
 ---
 
-Last updated: 2019-10-17
+Last updated: 2020-06-03
 
 # Background
 
-**Language family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Central Pacific linkage / Tokelau-Fijian / Polynesian / Nuclear / East / Central / Marquesic
+**Language family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Central-Eastern Oceanic / Remote Oceanic / Central Pacific / East Fijian-Polynesian / Nuclear / East / Central / Marquesic
 
 * Hawaiian is spoken throughout the Hawaiian Islands, located in the Pacific Ocean.
+* Hawaiian contains many borrowings from English. Some loanwords are not fully adapted to fit Hawaiian's phonological system, retaining sounds that do not exist in native Hawaiian words [@jones2018hawaiian, p. 107].
 
 # Phonology
 
@@ -40,7 +41,10 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Vowel length is contrastive in Hawaiian [@elbert1986hawaiian, p. 14]. Long vowels are indicated with a macron ⟨¯⟩.
+* Vowel length is contrastive in Hawaiian [@elbert1986hawaiian, p. 14]. In the orthography, long vowels are indicated with a macron ⟨¯⟩.
+* According to @jones2018hawaiian, Hawaiian may have diphthongs. This is uncertain because some speakers separate the vowels (p. 110). For this reason, diphthongs are not accounted for here.
+    - The possible short-vowel diphthongs are: /ai/, /ae/, /au/, /ao/, /ei/, /eu/, /iu/, /oi/, and /ou/.
+    - The possible long-vowel diphthongs are: /aːe/, /aːi/, /aːo/, /aːu/, /eːi/, and /oːu/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -89,5 +93,6 @@ kable(alphabet, align = 'c') %>%
 # Misc. Rules
 
 * /k/ varies freely with /t/ [@jones2018hawaiian, pp. 105-106]. Because most sources don't indicate /t/ as being part of the phonemic inventory, I have chosen to transcribe ⟨k⟩ as /k/. Similarly, /p/ varies freely with [b], /w/ with [v], and /l/ with [d] and [r].
+* The glottal stop is predictably found before utterance-initial /a/, /e/, and /i/ [@elbert1986hawaiian, p. 10].
 
 # References

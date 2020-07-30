@@ -3,7 +3,7 @@
 # Edited by: Emily
 # Last Updated: 2019-09-13
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,apostrophe,['ꞌˈ‘’],,,,
 class,passthrough,[aiklmnpqstuw],,,,
 class,eject,(p|t|tʃ|k|q),,,,
@@ -18,6 +18,7 @@ sub,r,ɾ,4,,,
 sub,ü,u ː,4,,,
 sub,x,χ,4,,,
 sub,y,j,4,,,
+sub,({passthrough}),\1,0.1,,,
 # Aspirates and Ejectives
 sub,h,ʰ,3,,,
 sub,{apostrophe},ʼ,3,,,
@@ -28,9 +29,8 @@ sub,c,tʃ,6,,h,
 sub,h,,6,c,,"clean-up",
 sub,l,ʎ,6,,l,
 sub,l,,6,l,,"clean-up",
-# sub,n,ŋ,6,,h,"such alternation appears, but won't be transcribed due to /ŋ/ not being phonemic",
-# sub,h,,6,n,,"clean-up",
 # Misc. Rules
-sub,({passthrough}),\1,0.1,,,
+# sub,n,ŋ,6,,h,"such alternation appears, but won't be transcribed due to /ŋ/ not generally being phonemic",
+# sub,h,,6,n,,"clean-up",
 # Retroactive Clean-up
-ipasub,\b{supraseg}\b,@,1,,,"some combinations of consonants (eg. khh, u') are not attested in the language and shouldn't be transcribed",
+ipasub,\b{supraseg}\b,@,1,,,"some combinations of consonants (eg. khh, u') are not attested in the language and are not transcribed",

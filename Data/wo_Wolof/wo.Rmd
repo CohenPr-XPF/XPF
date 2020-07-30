@@ -5,13 +5,14 @@ bibliography: wo.bib
 output: html_document
 ---
 
-Last Updated: 2019-07-02
+Last Updated: 2020-07-02
 
 # Background
 
-**Language Family**: Niger-Congo / Atlantic-Congo / Atlantic / Senegambian / Fula-Wolof / Wolof
+**Language Family:** Niger-Congo / Atlantic-Congo / Atlantic / Northern / Senegambian / Fula-Wolof / Wolof
 
 * Wolof is spoken throughout Senegal.
+* Wolof contains borrowings from Arabic.
 
 # Phonology
 
@@ -42,7 +43,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 6)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: Where three phonemes share a cell, they are ordered voiceless, voiced, and pre-nasal.", general_title = "")
+  footnote(general = "Note: Where three phonemes share a cell, they are ordered voiceless, voiced, and prenasalized.", general_title = "")
 ```
 
 ## Vowels
@@ -118,13 +119,10 @@ kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
 
-# Lenition Rules
+# Misc. Rules
 
 * Short /u/ is generally realized as lax [ʊ] [@Camara2006, p. 3].
 * /a/ reduces to [ə] in the final syllable of a word, unless the preceding syllable has a low or mid-low vowel [@Camara2006, p. 4].
-
-# Misc. Rules
-
 * Epenthesis of [ə] occurs after word-final geminated consonants; if the consonant is a voiceless stop, that [ə] is also realized as voiceless [@Camara2006, p. 1].
 * Vowels nasalize before nasal or prenasalized consonants [@Camara2006, p. 4].
 

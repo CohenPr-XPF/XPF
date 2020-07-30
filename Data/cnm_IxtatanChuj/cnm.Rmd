@@ -9,9 +9,9 @@ Last Updated: 2020-03-05
 
 # Background
 
-**Language Family**: Mayan / Kanjobalan-Chujean / Chujean / Chuj
+**Language Family**: Mayan / Kanjobalan-Chujean / Chujean
 
-The Crúbadán code for the entire Chuj language is cac; however, I will be principally focusing on the Ixtatán dialect of Chuj (cnm) because it has a larger corpus in Crúbadán.
+* **Note:** The Crúbadán code for the entire Chuj language is cac; however, I will be principally focusing on the Ixtatán dialect of Chuj (cnm) because it has a larger corpus in Crúbadán.
 
 # Phonology
 
@@ -43,7 +43,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* @CnmWilliams1965 lists /aː/ as phonemic (p. 225), but this does not appear in my other sources.
+* @CnmWilliams1965 lists /aː/ as phonemic (p. 225), but this does not appear in any of the other sources.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('
@@ -60,7 +60,7 @@ kable(consonants, align = 'c') %>%
 
 # Alphabet
 
-* Chuj has multiple orthographies, which represent some phonemes in different ways; however, these orthographies do not have any overlap that would create ambiguity, meaning that the language is not compromised.
+* Chuj has multiple orthographies, which represent some phonemes in different ways; however, these orthographies do not have any overlap that would create ambiguity, meaning that the language is not compromised. I have documented the the variations within the chart below.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

@@ -1,7 +1,6 @@
 ---
 title: "Georgian"
 author: "Maddie Critz"
-date: "October 9, 2018"
 bibliography: ka.bib
 output: html_document
 ---
@@ -10,7 +9,7 @@ Last updated: 2019-10-31
 
 # Background
 
-**Language Family** : Kartvelian / Karto-Zan / Georgian
+**Language Family:** Kartvelian / Karto-Zan / Georgian
 
 * Georgian is spoken throughout the country of Georgia.
 
@@ -27,8 +26,8 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"      Labial      Alveolar    Postalveolar       Velar       Uvular   Glottal   
-Stops                      "pʰ  p’  b"  "tʰ  t’  d"       ""          "kʰ  k’  ɡ"     "q’"      ""
-Affricates                     ""      "ts  ts’  dz" "tʃ  tʃ’  dʒ"        ""          ""        ""
+Stops                      "pʰ  pʼ  b"  "tʰ  tʼ  d"       ""          "kʰ  kʼ  ɡ"     "q’"      ""
+Affricates                     ""      "ts  tsʼ  dz" "tʃ  tʃʼ  dʒ"        ""          ""        ""
 Fricatives                     "v"        "s  z"        "ʃ  ʒ"           "x  ɣ"       ""        "h"
 Nasals                         "m"         "n"            ""              ""          ""        ""
 Flaps                          ""          "ɾ"            ""              ""          ""        ""
@@ -39,7 +38,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 6)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: Phonemes that have the diacritics (ʰ) or (') are aspirated and ejective, respectively.", general_title = "")
+  footnote(general = "Note: Phonemes that have the diacritic (ʰ) are aspirated and phonemes that have the diacritic (’) ejective.", general_title = "")
 ```
 
 ## Vowels
@@ -73,7 +72,7 @@ Grapheme      Phoneme
 "ზ"		        "/z/"
 "თ"		        "/tʰ/"
 "ი"	           "/i/"
-"კ"	          "/k’/"
+"კ"	          "/kʼ/"
 "ლ"	          "/l/"
 "მ"	          "/m/"
 "ნ"		        "/n/"
@@ -87,10 +86,10 @@ Grapheme      Phoneme
 "ფ"		       "/pʰ/"
 "ქ"		       "/kʰ/"
 "ღ"		       "/ɣ/"
-"ყ"		       "/q’/"
+"ყ"		       "/qʼ/"
 "შ"		        "/ʃ/"
-"ჩ"		       "/tʃʰ/"
-"ც"		       "/tsʰ/"
+"ჩ"		       "/tʃ/"
+"ც"		       "/ts/"
 "ძ"		       "/dz/"
 "წ"		       "/tsʼ/"
 "ჭ"		       "/tʃʼ/"
@@ -107,5 +106,9 @@ kable(alphabet, align = 'c') %>%
 
 * /v/ becomes a glide [w] following consonants and in coda positions [@hewitt1995, p. 21].
 * /q/ is often pronounced with frication (ibid.).
+
+# Misc. Rules
+
+* Word-final voiced stops are realized as their aspirated counterparts [@aronson_kiziria_1999, p. 15].
 
 # References

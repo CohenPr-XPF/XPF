@@ -75,6 +75,7 @@ class,DIACRITICOO,ో,,,,
 class,VIRAMA,్,,,,
 class,ANUSVARA,ం,,,,
 class,VISARGA,ః,,,,
+class,CANDRABINDU,(ఁ|ఀ),,,,
 # Sub Rules
 ## Consonants
 sub,{K},k a,1,,,
@@ -146,6 +147,7 @@ sub,{DIACRITICOO},ERASE o ː,1,,,
 sub,{VIRAMA},ERASE,1,,,
 sub,{ANUSVARA},m,1,,,adds an /m/ after a vowel syllable-finally
 sub,{VISARGA},h,1,,,
+sub,{CANDRABINDU},,1,,,"vowel nasalization is not contrastive and not used presently",
 ## Misc. (removing joiners)
 sub,‌,,1,,,removing zero width non joiner
 sub,‍,,1,,,removing zero width joiner

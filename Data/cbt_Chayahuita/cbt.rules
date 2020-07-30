@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-04-30
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,apostrophe,[ꞌ'ˈ‘’],,,,
 class,passthrough,[aimnpst],,,,
 # Individual Letters
@@ -19,5 +19,10 @@ sub,u,w,6,h,,"hu"
 sub,h,,6,,,"clean-up: covers all cases of h"
 sub,q,k,6,,,"qu"
 sub,u,,6,q,,"clean-up"
+# Accented Vowels
+sub,á,a,2,,,
+sub,í,i,2,,,
+sub,ó,u,2,,,
+sub,ë́,ɨ,2,,,
 # Misc. Rules
 sub,({passthrough}),\1,0.1,,,

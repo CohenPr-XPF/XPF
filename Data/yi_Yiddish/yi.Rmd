@@ -5,13 +5,14 @@ bibliography: yi.bib
 output: html_document
 ---
 
-Last updated: 2019-11-12
+Last updated: 2020-06-19
 
 # Background
 
-**Language family**: Indo-European / Germanic / West Germanic / Elbe Germanic / High German  
+**Language Family:** Indo-European / Germanic / West / High German / Yiddish
 
-* Though Yiddish is descended a Germanic language, it borrows elements extensively from Hebrew, Aramaic, Romance languages, and Slavic languages, including the use of the Hebrew script. Yiddish has two major distinct dialects: Eastern and Western. Where dialects diverge, I will favor the Eastern dialect, as it is more broadly spoken and contains more words of Slavic origin than Western Yiddish [@kleine_illustrations_2003, p. 261].
+* Though Yiddish descends from Germanic language, it borrows elements extensively from Hebrew, Aramaic, Romance languages, and Slavic languages, including the use of the Hebrew script. Yiddish has two major distinct dialects: Eastern and Western. Where dialects diverge, I will favor the Eastern dialect, as it is more broadly spoken and contains more words of Slavic origin than Western Yiddish [@kleine_illustrations_2003, p. 261].
+* Only the Romanized representation of Yiddish is addressed here.
 
 # Phonology
 
@@ -68,7 +69,8 @@ kable(diphthongs, align = 'c') %>%
 
 # Alphabet
 
-* Yiddish has both a Hebrew script and a romanized scipt. Because the Hebrew alphabet contains diacritics which differentiate between letters but are not always recorded in written Yiddish, the Hebrew alphabet cannot be used to construct a rule set with a one-to-one correspondence between graphemes and phonemes. Therefore, only the Latin script is addressed here.  
+* Yiddish has both a Hebrew script and a Romanized script. Because the Hebrew alphabet (an abjad) contains diacritics which differentiate between letters but are not always recorded in written Yiddish, the Hebrew alphabet cannot be used to construct a rule set with a one-to-one correspondence between graphemes and phonemes. Therefore, only the Latin script is addressed here.  
+* In some dialects, ⟨r⟩ is more accurately a trill [r] or [ʀ] (ibid.).
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -118,5 +120,7 @@ kable(alphabet, align = 'c') %>%
 # Misc. Rules
 
 * Voiced obstruents become voiceless preceding voiceless obstruents [@wetzels_typology_2001, p. 217].
+* The glottal stop [ʔ] may be inserted intervocalically [@kleine_illustrations_2003, p. 262].
+* /n/ assimilates to [ŋ] when collocated with /k/ or /ɡ/ (ibid.).
 
 # References

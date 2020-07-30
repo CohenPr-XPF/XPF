@@ -2,9 +2,9 @@
 # Written by: Bill
 # Last Updated: 2019-08-02
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
-class,cons-output,[b|w|ɡ|ɣ|d|dʒ|z|j|k|q|l|m|n|p|ɾ|s|t|f|χ|h|tʃ|ʃ],,,,
-# Consonants
+# Class Rules
+class,cons-output,(b|w|ɡ|ɣ|d|dʒ|z|j|k|q|l|m|n|p|ɾ|s|t|f|χ|h|tʃ|ʃ),,,,
+# Individual Letters
 sub,"а","a",4,,,"for some reason, if I don't put quotes around the characters in this one line, the entire file breaks"
 sub,б,b,4,,,
 sub,в,w,4,,,

@@ -6,11 +6,11 @@ bibliography: tr.bib
 output: html_document
 ---
 
-Last Updated: 2019-11-21
+Last Updated: 2020-07-02
 
 # Background
 
-**Language family**: Turkic / Common Turkic / Oghuz / Nuclear Oghuz / West Oghuz
+**Language Family:** Turkic / Common Turkic / Oghuz / Western Oghuz / Turkish
 
 * Speakers of Turkish reside in a multitude of countries spanning across southeast Europe and western Asia.
 
@@ -55,13 +55,14 @@ Low       ""      "a"       ""
 '), TRUE)
 
 kable(consonants, align = 'c') %>%
-  kable_styling("bordered")
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 ```
 
 # Alphabet
 
 * The capital of ⟨i⟩ is ⟨İ⟩ and the capital of ⟨ı⟩ is ⟨I⟩.
-* A circumflex (^) placed over a vowel may indicate lengthening or palatalization of the preceding consonant [@Goeksel2005, p. x].
+* A circumflex (^) placed over a vowel may indicate lengthening or palatalization of the preceding consonant [@Goeksel2005, p. x]. I have chosen not to account for this feature in the rules.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -104,7 +105,7 @@ kable(alphabet, align = 'c') %>%
 
 * {1} There seems to be some controversy around the grapheme ⟨ğ⟩. @Yavuz2011 states that some sources identify it as having a distinct sound whereas others do not (p. 22). They have the stance that there is no corresponding phoneme. Although @Goeksel2005 does provide a corresponding sound /ɣ/ for some dialects, they also support the claim that the grapheme lacks a consonantal sound (p. 7). In actuality, the realization of the grapheme seems largely dependent and predictable based on the environment, often alternating with zero (inaudible realization). The main rules outlined by @Goeksel2005 are described below:  
     - Word-finally or syllable-finally, it lengthens a preceding back vowel.  
-    - Following front vowels in Word-final or syllable-final positions, it may be realized as a palatal glide.  
+    - Following front vowels in word-final or syllable-final positions, it may be realized as a palatal glide.  
     - Most often inaudible intervocalically (may be realized as a palatal glide between like front vowels).  
 * For the sake of the transcription rules, I have opted to transcribe it to nothing.
 
@@ -116,14 +117,14 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * /v/ is realized as [β̞] or a [w] when preceded by a vowel [ibid.; @Gurevich2004, p. 252].
+* In word-initial and word-final positions, /ɾ/ is often fricated [@Yavuz2011, p. 25].
+* /f/ may be realized as [ɸ] in word-final positions and preceding rounded vowels [@Goeksel2005, p. 6].
 
 # Misc. Rules
 
 * There is no contrast between velar and palatal stops in native Turkish words [@Zimmer1992, p. 155]. Rather, the palatal stops are allophones, occurring in syllables that have front vowels [@Yavuz2011, p. 25].
 * /l/ is velarized in the environment of back vowels
 * /h/, /ɾ/, and /l/ often devoice word-finally (ibid.). /ɾ/ and /l/ may also devoice when followed by a voiceless consonant.
-* In word-initial and word-final positions, /ɾ/ is often fricated [@Yavuz2011, p. 25].
-* /f/ may be realized as [ɸ] in word-final positions and preceding rounded vowels [@Goeksel2005, p. 6].
 * In between a front vowel and consonant or after a front vowel in word-final positions, /h/ becomes a voiceless palatal fricative. In the same environments, but with back vowels, /h/ becomes a voiceless velar fricative [@Goeksel2005, p. 8].
 * Consonants geminate [@Lewis1967, p. 8].
 

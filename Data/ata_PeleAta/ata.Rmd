@@ -9,11 +9,9 @@ Last updated: 2019-11-08
 
 # Background
 
-**Language family**: The classification of Pele-Ata is not very clear. Ethnologue classifies it as:
+**Language family**: East Papuan / Yele-Solomons-New Britain / New Britain / Wasi
 
-East Papuan / Yele-Solomons-New Britain / New Britain / Wasi
-
-However, @campbell2017 classifies it as a language isolate, stating that similarities among such languages within the (tentative) family are far too small to warrant any genealogical relation [also noted in @Campbell2010, pp. 6-7].
+* **Note:** The classification of Pele-Ata carries some controversy. @campbell2017 classifies it as a language isolate, stating that similarities among such languages within the (tentative) family are far too small to warrant any genealogical relation [also noted in @Campbell2010, pp. 6-7].
 
 * Pele-Ata is spoken in the East and West New Britain provinces of Papua New Guinea.
 
@@ -63,7 +61,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* Orthographically, ⟨w⟩ and ⟨j⟩ are sometimes used to represent /u/ and /i/ respectively, which will be transcribed as such [@hashimoto2003, p. 3].
+* Orthographically, ⟨w⟩ and ⟨j⟩ are sometimes used to represent /u/ and /i/ respectively, which will be transcribed as such in the rules [@hashimoto2003, p. 3].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

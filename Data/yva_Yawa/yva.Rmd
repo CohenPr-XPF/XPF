@@ -5,17 +5,19 @@ bibliography: yva.bib
 output: html_document
 ---
 
-Last updated: 09-23-2019
+Last Updated: 2020-07-06
 
 # Background
 
-**Language family**: West Papuan / Yapen
+**Language Family:** West Papuan / Yapen
 
 * Also referred to as Yava and Mantembu, Yawa is spoken in the Papua province of Indonesia.
+* Yawa has incorporated many Indonesian loanwords, which have mostly been adapted to Yawa's phonological system [@jones_yawa_1986, p. 25].
+* The linguistic classification of Yawa is somewhat suspect; some speculate it (or Yapen) is an independent language family.
 
 # Phonology
 
-* The only documentation regarding the phonology of Yawa was provided by @jones_yawa_1986, which is said to reflect only the Sarawandori dialect [@jones_dialects_1968, p. 33]; however, he states that all dialects of Yawa are incredibly similar.
+* The only documentation regarding the phonology of Yawa is provided by @jones_yawa_1986, which is said to reflect only the Sarawandori dialect [@jones_dialects_1968, p. 33]; however, he states that all dialects of Yawa are incredibly similar.
 
 ## Consonants
 
@@ -45,7 +47,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Most of the diphthongs that occur are realized as a vowel plus a glide. /ui/ is the exception, where it's realized either as a glide plus a vowel or a vowel plus a glide [@jones_yawa_1986, p. 17].
+* Most of the diphthongs that occur are realized as vowel-glide sequences. /ui/ is the only exception, where it's realized either as a glide plus a vowel or a vowel plus a glide [@jones_yawa_1986, p. 17].
     - These diphthongs may be realized merely as vowel sequences [@jones_yawa_1986, p. 17]; therefore, no rules will be included to account for them.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -60,49 +62,41 @@ Low        ""         "a"          ""
 kable(vowels, align = 'c') %>%
   kable_styling("bordered") %>%
   column_spec(1, bold = TRUE)
-
-
-diphthongs <- read.table(textConnection('
-Diphthongs
-"/ui/, /oi/, /ai/, /ae/, /ao/, /au/"
-'), TRUE)
-
-kable(diphthongs, align = 'c') %>%
-  kable_styling("bordered")
 ```    
 
 # Alphabet
 
-* The most comprehensive account of the Yawa orthography was provided by @jones_yawa_1986, which is reflected largely by the alphabet listed below. However, three years later, in 1989, the same author provided another account about the pronunciation [@jones_pronunciation_1989]. In addition to the graphemes from the 1986 source, the 1989 source included two additional graphemes ⟨ng⟩ and ⟨v⟩ (p. xvii). The former is said to be pronounce as /ŋ/, but there isn't a clear description about the pronunciation of ⟨v⟩ ("pronounced like in English except with both lips close together").
-    - Given that this source provides the pronunciation (not specific about the underlying phonemes), it could be inferred that /ŋ/ is allophonic, just like the realization of [g] [@jones_yawa_1986, p. 6]. Therefore, I won't treat /ŋ/ as a phoneme.
-    - Based on the description of ⟨v⟩, it appears that the pronunciation is somewhere between that of /v/ and /w/, leading me to believe that there could be some free variation with the two (ex. Yawa is understood as both Yawa and Yava). Given that @jones_yawa_1986 didn't provide a corresponding phoneme for ⟨v⟩, I use /w/.
+* The most comprehensive account of the Yawa orthography is provided by @jones_yawa_1986, which is what the alphabet below is heavily patterned after. However, the same author also provides another account about the transcription [@jones_pronunciation_1989]. In addition to the graphemes from the 1986 source, the 1989 source includes two additional graphemes ⟨ng⟩ and ⟨v⟩ (p. xvii). The former is said to represent /ŋ/, but there isn't a clear description about the transcription of ⟨v⟩, which is "pronounced like in English except with both lips close together."
+    - Given that this source provides the pronunciation (i.e. not specific about the underlying phonemes), it could be inferred that /ŋ/ is allophonic, just like the realization of [ɡ] [see Misc. Rules; @jones_yawa_1986, p. 6]. Furthermore, looking at the words contained in Crúbadán, all instances of ⟨ng⟩ are followed by a velar stop. Therefore, it is likely that ⟨ng⟩ represents the phoneme /n/ that has assimilated to the place of the following velar stop.
+    - Based on the description of ⟨v⟩, it appears that the pronunciation is somewhere between that of /v/ and /w/, leading me to believe that there could be some free variation with the two (ex. Yawa is understood as both Yawa and Yava). Given that @jones_yawa_1986 doesn't provide a corresponding phoneme for ⟨v⟩, I have chosen to use /w/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
-Grapheme      Phoneme
-"a"            "/a/"  
-"b"            "/b/"  
-"d"            "/d/"  
-"e"            "/e/"
-"g"            "/dʑ/"  
-"i"            "/i/"  
-"j"            "/dʑ/"  
-"k"            "/k/"  
-"m"            "/m/"  
-"n"            "/n/"  
-"o"            "/o/"  
-"p"            "/p/"  
-"r"            "/ɾ/"  
-"s"            "/s/"  
-"t"            "/t/"  
-"u"            "/u/"
-"v"            "/w/"  
-"w"            "/w/"  
-"y"            "/j/"
-**Digraph**    ""
-"ny"           "/ɲ/"  
-"sy"           "/ʃ/"
+Grapheme      Phoneme      Comment
+"a"            "/a/"         ""
+"b"            "/b/"         ""  
+"d"            "/d/"         ""  
+"e"            "/e/"         ""
+"g"            "/dʑ/"         ""  
+"i"            "/i/"         ""  
+"j"            "/dʑ/"         ""  
+"k"            "/k/"         ""
+"m"            "/m/"         ""
+"n"            "/n/"         ""  
+"o"            "/o/"         ""  
+"p"            "/p/"         ""  
+"r"            "/ɾ/"         ""  
+"s"            "/s/"         ""  
+"t"            "/t/"         ""  
+"u"            "/u/"         ""
+"v"            "/w/"         ""  
+"w"            "/w/"         ""  
+"y"            "/j/"         ""
+**Digraph**      ""          ""
+"ng"           "/n/"         "realized as [ŋ]"
+"ny"           "/ɲ/"         ""  
+"sy"           "/ʃ/"         ""
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
@@ -120,14 +114,11 @@ kable(alphabet, align = 'c') %>%
     - VV  
 * Consonant clusters must consist of a homorganic nasal followed by a stop or a fricative [@jones_yawa_1986, p. 15].
 
-# Lenition Rules
-
-* Unstressed /u/, word-initially, is deleted preceding a lone consonant [@jones_yawa_1986, p. 8].
-
 # Misc. Rules
 
 * Non-palatal consonants (excluding /t/) are labialized when preceded by /u/ and followed by another vowel [@jones_yawa_1986, p. 5].
 * /w/ occurs in free variation with [β] [@jones_yawa_1986, p. 6].
-* /dʑ/ is realized as [g] following /u/ (ibid.).
+* /dʑ/ is realized as [ɡ] following /u/ (ibid.).
+* Unstressed /u/, word-initially, is deleted preceding a lone consonant [@jones_yawa_1986, p. 8].
 
 # References

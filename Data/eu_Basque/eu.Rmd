@@ -4,9 +4,12 @@ author: "Justin Bai"
 bibliography: eu.bib
 output: html_document
 ---
+
+Last Updated: 2020-06-29
+
 # Background
 
-**Language family**: isolate
+**Language Family**: isolate
 
 * Basque is spoken in Basque Country, a region in western Pyrenees between France and Spain.
 
@@ -14,7 +17,7 @@ output: html_document
 
 ## Consonants
 
-* /r/ and /ɾ/ only contrast intervocalically. Although this may be seen purely as a phonological process of /r/ becoming a flap, the flap is actually attested as an actual phonemes [@hualde2004basque, p. 10].
+* /r/ and /ɾ/ only contrast intervocalically. Although this may be seen purely as a phonological process of /r/ becoming a flap, the flap is attested as an actual phoneme [@hualde2004basque, p. 10].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -70,8 +73,6 @@ kable(diphthongs, align = 'c') %>%
 
 # Alphabet
 
-* ⟨c⟩, ⟨ç⟩, ⟨q⟩, ⟨v⟩, ⟨w⟩, ⟨y⟩ appear in loanwords.
-
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
@@ -92,7 +93,7 @@ Grapheme      Phoneme                 Comment
 "ñ"            "/ɲ/"                     ""
 "o"            "/o/"                     ""
 "p"            "/p/"                     ""
-"r"         "/r/; /ɾ/"   "/r/: word-initially; /ɾ/: word-medially"  
+"r"         "/r/; /ɾ/"   "/r/: word-initially; /ɾ/:intervocalically"  
 "s"            "/s̺/"                     ""
 "t"            "/t̪/"                     ""
 "u"            "/u/"                     ""
@@ -116,10 +117,10 @@ kable(alphabet, align = 'c') %>%
 # Lenition
 
 * Several lenition processes are noted in @Saltarelli1988 :
-    - /b/, /d/, and /g/ may spirantize to [β], [ð], and [ɣ], respectively, intervocalically, or following a tap or trill while also preceding a vowel.
+    - /b/, /d̪/, and /g/ may spirantize to [β], [ð], and [ɣ], respectively, intervocalically, or following a tap or trill while also preceding a vowel.
     - /h/ becomes voiced intervocalically.
     - /s̻/ and /s̺/ become voiced following a voiced consonant.
-    - /b/, /d/, /g/, and /ɾ/ may delete intervocalically.
-    - /h/ deletes when preceded by an aspirated consonant of when followed by another /h/.
+    - /b/, /d̪/, /g/, and /ɾ/ may delete intervocalically.
+    - /h/ deletes when preceded by an aspirated consonant or when followed by another /h/.
 
 # References

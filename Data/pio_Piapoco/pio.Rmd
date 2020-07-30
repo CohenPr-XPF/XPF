@@ -9,9 +9,9 @@ Last updated: 2019-11-04
 
 # Background
 
-**Language family**: Arawakan / Maipuran / Northern / Inland
+**Language Family:** Arawakan / Maipuran / Northern Maaipuran / Inland
 
-* Piapoco is spoken in Guainía and Vichada departments of Eastern Columbia.
+* Piapoco is spoken in Guainía and Vichada departments of Eastern Colombia.
 
 # Phonology
 
@@ -27,7 +27,7 @@ library(kableExtra)
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial  Alveolar  Palatal   Velar   Glottal
 Stops                      "p  b"  "t  d"      ""       "k"      ""
-Affricates                   ""     "ts"       ""       ""       ""
+Affricates                  ""      "ts"       ""       ""       ""
 Fricatives                  ""      "s"        ""       ""       "h"
 Nasals                      "m"     "n"        ""       ""       ""
 Flaps                       ""      "ɾ"        ""       ""       ""
@@ -44,9 +44,10 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 ## Vowels
 
 * /o/ appears in some loanwords [@Klumpp2019, p. 4].
-* Vowel length is phonemic in Piapoco [@Klumpp1985, pp. 22-23]. Long vowels are indicated by duplicate graphemes (accents are only atop the first vowel of a long vowel sequence [@Klumpp2019, p. 5]).
-* Stress and tone appear to be one in the same (i.e. the suprasegmental features overlap) [@Klumpp2019, p. 5]. That is, high stress/high tone is marked by an acute accent (´) over the vowel, while low stress/low tone is marked by a grave accent (\`) over the vowel. @Klumpp1995 explains that stress is the contrastive feature that is accompanied by changes in tone (p. vi), suggesting that tonal differences may be a by-product of the stress. Although there is this ambiguity, I have opted to include tone as a contrastive feature in the rules.
+* Vowel length is phonemic in Piapoco [@Klumpp1985, pp. 22-23]. Long vowels are indicated by duplicate graphemes.
+* Stress and tone appear to be one in the same (i.e. the suprasegmental features overlap) [@Klumpp2019, p. 5]. That is, high stress/high tone is marked by an acute accent (´) over the vowel, while low stress/low tone is marked by a grave accent (\`) over the vowel. @Klumpp1995 explains that stress is the contrastive feature that is accompanied by changes in tone (p. vi), suggesting that tonal differences may be a by-product of stress. Although there is this ambiguity, I have opted to include tone as a contrastive feature in the rules.
     - Syllables (vowels) not marked with either accent fluctuate freely in terms of tone [@Klumpp2019, p. 2].
+    - Accents are only atop the first vowel of a long vowel sequence [@Klumpp2019, p. 5].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -100,11 +101,11 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* /k/ often palatalizes between /i/ and /a/ [@Klumpp2019, p. 2].
 * /h/ is often deleted, especially by younger generations [@Klumpp2019, p. 3].
 
 # Misc. Rules
 
+* /k/ often palatalizes between /i/ and /a/ [@Klumpp2019, p. 2].
 * /ts/ and [tʃ] are said to be in free variation [@Klumpp2019, p. 3].
 * /w/ becomes a fricative [β] preceding front vowels [@Klumpp2019, p. 4].
 

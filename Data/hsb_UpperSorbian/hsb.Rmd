@@ -9,7 +9,7 @@ Last updated: 2020-03-21
 
 # Background
 
-**Language family**: Indo-European / Slavic / West / Sorbian
+**Language Family**: Indo-European / Slavic / West / Sorbian
 
 * Also referred to as Wendish or Upper Lusatian, it is spoken in eastern Germany and in areas bordering Poland and the Czech Republic.
 
@@ -19,7 +19,7 @@ Last updated: 2020-03-21
 
 * /ɡ/, /f/, and /v/ are typically found in loanwords [@Howson2017, p. 4].
 * While @Howson2017 represents Upper Sorbian as having an /n~nʲ/ contrast (p. 3), @Iskarous2018 state that Upper Sorbian more accurately has an /n~ɲ/ contrast (p. 52). I have opted for Howson's approach because it is more consistent with how the other palatalized sounds are represented.
-* According to @Brijnen1994, there is some debate as to whether the Sorbian languages truly preserve the palatal-nonpalatal distinction (p. 66). The dialects of Sorbian vary in how they preserve the distinction.
+* According to @Brijnen1994, there is some debate as to whether the Sorbian languages truly preserve the palatal-nonpalatal distinction (p. 66); the dialects of Sorbian vary in how they preserve the distinction.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -43,14 +43,14 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 7)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: For phonemes (without a diacritic) that share a cell, those on the left are voiceless and those on the right are voiced. For phonemes (with the diacritic (ʲ)) that share a cell, those on the left are (voiced) plain and those on the right are (voiced) palatalized.", general_title = "")
+  footnote(general = "Note: For phonemes (without diacritis) that share a cell, those on the left are voiceless and those on the right are voiced. For phonemes with the diacritic (ʲ) that share a cell, those on the left are (voiced) plain and those on the right are (voiced) palatalized.", general_title = "")
 ```
 
 ## Vowels
 
 * @Howson2017 explains some uncertainty over the vowel system of Upper Sorbian, which has been described as having seven, eight, or ten vowels (p. 5).
     - The main point of controversy is the phonemic status of /ɨ/, and whether it's an allophone of /i/. @Jentsch1980 [as cited in @Brijnen1994, p. 67] states that they are not in complementary distribution, and should be treated as separate phonemes.
-    - I have chosen to use the the eight vowel system just as @Howson2017 does (pp. 5-6).
+    - I have chosen to use the eight vowel system just as @Howson2017 does (pp. 5-6).
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -125,7 +125,6 @@ kable(alphabet, align = 'c') %>%
 
 * /ʀ/ and /ʀʲ/ are often realized as fricatives [ʁ] and [ʁʲ], respectively. Also, they are sometimes elided [@Howson2017, p. 4].  
 * /x/ is often realized as trill [ʀ̥] (ibid.).
-* When palatalized, /t/ and /d/ are realized as affricates [tʃʲ] and [dʒʲ], respectively [@Iskarous2018, p. 52].
 
 # Misc. Rules
 
@@ -133,5 +132,6 @@ kable(alphabet, align = 'c') %>%
 * Stress is realized as a higher pitch on the stressed syllable; syllables with secondary stress exhibit vowel lengthening [@Howson2017, pp. 6-7].
 * In word-final positions, palatal /nʲ/ is decomposed into [jn] [@Howson2017, p. 7].
 * All consonants undergo palatalization preceding vowels /e/, /i/, and /ɪ/. However, @Jocz2013 [as cited in @Howson2017, p. 7] states that this is an optional process, given that the contrast is neutralized. Based on this, I have chosen to transcribe the phonemic palatalized consonants only using the digraphs listed above [@Howson2017, p. 4].
+* When palatalized, /t/ and /d/ are realized as affricates [tʃʲ] and [dʒʲ], respectively [@Iskarous2018, p. 52].
 
 # References  

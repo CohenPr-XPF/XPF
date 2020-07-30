@@ -1,6 +1,6 @@
 # Wayana Rule Set
 # Written by: Emily
-# Last updated: 11-05-2019
+# Last updated: 2019-11-05
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
 class,passthrough,[aehijkmnopstuw],,,,

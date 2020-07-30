@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -147,6 +146,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -331,7 +331,7 @@ j
 <div id="vowels" class="section level2">
 <h2>Vowels</h2>
 <ul>
-<li>Although vowels may appear consecutively, they are not always interpreted as complex phonemes, so they will not be accounted for in the rules <span class="citation">(Leckie and Hughes 1976, 7–8)</span>.</li>
+<li>Although vowels may appear consecutively, they are not always interpreted as complex phonemes, so they will not be accounted for as diphthongs in the rules <span class="citation">(Leckie and Hughes 1976, 7–8)</span>.</li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -403,6 +403,9 @@ Grapheme
 <th style="text-align:center;">
 Phoneme
 </th>
+<th style="text-align:center;">
+Comment
+</th>
 </tr>
 </thead>
 <tbody>
@@ -411,7 +414,9 @@ Phoneme
 a
 </td>
 <td style="text-align:center;">
-a
+/a/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -419,7 +424,9 @@ a
 b
 </td>
 <td style="text-align:center;">
-b
+/b/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -427,7 +434,9 @@ b
 d
 </td>
 <td style="text-align:center;">
-d
+/d/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -435,7 +444,9 @@ d
 e
 </td>
 <td style="text-align:center;">
-e
+/e/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -443,7 +454,9 @@ e
 g
 </td>
 <td style="text-align:center;">
-ɡ
+/ɡ/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -451,7 +464,9 @@ g
 h
 </td>
 <td style="text-align:center;">
-h
+/h/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -459,7 +474,9 @@ h
 i
 </td>
 <td style="text-align:center;">
-i
+/i/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -467,7 +484,9 @@ i
 k
 </td>
 <td style="text-align:center;">
-k
+/k/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -475,7 +494,9 @@ k
 l
 </td>
 <td style="text-align:center;">
-l
+/l/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -483,7 +504,9 @@ l
 m
 </td>
 <td style="text-align:center;">
-m
+/m/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -491,7 +514,9 @@ m
 n
 </td>
 <td style="text-align:center;">
-n
+/n/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -499,7 +524,9 @@ n
 o
 </td>
 <td style="text-align:center;">
-o
+/o/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -507,7 +534,9 @@ o
 p
 </td>
 <td style="text-align:center;">
-p
+/p/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -515,7 +544,9 @@ p
 s
 </td>
 <td style="text-align:center;">
-s
+/s/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -523,7 +554,9 @@ s
 t
 </td>
 <td style="text-align:center;">
-t
+/t/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -531,7 +564,9 @@ t
 u
 </td>
 <td style="text-align:center;">
-u
+/u/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -539,7 +574,9 @@ u
 w
 </td>
 <td style="text-align:center;">
-w
+/w/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -547,7 +584,9 @@ w
 y
 </td>
 <td style="text-align:center;">
-j
+/j/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -555,12 +594,17 @@ j
 ’
 </td>
 <td style="text-align:center;">
-ʔ
+/ʔ/
+</td>
+<td style="text-align:center;">
+the corresponding uppercase grapheme is ⟨C⟩ <span class="citation">(Leckie and Hughes 1976, 69)</span>
 </td>
 </tr>
 <tr>
 <td style="text-align:center;">
 <strong>Digraph</strong>
+</td>
+<td style="text-align:center;">
 </td>
 <td style="text-align:center;">
 </td>
@@ -570,7 +614,9 @@ j
 bw
 </td>
 <td style="text-align:center;">
-bʷ
+/bʷ/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -578,7 +624,9 @@ bʷ
 gw
 </td>
 <td style="text-align:center;">
-ɡʷ
+/ɡʷ/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -586,7 +634,9 @@ gw
 hw
 </td>
 <td style="text-align:center;">
-hʷ
+/hʷ/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -594,7 +644,9 @@ hʷ
 mw
 </td>
 <td style="text-align:center;">
-mʷ
+/mʷ/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -602,7 +654,9 @@ mʷ
 pw
 </td>
 <td style="text-align:center;">
-pʷ
+/pʷ/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 <tr>
@@ -610,7 +664,9 @@ pʷ
 ’w
 </td>
 <td style="text-align:center;">
-ʔʷ
+/ʔʷ/
+</td>
+<td style="text-align:center;">
 </td>
 </tr>
 </tbody>

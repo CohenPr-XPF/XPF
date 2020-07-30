@@ -1,0 +1,195 @@
+---
+title: "Central Atlas Tamazight"
+author: "Abi Creighton"
+edited by: "Emily Strand"
+bibliography: tzm.bib
+output: html_document
+---
+
+Last Updated: 2020-07-09
+
+**Compromised: Conflation between /l̪/ and /l̪ˤ/, and between /ʒ/ and /ʒˀ/**
+
+# Background
+
+**Language Family:** Afro-Asiatic / Berber / Northern / Atlas
+
+* Central Atlas Tamazight is also known as Atlasic, Central Shilha, Central Morocco Tamazight, Middle Atlas Tamazight, or simply Tamazight. It is spoken primarily in the Atlas Mountains of Morocco, but there is a small community of speakers in France.  
+
+# Phonology
+
+## Consonants
+
+* There is a definite lack of consensus around the consonant inventory of Central Atlas Tamazight, particularly concerning the pharyngealized (emphatic) and labialized consonants. Below, I have listed the differences:
+    - @Kossmann1997 argue for palatal fricatives as opposed to postalveolar (p. 467).
+    - @Achab2001 argues for /tʃ/ and /dʒ/ as opposed to /ʃ/ and /ʒ/. Only notes gemination for /d/, /t/, /ɡ/, /k/, and /q/ (p. 4).
+    - @Bouladknadel2009 argues for alveolar place of articulation for /s/, /z/, /sˤ/, and /zˤ/. Includes palatal fricatives as opposed to postalveolar (p. 3).
+    - @ait_aissa_2010 omits /rˤ/. Includes no labialized consonants and argues for laryngeal consonants (p. 27).
+    - @Ridouane2014 includes uvular fricatives (plain and labialized) as opposed to velar (p. 208).
+* I have chosen to follow the analysis of @Ridouane2014, with minor changes influenced by the other sources.
+* /lˤ/ is said to be rather marginal, appearing mainly in Arabic loanwords [@Ridouane2014, p. 212].  
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Dental     Postalveolar   Palatal      Velar      Uvular   Pharyngeal   Glottal
+Stops                       "b"    "t̪ t̪ˤ d̪ d̪ˤ"       ""          ""      "k kʷ ɡ ɡʷ"   "q qʷ"       ""         ""
+Fricatives                  "f"    "s̪ s̪ˤ z̪ z̪ˤ"    "ʃ ʒ ʒˀ"       ""      "x xʷ ɣ ɣʷ"     ""        "ħ ʕ"       "h"
+Nasals                      "m"       "n̪"            ""          ""          ""          ""         ""         ""
+Trills                      ""       "r̪ r̪ˤ"          ""          ""          ""          ""         ""         ""
+Approximants                ""       "l̪ l̪ˤ"          ""          "j"        "w"          ""         ""         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Postalveolar", "Palatal", "Velar", "Uvular", "Pharyngeal", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 8)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: Phonemes with the diacritic (ˤ) are pharyngealized, and phonemes with the diacritic (ʷ) are labialized .", general_title = "")
+```  
+
+## Vowels
+
+* Tamazight does not include diphthongs or vowel clusters [@Kossmann1997, p. 463].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         ""          "u"
+Low           ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```     
+
+# Alphabet
+
+* Consonants can geminate [@Ridouane2014, p. 209]. Geminate consonants are marked by duplicate graphemes [@haddachi_2000, pp. 2-3].
+* The traditional script of Tamazight reflects the Tifinagh alphabet, but a Romanized script has also gained traction. Both scripts are provided here.
+    - Both alphabets pose conflicts with /ʒ/ and /l̪/ and their pharyngealized counterparts, such that the contrast is not maintained. I have chosen to use the non-pharyngealized variants as default in the rules, but this ultimately compromises the language.
+
+## Tifinagh Alphabet
+
+* **Note:** /qʷ/ and /xʷ/ are not represented in the Tamazight (Tifinagh script) Crúbadán corpus.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme         Phoneme             Comment
+"ⴰ"               "/a/"                ""
+"ⴱ"              "/b/"                ""
+"ⴳ"              "/ɡ/"                ""
+"ⴷ"              "/d̪/"                ""
+"ⴹ"              "/d̪ˤ/"               ""
+"ⴻ"              "/i/"     "represents a reduced vowel phonetically"            
+"ⴼ"              "/f/"                ""
+"ⴽ"              "/k/"                ""
+"ⵀ"              "/h/"                ""
+"ⵃ"              "/ħ/"                ""
+"ⵄ"              "/ʕ/"                ""
+"ⵅ"              "/x/"                ""
+"ⵇ"              "/q/"                ""
+"ⵉ"              "/i/"                ""
+"ⵊ"            "/ʒ/; /ʒˀ/"       "/ʒ/: default in ruleset"
+"ⵍ"            "/l̪/; /l̪ˤ/"       "/l̪/: default in ruleset"
+"ⵎ"              "/m/"                ""
+"ⵏ"              "/n̪/"                ""
+"ⵓ"              "/u/"                ""
+"ⵔ"              "/r̪/"               ""
+"ⵕ"              "/r̪ˤ/"              ""
+"ⵖ"              "/ɣ/"                ""
+"ⵙ"              "/s̪/"               ""
+"ⵚ"              "/s̪ˤ/"              ""
+"ⵛ"              "/ʃ/"               ""
+"ⵜ"              "/t̪/"               ""
+"ⵟ"              "/t̪ˤ/"              ""
+"ⵡ"              "/w/"               ""
+"ⵢ"              "/j/"               ""
+"ⵣ"              "/z̪/"              ""
+"ⵥ"              "/z̪ˤ/"              ""
+**Digraph**      ""                  ""
+"ⴳⵯ"             "/ɡʷ/"              ""
+"ⴽⵯ"             "/kʷ/"              ""
+"ⵇⵯ"             "/qʷ/"              ""
+"ⵅⵯ"             "/xʷ/"              ""
+"ⵖⵯ"             "/ɣʷ/"              ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+## Latin Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme           Comment
+"a"             "/a/"              ""
+"b"             "/b/"              ""
+"g"             "/ɡ/"              ""
+"d"             "/d̪/"              ""
+"ḍ"             "/d̪ˤ/"             ""
+"e"             "/i/"              "represents a reduced vowel phonetically"
+"f"             "/f/"              ""
+"k"             "/k/"              ""
+"h"             "/h/"              ""
+"ḥ"             "/ħ/"              ""
+"\'"            "/ʕ/"              ""
+"q"             "/q/"              ""
+"i"             "/i/"              ""
+"j"          "/ʒ/; /ʒˀ/"           "/ʒ/: default in the ruleset"
+"l"          "/l̪/; /l̪ˤ/"           "/l̪/: default in the ruleset"
+"m"             "/m/"              ""
+"n"             "/n̪/"              ""
+"u"             "/u/"              ""
+"r"             "/r̪/"              ""
+"ṛ"             "/r̪ˤ/"             ""
+"s"             "/s̪/"              ""
+"ṣ"             "/s̪ˤ/"             ""
+"t"             "/t̪/"              ""
+"ṭ"             "/t̪ˤ/"             ""
+"w"             "/w/"              ""
+"y"             "/j/"              ""
+"z"             "/z̪/"              ""
+"ẓ"             "/z̪ˤ/"             ""
+**Multigraph**   ""                ""
+"kh"            "/x/"              ""
+"gh"            "/ɣ/"              ""
+"sh"            "/ʃ/"              ""
+"gw"            "/ɡʷ/"             ""
+"kw"            "/kʷ/"             ""
+"qw"            "/qʷ/"             ""
+"khw"           "/xʷ/"             ""
+"ghw"           "/ɣʷ/"             ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* The structure of syllables in Tamazight is (C)(C)V(C)(C) [@ait_aissa_2010, p. 35].
+    - Syllabification of consonants is frequent in the language [@Coleman2001, p. 34].
+
+# Lenition Rules
+
+* In the northern dialect, the plain stops except /q/ spirantize [@mezhoud_2015].
+* /r/ is often realized as a flap [@Ridouane2014, p. 210].
+
+# Misc. Rules
+
+* The labials /b/ and /m/ have a tendency to devoice before voiceless consonants [@ait_aissa_2010, p. 27-28].
+* /t/ is aspirated in some positions, e.g., word-finally [@ait_aissa_2010, p. 27].
+* /k/ is aspirated word-initially or preceding a vowel [@ait_aissa_2010, p. 28].
+* [ə] is frequently epenthesized [@Kossmann1997, p. 468].
+
+# References

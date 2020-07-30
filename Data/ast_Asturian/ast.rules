@@ -25,7 +25,6 @@ sub,x,ʃ,1,,,
 sub,y,j,1,,,
 sub,z,θ,1,,,
 sub,({passthrough}),\1,1,,,
-sub,{punct},,1,,,
 # Digraphs
 sub,c,tʃ,2,,h,
 sub,h,,2,c,,"clean-up",
@@ -44,3 +43,5 @@ sub,é,e,1,,,
 sub,í,i,1,,,
 sub,ó,o,1,,,
 sub,ú,u,1,,,
+# Misc. Rules
+sub,{punct},,1,,,

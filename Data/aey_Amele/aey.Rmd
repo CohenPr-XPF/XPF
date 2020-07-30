@@ -5,11 +5,11 @@ bibliography: aey.bib
 output: html_document
 ---
 
-Last Updated: 2019-09-23
+Last Updated: 2020-06-24
 
 # Background
 
-**Language Family**: Trans-New Guinea / Madang / Croisilles / Mabuso / Gum / Amele
+**Language Family**: Trans-New Guinea / Madang-Adelbert Range / Madang / Mabuso / Gum
 
 * Amele is spoken on the Madang Province of Papua New Guinea.
 
@@ -45,7 +45,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 ## Vowels
 
 * Amele contains the following diphthongs: /ai/, /au/, /ei/, /eu/, /oi/, /ou/
-    - @AeyRoberts2016 interprets these as sequences of consecutive vowels rather than as complex phonemes. Other sequences of vowels can also occur (including consecutive identical vowels), but only across syllable boundaries [@AeyRoberts2016, pp. 66-68]. (@AeyRoberts1998 also argues for the existence of /ae/ and /ao/ as diphthongs (p. 3), but he seems to have moved away from that analysis by 2016). I have chosen not to account for them in the rules.
+    - @AeyRoberts2016 interprets these as sequences of consecutive vowels rather than as complex phonemes. Other sequences of vowels can also occur (including consecutive identical vowels), but only across syllable boundaries [@AeyRoberts2016, pp. 66-68]. @AeyRoberts1998 also argues for the existence of /ae/ and /ao/ as diphthongs (p. 3), but he seems to have moved away from that analysis by 2016. I have chosen not to account for them in the rules.
 * Mid vowels sometimes lengthen, but @AeyRoberts2016 finds the length to be a realization of an underlying sequence of identical vowels (p. 75).
 
 
@@ -65,7 +65,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* The alphabet used is of the modern Amele orthography (developed ca. 1990), as the older orthography (developed in the 1920s) has several ambiguities. The modern orthography is also the one used by Crubadan, making it all the more preferable.
+* The alphabet used is of the modern Amele orthography (developed ca. 1990), as the older orthography (developed in the 1920s) has several ambiguities. The modern orthography is also the one used by Crúbadán, making it all the more preferable.
 * Older orthography also uses ⟨p⟩, but because [p] is non-phonemic in Amele, I have excluded ⟨p⟩ from my ruleset.
 
 
@@ -103,12 +103,17 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * In some words, /s/ alternates with [h] when adjacent to high vowels [@AeyRoberts2016, p. 56].
+* In words in which /b/ is realized as [p], there can be further spirantization of [p] word-initially and intervocalically to [f] [@AeyRoberts2016, p. 52].
 
 # Misc. Rules
 
-* Word-final non-alveolar stops devoice if the word is multisyllabic; contrast between /ɡb/ and /b/ also collapses in such position, with both phonemes being realized as [p] [@AeyRoberts2016, pp. 52-53, 64].
+* Word-final non-alveolar stops devoice if the word is multisyllabic; contrast between /ɡb/ and /b/ also collapses in such position, with both phonemes being realized as [p] [@AeyRoberts2016, p. 52-53, 64].
+* [p] can also be found as an allophone of /b/ in other positions [@AeyRoberts2016, p. 52].
 * /j/ goes to [ʒ] in certain circumstances: word-initially, when surrounded on both sides by /a/, word-finally after /i/, and intervocalically before /i/ [@AeyRoberts2016, p. 57].
-* Word-final /w/ is realized as [ʋ] [@AeyRoberts2016, p. 64].
+* /w/ is realized as [ʋ] in a few environments:
+  - word-initially preceding the front vowels
+  - word-finally following /i/
+  - inter-vocalically preceding the front vowels [@AeyRoberts2016, p. 56].
 * Consonant clusters can only occur word-medially [@AeyRoberts2016, p. 65].
 * Phonetically lax /a/ lengthens before voiced stops in monosyllabic words [@AeyRoberts2016, p. 76].
 

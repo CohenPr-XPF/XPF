@@ -1,11 +1,9 @@
 # Chuvash Rule Set
 # Written by: Emily
 # Last Updated: 2019-08-05
-# Kirghiz Rule Set
-# Written by: Emily
-# Last Updated: 2019-08-05
 type,sfrom,sto,weight,precede,follow,comment
-class,cons,[v|p|m|t|s|n|l|r|ʃ|tʃ|ɕ|j|k|χ],,,,
+# Class Rules
+class,gem,[v|p|m|t|s|n|l|r|ʃ|tʃ|ɕ|j|k|χ],,,,
 class,misc,[ъь-],,,,
 # Individual Letters
 sub,а,ɑ,1,,,,
@@ -37,4 +35,4 @@ sub,ю,j u,1,,,,
 sub,я,j ɑ,1,,,,
 sub,({misc}),,1,,,,
 # ipasub Rules
-ipasub,({cons}) \1\b,\1 ː,2,,,,
+ipasub,({gem}) \1\b,\1 ː,2,,,,

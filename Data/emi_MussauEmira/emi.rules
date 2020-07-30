@@ -1,8 +1,8 @@
 # Mussau-Emira Rule Set
 # Written by: Bill
-# Last Updated: 2019-07-23
+# Last Updated: 2020-06-02
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,output,[ɑβɛɣiklmnŋɔprstu],,,,
 class,passthrough,[iklmnprstu],,,,
 # Individual Letters
@@ -11,9 +11,10 @@ sub,b,β,4,,,
 sub,e,ɛ,4,,,
 sub,o,ɔ,4,,,
 sub,v,β,4,,,
+sub,({passthrough}),\1,0.1,,,
 # Orthographic Variation
 # To use the Seventh-Day Adventist orthography:
-# Comment out lines 16-19 and uncomment lines 20-21.
+# Comment out lines 17-20 and uncomment lines 21-22.
 sub,g,ɣ,4,,,
 sub,h,,4,g,,"<gh> cleanup"
 sub,n,ŋ,6,,g,"<ng>"
@@ -22,4 +23,4 @@ sub,g,,6,n,,"<ng> cleanup"
 # sub,q,ɣ,4,,,
 # Misc. Rules
 ipasub,({output}) \1\b,\1 ː,2,,,"vowel lengthening / consonant gemination"
-sub,({passthrough}),\1,0.1,,,
+sub,-,,2,,,

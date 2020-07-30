@@ -1,9 +1,10 @@
 # Malagasy Rule Set
 # Written by: Abi Creighton
 # Edited by: Emily
-# Last updated: 2019-09-18
+# Last updated: 2020-06-18
 type,sfrom,sto,weight,precede,follow,comment
-class,passthrough,[abdefhiklmnprstvz],,,,
+# Class Rules 
+class,passthrough,[abefhiklmnprsvz],,,,
 class,n-follower,(t|d|g|k|ts|j),,,,
 class,bi-stop,[pb],,,,
 class,alv,[td],,,,
@@ -18,24 +19,27 @@ sub,j,dz,2,,,
 sub,o,u,2,,,
 sub,y,i,2,,$,
 sub,({passthrough}),\1,1,,,
+# Dentals
+sub,t,t̪,2,,,
+sub,d,d̪,2,,,
 # Digraphs
 sub,b,ᵐb,2,m,,
 sub,p,ᵐp,2,m,,
-sub,d,ⁿd,2,n,,
-sub,t,ⁿt,2,n,,
+sub,d,ⁿd̪,2,n,,
+sub,t,ⁿt̪,3,n,,
 sub,g,ᵑɡ,2,n,,
 sub,k,ᵑk,2,n,,
 sub,j,ⁿdz,2,n,,
-sub,t,tʳ,2,,r,
-sub,d,dʳ,2,,r,
-sub,t,ts,2,,s,
+sub,t,tʳ,3,,r,
+sub,d,dʳ,3,,r,
+sub,t,ts,3,,s,
 sub,m,,3,,{bi-stop},"clean-up",
 sub,n,,3,,{n-follower},"clean-up",
-sub,s,,3,t,,"clean-up",
+sub,s,,4,t,,"clean-up",
 # Trigraphs
-sub,t,ⁿtʳ,3,n,r
-sub,d,ⁿdʳ,3,n,r
-sub,t,ⁿts,4,n,s,
+sub,t,ⁿtʳ,4,n,r
+sub,d,ⁿdʳ,4,n,r
+sub,t,ⁿts,5,n,s,
 sub,r,,2,{alv},,"clean-up",
 # Vowels
 sub,({a}),a,2,,,

@@ -9,7 +9,7 @@ Last updated: 2020-03-02
 
 # Background
 
-**Language family**: Mayan / Quichean-Mamean / Greater Mamean / Mamean
+**Language Family:** Mayan / Quichean-Mamean / Greater Mamean / Mamean
 
 * Mam is spoken in Guatemala.
 
@@ -28,8 +28,8 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial    Alveolar  Postalveolar  Retroflex  Palatal  Velar    Uvular   Glottal
-Stops                      "p ɓ"     "t t’"    ""            ""         "c c’"   "k k’"   "q q’"   "ʔ"
-Affricates                 ""        "ts ts’"  "tʃ tʃ’"      "ʈʂ ʈʂ’"   ""       ""       ""       ""
+Stops                      "p ɓ"     "t tʼ"    ""            ""         "c cʼ"   "k kʼ"   "q qʼ"   "ʔ"
+Affricates                 ""        "ts tsʼ"  "tʃ tʃʼ"      "ʈʂ ʈʂʼ"   ""       ""       ""       ""
 Fricatives                 ""        "s"       "ʃ"           "ʂ"        ""       ""       "χ"      ""
 Nasals                     "m"       "n"       ""            ""         ""       ""       ""       ""
 Trills                     ""        "r"       ""            ""         ""       ""       ""       ""
@@ -73,18 +73,18 @@ Grapheme      Phoneme
 "i"            "/i/"
 "j"            "/χ/"                   
 "k"            "/k/"
-"k\'"          "/k’/"
+"k\'"          "/kʼ/"
 "l"            "/l/"
 "m"            "/m/"
 "n"            "/n/"
 "o"            "/o/"
 "p"            "/p/"
 "q"            "/q/"
-"q\'"          "/q’/"
+"q\'"          "/qʼ/"
 "r"            "/r/"
 "s"            "/s/"
 "t"            "/t/"
-"t\'"          "/t’/"
+"t\'"          "/tʼ/"
 "u"            "/u/"
 "w"            "/w/"
 "x"            "/ʂ/"
@@ -92,13 +92,13 @@ Grapheme      Phoneme
 "\'"           "/ʔ/"
 **Digraph**    ""
 "ch"           "/tʃ/"
-"ch\'"         "/tʃ’/"
+"ch\'"         "/tʃʼ/"
 "ky"           "/c/"
-"ky\'"         "/c’/"
+"ky\'"         "/cʼ/"
 "tx"           "/ʈʂ/"
-"tx\'"         "/ʈʂ’/"
+"tx\'"         "/ʈʂʼ/"
 "tz"           "/ts/"
-"tz\'"         "/ts’/"
+"tz\'"         "/tsʼ/"
 "xh; ẍ"        "/ʃ/"
 '), TRUE)
 
@@ -108,7 +108,7 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* /t’/ tends to vary freely with /ɗ/ [@Baayil2001, p. 11].
+* /tʼ/ tends to vary freely with /ɗ/ [@Baayil2001, p. 11].
 
 # Misc. Rules
 

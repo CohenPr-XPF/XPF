@@ -5,13 +5,13 @@ bibliography: tac.bib
 output: html_document
 ---
 
-Last Updated: 2019-06-24
+Last Updated: 2020-07-02
 
 # Background
 
-**Language Family**: Uto-Aztecan / Southern Uto-Aztecan / Tarahumaran / Tarahumara
+**Language Family:** Uto-Aztecan / Southern Uto-Aztecan / Sonoran / Tarahumaran / Tarahumara
 
-* Where dialects diverge, I will be preferring Western Tarahumara, which is only the second most widely spoken dialect but is the dialect with the most robust Crubadan corpus.
+* Where dialects diverge, I will be preferring Western Tarahumara, which is only the second most widely spoken dialect but is the dialect with the most robust Crúbadán corpus.
 * Western Tarahumara is spoken in the Chihuahua state in northern Mexico.
 
 # Phonology
@@ -52,7 +52,8 @@ Low       ""      "a"       ""
 '), TRUE)
 
 kable(consonants, align = 'c') %>%
-  kable_styling("bordered")
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 ```
 
 # Alphabet
@@ -84,7 +85,7 @@ Grapheme        Phoneme
 "\'"             "/ʔ/"
 **Digraph**       ""
 "ch"             "/tʃ/"
-"**(Spanish) Orthographic Variations**"   "[@TacThordGray1955, p. 1157]"
+"**Orthographic Variation**"   "[@TacThordGray1955, p. 1157]"
 "c"              "/k/"  
 "hu"             "/w/"  
 "j"              "/h/"  
@@ -97,9 +98,6 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* When between stressed high vowels and glottal stops, word-initial /a/ reduces to [ə] [@TacBurgess1984, p. 8].
-* Unstressed vowels often delete in fast speech (ibid.).
-* Unstressed vowels in non-initial syllables delete when preceded by a nasal and followed by a stop (ibid.).
 * Word-initial stops are sometimes voiced [@TacThordGray1955, pp. 26-27].
 * /t/ sometimes approximantizes to [ɽ] (ibid.).
 * Before high or front vowels, /tʃ/ spirantizes to [ʃ] [@TacValdezJara2013, p. 20].
@@ -110,6 +108,9 @@ kable(alphabet, align = 'c') %>%
 * Phrase-initial /ɽ/ is often produced as [r] or, less commonly, [ɾ] (ibid.).
 * In phrase-initial syllables, unstressed vowels lengthen unless they're followed by a vowel or glottal consonant [@TacBurgess1984, p. 8].
 * /i/ lowers in unstressed non-initial syllables (ibid.).
+* When between stressed high vowels and glottal stops, word-initial /a/ reduces to [ə] (ibid.).
+* Unstressed vowels often delete in fast speech (ibid.).
+* Unstressed vowels in non-initial syllables delete when preceded by a nasal and followed by a stop (ibid.).
 * Epenthesis of [j] typically occurs before word-initial vowels [@TacThordGray1955, pp. 26-27].
 * /h/ is often realized as [x] [@TacValdezJara2013, p. 21].
 

@@ -5,11 +5,11 @@ bibliography: snc.bib
 output: html_document
 ---
 
-Last updated: 9-6-2019
+Last Updated: 2020-06-23
 
 # Background
 
-**Language family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Western / Papuan Tip / Peripheral / Central Papuan / Sinagoro-Keapara
+**Language Family:** Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Western / Papuan Tip / Peripheral / Central Papuan / Sinagoro-Keapara
 
 * Sinaugoro is spoken in the Central province of Papua New Guinea.
 
@@ -26,11 +26,11 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial  Alveolar     Velar   
-Stops                      "b"     "t d"      "k kʷ ɡ ɡʷ"  
-Fricatives                 "f v"   "s"          "ɣ ɣʷ"     
-Nasals                     "m"     "n"            ""    
-Trills                     ""      "r"            ""     
-Approximants               ""      "l"            ""    
+Stops                      "b"      "t d"     "k kʷ ɡ ɡʷ"  
+Fricatives                "f v"      "s"        "ɣ ɣʷ"     
+Nasals                     "m"       "n"          ""    
+Trills                     ""        "r"          ""     
+Approximants               ""        "l"          ""    
 '), TRUE)
 
 kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Velar"), align = 'c') %>%
@@ -53,12 +53,13 @@ Low       ""      "a"       ""
 '), TRUE)
 
 kable(consonants, align = 'c') %>%
-  kable_styling("bordered")
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
 
 
 diphthongs <- read.table(textConnection('
 Diphthongs
-"/ae/, /ai/, /ao/, /au/, /oe/, /oi/"
+"/ae/, /ai/, /ao/, /au/, /ei/, /ou/, /oi/"
 '), TRUE)
 
 kable(diphthongs, align = 'c') %>%
@@ -101,11 +102,11 @@ kable(alphabet, align = 'c') %>%
 
 # Syllable Structure
 
-* Syllables in Sinaugoro require empty codas and prohibit consonant clusters, leaving CV and V as the inherent structures [@tauberschmidt_grammar_1999, pg. 4].
+* Syllables in Sinaugoro require empty codas and prohibit consonant clusters, leaving CV and V as the inherent structures [@tauberschmidt_grammar_1999, p. 4].
 
-# Misc Rules
+# Misc. Rules
 
-* /i/ is realized as [j] in syllable onsets [@tauberschmidt_grammar_1999, pg. 4].
-* /ɣ/ palatalizes preceding front vowels [@tauberschmidt_grammar_1999, pg. 7].
+* /i/ is realized as [j] in syllable onsets [@tauberschmidt_grammar_1999, p. 4].
+* /ɣ/ palatalizes preceding front vowels [@tauberschmidt_grammar_1999, p. 7].
 
 # References

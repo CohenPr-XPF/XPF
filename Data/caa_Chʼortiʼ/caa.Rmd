@@ -5,7 +5,7 @@ bibliography: caa.bib
 output: html_document
 ---
 
-Last updated: 09-12-2019
+Last Updated: 2019-09-12
 
 # Background
 
@@ -100,7 +100,7 @@ Grapheme     Phoneme                        Comment
 "tz"          "/ts/"                          ""
 "tz\'"        "/tsʼ/"                         ""
 "**Orthographic Variation**"  ""              ""
-"c"           "/k/"              "realized as /s/ in Spanish loanwords"
+"c"           "/k/"              "/s/ in Spanish loanwords"
 "c\'"         "/kʼ/"                          ""
 "qu"          "/k/"                           ""
 "q\'u"        "/kʼ/"                          ""

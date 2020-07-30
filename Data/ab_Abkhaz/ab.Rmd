@@ -9,7 +9,7 @@ Last Updated: 2019-07-05
 
 # Background
 
-**Language Family**: Northwest Caucasian / Abkhaz-Adyghe / Abkhaz-Abaza / Abkhaz
+**Language Family**: Northwest Caucasian / Northwest / Abkhaz-Abazin
 
 * Abkhaz is spoken within Abkhazia, located in Georgia along the Black Sea.
 * Where dialects diverge, my ruleset will prefer Standard Abkhaz.
@@ -21,7 +21,7 @@ Last Updated: 2019-07-05
 * @AbChirikba2003 depicts the alveolar series of consonants as dental (p. 18).
 * @AbChirikba2003 argues for the plain voiceless obstruents as aspirated (p. 19); @AbHewitt1979 observes aspiration as well, but regards it as a non-distinctive part of the phoneme (p. 256).
 * @AbKoryakov2002 and @AbHewitt1979 argue for velar rather than uvular fricatives (p. 7; p. 258).
-* The sources have diverged somewhat on what sibilants are present in Abkhaz. @AbCatford1977 lists both the /ʃ ʒ/ and /ɕ ʑ/ series as present in Abkhaz (p. 291); however, the consensus among other sources seems to be that /ɕ ʑ/ has only been preserved in a subset of Abkhaz dialects, and has been lost in Standard Abkhaz. @AbChirikba2003 and @AbHewitt1979 describe the postalveolar sibilants as being produced as retroflex (p. 19; pp. 256, 257); however, this view is not widely attested elsewhere, so I have preferred the more common /ʃ ʒ/ analysis. @AbHewitt1979 also follows Catford in regarding /tɕ dʑ/ as phonemic (p. 256), but nevertheless I have continued to follow the more recent analyses that regard those phones as lost in Standard Abkhaz.
+* The sources have diverged somewhat on what sibilants are present in Abkhaz. @AbCatford1977 lists both the /ʃ ʒ/ and /ɕ ʑ/ series as present in Abkhaz (p. 291); however, the consensus among other sources seems to be that /ɕ ʑ/ has only been preserved in a subset of Abkhaz dialects, and has been lost in Standard Abkhaz. @AbChirikba2003 and @AbHewitt1979 describe the postalveolar sibilants as being produced as retroflex (p. 19; pp. 256, 257); however, this view is not widely attested elsewhere, so I have preferred the more common /ʃ ʒ/ analysis. @AbHewitt1979 also follows Catford in regarding /tɕ dʑ/ as phonemic (p. 256), but nevertheless I have continued to follow the more recent analyses that regard those phonemes as lost in Standard Abkhaz.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -48,7 +48,7 @@ consonants <- read.table(textConnection('
 kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Pharyngeal"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 7)) %>%
-  footnote(general = "Note: From left to right, phonemes that share a cell are voiceless, voiced, and ejective; if a cell only contains two phonemes, they are voiceless and voiced.", general_title = "") %>%
+  footnote(general = "Note: From left to right, phonemes that share a cell are voiceless, voiced, and ejective. If a cell only contains two phonemes, they are voiceless and voiced.", general_title = "") %>%
   column_spec(1, bold = TRUE)
 ```
 

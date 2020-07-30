@@ -5,7 +5,7 @@ bibliography: aak.bib
 output: html_document
 ---
 
-Last Updated: 2019-12-16
+Last Updated: 2020-06-24
 
 # Background
 
@@ -45,7 +45,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar"
 
 ## Vowels
 
-* @speece1992 transcribes ⟨ɨ⟩ as /ə/; however, it is not a true schwa, so we have chosen to represent it as /ɘ/.
+* @speece1992 transcribes ⟨ɨ⟩ as /ə/; however, it is not a true schwa, as some words only contain the one such vowel. Therefore, we have chosen to represent it as /ɘ/.
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -63,7 +63,7 @@ kable(consonants, align = 'c') %>%
 
 # Alphabet
 
-**Note:** ⟨v⟩ appears in Crúbadán only within "Ankave". Our guess is that it acts similarly to other languages in the family, such that it varies freely with [w]. However, we have not yet found evidence to support this.
+**Note:** ⟨v⟩ appears in Crúbadán only within "Ankave". Our guess is that it acts similarly to other languages in the Trans-New Guinea family, such that it varies freely with [w]. However, we have not yet found evidence to support this.
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -108,7 +108,13 @@ kable(alphabet, align = 'c') %>%
     - CVV
     - CVVV
 
-# Misc Rules
+# Lenition Rules
+
+* When preceded by voicing, stops become fricatives [@speece_phonological_1988, pp. 37-38].
+* /p/ may spirantize at a word boundary [@speece_phonological_1988, pp. 45-46].
+* When word-initial /ᵐb/ becomes word-medial (i.e., through prefixation), it weakens to [β] [@speece_phonological_1988, p. 46].
+
+# Misc. Rules
 
 * Vowels may be followed optionally by a glottal stop [@speece1992, p. 3].
 

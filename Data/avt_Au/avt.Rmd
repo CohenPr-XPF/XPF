@@ -41,14 +41,16 @@ kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar"
 
 ## Vowels
 
-* There are four possible vowel combinations (/ai/, /əi/, /au/, /iu/); however, they are seen as separate units rather than complex phonemes [@scorza_phonemes_1971, p. 6].
+* There are four possible vowel combinations (/ai/, /ɜi/, /au/, /iu/); however, they are seen as separate units rather than complex phonemes [@scorza_phonemes_1971, p. 6].
+* Although @scorza_au_1992 transcribes the mid central vowel as /ə/ (p. 2), it's not indicative of a true schwa, as some words contain only the one such vowel. Both @scorza_phonemes_1971 and @scorza_au_1992 indicate that the mid central vowel is representative of a height closer to that of /ʌ/ (p. 13; p. 2), therefore, I have chosen to use /ɜ/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 vowels <- read.table(textConnection('
          Front      Central       Back
 High      "i"        "ɨ"           "u"
-Mid       ""         "ə"           "o"
+High-Mid  ""         ""            "o"
+Low-Mid   ""         "ɜ"           ""
 Low       ""       "a  aː"         ""
 '), TRUE)
 
@@ -65,7 +67,7 @@ kable(vowels, align = 'c') %>%
 alphabet <- read.table(textConnection('
 Grapheme      Phoneme
 "a"             "a"
-"e"             "ə"
+"e"             "ɜ"
 "h"             "ɣ"
 "i"             "i"
 "ɨ"             "ɨ"

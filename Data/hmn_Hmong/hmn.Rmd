@@ -9,7 +9,7 @@ Last Updated: 2019-07-24
 
 # Background
 
-**Language Family**: Hmong-Mien / Hmongic / Chuanqiandian / Hmong
+**Language Family**: Hmong-Mien / Hmongic / Chuanqiandian
 
 * The Hmong language comprises a number of dialects with some phonological differences. Where they diverge, I will be prioritizing Hmong Daw (also known as White Hmong).
 * Hmong Daw is predominantly spoken in Laos and the United States.
@@ -18,7 +18,7 @@ Last Updated: 2019-07-24
 
 ## Consonants
 
-* The only consonant clusters to occur in Hmong are obstruent-lateral sequences [@HmnMortensen2004, p. 3]. Some authors (e.g. @HmnGolston2001) argue that, rather than being a cluster, these are just single consonants with lateral release; however, I follow Mortensen in analyzing these as clusters.
+* The only consonant clusters to occur in Hmong are obstruent-lateral sequences [@HmnMortensen2004, p. 3]. Some authors [e.g. @HmnGolston2001] argue that, rather than being a cluster, these are just single consonants with lateral release; however, I follow Mortensen in analyzing these as clusters.
 * In prenasalized stops, the prenasalization fully assimilates to the place of the consonant [@HmnGolston2001, p. 4].
 * Although the series that I have described as retroflex fricatives and affricates are widely described as postalveolar, I have found that the retroflex place of articulation is more in keeping with the actual sounds described by the authors. Similarly, although the sound I have described as /lʰ/ is frequently transcribed as /ɬ/, I have found /lʰ/ to be more in keeping with the characteristics of the sound.
 
@@ -149,13 +149,13 @@ kable(alphabet, align = 'c') %>%
 
 * Hmong has seven contrastive tones: high, high falling, high rising, mid, low, falling breathy, and falling creaky. There also exists an eighth tone, low rising, that is morphologically formed in some scenarios [@HmnMortensen2004, p. 4].
 * All tone-marking characters appear after the vowel they modify. Because consonants cannot occur in Hmong syllable codas, consonants that precede other consonants can thus be identified as tone-markers; this allows us to distinguish whether a given ⟨v⟩, ⟨s⟩, or ⟨m⟩ represents a consonant or a tone.
-* Some analyses describe the creaky falling tone as terminating in a glottal stop. [@HmnHuffman1987, p. 496] [@HmnMortensen2004, p. 4]
+* Some analyses describe the creaky falling tone as terminating in a glottal stop [@HmnHuffman1987, p. 496; @HmnMortensen2004, p. 4].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 tone <- read.table(textConnection('
 Grapheme     Tone                       Comment
-"b"          "/˥/"                    "high tone"  
+"b"          "/˦/"                    "high tone"  
 "j"          "/˥˨/"                 "high falling tone"  
 "v"          "/˨˦/"                 "high rising tone"  
 "s"          "/˨/"                    "low tone"

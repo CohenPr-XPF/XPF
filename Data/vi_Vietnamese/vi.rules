@@ -1,6 +1,6 @@
 # Northern Vietnamese (Hanoi)
 # Written by Abi Creighton
-# Updated 24 Sept. 2019
+# Last Updated: 2019-09-24
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
 class,passthrough,[hiklmpsuv],,,,
@@ -34,7 +34,7 @@ sub,y,j,8,({vowels-u}),,"<y> goes to /j/ following any vowel except /u/",
 sub,({vowels+w}),ʔ \1,2,^,,,"a phonemic glottal stop precedes vowels and /w/ in word-initial positions",
 sub,({passthrough}),\1,2,,,
 # Digraphs
-sub,c,tɕ,7,,h,
+sub,c,tɕ,7,^,h,"<ch> goes to /tɕ/ word-initially",
 sub,c,k,8,,h$,"<ch> goes to /k/ word-finally",
 sub,g,ɣ,6,,h,
 sub,k,x,7,,h,

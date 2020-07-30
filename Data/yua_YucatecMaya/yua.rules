@@ -20,7 +20,7 @@ sub,h,,2,c,,"clean-up",
 sub,t,ts,2,,z,
 sub,z,,2,t,,"clean-up",
 # Ejectives
-sub,({ejectives}),\1ʼ,2,,{apostrophe}
+sub,({ejectives}),\1ʼ,2,,{apostrophe},
 sub,{apostrophe},,2,{ejectives},,"clean-up",
 sub,c,tʃʼ,2,,h{apostrophe},
 sub,{apostrophe},,2,h,,"clean-up"

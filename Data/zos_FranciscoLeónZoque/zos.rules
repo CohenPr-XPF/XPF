@@ -1,12 +1,17 @@
 # Francisco León Zoque Rule Set
 # Written by: Emily
-# Last Updated: 2019-11-18
+# Last Updated: 2020-07-06
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,passthrough,[abefilmnoprsu],,,,
 class,apostrophe,[ꞌ'ꞌ‘’],,,,
-class,front-v,[ie],,,,
-class,vowels,[ieaou],,,,
+class,front-v,[iìíeèé],,,,
+class,vowels,[ieaouɨ],,,,
+class,accent-a,[àá],,,,
+class,accent-e,[èé],,,,
+class,accent-i,[ìí],,,,
+class,accent-o,[òó],,,,
+class,accent-u,[ùú],,,,
 # Individual Letters
 sub,c,k,2,,,
 sub,c,s,3,,{front-v},
@@ -20,6 +25,11 @@ sub,t,t̪,2,,,
 sub,v,w,2,,,
 sub,y,j,2,,,
 sub,{apostrophe},ʔ,2,,,
+sub,{accent-a},a,2,,,
+sub,{accent-e},e,2,,,
+sub,{accent-i},i,2,,,
+sub,{accent-o},o,2,,,
+sub,{accent-u},u,2,,,
 sub,({passthrough}),\1,2,,,
 # Digraphs
 sub,c,tʃ,4,,h,
@@ -36,5 +46,3 @@ sub,s,ʃ,4,,y,
 sub,y,,3,s,,"clean-up",
 # Misc. Rules
 sub,ⁿ,,2,,,"non-contrastive feature",
-sub,({vowels}),ʔ \1,2,^,,"word-initial vowels always preceded by glottal stop",
-sub,ø,ʔ ɨ,2,^,,"word-initial vowels always preceded by glottal stop",

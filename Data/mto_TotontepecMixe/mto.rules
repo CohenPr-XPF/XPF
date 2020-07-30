@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-06-24
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,apostrophe,['ꞌˈ‘’],,,,
 class,underline,[̱],,,,
 class,ipavowel,[aeiouʌæʊɨ],,,,
@@ -36,5 +36,4 @@ sub,t,ts,6,,s,"ts"
 sub,s,,6,t,,
 # Misc. Rules
 ipasub,({ipavowel}) \1,\1 ː,2,,,"long vowels"
-ipasub,^({ipavowel}),ʔ \1,2,,,"word-initial /ʔ/"
 sub,({passthrough}),\1,0.1,,,

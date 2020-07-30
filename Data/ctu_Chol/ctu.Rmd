@@ -5,11 +5,11 @@ bibliography: ctu.bib
 output: html_document
 ---
 
-Last updated: 2019-10-15
+Last updated: 2020-06-26
 
 # Background
 
-**Language family**: Mayan / Cholan-Tzeltalan / Cholan / Chol-Chontal
+**Language Family**: Mayan / Cholan-Tzeltalan / Cholan / Chol-Chontal
 
 * Chol is spoken within the Chiapas state located in southern Mexico.
 
@@ -17,7 +17,7 @@ Last updated: 2019-10-15
 
 ## Consonants
 
-* Chol is heavily influenced by the Spanish language, thus many phonemes not present within the native inventory appear (/ɡ/, /d/, /t/, /n/) [@Alvarez2011, p. 35; @Hopkins2008, p. 89].
+* Chol is heavily influenced by the Spanish language, thus many phonemes not present within the native inventory appear (e.g. /ɡ/, /d/, /t/, /n/) [@Alvarez2011, p. 35; @Hopkins2008, p. 89].
 * @Hopkins2008 specifically state that unpalatalized /t/ and /n/ have been introduced into the language (p. 89). However, they aren't often recognized as being part of the inventory, and speakers in general tend to implement the palatalized forms, thus I have opted to just use /tʲ/ and /ɲ/.
 * @Alvarez2011 includes /b/ in the phonemic inventory (p. 35), whereas @Coon2017 includes /ɓ/ (p. 3). I have chosen to use /b/, given that the ingressive property of the Proto-Mayan consonant /ɓ/ has since been lost [@Polian2006 as cited in @Alvarez2011, p. 34].
 
@@ -65,7 +65,7 @@ kable(vowels, align = 'c') %>%
 # Alphabet
 
 * Although the Chol alphabet was normalized in 2010 [@Alvarez2011, p. 42], represented by the alphabet below, the Crúbadán corpus seems to represent older orthographies (see Orthographic Variations). Since there appears to be no conflation of the phonemes with any of the transcriptions, I will include all in the ruleset.
-* As seen with the orthographic variations, an apostrophe indicates a glottal stop except when following a consonant, indicating an ejective [@Coon2017, p. 2].
+* As seen with the orthographic variations, an apostrophe indicates a glottal stop except when following a consonant, which indicates an ejective [@Coon2017, p. 2].
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -94,21 +94,21 @@ Grapheme      Phoneme
 "x"             "/ʃ/"
 "y"             "/j/"
 "ä"             "/ɨ/"
-"\\-"             "/ʔ/"
-**Digraphs**     ""
-"ch"           "/tʃ/"
-"ch’"         "/tʃʼ/"
-"ts"           "/ts/"
-"ts’"          "/tsʼ/"
-"ty"           "/tʲ/"
-"ty’"         "/tʲʼ/"
-"**Orthographic variations**"  ""
-"c"            "/k/"
-"qu"           "/k/"
-"tz"           "/ts/"
-"tz’"         "/tsʼ/"
-"ü"            "/ɨ/"
-"ʌ"            "/ɨ/"
+"\\-"           "/ʔ/"
+**Digraph**      ""
+"ch"            "/tʃ/"
+"ch’"           "/tʃʼ/"
+"ts"            "/ts/"
+"ts’"           "/tsʼ/"
+"ty"            "/tʲ/"
+"ty’"           "/tʲʼ/"
+"**Orthographic variation**"  ""
+"c"             "/k/"
+"qu"            "/k/"
+"tz"            "/ts/"
+"tz’"           "/tsʼ/"
+"ü"             "/ɨ/"
+"ʌ"             "/ɨ/"
 "\'"            "/ʔ/"
 '), TRUE)
 
@@ -134,11 +134,12 @@ kable(alphabet, align = 'c') %>%
 
 * /b/, /l/, /w/, /n/, and /ɲ/ are devoiced word-finally [@Alvarez2011, p. 39].
 * Glottal stops precede vowels in word-initial positions [@Alvarez2011. p. 38].
-* /ɲ/ assimilates in place when followed by a /b/ or /k/ [@Alvarez2011. p. 48].
+* /ɲ/ assimilates to the place of the following consonant [@Alvarez2011. p. 48].
 * Vowel harmony is present in Chol [@Alvarez2011. p. 50].
 * In some dialects there is free variation between /k/ and /tʃ/, /l/ and /ʔ/, as well as /k/ and /ʃ/ [@Alvarez2011. pp. 50-51].
 * /tʃ/ changes to /ʃ/ preceding /tʲ/ [@Alvarez2011. p. 59].
 * /ʃ/ changes to /x/ preceding palatal consonants [@Alvarez2011. p 60].
 * Epenthetic glides appear intervocalically as vowel clusters are prohibited in Chol [@Alvarez2011. pp. 51-54].
+* Consonant elision is used to avoid geminates/double consonants [@Alvarez2011, p. 58].
 
 # References

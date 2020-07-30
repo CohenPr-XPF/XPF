@@ -5,11 +5,11 @@ bibliography: lem.bib
 output: html_document
 ---
 
-Last Updated: 2019-07-12
+Last Updated: 2020-06-30
 
 # Background
 
-**Language Family**: Niger-Congo / Atlantic-Congo / Volta-Congo / Benue-Congo / Bantoid / Southern Bantoid / Narrow Bantu / Mbam / West Mbam / Nomaande
+**Language Family:** Niger-Congo / Atlantic-Congo / Volta-Congo / Benue-Congo / Bantoid / Southern Bantoid / Narrow Bantu / Mbam / West Mbam / Nomaande
 
 * The language is also known as Mandi and is spoken in the Centre and Littoral regions of Cameroon.
 
@@ -44,7 +44,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Vowel length is contrastive in Nomaande. Wilkendorf argues that only non-front vowels are present in long forms [@LemWilkendorf1998, p. 6; @LemWilkendorf2004, p. 4]; however, Boyd argues for all vowels being able to be long [@LemBoyd2015, p. 43], and her analysis is better borne out by the corpus. Long vowels are written by doubling the vowel character [@LemWilkendorf1998, p. 6].
+* Vowel length is contrastive in Nomaande. Wilkendorf argues that only non-front vowels are present in long forms [@LemWilkendorf1998, p. 6; @LemWilkendorf2004, p. 4]; however, @LemBoyd2015 argues for all vowels being able to be long (p. 43), and her analysis is better borne out by the corpus. Long vowels are written by doubling the vowel character [@LemWilkendorf1998, p. 6].
 * The vowel that I have written as /ɨ/ has varying interpretations: @LemWilkendorf1998 argues for /ɨ/ (p. 6), @LemWilkendorf2004 argues for /ə/ (p. 3), and @LemBoyd2015 argues for /ɪ/ (p. 42). I have preferred /ɨ/ as a middle ground, which captures some aspects of each of the different interpretations.
 * @LemBoyd2015 argues for a contrastive /ʊ/ (p. 42), but this does not appear to be a widely held opinion.
 * Nomaande has two tones: high and low [@LemWilkendorf1998, p. 6]. High tones are marked with an acute accent (´) on the vowel; low tones are unmarked [@LemWilkendorf2004, p. 4].
@@ -106,10 +106,10 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * @LemWilkendorf1998 argues for an allophonic process where post-nasal stops gain voicing, rather than interpreting the prenasalized stops as independent phonemes (p. 6).
-* Word-final vowels are often deleted [@LemWilkendorf2004, p. 5].
 
 # Misc. Rules
 
 * When non-identical vowels are adjacent, the first vowel in the cluster is realized instead as a glide [@LemBoyd2015, pp. 54-56].
+* Word-final vowels are often deleted [@LemWilkendorf2004, p. 5].
 
 # References
