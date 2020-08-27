@@ -7,11 +7,11 @@ output: html_document
 
 Last Updated: 2019-08-07
 
-**Slightly Compromised: orthographic ambiguity between ejective stops and stop-glottal stop sequences**
+**SLIGHTLY COMPROMISED: orthographic ambiguity between ejective stops and stop-glottal stop sequences**
 
 # Background
 
-**Language Family**: Mayan / Core Mayan / Quichean-Mamean / Greater Quichean / Qeqchi
+**Language Family:** Mayan / Quichean-Mamean / Greater Quichean / Kekchi
 
 * The language has several different names, including Kekchi, K'ekchi', and Q'eqchi'.
 * Qeqchi is spoken in Guatemala and Brazil.
@@ -31,8 +31,8 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial    Alveolar    Postalveolar     Palatal     Velar     Uvular    Glottal
-Stops                     "p  ɓ"     "t  t’"         ""             ""       "k  k’"   "q  q’"      "ʔ"
-Affricates                   ""      "ts  ts’"    "tʃ  tʃ’"         ""         ""        ""         ""
+Stops                     "p  ɓ"     "t  tʼ"         ""             ""       "k  kʼ"   "q  qʼ"      "ʔ"
+Affricates                   ""      "ts  tsʼ"    "tʃ  tʃʼ"         ""         ""        ""         ""
 Fricatives                   ""        "s"           "ʃ"            ""         "x"       ""         "h"
 Nasals                      "m"        "n"           ""             ""         ""        ""         ""
 Trills                      ""         "r"           ""             ""         ""        ""         ""
@@ -66,7 +66,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* /ʔ/ can follow plain stops, which creates possible ambiguity. For example, ⟨t'⟩ might represent an ejective consonant or a sequence of a plain stop and a glottal stop. In such cases, I have opted to prefer the ejective-consonant analysis, as it is significantly more common in Qeqchi than the stop/glottal sequence is [@KekDeChicchis2011, p. 3].
+* /ʔ/ can follow plain stops, which creates possible ambiguity. For example, ⟨t'⟩ might represent an ejective consonant or a sequence of a plain stop and a glottal stop. In such cases, I have opted to prefer ejective consonants, as they are significantly more common in Qeqchi than stop/glottal sequences [@KekDeChicchis2011, p. 3].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -79,18 +79,18 @@ Grapheme      Phoneme              Comment
 "i"           "/i/"                  ""
 "j"           "/x/"                  ""
 "k"           "/k/"                  ""
-"k\'"         "/k’/"                 ""
+"k\'"         "/kʼ/"                 ""
 "l"           "/l/"                  ""
 "m"           "/m/"                  ""
 "n"           "/n/"                  ""
 "o"           "/ɔ/"                  ""
 "p"           "/p/"                  ""
 "q"           "/q/"                  ""
-"q\'"         "/q’/"                 ""
+"q\'"         "/qʼ/"                 ""
 "r"           "/r/"                  ""
 "s"           "/s/"                  ""
 "t"           "/t/"                  ""
-"t\'"         "/t’/"                 ""
+"t\'"         "/tʼ/"                 ""
 "u"           "/u/"                  ""
 "w"           "/w/"                  ""
 "x"           "/ʃ/"                  ""
@@ -98,9 +98,9 @@ Grapheme      Phoneme              Comment
 "\'"          "/ʔ/"       "⟨-⟩ is also used on occasion"
 **Digraph**    ""                    ""
 "ch"         "/tʃ/"                  ""
-"ch\'"       "/tʃ’/"                 ""
+"ch\'"       "/tʃʼ/"                 ""
 "tz"         "/ts/"                  ""
-"tz\'"       "/ts’/"                 ""
+"tz\'"       "/tsʼ/"                 ""
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
@@ -114,7 +114,7 @@ kable(alphabet, align = 'c') %>%
 # Misc. Rules
 
 * Preconsonantal and word-final plain stops (besides /ʔ/) are realized with aspiration [@KekStewart2015, p. 13].
-* Non-pulmonic consonants are realized as preglottalized when in postvocalic position (e.g. /k’/ → [ʔk’], /ɓ/ - [ʔb’]) [@KekStewart2015, pp. 14-15; @KekPinkerton1976, p. 12].
+* Non-pulmonic consonants are realized as preglottalized when in postvocalic position (e.g. /kʼ/ → [ʔkʼ], /ɓ/ - [ʔbʼ]) [@KekStewart2015, pp. 14-15; @KekPinkerton1976, p. 12].
 * /n/ assimilates to [ŋ] before dorsal consonants [@KekStewart2015, p. 17].
 * @KekPinkerton1976 argues that /r/ is typically realized as [ʂ], with voicing and trilling occurring intermittently for some speakers (p. 16).
 * Glides "obstruentize" word-initially and in postconsonantal syllable-initial positions; this results in what @KekPinkerton1976 describes as [ẘ] and [j̊], but what some other sources describe as [kʷ] and [tʲ] (pp. 17, 26).

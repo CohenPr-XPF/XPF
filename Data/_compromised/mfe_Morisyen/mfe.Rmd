@@ -1,0 +1,153 @@
+---
+title: "Morisyen"
+author: "Allison Shao"
+bibliography: mfe.bib
+output: html_document
+---
+
+Last Updated: 2020-08-06
+
+**HEAVILY COMPROMISED: conflation between /ks/ and /ɡz/ and possibly among several other phonemes; highly suspect orthography**
+
+# Background
+
+**Language Family:** Creole / French based
+
+* Morisyen, also spelled Morisien, is commonly referred to as Mauritian Creole. It is spoken throughout Mauritius, an island in the Indian Ocean, just off Madagascar.
+
+# Phonology
+
+## Consonants
+
+* According to @BakerKriegel2019, /h/ has marginal phonemic status; it's relatively rare and is often elided (p. 253).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Dental  Alveolar  Postalveolar  Palatal   Velar   Glottal
+Stops                      "p b"   "t̪ d̪"      ""          ""          ""     "k ɡ"     ""
+Affricates                  ""       ""       ""        "tʃ dʒ"       ""      ""       ""
+Fricatives                 "f v"     ""      "s z"        ""          ""      "ɣ"     "h"
+Nasals                      "m"      ""       "n"         ""          "ɲ"     "ŋ"      ""
+Approximants                "w"      ""       "l"         ""          "j"     ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless, whereas those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* The Morisyen language includes three nasal vowels (/ẽ/, /ã/, /õ/) as part of the phonemic inventory [@Strandquist2003, p. 8]. Nasal vowels are orthographically represented with a following ⟨n⟩ [@Carpooran2011, p. 37].
+* According to @BakerKriegel2019, there is evidence of /ə/ emerging as a sixth phonemic vowel (p. 252).
+* @BakerKriegel2019 identify long variants for /a/ and /o/, represented orthographically by a following ⟨r⟩ in word-final positions or preceding consonants (p. 252). However, there is no mention if they are actually contrastive. Nevertheless, because (some) diphthongs, which I've chosen to include, are represented in the same manner ⟨Vr⟩, I have opted to include the long vowel variants as well.
+    - There are other diphthongs present in the language (e.g. /aj/); however, it isn't definitive when/if they are interpreted as vowel-glide sequences or complex phonemes. I have listed them all below, but only include the bold ones in the rules.
+    - @Carpooran2011 also lists /i/ as having a long variant, although represented by ⟨ii⟩ rather than ⟨ir⟩ (p. 25). @BakerKriegel2019 do include the diphthong /ij/ in their analysis (represented as ⟨iy⟩) (p. 252), which may be synonymous with the long variant found in @Carpooran2011, but there is too great a lack of consensus to be sure. I have ultimately chosen not to include it.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High     "i"          ""           "u"         
+Mid     "e ẽ"         ""          "o õ"
+Low      ""          "a ã"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  footnote("Note: For phonemes that share a cell, those on the left are non-nasal, whereas those on the right are nasal.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+
+diphthongs <- read.table(textConnection('
+Diphthongs   
+"/ij/, /ej/, /aj/, /oj/, /uj/, /iw/, /ew/, /aw/, **/iə/**, **/eə/**, **/uə/**"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```  
+
+# Alphabet
+
+* The Morisyen alphabet seems to lack a level of standardization, such that the written language may reflect several different conventions (e.g. from French, English, Haitian Creole), which drastically affects the accuracy of transcription. Thus, the language is compromised. The alphabet below primarily reflects that which is documented in @Carpooran2011 (pp. 36-39).
+* ⟨x⟩ represents both /ks/ and /ɡz/ [@Carpooran2011, p. 25]. I have defaulted to /ks/ in the rules. It is unclear whether instances of /ɡz/ may actually be phonetic realizations of a voicing process rather than underlying. Nevertheless, the language is still compromised.
+* @Carpooran2011 lists ⟨gn⟩ as representing /ɲ/ (p. 39). However, @BakerKriegel2019 also list ⟨ny⟩ (p. 253). I have opted to include both.
+* In addition to ⟨j⟩, @Carpooran2011 also identifies the digraph ⟨di⟩ as representing /dʒ/ (p. 28). However, instances of this most likely reflect palatalization (see Misc. Rules), so I have opted not to include it.
+* Despite recent orthographic reform, /u/ is still frequently represented by the digraph ⟨ou⟩ (in addition to ⟨u⟩) [@Carpooran2011, p. 29].
+* @Carpooran2011 includes ⟨sh⟩ as representing the phoneme /ʃ/ (p. 26). However, Morisyen lacks this phoneme, often adapted from French loanwords to /s/. This loanword digraph is accounted for accordingly in the rules (i.e. it's transcribed out).
+* To represent /Vn/ sequences, as opposed to nasal vowels, the vowel is followed by ⟨nn⟩ [@Carpooran2011, p. 38]. Although /i/ and /u/ don't have nasal counterparts, instances of /in/ and /un/ are also written with the form ⟨Vnn⟩.
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme          Comment
+"a"              "/a/"             ""
+"b"              "/b/"             ""
+"d"              "/d̪/"             ""
+"e"              "/e/"             ""
+"f"              "/f/"             ""
+"g"              "/ɡ/"             ""
+"h"              "/h/"             ""
+"i"              "/i/"             ""
+"j"              "/dʒ/"            ""
+"k"              "/k/"             ""
+"l"              "/l/"             ""
+"m"              "/m/"             ""
+"n"              "/n/"             ""
+"o"              "/o/"             ""
+"p"              "/p/"             ""
+"r"              "/ɣ/"             ""
+"s"              "/s/"             ""
+"t"              "/t̪/"             ""
+"u"              "/u/"             ""
+"v"              "/v/"             ""
+"w"              "/w/"             ""
+"x"              "/ks/; /ɡz/"      "/ks/: default in the rules; also written ⟨xs⟩"
+"y"              "/j/"             ""
+"z"              "/z/"             ""
+**Digraph**       ""               ""
+"ch"             "/tʃ/"            ""
+"ng"             "/ŋ/"             ""
+"ny"             "/ɲ/"             ""
+"gn"             "/ɲ/"             ""
+"an"             "/ã/"             ""
+"ar"             "/aː/"            "word-finally or preceding a consonant"
+"en"             "/ẽ/"             ""
+"er"             "/eə/"            "word-finally or preceding a consonant"
+"ir"             "/iə/"            "word-finally or preceding a consonant"
+"on"             "/õ/"             ""
+"or"             "/oː/"            "word-finally or preceding a consonant"
+"ur"             "/uə/"            "word-finally or preceding a consonant"
+"ou"             "/u/"             "holdover from past orthographies that is still commonly found"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in generally all creole languages have been understood to follow a CV structure [@Klein2013, p. 226]. However, other syllable structures (e.g. CCV, V, CVC) have been attested. @Klein2013 explains that due to the process of becoming lexically specified creoles with the restructuring of words, much divergence has occurred from what was previously understood.
+    - @Klein2013 lists Morisyen as having the syllable structure (C)(C)V(C)(C) (p. 234).
+    - Because syllables in Morisyen can be quite complex, this provides even more speculation around the listed transcription, especially when it comes to complex phonemes and consonant clusters (i.e. it is unclear if a digraph listed above always represents one phoneme or two).
+
+# Lenition Rules
+
+* /h/ is frequently elided [@BakerKriegel2019, p. 253].
+
+# Misc. Rules
+
+* /t̪/ and /d̪/ both undergo palatalization or light affrication before /i/ and /j/ [@BakerKriegel2019, p. 253].
+* /e/ tends to be realized as [ɛ] in closed syllables and [e] in open syllables. Likewise, /o/ is realized as [ɔ] in closed syllables and [o] in open syllables [@BakerKriegel2019, p. 252].
+* Nasal /ẽ/ and /õ/ tend to be realized as [ɛ̃]. /ã/ tends to be realized as [ɑ̃] (ibid.).
+
+# References

@@ -1,0 +1,125 @@
+---
+title: "Ignaciano"
+author: "Abi Creighton"
+bibliography: ign.bib
+output: html_document
+---
+
+Last Updated: 2020-08-05
+
+# Background
+
+**Language Family:** Arawakan / Maipuran / Southern Maipuran / Bolivia-Parana / Moxo
+
+* Ignaciano is one of two existing Moxo languages along with Trinitario. It spoken in the lowlands of Bolivia.
+
+# Phonology
+
+## Consonants
+
+* @ott_fonemas_1959 include /w/ in the phonemic inventory (p. 2). However, more recent sources [e.g. @ott_phonemes_1967, p. 1] do not report it as a phoneme, instead treating it as an allophone of /v/.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Labial   Alveolar  Postalveolar  Palatal  Velar   Glottal
+Stops                        "p"       "t"         ""          ""      "k"      "ʔ"   
+Affricates                   ""        "ts"       "tʃ"         ""      ""       ""
+Fricatives                   "v"       "s"        "ʃ"          ""      ""       "h"
+Nasals                       "m"       "n"         ""          "ɲ"     ""       ""       
+Taps                         ""        "ɾ"         ""          ""      ""       ""       
+Approximants                 ""        ""          ""          "j"     ""       ""   
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE)
+```  
+
+## Vowels
+
+* Vowels with an acute accent (´) are stressed [@ott_fonemas_1959, p. 9]. Stress, however, is not accounted for in this project, and such vowels will be transcribed to their plain representations.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         ""           "u"
+Mid           "e"          ""          ""
+Low           ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+```     
+
+# Alphabet
+
+* Ignaciano commonly uses graphemes from the Spanish alphabet, especially ⟨l⟩, in borrowings [@ott_diccionario_1983, p. 5].
+* @ott_diccionario_1983 and @danielsen_2011 use slightly different orthographic conventions:
+    - @ott_diccionario_1983 represent /k/ with ⟨c⟩ and /ʔ/ with ⟨h⟩ (p. 5).
+    - With reference to Baure, another Southern Arawaken language, @danielsen_2011 represents /k/ with ⟨k⟩ and /ʔ/ with an apostrophe (p. 497).
+    - Because the different orthographic conventions do not conflict and both are represented in the Crúbadán corpus, I have included both.
+* Although no documentation indicates ⟨w⟩ as being a part of the Ignaciano alphabet, there is reason to believe that it represents /v/, given that nearly all occurrences of it in the Crúbadán corpus precede /a/ or /u/, which is where the phonological process from /v/ to [w] occurs [@ott_phonemes_1967, p. 1]. In the rules, I have restricted the transcription to only occur preceding /a/ and /u/.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme                     Comment         
+"a"              "/a/"                        ""
+"c"              "/k/"                        ""
+"e"              "/e/"                        ""
+"h"              "/ʔ/"                        ""
+"i"              "/i/"                        ""
+"j"              "/h/"                        ""
+"k"              "/k/"                        ""
+"m"              "/m/"                        ""
+"n"              "/n/"                        ""
+"ñ"              "/ɲ/"                        ""
+"p"              "/p/"                        ""
+"r"              "/ɾ/"                        ""
+"s"              "/s/"                        ""
+"t"              "/t/"                        ""
+"u"              "/u/"                        ""
+"v"              "/v/"                        ""
+"w"              "/v/"       "preceding /a/ and /u/; see comment above"   
+"y"              "/j/"                        ""
+"\'"             "/ʔ/"                        ""
+**Digraph**       ""                          ""                   
+"ch"             "/tʃ/"                       ""
+"qu"             "/k/"                        ""
+"sh"             "/ʃ/"                        ""
+"ts"             "/ts/"                       ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Ignaciano syllables include the following structures [@ott_fonemas_1959, p. 9]:
+
+    - V
+    - CV
+    - CVV
+    - CVC
+
+# Lenition Rules
+
+* /v/ approximantizes to [w] preceding non-front vowels [@ott_diccionario_1983, p. 6].
+* Word-initial stops in unstressed syllables tend to be lenis [@ott_phonemes_1967, p. 56].
+
+# Misc. Rules
+
+* For some speakers, /v/ is realized as [b] [@ott_phonemes_1967, p. 56].
+
+# References

@@ -7,11 +7,11 @@ output: html_document
 
 Last updated: 2020-04-22
 
-**Slightly Compromised: Conflation among placeless /N/, /m/, and /n/**
+**COMPROMISED: conflation among placeless /N/, /m/, and /n/**
 
 # Background
 
-**Language family**: Arawakan / Maipuran / Southern Maipuran / Campa
+**Language Family:** Arawakan / Maipuran / Southern Maipuran / Campa
 
 * Asháninka is spoken in Peru.
 

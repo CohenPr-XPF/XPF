@@ -7,11 +7,11 @@ output: html_document
 
 Last updated: 2020-02-28
 
-**Compromised: uncertainty related to how reliable the glottal stop is marked; uncertainty surrounding the orthography (Crúbadán includes symbols not present in the alphabet)**
+**COMPROMISED: suspect marking of glottal stops; uncertainty surrounding the orthography (the Crúbadán corpus includes symbols not present in the alphabet)**
 
 # Background
 
-**Language family**: Mayan / Quichean-Mamean / Greater Quichean / Quichean / Tzutujil
+**Language Family:** Mayan / Quichean-Mamean / Greater Quichean / Quichean / Tzutujil
 
 * Tz'utujil is spoken in Guatemala.
 
@@ -30,8 +30,8 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial  Alveolar Postalveolar  Palatal  Velar  Uvular Glottal
-Stops                      "p p’"  "t t’"   ""            ""       "k k’" "q q’" "ʔ"
-Affricates                 ""      "ts ts’" "tʃ tʃ’"      ""       ""     ""     ""
+Stops                      "p pʼ"  "t tʼ"   ""            ""       "k kʼ" "q qʼ" "ʔ"
+Affricates                 ""      "ts tsʼ" "tʃ tʃʼ"      ""       ""     ""     ""
 Fricatives                 ""      "s"      "ʃ"           ""       ""     "χ"    ""
 Nasals                     "m"     "n"      ""            ""       ""     ""     ""
 Trills                     ""      "r"      ""            ""       ""     ""     ""
@@ -48,7 +48,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 ## Vowels
 
 * Vowel length is contrastive in Tz'utujil [@Dayley1985, p. 25]. Long vowels are represented by duplicate graphemes.
-* /ie/ and /uo/ are present in the Santiago Atitlan dialect [@Dayley1985, p. 27]. However, I have not included them, given that the focus is not on a specific dialect.
+* Diphthongs /ie/ and /uo/ are said to be present in the Santiago Atitlan dialect [@Dayley1985, p. 27].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -66,27 +66,27 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* **/t’/ does not appear in the Crúbadán corpus.**
+* **Note:** /tʼ/ is not represented in the Crúbadán corpus.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
 Grapheme      Phoneme
 "a"            "/a/"
-"b\'"          "/p’/"
-"d\'"          "/t’/"
+"b\'"          "/pʼ/"
+"d\'"          "/tʼ/"
 "e"            "/e/"
 "i"            "/i/"
 "j"            "/χ/"
 "k"            "/k/"
-"k\'"          "/k’/"
+"k\'"          "/kʼ/"
 "l"            "/l/"
 "m"            "/m/"
 "n"            "/n/"
 "o"            "/o/"
 "p"            "/p/"
 "q"            "/q/"
-"q\'"          "/q’/"
+"q\'"          "/qʼ/"
 "r"            "/r/"
 "s"            "/s/"
 "t"            "/t/"
@@ -97,9 +97,9 @@ Grapheme      Phoneme
 "\'"           "/ʔ/"
 **Digraph**    ""
 "ch"           "/tʃ/"
-"ch\'"         "/tʃ’/"
+"ch\'"         "/tʃʼ/"
 "tz"           "/ts/"
-"tz\'"         "/ts’/"
+"tz\'"         "/tsʼ/"
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
@@ -108,7 +108,7 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* /p’/ and /t’/ become voiced and implosive preceding vowels [@Dayley1985, p. 15]. Ejective /q/ may become voiced and implosive in the same environment, but it's optional.
+* /pʼ/ and /tʼ/ become voiced and implosive preceding vowels [@Dayley1985, p. 15]. Ejective /q/ may become voiced and implosive in the same environment, but it's optional.
 * /χ/ is realized as [h] syllable-internally (i.e. following a vowel and preceding a consonant) [@Dayley1985, p. 19].
 
 # Misc. Rules

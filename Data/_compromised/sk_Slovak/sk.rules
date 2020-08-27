@@ -4,9 +4,9 @@
 type,sfrom,sto,weight,precede,follow,comment
 # Pre Rules
 pre,(Ď|Ť),(ď|ť),1,,,,
-# Classes
+# Class Rules
 class,passthrough,[abdfijklmnprstuvz],,,,
-# Individual Letter
+# Individual Letters
 sub,á,a ː,1,,,
 sub,ä,ɛ,1,,,
 sub,c,ts,1,,,

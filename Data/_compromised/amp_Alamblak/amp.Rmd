@@ -1,0 +1,125 @@
+---
+title: "Alamblak"
+author: "Abi Creighton"
+bibliography: amp.bib
+output: html_document
+---
+
+Last Updated: 2020-08-11
+
+**COMPROMISED: conflation between /ɘ/ and /o/**
+
+# Background
+
+**Language Family:** Sepik-Ramu / Sepik / Sepik Hill / Alamblak
+
+* Alamblak is spoken in the Angoram District of the East Sepik Province in Papua New Guinea.
+
+# Phonology
+
+## Consonants
+
+* The phonemic status of the palato-alveolar (or postalveolar) consonants is somewhat suspect. Apart from the ones I include below (/dʒ/, /ɲ/, and /j/), this includes /tʃ/ and /ʃ/ [@bruce_1984, p. 21]. @bruce_1984 explains that they almost always result from phonological processes imposed on underlying alveolar consonants (p. 29). The exceptions to this, or the idiosyncratic surfacing of the postalveolars is what makes for the lack of consensus. I have ultimately chosen to follow the analysis done by @bruce_1975, which excludes /tʃ/ and /ʃ/ on the basis that they are predictable variants of /s/ [p. 101; @bruce_1984, p. 30]. Occurrences of /tʃ/ and /ʃ/ are interpreted as residual forms that have yet to fully collapse.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Bilabial   Alveolar  Postalveolar  Palatal   Velar   
+Stops                      "p b"       "t d"         ""         ""      "k ɡ"  
+Affricates                  ""          ""          "dʒ"        ""       ""     
+Fricatives                  "ɸ"         "s"          ""         ""       "x"   
+Nasals                      "m"         "n"          ""         "ɲ"      ""     
+Flaps                       ""          "ɾ"          ""         ""       ""    
+Approximants                "w"         ""           ""         "j"      ""    
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced", general_title = "")
+```  
+
+## Vowels
+
+* There is some uncertainty around the mid central vowel. @edmiston_2003 specify it as /ə/ (p. 3), while @bruce_1984 specifies it as /ë/ (p. 34). Based on the minimal pairs Bruce provides through monosyllabic words, it's evident that this mid vowel may bear stress, thus making it not fully reduced. Schwa, therefore, would be an inappropriate representation of this vowel. However, /ë/ is also not ideal in that it doesn't adequately reflect IPA, so based on Bruce's description of a mid unrounded vowel, I have chosen to use /ɘ/.
+* @bruce_1984 also includes /ɨ/ in Alamblak's vowel inventory, but questions its phonemic status, suggesting that occurrences may be epenthetic (pp. 39, 61). Because @edmiston_2003 make no mention of it, I have chosen not to present in the vowel inventory below.
+* Diphthongs may occur phonetically [@bruce_1984, p. 55].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         ""           "u"
+Mid           "e"         "ɘ"          "o"
+Low           ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+```     
+
+# Alphabet
+
+* ⟨o⟩ is used to represent both /o/ and /ɘ/, which compromises the language [@edmiston_2003, p. 1]. ⟨o⟩ transcribes to /o/ by default in the rule set.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme           Comment
+"a"             "/a/"              ""
+"b"             "/b/"              ""
+"d"             "/d/"              ""
+"e"             "/e/"              ""
+"f"             "/ɸ/"              ""
+"g"             "/ɡ/"              ""
+"h"             "/h/"              ""
+"i"             "/i/"              ""
+"j"             "/dʑ/"             ""
+"k"             "/k/"              ""
+"m"             "/m/"              ""
+"n"             "/n/"              ""
+"o"             "/o/; /ɘ/"        "/o/: default in the rules"
+"p"             "/p/"              ""
+"r"             "/ɾ/"              ""
+"s"             "/s/"              ""
+"t"             "/t/"              ""
+"u"             "/u/"              ""
+"w"             "/w/"              ""
+"y"             "/j/"              ""
+**Digraph**      ""                ""
+"ny"            "/ɲ/"              ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Alamblak has three basic syllable structures [@bruce_1984, p. 61]:
+
+    - C(C)(C)V(C)(C)
+    - V(C)(C)
+    - CVV(C)
+
+# Lenition Rules
+
+* /ɸ/ voices to [β] word-medially [@edmiston_2003, p. 4].
+* /x/ voices to [ɣ] word-medially following a voiced phoneme (ibid.).
+
+# Misc. Rules
+
+* /n/ assimilates to [ŋ] preceding [ɡ] [@edmiston_2003, p. 4].
+* Low vowel dissimilation is present in Alamblak; /a/ raises to [ə] when followed by another syllable containing /a/ [@blevins_2009, p. 479].
+* An epenthetic [j] is inserted between vowel sequences which are not permitted in Alamblak [@bruce_1984, p. 54].
+* An epenthetic [ɨ] may be inserted optionally in consonant clusters [@bruce_1984, pp. 56-57].
+
+# References

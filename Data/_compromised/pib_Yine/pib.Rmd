@@ -5,13 +5,13 @@ bibliography: pib.bib
 output: html_document
 ---
 
-Last Updated: 2020-03-05
+Last Updated: 2020-06-17  
 
-**Slightly Compromised: possible conflation between /n/ and /h̃/ (see Misc. Rules)**
+**SLIGHTLY COMPROMISED: possible conflation between /n/ and /h̃/ (see Misc. Rules)**
 
 # Background
 
-**Language family**: Arawakan / Maipuran / Southern Maipuran / Purus
+**Language Family:** Arawakan / Maipuran / Southern Maipuran / Purus
 
 * Also referred to as Pira, Yine is spoken in Peru.
 
@@ -97,7 +97,7 @@ kable(alphabet, align = 'c') %>%
 
 # Misc. Rules
 
-* /ɡ/ is realized as [n] preceding /ç/ and /k/ [@Bisso2009, p. 66]. In this environment, both ⟨n⟩ and ⟨g⟩ are sometimes used to indicate the phonetic realization, thus, there is some conflation between /n/ and /h̃/.
+* ⟨g⟩ is realized as [n] preceding /ç/ and /k/ [@Bisso2009, p. 66]. In this environment, both ⟨n⟩ and ⟨g⟩ are sometimes used to indicate the phonetic realization, thus, there is some conflation between /n/ and /h̃/.
 * Vowels nasalize following nasals or /h̃/ [@Sebastian2008, p. 367].
 * /ɾ/ may be trilled word-initially (ibid.).
 * /w/ is realized as [β] preceding front vowels [@Nies2008, p. 1].

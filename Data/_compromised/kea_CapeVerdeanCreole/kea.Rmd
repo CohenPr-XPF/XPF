@@ -1,0 +1,136 @@
+---
+title: "Cape Verdean Creole"
+author: "Abi Creighton"
+edited by: "Emily Strand"
+bibliography: kea.bib
+output: html_document
+---
+
+Last Updated: 2020-07-28
+
+**COMPROMISED: possible conflation between /a/ and /ɐ/, /e/ and /ɛ/, and /ɾ/ and /ʀ/**
+
+# Background
+
+**Language Family:** Creole / Portuguese based
+
+* Cape Verdean Creole, known by native speakers as Kriolu, Kriol, or Kabuverdianu, is a Portuguese-based creole spoken in Cape Verde, an island country west of Africa.
+
+# Phonology
+
+## Consonants
+
+* The phonemic status of /j/ and /w/ is somewhat in question:
+    - @Swolkien2013 treats [j] and [w] as allophones of /i/ and /u/ (and sometimes /o/), respectively (p. 23). They surface when adjacent to other vowels. @Swolkien2019, on the other hand, do include them (p. 182). Since two different varieties of the language are analyzed here [São Vicente in @Swolkien2013 and Santo Antão in @Swolkien2019], it may very well be the case that /j/ and /w/ are phonemic in one variety but not in the other. Regardless, I have chosen to treat them as allophones and not include them below.
+* There is also some uncertainty regarding the flaps/trills of the language:
+    - @Swolkien2015 includes the alveolar flap /ɾ/ and uvular trill /ʀ/, both represented orthographically by ⟨r⟩ (p. 33). The same author, discussing the same variety (São Vicente), however, identifies the alveolar trill /r/ as opposed to the uvular trill [@Swolkien2013, p. 23].
+    - Also in reference to the São Vicente variety, @monteiro_2015 argues for the uvular fricative /ʁ/ as opposed to the trill.
+    - Although based on a different variety (Santo Antão), @Swolkien2019 agree with the attestation of the alveolar flap and uvular trill; however, they are noted to be orthographically distinct (/ɾ/ = ⟨r⟩, /ʀ/ = ⟨rr⟩) (p. 182).
+    - I have opted to include the alveolar flap and the uvular trill in the inventory below.
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar Postalveolar Palatal Velar  Uvular
+Stops                      "p b"    "t d"        ""        ""    "k ɡ"   ""
+Affricates                  ""       ""        "tʃ dʒ"     ""     ""     ""
+Fricatives                 "f v"    "s z"       "ʃ ʒ"      ""     ""     ""
+Nasals                      "m"      "n"         ""        "ɲ"    ""     ""
+Trills                      ""       ""          ""        ""     ""     "ʀ"     
+Flaps                       ""       "ɾ"         ""        ""     ""     ""     
+Approximants                ""       "l"         ""        "ʎ"    ""     ""   
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```  
+
+## Vowels
+
+* Cape Verdean Creole has eight oral vowels, each with a nasal counterpart [@Swolkien2015, pp. 29-31]. Nasal vowels are represented by a following ⟨n⟩.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central    Back
+High          "i"       ""         "u"
+High-mid      "e"       ""         "o"
+Low-mid       "ɛ"       "ɐ"        "ɔ"
+Low           ""        "a"        ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```     
+
+# Alphabet
+
+* Cape Verdean Creole is written with ALUPEC, the Alfabeto Unificado para a Escrita do Caboverdiano (Unified Alphabet for Cape Verdean Writing) [@coonan_2007, p. 40]. Spanish based conventions may also be used (e.g. ⟨c⟩ or ⟨q⟩ for /k/), but I have opted to focus on ALUPEC below.
+* To differentiate from nasal vowels, oral vowel-/n/ sequences are indicated by a following ⟨nn⟩ [@Swolkien2019, p. 181].
+    - e.g. ⟨an⟩ = /ã/, ⟨ann⟩ = /an/
+* /ɾ/ and /ʀ/ are ultimately conflated, as it is unclear how they are orthographically represented (see Consonants above for explanation). Although there is some probability that ⟨r⟩ represents both /ɾ/ and /ʀ/, I have chosen to transcribe ⟨r⟩ to /ɾ/ and ⟨rr⟩ to /ʀ/.
+* There is also possible conflation between /a/ and /ɐ/ and between /e/ and /ɛ/, especially in syllables that don't have canonical stress, as the graphemes for /ɐ/ and /ɛ/ (⟨â⟩ and ⟨é⟩, respectively) in these positions are said not to be fully attested [@Swolkien2019, p. 181]. Both graphemes, however, are present in the Crúbadán corpus, but there is still a possibility for conflation.
+* Due to the uncertainty around the transcription of the flap/trill and some vowels, the language is deemed compromised.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme              Comment          
+"a"              "/a/; /ɐ/"    "/a/: default in ruleset"
+"á"              "/a/"                 ""
+"â"              "/ɐ/"                 ""
+"b"              "/b/"                 ""
+"d"              "/d/"                 ""
+"e"              "/e/; /ɛ/"    "/e/: default in ruleset"
+"é"              "/ɛ/"                 ""
+"ê"              "/e/"                 ""
+"f"              "/f/"                 ""
+"g"              "/ɡ/"                 ""
+"i"              "/i/"                 ""
+"í"              "/i/"                 ""
+"j"              "/ʒ/"                 ""
+"k"              "/k/"                 ""
+"l"              "/l/"                 ""
+"m"              "/m/"                 ""
+"n"              "/n/"                 ""
+"o"              "/o/"                 ""
+"ó"              "/ɔ/"                 ""
+"ô"              "/o/"                 ""
+"p"              "/p/"                 ""
+"r"              "/ɾ/; /ʀ/"     "/ɾ/: default in ruleset"
+"s"              "/s/"                 ""
+"t"              "/t/"                 ""
+"u"              "/u/"                 ""
+"ú"              "/u/"                 ""        
+"v"              "/v/"                 ""
+"x"              "/ʃ/"                 ""
+"z"              "/z/"                 ""
+**Digraph**       ""                   ""                
+"dj"             "/ɟ/"                 ""
+"lh"             "/ʎ/"                 ""
+"nh"             "/ɲ/"                 ""
+"rr"             "/ʀ/"                 ""
+"tx"             "/c/"                 ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Misc. Rules
+
+* /v/ is frequently realized as [β], especially when preceding /ɔ/ [@Neves2009, p. 6].
+* In the Santo Antão variety, /ʃ/ becomes voiced preceding stops or vowels (ibid.). In some cases, it may also be realized as [s].
+* In unstressed word-final positions, vowels are neutralized to either [i],  [ɐ], or [u] [@lang_2013].  
+
+# References

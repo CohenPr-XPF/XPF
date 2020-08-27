@@ -1,0 +1,110 @@
+---
+title: "Abau"
+author: "Allison Shao"
+bibliography: aau.bib
+output: html_document
+---
+
+Last Updated: 2020-08-04
+
+# Background
+
+**Language Family:** Sepik-Ramu / Sepik / Upper Sepik / Abau
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar   Palatal   Velar   Glottal
+Stops                       "p"        ""        ""       "k"      ""
+Fricatives                  ""         "s"       ""       ""       "h"
+Nasals                      "m"        "n"       ""       ""       ""
+Flaps                       ""         "ɾ"       ""       ""       ""
+Approximants                "w"        ""        "j"      ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* @Bailey1975 proposes a six-vowel system with additional vowel /ɒ/ (p. 8). However, @Lock2007 states that this back vowel is not supported by the evidence (p. 14).
+* Some analyses of Abau include a seven-vowel system with additional vowels /ɪ/ and /ʊ/. However, @Lock2011 believes that they are allophones of sequences /ij/ and /uw/, respectively (p. 17).
+    - @Foley2018 describes Lock's remarks as "phonetically quite odd" and concludes that the debate over the Abau vowel system is not yet resolved (pp. 288-289). Nevertheless, I have chosen not to include /ɪ/ and /ʊ/ below.
+* @Bailey1975 claims that Abau nouns exhibit lexical tone (p. 33). However, Lock refutes this observation, stating that there is no evidence of tone [@Lock2007, p. 21; @Lock2011, p. 20].
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         ""           "u"         
+Mid       "e"         ""           "o"
+Low       ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+* /ɾ/ is represented by ⟨l⟩ word-initially, ⟨d⟩ when preceding /n/, and ⟨r⟩ elsewhere [@Lock2011, p. 22].
+* Word-initial vowel sequences /iV/ and /uV/ are represented orthographically with a preceding ⟨y⟩ and ⟨w⟩, respectively (ibid.).
+    - E.g. /ia-/ = ⟨yia-⟩
+    - This only applies when the second vowel is not high.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme          Comment
+"a"              "/a/"             ""
+"d"              "/ɾ/"             "preceding /n/"
+"e"              "/e/"             ""
+"h"              "/h/"             ""
+"i"              "/i/"             ""
+"k"              "/k/"             ""
+"l"              "/ɾ/"             "word-initially"
+"m"              "/m/"             ""
+"n"              "/n/"             ""
+"o"              "/o/"             ""
+"p"              "/p/"             ""
+"r"              "/ɾ/"             ""
+"s"              "/s/"             ""
+"u"              "/u/"             ""
+"w"              "/w/"             ""
+"y"              "/j/"             ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /p/ varies freely with [b] [@Lock2007, p 8].
+
+# Misc. Rules
+
+* /ɾ/ has several different realizations [@Lock2007, pp. 8-9]:
+    - \[d]: adjacent to /i/ and /j/; preceding non-back vowels; preceding non-velar and non-fricative consonants
+    - \[t]: preceding /s/
+    - \[ɺ]: preceding non-back vowels
+* /h/ also varies in realization [@Lock2007, p. 11]:
+    - \[ɸ]: word-finally; adjacent to /i/ and /j/; generally preceding consonants
+    - \[m̊] or [n̊]: preceding the respective voiced nasal counterpart
+* Across syllable boundaries, /n/ assimilates in place when preceding /k/ [@Lock2007, p. 10].
+
+# References

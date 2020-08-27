@@ -1,8 +1,8 @@
 # Muna Rule Set
 # Written by: Emily
-# Last Updated: 2019-11-19
+# Last Updated: 2020-06-16
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules 
 class,passthrough,[abdfhiklmnprstuw],,,,
 class,m-followers,[pb],,,,
 class,h-preceders,[bdg],,,,
@@ -32,5 +32,5 @@ sub,n,ᵑɡ,4,,gg,
 sub,k,,3,ng,,"clean-up",
 sub,g,,3,ng,,"clean-up",
 # Misc. Rules
-sub,{apostrophe},,2,{vowels},{vowels}{vowels},"glottal stops are sometimes written between the first two vowels of a three vowel sequence",
+sub,{apostrophe},,2,,,
 sub,-,,2,,,

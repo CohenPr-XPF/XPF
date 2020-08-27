@@ -7,7 +7,7 @@ output: html_document
 
 Last Updated: 2020-05-06
 
-**Slightly Compromised: conflation between /ɛ/ and other vowels**
+**SLIGHTLY COMPROMISED: possible misrepresentation of /ɛ/**
 
 # Background
 
@@ -63,7 +63,7 @@ kable(consonants, align = 'c') %>%
 
 # Alphabet
 
-* Schwa is represented orthographically by ⟨e⟩, however it is not contrastive with other vowels [@Hooley2006, p. 6]; ⟨e⟩ also represents /ɛ/, and has been used as the default transcription in the rule set. Because of this, the rule set is somewhat skewed in its representation of /ɛ/, conflating it with other vowels. Thus, the language is compromised to some degree.
+* In unstressed syllables, ⟨e⟩ represents [ə]; it is not contrastive with other vowels, generally manifesting in consonant sequences [@Hooley2006, p. 6]. ⟨e⟩ also represents /ɛ/ and, for the purposes of this project, shouldn't necessarily compromise the language. However, it seems that, based on the description provided in @Hooley2006, ⟨e⟩ represents a surface realization that may in some instances stem from nothing underlyingly. In the rules, I have transcribed ⟨e⟩ to /ɛ/ by default in all instances, but this may skew the representation of /ɛ/, such that it appears more frequently than it actually should.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -84,8 +84,8 @@ Grapheme        Phoneme
 "l"              "/l̪/"
 "m"              "/m/"
 "n"              "/n̪/"
-"o"              "/ɔ/"
-"ö"              "/o/"
+"ö"              "/ɔ/"
+"o"              "/o/"
 "p"              "/p/"
 "r"              "/ɽ/"
 "s"              "/tʃ/"
@@ -107,10 +107,6 @@ Grapheme        Phoneme
 kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
-
-# Lenition Rules
-
-* Vowels are realized as [ə] in unstressed syllables [@Hooley2006, p. 6].
 
 # Misc. Rules
 

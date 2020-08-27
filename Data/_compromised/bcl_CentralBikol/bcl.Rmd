@@ -7,11 +7,11 @@ output: html_document
 
 Last Updated: 2019-06-17
 
-**Slightly Compromised: glottal stops are not transcribed consistently**
+**SLIGHTLY COMPROMISED: glottal stops not transcribed consistently**
 
 # Background
 
-**Language Family**: Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Meso Philippine / Central Philippine / Bikol / Coastal / Naga
+**Language Family:** Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Meso Philippine / Central Philippine / Bikol / Coastal / Naga
 
 * Central Bikol, or Bikol, is spoken throughout the Bikol provinces within the Philippines.
 
@@ -19,7 +19,7 @@ Last Updated: 2019-06-17
 
 ## Consonants
 
-* Loans from Spanish and English have introduced /f v z ʃ ʒ ɲ ʎ tʃ dʒ/ to Bikol, although not all speakers use those sounds [@BclMattes2014, p. 8].
+* Loans from Spanish and English have introduced /f/, /v/, /z/, /ʃ/, /ʒ/, /ɲ/, /ʎ/, /tʃ/, and /dʒ/ to Bikol, although not all speakers use those sounds [@BclMattes2014, p. 8].
 
 ```{r echo = FALSE, message = FALSE, warning = FALSE, results = 'asis'}
 
@@ -32,13 +32,14 @@ consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial   Alveolar   Palatal    Velar    Glottal
 Stops                      "p  b"    "t  d"      ""       "k  ɡ"     "ʔ"
 Nasals                      "m"       "n"        ""        "ŋ"       ""
-Fricatives                   ""       "s"        ""        ""        "h"
-Flaps                        ""       "ɾ"        ""        ""        ""
+Fricatives                  ""        "s"        ""        ""        "h"
+Flaps                       ""        "ɾ"        ""        ""        ""
 Approximants                "ʋ"       "l"        "j"       ""        ""
 '), header = TRUE)
 
 kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
   footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "") %>%
   add_header_above(c("", "Place of Articulation" = 5))
 
@@ -46,7 +47,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Although the orthography includes ⟨e⟩ and ⟨o⟩, [e] and [o] only exist as allophones of /i/ and /u/ respectively [@BclMattes2014, pg. 8].
+* Although the orthography includes ⟨e⟩ and ⟨o⟩, [e] and [o] only exist as allophones of /i/ and /u/ respectively [@BclMattes2014, p. 8].
 
 ```{r echo = FALSE}
 
@@ -73,7 +74,7 @@ kable(diphthongs, align = 'c') %>%
 
 # Alphabet
 
-* Glottal stops are not always reflected in the spelling of a word [@BclMattes2014, p. 12]. Occurrences in at least the intervocalic positions are predictable (i.e. phonetic), which isn't problematic for the language (as we don't account for them); however, occurrences of glottal stops elsewhere aren't transcribed consistently, which compromises the language to some degree. 
+* Glottal stops are not always reflected in the spelling of a word [@BclMattes2014, p. 12]. Occurrences in at least the intervocalic positions are predictable (i.e. phonetic), which isn't problematic for the language (as we don't account for them); however, occurrences of glottal stops elsewhere aren't transcribed consistently, which compromises the language to some degree.
 
 ```{r echo = FALSE}
 
@@ -118,7 +119,7 @@ knitr::kable(alphabet, align = 'c') %>%
 # Misc. Rules
 
 * Epenthesis of [h] occurs between stem-final and suffix-initial vowels [@BclMattes2014, p. 9].
-* /u/ is pronounced [o] in the final syllable of a word [@BclMintzD1971, p. 17].
+* /u/ is realized as [o] in the final syllable of a word [@BclMintzD1971, p. 17].
 * Glottal stops are always inserted between orthographically adjacent vowels [@BclMattes2014, p. 12].
 * Prefix-final /ŋ/ tends to assimilate, to varying degrees, to the first consonant of the stem [@BclMattes2014, p. 9].
 

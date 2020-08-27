@@ -5,13 +5,13 @@ bibliography: bzd.bib
 output: html_document
 ---
 
-Last updated: 2019-11-06
+Last updated: 2020-06-10
 
-**Heavily Compromised: alphabet is heavily phonetic based; documentation is rather contradicting and ambiguous**
+**HEAVILY COMPROMISED: alphabet is heavily phonetic based; documentation is rather contradicting and ambiguous**
 
 # Background
 
-**Language family**: Chibchan / Talamanca
+**Language Family:** Chibchan / Talamanca
 
 * Bribri is spoken in the Limón and Puntarenas provinces of Costa Rica.
 * Where dialects diverge, I will follow the Coroma dialect (represented in Crúbadán).
@@ -90,8 +90,8 @@ Grapheme       Phoneme
 "a"             "/a/"
 "b"             "/b/"
 "d"             "/d/"
-"e"             "/ɪ/"
-"ë"             "/ɛ/"     
+"e"             "/ɛ/"
+"ë"             "/ɪ/"     
 "i"             "/i/"
 "j"             "/x/"
 "k"             "/k/"

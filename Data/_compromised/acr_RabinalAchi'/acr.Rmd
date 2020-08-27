@@ -1,17 +1,17 @@
 ---
 title: "Rabinal Achi'"
 author: "Emily Strand"
-bibliography: acr-x-rabinal.bib
+bibliography: acr.bib
 output: html_document
 ---
 
 Last Updated: 2020-03-30
 
-**Slightly Compromised: suspect marking of vowel length**
+**SLIGHTLY COMPROMISED: suspect marking of vowel length**
 
 # Background
 
-**Language family**: Mayan / Quichean-Mamean / Greater Quichean / Quichean / Quiche-Achi
+**Language Family:** Mayan / Quichean-Mamean / Greater Quichean / Quichean / Quiche-Achi
 
 * Rabinal Achi' is spoken in Guatemala. It is one of two dialects of Achi. The other dialect is known as Cubulco.
 
@@ -28,8 +28,8 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"    Labial   Alveolar  Postalveolar  Palatal  Velar  Uvular  Glottal
-Stops                       "p ɓ"     "t t’"       ""          ""    "k k’"  "q q’"    "ʔ"
-Affricates                   ""      "ts ts’"   "tʃ tʃ’"       ""      ""     ""       ""  
+Stops                       "p ɓ"     "t tʼ"       ""          ""    "k kʼ"  "q qʼ"    "ʔ"
+Affricates                   ""      "ts tsʼ"   "tʃ tʃʼ"       ""      ""     ""       ""  
 Fricatives                   ""        "s"        "ʃ"          ""      ""     ""       "h"  
 Nasals                       "m"       "n"         ""          ""      ""     ""       ""
 Flaps                        ""        "ɾ"         ""          ""      ""     ""       ""  
@@ -47,7 +47,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 * Vowel length is contrastive in Rabinal Achi' [@Pellicer2005, p. 15]. Long vowels are indicated by duplicate vowel graphemes.
     - All the literature pertaining to the language suggests the marking of vowel length; however, the output of the Crúbadán corpus (only 33 accounts reflecting vowel length) makes this suspect.
-    - Unlike the languages in the Western branch of Proto-Mayan that have undergone neutralization of vowel length, languages in the Eastern branch (including Achi) have not [@England2017].
+    - Unlike the languages in the Western branch of Proto-Mayan that have neutralized vowel length, languages in the Eastern branch (including Achi) have not [@England2017].
     - I have chosen to categorize this language as compromised, given the suspect nature of the vowel length marking.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -76,18 +76,18 @@ Grapheme       Phoneme
 "i"             "/i/"
 "j"             "/h/"
 "k"             "/k/"
-"k\'"           "/k’/"
+"k\'"           "/kʼ/"
 "l"             "/l/"
 "m"             "/m/"
 "n"             "/n/"
 "o"             "/o/"
 "p"             "/p/"
 "q"             "/q/"  
-"q\'"           "/q’/"
+"q\'"           "/qʼ/"
 "r"             "/ɾ/"
 "s"             "/s/"
 "t"             "/t/"
-"t\'"           "/t’/"
+"t\'"           "/tʼ/"
 "u"             "/u/"
 "w"             "/w/"
 "x"             "/ʃ/"
@@ -95,9 +95,9 @@ Grapheme       Phoneme
 "\'"            "/ʔ/"
 **Digraph**     ""
 "ch"            "/tʃ/"
-"ch\'"          "/tʃ’/"
+"ch\'"          "/tʃʼ/"
 "tz"            "/ts/"
-"tz\'"          "/ts’/"
+"tz\'"          "/tsʼ/"
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%

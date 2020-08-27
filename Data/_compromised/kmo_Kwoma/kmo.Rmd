@@ -5,13 +5,13 @@ bibliography: kmo.bib
 output: html_document
 ---
 
-Last Updated: 2019-07-24
+Last Updated: 2020-06-30
 
-**Slightly Compromised: glottal stop not orthographically marked**
+**SLIGHTLY COMPROMISED: glottal stop not orthographically marked**
 
 # Background
 
-**Language Family**: Sepik / Middle Sepik / Nukuma / Kwoma
+**Language Family:** Sepik-Ramu / Sepik / Middle Sepik / Nukuma
 
 * Also referred to as Washkuk, Kwoma is spoken in the East Sepik province of Papua New Guinea.
 
@@ -40,7 +40,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 6)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Phonemes that contain a diacritic /ᵐ/, /ⁿ/, or /ᵑ/ are prenasalized.", general_title = "")
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Phonemes that contain a diacritic (ᵐ), (ⁿ), or (ᵑ) are prenasalized.", general_title = "")
 ```
 
 ## Vowels
@@ -121,13 +121,10 @@ kable(alphabet, align = 'c') %>%
 
 * Syllables in Kwoma follow the order of CV(C)(C) [@1981, p. 3].
 
-# Lenition Rules
-
-* The suffix /-ta/ spirantizes to /-tʃa/ after certain morphemes [@KmoKooyers1974, p. 9].
-* The suffix /-tawa/ collapses to one of four shortened versions, depending on preceding morphemes [@KmoKooyers1974, p. 10].
-
 # Misc. Rules
 
 * The glottal stop only occurs word-initially or intervocalically [@1981, p. 3].
+* The suffix /-ta/ becomes /-tʃa/ after certain morphemes [@KmoKooyers1974, p. 9].
+* The suffix /-tawa/ collapses to one of four shortened versions, depending on preceding morphemes [@KmoKooyers1974, p. 10].
 
 # References

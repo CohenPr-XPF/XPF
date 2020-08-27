@@ -3,7 +3,7 @@
 # Last Updated: 2020-05-06
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
-class,passthrough,[aikmpuw],,,,
+class,passthrough,[aiokmpuw],,,,
 class,w-preceder,[kg],,,,
 class,g-preceder,[ng],,,,
 class,vowels,[aeɛioɔu],,,,
@@ -19,8 +19,7 @@ sub,j,ⁿdʒ,2,,,
 sub,ḳ,q,2,,,
 sub,l,l̪,2,,,
 sub,n,n̪,2,,,
-sub,o,ɔ,2,,,
-sub,ö,o,2,,,
+sub,ö,ɔ,2,,,
 sub,r,ɽ,2,,,
 sub,s,tʃ,2,,,
 sub,t,t̪,2,,,

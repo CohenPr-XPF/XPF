@@ -5,13 +5,13 @@ bibliography: mt.bib
 output: html_document
 ---
 
-Last Updated: 2018-10-21
+Last Updated: 2020-07-01
 
-**Slightly Compromised: conflation between /ʃ/ and /ʒ/ and between /ts/ and /dz/**
+**COMPROMISED: conflation between /ʃ/ and /ʒ/ and between /ts/ and /dz/**
 
 # Background
 
-**Language Family**: Afro-Asiatic / Semitic / Central Semitic / Arabic / Western Arabic / Maltese
+**Language Family:** Afro-Asiatic / Semitic / Central / South / Arabic
 
 * Maltese is spoken in Malta and throughout the European Union.
 
@@ -54,7 +54,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
     - @MtBorg1997:             /a/ /e/ /i/ /o/ /u/  
     - @MtHumeEtAl2009:         /ɐ/ /ɛ/ /i/ /ɔ/ /u/  
     - @MtPuech2016:            /a/ /ɛ/ /ɪ/ /ɔ/ /ʊ/
-  * (NB: @MtHumeEtAl2009 only uses phonetic transcriptions, rather than phonemic, so it is ambiguous whether her choices of vowels reflect phonemes rather than realizations.)
+    - NB: @MtHumeEtAl2009 only use phonetic transcriptions, rather than phonemic, so it is ambiguous whether her choices of vowels reflect phonemes rather than realizations.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -130,21 +130,18 @@ kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
 
-# Lenition Processes
-
-* Long vowels are shortened word-finally [@MtBorg1997, p. 267].
-* ⟨għ⟩ represents the Old Arabic phones [ʕ] or [ɣ], which were deleted at some point during the evolution of modern Maltese [@MtBorg1997, p. 261].
-* ⟨h⟩ represents the Old Arabic phone [h], which was deleted at some point during the evolution of modern Maltese [@MtBorg1997, p. 259].
-* Elision of short vowels occurs in unstressed open syllables [@MtBorg1997, p. 273].
-
-# More Rules
+# Misc. Rules
 
 * Clusters of obstruents assimilate to be either fully voiced or fully voiceless [@MtBorg1997, p. 250].
 * Consonants geminate [@MtBorg1997, pp. 251-252].
     - Word-final long consonants are sometimes shortened (ibid.).
 * In the definite article, ⟨il-⟩, the /l/ typically assimilates to subsequent coronal segments (except /dʒ/) [@MtBorg1997, p. 255].
+* Long vowels are shortened word-finally [@MtBorg1997, p. 267].
 * Metathesis of the definite article occurs before Italian-derived words with initial sibilants [@MtBorg1997, p. 273].
 * The ⟨h⟩ in the suffixed pronouns (⟨-ha⟩, ⟨-hom⟩) is replaced by a glide after stressed stem-final vowels [@MtBorg1997, p. 261].
+* Elision of short vowels occurs in unstressed open syllables [@MtBorg1997, p. 273].
 * CCC clusters are pronounced as CVCC when the middle C is a sonorant [@MtBorg1997, p. 274].
+* ⟨għ⟩ represents the Old Arabic phones [ʕ] or [ɣ], which were deleted at some point during the evolution of modern Maltese [@MtBorg1997, p. 261].
+* ⟨h⟩ represents the Old Arabic phone [h], which was deleted at some point during the evolution of modern Maltese [@MtBorg1997, p. 259].
 
 # References

@@ -1,0 +1,128 @@
+---
+title: "Mwani"
+author: "Allison Shao"
+bibliography: wmw.bib
+output: html_document
+---
+
+Last Updated: 2020-07-23
+
+**COMPROMISED: conflation between syllabic nasals and prenasalized stops**
+
+# Background
+
+**Language Family:** Niger-Congo / Atlantic-Congo / Volta-Congo / Benue-Congo / Bantoid / Bantu / Northeast Coast Bantu / Sabaki / Swahili / Mwani
+
+* Mwani is also commonly known as Kimwani and is spoken in the Cabo Delgado province of Mozambique.
+* Mwani and Swahili are not mutually intelligible [@Floor2010, p. 4].
+
+# Phonology
+
+## Consonants
+
+* There is some uncertainty regarding the phonemic status of prenasalized stops. @Petzell2002 as well as @NgungaFaquir2012 do not include them (p. 91; p. 20). @NgungaFaquir2012 claim that prenasalization of voiced stops (like labialization and palatalization) phonetically result from voiced stops following (homoorganic) nasal consonants (pp. 21-22). @Floor2010 and @Abudo2010, on the other hand, do include prenasalized stops as phonemic. I have opted to include the prenasalized stops in the analysis below.
+    - @NgungaFaquir2012 explain that in some instances where voiced stops are preceded underlyingly with the prefix "mu-" (marked by ⟨n⟩ when preceding non-bilabial stops), vowel elision of the /u/ (which is orthographically omitted) often occurs resulting in syllabic nasal + voiced stop sequences rather than prenasalized voiced stops. This ultimately means that the language is somewhat compromised as conflation between syllabic nasals preceding voiced stops and prenasalized stops cannot be avoided.
+* [r] is generally considered to be an allophone of /l/ [@NgungaFaquir2012, p. 21]. @Abudo2010 explain that in most dialects, the contrast is not maintained. It is however maintained in the Kiwibu dialect, which is said to be the prestige dialect [@Floor2010, p. 4]. It is not uncommon for more formal dialects to preserve phonemic distinctions for which other dialects have lost. I have chosen to only represent /l/ below.
+* /ɡ/ is rather marginal [@Petzell2002, p. 90].
+* /h/ only occurs in Arabic loanwords [@NgungaFaquir2012, p. 21], and when it does occur, it is often elided [@Petzell2002, p. 90].
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Postalveolar  Palatal   Velar   
+"Stops (plain)"            "p b"    "t d"        ""          ""     "k ɡ"
+"Stops (prenasalized)"      "ᵐb"     "ⁿd"       "ⁿdʒ"        ""     "ᵑɡ"
+Affricates                  ""       ""        "tʃ dʒ"       ""      ""      
+Fricatives                 "f v"    "s z"        "ʃ"         ""      ""      
+Nasals                      "m"      "n"         ""          "ɲ"     "ŋ"     
+Approximants                "w"      "l"         ""          "j"     ""      
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless, whereas those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* The phonemic status of nasal vowels is also somewhat unclear. @NgungaFaquir2012 and @Abudo2010 argue for nasal vowels, whereas the other sources do not. @Petzell2002 states that the contrast seems to be maintained only when speakers of the language speak words adapted from Portuguese (the official language of Mozambique), but not when speaking Mwani. All vowels, however, tend to experience some nasalization preceding NC sequences, which is also noted in @Nurse1993 [as cited in @Petzell2002, pp. 91-92]. I have chosen to proceed with the analysis not accounting for nasal vowels.
+* Vowel length is not a contrastive feature of Mwani [@NgungaFaquir2012, pp. 19-20]. However, it can phonetically arise in derived Arabic loanwords, where intervocalic /h/ is often omitted (and generally not orthographically marked).
+* Unlike many Bantu languages, Mwani is said to have a pitch accent rather than tone [@Petzell2002, pp. 91-92]. There is, however, some gray area here as some sources note the existence of tone. @Floor2010 explains that Mwani doesn't necessarily have productive lexical tone, but it does have grammatical tone, denoting verb tense (p. 4). I have decided to proceed with the language without accounting for tone.
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High     "i"          ""           "u"         
+Mid      "e"          ""           "o"
+Low      ""           "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+* Vowels are marked with an acute accent (´) in some borrowings and nouns with nonstandard pronunciations. For some verb forms, the acute accent (´) and circumflex (^) are used to indicate pitch accent and verb tense [@NgungaFaquir2012, p. 25].
+* Vowels may also be marked with a tilde (◌̃). However, this convention is most likely adapted/preserved from Portuguese borrowings [@Abudo2010], given that it's present in 0.4% of the Crúbadán corpus. Since nasal vowels do not seem to be contrastive in Mwani, I have transcribed the nasal vowels to their oral counterparts in the rule set.  
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme              Comment       
+"a"              "/a/"                 ""
+"b"              "/b/"                 ""
+"c"              "/tʃ/"                ""
+"d"              "/d/"                 ""
+"e"              "/e/"                 ""
+"f"              "/f/"                 ""
+"g"              "/ɡ/"                 ""
+"h"              "/h/"    "only appears in loanwords"
+"i"              "/i/"                 ""
+"j"              "/dʒ/"                ""
+"k"              "/k/"                 ""
+"l"              "/l/"                 ""
+"m"              "/m/"                 ""
+"n"              "/n/"                 ""
+"o"              "/o/"                 ""
+"p"              "/p/"                 ""
+"r"              "/l/"      "may be realized as [r]"           
+"s"              "/s/"                 ""   
+"t"              "/t/"                 ""
+"u"              "/u/"                 ""
+"v"              "/v/"                 ""
+"w"              "/w/"                 ""
+"y"              "/j/"                 ""
+"z"              "/z/"                 ""
+**Digraph**        ""                  ""
+"ch"             "/tʃ/"                ""
+"mb"             "/ᵐb/"                ""
+"nd"             "/ⁿd/"                ""
+"nj"             "/ⁿdʒ/"               ""
+"ng"             "/ᵑɡ/"                ""
+"ng\'"           "/ŋ/"                 ""
+"ny"             "/ɲ/"                 ""
+"sh"             "/ʃ/"                 ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Misc. Rules
+
+* Labialization of consonants preceding /w/ is common [@Petzell2002, p. 92].
+* Palatalization also occurs before /j/ (ibid.).
+
+# References

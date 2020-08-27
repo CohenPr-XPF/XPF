@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -147,6 +146,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -184,11 +184,11 @@ summary {
 </div>
 
 
-<p>Last Updated: 2019-04-22</p>
-<p><strong>Slightly Compromised: alphabet is ambiguously phonetic with nasal vowels</strong></p>
+<p>Last Updated: 2020-06-26</p>
+<p><strong>SLIGHLTY COMPROMISED: alphabet is ambiguously phonetic with nasal vowels; conflation between /n/ and /m/</strong></p>
 <div id="background" class="section level1">
 <h1>Background</h1>
-<p><strong>Language Family</strong>: Muskogean / Western Muskogean / Choctaw</p>
+<p><strong>Language Family:</strong> Muskogean / Western</p>
 <ul>
 <li>Choctaw is a Native American language spoken in the southeastern United States (Louisiana, Mississippi, Oklahoma, Tennessee).</li>
 </ul>
@@ -349,7 +349,7 @@ j
 <h2>Vowels</h2>
 <ul>
 <li>Vowel length is contrastive in Choctaw <span class="citation">(Broadwell 2005, 16–17)</span>. Long vowels are indicated by duplicate graphemes.</li>
-<li>Nasal vowels might have originated as allophonic in /VN/ clusters <span class="citation">(Broadwell 2005, 17)</span>; <span class="citation">Nicklas (1975)</span> and <span class="citation">Ulrich (1986)</span> seems to bolster this view (pp. 237-8; pp. 8, 60). Between this and the relatively rare usage of their unique characters, I have decided to treat the nasal vowels as allophonic and exclude them from the ruleset.
+<li>Nasal vowels might have originated as allophonic in /VN/ clusters <span class="citation">(Broadwell 2005, 17)</span>; <span class="citation">Nicklas (1975)</span> and <span class="citation">Ulrich (1986)</span> seem to bolster this view (pp. 237-8; pp. 8, 60). Between this and the relatively rare usage of their unique characters, I have decided to treat the nasal vowels as allophonic and exclude them from the ruleset.
 <ul>
 <li>Nasal vowels arise word-finally from /Vn/ sequences.</li>
 <li>Nasal vowels arise word-initially and word-medially from /VnC/ or /VmC/ sequences.</li>
@@ -419,17 +419,17 @@ a
 <ul>
 <li>A pitch accent exists in Choctaw, but there are virtually no minimal pairs that differ wholly on tone, so I currently intend to proceed with the language without marking tones <span class="citation">(Broadwell 2005, 17)</span>.</li>
 <li>Tones are sometimes attested orthographically on nonfinal syllables <span class="citation">(Broadwell 2005, 6, 17)</span>, but this seems to be an academic notation that is not commonly used by actual speakers.</li>
-<li>Pitch accent, when marked, is marked with an acute accent <span class="citation">(Broadwell 2005, 6)</span>.</li>
+<li>Pitch accent, when marked, is marked with an acute accent (´) <span class="citation">(Broadwell 2005, 6)</span>.</li>
 </ul>
 </div>
 </div>
 <div id="alphabet" class="section level1">
 <h1>Alphabet</h1>
 <ul>
-<li>The alphabet I am using is the Modified Traditional orthography (sometimes also called the modern linguistic variant), which is used by most contemporary linguists <span class="citation">(Broadwell 2005, 6)</span> as well as by Crúbadán. The ruleset will also support the Mississippi Choctaw orthography, which is also popularly used today, but it will not support the Traditional orthography since the Traditional orthography does not distinguish vowel length <span class="citation">(Broadwell 2005, 4)</span>.</li>
+<li>The alphabet I am using is the Modified Traditional orthography (sometimes called the modern linguistic variant), which is used by most contemporary linguists <span class="citation">(Broadwell 2005, 6)</span> as well as by Crúbadán. The ruleset will also support the Mississippi Choctaw orthography, which is also popularly used today, but it will not support the Traditional orthography since the Traditional orthography does not distinguish vowel length <span class="citation">(Broadwell 2005, 4)</span>.</li>
 <li>⟨’⟩ seems to be mostly attested in academic sources rather than used by speakers, but I have included it in the ruleset so that it can be incorporated if necessary.</li>
 <li>Within the Mississippi orthography, nasalized vowels are marked with hooks: ⟨a̧, i̧, o̧⟩.</li>
-<li><r> appears periodically in the Crúbadán corpus but does not appear to correspond to any actual Choctaw phonemes.</li>
+<li>⟨r⟩ appears periodically in the Crúbadán corpus but does not appear to correspond to any actual Choctaw phonemes.</li>
 <li>When /l/ is followed by /h/, the cluster is written as ⟨l.h⟩ to distinguish from /ɬ/ <span class="citation">(Broadwell 2005, 16)</span>. This sequence is exceedingly rare though, with sources disagreeing on whether it natively occurs at all; therefore I have not included it in the ruleset.</li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
@@ -786,14 +786,9 @@ v
 <h1>Lenition Rules</h1>
 <ul>
 <li>For some speakers, /k/ spirantizes to [ɣ] <span class="citation">(Broadwell 2005, 15)</span>.</li>
-<li>/h/ sometimes assimilates to [ç] when preceding /tʃ/ <span class="citation">(Broadwell 2005, 16)</span>.</li>
-<li>Along morpheme boundaries, vowels delete if followed by another vowel <span class="citation">(Broadwell 2005, 26)</span>.</li>
-<li>Long vowels shorten when followed by /hC/ or /lC/ <span class="citation">(Nicklas 1975, 242)</span>.</li>
 <li>When followed by a “stem consonant” (an obstruent?), nasal clusters reduce to the final sound in the cluster <span class="citation">(Nicklas 1975, 242)</span>.</li>
 <li>/j/ deletes before /l/; /w/ does likewise if preceded by a high back vowel <span class="citation">(Nicklas 1975, 243)</span>.</li>
 <li>/ɬ/ debuccalizes to [h] when followed by a fricative or affricate <span class="citation">(Nicklas 1975, 243)</span>.</li>
-<li>/l/ fully assimilates to preceding labial consonants, except /p/ <span class="citation">(Nicklas 1975, 243)</span>.</li>
-<li>/l/ fully assimilates to preceding /ɬ/ or following /n/ <span class="citation">(Nicklas 1975, 243)</span>.</li>
 <li>/l/ spirantizes to [ɬ] before a voiceless consonant <span class="citation">(Nicklas 1975, 243)</span>.</li>
 </ul>
 </div>
@@ -803,10 +798,15 @@ v
 <li>All consonants (except /ʔ/) can occur as geminates, in which case they are just written by doubling their character <span class="citation">(Ulrich 1986, 8)</span>.</li>
 <li>Some younger speakers produce /ɬ/ as [θ] <span class="citation">(Broadwell 2005, 16)</span>.</li>
 <li>When /k/ or /h/ is followed by a voiced consonant, an epenthetic vowel (closest to [ə] in realization) is inserted between the two sounds <span class="citation">(Broadwell 2005, 16)</span>.</li>
+<li>/h/ sometimes assimilates to [ç] when preceding /tʃ/ <span class="citation">(Broadwell 2005, 16)</span>.</li>
 <li>/ʔ/ does not appear word-initially <span class="citation">(Broadwell 2005, 19)</span>.</li>
 <li>The following consonants cannot be word-final: /b ɬ w j tʃ/ <span class="citation">(Broadwell 2005, 19)</span>.</li>
 <li>Some speakers render words with a /CVCVCV/ form as /CVCVːCV/ <span class="citation">(Broadwell 2005, 24)</span>.</li>
+<li>Along morpheme boundaries, vowels delete if followed by another vowel <span class="citation">(Broadwell 2005, 26)</span>.</li>
 <li>[ʔ] is inserted at the end of vowel-final words <span class="citation">(Ulrich 1986, 14–15)</span>.</li>
+<li>Long vowels shorten when followed by /hC/ or /lC/ <span class="citation">(Nicklas 1975, 242)</span>.</li>
+<li>/l/ fully assimilates to preceding labial consonants, except /p/ <span class="citation">(Nicklas 1975, 243)</span>.</li>
+<li>/l/ fully assimilates to preceding /ɬ/ or following /n/ <span class="citation">(Nicklas 1975, 243)</span>.</li>
 </ul>
 </div>
 <div id="references" class="section level1 unnumbered">

@@ -6,13 +6,13 @@ bibliography: id.bib
 output: html_document
 ---
 
-Last Updated: 2020-03-26
+Last Updated: 2020-06-05
 
-**Slightly Compromised: conflation between /e/ and /ə/**
+**SLIGHTLY COMPROMISED: conflation between /e/ and /ə/**
 
 # Background
 
-**Language family**: Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Sundic / Malayic / Malayan / Local Malay
+**Language Family:** Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Sundic / Malayic / Malayan / Local Malay
 
 # Phonology
 
@@ -46,7 +46,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Adjacent vowels don't typically form complex nuclei [@tadmor2009malay, p. 796].
+* Some sources present diphthongs. For example, @soderberg2008indonesian list /ai/, /oi/, and /au/. However, adjacent vowels don't typically form complex nuclei [@tadmor2009malay, p. 796], so I have opted not to account for them.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -64,7 +64,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* The languages is somewhat compromised as ⟨e⟩ can represent two different vowels /e/ and /ə/. The rules use /e/ as the default [@soderberg2008indonesian, p. 211].
+* The language is somewhat compromised as ⟨e⟩ can represent both /e/ and /ə/. Sometimes ⟨é⟩ is used to represent /e/ to disambiguate (which is represented in the rules), but this is not always the case. The rules transcribe ⟨e⟩ to /e/ by default [@soderberg2008indonesian, p. 211].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -74,9 +74,9 @@ Grapheme       Phoneme         Comment
 "b"             "/b/"            ""
 "c"             "/tʃ/"           ""
 "d"             "/d/"            ""
-"e"          "/e/; /ə/"     "/e/: default"
+"e"          "/e/; /ə/"     "/e/: default in the rules"
 "é"             "/e/"            ""
-"f"             "/f"       "only in loanwords - varies freely with [p]"
+"f"             "/f"       "only appears in loanwords - varies freely with [p]"
 "g"             "/ɡ/"            ""
 "h"             "/h/"            ""
 "j"             "/dʒ/"           ""
@@ -85,20 +85,20 @@ Grapheme       Phoneme         Comment
 "m"             "/m/"            ""
 "n"             "/n/"            ""
 "p"             "/p/"            ""
-"q"             "/k/"      "only in loanwords"
+"q"             "/k/"      "only appears in loanwords"
 "r"             "/r/"            ""
 "s"             "/s/"            ""
 "t"             "/t/"            ""
-"v"             "/f/"      "only in loanwords - varies freely with [v]"
+"v"             "/f/"      "only appears in loanwords - varies freely with [v]"
 "w"             "/w/"            ""
-"x"             "/ks/"     "only in loanwords"
+"x"             "/ks/"     "only appears in loanwords"
 "y"             "/j/"            ""
-"z"             "/z/"      "only in loanwords"
+"z"             "/z/"      "only appears in loanwords"
 **Digraph**      ""              ""
 "ng"            "/ŋ/"            ""
 "ny"            "/ɲ/"            ""
-"kh"            "/x/"      "only in loanwords - replaced with /k/ in younger generations [@soderberg2008indonesian, p. 211]"
-"sy"            "/ʃ/"      "only in loanwords"
+"kh"            "/x/"      "only appears in loanwords - replaced with /k/ in younger generations [@soderberg2008indonesian, p. 211]"
+"sy"            "/ʃ/"      "only appears in loanwords"
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
@@ -117,5 +117,6 @@ kable(alphabet, align = 'c') %>%
 
 * Epenthesis of glottal stop occurs depending on loanword origin (e.g. Arabic) and affixation [@soderberg2008indonesian, p. 211].
 * Word-final voiced stops become voiceless in loanwords (voiced stops word-finally aren't present in native words) (ibid.).
+* Affix-final /ŋ/ assimilates to the place of articulation of the following root-initial consonant.
 
 # References

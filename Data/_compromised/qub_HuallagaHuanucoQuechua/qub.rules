@@ -1,8 +1,8 @@
 # Huallaga Huánuco Quechua Rule Set
 # Written by: Emily
-# Last Updated: 2019-08-21
+# Last Updated: 2020-06-18
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,passthrough,[ahiklmnpqstuw],,,,
 class,vowels,[aiu],,,
 class,front-v,[eëiï],,,,
@@ -22,17 +22,18 @@ sub,ü,u ː,1,,,
 sub,y,j,1,,,
 sub,({passthrough}),\1,0.5,,,,
 # Digraphs
-sub,c,tʃ,2,,h,
-sub,h,,2,c,,"clean-up",
+sub,c,tʃ,3,,h,
+sub,h,,3,c,,"clean-up",
 sub,g,q,2,,u{front-v},
 sub,u,,2,g,,"clean-up",
 sub,l,ʎ,2,,l,,
 sub,l,,2,l,,"clean-up",
 sub,q,k,1,,u{front-v},
 sub,u,,2,q,,"clean-up",
-sub,s,ʃ,2,,h,
-sub,h,,2,s,,"clean-up",
+sub,s,ʃ,3,,h,
+sub,h,,3,s,,"clean-up",
 sub,h,w,2,,u,
 sub,u,,2,h,,"clean-up",
+sub,u,u,4,(ch|sh),,"prevents /u/ from being deleted in <shu> and <chu> sequences"
 # Long Vowels
 ipasub,({vowels}) \1,\1 ː,2,,,

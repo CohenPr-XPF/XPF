@@ -1,0 +1,43 @@
+# Mwani Rule Set
+# Written by: Allison
+# Last Updated: 2020-07-23
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdefiklmnopstuvwz],,,,
+class,apostrophe,[''’ʻ],,,,
+class,n-follower,[djgy],,,,
+class,a,[áâã],,,,
+class,e,[éêẽ],,,,
+class,i,[íîĩ],,,,
+class,o,[óôõ],,,,
+class,u,[úûũ],,,,
+# Individual Letters
+sub,c,tʃ,1,,,
+sub,g,ɡ,1,,,
+sub,j,dʒ,1,,,
+sub,r,l,1,,,
+sub,y,j,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Accented Vowels
+sub,{a},a,1,,,
+sub,{e},e,1,,,
+sub,{i},i,1,,,
+sub,{o},o,1,,,
+sub,{u},u,1,,,
+# Multigraphs
+sub,c,tʃ,4,,h,
+sub,h,,4,c,,"clean-up",
+sub,m,ᵐb,4,,b,
+sub,b,,4,m,,"clean-up"
+sub,n,ⁿd,4,,d,
+sub,n,ᵑɡ,4,,g,
+sub,n,ⁿdʒ,4,,j,
+sub,n,ɲ,4,,y,
+sub,{n-follower},,4,n,,"clean-up",
+sub,s,ʃ,4,,h,
+sub,h,,4,s,,"clean-up"
+sub,g,ŋ,5,n,{apostrophe},
+sub,n,,5,,g{apostrophe},"clean-up",
+sub,{apostrophe},,5,ng,,"clean-up",
+# Misc. Rules
+sub,-,,1,,,"hyphens have no phonemic value",

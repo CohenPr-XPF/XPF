@@ -5,13 +5,13 @@ bibliography: mek.bib
 output: html_document
 ---
 
-Last updated: 2020-01-24
+Last updated: 2020-06-30
 
-**Slightly Compromised: glottal stops inconsistently marked**
+**SLIGHTLY COMPROMISED: glottal stops inconsistently marked**
 
 # Background
 
-**Language family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Wester Oceanic / Papuan Tip / Peripheral / Central Papuan / West Central Papuan / Nuclear
+**Language Family:** Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Wester Oceanic / Papuan Tip / Peripheral / Central Papuan / West Central Papuan / Nuclear
 
 * Mekeo is spoken in the Central province of Papua New Guinea.
 * The East Mekeo (standard) dialect is represented below [@Chung2009, p. 9].
@@ -99,7 +99,10 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* /t/ is realized as [ts] preceding /i/ [@Chung2009, p. 3].
 * The glottal stop is frequently omitted, especially by younger generations [@Chung2009, p. 4].
+
+# Misc. Rules
+
+* /t/ is realized as [ts] preceding /i/ [@Chung2009, p. 3].
 
 # References

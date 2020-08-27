@@ -1,7 +1,7 @@
 # Malayalam Rule Set
 # Written by: Becky
 # Edited by: Emily
-# Last Updated: 2020-03-26
+# Last Updated: 2020-06-15
 type,sfrom,sto,weight,precede,follow,comment
 # Class rules
 ## Consonants
@@ -166,5 +166,5 @@ ipasub,({Gem}) a ERASE \1ʰ,\1ʰ ː,3.5,,,"fixes gemination rule",
 ipasub,({Gem}) a ERASE \1ʱ,\1ʱ ː,3.5,,,"fixes gemination rule",
 ipasub,r a ERASE r,ʈ ː,4,,,"fixes gemination - exception",
 # Misc. Rules
-ipasub,ERASE,@,1,,,"accounts for unattested combos",
+ipasub,ERASE,@,0.5,,,"accounts for unattested combos",
 ipasub, ːʰ, @,1,,,"accounts for unattested aspiration (3 instances)",

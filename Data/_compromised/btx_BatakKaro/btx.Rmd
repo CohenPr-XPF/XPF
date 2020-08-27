@@ -6,13 +6,13 @@ bibliography: btx.bib
 output: html_document
 ---
 
-Last Updated: 2020-04-08
+Last Updated: 2020-06-26
 
-**Compromised: conflation among /e/, /ɘ/, and /ɯ/**
+**COMPROMISED: conflation among /e/, /ɘ/, and /ɯ/**
 
 # Background
 
-**Language Family**: Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Sundic / Sumatra / Batak / Northern
+**Language Family:** Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Sundic / Sumatra / Batak / Northern
 
 * Batak Karo is spoken in the Aceh and North Sumatra provinces of Indonesia.
 
@@ -70,7 +70,7 @@ kable(vowels, align = 'c') %>%
 # Alphabet
 
 * Although @Woollams2004 specifies one-to-one correspondences between the graphemes ⟨é⟩, ⟨e⟩, and ⟨ë⟩ and the respective phonemes /e/, /ɘ/, and /ɯ/ (p. 536), he also states that all three phonemes are represented by ⟨e⟩ [@Woollams1996, p. 23]. Therefore, the language is compromised.
-    - Although the Crúbadán corpus does not include the graphemes ⟨é⟩ and ⟨ë⟩, I have included rules for them in the rule set. I have decided to transcribe ⟨e⟩ to /ɘ/ as the default rule, given that /ɘ/ seems to be the most frequently occurring phoneme of the three (based on the phonemic representations in @Woollams1996).
+    - Although the Crúbadán corpus does not include the graphemes ⟨é⟩ and ⟨ë⟩, I have included rules for them in the rule set. I have decided to transcribe ⟨e⟩ to /ɘ/ as the default rule, given that /ɘ/ seems to be the most frequently occurring phoneme of the three [based on the phonemic representations in @Woollams1996].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -80,7 +80,7 @@ Grapheme        Phoneme                 Comment
 "b"              "/b/"                    ""
 "c"              "/tɕ/"                   ""
 "d"              "/d/"                    ""
-"e"          "/e/,/ɯ/,/ɘ/"            "/ɘ/: default"
+"e"          "/e/; /ɯ/; /ɘ/"      "/ɘ/: default in the rules"
 "g"              "/ɡ/"                    ""
 "h"              "/h/"                    ""
 "i"              "/i/"                    ""
@@ -108,11 +108,10 @@ kable(alphabet, align = "c") %>%
 
 * /h/ is normally elided word-initially [@Woollams1996, p. 30].
 * /k/ is realized as voiceless glottal stop word-finally and preceding consonants [@Woollams1996, p. 16].
-* Vowels are often elided in fast speech [@Woollams1996, p. 30].
-* In unstressed syllables, /ɯ/ is generally realized as [ə] [@Woollams1996, p. 22].
 
 # Misc. Rules
 
+* Vowels are often elided in fast speech [@Woollams1996, p. 30].
 * Voiceless stops tend to be unreleased word-finally [@Woollams1996, p. 16].
 * /h/ is sometimes realized as /x/ syllable-finally [@Woollams2004, p. 536].
 * Syllable-initially, /r/ may be realized as a flap (ibid.).

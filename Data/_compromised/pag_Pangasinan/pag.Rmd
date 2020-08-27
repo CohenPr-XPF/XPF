@@ -8,7 +8,7 @@ output: html_document
 
 Last Updated: 2020-06-18
 
-**Slightly Compromised: Possible conflation between /ŋ/ and /nɡ/**
+**SLIGHTLY COMPROMISED: possible conflation between /ŋ/ and /nɡ/**
 
 # Background
 
@@ -62,7 +62,7 @@ kable(consonants, align = 'c') %>%
 # Alphabet
 
 * Stress is sometimes marked with an acute accent (´) over a vowel [@BentonP1971, p. 7].
-* Some graphemes appearing in Spanish loanwords are often pronounced as they would be in Spanish. For example, ⟨f⟩ may be realized as [f] instead of [p] [@BentonP1971, p. 10].
+* Some graphemes appearing in Spanish loanwords are often realized as they would be in Spanish. For example, ⟨f⟩ may be realized as [f] instead of [p] [@BentonP1971, p. 10].
 * There is some ambiguity as to whether ⟨ng⟩ represents phoneme /ŋ/ or sequence /nɡ/. I will default to /ŋ/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -100,7 +100,7 @@ Grapheme      Phoneme                           Comment
 "qu"          "/k/"                               ""
 '), TRUE)
 
-kable(alphabet) %>%
+kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
 

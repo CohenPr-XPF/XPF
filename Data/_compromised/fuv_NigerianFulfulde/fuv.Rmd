@@ -7,11 +7,11 @@ output: html_document
 
 Last updated: 2020-02-07
 
-**Slightly Compromised: glottal stop not always represented; ambiguity concerning the transcription of the palatalized glottal stop**
+**SLIGHTLY COMPROMISED: glottal stop not always represented; ambiguity concerning the transcription of the palatalized glottal stop**
 
 # Background
 
-**Language family**: Niger-Congo / Atlantic-Congo / Atlantic / Northern / Senegambian / Fula-Wolof / Fulani / East Central
+**Language Family:** Niger-Congo / Atlantic-Congo / Atlantic / Northern / Senegambian / Fula-Wolof / Fulani / East Central
 
 * Nigerian Fulfulde is spoken in Nigeria.
 
@@ -70,8 +70,8 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* Glottal stops are not always represented word-initially, which compromizes the language slightly [@McIntosh1982, p. 25].
-* There is also some ambiguity related to how the palatalized glottal stop (including geminate form) is represented. I've listed the different forms below. I have gone with the transcription represented in @Ahmad2014 (pp. 5, 7), given that such forms (non-geminate) appear in the Crúbadán corpus, whereas the forms based on the transcription of @McIntosh1982 do not appear (p. 23).
+* Glottal stops are not always represented word-initially, which compromises the language slightly [@McIntosh1982, p. 25].
+* There is also some ambiguity related to how the palatalized glottal stop (including the geminate form) is represented. I've listed the different forms below. I have gone with the transcription represented in @Ahmad2014 (pp. 5, 7), given that such forms (non-geminate) appear in the Crúbadán corpus; the forms based on the transcription of @McIntosh1982 do not appear (p. 23).
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -121,8 +121,8 @@ kable(alphabet, align = 'c') %>%
 
 * Syllables in Nigerian Fulfulde follow the order of CV(V)(C)(C) [@Ahmad2014, p. 11].
 
-# Lenition Rules
+# Misc. Rules
 
-* Long vowels may undergo degemination when occurring in word-final unstressed syllables (ie. the length distinction in this position is neutralized) [@McIntosh1982, p. 25].
+* Long vowels may undergo degemination when occurring in word-final unstressed syllables (i.e. the length distinction in this position is neutralized) [@McIntosh1982, p. 25].
 
 # References

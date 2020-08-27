@@ -5,13 +5,13 @@ bibliography: qub.bib
 output: html_document
 ---
 
-Last Updated: 2019-08-21
+Last Updated: 2020-07-01
 
-**Compromised: unclear documentation pertaining to the orthography; possible conflation with vowels and glides**
+**COMPROMISED: unclear documentation pertaining to the orthography; possible conflation with vowels and glides**
 
 # Background
 
-**Language Family**: Quechuan / Quechua I
+**Language Family:** Quechuan / Quechua I
 
 * Huallaga Huánuco Quechua is spoken in the Huanuco region of Peru.
 
@@ -49,8 +49,8 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 ## Vowels
 
 * Vowel length is contrastive. Long vowels are either marked with a diareses (¨) or duplicate vowels, depending on the orthography [@weber_rimaycuna_2008, p. 14; @weber_grammar_1989, p. 456].
-* [e] and [o] are allophones of /i/ and /u/ respectively, and used in loanwords [@weber_grammar_1989, p. 450].
-* Apart from long vowels (duplicate graphemes), vowels do not occur in succession [@weber_grammar_1989, p. 455].
+    - Apart from long vowels (duplicate graphemes), vowels do not occur in succession [@weber_grammar_1989, p. 455].
+* [e] and [o] are considered to be allophones of /i/ and /u/ respectively, appearing most often in loanwords [@weber_grammar_1989, p. 450].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -67,7 +67,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* It's somewhat unclear as to what constitutes the Huallaga Huánuco Quechua alphabet. The Peruvian Ministry of Education publicly recognized the language in 2015, but the resources don't seem to be accessible. @weber_grammar_1989 lists variations between the Peruvian Ministry of Education (PME), the Departmental Office of Education (DOE), and Hispanic orthography (p. 456), of which I have noted below. Crúbadán uses graphemes from all three systems, so all those listed below will be represented in the rule set.
+* It's somewhat unclear as to what constitutes the Huallaga Huánuco Quechua alphabet. The Peruvian Ministry of Education publicly recognized the language in 2015, but the resources don't seem to be accessible. @weber_grammar_1989 lists variations between the Peruvian Ministry of Education (PME), the Departmental Office of Education (DOE), and Hispanic orthography (p. 456), of which I have noted below. The Crúbadán corpus uses graphemes from all three systems, so all those listed below will be represented in the rule set.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -125,8 +125,7 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* /q/ fricates word-finally or preceding a voiceless obstruent [@weber_grammar_1989, p. 452].
-* /q/ becomes voiced intervocalically, spirantizes preceding a voiceless consonant, and deletes word-finally [@weber_grammar_1989, p. 452].
+* /q/ becomes voiced intervocalically, spirantizes preceding a voiceless obstruent, and deletes word-finally [@weber_grammar_1989, p. 452].
 
 # Misc. Rules
 

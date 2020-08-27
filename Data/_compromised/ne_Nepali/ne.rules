@@ -1,6 +1,6 @@
 # Nepali Rule Set
 # Written by: Becky Mathew
-# Last updated: 2020/02/27
+# Last updated: 2020-02-27
 type,sfrom,sto,weight,precede,follow,comment
 # Zero Width Joiners
 sub,‌,,1,,,"removing zero width non-joiner",

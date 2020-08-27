@@ -7,11 +7,11 @@ output: html_document
 
 Last Updated: 2019-12-05
 
-**Slightly Compromised: some ambiguity pertaining to whether a digraph represents one phoneme or two depending on syllable structure**
+**SLIGHTLY COMPROMISED: some ambiguity pertaining to whether a digraph represents one phoneme or two depending on syllable structure**
 
 # Background
 
-**Language family**: Tacanan / Araona-Tacana / Cavinena-Tacana / Cavinena
+**Language Family:** Tacanan / Araona-Tacana / Cavinena-Tacana / Cavinena
 
 * Cavineña is spoken Bolivia.
 
@@ -65,7 +65,7 @@ kable(consonants, align = 'c') %>%
 
 # Alphabet
 
-* There seems to be four different writing systems laid out by @Guillaume2008 (p. 48).
+* There seem to be four different writing systems laid out by @Guillaume2008 (p. 48).
     * Crúbadán appears to follow @Camp1989 [as cited in @Guillaume2008, pp. 47-48], so I have based my transcription on that source.
 * /l/ is said to appear only in Spanish loanwords [@Guillaume2008, p. 47].
 
@@ -108,7 +108,7 @@ kable(alphabet, align = 'c') %>%
 # Syllable Structure
 
 * Syllables in Cavineña follow the order of (C)V [@Guillaume2008, 30].
-    * @Guillaume2008 explains that this isn't problematic in terms of the complex consonants as they **ALWAYS** fall within a single syllable [@Guillaume2008, p. 36]. However, @Camp1989 explain that this is problematic (for the ⟨cu⟩ digraph at least) (p. xi). Depending on the syllable structure, it is said to be realized as either a complex consonant (/kʷ/) or a sequence of phonemes (/k u/). Thus, the language may be compromised to some extent.
+    * @Guillaume2008 explains that this isn't problematic in terms of the complex consonants as they **ALWAYS** fall within a single syllable [@Guillaume2008, p. 36]. However, @Camp1989 explain that this is problematic (for the ⟨cu⟩ digraph at least) (p. xi). Depending on the syllable structure, it is said to be realized as either a complex consonant (/kʷ/) or a sequence of phonemes (/ku/). Thus, the language may be compromised to some extent.
 
 # Misc. Rules
 

@@ -7,13 +7,13 @@ output: html_document
 
 Last Updated: 2019-12-05
 
-**Compromised: some ambiguity in the transcription of alif; some conflation between /w/ and /uː/ and between /j/ and /iː/**
+**COMPROMISED: some ambiguity in the transcription of alif; some conflation between /w/ and /uː/ and between /j/ and /iː/**
 
 # Background
 
-**Language family**: Afro-Asiatic / Semitic / Central / South / Arabic
+**Language Family:** Afro-Asiatic / Semitic / Central / South / Arabic
 
-* Arabic is considered an overarching classification of all the dialectal varieties [@Boudelaa2010, p. 482]. Given this, I have chosen to address the Modern Standard variety, which is predominantly written or used in formal communication. Thus, Arabic exhibits diglossia, such that written text (and formal communication) differs from what is actually spoken in everyday life. @Boudelaa2010 explain that Modern Standard Arabic is considered the "high" variety, and all the regional dialects are considered the "low" varieties (p. 482). Because of this distinction, the phoneme inventory for Modern Standard Arabic differs somewhat from those of the regional dialects.
+* Arabic is considered an overarching classification of all the dialectal varieties [@Boudelaa2010, p. 482]. Given this, I have chosen to address the Modern Standard variety, which is predominantly written or used in formal communication. Thus, Arabic exhibits diglossia, where written text (and formal communication) differs from what is actually spoken in everyday life. @Boudelaa2010 explain that Modern Standard Arabic is considered the "high" variety, and all the regional dialects are considered the "low" varieties (p. 482). Because of this distinction, the phonemic inventory for Modern Standard Arabic differs somewhat from those of the regional dialects.
 * Arabic is a widely spoken language with speakers primarily residing in either Asia, the Middle East, or North Africa.
 
 # Phonology
@@ -82,7 +82,7 @@ kable(diphthongs, align = 'c') %>%
 
 alphabet <- read.table(textConnection('
 Grapheme  Phoneme      Comment
-"ا"       "/aː/; /ʔ/"   "/ʔ/: word-initially (not always though, which somewhat compromises the language)"
+"ا"       "/aː/; /ʔ/"   "/ʔ/: word-initially (not always marked, which somewhat compromises the language)"
 "ب"       "/b/"         ""
 "ت"       "/t/"         ""
 "ث"       "/θ/"         ""
@@ -112,7 +112,7 @@ Grapheme  Phoneme      Comment
 "ي"       "/j/; /iː/"   "/j/: word -initially (used as default in the rules); /iː/ preceded by a short /i/ diacritic"
 "ء"       "/ʔ/"         "called a hamza, this grapheme also exists as a diacritic (explained below)"
 "ة"       "∅; /t/"      "called a ta-marbuta, this grapheme appears word-finally, corresponding to /t/ if followed by a diacritic or ∅ otherwise [@Biadsy2009, p. 3]"
-"ى"       "/a/"         "called an alif-maqsura, this diacritic occurs word-finally [@Habash2010, p. 11; @Biadsy2009, p. 3]"      
+"ى"       "/a/"         "called an alif-maqsura, this grapheme occurs word-finally [@Habash2010, p. 11; @Biadsy2009, p. 3]"      
 **Diacritic**    ""     ""
 "ُ"       "/u/"          "this diacritic is called a dammah [@Yurtbasi2016, p. 146]"
 "َ"       "/a/"          "this diacritic is called a fatḥah (ibid.)"

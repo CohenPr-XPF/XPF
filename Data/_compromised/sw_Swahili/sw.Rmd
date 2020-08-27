@@ -8,11 +8,11 @@ output: html_document
 
 Last Updated: 2020-01-10
 
-**Slightly Compromised: possible conflation among syllabic nasals and non-syllabic counterparts**
+**SLIGHTLY COMPROMISED: possible conflation among syllabic nasals and non-syllabic counterparts**
 
 # Background
 
-**Language family**: Niger-Congo / Atlantic-Congo / Volta-Congo / Benue-Congo / Bantoid / Southern / Narrow Bantu / Central / G / Swahili (G. 40)
+**Language Family:** Niger-Congo / Atlantic-Congo / Volta-Congo / Benue-Congo / Bantoid / Southern Bantoid / Bantu / Northeast Bantu / Northeast Coast Bantu / Sabaki / Swahili
 
 * Also referred to as Kiswahili, it is spoken throughout Africa.
 
@@ -20,8 +20,8 @@ Last Updated: 2020-01-10
 
 ## Consonants
 
-* There is some controversy around the phonemic status of aspirated stops. @Polome1967 states that there are inconsistencies among dialects, where some maintain the distinction and others do not (pp. 39-41). He also states that the contrast is neutralizing, especially among educated speakers, largely dictated by stress patterns and word placement. I have chosen to not include them in the phonemic inventory below.
-* @Polome1967 states that the phonemes /θ/, /ð/, and /ɣ/ appear only in loanwords; however, they have become part of the phonemic system, especially in that of educated speakers (more uneducated speakers or speakers that are less influenced by Arabic substitute native phonemes) (p. 42). I have chosen to include them below.
+* There is some controversy around the phonemic status of aspirated stops. @Polome1967 states that there are inconsistencies among dialects, where some maintain the distinction and others do not (pp. 39-41). He also states that the contrast is neutralizing, especially among educated speakers, largely dictated by stress patterns and word placement. I have chosen not to include them in the phonemic inventory below.
+* @Polome1967 states that the phonemes /θ/, /ð/, and /ɣ/ appear only in loanwords; however, they have become part of the phonemic system, especially in that of educated speakers (p. 42); more uneducated speakers or speakers that are less influenced by Arabic substitute native phonemes. I have chosen to include these phonemes below.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -49,7 +49,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 
 ## Vowels
 
-* Double vowels occur; however, they are independent of one another and do not constitute a single (long) phoneme [@Maw1999, p. 44].
+* Consecutive like-vowels occur in Swahili; however, they are independent of one another and do not constitute single (long) phonemes [@Maw1999, p. 44].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('
@@ -121,19 +121,21 @@ kable(alphabet, align = 'c') %>%
     - CV
     - CCV
     - CCCV
-* Although @mohamed2001 also indicates that a syllable can consist of just a nasal (p. 11), @Polome1967 states that such occurrences are merely variants of the non-syllabic nasals, predictable by stress patterns (p. 43). However, there are occurrences where syllabic /m/ and non-syllabic /m/ contrast, making the distinction between (ex. /mb/ and /m b/) unpredictable [@Polome1967, p. 43].
+    - C (which consists of a nasal)
+* Although @mohamed2001 also indicates that a syllable can consist of just a nasal (p. 11), @Polome1967 states that such occurrences are merely variants of the non-syllabic nasals, predictable by stress patterns (p. 43). However, there are occurrences where syllabic /m/ and non-syllabic /m/ contrast, making the distinction between (ex. /mb/ and /m b/) unpredictable [@Polome1967, p. 43]. It is unclear whether this extends beyond just /m/, but nevertheless, the language is still compromised based on this one example.
 
 # Lenition Processes
 
-* /n/ becomes the glide /j/ preceding a noun or adjective with a vowel stem [@mohamed2001, p. 24].
-* /l/ deletes preceding /u/ [@Meinhof1932, p. 118].
-* /v/ becomes the glide /w/ preceding /i/ (ibid.).
+* /n/ becomes the glide [j] preceding a noun or adjective with a vowel stem [@mohamed2001, p. 24].
 * /r/ is often realized as a flap [@Polome1967, p. 44].
-* The contrast between voiced and voiceless consonants is sometimes (unpredictably) neutralized [@Polome1967, p. 46].
+* /l/ deletes preceding /u/ [@Meinhof1932, p. 118].
+* /v/ becomes the glide [w] preceding /i/ (ibid.).
+
 
 # Misc. Rules
 
 * The voiced stops vary freely with their implosive variants [@Polome1967, p. 41].
 * /v/ and /z/ vary freely in some unpredictable environments [@Polome1967, p. 46].
+* The contrast between voiced and voiceless consonants is sometimes (unpredictably) neutralized (ibid.).
 
 # References

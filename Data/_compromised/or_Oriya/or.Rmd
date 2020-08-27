@@ -8,13 +8,13 @@ output: html_document
 
 Last Updated: 2020-02-25
 
-**Compromised: diacritics not always marked, creating phonemic ambiguity; certain diacritics used interchangeably**
+**COMPROMISED: diacritics not always marked and used interchangeably**
 
 # Background
 
-**Language family**: Indo-European, Indo-Iranian, Indo-Aryan, Eastern zone, Oriya
+**Language Family:** Indo-European / Indo-Iranian / Indo-Aryan / Eastern zone / Oriya
 
-* Oriya (now romanized as Odia) is the official language of Orissa, an eastern Indian state. There are four major dialects of Oriya, and this project focuses on Standard Oriya [@Ray2003, p. 485].
+* Oriya (now Romanized as Odia) is the official language of Orissa, an eastern Indian state. There are four major dialects of Oriya, and this project focuses on Standard Oriya [@Ray2003, p. 485].
 
 # Phonology
 
@@ -48,7 +48,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Dental", 
 
 * Nasal vowels are contrastive in Oriya [@Ray2003, p. 448]; however, they don't always contrast with their oral counterparts [@Pattanayak1959 as cited in @Ray2003, p. 448]. /o/ does not have a nasal counterpart.
 * Vowel length is said to be a phonetic feature rather than a phonemic one [@Ray2003, p. 447]. Long vowels will be transcribed as short.
-* The two diphthongs generally associated with Indo-Aryan languages /ɔi/ and /ɔu/ (variants of /ai/ and /au/), may be interpreted as separate monophthongs [@Ray2003, p. 447]. So, I have chosen not to transcribe them as complex nuclei.
+* The two diphthongs generally associated with Indo-Aryan languages /ɔi/ and /ɔu/ (variants of /ai/ and /au/), may be interpreted as separate monophthongss so, I have chosen not to transcribe them as complex nuclei [@Ray2003, p. 447].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -68,7 +68,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* Oriya is descended from the Brahmi script, but it does not hang from a horizontal line. It is a left-to-right abugida script without capital letters. As an abugida script, every consonant carries an inherent /ɔ/ following it [@Ray2003, p. 487].
+* Oriya descends from the Brahmi script, but it does not hang from a horizontal line. It is a left-to-right abugida script without capital letters. As an abugida script, every consonant carries an inherent /ɔ/ following it [@Ray2003, p. 487].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -127,7 +127,7 @@ alphabet <- read.table(textConnection('
 "ୋ"                           "/o/"         ""
 "ୌ"                           "/ɔu/"        ""
 "ଁ"                              ""       "called a candrabindu, this diacritic indicates vowel nasalization [@Mahapatra1996, p. 405]; however, @Giri2011 states that it may be used in place of the anusvara, which represents a separate phonemic feature, compromising the language. It also denotes nasalization of preceding consonants [@NBGP2018, p. 5], but given that nasal consonants aren\'t contrastive, the diacritic in these instances will be removed in the rules."
-"ଂ"                            "/m/"     "called an anusvara, this diacritic represents a nasal, either word-finally or in homoorganic sequences (/m/ appears to be underlying) [@Mahapatra1996, p. 404; @Mohapatra2016, p. 23]"
+"ଂ"                            "/m/"     "called an anusvara, this diacritic represents a nasal, either word-finally or in homorganic sequences (/m/ appears to be underlying) [@Mahapatra1996, p. 404; @Mohapatra2016, p. 23]"
 "ଃ"                            "/h/"     "called a visarga, this diacritic represents a word-final /h/ [@Mohapatra2016, p. 23]"
 "୍"                              ""       "called a halanta, this diacritic removes the inherent vowel from a consonant [@Mahapatra1996, p. 404]; however, it is not always marked, which compromises the language [@Ray2003, p. 447]"
 "◌़"                              ""      "called a nukta, this diacritic indicates non-native sounds [@Ishida2002, p. 4]. Given this, the diacritic will not be accounted for in the rules."
@@ -145,6 +145,6 @@ kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align
 
 # Misc. Rules
 
-* Aspirated consonants are deaspirated when preceded by /s/ and followed by a vowel [@Ray2003, p. 449].
+* Aspirated consonants are de-aspirated when preceded by /s/ and followed by a vowel [@Ray2003, p. 449].
 
 # References

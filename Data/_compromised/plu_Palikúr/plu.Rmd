@@ -7,11 +7,11 @@ output: html_document
 
 Last updated: 2019-11-04
 
-**Slightly Compromised: conflation between /ɡ/ and /ɣ/**
+**SLIGHTLY COMPROMISED: conflation between /ɡ/ and /ɣ/**
 
 # Background
 
-**Language family**: Arawakan / Maipuran / Eastern Maipuran
+**Language Family:** Arawakan / Maipuran / Eastern Maipuran
 
 * Palikúr is spoken in Brazil and French Guiana.
 
@@ -64,6 +64,7 @@ kable(vowels, align = 'c') %>%
   column_spec(1, bold = TRUE) %>%
   footnote(general = "Note: Vowels on the left of each cell are oral and vowels on the right of each cell are nasal.", general_title = "")
 
+
 diphthongs <- read.table(textConnection('
 Oral                                                             Nasal
 "/aj/, /ej/, /ij/, /uj/, /aw/, /ew/, /iw/, /ow/, /uw/"     "/ãj/, /ãw/, /ĩw/"
@@ -72,7 +73,6 @@ Oral                                                             Nasal
 kable(diphthongs, align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("Diphthongs" = 2))
-
 ```  
 
 # Alphabet
@@ -137,6 +137,6 @@ kable(alphabet, align = 'c') %>%
 
 * /t/ and /d/ often palatalize preceding /i/ and /ĩ/ [@launey2003, pp. 37-38].
 * Duplicate consonants (occurring word-initially) are realized separately [@launey2001, p. 9]. This is noted only for nasal-consonant sequences /nn/ and /mm/.
-    - It is implied that other nasal-consonant sequences (/nd/, /nt/, /mp/, /mb/, /mt/, and /ms/) are also interpreted in this way rather than as complex phonemes.
+    - It is implied that other nasal-consonant sequences (/nd/, /nt/, /mp/, /mb/, /mt/, and /ms/) are also interpreted in this way (i.e. with syllabic nasals) rather than as complex phonemes.
 
 # References

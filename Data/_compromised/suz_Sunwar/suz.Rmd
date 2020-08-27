@@ -5,13 +5,13 @@ bibliography: suz.bib
 output: html_document
 ---
 
-Last Updated: 2019-08-08
+Last Updated: 2020-07-02
 
-**Compromised: conflation between /ɾ/, /ɭ/, and possibly /l̪/; glottal stop is not always represented orthographically**
+**COMPROMISED: conflation between /ɾ/, /ɭ/, and possibly /l̪/; glottal stop not always orthographically marked**
 
 # Background
 
-**Language Family**: Sino-Tibetan / Tibeto-Burman / Himalayan / Kiranti / Western Kiranti / Sunwar
+**Language Family:** Sino-Tibetan / Tibeto-Burman / Himalayish / Mahakiranti / Kham-Magar-Chepang-Sunwari / Sunwari
 
 * Also called Kõits, Kõinch, and Koincha, Sunwar is spoken in Nepal.
 
@@ -54,7 +54,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 
 * Vowel length is phonemic for /a/ and /u/ [@SuzBorchers2008, p. 26].
 * @SuzRapacha2005 argues for /ə/ as a sixth vowel in Sunwar (pp. 57, 59-60).
-* All vowels, except for /uː/, nasalize contrastively [@SuzBorchers2008, p. 23]; however, @SuzBorchers2008 theorizes that this contrast may be gradually disappearing in Sunwar (pp. 27-28).
+* All vowels, except for /uː/, nasalize contrastively; however, @SuzBorchers2008 theorizes that this contrast may be gradually disappearing in Sunwar (pp. 23, 27-28).
 * Tone exists in Sunwar, but @SuzBorchers2008 argues that it is predictable, and states that he was unable to identify any minimal pairs that differ only in tone (pp. 28-30). Similarly, @SuzRapacha2005 remarks that tone contrasts are typically neutralized in the dialect areas he studied (p. 107). For this reason, I have chosen to omit tone in my ruleset.
 * The Sunwar diphthongs may occur as sequences of vowels when they exist across morpheme boundaries [@SuzBorchers2008, p. 31]. Given this, I will not include them below.
 
@@ -74,8 +74,8 @@ kable(consonants, align = 'c') %>%
 
 # Alphabet
 
-* The glottal stop is not consistently represented in the orthography. Some authors write it by repeating the vowel and adding the virama diacritic (्) to the second; others represent the glottal stop with the character for /k/, and others don't include the glottal stop at all [@SuzBorchers2008, p. 49]. Because of the relatively rare nature of /ʔ/, I have opted to proceed with the language anyway. In the rule set, I have opted to represent the glottal stop with the first method listed above. However, even with this, /ʔ/ does not appear in the Crúbadán corpus.
-* /ɭ/ and /ʃ/ are not always represented orthographically as well [@SuzBorchers2008, p. 49]. Accounts explain that it may be represented by the same grapheme as /ɾ/, or even /ɖ/ or /l̪/.
+* The glottal stop is not consistently represented in the orthography, compromising the language. Some authors write it by repeating the vowel while adding the virama diacritic (्) to the second; others represent the glottal stop with the character for /k/, and others don't include the glottal stop at all [@SuzBorchers2008, p. 49]. Because of the relatively rare nature of /ʔ/, I have opted to proceed with the language anyway. In the rule set, I have opted to represent the glottal stop with the first method listed above. However, even with this, /ʔ/ does not appear in the Crúbadán corpus.
+* /ɭ/ and /ʃ/ are not always represented orthographically as well [@SuzBorchers2008, p. 49]. At least for /ɭ/, accounts explain that it may be represented by the same grapheme as /ɾ/, or even /ɖ/ or /l̪/. Below I have listed that both /ɾ/ and /ɭ/ are transcribed by the same grapheme, compromising the language. I have defaulted to /ɾ/ in the rules, meaning that /ɭ/ is not represented in the Crúbadán corpus.
 * The aspirated phonemes present only in loanwords are not reflected in the ruleset.
 
 
@@ -107,7 +107,7 @@ alphabet <- read.table(textConnection('
 "भ"                        "/bʱa/"            "only in loanwords"  
 "म"                         "/ma/"                 ""
 "य"                         "/ja/"                 ""
-"र"                       "/ɾa/; /ɭa/"         "/ɾa/: default"
+"र"                       "/ɾa/; /ɭa/"         "/ɾa/: default in the rules"
 "ल"                         "/l̪a/"                 ""
 "व"                         "/wa/"                 ""
 "स"                         "/sa/"                 ""
@@ -120,6 +120,7 @@ alphabet <- read.table(textConnection('
 "उ"                         "/u/"                   ""
 "ऊ"                        "/uː/"                  ""
 "ए"                         "/e/"                   ""
+"ऐ "                        "/ai/"                  ""
 "ओ"                        "/o/"                   ""
 **Diacritic**                ""                     ""
 "्"                          ""         "called a virama, this diacritic removes the inherent vowel or indicates a glottal stop when following duplicate vowels (see comment above)"
@@ -128,23 +129,24 @@ alphabet <- read.table(textConnection('
 "ु"                         "/u/"                    ""
 "ू"                         "/uː/"                   ""
 "े"                         "/e/"                    ""
+"ै"                         "/ai/"                    ""
 "ो"                         "/o/"                    ""
+"ौ"                         "/au/"                    ""
 "ं"                          ""       "called a candrabindu, this diacritic marks nasalization of the preceding vowel"
 '), TRUE)
 
-kable(alphabet, align = 'c') %>%
+kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align = 'c') %>%
   kable_styling("bordered")
 ```
 
 # Syllable Structure
 
-* The syllable structure of Sunwar is (C)(C)V(V)(C)(C) [@SuzBaskaran2009, pp. 629-630]. Syllables must have at most one consonant, and in most cases can contain a maximum of four sounds.
+* The syllable structure of Sunwar is (C)(C)V(V)(C)(C) [@SuzBaskaran2009, pp. 629-630]. Syllables must have at least one consonant, and in most cases can contain a maximum of four sounds.
 
 # Lenition Rules
 
 * Some speakers spirantize /pʰ/ to [ɸ] [@SuzBorchers2008, p. 32].
 * Syllable-final /n/ and /ŋ/ are often realized weakly, and simply nasalize the preceding vowel (ibid.).
-* Word-final vowels may delete in fast speech [@SuzRapacha2005, p. 68].
 
 # Misc. Rules
 
@@ -153,6 +155,7 @@ kable(alphabet, align = 'c') %>%
 * Word-initial /w/ may gain aspiration [@SuzBorchers2008, p. 33].
 * /ɾ/ trills to [r] before palatal or velar consonants [@SuzBorchers2008, p. 35].
 * Epenthesis of [x] occurs between /ɾ/ and /tʃ/ [@SuzBorchers2008, p. 39].
+* Word-final vowels may delete in fast speech [@SuzRapacha2005, p. 68].
 * Postvocalic /l/ velarizes to [ɫ] when followed by another /l/ [@SuzRapacha2005, p. 83].
 * Consonant gemination in Sunwar occurs, most commonly with /b/, /tʃ/, /k/, /l̪/, /m/, /n/, /p/, /s/, and /t̪/ [@SuzRapacha2005, p. 94].
 

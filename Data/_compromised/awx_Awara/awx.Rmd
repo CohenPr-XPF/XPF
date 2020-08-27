@@ -7,11 +7,11 @@ output: html_document
 
 Last Updated: 2020-04-13
 
-**Compromised: conflation between /nd/, /mb/, /nɡ/ and /d/, /b/, /ɡ/, respectively**
+**COMPROMISED: conflation between /nd/, /mb/, /nɡ/ and /d/, /b/, /ɡ/, respectively**
 
 # Background
 
-**Language Family**: Trans-New Guinea, Main Section, Central and Western, Huon-Finisterre, Finisterre, Wantoat
+**Language Family:** Trans-New Guinea / Main Section / Central and Western / Huon-Finisterre / Finisterre / Wantoat
 
 * Awara is spoken in the Morobe province of Papua New Guinea.
 
@@ -19,7 +19,7 @@ Last Updated: 2020-04-13
 
 ## Consonants
 
-* @Quigley2002 and @Quigley2003 disagree slightly on the consonant inventory of Awara; I have chosen to follow more closely the more recent source (p. 4; p. 14).
+* @Quigley2002 and @Quigley2003 disagree slightly on the consonant inventory of Awara (p. 4; p. 14); I have chosen to predominantly follow the more recent source.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 library(dplyr)
@@ -47,10 +47,10 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('
-       Front   Central   Back
-High   "i"     ""        "u"
-Mid    "e"     "ɘ"       "o"
-Low    ""      "a"       ""
+       Front   Central     Back
+High   "i"       ""        "u"
+Mid    "e"       "ɘ"       "o"
+Low    ""        "a"       ""
 '), TRUE)
 
 kable(consonants, align = 'c') %>%
@@ -60,7 +60,7 @@ kable(consonants, align = 'c') %>%
 
 # Alphabet
 
-* Surface level prenasalization of consonants /b/, /d/, and /ɡ/ is orthographically represented intervocalically [@Quigley2003, p. 155]. This compromises the language because there is uncertainty whether the sequence ⟨ambi⟩, for example, represents /ambi/ or /abi/ ([ambi] realization). I have chosen to transcribe the language how it appears; that is, every ⟨mb⟩ sequence, for example, transcribes to /mb/.
+* Surface level prenasalization of consonants /b/, /d/, and /ɡ/ is orthographically represented intervocalically [@Quigley2003, p. 155]. This compromises the language because there is uncertainty whether the sequence ⟨ambi⟩, for example, always represents /abi/ (with an [ambi] realization) or /ambi/ in some instances. I have chosen to transcribe the language how it appears; that is, every ⟨mb⟩ sequence, for example, transcribes to /mb/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

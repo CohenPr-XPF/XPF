@@ -1,0 +1,137 @@
+---
+title: "Karachay-Balkar"
+author: "Allison Shao"
+bibliography: krc.bib
+output: html_document
+---
+
+Last Updated: 2020-07-28
+
+# Background
+
+**Language Family:** Turkic / Western / Ponto-Caspian
+
+# Phonology
+
+## Consonants
+
+* While @Seegmiller1996 and @Seegmiller1988 include the voiceless velar fricative /x/ (p. 6; p. 502), @CampbellKing2013 include its voiced counterpart /ɣ/ (p. 832). I have chosen to follow the  analyses with the voiceless fricative.
+* Additionally, @Seegmiller1988 includes /h/ (p. 502). I have chosen to follow the more recent sources and not include this phoneme.
+* Many instances of /ŋ/ phonetically result from adjacent /n/ and /ɡ/, but /ŋ/ is still considered phonemic because it occurs in other environments as well [@Seegmiller1996, p. 7].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Alveolar  Postalveolar  Palatal   Velar   
+Stops                      "p b"    "t d"         ""         ""     "k ɡ"    
+Affricates                  ""       ""        "tʃ dʒ"       ""      ""      
+Fricatives                  ""      "s z"        "ʃ"         ""      "x"     
+Nasals                      "m"      "n"         ""          ""      "ŋ"     
+Trills                      ""       "r"         ""          ""      ""      
+Approximants                "w"      "l"         ""          "j"     ""      
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless, whereas those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* Karachay-Balkar has vowel harmony based on backness and rounding [@Seegmiller1996, p. 8].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front       Back
+High     "i y"      "ɯ u"         
+Mid      "e ø"       "o"
+Low       ""         "ɑ"
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are unrounded, whereas those on the right are rounded.", general_title = "")
+```  
+
+# Alphabet
+
+* Though ⟨ў⟩ is included in the alphabet to represent /w/ [@CampbellKing2013, p. 833], the Crúbadán corpus does not contain this grapheme. @Orthography2019 lists ⟨у⟩ as representing /w/ in addition to /u/, provided specific environments (e.g. when preceded by ⟨а⟩, ⟨e⟩, ⟨ё⟩, ⟨и⟩, ⟨о⟩, ⟨ы⟩, ⟨ю⟩, ⟨я⟩, ⟨у⟩). The ruleset accounts for this.
+* Some graphemes may be transcribed differently in Russian loanwords. For example, grapheme ⟨ю⟩ represents /y/ in Karachay-Balkar but /ju/ in Russian. The ruleset defaults to the native Karachay-Balkar phonemes.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme          Comment
+"а"              "/ɑ/"             ""
+"б"              "/b/"             ""
+"в"              "/v/"             "appears in loanwords"
+"г"              "/ɡ/"             ""
+"д"              "/d/"             ""
+"e"              "/e; je/"         "/je/: word-initially"
+"ё"              "/ø; jo/"         "/jo/: appears in loanwords"
+"ж"              "/ʒ/"             "appears in loanwords"
+"з"              "/z/"             ""
+"и"              "/i/"             ""
+"й"              "/j/"             ""
+"к"              "/k/"             ""
+"л"              "/l/"             ""
+"м"              "/m/"             ""
+"н"              "/n/"             ""
+"о"              "/o/"             ""
+"п"              "/p/"             ""
+"р"              "/r/"             ""
+"с"              "/s/"             ""
+"т"              "/t/"             ""
+"у"              "/u/; /w/"        "see above explanation"
+"ў"              "/w/"             ""
+"ф"              "/f/"             "appears in loanwords"
+"х"              "/x/"             ""
+"ц"              "/ts/"            "appears in loanwords"
+"ч"              "/tʃ/"            ""
+"ш"              "/ʃ/"             ""
+"щ"              "/ʃtʃ/"           "appears in loanwords"
+"ъ"              ""                "appears in loanwords"
+"ы"              "/ɯ/"             ""
+"ь"              ""                "appears in loanwords"
+"э"              "/e/"             "word-initially"
+"ю"              "/y; ju/"         "/ju/: appears in loanwords"
+"я"              "/jɑ/"            ""
+**Digraph**       ""               ""
+"гъ"             "/ɡ/"             "represents [ɣ], an allophone of /ɡ/"
+"дж"             "/dʒ/"            ""
+"къ"             "/k/"             "represents [q], an allophone of /k/"
+"нг"             "/ŋ/"             ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* For some speakers, /x/ is realized as [h] before front vowels. Other speakers articulate [h] in all positions [@Seegmiller1996, p. 11].
+* Sequences of vowels are not allowed in Karachay-Balkar. This is resolved via vowel elision (ibid.).
+
+# Misc. Rules
+
+* Like other Turkic languages, /k/ and /ɡ/ have a range of different realizations, especially with respect to front and back vowels [@Seegmiller1996, p. 7].
+    - Next to front vowels, /k/ and /ɡ/ are realized generally as just that, [k] and [ɡ]. However, next to back vowels, their realizations are more uvular or spirantized; /k/ may be realized as [q], and /ɡ/ may be realized as [ɣ]. Depending on the environment, /ɡ/ may also be realized as [x] or [ɢ].
+* Voiced stops and /r/ devoice word-finally and when preceding other consonants [@Seegmiller1996, p. 9]. Voiced stops also frequently devoice when following voiceless consonants.
+* Metathesis is common in words that have /x/ followed by a sibilant [@Seegmiller1996, p. 11].
+* Consonants generally geminate through affixation (ibid.).
+    - The sequence /nɡ/ is often realized as the geminate /ŋŋ/ [@Seegmiller1996, p. 10].
+    - With adjacent nasal stops, depending on the status of the affix (e.g. denotes case marking), simplification/degemination occurs [@Seegmiller1996, p. 11].
+* /n/ sometimes assimilates to [m] when preceding /b/, /p/, or /m/ [@Seegmiller1996, p. 10].
+* /b/ surfaces as [m] preceding nasal stops (still occurs if a vowel is present between the /b/ and the nasal) [@Seegmiller1996, p. 10].
+* A stem-final nasal will be realized as [l] when the adjacent suffix begins with /l/ [@Seegmiller1996, p. 10].
+
+# References

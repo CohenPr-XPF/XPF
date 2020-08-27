@@ -7,11 +7,11 @@ output: html_document
 
 Last updated: 2019-10-28
 
-**Slightly Compromised: /h/ only represented orthographically when contrast is required**
+**SLIGHTLY COMPROMISED: /h/ represented orthographically only when contrast is required**
 
 # Background
 
-**Language family**: Algic / Algonquian / Central / Cree-Montagnais-Naskapi
+**Language Family:** Algic / Algonquian / Central / Cree-Montagnais-Naskapi
 
 * Moose Cree is spoken in Ontario, Canada.
 
@@ -86,6 +86,6 @@ kable(vowels, align = 'c') %>%
 
 * /w/ can also appear between a consonant and a vowel, the transcription of which involves a dot (like in the /w/ + vowel sequence) on the left of any character (ex. ᑄ = /pwa/) [@gaudry2005].
     - Based on [@syllabics], which also seems consistent with Crúbadán, /w/ does not appear following /n/ and /h/, except in the sequences /nwa/ and /nwaː/.
-* A small ring above a word-final syllable indicates /j/; however, Crúbadán doesn't seem to follow this convention, opting for ⟨ᔾ⟩, the convention of which is consistent with the other word-final consonants [@Ellis2000, p. 465].
+* A small ring above a word-final syllable indicates /j/; however, Crúbadán doesn't seem to follow this convention, opting for ⟨ᔾ⟩ instead, the convention of which is consistent with the other word-final consonants [@Ellis2000, p. 465].
 
 # References

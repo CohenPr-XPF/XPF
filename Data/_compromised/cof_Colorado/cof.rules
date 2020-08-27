@@ -1,6 +1,6 @@
 # Colorado Rule Set
 # Written by: Emily
-# Last Updated: 2020-05-04
+# Last Updated: 2020-06-02
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
 class,passthrough,[bdklmnprstw],,,,
@@ -40,10 +40,8 @@ sub,s,s,4,,h{high-V},
 sub,h,,4,s,{high-V},"clean-up",
 sub,c,ts u,5,,hu,"need separate rule for <chu> sequences due to <ch> and <hu> being digraphs",
 sub,h,,5,c,u,"clean-up",
-sub,u,,5,ch,,"clean-up",
 sub,s,s u,5,,hu,"need separate rule for <shu> sequences due to <sh> and <hu> being digraphs",
 sub,h,,5,s,u,"clean-up",
-sub,u,,5,sh,,"clean-up",
 # Nasal Vowels
 ipasub,({vowels-output}) n$,\1̃,6,,,"word-final nasal vowels",
 ipasub,({vowels-output}) n ({consonants-output}),\1̃ \2,7,,,"word-medial nasal vowels (nasal vowel followed by a consonant)",

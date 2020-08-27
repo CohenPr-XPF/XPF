@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -147,6 +146,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -184,11 +184,11 @@ summary {
 </div>
 
 
-<p>Last Updated: 2019-07-19</p>
-<p><strong>Compromised: conflicting orthographies make for possible conflation of vowels</strong></p>
+<p>Last Updated: 2020-07-06</p>
+<p><strong>COMPROMISED: conflicting orthographies make for possible conflation of vowels</strong></p>
 <div id="background" class="section level1">
 <h1>Background</h1>
-<p><strong>Language Family</strong>: Indo-European / Indo-Iranian / Iranian / Western Iranian / Northwestern Iranian / Zaza-Gorani / Zaza</p>
+<p><strong>Language Family:</strong> Indo-European / Indo-Iranian / Iranian / Western / Northwestern / Zaza-Gorani</p>
 <ul>
 <li>The language is also sometimes known as Zazaki or Dimli and it is spoken throughout Turkey.</li>
 </ul>
@@ -198,8 +198,10 @@ summary {
 <div id="consonants" class="section level2">
 <h2>Consonants</h2>
 <ul>
-<li>/ʕ/ appears in Arabic loans <span class="citation">(Todd 2002, 1)</span>.</li>
-<li>/ħ/ is not represented in the Crúbadán corpus.</li>
+<li>/sˤ/, /t̪ˤ/, and /ʕ/ are marginal <span class="citation">(Todd 2002, 1)</span>.
+<ul>
+<li>/t̪ˤ/ and /ʕ/ only occur in Arabic loanwords, but they are considered to be part of the phonemic inventory.</li>
+</ul></li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -438,7 +440,7 @@ j
 <div id="vowels" class="section level2">
 <h2>Vowels</h2>
 <ul>
-<li><span class="citation">Todd (2002)</span> includes /ə/ rather than /ɜ/ (p. 21); however, I went with /ɜ/ given that they describe it as a mid open central vowel, which is lower than schwa.</li>
+<li><span class="citation">Todd (2002)</span> includes /ə/ rather than /ɜ/ (p. 21); however, I opted to use /ɜ/ given that they describe it as a “mid open central vowel,” which is lower than schwa.</li>
 <li>Zaza has a number of diphthongs, all of which are spelled as a sequence of the two sounds that comprise them (e.g. /əj/ is written as ⟨ey⟩ and so forth) <span class="citation">(Todd 2002, 16)</span>.</li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
@@ -543,7 +545,10 @@ Diphthongs
 </div>
 <div id="alphabet" class="section level1">
 <h1>Alphabet</h1>
-<p><strong>NOTE:</strong> This orthography is somewhat compromised because the pronunciation of ⟨i⟩ differs depending on the orthography. By default, my ruleset only supports the orthography that maps ⟨i⟩ to /i/; however, rules for the other orthography are included but commented out in the ruleset, so by uncommenting those lines, the other orthography can be represented.</p>
+<ul>
+<li>This orthography is somewhat compromised because the transcription of ⟨i⟩ differs depending on the orthography. By default, my ruleset only supports the orthography that maps ⟨i⟩ to /i/; however, rules for the other orthography are included but commented out in the ruleset, so by uncommenting those lines, the other orthography can be represented.</li>
+<li><strong>NOTE:</strong> /ħ/ is not represented in the Crúbadán corpus.</li>
+</ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1037,18 +1042,18 @@ in some orthographies
 <ul>
 <li>/b/ spirantizes to [v] in postvocalic position, as well as in a handful of loanwords <span class="citation">(Todd 2002, 10–11)</span>.</li>
 <li>/dʒ/ spirantizes to [ʒ] postvocalically <span class="citation">(Todd 2002, 11)</span>.</li>
-<li>Word-final /ng/ collapses to [ŋ] <span class="citation">(Todd 2002, 12)</span>.</li>
 <li>Word-final /n/, if preceded by /ɑ/ or /ə/, is realized only as a nasalization of the vowel. This pattern also holds if there’s an intervening /j/ (ibid.).</li>
 <li>Word-final /n/, if preceded by a vowel <em>not</em> mentioned in the previous rule, deletes entirely <span class="citation">(Todd 2002, 13)</span>.</li>
-<li>The sequence /ii/ shortens to [i] <span class="citation">(Todd 2002, 18)</span>.</li>
 </ul>
 </div>
 <div id="misc.-rules" class="section level1">
 <h1>Misc. Rules</h1>
 <ul>
+<li>Word-final /ng/ collapses to [ŋ] <span class="citation">(Todd 2002, 12)</span>.</li>
 <li>Vowels become marginally lower and farther back when following a pharyngeal or pharyngealized consonant, or when following /ɫ/ <span class="citation">(Todd 2002, 17)</span>.</li>
 <li>Postvocalic /i/ is realized as [j] (ibid.).</li>
 <li>Epenthesis of [w] occurs between /u/ and front vowels (ibid.).</li>
+<li>The sequence /ii/ shortens to [i] <span class="citation">(Todd 2002, 18)</span>.</li>
 </ul>
 </div>
 <div id="references" class="section level1 unnumbered">

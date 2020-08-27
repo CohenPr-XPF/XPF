@@ -7,7 +7,7 @@ output: html_document
 
 Last Updated: 2020-04-17
 
-**Slightly Compromised: conflation between /l/ and /r/**
+**SLIGHTLY COMPROMISED: conflation between /l/ and /r/**
 
 # Background
 
@@ -17,8 +17,7 @@ Last Updated: 2020-04-17
 * Rawa has two dialects: Rawa and Karo. The main differences are [@Toland1991, p. 2]:
     - The Karo dialect has voiced stops, whereas the Rawa dialect has aspirated voiceless stops.
     - /l/ is much more frequent than /r/ in the Karo dialect, and /r/ is much more frequent than /l/ in the Rawa dialect.
-
-* I have opted to go with the analysis that includes voiced stops, so the Karo dialect is reflected more closely below.
+* I have opted to follow the analysis that includes voiced stops, meaning the Karo dialect is reflected more closely below.
 
 # Phonology
 
@@ -47,12 +46,13 @@ Approximants                     "w"        "l"         "j"      ""         ""
 kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 5))  %>%
-  column_spec(1, bold = TRUE)
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
 ```
 
 ## Vowels
 
-* Vowels cannot occur in succession [@Toland1991, p. 2].
+* Vowels do not occur in succession [@Toland1991, p. 2].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('

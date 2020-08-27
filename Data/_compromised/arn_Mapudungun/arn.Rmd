@@ -5,13 +5,13 @@ bibliography: arn.bib
 output: html_document
 ---
 
-Last updated: 2019-10-01
+Last updated: 2020-06-26
 
-**Slightly Compromised: ambiguity due to non-standard alphabet; conflation of dental and alveolar consonants /t̪/ and /t/**
+**COMPROMISED: ambiguity due to non-standard alphabet; conflation of dental and alveolar consonants /t̪/ and /t/ (most likely with the others as well)**
 
 # Background
 
-**Language family**: Araucanian
+**Language Family:** Araucanian
 
 * Also referred to as Mapuche or Araucana, it is spoken throughout Chile.
 
@@ -20,7 +20,7 @@ Last updated: 2019-10-01
 ## Consonants
 
 * In some dialects of Mapudungun, the distinction between the dental and alveolar phonemes have merged [@sadowsky_mapudungun_2013, p. 89], leaving the dentals to appear as a result of allophonic variation.
-* /ʃ/ is rather infrequent, often alternating with /s/ yet it is still considered in most sources to be a phoneme [@smeets_grammar_2008 p. 23].
+* /ʃ/ is rather infrequent, often alternating with /s/, yet it is still considered in most sources to be a phoneme [@smeets_grammar_2008, p. 23].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -67,8 +67,8 @@ kable(vowels, align = 'c') %>%
 # Alphabet
 
 * Although there isn't a standardization of the alphabet, the three alphabets commonly referred to provide a rather comprehensive picture in terms of depicting each phoneme. These alphabets include the Alfabeto Mapuche Unificado, the Frafemario Raguileo, and the Azumchefi [@bronzino_loanword_nodate, p. 22]. Listed below is the Alfabeto Mapuche Unificado, but following it, I have provided the orthographic variations from the other two.
-* Regarding the corresponding phoneme of ⟨g⟩, the Unified Alphabet uses /ɣ/ whereas the Raguileo and Azumchefi alphabets use /ŋ/. I went with the ⟨g⟩ to /ŋ/ correspondence due to the inclusion of ⟨q⟩ in the Crúbadán corpus, having a phoneme correspondence of /ɣ/, which is consistent with the Raguileo and Azumchefi alphabets.
-* The dentals are not represented in the Crúbadán corpus based on the Unified Alphabet graphemes. With the grapheme correspondences of the other two alphabets, they appear (except /t̪/, as the distinction between it at /t/ is not maintained in either).
+* Regarding the corresponding phoneme of ⟨g⟩, the Unified Alphabet uses /ɣ/ whereas the Raguileo and Azumchefi alphabets use /ŋ/. I went with the ⟨g⟩ to /ŋ/ correspondence due to the inclusion of ⟨q⟩ in the Crúbadán corpus, which based on the Raguileo and Azumchefi alphabets corresponds to /ɣ/.
+* Based on the Alfabeto Mapuche Unificado, the dentals are not represented in the Crúbadán corpus. With the grapheme correspondences of the other two alphabets, they appear (except /t̪/, as the distinction between it at /t/ is not maintained in either). Based on this, conflation most likely occurs between all alveolar consonants and their dental counterparts, compromising the language.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -93,7 +93,7 @@ Grapheme      Phoneme      Comment
 "r"            "/ʐ/"         ""
 "s"            "/s/"         ""
 "t"            "/t/"         ""
-"ṯ"            "/t̪/"         ""
+"ṯ"            "/t̪/"         "not reflected in the Crúbadán corpus"
 "u"            "/u/"         ""
 "ü"            "/ɘ/"         ""
 "w"            "/w/"         ""
@@ -105,17 +105,17 @@ Grapheme      Phoneme      Comment
 "ng"           "/ŋ/"         ""
 "ll"           "/ʎ/"         ""
 "**Orthographic Variation**" "" ""
-"c"            "/tʃ/"    "(Raguileo)"  
-"x"            "/ʈʂ/"    "(Raguileo)"  
-"tx"           "/ʈʂ/"    "(Azumchefi)"  
-"z"            "/θ/"     "(Raguileo and Azumchefi)"   
-"h"            "/n̪/"     "(Raguileo)"  
-"nh"           "/n̪/"     "(Azumchefi)"  
-"q"            "/ɣ/"     "(Raguileo and Azumchefi)"  
-"b"            "/l̪/"     "(Raguileo)"  
-"lh"           "/l̪/"     "(Azumchefi)"  
-"j"            "/ʎ/"     "(Raguileo)"   
-"v"            "/ɘ/"     "(Raguileo)"
+"c"            "/tʃ/"    "Raguileo"  
+"x"            "/ʈʂ/"    "Raguileo"  
+"tx"           "/ʈʂ/"    "Azumchefi"  
+"z"            "/θ/"     "Raguileo and Azumchefi"   
+"h"            "/n̪/"     "Raguileo"  
+"nh"           "/n̪/"     "Azumchefi"  
+"q"            "/ɣ/"     "Raguileo and Azumchefi"  
+"b"            "/l̪/"     "Raguileo"  
+"lh"           "/l̪/"     "Azumchefi"  
+"j"            "/ʎ/"     "Raguileo"   
+"v"            "/ɘ/"     "Raguileo"
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
@@ -124,15 +124,15 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* Unstressed vowels are often deleted in word-final positions following voiceless consonants [@sadowsky_mapudungun_2013, p. 94].
-* /ɘ/ may be deleted following a stressed syllable (ibid.).
-* Geminates occur in the language, but often they are realized as single consonants [@smeets_grammar_2008, p. 51].
+* Geminates occur in the language, but they are often realized as single consonants [@smeets_grammar_2008, p. 51].
 * /ʐ/ can approximate to /ɻ/ [@sadowsky_mapudungun_2013, p. 90].
 
 # Misc. Rules
 
 * Aspiration of some of the stops can occur [@sadowsky_mapudungun_2013, p. 89].
-* Consonant clusters are only allowed intervocalically [@smeets_grammar_2008, p. 37, 38].
+* Unstressed vowels are often deleted in word-final positions following voiceless consonants [@sadowsky_mapudungun_2013, p. 94].
+* /ɘ/ may be deleted following a stressed syllable (ibid.).
+* Consonant clusters are only allowed intervocalically [@smeets_grammar_2008, pp. 37, 38].
 * The velar phonemes /k/, /ŋ/, /ɣ/ tend to be fronted preceding front vowels [@sadowsky_mapudungun_2013, p. 89].
 
 

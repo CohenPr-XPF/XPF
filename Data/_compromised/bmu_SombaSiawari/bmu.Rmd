@@ -7,11 +7,11 @@ output: html_document
 
 Last Updated: 2019-11-19
 
-**Slightly Compromised: ambiguity due to phonetic transcription of /p/, /t/, and /k/ intervocalically (ex. ⟨kapa⟩ and ⟨kawa⟩ both transcribe to /kapa/)**
+**COMPROMISED: ambiguity due to phonetic transcription of /p/, /t/, and /k/ intervocalically (ex. ⟨kapa⟩ and ⟨kawa⟩ both transcribe to /kapa/)**
 
 # Background
 
-**Language Family**: Nuclear Trans New Guinea / Finisterre-Huon / Huon / Western Huon / Kosorong-Burum-Mindik
+**Language Family:** Nuclear Trans New Guinea / Finisterre-Huon / Huon / Western Huon / Kosorong-Burum-Mindik
 
 * Also referred to as Burum, Somba-Siawari is spoken in the Morobe province of Papua New Guinea.
 
@@ -30,7 +30,7 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial       Alveolar    Palatal        Velar     
-Stops                      "p  b"       "t  d"        ""       "k  kʷ  ɡ  ɡʷ"
+Stops                      "p  b"        "t  d"       ""       "k  kʷ  ɡ  ɡʷ"
 Affricates                   ""         "ts  dz"      ""            ""
 Fricatives                  "f"           "s"         ""           "ɣ"  
 Nasals                      "m"           "n"         ""           "ŋ"  
@@ -118,7 +118,7 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* Intervocalically /p/, /t/, and /k/ are realized as [w], [r], and [h] (@Gasaway1997 argues for [ɣ] (p. 63)), respectively [@Olkkonen1994, p. 4].
+* Intervocalically /p/, /t/, and /k/ are realized as [w], [r], and [h] [@Gasaway1997 argues for [ɣ] (p. 63)], respectively [@Olkkonen1994, p. 4].
 * Voiceless stops become voiced following voiced consonants [@Gasaway1997, p. 67].
 * Degemination of consonants occurs through affixation [@Gasaway1997, p. 62].
 
@@ -130,6 +130,7 @@ kable(alphabet, align = 'c') %>%
 * [j] epenthesis occurs intervocalically at morpheme boundaries if the second vowel is not high [@Gasaway1997, p. 69].
 * /i/ and /u/ are realized as glides when occurring in syllable onsets and /w/ and /j/ are realized as vowels when occurring in syllable nuclei [@Olkkonen1985, p. 30].
 * Voiceless stops are aspirated word-initially and unreleased word-finally [@Olkkonen1985, p. 31].
-* /kʷ/ and /ɡʷ/ are realized as [kp] and [ɡb] in the Yaknge and Siawari dialects [@Olkkonen1994, p. 4].
+* /kʷ/ and /ɡʷ/ can be realized as [kp] and [ɡb] in the Yaknge and Siawari dialects [@Olkkonen1994, p. 4].
+* The velar and labiovelar consonants are backed preceding central and back vowels and velar consonants (unless found word-finally) [@Olkkonen1985, p. 31].
 
 # References

@@ -30,7 +30,7 @@ sub,t,tsʃ,4,,ch,
 sub,c,,4,t,h,"clean-up",
 sub,h,,4,tc,,"clean-up",
 # Ejectives
-ipasub,({eject}) ʔ,\1’,2,,,
+ipasub,({eject}) ʔ,\1ʼ,2,,,
 # Long Vowels
 ipasub,({vowels}) \1,\1 ː,2,,,
 # Misc. Rules

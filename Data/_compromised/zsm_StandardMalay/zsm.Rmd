@@ -1,0 +1,146 @@
+---
+title: "Standard Malay"
+author: "Daniela Wiepert"
+edited by: "Emily Strand"
+bibliography: zsm.bib
+output: html_document
+---
+
+Last Updated: 2020-07-14
+
+**COMPROMISED: conflation between /e/ and /ə/; conflicting orthographies**
+
+# Background
+
+**Language Family:** Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Sundic / Malayic / Malayan / Local Malay
+
+* Standard Malay has official status in Malaysia, Brunei, and Singapore [@Clynes2011, p. 259].
+    - Standard Malay differs slightly depending on where it's spoken; however, the different dialects are generally understood to be mutually intelligible.
+    - Standard Malay shares many similarities with Indonesian.
+* Standard Malay exhibits diglossia, such that what is actually spoken (particularly in local communities) is much less formal than what Standard Malay represents. I have chosen to represent the more formal variety (specifically that which is spoken in Brunei), which diverges greatly from local varieties.
+
+# Phonology
+
+## Consonants
+
+* In other dialects, /t/ is regarded as dental [@Clynes2011, p. 261].
+* @Clynes2011 classify /ʔ/ as marginal (p. 261). I, however, have opted not to include it because it seems all occurrences stem from Arabic loanwords or through (optional) epenthetic processes across morpheme boundaries or in word-final positions [@Kassin2000].
+* /f/, /v/, /z/, /ʃ/, and /x/ only appear in Arabic or English loanwords (ibid.).
+    - In more formal registers (like the Standard variety), these loanword phonemes generally maintain the realization used in Arabic or English, but they are often adapted to better reflect the native phonology when used in local dialects (e.g. /f/ -> [p]).
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"     Labial    Alveolar  Postalveolar  Palatal   Velar  Glottal
+Stops                        "p b"      "t d"       ""           ""      "k ɡ"    ""      
+Affricates                   ""          ""       "tʃ dʒ"        ""       ""      ""      
+Fricatives                   ""         "s"         ""           ""       ""      "h"     
+Nasals                       "m"        "n"         ""           "ɲ"      "ŋ"     ""      
+Trills                       ""         "r"         ""           ""       ""      ""       
+Approximants                 "w"        "l"         ""           "j"      ""      ""   
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  footnote(general = "Note: Where phonemes share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* I have chosen to follow the analysis done by @Clynes2011 and not account for diphthongs as being a part of the language (pp. 262, 264). They treat adjacent vowels as sequences or as vowel-glide sequences when the second vowel is ⟨u⟩ or ⟨i⟩ (e.g. ⟨ua⟩ = /ua/, ⟨au⟩ = /aw/).
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+           Front      Central       Back
+High        "i"         ""           "u"
+Mid         "e"         "ə"          "o"
+Low         ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```
+
+# Alphabet
+
+* ⟨e⟩ is used to represent both /e/ and /ə/, which compromises the language to some extent [@Clynes2011, p. 264]. I have opted to transcribe ⟨e⟩ to /e/ by default in the rule set.
+* Standard Malay is most commonly represented by the Rumi script, which has had several modifications throughout the years. The Crúbadán corpus for Standard Malay seems to include characters representative of multiple spelling reforms. One, which was introduced in 1924 by Zainal Abidin Bin Ahmad (a.k.a. Za'aba spelling), reflects the language more phonetically, especially concerning vowels and their realization in different syllable structures [@Rozan2007, p. 139]. The next reform of the Rumi script was introduced in 1972, which is what the alphabet below is predominantly patterned after. For at least some of the digraphs, I represent both old and new conventions; however, I am unable to account for every difference and orthographically marked phonetic representation. This undoubtedly compromises the language. Much of the corpus consists of loanwords too, so the accuracy of this transcription in practice is highly suspect.
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme                 Comment
+"a"              "/a/"                    ""
+"b"              "/b/"                    ""
+"c"              "/tʃ/"                   ""
+"d"              "/d/"                    ""
+"f"              "/f/"                    "occurs in loanwords"
+"e"              "/e/; /ə/"               "/e/: default in the rules"
+"g"              "/ɡ/"                    ""
+"h"              "/h/"                    ""
+"i"              "/i/; /j/"               "/j/: following vowels"
+"j"              "/dʒ/"                   ""
+"k"              "/k/"                    ""
+"l"              "/l/"                    ""
+"m"              "/m/"                    ""
+"n"              "/n/"                    ""
+"o"              "/o/"                    ""
+"p"              "/p/"                    ""
+"q"              "/q/"                    "occurs in loanwords"
+"r"              "/r/"                    ""
+"s"              "/s/"                    ""
+"t"              "/t/"                    ""
+"u"              "/u/; /w/"               "/w/: following vowels"
+"v"              "/v/"                    "occurs in loanwords"
+"w"              "/w/"                    ""
+"x"              "/ks/; /z/"              "/ks/: default in the rules"
+"y"              "/j/"                    ""
+"z"              "/z/"                    "occurs in loanwords"
+**Digraph**        ""                     ""
+"gh"             "/ɣ/"                    "occurs in loanwords"
+"kh"             "/x/"                    "occurs in loanwords"
+"ng"             "/ŋ/"                    ""
+"ny"             "/ɲ/"                    ""
+"sy"             "/ʃ/"                    "occurs in loanwords"
+"**Za\'aba Spelling Convention**"   ""    ""
+"ch"             "/tʃ/"                   ""
+"dh"             "/d/"                    ""
+"dz"             "/z/"                    "occurs in loanwords"
+"sh"             "/ʃ/"                    "occurs in loanwords"
+"th"             "/s/"                    ""
+"\'"               ""                     "realized as [ʔ]"
+'), TRUE)
+kable(alphabet, align = "c") %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Standard Malay follow the order of (C)V(C) [@Clynes2011, p. 264].
+
+# Lenition Rules
+
+* /r/ is generally realized as a flap intervocalically [@Clynes2011, p. 262].
+* /ə/ is often elided in speech [@Clynes2011, p. 264].
+
+# Misc. Rules
+
+* /k/ is often realized as [q] (or [ʔ]) in syllable codas [@Clynes2011, p. 261].
+* Voiceless stops are generally unreleased in syllable codas (ibid.).
+* Voiced stops don't occur natively in syllable codas (ibid.).
+    - In loanwords, voiced stops that occur in syllable codas are often replaced by their voiceless counterparts.
+* /u/ and /i/ are realized as [w] and [j], respectively, when preceding vowels [@Clynes2011, p. 262].
+
+# References

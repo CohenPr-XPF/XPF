@@ -7,11 +7,11 @@ output: html_document
 
 Last updated: 2020-02-07
 
-**Slightly Compromised: correspondences between grapheme and phoneme are somewhat unclear; phonological analysis of the language within the acquired documentation was lacking**
+**SLIGHTLY COMPROMISED: correspondences between graphemes and phonemes are somewhat unclear; phonological analysis of the language within the acquired documentation was lacking**
 
 # Background
 
-**Language family**: Totonacan / Totonac
+**Language Family:** Totonacan / Totonac
 
 * This dialect of Totonac is spoken in the Puebla state of Mexico.
 
@@ -102,10 +102,10 @@ kable(alphabet, align = 'c') %>%
 
 # Lenition Rules
 
-* In other dialects of Totonac (eg. Misantla) it's found that [@MacKay1994, pp. 374-376]:
+* In other dialects of Totonac (e.g. Misantla) it's found that [@MacKay1994, pp. 374-376]:
     - Voiceless stops and affricates may become voiced between voiced consonants.
     -  /q/ may spirantize following vowels.  
-**It is unclear whether the same processes are observed in the dialect under analysis**
+* NB: It is unclear whether the same processes are observed in the dialect under analysis.
 
 # Misc. Rules
 

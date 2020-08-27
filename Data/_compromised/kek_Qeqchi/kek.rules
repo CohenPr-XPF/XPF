@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-07-30
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules 
 class,ejectable,[t|tz|ch|k|q],,,,
 class,vowel,[aeiɔu],,,,
 class,apostrophe,['ꞌˈ‘’],,,,
@@ -23,11 +23,11 @@ sub,z,,5,t,,"<tz> cleanup"
 # Ejectives
 sub,b,ɓ,6,,,"<b'>; occasionally the apostrophe is omitted, so I haven't included it in the context"
 sub,{apostrophe},,6,b,,"<b'> cleanup"
-sub,t,t’,6,,{apostrophe},"<t'>"
-sub,t,ts’,6,,z{apostrophe},"<tz'>; the z is cleaned up in line 22"
-sub,c,tʃ’,6,,h{apostrophe},"<ch'>; the h is cleaned up in line 20"
-sub,k,k’,6,,{apostrophe},"<k'>"
-sub,q,q’,6,,{apostrophe},"<q'>"
+sub,t,tʼ,6,,{apostrophe},"<t'>"
+sub,t,tsʼ,6,,z{apostrophe},"<tz'>; the z is cleaned up in line 22"
+sub,c,tʃʼ,6,,h{apostrophe},"<ch'>; the h is cleaned up in line 20"
+sub,k,kʼ,6,,{apostrophe},"<k'>"
+sub,q,qʼ,6,,{apostrophe},"<q'>"
 sub,{apostrophe},,6,{ejectable},,
 # Misc. Rules
 ipasub,({vowel}) \1,\1 ː,2,,,"vowel lengthening"

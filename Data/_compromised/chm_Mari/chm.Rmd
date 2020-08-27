@@ -5,13 +5,13 @@ bibliography: chm.bib
 output: html_document
 ---
 
-Last Updated: 2020-01-08
+Last Updated: 2020-06-10
 
-**Slightly Compromised: some conflation between /n/ and /ɲ/ and between /l/ and /ʎ/; skepticism related to the orthographic reliability of the reduced vowels /ə/ and /æ/ (ie. is it exhaustive)**
+**COMPROMISED: conflation between /n/ and /ɲ/ and between /l/ and /ʎ/; skepticism related to the orthographic reliability of the reduced vowels /ə/ and /æ/ (i.e. is it exhaustive)**
 
 # Background
 
-**Language family**: Uralic / Finno-Ugric / Finno-Permic / Finno-Cheremisic / Cheremisic
+**Language Family:** Uralic / Finno-Ugric / Finno-Permic / Finno-Cheremisic / Cheremisic
 
 * Mari is spoken in Russia.
 * Crúbadán appears to represent Hill (western) Mari rather than Meadow Mari, with the inclusion of graphemes ⟨ӓ⟩ (/æ/) and ⟨ӹ⟩ (/ə/), so where dialects diverge, I will favor Hill Mari.
@@ -31,7 +31,7 @@ consonants <- read.table(textConnection('
 "Manner of Articulation"         Bilabial  Labiodental Alveolar Postalveolar Alveopalatal Palatal Velar     
 Stops                             "p b"       ""        "t d"       ""           ""         ""    "k ɡ"    
 Affricates                         ""         ""        "ts"        ""          "tɕ"        ""     ""
-Fricatives                         "β"       "f v"      "s z"      "ʃ ʒ"        "ɕ"         ""     "x"
+Fricatives                         "β"       "f"        "s z"      "ʃ ʒ"        "ɕ"         ""     "x"
 Nasals                             "m"        ""        "n"         ""           ""         "ɲ"    "ŋ"
 Trills                             ""         ""        "r"         ""           ""         ""     ""
 Approximants                       ""         ""        "l"         ""           ""        "j ʎ"   ""           
@@ -68,6 +68,7 @@ kable(vowels, align = 'c') %>%
 
 * The palatalization of ⟨н⟩ and ⟨л⟩ is not indicated orthographically preceding vowels /e/ and /i/, which somewhat compromises the language [@Riese2012, p. 32].
 * @Kangasmaa-Minn1998 states that the reduced vowels /ə/ and /æ/ are not always marked orthographically (p. 223).
+* Recent Russian loanwords may be realized according to their Russian pronunciation rather than adapted to Mari phonology [@Bradley2017, p. 377].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -80,7 +81,7 @@ Grapheme      Phoneme                           Comment
 "г"            "/ɡ/"                              ""
 "д"            "/d/"                              ""
 "е"          "/e/; /je/"                        "/je/: word-initially, following vowels, and following both the hard and soft sign"
-"ё"            "/jo/"                           "appears in Russian loanwords"
+"ё"            "/jo/"                           "primarily appears in Russian loanwords"
 "ж"            "/ʒ/"                              ""
 "з"            "/z/"                              ""
 "и"            "/i/"                              ""
@@ -98,12 +99,12 @@ Grapheme      Phoneme                           Comment
 "т"            "/t/"                              ""
 "у"            "/u/"                              ""
 "ӱ"            "/y/"                              ""
-"ф"            "/f/"                              ""
-"х"            "/x/"                              ""
-"ц"            "/ts/"                             ""
+"ф"            "/f/"                              "primarily appears in Russian loanwords"
+"х"            "/x/"                              "primarily appears in Russian loanwords"
+"ц"            "/ts/"                             "primarily appears in Russian loanwords"
 "ч"            "/tɕ/"                             ""
 "ш"            "/ʃ/"                              ""
-"щ"            "/ɕ/"                              ""
+"щ"            "/ɕ/"                              "primarily appears in Russian loanwords"
 "ъ"             ""                              "referred to as a hard sign: indicates palatalization at word boundaries and when preceding specific vowels"
 "ы"            "/ɤ/"                              ""
 "ӹ"            "/ə/"                              ""
@@ -125,5 +126,6 @@ kable(alphabet, align = 'c') %>%
 * /d/ devoices when followed by a consonant [@Riese2012, p. 38].
 * Voiced stops and /β/ devoice syllable-finally (ibid.).
 * Mari has vowel harmony. Suffixes match the stressed vowel in terms of frontness and roundedness [@Riese2012, pp. 39-40].
+* /β/ may be realized as [v], especially among younger generations [@Riese2012, pp. 21-22]
 
 # References

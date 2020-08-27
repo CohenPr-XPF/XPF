@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -147,6 +146,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -184,11 +184,11 @@ summary {
 </div>
 
 
-<p>Last Updated: 2019-08-08</p>
-<p><strong>Compromised: conflation between /ɾ/, /ɭ/, and possibly /l̪/; glottal stop is not always represented orthographically</strong></p>
+<p>Last Updated: 2020-07-02</p>
+<p><strong>COMPROMISED: conflation between /ɾ/, /ɭ/, and possibly /l̪/; glottal stop not always orthographically marked</strong></p>
 <div id="background" class="section level1">
 <h1>Background</h1>
-<p><strong>Language Family</strong>: Sino-Tibetan / Tibeto-Burman / Himalayan / Kiranti / Western Kiranti / Sunwar</p>
+<p><strong>Language Family:</strong> Sino-Tibetan / Tibeto-Burman / Himalayish / Mahakiranti / Kham-Magar-Chepang-Sunwari / Sunwari</p>
 <ul>
 <li>Also called Kõits, Kõinch, and Koincha, Sunwar is spoken in Nepal.</li>
 </ul>
@@ -405,7 +405,7 @@ j
 <ul>
 <li>Vowel length is phonemic for /a/ and /u/ <span class="citation">(Borchers 2008, 26)</span>.</li>
 <li><span class="citation">Rapacha (2013)</span> argues for /ə/ as a sixth vowel in Sunwar (pp. 57, 59-60).</li>
-<li>All vowels, except for /uː/, nasalize contrastively <span class="citation">(Borchers 2008, 23)</span>; however, <span class="citation">Borchers (2008)</span> theorizes that this contrast may be gradually disappearing in Sunwar (pp. 27-28).</li>
+<li>All vowels, except for /uː/, nasalize contrastively; however, <span class="citation">Borchers (2008)</span> theorizes that this contrast may be gradually disappearing in Sunwar (pp. 23, 27-28).</li>
 <li>Tone exists in Sunwar, but <span class="citation">Borchers (2008)</span> argues that it is predictable, and states that he was unable to identify any minimal pairs that differ only in tone (pp. 28-30). Similarly, <span class="citation">Rapacha (2013)</span> remarks that tone contrasts are typically neutralized in the dialect areas he studied (p. 107). For this reason, I have chosen to omit tone in my ruleset.</li>
 <li>The Sunwar diphthongs may occur as sequences of vowels when they exist across morpheme boundaries <span class="citation">(Borchers 2008, 31)</span>. Given this, I will not include them below.</li>
 </ul>
@@ -478,15 +478,15 @@ a ã aː ãː
 <div id="alphabet" class="section level1">
 <h1>Alphabet</h1>
 <ul>
-<li>The glottal stop is not consistently represented in the orthography. Some authors write it by repeating the vowel and adding the virama diacritic (्) to the second; others represent the glottal stop with the character for /k/, and others don’t include the glottal stop at all <span class="citation">(Borchers 2008, 49)</span>. Because of the relatively rare nature of /ʔ/, I have opted to proceed with the language anyway. In the rule set, I have opted to represent the glottal stop with the first method listed above. However, even with this, /ʔ/ does not appear in the Crúbadán corpus.</li>
-<li>/ɭ/ and /ʃ/ are not always represented orthographically as well <span class="citation">(Borchers 2008, 49)</span>. Accounts explain that it may be represented by the same grapheme as /ɾ/, or even /ɖ/ or /l̪/.</li>
+<li>The glottal stop is not consistently represented in the orthography, compromising the language. Some authors write it by repeating the vowel while adding the virama diacritic (्) to the second; others represent the glottal stop with the character for /k/, and others don’t include the glottal stop at all <span class="citation">(Borchers 2008, 49)</span>. Because of the relatively rare nature of /ʔ/, I have opted to proceed with the language anyway. In the rule set, I have opted to represent the glottal stop with the first method listed above. However, even with this, /ʔ/ does not appear in the Crúbadán corpus.</li>
+<li>/ɭ/ and /ʃ/ are not always represented orthographically as well <span class="citation">(Borchers 2008, 49)</span>. At least for /ɭ/, accounts explain that it may be represented by the same grapheme as /ɾ/, or even /ɖ/ or /l̪/. Below I have listed that both /ɾ/ and /ɭ/ are transcribed by the same grapheme, compromising the language. I have defaulted to /ɾ/ in the rules, meaning that /ɭ/ is not represented in the Crúbadán corpus.</li>
 <li>The aspirated phonemes present only in loanwords are not reflected in the ruleset.</li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:center;">
-Consonant.Grapheme
+Consonant Grapheme
 </th>
 <th style="text-align:center;">
 Phoneme
@@ -754,7 +754,7 @@ only in loanwords
 /ɾa/; /ɭa/
 </td>
 <td style="text-align:center;">
-/ɾa/: default
+/ɾa/: default in the rules
 </td>
 </tr>
 <tr>
@@ -878,6 +878,16 @@ only in loanwords
 </tr>
 <tr>
 <td style="text-align:center;">
+ऐ
+</td>
+<td style="text-align:center;">
+/ai/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
 ओ
 </td>
 <td style="text-align:center;">
@@ -957,10 +967,30 @@ called a virama, this diacritic removes the inherent vowel or indicates a glotta
 </tr>
 <tr>
 <td style="text-align:center;">
+ै
+</td>
+<td style="text-align:center;">
+/ai/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
 ो
 </td>
 <td style="text-align:center;">
 /o/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+ौ
+</td>
+<td style="text-align:center;">
+/au/
 </td>
 <td style="text-align:center;">
 </td>
@@ -981,7 +1011,7 @@ called a candrabindu, this diacritic marks nasalization of the preceding vowel
 <div id="syllable-structure" class="section level1">
 <h1>Syllable Structure</h1>
 <ul>
-<li>The syllable structure of Sunwar is (C)(C)V(V)(C)(C) <span class="citation">(Baskaran 2009, 629–30)</span>. Syllables must have at most one consonant, and in most cases can contain a maximum of four sounds.</li>
+<li>The syllable structure of Sunwar is (C)(C)V(V)(C)(C) <span class="citation">(Baskaran 2009, 629–30)</span>. Syllables must have at least one consonant, and in most cases can contain a maximum of four sounds.</li>
 </ul>
 </div>
 <div id="lenition-rules" class="section level1">
@@ -989,7 +1019,6 @@ called a candrabindu, this diacritic marks nasalization of the preceding vowel
 <ul>
 <li>Some speakers spirantize /pʰ/ to [ɸ] <span class="citation">(Borchers 2008, 32)</span>.</li>
 <li>Syllable-final /n/ and /ŋ/ are often realized weakly, and simply nasalize the preceding vowel (ibid.).</li>
-<li>Word-final vowels may delete in fast speech <span class="citation">(Rapacha 2013, 68)</span>.</li>
 </ul>
 </div>
 <div id="misc.-rules" class="section level1">
@@ -1000,6 +1029,7 @@ called a candrabindu, this diacritic marks nasalization of the preceding vowel
 <li>Word-initial /w/ may gain aspiration <span class="citation">(Borchers 2008, 33)</span>.</li>
 <li>/ɾ/ trills to [r] before palatal or velar consonants <span class="citation">(Borchers 2008, 35)</span>.</li>
 <li>Epenthesis of [x] occurs between /ɾ/ and /tʃ/ <span class="citation">(Borchers 2008, 39)</span>.</li>
+<li>Word-final vowels may delete in fast speech <span class="citation">(Rapacha 2013, 68)</span>.</li>
 <li>Postvocalic /l/ velarizes to [ɫ] when followed by another /l/ <span class="citation">(Rapacha 2013, 83)</span>.</li>
 <li>Consonant gemination in Sunwar occurs, most commonly with /b/, /tʃ/, /k/, /l̪/, /m/, /n/, /p/, /s/, and /t̪/ <span class="citation">(Rapacha 2013, 94)</span>.</li>
 </ul>

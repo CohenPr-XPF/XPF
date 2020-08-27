@@ -9,7 +9,7 @@ class,apostrophe,[ꞌ'ˈ‘’],,,,
 class,vowels,[aeiou],,,,
 class,frontV,[ei],,,,
 class,NV-preceder,(ñ|m|n),,,,
-class,NV-follower,(m|n|ñ|b|d|ɡ|z|dy),,,,
+class,NV-follower,(m|n|ñ|b|d|g|z|dy),,,,
 # Individual Letters
 sub,b,ᵐb,1,,,
 sub,c,k,1,,,

@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2020-02-08
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,can-harden,[гх],,,
 class,can-labialize,(г|к|х|гъ|къ|хъ),,,,
 class,punctuation,['’-],,,,
@@ -35,7 +35,7 @@ sub,х,χ,4,,,
 sub,ц,ts,4,,,
 sub,ч,tʃ,4,,,
 sub,ы,ɨ,4,,,
-sub,ъ,’,4,,,"marks ejectives"
+sub,ъ,ʼ,4,,,"marks ejectives"
 sub,{punctuation},,4,,,
 # Digraphs
 sub,г,ʁ,6,,ъ,
@@ -48,7 +48,7 @@ sub,у,ʷ,8,{can-labialize},,"marks labiovelar and labiouvular stops"
 # Collapsing of Spaces
 ipasub,d z,dz,3,,,"<дз> becomes /dz/"
 ipasub,({labialized}) ʷ,\1ʷ,2,,,"attaches labialization to preceding phonemes"
-ipasub,({ejectives}) ’,\1’,2,,,"attaches ejectivization to preceding phonemes"
-ipasub,k ’ ʷ,kʷ’,3,,,
-ipasub, ’ , @ ,1,,,"rules out unattested ejectivization",
-ipasub, ’, @,1,,,"rules out unattested ejectivization",
+ipasub,({ejectives}) ʼ,\1ʼ,2,,,"attaches ejectivization to preceding phonemes"
+ipasub,k ʼ ʷ,kʷʼ,3,,,
+ipasub, ʼ , @ ,1,,,"rules out unattested ejectivization",
+ipasub, ʼ, @,1,,,"rules out unattested ejectivization",

@@ -7,11 +7,11 @@ output: html_document
 
 Last Updated: 2020-05-04
 
-**Compromised: orthographic ambiguity around glottal stops**
+**COMPROMISED: orthographic ambiguity around glottal stops**
 
 # Background
 
-**Language Family**: Barbacoan / Cayapa-Colorado
+**Language Family:** Barbacoan / Cayapa-Colorado
 
 * Also known as Tsafiki, Colorado is spoken in Ecuador.
 
@@ -19,7 +19,7 @@ Last Updated: 2020-05-04
 
 ## Consonants
 
-* @Adelaar2007 as well as @Curnow1998 express the ambiguous phonemic status of /ʔ/ (p. 145; p. 387); however, they do not expand on the matter or state how it's ambiguous. @Moore1962 [as cited in @Curnow1998, p. 387] classifies it as a phoneme, but @Moore1966 doesn't even mention it. It is clear from @Dickinson2011 that glottal stops occur intervocalically (p. 311), which may be the point of confusion, but there isn't a clear consensus on whether its a phoneme in Colorado or not. Nevertheless, I have chosen to include it below
+* @Adelaar2007 as well as @Curnow1998 express the ambiguous phonemic status of /ʔ/ (p. 145; p. 387); however, they do not expand on the matter or state how it's ambiguous. @Moore1962 [as cited in @Curnow1998, p. 387] classifies it as a phoneme, but @Moore1966 doesn't even mention it. It is clear from @Dickinson2011 that glottal stops predominantly occur intervocalically (p. 311), which may be the point of confusion (as it could very well be phonetic), but there isn't a clear consensus on whether it's a phoneme in Colorado or not. Nevertheless, I have chosen to include it below
 * There is also mention of aspiration being a phonemic suprasegmental feature, preceding consonants [@Moore1966, p. 96]. @Adelaar2007 note that because of this, the inventory might include other fricatives or preaspirated consonants; however, although this feature used to show contrast, it has become entirely predictable [@Moore1962 as cited in @Curnow1998, p. 387; @Moore1966, p. 96].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -49,7 +49,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 # Vowels
 
-* Although @Adelaar2007 see vowel nasalization as a phonetic feature, conditioned by syllable-final nasals (p. 143), most sources indicate that it is contrastive  [@Aikhenvald2007, p. 194; @Moore1966 as cited in @Curnow1998, p. 387; @Aikhenvald2011, p. 127].
+* Although @Adelaar2007 see vowel nasalization as a phonetic feature, conditioned by syllable-final nasals (p. 143), most sources indicate that it is contrastive [@Aikhenvald2007, p. 194; @Moore1966 as cited in @Curnow1998, p. 387; @Aikhenvald2011, p. 127].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('
@@ -67,7 +67,7 @@ kable(consonants, align = 'c') %>%
 
 # Alphabet
 
-* Contributing to the ambiguity centered around the phonemic status of /ʔ/, there is also uncertainty in terms of how its represented orthographically. @Dickinson2011 states that (non-intervocalic/supposedly phonemic) glottal stops are indicated by apostrophes (p. 311); however, @Curnow1998 state that apostrophes mark the once contrastive aspiration and glottal stops aren't marked (p. 387). In the rule set I have opted to transcribe apostrophes as glottal stops.   
+* Contributing to the ambiguity centered around the phonemic status of /ʔ/, there is also uncertainty in terms of how it's represented orthographically. @Dickinson2011 states that (non-intervocalic/supposedly phonemic) glottal stops are indicated by apostrophes (p. 311); however, @Curnow1998 state that apostrophes mark the once contrastive aspiration and glottal stops aren't marked (p. 387). In the rule set I have opted to transcribe apostrophes as glottal stops.   
 * @Dickinson2011 states that nasal vowels are indicated by a following, syllable-final ⟨n⟩ (p. 311). This is made clear through the syllable structure, given that syllables consist of V or CV [@Walls, p. 15]. ⟨VnC⟩ sequences are transcribed as /ṼC/, and ⟨VnhV⟩ sequences are transcribed as /ṼV/; the ⟨h⟩ following the ⟨n⟩ in intervocalic positions merely serves as an indicator for the nasalization of the preceding vowel [@Moore1966, p. 96]. That is, ⟨VnV⟩ sequences (i.e. those without the ⟨h⟩) are transcribed as /VnV/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -97,8 +97,8 @@ Grapheme     Phoneme          Comment
 "\'"          "/ʔ/"             ""
 **Digraph**    ""               ""
 "ch"          "/ts/"       "phonetically [tʃ]: precedes /i/ or /u/"
-"qu"          "/k/"       "precedes front vowels"
-"sh"          "/s/"         "phonetically [ʃ]: precedes /i/ or /u/"
+"qu"          "/k/"        "precedes front vowels"
+"sh"          "/s/"        "phonetically [ʃ]: precedes /i/ or /u/"
 "ts"          "/ts/"            ""
 "hu"          "/w/"             ""
 '), TRUE)

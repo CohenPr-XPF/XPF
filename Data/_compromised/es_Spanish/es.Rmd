@@ -5,13 +5,13 @@ bibliography: es.bib
 output: html_document
 ---
 
-Last Updated: 2020-04-23
+Last Updated: 2020-06-29
 
-**Compromised: orthographic ambiguity related to diphthongs**
+**COMPROMISED: orthographic ambiguity related to diphthongs**
 
 # Background
 
-**Language family**: Indo-European / Italic / Romance / Italo-Western / Western / Gallo-Iberian / Ibero-Romance / West-Iberian / Castilian
+**Language Family:** Indo-European / Italic / Romance / Italo-Western / Western / Gallo-Iberian / Ibero-Romance / West-Iberian / Castilian
 
 * Spanish has over 483 million native speakers around the world, though it is mainly spoken in Spain and parts of Latin America. Because Spanish is so broadly spoken, a number of dialects exist with slight phonemic inventory variations. (Standard) Castilian Spanish is represented below.
 
@@ -62,7 +62,7 @@ kable(consonants, align = 'c') %>%
 
 ### Diphthongs
 
-* Varieties of Spanish differ in whether or not sequences of vowels are realized separately or as diphthongs. Even in varieties that do have preferences for diphthongs, the same sequence may be realized differently in different words. For example, in the word 'biólogo' there is a hiatus between /i/ and /o/, but in 'radiólogo,' ⟨i⟩ and ⟨o⟩ form the diphthong /jo/ [@chitoran_hiatus_2007, pp. 45-46]. Because the rules for diphthongization are not consistent across or even within Spanish dialects, I will not account for them in my rules. This results in a compromised language.
+* Varieties of Spanish differ in whether or not sequences of vowels are realized separately or as diphthongs. Even in varieties that do have preferences for diphthongs, the same sequences may be realized differently in different words. For example, in the word 'biólogo' there is a hiatus between /i/ and /o/, but in 'radiólogo,' ⟨i⟩ and ⟨o⟩ form the diphthong /jo/ [@chitoran_hiatus_2007, pp. 45-46]. Because the rules for diphthongization are not consistent across or even within Spanish dialects, I will not account for them in my rules. This results in a compromised language.
 
 # Alphabet
 
@@ -79,7 +79,7 @@ Grapheme      Phoneme                           Comment
 "e"            "/e/"                              ""
 "f"            "/f/"                              ""
 "g"            "/ɡ/; /x/"                "/x/: preceding front vowels"
-"h"            ""                              "silent"
+"h"            "∅"                              "silent"
 "i"            "/i/"                              ""
 "j"            "/x/"                              ""
 "k"            "/k/"                              ""
@@ -96,7 +96,7 @@ Grapheme      Phoneme                           Comment
 "v"            "/b/"                              ""
 "w"            "/w/"                              ""
 "x"            "/ks/; /s/; /x/"       "/s/: word-initially; see note above about /x/"
-"y"            "/ʝ/"                         ""
+"y"            "/ʝ/"                              ""
 "z"            "/θ/"                              ""
 **Digraph**    ""                                 ""
 "ch"           "/tʃ/"                             ""
@@ -107,7 +107,7 @@ Grapheme      Phoneme                           Comment
 "qu"           "/k/"                      "preceding front vowels"
 '), TRUE)
 
-kable(alphabet) %>%
+kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
 
@@ -116,7 +116,6 @@ kable(alphabet) %>%
 * /s/ can be deleted or aspirated in the coda or word-final position [@vasilescu_exploring_2018, p. 2729].
 * /s/ may become voiced preceding voiced consonants [@Schmidt2011, p. 1].
 * /n/ may be deleted or velarized word-finally [@salcedo_phonological_2010, pp. 203-204].
-* In Chicano Spanish, the first vowel in a vowel sequence in deleted [@salcedo_phonological_2010, p. 207].
 * /b/, /d/, and /ɡ/ often spirantize [@Martnez-Celdrn2003, p. 257].
 * /x/ is realized as [h] by some speakers (ibid.).
 
@@ -124,6 +123,7 @@ kable(alphabet) %>%
 
 * Nasals assimilate to the place of the following obstruent in fast speech [@harris_spanish_1967, pp. 8-19].
 * /l/ becomes a dental when preceding /t̪/ or /d̪/ [@harris_spanish_1967, p. 20].
-* /r/ can be lateralized in the coda or word-final position [@salcedo_phonological_2010, p. 204]
+* /r/ can be lateralized in the coda or word-final position [@salcedo_phonological_2010, p. 204].
+* In Chicano Spanish, the first vowel in a vowel sequence in deleted [@salcedo_phonological_2010, p. 207].
 
 # References

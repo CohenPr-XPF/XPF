@@ -5,6 +5,8 @@
 # Edited 2019-05-21
 # Edited by Emily Strand
 # Edited 2019-09-27
+# Edited by Allison Shao
+# Edited 2020-06-10
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
 class,front,(e|è|é|i|í|ï),,,,
@@ -15,6 +17,7 @@ class,consonant,(b|c|d|f|g|h|k|l|m|n|p|q|r|s|t|v|w|x|y|z),,,,
 class,passthrough,[abdefhiklmnopstuwz],,,,
 class,t-follower,[jsz],,,,
 class,l_with_cdot,[ŀ],,,,
+class,gem,(p|b|t|d|k|ɡ|ts|dz|tʃ|dʒ|f|s|z|ʃ|ʒ|m|n|ɲ|ɾ|r|ʎ|j|w),,,,
 class,punct,['-],,,,
 # Individual Letters
 sub,à,a,1,,,
@@ -36,7 +39,10 @@ sub,j,ʒ,1,,,
 sub,ú,u,1,,,
 sub,ü,u,1,,,
 sub,v,b,1,,,
-sub,x,ʃ,0.5,,,
+sub,x,ʃ,0.5,^,,,
+sub,x,ʃ,0.5,i,,
+sub,x,ʃ,0.5,{consonant},,
+sub,x,k s,0.5,,,
 sub,y,i,0.5,,,
 sub,y,j,1,{vowel},,"<y> becomes /j/ following vowels",
 sub,({passthrough}),\1,0.1,,,
@@ -54,7 +60,7 @@ sub,x,,1,t,,"clean-up",
 sub,r,r,1,{vowel},r{vowel},"<rr> becomes a trill intervocalically",
 sub,r,,1,{vowel}r,{vowel},"clean-up",
 # Gemination of /l/ (mid-dot)
-sub,l,lː,1,,{cdot},
+sub,l,l ː,1,,{cdot},
 sub,{cdot},,1,l,,"clean-up",
 sub,{l_with_cdot},lː,1,,l,
 sub,l,,1,{l_with_cdot},,"clean-up",
@@ -78,3 +84,4 @@ sub,t,dʒ,3,,j,
 sub,t,ts,3,,s,
 sub,t,dz,3,,z,
 sub,{t-follower},,4,t,,"clean-up",
+ipasub,({gem}) \1\b,\1 ː,2,,,

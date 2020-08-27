@@ -1,6 +1,6 @@
 # Yakut Rule Set
 # Written by Jordan / Emily
-# Last Updated: 2019-08-22
+# Last Updated: 2020-06-05
 type,sfrom,sto,weight,precede,follow,comment
 # Class rules
 class,gem,[b|ɡ|ɣ|d|ɟʝ|j|k|p|ɾ|s|h|t|x|c|cç|l|m|n|ŋ],,,,
@@ -44,9 +44,9 @@ sub,ь,,4,н,,"clean-up",
 ipasub,({vowels}) \1\b,\1 ː,2,,,
 # Gemination
 ipasub,({gem}) \1\b,\1 ː,2,,,
-sub,н,ɲ ː,4,,нь,"exception",
-sub,н,,4,н,ь,"clean-up",
-sub,ь,,4,нн,,"clean-up",
+sub,н,ɲ ː,5,,нь,"exception",
+sub,н,,5,н,ь,"clean-up",
+sub,ь,,5,нн,,"clean-up",
 # Dipthongs
 ipasub,ɯ a,ɯa,4,,,
 ipasub,u o,uo,4,,,

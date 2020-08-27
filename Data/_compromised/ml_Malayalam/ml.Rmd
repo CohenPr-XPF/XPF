@@ -5,13 +5,13 @@ bibliography: ml.bib
 output: html_document
 ---
 
-Last Updated: 2020-03-26
+Last Updated: 2020-06-16
 
-**Slightly Compromised: conflation between dental and alveolar /n/**
+**SLIGHTLY COMPROMISED: conflation between dental and alveolar /n/**
 
 # Background
 
-**Language family**: Dravidian / Southern / Tamil-Kannada / Tamil-Kodagu / Tamil-Malayalam / Malayalam
+**Language Family:** Dravidian / Southern / Tamil-Kannada / Tamil-Kodagu / Tamil-Malayalam / Malayalam
 
 * Malayalam, the official language of Kerala and Lakshadweep, is a Dravidian language from South India. It is also heavily influenced by Sanskrit, and has become influenced by English with the introduction of /f/.
 * It is spoken in the states of Karnataka, Kerala, Lakshadweep, Puducherry, and Tamil Nadu located in southern India.
@@ -35,11 +35,11 @@ consonants <- read.table(textConnection('
 "Stops (plain)"                  "p  b"        "t̪  d̪"      ""          "ʈ  ɖ"        ""           "ɟ"         "k  ɡ"         ""
 "Stops (aspirated)"              "pʰ  bʱ"      "t̪ʰ  d̪ʱ"    ""         "ʈʰ  ɖʱ"       ""           "ɟʱ"        "kʰ  ɡʱ"       ""
 Affricates                       ""            ""          ""            ""        "tʃ tʃʰ"       ""            ""           ""
-Fricatives                       "ʋ"           ""          "s"          "ʂ"          "ʃ"          ""            ""           "h"
+Fricatives                       ""           ""          "s"          "ʂ"          "ʃ"          ""            ""           "h"
 Nasals                           "m"           "n̪"         "n"          "ɳ"          ""           "ɲ"           "ŋ"          ""
 Flaps                            ""            ""          "ɾ"          ""           ""           ""            ""           ""
 Trills                           ""            ""          "r"          ""           ""           ""            ""           ""
-Approximants                     ""            ""          "l"        "ɻ  ɭ"         ""           "j"           ""           ""
+Approximants                     "ʋ"            ""          "l"        "ɻ  ɭ"         ""           "j"           ""           ""
 '), TRUE)
 
 kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Retroflex", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
@@ -94,7 +94,7 @@ alphabet <- read.table(textConnection('
 "ഛ"                     "/tʃʰa/"             ""
 "ജ"                       "/ɟa/"              ""
 "ഝ"                     "/ɟʱ/"              ""
-"ഞ"                     "//ɲa/"             ""
+"ഞ"                     "/ɲa/"             ""
 "ട"                       "/ʈa/"              ""
 "ഠ"                      "/ʈʰa/"              ""
 "ഡ"                      "/ɖa/"              ""

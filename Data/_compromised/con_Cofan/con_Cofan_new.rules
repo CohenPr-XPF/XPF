@@ -8,7 +8,7 @@ class,passthrough,[aefikmnpst],,,,
 class,apostrophe,[ꞌ'ˈ‘’],,,,
 class,h-preceder,[ckpst],,,,
 class,NV-preceder,(ñ|m|n),,,,
-class,NV-follower,(m|n|ñ|b|d|ɡ|z|dy),,,,
+class,NV-follower,(m|n|ñ|b|d|g|z|dy),,,,
 # Individual Letters
 sub,b,ᵐb,1,,,
 sub,d,ⁿd,1,,,

@@ -7,11 +7,11 @@ output: html_document
 
 Last Updated: 2019-09-24
 
-**Compromised: conflation between vowels and glides; widely contrasting phonological documentation of the language**
+**COMPROMISED: conflation between vowels and glides; widely contrasting phonological documentation of the language**
 
 # Background
 
-**Language family**: Turkic / Common Turkic / Kipchak / Kipchak-Nogai / Kazakh
+**Language Family:** Turkic / Common Turkic / Kipchak / Kipchak-Nogai / Kazakh
 
 * Kazakh is spoken within Central Asia, specifically in China, Kazakhstan, Mongolia, Turkmenistan, and Uzbekistan.
 
@@ -66,7 +66,6 @@ kable(vowels, align = 'c') %>%
 # Alphabet
 
 * Although Kazakh can be written with the Arabic, Latin, and Cyrillic scripts, I have opted to represent only the Cyrillic script below, as the others pose more conflation between phonemes [@Vajda1994, pp. 606-607].
-
 * ⟨в⟩, ⟨ё⟩, ⟨ф⟩, ⟨х⟩, ⟨ц⟩, ⟨ч⟩, ⟨щ⟩, ⟨ъ⟩, ⟨ь⟩, and ⟨э⟩ appear in loanwords [@Vajda1994, pp. 608, 609].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -79,10 +78,10 @@ Grapheme      Phoneme         Comment
 "г"            "/ɡ/"            ""               
 "ғ"            "/ʁ/"            ""               
 "д"            "/d̪/"            ""               
-"е"            "/e/"            ""               
+"е"         "/e/; /je/"   "/je/: word-initially"               
 "ж"            "/ʒ/"            ""              
 "з"            "/z̪/"            ""               
-"и"          "/i/; /j/"   "/i/: default in rule set"                   
+"и"          "/i/; /j/"   "/i/: default in rules set"                   
 "й"            "/j/"            ""                   
 "к"            "/k/"            ""                
 "қ"            "/q/"            ""              
@@ -96,7 +95,7 @@ Grapheme      Phoneme         Comment
 "р"            "/r/"            ""               
 "с"            "/s̪/"            ""                
 "т"            "/t̪/"            ""              
-"у"          "/u/; /w/"    "/u/: default in rule set"                  
+"у"          "/u/; /w/"    "/u/: default in rules set"                  
 "ұ"            "/ʊ/"            ""               
 "ү"            "/y/"            ""               
 "х"            "/χ/"            ""               

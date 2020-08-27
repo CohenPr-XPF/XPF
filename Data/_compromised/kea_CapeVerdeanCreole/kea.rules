@@ -1,0 +1,60 @@
+# Cape Verdean Creole Rule Set
+# Written by Abi Creighton
+# Last Updated: 2020-07-29
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdefiklmnopstuvz],,,,
+class,vowels,[aáâeéêiíoóôu],,,,
+class,not-h,[aáâeéêiíoóôubdfgjklmnprstvxz],,,,
+class,punct,['ꞌ‘’-],,,,
+# Individual Letters
+sub,á,a,1,,,
+sub,â,ɐ,1,,,
+sub,é,ɛ,1,,,
+sub,ê,e,1,,,
+sub,g,ɡ,1,,,
+sub,í,i,1,,,
+sub,j,ʒ,1,,,
+sub,ó,ɔ,1,,,
+sub,ô,o,1,,,
+sub,r,ɾ,1,,,
+sub,ú,u,1,,,
+sub,x,ʃ,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Nasal Vowels
+sub,a,ã,2,,n({not-h}|$),"vowels are nasalized when followed by <n> but not the other nasal consonants: <m> and <nh>"
+sub,á,ã,2,,n({not-h}|$),
+sub,â,ɐ̃,2,,n({not-h}|$),
+sub,e,ẽ,2,,n({not-h}|$),
+sub,é,ɛ̃,2,,n({not-h}|$),
+sub,ê,ẽ,2,,n({not-h}|$),
+sub,i,ĩ,2,,n({not-h}|$),
+sub,í,ĩ,2,,n({not-h}|$),
+sub,o,õ,2,,n({not-h}|$),
+sub,ó,ɔ̃,2,,n({not-h}|$),
+sub,ô,õ,2,,n({not-h}|$),
+sub,u,ũ,2,,n({not-h}|$),
+sub,ú,ũ,2,,n({not-h}|$),
+sub,n,,2,{vowels},,"clean-up"
+# Non-Nasal Vowels
+ipasub,ã n,a n,2,,,
+ipasub,ɐ̃ n,ɐ n,2,,,
+ipasub,ẽ n,e n,2,,,
+ipasub,ɛ̃ n,ɛ n,2,,,
+ipasub,ĩ n,i n,2,,,
+ipasub,õ n,o n,2,,,
+ipasub,ɔ̃ n,ɔ n,2,,,
+ipasub,ũ n,u n,2,,,
+# Digraphs
+sub,d,dʒ,3,,j,
+sub,j,,3,d,,"clean-up"
+sub,l,ʎ,3,,h,
+sub,h,,3,l,,"clean-up"
+sub,n,ɲ,4,,h,
+sub,h,,4,n,,"clean-up"
+sub,r,ʀ,3,,r,
+sub,r,,3,r,,"clean-up"
+sub,t,tʃ,3,,x,
+sub,x,,3,t,,"clean-up"
+# Misc. Rules
+sub,{punct},,1,,,

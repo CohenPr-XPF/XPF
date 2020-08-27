@@ -1,0 +1,49 @@
+# Standard Malay Rule Set
+# Written by: Daniela Wiepert
+# Edited by: Emily Strand
+# Last Updated: 2020-07-15
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdehiklmnoprstuw],,,,
+class,n-follower,[gy],,,,
+class,punct,['ꞌ‘’-],,,,
+class,C,[pbtdkgcjshmnyrwl],,,,
+class,old-digraph,[cdt],,,,
+class,loanword-digraph,[gks],,,,
+class,vowels,[aeiou],,,,
+# Individual
+sub,c,tʃ,4,,,
+sub,g,ɡ,4,,,
+sub,j,dʒ,4,,,
+sub,x,k s,4,,
+sub,y,j,4,,,
+sub,({passthrough}),\1,1,,,
+# Digraphs
+sub,n,ŋ,5,,g,
+sub,n,ɲ,5,,y,
+sub,{n-follower},,5,n,,"clean-up",
+# Semivowels - <u> and <i> represent /u/ and /i/ when preceded by vowels
+sub,i,j,3,{vowels},,
+sub,u,w,3,{vowels},,
+# Older Conventions
+sub,c,tʃ,6,,h{C},"<ch> represents /tʃ/ if followed by a consonant - /CCC/ is not allowed per the syllabic structure, so e.g. <chk> would represent /tʃ k/ rather than /tʃ h k/",
+sub,d,d,6,,h{C},
+sub,t,s,6,,h{C},
+sub,h,,6,{old-digraph},{C},"clean-up",
+sub,c,tʃ,6,^,h,"accounts for seemingly /CC/ structures word-initially, which aren't supported by the language",
+sub,d,d,6,^,h,
+sub,t,s,6,^,h,
+sub,h,,6,^{old-digraph},,"clean-up",
+sub,c,tʃ,6,,h$,"accounts for seemingly /CC/ structures word-finally, which aren't supported by the language",
+sub,d,d,6,,h$,
+sub,t,s,6,,h$,
+sub,h,,6,{old-digraph},$,"clean-up",
+# Misc. Rules
+sub,{punct},,2,,,"hyphens represent morpheme boundaries and apostrophes represent phonetic glottal stops",
+# Accounting for Loanwords (certain digraphs represent loanword phonemes, that would otherwise be transcribed incorrectly - can only account for those which precede consonants, occur word-initially, and occur word-finally, which may not be exhaustive)
+sub,{loanword-digraph},@,7,,h{C},
+sub,s,@,7,,y{C},
+sub,{loanword-digraph},@,7,^,h,
+sub,s,@,7,^,y,
+sub,{loanword-digraph},@,7,,h$,
+sub,s,@,7,,y$,

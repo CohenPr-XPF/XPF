@@ -2,7 +2,7 @@
 # Written by: Emily
 # Last Updated: 2019-12-04
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules 
 class,consonant,(b|t|θ|dʒ|ħ|x|d|ð|r|z|s|ʃ|sˤ|dˤ|tˤ|ðˤ|ʕ|ɣ|f|q|k|l|m|n|h|w|j|ʔ),,,,
 class,shortV,[  ُِ َ],,,,
 class,shortV-output,[aiu],,,,
@@ -64,7 +64,7 @@ class,alif-madda,[آ],,,,
 # Sub Rules
 ## Graphemes
 sub,{alif},a ː,2,,,
-sub,{alif},ʔ,3,^,,"word-initial alif is /ʔ/, however, not every word-initial alif is realized as such (primarily the hamza is used) [@Coulmas2003, p. 123] - somewhat compromizes the transcription",
+sub,{alif},ʔ,3,^,,"word-initial alif is /ʔ/, however, not every word-initial alif is realized as such (primarily the hamza is used) [@Coulmas2003, p. 123] - somewhat compromises the transcription",
 sub,{b},b,2,,,
 sub,{t},t,2,,,
 sub,{θ},θ,2,,,

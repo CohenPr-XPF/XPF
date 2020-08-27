@@ -1,0 +1,145 @@
+---
+title: "Komi"
+author: "Allison Shao"
+bibliography: kv.bib
+output: html_document
+---
+
+Last Updated: 2020-08-01
+
+# Background
+
+**Language Family:** Uralic / Finno-Ugric / Finno-Permic / Permic
+
+* Komi can be divided into three dialect groups: Komi-Zyrian, Komi-Permyak, and Yaz'va Komi. Some consider these three to be distinct languages rather than dialects [@Hausenberg1998, p. 305].
+    - The differences between the three dialect groups are mostly related to word stress and morpheme inventories. Some phonological differences have also developed. However, the three-way distinction between Komi-Zyrian, Komi-Permyak, and Yaz'va Komi is mostly geopolitical [@Hausenberg1998, p. 306].
+* The information here reflects the phonology of standard literary Komi, which is substantially different from that of Yaz'va Komi.
+  - Komi-Zyrian and Komi-Permyak each have a distant literary form (for geopolitical reasons), but they are very similar [@Riese1998, pp. 250-251].
+  - @Kochetov2003 and @Kochetov2007 specifically describe Komi-Permyak. All other sources all generalized.
+
+# Phonology
+
+## Consonants
+
+* The documentation seems to vary in terms of the place of articulation for consonants, especially concerning the retroflex, alveopalatal, and palatal consonants. @Hausenberg1998 only identifies postalveolar consonants (p. 309); however, this is a broad category that includes both the retroflex and alveopalatal places of articulation, so I have chosen to follow the more specific analyses done by @Kochetov2003 (p. 2721).
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial    Dental   Retroflex   Alveopalatal  Palatal   Velar
+Stops                       "p b"    "t̪ d̪"       ""           ""         "c ɟ"    "k ɡ"
+Affricates                  ""        ""       "ʈʂ ɖʐ"      "tɕ dʑ"       ""       ""
+Fricatives                  "v"      "s̪ z̪"      "ʂ ʐ"        "ɕ ʑ"        ""       ""
+Nasals                      "m"       "n̪"        ""           ""          "ɲ"      ""
+Trills                      ""        "r̪"        ""           ""          ""       ""
+Approximants                ""        "l̪"        ""           ""         "j ʎ"     ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Retroflex", "Alveopalatal", "Palatal", "Velar"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless, whereas those on the right are voiced. Both palatal approximants are voiced, but the one on the right is lateral.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High      "i"         "ɨ"          "u"         
+Mid       "e"         "ɘ"          "o"
+Low       ""          "a"           ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+```  
+
+# Alphabet
+
+* ⟨ф⟩, ⟨х⟩, ⟨ц⟩, and ⟨щ⟩ are found in Russian loanwords [@Punegova2018, p. 24; @Tsyponov2015, p. 39].
+    - According to @Tsyponov2015, ⟨щ⟩ is not realized as it is in Russian; rather it typically surfaces as [ʂ] or [ʂː] and sometimes [ʈʂ] (p. 39).
+* Six graphemes can be used to represent either a dental or palatal consonant with the same manner of articulation. When one of these graphemes is followed by ⟨e⟩, ⟨ё⟩, ⟨и⟩, ⟨ю⟩, ⟨я⟩, or ⟨ь⟩ (the soft sign), this indicates the corresponding palatal phoneme. In all other instances, the grapheme is interpreted as the corresponding dental phoneme [@Punegova2018, pp. 25-27; @Tsyponov2015, pp. 40-41]:
+    - ⟨д⟩ corresponds to /d̪/ and /ɟ/.
+    - ⟨з⟩ corresponds to /z̪/ and /ʑ/.
+    - ⟨л⟩ corresponds to /l̪/ and /ʎ/.
+    - ⟨н⟩ corresponds to /n̪/ and /ɲ/.
+    - ⟨с⟩ corresponds to /s̪/ and /ɟ/.
+    - ⟨т⟩ corresponds to /t̪/ and /ɕ/.
+* Besides /ɘ/ and /ɨ/, all vowel phonemes can be represented by two different graphemes. Following a palatal consonant, ⟨e⟩, ⟨ё⟩, ⟨и⟩, ⟨ю⟩, and ⟨я⟩ are used. Following a non-palatal consonant, ⟨а⟩, ⟨і⟩, ⟨о⟩, ⟨у⟩, and ⟨э⟩ are used [@Punegova2018, pp. 25-27; @Tsyponov2015, pp. 40-41].
+    - /a/ can be represented by ⟨а⟩ and ⟨я⟩.
+    - /e/ can be represented by ⟨e⟩ and ⟨э⟩.
+    - /i/ can be represented by ⟨і⟩ and ⟨и⟩.
+    - /o/ can be represented by ⟨о⟩ and ⟨ё⟩.
+    - /u/ can be represented by ⟨у⟩ and ⟨ю⟩.
+* Additionally, graphemes ⟨e⟩, ⟨ё⟩, ⟨и⟩, ⟨ю⟩, and ⟨я⟩ represent a /j/-vowel sequence when not following a palatal consonant [@Punegova2018, pp. 25-27; @Tsyponov2015, pp. 40-41].
+    - ⟨e⟩ becomes /je/.
+    - ⟨ё⟩ becomes /jo/.
+    - ⟨ю⟩ becomes /ju/.
+    - ⟨я⟩ becomes /ja/.
+ * The hard sign ⟨ъ⟩ is used to indicate a lack of a palatal consonant. For example, ⟨дя⟩ would transcribe to /ɟa/, while ⟨дъя⟩ would transcribe to /dja/.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme          Comment
+"а"              "/a/"             ""
+"б"              "/b/"             ""
+"в"              "/v/"             ""
+"г"              "/ɡ/"             ""
+"д"              "/d̪/; /ɟ/"        "/ɟ/: preceding ⟨e⟩, ⟨ё⟩, ⟨и⟩, ⟨ю⟩, ⟨я⟩, or ⟨ь⟩"
+"e"              "/e/; /je/"       "/e/: following a consonant (marks the preceding consonant as palatal)"
+"ё"              "/o/; /jo/"       "/o/: following a consonant (marks the preceding consonant as palatal)"
+"ж"              "/ʐ/"             ""
+"з"              "/z̪/; /ʑ/"        "/ʑ/: preceding ⟨e⟩, ⟨ё⟩, ⟨и⟩, ⟨ю⟩, ⟨я⟩, or ⟨ь⟩"
+"и"              "/i/"             "following a consonant (marks the preceding consonant as palatal)"
+"і"              "/i/"             ""
+"й"              "/j/"             ""
+"к"              "/k/"             ""
+"л"              "/l̪/; /ʎ/"        "/ʎ/: preceding ⟨e⟩, ⟨ё⟩, ⟨и⟩, ⟨ю⟩, ⟨я⟩, or ⟨ь⟩"
+"м"              "/m/"             ""
+"н"              "/n̪/; /ɲ/"        "/ɲ/: preceding ⟨e⟩, ⟨ё⟩, ⟨и⟩, ⟨ю⟩, ⟨я⟩, or ⟨ь⟩"
+"о"              "/o/"             ""
+"ӧ"              "/ɘ/"             ""
+"п"              "/p/"             ""
+"р"              "/r̪/"             ""
+"с"              "/s̪/; /ɕ/"        "/ɕ/: preceding ⟨e⟩, ⟨ё⟩, ⟨и⟩, ⟨ю⟩, ⟨я⟩, or ⟨ь⟩"
+"т"              "/t̪/; /c/"        "/c/: preceding ⟨e⟩, ⟨ё⟩, ⟨и⟩, ⟨ю⟩, ⟨я⟩, or ⟨ь⟩"
+"у"              "/u/"             ""
+"ф"              "/f/"             "appears in loanwords"
+"х"              "/x/"             "appears in loanwords"
+"ц"              "/ts/"            "appears in loanwords"
+"ч"              "/tɕ/"            ""
+"ш"              "/ʂ/"             ""
+"щ"              "/ʂ/"             "appears in loanwords"
+"ъ"              ""                "hard sign: marks the preceding consonant as non-palatal"
+"ы"              "/ɨ/"             ""
+"ь"              ""                "soft sign: marks the preceding consonant as palatal"
+"э"              "/e/"             ""
+"ю"              "/u/; /ju/"       "/u/: following a consonant (marks the preceding consonant as palatal)"
+"я"              "/a/; /ja/"       "/a/: following a consonant (marks the preceding consonant as palatal)"
+**Digraph**    ""               ""
+"дж"             "/ɖʐ/"            ""
+"дз"             "/dʑ/"            ""
+"тш"             "/ʈʂ/"            ""
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Misc. Rules
+
+* Consonant gemination occurs at morpheme boundaries [@Hausenberg1998, p. 309].
+* Where consecutive vowels (e.g. /aa/) occur, the second one must be pronounced [@Punegova2018, p. 27]. All examples, however, are given with /aa/ in word-final positions, so it's unclear whether this actually applies to all adjacent vowels in all positions as well.
+
+# References

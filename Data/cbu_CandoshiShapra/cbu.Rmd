@@ -1,0 +1,120 @@
+---
+title: "Candoshi-Shapra"
+author: "Abi Creighton"
+bibliography: cbu.bib
+output: html_document
+---
+
+Last Updated: 2020-07-14
+
+# Background
+
+**Language Family:** Language isolate
+
+* Candoshi-Shapra, also known as Candoshi, Kandoshi, Candoxi, or Murato, is spoken in Peru along the Chapuli, Huitoyacu, Pastaza, and Morona river valleys.
+
+# Phonology
+
+## Consonants
+
+* The inventory in @surralles_2007 includes voiced stops; however, it represents a phonetic description rather than a phonemic one (p. 255). The voiced stops are simply allophones of their voiceless counterparts [@tuggy_1966, p. 233].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Bilabial   Alveolar  Postalveolar Retroflex Palatal Velar   Glottal
+Stops                      "p ᵐp"     "t ⁿt"        ""          ""        ""    "k ᵑk"    ""   
+Affricates                  ""       "ts ⁿts"    "tʃ ⁿtʃ"     "ʈʂ ᶯʈʂ"    ""     ""       ""
+Fricatives                  ""         "s"          "ʃ"         "ʂ"       ""     ""       "h"
+Nasals                      "m"        "n"          ""          ""        ""     ""       ""       
+Taps                        ""         "ɾ"          ""          ""        ""     ""       ""       
+Approximants                ""         ""           ""          ""        "j"    "w"      ""   
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Retroflex", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are plain and those on the right are prenasalized.", general_title = "")
+```  
+
+## Vowels
+
+* There is some debate around the back vowel and whether it better reflects /o/ or /u/. I have chosen to follow @Michael2015 and use /o/.
+* Vowel length is contrastive in Candoshi-Shapra. Long vowels are marked by duplicate graphemes [@tuggy_1966, p. 235].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         ""           ""
+Mid           ""          ""           "o"
+Low           ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ia/, /oa/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```     
+
+# Alphabet
+
+* @tuggy_1966 includes an apostrophe (’) as part of the Candoshi-Shapra alphabet, representing glottal stops (p. 232). However, the same source, which is a dictionary of the language, provides no instances of it. There is no justification of the glottal stop being a phoneme in the language as both @Michael2015 and @surralles_2007 make no mention of it, so I have chosen to transcribe apostrophes, which make up only 0.1% of the language's Crúbadán corpus, to nothing in the rule set.
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme           
+"a"              "/a/"              
+"b"              "/ᵐp/"              
+"d"              "/ⁿt/"              
+"g"              "/ᵑk/"              
+"h"              "/h/"              
+"i"              "/i/"
+"k"              "/k/"
+"m"              "/m/"              
+"n"              "/n/"              
+"o"              "/o/"          
+"p"              "/p/"              
+"r"              "/ɾ/"              
+"s"              "/s/"              
+"t"              "/t/"              
+"u"              "/o/"              
+"v"              "/w/"   
+"x"              "/ʈʂ/"
+"y"              "/j/"   
+"z"              "/ʂ/"
+**Multigraph**    ""                   
+"ch"             "/tʃ/"    
+"ll"             "/ⁿtʃ/"
+"sh"             "/ʃ/"
+"ts"             "/ts/"
+"nts"            "/ⁿts/"
+"nx"             "/ᶯʈʂ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Misc. Rules
+
+* Consonant clusters are permitted, but they may not be consist of a consonant followed by a sonorant consonant or /h/ [@tuggy_1966, p. 235].
+    - Clusters consisting of /h/ followed by a consonant are also not permitted.
+
+# References

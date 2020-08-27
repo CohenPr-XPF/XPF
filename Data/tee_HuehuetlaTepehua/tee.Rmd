@@ -1,0 +1,141 @@
+---
+title: "Huehuetla Tepehua"
+author: "Abi Creighton"
+bibliography: tee.bib
+output: html_document
+---
+
+Last Updated: 2020-08-13
+
+# Background
+
+**Language Family:** Totonacan / Tepehua / Huehuetla Tepehua
+
+* Huehuetla Tepehua is a language spoken in Huehuetla, a municipality in Hildago, Mexico.
+
+# Phonology
+
+## Consonants
+
+* For younger speakers, the uvular and glottal stops have merged [@kung_2007, p. 31]. Because older speakers still contrast /q/ with /ʔ/, I have chosen to include both below.
+* Although /r/ and /ɾ/ are said to occur only in Spanish loanwords and ideophones, they are understood to be part of Huehuetla Tepehua's phonemic inventory [@kung_2002, p. 167]. I have chosen to include both below.
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Bilabial   Alveolar  Postalveolar  Palatal  Velar    Uvular  Glottal
+Stops                      "p pʼ"      "t tʼ"        ""         ""     "k kʼ"    "q"      "ʔ"
+Affricates                  ""        "ts tsʼ"    "tʃ tʃʼ"      ""      ""       ""       ""
+Fricatives                  ""         "s ɬ"        "ʃ"         ""      ""       ""       "h"
+Nasals                      "m"         "n"          ""         ""      ""       ""       ""
+Liquids                     ""          "l"          ""         ""      ""       ""       ""
+Trills                      ""          "r"          ""         ""      ""       ""       ""
+Flaps                       ""          "ɾ"          ""         ""      ""       ""       ""
+Approximants                "w"          ""          ""         "j"     ""       ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are plain and those on the right are glottalized. Both alveolar fricatives are plain, but the one on the right is lateral.", general_title = "")
+```  
+
+## Vowels
+
+* Vowel length is phonemic [@kung_2007, pp. 31, 64]. Long vowels are indicated with duplicate graphemes.
+* Like other modern Totonacan languages, Huehuetla Tepehua evolved from a three vowel system to contrast five vowels, the mid vowels of which gained phonemic status through Spanish influence and ideophones [@kung_2007, p. 50].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         ""           "u"
+Mid           "e"         ""           "o"
+Low           ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+```     
+
+# Alphabet
+
+* @garcia_agustin_2012 appears to include a glottalized /q/ in the orthography (p. 13). As @kung_2002 notes, however, the glottalized uvular stop has merged with its plain counterpart (p. 167).
+* @garcia_agustin_2012 represents /w/ with ⟨v⟩ and /ts/ with ⟨ts⟩ (p. 13), while @kung_2007 uses ⟨w⟩ and ⟨tz⟩, respectively (pp. 33-34). Because there is no overlap with the different transcriptions that would conflate the different phonemes, I have included the orthographic variations from both sources below.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme  
+"a"              "/a/"              
+"c"              "/k/"  
+"c\'"            "/kʼ/"
+"e"              "/e/"              
+"i"              "/i/"
+"j"              "/h/"
+"k"              "/k/"  
+"l"              "/l/"
+"m"              "/m/"              
+"n"              "/n/"
+"o"              "/o/"
+"p"              "/p/"
+"p\'"            "/pʼ/"
+"r"              "/ɾ/"              
+"s"              "/s/"              
+"t"              "/t/"
+"t\'"            "/tʼ/"
+"u"              "/u/"              
+"v"              "/w/"  
+"w"              "/w/"
+"x"              "/ʃ/"
+"y"              "/j/"
+"\'"             "/ʔ/"
+**Digraph**      ""                   
+"ch"             "/tʃ/"
+"ch\'"           "/tʃʼ/"
+"qu"             "/q/"
+"q\'u"           "/q/"
+"rr"             "/r/"
+"lh"             "/ɬ/"
+"ts"             "/ts/"
+"ts\'"           "/tsʼ/"
+"tz"             "/ts/"
+"tz\'"           "/tsʼ/"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in HT follow the order (C)CV(V)(C)(C) [@kung_2007, p. 81].
+
+# Lenition Rules
+
+* /p/, /t/, and /k/ are optionally voiced between voiced phonemes [@kung_2007, p. 38].
+* For younger speakers, /q/ debuccalizes to /ʔ/ [@kung_2007, p. 67].
+* /k/ spirantizes to [h] when preceded by a vowel and followed by a velar or uvular stop [@kung_2007, p. 137].
+* When two identical consonants become adjacent because of morpheme concatenation, the first consonant is deleted [@kung_2007, p. 139].
+* Stem final-glottal stops are deleted when followed by a suffix or enclitic [@kung_2007, p. 140].
+* Intervocalic /h/ is deleted when followed by an unstressed vowel [@kung_2007, p. 143].
+* When /n/ is part of the prefix kin- or min-, it deletes before an approximant [@kung_2007, p. 163].
+
+# Misc. Rules
+
+* When short vowels occur utterance-finally, they are devoiced or deleted [@kung_2007, pp. 124-126].
+* /l/ neutralizes to [ɬ] in the coda position [@kung_2007, p. 126].
+* A glottal stop is inserted preceding syllable-initial vowels [@kung_2007, p. 129].
+* Nasals assimilate to the place of a following consonant, and velars assimilate to the place of a following uvular [@kung_2007, p. 132].
+* When the sequence /kh/ occurs after /a/, metathesis occurs and the sequence becomes /hk/ [@kung_2007, p. 135].
+
+# References

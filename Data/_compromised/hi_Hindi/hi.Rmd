@@ -6,13 +6,13 @@ bibliography: hi.bib
 output: html_document
 ---
 
-Last Updated: 2020-02-24
+Last Updated: 2020-06-29
 
-**Compromised: Conflation between /æ/ and /ɛ/; slight ambiguity between vowel nasalization and underlying /n/; unreliable marking of attested phonemes brought in through loanwords**
+**COMPROMISED: Conflation between /æ/ and /ɛ/; slight ambiguity between vowel nasalization and underlying /n/; unreliable marking of attested phonemes brought in through loanwords**
 
 # Background
 
-**Language family**: Indo-European / Indo-Iranian / Indo-Aryan / Central zone / Western Hindi / Hindustani
+**Language Family:** Indo-European / Indo-Iranian / Indo-Aryan / Central zone / Western Hindi / Hindustani
 
 * Hindi is one of the most popular languages in India, and is primarily spoken in the northern states of Uttar Pradesh, Madhya Pradesh, Rajasthan, etc. Hindi and Urdu share many similarities and are sometimes considered to be a single language, Hindustani. Hindi has been influenced by many languages, including Sanskrit, Persian, and English [@Masica1991, pp. 1-32].
 
@@ -61,9 +61,9 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 
 ## Vowels
 
-* The vowel /æ/ only appears in English loanwords and is not orthographically distinct (ie. /æ/ and /ɛ/ are represented by the same character); I only account for /ɛ/ in the rules [@Ohala1999, p. 101]. However, given that English loanwords are fairly prominent in Hindi, such that some sources include the phoneme in the inventory [e.g. @Ohala1999], I've marked this language as compromised.
+* The vowel /æ/ only appears in English loanwords and is not orthographically distinct (i.e. /æ/ and /ɛ/ are represented by the same character); I only account for /ɛ/ in the rules [@Ohala1999, p. 101]. However, given that English loanwords are fairly prominent in Hindi, such that some sources include the phoneme in the inventory [e.g. @Ohala1999], I've marked this language as compromised.
 * Vowel nasalization is contrastive [@Ohala1999, p. 102].
-    - **Nasal /ɐ/ and /ɛ/ don't appear in the Crúbadán corpus.**
+    - **Nasal /ɐ/ and /ɛ/ aren't reflected in the Crúbadán corpus.**
 * Vowel length is contrastive for /i/, /a/, and /u/ [@Koul2008, p. 26].
     - /i/, /u/, and /ɑ/ are considered long, whereas /ɪ/, /ʊ/, and /ɐ/ are short.
 * Adjacent vowels are not realized as complex nuclei [@Ohala1999, p. 101]. This applies to /ɐi/ and /ɐu/, commonly interpreted as diphthongs in related languages.
@@ -92,7 +92,7 @@ kable(vowels, align = 'c') %>%
     - Many other Indo-Aryan languages (such as Marathi, Konkani, Sindhi, etc.) use this alphabet, so it's possible that corpora of Hindi words may accidentally include words from other languages.
     - The inherent vowel that accompanies every consonant is not realized word-finally (ibid.).
 * The anusvara diacritic seems to have two functions: one being that it indicates nasalization of the preceding vowel [@Language2007, p. 4] and the other being that it represents /n/ (or phonetic variants) following a vowel (i.e. stronger nasalization) [@Shapiro2014, p. 25; @Kellogg2008, p. 10].
-    - Since the anusvara is used more than the anunasik to represent preceding vowel nasalization, I have opted to treat the anusvara as that rather than a following /n/. This also compromised the language to some extent.
+    - Since the anusvara is used more than the anunasik to represent preceding vowel nasalization, I have opted to treat the anusvara as that by default rather than a following /n/. This also compromised the language to some extent.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -170,12 +170,9 @@ kable(alphabet, col.names = c("Consonant Grapheme", "Phoneme", "Comment"), align
 
 * Syllables in Hindi follow the order of (C)(C)V(C)(C) [@Koul2008, p. 24].
 
-# Lenition Rules
-
-* The inherent vowel is often elided word-finally [@Kellogg2008, p. 7].
-
 # Misc. Rules
 
 * /ʋ/ is in free variation with [v] and [w] [@Ohala1999, p. 102].
+* The inherent vowel is often elided word-finally [@Kellogg2008, p. 7].
 
 # References

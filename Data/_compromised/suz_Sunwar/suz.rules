@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2020-02-05
 type,sfrom,sto,weight,precede,follow,comment
-# Classes (Consonants)
+# Class Rules (Consonants)
 class,k,[क],,,,
 class,kh,[ख],,,,
 class,g,[ग],,,,
@@ -26,7 +26,7 @@ class,w,[व],,,,
 class,s,[स],,,,
 class,sh,[षश],,,,"the Devanagari characters for both /ʂ/ and /ʃ/ are used for the Sunwar /ʃ/"
 class,h,[ह],,,,
-# Classes (Vowels & Misc.)
+# Class Rules (Vowels & Misc.)
 class,a,[अ],,,,
 class,a-long,[आ],,,,
 class,i,[इई],,,,"includes the long i, which does not contrast in Sunwar"
@@ -36,7 +36,7 @@ class,e,[ए],,,,
 class,ai,[ऐ],,,,
 class,o,[ओ],,,,
 class,au,[औ],,,,
-# Classes (Diacritics)
+# Class Rules (Diacritics)
 class,diacritic_a-long,[ा],,,,
 class,diacritici,[िी],,,,"includes the long i, which does not contrast in Sunwar"
 class,diacriticu,[ु],,,,
@@ -48,7 +48,7 @@ class,diacriticau,[ौ],,,,
 class,nasalizer,[ं],,,,
 class,null,[्],,,,
 class,misc-diacritics,[‍़-],,,,"a collection of diacritics that don't have phonetic value in Sunwar"
-# Classes (For IPASub Purposes)
+# Class Rules (For IPASub Purposes)
 class,vowel,[aeiou],,,,
 class,vowel_nota,[eiou],,,,
 class,gem,(p|b|tʃ|k|m|n|p|s|t̪|l̪|pʰ|t̪ʰ|d̪|ʈ|ʈʰ|kʰ|ɡ|dʒ|ʃ|h|ŋ|ɾ|w|ɭ|j),,,,

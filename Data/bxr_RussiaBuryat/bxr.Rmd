@@ -1,0 +1,143 @@
+---
+title: "Russia Buryat"
+author: "Abi Creighton"
+bibliography: bxr.bib
+output: html_document
+---
+
+Last Updated: 2020-07-27
+
+# Background
+
+**Language Family:** Mongolian / Eastern / Oirat-Khalkha / Khalkha-Buriat / Buriat
+
+* Russia Buryat is the most widely spoken dialect of Buryat (also spelled Buriat). It is spoken along Russia's border with Mongolia in the Buryat Republic, Ust-Orda Buryatia, and Aga Buryatia. Speakers of other Buryat dialects live in Mongolia and China.
+
+# Phonology
+
+## Consonants
+
+* /p/, /f/, /v/, /fʲ/, /vʲ/, /ts/, /tʃ/, and /k/ only appear in loanwords [@staroverov_2020, p. 45].
+    - @graber_2012 argues, however, that /k/ appears in so many loanwords that it has become part of Buryat's phonemic inventory (p. xviii). I have therefore opted to include it in the inventory and rules.
+    - I have opted also to include /p/, just as @Radnaeva2003 and @Sanzheeva1962 do (p. 2738; p. 12).
+    - Although I closely follow the analysis done by @staroverov_2020, I have chosen to diverge from it and exclude palatalized /s/ and /z/, just as @Radnaeva2003, @Radnaeva2006, and @Sanzheeva1962 do.
+* The palatalized consonants are recognized as phonemes, but based upon how infrequently they appear in Crúbadán, they seem rather marginal.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Bilabial    Alveolar      Postalveolar  Palatal  Velar      Glottal
+Stops                      "p pʲ b bʲ" "t tʲ d dʲ"    ""            ""       "k ɡ ɡʲ"   ""
+Fricatives                  ""         "s z"          "ʃ ʒ"         ""       "x xʲ"     "ɦ"
+Nasals                      "m mʲ"     "n nʲ"         ""            ""       ""         ""  
+Trills                      ""         "r rʲ"         ""            ""       ""         ""
+Approximants                ""         "l lʲ"         ""            "j"      ""         ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes without diacritics that share a cell, those on the left are voiceless and those on the right are voiced. Phonemes with the diacritic (ʲ) are palatalized.", general_title = "")
+```  
+
+## Vowels
+
+* Vowel length is phonemic in Buryat [@khabtagateva_2013, p. 161].
+* There is much disagreement around how to represent the mid-front vowel. I have chosen to follow @staroverov_2020 and use /ɘ/ (p. 45).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         "ʉ"          "u"
+Mid           "ɘ"         "ɵ"          "o"
+Low           ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ai/, /oi/, /ui/, /ʉi/, /ei/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+
+```     
+
+# Alphabet
+
+* **Note:** /ɡʲ/ is not represented in the Crúbadán corpus.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                    Comment
+"а"            "/a/"                       ""
+"б"            "/b/"                       ""
+"в"            "/v/"                "occurs in loanwords"
+"г"            "/ɡ/"                       ""
+"д"            "/d/"                       ""
+"е"            "/jɘ/"                      ""
+"ё"            "/jo/"                      ""
+"ж"            "/ʒ/"                       ""
+"з"            "/z/"                       ""
+"и"            "/i/"                       ""
+"й"            "/j/"            "often appears as the second element of a diphthong [@graber_2012, p. xviii]"
+"к"            "/k/"                 "occurs in loanwords"
+"л"            "/l/"                       ""
+"м"            "/m/"                       ""
+"н"            "/n/"                       ""
+"о"            "/o/"                       ""
+"ө"            "/ɵ/"                       ""
+"п"            "/p/"                       ""
+"р"            "/r/"                       ""
+"с"            "/s/"                       ""
+"т"            "/t/"                       ""
+"у"            "/u/"                       ""
+"ү"            "/ʉ/"                       ""
+"ф"            "/f/"                  "occurs in loanwords"
+"х"            "/x/"                       ""
+"ц"            "/ts/"                 "occurs in loanwords"
+"ч"            "/tʃ/"                 "occurs in loanwords"
+"ш"            "/ʃ/"                        ""
+"щ"            "/ʃtʃ/"                "occurs in loanwords"
+"ъ"             ""           "indicates lack of palatalization of proceeding consonant"
+"ы"            "/i/"                        ""
+"ь"            "/ʲ/"         "marks palatalization of preceding consonant"  
+"э"            "/ɘ/"                       ""
+"ю"            "/ju/"                      ""  
+"я"            "/ja/"                      ""
+"һ"            "/ɦ/"                       ""
+
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* The structure of syllables in Russia Buryat consist of CV(C)(C) word-medially and (C)V(C)(C) word-initially [@staroverov_2020, p. 46].
+
+# Lenition Rules
+
+* /ɡ/ spirantizes to [ɣ] intervocalically in words with front vowels and to [ʁ] intervocalically in words with back vowels [@staroverov_2020, p. 46].
+
+# Misc. Rules
+
+* Vowel harmony is present in Buryat [@khabtagateva_2013, p. 161].
+* When a vowel-initial suffix is added to a short vowel stem, one of the vowels is deleted [@staroverov_2020, p. 47].
+* When a vowel-initial suffix is added to a long vowel stem, a dorsal consonant is epenthesized (ibid.).
+
+# References

@@ -7,11 +7,11 @@ output: html_document
 
 Last updated: 2020-02-07
 
-**Slightly Compromised: unclear how reliably vowel length is marked**
+**SLIGHTLY COMPROMISED: suspect marking of vowel length**
 
 # Background
 
-**Language family**: Totonacan / Tepehua
+**Language Family:** Totonacan / Tepehua
 
 * Pisaflores Tepehua is spoken in the Veracruz state in eastern Mexico.
 
@@ -30,8 +30,8 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial   Alveolar  Alveopalatal  Palatal  Velar   Glottal   
-Stops                      "p p’"    "t t’"       ""          ""     "k k’"    "ʔ"     
-Affricates                  ""      "ts ts’"    "tɕ tɕʼ"      ""       ""      ""
+Stops                      "p pʼ"    "t tʼ"       ""          ""     "k kʼ"    "ʔ"     
+Affricates                  ""      "ts tsʼ"    "tɕ tɕʼ"      ""       ""      ""
 Fricatives                  ""       "s ɬ"        "ɕ"         ""       ""      "h"
 Nasals                      "m"       "n"         ""          ""       ""      ""
 Approximants                "w"       "l"         ""          "j"      ""      ""
@@ -46,11 +46,11 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* Although Proto-Totonac-Tepehua only consists of a three vowel contrast, with /e/ and /o/ occurring in loanwords [@MacKay2013, p. 203; @Kryder1978, p. 46], @MacKay2013 state that Pisaflores Tepehua, in particular, has a five vowel contrast. This being said, the frequency of /e/ and /o/ are vastly reduced compared to the other three, which is very apparent in the Crúbadán corpus.
+* Although Proto-Totonac-Tepehua only consists of a three vowel contrast, with /e/ and /o/ occurring in loanwords [@MacKay2013, p. 203; @Kryder1978, p. 46], @MacKay2013 state that Pisaflores Tepehua, in particular, has a five vowel contrast. This being said, the frequency of /e/ and /o/ are vastly reduced compared to the other vowels, which is very apparent in the Crúbadán corpus.
 * Vowel length is a contrastive feature in this language [@MacKay2013, p. 203]; however, it seems rather marginal based on the Crúbadán corpus output. This is consistent with the explanations given by @Kryder1978 and @Watters2017:    
     - @Kryder1978 (a source on Tepehua as a whole) was only able to find few minimal pairs (pp. 51-52).
     - @Watters2017 states that vowel length affecting comprehension is quite subtle (p. 44).
-* That being said, @Watters2017 explains that those proficient in the language don't agree with marking vowel length distinctions, only doing so when there's ambiguity. Given this, there is some skepticism in terms of how reliably vowel length is marked, compromising the language to some degree.
+* That being said, @Watters2017 explains that those proficient in the language don't agree with marking vowel length, only doing so when there's ambiguity. Given this, there is some skepticism in terms of how reliably vowel length is marked, compromising the language to some degree.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -147,6 +146,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -188,7 +188,7 @@ summary {
 <p><strong>COMPROMISED: conflation among /u/, /w/, /ʷ/; some orthographic ambiguity related to consonant gemination</strong></p>
 <div id="background" class="section level1">
 <h1>Background</h1>
-<p><strong>Language Family</strong>: Indo-European / Indo-Iranian / Iranian / Eastern Iranian / Northeastern / Ossetic</p>
+<p><strong>Language Family:</strong> Indo-European / Indo-Iranian / Iranian / Eastern / Northeastern / Ossetic</p>
 <ul>
 <li>Also known as Ossetian, it is spoken in Russia and Georgia.</li>
 <li>Where dialects diverge, I will be following the more widely spoken Iron dialect.</li>
@@ -199,8 +199,8 @@ summary {
 <div id="consonants" class="section level2">
 <h2>Consonants</h2>
 <ul>
-<li>A small number of southern dialects include /ʃ/ and /ʒ/. <span class="citation">(Testen 1997, 710)</span></li>
-<li><span class="citation">Abaev (1964)</span> (p. 6) and <span class="citation">Testen (1997)</span> (p. 711) regard /j/ and /w/ as distinct phonemes, while <span class="citation">Thordarson (1992)</span> (p. 462) argues that they are just allophones of [i] and [u] respectively. I have chosen to include them in the inventory below.</li>
+<li>A small number of southern dialects include /ʃ/ and /ʒ/ <span class="citation">(Testen 1997, 710)</span>.</li>
+<li><span class="citation">Abaev (1964)</span> and <span class="citation">Testen (1997)</span> regard /j/ and /w/ as distinct phonemes (p. 6; p. 711), while <span class="citation">Thordarson (1992)</span> argues that they are just allophones of [i] and [u] respectively (p. 462). I have chosen to include them in the inventory below.</li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -249,20 +249,20 @@ Labiouvular
 Stops
 </td>
 <td style="text-align:center;">
-p b p’
+p b pʼ
 </td>
 <td style="text-align:center;">
-t d t’
+t d tʼ
 </td>
 <td style="text-align:center;">
 </td>
 <td style="text-align:center;">
 </td>
 <td style="text-align:center;">
-k ɡ k’
+k ɡ kʼ
 </td>
 <td style="text-align:center;">
-kʷ gʷ kʷ’
+kʷ ɡʷ kʷʼ
 </td>
 <td style="text-align:center;">
 q
@@ -278,10 +278,10 @@ Affricates
 <td style="text-align:center;">
 </td>
 <td style="text-align:center;">
-ts dz ts’
+ts dz tsʼ
 </td>
 <td style="text-align:center;">
-tʃ dʒ tʃ’
+tʃ dʒ tʃʼ
 </td>
 <td style="text-align:center;">
 </td>
@@ -467,7 +467,10 @@ a
 <div id="alphabet" class="section level1">
 <h1>Alphabet</h1>
 <ul>
-<li>There is some amount of orthographic confusion regarding ⟨y⟩, which can be /u/, /w/, or simply a marker of labialization. Therefore, the language is compromised. In the ruleset, I use ⟨y⟩ to mark labialization wherever possible, and default to /u/ otherwise.</li>
+<li>There is some amount of orthographic confusion regarding ⟨y⟩, which can be /u/, /w/, or simply a marker of labialization. Therefore, the language is compromised. In the ruleset, I use ⟨y⟩ to mark labialization wherever possible, and default to /u/ otherwise.
+<ul>
+<li><strong>Note:</strong> Due to this, /w/ is not represented.</li>
+</ul></li>
 </ul>
 <table class="table table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -536,60 +539,10 @@ Comment
 </tr>
 <tr>
 <td style="text-align:center;">
-гу
-</td>
-<td style="text-align:center;">
-/ɡʷ/
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-гъ
-</td>
-<td style="text-align:center;">
-/ʁ/
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-гъу
-</td>
-<td style="text-align:center;">
-/ʁʷ/
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
 д
 </td>
 <td style="text-align:center;">
 /d/
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-дж
-</td>
-<td style="text-align:center;">
-/dʒ/
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-дз
-</td>
-<td style="text-align:center;">
-/dz/
 </td>
 <td style="text-align:center;">
 </td>
@@ -646,36 +599,6 @@ Comment
 </tr>
 <tr>
 <td style="text-align:center;">
-ку
-</td>
-<td style="text-align:center;">
-/kʷ/
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-къ
-</td>
-<td style="text-align:center;">
-/k’/
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-къу
-</td>
-<td style="text-align:center;">
-/kʷ’/
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
 л
 </td>
 <td style="text-align:center;">
@@ -726,16 +649,6 @@ Comment
 </tr>
 <tr>
 <td style="text-align:center;">
-пъ
-</td>
-<td style="text-align:center;">
-/p’/
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
 р
 </td>
 <td style="text-align:center;">
@@ -760,16 +673,6 @@ Comment
 </td>
 <td style="text-align:center;">
 /t/
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-тъ
-</td>
-<td style="text-align:center;">
-/t’/
 </td>
 <td style="text-align:center;">
 </td>
@@ -807,6 +710,145 @@ Comment
 </tr>
 <tr>
 <td style="text-align:center;">
+ц
+</td>
+<td style="text-align:center;">
+/ts/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+ч
+</td>
+<td style="text-align:center;">
+/tʃ/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+ы
+</td>
+<td style="text-align:center;">
+/ɨ/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<strong>Multigraph</strong>
+</td>
+<td style="text-align:center;">
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+гу
+</td>
+<td style="text-align:center;">
+/ɡʷ/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+гъ
+</td>
+<td style="text-align:center;">
+/ʁ/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+гъу
+</td>
+<td style="text-align:center;">
+/ʁʷ/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+дж
+</td>
+<td style="text-align:center;">
+/dʒ/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+дз
+</td>
+<td style="text-align:center;">
+/dz/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+ку
+</td>
+<td style="text-align:center;">
+/kʷ/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+къ
+</td>
+<td style="text-align:center;">
+/kʼ/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+къу
+</td>
+<td style="text-align:center;">
+/kʷʼ/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+пъ
+</td>
+<td style="text-align:center;">
+/pʼ/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+тъ
+</td>
+<td style="text-align:center;">
+/tʼ/
+</td>
+<td style="text-align:center;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
 ху
 </td>
 <td style="text-align:center;">
@@ -837,30 +879,10 @@ Comment
 </tr>
 <tr>
 <td style="text-align:center;">
-ц
-</td>
-<td style="text-align:center;">
-/ts/
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
 цъ
 </td>
 <td style="text-align:center;">
-/ts’/
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-ч
-</td>
-<td style="text-align:center;">
-/tʃ/
+/tsʼ/
 </td>
 <td style="text-align:center;">
 </td>
@@ -870,17 +892,7 @@ Comment
 чъ
 </td>
 <td style="text-align:center;">
-/tʃ’/
-</td>
-<td style="text-align:center;">
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-ы
-</td>
-<td style="text-align:center;">
-/ɨ/
+/tʃʼ/
 </td>
 <td style="text-align:center;">
 </td>

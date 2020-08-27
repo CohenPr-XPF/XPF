@@ -5,13 +5,13 @@ bibliography: sm.bib
 output: html_document
 ---
 
-Last Updated: 2020-01-07
+Last Updated: 2020-07-02
 
-**Slightly Compromised - @Alderete2012 states that macrons and apostrophes (marking long vowels and glottal stops respectively) aren't generally used in orthography. Crúbadán appears to use the conventions quite frequently, but it is unclear if they're used exhaustively**
+**SLIGHTLY COMPROMISED: suspect marking of vowel length and glottal stops**
 
 # Background
 
-**Language Family**: Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Central-Eastern Oceanic / Remote Oceanic / Central Pacific / East Fijian-Polynesian / Polynesian / Nuclear / Samoic-Outlier / Samoan
+**Language Family:** Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Central-Eastern Oceanic / Remote Oceanic / Central Pacific / East Fijian-Polynesian / Polynesian / Nuclear / Samoic-Outlier / Samoan
 
 * Samoan is spoken throughout the Samoan Islands.
 * The formal style is represented below.
@@ -66,6 +66,8 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
+* @Alderete2012 state that macrons and apostrophes (marking long vowels and glottal stops respectively) aren't generally used in orthography (p. 9). However, the Crúbadán corpus appears to use the conventions quite frequently. Because of this unexpected outcome (where the observation is not in line with the documentation), the marking of vowel length and glottal stops is somewhat suspect. Therefore, I have decided to classify the language as compromised.
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
@@ -94,17 +96,17 @@ kable(alphabet, align = 'c') %>%
 # Lenition Rules
 
 * In fast speech, voiceless stops (including /k/), are voiced intervocalically [@Alderete2012, p. 3].
-* /t/ tends to become [ts] preceding /i/ (ibid.).
-* /k/ may palatalize in the environment of /i/ or /e/ (ibid.).
 * Glottal stops are often deleted intervocalically in fast speech (ibid.).
 * /f/ may debuccalize to /h/ (ibid.).
-* In fast speech, /s/ may become [ts] or [ʃ] (ibid.).
-* Short vowels may be deleted word-finally [@Alderete2012, p. 6].
 
 # Misc. Rules
 
-* In the colloquial style [@Kernan1974., p. 108]:
+* In the colloquial style [@Kernan1974, p. 108]:
     - /t/ is realized as [k]
     - /n/ is realized as [ŋ]
+* /t/ tends to become [ts] preceding /i/ [@Alderete2012, p. 3].
+* /k/ may palatalize in the environment of /i/ or /e/ (ibid.).
+* In fast speech, /s/ may become [ts] or [ʃ] (ibid.).
+* Short vowels may be deleted word-finally [@Alderete2012, p. 6].
 
 # References

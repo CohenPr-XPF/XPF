@@ -1,0 +1,41 @@
+# Chavacano Rule Set
+# Written by: Abi Creighton
+# Last Updated: 2020-07-27
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abeiklmnopsuw],,,,
+class,frontv,[eéií],,,,
+class,punct,['-],,,,
+# Individual Letters
+sub,á,a,2,,,"accents mark for stress (not accounted for in this project)"
+sub,c,k,2,,,
+sub,c,s,3,,{frontv},
+sub,d,d̪,2,,,
+sub,é,e,2,,,
+sub,f,p,2,,,
+sub,g,ɡ,2,,,
+sub,g,h,3,,{frontv},
+sub,h,,2,,,
+sub,í,i,2,,,
+sub,j,h,2,,,
+sub,ñ,ɲ,2,,,
+sub,ó,o,2,,,
+sub,r,ɾ,2,,,
+sub,t,t̪,2,,,
+sub,ú,u,2,,,
+sub,v,b,2,,,
+sub,x,h,2,,,
+sub,y,j,2,,,
+sub,z,s,2,,,
+# Digraphs
+sub,c,ts,4,,h,"no clean-up rule is needed because <h> is always deleted"
+sub,l,ʎ,2,,l,
+sub,l,,2,l,,"clean-up"
+sub,r,,3,r,,"both <r> and <rr> represent /ɾ/"
+sub,n,ŋ,3,,g,
+sub,g,,3,n,,"clean-up"
+sub,q,k,3,,u{frontv},
+sub,u,,3,q,{frontv},"clean-up",
+# Misc. Rules
+sub,{punct},,2,,,
+sub,({passthrough}),\1,0.1,,,

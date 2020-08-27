@@ -5,13 +5,13 @@ bibliography: zza.bib
 output: html_document
 ---
 
-Last Updated: 2019-07-19
+Last Updated: 2020-07-06
 
-**Compromised: conflicting orthographies make for possible conflation of vowels**
+**COMPROMISED: conflicting orthographies make for possible conflation of vowels**
 
 # Background
 
-**Language Family**: Indo-European / Indo-Iranian / Iranian / Western Iranian / Northwestern Iranian / Zaza-Gorani / Zaza
+**Language Family:** Indo-European / Indo-Iranian / Iranian / Western / Northwestern / Zaza-Gorani
 
 * The language is also sometimes known as Zazaki or Dimli and it is spoken throughout Turkey.
 
@@ -19,8 +19,8 @@ Last Updated: 2019-07-19
 
 ## Consonants
 
-* /ʕ/ appears in Arabic loans [@ZzaTodd2002, p. 1].
-* /ħ/ is not represented in the Crúbadán corpus.
+* /sˤ/, /t̪ˤ/, and /ʕ/ are marginal [@ZzaTodd2002, p. 1].
+    - /t̪ˤ/ and /ʕ/ only occur in Arabic loanwords, but they are considered to be part of the phonemic inventory.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -49,7 +49,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 
 ## Vowels
 
-* @ZzaTodd2002 includes /ə/ rather than /ɜ/ (p. 21); however, I went with /ɜ/ given that they describe it as a mid open central vowel, which is lower than schwa.
+* @ZzaTodd2002 includes /ə/ rather than /ɜ/ (p. 21); however, I opted to use /ɜ/ given that they describe it as a "mid open central vowel," which is lower than schwa.
 * Zaza has a number of diphthongs, all of which are spelled as a sequence of the two sounds that comprise them (e.g. /əj/ is written as ⟨ey⟩ and so forth) [@ZzaTodd2002, p. 16].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -79,7 +79,9 @@ kable(diphthongs, align = 'c') %>%
 
 # Alphabet
 
-**NOTE:** This orthography is somewhat compromised because the pronunciation of ⟨i⟩ differs depending on the orthography. By default, my ruleset only supports the orthography that maps ⟨i⟩ to /i/; however, rules for the other orthography are included but commented out in the ruleset, so by uncommenting those lines, the other orthography can be represented.
+* This orthography is somewhat compromised because the transcription of ⟨i⟩ differs depending on the orthography. By default, my ruleset only supports the orthography that maps ⟨i⟩ to /i/; however, rules for the other orthography are included but commented out in the ruleset, so by uncommenting those lines, the other orthography can be represented.
+* **NOTE:** /ħ/ is not represented in the Crúbadán corpus.
+
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -100,11 +102,11 @@ Grapheme      Phoneme          Comment
 "ı"            "/ɨ/"             ""
 "i"            "/i/"      "in orthographies with ⟨ı⟩"  
 "i"            "/ɨ/"      "in orthographies with ⟨î⟩"  
-"î"            "/i/"        "in some orthographies"  
+"î"            "/i/"       "in some orthographies"  
 "j"            "/ʒ/"             ""
 "k"            "/k/"             ""
 "l"            "/l/"             ""
-"\'l"          "/ɫ/"        "in some orthographies"   
+"\'l"          "/ɫ/"       "in some orthographies"   
 "m"            "/m/"             ""
 "n"            "/n/"             ""
 "o"            "/o/"             ""
@@ -112,7 +114,7 @@ Grapheme      Phoneme          Comment
 "q"            "/q/"             ""
 "r"            "/ɾ/"             ""
 "s"            "/s/"             ""
-"\'s"           "/sˤ/"        "in some orthographies"    
+"\'s"          "/sˤ/"        "in some orthographies"    
 "ş"	           "/ʃ/"             ""
 "t"            "/t̪/"             ""
 "\'t"          "/t̪ˤ/"        "in some orthographies"    
@@ -124,9 +126,9 @@ Grapheme      Phoneme          Comment
 "x"            "/x/"             ""
 "y"            "/j/"             ""
 "z"            "/z/"             ""
-"\'"           "/ʕ/"             "in loanwords"
+"\'"           "/ʕ/"         "in loanwords"
 **Digraph**     ""               ""
-"lh"           "/ɫ/"        "in some orthographies"
+"lh"           "/ɫ/"         "in some orthographies"
 "rr"           "/r/"             ""
 "sh"           "/sˤ/"        "in some orthographies"
 "th"           "/t̪ˤ/"        "in some orthographies"
@@ -145,15 +147,15 @@ kable(alphabet, align = 'c') %>%
 
 * /b/ spirantizes to [v] in postvocalic position, as well as in a handful of loanwords [@ZzaTodd2002, pp. 10-11].
 * /dʒ/ spirantizes to [ʒ] postvocalically [@ZzaTodd2002, p. 11].
-* Word-final /ng/ collapses to [ŋ] [@ZzaTodd2002, p. 12].
 * Word-final /n/, if preceded by /ɑ/ or /ə/, is realized only as a nasalization of the vowel. This pattern also holds if there's an intervening /j/ (ibid.).
 * Word-final /n/, if preceded by a vowel *not* mentioned in the previous rule, deletes entirely [@ZzaTodd2002, p. 13].
-* The sequence /ii/ shortens to [i] [@ZzaTodd2002, p. 18].
 
 # Misc. Rules
 
+* Word-final /ng/ collapses to [ŋ] [@ZzaTodd2002, p. 12].
 * Vowels become marginally lower and farther back when following a pharyngeal or pharyngealized consonant, or when following /ɫ/ [@ZzaTodd2002, p. 17].
 * Postvocalic /i/ is realized as [j] (ibid.).
 * Epenthesis of [w] occurs between /u/ and front vowels (ibid.).
+* The sequence /ii/ shortens to [i] [@ZzaTodd2002, p. 18].
 
 # References

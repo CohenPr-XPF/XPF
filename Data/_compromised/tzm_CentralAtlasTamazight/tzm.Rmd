@@ -8,7 +8,7 @@ output: html_document
 
 Last Updated: 2020-07-09
 
-**Compromised: Conflation between /l̪/ and /l̪ˤ/, and between /ʒ/ and /ʒˀ/**
+**COMPROMISED: conflation between /l̪/ and /l̪ˤ/, and between /ʒ/ and /ʒˀ/**
 
 # Background
 
@@ -49,12 +49,12 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "P
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 8)) %>%
   column_spec(1, bold = TRUE) %>%
-  footnote(general = "Note: Phonemes with the diacritic (ˤ) are pharyngealized, and phonemes with the diacritic (ʷ) are labialized .", general_title = "")
+  footnote(general = "Note: Phonemes with the diacritic (ˤ) are pharyngealized, and phonemes with the diacritic (ʷ) are labialized.", general_title = "")
 ```  
 
 ## Vowels
 
-* Tamazight does not include diphthongs or vowel clusters [@Kossmann1997, p. 463].
+* Tamazight does not have diphthongs or vowel clusters [@Kossmann1997, p. 463].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -71,9 +71,9 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* Consonants can geminate [@Ridouane2014, p. 209]. Geminate consonants are marked by duplicate graphemes [@haddachi_2000, pp. 2-3].
 * The traditional script of Tamazight reflects the Tifinagh alphabet, but a Romanized script has also gained traction. Both scripts are provided here.
     - Both alphabets pose conflicts with /ʒ/ and /l̪/ and their pharyngealized counterparts, such that the contrast is not maintained. I have chosen to use the non-pharyngealized variants as default in the rules, but this ultimately compromises the language.
+* Consonants can geminate [@Ridouane2014, p. 209]. Geminate consonants are marked by duplicate graphemes [@haddachi_2000, pp. 2-3].
 
 ## Tifinagh Alphabet
 
@@ -97,8 +97,8 @@ Grapheme         Phoneme             Comment
 "ⵅ"              "/x/"                ""
 "ⵇ"              "/q/"                ""
 "ⵉ"              "/i/"                ""
-"ⵊ"            "/ʒ/; /ʒˀ/"       "/ʒ/: default in ruleset"
-"ⵍ"            "/l̪/; /l̪ˤ/"       "/l̪/: default in ruleset"
+"ⵊ"            "/ʒ/; /ʒˀ/"       "/ʒ/: default in rules"
+"ⵍ"            "/l̪/; /l̪ˤ/"       "/l̪/: default in rules"
 "ⵎ"              "/m/"                ""
 "ⵏ"              "/n̪/"                ""
 "ⵓ"              "/u/"                ""
@@ -145,8 +145,8 @@ Grapheme        Phoneme           Comment
 "\'"            "/ʕ/"              ""
 "q"             "/q/"              ""
 "i"             "/i/"              ""
-"j"          "/ʒ/; /ʒˀ/"           "/ʒ/: default in the ruleset"
-"l"          "/l̪/; /l̪ˤ/"           "/l̪/: default in the ruleset"
+"j"          "/ʒ/; /ʒˀ/"           "/ʒ/: default in the rules"
+"l"          "/l̪/; /l̪ˤ/"           "/l̪/: default in the rules"
 "m"             "/m/"              ""
 "n"             "/n̪/"              ""
 "u"             "/u/"              ""

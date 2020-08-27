@@ -7,11 +7,11 @@ output: html_document
 
 Last updated: 2020-03-05
 
-**Slightly Compromised: conflation between /e/ and /ɛ/ and between /o/ and /ɔ/**
+**COMPROMISED: conflation between /e/ and /ɛ/ and between /o/ and /ɔ/**
 
 # Background
 
-**Language family**: Austronesian / Malayo-Polynesian / Oceanic / Kilivila-Misima
+**Language Family:** Austronesian / Malayo-Polynesian / Central-Eastern / Eastern Malayo-Polynesian / Oceanic / Western Oceanic / Papuan Tip / Peripheral / Kilvila-Louisiades / Misima
 
 * Speakers of Misima-Panaeati reside in Papua New Guinea, mostly on Misima Island, which is part of the Calvados Chain. Speakers also live on the nearby Panaeti Island.
 
@@ -19,7 +19,7 @@ Last updated: 2020-03-05
 
 ## Consonants
 
-* For some speakers, /j/ is closer to [ʝ] [@Callister_1993, pp. 5-6].
+* For some speakers, /j/ is realized more closely to [ʝ] [@Callister_1993, pp. 5-6].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -73,30 +73,30 @@ kable(vowels, align = 'c') %>%
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
-Grapheme      Phoneme
-"a"	           "/a/"
-"b"	           "/b/"
-"d"	           "/d̪/"
-"e"	           "/e/; /ɛ/"
-"g"	           "/ɡ/"
-"h"	           "/h/"
-"i"	           "/i/"
-"k"	           "/k/"
-"l"	           "/ɭ/"
-"m"	           "/m/"
-"n"	           "/n̪/"
-"o"	           "/o/; /ɔ/"
-"p"	           "/p/"
-"s"	           "/s̪/"
-"t"	           "/t̪/"
-"u"	           "/u/"
-"v"	           "/β/"
-"w"	           "/w/"
-"y"	           "/j/"
-**Digraph**     ""
-"bw"	         "/bʷ/"
-"mw"	         "/mʷ/"
-"pw"	         "/pʷ/"
+Grapheme      Phoneme                     Comment
+"a"	           "/a/"                        ""
+"b"	           "/b/"                        ""
+"d"	           "/d̪/"                        ""
+"e"	           "/e/; /ɛ/"        "/e/: default in the rules"
+"g"	           "/ɡ/"                        ""
+"h"	           "/h/"                        ""
+"i"	           "/i/"                        ""
+"k"	           "/k/"                        ""
+"l"	           "/ɭ/"                        ""
+"m"	           "/m/"                        ""
+"n"	           "/n̪/"                        ""
+"o"	           "/o/; /ɔ/"         "/o/: default in the rules"
+"p"	           "/p/"                        ""
+"s"	           "/s̪/"                        ""
+"t"	           "/t̪/"                        ""
+"u"	           "/u/"                        ""
+"v"	           "/β/"                        ""
+"w"	           "/w/"                        ""
+"y"	           "/j/"                        ""
+**Digraph**     ""                          ""
+"bw"	         "/bʷ/"                       ""
+"mw"	         "/mʷ/"                       ""
+"pw"	         "/pʷ/"                       ""
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
@@ -110,10 +110,10 @@ kable(alphabet, align = 'c') %>%
 # Misc. Rules
 
 * /n/ is realized as /ŋ/ before velar stops [@Callister_1993, p. 5].
-* /i/ and /u/ will surface as [j] and [w], respectively, when a vowel-initial suffix is added to a stem ending in /i/ or /u/ [@Callister_1993, p. 15].
-* Stem-final /m/ is labialized when followed by a vowel via reduplication or addition of a suffix. This is typically not that case for stem-final /p/ and /b/ [@Callister_1993,p. 15].
+* /i/ and /u/ surface as [j] and [w], respectively, when a vowel-initial suffix is added to a stem ending in /i/ or /u/ [@Callister_1993, p. 15].
+* Stem-final /m/ is labialized when followed by a vowel via reduplication or suffixation. This is typically not the case for stem-final /p/ and /b/ [@Callister_1993,p. 15].
 * Prefixes /pa/ and /ma/ surface as [pʷa] and [mʷa], respectively, when the word stem begins with a labialized consonant or /mu/, /mo/, /bu/ or /bo/ [@Callister_1993, p. 16].
-* /a/ is typically realized as [ʌ]. It is realized as [a] when in a stressed syllable and preceding /β/, /w/, /k/, or /g/. When it is not in a stressed syllable and precedes /m/, /s̪/, /n̪/, or /ɭ/, it is realized as [ə] [@Callister_1993, p. 6].
+* /a/ is typically realized as [ʌ]. It is realized as [a] when in a stressed syllable and preceding /β/, /w/, /k/, or /ɡ/. When it is not in a stressed syllable and precedes /m/, /s̪/, /n̪/, or /ɭ/, it is realized as [ə] [@Callister_1993, p. 6].
 * Stress is phonemic, but stress will not be accounted for here [@SIL_Misima, p. 3].
 * Codas can only be occupied by nasals, /s̪/, /ɭ/, /h/, and nonlabialized stops (excluding /d/) [@Callister_1993, p. 18].
 

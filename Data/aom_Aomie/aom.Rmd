@@ -1,0 +1,121 @@
+---
+title: "Aomie"
+author: "Abi Creighton"
+bibliography: aom.bib
+output: html_document
+---
+
+Last Updated: 2020-08-04
+
+# Background
+
+**Language Family:** Trans-New Guinea / Main Section / Eastern / Central and Southeastern / Koiarian / Baraic
+
+* Aomie, also called Ömie or Omie, is a Trans-New Guinean language spoken along the Mamama River in the Upper Kumusi Valley.
+
+# Phonology
+
+## Consonants
+
+* The contrast between /p/ and /h/ has neutralized for some speakers [@austing_1975, p. 517].
+* Depending on the age and location/dialect of Aomie speakers, contrasts may be made between what have been considered allophones of /p/ and /h/ [@dutton_1969, p. 142]. For example, younger speakers may additionally contrast /pʰ/, /ɸ/, and /f/. I, however, opt to treat these as allophones just as @dutton_1969 as well as @austing_1975 do.
+* /k/ is extremely marginal, often replaced with /ʔ/ [@austing_1975, p. 519].
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"    Labial   Alveolar   Postalveolar  Velar   Glottal
+Stops                       "p b"     "t d"         ""        "k ɡ"     "ʔ"
+Affricates                   ""        ""           "dʒ"       ""       ""
+Fricatives                   "v"       "s"          ""         ""       "h"  
+Nasals                       "m"       "n"          ""         ""       ""
+Flaps                        ""        "ɾ"          ""         ""       ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
+```  
+
+## Vowels
+
+* @austing_1975 include a phonemic mid-central vowel, interpreted as /ə/ (p. 518). However, @dutton_1969 argues that it is actually an allophone of /o/ (although he recognizes its phonemic status in other dialects - e.g. Asapa). I have opted to treat [ə] as allophonic, and not include it below.
+* Based on the syllable structure of Aomie (see Syllable Structure below), vowels that appear adjacent to one another constitute complex phonemes [@austing_1975, p. 518]. Complex nuclei may consist of up to three vowels.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         ""          "u"
+High-Mid      "e"         ""          "o"
+Low-Mid       "æ"         ""          "ɔ"
+Low           ""         "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ie/, /iæ/, /ia/, /io/, /iɔ/, /ae/, /ui/, /ue/, /ua/, /uo/, /uæ/"
+**Triphthongs**
+"/iae/, /iaæ/, /iɔe/, /iɔæ/, /uae/, /uaæ/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```     
+
+# Alphabet
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme      Phoneme                 
+"a"            "/a/"                 
+"b"            "/b/"
+"d"            "/d/"
+"e"            "/e/"     
+"ë"            "/æ/"
+"g"            "/ɡ/"  
+"h"            "/h/"
+"i"            "/i/"   
+"j"            "/dʒ/"
+"k"            "/k/"                       
+"m"            "/m/"                       
+"n"            "/n/"                       
+"o"            "/o/"  
+"ö"            "/ɔ/"
+"p"            "/p/"                       
+"r"            "/ɾ/"                 
+"s"            "/s/"                       
+"t"            "/t/"                       
+"u"            "/u/"                       
+"v"            "/v/"                       
+"\'"           "/ʔ/"                       
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Word-initial syllables consist of either a (C)V or (C)(V)VV structure [@austing_1975, p. 518]. Everywhere else, syllable follow the order C(V)(V)V.
+
+# Misc. Rules
+
+* /v/ is generally realized as [β] or [w] [@austing_1975, pp. 517-518].
+* Labialization and palatalization of consonants occurs in the language [@dutton_1969, p. 142].
+* Glottal stops, although not orthographically marked, predictably precede word-initial vowels [@SIL2004, p. 4].
+
+# References

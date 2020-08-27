@@ -7,11 +7,11 @@ output: html_document
 
 Last Updated: 2020-01-09
 
-**Compromised: conflation among /a/, /æ/, and /ɘ/, between /ɘ/ and /o/, and between /e/ and /ɘ/; ambiguity among long vowels; ambiguity related to whether phonemic (labialized) clusters are always realized as such**
+**COMPROMISED: conflation among /a/, /æ/, and /ɘ/, between /ɘ/ and /o/, and between /e/ and /ɘ/; ambiguity among long vowels; ambiguity related to whether phonemic (labialized) clusters are always realized as such**
 
 # Background
 
-**Language Family**: Torricelli / Kombio-Arapesh / Arapesh
+**Language Family:** Torricelli / Kombio-Arapesh / Arapesh
 
 * Mufian is spoken in the East Sepik province of Papua New Guinea.
 
@@ -19,7 +19,7 @@ Last Updated: 2020-01-09
 
 ## Consonants
 
-* @Conrad1977 do not include the labialized consonants as part of the phonemic inventory, but notes that they contrast with their non-labialized counterparts (p. 3). Given this and that @1992 and @Conrad1978 include them, I have chosen to include them below.
+* @Conrad1977 do not include the labialized consonants as part of the phonemic inventory, but note that they contrast with their non-labialized counterparts (p. 3). Given this and that other sources [e.g. @Conrad1992; @Conrad1978] include them, I have chosen to include them below.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -46,9 +46,9 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* @1992 as well as @Conrad1977 include /ə/ as a phoneme in Mufian (p. 2; p. 3); however, I've opted for /ɘ/ given that @Conrad1978 describe it as a high to mid-central vowel (p. 90).
+* @Conrad1992 as well as @Conrad1977 include /ə/ as a phoneme in Mufian (p. 2; p. 3); however, I've opted for /ɘ/ given that @Conrad1978 describe it as a high to mid-central vowel (p. 90).
 * Adjacent vowels are interpreted as sequences [@Conrad1977, pp. 6-7].
-* The documentation for long vowels is ambiguous. @Conrad1977 state that, although contrastive, they are rather infrequent, citing length for only /i/, /a/, and /æ/ (contrastive occurrences for only /a/ and /æ/) [@Conrad1977, pp. 9-10, 23]. @1992 also lists long vowels, but for /a/, /e/, and /æ/ (p. 2). @1992 also notes that long vowels are transcribed just as short vowels are. Because they are rather infrequent and have a low functional load, I have opted not to include them.
+* The documentation for long vowels is ambiguous. @Conrad1977 state that they are rather infrequent, citing length for only /i/, /a/, and /æ/ (contrastive occurrences for only /a/ and /æ/) [@Conrad1977, pp. 9-10, 23]. @Conrad1992 also lists long vowels, but for /a/, /e/, and /æ/ (p. 2); however, they note that long vowels are transcribed just as short vowels are. Because they are rather infrequent and have a low functional load, I have opted not to include them.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -71,32 +71,32 @@ kable(vowels, align = 'c') %>%
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
-Grapheme      Phoneme  
-"a"        "/a/; /æ/; /ɘ/"
-"b"             "/b/"
-"d"             "/d/"
-"e"           "/e/; /ɘ/"
-"f"             "/f/"
-"g"             "/ɡ/"
-"h"             "/h/"
-"i"             "/i/"
-"k"             "/k/"
-"l"             "/l/"
-"m"             "/m/"
-"n"             "/n/"
-"o"           "/o/; /ɘ/"
-"p"             "/p/"
-"s"             "/s/"
-"t"             "/t/"
-"u"             "/u/"
-"w"             "/w/"
-"\'"            "/ʔ/"
-**Digraph**      ""
-"mb"            "/b/"
-"nd"            "/d/"
-"gw"            "/ɡʷ/"
-"kw"            "/kʷ/"
-"\'w"           "/ʔʷ/"
+Grapheme      Phoneme                      Comment
+"a"        "/a/; /æ/; /ɘ/"       "/a/: default in the rules"
+"b"             "/b/"                        ""
+"d"             "/d/"                        ""
+"e"           "/e/; /ɘ/"         "/e/: default in the rules"
+"f"             "/f/"                        ""
+"g"             "/ɡ/"                        ""
+"h"             "/h/"                        ""
+"i"             "/i/"                        ""
+"k"             "/k/"                        ""
+"l"             "/l/"                        ""
+"m"             "/m/"                        ""
+"n"             "/n/"                        ""
+"o"           "/o/; /ɘ/"           "/o/: default in the rules"
+"p"             "/p/"                        ""
+"s"             "/s/"                        ""
+"t"             "/t/"                        ""
+"u"             "/u/"                        ""
+"w"             "/w/"                        ""
+"\'"            "/ʔ/"                        ""
+**Digraph**      ""                          ""
+"mb"            "/b/"                        ""
+"nd"            "/d/"                        ""
+"gw"            "/ɡʷ/"                       ""
+"kw"            "/kʷ/"                       ""
+"\'w"           "/ʔʷ/"                       ""
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%

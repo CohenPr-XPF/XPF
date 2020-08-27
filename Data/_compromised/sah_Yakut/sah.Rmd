@@ -8,13 +8,13 @@ output: html_document
 
 Last Updated: 2019-08-22
 
-**Slightly Compromised: conflation between /j/ and /j̃/**
+**SLIGHTLY COMPROMISED: conflation between /j/ and /j̃/**
 
 # Background
 
-**Language Family**: Altaic / Turkic / Northern
+**Language Family:** Turkic / Common Turkic / Siberian / Northern / Yukutian
 
-* Also referred to as Sakha, it is spoken in Russia.
+* Also referred to as Sakha, Saxa, Saqa, or Yakutian, it is spoken in Russia.
 
 # Phonology
 
@@ -30,7 +30,7 @@ library(kableExtra)
 
 
 consonants <- read.table(textConnection('
-"Manner of Articulation"   Labial Alveolar Palatal  Velar   Glottal
+"Manner of Articulation" Bilabial Alveolar Palatal  Velar   Glottal
 Stops                      "p b"   "t d"     ""     "k ɡ"     ""
 Affricates                 ""        ""    "cç ɟʝ"   ""       ""
 Fricatives                 ""       "s"      ""     "x ɣ"     "h"
@@ -39,10 +39,10 @@ Flaps                      ""       "ɾ"      ""      ""       ""
 Approximants               ""       "l"     "j j̃"    ""       ""
 '), TRUE)
 
-kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 5)) %>%
-  footnote(general = "Note: From left to right, phonemes in a cell are plain, aspirated, and voiced. The palatal approximant on the right is nasalized.", general_title = "") %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. The palatal approximant on the right is nasalized.", general_title = "") %>%
   column_spec(1, bold = TRUE)
 ```
 
@@ -65,6 +65,7 @@ kable(vowels, align = 'c') %>%
   column_spec(1, bold = TRUE) %>%
   footnote(general = "Note: For phonemes that share a cell, those on the left are unrounded and those on the right are rounded.", general_title = "")
 
+
 diphthongs <- read.table(textConnection('
 Diphthongs
 "/ie/, /yø/, /ɯa/, /uo/"
@@ -76,7 +77,8 @@ kable(diphthongs, align = "c") %>%
 
 # Alphabet
 
-* The distinction between /j/ and /j̃/ is not marked in the orthography [@tolkov_phonetics_2011, p. 2].
+* The distinction between /j/ and /j̃/ is not marked in the orthography [@tolkov_phonetics_2011, p. 2], compromising the language.
+    - /j/ is transcribed by default in the rules, meaning /j̃/ is not represented in the Crúbadán corpus.
 * Graphemes present in loanwords will be included in the transcription only if the corresponding phoneme is also a native phoneme in Yakut.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -94,7 +96,7 @@ Grapheme        Phoneme             Comment
 "ж"              "/ʒ/"       "only used in loanwords"
 "з"              "/z/"       "only used in loanwords"
 "и"	             "/i/"                ""
-"й"            "/j/; /j̃/"             ""
+"й"            "/j/; /j̃/"    "/j/: default in the rules"
 "к"              "/k/"                ""
 "л"	             "/l/"                ""
 "м"	             "/m/"                ""

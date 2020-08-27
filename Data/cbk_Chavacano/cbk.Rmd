@@ -1,0 +1,131 @@
+---
+title: "Chavacano"
+author: "Abi Creighton"
+bibliography: cbk.bib
+output: html_document
+---
+
+Last Updated: 2020-07-27
+
+# Background
+
+**Language Family:** Creole / Spanish based
+
+* Chavacano, also known as Chabacano, is a creole spoken in the Philippines. Zamboanga City holds the highest concentration of speakers.
+
+# Phonology
+
+## Consonants
+
+* Where the Chavacano dialects diverge, I have chosen to follow the analysis done by @mackenzie_2020 and use the Zamboanga dialect for the basis of the phonemic inventory because it is the most widely spoken.
+    - In the Cavite dialect, /ɲ/ and /ʎ/ are not considered phonemic, the tap is retroflex, and the tap and trill are distinct phonemes [@lesho_2013, p. 45-46].
+* /t̪/ and /d̪/ are typically dental as in Spanish, but they can have a more alveolar realization [@lipski_2001, p. 5].
+* The phonemic status of /ʔ/ is up for debate. Although @lesho_2013 lists some sources as including it as a phoneme in different Chavacano dialects [@Ing1968, for example, argues for it in the Zamboanga dialect], he also explains based on work done by e.g. @Ramos1963 that it is mainly only preserved in Tagalog loanwords and predictably accompanies (word-initial) vowels (p. 154). Therefore, I have chosen not to include it below.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial  Dental  Alveolar Palatal Velar Glottal
+Stops                      "p b"   "t̪ d̪"     ""       ""    "k ɡ"   ""           
+Affricates                  ""      ""      "ts"      ""     ""     ""   
+Fricatives                  ""      ""      "s"       ""     ""     "h"
+Nasals                      "m"     ""      "n"       "ɲ"    "ŋ"    ""       
+Taps                        ""      ""      "ɾ"       ""     ""     ""       
+Approximants                ""      ""      "l"      "j ʎ"   "w"    ""   
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Both palatal approximants are voiced, but the one on the right is lateral.", general_title = "")
+```  
+
+## Vowels
+
+* Vowel length is not contrastive in Chavacano [@lesho_2013, p. 51].
+* An accent on a vowel marks stress (ibid.).
+* Diphthongs that occur in the Cavite dialect are listed below. However, as @lesho_2013 states, it can be difficult to reliably mark syllable boundaries and determine whether vowel sequences are diphthongs or two monophthongs (p. 212). Therefore, vowel sequences will not be transcribed as diphthongs in the rules.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central       Back
+High          "i"         ""          "u"
+Mid           "e"         ""          "o"
+Low           ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/ai/, /ei/, /oi/, /au/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```     
+
+# Alphabet
+
+* ⟨f⟩, ⟨v⟩, and ⟨z⟩ are preserved Spanish conventions for representing /p/, /b/, and /s/, respectively [@toribia_1963, p. 673]. I have chosen to include them below and in the rule set, primarily because the name of the language is understood either as Chavacano or Chabacano; the different graphemes appear to be used interchangeably. Considering at least ⟨v⟩ (as opposed to ⟨b⟩) is the grapheme preferred in the Zamboanga dialect (p. 11), it is unclear whether these are merely preserved conventions (e.g. /k/ vs. /q/ both having been introduced through orthographic reforms in Spanish based languages, representing /k/), or only indicative of Spanish loanwords. They also make up a large percentage (20.3%) of the Crúbadán corpus.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme           Comment
+"a"              "/a/"              ""
+"b; v"           "/b/"              ""
+"c"              "/k/; /s/"         "/s/: preceding front vowels [@toribia_1963, 673]"
+"d"              "/d̪/"              ""
+"e"              "/e/"              ""
+"g"              "/ɡ/; /h/"         "/h/: preceding front vowels"
+"h"              ""                 ""
+"i"              "/i/"              ""
+"j"              "/h/"              ""
+"k"              "/k/"              ""
+"l"              "/l/"              ""
+"m"              "/m/"              ""
+"n"              "/n/"              ""
+"ñ"              "/ɲ/"              ""
+"o"              "/o/"              ""
+"p; f"           "/p/"              ""
+"r"              "/ɾ/"              ""
+"s; z"           "/s/"              ""
+"t"              "/t̪/"              ""
+"u"              "/u/"              ""
+"w"              "/w/"              ""
+"x"              "/h/"              ""
+"y"              "/j/"              ""
+**Digraph**      ""                 ""
+"ch"             "/ts/"             ""
+"ll"             "/ʎ/"              ""
+"rr"             "/ɾ/"              ""
+"ng"             "/ŋ/"              ""
+"qu"             "/k/"              "preceding front vowels"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Lenition Rules
+
+* /d̪/ is often deleted intervocalically, especially in the suffix -ado [@lipski_2001, p. 6].
+* Word-final /ɾ/ often surfaces as the glottal stop [@mackenzie_2020].
+
+# Misc. Rules
+
+* The tap and /l/ alternate before accented syllables [@lesho_2013, p. 46].
+* The glottal stop is inserted before a stressed syllable-initial vowel [@mackenzie_2020].
+
+# References

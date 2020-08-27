@@ -1,0 +1,33 @@
+# Ignaciano Rule Set
+# Written by Abi Creighton
+# Last updated: 2020-08-06
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aeikmnpstuv],,,,
+class,apostrophe,['ꞌ‘’],,,,
+class,w-follower,[aáuú],,,,
+# Individual Letters
+sub,á,a,1,,,"accents mark stress (not accounted for in this project)"
+sub,c,k,1,,,
+sub,é,e,1,,,
+sub,h,ʔ,1,,,
+sub,í,i,1,,,
+sub,j,h,1,,,
+sub,ñ,ɲ,1,,,
+sub,r,ɾ,1,,,
+sub,ú,u,1,,,
+sub,y,j,1,,,
+sub,w,v,1,,{w-follower},
+sub,{apostrophe},ʔ,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Multigraphs
+sub,c,tʃ,2,,h,
+sub,h,,2,c,,"clean-up"
+sub,q,k,2,,u,
+sub,u,,2,q,,"clean-up"
+sub,s,ʃ,2,,h,
+sub,h,,2,s,,"clean-up"
+sub,t,ts,2,,s,
+sub,s,,2,t,,"clean-up"
+# Misc. Rules
+sub,-,,1,,,

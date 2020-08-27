@@ -5,13 +5,13 @@ bibliography: chf.bib
 output: html_document
 ---
 
-Last updated: 2020-04-30
+Last updated: 2020-06-26
 
-**Compromised: Conflation between stop-glottal stop sequences and ejectives**
+**COMPROMISED: Conflation between stop-glottal stop sequences and ejectives**
 
 # Background
 
-**Language family**: Mayan / Cholan-Tzeltalan / Cholan / Chol-Chontal
+**Language Family:** Mayan / Cholan-Tzeltalan / Cholan / Chol-Chontal
 
 * Tabasco Chontal is spoken in the state of Tabasco, located in southern Mexico.
 
@@ -31,9 +31,9 @@ library(kableExtra)
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Bilabial  Dental  Alveolar  Postalveolar  Palatal  Velar   Glottal
 "Stops (plain)"             "p b"     "t̪ d̪"     ""          ""          ""     "k"      "ʔ"
-"Stops (ejective)"           "p’"      "t̪’"     ""          ""          ""     "k’"     ""
+"Stops (ejective)"           "pʼ"      "t̪ʼ"     ""          ""          ""     "kʼ"     ""
 "Affricates (plain)"         ""        ""      "ts"        "tʃ"         ""      ""      ""
-"Affricates (ejective)"      ""        ""      "ts’"       "tʃ’"        ""      ""      ""
+"Affricates (ejective)"      ""        ""      "tsʼ"       "tʃʼ"        ""      ""      ""
 Fricatives                   ""        ""       "s"         "ʃ"         ""      ""      "h"
 Nasals                       "m"       ""       "n"         ""          ""      ""      ""
 Flaps                        ""        ""       "ɾ"         ""          ""      ""      ""
@@ -49,7 +49,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Dental", 
 
 # Vowels
 
-* @Keller1959 and @Keller1997 indicate a central vowel in Tabasco Chontal; however @Keller1959 uses /ə/ whereas @Keller1997 uses the equivalent of /ɨ/ (p. 44; p. 419). @Keller1959 doesn't give the impression that this central vowel is truly reduced or of the same quality as schwa, stating that it is slightly lower than the high vowels. Therefore, I've opted to use /ɘ/.
+* @Keller1959 as well as @Keller1997 indicate a central vowel in Tabasco Chontal; however, @Keller1959 uses /ə/ whereas @Keller1997 use the equivalent of /ɨ/ (p. 44; p. 419). @Keller1959 doesn't give the impression that this central vowel is truly reduced or of the same quality as schwa, stating that it is slightly lower than the high vowels. Therefore, I've opted to use /ɘ/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -67,7 +67,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* It appears there is some contrast between ejectives and stop-glottal stop sequences, which is indistinguishable orthographically, compromising the language [@Keller1959, p. 46]. In the rules, I have opted to prioritize ejectives, that is e.g. ⟨t'⟩ transcribes to /t̪’/ rather than /t̪ʔ/.
+* It appears that there is some contrast between ejectives and stop-glottal stop sequences, which is indistinguishable orthographically, compromising the language [@Keller1959, p. 46]. In the rules, I have opted to prioritize ejectives, that is e.g. ⟨t'⟩ transcribes to /t̪ʼ/ rather than /t̪ʔ/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -77,7 +77,7 @@ Grapheme        Phoneme             Comment
 "ä"              "/ɘ/"                ""
 "b"              "/b/"                ""
 "c"              "/k/"                ""
-"c\'"            "/k’/"               ""
+"c\'"            "/kʼ/"               ""
 "d"              "/d̪/"                ""
 "e"              "/e/"                ""
 "i"              "/i/"                ""
@@ -87,11 +87,11 @@ Grapheme        Phoneme             Comment
 "n"              "/n/"                ""
 "o"              "/o/"                ""
 "p"              "/p/"                ""
-"p\'"            "/p’/"               ""
+"p\'"            "/pʼ/"               ""
 "r"              "/ɾ/"                ""
 "s"              "/s/"                ""
 "t"              "/t̪/"                ""
-"t\'"            "/t̪’/"               ""
+"t\'"            "/t̪ʼ/"               ""
 "u"              "/u/"                ""
 "w"              "/w/"                ""
 "x"              "/ʃ/"                ""
@@ -99,11 +99,11 @@ Grapheme        Phoneme             Comment
 "\'"             "/ʔ/"                ""
 **Digraph**       ""                  ""
 "ch"             "/tʃ/"               ""
-"ch\'"           "/tʃ’/"              ""
+"ch\'"           "/tʃʼ/"              ""
 "qu"             "/k/"          "preceding front vowels"
-"q\'u"           "/k’/"         "preceding front vowels"
+"q\'u"           "/kʼ/"         "preceding front vowels"
 "tz"             "/ts/"               ""
-"tz\'"           "/ts’/"              ""
+"tz\'"           "/tsʼ/"              ""
 '), TRUE)
 
 kable(alphabet, align = "c") %>%
@@ -116,12 +116,10 @@ kable(alphabet, align = "c") %>%
 
 # Lenition Rules
 
-* Syllable-finally /b/ is realized as [ʔ] [@Keller1959, p. 46].
+* Syllable-finally, /b/ is realized as [ʔ] [@Keller1959, p. 46].
 * Duplicate consonants are generally avoided, with the first consonant being realized as [h] [@Keller1997, p. 421].
     - ⟨bb⟩ is realized as [ʔb].
-* /h/ is often elided preceding a glottal stop [@Keller1997, p. 421].
 * Ejectives occurring as the first consonant in a cluster may be realized as a glottal stop [@Keller1997, pp. 421-422].
-* One vowel in a vowel sequence is often elided; generally it's the first [@Keller1997, p. 423].
 
 # Misc. Rules
 
@@ -132,7 +130,9 @@ kable(alphabet, align = "c") %>%
 * /n/ assimilates in place preceding velar stops [@Keller1959, pp. 47-48].
     - In fast speech /n/ is realized as [m] preceding bilabial stops.
 * Vowels tend to become nasalized and lengthened preceding /n/ [@Keller1959, p. 48].
-* Words written with initial vowels have unwritten /ʔ/ preceding them [@Galvan2013, p. 16].
+* Words written with initial vowels have glottal stops predictably preceding them [@Galvan2013, p. 16].
+* /h/ is often elided preceding a glottal stop [@Keller1997, p. 421].
 * ⟨eu⟩ and ⟨au⟩ generally coalesce into [o] [@Keller1997, p. 423].
+* One vowel in a vowel sequence is often elided; generally it's the first (ibid.).
 
 # References

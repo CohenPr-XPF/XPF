@@ -5,14 +5,13 @@ bibliography: mnb.bib
 output: html_document
 ---
 
-Last Updated: 2019-11-19
+Last Updated: 2020-07-01
 
-
-**Compromised: Crúbadán seems to represent a different dialect possibly (apostrophes occur more often then dictated by the documentation and the uvular fricative is not represented). No additional information could be found to determine which dialect is represented, so I'm classifying this language as compromised**
+**COMPROMISED: Crúbadán seems to represent a different dialect possibly (apostrophes occur more often than what is dictated by the documentation and the uvular fricative is not represented). No additional information could be found to determine which dialect is represented, so I'm classifying this language as compromised**
 
 # Background
 
-**Language Family**: Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Sulawesi / Muna-Buton / Muna
+**Language Family:** Austronesian / Malayo-Polynesian / Western Malayo-Polynesian / Sulawesi / Muna-Buton / Muna
 
 * Muna is spoken throughout the Muna and Buton islands, located in the Philippines.
 
@@ -47,8 +46,8 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 ## Vowels
 
 * Vowel sequences are interpreted as such, rather than complex nuclei [@vandenBerg1989, p. 25].
-* Sequences of like vowels also occur in the language. The may be realized phonetically long as a result of stress patterns, but they are not phonemic [@vandenBerg1989, p. 26].
-* Although rare, sequences of three vowels also occur. An optional glottal stop (sometimes marked as an apostrophe) may be epenthesized between the first two vowels [@vandenBerg1989, p. 27].
+    - Sequences of like vowels also occur in the language. The may be realized phonetically long as a result of stress patterns, but they are not phonemic [@vandenBerg1989, p. 26].
+    - Although rare, sequences of three vowels also occur. An optional glottal stop (sometimes marked as an apostrophe) may be epenthesized between the first two vowels [@vandenBerg1989, p. 27].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -66,43 +65,43 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* ⟨j⟩ is often used in Indonesian loanwords. Pronunciation varies widely between [d̪], [ɟ], and [dʒ] [@vandenBerg1989, p. 18].
+* ⟨j⟩ is often used in Indonesian loanwords [@vandenBerg1989, p. 18]. Realization varies widely between [d̪], [ɟ], and [dʒ].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
-Grapheme         Phoneme
-"a"               "/a/"
-"b"               "/b/"
-"d"               "/d/"
-"e"               "/ɛ/"
-"f"               "/f/"
-"g"               "/ɡ/"
-"h"               "/h/"
-"i"               "/i/"
-"k"               "/k/"
-"l"               "/l/"
-"m"               "/m/"
-"n"               "/n/"
-"o"               "/ɔ/"
-"p"               "/p/"
-"r"               "/r/"
-"s"               "/s/"
-"t"               "/t/"
-"u"               "/u/"
-"w"               "/w/"
-**Multigraph**     ""
-"mp"              "/ᵐp/"
-"mb"              "/ᵐb/"
-"bh"              "/ɓ/"
-"dh"              "/d̪/"
-"gh"              "/ʁ/"
-"nt"              "/ⁿt/"
-"nd"              "/ⁿd/"
-"ns"              "/ⁿs/"
-"ng"              "/ŋ/"
-"ngk"             "/ᵑk/"
-"ngg"             "/ᵑɡ/"
+Grapheme         Phoneme                   Comment
+"a"               "/a/"                      ""
+"b"               "/b/"                      ""
+"d"               "/d/"                      ""
+"e"               "/ɛ/"                      ""
+"f"               "/f/"                      ""
+"g"               "/ɡ/"                      ""
+"h"               "/h/"                      ""
+"i"               "/i/"                      ""
+"k"               "/k/"                      ""
+"l"               "/l/"                      ""
+"m"               "/m/"                      ""
+"n"               "/n/"                      ""
+"o"               "/ɔ/"                      ""
+"p"               "/p/"                      ""
+"r"               "/r/"                      ""
+"s"               "/s/"                      ""
+"t"               "/t/"                      ""
+"u"               "/u/"                      ""
+"w"               "/w/"                      ""
+**Multigraph**     ""                        ""
+"mp"              "/ᵐp/"                     ""
+"mb"              "/ᵐb/"                     ""
+"bh"              "/ɓ/"                      ""
+"dh"              "/d̪/"                      ""
+"gh"              "/ʁ/"       "not represented in the Crúbadán corpus"
+"nt"              "/ⁿt/"                     ""
+"nd"              "/ⁿd/"                     ""
+"ns"              "/ⁿs/"                     ""
+"ng"              "/ŋ/"                      ""
+"ngk"             "/ᵑk/"                     ""
+"ngg"             "/ᵑɡ/"                     ""
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
@@ -113,17 +112,14 @@ kable(alphabet, align = 'c') %>%
 
 * Syllables in Muna follow the order of (C)V [@vandenBerg1989, p. 24].
 
-# Lenition Rules
-
-* Just like other Austronesian languages, Muna underwent the loss of final consonants, resulting in the syllable structure it has today [@Blevins2004, pp. 208, 210].
-
 # Misc. Rules
 
+* Just like other Austronesian languages, Muna underwent the loss of final consonants, resulting in the syllable structure it has today [@Blevins2004, pp. 208, 210].
 * /w/ is often realized as the labio-dental approximant [ʋ], especially preceding /a/, /ɛ/, and /ɔ/ [@vandenBerg1989, p. 17].
 * /w/ varies freely with [β] preceding /u/ [@vandenBerg1989, p. 18].
 * /d/ may be realized as an implosive mainly preceding /a/, /i/, and /ɛ/ [@vandenBerg1989, p. 19].
 * /k/ and /ɡ/ are fronted preceding front vowels and backed preceding back vowels [@vandenBerg1989, pp. 19-20].
-* /ɛ/ and /ɔ/ are realized as [e] and [o] preceding when adjacent to another vowel [@vandenBerg1989, p. 21].
+* /ɛ/ and /ɔ/ are realized as [e] and [o] when adjacent to another vowel [@vandenBerg1989, p. 21].
 * Glottal stops may be epenthesized word-initially preceding vowels [@vandenBerg1989, p. 21].
 
 # References

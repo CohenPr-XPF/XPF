@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-07-29
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules
 class,apostrophe,['ꞌˈ‘’],,,,
 class,vowel,[aio],,,,
 class,a,[a̲a̧],,,,"including transcriptions for nasals"
@@ -36,3 +36,4 @@ ipasub,({vowel}) \1,\1 ː,3,,,
 # Misc. Rules
 ipasub,({vowel}) o2,\1 n,4,,,"the program behaves weirdly with underlined or hooked vowels; this rule allows us to work around that"
 sub,({passthrough}),\1,0.1,,,
+ipasub,-,,1,,,

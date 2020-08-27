@@ -1,8 +1,8 @@
 # Mapudungun Rule Set
 # Written by: Emily
-# Last Updated: 2019-10-01
+# Last Updated: 2020-04-15
 type,sfrom,sto,weight,precede,follow,comment
-# Classes
+# Class Rules 
 class,passthrough,[aefiklmnopstuw],,,,
 class,gem,(p|t̪|t|k|m|n̪|n|ɲ|ŋ|tʃ|ʈʂ|f|θ|s|ʃ|ʐ|ɣ|l̪|l|j|ʎ|w),,,,
 # Individual Letters
@@ -39,8 +39,8 @@ sub,n,n̪,3,,h,
 sub,h,,3,n,,"clean-up",
 sub,q,ɣ,2,,,
 sub,b,l̪,2,,,
-sub,l,l̪,3,,l,
-sub,l,,3,h,,"clean-up",
+sub,l,l̪,3,,h,
+sub,h,,3,l,,"clean-up",
 sub,j,ʎ,2,,,
 sub,v,ɘ,2,,,
 # Geminates

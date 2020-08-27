@@ -7,11 +7,11 @@ output: html_document
 
 Last updated: 2019-10-04
 
-**Slightly Compromised: Crúbadán doesn't distinguish orthographically between retroflex and alveolar consonants; conflation between /u/ and /w/ and between /u/ and /o/**
+**COMPROMISED: Crúbadán doesn't distinguish orthographically between retroflex and alveolar consonants; conflation between /u/ and /w/ and between /u/ and /o/**
 
 # Background
 
-**Language family**: Panoan / Northern
+**Language Family:** Panoan / Northern
 
 * Also referred to as Mayoruna, Matsés is spoken along the border of Brazil and Peru.
 
@@ -63,8 +63,8 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* There may be some conflation among the retroflex and alveolar consonants, given that some orthographies don't make a distinction between them [@Fleck2003, p. 84].
-* There may also be some conflation with /u/ and /w/ and with /o/ and /u/ given that in some documentation, they are represented by ⟨u⟩ and ⟨o⟩ [@Fleck2003, pp. 64 91].
+* There may be some conflation among the retroflex and alveolar consonants, given that some orthographies don't make a distinction between them [@Fleck2003, p. 84]. **The Crúbadán corpus does not represent the retroflex consonants.**
+* There may also be some conflation between /u/ and /w/ and between /o/ and /u/ given that in some documentation, both pairs are represented by ⟨u⟩ and ⟨o⟩, respectively [@Fleck2003, pp. 64 91].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -85,7 +85,7 @@ Grapheme        Phoneme           Comment
 "s"              "/s/"              ""
 "t"              "/t/"              ""
 "u"              "/u/"              ""
-"w"              "/w/"              ""
+"w"              "/w/"  "**not represented in the Crúbadán corpus**"
 "y"              "/j/"              ""
 **Digraph**       ""                ""
 "sh"             "/ʃ/"              ""
@@ -108,8 +108,8 @@ kable(alphabet, align = 'c') %>%
 
 # Misc. Rules
 
-* /n/ assimilates to the place of articulation preceding velar and bilabial stops [@Fleck2003, p. 62].
 * /k/ is the only stop that can geminate, realized phonetically as a glottal stop followed by /k/ [@Fleck2003, p. 76].
+* /n/ assimilates to the place of articulation of following velar and bilabial stops [@Fleck2003, p. 78].
 * /n/ can geminate, while /m/ does not [@Fleck2003, p. 79].
 * Fricatives can geminate, whereas affricates and approximants don't [@Fleck2003, pp. 84, 87, 88].
 * /i/ and /u/ are realized as [j] and [w] respectively preceding or following vowels (not intervocalically) [@Fleck2003, p. 95].

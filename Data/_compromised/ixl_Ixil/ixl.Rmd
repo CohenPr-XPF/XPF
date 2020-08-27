@@ -7,11 +7,11 @@ output: html_document
 
 Last updated: 2020-02-18
 
-**Slightly Compromised: word-initial glottal stop not always marked; slightly ambiguous orthography**
+**SLIGHTLY COMPROMISED: word-initial glottal stop not always marked; slightly ambiguous orthography**
 
 # Background
 
-**Language family**: Mayan/ Quichean-Mamean / Greater Mamean / Ixilan
+**Language Family:** Mayan/ Quichean-Mamean / Greater Mamean / Ixilan
 
 * Ixil is spoken in the Quiché department of Guatemala.
 * The Chajul dialect (as opposed to the Nebaj dialect) is represented below (i.e. the Crúbadán corpus reflects it better).
@@ -20,7 +20,7 @@ Last updated: 2020-02-18
 
 ## Consonants
 
-* Chajul Ixil is rather unique in that it has alveo-postalveolar consonants, which are said not to be represented in any other language [@Adell2019, p. 62]. In terms of the terminology and IPA symbols, I have chosen to use those represented in both @Adell2019 (p. 38) and @Adell2016 (p. 3).
+* Chajul Ixil is rather unique in that it has alveo-postalveolar consonants, which are said not to be present in any other language [@Adell2019, p. 62]. In terms of the terminology and IPA symbols, I have chosen to use those represented in both @Adell2019 (p. 38) and @Adell2016 (p. 3).
 * /q/ is said to be undergoing sound change to /χ/, so the phonemic status of /χ/ is somewhat unclear [@Adell2019, p. 83]. @Ayres1991 treats it as a distinct phoneme (p. 2); however, @Adell2019 does not, stating that, depending on the age group, speakers often treat it as if it's in free variation with /q/ (p. 86).
       - With such sound change, /χ/, especially with younger generations, is said to be merging with /h/.
       - I have chosen to follow the more recent source, not treating /χ/ as a distinct phoneme [@Adell2019, p. 38].
@@ -35,8 +35,8 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial   Alveolar  Alveo-Postalveolar  Postalveolar  Retroflex  Palatal  Velar    Uvular  Glottal   
-Stops                      "p ɓ"     "t t’"          ""                ""          ""        ""     "k k’"   "q q’"    "ʔ"
-Affricates                  ""      "ts ts’"      "tsʃ tsʃ’"         "tʃ tʃ’"    "ʈʂ ʈʂ’"    ""      ""        ""      ""
+Stops                      "p ɓ"     "t tʼ"          ""                ""          ""        ""     "k kʼ"   "q qʼ"    "ʔ"
+Affricates                  ""      "ts tsʼ"      "tsʃ tsʃʼ"         "tʃ tʃʼ"    "ʈʂ ʈʂʼ"    ""      ""        ""      ""
 Fricatives                  ""        "s"           "sʃ"               ""          "ʂ"       ""      ""        ""     "h"
 Nasals                      "m"       "n"            ""                ""          ""        ""      ""        ""      ""
 Flaps                       ""        "ɾ"            ""                ""          ""        ""      ""        ""      ""
@@ -87,18 +87,18 @@ Grapheme       Phoneme
 "i"            "/i/"
 "j"            "/h/"
 "k"            "/k/"
-"k\'"          "/k’/"
+"k\'"          "/kʼ/"
 "l"            "/l/"
 "m"            "/m/"
 "n"            "/n/"
 "o"            "/o/"
 "p"            "/p/"
 "q"            "/q/"
-"q\'"          "/q’/"
+"q\'"          "/qʼ/"
 "r"            "/ɾ/"
 "s"            "/s/"
 "t"            "/t/"
-"t\'"          "/t’/"
+"t\'"          "/tʼ/"
 "u"            "/u/"
 "v"            "/ʋ/"
 "x"            "/ʂ/"
@@ -106,13 +106,13 @@ Grapheme       Phoneme
 "\'"           "/ʔ/"
 **Multigraph**  ""
 "ch"           "/tʃ/"
-"ch\'"         "/tʃ’/"
+"ch\'"         "/tʃʼ/"
 "tch"          "/tsʃ/"
-"tch\'"        "/tsʃ’/"
+"tch\'"        "/tsʃʼ/"
 "tx"           "/ʈʂ/"
-"tx\'"         "/ʈʂ’/"
+"tx\'"         "/ʈʂʼ/"
 "tz"           "/ts/"
-"tz\'"         "/ts’/"
+"tz\'"         "/tsʼ/"
 "xh"           "/sʃ/"
 '), TRUE)
 

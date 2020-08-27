@@ -5,13 +5,13 @@ bibliography: sk.bib
 output: html_document  
 ---
 
-Last updated: 2019-07-26
+Last Updated: 2020-07-02
 
-**Compromised: orthography unreliably marks palatal consonants; ambiguity in terms of when a digraph represents one phoneme or two**  
+**COMPROMISED: orthography unreliably marks palatal consonants; ambiguity in terms of when a digraph represents one phoneme or two**  
 
 # Background  
 
-**Language Family**: Indo-European / Slavic / West/ Czech-Slovak  
+**Language Family:** Indo-European / Slavic / West / Czech-Slovak  
 
 * Also known as Slovakian, it is predominantly spoken in Slovakia, but also in Canada, Hungary, Poland, Romania, Ukraine, and the U.S.
 
@@ -19,8 +19,8 @@ Last updated: 2019-07-26
 
 ## Consonants  
 
-* @rubach_lexical_1993 states that the palatal consonants of ⟨ť⟩, ⟨ď⟩, ⟨ľ⟩, and ⟨ň⟩ are in fact prepalatal (p. 30); however, given that @hanulikova_slovak_2010 and @short_slovak_1993 didn't make this distinction, I went with the standard palatal IPA symbols (p. 374; p. 535).  
-* [@hanulikova_slovak_2010] makes the point that even though [lː] and [rː] are often considered allophones of /l/ and /r/ respectively, they don't appear in complementary distribution (p. 374). Based on this, I will keep the phonemic distinction.  
+* @rubach_lexical_1993 states that the palatal consonants of ⟨ť⟩, ⟨ď⟩, ⟨ľ⟩, and ⟨ň⟩ are in fact pre-palatal (p. 30); however, given that @hanulikova_slovak_2010 and @short_slovak_1993 don't make this distinction (p. 374; p. 535), I have opted to use the standard palatal IPA symbols.  
+* @hanulikova_slovak_2010 point out that even though /lː/ and /rː/ are often considered allophones of /l/ and /r/ respectively, they don't appear in complementary distribution (p. 374). Based on this, I have opted to keep the phonemic distinction.  
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -42,15 +42,14 @@ Approximants               ""      "l lː"        ""           "j ʎ"    ""     
 kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Laryngeal"), align = 'c') %>%
   kable_styling("bordered") %>%
   add_header_above(c("", "Place of Articulation" = 6)) %>%
-  footnote("Note: For phonemes that share a cell, those on the left are voiceless, whereas those on the right are voiced. Both palatal approximants are voiced, but the one on the right is lateral. Both alveolar trills and approximants are voiced, but the ones on the right are phonemically long.", general_title = "") %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced. Both palatal approximants are voiced, but the one on the right is lateral. Both alveolar trills and approximants are voiced, but the ones on the right are phonemically long.", general_title = "") %>%
   column_spec(1, bold = TRUE)
 ```
 
 ## Vowels  
 
-* @hanulikova_slovak_2010 and @short_slovak_1993 express that /æ/ (⟨ä⟩) is virtually obsolete in the language and is realized more often as /ɛ/ (p. 375; p. 534). Therefore, I will use /ɛ/ to represent the grapheme ⟨ä⟩.  
+* @hanulikova_slovak_2010 as well as @short_slovak_1993 express that /æ/ (⟨ä⟩) is virtually obsolete in the language and is realized more often as /ɛ/ (p. 375; p. 534). Therefore, I have chosen to use /ɛ/ to represent the grapheme ⟨ä⟩.  
 * Slovak makes a distinction between long and short vowels [@hanulikova_slovak_2010, p. 534]. Long vowels are indicated with acute accents (´).  
-* /ʊɔ/ is the only dipthong that is realized by an individual grapheme [@hanulikova_slovak_2010, p. 376].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('
@@ -76,74 +75,73 @@ kable(diphthongs, align = 'c') %>%
 
 # Alphabet  
 
-* Regarding the graphemes of the palatal consonants ⟨ť⟩, ⟨ď⟩, ⟨ľ⟩, and ⟨ň⟩, the diacritics aren't present when preceding front vowels [@rubach_lexical_1993, p. 30]. This creates ambiguity with the transcription, and is therefore somewhat compromised.
-* Graphemes containing two characters (ie. dz) represent one phoneme when not situated at a morpheme boundary. If situated at a morpheme boundary, they are independent graphemes [@altmann_phoneme-grapheme_2008, p. 80].  
-* Notice that the uppercase correspondents of ⟨d'⟩ and ⟨tˈ⟩ are ⟨Ď⟩ and ⟨Ť⟩.
+* Regarding the graphemes of the palatal consonants ⟨ť⟩, ⟨ď⟩, ⟨ľ⟩, and ⟨ň⟩, the diacritics aren't present when preceding front vowels [@rubach_lexical_1993, p. 30]. This creates ambiguity with the transcription, compromising the language. In the rules, alveolar consonants are transcribed by default preceding front vowels.
+* Graphemes containing two characters (e.g. ⟨dz⟩) represent one phoneme when not situated at a morpheme boundary, and two when situated at a morpheme boundary [@altmann_phoneme-grapheme_2008, p. 80]. Therefore, it is unclear when such digraphs represent one phoneme or two. The rules prioritize the transcription of one phoneme (e.g. /dz/) as opposed to a sequence (e.g. /d z/), but this further compromises the language.   
+* The uppercase correspondents of ⟨d'⟩ and ⟨tˈ⟩ are ⟨Ď⟩ and ⟨Ť⟩.
+* Notice that /ʊɔ/ is the only diphthong realized by an individual grapheme [@hanulikova_slovak_2010, p. 376].
+
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
-Uppercase     Lowercase        Phoneme         Comment
-"A"              "a"            "/a/"            ""
-"Á"              "á"            "/aː/"           ""
-"Ä"              "ä"            "/ɛ/"            ""
-"B"              "b"            "/b/"            ""
-"C"              "c"            "/ts/"           ""
-"Č"              "č"            "/tʃ/"           ""
-"D"              "d"            "/d/"            ""
-"Ď"              "ď"            "/ɟ/"            ""
-"E"              "e"            "/ɛ/"            ""
-"É"              "é"            "/ɛː/"           ""
-"F"              "f"            "/f/"            ""
-"G"              "g"            "/ɡ/"            ""
-"H"              "h"            "/ɦ/"            ""
-"I"              "i"            "/i/"            ""
-"Í"              "í"            "/iː/"           ""
-"J"              "j"            "/j/"            ""
-"K"              "k"            "/k/"            ""
-"L"              "l"            "/l/"            ""
-"Ĺ"              "ĺ"            "/lː/"           ""
-"L\'"            "ľ"            "/ʎ/"            ""
-"M"              "m"            "/m/"            ""
-"N"              "n"            "/n/"            ""
-"Ň"              "ň"            "/ɲ/"            ""
-"O"              "o"            "/ɔ/"            ""
-"Ó"              "ó"            "/ɔː/"           ""
-"Ô"              "ô"            "/ʊɔ/"           ""
-"P"              "p"            "/p/"            ""
-"Q"              "q"          "/k/; /kv/"  "/kv/: only in loanwords"  
-"R"              "r"            "/r/"            ""
-"Ŕ"              "ŕ"            "/rː/"           ""
-"S"              "s"            "/s/"            ""
-"Š"              "š"            "/ʃ/"            ""
-"T"              "t"            "/t/"            ""
-"Ť"              "tˈ"           "/c/"            ""
-"U"              "u"            "/u/"            ""
-"Ú"              "ú"            "/uː/"           ""
-"V"              "v"          "/v/; /w/"    "/w/: only in loanwords"  
-"W"              "w"            "/v/"            ""
-"X"              "x"         "/ks/; /gz/"   "/gz/: only in loanwords"
-"Y"              "y"            "/i/"            ""
-"Ý"              "ý"            "/iː/"           ""
-"Z"              "z"            "/z/"            ""
-"Ž"              "ž"            "/ʒ/"            ""
-**Digraph**      ""              ""              ""
-"Dz"             "dz"           "/dz/"           ""
-"Dž"             "dž"           "/dʒ/"           ""
-"CH"             "ch"           "/x/"            ""
+Grapheme      Phoneme         Comment
+"a"            "/a/"            ""
+"á"            "/aː/"           ""
+"ä"            "/ɛ/"            ""
+"b"            "/b/"            ""
+"c"            "/ts/"           ""
+"č"            "/tʃ/"           ""
+"d"            "/d/"            ""
+"ď"            "/ɟ/"            ""
+"e"            "/ɛ/"            ""
+"é"            "/ɛː/"           ""
+"f"            "/f/"            ""
+"g"            "/ɡ/"            ""
+"h"            "/ɦ/"            ""
+"i"            "/i/"            ""
+"í"            "/iː/"           ""
+"j"            "/j/"            ""
+"k"            "/k/"            ""
+"l"            "/l/"            ""
+"ĺ"            "/lː/"           ""
+"ľ"            "/ʎ/"            ""
+"m"            "/m/"            ""
+"n"            "/n/"            ""
+"ň"            "/ɲ/"            ""
+"o"            "/ɔ/"            ""
+"ó"            "/ɔː/"           ""
+"ô"            "/ʊɔ/"           ""
+"p"            "/p/"            ""
+"q"          "/k/; /kv/"  "/kv/: only in loanwords"  
+"r"            "/r/"            ""
+"ŕ"            "/rː/"           ""
+"s"            "/s/"            ""
+"š"            "/ʃ/"            ""
+"t"            "/t/"            ""
+"ť"            "/c/"            ""
+"u"            "/u/"            ""
+"ú"            "/uː/"           ""
+"v"          "/v/; /w/"    "/w/: only in loanwords"  
+"w"            "/v/"            ""
+"x"         "/ks/; /ɡz/"   "/ɡz/: only in loanwords"
+"y"            "/i/"            ""
+"ý"            "/iː/"           ""
+"z"            "/z/"            ""
+"ž"            "/ʒ/"            ""
+**Digraph**    ""               ""              
+"dz"           "/dz/"           ""
+"dž"           "/dʒ/"           ""
+"ch"           "/x/"            ""
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
-  kable_styling("bordered") %>%
-  add_header_above(c("Grapheme" = 2, "", ""))
+  kable_styling("bordered")
 ```
 
 # Lenition Rules
 
 * /ɡ/ spirantizes to [ɣ] [@short_slovak_1993, p. 536]
 * /v/ approximates to [ʋ] in syllable onsets preceding a vowel or liquid [@hanulikova_slovak_2010, p. 374]. It also approximates to [ʋ] or [w] in coda positions.
-* Long vowels shorten if preceded by a long vowel and glides [@rubach_lexical_1993, pp. 43-4].
-* In verbs, the preceding vowel in a vowel cluster deletes [@rubach_lexical_1993, p. 45].
 
 # Misc. Rules
 
