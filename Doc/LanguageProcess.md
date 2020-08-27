@@ -8,34 +8,34 @@
 * Our interest in languages is dictated by (a) the availability of
   word lists (e.g. from Crubadan, Open Subtitles), (b) the
   transparency of the alphabet, (c) language family diversity, and (d)
-  good documentation on the phonology of the language. 
+  good documentation on the phonology of the language.
 
 * All the files should be saved in utf8 encoding
-  
+
 # Language processing stages
 
 ## Data collection
 
 * Collect all major available data from public sources. Internet
   source should be printed to PDF. Prominent sources include
-  
-    * Ethnologue, e.g. https://www.ethnologue.com/language/quz
-	
+
+  * Ethnologue, e.g. https://www.ethnologue.com/language/quz
+
 	* Glottologue, e.g. https://glottolog.org/resource/languoid/id/cusc1236
-	
+
 	* Wikipedia, e.g. https://en.wikipedia.org/wiki/Cusco_Quechua
-	
-    Ideally, those sources should not be used directly, but refer to
-    other sources that can more legitimately be cited (books,
+
+    Ideally, these sources should not be used directly, and
+    other sources should be used that can be more legitimately cited (books,
     articles).
-	
+
 	A decent source for verification is Wiktionary, which often
-    contains a number of words and their pronunication in different
-    languages. Such form could be fairly annotation specific (at least
-    in English there are several options) and are likely to be
+    contains a number of words and their pronunciations in different
+    languages. Such forms could be fairly annotation specific (e. g.
+    English has several options) and are likely to be
     phonetic rather than phonemic
-	
-	
+
+
 * All pdfs, scanned and otherwise, should be kept under
   /Scans/pdfs/_Language code and name_, e.g. `Scans/pdfs/ro_Romanian`
 
@@ -45,7 +45,7 @@
   resources). Zotero can be used to handle most of this work,
   especially for urls. A .bib file is a text file that contains
   bibliographic entries such as:
-  
+
     ```
   @misc{GlottologCuscoQuechua,
         title = {Glottolog 3.3 - {Cusco} {Quechua}},
@@ -80,48 +80,48 @@
 	---
 	title: Cusco Quechua
 	---
-	
-	# Background 
-	
+
+	# Background
+
 	**Language family**: Quechuan / Quechua II / Southern Quechua / Cusco Quechua
-	
+
 	...
-	
+
 	# Phonology
-	
+
 	## Consonants
-	
+
 	...
-	
+
 	## Vowels
-	
+
 	...
-	
+
 	# Alphabet
-	
+
 	...
-	
+
 	# Rules
-	
+
 	(an abstract representation of the rules you come up with)
     ```
 
 * A complete language should have at least the following files
 
 	_langcode_.Rmd
-	
+
 	: The documentation of the language
-	
+
 	_langcode_.bib
-	
+
 	: The bibliography used for the documentation and rules
-	
+
 	_langcode_.rules
-	
+
 	: Rules to translate the language, as defined below
-	
+
 	_langcode_.verify
-	
+
 	: Sample word to ipa translations
 
 # Directory
@@ -167,17 +167,17 @@ word,1,u n o,,,,
 
 : specifies the rules file (as described above), which should be in
   csv format. #-initial lines are ignored.
-  
--v 
+
+-v
 
 : specifies the log level (higher → more information)
 
--c 
+-c
 
 : specifies the verification file, which should be in csv or tsv
   format. #-initial lines are ignored. The first column should contain
   the word, and the second column its translation. For example:
-  
+
     ```
 	# Test ch rule
 	che,tʃ e
@@ -187,7 +187,7 @@ word,1,u n o,,,,
 	```
 
 
--r 
+-r
 
 : specifies a file (`-` for standard input), from which words should
   be read for translation. Only the first word in every line is read,
@@ -208,7 +208,7 @@ number of cases in which lowercase processing may go wrong,
 e.g. Turkish uppercase _I_, which should lowerase to dotless
 _i_. _sfrom_ and _sto_ have to be equal-sized strings, such that every
 character in _sfrom_ would be translated to the identical-position
-character in _sto_. 
+character in _sto_.
 
 ```
 type,sfrom,sto,...
@@ -263,11 +263,10 @@ _sfrom_
 : represents **one** alphabet letter (as defined by the utf8
 standard)
 
-_sto_ 
+_sto_
 
 : zero or more phonemes (space-separated) that the letter should
  translate to. The phonemes should be in IPA.
-
 
 _precede_
 
@@ -292,8 +291,8 @@ _weight_
   a specific rule for `c` (translate to tʃ when `h` follows), we want
   to make sure the specific rule would apply rather than the
   lower priority rule. The following is an example
-  
-  
+
+
     ```
     type,sfrom,sto,weight,precede,follow,comment
 	sub,c,k,1,,,"Default rule for c"
@@ -389,4 +388,3 @@ Deletion
 For each of the languages you process, you are supposed to document
 any existing lenition processes in a designated section in the
 language documentation file.
-
