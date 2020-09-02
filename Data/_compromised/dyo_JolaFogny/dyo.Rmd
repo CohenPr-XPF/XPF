@@ -1,0 +1,137 @@
+---
+title: "Jola-Fogny"
+author: "Abi Creighton"
+bibliography: dyo.bib
+output: html_document
+---
+
+Last Updated: 2020-07-17
+
+**COMPROMISED: unclear how reliably +ATR vowels are marked**
+
+# Background
+
+**Language Family:** Niger-Congo / Atlantic-Congo / Atlantic / Northern / Bak / Jola / Jola Proper / Jola Central / Jola-Fogny
+
+* Jola-Fogny, also known as Jola-Fonyi, Diola-Fogny, Joola, or Jola, is spoken primarily in the Casamance region of Senegal with a smaller population of speakers residing in Gambia.
+
+# Phonology
+
+## Consonants
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"   Labial   Alveolar  Palatal  Velar   Glottal
+Stops                      "p b"     "t d"     "c ɟ"   "k ɡ"     ""   
+Fricatives                  "f"       "s"       ""      ""       "h"
+Nasals                      "m"       "n"       "ɲ"     "ŋ"      ""       
+Trills                      ""        "r"       ""      ""       ""  
+Laterals                    ""        "l"       ""      ""       ""
+Approximants                "w"       ""        "j"     ""       ""   
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 5)) %>%
+  column_spec(1, bold = TRUE) %>%
+  footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced", general_title = "")
+```  
+
+## Vowels
+
+* Jola-Fogny has 10 vowels: five +ATR/tense (advanced tongue root) and five -ATR/lax. +ATR vowels are transcribed orthographically with an acute accent (´) [@gero_1993, p. 80].
+* Length is phonemic for all vowels and is marked by duplicate graphemes [@wade_2005].
+* Diphthongs exist in Jola-Fogny, but they are rare [@easterday_2019, p. 385]. Only /iu/ appears in the Crúbadán corpus.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+             Front      Central        Back
+High          "i"         ""           "u"
+Near-high     "ɪ"         ""           "ʊ"
+High-Mid      "e"         "ɘ"          "o"
+Low-Mid       "ɛ"         ""           "ɔ"
+Low           ""          "a"          ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  column_spec(1, bold = TRUE)
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs
+"/eʊ/, /iu/, /ɪe/, /ɔa/, /eɪ/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```     
+
+# Alphabet
+
+* Accented vowels are not considered to be part of the alphabet by Jola-Fogny speakers, but because they correspond to different phonemes compared to their non-accented counterparts, I have chosen to include them below.
+* Apostrophes are used intervocalically to distinguish between two independent short vowels and long vowels [@wade_2005, p. 3].
+* Looking at other Niger-Congo languages with similar vowel inventories (e.g. Igbo), +ATR vowels, which are more common, don't generally occur in words with -ATR vowels [@Ringen1979, p. 248]. This is ultimately reflective of the vowel harmony present in the language [@Sapir1975, p. 6]. Due to this, all vowels following a marked +ATR vowel (generally the first vowel in a word) are unmarked (i.e. they don't have an acute accent) [@wade_2005, p. 3].
+    - E.g. ⟨ébe⟩ = /ebe/
+* The transcription of the Crúbadán corpus is somewhat suspect as the -ATR vowels appear more frequently than the +ATR vowels, which is contrary to what is expected. Therefore, the marking of +ATR vowels is suspect. I have opted to classify this language as compromised as it is unclear how reliably +ATR vowels are marked.
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme           
+"a"              "/ɘ/"   
+"á"              "/a/"
+"b"              "/b/"
+"c"              "/c/"
+"d"              "/d/"
+"e"              "/ɛ/"
+"é"              "/e/"
+"f"              "/f/"
+"g"              "/ɡ/"              
+"h"              "/h/"              
+"i"              "/ɪ/"
+"í"              "/i/"
+"j"              "/ɟ/"
+"k"              "/k/"
+"l"              "/l/"
+"m"              "/m/"              
+"n"              "/n/"
+"ñ"              "/ɲ/"
+"ŋ"              "/ŋ/"
+"o"              "/ɔ/"
+"ó"              "/o/"
+"p"              "/p/"              
+"r"              "/r/"              
+"s"              "/s/"              
+"t"              "/t/"              
+"u"              "/ʊ/"
+"ú"              "/u/"
+"w"              "/w/"   
+"y"              "/j/"   
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllable Structure
+
+* Syllables in Jola-Fogny follow the order of (C)V(C)(C) [@sapir_1965, pp. 6-9].
+
+# Misc. Rules
+
+* Geminate consonants are present throughout Jola languages, which are marked by repeated graphemes [@wade_2005, p. 2]. Jola-Fogny is specifically said to only have nasal geminates. However, in the rules, I have accounted for all possible geminate consonants.
+* Consonants tend to prenasalize preceding nasals (ibid.).
+* Velar stops are realized as post-velar preceding /u/ and palatal preceding front vowels [@sapir_1965, p. 5].
+* /ɘ/ reduces to schwa when unstressed [@sapir_1965, p. 6].
+* Vowels nasalize preceding nasal consonants [@wade_2005, p. 3].
+
+# References

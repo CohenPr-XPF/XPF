@@ -1,0 +1,156 @@
+---
+title: "Min Nan Chinese"
+author: "Allison Shao"
+bibliography: nan.bib
+output: html_document
+---
+
+Last Updated: 2020-08-25
+
+# Background
+
+**Language Family:** Sino-Tibetan / Chinese / Min
+
+* Min Nan Chinese is known by many names, including: Southern Min, Hokkien, Fujianese, Taiwanese, and Taiyu. It is spoken primarily in Fujian (a province in Mainland China), Taiwan, and in Chinese diaspora communities throughout Southeast Asia.
+* I will primarily focus on Min Nan Chinese spoken in Taiwan, as it is more well-documented than some other varieties.
+
+# Phonology
+
+## Consonants
+
+* Some dialects have voiced alveolar fricative /z/ instead of voiced alveolar affricate /dz/ [@ChuangFon2017, p. 3].
+* Some sources treat /ʔ/ as an allophone of /k/ in coda positions [@Chiung2013, pp. 17-18; @Chen2018, p. 163]. The majority of sources, however, do distinguish between /ʔ/ and /k/, so I have opted to keep the distinction as well.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+
+consonants <- read.table(textConnection('
+"Manner of Articulation"  Bilabial   Alveolar   Velar   Glottal
+"Stops (plain)"            "p b"      "t"      "k ɡ"     "ʔ"
+"Stops (aspirated)"        "pʰ"       "tʰ"      "kʰ"     ""
+"Affricates (plain)"        ""       "ts dz"     ""      ""
+"Affricates (aspirated)"    ""        "tsʰ"      ""      ""
+Fricatives                  ""        "s"        ""      "h"
+Nasals                      "m"       "n"        "ŋ"     ""
+Approximants                ""        "l"        ""      ""
+'), TRUE)
+
+kable(consonants, col.names = c("Manner of Articulation", "Bilabial", "Alveolar", "Velar", "Glottal"), align = 'c') %>%
+  kable_styling("bordered") %>%
+  add_header_above(c("", "Place of Articulation" = 4)) %>%
+  footnote("Note: For phonemes that share a cell, those on the left are voiceless, whereas those on the right are voiced.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+```
+
+## Vowels
+
+* There is some ambiguity around /o/, /ə/, and /ɔ/ in Southern Min. @Tsay2014 predominantly argues for /o/ and /ɔ/, with /ə/ appearing in place of /o/ in some dialects (p. 583). Based on this, depending on the dialect, we'd expect the inventory to either include /o/ and /ɔ/ or /ə/ and /ɔ/, but not /o/ and /ə/. However, @Chiung2013 does argue for /o/ and /ə/, with no mention of /ɔ/ (pp. 17-18). Interestingly enough, the vowel inventory table in @Ratte2009, which includes an expected /o/ and /ɔ/, appears to better reflect /o/ and /ə/ (p. 5). This might suggest that /ə/ alternates with /ɔ/ rather than /o/. Regardless, I have chosen to include /o/ and /ɔ/, omitting /ə/.
+* Some of the diphthongs listed below don't appear in the Crúbadán corpus [@Shih2012, p. 21].
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+vowels <- read.table(textConnection('
+         Front      Central       Back
+High     "i ĩ"        ""          "u ũ"         
+Mid      "e ẽ"        ""           "o"
+Low-Mid  ""           ""          "ɔ ɔ̃"
+Low      ""          "a ã"         ""
+'), TRUE)
+
+kable(vowels, align = 'c') %>%
+  kable_styling("bordered") %>%
+  footnote("Note: For phonemes that share a cell, those on the left are oral, whereas those on the right are nasal.", general_title = "") %>%
+  column_spec(1, bold = TRUE)
+
+
+
+diphthongs <- read.table(textConnection('
+Diphthongs   
+"/ai/, /au/, /ia/, /io/, /iɔ/, /iu/, /ua/, /ue/, /ui/, /ãĩ/, /ãũ/, /ĩã/, /ĩɔ̃/, /ĩũ/, /ũã/, /ũẽ/, /ũĩ/"
+**Triphthongs**
+"/iau/, /uai/, /ũãĩ/, /ĩãũ/"
+'), TRUE)
+
+kable(diphthongs, align = 'c') %>%
+  kable_styling("bordered")
+```  
+
+# Alphabet
+
+* Min Nan Chinese can be written both with Chinese characters and Latin script. The Crúbadán corpus appears to prioritize Latin script, specifically the Pe̍h-ōe-jī orthography, which I have chosen to represent below. However, I have included some supplementary notes in the table below on the differences between Pe̍h-ōe-jī and the other most common orthographies.
+* ⟨h⟩ represents /ʔ/ in syllable codas and /h/ elsewhere [@Tsay2007, p. 420]. Hyphens indicate syllable boundaries, so representing coda positions in the rules is manageable [@Chiung2013, p. 17].
+* Min Nan Chinese uses diacritics to indicate lexical tone. There are 7 tones, often numbered 1 through 8 (with the number 6 omitted) [@Lin1999, appendix]:
+    - The 1st tone ˥ is unmarked and indicated by the absence of a following ⟨h⟩, ⟨p⟩, ⟨t⟩, or ⟨k⟩.
+    - The 2nd tone ˥˩ is marked with an acute accent (e.g. ⟨ó⟩).
+    - The 3rd tone ˨ is marked with a grave accent (e.g. ⟨ò⟩).
+    - The 4th tone ˨ is unmarked but indicated with a following (silent) ⟨h⟩, ⟨p⟩, ⟨t⟩, or ⟨k⟩.
+    - The 5th tone ˨˦ is marked with a circumflex (e.g. ⟨ô⟩).
+    - The 7th tone ˧ is marked with a macron (e.g. ⟨ō⟩).
+    - The 8th tone ˥˧ is marked with vertical line (e.g. ⟨o̍⟩).
+* Though the 3rd and 4th tones appear to be the same, they are distinct when tone sandhi rules are applied [@Chen2018, p. 4-5].
+* /ɔ/ is represented by either ⟨o⟩ or ⟨o͘⟩. ⟨o⟩ generally precedes ⟨k⟩, ⟨p⟩, ⟨m⟩, and ⟨ng⟩ and ⟨o͘⟩ generally appears everywhere else [@ROCMOE1997, p. 54].
+* Diphthongs beginning with /u/ are typically written using the grapheme ⟨o⟩ but ⟨u⟩ is also used sometimes. I have accounted for this in the rules.
+* Due to the inclusion of a large amount of loanwords in the Crúbadán corpus, bear in mind that much of the transcription is not possible or incorrect (i.e. loanwords may fully transcribe with the rules, but they really shouldn't).
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+alphabet <- read.table(textConnection('
+Grapheme        Phoneme          Comment
+"a"              "/a/"             ""
+"b"              "/b/"             ""
+"e"              "/e/"             ""
+"g"              "/ɡ/"             ""
+"h"              "/h/; /ʔ/"        "/ʔ/: in syllable codas"
+"i"              "/i/"             ""
+"j"              "/dz/"            ""
+"k"              "/k/"             ""
+"l"              "/l/"             ""
+"m"              "/m/"             ""
+"n"              "/n/"             ""
+"o"              "/o/; /u/; /ɔ/"   "/ɔ/: when followed by a stop or nasal; /u/: in some diphthongs and triphthongs"
+"p"              "/p/"             ""
+"s"              "/s/"             ""
+"t"              "/t/"             ""
+"u"              "/u/"             ""
+"**Multigraph**" ""                ""
+"ch"             "/ts/"            "written as ⟨ts⟩ in some other orthographies"
+"chh"            "/tsʰ/"           "written as ⟨tsh⟩ in some other orthographies"
+"kh"             "/kʰ/"            ""
+"ng"             "/ŋ/"             ""
+"ph"             "/pʰ/"            ""
+"th"             "/tʰ/"            ""
+"o͘"              "/ɔ/"             "written as ⟨oo⟩ in some other orthographies"
+"aⁿ"             "/ã/"             ""
+"eⁿ"             "/ẽ/"             ""
+"iⁿ"             "/ĩ/"             ""
+"oⁿ"             "/ɔ̃/"             ""
+"uⁿ"             "/ũ/"             ""
+"aiⁿ"            "/ãĩ/"            "written as ⟨ainn⟩ in some other orthographies"
+"iaⁿ"            "/ĩã/"            "written as ⟨iann⟩ in some other orthographies"
+"iuⁿ"            "/ĩũ/"            "written as ⟨iunn⟩ in some other orthographies"
+"uaⁿ"            "/ũã/"            "written as ⟨uann⟩ in some other orthographies"
+"uiⁿ"            "/ũĩ/"            "written as ⟨uinn⟩ in some other orthographies"
+"iauⁿ"           "/ĩãũ/"           "written as ⟨iaunn⟩ in some other orthographies"
+"uaiⁿ"           "/ũãĩ/"           "written as ⟨uainn⟩ in some other orthographies"
+'), TRUE)
+
+kable(alphabet, align = 'c') %>%
+  kable_styling("bordered")
+```
+
+# Syllables Structure
+
+* All consonants except for the glottal stop /ʔ/ occur in syllable onsets. Only nasal consonants, unaspirated voiceless stops, and /ʔ/ are found in syllable codas [@Ratte2009, p. 4].
+* /m/ and /ŋ/ can be realized as syllabic consonants [@Tsay2014, p. 583].
+
+# Misc. Rules
+
+* /l/ is realized as [l] before /a/ and as [d] elsewhere [@Chiung2013, p.18].
+* Before high front vowel /i/, some affricates and fricatives are realized as their palatal equivalents [@Ratte2009, p. 4]. For example, /s/ and /dz/ are realized as [ɕ] and [dʑ], respectively [@Chung1996 as cited in @Shih2012, p. 12; @ChuangFon2017, p. 3].
+
+# References

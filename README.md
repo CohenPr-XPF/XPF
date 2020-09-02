@@ -96,6 +96,7 @@
 | mto           | Totontepec Mixe            |                               |
 | mva           | Manam                      |                               |
 | naf           | Nabak                      |                               |
+| nan           | Min Nan Chinese            | lacks lenition                |
 | nas           | Naasioi                    |                               |
 | nhe           | Nahuatl                    |                               |
 | nhr           | Naro                       |                               |
@@ -169,6 +170,7 @@
 | cof             | Colorado                    | orthographic ambiguity with glottal stops                                                                            |                |
 | con             | Cofan                       | conflation between consonants                                                                                        |                |
 | crm             | Moose Cree                  | /h/ represented only when contrast is required                                                                       | lacks lenition |
+| dyo             | Jola-Fogny                  | uncertainty around the marking of +ATR vowels                                                                        | lacks lenition |
 | es              | Spanish                     | non-transparent spelling of diphthongs                                                                               |                |
 | fuv             | Nigerian Fulfulde           | inconsistent marking of glottal stops; unclear transcription of palatalized glottal stop                             |                |
 | hi              | Hindi                       | conflation between /æ/ and /ɛ/; vowel nasalization ambiguity; unreliable marking of some consonants                  |                |

@@ -1,0 +1,135 @@
+# Min Nan Chinese Rule Set
+# Written by Allison
+# Edited by Emily
+# Last Updated: 2020-08-31
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abehiklmnpstu-],,,,
+class,tones,(˥|˥˩|˨|˨|˨˦|˧|˥˧),,,,
+class,4thtonestop,[ʔtpk],,,,
+class,vowelandsyllabic,[aeioumn],,,,
+class,nasalvowels,(ã|ẽ|ĩ|ɔ̃|ũ),,,,
+class,consonants,[bcghjklmnpst],,,,
+class,misc,(uia|aia|aiu|iaui|uiɔ|aio),,,,"loanword vowel combos"
+# Individual Letters
+sub,g,ɡ,1,,,
+sub,h,ʔ,1,,$,
+sub,h,ʔ,1,,-,
+sub,j,dz,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Multigraphs
+sub,c,ts,2,,h,
+sub,h,,2,c,,"clean-up"
+sub,c,tsʰ,3,,hh,
+sub,h,,3,c,h,"clean-up"
+sub,h,,3,ch,,"clean-up",
+sub,k,kʰ,2,,h,
+sub,h,,2,k,,"clean-up"
+sub,n,ŋ,2,,g,
+sub,g,,2,n,,"clean-up"
+sub,p,pʰ,2,,h,
+sub,h,,2,p,,"clean-up"
+sub,t,tʰ,2,,h,
+sub,h,,2,t,,"clean-up"
+# Fix for 8th tone
+sub,({vowelandsyllabic}),\1 ˥˧,8,,̍,"8th tone"
+sub,̍,,8,{vowelandsyllabic},,"remove diacritic"
+# Vowels (tones)
+sub,a,a ˥,6,,,"1st tone"
+sub,á,a ˥˩,6,,,"2nd tone"
+sub,à,a ˨,6,,,"3rd tone"
+sub,â,a ˨˦,6,,,"5th tone"
+sub,ā,a ˧,6,,,"7th tone"
+sub,a̍,a ˥˧,6,,,"8th tone"
+sub,e,e ˥,6,,,"1st tone"
+sub,é,e ˥˩,6,,,"2nd tone"
+sub,è,e ˨,6,,,"3rd tone"
+sub,ê,e ˨˦,6,,,"5th tone"
+sub,ē,e ˧,6,,,"7th tone"
+sub,e̍,e ˥˧,6,,,"8th tone"
+sub,i,i ˥,6,,,"1st tone"
+sub,í,i ˥˩,6,,,"2nd tone"
+sub,ì,i ˨,6,,,"3rd tone"
+sub,î,i ˨˦,6,,,"5th tone"
+sub,ī,i ˧,6,,,"7th tone"
+sub,i̍,i ˥˧,6,,,"8th tone"
+sub,o,o ˥,6,,,"1st tone"
+sub,ó,o ˥˩,6,,,"2nd tone"
+sub,ò,o ˨,6,,,"3rd tone"
+sub,ô,o ˨˦,6,,,"5th tone"
+sub,ō,o ˧,6,,,"7th tone"
+sub,o̍,o ˥˧,6,,,"8th tone"
+sub,u,u ˥,6,,,"1st tone"
+sub,ú,u ˥˩,6,,,"2nd tone"
+sub,ù,u ˨,6,,,"3rd tone"
+sub,û,u ˨˦,6,,,"5th tone"
+sub,ū,u ˧,6,,,"7th tone"
+sub,u̍,u ˥˧,6,,,"8th tone"
+# Syllabic Nasals
+sub,m,m ˥,6,^,$,"1st tone"
+sub,m,m ˥,6,{consonants},$,"1st tone"
+sub,ḿ,m ˥˩,6,,,"2nd tone"
+sub,m,m ˨,6,,̀,"3rd tone"
+sub,m,m ˨˦,6,,̂,"5th tone"
+sub,m,m ˧,6,,̄,"7th tone"
+sub,m̍,m ˥˧,6,,,"8th tone"
+sub,n,ŋ ˥,6,^,g$,"1st tone"
+sub,n,ŋ ˥,6,{consonants},g$,"1st tone"
+sub,ń,ŋ ˥˩,6,,,"2nd tone"
+sub,ǹ,ŋ ˨,6,,,"3rd tone"
+sub,n,ŋ ˨˦,6,,̂,"5th tone"
+sub,n,ŋ ˧,6,,̄,"7th tone"
+sub,n̍,ŋ ˥˧,6,,,"8th tone"
+ipasub,n ˥˧,ŋ ˥˧,6,,,"8th tone - corrects the fix for 8th tone section above"
+ipasub,ŋ ({tones}) ɡ,ŋ \1,6,,,"clean-up"
+sub,̀,,6,,,"clean-up"
+sub,̄,,6,,,"clean-up"
+sub,̂,,6,,,"clean-up"
+# Diphthongs/Triphthongs
+# The rules below are written to reflect orthographic conventions for where to mark tone
+ipasub,i ˥ a ({tones}) u ˥,iau \1,5,,,
+ipasub,o ˥ a ({tones}) i {tones},uai \1,5,,,
+ipasub,a ({tones}) i ˥,ai \1,4,,
+ipasub,a ({tones}) u ˥,au \1,4,,
+ipasub,i ˥ a ({tones}),ia \1,4,,
+ipasub,i ˥ o ({tones}),io \1,4,,
+ipasub,i ˥ u ({tones}),iu \1,4,,
+ipasub,o ({tones}) a ˥,ua \1,4,,
+ipasub,o ˥ a ({tones}),ua \1,4,,
+ipasub,o ({tones}) e ˥,ue \1,4,,
+ipasub,o ˥ e ({tones}),ue \1,4,,
+ipasub,o ({tones}) i ˥,ui \1,4,,
+ipasub,u ˥ a ({tones}),ua \1,4,,
+ipasub,u ˥ e ({tones}),ue \1,4,,
+ipasub,u ({tones}) i ˥,ui \1,4,,
+# Nasal Vowels
+sub,ⁿ,ⁿ,3,,,
+ipasub,a ({tones}) ⁿ,ã \1,3,,,
+ipasub,e ({tones}) ⁿ,ẽ \1,3,,,
+ipasub,i ({tones}) ⁿ,ĩ \1,3,,,
+ipasub,o ({tones}) ⁿ,ɔ̃ \1,3,,,
+ipasub,u ({tones}) ⁿ,ũ \1,3,,,
+ipasub,ⁿ,,2,,,"clean-up"
+ipasub,iaũ,ĩãũ,2.5,,,"triphthong"
+ipasub,uaĩ,ũãĩ,2.5,,,"triphthong"
+ipasub,a({nasalvowels})\b,ã\1,2,,,"a-diphthongs"
+ipasub,i({nasalvowels})\b,ĩ\1,2,,,"i-diphthongs"
+ipasub,u({nasalvowels})\b,ũ\1,2,,,"u-diphthongs"
+ipasub,iɔ̃,ĩɔ̃,2,,,"exception - rule above doesn't seem to apply"
+# Grapheme ⟨o⟩ -> /ɔ/
+ipasub,o ({tones}) p,ɔ \1 p,3,,,
+ipasub,o ({tones}) t,ɔ \1 t,3,,,
+ipasub,o ({tones}) k,ɔ \1 k,3,,,
+ipasub,o ({tones}) m,ɔ \1 m,3,,,
+ipasub,o ({tones}) n,ɔ \1 n,3,,,
+ipasub,o ({tones}) ŋ,ɔ \1 ŋ,3,,,
+# 4th Tone
+ipasub,˥ {4thtonestop}$,˨,2,,,
+ipasub,˥ {4thtonestop} -,˨,2,,,
+# O w/ dot ⟨o͘⟩
+sub,͘,ɔ,2,,,
+ipasub,o ({tones}) ɔ,ɔ \1,2,,,
+# Misc. Rules
+ipasub,-,,1,,,"hyphens are used in compounds"
+ipasub,˨ʰ,@,1,,,"transcription of '˨ʰ' occurs seemingly in English loanwords (large amount) as they don't obey coda restrictions",
+ipasub,{misc},@,1,,,"rules out vowel combinations present in loanwords - only those appearing in Crubadan"

@@ -1,0 +1,44 @@
+# Jola-Fonyi Rule Set
+# Written by Abi Creighton
+# Edited by Emily Strand
+# Last updated: 2020-09-01
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[bcdfhklmnŋprstw],,,,
+class,vowels,[iɪeɛɘaɔoʊu],,,,
+class,gem,[pbtdcɟkɡfshmnɲŋlrwj],,,,
+class,apostrophe,['ꞌ‘’],,,,
+class,+ATR,[aeiou],,,,
+class,+ATR-input,[áéíóú],,,,
+# Individual Letters
+sub,a,ɘ,1,,,
+sub,á,a,1,,,
+sub,e,ɛ,1,,,
+sub,é,e,1,,,
+sub,g,ɡ,1,,,
+sub,i,ɪ,1,,,
+sub,í,i,1,,,
+sub,j,ɟ,1,,,
+sub,ñ,ɲ,1,,,
+sub,o,ɔ,1,,,
+sub,ó,o,1,,,
+sub,u,ʊ,1,,,
+sub,ú,u,1,,,
+sub,y,j,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Vowels - Controlling for +ATR
+sub,({+ATR}),\1,4,{+ATR-input}+,,"only first +ATR vowel is marked, all following vowels share the same feature, but are unmarked"
+sub,({+ATR}),\1,4,{+ATR-input}.+,,"only first +ATR vowel is marked, all following vowels share the same feature, but are unmarked"
+# Long Vowels
+ipasub,({vowels}) \1\b,\1 ː,2,,,
+# Misc. Rules
+ipasub,({gem}) \1\b,\1 ː,2,,,"consonant gemination"
+ipasub,e ʊ,eʊ,2,,,
+ipasub,i u,iu,2,,,
+ipasub,ɪ e,ɪe,2,,,
+ipasub,ɔ a,ɔa,2,,,
+ipasub,e ɪ,eɪ,2,,,
+sub,{apostrophe},DEL,1,,,
+ipasub,({vowels}) DEL ({vowels}),\1 \2,3,,,"apostrophes are used to separate adjacent vowels which do not form a long vowel or diphthong"
+ipasub,DEL,,4,,,"removes leftover apostrophes between consonants and vowels/two consonants"
+sub,-,,1,,,
