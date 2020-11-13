@@ -1,0 +1,37 @@
+# Burarra Rule Set
+# Written by: Emily Strand
+# Last updated: 2020-02-04
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdeiklmnoptuw],,,,
+class,n_follower,[gy],,,,
+class,r_follower,[rtdnl],,,,
+class,misc,(\.|'|ꞌ|ˈ|‘|’|-),,,,
+# Individual Letters
+sub,g,ɡ,2,,,
+sub,j,ɟ,2,,,
+sub,r,ɽ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,c,4,,h,
+sub,h,,4,c,,"clean-up",
+sub,g,ŋ,4,n,,
+sub,y,ɲ,4,n,,
+sub,n,,4,,{n_follower},"clean-up",
+sub,r,r,4,r,,
+sub,t,ʈ,4,r,,
+sub,d,ɖ,4,r,,
+sub,n,ɳ,4,r,,
+sub,l,ɭ,4,r,,
+sub,r,,4,,{r_follower},"clean-up",
+# Retroflex Consonants (<t>, <d>, <n>, and <l> represent the retroflex consonants word-initially)
+sub,t,ʈ,3,^,,
+sub,d,ɖ,3,^,,
+sub,n,ɳ,3,^,,
+sub,l,ɭ,3,^,,
+# Misc. Rules
+sub,r,ɳ ɖ,5,,nd,"<rnd> transcribes to /ɳɖ/",
+sub,n,,5,r,d,"clean-up",
+sub,d,,5,rn,,"clean-up",
+sub,{misc},,2,,,"these punctuation marks have no phonemic value",

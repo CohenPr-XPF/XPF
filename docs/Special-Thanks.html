@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Special Thanks</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel = "stylesheet" href="header.css">
+  <link rel = "stylesheet" href="Special-Thanks.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" onclick="openNav()" data-target="#websitenav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="websitenav">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">The XPF Corpus</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Convert-to-IPA.html">Convert to IPA</a></li>
+        <li><a href="Word-Clouds.html">Word Clouds</a></li>
+        <li><a href="Special-Thanks.html" style="color: #478ac9;">Special Thanks</a></li>
+    </div>
+  </div>
+</nav>
+
+<div id="website-sidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">The XPF Corpus</a>
+  <a href="About.html">About</a>
+  <a href="Convert-to-IPA.html">Convert to IPA</a>
+  <a href="Word-Clouds.html">Word Clouds</a>
+  <a href="Special-Thanks.html" style="color: #478ac9;">Special Thanks</a>
+</div>
+
+
+<div id="container" class="container">
+  <div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+      <div class="text-center" style="font-size: 36px;">Special Thanks</div>
+      <h3 style="margin-bottom: 40px;"><small style="color: black;">This corpus would not have been possible without Brown University and the amazing research assistants within <a href="https://www.urielcohenpriva.com/">Uriel Cohen Priva's</a> Phonology Lab! </small></h3>
+    </div>
+    <div class="col-xs-1"></div>
+  </div>
+
+  <div class="row spacer">
+    <div class="col-xs-12">
+      <img class="img-responsive" src="images/brown.jpg" alt="University Image">
+    </div>
+  </div>
+</div>
+
+<footer class="footer"></footer>
+
+<div id="overlay"></div>
+
+
+<script>
+
+  function openNav() {
+    document.getElementById("website-sidenav").style.width = "250px";
+    document.getElementById("overlay").style.opacity = "0.5";
+    document.getElementById("overlay").style.width = "100%";
+    document.getElementById("overlay").style.transition = "all 0.5s";
+    document.getElementById("overlay").addEventListener("click", closeNav);
+  }
+
+  function closeNav() {
+    document.getElementById("website-sidenav").style.width = "0";
+    document.getElementById("overlay").style.opacity = "1";
+    document.getElementById("overlay").style.width = "0";
+    document.getElementById("overlay").style.transition = "all 0s";
+    document.getElementById("overlay").removeEventListener("click", closeNav);
+  }
+
+
+</script>
+
+
+</body>
+</html>

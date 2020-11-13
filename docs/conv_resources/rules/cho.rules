@@ -1,0 +1,39 @@
+# Choctaw Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-29
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,apostrophe,['ꞌˈ‘’],,,,
+class,vowel,[aio],,,,
+class,a,[a̲a̧],,,,"including transcriptions for nasals"
+class,i,[i̲i̧],,,,
+class,o,[o̲o̧],,,,
+class,pre-h,[cls],,,,
+class,passthrough,[abfhiklmnopstw],,,,
+# Individual Letters
+sub,a,a,5,,,
+sub,{a},a2,4,,,
+sub,č,tʃ,4,,,
+sub,i,i,5,,,
+sub,{i},i2,4,,,
+sub,ł,ɬ,4,,,
+sub,o,o,5,,,
+sub,{o},o2,4,,,
+sub,š,ʃ,4,,,
+sub,y,j,4,,,
+sub,{apostrophe},ʔ,4,,,
+# Alternate Letters
+sub,c,k,4,,,
+sub,e,i,4,,,
+sub,u,o,4,,,
+sub,v,a,4,,,
+# Digraphs
+sub,c,tʃ,6,,h,
+sub,l,ɬ,6,,h,
+sub,s,ʃ,6,,h,
+sub,h,,6,{pre-h},,"clean-up",
+ipasub,({vowel}) \1,\1 ː,3,,,
+# Misc. Rules
+ipasub,({vowel}) o2,\1 n,4,,,"the program behaves weirdly with underlined or hooked vowels; this rule allows us to work around that"
+sub,({passthrough}),\1,0.1,,,
+ipasub,-,,1,,,

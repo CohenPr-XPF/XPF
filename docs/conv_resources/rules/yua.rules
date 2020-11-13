@@ -1,0 +1,67 @@
+# Yucatec Maya
+# Written by: Justin
+# Last Updated: 2019-08-02
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aeiklmnopstuw],,,,
+class,ejectives,[kpt],,,,
+class,apostrophe,"[’'‘`ʻ]",,,,
+# Individual Letters
+sub,b,ɓ,1,,,
+sub,j,h,1,,,
+sub,r,ɾ,1,,,
+sub,x,ʃ,1,,,
+sub,y,j,1,,,
+sub,{apostrophe},ʔ,0.5,,,
+sub,({passthrough}),\1,0.1,,,
+# Digraphs
+sub,c,tʃ,2,,h,
+sub,h,,2,c,,"clean-up",
+sub,t,ts,2,,z,
+sub,z,,2,t,,"clean-up",
+# Ejectives
+sub,({ejectives}),\1ʼ,2,,{apostrophe},
+sub,{apostrophe},,2,{ejectives},,"clean-up",
+sub,c,tʃʼ,2,,h{apostrophe},
+sub,{apostrophe},,2,h,,"clean-up"
+sub,t,tsʼ,2,,z{apostrophe},
+sub,{apostrophe},,2,z,,"clean-up",
+# Vowel Shapes
+## Low Tone
+sub,a,a ː ˨,2,,a,
+sub,a,,2,a,,
+sub,e,e ː ˨,2,,e,
+sub,e,,2,e,,
+sub,i,i ː ˨,2,,i,
+sub,i,,2,i,,
+sub,o,o ː ˨,2,,o,
+sub,o,,2,o,,
+sub,u,u ː ˨,2,,u,
+sub,u,,2,u,,
+## High Tone
+sub,á,a ː ˦,2,,a,
+sub,a,,2,á,,"clean-up",
+sub,é,e ː ˦,2,,e,
+sub,e,,2,é,,"clean-up",
+sub,í,i ː ˦,2,,i,
+sub,i,,2,í,,"clean-up",
+sub,ó,o ː ˦,2,,o,
+sub,o,,2,ó,,"clean-up",
+sub,ú,u ː ˦,2,,u,
+sub,u,,2,ú,,"clean-up",
+## Glottalized
+sub,a,a ː ˦ ˷,2,,{apostrophe}a,
+sub,{apostrophe},,2,a,a,"clean-up",
+sub,a,,2,a{apostrophe},,"clean-up",
+sub,e,e ː ˦ ˷,2,,{apostrophe}e,
+sub,{apostrophe},,2,e,e,"clean-up",
+sub,e,,2,e{apostrophe},,"clean-up",
+sub,i,i ː ˦ ˷,2,,{apostrophe}i,
+sub,{apostrophe},,2,i,i,"clean-up",
+sub,i,,2,i{apostrophe},,"clean-up",
+sub,o,o ː ˦ ˷,2,,{apostrophe}o,
+sub,{apostrophe},,2,o,o,"clean-up",
+sub,o,,2,o{apostrophe},,"clean-up",
+sub,u,u ː ˦ ˷,2,,{apostrophe}u,
+sub,{apostrophe},,2,u,u,"clean-up",
+sub,u,,2,u{apostrophe},,"clean-up",

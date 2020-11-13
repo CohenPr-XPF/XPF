@@ -1,0 +1,38 @@
+# Asháninka Rule Set
+# Written by: Emily
+# Last Updated: 2020-04-22
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aeikmnopst],,,,
+class,vowels,[aeio],,,,
+# Individual Letters
+sub,c,k,2,,,
+sub,j,h,2,,,
+sub,r,ɾ,2,,,
+sub,v,β,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,tʃ,3,,h,
+sub,h,,3,c,,"clean-up",
+sub,s,ʃ,3,,h,
+sub,h,,3,s,,"clean-up",
+sub,q,k,3,,u,
+sub,u,,3,q,,"clean-up",
+sub,t,ts,3,,s,
+sub,s,,3,t,,"clean-up",
+# Vowel Length
+ipasub,({vowels}) \1\b,\1 ː,3,,,
+# Diphthongs
+sub,a,ai,3,,i,
+sub,i,,3,a,,"clean-up",
+sub,a,ao,3,,o,
+sub,o,,3,a,,"clean-up",
+sub,o,oi,3,,i,
+sub,i,,3,o,,"clean-up",
+sub,e,ei,3,,i,
+sub,i,,3,e,,"clean-up",
+sub,i,io,3,,o,
+sub,o,,3,i,,"clean-up",
+sub,e,ea,3,,a,
+sub,a,,3,e,,"clean-up",

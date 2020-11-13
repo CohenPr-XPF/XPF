@@ -1,0 +1,33 @@
+# Huehuetla Tepehua Rule Set
+# Written by Abi Creighton
+# Last updated: 2020-08-13
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aeiklmnopqstuw],,,,
+class,apostrophe,['ꞌ‘’],,,,
+class,glotalized,(k|p|t|tʃ|ts),,,,
+# Individual Letters
+sub,c,k,1,,,
+sub,j,h,1,,,
+sub,r,ɾ,1,,,
+sub,v,w,1,,,
+sub,x,ʃ,1,,,
+sub,y,j,1,,,
+sub,{apostrophe},ʔ,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Digraphs
+sub,c,tʃ,2,,h,
+sub,h,,2,c,,"clean-up"
+sub,u,,2,q,,"clean-up: <qu> goes to /q/"
+sub,{apostrophe},,3,q,u,"clean-up: <q'u> also goes to /q/"
+sub,u,,3,q{apostrophe},,"clean-up"
+sub,r,r,2,,r,
+sub,r,,2,r,,"clean-up"
+sub,l,ɬ,2,,h,
+sub,h,,2,l,,"clean-up"
+sub,t,ts,2,,s,
+sub,s,,2,t,,"clean-up"
+sub,t,ts,2,,z,
+sub,z,,2,t,,"clean-up"
+# Ejectives
+ipasub,({glotalized}) ʔ,\1ʼ,3,,,

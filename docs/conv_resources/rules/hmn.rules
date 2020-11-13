@@ -1,0 +1,81 @@
+# Hmong Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-24
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,input-cons,[cdfhklmnpqrstvxyz],,,,
+class,input-vowel,[aeiouw],,,,
+class,output-cons,[cçdfhʝklᵐmⁿnᶯᶮɲᵑᶰpqsʂtʈvʐ],,,,
+class,voiceless-asp,(p|t|ʈ|c|k|q|ts|tʂ),,,,
+class,voiced-asp,(ᵐb|d|ⁿd|ᶯɖ|ᶮɟ|ᵑɡ|ᶰɢ|ⁿdz|dʐ),,,,
+class,output-vowel,[a|ã|e|ẽ|i|o|õ|u|ɨ],,,,
+class,pre-y,[nx],,,,
+class,pre-a,[aiu],,,,
+class,post-a,[iuw],,,,
+class,post-h,[lmn],,,,
+class,passthrough,[acdefhiklmnopqtuv],,,,
+# Individual Letters
+sub,r,ʈ,4,,,
+sub,s,ʂ,4,,,
+sub,w,ɨ,4,,,
+sub,x,s,4,,,
+sub,y,ʝ,4,,,
+sub,z,ʐ,4,,,
+# Tone Markers (Word-Medial)
+sub,b,˦,4,{input-vowel},{input-cons},"high tone"
+sub,d,˨˩,4,{input-vowel},{input-cons},"creaky falling tone (1)"
+sub,g,˦˨,4,{input-vowel},{input-cons},"breathy falling tone"
+sub,j,˥˨,4,{input-vowel},{input-cons},"high falling tone"
+sub,m,˨˩,4,{input-vowel},{input-cons},"creaky falling tone (2)"
+sub,s,˨,4,{input-vowel},{input-cons},"low tone"
+sub,v,˨˦,4,{input-vowel},{input-cons},"high rising tone"
+ipasub,({output-vowel}) ({output-cons}),\1 ˧ \2,1,,,"mid tone"
+# Tone Markers (Word-Final)
+sub,b,˦,4,{input-vowel},$,"high tone"
+sub,d,˨˩,4,{input-vowel},$,"creaky falling tone (1)"
+sub,g,˦˨,4,{input-vowel},$,"breathy falling tone"
+sub,j,˥˨,4,{input-vowel},$,"high falling tone"
+sub,m,˨˩,4,{input-vowel},$,"creaky falling tone (2)"
+sub,s,˨,4,{input-vowel},$,"low tone"
+sub,v,˨˦,4,{input-vowel},$,"high rising tone"
+ipasub,({output-vowel})$,\1 ˧,1,,,"mid tone"
+# Digraphs
+sub,a,ã,6,,a,"<aa>"
+sub,e,ẽ,6,,e,"<ee>"
+sub,e,,6,e,,"<ee> cleanup"
+sub,o,õ,6,,o,"<oo>"
+sub,o,,6,o,,"<oo> cleanup"
+sub,n,ɲ,6,,y,"<ny>"
+sub,x,ç,6,,y,"<xy>"
+sub,y,,6,{pre-y},,"cleanup of y-final digraphs"
+ipasub,t s,ts,4,,,"closing the gap in /ts/"
+ipasub,t ʂ,tʂ,4,,,"closing the gap in /tʂ/"
+sub,i,ai,6,a,,"<ai>"
+sub,u,au,6,a,,"<au>"
+sub,w,aɨ,6,a,,"<aw>"
+sub,a,,6,,{post-a},"cleanup of a-initial diphthongs"
+sub,i,ia,6,,a,"<ia>"
+sub,u,ua,6,,a,"<ua>"
+sub,a,,6,{pre-a},,"cleanup of a-final diphthongs, including <aa>"
+# Prenasalized Stops
+ipasub,n p,ᵐb,3,,,
+ipasub,n t,ⁿd,3,,,
+ipasub,n ʈ,ᶯɖ,3,,,
+ipasub,n c,ᶮɟ,3,,,
+ipasub,n k,ᵑɡ,3,,,
+ipasub,n q,ᶰɢ,3,,,
+ipasub,n ts,ⁿdz,3.5,,,
+ipasub,n tʂ,ᶯdʐ,3.5,,,
+# Aspiration
+sub,l,lʰ,8,h,,"<hl> - priority is raised to ensure it happens before aspiration rules occur"
+sub,l,lʰ,6,p,h,"exception to <hl> rule"
+sub,h,,8,l,,"clean-up"
+sub,m,m̥,6,h,,"<hm>"
+sub,n,n̥,6,h,,"<hn>"
+sub,n,ɲ̥,6,h,y,"<hny> - the <y> is erased in line 50, so it doesn't need to be erased here"
+sub,h,,6,,{post-h},"cleanup of h-initial clusters"
+ipasub,({voiceless-asp}) h,\1ʰ,2,,,"attaches aspiration to consonants"
+ipasub,({voiced-asp}) h,\1ʱ,2.5,,,"changes aspiration to murmuring on voiced consonants"
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,
+sub,-,,1,,,

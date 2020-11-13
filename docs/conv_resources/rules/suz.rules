@@ -1,0 +1,112 @@
+# Sunwar Rule Set
+# Written by: Bill
+# Last Updated: 2020-02-05
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules (Consonants)
+class,k,[क],,,,
+class,kh,[ख],,,,
+class,g,[ग],,,,
+class,ng,[ङ],,,,
+class,tsh,[च],,,,
+class,dzh,[ज],,,,
+class,t-retro,[ट],,,,
+class,th-retro,[ठ],,,,
+class,t,[त],,,,
+class,th,[थ],,,,
+class,d,[द],,,,
+class,n,[न],,,,
+class,p,[प],,,,
+class,ph,[फ],,,,
+class,b,[ब],,,,
+class,m,[म],,,,
+class,j-glide,[य],,,,
+class,flap,[र],,,,
+class,l,[ल],,,,
+class,w,[व],,,,
+class,s,[स],,,,
+class,sh,[षश],,,,"the Devanagari characters for both /ʂ/ and /ʃ/ are used for the Sunwar /ʃ/"
+class,h,[ह],,,,
+# Class Rules (Vowels & Misc.)
+class,a,[अ],,,,
+class,a-long,[आ],,,,
+class,i,[इई],,,,"includes the long i, which does not contrast in Sunwar"
+class,u,[उ],,,,
+class,u-long,[ऊ],,,,
+class,e,[ए],,,,
+class,ai,[ऐ],,,,
+class,o,[ओ],,,,
+class,au,[औ],,,,
+# Class Rules (Diacritics)
+class,diacritic_a-long,[ा],,,,
+class,diacritici,[िी],,,,"includes the long i, which does not contrast in Sunwar"
+class,diacriticu,[ु],,,,
+class,diacritic_u-long,[ू],,,,
+class,diacritice,[े],,,,
+class,diacriticai,[ै],,,,
+class,diacritico,[ो],,,,
+class,diacriticau,[ौ],,,,
+class,nasalizer,[ं],,,,
+class,null,[्],,,,
+class,misc-diacritics,[‍़-],,,,"a collection of diacritics that don't have phonetic value in Sunwar"
+# Class Rules (For IPASub Purposes)
+class,vowel,[aeiou],,,,
+class,vowel_nota,[eiou],,,,
+class,gem,(p|b|tʃ|k|m|n|p|s|t̪|l̪|pʰ|t̪ʰ|d̪|ʈ|ʈʰ|kʰ|ɡ|dʒ|ʃ|h|ŋ|ɾ|w|ɭ|j),,,,
+# Sub Rules (Consonants)
+sub,{k},k a,4,,,
+sub,{kh},kʰ a,4,,,
+sub,{g},ɡ a,4,,,
+sub,{ng},ŋ a,4,,,
+sub,{tsh},tʃ a,4,,,
+sub,{dzh},dʒ a,4,,,
+sub,{t-retro},ʈ a,4,,,
+sub,{th-retro},ʈʰ a,4,,,
+sub,{t},t̪ a,4,,,
+sub,{th},t̪ʰ a,4,,,
+sub,{d},d̪ a,4,,,
+sub,{n},n a,4,,,
+sub,{p},p a,4,,,
+sub,{ph},pʰ a,4,,,
+sub,{b},b a,4,,,
+sub,{m},m a,4,,,
+sub,{j-glide},j a,4,,,
+sub,{flap},ɾ a,4,,,
+sub,{l},l̪ a,4,,,
+sub,{w},w a,4,,,
+sub,{s},s a,4,,,
+sub,{sh},ʃ a,4,,,
+sub,{h},h a,4,,,
+# Sub Rules (Independent Vowels)
+sub,{a},a,4,,,
+sub,{a-long},aː,4,,,
+sub,{i},i,4,,,
+sub,{u},u,4,,,
+sub,{u-long},uː,4,,,
+sub,{e},e,4,,,
+sub,{ai},a i,4,,,
+sub,{o},o,4,,,
+sub,{au},a u,4,,,
+# Sub Rules (Diacritics)
+sub,{diacritic_a-long},ERASE aː,4,,,
+sub,{diacritici},ERASE i,4,,,
+sub,{diacriticu},ERASE u,4,,,
+sub,{diacritic_u-long},ERASE uː,4,,,
+sub,{diacritice},ERASE e,4,,,
+sub,{diacriticai},ERASE a i,4,,,
+sub,{diacritico},ERASE o,4,,,
+sub,{diacriticau},ERASE a u,4,,,
+sub,{nasalizer},NAS,4,,,
+sub,{null},ERASE,4,,,
+sub,{misc-diacritics},,3,,,
+# Misc. Rules
+ipasub,a ERASE,,4,,,"removes inherent /a/ when followed by an explicit vowel or nullifying character"
+ipasub,({vowel}) \1 ERASE,\1 ʔ,6,,,"catches explicitly marked glottal stops"
+ipasub,a ({vowel_nota}) ERASE,\1,3,,,"in some cases, the nullifying character diacritic is following the vowel diacritic",
+ipasub,^ERASE,,2,,,"deletes the word-initial null diacritic that appears in occasional words"
+ipasub, ERASE, @,1,,,"controls for unattested combos (19)"
+ipasub,({vowel}) NAS,\1̃,2,,,"attaches the nasal diacritic to short vowels"
+ipasub,aː NAS,ãː,2,,,"attaches the nasal diacritic to long vowels"
+ipasub,uː NAS,uː,2,,,"nasal /uː/ is not contrastive with /uː/"
+ipasub,^NAS,,2,,,"deletes the word-initial NAS diacritic that appears in occasional words"
+ipasub,({gem}) a ERASE \1,\1 ː,6,,,"consonant gemination",
+ipasub,({gem}) a ERASE \1ʰ,\1ʰ ː,7,,,"fixes gemination rule",

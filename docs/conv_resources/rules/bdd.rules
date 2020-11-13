@@ -1,0 +1,22 @@
+# Bunama Rule Set
+# Written by: Emily
+# Last Updated: 2019-11-01
+type,sfrom,sto,weight,precede,follow,comment
+# Pre Rules
+pre,"C","'",,,,
+# Class Rules
+class,passthrough,[abdehiklmnopstuw],,,,
+class,apostrophe,[''‘’],,,,
+class,labialized,[bhmp],,,,
+# Individual Letters
+sub,g,ɡ,2,,,
+sub,y,j,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Labialized Consonants
+sub,({labialized}),\1ʷ,2,,w,
+sub,w,,3,{labialized},,"clean-up",
+sub,g,ɡʷ,3,,w,
+sub,w,,3,g,,"clean-up",
+sub,{apostrophe},ʔʷ,2,,w,
+sub,w,,3,{apostrophe},,"clean-up",

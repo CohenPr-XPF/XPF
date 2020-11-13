@@ -1,0 +1,24 @@
+# Rawa Rule Set
+# Written by Emily
+# Last Updated: 2020-04-17
+type,sfrom,sto,weight,precede,follow,comment
+# Class rules
+class,passthrough,[abdehiklmnoprstuw],,,,
+# Individual Letters
+sub,g,ɡ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Multigraphs
+sub,m,ᵐb,3,,b,
+sub,b,,3,m,,"clean-up",
+sub,n,ⁿd,3,,d,
+sub,d,,3,n,,"clean-up",
+sub,n,ŋ,3,,g,
+sub,g,,3,n,,"clean-up",
+sub,n,ᵑɡ,4,,gg,
+sub,g,,4,n,g,"clean-up",
+sub,g,,4,ng,,"clean-up",
+sub,o,ɔ,3,,o,
+sub,o,,3,o,,"clean-up",
+# Misc. Rules
+sub,-,,2,,,

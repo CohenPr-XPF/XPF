@@ -1,0 +1,34 @@
+# Turkish Rule Set
+# Written by: Justin
+# Edited by: Emily
+# Last Updated: 2019-11-21
+type,sfrom,sto,weight,precede,follow,comment
+# Pre Rules
+pre,Iİ,ıi,,,,
+# Class Rules
+class,passthrough,[abdefhiklmnopstuvz],,,,
+class,gem,(b|d|f|ɡ|h|k|l|m|n|p|s|t|v|z|dʒ|tʃ|ɾ|ʒ|ʃ|j),,,,
+class,punctuation,[''‘’-],,,,
+# Individual Letters
+sub,c,dʒ,2,,,
+sub,ç,tʃ,2,,,
+sub,g,ɡ,2,,,
+sub,ğ,,2,,,
+sub,j,ʒ,2,,,
+sub,ı,ɯ,2,,,
+sub,ö,œ,2,,,
+sub,r,ɾ,2,,,
+sub,ş,ʃ,2,,,
+sub,ü,y,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Circumflexed Vowels
+sub,â,a,2,,,
+sub,û,u,2,,,
+sub,î,i,2,,,
+sub,ô,o,2,,,
+sub,ê,e,2,,,
+# Gemination
+ipasub,({gem}) \1\b,\1 ː,2,,,
+# Misc. Rules
+sub,{punctuation},,1,,,"apostrophes and hyphens have no phonemic value",

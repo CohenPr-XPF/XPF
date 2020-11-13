@@ -1,0 +1,58 @@
+# Nomatsiguenga Rule Set
+# Written by: Emily
+# Last Updated: 2019-09-30
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules 
+class,passthrough,[abeimop],,,,
+class,h-preceder,[cs],,,,
+class,engma,(c|qu),,,,
+class,gu-follower,[eië],,,,
+class,qu-follower,[ei],,,,
+class,vowel,[aeioë],,,,
+class,vowel-output,[aeioɨ],,,,
+class,tone,(NO|˦),,,,
+# Individual Letters
+sub,c,k,2,,,
+sub,ë,ɨ,2,,,
+sub,g,ɡ,2,,,
+sub,j,h,2,,,
+sub,n,n̪,2,,,
+sub,q,k,2,,,
+sub,r,ɾ,2,,,
+sub,s,s̪,2,,,
+sub,t,t̪,2,,,
+sub,y,j,2,,,
+sub,n,ŋ,3,,{engma},
+sub,({passthrough}),\1,2,,,
+# Multigraphs
+sub,c,tʃ,3,,h,
+sub,s,ʃ,3,,h,
+sub,h,,3,{h-preceder},,"clean-up",
+sub,t,t̪s,3,,s,
+sub,s,,3,t,,"clean-up",
+sub,q,k,3,,u{qu-follower},
+sub,u,,3,q,{qu-follower},"clean-up",
+sub,n,ŋ,4,{vowel},g{vowel},
+sub,g,,5,{vowel}n,{vowel},"clean-up",
+sub,g,ɡ,4,,u{gu-follower},
+sub,u,,3,g,{gu-follower},"clean-up",
+sub,n,ŋ,5,,gu{gu-follower},
+sub,g,,5,n,u{gu-follower},
+sub,u,,5,ng,{gu-follower},
+# High Tone
+sub,á,a ˦,2,,,
+sub,é,e ˦,2,,,
+sub,í,i ˦,2,,,
+sub,ó,o ˦,2,,,
+sub,ë́,ɨ ˦,2,,,
+# Low Tone
+sub,({vowel}),\1 NO,2,,,
+# Long Vowels
+ipasub,({vowel-output}) ({tone}) \1 ({tone}),\1 \2 \4 ː,4,,,
+# Diphthongs
+ipasub,a ({tone}) i ({tone}),ai \2 \4,3,,,
+ipasub,e ({tone}) i ({tone}),ei \2 \4,3,,,
+ipasub,o ({tone}) i ({tone}),oi \2 \4,3,,,
+# Misc. Rules
+ipasub,NO,,2,,,"removes no tone indicator after completion of other ipasub rules",
+ipasub,ŋ tʃ,n̪ tʃ,2,,,"fixes <nch> clusters - <n> goes to engma preceding <c>, but not <ch>",

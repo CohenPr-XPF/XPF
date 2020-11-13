@@ -1,0 +1,17 @@
+# Hawaiian Rule Set
+# Written by: Justin
+# Last Updated: 2019-08-02
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aeiouhklmnpv],,,
+class,apostrophe,"[’'‘`ʻ]",,,,
+# Individual Letters
+sub,{apostrophe},ʔ,1,,,
+sub,ā,a ː,1,,,
+sub,ē,e ː,1,,,
+sub,ī,i ː,1,,,
+sub,ō,o ː,1,,,
+sub,ū,u ː,1,,,
+sub,w,v,1,,,
+sub,({passthrough}),\1,0.1,,,
+sub,-,,1,,,

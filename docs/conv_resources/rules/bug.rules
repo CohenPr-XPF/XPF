@@ -1,0 +1,27 @@
+# Bugis Rule Set
+# Written by: Allison
+# Last Updated: 2020-07-16
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aeioubcdhklmnprstw],,,,
+class,apostrophe,['ꞌˈ‘’],,,,
+class,longvowels,(a|e|i|o|u),,,,
+class,gem,(p|t|k|d|b|s|m|n|l|c|ɟ),,,,
+# Individual Letters
+sub,è,ɵ,1,,,
+sub,g,ɡ,1,,,
+sub,j,ɟ,1,,,
+sub,y,j,1,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,0.1,,,
+# Digraphs
+sub,n,ŋ,2,,g,
+sub,g,,2,n,,"clean-up",
+sub,n,ɲ,2,,y,
+sub,y,,2,n,,"clean-up",
+# Long Vowels
+ipasub,({longvowels}) \1\b,\1,2,,,
+# Geminates
+ipasub,({gem}) \1\b,\1 ː,2,,,
+# Misc. Rules
+sub,-,,2,,,

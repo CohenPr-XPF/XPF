@@ -1,0 +1,21 @@
+# Ese Rule Set
+# Written by: Bill
+# Last Updated: 2020-06-15
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules 
+class,apostrophe,[ꞌ'‘’ʼ],,,,
+class,passthrough,[ehikmnopstu],,,,
+# Individual Letters
+sub,a,ɑ,4,,,
+sub,á,ɑ,4,,,"the acute accent on <a>, <e>, and <i> just marks stress"
+sub,é,e,4,,,
+sub,í,i,4,,,
+sub,j,dʑ,4,,,
+sub,r,ɾ,4,,,
+sub,ú,ʉ,4,,,
+sub,v,β,4,,,
+sub,{apostrophe},ʔ,4,,,
+sub,({passthrough}),\1,0.1,,,
+# Digraphs
+sub,c,tɕ,6,,h,"<ch>"
+sub,h,,6,c,,"<ch> cleanup"

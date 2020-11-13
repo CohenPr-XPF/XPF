@@ -1,0 +1,38 @@
+# Albanian Rule Set
+# Written by: Bill
+# Last Updated: 2019-06-11
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules 
+class,e-pair,[iuy],,,,
+class,h-preceder,[dstxz],,,,
+class,j-preceder,[gn],,,,
+class,punctuation,['ꞌ‘’-],,,,
+class,passthrough,[abdefhijklmnopstuvyz],,,,
+# Individual Letters
+sub,c,ts,4,,,
+sub,ç,tʃ,4,,,
+sub,ë,ə,4,,,
+sub,g,ɡ,4,,,
+sub,q,c,4,,,
+sub,r,ɾ,4,,,
+sub,x,dz,4,,,
+# Digraphs
+sub,d,ð,6,,h,"dh"
+sub,s,ʃ,6,,h,"sh"
+sub,t,θ,6,,h,"th"
+sub,x,dʒ,6,,h,"xh"
+sub,z,ʒ,6,,h,"zh"
+sub,h,,6,{h-preceder},,"eliminates h from each of the above"
+sub,g,ɟ,6,,j,"gj"
+sub,n,ɲ,6,,j,"nj"
+sub,j,,6,{j-preceder},,"eliminates j from each of the above"
+sub,l,ɫ,6,,l,"ll"
+sub,l,,6,l,,"clean-up",
+sub,r,r,6,,r,"rr"
+sub,r,,6,r,,"clean-up",
+# Diphthongs
+ipasub,({e-pair}) e,\1e,2,,,"ie/ue/ye"
+ipasub,u a,ua,2,,,"ua"
+# Misc. Rules
+sub,{punctuation},,4,,,
+sub,({passthrough}),\1,0.1,,,

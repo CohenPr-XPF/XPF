@@ -1,0 +1,25 @@
+# Mufian Rule Set
+# Written by: Emily
+# Last Updated: 2020-01-09
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,apostrophe,['ꞌ‘’],,,,
+class,passthrough,[abdefhiklmnopstuw],,,,
+class,w-preceder,[gk'ꞌ‘’],,,,
+# Individual Letters
+#sub,a,æ,2,,,"conflation among /a/ and /ɘ/ - /a/ is used as default transcription in the passthrough class rule",
+#sub,a,ɘ,2,,,
+#sub,e,ɘ,2,,,"conflation with /e/ - /e/ is used as default transcription in the passthrough class rule",
+#sub,o,ɘ,2,,,"conflation with /o/ - /o/ is used as default transcription in the passthrough class rule",
+sub,g,ɡ,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,m,b,3,,b,
+sub,b,,3,m,,"clean-up",
+sub,n,d,3,,d,
+sub,d,,3,n,,"clean-up",
+sub,g,ɡʷ,3,,w,
+sub,k,kʷ,3,,w,
+sub,{apostrophe},ʔʷ,3,,w,
+sub,w,,3,{w-preceder},,"clean-up",

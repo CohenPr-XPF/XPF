@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The XPF Corpus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel = "stylesheet" href="header.css">
+  <link rel = "stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" onclick="openNav()" data-target="#websitenav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="websitenav">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html" style="color: #478ac9;">The XPF Corpus</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Convert-to-IPA.html">Convert to IPA</a></li>
+        <li><a href="Word-Clouds.html">Word Clouds</a></li>
+        <li><a href="Special-Thanks.html">Special Thanks</a></li>
+    </div>
+  </div>
+</nav>
+
+<div id="website-sidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html" style="color: #478ac9;">The XPF Corpus</a>
+  <a href="About.html">About</a>
+  <a href="Convert-to-IPA.html">Convert to IPA</a>
+  <a href="Word-Clouds.html">Word Clouds</a>
+  <a href="Special-Thanks.html">Special Thanks</a>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-container">
+      <div class="col-xs-3 text-right" style="padding-top: 20px; color: #2cccc4">Piapoco</div>
+      <div class="col-xs-5 text-center" style="color: #858e99">Mamasa</div>
+      <div class="col-xs-4" style="padding-top: 10px; color: #77aad9">Basque</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-container">
+      <div class="col-xs-1 text-left" style="padding-top: 45px; color: #77aad9">Hindi</div>
+      <div class="col-xs-5 text-center" style="padding-top: 15px; color: #e68387">Kannada</div>
+      <div class="col-xs-4 text-left" style="padding-top: 40px; color: #f5d654">Rikbaktsa</div>
+      <div class="col-xs-2 text-center" style="padding-top: 5px; color: #e68387">Tamil</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-container">
+      <div class="col-xs-3 text-right" style="padding-top: 55px; color: #858e99">Choctaw</div>
+      <div class="col-xs-4 text-center" style="padding-top: 5px; color: #77aad9">Mwani</div>
+      <div class="col-xs-5 text-center" style="padding-top: 40px; color: #2cccc4">Yuracare</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-container">
+      <div class="col-xs-2 text-right" style="padding-top: 50px; color: #e68387">Yakut</div>
+      <div class="col-xs-8 text-center"><h1 style="margin: 0;">The XPF Corpus</h1></div>
+      <div class="col-xs-2 text-left" style="padding-top: 15px; padding-left: 0; color: #858e99">Swahili</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-container">
+      <div class="col-xs-4 text-left" style="padding-top: 40px; padding-left: 0; color: #77aad9">Tok Pisin</div>
+      <div class="col-xs-3 text-center" style="padding-top: 20px; color: #f5d654">Georgian</div>
+      <div class="col-xs-5 text-center" style="padding-top: 30px; color: #e68387">Arabic</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-container">
+      <div class="col-xs-6 text-center" style="padding-top: 25px; color: #2cccc4">Hungarian</div>
+      <div class="col-xs-2 text-center" style="padding-top: 15px; color: #77aad9">Ixil</div>
+      <div class="col-xs-4 text-right" style="padding-top: 30px; color: #f5d654">Guarani</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-container">
+      <div class="col-xs-4 text-center" style="padding-top: 25px; color: #f5d654">Hmong</div>
+      <div class="col-xs-4 text-center" style="padding-top: 30px; color: #858e99">Azerbaijani</div>
+      <div class="col-xs-4 text-center" style="padding-top: 45px; color: #2cccc4">Zaza</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer class="footer"></footer>
+
+<div id="overlay"></div>
+
+
+<script>
+
+  function openNav() {
+    document.getElementById("website-sidenav").style.width = "250px";
+    document.getElementById("overlay").style.opacity = "0.5";
+    document.getElementById("overlay").style.width = "100%";
+    document.getElementById("overlay").style.transition = "all 0.5s";
+    document.getElementById("overlay").addEventListener("click", closeNav);
+  }
+
+  function closeNav() {
+    document.getElementById("website-sidenav").style.width = "0";
+    document.getElementById("overlay").style.opacity = "1";
+    document.getElementById("overlay").style.width = "0";
+    document.getElementById("overlay").style.transition = "all 0s";
+    document.getElementById("overlay").removeEventListener("click", closeNav);
+  }
+
+
+</script>
+
+</body>
+</html>

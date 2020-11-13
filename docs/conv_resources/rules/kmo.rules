@@ -1,0 +1,41 @@
+# Kwoma Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-24
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules 
+class,apostrophe,['ꞌˈ‘’],,,,
+class,h-preceder,[cs],,,,
+class,w-preceder,[o],,,,
+class,y-preceder,[aen],,,,
+class,passthrough,[aehikmnostuw],,,,
+# Individual Letters
+sub,b,ᵐb,4,,,
+sub,d,ⁿd,4,,,
+sub,g,ᵑɡ,4,,,
+sub,j,ⁿdʒ,4,,,
+sub,l,j,4,,,"<l> isn't normally in Kwoma but @KmoBowden1997 lists it as appearing in some alternate spellings of words with <y>."
+sub,p,ɸ,4,,,
+sub,r,ɾ,4,,,
+sub,v,β,4,,,
+sub,y,j,4,,,
+sub,{apostrophe},ʔ,4,,,
+# Digraphs
+sub,c,tʃ,6,,h,"ch"
+sub,s,ʃ,6,,h,"sh"
+sub,h,,6,{h-preceder},,"clean-up",
+sub,n,ɲ,6,,y,"palatal n"
+sub,a,ai,6,,y,"ay"
+sub,e,ei,6,,y,"ey"
+sub,y,,6,{y-preceder},,"clean-up",
+sub,o,ou,6,,w,"ow"
+sub,w,,6,{w-preceder},,"clean-up",
+sub,e,ɛ,6,,e,"ee"
+sub,e,,6,e,,"clean-up",
+sub,i,ɨ,6,,i,"ii"
+sub,i,,6,i,,"clean-up",
+# <iy> and <uw>
+sub,y,,5,i,$,
+sub,w,,5,u,$,
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,
+sub,-,,4,,,

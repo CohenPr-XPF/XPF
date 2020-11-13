@@ -1,0 +1,33 @@
+# Jamaican Creole
+# Written by: Justin
+# Last Updated: 2019-08-02
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[bdfhklmnopstvwzaeiu],,,
+class,punct,['’-],,,,
+class,longv,[aiu],,,,
+# Individual Letters
+sub,g,ɡ,1,,,
+sub,j,dʒ,1,,,
+sub,r,ɹ,1,,,
+sub,y,j,1,,,
+sub,({passthrough}),\1,0.1,,,
+sub,{punct},,1,,,
+# Digraphs
+sub,c,tʃ,2,,h,
+sub,h,,2,c,,"clean-up",
+sub,n,ŋ,2,,g,
+sub,g,,2,n,,"clean-up",
+sub,s,ʃ,2,,h,
+sub,h,,2,s,,"clean-up"
+# Diphthongs
+sub,a,ai,2,,i,
+sub,i,,3,a,,"clean-up",
+sub,u,ua,2,,a,
+sub,a,,3,u,,"clean-up",
+sub,i,ia,2,,a,
+sub,a,,3,i,,"clean-up",
+sub,o,au,2,,u,
+sub,u,,2,o,,"clean-up",
+# Long Vowels
+ipasub,({longv}) \1\b,\1 ː,1,,,

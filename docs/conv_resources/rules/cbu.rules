@@ -1,0 +1,46 @@
+# Candoshi-Shapra Rule Set
+# Written by Abi Creighton
+# Last updated: 2020-07-14
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[ahikmnopst],,,,
+class,vowels,[aio],,,,
+class,punct,['ꞌ‘’-],,,,
+# Individual Letters
+sub,á,a,1,,,"accents mark stress"
+sub,b,ᵐp,1,,,
+sub,d,ⁿt,1,,,
+sub,g,ᵑk,1,,,
+sub,í,i,1,,,
+sub,ó,o,1,,,
+sub,r,ɾ,1,,,
+sub,u,o,1,,,
+sub,ú,o,1,,,
+sub,v,w,1,,,
+sub,x,ʈʂ,1,,,
+sub,y,j,1,,,
+sub,z,ʂ,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Multigraphs
+sub,c,tʃ,2,,h,
+sub,h,,2,c,,"clean-up"
+sub,l,ⁿtʃ,2,,l,
+sub,l,,2,l,,"clean-up"
+sub,s,ʃ,2,,h,
+sub,h,,2,s,,"clean-up"
+sub,t,ts,2,,s,
+sub,s,,2,t,,"clean-up"
+sub,n,ⁿts,3,,ts,
+sub,t,,3,n,s,"clean-up"
+sub,s,,3,nt,,"clean-up",
+sub,n,ᶯʈʂ,2,,x,
+sub,x,,2,n,,"clean-up"
+sub,t,t,4,,sh,"deals with <tsh> sequences"
+sub,s,ʃ,4,t,h,"deals with <tsh> sequences"
+sub,n,n,4,,tsh,"deals with <ntsh> sequences"
+# Diphthongs and Long Vowels
+ipasub,i a,ia,2,,,
+ipasub,o a,oa,2,,,
+ipasub,({vowels}) \1\b,\1 ː,2,,,
+# Misc. Rules
+sub,{punct},,1,,,

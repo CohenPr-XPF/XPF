@@ -1,0 +1,13 @@
+# Akawaio Rule Set
+# Written by: Emily Strand
+# Last updated: 2020-02-04
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aeiɨkmnopstuw],,,,
+class,apostrophe,['ꞌˈ‘’],,,,
+# Individual Letters
+sub,r,ɾ,2,,,
+sub,ʉ,ɘ,2,,,
+sub,y,j,2,,,
+sub,{apostrophe},k,2,,,
+sub,({passthrough}),\1,2,,,

@@ -1,0 +1,48 @@
+# Francisco León Zoque Rule Set
+# Written by: Emily
+# Last Updated: 2020-07-06
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abefilmnoprsu],,,,
+class,apostrophe,[ꞌ'ꞌ‘’],,,,
+class,front-v,[iìíeèé],,,,
+class,vowels,[ieaouɨ],,,,
+class,accent-a,[àá],,,,
+class,accent-e,[èé],,,,
+class,accent-i,[ìí],,,,
+class,accent-o,[òó],,,,
+class,accent-u,[ùú],,,,
+# Individual Letters
+sub,c,k,2,,,
+sub,c,s,3,,{front-v},
+sub,d,d̪,2,,,
+sub,g,ɡ,2,,,
+sub,j,h,2,,,
+sub,ñ,ɲ,2,,,
+sub,ṉ,ŋ,2,,,
+sub,ø,ɨ,2,,,
+sub,t,t̪,2,,,
+sub,v,w,2,,,
+sub,y,j,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,{accent-a},a,2,,,
+sub,{accent-e},e,2,,,
+sub,{accent-i},i,2,,,
+sub,{accent-o},o,2,,,
+sub,{accent-u},u,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,tʃ,4,,h,
+sub,h,,3,c,,"clean-up",
+sub,d,dz,4,,z,
+sub,z,,3,d,,"clean-up",
+sub,t,ts,4,,z,
+sub,z,,3,t,,"clean-up",
+sub,g,ɡ,4,,u{front-v},
+sub,u,,3,g,{front-v},"clean-up",
+sub,q,k,4,,u{front-v},
+sub,u,,3,q,{front-v},"clean-up",
+sub,s,ʃ,4,,y,
+sub,y,,3,s,,"clean-up",
+# Misc. Rules
+sub,ⁿ,,2,,,"non-contrastive feature",

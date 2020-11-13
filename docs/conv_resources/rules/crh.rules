@@ -1,0 +1,31 @@
+# Crimean Tatar Rule Set
+# Written by: Allison
+# Last Updated: 2020-04-07
+type,sfrom,sto,weight,precede,follow,comment
+# Pre Rules
+pre,Iİ,ıi,,,,
+# Class Rules
+class,passthrough,[befiklmnopqrsuvz],,,,
+class,gem,(b|dʒ|tʃ|d̪|f|ɡ|ɣ|x|k|l|m|n|ŋ|p|q|r|s|ʃ|t̪|v|j|z),,,,
+class,misc,['ꞌˈ‘’-],,,,
+# Individual Letters
+sub,a,ɑ,2,,,
+sub,â,j ɑ,2,,,
+sub,c,dʒ,2,,,
+sub,ç,tʃ,2,,,
+sub,d,d̪,2,,,
+sub,g,ɡ,2,,,
+sub,ğ,ɣ,2,,,
+sub,h,x,2,,,
+sub,ı,ɯ,2,,,
+sub,ñ,ŋ,2,,,
+sub,ö,ø,2,,,
+sub,ş,ʃ,2,,,
+sub,t,t̪,2,,,
+sub,ü,y,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,0.1,,,
+# Consonant Gemination
+sub,({gem}) \1,\1 ː,2,,,
+# Misc. Rules
+sub,{misc},,2,,,

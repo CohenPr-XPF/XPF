@@ -1,0 +1,40 @@
+# Kagulu Rule Set
+# Written by: Emily
+# Last Updated: 2019-10-31
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdefhiklmnopstuw],,,,
+class,apostrophe,[''‘’],,,,
+# Individual Letters
+sub,g,ɡ,2,,,
+sub,j,dʒ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Prenasals
+sub,m,ᵐb,3,,b,
+sub,b,,3,m,,"clean-up",
+sub,n,ⁿd,3,,d,
+sub,d,,3,n,,"clean-up",
+sub,n,ⁿdʒ,3,,j,
+sub,j,,3,n,,"clean-up",
+sub,n,ᵑɡ,3,,g,
+sub,g,,3,n,,"clean-up"
+# Voiceless Nasals
+sub,m,m̥,3,,h,
+sub,h,,3,m,,"clean-up",
+sub,n,n̥,3,,h,
+sub,h,,3,n,,"clean-up",
+sub,n,ŋ̥,4,,g{apostrophe}h,
+sub,{apostrophe},,1,g,,"clean-up",
+sub,h,,3,{apostrophe},,"clean-up",
+# Other Multigraphs
+sub,c,tʃ,2,,h,
+sub,h,,3,c,,"clean-up",
+sub,n,ŋ,4,,g{apostrophe},
+sub,g,,3,n,,"clean-up",
+sub,n,ɲ,3,,y,
+sub,y,,3,n,,"clean-up",
+sub,s,ʃ,3,,h,
+sub,h,,3,s,,"clean-up",
+# Misc. Rules
+sub,-,,2,,,

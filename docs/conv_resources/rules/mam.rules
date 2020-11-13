@@ -1,0 +1,35 @@
+# Mam Rule Set
+# Written by: Emily
+# Last Updated: 2020-03-02
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aeiklmnopqrstuw],,,,
+class,apostrophe,['ꞌˈ‘’],,,,
+class,ejectives,(k|q|t|tʃ|c|ʈʂ|ts),,,,
+class,vowels,[aeiou],,,,
+# Individual Letters
+sub,j,χ,2,,,
+sub,x,ʂ,2,,,
+sub,y,j,2,,,
+sub,ẍ,ʃ,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,tʃ,4,,h,
+sub,h,,4,c,,"clean-up",
+sub,k,c,4,,y,
+sub,y,,4,k,,"clean-up",
+sub,t,ʈʂ,4,,x,
+sub,x,,4,t,,"clean-up",
+sub,t,ts,4,,z,
+sub,z,,4,t,,"clean-up",
+sub,x,ʃ,4,,h,
+sub,h,,4,x,,"clean-up",
+# Glottalized Stops
+sub,b,ɓ,2,,{apostrophe},
+sub,{apostrophe},,3,b,,"clean-up",
+ipasub,({ejectives}) ʔ,\1ʼ,3,,,
+# Long Vowels
+ipasub,({vowels}) \1,\1 ː,2,,,
+# Misc. Rules
+sub,-,,2,,,
