@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-06-13
 type,sfrom,sto,weight,precede,follow,comment
-# Class Rules 
+# Class Rules
 class,a,[ա],,,,
 class,b,[բ],,,,
 class,g,[գ],,,,
@@ -39,7 +39,7 @@ class,ts-asp,[ց],,,,
 class,w,[ւ],,,,
 class,p-asp,[փ],,,,
 class,k-asp,[ք],,,,
-class,ev,(և),,,,
+class,ev,[և],,,,
 class,f,[ֆ],,,,
 class,stressmark,[՜՛՞],,,,
 class,punct,[ՙ՚՝'’],,,,

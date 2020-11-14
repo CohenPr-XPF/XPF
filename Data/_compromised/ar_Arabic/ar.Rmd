@@ -76,6 +76,7 @@ kable(diphthongs, align = 'c') %>%
 
 * Arabic is written from right to left [@Ibrahim2002, p. 323].
 * The majority of the graphemes have different forms depending on where they appear in a word in relation to other graphemes (ibid.). Graphemes may have up to four different forms for the word initial, medial, and final position as well as for the isolated form. The isolated forms for all the graphemes are represented below.
+    - Although the diacritics are often seen as orthographically separate from the isolated forms (i.e. the diacritic followed by the base grapheme), some grapheme and diacritic combinations are seen as individual units. For example, the alif ⟨ا⟩ with an overhead hamza ⟨ء⟩, is often represented as ⟨أ⟩ rather than ⟨ ٔا⟩. Other "permanent" grapheme diacritic combinations include: ⟨آ⟩  ,⟨ئ⟩  ,⟨ؤ⟩, and ⟨إ⟩.
 * Long vowels are indicated by specific graphemes, however, short vowels are indicated by diacritics [@Awde2000, p. 18].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}

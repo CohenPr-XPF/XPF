@@ -38,7 +38,7 @@ function make_keyboard(grammar) {
     var ap = "";
 
     for (let x of grammar.subs) { // Retreives input characters from listed class rules (e.g. passthrough)
-      if(x["sfrom_save"].includes("[") && !(x["sto"] == "")) { // don't want to include characters that translate to nothing (most likely punct) (TODO: double check)
+      if(x["sfrom_save"].includes("[") && !(x["sto"] == "") && !(x["sfrom_save"] == " ")) { // don't want to include characters that translate to nothing (most likely punct) (TODO: double check)
         str = x["sfrom_save"];
 
         if(x["sfrom_save"].includes("'")) { // for languages that have apostrophes, the rules account for several UTF-8 types - we just want one to be displayed
@@ -56,13 +56,43 @@ function make_keyboard(grammar) {
       }
     }
 
-    for(let x of grammar.rule_list) { // Retrieves input characters from listed sub rules
+    console.log(orthography);
+
+    for(let x of grammar.rule_list) { // Retrieves input characters from listed sub rules (and class rules from the exceptions described below)
       if(x.type == "sub" && !(x.sfrom.includes("{"))) { // "{}" indicate references to different class rules, which I have accounted for above
         if(x.sfrom != "-"|","|"'" && x.sto != "") { // excludes punctuation and characters that translate to nothing
+          //console.log(x.sfrom);
           orthography[x.sfrom] = 1;
         }
+        if(x.sfrom.match(/^\p{Ll}$/u) && (x.follow.match(/^\p{Ll}$/u) || x.follow.match(/^\p{Ll}\{/u))) {
+          if(x.follow.match(/^\p{Ll}\{/u)) {
+            temp = x.follow;
+            temp = temp[0];
+            orthography[temp] = 1;
+          }
+          else {
+            orthography[x.follow] = 1;
+          }
+        }
+        if(x.sfrom.match(/^\p{Ll}$/u) && (x.precede.match(/^\p{Ll}$/u) || x.precede.match(/^\p{Ll}\{/u))) {
+          if(x.precede.match(/^\p{Ll}\{/u)) {
+            temp = x.precede;
+            temp=temp[0];
+            orthography[temp] = 1;
+          }
+          else {
+            orthography[x.precede] = 1;
+          }
+        }
+      }
+      if(x.type == "class" && (x.sfrom.includes("sukun") || x.sfrom.includes("madda") || x.sfrom.includes("dia-hamza-below"))) { // exception: controls for languages that use Devanagari script (symbol omits inherent vowel)
+        str = x.sto;
+        str = str.replace(/[/\(\)\[\]]/g, "");
+        orthography[str] = 1;
       }
     }
+
+    console.log(orthography);
 
     var buff = "";
     for (letter in orthography) {
@@ -73,5 +103,6 @@ function make_keyboard(grammar) {
     buff = buff.split(",");
     buff = buff.sort(); // sort keyboard alphabetically (should apply to most UTF-8 scripts) (TODO: double check)
 
+    console.log(buff.length);
     return buff;
   }

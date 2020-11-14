@@ -17,7 +17,11 @@ Last Updated: 2020-06-25
 
 ## Consonants
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, restults = 'asis'}                                                                               
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
+
+library(dplyr)
+library(knitr)
+library(kableExtra)                                                                              
 consonants <- read.table(textConnection('
 "Manner of Articulation"          Labial   Dental Alveolar Postalveolar Palatal Velar     
 Stops                             "p b"   "t̪  d̪"    ""         ""         ""    "k ɡ"    
@@ -57,6 +61,7 @@ kable(vowels, align = 'c') %>%
 # Alphabet
 
 * ⟨k⟩, ⟨j⟩, and ⟨w⟩ appear in loanwords [@Ledgeway2016, pp. 393-395].
+* Stress is denoted by accented vowels; however, we have chosen not to account for stress, so accented vowels will be transcribed to their plain counterparts.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
