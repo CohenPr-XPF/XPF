@@ -14,7 +14,11 @@ class,cons-output,(b|tʃ|d̪|f|ɡ|dʒ|ħ|j|k|l|m|n|p|ʔ|r|s|t̪|v|w|ʃ|z|ts),,,,
 class,punctuation,[-'ꞌ‘’],,,,
 class,passthrough,[abefħijklmnoprsuvw],,,,
 # Individual Letters
-sub,à,a,4,,,"vowels with grave accents appear occasionally in loanwords, but only <à> appears with enough frequency to be worth including"
+sub,à,a,4,,$,"vowels with grave accents appear word-finally"
+sub,è,e,4,,$,
+sub,ì,i,4,,$,
+sub,ò,o,4,,$,
+sub,ù,u,4,,$,
 sub,ċ,tʃ,2,,,
 sub,d,d̪,4,,,
 sub,g,ɡ,4,,,

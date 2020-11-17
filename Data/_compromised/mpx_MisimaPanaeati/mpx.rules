@@ -3,7 +3,7 @@
 # Last Updated: 2020-03-05
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
-class,passthrough,[abehikmopuw-],,,,
+class,passthrough,[abehikmopuw],,,,
 class,labial,[pbm],,,,
 # Individual Letters
 sub,d,d̪,2,,,

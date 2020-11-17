@@ -46,8 +46,8 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 
 ## Vowels
 
-* /e/ and /o/ are borrowed from Spanish and English, but only exist in Hiligaynon as allophones of /i/ and /u/ respectively [@motus_1971, p. ix].
-* In some orthographies, an acute accent on a vowel marks stress, which is phonemic in Hiligaynon (ibid.). However, stress is not relevant for the purposes of this project and will not be transcribed.
+* /e/ and /o/ are borrowed from Spanish and English, but only exist in Hiligaynon as allophones of /i/ and /u/, respectively [@motus_1971, p. ix]. Therefore, ⟨e⟩ and ⟨o⟩ will be transcribed to /i/ and /u/, respectively.
+* In some orthographies, an acute accent (´) on a vowel marks stress, which is phonemic in Hiligaynon (ibid.). However, stress is not relevant for the purposes of this project, so accented vowels will be transcribed to their plain counterparts.
 * Possible Hiligaynon diphthongs include /ai/ and /au/ [@manzano_2016, p. 43]. Because they can also be interpreted as sequences of independent vowels rather than diphthongs, however, they will not be accounted for in the rules [@manzano_2016, p. 43].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}

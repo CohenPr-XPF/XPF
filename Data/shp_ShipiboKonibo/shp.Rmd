@@ -44,6 +44,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 * Each vowel has both an oral and a nasal phoneme, according to @ShpValenzuelaEtAl2001 (p. 282); @ShpValenzuela2003, however, analyzes nasal vowels as /Vn/ sequences (p. 95). Because @ShpEliasUlloa2006 also finds nasal vowels to only exist through a nasalization process from consonants (p. 14), I have opted to prefer the analysis that excludes nasal vowels.
 * Long vowels are realized in some words. @ShpEliasUlloa2006 describes vowel length as phonemic, but @ShpValenzuela2003 finds it never to be contrastive (p. 95).
 * @ShpValenzuelaEtAl2001 argue for /ɯ/ rather than /ɨ/.
+* Accented vowels denote stress; however, we do not account for stress, so accented vowels will be transcribed to their plain representations.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('

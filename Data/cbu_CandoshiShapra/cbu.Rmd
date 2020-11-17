@@ -74,6 +74,7 @@ kable(diphthongs, align = 'c') %>%
 # Alphabet
 
 * @tuggy_1966 includes an apostrophe (’) as part of the Candoshi-Shapra alphabet, representing glottal stops (p. 232). However, the same source, which is a dictionary of the language, provides no instances of it. There is no justification of the glottal stop being a phoneme in the language as both @Michael2015 and @surralles_2007 make no mention of it, so I have chosen to transcribe apostrophes, which make up only 0.1% of the language's Crúbadán corpus, to nothing in the rule set.
+* Stress is denoted by accented vowels; however, we do not account for stress, so accented vowels will be transcribed to their plain counterparts (both ⟨ó⟩ and ⟨ú⟩ transcribe to /o/).
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}

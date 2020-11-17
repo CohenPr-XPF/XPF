@@ -48,7 +48,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 * Although like-vowel sequences occur in Cavineña, vowel length is not considered to be contrastive [@Guillaume2008, pp. 28, 34; @Key1968 as cited in @Hayes1994, p. 202].
     * Rather, adjacent vowels are interpreted as being part of distinct syllables [@Guillaume2008, pp. 35-36].
 * /e/ and /u/ are sometimes realized as [ɛ] and [ʊ], respectively [@Guillaume2008, p. 29].
-* Cavineña is said to have a pitch-accent system (high and mid) [@Guillaume2008, p. 42]; however, it's not contrastive.
+* Cavineña is said to have a pitch-accent system (high and mid) [@Guillaume2008, p. 42]; however, it's not contrastive. Thus, accented vowels, denoting pitch accent, will be transcribed to their plain counterparts.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('

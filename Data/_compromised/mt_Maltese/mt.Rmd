@@ -55,6 +55,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
     - @MtHumeEtAl2009:         /ɐ/ /ɛ/ /i/ /ɔ/ /u/  
     - @MtPuech2016:            /a/ /ɛ/ /ɪ/ /ɔ/ /ʊ/
     - NB: @MtHumeEtAl2009 only use phonetic transcriptions, rather than phonemic, so it is ambiguous whether her choices of vowels reflect phonemes rather than realizations.
+* Vowels with grave accents (´) tend to appear word-finally, denoting stress; however, we do not account for stress, so accented vowels in this position will be transcribed to their plain representations.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -95,8 +96,8 @@ Grapheme      Phoneme                   Comment
 "ġ"            "/dʒ/"                     ""
 "g"            "/ɡ/"                      ""  
 "h"            "/ː/"         "lengthens associated vowels"  
-"ħ"            "/ħ/"   "realized by some speakers as [x] or [h]"  
-"ie"           "/ɪː/"           "some authors use /ie/"  
+"ħ"            "/ħ/"   "realized by some speakers as [x] or [h]"    
+"i"         "/i/; /iː/"                   ""
 "j"            "/j/"                      ""
 "k"            "/k/"                      ""
 "l"            "/l/"                      ""
@@ -116,7 +117,7 @@ Grapheme      Phoneme                   Comment
 "z"            "/ts/"       "/dz/ appears in certain loanwords"
 **Digraph**     ""                        ""
 "għ"           "/ː/"         "lengthens associated vowels"
-"i"         "/i/; /iː/"                   ""
+"ie"           "/ɪː/"           "some authors use /ie/"
 "aj"          "/aj/"                      ""
 "aw"          "/aw/"                      ""
 "ew"          "/ew/"         "occasionally realized as [ow]"  

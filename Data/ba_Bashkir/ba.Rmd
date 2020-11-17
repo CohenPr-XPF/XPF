@@ -65,7 +65,7 @@ kable(vowels, align = 'c') %>%
 # Alphabet
 
 * Bashkir appears to be heavily influenced by Russian [@poppe_bashkir_1997], such that the phonemic inventory includes phonemes that are only present through Russian loanwords (p. 6). Although such loanwords (and respective graphemes) are not native to Bashkir, the sounds are, so the transcription of them will be included.
-* Following standard Russian orthography, ⟨ъ⟩ and ⟨ь⟩ indicate non-palatalization and palatalization, respectively, of the preceding consonant; however, this is not native to Bashkir, so it will not be represented in the rules.
+* Following standard Russian orthography, ⟨ъ⟩ and ⟨ь⟩ indicate non-palatalization and palatalization, respectively, of the preceding consonant; however, this is not native to Bashkir, so they will transcribe to nothing in the rules.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -91,7 +91,7 @@ Grapheme      Phoneme                                    Comment
 "н"            "/n/"                                       ""
 "ң"            "/ŋ/"                                       ""
 "о"            "/o/"                                       ""
-"ө"            "/ɵ/"                                       ""
+"ө"            "/ɵ/"                             "⟨ѳ⟩: variant of the grapheme"
 "п"            "/p/"                                       ""
 "р"            "/r/"                                       ""
 "с"            "/s/"                                       ""

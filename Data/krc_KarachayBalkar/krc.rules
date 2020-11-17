@@ -3,7 +3,6 @@
 # Last Updated: 2020-07-28
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
-class,passthrough,[abdefhiklmnoprstuvwz],,,,
 class,punct,[''’ʻ-],,,,
 class,w,[аeёиоыюяу],,,,
 # Individual Letters
@@ -37,7 +36,6 @@ sub,ы,ɯ,1,,,
 sub,э,e,1,^,,"word-initially",
 sub,ю,y,1,,,
 sub,я,j ɑ,1,,,
-sub,({passthrough}),\1,0.1,,,
 # Digraphs
 sub,д,dʒ,3,,ж,
 sub,ж,,3,д,,"clean-up",

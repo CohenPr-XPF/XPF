@@ -104,7 +104,7 @@ Grapheme       Phoneme          Comment
 "y"             "/j/"             ""
 "\'"            "/ʔ/"             ""
 "ƴ; y\'"        "/ʔʲ/"  "geminate form: ⟨\'y\'y⟩ or ⟨ƴƴ⟩ [@Ahmad2014, pp. 5, 7]"
-"\'y"           "/ʔʲ/"  "geminate form: ⟨\'\'y⟩ [@McIntosh1982, p. 23]"
+"\'y"           "/ʔʲ/"  "geminate form: ⟨\'\'y⟩ [@McIntosh1982, p. 23] - **Not represented in the rules**"
 **Digraph**      ""               ""
 "mb"            "/ᵐb/"            ""
 "nd"            "/ⁿd/"            ""

@@ -34,6 +34,6 @@ sub,s,ʃ,6,,h,
 sub,h,,6,{pre-h},,"clean-up",
 ipasub,({vowel}) \1,\1 ː,3,,,
 # Misc. Rules
-ipasub,({vowel}) o2,\1 n,4,,,"the program behaves weirdly with underlined or hooked vowels; this rule allows us to work around that"
+ipasub,({vowel}) {vowel}2,\1 n,4,,,"the program behaves weirdly with underlined or hooked vowels; this rule allows us to work around that"
 sub,({passthrough}),\1,0.1,,,
 ipasub,-,,1,,,

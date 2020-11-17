@@ -47,6 +47,8 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 
 ## Vowels
 
+* Varieties of Spanish differ in whether or not sequences of vowels are realized separately or as diphthongs. Even in varieties that do have preferences for diphthongs, the same sequences may be realized differently in different words. For example, in the word 'biólogo' there is a hiatus between /i/ and /o/, but in 'radiólogo,' ⟨i⟩ and ⟨o⟩ form the diphthong /jo/ [@chitoran_hiatus_2007, pp. 45-46]. Because the rules for diphthongization are not consistent across or even within Spanish dialects, I will not account for them in my rules. That is, accented vowels will be transcribed to their plain representations. This results in a compromised language.
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('
           Front Central Back
@@ -59,10 +61,6 @@ kable(consonants, align = 'c') %>%
   kable_styling("bordered") %>%
   column_spec(1, bold = TRUE)
 ```
-
-### Diphthongs
-
-* Varieties of Spanish differ in whether or not sequences of vowels are realized separately or as diphthongs. Even in varieties that do have preferences for diphthongs, the same sequences may be realized differently in different words. For example, in the word 'biólogo' there is a hiatus between /i/ and /o/, but in 'radiólogo,' ⟨i⟩ and ⟨o⟩ form the diphthong /jo/ [@chitoran_hiatus_2007, pp. 45-46]. Because the rules for diphthongization are not consistent across or even within Spanish dialects, I will not account for them in my rules. This results in a compromised language.
 
 # Alphabet
 

@@ -3,7 +3,7 @@
 # Last Updated: 2019-08-02
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
-class,passthrough,[aeiouhklmnpv],,,
+class,passthrough,[aeiouhklmnp],,,
 class,apostrophe,"[’'‘`ʻ]",,,,
 # Individual Letters
 sub,{apostrophe},ʔ,1,,,

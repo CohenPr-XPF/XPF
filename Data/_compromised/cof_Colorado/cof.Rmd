@@ -69,6 +69,7 @@ kable(consonants, align = 'c') %>%
 
 * Contributing to the ambiguity centered around the phonemic status of /ʔ/, there is also uncertainty in terms of how it's represented orthographically. @Dickinson2011 states that (non-intervocalic/supposedly phonemic) glottal stops are indicated by apostrophes (p. 311); however, @Curnow1998 state that apostrophes mark the once contrastive aspiration and glottal stops aren't marked (p. 387). In the rule set I have opted to transcribe apostrophes as glottal stops.   
 * @Dickinson2011 states that nasal vowels are indicated by a following, syllable-final ⟨n⟩ (p. 311). This is made clear through the syllable structure, given that syllables consist of V or CV [@Walls, p. 15]. ⟨VnC⟩ sequences are transcribed as /ṼC/, and ⟨VnhV⟩ sequences are transcribed as /ṼV/; the ⟨h⟩ following the ⟨n⟩ in intervocalic positions merely serves as an indicator for the nasalization of the preceding vowel [@Moore1966, p. 96]. That is, ⟨VnV⟩ sequences (i.e. those without the ⟨h⟩) are transcribed as /VnV/.
+* Stress is denoted by accented vowels; however, we do not account for stress, so accented vowels will be transcribed to their plain counterparts.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

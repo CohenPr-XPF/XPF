@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-07-12
 type,sfrom,sto,weight,precede,follow,comment
-# Class Rules 
+# Class Rules
 class,cons-output,(b|d|dˤ|ʕ|f|ɡ|ɡʷ|ʁ|ʁʷ|h|ħ|ʒ|ʒˤ|k|kʷ|l|lˤ|m|n|nˤ|q|qʷ|r|rˤ|s|sˤ|ʃ|t|tˤ|w|χ|χʷ|j|z|zˤ),,,,
 class,passthrough,(a|b|d|f|h|i|k|l|m|n|q|r|s|t|u|w|ʷ|z),,,,
 class,pharyngeal,"[̣]",,,,
@@ -17,6 +17,8 @@ sub,ġ,ʁ,4,,,
 sub,ḥ,ħ,4,,,
 sub,h̬,χ,4,,,
 sub,j,ʒ,4,,,
+sub,j,ʒˤ,5,,̣,
+sub,̣,,5,j,,"clean-up",
 sub,ḷ,lˤ,4,,,
 sub,ṇ,nˤ,4,,,
 sub,ṛ,rˤ,4,,,

@@ -99,7 +99,7 @@ Grapheme      Phoneme                    Comment
 "м"            "/m/"                       ""
 "н"            "/n/"                       ""
 "о"            "/o/"                       ""
-"ө"            "/ɵ/"                       ""
+"ө"            "/ɵ/"            "⟨ѳ⟩ is an alternative form"
 "п"            "/p/"                       ""
 "р"            "/r/"                       ""
 "с"            "/s/"                       ""

@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-07-29
 type,sfrom,sto,weight,precede,follow,comment
-# Class Rules 
+# Class Rules
 class,a,[اа],,,,
 class,low-e,[ەә],,,,
 class,b,[بб],,,,

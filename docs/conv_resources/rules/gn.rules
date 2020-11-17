@@ -3,7 +3,7 @@
 # Last Updated: 2019-02-23
 type,sfrom,sto,weight,precede,follow,comment
 # Classes
-class,any-g,[gg̃],,,,
+class,any-g,[gg̃],,,,#[gg̃]-g̃ causes issues with the program (i.e. can't read the character)
 class,apostrophe,['ꞌˈ‘’],,,,
 class,n-follower,[dg],,,,
 class,passthrough,[aãeẽiĩkloõpstuũ],,,,

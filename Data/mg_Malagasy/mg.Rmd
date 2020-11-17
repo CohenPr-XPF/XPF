@@ -71,6 +71,7 @@ kable(vowels, align = 'c') %>%
 
 * The Malagasy alphabet is referred to as the Abidy [@griffiths_grammar_1854, p. 11].
 * ⟨ô⟩ is used for the sound [o] in loanwords [@rasoloson_malagasy_2005, p. 460].
+* Stress is denoted by accented vowels; however, we do not account for stress, so accented vowels will be transcribed to their plain representations.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

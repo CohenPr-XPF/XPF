@@ -1,0 +1,1 @@
+a,á,b,c,e,é,g,h,i,í,j,k,l,m,n,o,ó,p,q,r,s,t,u,ú,w,y,'
