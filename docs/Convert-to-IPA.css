@@ -91,9 +91,7 @@ body{
 .kb1 { 
     	width: 100%;
     	height: 100px;
-    	padding: 10px;
 	overflow: auto;
-	padding: 0px 10px;
 }
 
 .kb {
@@ -108,8 +106,8 @@ body{
     	float: left;
     	margin: 5px;
 	cursor: pointer;
-	padding: 0px 10px;
 }
+
 .kb:hover {
     	background: cornflowerblue;
     	color: white;

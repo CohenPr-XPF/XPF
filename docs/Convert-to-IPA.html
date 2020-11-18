@@ -143,6 +143,7 @@
         <!--Text section: keyboard layout-->
         <div class="col-xs-6" style="padding-right: 15; padding-left: 30px;">
           <div class="kb1" id="keyboard" style="display: none;"></div>
+          <div id="msg1" style="color: red; font-size: 10px; display: none;">Some letters/symbols may need to appear in combination to produce a "legal" translation.</div>
           <div id="load">
             <div id = "initial">Select Grammar: &nbsp</div>
             <div id = "loading" style="display: none;">Keyboard Loading: &nbsp</div>
@@ -157,12 +158,17 @@
         </div>
       </div>
 
+      <!--<div class="row" style="margin: auto; height: 55px;">
+        <div class="col-xs-6" style="height: 100%; display: flex; align-items: center;"><button type="submit" id="submit" onclick="submit()">Translate</button></div>
+        <div class="col-xs-6" id="msg1" style="padding-right: 15px; padding-left: 30px; color: red; font-size: 12px; display: none;"><br>Some letters/symbols may need to appear in combination to produce a "legal" translation.</div>
+      </div>-->
+
       <div class="row" style="margin: auto">
         <div class="col-xs-6"><br>
           Output:<br>
             <input type="hidden" name="rules" id="rules"/>
             <textarea id="out1"></textarea><br> <!--ouptput: translated text-->
-            <div id="msg" style="color: red; font-size: 12px; display: none;">One or more orthographic characters were not translated. Make sure you are using the proper orthography for the language in question.</div> <!--alert if translation for some characters did not occur-->
+            <div id="msg2" style="color: red; font-size: 12px; display: none;">One or more orthographic characters were not translated. Make sure you are using the proper orthography for the language in question.</div> <!--alert if translation for some characters did not occur-->
         </div>
         <div class="col-xs-6" style="padding-right: 15px; padding-left: 30px;"><br> <!--Text section: input/upload-->
           Text input:<br><textarea id="in1" name="in1"></textarea><br>
@@ -230,6 +236,7 @@
         document.getElementById("loading").style.display = "flex";
         document.getElementById("keyboard").style.display = "none";
         document.getElementById("initial").style.display = "none";
+        document.getElementById("msg1").style.display = "none";
 
         keyboard.innerHTML = "";
         document.getElementById("in1").value = "";
@@ -238,7 +245,7 @@
           keyboard.removeChild(keyboard.firstChild);
         }
 
-        document.getElementById("msg").style.display = "none";
+        document.getElementById("msg2").style.display = "none";
 
         a = document.getElementById('upload_form').files
         if (a.length > 0) {
@@ -260,6 +267,7 @@
         document.getElementById("loading").style.display = "flex";
         document.getElementById("keyboard").style.display = "none";
         document.getElementById("initial").style.display = "none";
+        document.getElementById("msg1").style.display = "none";
 
         keyboard.innerHTML = "";
         document.getElementById("in1").value = "";
@@ -267,7 +275,7 @@
         while(keyboard.firstChild) {
           keyboard.removeChild(keyboard.firstChild);
         }
-        document.getElementById("msg").style.display = "none";
+        document.getElementById("msg2").style.display = "none";
         document.getElementById("language_info").style.display = "inline";
 
         a = document.getElementById("rule_dropdown").value;
@@ -342,7 +350,7 @@
       }
 
       function do_translate() {
-        document.getElementById("msg").style.display = "none";
+        document.getElementById("msg2").style.display = "none";
         var cell1 = document.getElementById("in1");
         var in1 = document.getElementById("in1").value;
         var cell2 = document.getElementById("rule_dropdown");
@@ -377,7 +385,7 @@
         document.getElementById("out1").value = "";
         document.getElementById("out1").value = do_translate();
         if (document.getElementById("out1").value.includes("@")) { // display warning if some characters aren't translated
-          document.getElementById("msg").style.display = "flex";
+          document.getElementById("msg2").style.display = "flex";
         }
       }
 

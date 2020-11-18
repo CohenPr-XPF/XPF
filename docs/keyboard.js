@@ -36,6 +36,8 @@ async function make_keyboard(language_keyboard) {
 
     keyboard.appendChild(key);
     }
+    
+    document.getElementById("msg1").style.display = "flex";
   }
 
 

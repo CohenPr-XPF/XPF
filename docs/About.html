@@ -9,6 +9,10 @@
   <link rel = "stylesheet" href="About.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
 </head>
 <body>
 
@@ -54,7 +58,8 @@
 
   <div class="row spacer">
     <div class="col-xs-12">
-      <img class="img-responsive" src="images/languages_map.jpg" alt="Corpus Spread">
+      <!--<img class="img-responsive" src="images/languages_map.jpg" alt="Corpus Spread">-->
+      <div id="chartdiv"></div>
     </div>
   </div>
 
@@ -67,7 +72,7 @@
     <div class="col-xs-1"></div>
   </div>
 
-  <div class="row spacer">
+  <div style="margin-top: 30px; margin-bottom: 50px;">
     <div class="col-container">
       <div class="col-xs-4 text-center mouseover" onclick="location.href='Convert-to-IPA.html';">
         <res1header class="header">Convert to IPA</res1header><hr>
@@ -81,13 +86,13 @@
     </div>
   </div>
 
-  <div class="row spacer" style="margin-bottom: 50px;">
+  <div style="margin-top: 30px; margin-bottom: 50px;">
     <div class="col-container">
       <div class="col-xs-4 adjust text-center mouseover" onclick="location.href='Convert-to-IPA.html';">
         <res2header>knit -> /nɪt/</res2header>
       </div>
       <div class="col-xs-4 mouseover" onclick="location.href='Word-Clouds.html';">
-        <img class="img-responsive" src="images/wordcloud_image.jpg" alt="Word Cloud">
+        <img class="img-responsive center" src="images/wordcloud_image.jpg" width="60%" height="60%" style="margin: auto;" alt="Word Cloud">
       </div>
       <div class="col-xs-4 adjust text-center">
         <res2header>?</res2header>
@@ -120,8 +125,201 @@
   }
 
 
-</script>
 
+
+function get_data(csv) {
+
+  return new Promise(function(resolve, reject) {
+
+    var req = new XMLHttpRequest();
+    req.open("GET", csv);
+
+    req.onload = function() {
+      if(req.status == 200) {
+        resolve(req.response);
+      }
+      else {
+        reject(Error(req.statusText));
+      }
+    };
+
+    req.onerror = function() {
+      reject(Error("Network Error"));
+    };
+
+    req.send();
+  });
+}
+
+async function read_data(latlong_csv) {
+  if (!latlong_csv) {   // ensure file exists
+  alert("Error: No file is listed for the language");
+  return;
+  }
+
+  var latlong_data = await get_data(latlong_csv);
+  //console.log(latlong_data);
+
+  latlong_data = latlong_data.split("\n");
+  latlong_data.shift();
+
+  latlong_array = [];
+
+  for (line in latlong_data) {
+    x = latlong_data[line].split(",");
+    x.splice(1,2);
+    latlong_array.push({"title": x[0], "latitude": x[1], "longitude": x[2], "color": x[4]});
+  }
+
+  return latlong_array;
+}
+
+
+am4core.ready(async function() {
+
+  // Create map instance
+  var chart = am4core.create("chartdiv", am4maps.MapChart);
+
+  // Set map definition
+  chart.geodata = am4geodata_worldLow;
+
+  // Set projection
+  chart.projection = new am4maps.projections.Miller();
+
+  // Create map polygon series
+  var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+
+  // Exclude Antartica
+  polygonSeries.exclude = ["AQ"];
+
+  // Make map load polygon (like country names) data from GeoJSON
+  polygonSeries.useGeodata = true;
+
+  // Configure series
+  var polygonTemplate = polygonSeries.mapPolygons.template;
+  polygonTemplate.fill = am4core.color("#CCE9F6");
+
+  // Add image series
+  var imageSeries = chart.series.push(new am4maps.MapImageSeries());
+  imageSeries.mapImages.template.propertyFields.longitude = "longitude";
+  imageSeries.mapImages.template.propertyFields.latitude = "latitude";
+  imageSeries.mapImages.template.propertyFields.fill = "color";
+
+
+  imageSeries.data = await read_data("Latitude_Longitude.csv");
+
+  // add events to recalculate map position when the map is moved or zoomed
+  chart.events.on("ready", updateCustomMarkers);
+  chart.events.on("mappositionchanged", updateCustomMarkers);
+
+  // this function will take current images on the map and create HTML elements for them
+  function updateCustomMarkers(event) {
+
+    // go through all of the images
+    imageSeries.mapImages.each(function(image) {
+      // check if it has corresponding HTML element
+      if (!image.dummyData || !image.dummyData.externalElement) {
+        // create onex
+        image.dummyData = {
+          externalElement: createCustomMarker(image)
+        };
+      }
+
+      // reposition the element accoridng to coordinates
+      var xy = chart.geoPointToSVG({longitude: image.longitude, latitude: image.latitude});
+      image.dummyData.externalElement.style.top = xy.y + 'px';
+      image.dummyData.externalElement.style.left = xy.x + 'px';
+    });
+
+  }
+
+
+  // this function creates and returns a new marker element
+  function createCustomMarker(image) {
+
+    var chart = image.dataItem.component.chart;
+
+    chart.legend = new am4maps.Legend();
+    chart.legend.position = "left";
+    chart.legend.valign = "top";
+
+    var markerTemplate = chart.legend.markers.template;
+    markerTemplate.width = 16;
+    markerTemplate.height = 16;
+    chart.legend.itemContainers.template.paddingTop = 3;
+    chart.legend.itemContainers.template.paddingBottom = 3;
+    chart.legend.fontSize = "10px";
+    chart.legend.data = [{
+      "name": "Afro-Asiatic",
+      "fill": "#065535",
+    }, {
+      "name": "Other",
+      "fill": "#ffd700",
+    }, {
+      "name": "Arawakan",
+      "fill": "#990000",
+    }, {
+      "name": "Austronesian",
+      "fill": "#ff7f50",
+    }, {
+      "name": "Creole",
+      "fill": "#333333",
+    }, {
+      "name": "Indo-European",
+      "fill": "#003366",
+    }, {
+      "name": "isolates",
+      "fill": "#ffdab9",
+    }, {
+      "name": "Mayan",
+      "fill": "#ccff00",
+    }, {
+      "name": "Niger-Congo",
+      "fill": "#ff00ff",
+    }, {
+      "name": "Trans-New Guinea",
+      "fill": "##800080",
+    }, {
+      "name": "Turkic",
+      "fill": "#66cdaa",
+    }];
+
+
+    // create holder
+    var holder = document.createElement('div');
+    holder.className = 'map-marker';
+    holder.style.position = 'absolute';
+
+    // create dot
+    var dot = document.createElement('div');
+    dot.className = "dot"
+    dot.style.background = image.fill;
+    dot.style.cursor = "pointer";
+    holder.appendChild(dot);
+
+    dot.addEventListener("mouseover", function() {
+      dot.style.background = "black";
+      var node = document.createElement("div");
+      node.className = "info";
+      var textnode = document.createTextNode(image.dataItem.dataContext.title);
+      node.appendChild(textnode);
+      holder.appendChild(node);
+
+    });
+    dot.addEventListener("mouseout", function() {
+      dot.style.background = image.fill;
+      var x = document.getElementsByClassName("info");
+      x[0].parentNode.removeChild(x[0]);
+    })
+
+    // append the marker to the map container
+    chart.svgContainer.htmlElement.appendChild(holder);
+
+    return holder;
+  }
+});
+
+</script>
 
 </body>
 </html>
