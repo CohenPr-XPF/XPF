@@ -1,0 +1,202 @@
+code	name	family	nrules	rules	verify	crubadan	compromised	compromised_other	rules_2	verify_2	crubadan_2	opensubtitles	ldc
+aak	Ankave	Trans-New Guinea,Main Section,Central and Western,Angan,Angan Proper	1	Data/aak_Ankave/aak.rules	Data/aak_Ankave/aak.verify.csv	External/Crubadan2018/aak.txt.bz2
+aau	Abau	Sepik-Ramu,Sepik,Upper Sepik,Abau	1	Data/aau_Abau/aau.rules	Data/aau_Abau/aau.verify.csv	External/Crubadan2018/aau.txt.bz2
+ab	Abkhaz	North Caucasian,Northwest,Abkhaz-Abazin	1	Data/ab_Abkhaz/ab.rules	Data/ab_Abkhaz/ab.verify.csv	External/Crubadan2018/ab.txt.bz2
+acf	Saint Lucian Creole French	Creole,French based	1	Data/acf_SaintLucianCreoleFrench/acf.rules	Data/acf_SaintLucianCreoleFrench/acf.verify.csv	External/Crubadan2018/acf.txt.bz2
+aey	Amele	Trans-New Guinea,Madang-Adelbert Range,Madang,Mabuso,Gum	1	Data/aey_Amele/aey.rules	Data/aey_Amele/aey.verify.csv	External/Crubadan2018/aey.txt.bz2
+agg	Angor	Trans-New Guinea,Senagi	1	Data/agg_Angor/agg.rules	Data/agg_Angor/agg.verify.csv	External/Crubadan2018/agg.txt.bz2
+aia	Arosi	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Central-Eastern Oceanic,Southeast Solomonic,Malaita-San Cristobal,San Cristobal	1	Data/aia_Arosi/aia.rules	Data/aia_Arosi/aia.verify.csv	External/Crubadan2018/aia.txt.bz2
+amn	Amanab	Trans-New Guinea,Northern,Border,Waris	1	Data/amn_Amanab/amn.rules	Data/amn_Amanab/amn.verify.csv	External/Crubadan2018/amn.txt.bz2
+an	Aragonese	Indo-European,Italic,Romance,Italo-Western,Western,Pyrenean-Mozarabic,Pyrenean	1	Data/an_Aragonese/an.rules	Data/an_Aragonese/an.verify.csv	External/Crubadan2018/an.txt.bz2
+aom	Aomie	Trans-New Guinea,Main Section,Eastern,Central and Southeastern,Koiarian,Baraic	1	Data/aom_Aomie/aom.rules	Data/aom_Aomie/aom.verify.csv	External/Crubadan2018/aom.txt.bz2
+apu	Apurinã	Arawakan,Maipuran,Southern Maipuran,Purus	1	Data/apu_Apurinã/apu.rules	Data/apu_Apurinã/apu.verify.csv	External/Crubadan2018/apu.txt.bz2
+apy	Apalaí	Carib,Northern,East-West Guiana,Wayana-Trio	1	Data/apy_Apalaí/apy.rules	Data/apy_Apalaí/apy.verify.csv	External/Crubadan2018/apy.txt.bz2
+arl	Arabela	Zaparoan	1	Data/arl_Arabela/arl.rules	Data/arl_Arabela/arl.verify.csv	External/Crubadan2018/arl.txt.bz2
+ast	Asturian	Indo-European,Italic,Romance,Italo-Western,Western,Gallo-Iberian,Ibero-Romance,West Iberian,Asturo-Leonese	1	Data/ast_Asturian/ast.rules	Data/ast_Asturian/ast.verify.csv	External/Crubadan2018/ast.txt.bz2
+ata	Pele-Ata	East Papuan,Yele-Solomons-New Britain,New Britain,Wasi	1	Data/ata_PeleAta/ata.rules	Data/ata_PeleAta/ata.verify.csv	External/Crubadan2018/ata.txt.bz2
+avt	Au	Torricelli,Wapei-Palei,Wapei	1	Data/avt_Au/avt.rules	Data.avt_Au/avt.verify.csv	External/Crubadan2018/avt.txt.bz2
+ay	Aymara	Aymaran	1	Data/ay_Aymara/ay.rules	Data/ay_Aymara/ay.verify.csv	External/Crubadan2018/ay.txt.bz2
+az	Azerbaijani	Turkic,Common Turkic,Oghuz,Western Oghuz,Azerbaijani	1	Data/az_Azerbaijani/az.rules	Data/az_Azerbaijani/az-normal.verify.csv	External/Crubadan2018/az.txt.bz2				Data/az_Azerbaijani/az-with-c.verify.csv
+ba	Bashkir	Turkic,Western,Uralian	1	Data/ba_Bashkir/ba.rules	Data/ba_Bashkir/ba.verify.csv	External/Crubadan2018/ba.txt.bz2
+bdd	Bunama	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,Papuan Tip,Nuclear,North Papuan Mainland-D'Entrecasteaux,Dobu-Duau	1	Data/bdd_Bunama/bdd.rules	Data/bdd_Bunama/bdd.verify.csv	External/Crubadan2018/bdd.txt.bz2
+be	Belarusan	Indo-European,Slavic,East	1	Data/be_Belarusan/be.rules	Data/be_Belarusan/be.verify.csv	External/Crubadan2018/be.txt.bz2
+bef	Benabena	Trans-New Guinea,Main Section,Central and Western,East New Guinea Highlands,East-Central,Gahuku-Benabena	1	Data/bef_Benabena/bef.rules	Data/bef_Benabena/bef.verify.csv	External/Crubadan2018/bef.txt.bz2
+bg	Bulgarian	Indo-European,Slavic,South,Eastern	1	Data/bg_Bulgarian/bg.rules	Data/bg_Bulgarian/bg.verify.csv	External/Crubadan2018/bg.txt.bz2						External/OpenSubtitles2018/wordlists_uppercase_removed/bg.word.count.tsv.bz2
+bi	Bislama	Creole,English based,Pacific	1	Data/bi_Bislama/bi.rules	Data/bi_Bislama/bi.verify.csv	External/Crubadan2018/bi.txt.bz2
+boa	Bora	Witotoan,Boran	1	Data/boa_Bora/boa.rules	Data/boa_Bora/boa.verify.csv	External/Crubadan2018/boa.txt.bz2
+boj	Anjam	Trans-New Guinea,Madang-Adelbert Range,Madang,Rai Coast,Mindjim	1	Data/boj_Anjam/boj.rules	Data/boj_Anjam/boj.verify.csv	External/Crubadan2018/boj.txt.bz2
+bug	Bugis	Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Sulawesi,South Sulawesi,Bugis	1	Data/bug_Bugis/bug.rules	Data/bug_Bugis/bug.verify.csv	External/Crubadan2018/bug.txt.bz2
+bvr	Burarra	Australian,Gunwingguan,Burarran	1	Data/bvr_Burarra/bvr.rules	Data/bvr_Burarra/bvr.verify.csv	External/Crubadan2018/bvr.txt.bz2
+bxr	Russia Buriat	Mongolian,Eastern,Oirat-Khalkha,Khalkha-Buriat,Buriat	1	Data/bxr_RussiaBuryat/bxr.rules	Data/bxr_RussiaBuryat/bxr.verify.csv	External/Crubadan2018/bxr.txt.bz2
+caa	Ch'orti'	Mayan,Cholan-Tzeltalan,Cholan,Chorti	1	Data/caa_Ch'orti'/caa.rules	Data/caa_Ch'orti'/caa.verify.csv	External/Crubadan2018/caa.txt.bz2
+car	Carib	Carib,Northern,Galibi	1	Data/car_Carib/car.rules	Data/car_Carib/car.verify.csv	External/Crubadan2018/car.txt.bz2
+cbi	Cha'palaa	Barbacoan,Cayapa-Colorado	1	Data/cbi_Cha'palaa/cbi.rules	Data/cbi_Cha'palaa/cbi.verify.csv	External/Crubadan2018/cbi.txt.bz2
+cbk	Chavacano	Creole,Spanish based	1	Data/cbk_Chavacano/cbk.rules	Data/cbk_Chavacano/cbk.verify.csv	External/Crubadan2018/cbk.txt.bz2
+cbt	Chayahuita	Cahuapanan	1	Data/cbt_Chayahuita/cbt.rules	Data/cbt_Chayahuita/cbt.verify.csv	External/Crubadan2018/cbt.txt.bz2
+cbu	Candoshi-Shapra	Language isolate	1	Data/cbu_CandoshiShapra/cbu.rules	Data/cbu_CandoshiShapra/cbu.verify.csv	External/Crubadan2018/cbu.txt.bz2
+cnm	Ixtatán Chuj	Mayan,Kanjobalan-Chujean,Chujean	1	Data/cnm_IxtatanChuj/cnm.rules	Data/cnm_IxtatanChuj/cnm.verify.csv	External/Crubadan2018/cnm.txt.bz2
+crh	Crimean Tatar	Turkic,Kipchak,West Kipchak	1	Data/crh_CrimeanTatar/crh.rules	Data/crh_CrimeanTatar/crh.verify.csv	External/Crubadan2018/crh.txt.bz2
+cs	Czech	Indo-European,Slavic,West,Czech-Slovak	1	Data/cs_Czech/cs.rules	Data/cs_Czech/cs.verify.csv	External/Crubadan2018/cs.txt.bz2
+ctu	Chol	Mayan,Cholan-Tzeltalan,Cholan,Chol-Chontal	1	Data/ctu_Chol/ctu.rules	Data/ctu_Chol/ctu.verify.csv	External/Crubadan2018/ctu.txt.bz2
+cv	Chuvash	Turkic,Bolgar	1	Data/cv_Chuvash/cv.rules	Data/cv_Chuvash/cv.verify.csv	External/Crubadan2018/cv.txt.bz2
+ded	Dedua	Trans-New Guinea,Main Section,Central and Western,Huon-Finisterre,Huon,Eastern	1	Data/ded_Dedua/ded.rules	Data/ded_Dedua/ded.verify.csv	External/Crubadan2018/ded.txt.bz2
+dgz	Daga	Trans-New Guinea,Main Section,Eastern,Central and Southeastern,Dagan	1	Data/dgz_Daga/dgz.rules	Data/dgz_Daga/dgz.verify.csv	External/Crubadan2018/dgz.txt.bz2
+djr	Djambarrpuyngu	Australian,Pama-Nyungan,Yuulngu,Dhuwal	1	Data/djr_Djambarrpuyngu/djr.rules	Data/djr_Djambarrpuyngu/djr.verify.csv	External/Crubadan2018/djr.txt.bz2
+dv	Maldivian	Indo-European,Indo-Iranian,Indo-Aryan,Sinhalese-Maldivian	1	Data/dv_Maldivian/dv.rules	Data/dv_Maldivian/dv.verify.csv	External/Crubadan2018/dv.txt.bz2
+el	Greek	Indo-European,Hellenic,Greek	1	Data/el_Greek/el.rules	Data/el_Greek/el.verify.csv	External/Crubadan2018/el.txt.bz2						External/OpenSubtitles2018/wordlists_uppercase_removed/el.word.count.tsv.bz2
+emi	Mussau-Emira	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,St. Matthias	1	Data/emi_MussauEmira/emi.rules	Data/emi_MussauEmira/emi.verify.csv	External/Crubadan2018/emi.txt.bz2
+eu	Basque	Language Isolate	1	Data/eu_Basque/eu.rules	Data/eu_Basque/eu.verify.csv	External/Crubadan2018/eu.txt.bz2
+gaw	Nobonob	Trans-New Guinea,Madang-Adelbert Range,Madang,Mabuso,Hanseman	1	Data/gaw_Nobonob/gaw.rules	Data/gaw_Nobonob/gaw.verify.csv	External/Crubadan2018/gaw.txt.bz2
+ghs	Guhu-Samane	Trans-New Guinea,Main Section,Eastern,Binanderean,Guhu-Samane	1	Data/ghs_GuhuSamane/ghs.rules	Data/ghs_GuhuSamane/ghs.verify.csv	External/Crubadan2018/ghs.txt.bz2
+gil	Kiribati	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Central-Eastern Oceanic,Remote Oceanic,Micronesia,Micronesian Proper,Ikiribati	1	Data/gil_Kiribati/gil.rules	Data/gil_Kiribati/gil.verify.csv	External/Crubadan2018/gil.txt.bz2
+gn	Guarani	Tupi,Tupi-Guarani,Guarani (I)	1	Data/gn_Guarani/gn.rules	Data/gn_Guarani/gn.verify.csv	External/Crubadan2018/gn.txt.bz2							External/LDC/wordlists/gn.word.filtered.count.tsv.bz2
+guc	Wayuu	Arawakan,Maipuran,Northern Maipuran,Caribbean	1	Data/guc_Wayuu/guc.rules	Data/guc_Wayuu/guc.verify.csv	External/Crubadan2018/guc.txt.bz2
+guo	Guayabero	Guahiban	1	Data/guo_Guayabero/guo.rules	Data/guo_Guayabero/guo.verify.csv	External/Crubadan2018/guo.txt.bz2
+gvn	Kuku-Yalanji	Australian,Pama-Nyungan,Yalandyic	1	Data/gvn_KukuYalanji/gvn.rules	Data/gvn_KukuYalanji/gvn.verify.csv	External/Crubadan2018/gvn.txt.bz2
+haw	Hawaiian	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Central-Eastern Oceanic,Remote Oceanic,Central Pacific,East Fijian-Polynesian,Polynesian,Nuclear,East,Central,Marquesic	1	Data/haw_Hawaiian/haw.rules	Data/haw_Hawaiian/haw.verify.csv	External/Crubadan2018/haw.txt.bz2
+hil	Hiligaynon	Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Meso Philippine,Bisayan,Central,Peripheral	1	Data/hil_Hiligaynon/hil.rules	Data/hil_Hiligaynon/hil.verify.csv	External/Crubadan2018/hil.txt.bz2
+hmn	Hmong	Hmong-Mien,Hmongic,Chuanqiandian	1	Data/hmn_Hmong/hmn.rules	Data/hmn_Hmong/hmn.verify.csv	External/Crubadan2018/hmn.txt.bz2
+hsb	Upper Sorbian	Indo-European,Slavic,West,Sorbian	1	Data/hsb_UpperSorbian/hsb.rules	Data/hsb_UpperSorbian/hsb.verify.csv	External/Crubadan2018/hsb.txt.bz2
+ht	Haitian Creole	Creole,French based	1	Data/ht_HaitianCreole/ht.rules	Data/ht_HaitianCreole/ht.verify.csv	External/Crubadan2018/ht.txt.bz2							External/LDC/wordlists/ht.word.filtered.count.tsv.bz2
+hu	Hungarian	Uralic,Finno-Ugric,Ugric,Hungarian	1	Data/hu_Hungarian/hu.rules	Data/hu_Hungarian/hu.verify.csv	External/Crubadan2018/hu.txt.bz2						External/OpenSubtitles2018/wordlists_uppercase_removed/hu.word.count.tsv.bz2
+hy	Armenian	Indo-European,Armenian	1	Data/hy_Armenian/hy.rules	Data/hy_Armenian/hy.verify.csv	External/Crubadan2018/hy.txt.bz2
+ign	Ignaciano	Arawakan,Maipuran,Southern Maipuran,Bolivia-Parana,Moxo	1	Data/ign_Ignaciano/ign.rules	Data/ign_Ignaciano/ign.verify.csv	External/Crubadan2018/ign.txt.bz2
+ilo	Ilocano	Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Northern Philippine,Northern Luzon,Ilocano	1	Data/ilo_Ilocano/ilo.rules	Data/ilo_Ilocano/ilo.verify.csv	External/Crubadan2018/ilo.txt.bz2
+inb	Inga	Quechuan,Quechua II,B	1	Data/inb_Inga/inb.rules	Data/inb_Inga/inb.verify.csv	External/Crubadan2018/inb.txt.bz2
+iu	Inuktitut	Eskimo-Aleut,Eskimo,Inuit	2	Data/iu_Inuktitut/iu-Latn.rules	Data/iu_Inuktitut/iu-Latn.verify.csv	External/Crubadan2018/iu-Latn.txt.bz2			Data/iu_Inuktitut/iu-Syll.rules	Data/iu_Inuktitut/iu-Syll.verify.csv	External/Crubadan2018/iu.txt.bz2
+iws	Sepik Iwam	Sepik-Ramu,Sepik,Upper Sepik,Iwam	1	Data/iws_SepikIwam/iws.rules	Data/iws_SepikIwam/iws.verify.csv	External/Crubadan2018/iws.txt.bz2
+jam	Jamaican Creole	Creole,English based,Atlantic,Western	1	Data/jam_JamaicanCreole/jam.rules	Data/jam_JamaicanCreole/jam.verify.csv	External/Crubadan2018/jam.txt.bz2
+jv	Javanese	Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Sundic,Javanese	1	Data/jv_Javanese/jv.rules	Data/jv_Javanese/jv.verify.csv	External/Crubadan2018/jv.txt.bz2
+ka	Georgian	Kartvelian,Karto-Zan,Georgian	1	Data/ka_Georgian/ka.rules	Data/ka_Georgian/ka.verify.csv	External/Crubadan2018/ka.txt.bz2							External/LDC/wordlists/ka.word.filtered.count.tsv.bz2
+kbd	Kabardian	North Caucasian,Northwest,Circassian	1	Data/kbd_Kabardian/kbd.rules	Data/kbd_Kabardian/kbd.verify.csv	External/Crubadan2018/kbd.txt.bz2
+kjb	Q'anjob'al	Mayan,Kanjobalan-Chujean,Kanjobalan,Kanjobal-Jacaltec	1	Data/kjb_Q'anjob'al/kjb.rules	Data/kjb_Q'anjob'al/kjb.verify.csv	External/Crubadan2018/kjb.txt.bz2
+kki	Kagulu	Niger-Congo,Atlantic-Congo,Volta-Congo,Benue-Congo,Bantoid,Southern,Narrow Bantu,East,Northeast Savanna Bantu,Northeast Coastal Bantu,Ruvu	1	Data/kki_Kagulu/kki.rules	Data/kki_Kagulu/kki.verify.csv	External/Crubadan2018/kki.txt.bz2
+kl	Kalaallisut	Eskimo-Aleut,Eskimo,Inuit	1	Data/kl_Kalaallisut/kl.rules	Data/kl_Kalaallisut/kl.verify.csv	External/Crubadan2018/kl.txt.bz2
+kn	Kannada	Dravidian,Southern,Tamil-Kannada,Kannada	1	Data/kn_Kannada/kn.rules	Data/kn_Kannada/kn.verify.csv	External/Crubadan2018/kn.txt.bz2
+ko	Korean	Language Isolate	1	Data/ko_Korean/ko.rules	Data/ko_Korean/ko.verify.csv	External/Crubadan2018/ko.txt.bz2						External/OpenSubtitles2018/wordlists_uppercase_removed/ko.word.count.tsv.bz2
+kpf	Komba	Trans-New Guinea,Main Section,Central and Western,Huon-Finisterre,Huon,Western	1	Data/kpf_Komba/kpf.rules	Data/kpf_Komba/kpf.verify.csv	External/Crubadan2018/kpf.txt.bz2
+kpx	Mountain Koiali	Trans-New Guinea,Main Section,Eastern,Central and Southeastern,Koiarian,Koiaric	1	Data/kpx_MountainKoiali/kpx.rules	Data/kpx_MountainKoiali/kpx.verify.csv	External/Crubadan2018/kpx.txt.bz2
+krc	Karachay-Balkar	Turkic,Western,Ponto-Caspian	1	Data/krc_KarachayBalkar/krc.rules	Data/krc_KarachayBalkar/krc.verify.csv	External/Crubadan2018/krc.txt.bz2
+ksr	Borong	Trans-New Guinea,Main Section,Central and Western,Huon-Finisterre,Huon,Eastern	1	Data/ksr_Borong/ksr.rules	Data/ksr_Borong/ksr.verify.csv	External/Crubadan2018/ksr.txt.bz2
+kup	Kunimaipa	Trans-New Guinea,Main Section,Eastern,Central and Southeastern,Goilalan,Kunimaipa	1	Data/kup_Kunimaipa/kup.rules	Data/kup_Kunimaipa/kup.verify.csv	External/Crubadan2018/kup.txt.bz2
+kv	Komi	Uralic,Finno-Ugric,Finno-Permic,Permic	1	Data/kv_Komi/kv.rules	Data/kv_Komi/kv.verify.csv	External/Crubadan2018/kv.txt.bz2
+ky	Kirghiz	Turkic,Kipchak,Kyrgyz-Kipchak	1	Data/ky_Kirghiz/ky.rules	Data/ky_Kirghiz/ky.verify.csv	External/Crubadan2018/ky.txt.bz2
+lem	Namaande	Niger-Congo,Atlantic-Congo,Volta-Congo,Benue-Congo,Bantoid,Southern Bantoid,Narrow Bantu,Mbam,West Mbam,Nomaande	1	Data/lem_Nomaande/lem.rules	Data/lem_Nomaande/lem.verify.csv	External/Crubadan2018/lem.txt.bz2
+mam	Mam	Mayan,Quichean-Mamean,Greater Mamean,Mamean	1	Data/mam_Mam/mam.rules	Data/mam_Mam/mam.verify.csv	External/Crubadan2018/mam.txt.bz2
+mcq	Ese	Trans-New Guinea,Main Section,Eastern,Central and Southeastern,Koiarian,Baraic	1	Data/mcq_Ese/mcq.rules	Data/mcq_Ese/mcq.verify.csv	External/Crubadan2018/mcq.txt.bz2
+mg	Malagasy	Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Borneo,Barito,East,Malagasy	1	Data/mg_Malagasy/mg.rules	Data/mg_Malagasy/mg.verify.csv	External/Crubadan2018/mg.txt.bz2
+mhl	Mauwake	Trans-New Guinea,Madang-Adelbert Range,Adelbert Range,Pihom-Isumrud,Pihom,Kumilan	1	Data/mhl_Mauwake/mhl.rules	Data/mhl_Mauwake/mhl.verify.csv	External/Crubadan2018/mhl.txt.bz2
+mk	Macedonian	Indo-European,Slavic,South,Eastern	2	Data/mk_Macedonian/mk.rules	Data/mk_Macedonian/mk.verify.csv	External/Crubadan2018/mk.txt.bz2			Data/mk_Macedonian/mk-Latn.rules	Data/mk_Macedonian/mk-Latn.verify.csv	External/Crubadan2018/mk-Latn.txt.bz2
+mqj	Mamasa	Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Sulawesi,South Sulawesi,Northern,Toraja-Sa'dan	1	Data/mqj_Mamasa/mqj.rules	Data/mqj_Mamasa/mqj.verify.csv	External/Crubadan2018/mqj.txt.bz2
+mto	Totontepec Mixe	Mixe-Zoque,Mixe,Western Mixe	1	Data/mto_TotontepecMixe/mto.rules	Data/mto_TotontepecMixe/mto.verify.csv	External/Crubadan2018/mto.txt.bz2
+mva	Manam	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,North New Guinea,Schouten,Kairiru-Manam,Manam	1	Data/mva_Manam/mva.rules	Data/mva_Manam/mva.verify.csv	External/Crubadan2018/mva.txt.bz2
+naf	Nabak	Trans-New Guinea,Main Section,Central and Western,Huon-Finisterre,Huon,Western	1	Data/naf_Nabak/naf.rules	Data/naf_Nabak/naf.verify.csv	External/Crubadan2018/naf.txt.bz2
+nan	Min Nan Chinese	Sino-Tibetan,Chinese,Min	1	Data/nan_MinNanChinese/nan.rules	Data/nan_MinNanChinese/nan.verify.csv	External/Crubadan2018/nan.txt.bz2
+nas	Naasioi	East Papuan,South Bougainville,East,Nasioi	1	Data/nas_Naasioi/nas.rules	Data/nas_Naasioi/nas.verify.csv	External/Crubadan2018/nas.txt.bz2
+nhe	Nahuatl	Uto-Aztecan,Southern Uto-Aztecan,Aztecan,General Aztec,Aztec	1	Data/nhe_Nahuatl/nhe.rules	Data/nhe_Nahuatl/nhe.verify.csv	External/Crubadan2018/nhe.txt.bz2
+nhr	Naro	Khoisan,Southern Africa,Central,Tshu-Khwe,Southwest	1	Data/nhr_Naro/nhr.rules	Data/nhr_Naro/nhr.verify.csv	External/Crubadan2018/nhr.txt.bz2
+nsn	Nehan	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,Meso Melanesian,New Ireland,South New Ireland-Northwest Solomonic,Nehan-North Bougainville,Nehan	1	Data/nsn_Nehan/nsn.rules	Data/nsn_Nehan/nsn.verify.csv	External/Crubadan2018/nsn.txt.bz2
+nuy	Nunggubuyu	Australian,Gunwingguan,Nunggubuan	1	Data/nuy_Nunggubuyu/nuy.rules	Data/nuy_Nunggubuyu/nuy.verify.csv	External/Crubadan2018/nuy.txt.bz2
+omw	South Tairora	Trans-New Guinea,Kainantu-Goroka,Kainantu,Tairora,South Tairora	1	Data/omw_SouthTairora/omw.rules	Data/omw_SouthTairora/omw.verify.csv	External/Crubadan2018/omw.txt.bz2
+pad	Paumarí	Arauan	1	Data/pad_Paumarí/pad.rules	Data/pad_Paumarí/pad.verify.csv	External/Crubadan2018/pad.txt.bz2
+pau	Palauan	Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Palauan	1	Data/pau_Palauan/pau.rules	Data/pau_Palauan/pau.verify.csv	External/Crubadan2018/pau.txt.bz2
+pio	Piapoco	Arawakan,Maipuran,Northern Maipuran,Inland	1	Data/pio_Piapoco/pio.rules	Data/pio_Piapoco/pio.verify.csv	External/Crubadan2018/pio.txt.bz2
+pwg	Gapapaiwa	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,Papuan Tip,Nuclear,North Papuan Mainland-D'Entrecasteaux,Are-Taupota,Are	1	Data/pwg_Gapapaiwa/pwg.rules	Data/pwg_Gapapaiwa/pwg.verify.csv	External/Crubadan2018/pwg.txt.bz2
+quz	Cusco Quechua	Quechuan,Quechua II,C	1	Data/quz_CuscoQuechua/quz.rules	Data/quz_CuscoQuechua/quz.verify.csv	External/Crubadan2018/quz.txt.bz2
+rkb	Rikbaktsa	Macro-Ge,Rikbaktsa	1	Data/rkb_Rikbaktsa/rkb.rules	Data/rkb_Rikbaktsa/rkb.verify.csv	External/Crubadan2018/rkb.txt.bz2
+roo	Rotokas	East Papuan,Bougainville,West,Rotokas	1	Data/roo_Rotokas/roo.rules	Data/roo_Rotokas/roo.verify.csv	External/Crubadan2018/roo.txt.bz2
+ro	Romanian	Indo-European,Italic,Romance,Eastern Romance,Balkan Romance,Romanian	1	Data/ro_Romanian/ro.rules	Data/ro_Romanian/ro.verify.csv	External/Crubadan2018/ro.txt.bz2
+shi	Shilha	Afro-Asiatic,Berber,Northern, Atlas	1	Data/shi_Shilha/shi.rules	Data/shi_Shilha/shi.verify.csv	External/Crubadan2018/shi-Latn.txt.bz2
+shp	Shipibo-Konibo	Panoan,Mainline Panoan,Nawa,Chama,Shipibo-Konibo	1	Data/shp_ShipiboKonibo/shp.rules	Data/shp_ShipiboKonibo/shp.verify.csv	External/Crubadan2018/shp.txt.bz2
+si	Sinhala	Indo-European,Indo-Iranian,Indo-Aryan,Sinhalese-Maldivian	1	Data/si_Sinhala/si.rules	Data/si_Sinhala/si.verify.csv	External/Crubadan2018/si.txt.bz2
+snc	Sinaugoro	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,Papuan Tip,Peripheral,Central Papuan,Sinagoro-Keapara	1	Data/snc_Sinaugoro/snc.rules	Data/snc_Sinaugoro/snc.verify.csv	External/Crubadan2018/snc.txt.bz2
+sq	Albanian	Indo-European,Albanian,Tosk	1	Data/sq_Albanian/sq.rules	Data/sq_Albanian/sq.verify.csv	External/Crubadan2018/sq.txt.bz2
+tac	Tarahumara	Uto-Aztecan,Southern Uto-Aztecan,Sonoran,Tarahumaran,Tarahumara	1	Data/tac_Tarahumara/tac.rules	Data/tac_Tarahumara/tac.verify.csv	External/Crubadan2018/tac.txt.bz2
+ta	Tamil	Dravidian,Southern,Tamil-Kannada,Tamil-Kodagu,Tamil-Malayalam,Tamil	1	Data/ta_Tamil/ta.rules	Data/ta_Tamil/ta.verify.csv	External/Crubadan2018/ta.txt.bz2						External/OpenSubtitles2018/wordlists_uppercase_removed/ta.word.count.tsv.bz2	External/LDC/wordlists/ta.word.filtered.count.tsv.bz2
+te	Telugu	Dravidian,South-Central,Telugu	1	Data/te_Telugu/te.rules	Data/te_Telugu/te.verify.csv	External/Crubadan2018/te.txt.bz2
+tee	Huehuetla Tepehua	Totonacan,Tepehua	1	Data/tee_HuehuetlaTepehua/tee.rules	Data/tee_HuehuetlaTepehua/tee.verify.csv	External/Crubadan2018/tee.txt.bz2
+tg	Tajik	Indo-European,Indo-Iranian,Iranian,Western,Southwestern,Persian	1	Data/tg_Tajik/tg.rules	Data/tg_Tajik/tg.verify.csv	External/Crubadan2018/tg.txt.bz2
+to	Tongan	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Central-Eastern Oceanic,Remote Oceanic,Central Pacific,East Fijian-Polynesian,Polynesian,Tongic	1	Data/to_Tongan/to.rules	Data/to_Tongan/to.verify.csv	External/Crubadan2018/to.txt.bz2
+tpi	Tok Pisin	Creole,English based,Pacific	1	Data/tpi_TokPisin/tpi.rules	Data/tpi_TokPisin/tpi.verify.csv	External/Crubadan2018/tpi.txt.bz2							External/LDC/wordlists/tpi.word.filtered.count.tsv.bz2
+tr	Turkish	Turkic,Common Turkic,Oghuz,Western Oghuz,Turkish	1	Data/tr_Turkish/tr.rules	Data/tr_Turkish/tr.verify.csv	External/Crubadan2018/tr.txt.bz2						External/OpenSubtitles2018/wordlists_uppercase_removed/tr.word.count.tsv.bz2	External/LDC/wordlists/tr.word.filtered.count.tsv.bz2
+tt	Tatar	Turkic,Common Turkic,Kipchak,North Kipchak,Tatar	2	Data/tt_Tatar/tt-cyrillic.rules	Data/tt_Tatar/tt-cyrillic.verify.csv	External/Crubadan2018/tt.txt.bz2			Data/tt_Tatar/tt-latn.rules	Data/tt_Tatar/tt-latn.verify.csv	External/Crubadan2018/tt-Latn.txt.bz2
+tyv	Tuvan	Turkic,Common Turkic,Siberian Turkic,South Siberian,Sayan Turkic,Tuvan	1	Data/tyv_Tuvan/tyv.rules	Data/tyv_Tuvan/tyv.verify.csv	External/Crubadan2018/tyv.txt.bz2
+tzo	Tzotzil	Mayan,Cholan-Tzeltalan,Tzeltalan	1	Data/tzo_Tzotzil/tzo.rules	Data/tzo_Tzotzil/tzo.verify.csv	External/Crubadan2018/tzo.txt.bz2
+ug	Uyghur	Turkic,Common Turkic,Karluk,Uyghur	1	Data/ug_Uyghur/ug.rules	Data/ug_Uyghur/ug-cyrillic.verify.csv	External/Crubadan2018/ug.txt.bz2				Data/ug_Uyghur/ug-arabic.verify.csv	External/Crubadan2018/ug-Arab.txt.bz2
+uk	Ukrainian	Indo-European,Balto-Slavic,Slavic,East Slavic,Ukrainian	1	Data/uk_Ukrainian/uk.rules	Data/uk_Ukrainian/uk.verify.csv	External/Crubadan2018/uk.txt.bz2
+usa	Usarufa	Trans-New Guinea,Main Section,Central and Western,East New Guinea Highlands,Eastern,Gadsup-Auyana-Awa	1	Data/usa_Usarufa/usa.rules	Data/usa_Usarufa/usa.verify.csv	External/Crubadan2018/usa.txt.bz2
+uz	Uzbek	Turkic,Common Turkic,Karluk,Uzbek	1	Data/uz_Uzbek/uz.rules	Data/uz_Uzbek/uz.verify.csv	External/Crubadan2018/uz.txt.bz2
+var	Huarijío	Uto-Aztecan,Southern Uto-Aztecan,Sonoran,Tarahumaran,Guarijio	1	Data/var_Huarijío/var.rules	Data/var_Huarijío/var.verify.csv	External/Crubadan2018/var.txt.bz2
+viv	Iduna	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,Papuan Tip,Nuclear,North Papuan Mainland-D'Entrecasteaux,Bwaidoga	1	Data/viv_Iduna/viv.rules	Data/viv_Iduna/viv.verify.csv	External/Crubadan2018/viv.txt.bz2
+vi	Vietnamese	Austro-Asiatic,Mon-khmer,Viet-Muong,Vietnamese	1	Data/vi_Vietnamese/vi.rules	Data/vi_Vietnamese/vi.verify.csv	External/Crubadan2018/vi.txt.bz2							External/LDC/wordlists/vi.word.filtered.count.tsv.bz2
+way	Wayana	Carib,Northern,East-West Guiana,Wayana-Trio	1	Data/way_Wayana/way.rules	Data/way_Wayana/way.verify.csv	External/Crubadan2018/way.txt.bz2
+wbp	Warlpiri	Australian,Pama-Nyungan,South-West,Ngarga	1	Data/wbp_Warlpiri/wbp.rules	Data/wbp_Warlpiri/wbp.verify.csv	External/Crubadan2018/wbp.txt.bz2
+wo	Wolof	Niger-Congo,Atlantic-Congo,Atlantic,Northern,Senegambian,Fula-Wolof,Wolof	1	Data/wo_Wolof/wo.rules	Data/wo_Wolof/wo.verify.csv	External/Crubadan2018/wo.txt.bz2
+ycn	Yucuna	Arawakan,Maipuran,Northern Maipuran,Upper Amazon,Western Nawiki,Yucuna	1	Data/ycn_Yucuna/ycn.rules	Data/ycn_Yucuna/ycn.verify.csv	External/Crubadan2018/ycn.txt.bz2
+yi	Yiddish	Indo-European,Germanic,West,High German,Yiddish	1	Data/yi_Yiddish/yi-Latn.rules	Data/yi_Yiddish/yi.verify.csv	External/Crubadan2018/yi-Latn.txt.bz2
+yua	Yucatec Maya	Mayan,Yucatecan,Yucatec-Lacandon	1	Data/yua_YucatecMaya/yua.rules	Data/yua_YucatecMaya/yua.verify.csv	External/Crubadan2018/yua.txt.bz2
+yuz	Yuracare	Language Isolate	1	Data/yuz_Yuracare/yuz.rules	Data/yuz_Yuracare/yuz.verify.csv	External/Crubadan2018/yuz.txt.bz2
+yva	Yawa	West Papuan,Yapen	1	Data/yva_Yawa/yva.rules	Data/yva_Yawa/yva.verify.csv	External/Crubadan2018/yva.txt.bz2
+zos	Francisco León Zoque	Mixe-Zoque,Zoque,Chiapas Zoque	1	Data/zos_FranciscoLeónZoque/zos.rules	Data/zos_FranciscoLeónZoque/zos.verify.csv	External/Crubadan2018/zos.txt.bz2
+acr	Rabinal Achi'	Mayan,Quichean-Mamean,Greater Quichean,Quichean,Quiche-Achi	1	Data/_compromised/acr_RabinalAchi'/acr.rules	Data/_compromised/acr_RabinalAchi'/acr.verify.csv	External/Crubadan2018/acr-x-rabinal.txt.bz2		suspect marking of vowel length
+ake	Akawaio	Carib,Northern,East-West Guiana,Macushi-Kapon,Kapon	1	Data/_compromised/ake_Akawaio/ake.rules	Data/_compromised/ake_Akawaio/ake.verify.csv	External/Crubadan2018/ake.txt.bz2	p|b|t|d|k|ɡ|s|z
+amp	Alamblak	Sepik-Ramu,Sepik,Sepik Hill,Alamblak	1	Data/_compromised/amp_Alamblak/amp.rules	Data/_compromised/amp_Alamblak/amp.verify.csv	External/Crubadan2018/amp.txt.bz2	ɘ|o
+aoj	Mufian	Torricelli,Kombio-Arapesh,Arapesh	1	Data/_compromised/aoj_Mufian/aoj.rules	Data/_compromised/aoj_Mufian/aoj.verify.csv	External/Crubadan2018/aoj.txt.bz2	a|æ|ɘ|o|e|kʷ|kw|ɡʷ|ɡw
+arn	Mapudungun	Araucanian	1	Data/_compromised/arn_Mapudungun/arn.rules	Data/_compromised/arn_Mapudungun/arn.verify.csv	External/Crubadan2018/arn.txt.bz2	t|t̪	suspect orthography
+ar	Arabic	Afro-Asiatic,Semitic,Central,South,Arabic	1	Data/_compromised/ar_Arabic/ar.rules	Data/_compromised/ar_Arabic/ar.verify.csv	External/Crubadan2018/ar-x-diacritics.txt.bz2	w|uː|j|iː	transcription of alif (phonetic or phonemic glottal stop word-initially)
+awx	Awara	Trans-New Guinea,Main Section,Central and Western,Huon-Finisterre,Finisterre,Wantoat	1	Data/_compromised/awx_Awara/awx.rules	Data/_compromised/awx_Awara/awx.verify.csv	External/Crubadan2018/awx.txt.bz2	d|nd|b|mb|ɡ|nɡ
+bcl	Central Bikol	Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Meso Philippine,Central Philippine,Bikol,Coastal,Naga	1	Data/_compromised/bcl_CentralBikol/bcl.rules	Data/_compromised/bcl_CentralBikol/bcl.verify.csv	External/Crubadan2018/bcl.txt.bz2		/ʔ/ not always marked
+bmu	Somba-Siawari	Trans-New Guinea,Main Section,Central and Western,Huon-Finisterre,Huon,Western	1	Data/_compromised/bmu_SombaSiawari/bmu.rules	Data/_compromised/bmu_SombaSiawari/bmu.verify.csv	External/Crubadan2018/bmu.txt.bz2		phonetic orthography
+btx	Batak Karo	Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Sundic,Sumatra,Batak,Northern	1	Data/_compromised/btx_BatakKaro/btx.rules	Data/_compromised/btx_BatakKaro/btx.verify.csv	External/Crubadan2018/btx.txt.bz2	e|ɘ|ɯ
+bzd	Bribri	Chibchan,Talamanca	1	Data/_compromised/bzd_Bribri/bzd.rules	Data/_compromised/bzd_Bribri/bzd.verify.csv	External/Crubadan2018/bzd.txt.bz2		phonetic orthography
+bzh	Mapos Buang	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,North New Guinea,Huon Gulf,South,Hote-Buang,Buang	1	Data/_compromised/bzh_MaposBuang/bzh.rules	Data/_compromised/bzh_MaposBuang/bzh.verify.csv	External/Crubadan2018/bzh.txt.bz2		possible misrepresentation of /ɛ/
+ca	Catalan	Indo-European,Italic,Romance,Italo-Western,Western,Gallo-Iberian,Ibero-Romance,East Iberian	1	Data/_compromised/ca_Catalan/ca.rules	Data/_compromised/ca_Catalan/ca.verify.csv	External/Crubadan2018/ca.txt.bz2	e|ɛ|o|ɔ|u|w|i|j					External/OpenSubtitles2018/wordlists_uppercase_removed/ca.word.count.tsv.bz2
+cav	Cavineña	Tacanan,Araona-Tacana,Cavinena-Tacana,Cavinena	1	Data/_compromised/cav_Cavineña/cav.rules	Data/_compromised/cav_Cavineña/cav.verify.csv	External/Crubadan2018/cav.txt.bz2		interpretation of consonant clusters (one phoneme or two)
+chf	Tabasco Chontal	Mayan,Cholan-Tzeltalan,Cholan,Chol-Chontal	1	Data/_compromised/chf_TabascoChontal/chf.rules	Data/_compromised/chf_TabascoChontal/chf.verify.csv	External/Crubadan2018/chf.txt.bz2	p’|pʔ|t̪’|t̪ʔ|k’|kʔ
+chm	Mari	Uralic,Finno-Ugric,Finno-Permic,Finno-Cheremisic,Cheremisic	1	Data/_compromised/chm_Mari/chm.rules	Data/_compromised/chm_Mari/chm.verify.csv	External/Crubadan2018/chm.txt.bz2	n|ɲ|l|ʎ	/ə/ and /æ/ not always marked
+cho	Choctaw	Muskogean,Western	1	Data/_compromised/cho_Choctaw/cho.rules	Data/_compromised/cho_Choctaw/cho.verify.csv	External/Crubadan2018/cho.txt.bz2	n|m	phonetic orthography (nasal vowels)
+cni	Asháninka	Arawakan,Maipuran,Southern Maipuran,Campa	1	Data/_compromised/cni_Asháninka/cni.rules	Data/_compromised/cni_Asháninka/cni.verify.csv	External/Crubadan2018/cni.txt.bz2	N|m|n	N represents a placeless nasal
+cof	Colorado	Barbacoan,Cayapa-Colorado	1	Data/_compromised/cof_Colorado/cof.rules	Data/_compromised/cof_Colorado/cof.verify.csv	External/Crubadan2018/cof.txt.bz2		suspect marking of glottal stops
+con	Cofán	Language Isolate	2	Data/_compromised/con_Cofan/con_Cofan_Borman.rules	Data/_compromised/con_Cofan/con_Cofan_Borman.verify.csv	External/Crubadan2018/con_Cofan.txt.bz2	ᵑɡ|ɰ|m|ʋ|ɲ|j		Data/_compromised/con_Cofan/con_Cofan_new.rules	Data/_compromised/con_Cofan/con_Cofan_new.verify.csv
+crm	Moose Cree	Algic,Algonquian,Central,Cree-Montagnais-Naskapi	1	Data/_compromised/crm_MooseCree/crm.rules	Data/_compromised/crm_MooseCree/crm.verify.csv	External/Crubadan2018/crm.txt.bz2		/h/ not always marked
+dyo	Jola-Fogny	Niger-Congo,Atlantic-Congo,Atlantic,Northern,Bak,Jola,Jola Proper,Jola Central,Jola-Fogny	1	Data/_compromised/dyo_JolaFogny/dyo.rules	Data/_compromised/dyo_JolaFogny/dyo.verify.csv	External/Crubadan2018/dyo.txt.bz2		suspect reliability of +ATR vowel transcription
+es	Spanish	Indo-European,Italic,Romance,Italo-Western,Western,Gallo-Iberian,Ibero-Romance,West Iberian,Castilian	1	Data/_compromised/es_Spanish/es.rules	Data/_compromised/es_Spanish/es.verify.csv	External/Crubadan2018/es.txt.bz2		orthographically ambiguous diphthongs				External/OpenSubtitles2018/wordlists_uppercase_removed/es.word.count.tsv.bz2
+fuv	Nigerian Fulfulde	Niger-Congo,Atlantic-Congo,Atlantic,Northern,Senegambian,Fula-Wolof,Fulani,East Central	1	Data/_compromised/fuv_NigerianFulfulde/fuv.rules	Data/_compromised/fuv_NigerianFulfulde/fuv.verify.csv	External/Crubadan2018/fuv.txt.bz2		/ʔ/ not always marked; unclear transcription of /ʔʲ/
+hi	Hindi	Indo-European,Indo-Iranian,Indo-Aryan,Central zone,Western Hindi,Hindustani	1	Data/_compromised/hi_Hindi/hi.rules	Data/_compromised/hi_Hindi/hi.verify.csv	External/Crubadan2018/hi.txt.bz2	æ|ɛ	conflation between nasal vowels and /Vn/ sequences
+id	Indonesian	Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Sundic,Malayic,Malayan,Local Malay	1	Data/_compromised/id_Indonesian/id.rules	Data/_compromised/id_Indonesian/id.verify.csv	External/Crubadan2018/id.txt.bz2	e|ə					External/OpenSubtitles2018/wordlists_uppercase_removed/id.word.count.tsv.bz2
+ixl	Ixil	Mayan,Quichean-Mamean,Greater Mamean,Ixilan	1	Data/_compromised/ixl_Ixil/ixl.rules	Data/_compromised/ixl_Ixil/ixl.verify.csv	External/Crubadan2018/ixl.txt.bz2		/ʔ/ not always marked; suspect orthography
+kea	Cape Verdean Creole	Creole,Portuguese based	1	Data/_compromised/kea_CapeVerdeanCreole/kea.rules	Data/_compromised/kea_CapeVerdeanCreole/kea.verify.csv	External/Crubadan2018/kea.txt.bz2	a|ɐ|e|ɛ|ɾ|ʀ
+kek	Qeqchi	Mayan,Quichean-Mamean,Greater Quichean,Kekchi	1	Data/_compromised/kek_Qeqchi/kek.rules	Data/_compromised/kek_Qeqchi/kek.verify.csv	External/Crubadan2018/kek.txt.bz2	ɓ|bʔ|k’|kʔ|q’|qʔ|t’|tʔ|tʃ’|tʃʔ|ts’|tsʔ
+kk	Kazakh	Turkic,Western,Aralo-Caspian	1	Data/_compromised/kk_Kazakh/kk.rules	Data/_compromised/kk_Kazakh/kk.verify.csv	External/Crubadan2018/kk.txt.bz2	i|j|u|w	contradicting phonological documentation					External/LDC/wordlists/kk.word.filtered.count.tsv.bz2
+kmo	Kwoma	Sepik-Ramu,Sepik,Middle Sepik,Nukuma	1	Data/_compromised/kmo_Kwoma/kmo.rules	Data/_compromised/kmo_Kwoma/kmo.verify.csv	External/Crubadan2018/kmo.txt.bz2		/ʔ/ not always marked
+kyz	Kayabí	Tupi,Tupi-Guarani,Kayabi	1	Data/_compromised/kyz_Kayabí/kyz.rules	Data/_compromised/kyz_Kayabí/kyz.verify.csv	External/Crubadan2018/kyz.txt.bz2	i|j
+mcf	Matsés	Panoan,Northern	1	Data/_compromised/mcf_Matsés/mcf.rules	Data/_compromised/mcf_Matsés/mcf.verify.csv	External/Crubadan2018/mcf.txt.bz2	ts|tʂ|s|ʂ|u|w|o
+mek	Mekeo	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,Papuan Tip,Peripheral,Central Papuan,West Central Papuan,Nuclear	1	Data/_compromised/mek_Mekeo/mek.rules	Data/_compromised/mek_Mekeo/mek.verify.csv	External/Crubadan2018/mek.txt.bz2		/ʔ/ not always marked
+mfe	Morisyen	Creole,French based	1	Data/_compromised/mfe_Morisyen/mfe.rules	Data/_compromised/mfe_Morisyen/mfe.verify.csv	External/Crubadan2018/mfe.txt.bz2	ks|ɡz	possible conflation with other consonants; highly suspect orthography
+ml	Malayalam	Dravidian,Southern,Tamil-Kannada,Tamil-Kodagu,Tamil-Malayalam,Malayalam	1	Data/_compromised/ml_Malayalam/ml.rules	Data/_compromised/ml_Malayalam/ml.verify.csv	External/Crubadan2018/ml.txt.bz2	n|n̪					External/OpenSubtitles2018/wordlists_uppercase_removed/ml.word.count.tsv.bz2
+mlp	Bargam	Trans-New Guinea,Madang-Adelbert Range,Adelbert Range,Pihom-Isumrud-Mugil,Mugil	1	Data/_compromised/mlp_Bargam/mlp.rules	Data/_compromised/mlp_Bargam/mlp.verify.csv	External/Crubadan2018/mlp.txt.bz2	n|ŋ
+mnb	Muna	Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Sulawesi,Muna-Buton,Muna	1	Data/_compromised/mnb_Muna/mnb.rules	Data/_compromised/mnb_Muna/mnb.verify.csv	External/Crubadan2018/mnb.txt.bz2		suspect orthography
+mpx	Misima-Panaeati	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,Papuan Tip,Peripheral,Kilivila-Louisiades,Misima	1	Data/_compromised/mpx_MisimaPanaeati/mpx.rules	Data/_compromised/mpx_MisimaPanaeati/mpx.verify.csv	External/Crubadan2018/mpx.txt.bz2	e|ɛ|o|ɔ
+mt	Maltese	Afro-Asiatic,Semitic,Central,South,Arabic	1	Data/_compromised/mt_Maltese/mt.rules	Data/_compromised/mt_Maltese/mt.verify.csv	External/Crubadan2018/mt.txt.bz2	ts|dz|ʃ|ʒ
+myv	Erzya	Uralic,Finno-Ugric,Finno-Permic,Finno-Cheremisic,Finno-Mordvinic,Mordvinic	1	Data/_compromised/myv_Erzya/myv.rules	Data/_compromised/myv_Erzya/myv.verify.csv	External/Crubadan2018/myv.txt.bz2	n|ŋ
+ne	Nepali	Indo-European,Indo-Iranian,Indo-Aryan,Northern zone,Eastern Pahari	1	Data/_compromised/ne_Nepali/ne.rules	Data/_compromised/ne_Nepali/ne.verify.csv	External/Crubadan2018/ne.txt.bz2		ambiguous transcription of diacritics; diacritics not always marked
+not	Nomatsiguenga	Arawakan,Maipuran,Southern Maipuran,Campa	1	Data/_compromised/not_Nomatsiguenga/not.rules	Data/_compromised/not_Nomatsiguenga/not.verify.csv	External/Crubadan2018/not.txt.bz2	N|m|n	N represents a placeless nasal
+or	Oriya	Indo-European,Indo-Iranian,Indo-Aryan,Eastern zone,Oriya	1	Data/_compromised/or_Oriya/or.rules	Data/_compromised/or_Oriya/or.verify.csv	External/Crubadan2018/or.txt.bz2		ambiguous transcription of diacritics; diacritics not always marked
+os	Ossetic	Indo-European,Indo-Iranian,Iranian,Eastern,Northeastern	1	Data/_compromised/os_Ossetic/os.rules	Data/_compromised/os_Ossetic/os.verify.csv	External/Crubadan2018/os.txt.bz2	u|w|ʷ	orthographically ambiguous consonant gemination
+pag	Pangasinan	Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Northern Philippine,Northern Luzon,South-Central Cordilleran,Southern Cordilleran,Pangasinic	1	Data/_compromised/pag_Pangasinan/pag.rules	Data/_compromised/pag_Pangasinan/pag.verify.csv	External/Crubadan2018/pag.txt.bz2	ŋ|nɡ
+pib	Yine	Arawakan,Maipuran,Southern Maipuran,Purus	1	Data/_compromised/pib_Yine/pib.rules	Data/_compromised/pib_Yine/pib.verify.csv	External/Crubadan2018/pib.txt.bz2	n|h̃
+plu	Palikúr	Arawakan,Maipuran,Eastern Maipuran	1	Data/_compromised/plu_Palikúr/plu.rules	Data/_compromised/plu_Palikúr/plu.verify.csv	External/Crubadan2018/plu.txt.bz2	ɡ|ɣ
+qub	Huallaga Huánuco Quechua	Quechuan,Quechua I	1	Data/_compromised/qub_HuallagaHuanucoQuechua/qub.rules	Data/_compromised/qub_HuallagaHuanucoQuechua/qub.verify.csv	External/Crubadan2018/qub.txt.bz2	i|j|u|w	suspect orthography
+rwo	Rawa	Trans-New Guinea,Main Section,Central and Western,Huon-Finisterre,Finisterre,Gusap-Mot	1	Data/_compromised/rwo_Rawa/rwo.rules	Data/_compromised/rwo_Rawa/rwo.verify.csv	External/Crubadan2018/rwo.txt.bz2	l|r
+sah	Yakut	Turkic,Common Turkic,Siberian,Northern,Yukutian	1	Data/_compromised/sah_Yakut/sah.rules	Data/_compromised/sah_Yakut/sah.verify.csv	External/Crubadan2018/sah.txt.bz2	j|j̃
+sk	Slovak	Indo-European,Slavic,West,Czech-Slovak	1	Data/_compromised/sk_Slovak/sk.rules	Data/_compromised/sk_Slovak/sk.verify.csv	External/Crubadan2018/sk.txt.bz2	t|c|d|ɟ|l|ʎ|n|ɲ	interpretation of consonant clusters (one phoneme or two)
+sm	Samoan	Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Central-Eastern Oceanic,Remote Oceanic,Central Pacific,East Fijian-Polynesian,Polynesian,Nuclear,Samoic-Outlier,Samoan	1	Data/_compromised/sm_Samoan/sm.rules	Data/_compromised/sm_Samoan/sm.verify.csv	External/Crubadan2018/sm.txt.bz2		suspect transcription of /ʔ/ and vowel length
+suz	Sunwar	Sino-Tibetan,Tibeto-Burman,Himalayish,Mahakiranti,Kham-Magar-Chepang-Sunwari,Sunwari	1	Data/_compromised/suz_Sunwar/suz.rules	Data/_compromised/suz_Sunwar/suz.verify.csv	External/Crubadan2018/suz.txt.bz2	ɾ|ɭ|l̪	/ʔ/ not always marked
+sw	Swahili	Niger-Congo,Atlantic-Congo,Volta-Congo,Benue-Congo,Bantoid,Southern Bantoid,Bantu,Northeast Bantu,Northeast Coast Bantu,Sabaki,Swahili	1	Data/_compromised/sw_Swahili/sw.rules	Data/_compromised/sw_Swahili/sw.verify.csv	External/Crubadan2018/sw.txt.bz2	ᵐb|mb|ⁿd|nd|ⁿdʒ|ndʒ|ɲ|nj|ᶬv|mv|ⁿz|nz|ᵑɡ|nɡ						External/LDC/wordlists/sw.word.filtered.count.tsv.bz2
+too	Xicotepec de Juárez Totonac	Totonacan,Totonac	1	Data/_compromised/too_XicotepecdeJuarezTotonac/too.rules	Data/_compromised/too_XicotepecdeJuarezTotonac/too.verify.csv	External/Crubadan2018/too.txt.bz2		suspect orthography
+tpp	Pisaflores Tepehua	Totonacan,Tepehua	1	Data/_compromised/tpp_PisafloresTepehua/tpp.rules	Data/_compromised/tpp_PisafloresTepehua/tpp.verify.csv	External/Crubadan2018/tpp.txt.bz2		suspect marking of vowel length
+tzj	Tz'utujil	Mayan,Quichean-Mamean,Greater Quichean,Quichean,Tzutujil	1	Data/_compromised/tzj_Tz'utujil/tzj.rules	Data/_compromised/tzj_Tz'utujil/tzj.verify.csv	External/Crubadan2018/tzj.txt.bz2		suspect orthography; suspect marking of /ʔ/
+tzm	Central Atlas Tamazight	Afro-Asiatic,Berber,Northern,Atlas	2	Data/_compromised/tzm_CentralAtlasTamazight/tzm.rules	Data/_compromised/tzm_CentralAtlasTamazight/tzm.verify.csv	External/Crubadan2018/tzm-Tfng.txt.bz2	l̪|l̪ˤ|ʒ|ʒˀ		Data/_compromised/tzm_CentralAtlasTamazight/tzm-Latn.rules	Data/_compromised/tzm_CentralAtlasTamazight/tzm-Latn.verify.csv	External/Crubadan2018/tzm.txt.bz2
+wmw	Mwani	Niger-Congo,Atlantic-Congo,Volta-Congo,Benue-Congo,Bantoid,Bantu,Northeast Coast Bantu,Sabaki,Swahili,Mwani	1	Data/_compromised/wmw_Mwani/wmw.rules	Data/_compromised/wmw_Mwani/wmw.verify.csv	External/Crubadan2018/wmw.txt.bz2	ᵐb|mb|ⁿd|nd|ⁿdʒ|ndʒ|ᵑɡ|nɡ
+zsm	Standard Malay	Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Sundic,Malayic,Malayan,Local Malay	1	Data/_compromised/zsm_StandardMalay/zsm.rules	Data/_compromised/zsm_StandardMalay/zsm.verify.csv	External/Crubadan2018/zsm.txt.bz2	e|ə	conflicting orthographies
+zza	Zaza	Indo-European,Indo-Iranian,Iranian,Western,Northwestern,Zaza-Gorani	1	Data/_compromised/zza_Zaza/zza.rules	Data/_compromised/zza_Zaza/zza.verify.csv	External/Crubadan2018/zza.txt.bz2	i|ɨ
