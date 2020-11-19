@@ -10,21 +10,17 @@
 	}
 }
 
-
 @media (max-width: 700px) {
 	inthead {
 		font-size: 20px;
 	}
 }
 
-
 @media (max-width: 500px) {
 	inthead {
 		font-size: 18px;
 	}
 }
-
-
 
 
 body{
@@ -39,7 +35,6 @@ body{
 .spacer{
 	margin-top: 10px;
 }
-
 
 .footer{
 	height: 10vh;
@@ -67,7 +62,6 @@ body{
 	height: 100%;
 	padding: 0 15px;
 }
-
 
 .col-container2{
 	display: flex;

@@ -46,11 +46,9 @@
 	justify-content: center;
 }
 
-
 .sidenav a:hover {
 	color: #cc0000;
 }
-
 
 .sidenav .closebtn {
 	position: absolute;

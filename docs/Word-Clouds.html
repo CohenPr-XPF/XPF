@@ -56,7 +56,6 @@
     <div class="col-xs-1"></div>
   </div>
 
-
   <!--
       Create User Interface
         Two main sections: Input selection/upload and word clouds
@@ -131,6 +130,7 @@
 
 <script>
 
+  // Allow transition for sidebar navigation to be displayed
   function openNav() {
     document.getElementById("website-sidenav").style.width = "250px";
     document.getElementById("overlay").style.opacity = "0.5";
@@ -139,6 +139,7 @@
     document.getElementById("overlay").addEventListener("click", closeNav);
   }
 
+  // Allow transition for sidebar navigation to be removed
   function closeNav() {
     document.getElementById("website-sidenav").style.width = "0";
     document.getElementById("overlay").style.opacity = "1";
@@ -147,16 +148,14 @@
     document.getElementById("overlay").removeEventListener("click", closeNav);
   }
 
-
 </script>
-
 
 
 <!-- Allow for functionality of all interface actions -->
 
 <script type="text/javascript">
 
-  // create ability to open/read uploaded text file
+  // Create ability to open/read uploaded text file
   function parse(file) {
     return new Promise((resolve, reject) => {
       let content = '';
@@ -174,7 +173,7 @@
   }
 
 
-  // Get the input field
+  // Get the input field (if file upload)
   function read_text_upload() {
     a = document.getElementById('upload_text_form').files
     if (a.length > 0) {
@@ -187,7 +186,6 @@
   }
 
 
-  // Generate word cloud(s)
   function generate() {
     var x = document.getElementById("rule_dropdown");
     var language_select = document.getElementById("rule_dropdown").value;
@@ -201,7 +199,6 @@
       get_wc();
     }
   }
-
 
   // Set everything up for the word cloud(s) to be made
   async function get_wc() {
@@ -264,7 +261,7 @@
   }
 
 
-  // Color code the word cloud(s) based on frequency size/kl-divergence (words with the same count appear as the same color)
+  // Color code the word cloud(s) based on frequency size/kl-divergence (i.e. words with the same count appear as the same color)
   var fill;
   var prev_color;
   var max_color = 0;
@@ -287,6 +284,7 @@
   }
 
 
+  // Specify attributes of the word cloud(s)
   function make_wc(id, svg, word_list, prob_list){
 
     // Set layout
@@ -298,12 +296,10 @@
       .attr("height", id_height)
       .append("g")
 
-
     // Set text size scale
     var font_scale = d3.scaleLinear()
         .domain([d3.min(prob_list), d3.max(prob_list)])
         .range([15, 70])
-
 
     var layout = d3.layout.cloud()
       .size([id_width, id_height])
@@ -323,8 +319,7 @@
     layout.start();
 
 
-
-    // Actually create word cloud
+    // Actually create the word cloud(s)
     function draw(words) {
 
       svg
@@ -346,14 +341,12 @@
       }
     }
 
-
 </script>
 
 <script src="https://d3js.org/d3.v4.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
 <script src="wc_language_files.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.6.0/math.js"></script>
-
 
 </body>
 </html>

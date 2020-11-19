@@ -1,16 +1,16 @@
 /* Grammar Keyboard */
 
+// Parse the keyboard text file for the selected language (uses the same XMLHttpRequest function in translate03.js)
 async function get_grammar(keyboard_file) {
 
-  if (!keyboard_file) {   // ensure file exists
+  if (!keyboard_file) { // ensure file exists
     alert("Error: No file is listed for the language");
     return;
   }
 
   var chars = await get(keyboard_file);
   chars = chars.split(",");
-  //console.log(chars);
-  //console.log(chars.length);
+
   return chars;
 }
 
@@ -36,7 +36,7 @@ async function make_keyboard(language_keyboard) {
 
     keyboard.appendChild(key);
     }
-    
+
     document.getElementById("msg1").style.display = "flex";
   }
 

@@ -10,13 +10,11 @@
 	}
 }
 
-
 @media (max-width: 700px) {
 	inthead {
 		font-size: 20px;
 	}
 }
-
 
 @media (max-width: 500px) {
 	inthead {
@@ -25,18 +23,14 @@
 }
 
 
-
-
 body{
 	background: #f2f2f2;
 	font-size: 15px;
 }
 
-
 .navbar{
 	background: white;
 }
-
 
 .footer{
 	height: 10vh;
@@ -56,7 +50,6 @@ body{
 	background: #FFFFFF;
 }
 
-
 .col-container{
 	display: flex;
 	align-items: center;
@@ -65,7 +58,6 @@ body{
 	height: 100%;
 	padding: 0 15px;
 }
-
 
 #leftbutton {
 	float: left;
@@ -76,7 +68,6 @@ body{
 	color: white;
 }
 
-
 #rightbutton {
 	float: left;
 	width: 50%;
@@ -86,7 +77,6 @@ body{
 	color: white;
 
 }
-
 
 .kb1 { 
     	width: 100%;
@@ -106,6 +96,7 @@ body{
     	float: left;
     	margin: 5px;
 	cursor: pointer;
+	font-size: 15px;
 }
 
 .kb:hover {
@@ -113,13 +104,11 @@ body{
     	color: white;
 }
 
-
 textarea {
 	width: 100%;
 	vertical-align: top;
 	height: 80px;
 }
-
 
 
 #load {
@@ -130,14 +119,11 @@ textarea {
   	align-items: center; 
 }
 
-
 .letter {
 	color: white;
 	letter-spacing: 5px;
 	animation: fade 10s infinite;
 }
-
-
 
 .letter:nth-child(1){
 	animation-delay: 0.5s;
@@ -166,8 +152,6 @@ textarea {
 .letter:nth-child(7){
 	animation-delay: 3.5s;
 }
-
-
 
 @keyframes fade {
   	0% {

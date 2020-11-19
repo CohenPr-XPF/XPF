@@ -31,7 +31,6 @@
 	}
 }
 
-
 @media (max-width: 500px) {
 	res1header {
 		font-size: 16px;
@@ -54,6 +53,12 @@ body{
 	margin-top: 40px;
 }
 
+.footer{
+	height: 10vh;
+	width: 100%;
+	background: #333333;
+}
+
 
 hr{
 	height: 2px;
@@ -70,19 +75,11 @@ hr{
 	width: 100%;
 }
 
-
-.footer{
-	height: 10vh;
-	width: 100%;
-	background: #333333;
-}
-
 .adjust {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
 
 .mouseover{
 	cursor: pointer;

@@ -66,7 +66,7 @@
     <div class="col-xs-1"></div>
     <div class="col-xs-10">
       <h3><b>How can you use it?</b></h3>
-      <h3><small style="color: black;">Apart from having complete access to the corpus to use for your own research purposes, which is provided on <a href="https://github.com/CohenPr-XPF/XPF">github</a>, we've included a few features below for quick analyses of different languages, and cross-linguistic comparison.</small></h3>
+      <h3><small style="color: black;">Apart from having complete access to the corpus to use for your own research purposes, which is provided on <a href="https://github.com/CohenPr-XPF/XPF" target="_blank">github</a>, we've included a few features below for quick analyses of different languages, and cross-linguistic comparison.</small></h3>
     </div>
     <div class="col-xs-1"></div>
   </div>
@@ -107,6 +107,7 @@
 
 <script>
 
+  // Allow transition for sidebar navigation to be displayed
   function openNav() {
     document.getElementById("website-sidenav").style.width = "250px";
     document.getElementById("overlay").style.opacity = "0.5";
@@ -115,6 +116,7 @@
     document.getElementById("overlay").addEventListener("click", closeNav);
   }
 
+  // Allow transition for sidebar navigation to be removed
   function closeNav() {
     document.getElementById("website-sidenav").style.width = "0";
     document.getElementById("overlay").style.opacity = "1";
@@ -128,22 +130,23 @@
 
 <script>
 
+// Create interactive language map
 am4core.ready(function() {
 
   var language_map = am4core.create("language_map", am4maps.MapChart);
-  language_map.geodata = am4geodata_worldLow;
-  language_map.projection = new am4maps.projections.Miller();
+  language_map.geodata = am4geodata_worldLow; // display the world
+  language_map.projection = new am4maps.projections.Miller(); // identifies specific world map
 
-  var land_mass = language_map.series.push(new am4maps.MapPolygonSeries());
+  var land_mass = language_map.series.push(new am4maps.MapPolygonSeries()); // display actual land masses (countries/continents)
   land_mass.hiddenInLegend = true;
-  land_mass.exclude = ["AQ"]; // Exclude Antartica
+  land_mass.exclude = ["AQ"]; // exclude Antartica
   land_mass.useGeodata = true;
 
   var land_mass_template = land_mass.mapPolygons.template;
-  land_mass_template.fill = am4core.color("#CCE9F6");
+  land_mass_template.fill = am4core.color("#CCE9F6"); // set color of map
 
 
-  language_map.legend = new am4maps.Legend();
+  language_map.legend = new am4maps.Legend(); // display map legend (grouped by language familes/groupings)
   var marker_template = language_map.legend.markers.template;
   marker_template.width = 18;
   marker_template.height = 18;
@@ -160,12 +163,12 @@ am4core.ready(function() {
   Arawakan.mapImages.template.propertyFields.longitude = "longitude";
   Arawakan.mapImages.template.propertyFields.latitude = "latitude";
   Arawakan.mapImages.template.tooltipText = "{title}";
-  Arawakan.fill = "#29335C"; //really done
+  Arawakan.fill = "#29335C";
   Arawakan.name = "Arawakan";
 
   var Arawakan_dot = Arawakan.mapImages.template.createChild(am4core.Circle);
   Arawakan_dot.radius = 3;
-  Arawakan_dot.fill = "#29335C"; //really done
+  Arawakan_dot.fill = "#29335C";
   Arawakan_dot.nonScaling = true;
   Arawakan_dot.events.on("over", dot_zoom_in, this);
   Arawakan_dot.events.on("out", dot_zoom_out, this);
@@ -185,12 +188,12 @@ am4core.ready(function() {
   Austronesian.mapImages.template.propertyFields.longitude = "longitude";
   Austronesian.mapImages.template.propertyFields.latitude = "latitude";
   Austronesian.mapImages.template.tooltipText = "{title}";
-  Austronesian.fill = "#74121D"; //really done
+  Austronesian.fill = "#74121D";
   Austronesian.name = "Austronesian";
 
   var Austronesian_dot = Austronesian.mapImages.template.createChild(am4core.Circle);
   Austronesian_dot.radius = 3;
-  Austronesian_dot.fill = "#74121D"; //really done
+  Austronesian_dot.fill = "#74121D";
   Austronesian_dot.nonScaling = true;
   Austronesian_dot.events.on("over", dot_zoom_in, this);
   Austronesian_dot.events.on("out", dot_zoom_out, this);
@@ -317,12 +320,12 @@ am4core.ready(function() {
   Creoles.mapImages.template.propertyFields.longitude = "longitude";
   Creoles.mapImages.template.propertyFields.latitude = "latitude";
   Creoles.mapImages.template.tooltipText = "{title}";
-  Creoles.fill = "#473335"; // really done
+  Creoles.fill = "#473335";
   Creoles.name = "Creole";
 
   var Creoles_dot = Creoles.mapImages.template.createChild(am4core.Circle);
   Creoles_dot.radius = 3;
-  Creoles_dot.fill = "#473335"; //really done
+  Creoles_dot.fill = "#473335";
   Creoles_dot.nonScaling = true;
   Creoles_dot.events.on("over", dot_zoom_in, this);
   Creoles_dot.events.on("out", dot_zoom_out, this);
@@ -341,12 +344,12 @@ am4core.ready(function() {
   IndoEurope.mapImages.template.propertyFields.longitude = "longitude";
   IndoEurope.mapImages.template.propertyFields.latitude = "latitude";
   IndoEurope.mapImages.template.tooltipText = "{title}";
-  IndoEurope.fill = "#1C7C54"; //really done
+  IndoEurope.fill = "#1C7C54";
   IndoEurope.name = "Indo European";
 
   var IndoEurope_dot = IndoEurope.mapImages.template.createChild(am4core.Circle);
   IndoEurope_dot.radius = 3;
-  IndoEurope_dot.fill = "#1C7C54"; //really done
+  IndoEurope_dot.fill = "#1C7C54";
   IndoEurope_dot.nonScaling = true;
   IndoEurope_dot.events.on("over", dot_zoom_in, this);
   IndoEurope_dot.events.on("out", dot_zoom_out, this);
@@ -379,12 +382,12 @@ am4core.ready(function() {
   Isolates.mapImages.template.propertyFields.longitude = "longitude";
   Isolates.mapImages.template.propertyFields.latitude = "latitude";
   Isolates.mapImages.template.tooltipText = "{title}";
-  Isolates.fill = "#221D23"; // really done
+  Isolates.fill = "#221D23";
   Isolates.name = "Isolates";
 
   var Isolates_dot = Isolates.mapImages.template.createChild(am4core.Circle);
   Isolates_dot.radius = 3;
-  Isolates_dot.fill = "#221D23"; // really done
+  Isolates_dot.fill = "#221D23";
   Isolates_dot.nonScaling = true;
   Isolates_dot.events.on("over", dot_zoom_in, this);
   Isolates_dot.events.on("out", dot_zoom_out, this);
@@ -401,12 +404,12 @@ am4core.ready(function() {
   Mayan.mapImages.template.propertyFields.longitude = "longitude";
   Mayan.mapImages.template.propertyFields.latitude = "latitude";
   Mayan.mapImages.template.tooltipText = "{title}";
-  Mayan.fill = "#B5EF8A"; //really done
+  Mayan.fill = "#B5EF8A";
   Mayan.name = "Mayan";
 
   var Mayan_dot = Mayan.mapImages.template.createChild(am4core.Circle);
   Mayan_dot.radius = 3;
-  Mayan_dot.fill = "#B5EF8A"; //really done
+  Mayan_dot.fill = "#B5EF8A";
   Mayan_dot.nonScaling = true;
   Mayan_dot.events.on("over", dot_zoom_in, this);
   Mayan_dot.events.on("out", dot_zoom_out, this);
@@ -429,12 +432,12 @@ am4core.ready(function() {
   NigerCongo.mapImages.template.propertyFields.longitude = "longitude";
   NigerCongo.mapImages.template.propertyFields.latitude = "latitude";
   NigerCongo.mapImages.template.tooltipText = "{title}";
-  NigerCongo.fill = "#B2ABBF"; //really done
+  NigerCongo.fill = "#B2ABBF";
   NigerCongo.name = "Niger-Congo";
 
   var NigerCongo_dot = NigerCongo.mapImages.template.createChild(am4core.Circle);
   NigerCongo_dot.radius = 3;
-  NigerCongo_dot.fill = "#B2ABBF"; //really done
+  NigerCongo_dot.fill = "#B2ABBF";
   NigerCongo_dot.nonScaling = true;
   NigerCongo_dot.events.on("over", dot_zoom_in, this);
   NigerCongo_dot.events.on("out", dot_zoom_out, this);
@@ -452,12 +455,12 @@ am4core.ready(function() {
   Trans.mapImages.template.propertyFields.longitude = "longitude";
   Trans.mapImages.template.propertyFields.latitude = "latitude";
   Trans.mapImages.template.tooltipText = "{title}";
-  Trans.fill = "#42F2F7"; //really done
+  Trans.fill = "#42F2F7";
   Trans.name = "Trans New-Guinea";
 
   var Trans_dot = Trans.mapImages.template.createChild(am4core.Circle);
   Trans_dot.radius = 3;
-  Trans_dot.fill = "#42F2F7"; //really done
+  Trans_dot.fill = "#42F2F7";
   Trans_dot.nonScaling = true;
   Trans_dot.events.on("over", dot_zoom_in, this);
   Trans_dot.events.on("out", dot_zoom_out, this);
@@ -492,12 +495,12 @@ am4core.ready(function() {
   Turkic.mapImages.template.propertyFields.longitude = "longitude";
   Turkic.mapImages.template.propertyFields.latitude = "latitude";
   Turkic.mapImages.template.tooltipText = "{title}";
-  Turkic.fill = "#E4572E"; //really done
+  Turkic.fill = "#E4572E";
   Turkic.name = "Turkic";
 
   var Turkic_dot = Turkic.mapImages.template.createChild(am4core.Circle);
   Turkic_dot.radius = 3;
-  Turkic_dot.fill = "#E4572E"; //really done
+  Turkic_dot.fill = "#E4572E";
   Turkic_dot.nonScaling = true;
   Turkic_dot.events.on("over", dot_zoom_in, this);
   Turkic_dot.events.on("out", dot_zoom_out, this);
@@ -519,15 +522,13 @@ am4core.ready(function() {
 
   // Dot hover effect
   function dot_zoom_in(dot_on) {
-    //ev.target.fill = "black";
     dot_on.target.radius = 10;
     dot_on.target.cursorOverStyle = am4core.MouseCursorStyle.pointer;
-  };
+  }
   function dot_zoom_out(dot_off) {
-    //ev.target.fill = "#990000";
     dot_off.target.radius = 3;
     dot_off.target.cursorOverStyle = am4core.MouseCursorStyle.default;
-  };
+  }
 });
 
 </script>
