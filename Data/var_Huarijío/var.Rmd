@@ -46,8 +46,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 ## Vowels
 
 * Vowel length is not contrastive [@Caballero2007, p. 5]. However, free variation among long and short vowels does occur [@FelixArmendariz2005, p. 15].
-    - When the repetition of vowels occurs, if the second one is stressed, they are realized as individual syllabic vowels rather than a long vowel [@FelixArmendariz2005, p. 15]. Duplicate vowels will be transcribed as short if the second one does not have a stress marking.
-* Accents are put over the vowels to indicate stress [@Miller1993, p. 25].
+    - When the repetition of vowels occurs, if the second one is stressed, they are realized as individual syllabic vowels rather than a long vowel [@FelixArmendariz2005, p. 15]. Duplicate vowels will be transcribed as short if the second one does not have a stress marking. An acute accent (´) is put over vowels to indicate stress [@Miller1993, p. 25].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

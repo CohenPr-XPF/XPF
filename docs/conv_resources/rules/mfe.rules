@@ -1,0 +1,63 @@
+# Morisyen Rule Set
+# Written by: Allison
+# Last Updated: 2020-08-06
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aeioubfhklmnpsvwz],,,,
+class,longvowels,[ao],,,,
+class,vowels,[aeiou],,,,
+class,consonants,[bcdfghjklmnprstvwxyz],,,,
+class,punct,['’ʻ-],,,,
+# Individual Letters
+sub,d,d̪,1,,,
+sub,g,ɡ,1,,,
+sub,j,dʒ,1,,,
+sub,r,ɣ,1,,,
+sub,t,t̪,1,,,
+sub,x,k s,1,,,
+sub,y,j,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Digraphs
+sub,c,tʃ,4,,h,
+sub,h,,4,c,,"clean-up",
+sub,n,ŋ,4,,g,
+sub,g,,4,n,,"clean-up",
+sub,n,ɲ,4,,y,
+sub,y,,4,n,,"clean-up",
+sub,n,ɲ,4,g,,
+sub,g,,4,,n,"clean-up"
+sub,s,,4,x,,"clean-up: for when <xs> is used",
+sub,o,u,4,,u,
+sub,u,,4,o,,"clean-up",
+# Long Vowels and Diphthongs
+sub,({longvowels}),\1ː,3,,r{consonants},"preceding a consonant",
+sub,e,eə,3,,r{consonants},"preceding a consonant",
+sub,i,iə,3,,r{consonants},"preceding a consonant",
+sub,u,uə,3,,r{consonants},"preceding a consonant",
+sub,r,,3,{vowels},{consonants},"clean-up"
+sub,({longvowels}),\1ː,3,,r$,"preceding a consonant",
+sub,e,eə,3,,r$,"preceding a consonant",
+sub,i,iə,3,,r$,"preceding a consonant",
+sub,u,uə,3,,r$,"preceding a consonant",
+sub,r,,3,{vowels},$,"clean-up"
+# Nasal Vowels - Could only get nasal and non-nasal vowels rules to work with ipasub rules
+ipasub,a n,ã,3,,,
+ipasub,e n,ẽ,3,,,
+ipasub,o n,õ,3,,,
+# Non-nasal vowels
+ipasub,ã n,a n,2,,,
+ipasub,ẽ n,e n,2,,,
+ipasub,õ n,o n,2,,,
+sub,i,i n,2,,nn,
+sub,n,,2,i,n,"clean-up"
+sub,n,,2,in,,"clean-up"
+sub,u,u n,2,,nn,
+sub,n,,2,u,n,"clean-up"
+sub,n,,2,un,,"clean-up",
+sub,o,u n,5,,unn,
+sub,u,,5,o,nn,"clean-up",
+sub,n,,5,ou,n,"clean-up",
+sub,n,,5,oun,,"clean-up",
+# Misc. Rules
+sub,{punct},,1,,,"hyphens have no phonemic value and apostrophes indicate elision",
+sub,s,@,1,,h,"loanword digraph representing /ʃ/",

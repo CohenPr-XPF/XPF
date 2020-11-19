@@ -1,0 +1,49 @@
+# Central Atlas Tamazight (Tifinagh script)
+# Written by: Abi Creighton
+# Last Updated: 2020-07-10
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,gem,(b|ɡ|d̪|d̪ˤ|f|k|h|ħ|ʕ|x|q|ʒ|l̪|m|n̪|r̪|r̪ˤ|ɣ|s̪|s̪ˤ|ʃ|t̪|t̪ˤ|w|j|z̪|z̪ˤ),,,,
+class,lab,[kɡqxɣ],,,,
+class,phar,(d̪|r̪|s̪|t̪|z̪),,,,
+# Individual Letters
+sub,ⴰ,a,1,,,
+sub,ⴱ,b,1,,,
+sub,ⴳ,ɡ,1,,,
+sub,ⴷ,d̪,1,,,
+sub,ⴹ,d̪ˤ,1,,,
+sub,ⴻ,i,1,,,
+sub,ⴼ,f,1,,,
+sub,ⴽ,k,1,,,
+sub,ⵀ,h,1,,,
+sub,ⵃ,ħ,1,,,
+sub,ⵄ,ʕ,1,,,
+sub,ⵅ,x,1,,,
+sub,ⵇ,q,1,,,
+sub,ⵉ,i,1,,,
+sub,ⵊ,ʒ,1,,,
+sub,ⵍ,l̪,1,,,
+sub,ⵎ,m,1,,,
+sub,ⵏ,n̪,1,,,
+sub,ⵓ,u,1,,,
+sub,ⵔ,r̪,1,,,
+sub,ⵕ,r̪ˤ,1,,,
+sub,ⵖ,ɣ,1,,,
+sub,ⵙ,s̪,1,,,
+sub,ⵚ,s̪ˤ,1,,,
+sub,ⵛ,ʃ,1,,,
+sub,ⵜ,t̪,1,,,
+sub,ⵟ,t̪ˤ,1,,,
+sub,ⵡ,w,1,,,
+sub,ⵢ,j,1,,,
+sub,ⵣ,z̪,1,,,
+sub,ⵥ,z̪ˤ,1,,,
+sub,ⵯ,ʷ,1,,,
+# Misc. Rules
+ipasub,({lab}) ʷ,\1ʷ,2,,,"removes space between labialized consonants and labial marker"
+ipasub,({gem}) \1,\1 ː,3,,,"geminate consonants"
+ipasub,({lab}) \1 ʷ,\1ʷ ː,4,,,"fixes labialized geminates"
+ipasub,({phar}) \1ˤ,\1ˤ ː,5,,,"fixes pharyngealized geminates"
+ipasub, ʷ , @ ,1,,,"two unattested occurrences of diacritic"
+sub,ⵯ,@,5,^,$,"two unattested occurrences of diacritic"
+sub,-,,2,,,

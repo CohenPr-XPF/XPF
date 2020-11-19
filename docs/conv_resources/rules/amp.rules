@@ -1,0 +1,19 @@
+# Alamblak Rule Set
+# Written by Abi Creighton
+# Last updated: 2020-08-11
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdehikmnopstuw],,,,
+class,punct,['ꞌ‘’-],,,,
+# Individual Letters
+sub,f,ɸ,1,,,
+sub,g,ɡ,1,,,
+sub,j,dʒ,1,,,
+sub,r,ɾ,1,,,
+sub,y,j,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Multigraphs
+sub,n,ɲ,2,,y,
+sub,y,,2,n,,"clean-up"
+# Misc. Rules
+sub,{punct},,1,,,

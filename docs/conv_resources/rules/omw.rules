@@ -1,0 +1,34 @@
+# South Tairora Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-19
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules 
+class,post-a,[aiu],,,,
+class,post-m,[pw],,,,
+class,post-n,[krt],,,,
+class,pal,(t|ⁿt|k|n|ᵑk),,,,
+class,passthrough,[hikmnpstu],,,,
+# Individual Letters
+sub,a,ɘ,4,,,
+sub,e,ɛː,4,,,
+sub,o,ɔː,4,,,
+sub,q,ʔ,4,,,
+sub,r,ɾ,4,,,
+sub,v,β,4,,,
+sub,y,PALʲ,4,,,
+sub,({passthrough}),\1,0.1,,,
+# Digraphs
+sub,a,aː,6,a,,"<aa>"
+sub,i,ɘj,6,a,,"<ai>"
+sub,u,ɘw,6,a,,"<au>"
+sub,a,,6,,{post-a},"cleanup of a-initial diphthongs"
+sub,p,ᵐp,6,m,,"<mp>"
+sub,w,β̃,6,m,,"<mw>"
+sub,m,,6,,{post-m},"cleanup of m-initial diphthongs"
+sub,k,ᵑk,6,n,,"<nk>"
+sub,r,ɾ̃,6,n,,"<nr>"
+sub,t,ⁿt,6,n,,"<nt>"
+sub,n,,6,,{post-n},"cleanup of n-initial diphthongs"
+# Misc. Rules
+ipasub,({pal}) PALʲ,\1ʲ,3,,,"attaches palatalization to consonants"
+ipasub,PALʲ,@,2,,,"cleans up occurrences of unattested palatalization",

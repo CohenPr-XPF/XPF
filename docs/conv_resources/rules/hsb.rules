@@ -1,0 +1,30 @@
+# Upper Sorbian Rule Set
+# Written by: Allison
+# Last Updated: 2020-03-24
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdefhijklmnopstuvwz],,,,
+class,pal,[pbmnwʀ],,,,
+# Individual Letters
+sub,c,ts,2,,,
+sub,č,tʃ,2,,,
+sub,ć,tʃ,2,,,
+sub,ě,ɪ,2,,,
+sub,g,ɡ,2,,,
+sub,ł,w,2,,,
+sub,ń,nʲ,2,,,
+sub,ó,ʊ,2,,,
+sub,r,ʀ,2,,,
+sub,ř,ʃ,2,,,
+sub,š,ʃ,2,,,
+sub,y,ɨ,2,,,
+sub,ž,ʒ,2,,,
+# Digraphs
+sub,d,dʒ,3,,ź,
+sub,ź,,3,d,,"clean-up",
+sub,c,x,3,,h,
+sub,h,,3,c,,"clean-up"
+ipasub,({pal}) j,\1ʲ,2,,,
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,
+sub,-,,2,,,

@@ -1,0 +1,12 @@
+# Amele Rule Set
+# Written by: Bill
+# Last Updated: 2019-09-23
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdefhijklmnorstuw],,,,
+# Individual Letters
+sub,c,ʔ,4,,,
+sub,g,ɡ,4,,,
+sub,q,ɡb,4,,,
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,

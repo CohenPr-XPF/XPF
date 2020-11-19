@@ -74,7 +74,7 @@ kable(vowels, align = 'c') %>%
 
 # Alphabet
 
-* Vowels are marked with an acute accent (´) in some borrowings and nouns with nonstandard pronunciations. For some verb forms, the acute accent (´) and circumflex (^) are used to indicate pitch accent and verb tense [@NgungaFaquir2012, p. 25].
+* Vowels are marked with an acute accent (´) in some borrowings and nouns with nonstandard pronunciations. For some verb forms, the acute accent (´) and circumflex (^) are used to indicate pitch accent and verb tense [@NgungaFaquir2012, p. 25]. As described above (see Vowels), accented vowels will be transcribed to their plain representations.
 * Vowels may also be marked with a tilde (◌̃). However, this convention is most likely adapted/preserved from Portuguese borrowings [@Abudo2010], given that it's present in 0.4% of the Crúbadán corpus. Since nasal vowels do not seem to be contrastive in Mwani, I have transcribed the nasal vowels to their oral counterparts in the rule set.  
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}

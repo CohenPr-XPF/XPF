@@ -1,0 +1,19 @@
+# Inuktitut Rule Set (Roman Alphabet)
+# Written by: Bill
+# Last Updated: 2019-07-10
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules 
+class,vowel,[aiu],,,,
+class,passthrough,[aijklmnpqstuv],,,,
+class,punct,['‘’-],,,,
+# Individual Letters
+sub,g,ɣ,4,,,
+sub,&,ɬ,4,,,
+sub,r,ʁ,4,,,
+# Digraphs
+sub,n,ŋ,6,,g,"<ng>"
+sub,g,,6,n,,"<ng> cleanup"
+ipasub,({vowel}) \1,\1 ː,2,,,"long vowels"
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,
+sub,{punct},,4,,,

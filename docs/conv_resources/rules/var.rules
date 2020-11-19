@@ -1,0 +1,32 @@
+# Huarijío Rule Set
+# Written by: Emily
+# Last Updated: 2019-09-25
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules 
+class,passthrough,[aehikmnopstuw],,,,
+class,apostrophe,[ꞌ'ꞌ‘’],,,,
+class,a,[aá],,,,
+class,e,[eé],,,,
+class,i,[ií],,,,
+class,o,[oó],,,,
+class,u,[uú],,,,
+# Individual Letters
+sub,j,h,2,,,
+sub,r,ɾ,2,,,
+sub,y,j,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,{a},a,2,,,
+sub,{e},e,2,,,
+sub,{i},i,2,,,
+sub,{o},o,2,,,
+sub,{u},u,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,tʃ,2,,h,
+sub,h,,3,c,,"clean-up",
+# Long vowel removal
+sub,a,,4,a,,
+sub,e,,4,e,,
+sub,i,,4,i,,
+sub,o,,4,o,,
+sub,u,,4,u,,

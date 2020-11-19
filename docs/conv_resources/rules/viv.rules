@@ -1,0 +1,19 @@
+# Iduna Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-15
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,apostrophe,['ꞌ‘’],,,,
+class,consonant,[bdfghklmnst],,,,"Current form excludes the semivowels"
+class,vowel,[aeiou],,,,
+class,passthrough,[bdefhiklmnotuvw],,,,
+# Individual Letters
+sub,a,ɑ,4,,,
+sub,g,ɡ,4,,,
+sub,s,t,4,,,"despite being orthographically distinct, [s] is just an allophone of /t/"
+sub,w,u,6,{consonant},{vowel},
+sub,y,j,4,,,
+sub,{apostrophe},ʔ,4,,,
+sub,-,,4,,,"some words have a hyphen that has no phonetic value"
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,

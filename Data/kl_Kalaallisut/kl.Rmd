@@ -67,7 +67,6 @@ kable(vowels, align = 'c') %>%
 * Geminated consonants are written with double letters [@KlCollis1990, p. 301].
     - Geminated /ŋ/ is written ⟨nng⟩ [@KlCollis1990, p. 317].
 * ⟨e⟩ and ⟨o⟩ were used more widely in earlier orthographies, but in the modern orthography they only survive in pre-uvular contexts [@KlCollis1990, p. 301].
-* ⟨f⟩ is sometimes used to represent /v/.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -89,7 +88,7 @@ Grapheme      Phoneme            Comment
 "s"            "/s/"               ""
 "t"            "/t/"               ""
 "u"            "/u/"               ""
-"v"            "/v/"               ""
+"v"            "/v/"     "⟨f⟩ is also sometimes used"
 **Digraph**     ""                 ""
 "ng"           "/ŋ/"               ""   
 "rn"           "/ɴ/"               ""

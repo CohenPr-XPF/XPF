@@ -1,0 +1,14 @@
+# Bargam Rule Set
+# Written by: Emily Strand
+# Last updated: 2020-02-20
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdefhiklmnopstuwz],,,,
+# Individual Letters
+sub,g,ɡ,2,,,
+sub,q,ʔ,2,,,
+sub,r,ɾ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Misc. Rules
+sub,-,,2,,,

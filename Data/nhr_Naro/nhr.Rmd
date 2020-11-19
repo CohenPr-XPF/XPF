@@ -78,7 +78,7 @@ kable(consonants, col.names = c("Manner of Release", "Dental", "Alveolar", "Pala
 
 ## Vowels
 
-* Vowel length is contrastive [@NhrKagaya1978, p. 31]; however, to better reflect the various suprasegmental features of Naro vowels, I will be following the patterns of the authors I have referenced by representing long vowels as sequences of consecutive vowels rather than by using the ː symbol.
+* Vowel length is contrastive [@NhrKagaya1978, p. 31]; however, to better reflect the various suprasegmental features of Naro vowels, I will be following the patterns of the authors I have referenced by representing long vowels as sequences of consecutive vowels rather than by using the (ː) symbol.
 * Vowel nasalization is also contrastive. Although my sources have argued that any vowel can be nasalized, nasalized high vowels are not attested in the Crúbadán corpus, so I have excluded them from my ruleset. Nasal vowels are marked with a tilde (◌̃).
 * Only the first vowel in a Naro word can be pharyngealized [@NhrVisser1998, p. 124].
 
@@ -99,6 +99,7 @@ kable(consonants, align = 'c') %>%
 ## Tone
 
 * Tone is carried on vowels, as well as on syllabic /m/. Naro has three tones: high, mid, and low. Orthographically, high tones are marked with an acute accent (´), while low tones are marked with a grave accent (\`). Mid tones are unmarked [@NhrVisser1998, p. 132].
+    - Nasal and pharyngealized vowels do not appear to coexist with tones.
 * Voiced consonants tend to lower the tone of following vowels, while ejectives tend to raise it [@NhrVisser1998, p. 133].
 
 # Alphabet

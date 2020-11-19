@@ -1,0 +1,39 @@
+# Yiddish (Romanization)
+# Written by Abi Creighton
+# Last Updated: 2019-10-07
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdfhklmnpstvz],,,,
+class,yvowel,[aeo],,,,
+class,punct,['ꞌˈ‘’-],,,,
+# Individual Letters
+sub,e,ɛ,1,,,
+sub,g,ɡ,1,,,
+sub,i,ɪ,1,,,
+sub,o,ɔ,1,,,
+sub,r,ɾ,1,,,
+sub,u,ʊ,1,,,
+sub,y,j,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Multigraphs
+sub,d,dʒ,1,,zh,
+sub,z,,2,d,h,"clean-up",
+sub,h,,2,dz,,"clean-up",
+sub,s,ʃ,1,,h,
+sub,h,,1,s,,"clean-up",
+sub,t,ts,1,,s,
+sub,s,,1,t,,"clean-up",
+sub,t,tʃ,1,,sh,
+sub,s,,2,t,h,"clean-up",
+sub,h,,2,,ts,"clean-up",
+sub,k,x,1,,h,
+sub,h,,1,k,,"clean-up",
+sub,z,ʒ,1,,h,
+sub,h,,1,z,,"clean-up",
+# Diphthongs
+sub,a,aɪ,2,,y,
+sub,e,ɛɪ,2,,y,
+sub,o,ɔɪ,2,,y,
+sub,y,,2,{yvowel},,
+# Punctuation
+sub,{punct},,2,,,"hyphens and apostrophes are used as they are in English (no phonemic quality)",

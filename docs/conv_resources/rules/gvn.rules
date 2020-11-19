@@ -1,0 +1,25 @@
+# Kuku-Yalanji Rule Set
+# Written by: Bill
+# Last Updated: 2020-06-11
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,post-n,[gy],,,,
+class,passthrough,[aiklmnuw],,,,
+# class,loanwords,[oestchpvfzx],,,,
+# Individual Letters
+sub,b,p,4,,,
+sub,d,t,4,,,
+sub,j,c,4,,,
+sub,r,ɻ,4,,,
+sub,y,j,4,,,
+sub,-,,4,,,"some words have a hyphen with no phonetic value"
+# Digraphs
+sub,g,ŋ,6,n,,"<ng>"
+sub,y,ɲ,6,n,,"<ny>"
+sub,n,,6,,{post-n},"cleanup of n-initial digraphs"
+sub,r,r,6,,r,"<rr>"
+sub,r,,6,r,,"<rr> cleanup"
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,
+# sub,({loanwords}),\1,0.1,,,
+# sub,g,ɡ,0.1,,,"loanword /ɡ/"

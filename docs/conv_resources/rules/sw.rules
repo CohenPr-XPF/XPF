@@ -1,0 +1,39 @@
+# Swahili Rule Set
+# Written by: Delphine
+# Edited by: Emily Strand
+# Last Updated: 2020-01-10
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[bdfhiklmnprstuvwz],,,,
+class,m-follower,[bv],,,,
+class,n-follower,[djyvzg],,,,
+class,h-preceder,[cdgkst],,,,
+class,apostrophe,[’'ʻ′],,,,
+# Individual Letters
+sub,a,ɑ,1,,,
+sub,e,ɛ,1,,,
+sub,g,ɡ,1,,,
+sub,j,dʒ,1,,,
+sub,o,ɔ,1,,,
+sub,y,j,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Digraphs
+sub,b,ᵐb,2,m,,
+sub,v,ᶬv,1,m,,
+sub,m,,3,,{m-follower},"clean-up",
+sub,d,ⁿd,2,n,,
+sub,j,ⁿdʒ,2,n,,
+sub,y,ɲ,3,n,,
+sub,z,ⁿz,1,n,,
+sub,g,ᵑɡ,1,n,,
+sub,n,,3,,{n-follower},"clean-up",
+sub,c,tʃ,2,,h,
+sub,d,ð,2,,h,
+sub,g,ɣ,2,,h,
+sub,k,x,2,,h,
+sub,s,ʃ,2,,h,
+sub,t,θ,2,,h,
+sub,h,,3,{h-preceder},,"clean-up",
+sub,n,ŋ,5,,g{apostrophe},
+sub,{apostrophe},,4,ng,,"clean-up",
+sub,g,,4,n,{apostrophe},"clean-up",

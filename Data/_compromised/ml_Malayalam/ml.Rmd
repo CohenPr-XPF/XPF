@@ -150,12 +150,12 @@ alphabet <- read.table(textConnection('
 "േ"                    "/eː/"                ""
 "ു"                     "/u/"                ""
 "ൂ"                    "/uː/"                ""
-"ൃ"                    "/ai/"                ""
+"ൈ"                  "/ai/"                ""
 "ൊ"                   "/o/"                ""
 "ോ"                   "/oː/"               ""
 "ൌ; ൗ"             "/au/"               ""
 "്"                    "∅; /u/"     "called a virama, this diacritic either removes the inherent vowel or reduces word-final /u/ to [ə] [@Malayalam, p. 2]"  
-"ം"                    "/m/"       "called an anusvara(m), this character follows a vowel, often resulting in assimilation to the following consonant [@Panel2018, p. 9]"  
+"ം; ൦"                 "/m/"       "called an anusvara(m), this character follows a vowel, often resulting in assimilation to the following consonant [@Panel2018, p. 9]"  
 "ഃ"                    "/h/"       "called a visarga(m), this character follows a vowel (ibid.)"  
 '), TRUE)
 

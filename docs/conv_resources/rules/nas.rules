@@ -1,0 +1,22 @@
+# Naasioi Rule Set
+# Written by Abi Creighton
+# Last updated: 2020-07-13
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdeikmnoptu],,,,
+class,apostrophe,['ꞌ‘’],,,,
+class,vowel,[aeiou],,,,
+# Individual Letters
+sub,r,d,1,,,
+sub,s,t,1,,,
+sub,v,b,1,,,
+sub,{apostrophe},ʔ,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Digraphs
+sub,t,t,2,,s,
+sub,s,,2,t,,"clean-up"
+sub,n,n,2,,g,
+sub,g,,2,n,,"clean-up",
+# Misc. Rules
+sub,-,,1,,,"hyphens may be used to indicate morpheme boundaries"
+ipasub,({vowel}) \1\b,\1 ː,2,,,

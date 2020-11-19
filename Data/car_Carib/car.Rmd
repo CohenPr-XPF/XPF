@@ -93,7 +93,7 @@ Grapheme     Phoneme        Comment
 "t"           "/t/"           ""
 "u"           "/u/"           ""
 "w"           "/w/"           ""
-"y"           "/ɨ/"           ""
+"y"           "/ɨ/"        "⟨ï⟩: used in older orthographies"
 "\'"          "/ʔ/"           ""
 '), TRUE)
 

@@ -1,0 +1,42 @@
+# Wolof Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-02
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules 
+# class,lab-stop,[bp],,,,"These classes can be uncommented if you want to incorporate prenasalized voiceless consonants"
+# class,vel-stop,[kg],,,,"the class is input-based so I'm not using the IPA g"
+# class,affricate,[cj],,,,
+class,geminate,[abdeɛəfɡiklmnɲŋoɔpqɾstuwxj],,,,
+class,alv-stop,[dt],,,,
+class,postalv,[ʃʒ],,,,
+class,superscript,[ᵐⁿᶮᵑ],,,,
+class,passthrough,[abdfiklmnŋpqstuwx],,,,
+# Individual Letters
+sub,à,a ː,4,,,
+sub,c,tʃ,4,,,
+sub,e,ɛ,4,,,
+sub,é,e,4,,,
+sub,ë,ə,4,,,
+sub,g,ɡ,4,,,
+sub,j,dʒ,4,,,
+sub,ñ,ɲ,4,,,
+sub,o,ɔ,4,,,
+sub,ó,o,4,,,
+sub,r,ɾ,4,,,
+sub,y,j,4,,,
+sub,-,,4,,,"some words have a hyphen that carries no phonetic value"
+# Prenasalization
+sub,m,ᵐ,6,,b,
+sub,n,ⁿ,6,,d,
+sub,n,ᵑ,6,,g,
+sub,n,ᶮ,6,,j,
+ipasub,({superscript}) ,\1,5,,,
+# Geminates / Long Vowels
+ipasub,({geminate}) \1,\1 ː,2,,,"covers both lengthening of vowels and gemination of consonants"
+sub,c,tʃ ː,5,,c,"I found it cleanest/easiest to make separate gemination rules for the affricates"
+sub,c,,5,c,,
+sub,j,dʒ ː,5,,j,
+sub,j,,5,j,,
+# Misc. Rules
+ipasub,({alv-stop}) ː({postalv}),\1 \1\2,1,,,"reverses mistaken gemination of <tc> and <dj> sequences"
+sub,({passthrough}),\1,0.1,,,

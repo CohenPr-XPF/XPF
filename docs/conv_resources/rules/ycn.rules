@@ -1,0 +1,34 @@
+# Yucuna Rule Set
+# Written by: Bill
+# Last Updated: 2019-06-28
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules 
+class,pre-h,[cpt],,,,
+class,pre-u,[hq],,,,
+class,apostrophe,['ꞌˈ‘’],,,,
+class,passthrough,[aeiklmnopstuw],,,,
+# Individual Letters
+sub,c,k,4,,,
+sub,j,h,4,,,
+sub,ñ,ɲ,4,,,
+sub,r,ɾ,4,,,
+sub,y,j,4,,,
+sub,{apostrophe},ʔ,4,,,
+# Accented Vowels
+sub,á,a,4,,,
+sub,é,e,4,,,
+sub,í,i,4,,,
+sub,ó,o,4,,,
+sub,ú,u,4,,,
+# Aspiration
+sub,p,pʰ,7,,h,"<ph>"
+sub,t,tʰ,7,,h,"<th>"
+sub,h,,7,{pre-h},,"<h> cleanup"
+# Digraphs
+sub,c,tʃ,6,,h,"<ch>; the <h> is cleaned up above in line 19"
+sub,h,w,6,,u,"<hu>"
+sub,q,k,6,,u,"<qu>"
+sub,u,,6,{pre-u},,"<u> cleanup"
+# Misc. Rules
+sub,u,u,8,{pre-h}h,,"prevents <u> from getting deleted when preceded by an aspirated consonant"
+sub,({passthrough}),\1,0.1,,,

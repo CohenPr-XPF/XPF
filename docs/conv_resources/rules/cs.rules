@@ -1,0 +1,53 @@
+# Czech Rule Set
+# Written by: Emily
+# Last Updated: 2020-06-11
+type,sfrom,sto,weight,precede,follow,comment
+# Pre Rules
+pre,(Ď|Ť),(ď|ť),1,,,,
+# Classes
+class,passthrough,[abdfjklmnoprstuvz],,,,
+class,dipvowel,[aeo],,,,
+class,i,[ií],,,,
+class,frontV_preceder,[tdn],,,,
+class,pal,[ňďť],,,,
+# Individual Letters
+sub,á,a ː,2,,,
+sub,c,ts,2,,,
+sub,č,tʃ,2,,,
+sub,ď,ɟ,2,,,
+sub,e,ɛ,2,,,
+sub,é,ɛ ː,2,,,
+sub,ě,j ɛ,2,,,
+sub,ě,ɛ,3,{pal},,"preceding palatal consonants <ě> transcribes to /ɛ/"
+sub,g,ɡ,2,,,
+sub,h,ɦ,2,,,
+sub,i,i,2,,,
+sub,í,i ː,2,,,
+sub,ň,ɲ,2,,,
+sub,ř,r̝,2,,,
+sub,š,ʃ,2,,,
+sub,ť,c,2,,,
+sub,ú,u ː,2,,,
+sub,ů,u ː,2,,,
+sub,y,i,2,,,
+sub,ý,i ː,2,,,
+sub,ž,ʒ,2,,,
+sub,({passthrough}),\1,1,,,
+# Digraphs
+sub,c,x,3,,h,
+sub,h,,3,c,,"clean-up"
+# Palatal Consonants
+sub,t,c,4,,{i},
+sub,d,ɟ,4,,{i},
+sub,n,ɲ,4,,{i},
+sub,t,c ɛ,4,,ě,
+sub,d,ɟ ɛ,4,,ě,
+sub,n,ɲ ɛ,4,,ě,
+sub,ě,,4,{frontV_preceder},,"clean-up",
+# Diphthongs
+sub,a,au,3,,u,
+sub,e,ɛu,3,,u,
+sub,o,ou,3,,u,
+sub,u,,3,{dipvowel},,"clean-up"
+# Punctuation
+sub,-,,2,,,

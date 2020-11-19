@@ -64,7 +64,8 @@ kable(vowels, align = 'c') %>%
 # Alphabet
 
 * In some dialects the digraphs ⟨ḷḷ⟩, ⟨ḥ⟩, ⟨ts⟩, ⟨yy⟩ appear, corresponding to a variety of different phonemes [@academia_de_la_llingua_asturiana_gramatica_2001, p. 15].  
-* ⟨j⟩, ⟨k⟩, and ⟨w⟩ appear in loanwords [@academia_de_la_llingua_asturiana_gramatica_2001, p. 15].   
+* ⟨j⟩, ⟨k⟩, and ⟨w⟩ appear in loanwords [@academia_de_la_llingua_asturiana_gramatica_2001, p. 15].
+* Stress is denoted by accented vowels; however, we do not account for stress, so accented vowels will be transcribed to their plain counterparts.   
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}

@@ -1,0 +1,85 @@
+.navbar {
+	padding: 10px;
+}
+
+.nav.navbar-nav.navbar-right li a {
+	color: black;
+	font-size: 17px;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+	color: red;
+	background: white;
+}
+
+.navbar-toggle {
+	background: white;
+}
+
+.icon-bar {
+	background: black;
+}
+
+
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: black;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+	white-space: nowrap;
+}
+
+.sidenav a {
+	padding-bottom: 10px;
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sidenav a:hover {
+	color: #cc0000;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	opacity: 1;
+	width: 0;
+	left: 0;
+	height: 100%;
+	background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+

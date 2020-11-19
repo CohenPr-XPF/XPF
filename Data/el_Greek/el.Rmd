@@ -65,7 +65,7 @@ kable(consonants, align = 'c') %>%
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 alphabet <- read.table(textConnection('
-"Uppercase"   "Lowercase"      ""                         ""
+"Uppercase"   "Lowercase"  "Phoneme"                   "Comment"
 "Α"              "α"          "/ɐ/"                       ""
 "Β"              "β"          "/v/"                       ""
 "Γ"              "γ"          "/ɣ/"                       ""
@@ -90,7 +90,7 @@ alphabet <- read.table(textConnection('
 "Χ"              "χ"          "/x/"                       ""
 "Ψ"              "ψ"          "/ps/"                      ""
 "Ω"              "ω"          "/o/"                       ""
-**Digraph**      ""            ""                         ""
+"**Digraph**"     ""           ""                         ""
 "ΕΙ"             "ει"         "/i/"                       ""
 "ΟΙ"             "οι"         "/i/"                       ""
 "ΥΙ"             "υι"         "/i/"                       ""
@@ -104,10 +104,11 @@ alphabet <- read.table(textConnection('
 "ΓΓ"             "γγ"         "/ɡ/"                       ""
 '), TRUE)
 
-kable(alphabet, col.names = c("Uppercase", "Lowercase", "", ""), align = 'c') %>%
+kable(alphabet, col.names = c("Uppercase", "Lowercase", "Phoneme", "Comment"), align = 'c') %>%
   kable_styling("bordered") %>%
-  add_header_above(c("Grapheme" = 2, "Phoneme" = 1, "Comment" = 1))
-```  
+  add_header_above(c("Grapheme" = 2, "", ""))
+
+```
 
 # Lenition Rules
 

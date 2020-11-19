@@ -1,0 +1,39 @@
+# Totontepec Mixe Rule Set
+# Written by: Bill
+# Last Updated: 2019-06-24
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,apostrophe,['ꞌˈ‘’],,,,
+class,underline,[̱],,,,
+class,ipavowel,[aeiouʌæʊɨ],,,,
+class,passthrough,[adeikmnpstuv],,,,
+# Individual Letters
+sub,á,a,4,,,
+sub,c,k,4,,,
+sub,é,e,4,,,
+sub,g,ɡ,4,,,
+sub,í,i,4,,,
+sub,j,h,4,,,
+sub,ñ,n,4,,,
+sub,o,ʊ,4,,,
+sub,ó,ʊ,4,,,
+sub,{apostrophe},ʔ,4,,,
+sub,ú,u,4,,,
+sub,x,ʂ,4,,,
+sub,y,j,4,,,
+# Underlined Vowels
+sub,a,ʌ,6,,{underline},
+sub,e,æ,6,,{underline},
+sub,o,o,6,,{underline},
+sub,u,ɨ,6,,{underline},
+sub,{underline},,6,,
+# Digraphs
+sub,c,ʂ,6,,h,"ch"
+sub,h,,6,c,,
+sub,q,k,6,,,"qu"
+sub,u,,6,q,,
+sub,t,ts,6,,s,"ts"
+sub,s,,6,t,,
+# Misc. Rules
+ipasub,({ipavowel}) \1,\1 ː,2,,,"long vowels"
+sub,({passthrough}),\1,0.1,,,

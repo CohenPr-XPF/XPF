@@ -1,0 +1,19 @@
+# Kunimaipa Rule Set
+# Written by: Emily
+# Last updated: 2019-10-23
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdeiklmnoprsztu],,,,
+# Individual Letters
+sub,g,ɡ,2,,,
+sub,h,ɣ,2,,,
+sub,ñ,ŋ,2,,,
+sub,v,β,2,,,
+sub,({passthrough}),\1,2,,,
+# Silent Vowel Graphemes
+sub,ë,e,2,,,
+sub,ï,i,2,,,
+sub,ö,o,2,,,
+sub,ü,u,2,,,
+# Misc. Rules 
+sub,-,,2,,,"hyphens mark morpheme boundaries",

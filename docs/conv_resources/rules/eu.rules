@@ -1,0 +1,45 @@
+# Basque Rule Set
+# Written by: Justin
+# Last Updated: 2019-10-25
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aeioubfklmnp],,,,
+class,vowels,[aeiou],,,,
+# Individual Letters
+sub,r,r,1,,,
+sub,r,ɾ,2,{vowels},{vowels},"r tapped intervocalic",
+sub,d,d̪,1,,,
+sub,g,ɡ,1,,,
+sub,h,,1,,,
+sub,j,x,1,,,
+sub,ñ,ɲ,1,,,
+sub,s,s̺,1,,,
+sub,t,t̪,1,,,
+sub,x,ʃ,1,,,
+sub,y,j,1,,,
+sub,z,s̻,1,,,
+# Digraphs
+sub,r,r,2,r,,
+sub,r,,2,,r,"clean-up",
+sub,l,ʎ,2,l,,
+sub,l,,2,,l,"clean-up",
+sub,t,t̪s̺,2,,s,
+sub,s,,2,t,,"clean-up",
+sub,t,t̪s̻,2,,z,
+sub,z,,2,t,,"clean-up",
+sub,t,t̪ʃ,2,,x,
+sub,x,,2,t,,"clean-up",
+sub,d,ɟ,2,d,,
+sub,d,,2,,d,
+sub,t,c,2,t,,
+sub,t,,2,,t,
+sub,({passthrough}),\1,0.1,,,
+# Diphthongs
+ipasub,\ba i\b,ai,2,,,
+ipasub,\be i\b,ei,1,,,
+ipasub,\bo i\b,oi,1,,,
+ipasub,\ba u\b,au,2,,,
+ipasub,\be u\b,eu,1,,,
+ipasub,\bu i\b,ui,1,,,
+# Word
+word,plater,p l a t̪ e ɾ,,,,"final tap (exception)",

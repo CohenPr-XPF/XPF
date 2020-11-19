@@ -42,6 +42,8 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
+* An acute accent (´) on graphemes ⟨a⟩, ⟨e⟩, and ⟨i⟩ denote stress. We do not account for stress, so such accented vowels will be transcribed to their plain counterparts.
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
 vowels <- read.table(textConnection('

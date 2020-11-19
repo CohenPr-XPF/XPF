@@ -7,7 +7,7 @@ output: html_document
 
 Last Updated: 2020-01-09
 
-**COMPROMISED: conflation among /a/, /æ/, and /ɘ/, between /ɘ/ and /o/, and between /e/ and /ɘ/; ambiguity among long vowels; ambiguity related to whether phonemic (labialized) clusters are always realized as such**
+**COMPROMISED: conflation among /a/, /æ/, and /ɘ/, between /ɘ/ and /o/, and between /e/ and /ɘ/; ambiguity among long vowels; ambiguity related to whether phonemic (labialized) clusters are always realized as such, ambiguity between word-medial phonetic prenasalized stops and voiced (and voiceless stops)**
 
 # Background
 
@@ -30,8 +30,7 @@ library(kableExtra)
 
 consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial    Alveolar   Velar     Glottal
-Stops                       "p b"     "t d"  "kʷ k ɡ ɡʷ"   "ʔ ʔʷ"
-Affricates                   ""        ""        ""         ""
+Stops                       "p b"     "t d"  "k kʷ ɡ ɡʷ"   "ʔ ʔʷ"
 Fricatives                   "f"       "s"       ""         "h"
 Nasals                       "m"       "n"       ""         ""
 Approximants                 "w"       "l"       ""         ""

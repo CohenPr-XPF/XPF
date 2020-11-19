@@ -1,0 +1,30 @@
+# Inga Rule Set
+# Written by: Emily
+# Last Updated: 2020-03-06
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[akimpuw],,,
+class,backV,[au],,,,
+# Individual Letters
+sub,c,k,5,,{backV},
+sub,j,x,2,,,
+sub,l,l̪,2,,,
+sub,n,n̪,2,,,
+sub,ñ,ɲ,2,,,
+sub,r,ɾ,2,,,
+sub,s,s̪,2,,,
+sub,t,t̪,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,tʃ,4,,h,
+sub,h,,4,c,,"clean-up",
+sub,u,u,5,ch,,"prevents /u/ from being deleted in <chu> sequences",
+sub,l,ʎ,3,,l,
+sub,l,,3,l,,"clean-up",
+sub,q,k,3,,ui,
+sub,u,,3,q,i,"clean-up",
+sub,s,ʃ,4,,h,
+sub,h,,4,s,,"clean-up",
+sub,h,w,3,,u,
+sub,u,,3,h,,"clean-up",

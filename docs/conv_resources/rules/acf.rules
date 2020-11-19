@@ -1,0 +1,37 @@
+# St. Lucian Creole Rule Set
+# Written by: Emily
+# Last Updated: 2019-09-11
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[abdfhiklmnopstvwz],,,,
+class,nasalv,[aeo],,,,
+class,punct,[ꞌ'ˈ‘ʼ-],,,,
+# Individual Letters
+sub,é,e,2,,,
+sub,è,ɛ,2,,,
+sub,e,ɛ,2,,,
+sub,g,ɡ,2,,,
+sub,j,ʒ,2,,,
+sub,ò,ɔ,2,,,
+sub,r,ɹ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,c,ʃ,2,,h,
+sub,h,,3,c,,"clean-up",
+sub,d,dʒ,3,,j,
+sub,j,,3,d,,"clean-up",
+sub,n,ŋ,3,,g,
+sub,g,,3,n,,"clean-up",
+sub,o,u,3,,u,
+sub,u,,2,o,,"clean-up"
+sub,t,tʃ,3,,j,
+sub,j,,3,t,,"clean-up"
+# Nasal Vowels
+sub,a,ã,3,,n,
+sub,e,ẽ,3,,n,
+sub,o,õ,4,,n,
+sub,n,,4,{nasalv},,
+sub,g,ɡ,4,{nasalv}n,,"prevents /g/ from being deleted after nasal vowels"
+# Misc. Rules
+sub,{punct},,2,,,

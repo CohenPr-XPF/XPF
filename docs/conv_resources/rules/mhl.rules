@@ -1,0 +1,25 @@
+# Mauwake Rule Set
+# Written by: Emily
+# Last Updated: 2020-05-06
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdeiklmnoprstuw-],,,,
+class,vowels,[aeiou],,,,
+class,a-follower,[ieou],,,,
+# Individual Letters
+sub,f,ɸ,2,,,
+sub,g,ɡ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Diphthongs
+sub,a,ai,3,,i,
+sub,a,ae,3,,e,
+sub,a,ao,3,,o,
+sub,a,au,3,,u,
+sub,{a-follower},,3,a,,"clean-up",
+sub,u,ui,3,,i,
+sub,i,,3,u,,"clean-up",
+# Long Vowels
+ipasub,({vowels}) \1,\1 ː,2,,,
+# Misc. Rules
+ipasub,-,,1,,,"need an ipasub rule to remove hyphen rather than a sub rule because the rule for vowel length must come first due to morpheme boundaries",

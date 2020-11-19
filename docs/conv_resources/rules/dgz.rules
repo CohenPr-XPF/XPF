@@ -1,0 +1,12 @@
+# Daga Ruleset
+# Written by: Justin
+# Last Updated: 2019-10-25
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[bdkmnprtwaeiou],,,
+# Individual Letters
+sub,g,ɡ,1,,,
+sub,s,t,1,,,
+sub,v,w,1,,,
+sub,y,j,1,,,
+sub,({passthrough}),\1,0.1,,,

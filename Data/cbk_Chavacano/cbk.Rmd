@@ -49,7 +49,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 ## Vowels
 
 * Vowel length is not contrastive in Chavacano [@lesho_2013, p. 51].
-* An accent on a vowel marks stress (ibid.).
+* Stress is denoted by accented vowels (ibid.); however, we don't account for stress, so accented vowels will be transcribed to their plain counterparts.
 * Diphthongs that occur in the Cavite dialect are listed below. However, as @lesho_2013 states, it can be difficult to reliably mark syllable boundaries and determine whether vowel sequences are diphthongs or two monophthongs (p. 212). Therefore, vowel sequences will not be transcribed as diphthongs in the rules.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -89,7 +89,7 @@ Grapheme        Phoneme           Comment
 "d"              "/d̪/"              ""
 "e"              "/e/"              ""
 "g"              "/ɡ/; /h/"         "/h/: preceding front vowels"
-"h"              ""                 ""
+"h"              "∅"                ""
 "i"              "/i/"              ""
 "j"              "/h/"              ""
 "k"              "/k/"              ""

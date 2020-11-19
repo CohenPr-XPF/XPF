@@ -1,0 +1,33 @@
+# Cha'palaa Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-25
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,apostrophe,[ꞌ'ˈ‘’],,,,
+class,pre-h,[cs],,,,
+class,pre-y,[dt],,,,
+class,vowel,[aeiu],,,,
+class,passthrough,[abdefiklmnpstuvw],,,,
+# Individual Letters
+sub,g,ɡ,4,,,
+sub,j,h,4,,,
+sub,ñ,ɲ,4,,,
+sub,r,ɾ,4,,,
+sub,y,j,4,,,
+sub,{apostrophe},ʔ,4,,,
+sub,-,,4,,,"some words have hyphens with no phonetic value"
+# Digraphs
+sub,c,tʃ,6,,h,"<ch>"
+sub,s,ʃ,6,,h,"<sh>"
+sub,h,,6,{pre-h},,"cleanup of h-final digraphs"
+sub,t,tʲ,6,,y,"<ty>"
+sub,d,dʲ,6,,y,"<dy>"
+sub,y,,6,{pre-y},,"cleanup of y-final digraphs"
+sub,l,ʎ,6,,l,"<ll>"
+sub,l,,6,l,,"<ll> cleanup"
+sub,n,ŋ,6,,g,"<ng>"
+sub,g,,6,n,,"<ng> cleanup"
+ipasub,t s,ts,2,,,"<ts>"
+# Misc. Rules
+ipasub,({vowel}) \1\b,\1 ː,2,,,"vowel lengthening"
+sub,({passthrough}),\1,0.1,,,

@@ -1,0 +1,23 @@
+# Gapapaiwa Rule Set
+# Written by: Allison Shao
+# Edited by: Abi Creighton
+# Last Updated: 2020-06-18
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdikmnopstuvw],,,,
+class,w-preceder,[gk],,,,
+# Individual Letters
+sub,e,ɛ,2,,,
+sub,g,ɡ,2,,,
+sub,r,ɾ,2,,,
+sub,y,j,2,,,
+# Digraphs
+sub,g,ɣ,3,,h,
+sub,h,,3,g,,"clean-up",
+sub,i,ɨ,2,,i,
+sub,i,,2,i,,"clean-up",
+sub,g,ɡʷ,3,,w,
+sub,k,kʷ,3,,w,
+sub,w,,3,{w-preceder},,"clean-up",
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,

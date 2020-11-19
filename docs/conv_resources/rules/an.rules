@@ -1,0 +1,52 @@
+# Aragonese
+# Written by: Abi Creighton
+# Last Updated: 2019-10-29
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abefilmnopsu],,,,
+class,any,[abcedfghijlmmopqrstuvxyz],,,,
+class,back-v,[ao],,,,
+class,front-v,[ei],,,,
+class,u,[uüú],,,,
+class,punct,['-],,,,
+# Vowels
+sub,á,a,1,,,"accent marks on vowels denote stress",
+sub,é,e,1,,,
+sub,í,i,1,,,
+sub,ó,o,1,,,
+sub,ú,u,1,,,
+sub,y,i,1,,,"<y> is pronounced /i/ in isolation and /ʝ/ otherwise",
+# Consonants
+sub,c,k,1,,,
+sub,c,θ,2,,{front-v},
+sub,d,d̪,1,,,
+sub,g,ɡ,1,,,
+sub,h,,1,,,
+sub,r,r,2,^,,"<r> is /r/ word-initially",
+sub,r,ɾ,1,,,
+sub,t,t̪,1,,,
+sub,v,b,1,,,
+sub,x,ʃ,1,,,
+sub,y,ʝ,2,{any},,"<y> is pronounced /i/ in isolation and /ʝ/ otherwise",
+sub,y,ʝ,2,,{any},"<y> is pronounced /i/ in isolation and /ʝ/ otherwise",
+sub,z,θ,1,,,
+# Digraphs
+sub,c,tʃ,3,,h,
+sub,g,ɡ u,5,,u{back-v},"<gu> becomes /ɡu/ preceding back vowels",
+sub,g,ɡ u,6,,ü{front-v},"<gü> becomes /ɡu/ preceding front vowels",
+sub,{u},,3,g,,"clean-up",
+sub,l,ʎ,3,,l,
+sub,l,,3,l,,"clean-up",
+sub,n,ɲ,3,,y,
+sub,y,,4,n,,"clean-up",
+sub,q,k,3,,,
+sub,q,k u,5,,u{back-v},"<qu> becomes /ku/ preceding back vowels",
+sub,q,k u,6,,ü{front-v},"<qü> becomes /ku/ preceding front vowels",
+sub,{u},,4,q,,"clean-up",
+sub,r,r,4,,r,
+sub,r,,4,r,,"clean-up",
+sub,t,θ,4,,z$,
+sub,z,,4,t,,"clean-up",
+# Misc. Rules
+sub,({passthrough}),\1,0.1,,,
+sub,{punct},,0.1,,,

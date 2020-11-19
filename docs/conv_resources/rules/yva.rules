@@ -1,0 +1,21 @@
+# Yawa Rule Set
+# Written by: Emily
+# Last updated: 2020-06-22
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdeikmnopstuw],,,,
+class,y-preceder,[ns],,,,
+class,velar_stop,[kg],,,,
+# Individual Letters
+sub,g,dʑ,2,,,
+sub,j,dʑ,2,,,
+sub,r,ɾ,2,,,
+sub,v,w,2,,,
+sub,y,j,2,,,
+sub,-,,2,,,"hyphens hold no phonemic value (indicate compounding and morpheme boundaries)"
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,n,ɲ,3,,y,
+sub,s,ʃ,3,,y,
+sub,y,,3,{y-preceder},,"clean-up",
+sub,g,,3,n,{velar_stop},

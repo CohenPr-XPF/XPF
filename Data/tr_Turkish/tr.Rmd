@@ -62,7 +62,7 @@ kable(consonants, align = 'c') %>%
 # Alphabet
 
 * The capital of ⟨i⟩ is ⟨İ⟩ and the capital of ⟨ı⟩ is ⟨I⟩.
-* A circumflex (^) placed over a vowel may indicate lengthening or palatalization of the preceding consonant [@Goeksel2005, p. x]. I have chosen not to account for this feature in the rules.
+* A circumflex (^) placed over a vowel may indicate lengthening or palatalization of the preceding consonant [@Goeksel2005, p. x]. I have chosen to transcribe these vowels to their plain representations.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

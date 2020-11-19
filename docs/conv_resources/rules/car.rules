@@ -1,0 +1,26 @@
+# Carib Rule Set
+# Written by: Bill
+# Last Updated: 2019-10-28
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,apostrophe,[ꞌ'ˈ‘’],,,,
+class,diph-vowel,[aeɨou],,,,
+class,nasal-coda,[pbtdkgs],,,,
+class,passthrough,[aeijkmnopstuw],,,,
+class,nasal,[mnŋ],,,,
+# Individual Letters
+sub,b,p,4,{nasal},,
+sub,d,t,4,{nasal},,
+sub,g,k,4,{nasal},,
+sub,ï,ɨ,4,,,"this letter used in some older orthographies"
+sub,m,ŋ,4,,{nasal-coda},"marks /ŋ/ in syllable codas"
+sub,n,ŋ,4,,{nasal-coda},"marks /ŋ/ in syllable codas"
+sub,n,ŋ,4,,$,"marks word-final /ŋ/"
+sub,r,ɽ,4,,,
+sub,y,ɨ,4,,,
+sub,{apostrophe},ʔ,4,,,
+sub,({passthrough}),\1,0.1,,,
+# Diphthongs
+sub,a,au,6,,u,"au"
+sub,u,,6,a,,
+ipasub,({diph-vowel}) i,\1i,2,,,"i-final diphthongs"

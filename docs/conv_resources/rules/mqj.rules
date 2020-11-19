@@ -1,0 +1,20 @@
+# Mamasa Rule Set
+# Written by: Emily
+# Last Updated: 2020-03-03
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdeiklmnoprstuw],,,,
+class,apostrophe,['ꞌˈ‘’],,,,
+class,gem,[ptkmnŋslr],,,,
+# Individual Letters
+sub,g,ɡ,2,,,
+sub,y,j,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,n,ŋ,3,,g,
+sub,g,,3,n,,"clean-up",
+# Consonant Gemination
+ipasub,({gem}) \1,\1 ː,2,,,
+# Misc. Rules
+sub,-,,2,,,

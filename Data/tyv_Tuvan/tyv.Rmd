@@ -105,7 +105,7 @@ Grapheme      Phoneme                           Comment
 "я"            "/jɑ/"                    "appears in Russian loanwords"
 '), TRUE)
 
-kable(alphabet) %>%
+kable(alphabet, align = 'c') %>%
   kable_styling("bordered")
 ```
 

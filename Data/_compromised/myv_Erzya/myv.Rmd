@@ -33,7 +33,7 @@ consonants <- read.table(textConnection('
 "Manner of Articulation"   Labial   Alveolar   Postalveolar  Palatal  Velar
 Stops                      "p b"  "t tʲ d dʲ"      ""          ""     "k ɡ"     
 Affricates                  ""     "ts tsʲ"       "tʃ"         ""      ""     
-Fricatives                 "f v"  "s sʲ z zʲ"     "ʃ ʒ"        ""      "x" 
+Fricatives                 "f v"  "s sʲ z zʲ"     "ʃ ʒ"        ""      "x"
 Nasals                      "m"     "n nʲ"         ""          ""      "ŋ"
 Trills                      ""      "r rʲ"         ""          ""      ""   
 Approximants                ""      "l lʲ"         ""          "j"     ""   
@@ -98,7 +98,7 @@ Grapheme      Phoneme                    Comment
 "ч"            "/tʃ/"                      ""
 "ш"            "/ʃ/"                       ""
 "щ"            "/ʃtʃ/"                     ""
-"ъ"            ""                          ""
+"ъ"            "∅"                         ""
 "ы"            "/i/"                       ""
 "ь"            "/ʲ/"         "marks palatalization of preceding consonant"  
 "э"            "/e/"                       ""

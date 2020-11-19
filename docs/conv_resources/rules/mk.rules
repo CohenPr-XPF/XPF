@@ -1,0 +1,46 @@
+# Macedonian Rule Set
+# Written by: Jordan
+# Last Updated: 2019-12-19
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,frontV-j,[иеј],,,,
+class,backV-C,[абвгдѓжзѕкмнњопрстќуфхцчџш],,,,
+class,gem,(t̪|d̪|s̪|z̪|l|m|j),,,,
+# Individual Letters
+sub,а,a,3,,,
+sub,б,b,3,,,
+sub,в,v,3,,,
+sub,г,ɡ,3,,,
+sub,д,d̪,3,,,
+sub,ѓ,ɟ,3,,,
+sub,е,ɛ,3,,,
+sub,ж,ʒ,3,,,
+sub,з,z̪,3,,,
+sub,ѕ,dz̪,3,,,
+sub,и,i,3,,,
+sub,ј,j,3,,,
+sub,к,k,3,,,
+sub,л,l,3,,{frontV-j},
+sub,л,ɫ̪,2,,,
+sub,љ,l,3,,{backV-C},
+sub,љ,l,3,,$,
+sub,м,m,3,,,
+sub,н,n̪,3,,,
+sub,њ,ɲ,3,,,
+sub,о,ɔ,3,,,
+sub,п,p,3,,,
+sub,р,r,3,,,
+sub,с,s̪,3,,,
+sub,т,t̪,3,,,
+sub,ќ,c,3,,,
+sub,у,u,3,,,
+sub,ф,f,3,,,
+sub,х,x,3,,,
+sub,ц,ts̪,3,,,
+sub,ч,tʃ,3,,,
+sub,џ,dʒ,3,,,
+sub,ш,ʃ,3,,,
+# Consonant Gemination
+ipasub,({gem}) \1,\1 ː,2,,,
+# Misc. Rules
+sub,-,,3,,,

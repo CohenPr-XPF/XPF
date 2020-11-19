@@ -50,7 +50,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* All of these vowels have both an oral and a nasal version; nasalization is only phonemic in stressed syllables [@GnWalker1999, p. 69].
+* All of these vowels have both an oral and a nasal version; nasalization is only phonemic in stressed syllables [@GnWalker1999, p. 69]. Nasal vowels, although contrastive in stressed syllables are marked orthographically (see Alphabet below). Therefore, it isn't necessary to explicitly account for stress, which we have chosen not to do throughout this project. Stress, like several other languages, is denoted by accented vowels, but based on our objectives, accented vowels will be transcribed to their plain counterparts.
 * Although /ɯ/ is a minority view in the sources I have seen, with /ɨ/ appearing more commonly, I have preferred /ɯ/ because Walker provided a chart of vowel realizations that shows /ɯ/ to be backed nearly as far as /u/ [@GnWalker1999, p. 69].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -72,7 +72,7 @@ kable(consonants, align = 'c') %>%
 * The digraph ⟨nt⟩ is listed as a consonant pronounced /ⁿt/, but that sound rarely occurs and does not seem to be phonemic. However, @GnGregores1967 argue that prenasalized voiceless stops, including ⟨nt⟩, occur before specific vowels (p. 84).
 * Similarly to the above point, ⟨m⟩, ⟨n⟩ and ⟨ñ⟩ are listed as consonants, even though nasals only exist as allophones of prenasalized voiced stops (or affricates, in the case of ⟨ñ⟩). For this reason, my ruleset converts each character's phoneme to the appropriate underlying form.
 * Prior to 1950, Guarani used a different orthographic system [@GnOrthography, pp. 4-5]. Because the grapheme ⟨y⟩ represents a different phoneme in each Guarani orthography (/dʒ/ in the old orthography vs. /ɯ/ in the current one), it is impossible to represent both systems in a single ruleset, so I have opted only to include the current orthography.
-
+* Stress is denoted by accented vowels; however, we do not account for stress, so accented vowels are transcribed to their plain counterparts.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 
@@ -82,11 +82,11 @@ Grapheme      Phoneme                                     Comment
 "ã"            "/ã/"                                        ""
 "e"            "/e/"                                        ""
 "ẽ"            "/ẽ/"                                        ""
-"g"            "/ɰ/"                                        ""
+"g; g̃"         "/ɰ/"                                        ""
 "h"            "/x/"                                        ""
 "i"            "/i/"                                        ""
 "ĩ"            "/ĩ/"                                        ""
-"j"            "/dʒ/" "there are several common realizations of this grapheme, but most scholars appear to prefer /dʒ/"  
+"j; ñ"         "/dʒ/" "there are several common realizations of this grapheme, but most scholars appear to prefer /dʒ/"  
 "k"            "/k/"                                        ""
 "l"            "/l/"                "predominantly, if not exclusively, in loanwords"  
 "o"            "/o/"                                        ""

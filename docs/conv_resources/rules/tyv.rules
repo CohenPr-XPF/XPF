@@ -1,0 +1,48 @@
+# Tuvan
+# Written by Abi Creighton
+# Updated: 2020-06-19
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,vowel,[ɑeioøuɯ],,,,
+class,gem,[ptkɡ],,,,
+# Individual Letters
+sub,а,ɑ,2,,,
+sub,б,b,2,,,
+sub,в,ʋ,2,,,
+sub,г,ɡ,2,,,
+sub,д,d,2,,,
+sub,е,e,2,(?<!^),,"<e> goes to /e/ word-medially and word-finally",
+sub,е,j e,2,^,,
+sub,э,e,2,^,,
+sub,ё,j o,2,,,
+sub,ж,ʝ,2,,,
+sub,з,z,2,,,
+sub,и,i,2,,,
+sub,й,j,2,,,
+sub,к,k,2,,,
+sub,л,l,2,,,
+sub,м,m,2,,,
+sub,н,n,2,,,
+sub,ң,ŋ,2,,,
+sub,о,o,2,,,
+sub,ө,ø,2,,,
+sub,п,p,2,,,
+sub,р,r,2,,,
+sub,с,s,2,,,
+sub,т,t,2,,,
+sub,у,u,2,,,
+sub,ү,y,2,,,
+sub,х,x,2,,,
+sub,ч,cç,2,,,
+sub,ш,ç,2,,,
+sub,ъ,,2,,,"represents pitch accent",
+sub,ы,ɯ,2,,,
+sub,ь,,2,,,"represents a reduced vowel",
+# Vowel Length
+ipasub,({vowel}) \1,\1 ː,2,,,
+sub,э,e ː,4,,э,
+sub,э,,3,э,,"clean-up",
+# Consonant Gemination
+ipasub,({gem}) \1,\1 ː,2,,,
+# Misc. Rules
+sub,-,,2,,,

@@ -1,0 +1,16 @@
+# Nabak Rule Set
+# Written by: Emily
+# Last Updated: 2019-11-19
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdeiklmnŋopstuwz],,,,
+class,w-preceder,[gk],,,,
+# Individual Letters
+sub,â,ɔ,2,,,
+sub,g,ɡ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,g,ɡʷ,3,,w,
+sub,k,kʷ,3,,w,
+sub,w,,3,{w-preceder},,"clean-up",

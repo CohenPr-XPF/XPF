@@ -1,0 +1,19 @@
+# Abau Rule Set
+# Written by Allison
+# Last Updated: 2020-08-04
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aehikmnopsuw],,,,
+class,vowels,[aeo],,,,
+class,punct,[ꞌ'ˈ‘’ʼ-],,,,
+# Individual Letters
+sub,r,ɾ,1,,,
+sub,l,ɾ,1,^,,
+sub,d,ɾ,1,,n,
+sub,y,j,1,,,
+sub,({passthrough}),\1,2,,,
+# Vowel Sequences
+sub,y,,3,^,i({vowels}),
+sub,w,,3,^,u({vowels}),
+# Misc. Rules
+sub,{punct},,1,,,

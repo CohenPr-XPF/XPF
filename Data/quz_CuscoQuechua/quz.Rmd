@@ -46,7 +46,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 ## Vowels
 
-* The status of /e/ and /o/ is controversial. The sounds first entered the language after contact with Spanish, but @QuzParker1996 argue that they have become contrastive since then (p. 71); conversely, @QuzEbina2011 argues that [e] and [o] are only produced as allophones of /i/ and /u/ near uvular consonants (p. 5). I have opted to prefer the three-vowel analysis in my ruleset.
+* The status of /e/ and /o/ is controversial. The sounds first entered the language after contact with Spanish, but @QuzParker1996 argue that they have become contrastive since then (p. 71); conversely, @QuzEbina2011 argues that [e] and [o] are only produced as allophones of /i/ and /u/ near uvular consonants (p. 5). I have opted to prefer the three-vowel analysis in my ruleset. I transcribe ⟨e⟩ and ⟨o⟩ to /i/ and /u/, respectively, in the rules.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('

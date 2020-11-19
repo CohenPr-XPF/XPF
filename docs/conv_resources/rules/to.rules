@@ -1,0 +1,26 @@
+# Tongan Rule Set
+# Written by: Justin
+# Last Updated: 2019-08-02
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aefhiklmnopstuv],,,
+class,apostrophe,[’'‘`ʻ],,,,
+# Individual Letters
+sub,n,ŋ,2,,g,
+sub,g,,2,n,,"clean-up",
+sub,{apostrophe},ʔ,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Long Vowels
+sub,ā,a ː,1,,,
+sub,ē,e ː,1,,,
+sub,ī,i ː,1,,,
+sub,ō,o ː,1,,,
+sub,ū,u ː,1,,,
+# Accented Vowels
+sub,á,a,1,,,
+sub,é,e,1,,,
+sub,í,i,1,,,
+sub,ó,o,1,,,
+sub,ú,u,1,,,
+# Misc. Rules
+sub,-,,1,,,"hyphens have no phonemic value",

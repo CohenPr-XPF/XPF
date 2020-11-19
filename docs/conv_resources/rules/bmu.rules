@@ -1,0 +1,25 @@
+# Somba-Siawari Rule Set
+# Written by: Emily
+# Last Updated: 2019-11-19
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdefiklmnŋoprstuw],,,,
+class,vowels,[aeiouö],,,,
+# Individual Letters
+sub,g,ɡ,2,,,
+sub,h,ɣ,2,,,
+sub,j,dz,2,,,
+sub,ö,ɵ,2,,,
+sub,q,kʷ,2,,,
+sub,y,j,2,,,
+sub,z,ts,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,g,ɡʷ,3,,w,
+sub,w,,3,g,,"clean-up",
+# Intervocalic Voiceless Stops (**compromising aspect of the language**)
+sub,w,p,4,{vowels},{vowels},
+sub,r,t,4,{vowels},{vowels},
+sub,h,k,4,{vowels},{vowels},
+# Misc. Rules
+sub,-,,2,,,

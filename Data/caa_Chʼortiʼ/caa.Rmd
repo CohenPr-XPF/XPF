@@ -71,11 +71,8 @@ kable(consonants, align = 'c') %>%
 alphabet <- read.table(textConnection('
 Grapheme     Phoneme                        Comment
 "a"           "/a/"                           ""
-"b"           "/b/"                           ""
 "b\'"         "/ɓ/"                           ""
-"d"           "/d/"                           ""
 "e"           "/e/"                           ""
-"g"           "/ɡ/"                           ""
 "i"           "/i/"                           ""
 "j"           "/h/"                           ""
 "k"           "/k/"                           ""

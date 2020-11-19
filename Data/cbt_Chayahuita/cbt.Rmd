@@ -66,7 +66,7 @@ kable(consonants, align = 'c') %>%
 # Alphabet
 
 * Spanish loanwords into Chayahuita incorporate several letters not used in native words: ⟨d e f j l ñ u z⟩ [@CbtOrthography]. However, these rarely occur, so I have omitted them from the ruleset.
-* The acute accent indicates "emphasis or intensity" but does not carry phonemic value [@CbtOrthography].
+* The acute accent indicates "emphasis or intensity" but does not carry phonemic value [@CbtOrthography]. Thus, accented vowels will be transcribed to their plain counterparts.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

@@ -1,0 +1,14 @@
+# Wayana Rule Set
+# Written by: Emily
+# Last updated: 2019-11-05
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[aehijkmnopstuw],,,,
+class,vowel,[aeɘiɨou],,,,
+# Individual Letters
+sub,ë,ɘ,2,,,
+sub,ï,ɨ,2,,,
+sub,l,ɽ,2,,,
+sub,({passthrough}),\1,2,,,
+# Long Vowels (length is not phonemic - transcribed as short)
+ipasub,({vowel}) \1,\1,2,,,

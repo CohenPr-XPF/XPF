@@ -60,6 +60,7 @@ kable(vowels, align = 'c') %>%
 # Alphabet
 
 * A superscript ⟨n⟩ is sometimes written word-initially, indicating nasalization of the word [@Bartholomew1987, pp. 334-335]. This occurs only in cases where words do no contain stops or affricates or where words that contain stops or affricates occur in combination with other consonants. These environments seem to prevent standard affixation of nasals where assimilation to stops and affricates generally occurs (see Misc. Rules). Given that this suprasegmental feature seems to pose no contrastiveness in terms of when it does and does not occur, I have opted to not include it in the transcription.
+* Stress is denoted by accented vowels; however, we do not account for stress, so accented vowels will be transcribed to their plain counterparts.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 

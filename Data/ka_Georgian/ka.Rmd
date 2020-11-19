@@ -96,6 +96,12 @@ Grapheme      Phoneme
 "ხ"		       "/x/"
 "ჯ"	         "/dʒ/"
 "ჰ"		        "/h/"
+"**Misc. Graphemes**"   ""
+"ჱ"          "/ei/"
+"ჲ"          "/i/"
+"ჳ"          "/vi/"
+"ჴ"          "/x/"
+"ჵ"          "/hɔi/"
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%

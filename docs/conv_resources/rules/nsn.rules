@@ -1,0 +1,14 @@
+# Nehan Rule Set
+# Written by: Emily Strand
+# Last updated: 2020-01-24
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdhiklmnprstu],,,,
+# Individual Letters
+sub,e,ɛ,2,,,
+sub,g,ɡ,2,,,
+sub,o,ɔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,n,ŋ,3,,g,
+sub,g,,3,n,,"clean-up",

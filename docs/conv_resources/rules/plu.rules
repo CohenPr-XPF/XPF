@@ -1,0 +1,48 @@
+# Palikúr Rule Set
+# Written by: Emily Strand
+# Last updated: 2019-11-04
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdehikmnopstuw],,,,
+class,vowels,[aeiou],,,,
+class,consonants-input,[bdgkmnprstwxy],,,,
+class,y-preceder,[aeiu],,,,
+class,w-preceder,[aeiou],,,,
+# Individual Letters
+sub,g,ɡ,2,,,
+sub,r,ɣ,2,,,
+sub,x,ʃ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Vowel Nasalization (present syllable-finally)
+sub,({vowels}),\1̃,3,,h$,
+sub,h,,3,{vowels},$,"clean-up",
+sub,({vowels}),\1̃,3,,h{consonants-input},
+sub,h,,3,{vowels},{consonants-input},"clean-up",
+# Diphthongs (present syllable-finally)
+sub,({y-preceder}),\1j,3,,y$,
+sub,y,,3,{y-preceder},$,"clean-up",
+sub,({y-preceder}),\1j,3,,y{consonants-input},
+sub,y,,3,{y-preceder},{consonants-input},"clean-up",
+sub,({w-preceder}),\1w,3,,w$,
+sub,w,,3,{w-preceder},$,"clean-up",
+sub,({w-preceder}),\1w,3,,w{consonants-input},
+sub,w,,3,{w-preceder},{consonants-input},"clean-up",
+sub,a,ãj,4,,yh$,
+sub,y,,4,a,h$,"clean-up",
+sub,h,,4,ay,$,"clean-up",
+sub,a,ãj,4,,yh{consonants-input},
+sub,y,,4,a,h{consonants-input},"clean-up",
+sub,h,,4,ay,{consonants-input},"clean-up",
+sub,a,ãw,4,,wh$,
+sub,w,,4,a,h$,"clean-up",
+sub,h,,4,aw,$,"clean-up",
+sub,a,ãw,4,,wh{consonants-input},
+sub,w,,4,a,h{consonants-input},"clean-up",
+sub,h,,4,aw,{consonants-input},"clean-up",
+sub,i,ĩw,4,,wh$,
+sub,w,,4,i,h$,"clean-up",
+sub,h,,4,iw,$,"clean-up",
+sub,i,ĩw,4,,wh{consonants-input},
+sub,w,,4,i,h{consonants-input},"clean-up",
+sub,h,,4,iw,{consonants-input},"clean-up",

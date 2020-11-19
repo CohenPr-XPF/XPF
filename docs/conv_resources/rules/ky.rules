@@ -1,0 +1,42 @@
+# Kirghiz Rule Set
+# Written by: Emily
+# Last Updated: 2019-08-05
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,vowels,[ɑeiɯoøuy],,,,
+# Individual Letters
+sub,а,ɑ,1,,,,
+sub,б,b,1,,,,
+sub,в,v,1,,,,
+sub,г,ɡ,1,,,,
+sub,д,d,1,,,,
+sub,е,e,1,,,,
+sub,ё,j o,1,,,,
+sub,ж,dʒ,1,,,,
+sub,з,z,1,,,,
+sub,и,i,1,,,,
+sub,й,j,1,,,,
+sub,к,k,1,,,,
+sub,л,l,1,,,,
+sub,м,m,1,,,,
+sub,н,n,1,,,,
+sub,ң,ŋ,1,,,,
+sub,о,o,1,,,,
+sub,ө,ø,1,,,,
+sub,п,p,1,,,,
+sub,р,r,1,,,,
+sub,т,t,1,,,,
+sub,у,u,1,,,,
+sub,ү,y,1,,,,
+sub,с,s,1,,,,
+sub,ч,tʃ,1,,,,
+sub,ш,ʃ,1,,,,
+sub,ы,ɯ,1,,,,
+sub,э,e,1,,,,
+sub,х,χ,1,,,,
+sub,ю,j u,1,,,,
+sub,я,j ɑ,1,,,,
+# ipasub Rules
+ipasub,({vowels}) \1,\1 ː,2,,,,
+# Misc. Rules
+sub,-,,1,,,,

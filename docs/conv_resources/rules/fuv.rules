@@ -1,0 +1,38 @@
+# Nigerian Fulfulde Rule Set
+# Written by: Emily Strand
+# Last updated: 2020-02-07
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abɓdɗefhiklmnŋoprstuw],,,,
+class,apostrophe,['ꞌˈ‘’],,,,
+class,n-follower,[djyg],,,,
+class,vowels,[aeiou],,,,
+class,gem,(b|ɓ|tʃ|d|ɗ|ɡ|dʒ|k|l|m|n|p|r|t|w|ʔ|ʔʲ),,,,
+# Individual Letters
+sub,c,tʃ,2,,,
+sub,g,ɡ,2,,,
+sub,j,dʒ,2,,,
+sub,y,j,2,,,
+sub,y,ʔʲ,3,,{apostrophe},
+sub,{apostrophe},,3,y,,"clean-up",
+sub,ƴ,ʔʲ,2,,,
+sub,{apostrophe},ʔ,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,m,ᵐb,3,,b,
+sub,b,,3,m,,"clean-up",
+sub,n,ⁿd,3,,d,
+sub,n,ⁿdʒ,3,,j,
+sub,n,ɲ,3,,y,
+sub,n,ᵑɡ,3,,g,
+sub,{n-follower},,3,n,,"clean-up",
+# Vowel Length
+ipasub,({vowels}) \1,\1 ː,2,,,
+# Consonant Gemination
+ipasub,({gem}) \1,\1 ː,2,,,
+# Consonant Gemination (orthographic differences)
+ipasub,m ᵐb,ᵐb ː,4,,,
+ipasub,n ⁿd,ⁿd ː,4,,,
+ipasub,n ɲ,ɲ ː,4,,,
+ipasub,n ᵑɡ,ᵑɡ ː,4,,,
+ipasub,ʔ ʔʲ j,ʔʲ ː,4,,,

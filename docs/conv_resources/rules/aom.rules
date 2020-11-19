@@ -1,0 +1,27 @@
+# Aomie Rule Set
+# Written by Abi Creighton
+# Last Updated: 2020-08-04
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abdehikmnopstuv],,,,
+class,apostrophe,['ꞌ‘’],,,,
+class,i-dip,[eæaoɔe],,,,
+class,u-dip,[ieaoæ],,,,
+class,trip,[eæ],,,,
+# Individual Letters
+sub,ë,æ,1,,,
+sub,g,ɡ,1,,,
+sub,j,dʒ,1,,,
+sub,ö,ɔ,1,,,
+sub,r,ɾ,1,,,
+sub,{apostrophe},ʔ,1,,,
+sub,({passthrough}),\1,0.1,,,
+# Diphthongs/Triphthongs
+ipasub,i ({i-dip}),i\1,2,,,
+ipasub,u ({u-dip}),u\1,2,,,
+ipasub,a e,ae,2,,,
+ipasub,i a ({trip}),ia\1,3,,,
+ipasub,i ɔ ({trip}),iɔ\1,3,,,
+ipasub,u a ({trip}),ua\1,3,,,
+# Misc. Rules
+sub,-,,1,,,

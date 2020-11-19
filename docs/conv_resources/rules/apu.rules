@@ -1,0 +1,34 @@
+# Apurinã Rule Set
+# Written by: Emily
+# Last Updated: 2019-09-11
+type,sfrom,sto,weight,precede,follow,comment
+# Classes
+class,passthrough,[aãeẽhiĩkmnoõpst],,,,
+class,vowels,[ieaɨoĩẽãɨ̃õ],,,,
+class,i-dip,[aeo],,,,
+class,o-dip,[ai],,,,
+class,punct,[ꞌ'ˈ‘ʼ-],,,,
+# Individual Letters
+sub,r,ɾ,2,,,
+sub,u,ɨ,2,,,
+sub,ũ,ɨ̃,2,,,
+sub,w,ɰ,2,,,
+sub,x,ʃ,2,,,
+sub,y,j,2,,,
+sub,({passthrough}),\1,2,,,
+# Digraphs
+sub,n,ɲ,3,,h,
+sub,h,,3,n,,"clean-up",
+sub,t,ts,3,,s,
+sub,s,,3,t,,"clean-up",
+sub,t,tʃ,3,,x,
+sub,x,,3,t,,"clean-up",
+# Dipthongs
+sub,({i-dip}),\1i,4,,i,
+sub,i,,3,{i-dip},,"clean-up",
+sub,({o-dip}),\1o,4,,o,
+sub,o,,3,{o-dip},,"clean-up",
+# Long Vowels
+ipasub,({vowels}) \1\b,\1 ː,2,,,
+# Misc. Rules
+sub,{punct},,2,,,hyphens and dashes add no phonemic value,

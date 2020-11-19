@@ -1,0 +1,21 @@
+# Borong Rule Set
+# Written by: Allison
+# Last Updated: 2020-03-28
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,vowels,[aeiou],,,,
+class,passthrough,[abdefhiklmnŋoprstuw],,,,
+# Individual Letters
+sub,g,ɡ,2,,,
+sub,j,dz,2,,,
+sub,q,kp,2,,,
+sub,y,j,2,,,
+sub,z,ts,2,,,
+# Digraphs
+sub,g,ɡb,3,,b,
+sub,b,,3,g,,"clean up"
+# Vowel Length
+ipasub,({vowels}) \1,\1 ː,2,,,
+# Misc. Rules,
+sub,({passthrough}),\1,0.1,,,
+sub,-,,2,,,

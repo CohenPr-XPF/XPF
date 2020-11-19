@@ -1,0 +1,24 @@
+# Palauan Rule Set
+# Written by: Bill
+# Last Updated: 2019-07-22
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+# class,apostrophe,['ꞌˈ‘’],,,,
+class,longV,[ɛiou],,,,
+class,passthrough,[abdiklmostu],,,,
+# Individual Letters
+sub,e,ɛ,4,,,
+sub,ȩ,ɛ,4,,,
+sub,r,ɾ,4,,,
+sub,({passthrough}),\1,0.1,,,
+# Digraphs
+sub,c,ʔ,6,,h,"<ch>"
+sub,h,,6,c,,"<ch> cleanup"
+sub,l,l ː,6,,l,"<ll>"
+sub,l,,6,l,,"<ll> cleanup"
+sub,n,ŋ,6,,g,"<ng>"
+sub,g,,6,n,,"<ng> cleanup"
+sub,r,r,6,,r,"<rr>"
+sub,r,,6,r,,"<rr> cleanup"
+# Vowel Length
+ipasub,({longV}) \1,\1 ː,2,,,"long vowels"

@@ -153,6 +153,8 @@ Grapheme        Phoneme
 "е"              "/e/"  
 "и"              "/i/"
 "й"              "/j/"  
+"ю"              "/ju/"
+"я"              "/ja/"
 '), TRUE)
 
 kable(cyrillic_alphabet, align = 'c') %>%

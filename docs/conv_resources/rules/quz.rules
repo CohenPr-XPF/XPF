@@ -1,0 +1,29 @@
+# Cusco Quechua Rule Set
+# Written by: Bill
+# Last Updated: 2019-06-20
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules 
+class,apostrophe,[ꞌ'ˈ‘’],,,,
+class,can-be-asp,(ch|k|p|q|t),,,,
+class,can-be-ejec,(p|t|k|q|ch),,,,
+class,pre-h,[cs],,,,
+class,plosive,[ptkqʃ],,,,"/ʃ/ is included here because, in addition to stops, the affricate /tʃ/ can be aspirated or ejective"
+class,asp-or-ej,[ʰʼ],,,,
+class,passthrough,[ahiklmnpqstuw],,,,
+# Individual Letters
+sub,e,i,4,,,
+sub,h,ʰ,4,{can-be-asp},,
+sub,ñ,ɲ,4,,,
+sub,o,u,4,,,
+sub,r,ɾ,4,,,
+sub,y,j,4,,,
+sub,{apostrophe},ʼ,4,{can-be-ejec},,
+# Digraphs
+sub,c,tʃ,6,,h,"<ch> digraph"
+sub,s,ʃ,6,,h,"<sh> digraph"
+sub,h,,6,{pre-h},,"clean-up",
+sub,l,ʎ,6,,l,"<ll> digraph"
+sub,l,,6,l,,
+# Misc. Rules
+ipasub,({plosive}) ({asp-or-ej}),\1\2,2,,,
+sub,({passthrough}),\1,0.1,,,
