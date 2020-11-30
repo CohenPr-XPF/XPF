@@ -116,13 +116,15 @@ textarea {
 	width: 100%;
   	display: flex;
   	justify-content: center;
-  	align-items: center; 
+  	align-items: flex-end; 
+	font-size: 15px;
 }
 
 .letter {
+	display: inline;
 	color: white;
 	letter-spacing: 5px;
-	animation: fade 10s infinite;
+	animation: fade 5s infinite;
 }
 
 .letter:nth-child(1){
