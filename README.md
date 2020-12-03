@@ -1,6 +1,6 @@
-markdown: kramdown
-
 # XPF
+
+Check out our interactive website: [The XPF Corpus](https://cohenpr-xpf.github.io/XPF/)
 
 ## Available Languages
 
