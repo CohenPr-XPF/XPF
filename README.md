@@ -1,218 +1,218 @@
 # XPF
 
-Check out our interactive website: <a href="https://cohenpr-xpf.github.io/XPF/" target="_blank">The XPF Corpus</a>
+Check out our interactive website: <a href="https://cohenpr-xpf.github.io/XPF/" target="XPF">The XPF Corpus</a>
 
 ## Available Languages
 
 | Language Code | Language (click for info)                                               | Comments       |
 |---------------|-------------------------------------------------------------------------| -------------- |
-| aak           | [Ankave](Data/aak_Ankave/aak.html)                                    |                |
-| aau           | [Abau](Data/aau_Abau/aau.html)                                          |                |
-| ab            | [Abkhaz](Data/ab_Abkhaz/ab.html)                                        |                |
-| acf           | [Saint Lucian Creole French](Data/acf_SaintLucianCreoleFrench/acf.html) | lacks lenition |
-| aey           | [Amele](Data/aey_Amele/aey.html)                                        |                |
-| agg           | [Angor](Data/agg_Angor/agg.html)                                        |                |
-| aia           | [Arosi](Data/aia_Arosi/aia.html)                                        | lacks lenition |
-| amn           | [Amanab](Data/amn_Amanab/amn.html)                                      |                |
-| an            | [Aragonese](Data/an_Aragonese/an.html)                                  |                |
-| aom           | [Aomie](Data/aom_Aomie/aom.html)                                        | lacks lenition |
-| apu           | [Apurinã](Data/apu_Apurinã/apu.html)                                    |                |
-| apy           | [Apalaí](Data/apy_Apalaí/apy.html)                                      | lacks lenition |
-| arl           | [Arabela](Data/arl_Arabela/arl.html)                                    |                |
-| ast           | [Asturian](Data/ast_Asturian/ast.html)                                  |                |
-| ata           | [Pele-Ata](Data/ata_PeleAta/ata.html)                                   |                |
-| avt           | [Au](Data/avt_Au/avt.html)                                              |                |
-| ay            | [Aymara](Data/ay_Aymara/ay.html)                                        |                |
-| az            | [Azerbaijani](Data/az_Azerbaijani/az.html)                              |                |
-| ba            | [Bashkir](Data/ba_Bashkir/ba.html)                                      |                |
-| bdd           | [Bunama](Data/bdd_Bunama/bdd.html)                                      |                |
-| be            | [Belarusan](Data/be_Belarusan/be.html)                                  | lacks lenition |
-| bef           | [Benabena](Data/bef_Benabena/bef.html)                                  |                |
-| bg            | [Bulgarian](Data/bg_Bulgarian/bg.html)                                  |                |
-| bi            | [Bislama](Data/bi_Bislama/bi.html)                                      |                |
-| boa           | [Bora](Data/boa_Bora/boa.html)                                          |                |
-| boj           | [Anjam](Data/boj_Anjam/boj.html)                                        | lacks lenition |
-| bug           | [Bugis](Data/bug_Bugis/bug.html)                                        |                |
-| bvr           | [Burarra](Data/bvr_Burarra/bvr.html)                                    |                |
-| bxr           | [Russia Buryat](Data/bxr_RussiaBuryat/bxr.html)                         |                |
-| caa           | [Ch'orti'](Data/caa_Chʼortiʼ/caa.html)                                  |                |
-| car           | [Carib](Data/car_Carib/car.html)                                        |                |
-| cbi           | [Cha'palaa](Data/cbi_Cha'palaa/cbi.html)                                |                |
-| cbk           | [Chavacano](Data/cbk_Chavacano/cbk.html)                                |                |
-| cbt           | [Chayahuita](Data/cbt_Chayahuita/cbt.html)                              |                |
-| cbu           | [Candoshi Shapra](Data/cbu_CandoshiShapra/cbu.html)                     | lacks lenition |
-| cnm           | [Ixtatán Chuj](Data/cnm_IxtatanChuj/cnm.html)                           |                |
-| crh           | [Crimean Tatar](Data/crh_CrimeanTatar/crh.html)                         |                |
-| cs            | [Czech](Data/cs_Czech/cs.html)                                          |                |
-| ctu           | [Chol](Data/ctu_Chol/ctu.html)                                          |                |
-| cv            | [Chuvash](Data/cv_Chuvash/cv.html)                                      |                |
-| ded           | [Dedua](Data/ded_Dedua/ded.html)                                        |                |
-| dgz           | [Daga](Data/dgz_Daga/dgz.html)                                          |                |
-| djr           | [Djambarrpuyngu](Data/djr_Djambarrpuyngu/djr.html)                      |                |
-| dv            | [Maldivian](Data/dv_Maldivian/dv.html)                                  |                |
-| el            | [Greek](Data/el_Greek/el.html)                                          |                |
-| emi           | [Mussau-Emira](Data/emi_MussauEmira/emi.html)                           | lacks lenition |
-| eu            | [Basque](Data/eu_Basque/eu.html)                                        |                |
-| gaw           | [Nobonob](Data/gaw_Nobonob/gaw.html)                                    |                |
-| ghs           | [Guhu-Samane](Data/ghs_GuhuSamane/ghs.html)                             |                |
-| gil           | [Kiribati](Data/gil_Kiribati/gil.html)                                  | lacks lenition |
-| gn            | [Guarani](Data/gn_Guarani/gn.html)                                      |                |
-| guc           | [Wayuu](Data/guc_Wayuu/guc.html)                                        |                |
-| guo           | [Guayabero](Data/guo_Guayabero/guo.html)                                |                |
-| gvn           | [Kuku-Yalanji](Data/gvn_KukuYalanji/gvn.html)                           |                |
-| haw           | [Hawaiian](Data/haw_Hawaiian/haw.html)                                  |                |
-| hil           | [Hiligaynon](Data/hil_Hiligaynon/hil.html)                              |                |
-| hmn           | [Hmong](Data/hmn_Hmong/hmn.html)                                        | lacks lenition |
-| hsb           | [Upper Sorbian](Data/hsb_UpperSorbian/hsb.html)                         |                |
-| ht            | [Haitian Creole](Data/ht_HaitianCreole/ht.html)                         |                |
-| hu            | [Hungarian](Data/hu_Hungarian/hu.html)                                  |                |
-| hy            | [Armenian](Data/hy_Armenian/hy.html)                                    |                |
-| ign           | [Ignaciano](Data/ign_Ignaciano/ign.html)                                |                |
-| ilo           | [Ilocano](Data/ilo_Ilocano/ilo.html)                                    |                |
-| inb           | [Inga](Data/inb_Inga/inb.html)                                          |                |
-| iu            | [Inuktitut](Data/iu_Inuktitut/iu.html)                                  |                |
-| iws           | [Sepik Iwam](Data/iws_SepikIwam/iws.html)                               |                |
-| jam           | [Jamaican Creole](Data/jam_JamaicanCreole/jam.html)                     |                |
-| jv            | [Javanese](Data/jv_Javanese/jv.html)                                    |                |
-| ka            | [Georgian](Data/ka_Georgian/ka.html)                                    |                |
-| kbd           | [Kabardian](Data/kbd_Kabardian/kbd.html)                                |                |
-| kjb           | [Q'anjob'al](Data/kjb_Q'anjob'al/kjb.html)                              |                |
-| kki           | [Kagulu](Data/kki_Kagulu/kki.html)                                      | lacks lenition |
-| kl            | [Kalaallisut](Data/kl_Kalaallisut/kl.html)                              |                |
-| kn            | [Kannada](Data/kn_Kannada/kn.html)                                      |                |
-| ko            | [Korean](Data/ko_Korean/ko.html)                                        |                |
-| kpf           | [Komba](Data/kpf_Komba/kpf.html)                                        |                |
-| kpx           | [Mountain Koiali](Data/kpx_MountainKoiali/kpx.html)                     |                |
-| krc           | [Karachay-Balkar](Data/krc_KarachayBalkar/krc.html)                     |                |
-| ksr           | [Borong](Data/ksr_Borong/ksr.html)                                      | lacks lenition |
-| kup           | [Kunimaipa](Data/kup_Kunimaipa/kup.html)                                |                |
-| kv            | [Komi](Data/kv_Komi/kv.html)                                            | lacks lenition |
-| ky            | [Kirghiz](Data/ky_Kirghiz/ky.html)                                      |                |
-| lem           | [Nomaande](Data/lem_Nomaande/lem.html)                                  |                |
-| mam           | [Mam](Data/mam_Mam/mam.html)                                            |                |
-| mcq           | [Ese](Data/mcq_Ese/mcq.html)                                            |                |
-| mg            | [Malagasy](Data/mg_Malagasy/mg.html)                                    |                |
-| mhl           | [Mauwake](Data/mhl_Mauwake/mhl.html)                                    |                |
-| mk            | [Macedonian](Data/mk_Macedonian/mk.html)                                |                |
-| mqj           | [Mamasa](Data/mqj_Mamasa/mqj.html)                                      |                |
-| mto           | [Totontepec Mixe](Data/mto_TotontepecMixe/mto.html)                     |                |
-| mva           | [Manam](Data/mva_Manam/mva.html)                                        |                |
-| naf           | [Nabak](Data/naf_Nabak/naf.html)                                        |                |
-| nan           | [Min Nan Chinese](Data/nan_MinNanChinese/nan.html)                      | lacks lenition |
-| nas           | [Naasioi](Data/nas_Naasioi/nas.html)                                    |                |
-| nhe           | [Nahuatl](Data/nhe_Nahuatl/nhe.html)                                    |                |
-| nhr           | [Naro](Data/nhr_Naro/nhr.html)                                          |                |
-| nsn           | [Nehan](Data/nsn_Nehan/nsn.html)                                        | lacks lenition |
-| nuy           | [Nunggubuyu](Data/nuy_Nunggubuyu/nuy.html)                              |                |
-| omw           | [South Tairora](Data/omw_SouthTairora/omw.html)                         |                |
-| pad           | [Paumarí](Data/pad_Paumarí/pad.html)                                    | lacks lenition |
-| pau           | [Palauan](Data/pau_Palauan/pau.html)                                    |                |
-| pio           | [Piapoco](Data/pio_Piapoco/pio.html)                                    |                |
-| pwg           | [Gapapaiwa](Data/pwg_Gapapaiwa/pwg.html)                                |                |
-| quz           | [Cusco Quechua](Data/quz_CuscoQuechua/quz.html)                         |                |
-| rkb           | [Rikbaktsa](Data/rkb_Rikbaktsa/rkb.html)                                |                |
-| ro            | [Romanian](Data/ro_Romanian/ro.html)                                    |                |
-| roo           | [Rotokas](Data/roo_Rotokas/roo.html)                                    |                |
-| shi           | [Shilha](Data/shi_Shilha/shi.html)                                      |                |
-| shp           | [Shipibo Konibo](Data/shp_ShipiboKonibo/shp.html)                       |                |
-| si            | [Sinhala](Data/si_Sinhala/si.html)                                      |                |
-| snc           | [Sinaugoro](Data/snc_Sinaugoro/snc.html)                                | lacks lenition |
-| sq            | [Albanian](Data/sq_Albanian/sq.html)                                    |                |
-| ta            | [Tamil](Data/ta_Tamil/ta.html)                                          |                |
-| tac           | [Western Tarahumara](Data/tac_Tarahumara/tac.html)                      |                |
-| te            | [Telugu](Data/te_Telugu/te.html)                                        |                |
-| tee           | [Huehuetla Tepehua](Data/tee_HuehuetlaTepehua/tee.html)                 |                |
-| tg            | [Tajik](Data/tg_Tajik/tg.html)                                          |                |
-| to            | [Tongan](Data/to_Tongan/to.html)                                        | lacks lenition |
-| tpi           | [Tok Pisin](Data/tpi_TokPisin/tpi.html)                                 |                |
-| tr            | [Turkish](Data/tr_Turkish/tr.html)                                      |                |
-| tt            | [Tatar](Data/tt_Tatar/tt.html)                                          |                |
-| tyv           | [Tuvan](Data/tyv_Tuvan/tyv.html)                                        |                |
-| tzo           | [Tzotzil](Data/tzo_Tzotzil/tzo.html)                                    |                |
-| ug            | [Uyghur](Data/ug_Uyghur/ug.html)                                        |                |
-| uk            | [Ukrainian](Data/uk_Ukrainian/uk.html)                                  |                |
-| usa           | [Usarufa](Data/usa_Usarufa/usa.html)                                    |                |
-| uz            | [Uzbek](Data/uz_Uzbek/uz.html)                                          |                |
-| var           | [Huarjío](Data/var_Huarijío/var.html)                                   |                |
-| vi            | [Vietnamese](Data/vi_Vietnamese/vi.html)                                |                |
-| viv           | [Iduna](Data/viv_Iduna/viv.html)                                        |                |
-| way           | [Wayana](Data/way_Wayana/way.html)                                      |                |
-| wbp           | [Warlpiri](Data/wbp_Warlpiri/wbp.html)                                  |                |
-| wo            | [Wolof](Data/wo_Wolof/wo.html)                                          | lacks lenition |
-| ycn           | [Yucuna](Data/ycn_Yucuna/ycn.html)                                      |                |
-| yi            | [Yiddish](Data/yi_Yiddish/yi.html)                                      |                |
-| yua           | [Yucatec Maya](Data/yua_YucatecMaya/yua.html)                           |                |
-| yuz           | [Yuracare](Data/yuz_Yuracare/yuz.html)                                  |                |
-| yva           | [Yawa](Data/yva_Yawa/yva.html)                                          | lacks lenition |
-| zos           | [Francisco León Zoque](Data/zos_FranciscoLeónZoque/zos.html)            |                |
+| aak           | [Ankave](https://cohenpr-xpf.github.io/XPF/conv_resources/info/aak.html)                                      |                |
+| aau           | [Abau](https://cohenpr-xpf.github.io/XPF/conv_resources/info/aau.html)                                          |                |
+| ab            | [Abkhaz](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ab.html)                                        |                |
+| acf           | [Saint Lucian Creole French](https://cohenpr-xpf.github.io/XPF/conv_resources/info/acf.html) | lacks lenition |
+| aey           | [Amele](https://cohenpr-xpf.github.io/XPF/conv_resources/info/aey.html)                                        |                |
+| agg           | [Angor](https://cohenpr-xpf.github.io/XPF/conv_resources/info/agg.html)                                        |                |
+| aia           | [Arosi](https://cohenpr-xpf.github.io/XPF/conv_resources/info/aia.html)                                        | lacks lenition |
+| amn           | [Amanab](https://cohenpr-xpf.github.io/XPF/conv_resources/info/amn.html)                                      |                |
+| an            | [Aragonese](https://cohenpr-xpf.github.io/XPF/conv_resources/info/an.html)                                  |                |
+| aom           | [Aomie](https://cohenpr-xpf.github.io/XPF/conv_resources/info/aom.html)                                        | lacks lenition |
+| apu           | [Apurinã](https://cohenpr-xpf.github.io/XPF/conv_resources/info/apu.html)                                    |                |
+| apy           | [Apalaí](https://cohenpr-xpf.github.io/XPF/conv_resources/info/apy.html)                                      | lacks lenition |
+| arl           | [Arabela](https://cohenpr-xpf.github.io/XPF/conv_resources/info/arl.html)                                    |                |
+| ast           | [Asturian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ast.html)                                  |                |
+| ata           | [Pele-Ata](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ata.html)                                   |                |
+| avt           | [Au](https://cohenpr-xpf.github.io/XPF/conv_resources/info/avt.html)                                              |                |
+| ay            | [Aymara](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ay.html)                                        |                |
+| az            | [Azerbaijani](https://cohenpr-xpf.github.io/XPF/conv_resources/info/az.html)                              |                |
+| ba            | [Bashkir](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ba.html)                                      |                |
+| bdd           | [Bunama](https://cohenpr-xpf.github.io/XPF/conv_resources/info/bdd.html)                                      |                |
+| be            | [Belarusan](https://cohenpr-xpf.github.io/XPF/conv_resources/info/be.html)                                  | lacks lenition |
+| bef           | [Benabena](https://cohenpr-xpf.github.io/XPF/conv_resources/info/bef.html)                                  |                |
+| bg            | [Bulgarian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/bg.html)                                  |                |
+| bi            | [Bislama](https://cohenpr-xpf.github.io/XPF/conv_resources/info/bi.html)                                      |                |
+| boa           | [Bora](https://cohenpr-xpf.github.io/XPF/conv_resources/info/boa.html)                                          |                |
+| boj           | [Anjam](https://cohenpr-xpf.github.io/XPF/conv_resources/info/boj.html)                                        | lacks lenition |
+| bug           | [Bugis](https://cohenpr-xpf.github.io/XPF/conv_resources/info/bug.html)                                        |                |
+| bvr           | [Burarra](https://cohenpr-xpf.github.io/XPF/conv_resources/info/bvr.html)                                    |                |
+| bxr           | [Russia Buryat](https://cohenpr-xpf.github.io/XPF/conv_resources/info/bxr.html)                         |                |
+| caa           | [Ch'orti'](https://cohenpr-xpf.github.io/XPF/conv_resources/info/caa.html)                                  |                |
+| car           | [Carib](https://cohenpr-xpf.github.io/XPF/conv_resources/info/car.html)                                        |                |
+| cbi           | [Cha'palaa](https://cohenpr-xpf.github.io/XPF/conv_resources/info/cbi.html)                                |                |
+| cbk           | [Chavacano](https://cohenpr-xpf.github.io/XPF/conv_resources/info/cbk.html)                                |                |
+| cbt           | [Chayahuita](https://cohenpr-xpf.github.io/XPF/conv_resources/info/cbt.html)                              |                |
+| cbu           | [Candoshi Shapra](https://cohenpr-xpf.github.io/XPF/conv_resources/info/cbu.html)                     | lacks lenition |
+| cnm           | [Ixtatán Chuj](https://cohenpr-xpf.github.io/XPF/conv_resources/info/cnm.html)                           |                |
+| crh           | [Crimean Tatar](https://cohenpr-xpf.github.io/XPF/conv_resources/info/crh.html)                         |                |
+| cs            | [Czech](https://cohenpr-xpf.github.io/XPF/conv_resources/info/cs.html)                                          |                |
+| ctu           | [Chol](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ctu.html)                                          |                |
+| cv            | [Chuvash](https://cohenpr-xpf.github.io/XPF/conv_resources/info/cv.html)                                      |                |
+| ded           | [Dedua](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ded.html)                                        |                |
+| dgz           | [Daga](https://cohenpr-xpf.github.io/XPF/conv_resources/info/dgz.html)                                          |                |
+| djr           | [Djambarrpuyngu](https://cohenpr-xpf.github.io/XPF/conv_resources/info/djr.html)                      |                |
+| dv            | [Maldivian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/dv.html)                                  |                |
+| el            | [Greek](https://cohenpr-xpf.github.io/XPF/conv_resources/info/el.html)                                          |                |
+| emi           | [Mussau-Emira](https://cohenpr-xpf.github.io/XPF/conv_resources/info/emi.html)                           | lacks lenition |
+| eu            | [Basque](https://cohenpr-xpf.github.io/XPF/conv_resources/info/eu.html)                                        |                |
+| gaw           | [Nobonob](https://cohenpr-xpf.github.io/XPF/conv_resources/info/gaw.html)                                    |                |
+| ghs           | [Guhu-Samane](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ghs.html)                             |                |
+| gil           | [Kiribati](https://cohenpr-xpf.github.io/XPF/conv_resources/info/gil.html)                                  | lacks lenition |
+| gn            | [Guarani](https://cohenpr-xpf.github.io/XPF/conv_resources/info/gn.html)                                      |                |
+| guc           | [Wayuu](https://cohenpr-xpf.github.io/XPF/conv_resources/info/guc.html)                                        |                |
+| guo           | [Guayabero](https://cohenpr-xpf.github.io/XPF/conv_resources/info/guo.html)                                |                |
+| gvn           | [Kuku-Yalanji](https://cohenpr-xpf.github.io/XPF/conv_resources/info/gvn.html)                           |                |
+| haw           | [Hawaiian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/haw.html)                                  |                |
+| hil           | [Hiligaynon](https://cohenpr-xpf.github.io/XPF/conv_resources/info/hil.html)                              |                |
+| hmn           | [Hmong](https://cohenpr-xpf.github.io/XPF/conv_resources/info/hmn.html)                                        | lacks lenition |
+| hsb           | [Upper Sorbian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/hsb.html)                         |                |
+| ht            | [Haitian Creole](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ht.html)                         |                |
+| hu            | [Hungarian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/hu.html)                                  |                |
+| hy            | [Armenian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/hy.html)                                    |                |
+| ign           | [Ignaciano](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ign.html)                                |                |
+| ilo           | [Ilocano](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ilo.html)                                    |                |
+| inb           | [Inga](https://cohenpr-xpf.github.io/XPF/conv_resources/info/inb.html)                                          |                |
+| iu            | [Inuktitut](https://cohenpr-xpf.github.io/XPF/conv_resources/info/iu.html)                                  |                |
+| iws           | [Sepik Iwam](https://cohenpr-xpf.github.io/XPF/conv_resources/info/iws.html)                               |                |
+| jam           | [Jamaican Creole](https://cohenpr-xpf.github.io/XPF/conv_resources/info/jam.html)                     |                |
+| jv            | [Javanese](https://cohenpr-xpf.github.io/XPF/conv_resources/info/jv.html)                                    |                |
+| ka            | [Georgian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ka.html)                                    |                |
+| kbd           | [Kabardian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/kbd.html)                                |                |
+| kjb           | [Q'anjob'al](https://cohenpr-xpf.github.io/XPF/conv_resources/info/kjb.html)                              |                |
+| kki           | [Kagulu](https://cohenpr-xpf.github.io/XPF/conv_resources/info/kki.html)                                      | lacks lenition |
+| kl            | [Kalaallisut](https://cohenpr-xpf.github.io/XPF/conv_resources/info/kl.html)                              |                |
+| kn            | [Kannada](https://cohenpr-xpf.github.io/XPF/conv_resources/info/kn.html)                                      |                |
+| ko            | [Korean](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ko.html)                                        |                |
+| kpf           | [Komba](https://cohenpr-xpf.github.io/XPF/conv_resources/info/kpf.html)                                        |                |
+| kpx           | [Mountain Koiali](https://cohenpr-xpf.github.io/XPF/conv_resources/info/kpx.html)                     |                |
+| krc           | [Karachay-Balkar](https://cohenpr-xpf.github.io/XPF/conv_resources/info/krc.html)                     |                |
+| ksr           | [Borong](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ksr.html)                                      | lacks lenition |
+| kup           | [Kunimaipa](https://cohenpr-xpf.github.io/XPF/conv_resources/info/kup.html)                                |                |
+| kv            | [Komi](https://cohenpr-xpf.github.io/XPF/conv_resources/info/kv.html)                                            | lacks lenition |
+| ky            | [Kirghiz](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ky.html)                                      |                |
+| lem           | [Nomaande](https://cohenpr-xpf.github.io/XPF/conv_resources/info/lem.html)                                  |                |
+| mam           | [Mam](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mam.html)                                            |                |
+| mcq           | [Ese](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mcq.html)                                            |                |
+| mg            | [Malagasy](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mg.html)                                    |                |
+| mhl           | [Mauwake](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mhl.html)                                    |                |
+| mk            | [Macedonian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mk.html)                                |                |
+| mqj           | [Mamasa](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mqj.html)                                      |                |
+| mto           | [Totontepec Mixe](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mto.html)                     |                |
+| mva           | [Manam](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mva.html)                                        |                |
+| naf           | [Nabak](https://cohenpr-xpf.github.io/XPF/conv_resources/info/naf.html)                                        |                |
+| nan           | [Min Nan Chinese](https://cohenpr-xpf.github.io/XPF/conv_resources/info/nan.html)                      | lacks lenition |
+| nas           | [Naasioi](https://cohenpr-xpf.github.io/XPF/conv_resources/info/nas.html)                                    |                |
+| nhe           | [Nahuatl](https://cohenpr-xpf.github.io/XPF/conv_resources/info/nhe.html)                                    |                |
+| nhr           | [Naro](https://cohenpr-xpf.github.io/XPF/conv_resources/info/nhr.html)                                          |                |
+| nsn           | [Nehan](https://cohenpr-xpf.github.io/XPF/conv_resources/info/nsn.html)                                        | lacks lenition |
+| nuy           | [Nunggubuyu](https://cohenpr-xpf.github.io/XPF/conv_resources/info/nuy.html)                              |                |
+| omw           | [South Tairora](https://cohenpr-xpf.github.io/XPF/conv_resources/info/omw.html)                         |                |
+| pad           | [Paumarí](https://cohenpr-xpf.github.io/XPF/conv_resources/info/pad.html)                                    | lacks lenition |
+| pau           | [Palauan](https://cohenpr-xpf.github.io/XPF/conv_resources/info/pau.html)                                    |                |
+| pio           | [Piapoco](https://cohenpr-xpf.github.io/XPF/conv_resources/info/pio.html)                                    |                |
+| pwg           | [Gapapaiwa](https://cohenpr-xpf.github.io/XPF/conv_resources/info/pwg.html)                                |                |
+| quz           | [Cusco Quechua](https://cohenpr-xpf.github.io/XPF/conv_resources/info/quz.html)                         |                |
+| rkb           | [Rikbaktsa](https://cohenpr-xpf.github.io/XPF/conv_resources/info/rkb.html)                                |                |
+| ro            | [Romanian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ro.html)                                    |                |
+| roo           | [Rotokas](https://cohenpr-xpf.github.io/XPF/conv_resources/info/roo.html)                                    |                |
+| shi           | [Shilha](https://cohenpr-xpf.github.io/XPF/conv_resources/info/shi.html)                                      |                |
+| shp           | [Shipibo Konibo](https://cohenpr-xpf.github.io/XPF/conv_resources/info/shp.html)                       |                |
+| si            | [Sinhala](https://cohenpr-xpf.github.io/XPF/conv_resources/info/si.html)                                      |                |
+| snc           | [Sinaugoro](https://cohenpr-xpf.github.io/XPF/conv_resources/info/snc.html)                                | lacks lenition |
+| sq            | [Albanian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/sq.html)                                    |                |
+| ta            | [Tamil](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ta.html)                                          |                |
+| tac           | [Western Tarahumara](https://cohenpr-xpf.github.io/XPF/conv_resources/info/tac.html)                      |                |
+| te            | [Telugu](https://cohenpr-xpf.github.io/XPF/conv_resources/info/te.html)                                        |                |
+| tee           | [Huehuetla Tepehua](https://cohenpr-xpf.github.io/XPF/conv_resources/info/tee.html)                 |                |
+| tg            | [Tajik](https://cohenpr-xpf.github.io/XPF/conv_resources/info/tg.html)                                          |                |
+| to            | [Tongan](https://cohenpr-xpf.github.io/XPF/conv_resources/info/to.html)                                        | lacks lenition |
+| tpi           | [Tok Pisin](https://cohenpr-xpf.github.io/XPF/conv_resources/info/tpi.html)                                 |                |
+| tr            | [Turkish](https://cohenpr-xpf.github.io/XPF/conv_resources/info/tr.html)                                      |                |
+| tt            | [Tatar](https://cohenpr-xpf.github.io/XPF/conv_resources/info/tt.html)                                          |                |
+| tyv           | [Tuvan](https://cohenpr-xpf.github.io/XPF/conv_resources/info/tyv.html)                                        |                |
+| tzo           | [Tzotzil](https://cohenpr-xpf.github.io/XPF/conv_resources/info/tzo.html)                                    |                |
+| ug            | [Uyghur](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ug.html)                                        |                |
+| uk            | [Ukrainian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/uk.html)                                  |                |
+| usa           | [Usarufa](https://cohenpr-xpf.github.io/XPF/conv_resources/info/usa.html)                                    |                |
+| uz            | [Uzbek](https://cohenpr-xpf.github.io/XPF/conv_resources/info/uz.html)                                          |                |
+| var           | [Huarjío](https://cohenpr-xpf.github.io/XPF/conv_resources/info/var.html)                                   |                |
+| vi            | [Vietnamese](https://cohenpr-xpf.github.io/XPF/conv_resources/info/vi.html)                                |                |
+| viv           | [Iduna](https://cohenpr-xpf.github.io/XPF/conv_resources/info/viv.html)                                        |                |
+| way           | [Wayana](https://cohenpr-xpf.github.io/XPF/conv_resources/info/way.html)                                      |                |
+| wbp           | [Warlpiri](https://cohenpr-xpf.github.io/XPF/conv_resources/info/wbp.html)                                  |                |
+| wo            | [Wolof](https://cohenpr-xpf.github.io/XPF/conv_resources/info/wo.html)                                          | lacks lenition |
+| ycn           | [Yucuna](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ycn.html)                                      |                |
+| yi            | [Yiddish](https://cohenpr-xpf.github.io/XPF/conv_resources/info/yi.html)                                      |                |
+| yua           | [Yucatec Maya](https://cohenpr-xpf.github.io/XPF/conv_resources/info/yua.html)                           |                |
+| yuz           | [Yuracare](https://cohenpr-xpf.github.io/XPF/conv_resources/info/yuz.html)                                  |                |
+| yva           | [Yawa](https://cohenpr-xpf.github.io/XPF/conv_resources/info/yva.html)                                          | lacks lenition |
+| zos           | [Francisco León Zoque](https://cohenpr-xpf.github.io/XPF/conv_resources/info/zos.html)            |                |
 
 
 ## Compromised Languages
 
 | Language Code   | Language (click for info)                                                              | Reason (more thorough explanation in Rmd files)                                                                      | Comments       |
 |-----------------|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------------|
-| acr             | [Rabinal Achi'](Data/_compromised/acr_RabinalAchi'/acr.html)                           | suspect marking of vowel length                                                                                      | lacks lenition |
-| ake             | [Akawaio](Data/_compromised/ake_Akawaio/ake.html)                                      | conflation between voiceless and voiced consonants                                                                   |                |
-| amp             | [Alamblak](Data/_compromised/amp_Alamblak/amp.html)                                    | conflation between /ɘ/ and /o/                                                                                       |                |
-| aoj             | [Mufian](Data/_compromised/aoj_Mufian/aoj.html)                                        | conflation among vowels; ambiguity regarding vowel length and labialized consonant clusters                          | lacks lenition |
-| ar              | [Arabic](Data/_compromised/ar_Arabic/ar.html)                                          | ambiguous transcription of alif; conflation between vowels and glides                                                |                |
-| arn             | [Mapudungun](Data/_compromised/arn_Mapudungun/arn.html)                                | ambiguous orthography; conflation between dental and alveolar consonants                                             |                |
-| awx             | [Awara](Data/_compromised/awx_Awara/awx.html)                                          | conflation between /nd/, /mb/, /nɡ/ and /d/, /b/, /ɡ/, respectively                                                  |                |
-| bcl             | [Central Bikol](Data/_compromised/bcl_CentralBikol/bcl.html)                           | inconsistent marking of glottal stops                                                                                | lacks lenition |
-| bmu             | [Somba Siawari](Data/_compromised/bmu_SombaSiawari/bmu.html)                           | phonetic alphabet                                                                                                    |                |
-| btx             | [Batak Karo](Data/_compromised/btx_BatakKaro/btx.html)                                 | conflation among /e/, /ɘ/, and /ɯ/                                                                                   |                |
-| bzd             | [Bribri](Data/_compromised/bzd_Bribri/bzd.html)                                        | phonetic alphabet; contradicting documentation                                                                       |                |
-| bzh             | [Mapos Buang](Data/_compromised/bzh_MaposBuang/bzh.html)                               | conflation between /ɛ/ and other vowels                                                                              |                |
-| ca              | [Catalan](Data/_compromised/ca_Catalan/ca.html)                                        | conflation among vowels and glides; ambiguous phonological interpretations                                           |                |
-| cav             | [Cavineña](Data/_compromised/cav_Cavineña/cav.html)                                    | ambiguity whether a digraph represents one phoneme or two, depending on syllable structure                           | lacks lenition |
-| chf             | [Tabasco Chontal](Data/_compromised/chf_TabascoChontal/chf.html)                       | conflation between ejectives and stop-glottal stop sequences                                                         |                |
-| chm             | [Mari](Data/_compromised/chm_Mari/chm.html)                                            | conflation with some palatalized and non-palatalized consonants; some vowels not always represented orthographically | lacks lenition |
-| cho             | [Choctaw](Data/_compromised/cho_Choctaw/cho.html)                                      | phonetic alphabet                                                                                                    |                |
-| cni             | [Asháninka](Data/_compromised/cni_Asháninka/cni.html)                                  | conflation among nasals                                                                                              |                |
-| cof             | [Colorado](Data/_compromised/cof_Colorado/cof.html)                                    | orthographic ambiguity with glottal stops                                                                            |                |
-| con             | [Cofan](Data/_compromised/con_Cofan/con_Cofan.html)                                    | conflation between consonants                                                                                        |                |
-| crm             | [Moose Cree](Data/_compromised/crm_MooseCree/crm.html)                                 | /h/ represented only when contrast is required                                                                       | lacks lenition |
-| dyo             | [Jola-Fogny](Data/_compromised/dyo_JolaFogny/dyo.html)                                 | uncertainty around the marking of +ATR vowels                                                                        | lacks lenition |
-| es              | [Spanish](Data/_compromised/es_Spanish/es.html)                                        | non-transparent transcription of diphthongs                                                                          |                |
-| fuv             | [Nigerian Fulfulde](Data/_compromised/fuv_NigerianFulfulde/fuv.html)                   | inconsistent marking of glottal stops; unclear transcription of palatalized glottal stop                             |                |
-| hi              | [Hindi](Data/_compromised/hi_Hindi/hi.html)                                            | conflation between /æ/ and /ɛ/; vowel nasalization ambiguity; unreliable marking of some consonants                  |                |
-| id              | [Indonesian](Data/_compromised/id_Indonesian/id.html)                                  | conflation between /e/ and /ə/                                                                                       |                |
-| ixl             | [Ixil](Data/_compromised/ixl_Ixil/ixl.html)                                            | word-initial glottal stop not always marked; somewhat ambiguous orthography                                          |                |
-| kea             | [Cape Verdean Creole](Data/_compromised/kea_CapeVerdeanCreole/kea.html)                | possible conflation between /a/ and /ɐ/, /e/ and /ɛ/, and /ɾ/ and /ʀ/                                                | lacks lenition |
-| kek             | [Qeqchi](Data/_compromised/kek_Qeqchi/kek.html)                                        | ambiguity between ejective stops and stop-glottal stop sequences                                                     |                |
-| kk              | [Kazakh](Data/_compromised/kk_Kazakh/kk.html)                                          | conflation between vowels and glides; widely contradicting phonological accounts of the language                     |                |
-| kmo             | [Kwoma](Data/_compromised/kmo_Kwoma/kmo.html)                                          | non-transparent transcription of glottal stops                                                                       |                |
-| kyz             | [Kayabí](Data/_compromised/kyz_Kayabí/kyz.html)                                        | conflation between /i/ and /j/                                                                                       | lacks lenition |
-| mcf             | [Matsés](Data/_compromised/mcf_Matsés/mcf.html)                                        | conflation between alveolar and retroflex consonants; conflation between vowels                                      |                |
-| mek             | [Mekeo](Data/_compromised/mek_Mekeo/mek.html)                                          | non-transparent transcription of glottal stops                                                                       |                |
-| mfe             | [Morisyen](Data/_compromised/mfe_Morisyen/mfe.html)                                    | highly suspect orthography; conflation among consonants                                                              |                |
-| ml              | [Malayalam](Data/_compromised/ml_Malayalam/ml.html)                                    | conflation between dental and alveolar /n/                                                                           |                |
-| mlp             | [Bargam](Data/_compromised/mlp_Bargam/mlp.html)                                        | conflation between /n/ and /ŋ/                                                                                       | lacks lenition |
-| mnb             | [Muna](Data/_compromised/mnb_Muna/mnb.html)                                            | suspect orthography                                                                                                  |                |
-| mpx             | [Misima-Panaeati](Data/_compromised/mpx_MisimaPanaeati/mpx.html)                       | conflation between /e/ and /ɛ/ and between /o/ and /ɔ/                                                               | lacks lenition |
-| mt              | [Maltese](Data/_compromised/mt_Maltese/mt.html)                                        | conflation between /ts/ and /dz/ and between /ʃ/ and /ʒ/                                                             |                |
-| myv             | [Erzya](Data/_compromised/myv_Erzya/myv.html)                                          | conflation between /n/ and /ŋ/                                                                                       | lacks lenition |
-| ne              | [Nepali](Data/_compromised/ne_Nepali/ne.html)                                          | certain diacritics used interchangeably and inconsistently marked                                                    |                |
-| not             | [Nomatsiguenga](Data/_compromised/not_Nomatsiguenga/not.html)                          | conflation among nasals                                                                                              |                |
-| or              | [Oriya](Data/_compromised/or_Oriya/or.html)                                            | certain diacritics used interchangeably and inconsistently marked                                                    |                |
-| os              | [Ossetic](Data/_compromised/os_Ossetic/os.html)                                        | conflation among /u/, /w/, and /ʷ/; inconsistent marking of consonant gemination                                     |                |
-| pag             | [Pangasinan](Data/_compromised/pag_Pangasinan/pag.html)                                | possible conflation between /ŋ/ and /nɡ/                                                                             |                |
-| pib             | [Yine](Data/_compromised/pib_Yine/pib.html)                                            | conflation between /n/ and /h̃/                                                                                       | lacks lenition |
-| plu             | [Palikúr](Data/_compromised/plu_Palikúr/plu.html)                                      | conflation between /ɡ/ and /ɣ/                                                                                       |                |
-| qub             | [Huallaga Huanuco Quechua](Data/_compromised/qub_HuallagaHuanucoQuechua/qub.html)      | suspect orthography; conflation between vowels and glides                                                            |                |
-| rwo             | [Rawa](Data/_compromised/rwo_Rawa/rwo.html)                                            | conflation between /l/ and /r/                                                                                       |                |
-| sah             | [Yakut](Data/_compromised/sah_Yakut/sah.html)                                          | conflation between /j/ and /j̃/                                                                                       |                |
-| sk              | [Slovak](Data/_compromised/sk_Slovak/sk.html)                                          | non-transparent transcription of palatal consonants; ambiguity whether digraphs represent one phoneme or two         |                |
-| sm              | [Samoan](Data/_compromised/sm_Samoan/sm.html)                                          | marking of long vowels and glottal stops is suspect                                                                  |                |
-| suz             | [Sunwar](Data/_compromised/suz_Sunwar/suz.html)                                        | conflation between /ɾ/, /ɭ/, and possibly /l̪/; inconsistent marking of glottal stops                                 |                |
-| sw              | [Swahili](Data/_compromised/sw_Swahili/sw.html)                                        | conflation between syllabic nasals and non-syllabic counterparts                                                     |                |
-| too             | [Xicotepec de Juárez Totonac](Data/_compromised/too_XicotepecdeJuarezTotonac/too.html) | suspect transcription due to unclear documentation                                                                   |                |
-| tpp             | [Pisaflores Tepehua](Data/_compromised/tpp_PisafloresTepehua/tpp.html)                 | suspect marking of vowel length                                                                                      |                |
-| tzj             | [Tz'utujil](Data/_compromised/tzj_Tz'utujil/tzj.html)                                  | uncertainty around the marking of the glottal stop and the orthography                                               |                |
-| tzm             | [Central Atlas Tamazight](Data/_compromised/tzm_CentralAtlasTamazight/tzm.html)        | conflation between /l̪/ and /l̪ˤ/, and between /ʒ/ and /ʒˀ/                                                            |                |
-| wmw             | [Mwani](Data/_compromised/wmw_Mwani/wmw.html)                                          | conflation between syllabic nasals and prenasalized stops                                                            | lacks lenition |
-| zsm             | [Standard Malay](Data/_compromised/zsm_StandardMalay/zsm.html)                         | conflation between /e/ and /ə/; conflicting orthographies                                                            |                |
-| zza             | [Zaza](Data/_compromised/zza_Zaza/zza.html)                                            | conflicting orthographies; conflation among vowels                                                                   |                |
+| acr             | [Rabinal Achi'](https://cohenpr-xpf.github.io/XPF/conv_resources/info/acr.html)                           | suspect marking of vowel length                                                                                      | lacks lenition |
+| ake             | [Akawaio](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ake.html)                                      | conflation between voiceless and voiced consonants                                                                   |                |
+| amp             | [Alamblak](https://cohenpr-xpf.github.io/XPF/conv_resources/info/amp.html)                                    | conflation between /ɘ/ and /o/                                                                                       |                |
+| aoj             | [Mufian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/aoj.html)                                        | conflation among vowels; ambiguity regarding vowel length and labialized consonant clusters                          | lacks lenition |
+| ar              | [Arabic](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ar.html)                                          | ambiguous transcription of alif; conflation between vowels and glides                                                |                |
+| arn             | [Mapudungun](https://cohenpr-xpf.github.io/XPF/conv_resources/info/arn.html)                                | ambiguous orthography; conflation between dental and alveolar consonants                                             |                |
+| awx             | [Awara](https://cohenpr-xpf.github.io/XPF/conv_resources/info/awx.html)                                          | conflation between /nd/, /mb/, /nɡ/ and /d/, /b/, /ɡ/, respectively                                                  |                |
+| bcl             | [Central Bikol](https://cohenpr-xpf.github.io/XPF/conv_resources/info/bcl.html)                           | inconsistent marking of glottal stops                                                                                | lacks lenition |
+| bmu             | [Somba Siawari](https://cohenpr-xpf.github.io/XPF/conv_resources/info/bmu.html)                           | phonetic alphabet                                                                                                    |                |
+| btx             | [Batak Karo](https://cohenpr-xpf.github.io/XPF/conv_resources/info/btx.html)                                 | conflation among /e/, /ɘ/, and /ɯ/                                                                                   |                |
+| bzd             | [Bribri](https://cohenpr-xpf.github.io/XPF/conv_resources/info/bzd.html)                                        | phonetic alphabet; contradicting documentation                                                                       |                |
+| bzh             | [Mapos Buang](https://cohenpr-xpf.github.io/XPF/conv_resources/info/bzh.html)                               | conflation between /ɛ/ and other vowels                                                                              |                |
+| ca              | [Catalan](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ca.html)                                        | conflation among vowels and glides; ambiguous phonological interpretations                                           |                |
+| cav             | [Cavineña](https://cohenpr-xpf.github.io/XPF/conv_resources/info/cav.html)                                    | ambiguity whether a digraph represents one phoneme or two, depending on syllable structure                           | lacks lenition |
+| chf             | [Tabasco Chontal](https://cohenpr-xpf.github.io/XPF/conv_resources/info/chf.html)                       | conflation between ejectives and stop-glottal stop sequences                                                         |                |
+| chm             | [Mari](https://cohenpr-xpf.github.io/XPF/conv_resources/info/chm.html)                                            | conflation with some palatalized and non-palatalized consonants; some vowels not always represented orthographically | lacks lenition |
+| cho             | [Choctaw](https://cohenpr-xpf.github.io/XPF/conv_resources/info/cho.html)                                      | phonetic alphabet                                                                                                    |                |
+| cni             | [Asháninka](https://cohenpr-xpf.github.io/XPF/conv_resources/info/cni.html)                                  | conflation among nasals                                                                                              |                |
+| cof             | [Colorado](https://cohenpr-xpf.github.io/XPF/conv_resources/info/cof.html)                                    | orthographic ambiguity with glottal stops                                                                            |                |
+| con             | [Cofan](https://cohenpr-xpf.github.io/XPF/conv_resources/info/con_Cofan.html)                                    | conflation between consonants                                                                                        |                |
+| crm             | [Moose Cree](https://cohenpr-xpf.github.io/XPF/conv_resources/info/crm.html)                                 | /h/ represented only when contrast is required                                                                       | lacks lenition |
+| dyo             | [Jola-Fogny](https://cohenpr-xpf.github.io/XPF/conv_resources/info/dyo.html)                                 | uncertainty around the marking of +ATR vowels                                                                        | lacks lenition |
+| es              | [Spanish](https://cohenpr-xpf.github.io/XPF/conv_resources/info/es.html)                                        | non-transparent transcription of diphthongs                                                                          |                |
+| fuv             | [Nigerian Fulfulde](https://cohenpr-xpf.github.io/XPF/conv_resources/info/fuv.html)                   | inconsistent marking of glottal stops; unclear transcription of palatalized glottal stop                             |                |
+| hi              | [Hindi](https://cohenpr-xpf.github.io/XPF/conv_resources/info/hi.html)                                            | conflation between /æ/ and /ɛ/; vowel nasalization ambiguity; unreliable marking of some consonants                  |                |
+| id              | [Indonesian](https://cohenpr-xpf.github.io/XPF/conv_resources/info/id.html)                                  | conflation between /e/ and /ə/                                                                                       |                |
+| ixl             | [Ixil](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ixl.html)                                            | word-initial glottal stop not always marked; somewhat ambiguous orthography                                          |                |
+| kea             | [Cape Verdean Creole](https://cohenpr-xpf.github.io/XPF/conv_resources/info/kea.html)                | possible conflation between /a/ and /ɐ/, /e/ and /ɛ/, and /ɾ/ and /ʀ/                                                | lacks lenition |
+| kek             | [Qeqchi](https://cohenpr-xpf.github.io/XPF/conv_resources/info/kek.html)                                        | ambiguity between ejective stops and stop-glottal stop sequences                                                     |                |
+| kk              | [Kazakh](https://cohenpr-xpf.github.io/XPF/conv_resources/info/kk.html)                                          | conflation between vowels and glides; widely contradicting phonological accounts of the language                     |                |
+| kmo             | [Kwoma](https://cohenpr-xpf.github.io/XPF/conv_resources/info/kmo.html)                                          | non-transparent transcription of glottal stops                                                                       |                |
+| kyz             | [Kayabí](https://cohenpr-xpf.github.io/XPF/conv_resources/info/kyz.html)                                        | conflation between /i/ and /j/                                                                                       | lacks lenition |
+| mcf             | [Matsés](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mcf.html)                                        | conflation between alveolar and retroflex consonants; conflation between vowels                                      |                |
+| mek             | [Mekeo](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mek.html)                                          | non-transparent transcription of glottal stops                                                                       |                |
+| mfe             | [Morisyen](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mfe.html)                                    | highly suspect orthography; conflation among consonants                                                              |                |
+| ml              | [Malayalam](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ml.html)                                    | conflation between dental and alveolar /n/                                                                           |                |
+| mlp             | [Bargam](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mlp.html)                                        | conflation between /n/ and /ŋ/                                                                                       | lacks lenition |
+| mnb             | [Muna](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mnb.html)                                            | suspect orthography                                                                                                  |                |
+| mpx             | [Misima-Panaeati](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mpx.html)                       | conflation between /e/ and /ɛ/ and between /o/ and /ɔ/                                                               | lacks lenition |
+| mt              | [Maltese](https://cohenpr-xpf.github.io/XPF/conv_resources/info/mt.html)                                        | conflation between /ts/ and /dz/ and between /ʃ/ and /ʒ/                                                             |                |
+| myv             | [Erzya](https://cohenpr-xpf.github.io/XPF/conv_resources/info/myv.html)                                          | conflation between /n/ and /ŋ/                                                                                       | lacks lenition |
+| ne              | [Nepali](https://cohenpr-xpf.github.io/XPF/conv_resources/info/ne.html)                                          | certain diacritics used interchangeably and inconsistently marked                                                    |                |
+| not             | [Nomatsiguenga](https://cohenpr-xpf.github.io/XPF/conv_resources/info/not.html)                          | conflation among nasals                                                                                              |                |
+| or              | [Oriya](https://cohenpr-xpf.github.io/XPF/conv_resources/info/or.html)                                            | certain diacritics used interchangeably and inconsistently marked                                                    |                |
+| os              | [Ossetic](https://cohenpr-xpf.github.io/XPF/conv_resources/info/os.html)                                        | conflation among /u/, /w/, and /ʷ/; inconsistent marking of consonant gemination                                     |                |
+| pag             | [Pangasinan](https://cohenpr-xpf.github.io/XPF/conv_resources/info/pag.html)                                | possible conflation between /ŋ/ and /nɡ/                                                                             |                |
+| pib             | [Yine](https://cohenpr-xpf.github.io/XPF/conv_resources/info/pib.html)                                            | conflation between /n/ and /h̃/                                                                                       | lacks lenition |
+| plu             | [Palikúr](https://cohenpr-xpf.github.io/XPF/conv_resources/info/plu.html)                                      | conflation between /ɡ/ and /ɣ/                                                                                       |                |
+| qub             | [Huallaga Huanuco Quechua](https://cohenpr-xpf.github.io/XPF/conv_resources/info/qub.html)      | suspect orthography; conflation between vowels and glides                                                            |                |
+| rwo             | [Rawa](https://cohenpr-xpf.github.io/XPF/conv_resources/info/rwo.html)                                            | conflation between /l/ and /r/                                                                                       |                |
+| sah             | [Yakut](https://cohenpr-xpf.github.io/XPF/conv_resources/info/sah.html)                                          | conflation between /j/ and /j̃/                                                                                       |                |
+| sk              | [Slovak](https://cohenpr-xpf.github.io/XPF/conv_resources/info/sk.html)                                          | non-transparent transcription of palatal consonants; ambiguity whether digraphs represent one phoneme or two         |                |
+| sm              | [Samoan](https://cohenpr-xpf.github.io/XPF/conv_resources/info/sm.html)                                          | marking of long vowels and glottal stops is suspect                                                                  |                |
+| suz             | [Sunwar](https://cohenpr-xpf.github.io/XPF/conv_resources/info/suz.html)                                        | conflation between /ɾ/, /ɭ/, and possibly /l̪/; inconsistent marking of glottal stops                                 |                |
+| sw              | [Swahili](https://cohenpr-xpf.github.io/XPF/conv_resources/info/sw.html)                                        | conflation between syllabic nasals and non-syllabic counterparts                                                     |                |
+| too             | [Xicotepec de Juárez Totonac](https://cohenpr-xpf.github.io/XPF/conv_resources/info/too.html) | suspect transcription due to unclear documentation                                                                   |                |
+| tpp             | [Pisaflores Tepehua](https://cohenpr-xpf.github.io/XPF/conv_resources/info/tpp.html)                 | suspect marking of vowel length                                                                                      |                |
+| tzj             | [Tz'utujil](https://cohenpr-xpf.github.io/XPF/conv_resources/info/tzj.html)                                  | uncertainty around the marking of the glottal stop and the orthography                                               |                |
+| tzm             | [Central Atlas Tamazight](https://cohenpr-xpf.github.io/XPF/conv_resources/info/tzm.html)        | conflation between /l̪/ and /l̪ˤ/, and between /ʒ/ and /ʒˀ/                                                            |                |
+| wmw             | [Mwani](https://cohenpr-xpf.github.io/XPF/conv_resources/info/wmw.html)                                          | conflation between syllabic nasals and prenasalized stops                                                            | lacks lenition |
+| zsm             | [Standard Malay](https://cohenpr-xpf.github.io/XPF/conv_resources/info/zsm.html)                         | conflation between /e/ and /ə/; conflicting orthographies                                                            |                |
+| zza             | [Zaza](https://cohenpr-xpf.github.io/XPF/conv_resources/info/zza.html)                                            | conflicting orthographies; conflation among vowels                                                                   |                |
 
 
 ## Abandoned Languages
