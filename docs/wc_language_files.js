@@ -76,7 +76,7 @@ else {
 
   // Split input string into an array (excluding punctuation)
   text_string = text_string.toLowerCase();
-  text_string = text_string.replace(/[.,\/#!$%\^&\*;:{}=0-9\-_`~()\'\"]/g,"");
+  text_string = text_string.replace(/[.,\/#!$%\^&\*;:{}=0-9\-_`~()\'\"\[\]]/g,"");
   text_string = text_string.replace(/\n+|\s+/g," ");
   var word_list = text_string.split(" ");
 

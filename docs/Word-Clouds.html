@@ -111,14 +111,18 @@
       <div class="col-xs-12">
         <div id="whole_wc"></div>
         <div class="col-xs-6">
-          <div id="low_freq" style="display: none;"><h4 class="text-center" style="width: 100%;">Low Frequency</h4></div>
-        </div>
-        <div class="col-xs-6">
           <div id="high_freq" style="display: none;"><h4 class="text-center" style="width: 100%;">High Frequency</h4></div>
         </div>
+        <div class="col-xs-6">
+          <div id="low_freq" style="display: none;"><h4 class="text-center" style="width: 100%;">Low Frequency</h4></div>
+        </div>
       </div>
-      <div class="col-xs-6" id="lf_wc" style="display: none;"></div>
       <div class="col-xs-6" id="hf_wc" style="display: none;"></div>
+      <div class="col-xs-6" id="lf_wc" style="display: none;"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12" id="KL_legend"></div>
     </div>
 </div>
 
@@ -199,12 +203,15 @@
     }
   }
 
+
+  var wc_word_list; // needed in assign_color function for color coding the clouds
+
   // Set everything up for the word cloud(s) to be made
   async function get_wc() {
 
-    wc_info = await comp(); // get wc_word_list and wc_prob_list from wc_language_files.js
+    var wc_info = await comp(); // get wc_word_list and wc_prob_list from wc_language_files.js
     wc_word_list = wc_info[0];
-    wc_prob_list = wc_info[1];
+    var wc_prob_list = wc_info[1];
 
     color_init(); // function needed later for the color coding of the word cloud(s)
 
@@ -213,10 +220,14 @@
       // If the input string contains less than 100 unique words, create one word cloud; if the input string contains more than 100 unique words, create two word clouds (50 most frequent and 50 least frequent words)
     if (wc_word_list.length <= 100) {
 
-      document.getElementById("low_freq").style.display = "none"; //clear previous word cloud(s)
-      document.getElementById("high_freq").style.display = "none"; //clear previous word cloud(s)
-      document.getElementById("lf_wc").style.display = "none"; //clear previous word cloud(s)
-      document.getElementById("hf_wc").style.display = "none";//clear previous word cloud(s)
+      document.getElementById("low_freq").style.display = "none"; // clear previous word cloud(s)
+      document.getElementById("high_freq").style.display = "none"; // clear previous word cloud(s)
+      document.getElementById("lf_wc").style.display = "none"; // clear previous word cloud(s)
+      document.getElementById("hf_wc").style.display = "none";// clear previous word cloud(s)
+      var legend = document.getElementById("KL_legend");
+      while(legend.firstChild) { // clear legend
+        legend.removeChild(legend.firstChild);
+      }
       document.getElementById("whole_wc").style.display = "flex";
       document.getElementById("whole_wc").innerHTML = "";
       whole_svg = d3.select("#whole_wc").append("svg");
@@ -225,7 +236,11 @@
 
     else {
 
-      document.getElementById("whole_wc").style.display = "none"; //clear previous word cloud
+      document.getElementById("whole_wc").style.display = "none"; // clear previous word cloud
+      var legend = document.getElementById("KL_legend");
+      while(legend.firstChild) { // clear legend
+        legend.removeChild(legend.firstChild);
+      }
       document.getElementById("low_freq").style.display = "flex";
       document.getElementById("high_freq").style.display = "flex";
       document.getElementById("lf_wc").style.display = "flex";
@@ -254,9 +269,11 @@
         hf_prob_list[i] = wc_prob_list[i];
       }
 
-      make_wc(lf_wc, lf_svg, lf_word_list, lf_prob_list);
       make_wc(hf_wc, hf_svg, hf_word_list, hf_prob_list);
+      make_wc(lf_wc, lf_svg, lf_word_list, lf_prob_list);
     }
+
+    return wc_word_list;
   }
 
 
@@ -270,15 +287,44 @@
     prev_color = [];
   }
 
-  function assign_color(size) {
-    if (prev_color[size] == null) {
+  function assign_color(word, scale_size) {
+    var kl_vale;
+    wc_word_list.forEach(function(list) { // obtain original size (KL-divergence value) for the legend
+      if (word == list["word"]) {
+        kl_value = list["size"].toFixed(2);
+      }
+    });
+
+    //console.log(wc_word_list);
+    //console.log(word);
+    //console.log(kl_value);
+    //console.log(scale_size);
+
+    if (prev_color[scale_size] == null) {
       var current_color = fill(max_color);
       max_color++;
-      prev_color[size] = current_color;
+      prev_color[scale_size] = current_color;
+
+      // Create legend - display KL-divergence values per color (rather than the scaled sizes)
+      var legend = document.getElementById("KL_legend");
+      var marker = document.createElement("div");
+      marker.className = "legend_marker";
+      var marker_color = document.createElement("div");
+      marker_color.className = "color";
+      marker_color.style.background = current_color;
+      var marker_text = document.createElement("div");
+      marker_text.className = "text";
+      marker_text.innerHTML = "= " + kl_value + " bits";
+
+      marker.appendChild(marker_color);
+      marker.appendChild(marker_text);
+      legend.appendChild(marker);
+
     }
     else {
-      current_color = prev_color[size];
+      current_color = prev_color[scale_size];
     }
+
     return current_color;
   }
 
@@ -329,14 +375,13 @@
             .data(words)
           .enter().append("text")
             .style("font-size", function(d) { return d.size })
-            .style("fill", function(d) { return assign_color(d.size); })
+            .style("fill", function(d) { return assign_color(d.text, d.size); })
             .attr("text-anchor", "middle")
             .style("font-family", "Impact")
             .attr("transform", function(d) {
               return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
             })
             .text(function(d) { return d.text; })
-            .on('mouseover', function(d) {return d.size}); // (TODO: create mouseover effect to display the kl-diveregence stats)
       }
     }
 
