@@ -2,7 +2,7 @@
 
 ## Available Languages
 
-| Language Code | Language                                                                | Comments       |
+| Language Code | Language (click for info)                                               | Comments       |
 |---------------|-------------------------------------------------------------------------| -------------- |
 | aak           | [Ankave](Data/aak_Ankave/aak.html)                                      |                |
 | aau           | [Abau](Data/aau_Abau/aau.html)                                          |                |
@@ -147,7 +147,7 @@
 
 ## Compromised Languages
 
-| Language Code   | Language (Click the language for more info)                                            | Reason (more thorough explanation in Rmd files)                                                                      | Comments       |
+| Language Code   | Language (click for info)                                                              | Reason (more thorough explanation in Rmd files)                                                                      | Comments       |
 |-----------------|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------------|
 | acr             | [Rabinal Achi'](Data/_compromised/acr_RabinalAchi'/acr.html)                           | suspect marking of vowel length                                                                                      | lacks lenition |
 | ake             | [Akawaio](Data/_compromised/ake_Akawaio/ake.html)                                      | conflation between voiceless and voiced consonants                                                                   |                |
@@ -171,7 +171,7 @@
 | con             | [Cofan](Data/_compromised/con_Cofan/con_Cofan.html)                                    | conflation between consonants                                                                                        |                |
 | crm             | [Moose Cree](Data/_compromised/crm_MooseCree/crm.html)                                 | /h/ represented only when contrast is required                                                                       | lacks lenition |
 | dyo             | [Jola-Fogny](Data/_compromised/dyo_JolaFogny/dyo.html)                                 | uncertainty around the marking of +ATR vowels                                                                        | lacks lenition |
-| es              | [Spanish](Data/_compromised/es_Spanish/es.html)                                        | non-transparent spelling of diphthongs                                                                               |                |
+| es              | [Spanish](Data/_compromised/es_Spanish/es.html)                                        | non-transparent transcription of diphthongs                                                                          |                |
 | fuv             | [Nigerian Fulfulde](Data/_compromised/fuv_NigerianFulfulde/fuv.html)                   | inconsistent marking of glottal stops; unclear transcription of palatalized glottal stop                             |                |
 | hi              | [Hindi](Data/_compromised/hi_Hindi/hi.html)                                            | conflation between /æ/ and /ɛ/; vowel nasalization ambiguity; unreliable marking of some consonants                  |                |
 | id              | [Indonesian](Data/_compromised/id_Indonesian/id.html)                                  | conflation between /e/ and /ə/                                                                                       |                |
@@ -179,10 +179,10 @@
 | kea             | [Cape Verdean Creole](Data/_compromised/kea_CapeVerdeanCreole/kea.html)                | possible conflation between /a/ and /ɐ/, /e/ and /ɛ/, and /ɾ/ and /ʀ/                                                | lacks lenition |
 | kek             | [Qeqchi](Data/_compromised/kek_Qeqchi/kek.html)                                        | ambiguity between ejective stops and stop-glottal stop sequences                                                     |                |
 | kk              | [Kazakh](Data/_compromised/kk_Kazakh/kk.html)                                          | conflation between vowels and glides; widely contradicting phonological accounts of the language                     |                |
-| kmo             | [Kwoma](Data/_compromised/kmo_Kwoma/kmo.html)                                          | non-transparent spelling of glottal stops                                                                            |                |
+| kmo             | [Kwoma](Data/_compromised/kmo_Kwoma/kmo.html)                                          | non-transparent transcription of glottal stops                                                                       |                |
 | kyz             | [Kayabí](Data/_compromised/kyz_Kayabí/kyz.html)                                        | conflation between /i/ and /j/                                                                                       | lacks lenition |
 | mcf             | [Matsés](Data/_compromised/mcf_Matsés/mcf.html)                                        | conflation between alveolar and retroflex consonants; conflation between vowels                                      |                |
-| mek             | [Mekeo](Data/_compromised/mek_Mekeo/mek.html)                                          | non-transparent spelling of glottal stops                                                                            |                |
+| mek             | [Mekeo](Data/_compromised/mek_Mekeo/mek.html)                                          | non-transparent transcription of glottal stops                                                                       |                |
 | mfe             | [Morisyen](Data/_compromised/mfe_Morisyen/mfe.html)                                    | highly suspect orthography; conflation among consonants                                                              |                |
 | ml              | [Malayalam](Data/_compromised/ml_Malayalam/ml.html)                                    | conflation between dental and alveolar /n/                                                                           |                |
 | mlp             | [Bargam](Data/_compromised/mlp_Bargam/mlp.html)                                        | conflation between /n/ and /ŋ/                                                                                       | lacks lenition |
@@ -200,7 +200,7 @@
 | qub             | [Huallaga Huanuco Quechua](Data/_compromised/qub_HuallagaHuanucoQuechua/qub.html)      | suspect orthography; conflation between vowels and glides                                                            |                |
 | rwo             | [Rawa](Data/_compromised/rwo_Rawa/rwo.html)                                            | conflation between /l/ and /r/                                                                                       |                |
 | sah             | [Yakut](Data/_compromised/sah_Yakut/sah.html)                                          | conflation between /j/ and /j̃/                                                                                       |                |
-| sk              | [Slovak](Data/_compromised/sk_Slovak/sk.html)                                          | non-transparent spelling of palatal consonants; ambiguity whether digraphs represent one phoneme or two              |                |
+| sk              | [Slovak](Data/_compromised/sk_Slovak/sk.html)                                          | non-transparent transcription of palatal consonants; ambiguity whether digraphs represent one phoneme or two         |                |
 | sm              | [Samoan](Data/_compromised/sm_Samoan/sm.html)                                          | marking of long vowels and glottal stops is suspect                                                                  |                |
 | suz             | [Sunwar](Data/_compromised/suz_Sunwar/suz.html)                                        | conflation between /ɾ/, /ɭ/, and possibly /l̪/; inconsistent marking of glottal stops                                 |                |
 | sw              | [Swahili](Data/_compromised/sw_Swahili/sw.html)                                        | conflation between syllabic nasals and non-syllabic counterparts                                                     |                |
@@ -215,209 +215,209 @@
 
 ## Abandoned Languages
 
-| Language Code | Language                       | Reason                                                              |
-|---------------|--------------------------------|---------------------------------------------------------------------|
-| ace           | Acehnese                       | non-transparent spelling of vowel nasalization                      |
-| ach           | Acholi                         | non-transparent spelling of tones                                   |
-| acu           | Achuar-Shiwiar                 | non-transparent spelling of vowel nasalization                      |
-| adh           | Adhola                         | non-transparent spelling of tones                                   |
-| af            | Afrikaans                      | non-transparent spelling of vowels, vowel length, and diphthongs    |
-| agd           | Agarabi                        | non-transparent spelling of tones                                   |
-| agm           | Angaataha                      | non-transparent spelling of tones                                   |
-| agr           | Aguaruna                       | non-transparent spelling of vowel nasalization                      |
-| ak            | Akan                           | non-transparent spelling of tones                                   |
-| alq           | Algonquin                      | non-transparent spelling of vowel length                            |
-| am            | Amharic                        | non-transparent spelling of consonant gemination                    |
-| anv           | Denya                          | non-transparent spelling of tones                                   |
-| as            | Assamese                       | non-transparent spelling of vowels                                  |
-| aso           | Dano                           | non-transparent spelling of tones                                   |
-| avt           | Avar                           | non-transparent spelling of consonant gemination                    |
-| ban           | Bali                           | non-standardized orthography                                        |
-| bem           | Bemba                          | non-transparent spelling of tones                                   |
-| bba           | Bariba                         | non-transparent spelling of tones                                   |
-| bcw           | Bana                           | non-transparent spelling of tones                                   |
-| bhl           | Bimin                          | non-transparent spelling of tones                                   |
-| bm            | Bambara                        | non-transparent spelling of tones                                   |
-| bmr           | Muinane                        | non-transparent spelling of tones                                   |
-| bs            | Bosnian                        | non-transparent spelling of vowel length and tones                  |
-| bsn           | Barasana-Eduria                | non-transparent spelling of tones                                   |
-| bua           | Buryat                         | non-transparent spelling of palatalization                          |
-| byr           | Baruya                         | non-transparent spelling of tones                                   |
-| cao           | Chácobo                        | non-transparent spelling of tones                                   |
-| cax           | Chiquitano                     | non-transparent spelling of vowel nasalization                      |
-| cbc           | Carapan                        | non-transparent spelling of tones                                   |
-| ce            | Chechen                        | non-transparent spelling of vowel length                            |
-| ceb           | Cebuano                        | non-transparent spelling of vowel length                            |
-| chr           | Cherokee                       | non-transparent spelling of vowel length                            |
-| cwk           | Western Kaqchikel              | non-transparent spelling of vowels                                  |
-| cnh           | Haka Chin                      | non-transparent spelling of tones                                   |
-| coe           | Koreguaja                      | non-transparent spelling of tones                                   |
-| ctd           | Tedim Chin                     | non-transparent spelling of tones                                   |
-| cub           | Cubeo                          | non-transparent spelling of tones                                   |
-| cuk           | San Blas Kuna                  | non-transparent spelling                                            |
-| cy            | Welsh                          | non-transparent spelling of vowel length                            |
-| da            | Danish                         | non-transparent spelling of vowels                                  |
-| daa           | Dangaléat                      | non-transparent spelling of tones                                   |
-| des           | Desano                         | non-transparent spelling of tones                                   |
-| dgo           | Dogri                          | non-transparent spelling of tones                                   |
-| din           | Dinka                          | non-transparent spelling of tones                                   |
-| dts           | Toro So Dogon                  | non-transparent spelling of tones                                   |
-| dz            | Dzongkha                       | non-transparent spelling                                            |
-| ee            | Ewe                            | non-transparent spelling of tones                                   |
-| efi           | Efik                           | non-transparent spelling of tones                                   |
-| emp           | Northern Emberá                | non-transparent spelling                                            |
-| enb           | Markweeta                      | non-transparent spelling of tones                                   |
-| enq           | Enga                           | non-transparent spelling of tones                                   |
-| et            | Estonian                       | non-transparent spelling of contrastive syllable length             |
-| faa           | Fasu                           | non-transparent spelling of tones                                   |
-| fi            | Finnish                        | non-transparent spelling                                            |
-| fj            | Fijian                         | non-transparent spelling of vowel length                            |
-| fo            | Faroese                        | non-transparent spelling of vowels                                  |
-| for           | Fore                           | non-transparent spelling of tones                                   |
-| fur           | Friulian                       | non-transparent spelling of vowels                                  |
-| fy            | Frisian                        | non-transparent spelling of vowels                                  |
-| ga            | Irish                          | non-transparent spelling                                            |
-| gah           | Alekano                        | non-transparent spelling of tones                                   |
-| gd            | Scottish Gaelic                | non-transparent spelling of consonants and vowels                   |
-| gl            | Galician                       | non-transparent spelling                                            |
-| gmo           | Gamo-Gofa-Dawro                | three languages understood to be linguistically separate            |
-| grb           | Grebo                          | non-transparent spelling of tones                                   |
-| grt           | Garo                           | non-transparent spelling of vowels                                  |
-| gub           | Guajajara                      | non-transparent spelling of vowel nasalization                      |
-| gum           | Guambiano                      | non-standardized orthography                                        |
-| gur           | Farefare                       | non-transparent spelling of tones                                   |
-| gv            | Manx Gaelic                    | non-transparent spelling of consonants and vowels                   |
-| ha            | Hausa                          | non-transparent spelling of vowel length                            |
-| hbs           | Serbo-Croatian                 | non-transparent spelling of tones                                   |
-| hch           | Huichol                        | non-transparent spelling of tones                                   |
-| heh           | Hehe                           | non-transparent spelling of tones                                   |
-| hr            | Croatian                       | non-transparent spelling of vowel length                            |
-| hub           | Huambisa                       | non-transparent spelling of vowel nasalization                      |
-| hui           | Huli                           | non-transparent spelling of tones                                   |
-| huv           | Huave                          | inconsistent phonological documentation                             |
-| hz            | Herero                         | non-transparent spelling of tones                                   |
-| ig            | Igbo                           | non-transparent spelling of tones                                   |
-| ik            | Inupiaq                        | insufficient tokens                                                 |
-| is            | Icelandic                      | non-transparent spelling of vowel length                            |
-| jiv           | Shuar                          | non-transparent spelling of vowel nasalization                      |
-| kab           | Kabyle                         | non-transparent spelling of consonants                              |
-| kac           | Jingpho                        | non-transparent spelling of tones                                   |
-| kaq           | Capanahua                      | non-transparent spelling of tones                                   |
-| kbc           | Kadiweu                        | non-transparent spelling of consonant gemination                    |
-| kbr           | Kafa                           | non-transparent spelling of tones                                   |
-| kha           | Khasi                          | non-transparent spelling of vowel length                            |
-| khk           | Khalkha Mongolian              | non-transparent spelling of vowels                                  |
-| ki            | Gikuyu                         | non-transparent spelling of tones                                   |
-| kj            | Kwanyama                       | non-transparent spelling of tones                                   |
-| kjs           | East Kewa                      | non-transparent spelling of tones                                   |
-| kew           | West Kewa                      | non-transparent spelling of tones                                   |
-| kmr           | Northern Kurdish               | non-transparent spelling of consonants                              |
-| kmu           | Kanite                         | non-transparent spelling of tones                                   |
-| ksd           | Kuanua                         | non-transparent spelling of vowel length                            |
-| kus           | Kusaal                         | non-transparent spelling of tones and vowel length                  |
-| kw            | Cornish                        | non-transparent spelling of vowel length                            |
-| lac           | Lacandon                       | non-transparent spelling of vowel length                            |
-| lb            | Luxembourgish                  | non-transparent spelling of vowels                                  |
-| lef           | Lelemi                         | non-transparent spelling of tones                                   |
-| lg            | Luganda                        | non-transparent spelling of tones                                   |
-| ln            | Lingala                        | non-transparent spelling of tones                                   |
-| loz           | Lozi                           | non-transparent spelling of tones                                   |
-| lt            | Lithuanian                     | non-transparent spelling of tones                                   |
-| luo           | Dholuo                         | non-transparent spelling of tones                                   |
-| lus           | Mizo                           | non-transparent spelling of tones                                   |
-| lv            | Latvian                        | non-transparent spelling of tones                                   |
-| lvs           | Standard Latvian               | non-transparent spelling of tones                                   |
-| lwo           | Luwo                           | non-transparent spelling of tones and breathy vowels                |
-| man           | Mandingo                       | non-transparent spelling of tones                                   |
-| mas           | Maasai                         | insufficient tokens                                                 |
-| mcb           | Machiguenga                    | non-transparent spelling of tones                                   |
-| mcd           | Sharanahua                     | non-transparent spelling of tones                                   |
-| meu           | Motu                           | non-transparent spelling of vowel length                            |
-| mfi           | Wandala                        | non-transparent spelling of tones                                   |
-| mfz           | Mabaan                         | non-transparent spelling of tones                                   |
-| mhr           | Eastern Mari                   | non-transparent spelling of palatalization                          |
-| mi            | Maori                          | non-transparent spelling of vowel length                            |
-| miq           | Miskito                        | non-transparent spelling of vowel nasalization and length           |
-| mni           | Meitei                         | non-transparent spelling of tones                                   |
-| mos           | Mossi                          | non-transparent spelling of tones                                   |
-| mps           | Dadibi                         | non-transparent spelling of tones and vowel nasalization            |
-| mpt           | Mian                           | non-transparent spelling of tones                                   |
-| ms            | Malay                          | non-transparent spelling of vowels                                  |
-| my            | Burmese                        | non-transparent spelling of tones                                   |
-| myu           | Mundurukú                      | non-transparent spelling of tones and creaky vowels                 |
-| myy           | Macuna                         | non-transparent spelling of tones                                   |
-| nd            | Northern Ndebele               | insufficient tokens                                                 |
-| nds           | Low Saxon                      | non-transparent spelling                                            |
-| nfr           | Nafaanra                       | non-transparent spelling of tones                                   |
-| nhg           | Tetelcingo Nahuatl             | non-transparent spelling of vowel length                            |
-| no            | Norwegian                      | non-transparent spelling of tones and vowel length                  |
-| ntp           | Northern Tepehuan              | non-transparent spelling of tones                                   |
-| nv            | Navajo                         | non-transparent spelling of vowel nasalization                      |
-| ny            | Chichewa                       | non-transparent spelling of tones                                   |
-| nyn           | Nyankore                       | non-transparent spelling of tones                                   |
-| om            | Oromo                          | non-transparent spelling of tones                                   |
-| opm           | Oksapmin                       | non-transparent spelling of vowels                                  |
-| ood           | Tohono O'odham                 | non-transparent spelling                                            |
-| ots           | Estado de México Otomi         | non-transparent spelling of tones                                   |
-| pab           | Parecís                        | non-transparent spelling of vowel length and nasalization           |
-| pao           | Northern Paiute                | non-transparent spelling of vowel length                            |
-| pap           | Papiamentu                     | non-transparent spelling of vowels                                  |
-| pir           | Wanano                         | non-transparent spelling of tones                                   |
-| pl            | Polish                         | non-transparent spelling                                            |
-| pms           | Piedmontese                    | non-transparent spelling                                            |
-| poh           | Poqomchi'                      | insufficient documentation                                          |
-| rw            | Kinyarwanda                    | non-transparent spelling of tones and vowel length                  |
-| sd            | Sindhi                         | non-transparent spelling of vowels                                  |
-| se            | Northern Sami                  | non-transparent spelling                                            |
-| sg            | Sango                          | non-transparent spelling of tones                                   |
-| sim           | Mende                          | non-transparent spelling of tones                                   |
-| sll           | Salt-Yui                       | non-transparent spelling of tones                                   |
-| sn            | Shona                          | non-transparent spelling of tones                                   |
-| so            | Somali                         | non-transparent spelling of tones                                   |
-| soq           | Kanasi                         | non-transparent spelling of glottal stops                           |
-| spp           | Supyire Senoufo                | non-transparent spelling of tones                                   |
-| ss            | Swati                          | non-transparent spelling of tones                                   |
-| st            | Sesotho                        | non-transparent spelling of tones                                   |
-| sv            | Swedish                        | non-transparent spelling                                            |
-| swp           | Suau                           | non-transparent spelling                                            |
-| sxb           | Suba                           | non-transparent spelling of tones                                   |
-| tav           | Tatuyo                         | non-transparent spelling of tones                                   |
-| tcc           | Datooga                        | non-transparent spelling of tones                                   |
-| tcy           | Tulu                           | non-transparent spelling of vowels                                  |
-| tcz           | Thadou Chin                    | non-transparent spelling of tones                                   |
-| ti            | Tigrinya                       | non-transparent spelling of gemination                              |
-| tk            | Turkmen                        | non-transparent spelling of vowel length                            |
-| tl            | Tagalog                        | non-transparent spalling of vowel length                            |
-| tn            | Tswana                         | non-transparent spelling of tones                                   |
-| toi           | Tonga                          | non-transparent spelling of tones                                   |
-| trp           | Kok Borok                      | non-transparent spelling of tones                                   |
-| ts            | Tsonga                         | non-transparent spelling of tones                                   |   
-| ttc           | Tekiteko                       | non-transparent spelling of vowel length                            |
-| tuf           | Central Tunebo                 | non-transparent spelling of contrastive features (first syllable)   |
-| tw            | Twi                            | non-transparent spelling of tones                                   |
-| ubu           | Umbu-Ungu                      | non-transparent spelling of tones                                   |
-| udu           | Uduk                           | non-transparent spelling of tones                                   |
-| ur            | Urdu                           | non-transparent spelling of vowels                                  |
-| ura           | Urarina                        | non-transparent spelling of tones                                   |
-| usp           | Uspanteko                      | non-transparent spelling of tones                                   |
-| ve            | Venda                          | non-transparent spelling of tones                                   |
-| vro           | Võro                           | non-transparent spelling of vowels and palatalization               |
-| wa            | Walloon                        | non-transparent spelling                                            |
-| wal           | Wolaytta                       | non-transparent spelling of tones                                   |
-| war           | Waray-Waray                    | insufficient documentation                                          |
-| wiu           | Wiru                           | non-transparent spelling of tones                                   |
-| xal           | Kalmyk-Oirat                   | non-transparent spelling of vowels                                  |
-| xav           | Xavánte                        | non-transparent spelling of vowel length                            |
-| xbi           | Kombio                         | non-transparent spelling of vowels                                  |
-| xh            | Xhosa                          | non-transparent spelling of tones                                   |
-| xla           | Kamula                         | non-transparent spelling of vowels and tones                        |
-| xsr           | Sherpa                         | insufficient documentation                                          |
-| yaa           | Yaminahua                      | non-transparent spelling of tones                                   |
-| yad           | Yagua                          | non-transparent spelling of tones                                   |
-| yby           | Yaweyuha                       | non-transparent spelling of tones                                   |
-| yo            | Yoruba                         | non-transparent spelling of tones                                   |
-| zai           | Zapotec                        | non-transparent spelling of tones                                   |
-| zca           | Coatecas Altas Zapotec         | non-transparent spelling of tones                                   |
-| zpi           | Santa María Quiegolani Zapotec | non-transparent spelling of tones                                   |
-| zpq           | Zoogocho Zapotec               | non-transparent spelling of tones                                   |              
-| zu            | Zulu                           | non-transparent spelling of tones                                   |
+| Language Code | Language                       | Reason                                                                   |
+|---------------|--------------------------------|--------------------------------------------------------------------------|
+| ace           | Acehnese                       | non-transparent transcription of vowel nasalization                      |
+| ach           | Acholi                         | non-transparent transcription of tones                                   |
+| acu           | Achuar-Shiwiar                 | non-transparent transcription of vowel nasalization                      |
+| adh           | Adhola                         | non-transparent transcription of tones                                   |
+| af            | Afrikaans                      | non-transparent transcription of vowels, vowel length, and diphthongs    |
+| agd           | Agarabi                        | non-transparent transcription of tones                                   |
+| agm           | Angaataha                      | non-transparent transcription of tones                                   |
+| agr           | Aguaruna                       | non-transparent transcription of vowel nasalization                      |
+| ak            | Akan                           | non-transparent transcription of tones                                   |
+| alq           | Algonquin                      | non-transparent transcription of vowel length                            |
+| am            | Amharic                        | non-transparent transcription of consonant gemination                    |
+| anv           | Denya                          | non-transparent transcription of tones                                   |
+| as            | Assamese                       | non-transparent transcription of vowels                                  |
+| aso           | Dano                           | non-transparent transcription of tones                                   |
+| avt           | Avar                           | non-transparent transcription of consonant gemination                    |
+| ban           | Bali                           | non-standardized orthography                                             |
+| bem           | Bemba                          | non-transparent transcription of tones                                   |
+| bba           | Bariba                         | non-transparent transcription of tones                                   |
+| bcw           | Bana                           | non-transparent transcription of tones                                   |
+| bhl           | Bimin                          | non-transparent transcription of tones                                   |
+| bm            | Bambara                        | non-transparent transcription of tones                                   |
+| bmr           | Muinane                        | non-transparent transcription of tones                                   |
+| bs            | Bosnian                        | non-transparent transcription of vowel length and tones                  |
+| bsn           | Barasana-Eduria                | non-transparent transcription of tones                                   |
+| bua           | Buryat                         | non-transparent transcription of palatalization                          |
+| byr           | Baruya                         | non-transparent transcription of tones                                   |
+| cao           | Chácobo                        | non-transparent transcription of tones                                   |
+| cax           | Chiquitano                     | non-transparent transcription of vowel nasalization                      |
+| cbc           | Carapan                        | non-transparent transcription of tones                                   |
+| ce            | Chechen                        | non-transparent transcription of vowel length                            |
+| ceb           | Cebuano                        | non-transparent transcription of vowel length                            |
+| chr           | Cherokee                       | non-transparent transcription of vowel length                            |
+| cwk           | Western Kaqchikel              | non-transparent transcription of vowels                                  |
+| cnh           | Haka Chin                      | non-transparent transcription of tones                                   |
+| coe           | Koreguaja                      | non-transparent transcription of tones                                   |
+| ctd           | Tedim Chin                     | non-transparent transcription of tones                                   |
+| cub           | Cubeo                          | non-transparent transcription of tones                                   |
+| cuk           | San Blas Kuna                  | non-transparent transcription                                            |
+| cy            | Welsh                          | non-transparent transcription of vowel length                            |
+| da            | Danish                         | non-transparent transcription of vowels                                  |
+| daa           | Dangaléat                      | non-transparent transcription of tones                                   |
+| des           | Desano                         | non-transparent transcription of tones                                   |
+| dgo           | Dogri                          | non-transparent transcription of tones                                   |
+| din           | Dinka                          | non-transparent transcription of tones                                   |
+| dts           | Toro So Dogon                  | non-transparent transcription of tones                                   |
+| dz            | Dzongkha                       | non-transparent transcription                                            |
+| ee            | Ewe                            | non-transparent transcription of tones                                   |
+| efi           | Efik                           | non-transparent transcription of tones                                   |
+| emp           | Northern Emberá                | non-transparent transcription                                            |
+| enb           | Markweeta                      | non-transparent transcription of tones                                   |
+| enq           | Enga                           | non-transparent transcription of tones                                   |
+| et            | Estonian                       | non-transparent transcription of contrastive syllable length             |
+| faa           | Fasu                           | non-transparent transcription of tones                                   |
+| fi            | Finnish                        | non-transparent transcription                                            |
+| fj            | Fijian                         | non-transparent transcription of vowel length                            |
+| fo            | Faroese                        | non-transparent transcription of vowels                                  |
+| for           | Fore                           | non-transparent transcription of tones                                   |
+| fur           | Friulian                       | non-transparent transcription of vowels                                  |
+| fy            | Frisian                        | non-transparent transcription of vowels                                  |
+| ga            | Irish                          | non-transparent transcription                                            |
+| gah           | Alekano                        | non-transparent transcription of tones                                   |
+| gd            | Scottish Gaelic                | non-transparent transcription of consonants and vowels                   |
+| gl            | Galician                       | non-transparent transcription                                            |
+| gmo           | Gamo-Gofa-Dawro                | three languages understood to be linguistically separate                 |
+| grb           | Grebo                          | non-transparent transcription of tones                                   |
+| grt           | Garo                           | non-transparent transcription of vowels                                  |
+| gub           | Guajajara                      | non-transparent transcription of vowel nasalization                      |
+| gum           | Guambiano                      | non-standardized orthography                                             |
+| gur           | Farefare                       | non-transparent transcription of tones                                   |
+| gv            | Manx Gaelic                    | non-transparent transcription of consonants and vowels                   |
+| ha            | Hausa                          | non-transparent transcription of vowel length                            |
+| hbs           | Serbo-Croatian                 | non-transparent transcription of tones                                   |
+| hch           | Huichol                        | non-transparent transcription of tones                                   |
+| heh           | Hehe                           | non-transparent transcription of tones                                   |
+| hr            | Croatian                       | non-transparent transcription of vowel length                            |
+| hub           | Huambisa                       | non-transparent transcription of vowel nasalization                      |
+| hui           | Huli                           | non-transparent transcription of tones                                   |
+| huv           | Huave                          | inconsistent phonological documentation                                  |
+| hz            | Herero                         | non-transparent transcription of tones                                   |
+| ig            | Igbo                           | non-transparent transcription of tones                                   |
+| ik            | Inupiaq                        | insufficient tokens                                                      |
+| is            | Icelandic                      | non-transparent transcription of vowel length                            |
+| jiv           | Shuar                          | non-transparent transcription of vowel nasalization                      |
+| kab           | Kabyle                         | non-transparent transcription of consonants                              |
+| kac           | Jingpho                        | non-transparent transcription of tones                                   |
+| kaq           | Capanahua                      | non-transparent transcription of tones                                   |
+| kbc           | Kadiweu                        | non-transparent transcription of consonant gemination                    |
+| kbr           | Kafa                           | non-transparent transcription of tones                                   |
+| kha           | Khasi                          | non-transparent transcription of vowel length                            |
+| khk           | Khalkha Mongolian              | non-transparent transcription of vowels                                  |
+| ki            | Gikuyu                         | non-transparent transcription of tones                                   |
+| kj            | Kwanyama                       | non-transparent transcription of tones                                   |
+| kjs           | East Kewa                      | non-transparent transcription of tones                                   |
+| kew           | West Kewa                      | non-transparent transcription of tones                                   |
+| kmr           | Northern Kurdish               | non-transparent transcription of consonants                              |
+| kmu           | Kanite                         | non-transparent transcription of tones                                   |
+| ksd           | Kuanua                         | non-transparent transcription of vowel length                            |
+| kus           | Kusaal                         | non-transparent transcription of tones and vowel length                  |
+| kw            | Cornish                        | non-transparent transcription of vowel length                            |
+| lac           | Lacandon                       | non-transparent transcription of vowel length                            |
+| lb            | Luxembourgish                  | non-transparent transcription of vowels                                  |
+| lef           | Lelemi                         | non-transparent transcription of tones                                   |
+| lg            | Luganda                        | non-transparent transcription of tones                                   |
+| ln            | Lingala                        | non-transparent transcription of tones                                   |
+| loz           | Lozi                           | non-transparent transcription of tones                                   |
+| lt            | Lithuanian                     | non-transparent transcription of tones                                   |
+| luo           | Dholuo                         | non-transparent transcription of tones                                   |
+| lus           | Mizo                           | non-transparent transcription of tones                                   |
+| lv            | Latvian                        | non-transparent transcription of tones                                   |
+| lvs           | Standard Latvian               | non-transparent transcription of tones                                   |
+| lwo           | Luwo                           | non-transparent transcription of tones and breathy vowels                |
+| man           | Mandingo                       | non-transparent transcription of tones                                   |
+| mas           | Maasai                         | insufficient tokens                                                      |
+| mcb           | Machiguenga                    | non-transparent transcription of tones                                   |
+| mcd           | Sharanahua                     | non-transparent transcription of tones                                   |
+| meu           | Motu                           | non-transparent transcription of vowel length                            |
+| mfi           | Wandala                        | non-transparent transcription of tones                                   |
+| mfz           | Mabaan                         | non-transparent transcription of tones                                   |
+| mhr           | Eastern Mari                   | non-transparent transcription of palatalization                          |
+| mi            | Maori                          | non-transparent transcription of vowel length                            |
+| miq           | Miskito                        | non-transparent transcription of vowel nasalization and length           |
+| mni           | Meitei                         | non-transparent transcription of tones                                   |
+| mos           | Mossi                          | non-transparent transcription of tones                                   |
+| mps           | Dadibi                         | non-transparent transcription of tones and vowel nasalization            |
+| mpt           | Mian                           | non-transparent transcription of tones                                   |
+| ms            | Malay                          | non-transparent transcription of vowels                                  |
+| my            | Burmese                        | non-transparent transcription of tones                                   |
+| myu           | Mundurukú                      | non-transparent transcription of tones and creaky vowels                 |
+| myy           | Macuna                         | non-transparent transcription of tones                                   |
+| nd            | Northern Ndebele               | insufficient tokens                                                      |
+| nds           | Low Saxon                      | non-transparent transcription                                            |
+| nfr           | Nafaanra                       | non-transparent transcription of tones                                   |
+| nhg           | Tetelcingo Nahuatl             | non-transparent transcription of vowel length                            |
+| no            | Norwegian                      | non-transparent transcription of tones and vowel length                  |
+| ntp           | Northern Tepehuan              | non-transparent transcription of tones                                   |
+| nv            | Navajo                         | non-transparent transcription of vowel nasalization                      |
+| ny            | Chichewa                       | non-transparent transcription of tones                                   |
+| nyn           | Nyankore                       | non-transparent transcription of tones                                   |
+| om            | Oromo                          | non-transparent transcription of tones                                   |
+| opm           | Oksapmin                       | non-transparent transcription of vowels                                  |
+| ood           | Tohono O'odham                 | non-transparent transcription                                            |
+| ots           | Estado de México Otomi         | non-transparent transcription of tones                                   |
+| pab           | Parecís                        | non-transparent transcription of vowel length and nasalization           |
+| pao           | Northern Paiute                | non-transparent transcription of vowel length                            |
+| pap           | Papiamentu                     | non-transparent transcription of vowels                                  |
+| pir           | Wanano                         | non-transparent transcription of tones                                   |
+| pl            | Polish                         | non-transparent transcription                                            |
+| pms           | Piedmontese                    | non-transparent transcription                                            |
+| poh           | Poqomchi'                      | insufficient documentation                                               |
+| rw            | Kinyarwanda                    | non-transparent transcription of tones and vowel length                  |
+| sd            | Sindhi                         | non-transparent transcription of vowels                                  |
+| se            | Northern Sami                  | non-transparent transcription                                            |
+| sg            | Sango                          | non-transparent transcription of tones                                   |
+| sim           | Mende                          | non-transparent transcription of tones                                   |
+| sll           | Salt-Yui                       | non-transparent transcription of tones                                   |
+| sn            | Shona                          | non-transparent transcription of tones                                   |
+| so            | Somali                         | non-transparent transcription of tones                                   |
+| soq           | Kanasi                         | non-transparent transcription of glottal stops                           |
+| spp           | Supyire Senoufo                | non-transparent transcription of tones                                   |
+| ss            | Swati                          | non-transparent transcription of tones                                   |
+| st            | Sesotho                        | non-transparent transcription of tones                                   |
+| sv            | Swedish                        | non-transparent transcription                                            |
+| swp           | Suau                           | non-transparent transcription                                            |
+| sxb           | Suba                           | non-transparent transcription of tones                                   |
+| tav           | Tatuyo                         | non-transparent transcription of tones                                   |
+| tcc           | Datooga                        | non-transparent transcription of tones                                   |
+| tcy           | Tulu                           | non-transparent transcription of vowels                                  |
+| tcz           | Thadou Chin                    | non-transparent transcription of tones                                   |
+| ti            | Tigrinya                       | non-transparent transcription of gemination                              |
+| tk            | Turkmen                        | non-transparent transcription of vowel length                            |
+| tl            | Tagalog                        | non-transparent spalling of vowel length                                 |
+| tn            | Tswana                         | non-transparent transcription of tones                                   |
+| toi           | Tonga                          | non-transparent transcription of tones                                   |
+| trp           | Kok Borok                      | non-transparent transcription of tones                                   |
+| ts            | Tsonga                         | non-transparent transcription of tones                                   |   
+| ttc           | Tekiteko                       | non-transparent transcription of vowel length                            |
+| tuf           | Central Tunebo                 | non-transparent transcription of contrastive features (first syllable)   |
+| tw            | Twi                            | non-transparent transcription of tones                                   |
+| ubu           | Umbu-Ungu                      | non-transparent transcription of tones                                   |
+| udu           | Uduk                           | non-transparent transcription of tones                                   |
+| ur            | Urdu                           | non-transparent transcription of vowels                                  |
+| ura           | Urarina                        | non-transparent transcription of tones                                   |
+| usp           | Uspanteko                      | non-transparent transcription of tones                                   |
+| ve            | Venda                          | non-transparent transcription of tones                                   |
+| vro           | Võro                           | non-transparent transcription of vowels and palatalization               |
+| wa            | Walloon                        | non-transparent transcription                                            |
+| wal           | Wolaytta                       | non-transparent transcription of tones                                   |
+| war           | Waray-Waray                    | insufficient documentation                                               |
+| wiu           | Wiru                           | non-transparent transcription of tones                                   |
+| xal           | Kalmyk-Oirat                   | non-transparent transcription of vowels                                  |
+| xav           | Xavánte                        | non-transparent transcription of vowel length                            |
+| xbi           | Kombio                         | non-transparent transcription of vowels                                  |
+| xh            | Xhosa                          | non-transparent transcription of tones                                   |
+| xla           | Kamula                         | non-transparent transcription of vowels and tones                        |
+| xsr           | Sherpa                         | insufficient documentation                                               |
+| yaa           | Yaminahua                      | non-transparent transcription of tones                                   |
+| yad           | Yagua                          | non-transparent transcription of tones                                   |
+| yby           | Yaweyuha                       | non-transparent transcription of tones                                   |
+| yo            | Yoruba                         | non-transparent transcription of tones                                   |
+| zai           | Zapotec                        | non-transparent transcription of tones                                   |
+| zca           | Coatecas Altas Zapotec         | non-transparent transcription of tones                                   |
+| zpi           | Santa María Quiegolani Zapotec | non-transparent transcription of tones                                   |
+| zpq           | Zoogocho Zapotec               | non-transparent transcription of tones                                   |              
+| zu            | Zulu                           | non-transparent transcription of tones                                   |
