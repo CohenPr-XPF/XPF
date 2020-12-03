@@ -2,7 +2,9 @@
 title: "Ankave"
 author: "Jordan Schuster"
 bibliography: aak.bib
-output: html_document
+output: 
+  html_document:
+    keep_md: true
 ---
 
 Last Updated: 2020-06-24

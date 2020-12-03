@@ -1,10 +1,12 @@
+markdown: kramdown
+
 # XPF
 
 ## Available Languages
 
 | Language Code | Language (click for info)                                               | Comments       |
 |---------------|-------------------------------------------------------------------------| -------------- |
-| aak           | <a href="Data/aak_Ankave/aak.html" target="_blank">Ankave</a>                                     |                |
+| aak           | [Ankave](Data/aak_Ankave/aak.html)                                    |                |
 | aau           | [Abau](Data/aau_Abau/aau.html)                                          |                |
 | ab            | [Abkhaz](Data/ab_Abkhaz/ab.html)                                        |                |
 | acf           | [Saint Lucian Creole French](Data/acf_SaintLucianCreoleFrench/acf.html) | lacks lenition |
