@@ -1,6 +1,6 @@
 # XPF
 
-Check out our interactive website: [The XPF Corpus](https://cohenpr-xpf.github.io/XPF/)
+Check out our interactive website: <a href="https://cohenpr-xpf.github.io/XPF/" target="_blank">The XPF Corpus</a>
 
 ## Available Languages
 
