@@ -4,6 +4,7 @@
   <title>About</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel = "stylesheet" href="header.css">
   <link rel = "stylesheet" href="About.css">
@@ -58,25 +59,26 @@
   <div class="row spacer">
     <div class="col-xs-12">
       <div id="language_map"></div>
+      <p class="text-center">The languages displayed on the map are separated either by large language families (e.g. Indo-European) or justified groupings (e.g. Isolates). On the map, simply hover over the individual dots to display the language names and click on them to display the language information. On the legend, select a marker to hide the corresponding languages.</p>
     </div>
   </div>
 
   <div class="row spacer">
     <div class="col-xs-1"></div>
     <div class="col-xs-10">
-      <h3><b>How can you use it?</b></h3>
+      <h3 style="margin-top: 0;"><b>How can you use it?</b></h3>
       <h3><small style="color: black;">Apart from having complete access to the corpus to use for your own research purposes, which is provided on <a href="https://github.com/CohenPr-XPF/XPF" target="_blank">github</a>, we've included a few features below for quick analyses of different languages, and cross-linguistic comparison.</small></h3>
     </div>
     <div class="col-xs-1"></div>
   </div>
 
-  <div style="margin-top: 30px; margin-bottom: 50px;">
+  <div style="margin-bottom: 50px;">
     <div class="col-container">
-      <div class="col-xs-6 text-center mouseover" style="border-radius: 20px;" onclick="location.href='Convert-to-IPA.html';">
+      <div class="col-xs-6 text-center mouseover" style="padding-top: 30px; border-radius: 20px;" onclick="location.href='Convert-to-IPA.html';">
         <res1header>Convert to IPA</res1header><hr>
         <res2header style="height: 80%; display: flex; justify-content: center; align-items: center;">knit -> /nɪt/</res2header>
       </div>
-      <div class="col-xs-6 text-center mouseover" style="border-radius: 20px;" onclick="location.href='Word-Clouds.html';">
+      <div class="col-xs-6 text-center mouseover" style="padding-top: 30px; border-radius: 20px;" onclick="location.href='Word-Clouds.html';">
         <res1header>Word Clouds</res1header><hr><br>
         <img class="img-responsive center" src="images/wordcloud_image.jpg" width="50%" height="45%" style="margin: auto;" alt="Word Cloud"><br>
       </div>
@@ -136,6 +138,7 @@ am4core.ready(function() {
   marker_template.height = 18;
   language_map.legend.itemContainers.template.paddingTop = 5;
   language_map.legend.itemContainers.template.paddingBottom = 5;
+  language_map.legend.itemContainers.template.fontFamily = "Helvetica";
   language_map.zoomControl = new am4maps.ZoomControl();
   language_map.zoomControl.align = "right";
   language_map.zoomControl.valign = "bottom";

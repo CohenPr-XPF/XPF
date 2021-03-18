@@ -45,6 +45,14 @@ body{
 	background: #f2f2f2;
 }
 
+h3, res1header, res2header, body{
+	font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+h3 small{
+	font-family: "Libre Baskerville", serif;
+}
+
 .navbar{
 	background: white;
 }

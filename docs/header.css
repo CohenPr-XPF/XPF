@@ -4,23 +4,22 @@
 
 .nav.navbar-nav.navbar-right li a {
 	color: black;
-	font-size: 17px;
+	font-size: 18px;
+	font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 .nav.navbar-nav.navbar-right li a:hover {
-	color: red;
+	color: #f5d654;
 	background: white;
 }
 
 .navbar-toggle {
-	background: white;
-}
-
-.icon-bar {
 	background: black;
 }
 
-
+.icon-bar {
+	background: white;
+}
 
 .sidenav {
 	height: 100%;
@@ -47,7 +46,7 @@
 }
 
 .sidenav a:hover {
-	color: #cc0000;
+	color: #f5d654;
 }
 
 .sidenav .closebtn {

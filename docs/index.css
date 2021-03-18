@@ -9,7 +9,7 @@
 
 @media (max-width: 1200px) {
     	body {
-        	font-size: 30px;
+        	font-size: 28px;
     	}
 	h1 {
 		font-size: 60px;
@@ -21,7 +21,7 @@
         	font-size: 26px;
         }
 	h1 {
-		font-size: 48px;
+		font-size: 52px;
 	}
 }
 
@@ -30,19 +30,64 @@
         	font-size: 24px;
         }
 	h1 {
-		font-size: 38px;
+		font-size: 46px;
 	}
 }
 
-@media (max-width: 500px) {
+
+@media (max-width: 648px) {
+    	body {
+        	font-size: 22px;
+        }
+	h1 {
+		font-size: 42px;
+	}
+}
+
+@media (max-width: 598px) {
     	body {
         	font-size: 20px;
+        }
+	h1 {
+		font-size: 36px;
+	}
+}
+
+
+@media (max-width: 521px) {
+    	body {
+        	font-size: 18px;
         }
 	h1 {
 		font-size: 32px;
 	}
 }
 
+
+@media (max-width: 470px) {
+    	body {
+        	font-size: 18px;
+        }
+	h1 {
+		font-size: 28px;
+	}
+}
+
+
+h1 {
+	font-family: "Libre Baskerville", serif;
+	font-style: normal;
+}
+
+
+body {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	background: #f2f2f2;
+}
+
+.navbar{
+	background: white;
+}
 
 .footer{
 	height: 10vh;

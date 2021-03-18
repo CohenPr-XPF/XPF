@@ -4,6 +4,7 @@
   <title>Word Clouds</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel = "stylesheet" href="header.css">
   <link rel = "stylesheet" href="Word-Clouds.css">
@@ -46,7 +47,7 @@
   <div class="row">
     <div class="col-xs-1"></div>
     <div class="col-xs-10">
-      <div class="text-center" style="font-size: 36px;">Word Clouds</div>
+      <h3 class="text-center" style="font-family: 'Helvetica'"><b>Word Clouds</b></h3>
       <h3 style="margin-bottom: 40px;"><small style="color: black;">
         <b>Note: Our plan is to calculate the absolute pointwise KL-divergence for each word in the input string relative to the distribution of the same words within a predeterminded word list. We have not yet completed this; for now, we calculate the KL-divergence between the two distributions, and multiply that value by the individual frequency values of the input words (i.e. this word cloud generator at the moment creates standard word clouds based on frequency - the values are just scaled). In calculating the KL-divergence, we implement add-one smoothing.</b><br><br>
         First, select a language that you would like to compare your input text to. Next, either type or upload a text file - for meaningful results, we recommend inputing text that is present in the selected language and uses the appropriate orthography (e.g. Cyrillic for Ukranian).  If your input text has more than 100 unique words, two word clouds will appear: one with the 50 most frequent words in the input text, and one with the 50 least frequent words in the input text. If your input text has less than 100 unique words, one word cloud will appear. <b>This distinction will be more meaningful once we've finished accounting for KL-divergence.</b><br><br>
@@ -106,7 +107,7 @@
     <!-- Display for word cloud output -->
     <div class="row">
       <div class="col-xs-12">
-        <h3 class="text-center">Clouds</h3>
+        <h3 class="text-center" style="font-family: 'Helvetica'">Clouds</h3>
       </div>
       <div class="col-xs-12">
         <div id="whole_wc"></div>
