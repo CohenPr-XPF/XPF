@@ -2,6 +2,8 @@
 
 Check out our interactive website: [The XPF Corpus](https://cohenpr-xpf.github.io/XPF/)
 
+Manual coming soon.
+
 ## Available Languages
 
 | Language Code | Language (click for info)                                                                    | Comments       |
