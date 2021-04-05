@@ -93,7 +93,6 @@ Grapheme      Phoneme                           Comment
 "ch"           "/tʃ/"                             ""
 "gu"         "/ɡ/; /ɡu/"  "/ɡ/: preceding front vowels; /ɡu/ preceding back vowels"
 "gü"           "/ɡu/"                     "preceding front vowels"
-"ix"           "/ʃ/"                              ""
 "ll"           "/ʎ/"                              ""
 "ny"           "/ɲ/"                              ""
 "qu"         "/k/; /ku/"  "/k/: preceding front vowels; /ku/ preceding back vowels"      

@@ -10,5 +10,5 @@ sub,h,ɣ,2,,,
 sub,y,j,2,,,
 sub,({passthrough}),\1,2,,,
 # Long /a/
-sub,a,aː,2,,a,
+sub,a,aː,4,,a,
 sub,a,,3,a,,"clean-up",

@@ -82,7 +82,7 @@ Grapheme        Phoneme           Comment
 "g"             "/ɡ/"              ""
 "h"             "/h/"              ""
 "i"             "/i/"              ""
-"j"             "/dʑ/"             ""
+"j"             "/dʒ/"             ""
 "k"             "/k/"              ""
 "m"             "/m/"              ""
 "n"             "/n/"              ""
