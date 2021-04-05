@@ -33,5 +33,6 @@ sub,l,,6,l,,"clean-up",
 # sub,n,ŋ,6,,h,"such alternation appears, but won't be transcribed due to /ŋ/ not generally being phonemic",
 # sub,h,,6,n,,"clean-up",
 # Retroactive Clean-up
-ipasub, {supraseg},@,1,,,"some combinations of consonants (eg. khh, u') are not attested in the language and are not transcribed",
+ipasub, {supraseg}, @,1,,,"some combinations of consonants (eg. khh, u') are not attested in the language and are not transcribed",
+ipasub,^{supraseg},@,1,,,"some combinations of consonants (eg. khh, u') are not attested in the language and are not transcribed",
 ipasub,n ʰ,n,3,,,"⟨nh⟩ generally assumed to allophonically represent /ŋ/, so we default to /n/, unless uncommenting lines 33-34 is desired (if so, comment out this line)"

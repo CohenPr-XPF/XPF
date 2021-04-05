@@ -131,7 +131,7 @@ class SubRule {
 	    let key = headers[i]
 	    let value = rule[key]//.replace("\\", "$1")
       if (key == "sto") {
-        if (!(value == "@")) {
+        if (!(value == "@" || value == " @")) {
           value = value.replaceAll(/\\([1-9])/, "@$1").replaceAll("@", "$")
         }
       }
