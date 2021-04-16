@@ -4,7 +4,7 @@
 # Updated: 2020-01-23
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
-class,passthrough,[aefimopnst],,,,
+class,passthrough,[aefimopnst],,,,,
 class,apostrophe,[ꞌ'ˈ‘’],,,,
 class,vowels,[aeiou],,,,
 class,frontV,[ei],,,,
@@ -39,7 +39,7 @@ sub,c,kʰ,2,c,,
 sub,c,,2,,c,"clean-up",
 sub,q,k,3,,u{frontV},
 sub,u,,3,q,{frontV},"clean-up",
-sub,q,kʰ,3,q,u{frontV},
+sub,q,kʰ,4,q,u{frontV},
 sub,u,,3,qq,{frontV},"clean-up",
 sub,q,,3,,qu,"clean-up",
 sub,s,ʃ,2,,h,

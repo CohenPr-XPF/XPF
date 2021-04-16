@@ -45,5 +45,21 @@ async function make_keyboard(language_keyboard) {
 function temp_keyboard() {
   letter = this.id;
   wchar = orthography[letter];
-  document.getElementById("in1").value = document.getElementById("in1").value + wchar;
+  //document.getElementById("in1").value = document.getElementById("in1").value + wchar;
+  my_textarea = document.getElementById("in1");
+  my_value = wchar;
+
+  // Add text at cursor position (support for most but not all browsers - Chrome is recommended)
+  if (my_textarea.selectionStart || my_textarea.selectionStart == '0') {
+    var start = my_textarea.selectionStart;
+    var end = my_textarea.selectionEnd;
+    my_textarea.value = my_textarea.value.substring(0, start)
+      + my_value
+      + my_textarea.value.substring(end, my_textarea.value.length);
+    my_textarea.selectionStart = start + my_value.length;
+    my_textarea.selectionEnd = start + my_value.length;
+  }
+  else {
+    my_textarea.value += my_value; // simply adds character to end of text if cursor position feature is not supported
+  }
 }
