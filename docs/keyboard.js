@@ -62,5 +62,4 @@ function temp_keyboard() {
   else {
     my_textarea.value += my_value; // simply adds character to end of text if cursor position feature is not supported
   }
-  text_translate();
 }
