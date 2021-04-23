@@ -26,6 +26,6 @@ sub,ü,y,2,,,
 sub,y,j,2,,,
 sub,({passthrough}),\1,0.1,,,
 # Consonant Gemination
-sub,({gem}) \1,\1 ː,2,,,
+ipasub,({gem}) \1,\1 ː,2,,,
 # Misc. Rules
 sub,{misc},,2,,,
