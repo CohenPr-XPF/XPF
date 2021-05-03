@@ -11,15 +11,6 @@ function print(val) { console.log(val) }
 function dictFormat(s, valueDict) {
   ret = s;
 
-  // Control for match rules
-  for (let item in valueDict) {
-    if (item[0] == "\"" && item[item.length-1] == "\""){
-      ipa = valueDict[item].replaceAll("^\"|\"$", "")
-      item = item.replaceAll("^\"|\"$", "")
-      valueDict[item] = ipa;
-    }
-  }
-
   s.match(/\{[^}]+\}/g).forEach(function(repName){
   key = repName.replace(/[{}]/g, "");
   ret = ret.replace(repName, valueDict[key])
@@ -111,6 +102,10 @@ class SubRule {
           value = value.replaceAll(/\\([1-9])/, "@$1").replaceAll("@", "$")
           }
         }
+        // remove word boundaries since every character is space separated (only relevant in python scrips for computing frequency and informativity measures)
+        if (key == "sfrom" && value.includes("\\b")) {
+          value = value.replaceAll(/\\b/, "");
+        }
 
         // value = RegExp(value)
 	      const re = new RegExp('{.*}')
@@ -166,32 +161,41 @@ class AlphabetToIpa {
 	  // Iterate over rules:
 	  for (var i=0; i<this.rule_list.length; i++) {
       let rule = this.rule_list[i]
-    	if ((rule["type"] == "pre") || (rule["type"] == "\"pre\"")) {
+
+      // remove double quotes
+      for (const key of Object.keys(rule)) {
+        var item = rule[key];
+        if (typeof item !== "undefined" && item.match(/^\"\"*/)) {
+          item = item.replace(/^\"/, "").replace(/\"$/, "");
+          rule[key] = item;
+        }
+      }
+
+      if (rule["type"] == "pre") {
         this.pre.push([rule["sfrom"], rule["sto"]])
     	}
-      else if ((rule["type"] == "class") || (rule["type"] == "\"class\"")) {
+      else if (rule["type"] == "class") {
         this.classes[rule["sfrom"]] = rule["sto"]
       }
-      else if ((rule["type"] == "match") || (rule["type"] == "\"match\"")) {
+      else if (rule["type"] == "match") {
         var value = rule["sto"]
-        value = value.replaceAll("^\"|\"$", "")
         const re = new RegExp('{.*}')
         while (re.test(value)) {
           value = dictFormat(value, this.classes)
         }
         this.matches[rule["sfrom"]] = value
       }
-      else if ((rule["type"] == "sub") || (rule["type"] == "\"sub\"")) {
+      else if (rule["type"] == "sub") {
         let subrule = new SubRule(rule, this.classes)
     		this.subs.add(subrule)
       }
-      else if ((rule["type"] == "ipasub") || (rule["type"] == "\"ipasub\"")) {
+      else if (rule["type"] == "ipasub") {
         let ipasubrule = new SubRule(rule, this.classes)
 		    ipasubrule.sfrom = new RegExp(ipasubrule.sfrom, "g");
 		    // ipasubrule.sto = ipasubrule.sto.replace(/\\([1-9])/, "$$1");
     		this.ipasubs.add(ipasubrule)
       }
-      else if ((rule["type"] == "word") || (rule["type"] == "\"word\"")) {
+      else if (rule["type"] == "word") {
     		this.words[rule["sfrom"]] = rule["sto"].split()
       }
       else {
@@ -223,7 +227,6 @@ class AlphabetToIpa {
             var match = source[letter];
             for (let item in this.matches) {
               var out = this.matches[item]
-              item = item.replaceAll("^\"|\"$", "")
               if (match == item) {
                 target_list.push(out);
                 source_list.pop();
@@ -234,7 +237,6 @@ class AlphabetToIpa {
         else {
           for (let item in this.matches) {
             var out = this.matches[item]
-            item = item.replaceAll("^\"|\"$", "")
             if (source == item) {
               target_list.push(out);
               source_list.pop();
@@ -280,7 +282,6 @@ class AlphabetToIpa {
         let ipasubrule = ipa_translations[i][1];
 		    console.log("ipasub", ipasubrule, "from:", target_string);
 
-        console.log(ipasubrule.sfrom);
         target_string = target_string.replace(ipasubrule.sfrom, ipasubrule.sto);
 		    console.log("\tresult:", target_string);
       }
