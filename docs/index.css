@@ -104,3 +104,6 @@ body {
 	height: 100%;
 }
 
+.lang {
+	white-space: nowrap;
+}

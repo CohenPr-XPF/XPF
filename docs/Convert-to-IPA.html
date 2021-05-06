@@ -10,7 +10,7 @@
   <link rel = "stylesheet" href="Convert-to-IPA.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <!--<script src="FileSaver.js"></script>  Needed for keyboard config-->
+  <script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
 </head>
 <body>
 
@@ -59,7 +59,7 @@
 
   <script type="application/javascript">
 
-    // Display changes upon button select (Translate Rules)
+    // Reset and display changes upon button select (Translate Rules)
     function existing() {
       document.getElementById("upload").style.display = "none";
       document.getElementById("existing").style.display = "inline-block";
@@ -68,6 +68,27 @@
       document.getElementById("leftbutton").style.color = "#f5d654";
       document.getElementById("rightbutton").style.cursor = "pointer";
       document.getElementById("rightbutton").style.color = "white";
+
+      document.getElementById("load").style.display = "flex";
+      document.getElementById("loading").style.display = "none";
+      document.getElementById("ani").style.display = "flex";
+      document.getElementById("keyboard").style.display = "none";
+      document.getElementById("initial").style.display = "flex";
+      document.getElementById("msg1").style.display = "none";
+      document.getElementById("msg3").style.display = "none";
+      document.getElementById("ko_warning").style.display = "none";
+      document.getElementById("upload_text_form").value = "";
+
+      keyboard.innerHTML = "";
+      document.getElementById("in1").value = "";
+      document.getElementById("out1").value = "";
+      while(keyboard.firstChild) {
+        keyboard.removeChild(keyboard.firstChild);
+      }
+      document.getElementById("msg2").style.display = "none";
+      document.getElementById("translations_file").style.display = "none";
+      document.getElementById("language_info").style.display = "none";
+      document.getElementById("rule_dropdown").selectedIndex = 0;
     }
 
     function upload() {
@@ -78,6 +99,29 @@
       document.getElementById("leftbutton").style.color = "white";
       document.getElementById("rightbutton").style.cursor = "default";
       document.getElementById("rightbutton").style.color = "#f5d654";
+
+      document.getElementById("load").style.display = "flex";
+      document.getElementById("msg3").style.display = "flex";
+      document.getElementById("keyboard").style.display = "none";
+      document.getElementById("loading").style.display = "none";
+      document.getElementById("initial").style.display = "none";
+      document.getElementById("ani").style.display = "none";
+      document.getElementById("msg1").style.display = "none";
+      document.getElementById("ko_warning").style.display = "none";
+      document.getElementById("upload_text_form").value = "";
+      document.getElementById("upload_form").value = "";
+
+      keyboard.innerHTML = "";
+      document.getElementById("in1").value = "";
+      document.getElementById("out1").value = "";
+      while(keyboard.firstChild) {
+        keyboard.removeChild(keyboard.firstChild);
+      }
+
+      document.getElementById("msg2").style.display = "none";
+      document.getElementById("translations_file").style.display = "none";
+      document.getElementById("rule_dropdown").selectedIndex = 0;
+
     }
 
     </script>
@@ -144,7 +188,7 @@
       <!--Translate Rules section: grammar selection/upload-->
       <div class="col-xs-6" style="height: 100px; padding-right: 0px; padding-left: 15px;">
         <div id="upload" style="display: none;">
-          Upload Rules: &nbsp<input id="upload_form" style="display: inline;" type=file onchange="read_upload()" accept="text rules" name="files[]" size=30> <!--Translate Rules section: hidden until selected-->
+          Upload Rules: &nbsp<input id="upload_form" style="display: inline;" type=file onchange="read_upload(this)" onclick="this.value=null;" accept="text rules" name="files[]" size=30> <!--Translate Rules section: hidden until selected-->
           <input type="hidden" id="x">
         </div>
 
@@ -170,13 +214,14 @@
       <div class="row" style="margin: auto">
         <div class="col-xs-6" style="padding-right: 15px; padding-left: 15px;"><br> <!--Text section: input/upload-->
           Text Input:<br><textarea id="in1" name="in1"></textarea><br>
-          <div style="margin-top: 10px;">Upload Text: &nbsp<input id="upload_text_form" style="display: inline;" type=file onchange="read_text_upload()" accept="text" name="files[]" size=30></div>
+          <div style="margin-top: 10px;">Upload Text: &nbsp<input id="upload_text_form" style="display: inline;" type=file onchange="read_text_upload(this)" onclick="this.value=null;" accept="text/plain" name="files[]" size=30></div>
         </div>
         <div class="col-xs-6"><br>
-          Phonemic Representation:<br>
+            Phonemic Representation: &nbsp <a style="display: none; font-size: 12px;" id="translations_file" title="Click to download as list" download>Download</a><br>
             <input type="hidden" name="rules" id="rules"/>
             <textarea id="out1" style="cursor: default;" readonly></textarea><br> <!--ouptput: translated text-->
             <div id="msg2" style="color: red; font-size: 12px; display: none;">One or more orthographic characters were not translated. Make sure you are using the proper orthography for the language in question.</div> <!--alert if translation for some characters did not occur-->
+            <!--<div id="translations_file" class="col-xs-6" style="height: 50px; display: none; align-items: center; justify-content: flex-end;"><button type="submit" onclick="download_translate()">Download Translations</button></div>-->
         </div>
       </div>
 
@@ -214,8 +259,9 @@
   <!-- Allow for functionality of all interface actions -->
   <script type="text/javascript">
 
-    // Create ability to open/read uploaded text file
     var grammar;
+
+    // Create ability to open/read uploaded text and rules files
     function parse(file) {
       return new Promise((resolve, reject) => {
         let content = '';
@@ -232,10 +278,9 @@
       });
     }
 
-
+    // Reset keyboard, input, and output messages; get grammar of uploaded rules file
     function read_upload() {
 
-      // Reset keyboard and output message
       document.getElementById("load").style.display = "flex";
       document.getElementById("msg3").style.display = "flex";
       document.getElementById("keyboard").style.display = "none";
@@ -244,6 +289,7 @@
       document.getElementById("ani").style.display = "none";
       document.getElementById("msg1").style.display = "none";
       document.getElementById("ko_warning").style.display = "none";
+      document.getElementById("upload_text_form").value = "";
 
       keyboard.innerHTML = "";
       document.getElementById("in1").value = "";
@@ -253,23 +299,24 @@
       }
 
       document.getElementById("msg2").style.display = "none";
+      document.getElementById("translations_file").style.display = "none";
 
-      a = document.getElementById('upload_form').files
+      a = document.getElementById('upload_form').files;
       if (a.length > 0) {
         parse(a[0]).then(s => {
-          hidden = document.getElementById('x')
-          hidden.value = s.join('\n')
+          hidden = document.getElementById('x');
+          hidden.value = s.join('\n');
           grammar = new AlphabetToIpa(""); // get grammar of the uploaded language needed for translation
-        })
+        });
       }
     }
 
 
-    var file_info_name = "";
+    var file_info_name = ""; // holds the BCP-47 (or modified) code for the selected language (if "Existing Rules" is selected)
 
+    // Reset keyboard, input, and output messages; get grammar of selected language and display keyboard
     function read_existing() {
 
-      // Reset keyboard and output message; display language info
       document.getElementById("load").style.display = "flex";
       document.getElementById("loading").style.display = "flex";
       document.getElementById("ani").style.display = "flex";
@@ -278,7 +325,7 @@
       document.getElementById("msg1").style.display = "none";
       document.getElementById("msg3").style.display = "none";
       document.getElementById("ko_warning").style.display = "none";
-
+      document.getElementById("upload_text_form").value = "";
 
       keyboard.innerHTML = "";
       document.getElementById("in1").value = "";
@@ -287,6 +334,7 @@
         keyboard.removeChild(keyboard.firstChild);
       }
       document.getElementById("msg2").style.display = "none";
+      document.getElementById("translations_file").style.display = "none";
       document.getElementById("language_info").style.display = "inline";
 
       a = document.getElementById("rule_dropdown").value;
@@ -307,7 +355,7 @@
 
       grammar = new AlphabetToIpa(a); // get grammar of selected language needed for translation
 
-      if (file_info_name == "ko") {
+      if (file_info_name == "ko") { // Korean has too many characters to display as a keyboard, so we created a downloadable option
         document.getElementById("ko_warning").style.display = "block";
         document.getElementById("load").style.display = "none";
         document.getElementById("loading").style.display = "none";
@@ -324,39 +372,69 @@
     }
 
 
-    // Get the input field (if file upload)
+    // Get the input field (if text file upload)
     function read_text_upload() {
-      var a = document.getElementById('upload_text_form').files
+      var a = document.getElementById('upload_text_form').files;
       if (a.length > 0) {
         parse(a[0]).then(s => {
-          var text1 = document.getElementById('in1') // display uploaded file in input textarea
+          var text1 = document.getElementById('in1'); // display uploaded file in input textarea
           text1.value = '';
           text1.value = s.join('\n');
-        })
+        });
       }
     }
 
 
+    // Display warnings if translate button is hit when required actions have not yet been fulfilled
     function submit() {
       var x = document.getElementById("upload_form");
+      var y = document.getElementById("rule_dropdown");
+      var z = document.getElementById("in1");
       if (document.getElementById("existing").style.display == "none"
-        && document.getElementById('x').value.length == 0) { // if rules file upload is selected, ensure file exists
+        && document.getElementById('x').value.length == 0) { // if "Upload Rules" is selected, ensure file exists
         x.style.background = "#ff0000";
         setTimeout(function() {
           x.style.background = "white";
         }, 250);
-      } else {
+      }
+      else if (document.getElementById("upload").style.display == "none"
+        && y.selectedIndex == 0) { // if "Existing Rules" is selected, ensure language is selected
+        y.style.background = "#ff0000";
+        setTimeout(function() {
+          y.style.background = "white";
+        }, 250);
+      }
+      else if (document.getElementById("existing").style.display == "none"
+        && document.getElementById('x').value.length != 0
+        && document.getElementById("in1").value == "") { // if "Upload Rules" is selected and the file exists, ensure text to be translated has been entered
+        z.style.background = "#ff0000";
+        setTimeout(function() {
+          z.style.background = "white";
+        }, 250);
+      }
+      else if (document.getElementById("upload").style.display == "none"
+        && y.selectedIndex != 0
+        && document.getElementById("in1").value == "") { // if "Existing Rules" is selected and the language is selected, ensure text to be translated has been entered
+        z.style.background = "#ff0000";
+        setTimeout(function() {
+          z.style.background = "white";
+        }, 250);
+      }
+      else {
         translate();
       }
     }
 
 
+    /* Next 3 functions (to_IPA, translate_line, and do_translate) handle the translation of user text input which is is first parsed by line and then by word */
+
     // Translate input one word at a time
     function to_IPA(s) {
-      return grammar.translate(s).toString().replaceAll(" ", "").trim(); // translate03.js puts spaces between each character (I removed them for readability)
+      return grammar.translate(s).toString().replaceAll(" ", "").trim(); // translate03.js puts spaces between each character necessary for phoneme frequency and informativity measures (for purposes of the website, I removed them for readability)
     }
 
-    function translate_line(str) { // function needed to look at/parse the individual elements within each line
+    // Parse individual elements (e.g. words) within each line
+    function translate_line(str) {
       var buff = '';
       var a = str.split(' ');
       for (var i = 0; i < a.length; i++) {
@@ -368,28 +446,11 @@
       return buff;
     }
 
+    // Parse user text input by line
     function do_translate() {
       document.getElementById("msg2").style.display = "none";
-      var cell1 = document.getElementById("in1");
-      var in1 = document.getElementById("in1").value;
-      var cell2 = document.getElementById("rule_dropdown");
-      var rule_select = document.getElementById("rule_dropdown").value;
-      if (rule_select == "") { // if existing file is selected, ensure file is selected
-        cell2.style.background = "#ff0000";
-        setTimeout(function() {
-          cell2.style.background = "white";
-        }, 250);
-        return "";
-      }
-      if (in1 == "") { // ensure text to be translated exists
-        cell1.style.background = "#ff0000";
-        setTimeout(function() {
-          cell1.style.background = "white";
-        }, 250);
-      }
-
       var buff = '';
-      var a = in1.split('\n');
+      var a = document.getElementById("in1").value.split('\n');
       for (var i = 0; i < a.length; i++) { // look at the input as a whole (separated by line breaks if any)
         if (i > 0) {
           buff += '\n'; // maintain linebreaks from input to output
@@ -400,13 +461,38 @@
     }
 
 
+    // Display output and warnings (i/a); display download option for translated text
     function translate(){
       document.getElementById("out1").value = "";
-      document.getElementById("out1").value = do_translate(); // display translated text (i.e. phonetic transcription)
+      document.getElementById("out1").value = do_translate(grammar); // display translated text (phonemic translation)
       if (document.getElementById("out1").value.includes("@")) { // display warning if some characters aren't translated
         document.getElementById("msg2").style.display = "flex";
       }
+
+      // Provide the option to download the translated text as a list
+      document.getElementById("translations_file").style.display = "inline-block";
+      var output = document.getElementById("out1").value;
+      output = output.replaceAll(/\s\n/, "\n").replaceAll(" ", "\n");
+      var blob = new Blob([output], {type: "text/plain;charset=utf-8"});
+      var url = URL.createObjectURL(blob);
+      document.getElementById("translations_file").href = url;
+      var lang_name = document.getElementById("rule_dropdown").options[document.getElementById("rule_dropdown").selectedIndex].innerHTML;
+      lang_name = lang_name.replaceAll(" ", "");
+
+      if (document.getElementById("rule_dropdown").selectedIndex == 0) { // if "Upload Rules" is selected use generic name as part of the file identifier
+        document.getElementById("translations_file").setAttribute("download", "XPF_user_translations");
+      }
+      else { // if "Existing Rules" is selected use language name as part of the file identifier
+        document.getElementById("translations_file").setAttribute("download", "XPF_"+lang_name+"_translations");
+      }
     }
+
+    /*function download_translate(){
+      var output = document.getElementById("out1").value;
+      output = output.replaceAll(" ", "\n");
+      var blob = new Blob([output], {type: "text/plain;charset=utf-8"});
+      saveAs(blob, "translations.txt");
+    }*/
 
   </script>
 
