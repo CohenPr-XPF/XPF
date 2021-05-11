@@ -25,7 +25,7 @@ function get(url) {
   });
 }
 
-// Parse the word list file
+// Parse and format word list file
 async function read_wordlists(filename) {
 
   if (!filename) { // ensure file exists
@@ -35,168 +35,215 @@ async function read_wordlists(filename) {
 
   var rawdata = await get(filename);
   var lines = rawdata.split("\n");
-  var word_list = [];
+  var ret_word_list = [];
   var lines2 = [];
 
-  // Exclude word/frequency entries where capital letters are present (TODO: check if we actually want to do this)
+  // Exclude word/frequency entries where capital letters are present (TODO: verify)
   for (line in lines) {
     if (lines[line].match(/.*\p{Lu}.*/gu) == null) {
       lines2.push(lines[line]);
     }
   }
 
-  lines = lines2; // override initial lines variable with desired input
-
   // Create a table/dictionary that lists the word followed by its frequency
-  for (var i=0; i < lines.length; i++){
-    str = lines[i];
+  for (var i=0; i < lines2.length; i++){
+    str = lines2[i];
     word_freq = str.split(" ");
-    word_list.push({word: word_freq[0], size: Number(word_freq[1])});
+    ret_word_list.push({word: word_freq[0], size: Number(word_freq[1])});
   }
 
-  return word_list;
+  // Remove entries with either "blank" words or null frequency values
+  for (entry in ret_word_list) {
+    x = ret_word_list[entry]
+    if (x.word == "" || Number.isNaN(x.size)){
+      ret_word_list.splice(entry, 1);
+    }
+  }
+
+  //console.log(ret_word_list);
+  return ret_word_list;
 }
 
 
-// Compare the two distributions (input vs. preselected word list)
+// Parse and format input text
+function read_input() {
+
+  var x = document.getElementById("in1");
+  var text_string = document.getElementById("in1").value;
+
+  if (text_string == "") { // ensure text has been inputed
+    x.style.background = "#ff0000";
+    setTimeout(function() {
+      x.style.background = "white";
+    }, 250);
+    return "";
+  }
+  else {
+
+    // Split input string into an array (excluding punctuation)
+    text_string = text_string.toLowerCase();
+    text_string = text_string.replace(/[.,\/#!$%\^&\*;:{}=0-9\-_`~()\'\"\[\]]/g,"");
+    text_string = text_string.replace(/\n+|\s+/g," ");
+    var word_list = text_string.split(" ");
+
+    if(word_list[word_list.length-1] == "") { // remove last element if empty
+      word_list.splice(-1, 1);
+    }
+  }
+
+  // Calculate the frequency of each word
+  var freqs = {};
+  var freq_val;
+
+  for (var i=0; i < word_list.length; i++){
+    freq_val = word_list[i];
+    if (freq_val in freqs) {
+      freqs[freq_val]++;
+    }
+    else {
+      freqs[freq_val] = 1;
+    }
+  }
+
+  // Eliminate duplicates (i.e. create array with unique words)
+  var no_dups = [];
+  for (freq_val in freqs) {
+    no_dups.push(freq_val);
+  }
+
+  function orderfreq(a, b) { // function to sort word list from highest to lowest frequency
+    return freqs[b] - freqs[a];
+  }
+  no_dups.sort(orderfreq); // sort word list from highest to lowest frequency
+
+  // Format user input word/freq info to be the same as that of the preselected word list
+  var new_list = [];
+  for (word in no_dups) {
+    word = no_dups[word];
+    new_list.push({word: word, size: freqs[word]});
+  }
+
+  return new_list;
+}
+
+
+// Compare the input text to the predetermined word list
 async function comp() {
 
-// Get input text
-var x = document.getElementById("in1");
-var text_string = document.getElementById("in1").value;
+  a = document.getElementById("rule_dropdown").value;
+  word_list_new = read_input();
+  word_list_pre = await read_wordlists(a);
 
-if (text_string == "") { // ensure text has been inputed
-  x.style.background = "#ff0000";
-  setTimeout(function() {
-    x.style.background = "white";
-  }, 250);
-return "";
-}
-else {
+  //console.log(word_list_new)
+  //console.log(word_list_pre)
 
-  // Split input string into an array (excluding punctuation)
-  text_string = text_string.toLowerCase();
-  text_string = text_string.replace(/[.,\/#!$%\^&\*;:{}=0-9\-_`~()\'\"\[\]]/g,"");
-  text_string = text_string.replace(/\n+|\s+/g," ");
-  var word_list = text_string.split(" ");
+  var word_list_input = [];
 
-  if(word_list[word_list.length-1] == "") { // remove last element if empty
-    word_list.splice(-1, 1);
-  }
-}
-
-// Calculate the frequency of each word
-var freqs = [];
-word_list.forEach(function(x) {
-freqs[x] = (freqs[x]||0) + 1;
-});
-
-// Create a table/dictionary that lists the word followed by its frequency
-var word_list_new = [];
-var i = 0;
-for (w in freqs) {
-  word_list_new[i] = {word: w, size: freqs[w]};
-  i ++;
-}
-
-// Sort the table/dictionary (high to low frequency)
-word_list_new.sort(function(a, b) {
-  return b.size - a.size;
-});
-
-
-// Compare the input text to the predetermined word list (i.e. get the arrays/frequencies of the same input words that are in the word list)
-var word_list_fixed = [];
-var word_list_temp = [];
-
-a = document.getElementById("rule_dropdown").value;
-word_list_pre = await read_wordlists(a);
-
-word_list_new.forEach(function(x1) {
-  word_list_pre.forEach(function(x2) {
-    if (x1["word"] == x2["word"]) { // search the preselected word list for the input words
-      word_list_fixed.push(x2);
-      word_list_temp.push(x1);
-      word_list_new.splice(x1, 1);
-    }
+  word_list_new.forEach(function(x1, i) {
+    word_list_pre.forEach(function(x2) {
+      if (x1["word"] == x2["word"]) { // search the preselected word list for the input words
+        word_list_input.push(x1); // create array of matched words with the user's word list frequencies
+        word_list_new.splice(i, 1); // once a match has been found with a user's input word, remove that word from the initial list
+      }
+    });
   });
-});
 
-// If a word in the input string is not in the preselected word list, include the word in the preselected word list, but set the frequency to 0
-word_list_new.forEach(function(x) {
-word_list_temp.push(x);
-word_list_fixed.push({word: x["word"], size: 0});
-});
+  initial_prelength = word_list_pre.length; // get length prior to adding the "empty" entries below
 
-var word_list_input = word_list_temp;
+  // If a word in the input string is not in the preselected word list, include the word in the preselected word list, but set the frequency to 0
+  word_list_new.forEach(function(x) { // word_list_new now contains all user input words that weren't previously matched
+    word_list_input.push(x);
+    word_list_pre.push({word: x["word"], size: 0});
+  });
 
+  //console.log(word_list_pre);
+  //console.log(word_list_input);
 
-// Turn the input and fixed word lists into probability distributions
-// (1) Calculate the total frequency count for both the input string and the preselected word list
-input_total = [];
+  // Turn the input and fixed word lists into probability distributions
+  // (1) Calculate the total frequency count for both the input string and the preselected word list
+  input_total = [];
 
-for (element in word_list_input) {
-  entry = word_list_input[element];
-  input_total.push(entry["size"]);
-}
+  for (element in word_list_input) {
+    entry = word_list_input[element];
+    input_total.push(entry["size"]);
+  }
 
-input_total = input_total.reduce((num_tot, num_new) => num_tot + num_new, 0); // freq total for input
+  input_total = input_total.reduce((num_tot, num_new) => num_tot + num_new, 0); // freq total for input list
 
+  fixed_total = [];
 
-length_fixed = [];
+  for (element in word_list_pre) {
+    entry = word_list_pre[element];
+    fixed_total.push(entry["size"]);
+  }
 
-for (element in word_list_pre) {
-  entry = word_list_pre[element];
-  length_fixed.push(entry["size"]);
-}
+  fixed_total = fixed_total.reduce((num_tot, num_new) => num_tot + num_new, 0); // freq total for fixed list (including all words in preselected lists, not just the matched ones)
 
-length_fixed.filter(function(x) { // remove NaN values
-  return !Number.isNaN(x);});
+  //console.log(input_total);
+  //console.log(fixed_total);
 
-// Get total frequency count for length_fixed as with input_total (Note: reduce would not work for some reason, hence the different approach here)
-var fixed_total = 0;
-for (x in length_fixed) {
-  fixed_total += length_fixed[i]; // freq total for preselected word list
-}
+  // (2) Calculate the probabilites (with add-one smoothing)
+  var input_list_probs = [];
+  var pre_list_probs = []
 
-// (2) Calculate the probabilites (add-one smoothing)
-var wc_list_input = [];
-var input_prob = [];
-var wc_list_fixed = [];
-var fixed_prob = [];
+  for (element in word_list_input) {
+    entry = word_list_input[element];
+    word = entry["word"];
+    prob = (entry["size"] + 1) / (input_total + word_list_input.length + 1); // add-one smoothing - num: count of the word + 1; den: frequency count of entire input string + # of uniqe words in input string + 1
+    input_list_probs[element] = {word, prob};
+  }
 
-for (element in word_list_input) {
-  entry = word_list_input[element];
-  word = entry["word"];
-  prob = (entry["size"] + 1)/(input_total + word_list_input.length + 1); // add-one smoothing - num: count of the word + 1; den: frequency count of entire input string + # of uniqe words in input string + 1
-  wc_list_input[element] = {word, prob}; // keep for record of word/probabilities
-  input_prob[element] = prob; // record the probabilities
-}
+  for (element in word_list_pre) {
+    entry = word_list_pre[element];
+    word = entry["word"];
+    prob = (entry["size"] + 1)/(fixed_total + initial_prelength + 1); // add-one smoothing - num: count of the word + 1; den: frequency count of entire word list + # of unique words in word list + 1
+    pre_list_probs[element] = {word, prob};
+  }
 
-for (element in word_list_fixed) {
-  entry = word_list_fixed[element];
-  word = entry["word"];
-  prob = (entry["size"] + 1)/(fixed_total + word_list_pre.length + 1); // add-one smoothing - num: count of the word + 1; den: frequency count of entire word list + # of unique words in word list + 1
-  wc_list_fixed[element] = {word, prob}; // keep for record of word/probabilities
-  fixed_prob[element] = prob; // record the probabilities
-}
+  //console.log(input_list_probs);
+  //console.log(pre_list_probs);
 
+  // (3) Calculate the pointwise kl-divergence between the two distributions
+  var docProb;
+  var corpusProb;
+  var kl_value;
+  var kl_vals = [];
+  var kl_pos = []; // for words and values
+  var kl_posvals = []; // for values only
+  var kl_neg = []; // for words and values
+  var kl_negvals = []; // for values only
+  var wc_word_list = [];
 
-// Calculate kl-divergence between the two distributions
-var kl = math.kldivergence(fixed_prob, input_prob); // TODO: figure out how to get absolute pointwise kl-divergence
+  for (entry1 in input_list_probs) {
+    docProb = input_list_probs[entry1];
+    docProb_word = docProb["word"];
+    for (entry2 in pre_list_probs) {
+      corpusProb = pre_list_probs[entry2];
+      corpusProb_word = corpusProb["word"];
 
-// TODO: figure out how to get absolute pointwise kl-divergence
-// For now, I multiply the resulting kl-divergence by the frequencies of the input word_lsit
-var wc_word_list = [];
-var wc_prob_list = [];
+      if (docProb_word == corpusProb_word) {
 
-for (i in word_list_input) {
-  x = word_list_input[i];
-  word = x["word"];
-  size = (x["size"] * kl);
-  wc_prob_list[i] = size;
-  wc_word_list[i] = {word, size};
-}
+        kl_value = docProb["prob"] * Math.log(docProb["prob"] / corpusProb["prob"]);
+        kl_vals[entry1] = kl_value;
+        wc_word_list.push({word: docProb["word"], kl: kl_value});
 
-return [wc_word_list, wc_prob_list];
+        if (kl_value > 0) {
+          kl_pos.push({word: docProb["word"], kl: kl_value});
+          kl_posvals[entry1] = kl_value;
+        }
+        else {
+          kl_neg.push({word: docProb["word"], kl: kl_value});
+          kl_negvals[entry1] = Math.abs(kl_value); // need absolute value for word size in word cloud(s)
+        }
+      }
+    }
+  }
+
+  //console.log(wc_word_list)
+  //console.log(kl_pos);
+  //console.log(kl_neg);
+  //console.log(kl_negvals);
+
+  // wc_word_list and kl_vals aren't necessarily needed any further, but I kept them for access
+  return [kl_pos, kl_posvals, kl_neg, kl_negvals, wc_word_list, kl_vals];
 }

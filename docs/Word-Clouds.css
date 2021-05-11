@@ -25,7 +25,7 @@
 
 body{
 	background: #f2f2f2;
-	font-size: 14px;
+	font-size: 15px;
 }
 
 h3 small{
@@ -82,21 +82,21 @@ textarea {
 	height: 80px;
 }
 
-#lf_wc {
+#under_wc {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 300px;
+	height: 500px;
 	background: white;
 	padding: 5px;
 	border: solid #f2f2f2;
 }
 
-#hf_wc {
+#over_wc {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 300px;
+	height: 500px;
 	background: white;
 	padding: 5px;
 	border: solid #f2f2f2;
@@ -105,37 +105,20 @@ textarea {
 #whole_wc {
 	display: flex;
 	align-items: center;
+	height: 500px;
 	justify-content: center;
-	height: 300px;
 	background: #f2f2f2;
 }
 
-#KL_legend {
-	height: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.legend_marker {
-	display: inline-block;
-	overflow: auto;
-	margin: 10px;
-}
-
-.color {
-	float: left;
-	display: flex;
-	height: 25px;
-	width: 25px;
-	margin: 5px;
-}
-
-.text {
-	float: left;
-	display: flex;
-	height: 35px;
-	align-items: center;
+div.hover_freqs {
+     position: absolute;
+     text-align: center;
+     padding: 5px;
+     background: white;
+     color: black;
+     border: 1px solid black;
+     border-radius: 8px;
+     font-size: 12px;
 }
 
 
