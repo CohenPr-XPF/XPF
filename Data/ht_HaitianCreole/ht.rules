@@ -6,6 +6,7 @@ type,sfrom,sto,weight,precede,follow,comment
 class,passthrough,[abdefhiklmnopstvwz],,,,
 class,vowels-and-g,(a|à|e|è|i|ì|o|ò|u|ù|g),,,,
 class,nasal-vowels,(a|e|o|u),,,,
+class,non-nasal-vowels,(à|è|ì|ò|ù),,,,
 class,punctuation,['‘’-],,,,
 # Individual Letters
 sub,à,a,1,,,
@@ -40,5 +41,11 @@ sub,u,u,3,,n{vowels-and-g},
 sub,o,u,3,,un{vowels-and-g},
 sub,u,,3,o,{vowels-and-g},"clean-up",
 sub,n,n,3,,{vowels-and-g},
+sub,à,a n,4,,n,
+sub,è,ɛ n,4,,n,
+sub,ì,i n,4,,n,
+sub,ò,ɔ n,4,,n,
+sub,ù,u n,4,,n,
+sub,n,,4,{non-nasal-vowels},,
 # Misc. Rules
 sub,{punctuation},,1,,,apostrophes and hyphens are optional in the orthography
