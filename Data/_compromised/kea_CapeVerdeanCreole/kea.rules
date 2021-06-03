@@ -4,7 +4,7 @@
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
 class,passthrough,[abdefiklmnopstuvz],,,,
-class,vowels,[aáâeéêiíoóôu],,,,
+class,vowels,[aáâeéêiíoóôuú],,,,
 class,not-h,[aáâeéêiíoóôubdfgjklmnprstvxz],,,,
 class,punct,['ꞌ‘’-],,,,
 # Individual Letters

@@ -3,7 +3,7 @@
 # Last Updated: 2020-06-02
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
-class,output,(ɑ|β|ɛ|ɣ|i|k|l|m|n|ŋ|ɔ|p|r|s|t|u),,,,
+class,output,[ɑβɛɣiklmnŋɔprstu],,,,
 class,passthrough,[iklmnprstu],,,,
 # Individual Letters
 sub,a,ɑ,4,,,
