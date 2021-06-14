@@ -4,7 +4,7 @@
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
 class,punct,[''’ʻ-],,,,
-class,w,[аeёиоыюяу],,,,
+class,w,(а|е|ё|и|о|ы|ю|я|у),,,,
 # Individual Letters
 sub,а,ɑ,1,,,
 sub,б,b,1,,,
@@ -26,8 +26,8 @@ sub,р,r,1,,,
 sub,с,s,1,,,
 sub,т,t,1,,,
 sub,у,u,1,,,
-sub,у,w,2,{w},,"<y> goes to /w/ following a handful of vowels and semi-vowels",
-sub,у,u,3,{w}у,,"accounts for <yy> sequences preceded by any character listed in {w}",
+sub,у,w,4,{w},,"<y> goes to /w/ following a handful of vowels and semi-vowels",
+sub,у,u,5,{w}у,,"accounts for <yy> sequences preceded by any character listed in {w}",
 sub,ў,w,1,,,
 sub,х,x,1,,,
 sub,ч,tʃ,1,,,

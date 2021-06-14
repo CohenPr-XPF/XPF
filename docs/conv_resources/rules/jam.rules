@@ -30,4 +30,4 @@ sub,a,,3,i,,"clean-up",
 sub,o,au,2,,u,
 sub,u,,2,o,,"clean-up",
 # Long Vowels
-ipasub,({longv}) \1\b,\1 ː,1,,,
+ipasub,\b({longv}) \1\b,\1 ː,1,,,

@@ -70,8 +70,8 @@ alphabet <- read.table(textConnection('
 Grapheme       Phoneme
 "a"             "/a/"
 "e"             "/e/"
-"g"             "/ŋ/"
 "f"             "/f/"
+"g"             "/ŋ/"
 "i"             "/i/"
 "k"             "/k/"
 "l"             "/l/"

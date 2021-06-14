@@ -6,7 +6,7 @@ type,sfrom,sto,weight,precede,follow,comment
 class,punct,[''’ʻ́ -],,,,
 class,palatals,[дзлнст],,,,
 class,softvowels,[еёиюяь],,,,
-class,consonants,[bvɡd̪ɟʐz̪ʑjkl̪ʎmn̪ɲpr̪s̪ɕt̪cʂ],,,,
+class,consonants,(b|v|ɡ|d̪|ɟ|ʐ|z̪|ʑ|j|k|l̪|ʎ|m|n̪|ɲ|p|r̪|s̪|ɕ|t̪|c|ʂ),,,,
 # Individual Letters
 sub,а,a,1,,,
 sub,б,b,1,,,

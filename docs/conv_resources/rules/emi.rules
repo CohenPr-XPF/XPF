@@ -22,5 +22,5 @@ sub,g,,6,n,,"<ng> cleanup"
 # sub,g,ŋ,4,,,
 # sub,q,ɣ,4,,,
 # Misc. Rules
-ipasub,({output}) \1\b,\1 ː,2,,,"vowel lengthening / consonant gemination"
+ipasub,\b({output}) \1\b,\1 ː,2,,,"vowel lengthening / consonant gemination"
 sub,-,,2,,,

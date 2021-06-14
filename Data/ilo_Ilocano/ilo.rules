@@ -19,7 +19,7 @@ sub,({passthrough}),\1,2,,,
 sub,n,ŋ,2,,g,
 sub,g,,2,n,,"clean-up",
 # Gemination
-ipasub,({gem}) \1\b,\1 ː,2,,,
+ipasub,\b({gem}) \1\b,\1 ː,2,,,
 sub,t,t̪ ː,2,,t,
 sub,t,,2,t,,"clean-up"
 sub,d,d̪ ː,2,,d,

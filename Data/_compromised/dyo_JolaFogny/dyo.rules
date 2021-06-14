@@ -30,9 +30,9 @@ sub,({passthrough}),\1,0.1,,,
 sub,({+ATR}),\1,4,{+ATR-input}+,,"only first +ATR vowel is marked, all following vowels share the same feature, but are unmarked"
 sub,({+ATR}),\1,4,{+ATR-input}.+,,"only first +ATR vowel is marked, all following vowels share the same feature, but are unmarked"
 # Long Vowels
-ipasub,({vowels}) \1\b,\1 ː,2,,,
+ipasub,\b({vowels}) \1\b,\1 ː,2,,,
 # Misc. Rules
-ipasub,({gem}) \1\b,\1 ː,2,,,"consonant gemination"
+ipasub,\b({gem}) \1\b,\1 ː,2,,,"consonant gemination"
 ipasub,e ʊ,eʊ,2,,,
 ipasub,i u,iu,2,,,
 ipasub,ɪ e,ɪe,2,,,

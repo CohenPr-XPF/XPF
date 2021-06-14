@@ -3,7 +3,7 @@
 # Edited by: Emily
 # Last updated: 2020-06-18
 type,sfrom,sto,weight,precede,follow,comment
-# Class Rules 
+# Class Rules
 class,passthrough,[abefhiklmnprsvz],,,,
 class,n-follower,(t|d|g|k|ts|j),,,,
 class,bi-stop,[pb],,,,
@@ -23,13 +23,13 @@ sub,({passthrough}),\1,1,,,
 sub,t,t̪,2,,,
 sub,d,d̪,2,,,
 # Digraphs
-sub,b,ᵐb,2,m,,
-sub,p,ᵐp,2,m,,
-sub,d,ⁿd̪,2,n,,
+sub,b,ᵐb,3,m,,
+sub,p,ᵐp,3,m,,
+sub,d,ⁿd̪,3,n,,
 sub,t,ⁿt̪,3,n,,
-sub,g,ᵑɡ,2,n,,
-sub,k,ᵑk,2,n,,
-sub,j,ⁿdz,2,n,,
+sub,g,ᵑɡ,3,n,,
+sub,k,ᵑk,3,n,,
+sub,j,ⁿdz,3,n,,
 sub,t,tʳ,3,,r,
 sub,d,dʳ,3,,r,
 sub,t,ts,3,,s,
@@ -37,8 +37,8 @@ sub,m,,3,,{bi-stop},"clean-up",
 sub,n,,3,,{n-follower},"clean-up",
 sub,s,,4,t,,"clean-up",
 # Trigraphs
-sub,t,ⁿtʳ,4,n,r
-sub,d,ⁿdʳ,4,n,r
+sub,t,ⁿtʳ,5,n,r,
+sub,d,ⁿdʳ,5,n,r,
 sub,t,ⁿts,5,n,s,
 sub,r,,2,{alv},,"clean-up",
 # Vowels

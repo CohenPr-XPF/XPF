@@ -23,7 +23,7 @@ sub,g,,3,n,,"clean-up",
 sub,t,t̪,3,,t,
 sub,t,,3,t,,"clean-up",
 # Vowel Length
-ipasub,({vowels}) \1\b,\1 ː,2,,,
+ipasub,\b({vowels}) \1\b,\1 ː,2,,,
 # Diphthongs
 sub,a,ae,4,,e,
 sub,a,ai,4,,i,

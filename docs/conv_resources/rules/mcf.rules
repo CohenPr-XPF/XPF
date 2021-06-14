@@ -24,4 +24,4 @@ sub,s,,4,t,,"clean-up",
 sub,q,k,3,,u{qu-vowel},
 sub,u,,3,q,,"clean-up",
 # Consonant Gemination
-ipasub,({gem}) \1\b,\1 ː,2,,,
+ipasub,\b({gem}) \1\b,\1 ː,2,,,

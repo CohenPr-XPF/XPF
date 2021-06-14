@@ -48,5 +48,5 @@ ipasub,o i,oi,2,,,
 ipasub,u i,ui,2,,,
 ipasub,ʉ i,ʉi,2,,,
 ipasub,ɘ i,ei,2,,,
-ipasub,({vowel-out}) \1\b,\1 ː,3,,,
+ipasub,\b({vowel-out}) \1\b,\1 ː,3,,,
 sub,-,,1,,,"a hyphen with no phonetic value occurs on occasion"

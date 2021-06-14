@@ -29,6 +29,6 @@ sub,i,,3,{i-dip},,"clean-up",
 sub,({o-dip}),\1o,4,,o,
 sub,o,,3,{o-dip},,"clean-up",
 # Long Vowels
-ipasub,({vowels}) \1\b,\1 ː,2,,,
+ipasub,\b({vowels}) \1\b,\1 ː,2,,,
 # Misc. Rules
 sub,{punct},,2,,,hyphens and dashes add no phonemic value,

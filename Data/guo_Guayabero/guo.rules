@@ -31,4 +31,4 @@ sub,u,,3,q,,"clean-up",
 # Long /a/
 ipasub,a a,aː,2,,,
 # Non-geminates
-ipasub,({gem}) \1\b,\1 ː,2,,,
+ipasub,\b({gem}) \1\b,\1 ː,2,,,

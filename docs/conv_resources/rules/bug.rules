@@ -20,8 +20,8 @@ sub,g,,2,n,,"clean-up",
 sub,n,ɲ,2,,y,
 sub,y,,2,n,,"clean-up",
 # Long Vowels
-ipasub,({longvowels}) \1\b,\1,2,,,
+ipasub,\b({longvowels}) \1\b,\1,2,,,
 # Geminates
-ipasub,({gem}) \1\b,\1 ː,2,,,
+ipasub,\b({gem}) \1\b,\1 ː,2,,,
 # Misc. Rules
 sub,-,,2,,,

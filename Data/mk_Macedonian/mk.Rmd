@@ -92,7 +92,7 @@ alphabet <- read.table(textConnection('
       "р"	                     "r"                       "/r/"                  ""
       "с"	                     "s"                       "/s̪/"                  ""
       "т"	                     "t"                       "/t̪/"                  ""
-      "ḱ"                      "kj"                      "/c/"                  ""
+      "ќ"                      "kj"                      "/c/"                  ""
       "у"	                     "u"                       "/u/"                  ""
       "ф"	                     "f"                       "/f/"                  ""
       "х"	                     "h"                       "/x/"                  ""

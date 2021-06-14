@@ -20,7 +20,7 @@ Last Updated: 2020-06-16
 
 ## Consonants
 
-* Consonant length is contrastive for voiceless (unaspirated) stops (including /tʃ/), nasals, and laterals /l/ and /ɭ/ [@Panel2018, p. 6; @Jiang2010, p. 8].
+* Consonant length is contrastive for voiceless (unaspirated) stops (including /tʃ/), nasals, and laterals /l/ and /ɭ/, and it is indicated orthographically by duplicate characters separated by a virama [@Panel2018, p. 6; @Jiang2010, p. 8], see Alphabet.
 * /t̪ʰ/, /d̪ʱ/, /ʈʰ/, and /ɖʱ/ are very marginal [@Jiang2010, p. 17].
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
@@ -93,8 +93,8 @@ alphabet <- read.table(textConnection('
 "ച"                       "/tʃa/"             ""
 "ഛ"                     "/tʃʰa/"             ""
 "ജ"                       "/ɟa/"              ""
-"ഝ"                     "/ɟʱ/"              ""
-"ഞ"                     "/ɲa/"             ""
+"ഝ"                     "/ɟʱa/"             ""
+"ഞ"                     "/ɲa/"              ""
 "ട"                       "/ʈa/"              ""
 "ഠ"                      "/ʈʰa/"              ""
 "ഡ"                      "/ɖa/"              ""

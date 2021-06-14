@@ -41,6 +41,6 @@ sub,n,n,4,,tsh,"deals with <ntsh> sequences"
 # Diphthongs and Long Vowels
 ipasub,i a,ia,2,,,
 ipasub,o a,oa,2,,,
-ipasub,({vowels}) \1\b,\1 ː,2,,,
+ipasub,\b({vowels}) \1\b,\1 ː,2,,,
 # Misc. Rules
 sub,{punct},,1,,,

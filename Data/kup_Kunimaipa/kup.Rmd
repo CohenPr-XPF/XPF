@@ -82,10 +82,10 @@ Grapheme       Phoneme
 "p"             "/p/"
 "r"             "/r/"
 "s"             "/s/"
-"z"             "/z/"
 "t"             "/t/"
 "u"             "/u/"
 "v"             "/β/"
+"z"             "/z/"
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%

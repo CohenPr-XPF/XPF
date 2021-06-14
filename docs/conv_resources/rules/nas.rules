@@ -19,4 +19,4 @@ sub,n,n,2,,g,
 sub,g,,2,n,,"clean-up",
 # Misc. Rules
 sub,-,,1,,,"hyphens may be used to indicate morpheme boundaries"
-ipasub,({vowel}) \1\b,\1 ː,2,,,
+ipasub,\b({vowel}) \1\b,\1 ː,2,,,

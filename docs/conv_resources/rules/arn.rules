@@ -44,4 +44,4 @@ sub,h,,3,l,,"clean-up",
 sub,j,ʎ,2,,,
 sub,v,ɘ,2,,,
 # Geminates
-ipasub,({gem}) \1\b,\1 ː,2,,,
+ipasub,\b({gem}) \1\b,\1 ː,2,,,

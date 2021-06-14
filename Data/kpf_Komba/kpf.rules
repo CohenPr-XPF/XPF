@@ -20,7 +20,7 @@ sub,g,ɡʷ,3,,w,
 sub,k,kʷ,3,,w,
 sub,w,,3,{w-preceder},,
 # Long Vowels
-ipasub,({vowels-output}) \1\b,\1 ː,2,,,
+ipasub,\b({vowels-output}) \1\b,\1 ː,2,,,
 sub,a,ḁ ː,3,^h,,
 sub,â,ɐ̥ ː,3,^h,,
 sub,e,e̥ ː,3,^h,,

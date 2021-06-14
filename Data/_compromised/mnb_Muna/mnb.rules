@@ -2,7 +2,7 @@
 # Written by: Emily
 # Last Updated: 2020-06-16
 type,sfrom,sto,weight,precede,follow,comment
-# Class Rules 
+# Class Rules
 class,passthrough,[abdfhiklmnprstuw],,,,
 class,m-followers,[pb],,,,
 class,h-preceders,[bdg],,,,
@@ -27,10 +27,10 @@ sub,n,ⁿd,4,,d,
 sub,n,ⁿs,4,,s,
 sub,n,ŋ,4,,g,
 sub,{n-followers},,3,n,,"clean-up",
-sub,n,ᵑk,4,,gk,
-sub,n,ᵑɡ,4,,gg,
-sub,k,,3,ng,,"clean-up",
-sub,g,,3,ng,,"clean-up",
+sub,n,ᵑk,7,,gk,
+sub,n,ᵑɡ,7,,gg,
+sub,k,,6,ng,,"clean-up",
+sub,g,,6,ng,,"clean-up",
 # Misc. Rules
 sub,{apostrophe},,2,,,
 sub,-,,2,,,

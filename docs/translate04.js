@@ -102,9 +102,11 @@ class SubRule {
           value = value.replaceAll(/\\([1-9])/, "@$1").replaceAll("@", "$")
           }
         }
-        // remove word boundaries since every character is space separated (only relevant in python scrips for computing frequency and informativity measures)
+
+        // control for word boundaries (differences between python and javascript)
         if (key == "sfrom" && value.includes("\\b")) {
-          value = value.replaceAll(/\\b/, "");
+          value = value.replace(/\\b$/, "(?=\\s|$)");
+          value = value.replace(/^\\b/, "(?<=^|\\s)");
         }
 
         // value = RegExp(value)

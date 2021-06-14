@@ -47,4 +47,4 @@ sub,ц,t s,4,,,"/ts/ is not natively an affricate in Uzbek",
 # Digraphs
 sub,н,ŋ,6,,г,"<нг> = velar nasal",
 sub,г,,6,н,,"<нг> cleanup",
-ipasub,({cons-output}) \1\b,\1 ː,2,,,"consonant gemination",
+ipasub,\b({cons-output}) \1\b,\1 ː,2,,,"consonant gemination",

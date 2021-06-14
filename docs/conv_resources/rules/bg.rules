@@ -1,6 +1,6 @@
 # Bulgarian Rule Set
 # Written by: Bill
-# Last Updated: 2019-04-13
+# Last Updated: 2021-06-10 (ucp changed gemination rule)
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
 class,a,[aа],,,,
@@ -44,4 +44,4 @@ sub,-,,4,,,"a hyphen with no phonetic value occurs on occasion"
 sub,д,dʒ,5,,ж,
 sub,ж,,5,д,,"clean-up",
 # Geminates
-ipasub,(.) \1\b,\1 ː,2,,,,
+ipasub,\b([^\s]+) \1\b,\1 ː,2,,,,

@@ -29,5 +29,5 @@ sub,n,ŋ,6,,g,"<ng>"
 sub,g,,6,n,,"<ng> cleanup"
 ipasub,t s,ts,2,,,"<ts>"
 # Misc. Rules
-ipasub,({vowel}) \1\b,\1 ː,2,,,"vowel lengthening"
+ipasub,\b({vowel}) \1\b,\1 ː,2,,,"vowel lengthening"
 sub,({passthrough}),\1,0.1,,,

@@ -29,6 +29,6 @@ sub,î,i,2,,,
 sub,ô,o,2,,,
 sub,ê,e,2,,,
 # Gemination
-ipasub,({gem}) \1\b,\1 ː,2,,,
+ipasub,\b({gem}) \1\b,\1 ː,2,,,
 # Misc. Rules
 sub,{punctuation},,1,,,"apostrophes and hyphens have no phonemic value",

@@ -41,9 +41,9 @@ sub,ь,,4,д,,"clean-up",
 sub,н,ɲ,4,,ь,
 sub,ь,,4,н,,"clean-up",
 # Long Vowels
-ipasub,({vowels}) \1\b,\1 ː,2,,,
+ipasub,\b({vowels}) \1\b,\1 ː,2,,,
 # Gemination
-ipasub,({gem}) \1\b,\1 ː,2,,,
+ipasub,\b({gem}) \1\b,\1 ː,2,,,
 sub,н,ɲ ː,5,,нь,"exception",
 sub,н,,5,н,ь,"clean-up",
 sub,ь,,5,нн,,"clean-up",

@@ -32,6 +32,6 @@ sub,s,ʃ,3,,h,
 sub,h,,2,s,,"clean-up",
 sub,u,u,3,{u-preceder},,"prevents u from being deleted following <ch> and <sh>"
 # Consonant Gemination
-ipasub,({gem}) \1\b,\1 ː,2,,,
+ipasub,\b({gem}) \1\b,\1 ː,2,,,
 sub,r,ɹ̝ ː,3,,r,"the rule above can't handle <rr> for some reason"
 sub,r,,3,r,,"clean-up"

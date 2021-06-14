@@ -45,7 +45,7 @@ sub,c,tʃ,3,,s,
 sub,s,,3,c,,"clean-up",
 sub,c,ts,4,,sz,"in <csz> sequences, the <sz> digraph takes priority over <cs>"
 # Consonant Gemination
-ipasub,({gem-C}) \1\b,\1 ː,1,,,"regular duplicate graphemes",
+ipasub,\b({gem-C}) \1\b,\1 ː,1,,,"regular duplicate graphemes",
 ## Geminate Multigraphs
 sub,t,c ː,6,t,y,"tty",
 sub,g,ɟ ː,6,g,y,"ggy",

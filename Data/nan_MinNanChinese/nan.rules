@@ -112,9 +112,9 @@ ipasub,u ({tones}) ⁿ,ũ \1,3,,,
 ipasub,ⁿ,,2,,,"clean-up"
 ipasub,iaũ,ĩãũ,2.5,,,"triphthong"
 ipasub,uaĩ,ũãĩ,2.5,,,"triphthong"
-ipasub,a({nasalvowels})\b,ã\1,2,,,"a-diphthongs"
-ipasub,i({nasalvowels})\b,ĩ\1,2,,,"i-diphthongs"
-ipasub,u({nasalvowels})\b,ũ\1,2,,,"u-diphthongs"
+ipasub,\ba({nasalvowels})\b,ã\1,2,,,"a-diphthongs"
+ipasub,\bi({nasalvowels})\b,ĩ\1,2,,,"i-diphthongs"
+ipasub,\bu({nasalvowels})\b,ũ\1,2,,,"u-diphthongs"
 ipasub,iɔ̃,ĩɔ̃,2,,,"exception - rule above doesn't seem to apply"
 # Grapheme ⟨o⟩ -> /ɔ/
 ipasub,o ({tones}) p,ɔ \1 p,3,,,

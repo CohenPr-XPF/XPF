@@ -35,4 +35,4 @@ sub,ю,j u,1,,,,
 sub,я,j ɑ,1,,,,
 sub,({misc}),,1,,,,
 # ipasub Rules
-ipasub,({gem}) \1\b,\1 ː,2,,,,
+ipasub,\b({gem}) \1\b,\1 ː,2,,,,

@@ -50,13 +50,13 @@ sub,д,dz,4,,з,
 sub,з,,3,д,,"clean-up",
 # Palatalization
 ipasub,({pal}) ʲ{num},\1ʲ,6,,,"attaches palatalization diacritic to consonant",
-ipasub,ʲ1\b,j,5,,,"changes isolated palatalized diacritic to /j/",
-ipasub,ʲ2\b,,5,,,"deletes palatalization from <ь> when necessary",
+ipasub,\bʲ1\b,j,5,,,"changes isolated palatalized diacritic to /j/",
+ipasub,\bʲ2\b,,5,,,"deletes palatalization from <ь> when necessary",
 ipasub,no-pala,,4,,,"deletes apostrophe, maintaining non-palatalization",
 # Gemination
 ipasub,({gem}) \1ʲ,\1ʲ ː,3,,,"gemination when palatalized",
 ipasub,({gem}) \1 ({pal-out}),\1ʲ ː \3,4,,,"gemination when followed by palatalized cons",
-ipasub,({gem}) \1\b,\1 ː,1,,,"gemination when non-palatalized",
+ipasub,\b({gem}) \1\b,\1 ː,1,,,"gemination when non-palatalized",
 # Palatalization/Gemination Exception
 sub,д,dzʲ ː,5,д,з,"orthographic exception to gem ipasub with <ддз>"
 sub,д,,3,,д,"clean-up",
