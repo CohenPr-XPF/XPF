@@ -47,7 +47,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Dental", "A
 
 ## Vowels
 
-* Vowel length is contrastive [@MtBorg1997, p. 251].
+* Vowel length is contrastive [@MtBorg1997, p. 251]. See rules for more detail.
 * Authors seem to vary in terms of the vowel inventory:
     - @MtHume1996:             /a/ /e/ /i/ /o/ /u/  
     - @MtOrtho1996:            /a/ /ɛ/ /i/ /o/ /u/  
@@ -95,7 +95,7 @@ Grapheme      Phoneme                   Comment
 "f"            "/f/"                      ""
 "ġ"            "/dʒ/"                     ""
 "g"            "/ɡ/"                      ""  
-"h"            "/ː/"         "lengthens associated vowels"  
+"h"         "/ː/; /ħ/"  "/ː/: lengthens associated vowels (see rules); /ħ/: word-finally"  
 "ħ"            "/ħ/"   "realized by some speakers as [x] or [h]"    
 "i"         "/i/; /iː/"                   ""
 "j"            "/j/"                      ""
@@ -116,7 +116,7 @@ Grapheme      Phoneme                   Comment
 "ż"            "/z/"                      ""
 "z"            "/ts/"       "/dz/ appears in certain loanwords"
 **Digraph**     ""                        ""
-"għ"           "/ː/"         "lengthens associated vowels"
+"għ"           "/ː/"         "lengthens associated vowels (see rules)"
 "ie"           "/ɪː/"           "some authors use /ie/"
 "aj"          "/aj/"                      ""
 "aw"          "/aw/"                      ""

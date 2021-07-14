@@ -61,8 +61,7 @@ kable(consonants, align = 'c') %>%
 # Alphabet
 
 * The orthography used will be that of SIL International; the extant Nahuatl corpora are largely based on Bible translations, which were generally done by SIL.
-* The "saltillo" is the term used to collectively refer to the glottal consonants (/ʔ/ and /h/) in Nahuatl. Although they are typically considered interchangeable, both consonants are considered phonemic in this dialect. There are three characters sometimes used to indicate the saltillo: ⟨h⟩, ⟨j⟩, or ⟨'⟩. In assigning each character a specific phoneme, I have worked from my understanding of which is more common, represented below in the table.
-    - A grave accent (\`) on a vowel indicates that the vowel is followed by a glottal stop.
+* The "saltillo" is the term used to collectively refer to the glottal consonants (/ʔ/ and /h/) in Nahuatl. Although they are typically considered interchangeable, both consonants are considered phonemic in this dialect. There are three characters sometimes used to indicate the saltillo: ⟨h⟩, ⟨j⟩, or ⟨'⟩. Grave accents (\`) on vowels have also been used to indicate following glottal stops. In assigning each character a specific phoneme, I have worked from my understanding of which is more common, represented below in the table.
 * The SIL orthography suggests a few alternate characters/digraphs that I have removed due to their extreme scarcity in the Crúbadán corpus:
     - ⟨b⟩ was only attested in proper names, and in loanwords with fewer than 50 appearances.
     - ⟨v⟩ and ⟨'⟩ were unattested.

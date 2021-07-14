@@ -26,7 +26,7 @@ sub,ñ,ŋ,2,,g,
 sub,g,,2,ñ,,"clean-up",
 sub,c,tʃ,2,,h,
 sub,h,,2,c,,"clean-up",
-sub,q,k,2,,u,
+sub,q,k,2,,,
 sub,u,,2,q,,"clean-up",
 # Misc. Rules
 sub,{punct},,2,,,"hyphens and apostrophes have no phonemic value",

@@ -1,6 +1,6 @@
 # Yiddish (Romanization)
 # Written by Abi Creighton
-# Last Updated: 2019-10-07
+# Last Updated: 2021-07-09
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
 class,passthrough,[abdfhklmnpstvz],,,,
@@ -16,20 +16,20 @@ sub,u,ʊ,1,,,
 sub,y,j,1,,,
 sub,({passthrough}),\1,0.1,,,
 # Multigraphs
-sub,d,dʒ,1,,zh,
-sub,z,,2,d,h,"clean-up",
-sub,h,,2,dz,,"clean-up",
-sub,s,ʃ,1,,h,
-sub,h,,1,s,,"clean-up",
-sub,t,ts,1,,s,
-sub,s,,1,t,,"clean-up",
-sub,t,tʃ,1,,sh,
-sub,s,,2,t,h,"clean-up",
-sub,h,,2,,ts,"clean-up",
-sub,k,x,1,,h,
-sub,h,,1,k,,"clean-up",
-sub,z,ʒ,1,,h,
-sub,h,,1,z,,"clean-up",
+sub,d,dʒ,3,,zh,
+sub,z,,3,d,h,"clean-up",
+sub,h,,3,dz,,"clean-up",
+sub,s,ʃ,2,,h,
+sub,h,,2,s,,"clean-up",
+sub,t,ts,2,,s,
+sub,s,,2,t,,"clean-up",
+sub,t,tʃ,3,,sh,
+sub,s,,3,t,h,"clean-up",
+sub,h,,3,,ts,"clean-up",
+sub,k,χ,2,,h,
+sub,h,,2,k,,"clean-up",
+sub,z,ʒ,2,,h,
+sub,h,,2,z,,"clean-up",
 # Diphthongs
 sub,a,aɪ,2,,y,
 sub,e,ɛɪ,2,,y,

@@ -1,9 +1,9 @@
 # Tuvan
 # Written by Abi Creighton
-# Updated: 2020-06-19
+# Updated: 2021-07-09
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
-class,vowel,[ɑeioøuɯ],,,,
+class,vowel,[ɑeioøuyɯ],,,,
 class,gem,[ptkɡ],,,,
 # Individual Letters
 sub,а,ɑ,2,,,

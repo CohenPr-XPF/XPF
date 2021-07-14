@@ -1,1 +1,1 @@
-a,â,b,c,ç,d,e,ê,f,g,ğ,h,i,î,ı,j,k,l,m,n,o,ô,ö,p,r,s,ş,t,u,û,ü,v,y,z
+a,â,b,c,ç,d,e,ê,f,g,ğ,h,ı,i,î,j,k,l,m,n,o,ô,ö,p,r,s,ş,t,u,û,ü,v,y,z

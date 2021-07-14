@@ -94,7 +94,7 @@ Grapheme      Phoneme      Comment
 "w"            "/w/"         ""  
 "y"            "/j/"         ""
 **Digraph**      ""          ""
-"ng"           "/n/"         "realized as [ŋ]"
+"ng"           "/n/"         "precedes velar stops; realized as [ŋ]"
 "ny"           "/ɲ/"         ""  
 "sy"           "/ʃ/"         ""
 '), TRUE)

@@ -1,1 +1,1 @@
-a,á,a̱,c,d,e,é,e̱,g,h,i,í,j,k,m,n,ñ,o,ó,o̱,p,q,s,t,u,ú,u̱,v,x,y,'
+a,á,a̱,c,d,e,é,e̱,g,h,i,í,j,k,m,n,ñ,o,ó,o̱,p,q,s,t,',u,ú,u̱,v,x,y

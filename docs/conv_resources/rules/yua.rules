@@ -20,12 +20,12 @@ sub,h,,2,c,,"clean-up",
 sub,t,ts,2,,z,
 sub,z,,2,t,,"clean-up",
 # Ejectives
-sub,({ejectives}),\1ʼ,2,,{apostrophe},
+sub,({ejectives}),\1ʼ,3,,{apostrophe},
 sub,{apostrophe},,2,{ejectives},,"clean-up",
-sub,c,tʃʼ,2,,h{apostrophe},
-sub,{apostrophe},,2,h,,"clean-up"
-sub,t,tsʼ,2,,z{apostrophe},
-sub,{apostrophe},,2,z,,"clean-up",
+sub,c,tʃʼ,3,,h{apostrophe},
+sub,{apostrophe},,3,h,,"clean-up"
+sub,t,tsʼ,3,,z{apostrophe},
+sub,{apostrophe},,3,z,,"clean-up",
 # Vowel Shapes
 ## Low Tone
 sub,a,a ː ˨,2,,a,

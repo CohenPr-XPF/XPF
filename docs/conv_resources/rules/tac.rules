@@ -2,7 +2,7 @@
 # Written by: Bill
 # Last Updated: 2019-06-24
 type,sfrom,sto,weight,precede,follow,comment
-# Class Rules 
+# Class Rules
 class,apostrophe,['ꞌˈ‘’],,,,
 class,u-preceder,[hq],,,,
 class,passthrough,[aeihkmnopstuw],,,,
@@ -12,7 +12,6 @@ sub,c,k,4,,,
 sub,g,ɣ,4,,,
 sub,j,h,4,,,
 sub,l,ɭ,4,,,
-sub,q,k,4,,,
 sub,r,ɽ,4,,,
 sub,y,j,4,,,
 sub,{apostrophe},ʔ,4,,,
@@ -26,6 +25,7 @@ sub,ú,u,4,,,
 sub,c,tʃ,6,,h,"<ch> = /tʃ/"
 sub,h,,6,c,,"clean-up",
 sub,h,w,5,,u,"<hu> = /w/"
+sub,q,k,5,,u,"<qu> = /k/"
 sub,u,,5,{u-preceder},,"clean-up",
 # Misc. Rules
 sub,({passthrough}),\1,0.1,,,

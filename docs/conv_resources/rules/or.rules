@@ -137,3 +137,5 @@ ipasub,NASAL,,2,,,"the nasalization diacritic may follow consonants, however, na
 # Misc. Rules
 sub,-,,2,,,"hyphens have no phonemic value",
 ipasub,ERASE,@,1,,,"accounts for unattested combos",
+ipasub,ERASE ɾ u ERASE ɾ u,ERASE ɾ u,9,,,"accounts for problematic diacritic",
+ipasub,ERASE l u ERASE l u,ERASE l u,9,,,"accounts for problematic diacritic",

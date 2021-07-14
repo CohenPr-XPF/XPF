@@ -1,1 +1,1 @@
-a,â,ă,b,c,d,e,f,g,h,i,î,j,l,m,n,o,p,r,s,ș,t,ț,u,v,x,z
+a,ă,â,b,c,d,e,f,g,h,i,î,j,l,m,n,o,p,r,s,ș,t,ț,u,v,x,z

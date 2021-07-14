@@ -106,6 +106,7 @@ h3 small{
 .kb:hover {
     	background: cornflowerblue;
     	color: white;
+	cursor: pointer;
 }
 
 textarea {

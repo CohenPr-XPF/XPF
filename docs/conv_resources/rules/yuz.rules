@@ -30,7 +30,7 @@ sub,q,k,3,,u{f-vowel},
 sub,u,,3,q,,"clean-up",
 sub,s,ʃ,3,,h,
 sub,h,,2,s,,"clean-up",
-sub,u,u,3,{u-preceder},,"prevents u from being deleted following <ch> and <sh>"
+sub,u,u,4,{u-preceder},,"prevents u from being deleted following <ch> and <sh>"
 # Consonant Gemination
 ipasub,\b({gem}) \1\b,\1 ː,2,,,
 sub,r,ɹ̝ ː,3,,r,"the rule above can't handle <rr> for some reason"

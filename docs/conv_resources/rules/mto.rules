@@ -30,7 +30,7 @@ sub,{underline},,6,,
 # Digraphs
 sub,c,ʂ,6,,h,"ch"
 sub,h,,6,c,,
-sub,q,k,6,,,"qu"
+sub,q,k,6,,u,"qu"
 sub,u,,6,q,,
 sub,t,ts,6,,s,"ts"
 sub,s,,6,t,,

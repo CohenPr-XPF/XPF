@@ -153,12 +153,12 @@ Grapheme      Phoneme                    Comment
 "qu"           "/kw/"                     ""
 "th"           "/t̪ʰ/"                     ""
 "tr"           "/tɕ/; /ʈ/"     "/tɕ/: in northern dialect; /ʈ/ in southern dialect"
-"iȇ"           "/ie/"                    ""          
-"yȇ"           "/ie/"                    ""
+"iê"           "/ie/"                    ""          
+"yê"           "/ie/"                    ""
 "ia"           "/ie/"                    ""
 "ươ"           "/ɯɤ/"                    ""
 "ưa"           "/ɯɤ/"                    ""
-"uȏ"           "/uo/"                    ""
+"uô"           "/uo/"                    ""
 "ua"           "/uo/"                    ""
 '), TRUE)
 

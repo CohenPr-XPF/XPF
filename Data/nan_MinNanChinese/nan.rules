@@ -89,6 +89,7 @@ sub,̂,,6,,,"clean-up"
 # The rules below are written to reflect orthographic conventions for where to mark tone
 ipasub,i ˥ a ({tones}) u ˥,iau \1,5,,,
 ipasub,o ˥ a ({tones}) i {tones},uai \1,5,,,
+ipasub,u ˥ a ({tones}) i {tones},uai \1,5,,,
 ipasub,a ({tones}) i ˥,ai \1,4,,
 ipasub,a ({tones}) u ˥,au \1,4,,
 ipasub,i ˥ a ({tones}),ia \1,4,,

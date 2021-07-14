@@ -3,9 +3,10 @@
 # Last updated: 2020-08-13
 type,sfrom,sto,weight,precede,follow,comment
 # Class Rules
-class,passthrough,[aeiklmnopqstuw],,,,
+class,passthrough,[aeiklmnopstuw],,,,
 class,apostrophe,['ꞌ‘’],,,,
 class,glotalized,(k|p|t|tʃ|ts),,,,
+class,vowel,[aeiou],,,,,
 # Individual Letters
 sub,c,k,1,,,
 sub,j,h,1,,,
@@ -18,8 +19,10 @@ sub,({passthrough}),\1,0.1,,,
 # Digraphs
 sub,c,tʃ,2,,h,
 sub,h,,2,c,,"clean-up"
-sub,u,,2,q,,"clean-up: <qu> goes to /q/"
-sub,{apostrophe},,3,q,u,"clean-up: <q'u> also goes to /q/"
+sub,q,q,2,,u,
+sub,u,,2,q,,
+sub,q,q,3,,{apostrophe}u,
+sub,{apostrophe},,3,q,u,"clean-up"
 sub,u,,3,q{apostrophe},,"clean-up"
 sub,r,r,2,,r,
 sub,r,,2,r,,"clean-up"
@@ -31,3 +34,5 @@ sub,t,ts,2,,z,
 sub,z,,2,t,,"clean-up"
 # Ejectives
 ipasub,({glotalized}) ʔ,\1ʼ,3,,,
+# Vowel Length
+ipasub,({vowel}) \1,\1 ː,3,,,

@@ -11,7 +11,7 @@ Last Updated: 2019-06-28
 
 **Language Family:** Arawakan / Maipuran / Northern Maipuran / Upper Amazon / Western Nawiki / Yucuna
 
-* Yucuna is spoken in southern Columbia.
+* Yucuna is spoken in southern Colombia.
 
 # Phonology
 
@@ -45,7 +45,7 @@ kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", 
 
 * Although vowel nasalization is contrastive in a few rare cases, overall it is not considered a phonemic feature [@YcnSchauer1967, p. 66].
 * Adjacent vowels do not form diphthongs [@YcnSchauer1967, p. 67].
-* Stress is denoted by accented vowels; however, we do not account for stress, so accented vowels will be transcribed to their plain representations. 
+* Stress is denoted by accented vowels; however, we do not account for stress, so accented vowels will be transcribed to their plain representations.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 consonants <- read.table(textConnection('

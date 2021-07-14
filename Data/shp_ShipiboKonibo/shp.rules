@@ -6,14 +6,13 @@ type,sfrom,sto,weight,precede,follow,comment
 class,apostrophe,['ꞌˈ‘’],,,,
 class,u-preceder,[hq],,,,
 class,passthrough,[aikmnopstw],,,,
+class,h-preceder,(c|s|s̈),,,,
 # Individual Letters
 sub,b,β,4,,,
 sub,c,k,4,,,
 sub,e,ɨ,4,,,
 sub,j,h,4,,,
 sub,r,ɻ,4,,,
-sub,s,ʂ,8,,̈,"this pair of rules turns the <s̈h> digraph"
-sub,̈,,8,,,"into something that translate04 knows what to do with"
 sub,x,ʂ,4,,,
 sub,y,j,4,,,
 sub,{apostrophe},,4,,,"apostrophes mark glottal stops, which are non-phonemic in Shipibo"
@@ -26,7 +25,9 @@ sub,ó,o,4,,,
 sub,c,tʃ,6,,h,"<ch>"
 sub,s,ʃ,6,,h,"<sh>"
 sub,s̈,ʂ,6,,h,"<s̈h>"
-sub,h,,5,,,
+sub,h,,5,{h-preceder},,
+sub,s,ʂ,8,,̈h,"this pair of rules turns the <s̈h> digraph - unnatached combining diacritic"
+sub,̈,,8,s,h,
 sub,h,w,6,,u,"<hu>"
 sub,q,k,6,,u,"<qu>"
 sub,u,,6,{u-preceder},,

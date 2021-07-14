@@ -45,7 +45,7 @@ class,nasalizer,[ं],,,,
 class,null,[्],,,,
 class,misc-diacritics,[‍़-],,,,"a collection of diacritics that don't have phonetic value in Sunwar"
 # Class Rules (For IPASub Purposes)
-class,vowel,[aeiou],,,,
+class,vowel,(a|e|i|o|u|aː|uː),,,,
 class,vowel_nota,[eiou],,,,
 class,gem,(p|b|tʃ|k|m|n|p|s|t̪|l̪|pʰ|t̪ʰ|d̪|ʈ|ʈʰ|kʰ|ɡ|dʒ|ʃ|h|ŋ|ɾ|w|ɭ|j),,,,
 # Sub Rules (Consonants)

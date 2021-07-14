@@ -2,7 +2,7 @@
 # Written by: Emily
 # Last Updated: 2019-09-30
 type,sfrom,sto,weight,precede,follow,comment
-# Class Rules 
+# Class Rules
 class,passthrough,[abeimop],,,,
 class,h-preceder,[cs],,,,
 class,engma,(c|qu),,,,
@@ -44,9 +44,10 @@ sub,á,a ˦,2,,,
 sub,é,e ˦,2,,,
 sub,í,i ˦,2,,,
 sub,ó,o ˦,2,,,
-sub,ë́,ɨ ˦,2,,,
+sub,ë,ɨ ˦,3,,´,"using the combining diacritic doesn't seem to work; not prevalent in the corpus"
+sub,´,,3,ë,,,
 # Low Tone
-sub,({vowel}),\1 NO,2,,,
+ipasub,({vowel-output})(?!\s˦),\1 NO,6,,,
 # Long Vowels
 ipasub,({vowel-output}) ({tone}) \1 ({tone}),\1 \2 \4 ː,4,,,
 # Diphthongs

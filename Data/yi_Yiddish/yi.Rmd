@@ -26,18 +26,18 @@ library(kableExtra)
 
 
 consonants <- read.table(textConnection('
-"Manner of Articulation"   Labial      Alveolar     Postalveolar   Palatal    Velar    Glottal   
-Stops                      "p  b"       "t  d"           ""           ""      "k  ɡ"     ""
-Affricates                   ""          "ts"         "tʃ  dʒ"        ""        ""       ""
-Fricatives                 "f  v"       "s  z"         "ʃ  ʒ"         ""        "x"      "h"
-Nasals                       "m"          "n"            ""           ""        ""       ""
-Flaps                        ""           "ɾ"            ""           ""        ""       ""
-Approximants                 ""           "l"            ""           "j"       ""       ""
+"Manner of Articulation"   Labial      Alveolar     Postalveolar   Palatal    Velar    Uvular     Glottal   
+Stops                      "p  b"       "t  d"           ""           ""      "k  ɡ"     ""          ""
+Affricates                   ""          "ts"         "tʃ  dʒ"        ""        ""       ""          ""
+Fricatives                 "f  v"       "s  z"         "ʃ  ʒ"         ""        ""       "χ"         "h"
+Nasals                       "m"          "n"            ""           ""        ""       ""          ""
+Flaps                        ""           "ɾ"            ""           ""        ""       ""          ""
+Approximants                 ""           "l"            ""           "j"       ""       ""          ""
 '), TRUE)
 
-kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Glottal"), align = 'c') %>%
+kable(consonants, col.names = c("Manner of Articulation", "Labial", "Alveolar", "Postalveolar", "Palatal", "Velar", "Uvular", "Glottal"), align = 'c') %>%
   kable_styling("bordered") %>%
-  add_header_above(c("", "Place of Articulation" = 6)) %>%
+  add_header_above(c("", "Place of Articulation" = 7)) %>%
   column_spec(1, bold = TRUE) %>%
   footnote(general = "Note: For phonemes that share a cell, those on the left are voiceless and those on the right are voiced.", general_title = "")
 ```
