@@ -82,6 +82,15 @@ h3 small{
 
 }
 
+#language_info {
+	display: none;
+	padding: 0;
+	font-size: 12px;
+	color: #337ab7;
+	background: white;
+	border: white;
+}
+
 .kb1 { 
     	width: 100%;
     	height: 100px;
