@@ -1,6 +1,6 @@
 /* WC File Parser and Word List Calcs*/
 
-// Create html request in order to read word list files for each language
+// Create XMLHttpRequest request in order to read word list files for each language
 function get(url) {
 
   return new Promise(function(resolve, reject) {
@@ -35,7 +35,7 @@ async function read_wordlists(filename) {
 
   var rawdata = await get(filename);
   var lines = rawdata.split("\n");
-  var ret_word_list = [];
+  var word_list = {};
   var lines2 = [];
 
   // Exclude word/frequency entries where capital letters are present
@@ -45,25 +45,23 @@ async function read_wordlists(filename) {
     }
   }
 
-  // Create a table/dictionary that lists the word followed by its frequency
+  // Create a dictionary that lists word/frequency key value pairs
   for (var i=0; i < lines2.length; i++){
     str = lines2[i];
     word_freq = str.split(" ");
-    ret_word_list.push({word: word_freq[0], size: Number(word_freq[1])});
+    word_list[word_freq[0]] = Number(word_freq[1]);
   }
 
-  // Remove entries with either "blank" words or null frequency values
-  for (entry in ret_word_list) {
-    x = ret_word_list[entry]
-    if (x.word == "" || Number.isNaN(x.size)){
-      ret_word_list.splice(entry, 1);
+  // Remove blank entries or those with no recorded frequency
+  delete word_list[""];
+  for(word in word_list) {
+    if (Number.isNaN(word_list[word])){
+      delete word_list[word];
     }
-  }
+  };
 
-  //console.log(ret_word_list);
-  return ret_word_list;
+  return word_list;
 }
-
 
 // Parse and format input text
 function read_input() {
@@ -86,17 +84,16 @@ function read_input() {
     text_string = text_string.replace(/\n+|\s+/g," ");
     var word_list = text_string.split(" ");
 
-    if(word_list[word_list.length-1] == "") { // remove last element if empty
+    if(word_list[word_list.length - 1] == "") { // remove last element if empty
       word_list.splice(-1, 1);
     }
   }
 
   // Calculate the frequency of each word
   var freqs = {};
-  var freq_val;
 
   for (var i=0; i < word_list.length; i++){
-    freq_val = word_list[i];
+    var freq_val = word_list[i];
     if (freq_val in freqs) {
       freqs[freq_val]++;
     }
@@ -105,25 +102,12 @@ function read_input() {
     }
   }
 
-  // Eliminate duplicates (i.e. create array with unique words)
-  var no_dups = [];
-  for (freq_val in freqs) {
-    no_dups.push(freq_val);
-  }
-
   function orderfreq(a, b) { // function to sort word list from highest to lowest frequency
     return freqs[b] - freqs[a];
   }
-  no_dups.sort(orderfreq); // sort word list from highest to lowest frequency
+  Object.keys(freqs).sort(orderfreq); // sort word list from highest to lowest frequency
 
-  // Format user input word/freq info to be the same as that of the preselected word list
-  var new_list = [];
-  for (word in no_dups) {
-    word = no_dups[word];
-    new_list.push({word: word, size: freqs[word]});
-  }
-
-  return new_list;
+  return freqs;
 }
 
 
@@ -134,77 +118,44 @@ async function comp() {
   word_list_new = read_input();
   word_list_pre = await read_wordlists(a);
 
-  //console.log(word_list_new)
-  //console.log(word_list_pre)
+  var word_list_input = {};
 
-  var word_list_input = [];
+  for (word in word_list_new) {
+    if (word_list_pre.hasOwnProperty(word)) { // search the preselected word list for the input words
+      word_list_input[word] = word_list_new[word]; // create dictionary of matched words with the user's word list frequencies
+      delete word_list_new[word] // once a match has been found with a user's input word, remove that word from the initial list
+    }
+  }
 
-  word_list_new.forEach(function(x1, i) {
-    word_list_pre.forEach(function(x2) {
-      if (x1["word"] == x2["word"]) { // search the preselected word list for the input words
-        word_list_input.push(x1); // create array of matched words with the user's word list frequencies
-        word_list_new.splice(i, 1); // once a match has been found with a user's input word, remove that word from the initial list
-      }
-    });
-  });
-
-  initial_prelength = word_list_pre.length; // get length prior to adding the "empty" entries below
+  initial_prelength = Object.keys(word_list_pre).length // get length prior to adding the "empty" entries below
 
   // If a word in the input string is not in the preselected word list, include the word in the preselected word list, but set the frequency to 0
-  word_list_new.forEach(function(x) { // word_list_new now contains all user input words that weren't previously matched
-    word_list_input.push(x);
-    word_list_pre.push({word: x["word"], size: 0});
-  });
-
-  //console.log(word_list_pre);
-  //console.log(word_list_input);
+  for (word in word_list_new) { // word_list_new now contains all user input words that weren't previously matched
+    word_list_input[word] = word_list_new[word];
+    word_list_pre[word] = 0;
+  }
 
   // Turn the input and fixed word lists into probability distributions
   // (1) Calculate the total frequency count for both the input string and the preselected word list
-  input_total = [];
 
-  for (element in word_list_input) {
-    entry = word_list_input[element];
-    input_total.push(entry["size"]);
-  }
-
-  input_total = input_total.reduce((num_tot, num_new) => num_tot + num_new, 0); // freq total for input list
-
-  fixed_total = [];
-
-  for (element in word_list_pre) {
-    entry = word_list_pre[element];
-    fixed_total.push(entry["size"]);
-  }
-
-  fixed_total = fixed_total.reduce((num_tot, num_new) => num_tot + num_new, 0); // freq total for fixed list (including all words in preselected lists, not just the matched ones)
-
-  //console.log(input_total);
-  //console.log(fixed_total);
+  input_total = Object.values(word_list_input).reduce((num_tot, num_new) => num_tot + num_new, 0); // freq total for input list
+  fixed_total = Object.values(word_list_pre).reduce((num_tot, num_new) => num_tot + num_new, 0); // freq total for fixed list (including all words in preselected lists, not just the matched ones)
 
   // (2) Calculate the probabilites (with add-one smoothing)
-  var input_list_probs = [];
-  var pre_list_probs = []
+  var input_list_probs = {};
+  var pre_list_probs = {}
 
-  for (element in word_list_input) {
-    entry = word_list_input[element];
-    word = entry["word"];
-    prob = (entry["size"] + 1) / (input_total + word_list_input.length + 1); // add-one smoothing - num: count of the word + 1; den: frequency count of entire input string + # of uniqe words in input string + 1
-    input_list_probs[element] = {word, prob};
+  for (word in word_list_input) {
+    prob = (word_list_input[word] + 1) / (input_total + Object.keys(word_list_input).length + 1); // add-one smoothing - num: count of the word + 1; den: frequency count of entire input string + # of uniqe words in input string + 1
+    input_list_probs[word] = prob;
   }
 
-  for (element in word_list_pre) {
-    entry = word_list_pre[element];
-    word = entry["word"];
-    prob = (entry["size"] + 1)/(fixed_total + initial_prelength + 1); // add-one smoothing - num: count of the word + 1; den: frequency count of entire word list + # of unique words in word list + 1
-    pre_list_probs[element] = {word, prob};
+  for (word in word_list_pre) {
+    prob = (word_list_pre[word] + 1) / (fixed_total + initial_prelength + 1); // add-one smoothing - num: count of the word + 1; den: frequency count of entire word list + # of unique words in word list + 1
+    pre_list_probs[word] = prob;
   }
-
-  //console.log(input_list_probs);
-  //console.log(pre_list_probs);
 
   // (3) Calculate the pointwise kl-divergence between the two distributions
-  var docProb;
   var kl_value;
   var kl_vals = [];
   var kl_pos = []; // for words and values
@@ -213,29 +164,19 @@ async function comp() {
   var kl_negvals = []; // for values only
   var wc_word_list = [];
 
-  // convert pre_list_probs to dictionary with key/value pairs for easy comparison
-  var dict = {};
-  for(let i = 0; i < pre_list_probs.length; i++){
-    const {word, prob} = pre_list_probs[i];
-    dict[word] = prob;
-  };
-
-  for (entry1 in input_list_probs) {
-    docProb = input_list_probs[entry1];
-    docProb_word = docProb["word"];
-
-    if (Object.keys(dict).includes(docProb_word)) {
-      kl_value = docProb["prob"] * Math.log(docProb["prob"] / dict[docProb_word]);
-      kl_vals[entry1] = kl_value;
-      wc_word_list.push({word: docProb["word"], kl: kl_value});
+  for (word in input_list_probs) {
+    if (pre_list_probs.hasOwnProperty(word)) {
+      kl_value = input_list_probs[word] * Math.log(input_list_probs[word] / pre_list_probs[word]);
+      kl_vals.push(kl_value);
+      wc_word_list.push({word: word, kl: kl_value});
 
       if (kl_value > 0) {
-        kl_pos.push({word: docProb["word"], kl: kl_value});
-        kl_posvals[entry1] = kl_value;
+        kl_pos.push({word: word, kl: kl_value});
+        kl_posvals.push(kl_value);
       }
       else {
-        kl_neg.push({word: docProb["word"], kl: kl_value});
-        kl_negvals[entry1] = Math.abs(kl_value); // need absolute value for word size in word cloud(s)
+        kl_neg.push({word: word, kl: kl_value});
+        kl_negvals.push(Math.abs(kl_value)); // need absolute value for word size in word cloud(s)
       }
     }
   }
