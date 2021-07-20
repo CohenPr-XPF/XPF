@@ -38,7 +38,7 @@ async function read_wordlists(filename) {
   var ret_word_list = [];
   var lines2 = [];
 
-  // Exclude word/frequency entries where capital letters are present (TODO: verify)
+  // Exclude word/frequency entries where capital letters are present
   for (line in lines) {
     if (lines[line].match(/.*\p{Lu}.*/gu) == null) {
       lines2.push(lines[line]);
@@ -205,7 +205,6 @@ async function comp() {
 
   // (3) Calculate the pointwise kl-divergence between the two distributions
   var docProb;
-  var corpusProb;
   var kl_value;
   var kl_vals = [];
   var kl_pos = []; // for words and values
@@ -214,27 +213,29 @@ async function comp() {
   var kl_negvals = []; // for values only
   var wc_word_list = [];
 
+  // convert pre_list_probs to dictionary with key/value pairs for easy comparison
+  var dict = {};
+  for(let i = 0; i < pre_list_probs.length; i++){
+    const {word, prob} = pre_list_probs[i];
+    dict[word] = prob;
+  };
+
   for (entry1 in input_list_probs) {
     docProb = input_list_probs[entry1];
     docProb_word = docProb["word"];
-    for (entry2 in pre_list_probs) {
-      corpusProb = pre_list_probs[entry2];
-      corpusProb_word = corpusProb["word"];
 
-      if (docProb_word == corpusProb_word) {
+    if (Object.keys(dict).includes(docProb_word)) {
+      kl_value = docProb["prob"] * Math.log(docProb["prob"] / dict[docProb_word]);
+      kl_vals[entry1] = kl_value;
+      wc_word_list.push({word: docProb["word"], kl: kl_value});
 
-        kl_value = docProb["prob"] * Math.log(docProb["prob"] / corpusProb["prob"]);
-        kl_vals[entry1] = kl_value;
-        wc_word_list.push({word: docProb["word"], kl: kl_value});
-
-        if (kl_value > 0) {
-          kl_pos.push({word: docProb["word"], kl: kl_value});
-          kl_posvals[entry1] = kl_value;
-        }
-        else {
-          kl_neg.push({word: docProb["word"], kl: kl_value});
-          kl_negvals[entry1] = Math.abs(kl_value); // need absolute value for word size in word cloud(s)
-        }
+      if (kl_value > 0) {
+        kl_pos.push({word: docProb["word"], kl: kl_value});
+        kl_posvals[entry1] = kl_value;
+      }
+      else {
+        kl_neg.push({word: docProb["word"], kl: kl_value});
+        kl_negvals[entry1] = Math.abs(kl_value); // need absolute value for word size in word cloud(s)
       }
     }
   }
