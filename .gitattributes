@@ -1,1 +1,2 @@
 docs/* linguist-documentation=false
+data/** linguist-detectable=false
