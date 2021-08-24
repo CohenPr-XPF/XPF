@@ -89,7 +89,7 @@ body {
 }
 
 .footer{
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	left: 0;
 	height: 50px;
@@ -98,11 +98,25 @@ body {
 	margin-top: 20px;
 }
 
+.container {
+	display: flex;
+	align-items: stretch;
+	width: 90%;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: center;
+	height: 100%;
+}
+
 .col-container{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	height: 100%;
+}
+
+.row {
 	height: 100%;
 }
 

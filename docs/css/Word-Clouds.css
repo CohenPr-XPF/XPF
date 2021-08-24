@@ -41,7 +41,7 @@ h3 small{
 }
 
 .footer{
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	left: 0;
 	height: 50px;
