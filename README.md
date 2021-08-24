@@ -2,7 +2,7 @@
 
 Check out our interactive website: [The XPF Corpus](https://cohenpr-xpf.github.io/XPF/)
 
-Manual coming soon.
+The preliminary manual of the corpus can be found [here](./Manual/xpf_manual.pdf).
 
 ## Available Languages
 
