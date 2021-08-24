@@ -1,2 +1,4 @@
 docs/* linguist-documentation=false
+docs/css/* linguist-documentation=false
+docs/js/* linguist-documentation=false
 Data/** linguist-detectable=false

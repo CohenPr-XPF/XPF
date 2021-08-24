@@ -73,7 +73,6 @@
 	}
 }
 
-
 h1 {
 	font-family: "Libre Baskerville", serif;
 	font-style: normal;
@@ -90,7 +89,10 @@ body {
 }
 
 .footer{
-	height: 10vh;
+	position: absolute;
+	bottom: 0
+	left: 0;
+	height: 50px;
 	width: 100%;
 	background: #333333;
 	margin-top: 20px;

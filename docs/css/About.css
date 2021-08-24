@@ -62,11 +62,13 @@ h3 small{
 }
 
 .footer{
-	height: 10vh;
+	position: absolute;
+	bottom: 0
+	left: 0;
+	height: 50px;
 	width: 100%;
 	background: #333333;
 }
-
 
 hr{
 	height: 2px;
