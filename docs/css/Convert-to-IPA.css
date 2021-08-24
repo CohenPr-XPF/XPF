@@ -57,6 +57,10 @@ h3 small{
 	background: #FFFFFF;
 }
 
+.container {
+	height: 100%;
+}
+
 .col-container{
 	display: flex;
 	align-items: center;

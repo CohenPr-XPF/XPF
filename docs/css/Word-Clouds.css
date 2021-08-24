@@ -28,6 +28,10 @@ body{
 	font-size: 15px;
 }
 
+.container {
+	height: 100%;
+}
+
 h3 small{
 	font-family: "Libre Baskerville", serif;
 }

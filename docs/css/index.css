@@ -106,6 +106,7 @@ body {
 	flex-wrap: nowrap;
 	align-content: center;
 	height: 100%;
+	margin-bottom: 50px;
 }
 
 .col-container{
