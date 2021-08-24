@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel = "stylesheet" href="header.css">
-  <link rel = "stylesheet" href="Convert-to-IPA.css">
+  <link rel = "stylesheet" href="./css/header.css">
+  <link rel = "stylesheet" href="./css/Convert-to-IPA.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/xregexp/xregexp-all.js"></script>
@@ -493,20 +493,10 @@
       }
     }
 
-    /*function download_translate(){
-      var output = document.getElementById("out1").value;
-      output = output.replaceAll(" ", "\n");
-      var blob = new Blob([output], {type: "text/plain;charset=utf-8"});
-      saveAs(blob, "translations.txt");
-    }*/
-
   </script>
 
-  <script src="translate04.js"></script> <!-- current version -->
-  <script src="keyboard.js"></script>
-  <!--<script type="text/javascript">
-    grammar = new AlphabetToIpa("test.rules");
-  </script>-->
+  <script src="./js/translate04.js"></script> <!-- current version -->
+  <script src="./js/keyboard.js"></script>
 
 </body>
 </html>

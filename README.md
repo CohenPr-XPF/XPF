@@ -2,7 +2,14 @@
 
 Check out our interactive website: [The XPF Corpus](https://cohenpr-xpf.github.io/XPF/)
 
-The preliminary manual of the corpus can be found [here](./Manual/xpf_manual.pdf).
+The preliminary manual of the corpus can be found [here](https://cohenpr-xpf.github.io/XPF/manual/xpf_manual.pdf).
+
+## Repository
+
+* [`./Code`](./Code) contains the various scripts needed to obtain phoneme translation statistics.  
+* [`./Data`](./Data) contains language specific information in terms of their profiles and phonemic grammars.  
+* [`./docs`](./docs) contains the files strictly needed for the website.  
+* [`./Guidelines`](./Guidelines) and [`./Manual`](./Manual) contain relevant documentation pertaining to the corpus and the curation of it.
 
 ## Available Languages
 
