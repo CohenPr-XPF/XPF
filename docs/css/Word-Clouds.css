@@ -99,3 +99,7 @@ inthead,
 #cloud_header p{
 	cursor: default;
 }
+
+.col._2 .B div {
+	white-space: nowrap;
+}

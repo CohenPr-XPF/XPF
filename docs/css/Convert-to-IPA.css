@@ -172,6 +172,13 @@ textarea {
 	text-decoration: none;
 }
 
+#language_info,
+#upload,
+.col._1 .D,
+.col._2 .D .col.p-0 {
+	white-space: nowrap;
+}
+
 #upload_text_form {
 	display: inline-block;
 	cursor: pointer;
@@ -226,6 +233,10 @@ div[a="#language_info"] {
 
 #ko_warning a {
 	display: contents;
+}
+
+.col._1 {
+	margin-bottom: 30px;
 }
 
 .col._1 div.A,

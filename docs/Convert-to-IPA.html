@@ -148,18 +148,13 @@
     -->
 
     <div id="main_format" class="container">
-      <div class="h-100 d-flex flex-column gap">
-        <div class="row">
-          <div class="col text-center h-100">
-            <inthead>Text</inthead>
-          </div>
-          <div class="col text-center h-100">
-            <inthead>Translate Rules</inthead>
-          </div>
-        </div>
-      </div>
       <div class="row">
         <div class="col _1">
+          <div class="row head">
+            <div class="col text-center h-100">
+              <inthead>Text</inthead>
+            </div>
+          </div>
           <div class="d-flex flex-column gap">
             <div class="row A text-center m-0">
               <div class="col d-flex align-items-center justify-content-center">
@@ -201,6 +196,11 @@
           </div>
         </div>
         <div class="col _2">
+          <div class="row head">
+            <div class="col text-center h-100">
+              <inthead>Translate Rules</inthead>
+            </div>
+          </div>
           <div class="d-flex flex-column gap">
             <div class="row A text-center m-0">
               <div class="col d-flex align-items-center justify-content-center pr-0">
@@ -355,7 +355,7 @@
       }
       document.getElementById("msg2").style.visibility = "hidden";
       document.getElementById("translations_file").style.display = "none";
-      document.getElementById("language_info").style.display = "inline";
+      document.getElementById("language_info").style.display = "flex";
 
       a = document.getElementById("rule_dropdown").value;
 
