@@ -90,6 +90,10 @@ div.hover_freqs {
 	margin-top: 40px;
 }
 
+.col._1 .flex-column {
+	height: 190px;
+}
+
 .top,
 inthead,
 #existing,
