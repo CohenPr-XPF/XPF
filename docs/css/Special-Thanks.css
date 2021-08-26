@@ -1,18 +1,28 @@
-body{
+
+.info-header {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.info {
 	font-family: "Libre Baskerville", serif;
-	background: #f2f2f2;
 }
 
-.navbar{
-	background: white;
+.top div.row:first-child {
+	margin: 40px 5% 0 5%;
 }
 
-.footer{
-	position: relative;
-	bottom: 0;
-	left: 0;
-	height: 50px;
-	width: 100%;
-	background: #333333;
+.top div.row:nth-child(2) {
+	margin: 0 5% 30px 5%;
+}
+
+.gap {
+	gap: 20px;
+}
+
+img[alt="University Image"] {
+	width: 90%;
+}
+
+.footer {
 	margin-top: 40px;
 }

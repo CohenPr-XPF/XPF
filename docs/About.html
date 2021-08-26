@@ -5,529 +5,546 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel = "stylesheet" href="./css/header.css">
   <link rel = "stylesheet" href="./css/About.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" href="./css/About_media.css">
   <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" onclick="openNav()" data-target="#websitenav">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid h-100">
+      <button id="display_sidenav" class="navbar-toggler" data-toggle="collapse" data-target="#websitenav">
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
       </button>
-    </div>
-    <div class="collapse navbar-collapse" id="websitenav">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">The XPF Corpus</a></li>
-        <li><a href="About.html" style="color: #478ac9;">About</a></li>
-        <li><a href="Convert-to-IPA.html">Convert to IPA</a></li>
-        <li><a href="Word-Clouds.html">Word Clouds</a></li>
-        <li><a href="Special-Thanks.html">Special Thanks</a></li>
-    </div>
-  </div>
-</nav>
-
-<div id="website-sidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">The XPF Corpus</a>
-  <a href="About.html" style="color: #478ac9;">About</a>
-  <a href="Convert-to-IPA.html">Convert to IPA</a>
-  <a href="Word-Clouds.html">Word Clouds</a>
-  <a href="Special-Thanks.html">Special Thanks</a>
-</div>
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-xs-1"></div>
-    <div class="col-xs-10">
-      <h3><b>The Corpus</b></h3>
-      <h3><small style="color: black;">The Cross-linguistic Phonological Frequencies (XPF) Corpus consists of a set of grammars for over 200 languages. These grammars provide the translations from languages' alphabetic representations to their phonemic representations. Although grammars of well documented languages are included in this corpus (e.g. Hungarian), the grammars of several underdocumented and endangered languages (e.g. Wayana) as well as language isolates (e.g. Yuracare) have also been included. Below is a map representing the global spread of the languages within the corpus. You can find the manual of the corpus <a href="./manual/xpf_manual.pdf" target="_blank">here</a>.</small></h3>
-    </div>
-    <div class="col-xs-1"></div>
-  </div>
-
-  <div class="row spacer">
-    <div class="col-xs-12">
-      <div id="language_map"></div>
-      <p class="text-center">The languages displayed on the map are separated either by large language families (e.g. Indo-European) or justified groupings (e.g. Isolates). On the map, simply hover over the individual dots to display the language names and click on them to display the language information. On the legend, select a marker to hide the corresponding languages.</p>
-    </div>
-  </div>
-
-  <div class="row spacer">
-    <div class="col-xs-1"></div>
-    <div class="col-xs-10">
-      <h3 style="margin-top: 0;"><b>How can you use it?</b></h3>
-      <h3><small style="color: black;">Apart from having complete access to the corpus to use for your own research purposes, which is provided on <a href="https://github.com/CohenPr-XPF/XPF" target="_blank">github</a>, we've included a few features below for quick analyses of different languages, and cross-linguistic comparison.</small></h3>
-    </div>
-    <div class="col-xs-1"></div>
-  </div>
-
-  <div style="margin-bottom: 50px;">
-    <div class="col-container">
-      <div class="col-xs-6 text-center mouseover" style="padding-top: 30px; border-radius: 20px;" onclick="location.href='Convert-to-IPA.html';">
-        <res1header>Convert to IPA</res1header><hr>
-        <res2header style="height: 80%; display: flex; justify-content: center; align-items: center;">knit -> /nɪt/</res2header>
-      </div>
-      <div class="col-xs-6 text-center mouseover" style="padding-top: 30px; border-radius: 20px;" onclick="location.href='Word-Clouds.html';">
-        <res1header>Word Clouds</res1header><hr><br>
-        <img class="img-responsive center" src="images/wordcloud_image.jpg" width="50%" height="45%" style="margin: auto;" alt="Word Cloud"><br>
+      <div class="collapse navbar-collapse" id="websitenav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item p-2">
+            <a href="index.html" class="nav-link">The XPF Corpus</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="About.html" class="nav-link active">About</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="Convert-to-IPA.html" class="nav-link">Convert to IPA</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="Word-Clouds.html" class="nav-link">Word Clouds</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="Special-Thanks.html" class="nav-link">Special Thanks</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
+
+  <div id="website-sidenav" class="sidenav">
+    <a href="javascript:void(0)" id="close_sidenav">X</a>
+    <a href="index.html">The XPF Corpus</a>
+    <a href="About.html" class="active">About</a>
+    <a href="Convert-to-IPA.html">Convert to IPA</a>
+    <a href="Word-Clouds.html">Word Clouds</a>
+    <a href="Special-Thanks.html">Special Thanks</a>
   </div>
-</div>
 
-<footer class="footer"></footer>
+  <div class="jumbotron vertical-center m-0 p-0">
+    <div class="container-fluid">
+      <div class="h-100 d-flex flex-column gap">
+        <div class="row _1">
+          <div class="col d-flex align-items center">
+            <p class="m-0 info-header"><b>The Corpus</b></p>
+          </div>
+        </div>
+        <div class="row _2">
+          <div class="col">
+            <p class="m-0 info">The Cross-linguistic Phonological Frequencies (XPF) Corpus consists of a set of grammars for over 200 languages. These grammars provide the translations from languages' alphabetic representations to their phonemic representations. Although grammars of well documented languages are included in this corpus (e.g. Hungarian), the grammars of several underdocumented and endangered languages (e.g. Wayana) as well as language isolates (e.g. Yuracare) have also been included. Below is a map representing the global spread of the languages within the corpus. You can find the manual of the corpus <a href="./manual/xpf_manual.pdf" target="_blank">here</a>.</p>
+          </div>
+        </div>
+        <div class="row _3">
+          <div class="col">
+            <div id="language_map"></div>
+          </div>
+        </div>
+        <div class="row _4">
+          <div class="col">
+            <p class="col text-center m-0 map-legend">The languages displayed on the map are separated either by large language families (e.g. Indo-European) or justified groupings (e.g. Isolates). On the map, simply hover over the individual dots to display the language names and click on them to display the language information. On the legend, select a marker to hide the corresponding languages.</p>
+          </div>
+        </div>
+        <div class="row _5">
+          <div class="col d-flex align-items-center">
+            <p class="m-0 info-header"><b>How can you use it?</b></p>
+          </div>
+        </div>
+        <div class="row _6">
+          <div class="col">
+            <p class="m-0 info">Apart from having complete access to the corpus to use for your own research purposes, which is provided on <a href="https://github.com/CohenPr-XPF/XPF" target="_blank">github</a>, we've included a few features below for quick analyses of different languages, and cross-linguistic comparison.</p>
+          </div>
+        </div>
+        <div class="row _7">
+          <div id="feature_translate" class="col px-0 mouseover">
+            <div class="h-100 d-flex flex-column gap">
+              <div class="row text-center m-0">
+                <div class="col">
+                  <res1header>Convert to IPA</res1header><hr>
+                </div>
+              </div>
+              <div class="row flex-grow-1 m-0 align-items-center text-center">
+                <div class="col">
+                  <res2header>knit -> /nɪt/</res2header>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="feature_cloud" class="col px-0 mouseover">
+            <div class="h-100 d-flex flex-column gap">
+              <div class="row text-center m-0">
+                <div class="col">
+                  <res1header>Word Clouds</res1header><hr>
+                </div>
+              </div>
+              <div class="row flex-grow-1 m-0 text-center align-items-center">
+                <div class="col">
+                  <img class="img-responsive center" src="images/wordcloud_image.jpg" alt="Word Cloud"><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div id="overlay"></div>
+  <div class="container-fluid footer"></div>
 
+  <div id="overlay"></div>
 
-<script>
+  <script>
 
-  // Allow transition for sidebar navigation to be displayed
-  function openNav() {
-    document.getElementById("website-sidenav").style.width = "250px";
-    document.getElementById("overlay").style.opacity = "0.5";
-    document.getElementById("overlay").style.width = "100%";
-    document.getElementById("overlay").style.transition = "all 0.5s";
-    document.getElementById("overlay").addEventListener("click", closeNav);
-  }
+    // Event Listeners (for feature choice)
+    document.getElementById("feature_translate").addEventListener("click", function() { location.href='Convert-to-IPA.html' });
+    document.getElementById("feature_cloud").addEventListener("click", function() { location.href='Word-Clouds.html' });
 
-  // Allow transition for sidebar navigation to be removed
-  function closeNav() {
-    document.getElementById("website-sidenav").style.width = "0";
-    document.getElementById("overlay").style.opacity = "1";
-    document.getElementById("overlay").style.width = "0";
-    document.getElementById("overlay").style.transition = "all 0s";
-    document.getElementById("overlay").removeEventListener("click", closeNav);
-  }
+    // Create interactive language map
+    am4core.ready(function() {
 
-</script>
+      var language_map = am4core.create("language_map", am4maps.MapChart);
+      language_map.geodata = am4geodata_worldLow; // display the world
+      language_map.projection = new am4maps.projections.Miller(); // identifies specific world map
 
+      var land_mass = language_map.series.push(new am4maps.MapPolygonSeries()); // display actual land masses (countries/continents)
+      land_mass.hiddenInLegend = true;
+      land_mass.exclude = ["AQ"]; // exclude Antartica
+      land_mass.useGeodata = true;
 
-<script>
-
-// Create interactive language map
-am4core.ready(function() {
-
-  var language_map = am4core.create("language_map", am4maps.MapChart);
-  language_map.geodata = am4geodata_worldLow; // display the world
-  language_map.projection = new am4maps.projections.Miller(); // identifies specific world map
-
-  var land_mass = language_map.series.push(new am4maps.MapPolygonSeries()); // display actual land masses (countries/continents)
-  land_mass.hiddenInLegend = true;
-  land_mass.exclude = ["AQ"]; // exclude Antartica
-  land_mass.useGeodata = true;
-
-  var land_mass_template = land_mass.mapPolygons.template;
-  land_mass_template.fill = am4core.color("#CCE9F6"); // set color of map
-
-
-  language_map.legend = new am4maps.Legend(); // display map legend (grouped by language familes/groupings)
-  var marker_template = language_map.legend.markers.template;
-  marker_template.width = 18;
-  marker_template.height = 18;
-  language_map.legend.itemContainers.template.paddingTop = 5;
-  language_map.legend.itemContainers.template.paddingBottom = 5;
-  language_map.legend.itemContainers.template.fontFamily = "Helvetica";
-  language_map.zoomControl = new am4maps.ZoomControl();
-  language_map.zoomControl.align = "right";
-  language_map.zoomControl.valign = "bottom";
-
-
-  // Language families/groups
-
-  var Austronesian = language_map.series.push(new am4maps.MapImageSeries());
-  Austronesian.mapImages.template.propertyFields.longitude = "longitude";
-  Austronesian.mapImages.template.propertyFields.latitude = "latitude";
-  Austronesian.mapImages.template.tooltipText = "{title}";
-  Austronesian.fill = "#e81a20";
-  Austronesian.name = "Austronesian";
-  Austronesian.mapImages.template.events.on("hit", info_display);
-
-  var Austronesian_dot = Austronesian.mapImages.template.createChild(am4core.Circle);
-  Austronesian_dot.radius = 3;
-  Austronesian_dot.nonScaling = true;
-  Austronesian_dot.events.on("over", dot_zoom_in, this);
-  Austronesian_dot.events.on("out", dot_zoom_out, this);
-
-  Austronesian.data = [{"code": "aia", "title": "Arosi", "latitude": -10.24, "longitude": 161.43},
-  {"code": "bcl", "title": "Central Bikol", "latitude": 13.76, "longitude": 123.4},
-  {"code": "bdd", "title": "Bunama", "latitude": -10.08, "longitude": 151.07},
-  {"code": "btx", "title": "Batak Karo", "latitude": 2.13, "longitude": 98.25},
-  {"code": "bug", "title": "Bugis", "latitude": -4.47, "longitude": 119.98},
-  {"code": "bzh", "title": "Mapos Buang", "latitude": -6.87, "longitude": 146.77},
-  {"code": "emi", "title": "Mussau-Emira", "latitude": -1.44, "longitude": 149.62},
-  {"code": "gil", "title": "Kiribati", "latitude": -1.34, "longitude": 176.44},
-  {"code": "haw", "title": "Hawaiian", "latitude": 19.63, "longitude": -155.43},
-  {"code": "hil", "title": "Hiligaynon", "latitude": 10.4, "longitude": 122.97},
-  {"code": "id", "title": "Indonesian", "latitude": -7.33, "longitude": 109.72},
-  {"code": "ilo", "title": "Ilocano", "latitude": 15.94, "longitude": 120.99},
-  {"code": "jv", "title": "Javanese", "latitude": -7, "longitude": 109.29},
-  {"code": "mek", "title": "Mekeo", "latitude": -8.24, "longitude": 146.59},
-  {"code": "mg", "title": "Malagasy", "latitude": -22.8, "longitude": 47.82},
-  {"code": "mnb", "title": "Muna", "latitude": -5.4, "longitude": 122.54},
-  {"code": "mpx", "title": "Misima-Panaeati", "latitude": -10.68, "longitude": 152.7},
-  {"code": "mqj", "title": "Mamasa", "latitude": -3.08, "longitude": 119.48},
-  {"code": "mva", "title": "Manam", "latitude": -4.08, "longitude": 145.03},
-  {"code": "nsn", "title": "Nehan", "latitude": -4.57, "longitude": 154.2},
-  {"code": "pag", "title": "Pangasinan", "latitude": 15.94, "longitude": 120.36},
-  {"code": "pau", "title": "Palauan", "latitude": 7.34, "longitude": 134.48},
-  {"code": "pwg", "title": "Gapapaiwa", "latitude": -9.73, "longitude": 149.85},
-  {"code": "sm", "title": "Samoan", "latitude": -13.92, "longitude": -171.83},
-  {"code": "snc", "title": "Sinaugoro", "latitude": -9.8, "longitude": 147.86},
-  {"code": "to", "title": "Tongan", "latitude": -21.17, "longitude": -175.25},
-  {"code": "viv", "title": "Iduna", "latitude": -9.34, "longitude": 150.24},
-  {"code": "zsm", "title": "Standard Malay", "latitude": 3.09, "longitude": 101.7}];
+      var land_mass_template = land_mass.mapPolygons.template;
+      land_mass_template.fill = am4core.color("#CCE9F6"); // set color of map
 
 
-  var IndoEurope = language_map.series.push(new am4maps.MapImageSeries());
-  IndoEurope.mapImages.template.propertyFields.longitude = "longitude";
-  IndoEurope.mapImages.template.propertyFields.latitude = "latitude";
-  IndoEurope.mapImages.template.tooltipText = "{title}";
-  IndoEurope.fill = "#196b0f";
-  IndoEurope.name = "Indo European";
-  IndoEurope.mapImages.template.events.on("hit", info_display);
-
-  var IndoEurope_dot = IndoEurope.mapImages.template.createChild(am4core.Circle);
-  IndoEurope_dot.radius = 3;
-  IndoEurope_dot.nonScaling = true;
-  IndoEurope_dot.events.on("over", dot_zoom_in, this);
-  IndoEurope_dot.events.on("out", dot_zoom_out, this);
-
-  IndoEurope.data = [{"code": "an", "title": "Aragonese", "latitude": 42.47, "longitude": -0.01},
-  {"code": "ast", "title": "Asturian", "latitude": 42.42, "longitude": -6.02},
-  {"code": "be", "title": "Belarusan", "latitude": 53.23, "longitude": 25.6},
-  {"code": "bg", "title": "Bulgarian", "latitude": 43.36, "longitude": 25.05},
-  {"code": "ca", "title": "Catalan", "latitude": 41.45, "longitude": 1.57},
-  {"code": "cs", "title": "Czech", "latitude": 49.87, "longitude": 15.1},
-  {"code": "dv", "title": "Maldivian", "latitude": 1.93, "longitude": 73.54},
-  {"code": "el", "title": "Modern Greek", "latitude": 38.36, "longitude": 23.13},
-  {"code": "es", "title": "Spanish", "latitude": 40.44, "longitude": -1.12},
-  {"code": "hi", "title": "Hindi", "latitude": 25, "longitude": 77},
-  {"code": "hsb", "title": "Upper Sorbian", "latitude": 51.24, "longitude": 14.41},
-  {"code": "hy", "title": "Armenian", "latitude": 40, "longitude": 45},
-  {"code": "ne", "title": "Nepali", "latitude": 28, "longitude": 85},
-  {"code": "os", "title": "Ossetian", "latitude": 42.98, "longitude": 44.61},
-  {"code": "ro", "title": "Romanian", "latitude": 46.39, "longitude": 24.23},
-  {"code": "si", "title": "Sinhala", "latitude": 8, "longitude": 81},
-  {"code": "sk", "title": "Slovak", "latitude": 48.55, "longitude": 18.78},
-  {"code": "sq", "title": "Tosk Albanian", "latitude": 41, "longitude": 20},
-  {"code": "tg", "title": "Tajik", "latitude": 38.82, "longitude": 68.55},
-  {"code": "uk", "title": "Ukrainian", "latitude": 49.8, "longitude": 29.95},
-  {"code": "yi", "title": "Yiddish", "latitude": 51.75, "longitude": 19.42},
-  {"code": "zza", "title": "Zaza", "latitude": 38.61, "longitude": 39.64}];
+      language_map.legend = new am4maps.Legend(); // display map legend (grouped by language familes/groupings)
+      var marker_template = language_map.legend.markers.template;
+      marker_template.width = 18;
+      marker_template.height = 18;
+      language_map.legend.itemContainers.template.paddingTop = 5;
+      language_map.legend.itemContainers.template.paddingBottom = 5;
+      language_map.legend.itemContainers.template.fontFamily = "Helvetica";
+      language_map.legend.itemContainers.template.fontSize = "15px";
+      language_map.zoomControl = new am4maps.ZoomControl();
+      language_map.zoomControl.align = "right";
+      language_map.zoomControl.valign = "bottom";
 
 
-  var Trans = language_map.series.push(new am4maps.MapImageSeries());
-  Trans.mapImages.template.propertyFields.longitude = "longitude";
-  Trans.mapImages.template.propertyFields.latitude = "latitude";
-  Trans.mapImages.template.tooltipText = "{title}";
-  Trans.fill = "#4cbcf5";
-  Trans.name = "Trans New-Guinea";
-  Trans.mapImages.template.events.on("hit", info_display);
+      // Language families/groups
 
-  var Trans_dot = Trans.mapImages.template.createChild(am4core.Circle);
-  Trans_dot.radius = 3;
-  Trans_dot.nonScaling = true;
-  Trans_dot.events.on("over", dot_zoom_in, this);
-  Trans_dot.events.on("out", dot_zoom_out, this);
+      var Austronesian = language_map.series.push(new am4maps.MapImageSeries());
+      Austronesian.mapImages.template.propertyFields.longitude = "longitude";
+      Austronesian.mapImages.template.propertyFields.latitude = "latitude";
+      Austronesian.mapImages.template.tooltipText = "{title}";
+      Austronesian.fill = "#e81a20";
+      Austronesian.name = "Austronesian";
+      Austronesian.mapImages.template.events.on("hit", info_display);
 
-  Trans.data = [{"code": "aak", "title": "Ankave", "latitude": -7.19, "longitude": 145.75},
-  {"code": "aey", "title": "Amele", "latitude": -5.29, "longitude": 145.69},
-  {"code": "agg", "title": "Angor", "latitude": -3.72, "longitude": 141.2},
-  {"code": "amn", "title": "Amanab", "latitude": -3.52, "longitude": 141.18},
-  {"code": "aom", "title": "Ömie", "latitude": -9.03, "longitude": 148.11},
-  {"code": "awx", "title": "Awara", "latitude": -6.17, "longitude": 146.37},
-  {"code": "bef", "title": "Benabena", "latitude": -6.1, "longitude": 145.53},
-  {"code": "bmu", "title": "Somba-Siawari", "latitude": -6.52, "longitude": 147.33},
-  {"code": "boj", "title": "Anjam", "latitude": -5.46, "longitude": 145.72},
-  {"code": "ded", "title": "Dedua", "latitude": -6.38, "longitude": 147.63},
-  {"code": "gaw", "title": "Nobonob", "latitude": -5.07, "longitude": 145.71},
-  {"code": "ghs", "title": "Guhu-Samane", "latitude": -8, "longitude": 147.23},
-  {"code": "kpf", "title": "Komba", "latitude": -6.16, "longitude": 147.28},
-  {"code": "kpx", "title": "Mountain Koiali", "latitude": -9.07, "longitude": 147.38},
-  {"code": "ksr", "title": "Borong", "latitude": -6.57, "longitude": 147.51},
-  {"code": "kup", "title": "Kunimaipa", "latitude": -8.09, "longitude": 146.91},
-  {"code": "mcq", "title": "Ese", "latitude": -9.09, "longitude": 148.38},
-  {"code": "mhl", "title": "Mauwake", "latitude": -4.52, "longitude": 145.39},
-  {"code": "mlp", "title": "Bargam", "latitude": -4.87, "longitude": 145.76},
-  {"code": "naf", "title": "Nabak", "latitude": -6.43, "longitude": 146.97},
-  {"code": "omw", "title": "South Tairora", "latitude": -6.35, "longitude": 145.88},
-  {"code": "rwo", "title": "Rawa", "latitude": -5.83, "longitude": 145.94},
-  {"code": "usa", "title": "Usarufa", "latitude": -6.39, "longitude": 145.63},
-  {"code": "dgz", "title": "Daga", "latitude": -9.97, "longitude": 149.26}];
+      var Austronesian_dot = Austronesian.mapImages.template.createChild(am4core.Circle);
+      Austronesian_dot.radius = 3;
+      Austronesian_dot.nonScaling = true;
+      Austronesian_dot.events.on("over", dot_zoom_in, this);
+      Austronesian_dot.events.on("out", dot_zoom_out, this);
 
-
-  var Turkic = language_map.series.push(new am4maps.MapImageSeries());
-  Turkic.mapImages.template.propertyFields.longitude = "longitude";
-  Turkic.mapImages.template.propertyFields.latitude = "latitude";
-  Turkic.mapImages.template.tooltipText = "{title}";
-  Turkic.fill = "#fa7f2d";
-  Turkic.name = "Turkic";
-  Turkic.mapImages.template.events.on("hit", info_display);
-
-  var Turkic_dot = Turkic.mapImages.template.createChild(am4core.Circle);
-  Turkic_dot.radius = 3;
-  Turkic_dot.nonScaling = true;
-  Turkic_dot.events.on("over", dot_zoom_in, this);
-  Turkic_dot.events.on("out", dot_zoom_out, this);
-
-  Turkic.data = [{"code": "az", "title": "Azerbaijani", "latitude": 40.98, "longitude": 46.47},
-  {"code": "ba", "title": "Bashkir", "latitude": 53.6, "longitude": 56.56},
-  {"code": "crh", "title": "Crimean Tatar", "latitude": 45, "longitude": 34.08},
-  {"code": "cv", "title": "Chuvash", "latitude": 55.49, "longitude": 47.16},
-  {"code": "kk", "title": "Kazakh", "latitude": 41.87, "longitude": 65.77},
-  {"code": "krc", "title": "Karachay-Balkar", "latitude": 43.56, "longitude": 42.26},
-  {"code": "ky", "title": "Kirghiz", "latitude": 42, "longitude": 74},
-  {"code": "sah", "title": "Yakut", "latitude": 61.7, "longitude": 133.98},
-  {"code": "tr", "title": "Turkish", "latitude": 39.87, "longitude": 32.87},
-  {"code": "tt", "title": "Tatar", "latitude": 55, "longitude": 50},
-  {"code": "tyv", "title": "Tuvan", "latitude": 51.7, "longitude": 94.37},
-  {"code": "ug", "title": "Uyghur", "latitude": 43.88, "longitude": 87.38},
-  {"code": "uz", "title": "Uzbek", "latitude": 40.89, "longitude": 69.21}];
+      Austronesian.data = [{"code": "aia", "title": "Arosi", "latitude": -10.24, "longitude": 161.43},
+      {"code": "bcl", "title": "Central Bikol", "latitude": 13.76, "longitude": 123.4},
+      {"code": "bdd", "title": "Bunama", "latitude": -10.08, "longitude": 151.07},
+      {"code": "btx", "title": "Batak Karo", "latitude": 2.13, "longitude": 98.25},
+      {"code": "bug", "title": "Bugis", "latitude": -4.47, "longitude": 119.98},
+      {"code": "bzh", "title": "Mapos Buang", "latitude": -6.87, "longitude": 146.77},
+      {"code": "emi", "title": "Mussau-Emira", "latitude": -1.44, "longitude": 149.62},
+      {"code": "gil", "title": "Kiribati", "latitude": -1.34, "longitude": 176.44},
+      {"code": "haw", "title": "Hawaiian", "latitude": 19.63, "longitude": -155.43},
+      {"code": "hil", "title": "Hiligaynon", "latitude": 10.4, "longitude": 122.97},
+      {"code": "id", "title": "Indonesian", "latitude": -7.33, "longitude": 109.72},
+      {"code": "ilo", "title": "Ilocano", "latitude": 15.94, "longitude": 120.99},
+      {"code": "jv", "title": "Javanese", "latitude": -7, "longitude": 109.29},
+      {"code": "mek", "title": "Mekeo", "latitude": -8.24, "longitude": 146.59},
+      {"code": "mg", "title": "Malagasy", "latitude": -22.8, "longitude": 47.82},
+      {"code": "mnb", "title": "Muna", "latitude": -5.4, "longitude": 122.54},
+      {"code": "mpx", "title": "Misima-Panaeati", "latitude": -10.68, "longitude": 152.7},
+      {"code": "mqj", "title": "Mamasa", "latitude": -3.08, "longitude": 119.48},
+      {"code": "mva", "title": "Manam", "latitude": -4.08, "longitude": 145.03},
+      {"code": "nsn", "title": "Nehan", "latitude": -4.57, "longitude": 154.2},
+      {"code": "pag", "title": "Pangasinan", "latitude": 15.94, "longitude": 120.36},
+      {"code": "pau", "title": "Palauan", "latitude": 7.34, "longitude": 134.48},
+      {"code": "pwg", "title": "Gapapaiwa", "latitude": -9.73, "longitude": 149.85},
+      {"code": "sm", "title": "Samoan", "latitude": -13.92, "longitude": -171.83},
+      {"code": "snc", "title": "Sinaugoro", "latitude": -9.8, "longitude": 147.86},
+      {"code": "to", "title": "Tongan", "latitude": -21.17, "longitude": -175.25},
+      {"code": "viv", "title": "Iduna", "latitude": -9.34, "longitude": 150.24},
+      {"code": "zsm", "title": "Standard Malay", "latitude": 3.09, "longitude": 101.7}];
 
 
-  var Mayan = language_map.series.push(new am4maps.MapImageSeries());
-  Mayan.mapImages.template.propertyFields.longitude = "longitude";
-  Mayan.mapImages.template.propertyFields.latitude = "latitude";
-  Mayan.mapImages.template.tooltipText = "{title}";
-  Mayan.fill = "#25d111";
-  Mayan.name = "Mayan";
-  Mayan.mapImages.template.events.on("hit", info_display);
+      var IndoEurope = language_map.series.push(new am4maps.MapImageSeries());
+      IndoEurope.mapImages.template.propertyFields.longitude = "longitude";
+      IndoEurope.mapImages.template.propertyFields.latitude = "latitude";
+      IndoEurope.mapImages.template.tooltipText = "{title}";
+      IndoEurope.fill = "#196b0f";
+      IndoEurope.name = "Indo European";
+      IndoEurope.mapImages.template.events.on("hit", info_display);
 
-  var Mayan_dot = Mayan.mapImages.template.createChild(am4core.Circle);
-  Mayan_dot.radius = 3;
-  Mayan_dot.nonScaling = true;
-  Mayan_dot.events.on("over", dot_zoom_in, this);
-  Mayan_dot.events.on("out", dot_zoom_out, this);
+      var IndoEurope_dot = IndoEurope.mapImages.template.createChild(am4core.Circle);
+      IndoEurope_dot.radius = 3;
+      IndoEurope_dot.nonScaling = true;
+      IndoEurope_dot.events.on("over", dot_zoom_in, this);
+      IndoEurope_dot.events.on("out", dot_zoom_out, this);
 
-  Mayan.data = [{"code": "acr", "title": "Rabinal Achi'", "latitude": 15.07, "longitude": -90.35},
-  {"code": "caa", "title": "Chʼortiʼ", "latitude": 14.82, "longitude": -89.24},
-  {"code": "chf", "title": "Tabasco Chontal", "latitude": 18.17, "longitude": -92.74},
-  {"code": "cnm", "title": "Ixtatán Chuj", "latitude": 15.84, "longitude": -91.76},
-  {"code": "ctu", "title": "Chol", "latitude": 17.49, "longitude": -92.47},
-  {"code": "ixl", "title": "Ixil", "latitude": 15.46, "longitude": -90.89},
-  {"code": "kek", "title": "Qeqchi", "latitude": 15.38, "longitude": -89.25},
-  {"code": "kjb", "title": "Q'anjob'al", "latitude": 15.68, "longitude": -91.3},
-  {"code": "mam", "title": "Mam", "latitude": 14.8, "longitude": -91.72},
-  {"code": "tzj", "title": "Tz'utujil", "latitude": 14.64, "longitude": -91.2},
-  {"code": "tzo", "title": "Tzotzil", "latitude": 16.64, "longitude": -92.74},
-  {"code": "yua", "title": "Yucatec Maya", "latitude": 18.78, "longitude": -88.96}];
-
-
-  var Arawakan = language_map.series.push(new am4maps.MapImageSeries());
-  Arawakan.mapImages.template.propertyFields.longitude = "longitude";
-  Arawakan.mapImages.template.propertyFields.latitude = "latitude";
-  Arawakan.mapImages.template.tooltipText = "{title}";
-  Arawakan.fill = "#0a16f5";
-  Arawakan.name = "Arawakan";
-  Arawakan.mapImages.template.events.on("hit", info_display);
-
-  var Arawakan_dot = Arawakan.mapImages.template.createChild(am4core.Circle);
-  Arawakan_dot.radius = 3;
-  Arawakan_dot.nonScaling = true;
-  Arawakan_dot.events.on("over", dot_zoom_in, this);
-  Arawakan_dot.events.on("out", dot_zoom_out, this);
+      IndoEurope.data = [{"code": "an", "title": "Aragonese", "latitude": 42.47, "longitude": -0.01},
+      {"code": "ast", "title": "Asturian", "latitude": 42.42, "longitude": -6.02},
+      {"code": "be", "title": "Belarusan", "latitude": 53.23, "longitude": 25.6},
+      {"code": "bg", "title": "Bulgarian", "latitude": 43.36, "longitude": 25.05},
+      {"code": "ca", "title": "Catalan", "latitude": 41.45, "longitude": 1.57},
+      {"code": "cs", "title": "Czech", "latitude": 49.87, "longitude": 15.1},
+      {"code": "dv", "title": "Maldivian", "latitude": 1.93, "longitude": 73.54},
+      {"code": "el", "title": "Modern Greek", "latitude": 38.36, "longitude": 23.13},
+      {"code": "es", "title": "Spanish", "latitude": 40.44, "longitude": -1.12},
+      {"code": "hi", "title": "Hindi", "latitude": 25, "longitude": 77},
+      {"code": "hsb", "title": "Upper Sorbian", "latitude": 51.24, "longitude": 14.41},
+      {"code": "hy", "title": "Armenian", "latitude": 40, "longitude": 45},
+      {"code": "ne", "title": "Nepali", "latitude": 28, "longitude": 85},
+      {"code": "os", "title": "Ossetian", "latitude": 42.98, "longitude": 44.61},
+      {"code": "ro", "title": "Romanian", "latitude": 46.39, "longitude": 24.23},
+      {"code": "si", "title": "Sinhala", "latitude": 8, "longitude": 81},
+      {"code": "sk", "title": "Slovak", "latitude": 48.55, "longitude": 18.78},
+      {"code": "sq", "title": "Tosk Albanian", "latitude": 41, "longitude": 20},
+      {"code": "tg", "title": "Tajik", "latitude": 38.82, "longitude": 68.55},
+      {"code": "uk", "title": "Ukrainian", "latitude": 49.8, "longitude": 29.95},
+      {"code": "yi", "title": "Yiddish", "latitude": 51.75, "longitude": 19.42},
+      {"code": "zza", "title": "Zaza", "latitude": 38.61, "longitude": 39.64}];
 
 
-  Arawakan.data = [{"code": "apu", "title": "Apurinã", "latitude": -8.22, "longitude": -66.77},
-  {"code": "cni", "title": "Asháninka", "latitude": -11.93, "longitude": -73.91},
-  {"code": "guc", "title": "Wayuu", "latitude": 11.4, "longitude": -72.2},
-  {"code": "ign", "title": "Ignaciano", "latitude": -15.12, "longitude": -65.4},
-  {"code": "not", "title": "Nomatsiguenga", "latitude": -11.53, "longitude": -74.44},
-  {"code": "pio", "title": "Piapoco", "latitude": 4.38, "longitude": -68.6},
-  {"code": "plu", "title": "Palikúr", "latitude": 3.64, "longitude": -51.62},
-  {"code": "ycn", "title": "Yucuna", "latitude": -0.76, "longitude": -71},
-  {"code": "pib", "title": "Yine", "latitude": -11.11, "longitude": -73.31}];
+      var Trans = language_map.series.push(new am4maps.MapImageSeries());
+      Trans.mapImages.template.propertyFields.longitude = "longitude";
+      Trans.mapImages.template.propertyFields.latitude = "latitude";
+      Trans.mapImages.template.tooltipText = "{title}";
+      Trans.fill = "#4cbcf5";
+      Trans.name = "Trans New-Guinea";
+      Trans.mapImages.template.events.on("hit", info_display);
+
+      var Trans_dot = Trans.mapImages.template.createChild(am4core.Circle);
+      Trans_dot.radius = 3;
+      Trans_dot.nonScaling = true;
+      Trans_dot.events.on("over", dot_zoom_in, this);
+      Trans_dot.events.on("out", dot_zoom_out, this);
+
+      Trans.data = [{"code": "aak", "title": "Ankave", "latitude": -7.19, "longitude": 145.75},
+      {"code": "aey", "title": "Amele", "latitude": -5.29, "longitude": 145.69},
+      {"code": "agg", "title": "Angor", "latitude": -3.72, "longitude": 141.2},
+      {"code": "amn", "title": "Amanab", "latitude": -3.52, "longitude": 141.18},
+      {"code": "aom", "title": "Ömie", "latitude": -9.03, "longitude": 148.11},
+      {"code": "awx", "title": "Awara", "latitude": -6.17, "longitude": 146.37},
+      {"code": "bef", "title": "Benabena", "latitude": -6.1, "longitude": 145.53},
+      {"code": "bmu", "title": "Somba-Siawari", "latitude": -6.52, "longitude": 147.33},
+      {"code": "boj", "title": "Anjam", "latitude": -5.46, "longitude": 145.72},
+      {"code": "ded", "title": "Dedua", "latitude": -6.38, "longitude": 147.63},
+      {"code": "gaw", "title": "Nobonob", "latitude": -5.07, "longitude": 145.71},
+      {"code": "ghs", "title": "Guhu-Samane", "latitude": -8, "longitude": 147.23},
+      {"code": "kpf", "title": "Komba", "latitude": -6.16, "longitude": 147.28},
+      {"code": "kpx", "title": "Mountain Koiali", "latitude": -9.07, "longitude": 147.38},
+      {"code": "ksr", "title": "Borong", "latitude": -6.57, "longitude": 147.51},
+      {"code": "kup", "title": "Kunimaipa", "latitude": -8.09, "longitude": 146.91},
+      {"code": "mcq", "title": "Ese", "latitude": -9.09, "longitude": 148.38},
+      {"code": "mhl", "title": "Mauwake", "latitude": -4.52, "longitude": 145.39},
+      {"code": "mlp", "title": "Bargam", "latitude": -4.87, "longitude": 145.76},
+      {"code": "naf", "title": "Nabak", "latitude": -6.43, "longitude": 146.97},
+      {"code": "omw", "title": "South Tairora", "latitude": -6.35, "longitude": 145.88},
+      {"code": "rwo", "title": "Rawa", "latitude": -5.83, "longitude": 145.94},
+      {"code": "usa", "title": "Usarufa", "latitude": -6.39, "longitude": 145.63},
+      {"code": "dgz", "title": "Daga", "latitude": -9.97, "longitude": 149.26}];
 
 
-  var NigerCongo = language_map.series.push(new am4maps.MapImageSeries());
-  NigerCongo.mapImages.template.propertyFields.longitude = "longitude";
-  NigerCongo.mapImages.template.propertyFields.latitude = "latitude";
-  NigerCongo.mapImages.template.tooltipText = "{title}";
-  NigerCongo.fill = "#8f3fd1";
-  NigerCongo.name = "Niger-Congo";
-  NigerCongo.mapImages.template.events.on("hit", info_display);
+      var Turkic = language_map.series.push(new am4maps.MapImageSeries());
+      Turkic.mapImages.template.propertyFields.longitude = "longitude";
+      Turkic.mapImages.template.propertyFields.latitude = "latitude";
+      Turkic.mapImages.template.tooltipText = "{title}";
+      Turkic.fill = "#fa7f2d";
+      Turkic.name = "Turkic";
+      Turkic.mapImages.template.events.on("hit", info_display);
 
-  var NigerCongo_dot = NigerCongo.mapImages.template.createChild(am4core.Circle);
-  NigerCongo_dot.radius = 3;
-  NigerCongo_dot.nonScaling = true;
-  NigerCongo_dot.events.on("over", dot_zoom_in, this);
-  NigerCongo_dot.events.on("out", dot_zoom_out, this);
+      var Turkic_dot = Turkic.mapImages.template.createChild(am4core.Circle);
+      Turkic_dot.radius = 3;
+      Turkic_dot.nonScaling = true;
+      Turkic_dot.events.on("over", dot_zoom_in, this);
+      Turkic_dot.events.on("out", dot_zoom_out, this);
 
-  NigerCongo.data = [{"code": "dyo", "title": "Jola-Fogny", "latitude": 12.76, "longitude": -15.74},
-  {"code": "fuv", "title": "Nigerian Fulfulde", "latitude": 11, "longitude": 11.12},
-  {"code": "kki", "title": "Kagulu", "latitude": -6.38, "longitude": 37.05},
-  {"code": "lem", "title": "Nomaande", "latitude": 4.59, "longitude": 10.92},
-  {"code": "wmw", "title": "Mwani", "latitude": -12.58, "longitude": 40.46},
-  {"code": "wo", "title": "Wolof", "latitude": 15.25, "longitude": -15.38},
-  {"code": "sw", "title": "Swahili", "latitude": -8.26, "longitude": 37.62}];
-
-
-  var Creoles = language_map.series.push(new am4maps.MapImageSeries());
-  Creoles.mapImages.template.propertyFields.longitude = "longitude";
-  Creoles.mapImages.template.propertyFields.latitude = "latitude";
-  Creoles.mapImages.template.tooltipText = "{title}";
-  Creoles.fill = "#ed8ae8";
-  Creoles.name = "Creoles";
-  Creoles.mapImages.template.events.on("hit", info_display);
-
-  var Creoles_dot = Creoles.mapImages.template.createChild(am4core.Circle);
-  Creoles_dot.radius = 3;
-  Creoles_dot.nonScaling = true;
-  Creoles_dot.events.on("over", dot_zoom_in, this);
-  Creoles_dot.events.on("out", dot_zoom_out, this);
-
-  Creoles.data = [{"code": "bi", "title": "Bislama", "latitude": -15.4, "longitude": 166.89},
-  {"code": "jam", "title": "Jamaican Creole", "latitude": 18.13, "longitude": -77.26},
-  {"code": "tpi", "title": "Tok Pisin", "latitude": -9.42, "longitude": 147.3},
-  {"code": "acf", "title": "Saint Lucian Creole French", "latitude": 15.39, "longitude": -61.36},
-  {"code": "ht", "title": "Haitian Creole", "latitude": 18.8, "longitude": -72.14},
-  {"code": "mfe", "title": "Morisyen", "latitude": -20.26, "longitude": 57.55},
-  {"code": "kea", "title": "Cape Verdean", "latitude": 15.06, "longitude": -23.61},
-  {"code": "cbk", "title": "Chavacano", "latitude": 7.44, "longitude": 122.19}];
+      Turkic.data = [{"code": "az", "title": "Azerbaijani", "latitude": 40.98, "longitude": 46.47},
+      {"code": "ba", "title": "Bashkir", "latitude": 53.6, "longitude": 56.56},
+      {"code": "crh", "title": "Crimean Tatar", "latitude": 45, "longitude": 34.08},
+      {"code": "cv", "title": "Chuvash", "latitude": 55.49, "longitude": 47.16},
+      {"code": "kk", "title": "Kazakh", "latitude": 41.87, "longitude": 65.77},
+      {"code": "krc", "title": "Karachay-Balkar", "latitude": 43.56, "longitude": 42.26},
+      {"code": "ky", "title": "Kirghiz", "latitude": 42, "longitude": 74},
+      {"code": "sah", "title": "Yakut", "latitude": 61.7, "longitude": 133.98},
+      {"code": "tr", "title": "Turkish", "latitude": 39.87, "longitude": 32.87},
+      {"code": "tt", "title": "Tatar", "latitude": 55, "longitude": 50},
+      {"code": "tyv", "title": "Tuvan", "latitude": 51.7, "longitude": 94.37},
+      {"code": "ug", "title": "Uyghur", "latitude": 43.88, "longitude": 87.38},
+      {"code": "uz", "title": "Uzbek", "latitude": 40.89, "longitude": 69.21}];
 
 
-  var Isolates = language_map.series.push(new am4maps.MapImageSeries());
-  Isolates.mapImages.template.propertyFields.longitude = "longitude";
-  Isolates.mapImages.template.propertyFields.latitude = "latitude";
-  Isolates.mapImages.template.tooltipText = "{title}";
-  Isolates.fill = "#221D23";
-  Isolates.name = "Isolates";
-  Isolates.mapImages.template.events.on("hit", info_display);
+      var Mayan = language_map.series.push(new am4maps.MapImageSeries());
+      Mayan.mapImages.template.propertyFields.longitude = "longitude";
+      Mayan.mapImages.template.propertyFields.latitude = "latitude";
+      Mayan.mapImages.template.tooltipText = "{title}";
+      Mayan.fill = "#25d111";
+      Mayan.name = "Mayan";
+      Mayan.mapImages.template.events.on("hit", info_display);
 
-  var Isolates_dot = Isolates.mapImages.template.createChild(am4core.Circle);
-  Isolates_dot.radius = 3;
-  Isolates_dot.nonScaling = true;
-  Isolates_dot.events.on("over", dot_zoom_in, this);
-  Isolates_dot.events.on("out", dot_zoom_out, this);
+      var Mayan_dot = Mayan.mapImages.template.createChild(am4core.Circle);
+      Mayan_dot.radius = 3;
+      Mayan_dot.nonScaling = true;
+      Mayan_dot.events.on("over", dot_zoom_in, this);
+      Mayan_dot.events.on("out", dot_zoom_out, this);
 
-  Isolates.data = [{"code": "ata", "title": "Pele-Ata", "latitude": -5.58, "longitude": 151.05},
-  {"code": "cbu", "title": "Candoshi-Shapra", "latitude": -4.24, "longitude": -76.93},
-  {"code": "con_Cofan", "title": "Cofán", "latitude": 0.28, "longitude": -77.06},
-  {"code": "eu", "title": "Basque", "latitude": 43.28, "longitude": -1.32},
-  {"code": "ko", "title": "Korean", "latitude": 37.5, "longitude": 128},
-  {"code": "yuz", "title": "Yuracare", "latitude": -16.75, "longitude": -65.12}];
-
-
-  var other = language_map.series.push(new am4maps.MapImageSeries());
-  other.mapImages.template.propertyFields.longitude = "longitude";
-  other.mapImages.template.propertyFields.latitude = "latitude";
-  other.mapImages.template.tooltipText = "{title}";
-  other.fill = "#FFBE0B";
-  other.name = "Other";
-  other.mapImages.template.events.on("hit", info_display);
-
-  var other_dot = other.mapImages.template.createChild(am4core.Circle);
-  other_dot.radius = 3;
-  other_dot.nonScaling = true;
-  other_dot.events.on("over", dot_zoom_in, this);
-  other_dot.events.on("out", dot_zoom_out, this);
-
-  other.data = [ {"code": "ar", "title": "Arabic", "latitude": 27.96, "longitude": 43.85},
-  {"code": "mt", "title": "Maltese", "latitude": 35.89, "longitude": 14.45},
-  {"code": "shi", "title": "Shilha", "latitude": 29.79, "longitude": -7.78},
-  {"code": "tzm", "title": "Central Atlas Tamazight", "latitude": 32.74, "longitude": -2.41},
-  {"code": "crm", "title": "Moose Cree", "latitude": 51.07, "longitude": -80.69},
-  {"code": "pad", "title": "Paumarí", "latitude": -5.78, "longitude": -64.28},
-  {"code": "arn", "title": "Mapudungun", "latitude": -38.74, "longitude": -71.28},
-  {"code": "bvr", "title": "Burarra", "latitude": -12.31, "longitude": 134.37},
-  {"code": "vi", "title": "Vietnamese", "latitude": 20.68, "longitude": 105.77},
-  {"code": "ay", "title": "Aymara", "latitude": -17, "longitude": -68.5},
-  {"code": "cbi", "title": "Cha'palaa", "latitude": 0.71, "longitude": -79.05},
-  {"code": "cof", "title": "Colorado", "latitude": -0.21, "longitude": -79.23},
-  {"code": "cbt", "title": "Chayahuita", "latitude": -5.64, "longitude": -76.83},
-  {"code": "ake", "title": "Akawaio", "latitude": 6.16, "longitude": -60.86},
-  {"code": "apy", "title": "Apalaí", "latitude": 1.5, "longitude": -54.75},
-  {"code": "way", "title": "Wayana", "latitude": 2.78, "longitude": -54.44},
-  {"code": "car", "title": "Carib", "latitude": 5.84, "longitude": -56.83},
-  {"code": "bzd", "title": "Bribri", "latitude": 9.4, "longitude": -83.05},
-  {"code": "kn", "title": "Kannada", "latitude": 13.59, "longitude": 76.12},
-  {"code": "ml", "title": "Malayalam", "latitude": 9.59, "longitude": 76.77},
-  {"code": "ta", "title": "Tamil", "latitude": 10.52, "longitude": 78.83},
-  {"code": "te", "title": "Telugu", "latitude": 16.45, "longitude": 78.7},
-  {"code": "iu", "title": "Inuktitut", "latitude": 62.17, "longitude": -75.61},
-  {"code": "kl", "title": "Kalaallisut", "latitude": 69.38, "longitude": -52.86},
-  {"code": "guo", "title": "Guayabero", "latitude": 2.9, "longitude": -71.84},
-  {"code": "nuy", "title": "Nunggubuyu", "latitude": -14.26, "longitude": 135.75},
-  {"code": "hmn", "title": "White Hmong", "latitude": 21.55, "longitude": 103.16},
-  {"code": "or", "title": "Oriya", "latitude": 21, "longitude": 85},
-  {"code": "ka", "title": "Georgian", "latitude": 41.85, "longitude": 43.79},
-  {"code": "nhr", "title": "Naro", "latitude": -22.09, "longitude": 20.75},
-  {"code": "rkb", "title": "Rikbaktsa", "latitude": -11.19, "longitude": -58.19},
-  {"code": "mto", "title": "Totontepec Mixe", "latitude": 17.22, "longitude": -96.02},
-  {"code": "zos", "title": "Francisco León Zoque", "latitude": 17.37, "longitude": -93.36},
-  {"code": "bxr", "title": "Russia Buriat", "latitude": 50.85, "longitude": 105.56},
-  {"code": "cho", "title": "Choctaw", "latitude": 32.25, "longitude": -88.5},
-  {"code": "roo", "title": "Rotokas", "latitude": -5.94, "longitude": 155.15},
-  {"code": "kbd", "title": "Kabardian", "latitude": 43.51, "longitude": 43.39},
-  {"code": "ab", "title": "Abkhaz", "latitude": 43.06, "longitude": 41.16},
-  {"code": "djr", "title": "Djambarrpuyngu", "latitude": -12.02, "longitude": 135.59},
-  {"code": "gvn", "title": "Kuku-Yalanji", "latitude": -16, "longitude": 145.19},
-  {"code": "wbp", "title": "Warlpiri", "latitude": -20.1, "longitude": 131.05},
-  {"code": "mcf", "title": "Matsés", "latitude": -5.74, "longitude": -72.63},
-  {"code": "shp", "title": "Shipibo Konibo", "latitude": -7.17, "longitude": -74.82},
-  {"code": "inb", "title": "Inga", "latitude": 1, "longitude": -76.86},
-  {"code": "qub", "title": "Huallaga Huánuco Quechua", "latitude": -9.57, "longitude": -75.59},
-  {"code": "quz", "title": "Cusco Quechua", "latitude": -14.09, "longitude": -71.77},
-  {"code": "amp", "title": "Alamblak", "latitude": -4.66, "longitude": 143.32},
-  {"code": "kmo", "title": "Kwoma", "latitude": -4.09, "longitude": 142.66},
-  {"code": "aau", "title": "Abau", "latitude": -3.97, "longitude": 141.32},
-  {"code": "iws", "title": "Sepik Iwam", "latitude": -4.31, "longitude": 142.12},
-  {"code": "nan", "title": "Min Nan Chinese", "latitude": 24.5, "longitude": 118.17},
-  {"code": "suz", "title": "Sunwar", "latitude": 27.52, "longitude": 86.25},
-  {"code": "mk", "title": "Macedonian", "latitude": 41.6, "longitude": 21.79},
-  {"code": "nas", "title": "Naasioi", "latitude": -6.46, "longitude": 155.63},
-  {"code": "cav", "title": "Cavineña", "latitude": -13.35, "longitude": -66.63},
-  {"code": "tee", "title": "Huehuetla Tepehua", "latitude": 20.62, "longitude": -97.93},
-  {"code": "aoj", "title": "Mufian", "latitude": -3.58, "longitude": 142.96},
-  {"code": "avt", "title": "Au", "latitude": -3.53, "longitude": 142.1},
-  {"code": "too", "title": "Xicotepec de Juárez Totonac", "latitude": 20.65, "longitude": -97.75},
-  {"code": "tpp", "title": "Pisaflores Tepehua", "latitude": 20.7, "longitude": -98.03},
-  {"code": "kyz", "title": "Kayabí", "latitude": -11.27, "longitude": -55.55},
-  {"code": "gn", "title": "Guarani", "latitude": -25.61, "longitude": -57.09},
-  {"code": "chm", "title": "Mari", "latitude": 56.22, "longitude": 46.57},
-  {"code": "hu", "title": "Hungarian", "latitude": 46.91, "longitude": 19.66},
-  {"code": "kv", "title": "Komi", "latitude": 59.66, "longitude": 54.8},
-  {"code": "myv", "title": "Erzya", "latitude": 52.85, "longitude": 45.39},
-  {"code": "nhe", "title": "Nahuatl", "latitude": 21.06, "longitude": -97.91},
-  {"code": "tac", "title": "Tarahumara", "latitude": 27.46, "longitude": -107.85},
-  {"code": "var", "title": "Huarijío", "latitude": 27.87, "longitude": -108.44},
-  {"code": "boa", "title": "Bora", "latitude": -2, "longitude": -72.26},
-  {"code": "yva", "title": "Yawa", "latitude": -1.77, "longitude": 136.26},
-  {"code": "arl", "title": "Arabela", "latitude": -1.96, "longitude": -75.06}];
+      Mayan.data = [{"code": "acr", "title": "Rabinal Achi'", "latitude": 15.07, "longitude": -90.35},
+      {"code": "caa", "title": "Chʼortiʼ", "latitude": 14.82, "longitude": -89.24},
+      {"code": "chf", "title": "Tabasco Chontal", "latitude": 18.17, "longitude": -92.74},
+      {"code": "cnm", "title": "Ixtatán Chuj", "latitude": 15.84, "longitude": -91.76},
+      {"code": "ctu", "title": "Chol", "latitude": 17.49, "longitude": -92.47},
+      {"code": "ixl", "title": "Ixil", "latitude": 15.46, "longitude": -90.89},
+      {"code": "kek", "title": "Qeqchi", "latitude": 15.38, "longitude": -89.25},
+      {"code": "kjb", "title": "Q'anjob'al", "latitude": 15.68, "longitude": -91.3},
+      {"code": "mam", "title": "Mam", "latitude": 14.8, "longitude": -91.72},
+      {"code": "tzj", "title": "Tz'utujil", "latitude": 14.64, "longitude": -91.2},
+      {"code": "tzo", "title": "Tzotzil", "latitude": 16.64, "longitude": -92.74},
+      {"code": "yua", "title": "Yucatec Maya", "latitude": 18.78, "longitude": -88.96}];
 
 
-  // Dot hover effect - increase radii
-  function dot_zoom_in(dot_on) {
-    dot_on.target.radius = 10;
-    dot_on.target.cursorOverStyle = am4core.MouseCursorStyle.pointer;
-  }
-  function dot_zoom_out(dot_off) {
-    dot_off.target.radius = 3;
-    dot_off.target.cursorOverStyle = am4core.MouseCursorStyle.default;
-  }
+      var Arawakan = language_map.series.push(new am4maps.MapImageSeries());
+      Arawakan.mapImages.template.propertyFields.longitude = "longitude";
+      Arawakan.mapImages.template.propertyFields.latitude = "latitude";
+      Arawakan.mapImages.template.tooltipText = "{title}";
+      Arawakan.fill = "#0a16f5";
+      Arawakan.name = "Arawakan";
+      Arawakan.mapImages.template.events.on("hit", info_display);
 
-  // Dot click effect - open html info files
-  function info_display(info) {
-    var content = info.target.dataItem.dataContext.code;
-    window.open("conv_resources/info/" + content + ".html", "_blank");
-  }
+      var Arawakan_dot = Arawakan.mapImages.template.createChild(am4core.Circle);
+      Arawakan_dot.radius = 3;
+      Arawakan_dot.nonScaling = true;
+      Arawakan_dot.events.on("over", dot_zoom_in, this);
+      Arawakan_dot.events.on("out", dot_zoom_out, this);
 
 
-});
+      Arawakan.data = [{"code": "apu", "title": "Apurinã", "latitude": -8.22, "longitude": -66.77},
+      {"code": "cni", "title": "Asháninka", "latitude": -11.93, "longitude": -73.91},
+      {"code": "guc", "title": "Wayuu", "latitude": 11.4, "longitude": -72.2},
+      {"code": "ign", "title": "Ignaciano", "latitude": -15.12, "longitude": -65.4},
+      {"code": "not", "title": "Nomatsiguenga", "latitude": -11.53, "longitude": -74.44},
+      {"code": "pio", "title": "Piapoco", "latitude": 4.38, "longitude": -68.6},
+      {"code": "plu", "title": "Palikúr", "latitude": 3.64, "longitude": -51.62},
+      {"code": "ycn", "title": "Yucuna", "latitude": -0.76, "longitude": -71},
+      {"code": "pib", "title": "Yine", "latitude": -11.11, "longitude": -73.31}];
 
-</script>
+
+      var NigerCongo = language_map.series.push(new am4maps.MapImageSeries());
+      NigerCongo.mapImages.template.propertyFields.longitude = "longitude";
+      NigerCongo.mapImages.template.propertyFields.latitude = "latitude";
+      NigerCongo.mapImages.template.tooltipText = "{title}";
+      NigerCongo.fill = "#8f3fd1";
+      NigerCongo.name = "Niger-Congo";
+      NigerCongo.mapImages.template.events.on("hit", info_display);
+
+      var NigerCongo_dot = NigerCongo.mapImages.template.createChild(am4core.Circle);
+      NigerCongo_dot.radius = 3;
+      NigerCongo_dot.nonScaling = true;
+      NigerCongo_dot.events.on("over", dot_zoom_in, this);
+      NigerCongo_dot.events.on("out", dot_zoom_out, this);
+
+      NigerCongo.data = [{"code": "dyo", "title": "Jola-Fogny", "latitude": 12.76, "longitude": -15.74},
+      {"code": "fuv", "title": "Nigerian Fulfulde", "latitude": 11, "longitude": 11.12},
+      {"code": "kki", "title": "Kagulu", "latitude": -6.38, "longitude": 37.05},
+      {"code": "lem", "title": "Nomaande", "latitude": 4.59, "longitude": 10.92},
+      {"code": "wmw", "title": "Mwani", "latitude": -12.58, "longitude": 40.46},
+      {"code": "wo", "title": "Wolof", "latitude": 15.25, "longitude": -15.38},
+      {"code": "sw", "title": "Swahili", "latitude": -8.26, "longitude": 37.62}];
+
+
+      var Creoles = language_map.series.push(new am4maps.MapImageSeries());
+      Creoles.mapImages.template.propertyFields.longitude = "longitude";
+      Creoles.mapImages.template.propertyFields.latitude = "latitude";
+      Creoles.mapImages.template.tooltipText = "{title}";
+      Creoles.fill = "#ed8ae8";
+      Creoles.name = "Creoles";
+      Creoles.mapImages.template.events.on("hit", info_display);
+
+      var Creoles_dot = Creoles.mapImages.template.createChild(am4core.Circle);
+      Creoles_dot.radius = 3;
+      Creoles_dot.nonScaling = true;
+      Creoles_dot.events.on("over", dot_zoom_in, this);
+      Creoles_dot.events.on("out", dot_zoom_out, this);
+
+      Creoles.data = [{"code": "bi", "title": "Bislama", "latitude": -15.4, "longitude": 166.89},
+      {"code": "jam", "title": "Jamaican Creole", "latitude": 18.13, "longitude": -77.26},
+      {"code": "tpi", "title": "Tok Pisin", "latitude": -9.42, "longitude": 147.3},
+      {"code": "acf", "title": "Saint Lucian Creole French", "latitude": 15.39, "longitude": -61.36},
+      {"code": "ht", "title": "Haitian Creole", "latitude": 18.8, "longitude": -72.14},
+      {"code": "mfe", "title": "Morisyen", "latitude": -20.26, "longitude": 57.55},
+      {"code": "kea", "title": "Cape Verdean", "latitude": 15.06, "longitude": -23.61},
+      {"code": "cbk", "title": "Chavacano", "latitude": 7.44, "longitude": 122.19}];
+
+
+      var Isolates = language_map.series.push(new am4maps.MapImageSeries());
+      Isolates.mapImages.template.propertyFields.longitude = "longitude";
+      Isolates.mapImages.template.propertyFields.latitude = "latitude";
+      Isolates.mapImages.template.tooltipText = "{title}";
+      Isolates.fill = "#221D23";
+      Isolates.name = "Isolates";
+      Isolates.mapImages.template.events.on("hit", info_display);
+
+      var Isolates_dot = Isolates.mapImages.template.createChild(am4core.Circle);
+      Isolates_dot.radius = 3;
+      Isolates_dot.nonScaling = true;
+      Isolates_dot.events.on("over", dot_zoom_in, this);
+      Isolates_dot.events.on("out", dot_zoom_out, this);
+
+      Isolates.data = [{"code": "ata", "title": "Pele-Ata", "latitude": -5.58, "longitude": 151.05},
+      {"code": "cbu", "title": "Candoshi-Shapra", "latitude": -4.24, "longitude": -76.93},
+      {"code": "con_Cofan", "title": "Cofán", "latitude": 0.28, "longitude": -77.06},
+      {"code": "eu", "title": "Basque", "latitude": 43.28, "longitude": -1.32},
+      {"code": "ko", "title": "Korean", "latitude": 37.5, "longitude": 128},
+      {"code": "yuz", "title": "Yuracare", "latitude": -16.75, "longitude": -65.12}];
+
+
+      var other = language_map.series.push(new am4maps.MapImageSeries());
+      other.mapImages.template.propertyFields.longitude = "longitude";
+      other.mapImages.template.propertyFields.latitude = "latitude";
+      other.mapImages.template.tooltipText = "{title}";
+      other.fill = "#FFBE0B";
+      other.name = "Other";
+      other.mapImages.template.events.on("hit", info_display);
+
+      var other_dot = other.mapImages.template.createChild(am4core.Circle);
+      other_dot.radius = 3;
+      other_dot.nonScaling = true;
+      other_dot.events.on("over", dot_zoom_in, this);
+      other_dot.events.on("out", dot_zoom_out, this);
+
+      other.data = [ {"code": "ar", "title": "Arabic", "latitude": 27.96, "longitude": 43.85},
+      {"code": "mt", "title": "Maltese", "latitude": 35.89, "longitude": 14.45},
+      {"code": "shi", "title": "Shilha", "latitude": 29.79, "longitude": -7.78},
+      {"code": "tzm", "title": "Central Atlas Tamazight", "latitude": 32.74, "longitude": -2.41},
+      {"code": "crm", "title": "Moose Cree", "latitude": 51.07, "longitude": -80.69},
+      {"code": "pad", "title": "Paumarí", "latitude": -5.78, "longitude": -64.28},
+      {"code": "arn", "title": "Mapudungun", "latitude": -38.74, "longitude": -71.28},
+      {"code": "bvr", "title": "Burarra", "latitude": -12.31, "longitude": 134.37},
+      {"code": "vi", "title": "Vietnamese", "latitude": 20.68, "longitude": 105.77},
+      {"code": "ay", "title": "Aymara", "latitude": -17, "longitude": -68.5},
+      {"code": "cbi", "title": "Cha'palaa", "latitude": 0.71, "longitude": -79.05},
+      {"code": "cof", "title": "Colorado", "latitude": -0.21, "longitude": -79.23},
+      {"code": "cbt", "title": "Chayahuita", "latitude": -5.64, "longitude": -76.83},
+      {"code": "ake", "title": "Akawaio", "latitude": 6.16, "longitude": -60.86},
+      {"code": "apy", "title": "Apalaí", "latitude": 1.5, "longitude": -54.75},
+      {"code": "way", "title": "Wayana", "latitude": 2.78, "longitude": -54.44},
+      {"code": "car", "title": "Carib", "latitude": 5.84, "longitude": -56.83},
+      {"code": "bzd", "title": "Bribri", "latitude": 9.4, "longitude": -83.05},
+      {"code": "kn", "title": "Kannada", "latitude": 13.59, "longitude": 76.12},
+      {"code": "ml", "title": "Malayalam", "latitude": 9.59, "longitude": 76.77},
+      {"code": "ta", "title": "Tamil", "latitude": 10.52, "longitude": 78.83},
+      {"code": "te", "title": "Telugu", "latitude": 16.45, "longitude": 78.7},
+      {"code": "iu", "title": "Inuktitut", "latitude": 62.17, "longitude": -75.61},
+      {"code": "kl", "title": "Kalaallisut", "latitude": 69.38, "longitude": -52.86},
+      {"code": "guo", "title": "Guayabero", "latitude": 2.9, "longitude": -71.84},
+      {"code": "nuy", "title": "Nunggubuyu", "latitude": -14.26, "longitude": 135.75},
+      {"code": "hmn", "title": "White Hmong", "latitude": 21.55, "longitude": 103.16},
+      {"code": "or", "title": "Oriya", "latitude": 21, "longitude": 85},
+      {"code": "ka", "title": "Georgian", "latitude": 41.85, "longitude": 43.79},
+      {"code": "nhr", "title": "Naro", "latitude": -22.09, "longitude": 20.75},
+      {"code": "rkb", "title": "Rikbaktsa", "latitude": -11.19, "longitude": -58.19},
+      {"code": "mto", "title": "Totontepec Mixe", "latitude": 17.22, "longitude": -96.02},
+      {"code": "zos", "title": "Francisco León Zoque", "latitude": 17.37, "longitude": -93.36},
+      {"code": "bxr", "title": "Russia Buriat", "latitude": 50.85, "longitude": 105.56},
+      {"code": "cho", "title": "Choctaw", "latitude": 32.25, "longitude": -88.5},
+      {"code": "roo", "title": "Rotokas", "latitude": -5.94, "longitude": 155.15},
+      {"code": "kbd", "title": "Kabardian", "latitude": 43.51, "longitude": 43.39},
+      {"code": "ab", "title": "Abkhaz", "latitude": 43.06, "longitude": 41.16},
+      {"code": "djr", "title": "Djambarrpuyngu", "latitude": -12.02, "longitude": 135.59},
+      {"code": "gvn", "title": "Kuku-Yalanji", "latitude": -16, "longitude": 145.19},
+      {"code": "wbp", "title": "Warlpiri", "latitude": -20.1, "longitude": 131.05},
+      {"code": "mcf", "title": "Matsés", "latitude": -5.74, "longitude": -72.63},
+      {"code": "shp", "title": "Shipibo Konibo", "latitude": -7.17, "longitude": -74.82},
+      {"code": "inb", "title": "Inga", "latitude": 1, "longitude": -76.86},
+      {"code": "qub", "title": "Huallaga Huánuco Quechua", "latitude": -9.57, "longitude": -75.59},
+      {"code": "quz", "title": "Cusco Quechua", "latitude": -14.09, "longitude": -71.77},
+      {"code": "amp", "title": "Alamblak", "latitude": -4.66, "longitude": 143.32},
+      {"code": "kmo", "title": "Kwoma", "latitude": -4.09, "longitude": 142.66},
+      {"code": "aau", "title": "Abau", "latitude": -3.97, "longitude": 141.32},
+      {"code": "iws", "title": "Sepik Iwam", "latitude": -4.31, "longitude": 142.12},
+      {"code": "nan", "title": "Min Nan Chinese", "latitude": 24.5, "longitude": 118.17},
+      {"code": "suz", "title": "Sunwar", "latitude": 27.52, "longitude": 86.25},
+      {"code": "mk", "title": "Macedonian", "latitude": 41.6, "longitude": 21.79},
+      {"code": "nas", "title": "Naasioi", "latitude": -6.46, "longitude": 155.63},
+      {"code": "cav", "title": "Cavineña", "latitude": -13.35, "longitude": -66.63},
+      {"code": "tee", "title": "Huehuetla Tepehua", "latitude": 20.62, "longitude": -97.93},
+      {"code": "aoj", "title": "Mufian", "latitude": -3.58, "longitude": 142.96},
+      {"code": "avt", "title": "Au", "latitude": -3.53, "longitude": 142.1},
+      {"code": "too", "title": "Xicotepec de Juárez Totonac", "latitude": 20.65, "longitude": -97.75},
+      {"code": "tpp", "title": "Pisaflores Tepehua", "latitude": 20.7, "longitude": -98.03},
+      {"code": "kyz", "title": "Kayabí", "latitude": -11.27, "longitude": -55.55},
+      {"code": "gn", "title": "Guarani", "latitude": -25.61, "longitude": -57.09},
+      {"code": "chm", "title": "Mari", "latitude": 56.22, "longitude": 46.57},
+      {"code": "hu", "title": "Hungarian", "latitude": 46.91, "longitude": 19.66},
+      {"code": "kv", "title": "Komi", "latitude": 59.66, "longitude": 54.8},
+      {"code": "myv", "title": "Erzya", "latitude": 52.85, "longitude": 45.39},
+      {"code": "nhe", "title": "Nahuatl", "latitude": 21.06, "longitude": -97.91},
+      {"code": "tac", "title": "Tarahumara", "latitude": 27.46, "longitude": -107.85},
+      {"code": "var", "title": "Huarijío", "latitude": 27.87, "longitude": -108.44},
+      {"code": "boa", "title": "Bora", "latitude": -2, "longitude": -72.26},
+      {"code": "yva", "title": "Yawa", "latitude": -1.77, "longitude": 136.26},
+      {"code": "arl", "title": "Arabela", "latitude": -1.96, "longitude": -75.06}];
+
+
+      // Dot hover effect - increase radii
+      function dot_zoom_in(dot_on) {
+        dot_on.target.radius = 10;
+        dot_on.target.cursorOverStyle = am4core.MouseCursorStyle.pointer;
+      }
+      function dot_zoom_out(dot_off) {
+        dot_off.target.radius = 3;
+        dot_off.target.cursorOverStyle = am4core.MouseCursorStyle.default;
+      }
+
+      // Dot click effect - open html info files
+      function info_display(info) {
+        var content = info.target.dataItem.dataContext.code;
+        window.open("conv_resources/info/" + content + ".html", "_blank");
+      }
+
+
+    });
+
+  </script>
+
+  <script src="./js/sidenav.js"></script>
 
 </body>
 </html>

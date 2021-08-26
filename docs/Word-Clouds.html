@@ -5,377 +5,391 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel = "stylesheet" href="./css/header.css">
   <link rel = "stylesheet" href="./css/Word-Clouds.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" href="./css/Word-Clouds_media.css">
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" onclick="openNav()" data-target="#websitenav">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid h-100">
+      <button id="display_sidenav" class="navbar-toggler" data-toggle="collapse" data-target="#websitenav">
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
       </button>
+      <div class="collapse navbar-collapse" id="websitenav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item p-2">
+            <a href="index.html" class="nav-link">The XPF Corpus</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="About.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="Convert-to-IPA.html" class="nav-link">Convert to IPA</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="Word-Clouds.html" class="nav-link active">Word Clouds</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="Special-Thanks.html" class="nav-link">Special Thanks</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="websitenav">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">The XPF Corpus</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Convert-to-IPA.html">Convert to IPA</a></li>
-        <li><a href="Word-Clouds.html" style="color: #478ac9;">Word Clouds</a></li>
-        <li><a href="Special-Thanks.html">Special Thanks</a></li>
-    </div>
-  </div>
-</nav>
+  </nav>
 
-<div id="website-sidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">The XPF Corpus</a>
-  <a href="About.html">About</a>
-  <a href="Convert-to-IPA.html">Convert to IPA</a>
-  <a href="Word-Clouds.html" style="color: #478ac9;">Word Clouds</a>
-  <a href="Special-Thanks.html">Special Thanks</a>
-</div>
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-xs-1"></div>
-    <div class="col-xs-10">
-      <h3 class="text-center" style="font-family: 'Helvetica'"><b>Word Clouds</b></h3>
-      <h3 style="margin-bottom: 40px;"><small style="color: black;">
-        <b>Work in progress</b> First, select a language that you would like to compare your input text to. Next, either type the desired text to be compared or upload a text file - for meaningful results, we recommend inputing text that is present in the selected language and uses the appropriate orthography (e.g. Cyrillic for Ukranian). Depending on your input, one or two word clouds will appear: If there is a clear distinction between words that are unusually frequent (i.e. over represented) and words that are unusually infrequent (i.e. under represented) in the input text relative to the selected language, two word clouds will appear, but if there is not, only one will appear. Word size corresponds to the absolute pointwise KL-divergence of that word. Simply hover over each word to reveal its corresponding pointwise KL-divergence value.</small></h3>
-    </div>
-    <div class="col-xs-1"></div>
+  <div id="website-sidenav" class="sidenav">
+    <a href="javascript:void(0)" id="close_sidenav">X</a>
+    <a href="index.html">The XPF Corpus</a>
+    <a href="About.html">About</a>
+    <a href="Convert-to-IPA.html">Convert to IPA</a>
+    <a href="Word-Clouds.html" class="active">Word Clouds</a>
+    <a href="Special-Thanks.html">Special Thanks</a>
   </div>
 
-  <!--
-      Create User Interface
-        Two main sections: Input selection/upload and word clouds
-          Language: select a language to be used for comparison, and either type or upload your text (use orthography from the language you select)
-          Word Cloud(s): depending on the input text, either one word cloud or two will appear (separated based on over/under representation)
-            - The resulting word cloud(s) represent the pointwise kl-divergence values of each word relative to the selected language
-  -->
-
-  <div id="main_format">
-    <!--Header-->
-    <div class="row" style="margin: auto;">
-      <div class="col-container">
-        <div class="col-xs-6 text-center" style="padding-right: 15px; padding-left: 0px;">
-          <inthead style="margin-top: 0;">Language</inthead>
+  <div class="jumbotron vertical-center m-0 p-0">
+    <div class="container-fluid top">
+      <div class="h-100 d-flex flex-column gap">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <p class="m-0 info-header"><b>Word Clouds</b></p>
+          </div>
         </div>
-        <div class="col-xs-6 text-center" style="padding-right: 0px; padding-left: 30px;">
-          <inthead style="margin-top: 0;">Text</inthead>
+        <div class="row">
+          <div class="col">
+            <p class="m-0 info text-center"><b>Work in progress</b> First, select a language that you would like to compare your input text to. Next, either type the desired text to be compared or upload a text file - for meaningful results, we recommend inputing text that is present in the selected language and uses the appropriate orthography (e.g. Cyrillic for Ukranian). Depending on your input, one or two word clouds will appear: If there is a clear distinction between words that are unusually frequent (i.e. over represented) and words that are unusually infrequent (i.e. under represented) in the input text relative to the selected language, two word clouds will appear, but if there is not, only one will appear. Word size corresponds to the absolute pointwise KL-divergence of that word. Simply hover over each word to reveal its corresponding pointwise KL-divergence value.</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="row" style="margin: auto;">
-      <div class="col-container2">
-        <div class="col-xs-6" style="padding-right: 15px; padding-left: 0px;">
-          <div id="existing">
-            Select:<br><select id="rule_dropdown" onchange="clear_screen()" style="width: 100%;"> <!--language select-->
-            <option value>Language</option>
-<p><option value="wc_resources/aau.txt">Abau</option> <option value="wc_resources/ab.txt">Abkhaz</option> <option value="wc_resources/ake.txt">Akawaio</option> <option value="wc_resources/amp.txt">Alamblak</option> <option value="wc_resources/sq.txt">Albanian</option> <option value="wc_resources/amn.txt">Amanab</option> <option value="wc_resources/aey.txt">Amele</option> <option value="wc_resources/agg.txt">Angor</option> <option value="wc_resources/boj.txt">Anjam</option> <option value="wc_resources/aak.txt">Ankave</option> <option value="wc_resources/aom.txt">Aomie</option> <option value="wc_resources/apy.txt">Apalaí</option> <option value="wc_resources/apu.txt">Apurinã</option> <option value="wc_resources/arl.txt">Arabela</option> <option value="wc_resources/ar-x-diacritics.txt">Arabic</option> <option value="wc_resources/an.txt">Aragonese</option> <option value="wc_resources/hy.txt">Armenian</option> <option value="wc_resources/aia.txt">Arosi</option> <option value="wc_resources/cni.txt">Asháninka</option> <option value="wc_resources/ast.txt">Asturian</option> <option value="wc_resources/avt.txt">Au</option> <option value="wc_resources/awx.txt">Awara</option> <option value="wc_resources/ay.txt">Aymara</option> <option value="wc_resources/az.txt">Azerbaijani</option> <option value="wc_resources/mlp.txt">Bargam</option> <option value="wc_resources/ba.txt">Bashkir</option> <option value="wc_resources/eu.txt">Basque</option> <option value="wc_resources/btx.txt">Batak Karo</option> <option value="wc_resources/be.txt">Belarusan</option> <option value="wc_resources/bef.txt">Benabena</option> <option value="wc_resources/bi.txt">Bislama</option> <option value="wc_resources/boa.txt">Bora</option> <option value="wc_resources/ksr.txt">Borong</option> <option value="wc_resources/bzd.txt">Bribri</option> <option value="wc_resources/bug.txt">Bugis</option> <option value="wc_resources/bg.txt">Bulgarian</option> <option value="wc_resources/bdd.txt">Bunama</option> <option value="wc_resources/bvr.txt">Burarra</option> <option value="wc_resources/cbu.txt">Candoshi-Shapra</option> <option value="wc_resources/kea.txt">Cape Verdean Creole</option> <option value="wc_resources/car.txt">Carib</option> <option value="wc_resources/ca.txt">Catalan</option> <option value="wc_resources/cav.txt">Cavineña</option> <option value="wc_resources/tzm-Tfng.txt">Central Atlas Tamazight</option> <option value="wc_resources/bcl.txt">Central Bikol</option> <option value="wc_resources/caa.txt">Ch’orti’</option> <option value="wc_resources/cbi.txt">Cha’palaa</option> <option value="wc_resources/cbk.txt">Chavacano</option> <option value="wc_resources/cbt.txt">Chayahuita</option> <option value="wc_resources/cho.txt">Choctaw</option> <option value="wc_resources/ctu.txt">Chol</option> <option value="wc_resources/cv.txt">Chuvash</option> <option value="wc_resources/con_Cofan.txt">Cofán</option> <option value="wc_resources/cof.txt">Colorado</option> <option value="wc_resources/crh.txt">Crimean Tatar</option> <option value="wc_resources/quz.txt">Cusco Quechua</option> <option value="wc_resources/cs.txt">Czech</option> <option value="wc_resources/dgz.txt">Daga</option> <option value="wc_resources/ded.txt">Dedua</option> <option value="wc_resources/djr.txt">Djambarrpuyngu</option> <option value="wc_resources/myv.txt">Erzya</option> <option value="wc_resources/mcq.txt">Ese</option> <option value="wc_resources/zos.txt">Francisco León Zoque</option> <option value="wc_resources/pwg.txt">Gapapaiwa</option> <option value="wc_resources/ka.txt">Georgian</option> <option value="wc_resources/el.txt">Greek</option> <option value="wc_resources/gn.txt">Guarani</option> <option value="wc_resources/guo.txt">Guayabero</option> <option value="wc_resources/ghs.txt">Guhu-Samane</option> <option value="wc_resources/ht.txt">Haitian Creole</option> <option value="wc_resources/haw.txt">Hawaiian</option> <option value="wc_resources/hil.txt">Hiligaynon</option> <option value="wc_resources/hi.txt">Hindi</option> <option value="wc_resources/hmn.txt">Hmong</option> <option value="wc_resources/qub.txt">Huallaga Huánuco Quechua</option> <option value="wc_resources/var.txt">Huarijío</option> <option value="wc_resources/tee.txt">Huehuetla Tepehua</option> <option value="wc_resources/hu.txt">Hungarian</option> <option value="wc_resources/viv.txt">Iduna</option> <option value="wc_resources/ign.txt">Ignaciano</option> <option value="wc_resources/ilo.txt">Ilocano</option> <option value="wc_resources/id.txt">Indonesian</option> <option value="wc_resources/inb.txt">Inga</option> <option value="wc_resources/iu-Latn.txt">Inuktitut</option> <option value="wc_resources/ixl.txt">Ixil</option> <option value="wc_resources/cnm.txt">Ixtatán Chuj</option> <option value="wc_resources/jam.txt">Jamaican Creole</option> <option value="wc_resources/jv.txt">Javanese</option> <option value="wc_resources/dyo.txt">Jola-Fogny</option> <option value="wc_resources/kbd.txt">Kabardian</option> <option value="wc_resources/kki.txt">Kagulu</option> <option value="wc_resources/kl.txt">Kalaallisut</option> <option value="wc_resources/kn.txt">Kannada</option> <option value="wc_resources/krc.txt">Karachay-Balkar</option> <option value="wc_resources/kyz.txt">Kayabí</option> <option value="wc_resources/kk.txt">Kazakh</option> <option value="wc_resources/ky.txt">Kirghiz</option> <option value="wc_resources/gil.txt">Kiribati</option> <option value="wc_resources/kpf.txt">Komba</option> <option value="wc_resources/kv.txt">Komi</option> <option value="wc_resources/ko.txt">Korean</option> <option value="wc_resources/gvn.txt">Kuku-Yalanji</option> <option value="wc_resources/kup.txt">Kunimaipa</option> <option value="wc_resources/kmo.txt">Kwoma</option> <option value="wc_resources/mk.txt">Macedonian</option> <option value="wc_resources/mg.txt">Malagasy</option> <option value="wc_resources/ml.txt">Malayalam</option> <option value="wc_resources/dv.txt">Maldivian</option> <option value="wc_resources/mt.txt">Maltese</option> <option value="wc_resources/mam.txt">Mam</option> <option value="wc_resources/mqj.txt">Mamasa</option> <option value="wc_resources/mva.txt">Manam</option> <option value="wc_resources/bzh.txt">Mapos Buang</option> <option value="wc_resources/arn.txt">Mapudungun</option> <option value="wc_resources/chm.txt">Mari</option> <option value="wc_resources/mcf.txt">Matsés</option> <option value="wc_resources/mhl.txt">Mauwake</option> <option value="wc_resources/mek.txt">Mekeo</option> <option value="wc_resources/nan.txt">Min Nan Chinese</option> <option value="wc_resources/mpx.txt">Misima-Panaeati</option> <option value="wc_resources/crm.txt">Moose Cree</option> <option value="wc_resources/mfe.txt">Morisyen</option> <option value="wc_resources/kpx.txt">Mountain Koiali</option> <option value="wc_resources/aoj.txt">Mufian</option> <option value="wc_resources/mnb.txt">Muna</option> <option value="wc_resources/emi.txt">Mussau-Emira</option> <option value="wc_resources/wmw.txt">Mwani</option> <option value="wc_resources/nas.txt">Naasioi</option> <option value="wc_resources/naf.txt">Nabak</option> <option value="wc_resources/nhe.txt">Nahuatl</option> <option value="wc_resources/lem.txt">Namaande</option> <option value="wc_resources/nhr.txt">Naro</option> <option value="wc_resources/nsn.txt">Nehan</option> <option value="wc_resources/ne.txt">Nepali</option> <option value="wc_resources/fuv.txt">Nigerian Fulfulde</option> <option value="wc_resources/gaw.txt">Nobonob</option> <option value="wc_resources/not.txt">Nomatsiguenga</option> <option value="wc_resources/nuy.txt">Nunggubuyu</option> <option value="wc_resources/or.txt">Oriya</option> <option value="wc_resources/os.txt">Ossetic</option> <option value="wc_resources/pau.txt">Palauan</option> <option value="wc_resources/plu.txt">Palikúr</option> <option value="wc_resources/pag.txt">Pangasinan</option> <option value="wc_resources/pad.txt">Paumarí</option> <option value="wc_resources/ata.txt">Pele-Ata</option> <option value="wc_resources/pio.txt">Piapoco</option> <option value="wc_resources/tpp.txt">Pisaflores Tepehua</option> <option value="wc_resources/kjb.txt">Q’anjob’al</option> <option value="wc_resources/kek.txt">Qeqchi</option> <option value="wc_resources/acr-x-rabinal.txt">Rabinal Achi’</option> <option value="wc_resources/rwo.txt">Rawa</option> <option value="wc_resources/rkb.txt">Rikbaktsa</option> <option value="wc_resources/ro.txt">Romanian</option> <option value="wc_resources/roo.txt">Rotokas</option> <option value="wc_resources/bxr.txt">Russia Buriat</option> <option value="wc_resources/acf.txt">Saint Lucian Creole French</option> <option value="wc_resources/sm.txt">Samoan</option> <option value="wc_resources/iws.txt">Sepik Iwam</option> <option value="wc_resources/shi-Latn.txt">Shilha</option> <option value="wc_resources/shp.txt">Shipibo-Konibo</option> <option value="wc_resources/snc.txt">Sinaugoro</option> <option value="wc_resources/si.txt">Sinhala</option> <option value="wc_resources/sk.txt">Slovak</option> <option value="wc_resources/bmu.txt">Somba-Siawari</option> <option value="wc_resources/omw.txt">South Tairora</option> <option value="wc_resources/es.txt">Spanish</option> <option value="wc_resources/zsm.txt">Standard Malay</option> <option value="wc_resources/suz.txt">Sunwar</option> <option value="wc_resources/sw.txt">Swahili</option> <option value="wc_resources/chf.txt">Tabasco Chontal</option> <option value="wc_resources/tg.txt">Tajik</option> <option value="wc_resources/ta.txt">Tamil</option> <option value="wc_resources/tac.txt">Tarahumara</option> <option value="wc_resources/tt.txt">Tatar</option> <option value="wc_resources/te.txt">Telugu</option> <option value="wc_resources/tpi.txt">Tok Pisin</option> <option value="wc_resources/to.txt">Tongan</option> <option value="wc_resources/mto.txt">Totontepec Mixe</option> <option value="wc_resources/tr.txt">Turkish</option> <option value="wc_resources/tyv.txt">Tuvan</option> <option value="wc_resources/tzj.txt">Tz’utujil</option> <option value="wc_resources/tzo.txt">Tzotzil</option> <option value="wc_resources/uk.txt">Ukrainian</option> <option value="wc_resources/hsb.txt">Upper Sorbian</option> <option value="wc_resources/usa.txt">Usarufa</option> <option value="wc_resources/ug.txt">Uyghur</option> <option value="wc_resources/uz.txt">Uzbek</option> <option value="wc_resources/vi.txt">Vietnamese</option> <option value="wc_resources/wbp.txt">Warlpiri</option> <option value="wc_resources/way.txt">Wayana</option> <option value="wc_resources/guc.txt">Wayuu</option> <option value="wc_resources/wo.txt">Wolof</option> <option value="wc_resources/too.txt">Xicotepec de Juárez Totonac</option> <option value="wc_resources/sah.txt">Yakut</option> <option value="wc_resources/yva.txt">Yawa</option> <option value="wc_resources/yi-Latn.txt">Yiddish</option> <option value="wc_resources/pib.txt">Yine</option> <option value="wc_resources/yua.txt">Yucatec Maya</option> <option value="wc_resources/ycn.txt">Yucuna</option> <option value="wc_resources/yuz.txt">Yuracare</option> <option value="wc_resources/zza.txt">Zaza</option></p>
-              </select>
+    <!--
+        Create User Interface
+          Two main sections: Input selection/upload and word clouds
+            Language: select a language to be used for comparison, and either type or upload your text (use orthography from the language you select)
+            Word Cloud(s): depending on the input text, either one word cloud or two will appear (separated based on over/under representation)
+              - The resulting word cloud(s) represent the pointwise kl-divergence values of each word relative to the selected language
+    -->
+
+    <div id="main_format" class="container">
+      <!-- Header -->
+      <div class="h-100 d-flex flex-column gap">
+        <div class="row">
+          <div class="col text-center h-100">
+            <inthead>Language</inthead>
+          </div>
+          <div class="col text-center h-100">
+            <inthead>Text</inthead>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col _1">
+          <div class="d-flex flex-column gap h-100">
+            <div class="row A m-0">
+              <div class="col">
+                <div id="existing">
+                    Select:<br><select id="rule_dropdown"> <!-- language select -->
+                    <option value>Language</option>
+        <p><option value="wc_resources/aau.txt">Abau</option> <option value="wc_resources/ab.txt">Abkhaz</option> <option value="wc_resources/ake.txt">Akawaio</option> <option value="wc_resources/amp.txt">Alamblak</option> <option value="wc_resources/sq.txt">Albanian</option> <option value="wc_resources/amn.txt">Amanab</option> <option value="wc_resources/aey.txt">Amele</option> <option value="wc_resources/agg.txt">Angor</option> <option value="wc_resources/boj.txt">Anjam</option> <option value="wc_resources/aak.txt">Ankave</option> <option value="wc_resources/aom.txt">Aomie</option> <option value="wc_resources/apy.txt">Apalaí</option> <option value="wc_resources/apu.txt">Apurinã</option> <option value="wc_resources/arl.txt">Arabela</option> <option value="wc_resources/ar-x-diacritics.txt">Arabic</option> <option value="wc_resources/an.txt">Aragonese</option> <option value="wc_resources/hy.txt">Armenian</option> <option value="wc_resources/aia.txt">Arosi</option> <option value="wc_resources/cni.txt">Asháninka</option> <option value="wc_resources/ast.txt">Asturian</option> <option value="wc_resources/avt.txt">Au</option> <option value="wc_resources/awx.txt">Awara</option> <option value="wc_resources/ay.txt">Aymara</option> <option value="wc_resources/az.txt">Azerbaijani</option> <option value="wc_resources/mlp.txt">Bargam</option> <option value="wc_resources/ba.txt">Bashkir</option> <option value="wc_resources/eu.txt">Basque</option> <option value="wc_resources/btx.txt">Batak Karo</option> <option value="wc_resources/be.txt">Belarusan</option> <option value="wc_resources/bef.txt">Benabena</option> <option value="wc_resources/bi.txt">Bislama</option> <option value="wc_resources/boa.txt">Bora</option> <option value="wc_resources/ksr.txt">Borong</option> <option value="wc_resources/bzd.txt">Bribri</option> <option value="wc_resources/bug.txt">Bugis</option> <option value="wc_resources/bg.txt">Bulgarian</option> <option value="wc_resources/bdd.txt">Bunama</option> <option value="wc_resources/bvr.txt">Burarra</option> <option value="wc_resources/cbu.txt">Candoshi-Shapra</option> <option value="wc_resources/kea.txt">Cape Verdean Creole</option> <option value="wc_resources/car.txt">Carib</option> <option value="wc_resources/ca.txt">Catalan</option> <option value="wc_resources/cav.txt">Cavineña</option> <option value="wc_resources/tzm-Tfng.txt">Central Atlas Tamazight</option> <option value="wc_resources/bcl.txt">Central Bikol</option> <option value="wc_resources/caa.txt">Ch’orti’</option> <option value="wc_resources/cbi.txt">Cha’palaa</option> <option value="wc_resources/cbk.txt">Chavacano</option> <option value="wc_resources/cbt.txt">Chayahuita</option> <option value="wc_resources/cho.txt">Choctaw</option> <option value="wc_resources/ctu.txt">Chol</option> <option value="wc_resources/cv.txt">Chuvash</option> <option value="wc_resources/con_Cofan.txt">Cofán</option> <option value="wc_resources/cof.txt">Colorado</option> <option value="wc_resources/crh.txt">Crimean Tatar</option> <option value="wc_resources/quz.txt">Cusco Quechua</option> <option value="wc_resources/cs.txt">Czech</option> <option value="wc_resources/dgz.txt">Daga</option> <option value="wc_resources/ded.txt">Dedua</option> <option value="wc_resources/djr.txt">Djambarrpuyngu</option> <option value="wc_resources/myv.txt">Erzya</option> <option value="wc_resources/mcq.txt">Ese</option> <option value="wc_resources/zos.txt">Francisco León Zoque</option> <option value="wc_resources/pwg.txt">Gapapaiwa</option> <option value="wc_resources/ka.txt">Georgian</option> <option value="wc_resources/el.txt">Greek</option> <option value="wc_resources/gn.txt">Guarani</option> <option value="wc_resources/guo.txt">Guayabero</option> <option value="wc_resources/ghs.txt">Guhu-Samane</option> <option value="wc_resources/ht.txt">Haitian Creole</option> <option value="wc_resources/haw.txt">Hawaiian</option> <option value="wc_resources/hil.txt">Hiligaynon</option> <option value="wc_resources/hi.txt">Hindi</option> <option value="wc_resources/hmn.txt">Hmong</option> <option value="wc_resources/qub.txt">Huallaga Huánuco Quechua</option> <option value="wc_resources/var.txt">Huarijío</option> <option value="wc_resources/tee.txt">Huehuetla Tepehua</option> <option value="wc_resources/hu.txt">Hungarian</option> <option value="wc_resources/viv.txt">Iduna</option> <option value="wc_resources/ign.txt">Ignaciano</option> <option value="wc_resources/ilo.txt">Ilocano</option> <option value="wc_resources/id.txt">Indonesian</option> <option value="wc_resources/inb.txt">Inga</option> <option value="wc_resources/iu-Latn.txt">Inuktitut</option> <option value="wc_resources/ixl.txt">Ixil</option> <option value="wc_resources/cnm.txt">Ixtatán Chuj</option> <option value="wc_resources/jam.txt">Jamaican Creole</option> <option value="wc_resources/jv.txt">Javanese</option> <option value="wc_resources/dyo.txt">Jola-Fogny</option> <option value="wc_resources/kbd.txt">Kabardian</option> <option value="wc_resources/kki.txt">Kagulu</option> <option value="wc_resources/kl.txt">Kalaallisut</option> <option value="wc_resources/kn.txt">Kannada</option> <option value="wc_resources/krc.txt">Karachay-Balkar</option> <option value="wc_resources/kyz.txt">Kayabí</option> <option value="wc_resources/kk.txt">Kazakh</option> <option value="wc_resources/ky.txt">Kirghiz</option> <option value="wc_resources/gil.txt">Kiribati</option> <option value="wc_resources/kpf.txt">Komba</option> <option value="wc_resources/kv.txt">Komi</option> <option value="wc_resources/ko.txt">Korean</option> <option value="wc_resources/gvn.txt">Kuku-Yalanji</option> <option value="wc_resources/kup.txt">Kunimaipa</option> <option value="wc_resources/kmo.txt">Kwoma</option> <option value="wc_resources/mk.txt">Macedonian</option> <option value="wc_resources/mg.txt">Malagasy</option> <option value="wc_resources/ml.txt">Malayalam</option> <option value="wc_resources/dv.txt">Maldivian</option> <option value="wc_resources/mt.txt">Maltese</option> <option value="wc_resources/mam.txt">Mam</option> <option value="wc_resources/mqj.txt">Mamasa</option> <option value="wc_resources/mva.txt">Manam</option> <option value="wc_resources/bzh.txt">Mapos Buang</option> <option value="wc_resources/arn.txt">Mapudungun</option> <option value="wc_resources/chm.txt">Mari</option> <option value="wc_resources/mcf.txt">Matsés</option> <option value="wc_resources/mhl.txt">Mauwake</option> <option value="wc_resources/mek.txt">Mekeo</option> <option value="wc_resources/nan.txt">Min Nan Chinese</option> <option value="wc_resources/mpx.txt">Misima-Panaeati</option> <option value="wc_resources/crm.txt">Moose Cree</option> <option value="wc_resources/mfe.txt">Morisyen</option> <option value="wc_resources/kpx.txt">Mountain Koiali</option> <option value="wc_resources/aoj.txt">Mufian</option> <option value="wc_resources/mnb.txt">Muna</option> <option value="wc_resources/emi.txt">Mussau-Emira</option> <option value="wc_resources/wmw.txt">Mwani</option> <option value="wc_resources/nas.txt">Naasioi</option> <option value="wc_resources/naf.txt">Nabak</option> <option value="wc_resources/nhe.txt">Nahuatl</option> <option value="wc_resources/lem.txt">Namaande</option> <option value="wc_resources/nhr.txt">Naro</option> <option value="wc_resources/nsn.txt">Nehan</option> <option value="wc_resources/ne.txt">Nepali</option> <option value="wc_resources/fuv.txt">Nigerian Fulfulde</option> <option value="wc_resources/gaw.txt">Nobonob</option> <option value="wc_resources/not.txt">Nomatsiguenga</option> <option value="wc_resources/nuy.txt">Nunggubuyu</option> <option value="wc_resources/or.txt">Oriya</option> <option value="wc_resources/os.txt">Ossetic</option> <option value="wc_resources/pau.txt">Palauan</option> <option value="wc_resources/plu.txt">Palikúr</option> <option value="wc_resources/pag.txt">Pangasinan</option> <option value="wc_resources/pad.txt">Paumarí</option> <option value="wc_resources/ata.txt">Pele-Ata</option> <option value="wc_resources/pio.txt">Piapoco</option> <option value="wc_resources/tpp.txt">Pisaflores Tepehua</option> <option value="wc_resources/kjb.txt">Q’anjob’al</option> <option value="wc_resources/kek.txt">Qeqchi</option> <option value="wc_resources/acr-x-rabinal.txt">Rabinal Achi’</option> <option value="wc_resources/rwo.txt">Rawa</option> <option value="wc_resources/rkb.txt">Rikbaktsa</option> <option value="wc_resources/ro.txt">Romanian</option> <option value="wc_resources/roo.txt">Rotokas</option> <option value="wc_resources/bxr.txt">Russia Buriat</option> <option value="wc_resources/acf.txt">Saint Lucian Creole French</option> <option value="wc_resources/sm.txt">Samoan</option> <option value="wc_resources/iws.txt">Sepik Iwam</option> <option value="wc_resources/shi-Latn.txt">Shilha</option> <option value="wc_resources/shp.txt">Shipibo-Konibo</option> <option value="wc_resources/snc.txt">Sinaugoro</option> <option value="wc_resources/si.txt">Sinhala</option> <option value="wc_resources/sk.txt">Slovak</option> <option value="wc_resources/bmu.txt">Somba-Siawari</option> <option value="wc_resources/omw.txt">South Tairora</option> <option value="wc_resources/es.txt">Spanish</option> <option value="wc_resources/zsm.txt">Standard Malay</option> <option value="wc_resources/suz.txt">Sunwar</option> <option value="wc_resources/sw.txt">Swahili</option> <option value="wc_resources/chf.txt">Tabasco Chontal</option> <option value="wc_resources/tg.txt">Tajik</option> <option value="wc_resources/ta.txt">Tamil</option> <option value="wc_resources/tac.txt">Tarahumara</option> <option value="wc_resources/tt.txt">Tatar</option> <option value="wc_resources/te.txt">Telugu</option> <option value="wc_resources/tpi.txt">Tok Pisin</option> <option value="wc_resources/to.txt">Tongan</option> <option value="wc_resources/mto.txt">Totontepec Mixe</option> <option value="wc_resources/tr.txt">Turkish</option> <option value="wc_resources/tyv.txt">Tuvan</option> <option value="wc_resources/tzj.txt">Tz’utujil</option> <option value="wc_resources/tzo.txt">Tzotzil</option> <option value="wc_resources/uk.txt">Ukrainian</option> <option value="wc_resources/hsb.txt">Upper Sorbian</option> <option value="wc_resources/usa.txt">Usarufa</option> <option value="wc_resources/ug.txt">Uyghur</option> <option value="wc_resources/uz.txt">Uzbek</option> <option value="wc_resources/vi.txt">Vietnamese</option> <option value="wc_resources/wbp.txt">Warlpiri</option> <option value="wc_resources/way.txt">Wayana</option> <option value="wc_resources/guc.txt">Wayuu</option> <option value="wc_resources/wo.txt">Wolof</option> <option value="wc_resources/too.txt">Xicotepec de Juárez Totonac</option> <option value="wc_resources/sah.txt">Yakut</option> <option value="wc_resources/yva.txt">Yawa</option> <option value="wc_resources/yi-Latn.txt">Yiddish</option> <option value="wc_resources/pib.txt">Yine</option> <option value="wc_resources/yua.txt">Yucatec Maya</option> <option value="wc_resources/ycn.txt">Yucuna</option> <option value="wc_resources/yuz.txt">Yuracare</option> <option value="wc_resources/zza.txt">Zaza</option></p>
+                    </select>
+                </div>
+              </div>
+            </div>
+            <div class="row B m-0 flex-grow-1">
+              <div class="col d-flex align-items-end">
+                <button type="submit" id="submit">Generate</button> <!-- generate button -->
+              </div>
             </div>
           </div>
-
-          <div class="col-xs-6" style="padding-right: 0; padding-left: 30px;">
-            Text input:<br><textarea id="in1" name="in1"></textarea> <!--text input: type-->
+        </div>
+        <div class="col _2">
+          <div class="d-flex flex-column gap h-100">
+            <div class="row A m-0">
+              <div class="col">
+                Text input:<br><textarea id="in1" name="in1"></textarea> <!-- text input: type -->
+              </div>
+            </div>
+            <div class="row B m-0 flex-grow-1">
+              <div class="col d-flex align-items-end">
+                Upload text: &nbsp<input id="upload_text_form" type=file accept="text" name="files[]" size=30> <!-- text input: upload -->
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="row" style="margin: auto;">
-        <div class="col-xs-6" style="margin-top: -25px;"><br><br>
-          <button type="submit" id="submit" onclick="generate()">Generate</button> <!--generate button-->
-        </div>
-        <div class="col-xs-6" style="padding-right: 15px; padding-left: 30px;">
-          Upload text: <input id="upload_text_form" type=file onchange="read_text_upload()" accept="text" name="files[]" size=30> <!--text input: upload-->
-        </div>
-      </div>
     </div>
-
     <!-- Display for word cloud output -->
-    <div class="row">
-      <div class="col-xs-12">
-        <h3 id="cloud_header" class="text-center" style="display: none; font-family: 'Helvetica'">Clouds</h3>
-      </div>
-      <div class="col-xs-12">
-        <div id="whole_wc" style="display: none;"></div>
-        <div class="col-xs-6">
-          <div id="over_rep" style="display: none;"><h4 class="text-center" style="width: 100%;">Over Representation</h4></div>
+    <div class="container">
+      <div class="h-100 d-flex flex-column">
+        <div class="row A">
+          <div id="cloud_header" class="col justify-content-center">
+            <p class="m-0">Clouds</p>
+          </div>
         </div>
-        <div class="col-xs-6">
-          <div id="under_rep" style="display: none;"><h4 class="text-center" style="width: 100%;">Under Representation</h4></div>
+        <div class="row B">
+          <div class="col">
+            <div class="h-100 d-flex flex-column">
+              <div class="row m-0">
+                <div id="whole_wc" class="col"></div>
+              </div>
+              <div class="row m-0">
+                <div id="over_rep" class="col justify-content-center">
+                  <inthead>Over Representation</inthead>
+                </div>
+                <div id="under_rep" class="col justify-content-center">
+                  <inthead>Under Representation</inthead>
+                </div>
+              </div>
+              <div class="row text-center m-0">
+                <div id="over_wc" class="col"></div>
+                <div id="under_wc" class="col"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-xs-6" id="over_wc" style="display: none;"></div>
-      <div class="col-xs-6" id="under_wc" style="display: none;"></div>
     </div>
-</div>
+  </div>
 
-<footer class="footer"></footer>
+  <footer class="footer"></footer>
 
-<div id="overlay"></div>
+  <div id="overlay"></div>
 
+  <script type="text/javascript">
 
-<script>
+    // Event Listeners
+    document.getElementById("rule_dropdown").addEventListener("change", clear_screen);
+    document.getElementById("submit").addEventListener("click", generate);
+    document.getElementById("upload_text_form").addEventListener("change", function() { read_text_upload(this) } )
+    document.getElementById("upload_text_form").addEventListener("click", function() { this.value="" })
 
-  // Allow transition for sidebar navigation to be displayed
-  function openNav() {
-    document.getElementById("website-sidenav").style.width = "250px";
-    document.getElementById("overlay").style.opacity = "0.5";
-    document.getElementById("overlay").style.width = "100%";
-    document.getElementById("overlay").style.transition = "all 0.5s";
-    document.getElementById("overlay").addEventListener("click", closeNav);
-  }
-
-  // Allow transition for sidebar navigation to be removed
-  function closeNav() {
-    document.getElementById("website-sidenav").style.width = "0";
-    document.getElementById("overlay").style.opacity = "1";
-    document.getElementById("overlay").style.width = "0";
-    document.getElementById("overlay").style.transition = "all 0s";
-    document.getElementById("overlay").removeEventListener("click", closeNav);
-  }
-
-</script>
-
-
-<!-- Allow for functionality of all interface actions -->
-
-<script type="text/javascript">
-
-  // Create ability to open/read uploaded text file
-  function parse(file) {
-    return new Promise((resolve, reject) => {
-      let content = '';
-      const reader = new FileReader();
-      reader.onloadend = function(e) {
-        content = e.target.result;
-        const result = content.split(/\r\n|\n/);
-        resolve(result);
-      };
-      reader.onerror = function(e) {
-        reject(e);
-      };
-      reader.readAsText(file);
-    });
-  }
-
-  function clear_screen() { // upon language select, clear previous word clouds and text input
-    document.getElementById("in1").value = "";
-    document.getElementById("cloud_header").style.display = "none";
-    document.getElementById("under_rep").style.display = "none";
-    document.getElementById("over_rep").style.display = "none";
-    document.getElementById("under_wc").style.display = "none";
-    document.getElementById("over_wc").style.display = "none";
-    document.getElementById("whole_wc").style.display = "none";
-    document.getElementById("whole_wc").innerHTML = "";
-    document.getElementById("under_wc").innerHTML = "";
-    document.getElementById("over_wc").innerHTML = "";
-  }
-
-
-  // Get the input field (if file upload)
-  function read_text_upload() {
-    a = document.getElementById('upload_text_form').files
-    if (a.length > 0) {
-      parse(a[0]).then(s => {
-        var text1 = document.getElementById('in1') // display uploaded file in input textarea
-        text1.value = '';
-        text1.value = s.join('\n');
-      })
+    // Create ability to open/read uploaded text file
+    function parse(file) {
+      return new Promise((resolve, reject) => {
+        let content = '';
+        const reader = new FileReader();
+        reader.onloadend = function(e) {
+          content = e.target.result;
+          const result = content.split(/\r\n|\n/);
+          resolve(result);
+        };
+        reader.onerror = function(e) {
+          reject(e);
+        };
+        reader.readAsText(file);
+      });
     }
-  }
 
-  // Display warnings if generate button is hit when required actions have not yet been fulfilled
-  function generate() {
-    var x = document.getElementById("rule_dropdown");
-    var language_select = document.getElementById("rule_dropdown").value;
-    if(language_select == "") { // ensure language has been selected
-      x.style.background = "#ff0000";
-      setTimeout(function() {
-        x.style.background = "white";
-      }, 250);
-      return "";
-    } else {
-      get_wc();
-    }
-  }
-
-
-  // Set everything up for the word cloud(s) to be made
-  async function get_wc() {
-
-    var wc_info = await comp(); // get all info created from wc_language_files.js
-    var over_rep = wc_info[0];
-    var over_rep_vals = wc_info[1];
-    var under_rep = wc_info[2];
-    var under_rep_vals = wc_info[3];
-    wc_word_list = wc_info[4]; // contains all words and original kl-divergence values
-    //var kl_vals = wc_info[5];
-
-    console.log(wc_word_list);
-
-    color_init(); // function needed later for the color coding of the word cloud(s)
-
-    // Create svg objects and append to appropriate divs
-    if ((over_rep.length == 0 && under_rep.length > 0) || (over_rep.length > 0 && under_rep.length == 0)) { // presents one word cloud (i.e. no distinction between over and under represented words in the input text)
-
-      document.getElementById("cloud_header").style.display = "block";
+    function clear_screen() { // upon language select, clear previous word clouds and text input
+      document.getElementById("in1").value = "";
+      document.getElementById("upload_text_form").value = "";
+      document.getElementById("cloud_header").style.display = "none";
       document.getElementById("under_rep").style.display = "none";
       document.getElementById("over_rep").style.display = "none";
       document.getElementById("under_wc").style.display = "none";
       document.getElementById("over_wc").style.display = "none";
-      document.getElementById("whole_wc").style.display = "flex";
-      document.getElementById("whole_wc").innerHTML = "";
-      whole_svg = d3.select("#whole_wc").append("svg");
-
-      if (over_rep.length > 0) {
-        make_wc(whole_wc, whole_svg, over_rep, over_rep_vals);
-      }
-      else {
-        make_wc(whole_wc, whole_svg, under_rep, under_rep_vals);
-      }
-    }
-
-    else if (under_rep.length > 0 && over_rep.length > 0) { // presents two word clouds (i.e. present distinction between over and under represented words in the input text)
-
-      document.getElementById("cloud_header").style.display = "block";
       document.getElementById("whole_wc").style.display = "none";
-      document.getElementById("under_rep").style.display = "flex";
-      document.getElementById("over_rep").style.display = "flex";
-      document.getElementById("under_wc").style.display = "flex";
-      document.getElementById("over_wc").style.display = "flex";
+      document.getElementById("whole_wc").innerHTML = "";
       document.getElementById("under_wc").innerHTML = "";
       document.getElementById("over_wc").innerHTML = "";
-      under_svg = d3.select("#under_wc").append("svg");
-      over_svg = d3.select("#over_wc").append("svg");
-
-      make_wc(over_wc, over_svg, over_rep, over_rep_vals);
-      make_wc(under_wc, under_svg, under_rep, under_rep_vals);
-    }
-  }
-
-
-  // Color code the word cloud(s) based on kl-divergence values (i.e. words with the same values appear as the same color)
-  var fill;
-  var prev_color;
-  var max_color = 0;
-
-  function color_init() {
-    fill = d3.scaleOrdinal(d3.schemeCategory20);
-    prev_color = [];
-  }
-
-  function assign_color(word, scale_size) {
-
-    if (prev_color[scale_size] == null) {
-      var current_color = fill(max_color);
-      max_color++;
-      prev_color[scale_size] = current_color;
-    }
-    else {
-      current_color = prev_color[scale_size];
     }
 
-    return current_color;
-  }
 
-
-  // Specify attributes of the word cloud(s)
-  function make_wc(id, svg, word_list, kl_vals){
-
-    // Set layout
-    var id_width = id.clientWidth - 10;
-    var id_height = id.clientHeight - 10;
-
-    svg
-      .attr("width", id_width)
-      .attr("height", id_height)
-      .append("g")
-
-    // Set text size scale
-    var font_scale = d3.scaleLinear()
-        .domain([d3.min(kl_vals), d3.max(kl_vals)])
-        .range([15, 70])
-          //console.log(d3.min(kl_vals), d3.max(kl_vals));
-
-    var layout = d3.layout.cloud()
-      .size([id_width, id_height])
-      .words(word_list.map(function(d)  {
-        return {text: d.word, size: d.kl};
-        }))
-      .padding(2)
-      .spiral("archimedean")
-      .rotate(function() {
-        return ~~(Math.random() * 2) * 90
+    // Get the input field (if file upload)
+    function read_text_upload() {
+      a = document.getElementById('upload_text_form').files
+      if (a.length > 0) {
+        parse(a[0]).then(s => {
+          var text1 = document.getElementById('in1') // display uploaded file in input textarea
+          text1.value = '';
+          text1.value = s.join('\n');
         })
-      .font("Impact")
-      .fontSize(function(d) { //console.log(Math.abs(d.size), font_scale(Math.abs(d.size)));
-        return font_scale(Math.abs(d.size));
-        })
-      .on("end", draw);
-    layout.start();
+      }
+    }
+
+    // Display warnings if generate button is hit when required actions have not yet been fulfilled
+    function generate() {
+      var x = document.getElementById("rule_dropdown");
+      var language_select = document.getElementById("rule_dropdown").value;
+      if(language_select == "") { // ensure language has been selected
+        x.style.background = "#ff0000";
+        setTimeout(function() {
+          x.style.background = "white";
+        }, 250);
+        return "";
+      } else {
+        get_wc();
+      }
+    }
 
 
-    // Create the word cloud(s)
-    function draw(words) {
+    // Set everything up for the word cloud(s) to be made
+    async function get_wc() {
 
-      // Create hidden divs to display kl-divergence values when hovering over the words
-      var div = d3.select("body").append("div")
-            .attr("class", "hover_freqs")
-            .style("display", "none");
+      var wc_info = await comp(); // get all info created from wc_language_files.js
+      var over_rep = wc_info[0];
+      var over_rep_vals = wc_info[1];
+      var under_rep = wc_info[2];
+      var under_rep_vals = wc_info[3];
+      wc_word_list = wc_info[4]; // contains all words and original kl-divergence values
+
+      console.log(wc_word_list);
+
+      color_init(); // function needed later for the color coding of the word cloud(s)
+
+      // Create svg objects and append to appropriate divs
+      if ((over_rep.length == 0 && under_rep.length > 0) || (over_rep.length > 0 && under_rep.length == 0)) { // presents one word cloud (i.e. no distinction between over and under represented words in the input text)
+
+        document.getElementById("cloud_header").style.display = "flex";
+        document.getElementById("under_rep").style.display = "none";
+        document.getElementById("over_rep").style.display = "none";
+        document.getElementById("under_wc").style.display = "none";
+        document.getElementById("over_wc").style.display = "none";
+        document.getElementById("whole_wc").style.display = "flex";
+        document.getElementById("whole_wc").innerHTML = "";
+        whole_svg = d3.select("#whole_wc").append("svg");
+
+        if (over_rep.length > 0) {
+          make_wc(whole_wc, whole_svg, over_rep, over_rep_vals);
+        }
+        else {
+          make_wc(whole_wc, whole_svg, under_rep, under_rep_vals);
+        }
+      }
+
+      else if (under_rep.length > 0 && over_rep.length > 0) { // presents two word clouds (i.e. present distinction between over and under represented words in the input text)
+
+        document.getElementById("cloud_header").style.display = "flex";
+        document.getElementById("whole_wc").style.display = "none";
+        document.getElementById("under_rep").style.display = "flex";
+        document.getElementById("over_rep").style.display = "flex";
+        document.getElementById("under_wc").style.display = "flex";
+        document.getElementById("over_wc").style.display = "flex";
+        document.getElementById("under_wc").innerHTML = "";
+        document.getElementById("over_wc").innerHTML = "";
+        under_svg = d3.select("#under_wc").append("svg");
+        over_svg = d3.select("#over_wc").append("svg");
+
+        make_wc(over_wc, over_svg, over_rep, over_rep_vals);
+        make_wc(under_wc, under_svg, under_rep, under_rep_vals);
+      }
+    }
+
+
+    // Color code the word cloud(s) based on kl-divergence values (i.e. words with the same values appear as the same color)
+    var fill;
+    var prev_color;
+    var max_color = 0;
+
+    function color_init() {
+      fill = d3.scaleOrdinal(d3.schemeCategory20);
+      prev_color = [];
+    }
+
+    function assign_color(word, scale_size) {
+
+      if (prev_color[scale_size] == null) {
+        var current_color = fill(max_color);
+        max_color++;
+        prev_color[scale_size] = current_color;
+      }
+      else {
+        current_color = prev_color[scale_size];
+      }
+
+      return current_color;
+    }
+
+
+    // Specify attributes of the word cloud(s)
+    function make_wc(id, svg, word_list, kl_vals){
+
+      // Set layout
+      var id_width = id.clientWidth - 10;
+      var id_height = id.clientHeight - 10;
 
       svg
+        .attr("width", id_width)
+        .attr("height", id_height)
         .append("g")
-          .attr("font-family", "Impact")
-          .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
-          .selectAll("text")
-            .data(words)
-          .enter().append("text")
-            .style("font-size", function(d) { return d.size })
-            .style("fill", function(d) { return assign_color(d.text, d.size); })
-            .attr("text-anchor", "middle")
-            .style("font-family", "Impact")
-            .attr("transform", function(d) {
-              return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-            })
-            .text(function(d) { return d.text; })
-            .on('mouseover', function (d) {
-                d3.select(this).style("cursor", "pointer");
-                div.style("display", "flex");
-                var kl;
-                word_list.forEach(function(list) {
-                  if (d.text == list["word"]) {
-                    kl = list["kl"].toFixed(3);
-                  }
-                });
-                div.html(kl)
-                  .style("left", (d3.event.pageX + 10) + "px")
-                  .style("top", (d3.event.pageY - 15) + "px");
-            })
-            .on('mouseout', function() {
-                d3.select(this).style("cursor", "default");
-                div.style("display", "none");
-            });
+
+      // Set text size scale
+      var font_scale = d3.scaleLinear()
+          .domain([d3.min(kl_vals), d3.max(kl_vals)])
+          .range([15, 70])
+
+      var layout = d3.layout.cloud()
+        .size([id_width, id_height])
+        .words(word_list.map(function(d)  {
+          return {text: d.word, size: d.kl};
+          }))
+        .padding(2)
+        .spiral("archimedean")
+        .rotate(function() {
+          return ~~(Math.random() * 2) * 90
+          })
+        .font("Impact")
+        .fontSize(function(d) {
+          return font_scale(Math.abs(d.size));
+          })
+        .on("end", draw);
+      layout.start();
+
+
+      // Create the word cloud(s)
+      function draw(words) {
+
+        // Create hidden divs to display kl-divergence values when hovering over the words
+        var div = d3.select("body").append("div")
+              .attr("class", "hover_freqs")
+              .style("display", "none");
+
+        svg
+          .append("g")
+            .attr("font-family", "Impact")
+            .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+            .selectAll("text")
+              .data(words)
+            .enter().append("text")
+              .style("font-size", function(d) { return d.size })
+              .style("fill", function(d) { return assign_color(d.text, d.size); })
+              .attr("text-anchor", "middle")
+              .style("font-family", "Impact")
+              .attr("transform", function(d) {
+                return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+              })
+              .text(function(d) { return d.text; })
+              .on('mouseover', function (d) {
+                  d3.select(this).style("cursor", "pointer");
+                  div.style("display", "flex");
+                  var kl;
+                  word_list.forEach(function(list) {
+                    if (d.text == list["word"]) {
+                      kl = list["kl"].toFixed(3);
+                    }
+                  });
+                  div.html(kl)
+                    .style("left", (d3.event.pageX + 10) + "px")
+                    .style("top", (d3.event.pageY - 15) + "px");
+              })
+              .on('mouseout', function() {
+                  d3.select(this).style("cursor", "default");
+                  div.style("display", "none");
+              });
+      }
     }
-  }
 
-</script>
+  </script>
 
-<script src="https://d3js.org/d3.v4.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
-<script src="./js/wc_language_files.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.6.0/math.js"></script>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+  <script src="./js/wc_language_files.js"></script>
+  <script src="./js/sidenav.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.6.0/math.js"></script>
 
 </body>
 </html>

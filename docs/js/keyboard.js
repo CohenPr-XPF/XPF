@@ -23,7 +23,7 @@ async function make_keyboard(language_keyboard) {
   document.getElementById("load").style.display = "none";
 
   orthography = await get_grammar(language_keyboard);
-  document.getElementById("keyboard").style.display = "";
+  document.getElementById("keyboard").style.display = "inline-block";
   var keyboard = document.getElementById("keyboard");
 
   for (letter in orthography) {

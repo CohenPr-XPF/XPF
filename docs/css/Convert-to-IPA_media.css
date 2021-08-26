@@ -1,0 +1,36 @@
+
+@media (min-width: 1201px) {
+	.info {
+		font-size: large;
+	}
+	.info-header {
+		font-size: xx-large;
+	}
+	inthead {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.info {
+		font-size: medium;
+	}
+	.info-header {
+		font-size: x-large;
+	}
+	inthead {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 700px) {
+	inthead {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 500px) {
+	inthead {
+		font-size: 18px;
+	}
+}

@@ -1,114 +1,70 @@
-@media (min-width: 1201px) {
-	res1header {
-		font-size: 24px;
-	}
-	res2header {
-		font-size: 24px;
-	}
+
+.vertical-center {
+ 	min-height: 100%; 
+  	min-height: 100vh;
 }
 
-@media (max-width: 1200px) {
-	res1header {
-		font-size: 22px;
-	}
-	res2header {
-		font-size: 24px;
-	}
-}
-
-@media (max-width: 1000px) {
-	res1header {
-		font-size: 20px;
-	}
-}
-
-@media (max-width: 700px) {
-	res1header {
-		font-size: 18px;
-	}
-	res2header {
-		font-size: 22px;
-	}
-}
-
-@media (max-width: 500px) {
-	res1header {
-		font-size: 16px;
-	}
-	res2header {
-		font-size: 20px;
-	}
-}
-
-
-body{
-	background: #f2f2f2;
-}
-
-h3, res1header, res2header, body{
+.info-header, 
+res1header, 
+res2header, 
+body {
 	font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-h3 small{
-	font-family: "Libre Baskerville", serif;
+.info {
+	line-height: 0.75cm;
+	font-family: 'Libre Baskerville', serif;
 }
 
-.navbar{
-	background: white;
+p {
+	cursor: default;
 }
 
-.spacer{
-	margin-top: 40px;
+.gap {
+	gap: 20px;
 }
 
-.footer{
-	position: relative;
-	bottom: 0;
-	left: 0;
-	height: 50px;
-	width: 100%;
-	background: #333333;
+#language_map {
+	height: 700px;
 }
 
-hr{
+hr {
 	height: 2px;
 	background-color: black;
 	border: none;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin: 10px 10% 0 10%;
 }
 
-.col-container{
-	display: flex;
-	width: 100%;
+img[alt="Word Cloud"] {
+	width: 50%;
 }
 
-.adjust {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.mouseover{
+.mouseover {
 	cursor: pointer;
+	border-radius: 10px;
+	padding: 30px 0;
 }
 
-.mouseover:hover{
+.mouseover:hover {
 	background-color: white;
 }
 
-
-#language_map {
-  	width: 100%;
-  	height: 500px;
-  	overflow: hidden;
+.footer {
+	margin-top: 40px;
 }
 
+.row._1 {
+	margin: 40px 5% 0 5%;
+}
 
+.row._2 {
+	margin: 0 5% 30px 5%;
+}
 
+.row._3, .row._4, .row._6, .row._7 {
+	margin: 0 5%;
+}
 
-
-
-
+.row._5 {
+	margin: 30px 5% 0 5%;
+}

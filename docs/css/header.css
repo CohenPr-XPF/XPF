@@ -1,30 +1,46 @@
 
-html, body {
-	margin: 0;
-	height: 100%
+body {
+	background: #f2f2f2;
+}
+
+nav, #websitenav {
+	height: 75px;
 }
 
 .navbar {
-	padding: 10px;
+	background: white;
 }
 
-.nav.navbar-nav.navbar-right li a {
+.nav-link {
 	color: black;
 	font-size: 18px;
 	font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-.nav.navbar-nav.navbar-right li a:hover {
-	color: #f5d654;
-	background: white;
+.active {
+	color: #478ac9;
+	pointer-events: none;
 }
 
-.navbar-toggle {
+.nav-link:hover {
+	background: white;
+	color: #f5d654;
+}
+
+.navbar-toggler {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 60%;
+	width: 50px;
 	background: black;
+	gap: 5px;
 }
 
 .icon-bar {
 	background: white;
+	height: 2px;
+	width: 100%;
 }
 
 .sidenav {
@@ -36,7 +52,7 @@ html, body {
 	left: 0;
 	background-color: black;
 	overflow-x: hidden;
-	padding-top: 60px;
+	padding-top: 40px;
 	transition: 0.5s;
 	white-space: nowrap;
 }
@@ -45,22 +61,17 @@ html, body {
 	padding-bottom: 10px;
 	text-decoration: none;
 	font-size: 18px;
-	color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.sidenav a:hover {
-	color: #f5d654;
+.sidenav a:not(.active) {
+	color: white;
 }
 
-.sidenav .closebtn {
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
+.sidenav a:not(#close_sidenav):hover {
+	color: #f5d654;
 }
 
 #overlay {
@@ -73,18 +84,22 @@ html, body {
 	background-color: black;
 }
 
+#close_sidenav {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
 
+a#close_sidenav:hover {
+	color: #e68387;
+}
 
+.jumbotron {
+	padding: 2% 2%;
+	background: transparent;
+}
 
-
-
-
-
-
-
-
-	
-
-
-
-
+.footer{
+	height: 50px;
+	background: #333333;
+}

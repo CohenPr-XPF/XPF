@@ -5,152 +5,126 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel = "stylesheet" href="./css/header.css">
   <link rel = "stylesheet" href="./css/index.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+  <link rel = "stylesheet" href="./css/index_media.css">
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" onclick="openNav()" data-target="#websitenav">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid h-100">
+      <button id="display_sidenav" class="navbar-toggler" data-toggle="collapse" data-target="#websitenav">
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
       </button>
+      <div class="collapse navbar-collapse" id="websitenav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item p-2">
+            <a href="index.html" class="nav-link active">The XPF Corpus</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="About.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="Convert-to-IPA.html" class="nav-link">Convert to IPA</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="Word-Clouds.html" class="nav-link">Word Clouds</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="Special-Thanks.html" class="nav-link">Special Thanks</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="websitenav">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html" style="color: #478ac9;">The XPF Corpus</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Convert-to-IPA.html">Convert to IPA</a></li>
-        <li><a href="Word-Clouds.html">Word Clouds</a></li>
-        <li><a href="Special-Thanks.html">Special Thanks</a></li>
+  </nav>
+
+  <div id="website-sidenav" class="sidenav">
+    <a href="javascript:void(0)" id="close_sidenav">X</a>
+    <a href="index.html" class="active">The XPF Corpus</a>
+    <a href="About.html">About</a>
+    <a href="Convert-to-IPA.html">Convert to IPA</a>
+    <a href="Word-Clouds.html">Word Clouds</a>
+    <a href="Special-Thanks.html">Special Thanks</a>
+  </div>
+
+  <div class="jumbotron vertical-center m-0">
+    <div id="content" class="container-fluid px-0">
+      <div class="h-100 d-flex flex-column">
+        <div class="row h-100 mx-0">
+          <div class="col-3 text-right lang" style="padding-top: 20px; color: #2cccc4">Piapoco</div>
+          <div class="col-5 text-center lang" style="color: #858e99">Mamasa</div>
+          <div class="col-4 lang" style="padding-top: 10px; color: #77aad9">Basque</div>
+        </div>
+        <div class="row h-100 mx-0">
+          <div class="col-1 text-left lang" style="padding-top: 45px; color: #77aad9">Hindi</div>
+          <div class="col-5 text-center lang" style="padding-top: 15px; color: #e68387">Kannada</div>
+          <div class="col-4 text-left lang" style="padding-top: 40px; color: #f5d654">Rikbaktsa</div>
+          <div class="col-2 text-center lang" style="padding-top: 5px; color: #e68387">Tamil</div>
+        </div>
+        <div class="row h-100 mx-0">
+          <div class="col-3 text-right lang" style="padding-top: 55px; color: #858e99">Choctaw</div>
+          <div class="col-4 text-center lang" style="padding-top: 5px; color: #77aad9">Mwani</div>
+          <div class="col-5 text-center lang" style="padding-top: 40px; color: #2cccc4">Yuracare</div>
+        </div>
+        <div class="row h-100 mx-0">
+          <div class="col-2 text-right lang" style="padding-top: 50px; color: #e68387">Yakut</div>
+          <div class="col-8 text-center"><h1 style="margin: 0;">The XPF Corpus</h1></div>
+          <div class="col-2 text-left lang" style="padding-top: 15px; padding-left: 0; color: #858e99">Swahili</div>
+        </div>
+        <div class="row h-100 mx-0">
+          <div class="col-4 text-left lang" style="padding-top: 40px; padding-left: 0; color: #77aad9">Tok Pisin</div>
+          <div class="col-3 text-center lang" style="padding-top: 20px; color: #f5d654">Georgian</div>
+          <div class="col-5 text-center lang" style="padding-top: 30px; color: #e68387">Arabic</div>
+        </div>
+        <div class="row h-100 mx-0">
+          <div class="col-6 text-center lang" style="padding-top: 25px; color: #2cccc4">Hungarian</div>
+          <div class="col-2 text-center lang" style="padding-top: 15px; color: #77aad9">Ixil</div>
+          <div class="col-4 text-right lang" style="padding-top: 30px; color: #f5d654">Guarani</div>
+        </div>
+        <div class="row h-100 mx-0">
+          <div class="col-4 text-center lang" style="padding-top: 65px; color: #f5d654">Hmong</div>
+          <div class="col-4 text-center lang" style="padding-top: 30px; color: #858e99">Azerbaijani</div>
+          <div class="col-4 text-center lang" style="padding-top: 55px; color: #2cccc4">Zaza</div>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
 
-<div id="website-sidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html" style="color: #478ac9;">The XPF Corpus</a>
-  <a href="About.html">About</a>
-  <a href="Convert-to-IPA.html">Convert to IPA</a>
-  <a href="Word-Clouds.html">Word Clouds</a>
-  <a href="Special-Thanks.html">Special Thanks</a>
-</div>
+  <div class="container-fluid footer"></div>
+
+  <div id="overlay"></div>
 
 
-<div class="container" id="content">
-  <div class="row">
-    <div class="col-container">
-      <div class="col-xs-3 text-right lang" style="padding-top: 20px; color: #2cccc4">Piapoco</div>
-      <div class="col-xs-5 text-center lang" style="color: #858e99">Mamasa</div>
-      <div class="col-xs-4 lang" style="padding-top: 10px; color: #77aad9">Basque</div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-container">
-      <div class="col-xs-1 text-left lang" style="padding-top: 45px; color: #77aad9">Hindi</div>
-      <div class="col-xs-5 text-center lang" style="padding-top: 15px; color: #e68387">Kannada</div>
-      <div class="col-xs-4 text-left lang" style="padding-top: 40px; color: #f5d654">Rikbaktsa</div>
-      <div class="col-xs-2 text-center lang" style="padding-top: 5px; color: #e68387">Tamil</div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-container">
-      <div class="col-xs-3 text-right lang" style="padding-top: 55px; color: #858e99">Choctaw</div>
-      <div class="col-xs-4 text-center lang" style="padding-top: 5px; color: #77aad9">Mwani</div>
-      <div class="col-xs-5 text-center lang" style="padding-top: 40px; color: #2cccc4">Yuracare</div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-container">
-      <div class="col-xs-2 text-right lang" style="padding-top: 50px; color: #e68387">Yakut</div>
-      <div class="col-xs-8 text-center"><h1 style="margin: 0;">The XPF Corpus</h1></div>
-      <div class="col-xs-2 text-left lang" style="padding-top: 15px; padding-left: 0; color: #858e99">Swahili</div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-container">
-      <div class="col-xs-4 text-left lang" style="padding-top: 40px; padding-left: 0; color: #77aad9">Tok Pisin</div>
-      <div class="col-xs-3 text-center lang" style="padding-top: 20px; color: #f5d654">Georgian</div>
-      <div class="col-xs-5 text-center lang" style="padding-top: 30px; color: #e68387">Arabic</div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-container">
-      <div class="col-xs-6 text-center lang" style="padding-top: 25px; color: #2cccc4">Hungarian</div>
-      <div class="col-xs-2 text-center lang" style="padding-top: 15px; color: #77aad9">Ixil</div>
-      <div class="col-xs-4 text-right lang" style="padding-top: 30px; color: #f5d654">Guarani</div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-container">
-      <div class="col-xs-4 text-center lang" style="padding-top: 65px; color: #f5d654">Hmong</div>
-      <div class="col-xs-4 text-center lang" style="padding-top: 30px; color: #858e99">Azerbaijani</div>
-      <div class="col-xs-4 text-center lang" style="padding-top: 55px; color: #2cccc4">Zaza</div>
-    </div>
-  </div>
-</div>
-</div>
+  <script>
 
-<footer class="footer"></footer>
+    // Randomize initial display
+    var divs = document.getElementsByClassName('lang');
+    var langs = [];
 
-<div id="overlay"></div>
-
-
-<script>
-
-  // Allow transition for sidebar navigation to be displayed
-  function openNav() {
-    document.getElementById("website-sidenav").style.width = "250px";
-    document.getElementById("overlay").style.opacity = "0.5";
-    document.getElementById("overlay").style.width = "100%";
-    document.getElementById("overlay").style.transition = "all 0.5s";
-    document.getElementById("overlay").addEventListener("click", closeNav);
-  }
-
-  // Allow transition for sidebar navigation to be removed
-  function closeNav() {
-    document.getElementById("website-sidenav").style.width = "0";
-    document.getElementById("overlay").style.opacity = "1";
-    document.getElementById("overlay").style.width = "0";
-    document.getElementById("overlay").style.transition = "all 0s";
-    document.getElementById("overlay").removeEventListener("click", closeNav);
-  }
-
-  // Randomize initial display
-  var divs = document.getElementsByClassName('lang');
-  var langs = [];
-
-  for (let i = 0; i < divs.length; i++) {
-    langs.push(divs[i].innerHTML);
-  }
-
-  window.onload = random_lang();
-
-  function random_lang() {
-    for (var i = langs.length - 1; i >= 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var new_lang = langs[j];
-      langs[j] = langs[i];
-      langs[i] = new_lang;
-
-      /*if (new_lang.length - document.getElementById('content').getElementsByClassName('lang')[i].innerHTML.length >= 4) {
-        i = langs.length - 1;
-      }*/
-
-      document.getElementById('content').getElementsByClassName('lang')[i].innerHTML = new_lang;
-
+    for (let i = 0; i < divs.length; i++) {
+      langs.push(divs[i].innerHTML);
     }
-}
 
+    window.onload = random_lang();
 
-</script>
+    function random_lang() {
+      for (var i = langs.length - 1; i >= 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var new_lang = langs[j];
+        langs[j] = langs[i];
+        langs[i] = new_lang;
+
+        document.getElementById('content').getElementsByClassName('lang')[i].innerHTML = new_lang;
+
+      }
+  }
+
+  </script>
+
+  <script src="./js/sidenav.js"></script>
 
 </body>
 </html>

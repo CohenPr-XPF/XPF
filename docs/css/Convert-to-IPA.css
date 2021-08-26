@@ -1,101 +1,41 @@
-@media (min-width: 1201px) {
-	inthead {
-		font-size: 24px;
-	}
+
+.vertical-center {
+ 	min-height: 100%; 
+  	min-height: 100vh;
 }
 
-@media (max-width: 1200px) {
-	inthead {
-		font-size: 22px;
-	}
+.info-header, 
+#main_format {
+	font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-@media (max-width: 700px) {
-	inthead {
-		font-size: 20px;
-	}
-}
-
-@media (max-width: 500px) {
-	inthead {
-		font-size: 18px;
-	}
-}
-
-
-body{
-	background: #f2f2f2;
-	font-size: 15px;
-}
-
-h3 small{
+.info {
 	font-family: "Libre Baskerville", serif;
+	line-height: 0.75cm;
 }
 
-.navbar{
-	background: white;
+.top div.row:first-child {
+	margin: 40px 5% 0 5%;
 }
 
-.footer{
-	position: relative;
-	bottom: 0;
-	left: 0;
-	height: 50px;
-	width: 100%;
-	background: #333333;
-	margin-top: 40px;
+.top div.row:last-child {
+	margin: 0 5% 30px 5%;
 }
 
+.gap {
+	gap: 20px;
+}
 
 #main_format {
-	width: 70vw;
-	overflow: auto;
 	padding: 20px;
 	border: 5px solid black;
 	border-radius: 10px;
-	margin: auto;
 	background: #FFFFFF;
 }
 
-.container {
-	height: 100%;
-}
-
-.col-container{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 100%;
-	padding: 0 15px;
-}
-
-#leftbutton {
-	float: left;
-	width: 50%;
-	height: 50%;
-	cursor: default;
-	background-color: grey;
-	color: white;
-}
-
-#rightbutton {
-	float: left;
-	width: 50%;
-	height: 50%;
-	cursor: pointer;
-	background-color: black;
-	color: white;
-
-}
-
-#language_info {
+#keyboard {
 	display: none;
-	padding: 0;
-	font-size: 12px;
-	color: #337ab7;
-	background: white;
-	border: white;
+	height: 150px;
 }
 
 .kb1 { 
@@ -109,8 +49,8 @@ h3 small{
     	display: flex;
 	align-items: center;
 	justify-content: center;
-    	width: 20px;
-    	height: 20px;
+    	width: 25px;
+    	height: 25px;
     	text-align: center;
     	border-style: outset;
     	float: left;
@@ -134,11 +74,15 @@ textarea {
 
 #load {
 	height: 100px;
-	width: 100%;
   	display: flex;
   	justify-content: center;
-  	align-items: flex-end; 
-	font-size: 15px;
+  	align-items: center; 
+	margin-top: 50px;
+	cursor: default;
+}
+
+#loading {
+	display: none;
 }
 
 .letter {
@@ -148,7 +92,7 @@ textarea {
 	animation: fade 5s infinite;
 }
 
-.letter:nth-child(1){
+.letter:nth-child(1) {
 	animation-delay: 0.5s;
 }
 
@@ -156,23 +100,23 @@ textarea {
 	animation-delay: 1s;
 }
 
-.letter:nth-child(3){
+.letter:nth-child(3) {
 	animation-delay: 1.5s;
 }
 
-.letter:nth-child(4){
+.letter:nth-child(4) {
 	animation-delay: 2s;
 }
 
-.letter:nth-child(5){
+.letter:nth-child(5) {
 	animation-delay: 2.5s;
 }
 
-.letter:nth-child(6){
+.letter:nth-child(6) {
 	animation-delay: 3s;
 }
 
-.letter:nth-child(7){
+.letter:nth-child(7) {
 	animation-delay: 3.5s;
 }
 
@@ -199,5 +143,119 @@ textarea {
   	}
 }
 
+#leftbutton, 
+#rightbutton {
+	height: 80%;
+	width: 100%;
+}
 
+#leftbutton {
+	cursor: default;
+	background-color: grey;
+	color: #f5d654;
+}
 
+#rightbutton {
+	cursor: pointer;
+	background-color: black;
+	color: white;
+}
+
+#language_info,
+#translations_file {
+	display: none;
+	padding: 0;
+	font-size: 14px;
+	color: #337ab7;
+	background: white;
+	border: white;
+	text-decoration: none;
+}
+
+#upload_text_form {
+	display: inline-block;
+	cursor: pointer;
+}
+
+#upload {
+	display: none;
+}
+
+#upload_form {
+	display: inline-block;
+}
+
+#existing {
+	display: flex;
+}
+
+div[a="#language_info"] {
+	display: flex;
+}
+
+#rule_dropdown {
+	width: 50%;
+	cursor: pointer;
+}
+
+#submit {
+	background: #f7adb1;
+}
+
+.msg {
+	font-size: 15px;
+	color: red;
+	cursor: default;
+}
+
+#msg2 {
+	visibility: hidden;
+}
+
+.msg:not(#msg2) {
+	display: none;
+}
+
+#msg1 {
+	padding: 0 15px;
+}
+
+#ko_warning {	
+	display: none;
+}
+
+#ko_warning a {
+	display: contents;
+}
+
+.col._1 div.A,
+.col._2 div.A {
+	height: 50px;
+}
+
+.top,
+inthead,
+#existing,
+#out1,
+.col._1 div.A p, 
+.col._1 div.C div,
+.col._1 div.D div,
+.col._2 div.D {
+	cursor: default;
+}
+
+.col._1 div.B {
+	height: 200px;
+}
+
+.col._2 div.B {
+	height: 30px;
+}
+
+.col._2 div.C {
+	height: 150px;
+}	
+
+.footer {
+	margin-top: 40px;
+}
