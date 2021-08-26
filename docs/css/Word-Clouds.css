@@ -90,7 +90,7 @@ div.hover_freqs {
 	margin-top: 40px;
 }
 
-.col._1 .flex-column {
+.col._1 > div.flex-column {
 	height: 190px;
 }
 
