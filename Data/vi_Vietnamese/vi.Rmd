@@ -1,12 +1,20 @@
 ---
 title: "Vietnamese"
-author: "Abi Creighton"
-edited by: "Emily Strand"
+author:
+  -
+     name: "Abi Creighton"
+     content: Creation of the file
+  -
+     name: "Emily Strand"
+     content: Many bug fixes, bringing up to standard
+  -
+     name: "Stefon Flego"
+     content: glide, diphthong, and tone rules fixes
 bibliography: vi.bib
-output: html_document
+output: html_vignette
 ---
 
-Last Updated: 2019-11-24
+Last Updated: 2023-07-20
 
 # Background
 
@@ -86,6 +94,9 @@ kable(diphthongs, align = 'c') %>%
     - Creaky (mid rising, glottalized): marked with a tilde (◌̃)
     - Constricted (low falling, glottalized): marked with a dot below ( ̣ )
 * The creaky and dipping-rising tones have merged in the southern dialect, resulting in just the dipping-rising tone (ibid.).
+* When the diphthongs /ie/, /ɯɤ/, and /uo/ occur word-finally, the tone diacritic is written on the second-to-last vowel grapheme, rather than the last e.g. *thìa* /t̪ʰie˨˩/, *bủa* /ɓuo˧˩˧/, and *cựa* /kɯɤ˨˩ˀ/ (*cf*. pre-consonantal *thiền* /t̪ʰie˨˩n̪/, *buổi* /ɓuo˧˩˧j/, and *cược* /kɯɤ˨˩ˀk/).
+* For word-final /w/-vowel sequences, there is orthographic variation in where the tone diacritic is placed, e.g. *khỏe* ~ *khoẻ* /xwɛ˧˩˧/, *nhòa* ~ *nhoà* /ɲwaː˨˩/, *hủy* ~ *huỷ* /hwi˧˩˧/.
+
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'asis'}
 tones <- read.table(textConnection('
@@ -135,7 +146,7 @@ Grapheme      Phoneme                    Comment
 "r"          "/z/; /r/"        "/z/: in northern dialect; /r/: in southern dialect"
 "s"          "/s/; /ʂ/"        "/s/: in northern dialect; /ʂ/: in southern dialect"
 "t"          "/t̪/, /k/"        "/k/: word-finally in southern dialect"
-"u"            "/u/"                      ""
+"u"            "/u/; /w/"      "/w/: preceding <y>, <ê>, <â>, and <ơ>; /w/ following any vowel"
 "ư"            "/ɯ/"                      ""
 "v"          "/v/ /j/"         "/v/: in northern dialect; /j/: in southern dialect"
 "x"            "/s/"                      ""
@@ -153,13 +164,18 @@ Grapheme      Phoneme                    Comment
 "qu"           "/kw/"                     ""
 "th"           "/t̪ʰ/"                     ""
 "tr"           "/tɕ/; /ʈ/"     "/tɕ/: in northern dialect; /ʈ/ in southern dialect"
-"iê"           "/ie/"                    ""          
-"yê"           "/ie/"                    ""
+"iȇ"           "/ie/"                    ""          
+"yȇ"           "/ie/"                    ""
+"ya"           "/ie/"                    ""
 "ia"           "/ie/"                    ""
 "ươ"           "/ɯɤ/"                    ""
 "ưa"           "/ɯɤ/"                    ""
-"uô"           "/uo/"                    ""
+"uȏ"           "/uo/"                    ""
 "ua"           "/uo/"                    ""
+"au"           "/aw/"                    ""
+"ao"           "/aːw/"                   ""
+"ay"           "/aj/"                    ""
+"ai"           "/aːj/"                   ""
 '), TRUE)
 
 kable(alphabet, align = 'c') %>%
