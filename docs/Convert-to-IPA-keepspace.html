@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Convert to IPA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel = "stylesheet" href="./css/header.css">
+  <link rel = "stylesheet" href="./css/Convert-to-IPA.css">
+  <link rel = "stylesheet" href="./css/Convert-to-IPA_media.css">
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid h-100">
+      <button id="display_sidenav" class="navbar-toggler" data-toggle="collapse" data-target="#websitenav">
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+      </button>
+      <div class="collapse navbar-collapse" id="websitenav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item p-2">
+            <a href="index.html" class="nav-link">The XPF Corpus</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="About.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="Convert-to-IPA.html" class="nav-link active">Convert to IPA</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="Word-Clouds.html" class="nav-link">Word Clouds</a>
+          </li>
+          <li class="nav-item p-2">
+            <a href="Special-Thanks.html" class="nav-link">Special Thanks</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="website-sidenav" class="sidenav">
+    <a href="javascript:void(0)" id="close_sidenav">X</a>
+    <a href="index.html">The XPF Corpus</a>
+    <a href="About.html">About</a>
+    <a href="Convert-to-IPA.html" class="active">Convert to IPA</a>
+    <a href="Word-Clouds.html">Word Clouds</a>
+    <a href="Special-Thanks.html">Special Thanks</a>
+  </div>
+
+  <div class="jumbotron vertical-center m-0 p-0">
+    <div class="container-fluid top">
+      <div class="h-100 d-flex flex-column gap">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <p class="m-0 info-header"><b>Convert to IPA</b></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="m-0 info text-center">Want to convert text to its phonemic transcription? With the tool below, we have made it simpler than ever.<br><br>
+              For a given language, use the drop down menu to select the rule set we have provided or click on the "Upload Rules" button to upload your own. If an existing rule set is selected, a keyboard will be displayed showing the translatable characters for that grammar. For the text to be translated, either type the desired text or click on the "Upload Text" button to upload your text file.<br><br>
+              Hit the "Translate" button to present the translated phonemic representation below!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="application/javascript">
+
+      // Reset and display changes upon button select (Translate Rules)
+      function existing() {
+        document.getElementById("upload").style.display = "none";
+        document.getElementById("existing").style.display = "flex";
+
+        document.getElementById("leftbutton").style.cursor = "default";
+        document.getElementById("leftbutton").style.color = "#f5d654";
+        document.getElementById("rightbutton").style.cursor = "pointer";
+        document.getElementById("rightbutton").style.color = "white";
+
+        document.getElementById("load").style.display = "flex";
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("ani").style.display = "flex";
+        document.getElementById("keyboard").style.display = "none";
+        document.getElementById("initial").style.display = "flex";
+        document.getElementById("msg1").style.display = "none";
+        document.getElementById("msg3").style.display = "none";
+        document.getElementById("ko_warning").style.display = "none";
+        document.getElementById("upload_text_form").value = "";
+
+        keyboard.innerHTML = "";
+        document.getElementById("in1").value = "";
+        document.getElementById("out1").value = "";
+        while(keyboard.firstChild) {
+          keyboard.removeChild(keyboard.firstChild);
+        }
+        document.getElementById("msg2").style.visibility = "hidden";
+        document.getElementById("translations_file").style.display = "none";
+        document.getElementById("language_info").style.display = "none";
+        document.getElementById("rule_dropdown").selectedIndex = 0;
+      }
+
+      function upload() {
+        document.getElementById("existing").style.display = "none";
+        document.getElementById("language_info").style.display = "none";
+        document.getElementById("upload").style.display = "flex";
+
+        document.getElementById("leftbutton").style.cursor = "pointer";
+        document.getElementById("leftbutton").style.color = "white";
+        document.getElementById("rightbutton").style.cursor = "default";
+        document.getElementById("rightbutton").style.color = "#f5d654";
+
+        document.getElementById("load").style.display = "flex";
+        document.getElementById("msg3").style.display = "flex";
+        document.getElementById("keyboard").style.display = "none";
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("initial").style.display = "none";
+        document.getElementById("ani").style.display = "none";
+        document.getElementById("msg1").style.display = "none";
+        document.getElementById("ko_warning").style.display = "none";
+        document.getElementById("upload_text_form").value = "";
+        document.getElementById("upload_form").value = "";
+
+        keyboard.innerHTML = "";
+        document.getElementById("in1").value = "";
+        document.getElementById("out1").value = "";
+        while(keyboard.firstChild) {
+          keyboard.removeChild(keyboard.firstChild);
+        }
+
+        document.getElementById("msg2").style.visibility = "hidden";
+        document.getElementById("translations_file").style.display = "none";
+        document.getElementById("rule_dropdown").selectedIndex = 0;
+
+      }
+
+    </script>
+
+
+    <!--
+        Create User Interface
+          Two main sections: Rules and Text - two options for each
+            Rules: Option to use existing grammars from the corpus and option to upload a separate set of rules (which should be formatted like those that are available; see the manual for instructions)
+            Text: Option to type text (or use keyboard provided by the grammar) and option to upload a text file (which will be displayed in the text window upon upload)
+    -->
+
+    <div id="main_format" class="container">
+      <div class="row">
+        <div class="col _1">
+          <div class="row head">
+            <div class="col text-center h-100">
+              <inthead>Text</inthead>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap">
+            <div class="row A text-center m-0">
+              <div class="col d-flex align-items-center justify-content-center">
+                <p class="text-center m-0 h-100 d-flex align-items-center justify-content-center">Select a language to reveal the translatable characters.</p>
+              </div>
+            </div>
+            <div class="row B text-center m-0">
+              <div class="col">
+                <!--Text section: keyboard layout-->
+                <div class="kb1" id="keyboard"></div>
+                <div id="load">
+                  <div id = "initial">Keyboard: &nbsp</div>
+                  <div id = "loading">Keyboard Loading: &nbsp</div>
+                  <div id="ani">
+                    <div class="letter">a</div>
+                    <div class="letter">b</div>
+                    <div class="letter">c</div>
+                    <div class="letter">d</div>
+                    <div class="letter">e</div>
+                    <div class="letter">f</div>
+                    <div class="letter">g</div>
+                  </div>
+                  <div id="msg3" class="msg">Keyboard configuration supported only for existing rules.</div>
+                </div>
+                <div id="ko_warning" class="msg align-items-center justify-content-center h-100">Our translation program encrypts Hangul syllable blocks rather than individual characters for consonants and vowels. There are roughly 11,000 translatable syllable blocks, so presenting a keyboard is not ideal. Click <a href="conv_resources/keyboards/ko.txt" title="Click to download" download>here</a> to download a list of the translatable syllable blocks that you can copy and paste into the text input area.</div>
+              </div>
+              <div id="msg1" class="msg">Some letters/symbols may need to appear in combination to produce a "legal" translation.</div>
+            </div>
+            <div class="row C m-0">
+              <div class="col">
+                Text Input:<br><textarea id="in1" name="in1"></textarea><br>
+              </div>
+            </div>
+            <div class="row D m-0">
+              <div class="col">
+                <div>Upload Text: &nbsp<input id="upload_text_form" type=file accept="text/plain" name="files[]" size=30></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col _2">
+          <div class="row head">
+            <div class="col text-center h-100">
+              <inthead>Translate Rules</inthead>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap">
+            <div class="row A text-center m-0">
+              <div class="col d-flex align-items-center justify-content-center pr-0">
+                <div id="leftbutton" class="vertical-align-center">
+                  <p class="text-center m-0 h-100 d-flex align-items-center justify-content-center">Existing Rules</p> <!--Translate Rules section-->
+                </div>
+              </div>
+              <div class="col d-flex align-items-center justify-content-center pl-0">
+                <div id="rightbutton">
+                  <p class="text-center m-0 h-100 d-flex align-items-center justify-content-center">Upload Rules</p> <!--Translate Rules section-->
+                </div>
+              </div>
+            </div>
+            <div class="row B text-center m-0">
+              <div class="col d-flex align-items-center">
+                <!--Translate Rules section: grammar selection/upload-->
+                <div id="upload" class="h-100 align-items-center p-0">
+                  Upload Rules: &nbsp<input id="upload_form" type=file accept="text rules" name="files[]" size=30> <!--Translate Rules section: hidden until selected-->
+                  <input type="hidden" id="x">
+                </div>
+                <div id="existing" class="h-100 align-items-center justify-content-start p-0">
+                  Language: &nbsp<select id="rule_dropdown"> <!--Translate Rules section: appears by default-->
+                  <option value = "">Select</option>
+        <p><option value="conv_resources/rules/aau.rules">Abau</option> <option value="conv_resources/rules/ab.rules">Abkhaz</option> <option value="conv_resources/rules/ake.rules">Akawaio</option> <option value="conv_resources/rules/amp.rules">Alamblak</option> <option value="conv_resources/rules/sq.rules">Albanian</option> <option value="conv_resources/rules/amn.rules">Amanab</option> <option value="conv_resources/rules/aey.rules">Amele</option> <option value="conv_resources/rules/agg.rules">Angor</option> <option value="conv_resources/rules/boj.rules">Anjam</option> <option value="conv_resources/rules/aak.rules">Ankave</option> <option value="conv_resources/rules/aom.rules">Aomie</option> <option value="conv_resources/rules/apy.rules">Apalaí</option> <option value="conv_resources/rules/apu.rules">Apurinã</option> <option value="conv_resources/rules/arl.rules">Arabela</option> <option value="conv_resources/rules/ar.rules">Arabic</option> <option value="conv_resources/rules/an.rules">Aragonese</option> <option value="conv_resources/rules/hy.rules">Armenian</option> <option value="conv_resources/rules/aia.rules">Arosi</option> <option value="conv_resources/rules/cni.rules">Asháninka</option> <option value="conv_resources/rules/ast.rules">Asturian</option> <option value="conv_resources/rules/avt.rules">Au</option> <option value="conv_resources/rules/awx.rules">Awara</option> <option value="conv_resources/rules/ay.rules">Aymara</option> <option value="conv_resources/rules/az.rules">Azerbaijani</option> <option value="conv_resources/rules/mlp.rules">Bargam</option> <option value="conv_resources/rules/ba.rules">Bashkir</option> <option value="conv_resources/rules/eu.rules">Basque</option> <option value="conv_resources/rules/btx.rules">Batak Karo</option> <option value="conv_resources/rules/be.rules">Belarusan</option> <option value="conv_resources/rules/bef.rules">Benabena</option> <option value="conv_resources/rules/bi.rules">Bislama</option> <option value="conv_resources/rules/boa.rules">Bora</option> <option value="conv_resources/rules/ksr.rules">Borong</option> <option value="conv_resources/rules/bzd.rules">Bribri</option> <option value="conv_resources/rules/bug.rules">Bugis</option> <option value="conv_resources/rules/bg.rules">Bulgarian</option> <option value="conv_resources/rules/bdd.rules">Bunama</option> <option value="conv_resources/rules/bvr.rules">Burarra</option> <option value="conv_resources/rules/cbu.rules">Candoshi-Shapra</option> <option value="conv_resources/rules/kea.rules">Cape Verdean Creole</option> <option value="conv_resources/rules/car.rules">Carib</option> <option value="conv_resources/rules/ca.rules">Catalan</option> <option value="conv_resources/rules/cav.rules">Cavineña</option> <option value="conv_resources/rules/tzm.rules">Central Atlas Tamazight</option> <option value="conv_resources/rules/bcl.rules">Central Bikol</option> <option value="conv_resources/rules/caa.rules">Ch’orti’</option> <option value="conv_resources/rules/cbi.rules">Cha’palaa</option> <option value="conv_resources/rules/cbk.rules">Chavacano</option> <option value="conv_resources/rules/cbt.rules">Chayahuita</option> <option value="conv_resources/rules/cho.rules">Choctaw</option> <option value="conv_resources/rules/ctu.rules">Chol</option> <option value="conv_resources/rules/cv.rules">Chuvash</option> <option value="conv_resources/rules/con_Cofan_Borman.rules">Cofán</option> <option value="conv_resources/rules/cof.rules">Colorado</option> <option value="conv_resources/rules/crh.rules">Crimean Tatar</option> <option value="conv_resources/rules/quz.rules">Cusco Quechua</option> <option value="conv_resources/rules/cs.rules">Czech</option> <option value="conv_resources/rules/dgz.rules">Daga</option> <option value="conv_resources/rules/ded.rules">Dedua</option> <option value="conv_resources/rules/djr.rules">Djambarrpuyngu</option> <option value="conv_resources/rules/myv.rules">Erzya</option> <option value="conv_resources/rules/mcq.rules">Ese</option> <option value="conv_resources/rules/zos.rules">Francisco León Zoque</option> <option value="conv_resources/rules/pwg.rules">Gapapaiwa</option> <option value="conv_resources/rules/ka.rules">Georgian</option> <option value="conv_resources/rules/el.rules">Greek</option> <option value="conv_resources/rules/gn.rules">Guarani</option> <option value="conv_resources/rules/guo.rules">Guayabero</option> <option value="conv_resources/rules/ghs.rules">Guhu-Samane</option> <option value="conv_resources/rules/ht.rules">Haitian Creole</option> <option value="conv_resources/rules/haw.rules">Hawaiian</option> <option value="conv_resources/rules/hil.rules">Hiligaynon</option> <option value="conv_resources/rules/hi.rules">Hindi</option> <option value="conv_resources/rules/hmn.rules">Hmong</option> <option value="conv_resources/rules/qub.rules">Huallaga Huánuco Quechua</option> <option value="conv_resources/rules/var.rules">Huarijío</option> <option value="conv_resources/rules/tee.rules">Huehuetla Tepehua</option> <option value="conv_resources/rules/hu.rules">Hungarian</option> <option value="conv_resources/rules/viv.rules">Iduna</option> <option value="conv_resources/rules/ign.rules">Ignaciano</option> <option value="conv_resources/rules/ilo.rules">Ilocano</option> <option value="conv_resources/rules/id.rules">Indonesian</option> <option value="conv_resources/rules/inb.rules">Inga</option> <option value="conv_resources/rules/iu-Latn.rules">Inuktitut</option> <option value="conv_resources/rules/ixl.rules">Ixil</option> <option value="conv_resources/rules/cnm.rules">Ixtatán Chuj</option> <option value="conv_resources/rules/jam.rules">Jamaican Creole</option> <option value="conv_resources/rules/jv.rules">Javanese</option> <option value="conv_resources/rules/dyo.rules">Jola-Fogny</option> <option value="conv_resources/rules/kbd.rules">Kabardian</option> <option value="conv_resources/rules/kki.rules">Kagulu</option> <option value="conv_resources/rules/kl.rules">Kalaallisut</option> <option value="conv_resources/rules/kn.rules">Kannada</option> <option value="conv_resources/rules/krc.rules">Karachay-Balkar</option> <option value="conv_resources/rules/kyz.rules">Kayabí</option> <option value="conv_resources/rules/kk.rules">Kazakh</option> <option value="conv_resources/rules/ky.rules">Kirghiz</option> <option value="conv_resources/rules/gil.rules">Kiribati</option> <option value="conv_resources/rules/kpf.rules">Komba</option> <option value="conv_resources/rules/kv.rules">Komi</option> <option value="conv_resources/rules/ko.rules">Korean</option> <option value="conv_resources/rules/gvn.rules">Kuku-Yalanji</option> <option value="conv_resources/rules/kup.rules">Kunimaipa</option> <option value="conv_resources/rules/kmo.rules">Kwoma</option> <option value="conv_resources/rules/mk.rules">Macedonian</option> <option value="conv_resources/rules/mg.rules">Malagasy</option> <option value="conv_resources/rules/ml.rules">Malayalam</option> <option value="conv_resources/rules/dv.rules">Maldivian</option> <option value="conv_resources/rules/mt.rules">Maltese</option> <option value="conv_resources/rules/mam.rules">Mam</option> <option value="conv_resources/rules/mqj.rules">Mamasa</option> <option value="conv_resources/rules/mva.rules">Manam</option> <option value="conv_resources/rules/bzh.rules">Mapos Buang</option> <option value="conv_resources/rules/arn.rules">Mapudungun</option> <option value="conv_resources/rules/chm.rules">Mari</option> <option value="conv_resources/rules/mcf.rules">Matsés</option> <option value="conv_resources/rules/mhl.rules">Mauwake</option> <option value="conv_resources/rules/mek.rules">Mekeo</option> <option value="conv_resources/rules/nan.rules">Min Nan Chinese</option> <option value="conv_resources/rules/mpx.rules">Misima-Panaeati</option> <option value="conv_resources/rules/crm.rules">Moose Cree</option> <option value="conv_resources/rules/mfe.rules">Morisyen</option> <option value="conv_resources/rules/kpx.rules">Mountain Koiali</option> <option value="conv_resources/rules/aoj.rules">Mufian</option> <option value="conv_resources/rules/mnb.rules">Muna</option> <option value="conv_resources/rules/emi.rules">Mussau-Emira</option> <option value="conv_resources/rules/wmw.rules">Mwani</option> <option value="conv_resources/rules/nas.rules">Naasioi</option> <option value="conv_resources/rules/naf.rules">Nabak</option> <option value="conv_resources/rules/nhe.rules">Nahuatl</option> <option value="conv_resources/rules/lem.rules">Nomaande</option> <option value="conv_resources/rules/nhr.rules">Naro</option> <option value="conv_resources/rules/nsn.rules">Nehan</option> <option value="conv_resources/rules/ne.rules">Nepali</option> <option value="conv_resources/rules/fuv.rules">Nigerian Fulfulde</option> <option value="conv_resources/rules/gaw.rules">Nobonob</option> <option value="conv_resources/rules/not.rules">Nomatsiguenga</option> <option value="conv_resources/rules/nuy.rules">Nunggubuyu</option> <option value="conv_resources/rules/or.rules">Oriya</option> <option value="conv_resources/rules/os.rules">Ossetic</option> <option value="conv_resources/rules/pau.rules">Palauan</option> <option value="conv_resources/rules/plu.rules">Palikúr</option> <option value="conv_resources/rules/pag.rules">Pangasinan</option> <option value="conv_resources/rules/pad.rules">Paumarí</option> <option value="conv_resources/rules/ata.rules">Pele-Ata</option> <option value="conv_resources/rules/pio.rules">Piapoco</option> <option value="conv_resources/rules/tpp.rules">Pisaflores Tepehua</option> <option value="conv_resources/rules/kjb.rules">Q’anjob’al</option> <option value="conv_resources/rules/kek.rules">Qeqchi</option> <option value="conv_resources/rules/acr.rules">Rabinal Achi’</option> <option value="conv_resources/rules/rwo.rules">Rawa</option> <option value="conv_resources/rules/rkb.rules">Rikbaktsa</option> <option value="conv_resources/rules/ro.rules">Romanian</option> <option value="conv_resources/rules/roo.rules">Rotokas</option> <option value="conv_resources/rules/bxr.rules">Russia Buriat</option> <option value="conv_resources/rules/acf.rules">Saint Lucian Creole French</option> <option value="conv_resources/rules/sm.rules">Samoan</option> <option value="conv_resources/rules/iws.rules">Sepik Iwam</option> <option value="conv_resources/rules/shi.rules">Shilha</option> <option value="conv_resources/rules/shp.rules">Shipibo-Konibo</option> <option value="conv_resources/rules/snc.rules">Sinaugoro</option> <option value="conv_resources/rules/si.rules">Sinhala</option> <option value="conv_resources/rules/sk.rules">Slovak</option> <option value="conv_resources/rules/bmu.rules">Somba-Siawari</option> <option value="conv_resources/rules/omw.rules">South Tairora</option> <option value="conv_resources/rules/es.rules">Spanish</option> <option value="conv_resources/rules/zsm.rules">Standard Malay</option> <option value="conv_resources/rules/suz.rules">Sunwar</option> <option value="conv_resources/rules/sw.rules">Swahili</option> <option value="conv_resources/rules/chf.rules">Tabasco Chontal</option> <option value="conv_resources/rules/tg.rules">Tajik</option> <option value="conv_resources/rules/ta.rules">Tamil</option> <option value="conv_resources/rules/tac.rules">Tarahumara</option> <option value="conv_resources/rules/tt-cyrillic.rules">Tatar</option> <option value="conv_resources/rules/te.rules">Telugu</option> <option value="conv_resources/rules/tpi.rules">Tok Pisin</option> <option value="conv_resources/rules/to.rules">Tongan</option> <option value="conv_resources/rules/mto.rules">Totontepec Mixe</option> <option value="conv_resources/rules/tr.rules">Turkish</option> <option value="conv_resources/rules/tyv.rules">Tuvan</option> <option value="conv_resources/rules/tzj.rules">Tz’utujil</option> <option value="conv_resources/rules/tzo.rules">Tzotzil</option> <option value="conv_resources/rules/uk.rules">Ukrainian</option> <option value="conv_resources/rules/hsb.rules">Upper Sorbian</option> <option value="conv_resources/rules/usa.rules">Usarufa</option> <option value="conv_resources/rules/ug.rules">Uyghur</option> <option value="conv_resources/rules/uz.rules">Uzbek</option> <option value="conv_resources/rules/vi.rules">Vietnamese</option> <option value="conv_resources/rules/wbp.rules">Warlpiri</option> <option value="conv_resources/rules/way.rules">Wayana</option> <option value="conv_resources/rules/guc.rules">Wayuu</option> <option value="conv_resources/rules/wo.rules">Wolof</option> <option value="conv_resources/rules/too.rules">Xicotepec de Juárez Totonac</option> <option value="conv_resources/rules/sah.rules">Yakut</option> <option value="conv_resources/rules/yva.rules">Yawa</option> <option value="conv_resources/rules/yi-Latn.rules">Yiddish</option> <option value="conv_resources/rules/pib.rules">Yine</option> <option value="conv_resources/rules/yua.rules">Yucatec Maya</option> <option value="conv_resources/rules/ycn.rules">Yucuna</option> <option value="conv_resources/rules/yuz.rules">Yuracare</option> <option value="conv_resources/rules/zza.rules">Zaza</option></p>
+                  </select>
+                </div>
+              </div>
+              <div class="col-4 align-items-center justify-content-end">
+                <a id="language_info" title="Click for language info" target="_blank">&nbsp;Language Info</a> <!--language info button (link to corresponding html file)-->
+              </div>
+            </div>
+            <div class="row C text-center m-0">
+              <div id="submit_button" class="col d-flex justify-content-end align-items-end">
+                <button type="submit" id="submit">Translate</button>
+              </div>
+            </div>
+            <div class="row D m-0">
+              <div class="col">
+                <div class="d-flex flex-column gap">
+                  <div class="row m-0">
+                    <div class="col p-0">
+                      Phonemic Representation:
+                    </div>
+                    <div class="col p-0 text-right">
+                       <a id="translations_file" title="Click to download as list" download>Download</a><br>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" name="rules" id="rules"/>
+                <textarea id="out1" readonly></textarea><br> <!--ouptput: translated text-->
+              </div>
+            </div>
+            <div class="row E m-0">
+              <div class="col text-center">
+                <div id="msg2" class="msg">One or more orthographic characters were not translated. Make sure you are using the proper orthography for the language in question.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid footer"></div>
+
+  <div id="overlay"></div>
+
+  <script type="text/javascript">
+
+    // Event Listeners
+    document.getElementById("upload_text_form").addEventListener("change", function() { read_text_upload(this) } )
+    document.getElementById("upload_text_form").addEventListener("click", function() { this.value=null })
+    document.getElementById("leftbutton").addEventListener("click", existing);
+    document.getElementById("rightbutton").addEventListener("click", upload);
+    document.getElementById("upload_form").addEventListener("change", function() { read_upload(this) } )
+    document.getElementById("upload_form").addEventListener("click", function() { this.value=null })
+    document.getElementById("rule_dropdown").addEventListener("change", read_existing);
+    document.getElementById("submit").addEventListener("click", submit);
+
+    var grammar;
+
+    // Create ability to open/read uploaded text and rules files
+    function parse(file) {
+      return new Promise((resolve, reject) => {
+        let content = '';
+        const reader = new FileReader();
+        reader.onloadend = function(e) {
+          content = e.target.result;
+          const result = content.split(/\r\n|\n/);
+          resolve(result);
+        };
+        reader.onerror = function(e) {
+          reject(e);
+        };
+        reader.readAsText(file);
+      });
+    }
+
+    // Reset keyboard, input, and output messages; get grammar of uploaded rules file
+    function read_upload() {
+
+      document.getElementById("load").style.display = "flex";
+      document.getElementById("msg3").style.display = "flex";
+      document.getElementById("keyboard").style.display = "none";
+      document.getElementById("loading").style.display = "none";
+      document.getElementById("initial").style.display = "none";
+      document.getElementById("ani").style.display = "none";
+      document.getElementById("msg1").style.display = "none";
+      document.getElementById("ko_warning").style.display = "none";
+      document.getElementById("upload_text_form").value = "";
+
+      keyboard.innerHTML = "";
+      document.getElementById("in1").value = "";
+      document.getElementById("out1").value = "";
+      while(keyboard.firstChild) {
+        keyboard.removeChild(keyboard.firstChild);
+      }
+
+      document.getElementById("msg2").style.visibility = "visible";
+      document.getElementById("translations_file").style.display = "none";
+
+      a = document.getElementById('upload_form').files;
+      if (a.length > 0) {
+        parse(a[0]).then(s => {
+          hidden = document.getElementById('x');
+          hidden.value = s.join('\n');
+          grammar = new AlphabetToIpa(""); // get grammar of the uploaded language needed for translation
+        });
+      }
+    }
+
+    // Reset keyboard, input, and output messages; get grammar of selected language and display keyboard
+    function read_existing() {
+
+      var file_info_name = ""; // holds the BCP-47 (or modified) code for the selected language (if "Existing Rules" is selected)
+
+      document.getElementById("load").style.display = "flex";
+      document.getElementById("loading").style.display = "flex";
+      document.getElementById("ani").style.display = "flex";
+      document.getElementById("keyboard").style.display = "none";
+      document.getElementById("initial").style.display = "none";
+      document.getElementById("msg1").style.display = "none";
+      document.getElementById("msg3").style.display = "none";
+      document.getElementById("ko_warning").style.display = "none";
+      document.getElementById("upload_text_form").value = "";
+
+      keyboard.innerHTML = "";
+      document.getElementById("in1").value = "";
+      document.getElementById("out1").value = "";
+      while(keyboard.firstChild) {
+        keyboard.removeChild(keyboard.firstChild);
+      }
+      document.getElementById("msg2").style.visibility = "hidden";
+      document.getElementById("translations_file").style.display = "none";
+      document.getElementById("language_info").style.display = "flex";
+
+      a = document.getElementById("rule_dropdown").value;
+
+      // Isolate language code needed for retrieval of language info (html) and language keyboard (txt) files
+      if (a.includes("-")) { // for language rules that specified specific scripts (e.g. iu-Latn.rules)
+        file_info_name = a.split(/(\/)/g).pop().split("-")[0];
+        console.log(file_info_name);
+      }
+      else if (a.includes("con_Cofan")) { // exception
+        file_info_name = "con_Cofan";
+        console.log(file_info_name);
+      }
+      else {
+        file_info_name = a.split(/(\/)/g).pop().split('.')[0]; // standard
+        console.log(file_info_name);
+      }
+
+      grammar = new AlphabetToIpa(a); // get grammar of selected language needed for translation
+
+      if (file_info_name == "ko") { // Korean has too many characters to display as a keyboard, so we created a downloadable option
+        document.getElementById("ko_warning").style.display = "flex";
+        document.getElementById("load").style.display = "none";
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("ani").style.display = "none";
+      }
+      else {
+        language_keyboard = "conv_resources/keyboards/" + file_info_name + ".txt";
+        setTimeout(function(){ // purely aesthetic (allows time to display animation)
+          make_keyboard(language_keyboard);
+        }, 3000);
+      }
+
+      var info_link = "conv_resources/info/" + file_info_name + ".html";
+      document.getElementById("language_info").href = info_link;
+    }
+
+    // Get the input field (if text file upload)
+    function read_text_upload() {
+      var a = document.getElementById('upload_text_form').files;
+      if (a.length > 0) {
+        parse(a[0]).then(s => {
+          var text1 = document.getElementById('in1'); // display uploaded file in input textarea
+          text1.value = '';
+          text1.value = s.join('\n');
+        });
+      }
+    }
+
+
+    // Display warnings if translate button is hit when required actions have not yet been fulfilled
+    function submit() {
+      var x = document.getElementById("upload_form");
+      var y = document.getElementById("rule_dropdown");
+      var z = document.getElementById("in1");
+      if (document.getElementById("existing").style.display == "none"
+        && document.getElementById('x').value.length == 0) { // if "Upload Rules" is selected, ensure file exists
+        x.style.background = "#ff0000";
+        setTimeout(function() {
+          x.style.background = "white";
+        }, 250);
+      }
+      else if (document.getElementById("upload").style.display == "none"
+        && y.selectedIndex == 0) { // if "Existing Rules" is selected, ensure language is selected
+        y.style.background = "#ff0000";
+        setTimeout(function() {
+          y.style.background = "white";
+        }, 250);
+      }
+      else if (document.getElementById("existing").style.display == "none"
+        && document.getElementById('x').value.length != 0
+        && document.getElementById("in1").value == "") { // if "Upload Rules" is selected and the file exists, ensure text to be translated has been entered
+        z.style.background = "#ff0000";
+        setTimeout(function() {
+          z.style.background = "white";
+        }, 250);
+      }
+      else if (document.getElementById("upload").style.display == "none"
+        && y.selectedIndex != 0
+        && document.getElementById("in1").value == "") { // if "Existing Rules" is selected and the language is selected, ensure text to be translated has been entered
+        z.style.background = "#ff0000";
+        setTimeout(function() {
+          z.style.background = "white";
+        }, 250);
+      }
+      else {
+        translate();
+      }
+    }
+
+
+    /* Next 3 functions (to_IPA, translate_line, and do_translate) handle the translation of user text input which is is first parsed by line and then by word */
+
+    // Translate input one word at a time
+    function to_IPA(s) {
+	//return grammar.translate(s).toString().replaceAll(" ", "").trim(); // translate03.js puts spaces between each character necessary for phoneme frequency and informativity measures (for purposes of the website, I removed them for readability)
+      return grammar.translate(s).toString().trim(); // Keep translate04.js spaces
+    }
+
+    // Parse individual elements (e.g. words) within each line
+    function translate_line(str) {
+      var buff = '';
+      var a = str.split(' ');
+      for (var i = 0; i < a.length; i++) {
+        if (i > 0) {
+          buff += ' '; // put spaces between each word
+        }
+        buff += to_IPA(a[i]); // call function to translate by word
+      }
+      return buff;
+    }
+
+    // Parse user text input by line
+    function do_translate() {
+      document.getElementById("msg2").style.visibility = "hidden";
+      var buff = '';
+      var a = document.getElementById("in1").value.split('\n');
+      for (var i = 0; i < a.length; i++) { // look at the input as a whole (separated by line breaks if any)
+        if (i > 0) {
+          buff += '\n'; // maintain linebreaks from input to output
+        }
+        buff += translate_line(a[i]); // call function to look at the individual elements within each line
+      }
+      return buff;
+    }
+
+
+    // Display output and warnings (i/a); display download option for translated text
+    function translate(){
+      document.getElementById("out1").value = "";
+      document.getElementById("out1").value = do_translate(grammar); // display translated text (phonemic translation)
+      if (document.getElementById("out1").value.includes("@")) { // display warning if some characters aren't translated
+        document.getElementById("msg2").style.visibility = "visible";
+      }
+
+      // Provide the option to download the translated text as a list
+      document.getElementById("translations_file").style.display = "inline-block";
+      var output = document.getElementById("out1").value;
+      output = output.replaceAll(/\s\n/, "\n").replaceAll(" ", "\n").split("\n");
+
+      var input = document.getElementById("in1").value;
+      input = input.replaceAll(/\s\n/, "\n").replaceAll(" ", "\n").split("\n");
+
+      var translation = "Orthographic,Phonemic\n";
+
+      for (var i=0; i < output.length; i++) {
+        translation += input[i] + "," + output[i] + "\n";
+      }
+
+      var blob = new Blob([translation], {type: "text/plain;charset=utf-8"});
+
+      var url = URL.createObjectURL(blob);
+      document.getElementById("translations_file").href = url;
+      var lang_name = document.getElementById("rule_dropdown").options[document.getElementById("rule_dropdown").selectedIndex].innerHTML;
+      lang_name = lang_name.replaceAll(" ", "");
+
+      if (document.getElementById("rule_dropdown").selectedIndex == 0) { // if "Upload Rules" is selected use generic name as part of the file identifier
+        document.getElementById("translations_file").setAttribute("download", "XPF_user_translations");
+      }
+      else { // if "Existing Rules" is selected use language name as part of the file identifier
+        document.getElementById("translations_file").setAttribute("download", "XPF_" + lang_name + "_translations");
+      }
+    }
+
+  </script>
+
+  <script src="./js/translate04.js"></script> <!-- current version -->
+  <script src="./js/keyboard.js"></script>
+  <script src="./js/sidenav.js"></script>
+
+</body>
+</html>
