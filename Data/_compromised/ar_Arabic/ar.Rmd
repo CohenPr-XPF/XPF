@@ -113,7 +113,7 @@ Grapheme  Phoneme      Comment
 "ي"       "/j/; /iː/"   "/j/: word -initially (used as default in the rules); /iː/ preceded by a short /i/ diacritic"
 "ء"       "/ʔ/"         "called a hamza, this grapheme also exists as a diacritic (explained below)"
 "ة"       "∅; /t/"      "called a ta-marbuta, this grapheme appears word-finally, corresponding to /t/ if followed by a diacritic or ∅ otherwise [@Biadsy2009, p. 3]"
-"ى"       "/a/"         "called an alif-maqsura, this grapheme occurs word-finally [@Habash2010, p. 11; @Biadsy2009, p. 3]"      
+"ى"       "/a̱/"         "called an alif-maqsura, this grapheme occurs word-finally [@Habash2010, p. 11; @Biadsy2009, p. 3]"      
 **Diacritic**    ""     ""
 "ُ"       "/u/"          "this diacritic is called a dammah [@Yurtbasi2016, p. 146]"
 "َ"       "/a/"          "this diacritic is called a fatḥah (ibid.)"
