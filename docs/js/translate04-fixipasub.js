@@ -195,8 +195,8 @@ class AlphabetToIpa {
           let ipasubrule = new SubRule(rule, this.classes)
 	  ipasubrule.sfrom = new RegExp(ipasubrule.sfrom, "g");
 	  // (ucp2024-01-19: commented out by someone in the past, disabling back reference) ipasubrule.sto = ipasubrule.sto.replace(/\\([1-9])/, "$$1");
-	  ipasubrule.sto = ipasubrule.sto.replace(/\\([1-9])/g, "\$$1")
-	  ipasubrule.sto = new RexExp(ipasubrule.sto)
+	  // ipasubrule.sto = rule["sto"].replace(/\\([1-9])/g, "\$$1")
+	  // ipasubrule.sto = new RegExp(ipasubrule.sto)
     	  this.ipasubs.add(ipasubrule)
       }
       else if (rule["type"] == "word") {
