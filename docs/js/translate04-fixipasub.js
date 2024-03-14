@@ -99,7 +99,8 @@ class SubRule {
 	      let value = rule[key]//.replace("\\", "$1")
         if (key == "sto") {
           if (!(value == "@" || value == " @")) {
-          value = value.replaceAll(/\\([1-9])/, "@$1").replaceAll("@", "$")
+              //ucp2024-01-19 value = value.replaceAll(/\\([1-9])/, "@$1").replaceAll("@", "$")
+              value = value.replaceAll(/\\([1-9])/, "\$$1")
           }
         }
 
@@ -250,12 +251,12 @@ class AlphabetToIpa {
       }
 
       for (var i=0; i<source_list.length; i++) {
-        let sfrom = source_list[i]
-        let precede = source_list.slice(0,i).join("")
-		    let follow = source_list.slice(i+1).join("")
+          let sfrom = source_list[i]
+          let precede = source_list.slice(0,i).join("")
+	  let follow = source_list.slice(i+1).join("")
 
-		    var translations = []
-		    this.subs.forEach(function(subrule) {
+	  var translations = []
+	  this.subs.forEach(function(subrule) {
           let trans = [subrule.sub_score(sfrom, precede, follow), subrule.sub(sfrom)]
           translations.push(trans)
 		    })
@@ -286,6 +287,7 @@ class AlphabetToIpa {
         let ipasubrule = ipa_translations[i][1];
 		    console.log("ipasub", ipasubrule, "from:", target_string);
 
+	  console.log("ipasub editing string:"+target_string+" rule:"+ipasubrule.sfrom+"→", ipasubrule.sto)
         target_string = target_string.replace(ipasubrule.sfrom, ipasubrule.sto);
 		    console.log("\tresult:", target_string);
       }
