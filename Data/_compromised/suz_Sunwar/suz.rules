@@ -97,7 +97,7 @@ ipasub,a ({vowel_nota}) ERASE,\1,3,,,"in some cases, the nullifying character di
 ipasub,^ERASE,,2,,,"deletes the word-initial null diacritic that appears in occasional words"
 ipasub, ERASE, @,1,,,"controls for unattested combos (19)"
 ipasub,({vowel}) NAS,\1̃,2,,,"attaches the nasal diacritic to short vowels"
-ipasub,aː NAS,ãː,2,,,"attaches the nasal diacritic to long vowels"
+ipasub,aː NAS,ãː,3,,,"attaches the nasal diacritic to long vowels"
 ipasub,uː NAS,uː,2,,,"nasal /uː/ is not contrastive with /uː/"
 ipasub,^NAS,,2,,,"deletes the word-initial NAS diacritic that appears in occasional words"
 ipasub,({gem}) a ERASE \1,\1 ː,6,,,"consonant gemination",
