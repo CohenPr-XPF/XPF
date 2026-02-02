@@ -1,8 +1,11 @@
-# XPF
+# XPF Corpus
 
 Check out our interactive website: [The XPF Corpus](https://cohenpr-xpf.github.io/XPF/)
 
-The preliminary manual of the corpus can be found [here](https://cohenpr-xpf.github.io/XPF/manual/xpf_manual.pdf).
+The manual of the corpus can be found [here](https://cohenpr-xpf.github.io/XPF/manual/xpf_manual.pdf).
+
+A new and welcoming python interface can be found [here](https://app.readthedocs.org/projects/xpfcorpus/). The source files are
+available [here](https://github.com/CohenPr-XPF/xpfcorpus)
 
 ## Repository
 
