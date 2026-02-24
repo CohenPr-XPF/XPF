@@ -1,0 +1,55 @@
+# Central Atlas Tamazight (Latin script)
+# Written by: Abi Creighton
+# Last Updated: 2020-07-10
+type,sfrom,sto,weight,precede,follow,comment
+# Class Rules
+class,passthrough,[abfkhqimuw],,,,
+class,gem,(b|ɡ|d̪|d̪ˤ|f|k|h|ħ|ʕ|x|q|ʒ|l̪|m|n̪|r̪|r̪ˤ|ɣ|s̪|s̪ˤ|ʃ|t̪|t̪ˤ|w|j|z̪|z̪ˤ),,,,
+class,apostrophe,['ꞌ‘’],,,,
+class,h-preceder,[kgs],,,,
+class,w-preceder,[kgq],,,,
+class,lab,[kɡqxɣ],,,,
+class,phar,(d̪|r̪|s̪|t̪|z̪),,,,
+# Individual Letters
+sub,g,ɡ,1,,,
+sub,d,d̪,1,,,
+sub,ḍ,d̪ˤ,1,,,
+sub,e,i,1,,,
+sub,ḥ,ħ,1,,,
+sub,{apostrophe},ʕ,1,,,
+sub,j,ʒ,1,,,
+sub,l,l̪,1,,,
+sub,n,n̪,1,,,
+sub,r,r̪,1,,,
+sub,ṛ,r̪ˤ,1,,,
+sub,s,s̪,1,,,
+sub,ṣ,s̪ˤ,1,,,
+sub,t,t̪,1,,,
+sub,ṭ,t̪ˤ,1,,,
+sub,y,j,1,,,
+sub,z,z̪,1,,,
+sub,ẓ,z̪ˤ,1,,,
+sub,-,,1,,,"some words have a hyphen with no phonemic value"
+# Digraphs
+sub,k,x,2,,h,
+sub,g,ɣ,2,,h,
+sub,s,ʃ,2,,h,
+sub,h,,2,{h-preceder},,"clean-up"
+sub,g,ɡʷ,3,,w,
+sub,k,kʷ,3,,w,
+sub,q,qʷ,3,,w,
+sub,w,,3,{w-preceder},,"clean-up"
+sub,k,xʷ,4,,hw,
+sub,h,,4,k,w,"clean-up",
+sub,w,,4,kh,,"clean-up",
+sub,g,ɣʷ,4,,hw,
+sub,h,,4,g,w,"clean-up",
+sub,w,,4,gh,,"clean-up",
+# Misc. Rules
+ipasub,({gem}) \1,\1 ː,3,,,"geminate consonants"
+ipasub,({lab}) \1ʷ,\1ʷ ː,5,,,"fixes labialized geminates"
+ipasub,({phar}) \1ˤ,\1ˤ ː,5,,,"fixes pharyngealized geminates"
+ipasub,k x,x ː,4,,,"fixes geminate /x/"
+ipasub,s̪ ʃ,ʃ ː,4,,,"fixes geminate /ʃ/"
+ipasub,ɡ ɣ,ɣ ː,4,,,"fixes geminate /ɣ/"
+sub,({passthrough}),\1,0.1,,,

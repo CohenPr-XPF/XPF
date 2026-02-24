@@ -2,4 +2,8 @@
 .sav
 .Rhistory
 Abandoned
-Available
+AvailableCLAUDE.md
+.venv
+node_modules/
+docs/conv_resources/verify/
+docs/test-browser-langs.json

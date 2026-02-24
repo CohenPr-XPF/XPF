@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>XPF Browser Verification</title>
+  <style>
+    body { font-family: monospace; margin: 20px; }
+    .pass { color: green; }
+    .fail { color: red; }
+    .error { color: orange; }
+    #summary { font-size: 1.2em; font-weight: bold; margin: 10px 0; }
+    #log { white-space: pre-wrap; max-height: 600px; overflow-y: auto;
+           border: 1px solid #ccc; padding: 10px; }
+    button { padding: 8px 16px; font-size: 14px; margin: 5px; }
+    #controls { margin: 10px 0; }
+  </style>
+</head>
+<body>
+  <h2>XPF translate04-node.js Browser Verification</h2>
+  <p>Tests the JavaScript translation engine against all language verify files in the browser.</p>
+
+  <div id="controls">
+    <p><b>Automatic test</b> (serve from <code>docs/</code> with a local server):</p>
+    <code>cd docs && python3 -m http.server 8080</code><br><br>
+    <button id="btn-auto" onclick="runAutoTest()">Run All Languages</button>
+
+    <hr>
+    <p><b>Manual test:</b> Upload a .rules and .verify.csv file:</p>
+    <input type="file" id="rules-file" accept=".rules,.csv,.txt"> Rules<br>
+    <input type="file" id="verify-file" accept=".csv,.txt"> Verify<br>
+    <button id="btn-manual" onclick="runManualTest()">Test Uploaded Files</button>
+  </div>
+
+  <div id="summary"></div>
+  <div id="log"></div>
+
+  <script src="js/translate04-node.js"></script>
+  <script>
+    var t04 = translate04;
+    var logEl = document.getElementById('log');
+    var summaryEl = document.getElementById('summary');
+
+    function log(msg, cls) {
+      var span = document.createElement('span');
+      if (cls) span.className = cls;
+      span.textContent = msg + '\n';
+      logEl.appendChild(span);
+      logEl.scrollTop = logEl.scrollHeight;
+    }
+
+    function fetchText(url) {
+      return new Promise(function(resolve, reject) {
+        var req = new XMLHttpRequest();
+        req.open('GET', url);
+        req.onload = function() {
+          if (req.status === 200) resolve(req.response);
+          else reject(new Error(url + ': ' + req.statusText + ' (' + req.status + ')'));
+        };
+        req.onerror = function() { reject(new Error(url + ': Network Error')); };
+        req.send();
+      });
+    }
+
+    function readFile(file) {
+      return new Promise(function(resolve, reject) {
+        var reader = new FileReader();
+        reader.onloadend = function(e) { resolve(e.target.result); };
+        reader.onerror = function(e) { reject(e); };
+        reader.readAsText(file);
+      });
+    }
+
+    function testLanguage(rulesText, verifyText) {
+      var ruleList = t04.parseRulesFromString(rulesText);
+      var a2ipa = new t04.AlphabetToIpa(ruleList);
+      var verifyLines = verifyText.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
+      return a2ipa.check(verifyLines);
+    }
+
+    function runManualTest() {
+      logEl.innerHTML = '';
+      summaryEl.textContent = '';
+      var rulesInput = document.getElementById('rules-file');
+      var verifyInput = document.getElementById('verify-file');
+      if (!rulesInput.files.length || !verifyInput.files.length) {
+        log('Please select both files.', 'error');
+        return;
+      }
+      Promise.all([readFile(rulesInput.files[0]), readFile(verifyInput.files[0])])
+        .then(function(results) {
+          var label = rulesInput.files[0].name;
+          try {
+            if (testLanguage(results[0], results[1])) {
+              log('PASS: ' + label, 'pass');
+              summaryEl.textContent = 'PASSED';
+              summaryEl.className = 'pass';
+            } else {
+              log('FAIL: ' + label + ' (see browser console for details)', 'fail');
+              summaryEl.textContent = 'FAILED';
+              summaryEl.className = 'fail';
+            }
+          } catch(e) {
+            log('ERROR: ' + label + ': ' + e.message, 'error');
+          }
+        });
+    }
+
+    function runAutoTest() {
+      logEl.innerHTML = '';
+      summaryEl.textContent = 'Loading language list...';
+
+      fetchText('test-browser-langs.json').then(function(json) {
+        var langs = JSON.parse(json);
+        var passed = 0, failed = 0, errors = 0, total = langs.length;
+        var idx = 0;
+
+        function next() {
+          if (idx >= total) {
+            summaryEl.textContent = passed + ' passed, ' + failed + ' failed, ' + errors + ' errors (out of ' + total + ')';
+            summaryEl.className = (failed === 0 && errors === 0) ? 'pass' : 'fail';
+            return;
+          }
+
+          var lang = langs[idx++];
+          summaryEl.textContent = 'Testing ' + idx + '/' + total + ': ' + lang.label;
+
+          Promise.all([fetchText(lang.rules), fetchText(lang.verify)])
+            .then(function(results) {
+              try {
+                if (testLanguage(results[0], results[1])) {
+                  passed++;
+                  log('PASS: ' + lang.label, 'pass');
+                } else {
+                  failed++;
+                  log('FAIL: ' + lang.label, 'fail');
+                }
+              } catch(e) {
+                errors++;
+                log('ERROR: ' + lang.label + ': ' + e.message, 'error');
+              }
+              setTimeout(next, 5);
+            })
+            .catch(function(e) {
+              errors++;
+              log('FETCH ERROR: ' + lang.label + ': ' + e.message, 'error');
+              setTimeout(next, 5);
+            });
+        }
+
+        next();
+      }).catch(function(e) {
+        summaryEl.textContent = 'Error loading language list';
+        log('Could not load test-browser-langs.json: ' + e.message, 'error');
+        log('Run: bash Code/sync-verify-to-docs.sh && bash Code/test-browser-gen.sh > docs/test-browser-langs.json', '');
+      });
+    }
+  </script>
+</body>
+</html>

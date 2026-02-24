@@ -40,6 +40,8 @@ sub,ъ,,4,,,"<ъ> otherwise = non-contrastive vowel length, not included in this
 sub,э,ɛ,4,,,
 sub,ю,j u,4,,,
 sub,я,j a,4,,,
+sub,ц,t s,1,,,"ц is loadwords from Russian",
+sub,ь,,1,,$,"erase word-final soft sign (in loanwords from Russian)",
 sub,-,,4,,,"some words have a hyphen with no phonetic value",
 # Digraphs
 sub,н,ŋ,6,,г,"<нг> = velar nasal",

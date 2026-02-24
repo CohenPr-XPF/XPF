@@ -8,7 +8,7 @@ async function get_grammar(keyboard_file) {
     return;
   }
 
-  var chars = await get(keyboard_file);
+  var chars = await translate04io.fetchText(keyboard_file);
   chars = chars.split(",");
 
   return chars;
