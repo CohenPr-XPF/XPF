@@ -138,6 +138,95 @@
     }
 
     //
+    // Parse xpfcorpus JSON format
+    //
+
+    /**
+     * Introspect an xpfcorpus JSON object.
+     * Returns { metadata, scriptNames, defaultScript }.
+     */
+    function parseXPFJSON(jsonObj) {
+        var metadata = jsonObj.metadata || {};
+        var scriptNames = Object.keys(jsonObj.scripts || {});
+        var defaultScript = metadata.default_script || scriptNames[0] || null;
+        return {
+            metadata: metadata,
+            scriptNames: scriptNames,
+            defaultScript: defaultScript
+        };
+    }
+
+    /**
+     * Convert xpfcorpus JSON rules to the flat rule_list that AlphabetToIpa expects.
+     * If scriptName is null/undefined, uses metadata.default_script or first script.
+     */
+    function parseRulesFromJSON(jsonObj, scriptName) {
+        var info = parseXPFJSON(jsonObj);
+        var sName = scriptName || info.defaultScript;
+        var scriptData = (jsonObj.scripts || {})[sName];
+        if (!scriptData) {
+            throw new Error("Script '" + sName + "' not found. Available: " + info.scriptNames.join(', '));
+        }
+        var rules = scriptData.rules || {};
+        var rule_list = [];
+
+        // classes (dict: name -> pattern)
+        var classes = rules.classes || {};
+        var classNames = Object.keys(classes);
+        for (var ci = 0; ci < classNames.length; ci++) {
+            rule_list.push({ type: 'class', sfrom: classNames[ci], sto: classes[classNames[ci]] });
+        }
+
+        // pre (array of {from, to})
+        var preRules = rules.pre || [];
+        for (var pi = 0; pi < preRules.length; pi++) {
+            rule_list.push({ type: 'pre', sfrom: preRules[pi].from || '', sto: preRules[pi].to || '' });
+        }
+
+        // match (array of {from, to})
+        var matchRules = rules.match || [];
+        for (var mi = 0; mi < matchRules.length; mi++) {
+            rule_list.push({ type: 'match', sfrom: matchRules[mi].from || '', sto: matchRules[mi].to || '' });
+        }
+
+        // sub (array of {from, to, weight, precede?, follow?})
+        var subRules = rules.sub || [];
+        for (var si = 0; si < subRules.length; si++) {
+            var sr = subRules[si];
+            rule_list.push({
+                type: 'sub',
+                sfrom: sr.from || '',
+                sto: sr.to || '',
+                weight: String(sr.weight != null ? sr.weight : 0),
+                precede: sr.precede || '',
+                follow: sr.follow || ''
+            });
+        }
+
+        // ipasub (same shape as sub)
+        var ipasubRules = rules.ipasub || [];
+        for (var ii = 0; ii < ipasubRules.length; ii++) {
+            var ir = ipasubRules[ii];
+            rule_list.push({
+                type: 'ipasub',
+                sfrom: ir.from || '',
+                sto: ir.to || '',
+                weight: String(ir.weight != null ? ir.weight : 0),
+                precede: ir.precede || '',
+                follow: ir.follow || ''
+            });
+        }
+
+        // word (array of {word, phonemes})
+        var wordRules = rules.word || [];
+        for (var wi = 0; wi < wordRules.length; wi++) {
+            rule_list.push({ type: 'word', sfrom: wordRules[wi].word || '', sto: wordRules[wi].phonemes || '' });
+        }
+
+        return rule_list;
+    }
+
+    //
     // SubRule class
     //
     class SubRule {
@@ -412,6 +501,8 @@
     // Export for browser/module use
     //
     exports.parseRulesFromString = parseRulesFromString;
+    exports.parseXPFJSON = parseXPFJSON;
+    exports.parseRulesFromJSON = parseRulesFromJSON;
     exports.parseLine = parseLine;
     exports.detectDelimiter = detectDelimiter;
     exports.SubRule = SubRule;
@@ -433,28 +524,32 @@ if (typeof require !== 'undefined' && require.main === module) {
             langrules: 'es.rules',
             check: null,
             read: null,
+            script: null,
             loglevel: 0,
             words: []
         };
-        
+
         let i = 0;
         while (i < args.length) {
             const arg = args[i];
-            
+
             if (arg === '-l' || arg === '--langrules') {
                 options.langrules = args[++i];
             } else if (arg === '-c' || arg === '--check') {
                 options.check = args[++i];
             } else if (arg === '-r' || arg === '--read') {
                 options.read = args[++i];
+            } else if (arg === '-s' || arg === '--script') {
+                options.script = args[++i];
             } else if (arg === '-v' || arg === '--verbose') {
                 options.loglevel = parseInt(args[++i]) || 0;
             } else if (arg === '-h' || arg === '--help') {
                 console.log(`Usage: node ${path.basename(process.argv[1])} [options] [words...]
 
 Options:
-  -l, --langrules FILE   Language rules file (default: es.rules)
-  -c, --check FILE       Verification file
+  -l, --langrules FILE   Language rules file (.rules, .json, or .yaml)
+  -c, --check FILE       Verification file (or 'auto' for JSON/YAML embedded verify)
+  -s, --script NAME      Script name (for JSON/YAML files with multiple scripts)
   -r, --read FILE        Read words from file (one per line)
   -v, --verbose LEVEL    Verbosity level (0-3)
   -h, --help             Show this help message
@@ -465,55 +560,114 @@ Options:
             }
             i++;
         }
-        
+
         return options;
     }
     
+    function isJSONOrYAML(filename) {
+        const ext = path.extname(filename).toLowerCase();
+        return ext === '.json' || ext === '.yaml' || ext === '.yml';
+    }
+
+    function loadJSONOrYAML(filename, fileContent) {
+        const ext = path.extname(filename).toLowerCase();
+        if (ext === '.json') {
+            return JSON.parse(fileContent);
+        } else {
+            // YAML: try to require js-yaml
+            let jsyaml;
+            try {
+                jsyaml = require('js-yaml');
+            } catch (ex) {
+                console.error("js-yaml is required for YAML files. Install with: npm install js-yaml");
+                process.exit(1);
+            }
+            return jsyaml.load(fileContent);
+        }
+    }
+
     function main() {
         const args = process.argv.slice(2);
         const options = parseArgs(args);
-        
-        // Read and parse rules file
-        let rulesText;
+
+        // Read the language file
+        let fileContent;
         try {
-            rulesText = fs.readFileSync(options.langrules, 'utf8');
+            fileContent = fs.readFileSync(options.langrules, 'utf8');
         } catch (ex) {
             console.error(`Error reading rules file '${options.langrules}':`, ex.message);
             process.exit(1);
         }
-        
-        const ruleList = exports.parseRulesFromString(rulesText);
+
+        let ruleList;
+        let jsonObj = null;
+        let selectedScript = null;
+
+        if (isJSONOrYAML(options.langrules)) {
+            // JSON/YAML format
+            jsonObj = loadJSONOrYAML(options.langrules, fileContent);
+            const info = exports.parseXPFJSON(jsonObj);
+            selectedScript = options.script || info.defaultScript;
+            if (options.loglevel > 0) {
+                console.error(`Loading ${info.metadata.name || '?'} (${info.metadata.code || '?'}), script: ${selectedScript}`);
+                console.error(`Available scripts: ${info.scriptNames.join(', ')}`);
+            }
+            ruleList = exports.parseRulesFromJSON(jsonObj, selectedScript);
+        } else {
+            // Legacy .rules format
+            ruleList = exports.parseRulesFromString(fileContent);
+        }
+
         const a2ipa = new exports.AlphabetToIpa(ruleList, { loglevel: options.loglevel });
-        
+
         // Run verification if specified
         if (options.check) {
-            let checkText;
-            try {
-                checkText = fs.readFileSync(options.check, 'utf8');
-            } catch (ex) {
-                console.error(`Error reading check file '${options.check}':`, ex.message);
-                process.exit(1);
+            let allGood;
+
+            if (options.check === '-c' || options.check === 'auto') {
+                // For JSON/YAML: use embedded verify data
+                if (!jsonObj) {
+                    console.error("Embedded verify (-c auto) only works with JSON/YAML files");
+                    process.exit(1);
+                }
+                const scriptData = jsonObj.scripts[selectedScript];
+                const verifyItems = (scriptData && scriptData.verify) || [];
+                if (verifyItems.length === 0) {
+                    console.error(`No verify data found for script '${selectedScript}'`);
+                    process.exit(1);
+                }
+                // Convert embedded verify to CSV lines for check()
+                const checkLines = verifyItems.map(function(item) {
+                    return item.word + ',' + item.phonemes;
+                });
+                allGood = a2ipa.check(checkLines);
+            } else {
+                // External verify file
+                let checkText;
+                try {
+                    checkText = fs.readFileSync(options.check, 'utf8');
+                } catch (ex) {
+                    console.error(`Error reading check file '${options.check}':`, ex.message);
+                    process.exit(1);
+                }
+                checkText = checkText.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+                const checkLines = checkText.split('\n');
+                allGood = a2ipa.check(checkLines);
             }
-            
-            // Normalize line endings (handle CRLF, CR, LF)
-            checkText = checkText.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
-            const checkLines = checkText.split('\n');
-            const allGood = a2ipa.check(checkLines);
-            
+
             if (!allGood) {
                 console.error("Verification failed, not processing additional data");
                 process.exit(1);
             }
         }
-        
+
         // Collect words to translate
         let words = options.words.slice();
-        
+
         // Read words from file if specified
         if (options.read) {
             try {
                 let readText = fs.readFileSync(options.read, 'utf8');
-                // Normalize line endings (handle CRLF, CR, LF)
                 readText = readText.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
                 const readWords = readText.split('\n')
                     .map(line => line.replace(',', ' ').split(/\s+/)[0])
@@ -524,7 +678,7 @@ Options:
                 process.exit(1);
             }
         }
-        
+
         // Translate and output
         for (const word of words) {
             const translation = a2ipa.translate(word).join(" ");

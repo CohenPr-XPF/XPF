@@ -10,6 +10,7 @@
   <link rel = "stylesheet" href="./css/Convert-to-IPA.css">
   <link rel = "stylesheet" href="./css/Convert-to-IPA_media.css">
   <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 </head>
 <body>
 
@@ -73,6 +74,7 @@
 
       // Reset and display changes upon button select (Translate Rules)
       function existing() {
+        document.getElementById("script_selector").style.display = "none";
         document.getElementById("upload").style.display = "none";
         document.getElementById("existing").style.display = "flex";
 
@@ -218,8 +220,11 @@
               <div class="col d-flex align-items-center">
                 <!--Translate Rules section: grammar selection/upload-->
                 <div id="upload" class="h-100 align-items-center p-0">
-                  Upload Rules: &nbsp<input id="upload_form" type=file accept="text rules" name="files[]" size=30> <!--Translate Rules section: hidden until selected-->
+                  Upload Rules: &nbsp<input id="upload_form" type=file accept=".rules,.json,.yaml,.yml" name="files[]" size=30> <!--Translate Rules section: hidden until selected-->
                   <input type="hidden" id="x">
+                  <div id="script_selector" style="display:none; margin-left:12px;">
+                    Script: <select id="script_dropdown"></select>
+                  </div>
                 </div>
                 <div id="existing" class="h-100 align-items-center justify-content-start p-0">
                   Language: &nbsp<select id="rule_dropdown"> <!--Translate Rules section: appears by default-->
@@ -285,8 +290,39 @@
     document.getElementById("upload_form").addEventListener("click", function() { this.value=null })
     document.getElementById("rule_dropdown").addEventListener("change", read_existing);
     document.getElementById("submit").addEventListener("click", submit);
+    document.getElementById("script_dropdown").addEventListener("change", function() {
+      if (currentJsonObj && currentFileContent) {
+        try {
+          var result = translate04io.loadFromAnyFormat(currentFileContent, currentFileName, this.value);
+          grammar = result.grammar;
+        } catch (ex) {
+          console.error("Error switching script:", ex);
+        }
+      }
+    });
 
     var grammar = null;  // AlphabetToIpa instance (set after rules are loaded)
+
+    var currentJsonObj = null;  // Stored JSON obj for script switching
+    var currentFileContent = null;  // Stored file content
+    var currentFileName = null;  // Stored filename
+
+    function hideScriptSelector() {
+      document.getElementById("script_selector").style.display = "none";
+    }
+
+    function showScriptSelector(scriptNames, selectedScript) {
+      var sel = document.getElementById("script_dropdown");
+      sel.innerHTML = "";
+      for (var i = 0; i < scriptNames.length; i++) {
+        var opt = document.createElement("option");
+        opt.value = scriptNames[i];
+        opt.textContent = scriptNames[i];
+        if (scriptNames[i] === selectedScript) opt.selected = true;
+        sel.appendChild(opt);
+      }
+      document.getElementById("script_selector").style.display = (scriptNames.length > 1) ? "inline-block" : "none";
+    }
 
     // Reset keyboard, input, and output messages; get grammar of uploaded rules file
     function read_upload() {
@@ -310,11 +346,26 @@
 
       document.getElementById("msg2").style.visibility = "visible";
       document.getElementById("translations_file").style.display = "none";
+      hideScriptSelector();
 
       var files = document.getElementById('upload_form').files;
       if (files.length > 0) {
-        translate04io.readFile(files[0]).then(function(rulesText) {
-          grammar = translate04io.loadFromString(rulesText);
+        var file = files[0];
+        translate04io.readFile(file).then(function(content) {
+          currentFileContent = content;
+          currentFileName = file.name;
+          try {
+            var result = translate04io.loadFromAnyFormat(content, file.name);
+            grammar = result.grammar;
+            currentJsonObj = result.jsonObj;
+            if (result.scriptNames && result.scriptNames.length > 1) {
+              showScriptSelector(result.scriptNames, result.selectedScript);
+            }
+          } catch (ex) {
+            console.error("Error loading rules:", ex);
+            grammar = null;
+            currentJsonObj = null;
+          }
         });
       }
     }
