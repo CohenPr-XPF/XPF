@@ -6,10 +6,10 @@ output: html_document
 ---
 
 <!--
-DRAFT (2026-11-17), updated for he2ipa commit 4244db5. To check before release:
+DRAFT (2026-11-17), updated for he2ipa commit f2eb7fa. To check before release:
   * page numbers: claims cite whole papers; the corpus convention is
     [@key, p. N], which needs the papers in hand;
-  * the Alphabet table against the imported he.yaml (every example checked against 4244db5);
+  * the Alphabet table against the imported he.yaml (every example checked against f2eb7fa);
   * the source wording of the claims attributed to each paper.
 Tables are plain Markdown (no kableExtra), so this renders the same as .Rmd
 or .qmd.
@@ -94,7 +94,7 @@ Last updated: 2026-11-17
 | ִ (hiriq) | /i/ | |
 | ֵ (tsere), ֶ (segol), ֱ (hataf segol) | /e/ | |
 | ַ (patah), ֲ (hataf patah) | /a/ | |
-| ָ (qamats) | /a/ | /o/ (qamats qatan) only before a hataf qamats, or when written with the separate sign ׇ (U+05C7); see below |
+| ָ (qamats) | /a/ | /o/ (qamats qatan) only before a hataf qamats and in the stem כל; see below |
 | ֹ (holam), ֳ (hataf qamats), ׇ (qamats qatan) | /o/ | |
 | ֻ (qubuts) | /u/ | |
 | ְ (shva) | silent or /e/ | decided by the rules; see below |
@@ -106,7 +106,7 @@ Last updated: 2026-11-17
 ## Shva and qamats: why the language is compromised
 
 * **Shva.** The same sign, shva (ְ), marks both a vowelless consonant and a consonant followed by /e/, and spoken Hebrew does not follow the classical rules for which is which. The rules decide from the shape of the word: a shva is heard, for example, under the first of two like consonants (מָדַדְתִּי /madadeˈti/), under a prefix or a sonorant before another onset (לְבֵית /leˈvet/), and under the second of two shvas in a row (יִשְׁמְרוּ /jiʃmeˈᴚu/). Otherwise it is silent, which gives complex onsets as in קְטִיפָה /ktiˈfa/ [@asherov_batel_2019]. The word-initial conjunction ו 'and' is /ve/, as in spontaneous speech, even where the prescribed form is /u/ [@gafter_performing_2019]. These decisions come from the form of the word, not from the lexicon, so some words come out wrong. A meteg (ֽ) on a shva forces it to be heard.
-* **Qamats qatan.** Qamats (ָ) is /a/ in most words but /o/ in some (כָּל /ˈkol/, חָכְמָה /ħoχˈma/), and the two look the same. The rules read /o/ only before a hataf qamats (צָהֳרַיִם /tsohoᴚaˈjim/) or when the text uses the separate qamats qatan sign (ׇ), which most texts do not.
+* **Qamats qatan.** Qamats (ָ) is /a/ in most words but /o/ in some, such as חָכְמָה /ħoχˈma/, and the two look the same. The rules read a plain qamats as /o/ in only two cases: before a hataf qamats (צָהֳרַיִם /tsohoᴚaˈjim/), and in the frequent stem כל 'all', with or without a prefix (כָּל /ˈkol/, וְ|כָל /veˈχol/, but כָּלָה /kaˈla/). Elsewhere a qamats qatan is read as /o/ only when the text writes it with the separate sign ׇ (U+05C7), as he2ipa's diacritizers do but most texts do not: חׇכְמָה /ħoχˈma/.
 
 # Syllable Structure
 
