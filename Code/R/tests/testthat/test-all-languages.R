@@ -3,6 +3,7 @@
 # The whole sweep takes about a second, so it runs on CRAN too: a V8 that
 # treats some regular expression differently would show up here.
 test_that("every language passes verification", {
+  skip_if_no_data()
   langs <- xpf_languages()
   for (i in seq_len(nrow(langs))) {
     for (script in strsplit(langs$scripts[i], ",")[[1]]) {

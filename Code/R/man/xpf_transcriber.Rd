@@ -13,7 +13,8 @@ xpf_transcriber(
 )
 }
 \arguments{
-\item{language}{A language code from \code{\link[=xpf_languages]{xpf_languages()}}, such as \code{"es"}.
+\item{language}{A language code from \code{\link[=xpf_languages]{xpf_languages()}}, such as \code{"es"}
+(the corpus data must be installed first, see \code{\link[=xpf_download]{xpf_download()}}).
 BCP-47 style codes are accepted: a script subtag selects the script
 (\code{"tt-Cyrl"}, \code{"tt-cyrillic"}), and a region subtag (\code{"es-ES"}) selects a
 regional variant if one is bundled, falling back to the base language
@@ -45,13 +46,18 @@ Loads the rules for a language and script, ready for
 from a file of your own.
 }
 \examples{
-es <- xpf_transcriber("es")
-es
-xpf_transcribe(c("perro", "guitarra"), es)
+# Rules from a file: a small made-up language shipped with the package
+toy <- xpf_transcriber("toy", file = system.file("extdata", "toy.json", package = "xpfcorpus"))
+toy
+xpf_transcribe("mesa", toy)
 
+\dontshow{if (xpf_has_data()) withAutoprint(\{ # examplesIf}
+# Corpus languages, after xpf_download()
+es <- xpf_transcriber("es")
+xpf_transcribe(c("perro", "guitarra"), es)
 # Tatar is written in two scripts, neither the default
-tt <- xpf_transcriber("tt", "cyrillic")
-tt$script
+xpf_transcriber("tt", "cyrillic")$script
+\dontshow{\}) # examplesIf}
 }
 \seealso{
 \code{\link[=xpf_transcribe]{xpf_transcribe()}}, \code{\link[=xpf_verify]{xpf_verify()}}, \code{\link[=xpf_languages]{xpf_languages()}}

@@ -24,7 +24,10 @@ Every language in the XPF corpus comes with a list of words and their
 expected transcriptions. This transcribes each word and compares.
 }
 \examples{
+toy <- xpf_transcriber("toy", file = system.file("extdata", "toy.json", package = "xpfcorpus"))
+xpf_verify(toy)
+\dontshow{if (xpf_has_data()) withAutoprint(\{ # examplesIf}
 v <- xpf_verify("es")
 all(v$ok)
-head(v)
+\dontshow{\}) # examplesIf}
 }

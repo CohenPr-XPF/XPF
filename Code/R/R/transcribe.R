@@ -21,11 +21,15 @@
 #'   word.
 #' @export
 #' @examples
-#' xpf_transcribe(c("perro", "chico"), "es")
-#' xpf_transcribe("perro", "es", sep = "_")
-#' xpf_transcribe(c("perro", "chico"), "es", sep = NULL)
+#' # A small made-up language shipped with the package
+#' toy <- xpf_transcriber("toy", file = system.file("extdata", "toy.json", package = "xpfcorpus"))
+#' xpf_transcribe(c("casa", "cielo"), toy)
+#' xpf_transcribe("casa", toy, sep = "")
+#' xpf_transcribe(c("casa", "cielo"), toy, sep = NULL)
 #'
-#' # Reuse a transcriber for several calls
+#' @examplesIf xpf_has_data()
+#' # Corpus languages, after xpf_download()
+#' xpf_transcribe(c("perro", "chico"), "es")
 #' eu <- xpf_transcriber("eu")
 #' xpf_transcribe(c("etxea", "zuhaitz"), eu)
 xpf_transcribe <- function(words, language, script = NULL, sep = " ") {
@@ -61,7 +65,7 @@ as_transcriber <- function(language, script = NULL) {
   if (!is.character(language) || length(language) != 1 || is.na(language)) {
     stop("`language` must be a language code or an xpf_transcriber.", call. = FALSE)
   }
-  key <- paste(language, script %||% "", sep = "\r")
+  key <- transcriber_key(language, script)
   xpf_context()
   tr <- .xpf$transcribers[[key]]
   if (is.null(tr)) {
@@ -69,6 +73,12 @@ as_transcriber <- function(language, script = NULL) {
     .xpf$transcribers[[key]] <- tr
   }
   tr
+}
+
+# Cached transcribers are keyed by data directory too, so pointing
+# xpf_data_dir() elsewhere never reuses rules loaded from the old data.
+transcriber_key <- function(language, script) {
+  paste(xpf_data_dir(), language, script %||% "", sep = "\r")
 }
 
 #' Check a transcriber against its verification words
@@ -81,15 +91,17 @@ as_transcriber <- function(language, script = NULL) {
 #'   `ok` and `comment`, one row per verification word.
 #' @export
 #' @examples
+#' toy <- xpf_transcriber("toy", file = system.file("extdata", "toy.json", package = "xpfcorpus"))
+#' xpf_verify(toy)
+#' @examplesIf xpf_has_data()
 #' v <- xpf_verify("es")
 #' all(v$ok)
-#' head(v)
 xpf_verify <- function(language, script = NULL) {
   tr <- if (inherits(language, "xpf_transcriber")) {
     as_transcriber(language)
   } else {
     xpf_context()
-    .xpf$transcribers[[paste(language, script %||% "", sep = "\r")]] %||%
+    .xpf$transcribers[[transcriber_key(language, script)]] %||%
       xpf_transcriber(language, script, verify = FALSE)
   }
   v <- tr$verify

@@ -14,8 +14,8 @@ the default, in which case a script must be chosen), \code{compromised} and
 \code{compromised_note}.
 }
 \description{
-Lists every language bundled with the package, with the scripts it can
-be written in and its metadata.
+Lists every language in the installed corpus data (see \code{\link[=xpf_download]{xpf_download()}}),
+with the scripts it can be written in and its metadata.
 }
 \details{
 Some languages are marked as \emph{compromised}: their rules are known to be
@@ -24,7 +24,9 @@ pronunciation. The \code{compromised_note} column says why. They can still be
 used, but check the note before relying on them.
 }
 \examples{
+\dontshow{if (xpf_has_data()) withAutoprint(\{ # examplesIf}
 langs <- xpf_languages()
 head(langs[, c("code", "name", "scripts")])
 langs[langs$code == "tt", ]
+\dontshow{\}) # examplesIf}
 }

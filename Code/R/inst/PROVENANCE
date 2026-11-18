@@ -3,9 +3,7 @@ Bundled files and where they came from (written by tools/sync.sh).
 js/translate04.js
   XPF Code/translate04-node.js, unmodified
   https://github.com/CohenPr-XPF/XPF
-  commit 2d52ecaa5ff37969c632b708d25ddb06cd4abeaa 2026-11-17
+  commit b255f0f9ca965fb4e117f7052e34891b3e83ad18 2026-11-17
 
-languages/lang_<code>.json
-  xpfcorpus xpfcorpus/data/languages/<code>.json, unmodified
-  https://github.com/CohenPr-XPF/xpfcorpus
-  commit f41a203415bf413a6850882f9302c1de13d2f78c 2026-02-24
+The XPF Corpus language data is not bundled; xpf_download() fetches it
+(CC BY-NC-SA 4.0) from https://github.com/CohenPr-XPF/xpfcorpus.

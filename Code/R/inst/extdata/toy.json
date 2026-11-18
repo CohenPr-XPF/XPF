@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "code": "toy",
+    "name": "Toy",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "rules": {
+        "classes": {
+          "vowel": "[aeiou]"
+        },
+        "match": [
+          {
+            "from": "a",
+            "to": "a"
+          },
+          {
+            "from": "e",
+            "to": "e"
+          },
+          {
+            "from": "i",
+            "to": "i"
+          },
+          {
+            "from": "o",
+            "to": "o"
+          },
+          {
+            "from": "u",
+            "to": "u"
+          },
+          {
+            "from": "m",
+            "to": "m"
+          },
+          {
+            "from": "l",
+            "to": "l"
+          },
+          {
+            "from": "t",
+            "to": "t"
+          }
+        ],
+        "sub": [
+          {
+            "from": "s",
+            "to": "s",
+            "weight": 1
+          },
+          {
+            "from": "s",
+            "to": "z",
+            "weight": 2,
+            "precede": "{vowel}",
+            "follow": "{vowel}"
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 1
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2,
+            "follow": "[ie]"
+          }
+        ]
+      },
+      "verify": [
+        {
+          "word": "casa",
+          "phonemes": "k a z a"
+        },
+        {
+          "word": "cielo",
+          "phonemes": "tʃ i e l o"
+        },
+        {
+          "word": "mesa",
+          "phonemes": "m e z a"
+        },
+        {
+          "word": "sal",
+          "phonemes": "s a l"
+        }
+      ]
+    }
+  }
+}

@@ -36,3 +36,9 @@ test_that("failed verification stops with the failing words", {
                     verify_file = bad, verify = FALSE),
     "xpf_transcriber")
 })
+
+test_that("the shipped toy language works without corpus data", {
+  toy <- xpf_transcriber("toy", file = system.file("extdata", "toy.json", package = "xpfcorpus"))
+  expect_true(all(xpf_verify(toy)$ok))
+  expect_identical(xpf_transcribe(c("casa", "cielo"), toy), c("k a z a", "tʃ i e l o"))
+})

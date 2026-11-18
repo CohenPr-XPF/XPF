@@ -10,6 +10,8 @@ First submission.
 
 * The package bundles 'JavaScript' source (inst/js/translate04.js, not
   minified) that it runs through 'V8'. It is the reference implementation of
-  the XPF corpus rules, by the package authors, under the package licence.
-* inst/languages/ holds the rule data for about 200 languages (3.5 MB
-  uncompressed, about 300 KB in the tarball).
+  the XPF corpus rules, by the package authors, under the package licence (MIT).
+* The language data is not included: it is under CC BY-NC-SA 4.0, so
+  xpf_download() fetches it on request into tools::R_user_dir(). Examples
+  and tests that need it run only when it is installed; on CRAN, the tests
+  use a small made-up language shipped in inst/extdata.

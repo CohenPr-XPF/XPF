@@ -6,9 +6,13 @@
 \alias{xpfcorpus-package}
 \title{xpfcorpus: Grapheme-to-Phoneme Transcription with the XPF Corpus Rules}
 \description{
-Converts written words into sequences of International Phonetic Alphabet phonemes for about 200 languages, using the spelling-to-sound rules of the Cross-linguistic Phonological Frequencies (XPF) corpus, Cohen Priva et al. (2021) \url{https://cohenpr-xpf.github.io/XPF/manual/xpf_manual.pdf}. The rules and the 'JavaScript' rule engine are bundled and run through 'V8', so no other software is needed. Each language comes with verification words that check its rules, and rules of your own can be loaded from 'JSON', 'YAML' or legacy XPF files.
+Converts written words into sequences of International Phonetic Alphabet phonemes for about 200 languages, using the spelling-to-sound rules of the Cross-linguistic Phonological Frequencies (XPF) corpus, Cohen Priva et al. (2021) \url{https://cohenpr-xpf.github.io/XPF/manual/xpf_manual.pdf}. The rule engine is bundled and runs through 'V8'. The corpus rules themselves are licensed separately (CC BY-NC-SA 4.0) and are downloaded on request with xpf_download(). Each language comes with verification words that check its rules, and rules of your own can be loaded from 'JSON', 'YAML' or legacy XPF files.
 }
 \details{
+The corpus rules are not included in the package, because they are under
+a separate license (CC BY-NC-SA 4.0): download them once with
+\code{\link[=xpf_download]{xpf_download()}}. The package code is MIT.
+
 The main function is \code{\link[=xpf_transcribe]{xpf_transcribe()}}. \code{\link[=xpf_languages]{xpf_languages()}} lists the
 languages, \code{\link[=xpf_transcriber]{xpf_transcriber()}} loads one (or rules of your own), and
 \code{\link[=xpf_verify]{xpf_verify()}} checks a language's rules against its verification words.
@@ -17,7 +21,7 @@ The rules are applied by \code{translate04.js}, the JavaScript port of the XPF
 reference implementation, which runs inside an embedded 'V8' engine. Its
 output matches the Python \code{xpfcorpus} package. See
 \code{system.file("PROVENANCE", package = "xpfcorpus")} for the exact versions
-of the bundled engine and data.
+of the bundled engine.
 
 To cite the XPF corpus, use \code{citation("xpfcorpus")}.
 }
@@ -26,20 +30,22 @@ Useful links:
 \itemize{
   \item \url{https://cohenpr-xpf.github.io/XPF/}
   \item \url{https://github.com/CohenPr-XPF/XPF}
+  \item \url{https://github.com/CohenPr-XPF/xpfcorpus}
   \item Report bugs at \url{https://github.com/CohenPr-XPF/XPF/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Uriel Cohen Priva \email{uriel_cohen_priva@brown.edu} [copyright holder]
+\strong{Maintainer}: Uriel Cohen Priva \email{uriel_cohen_priva@brown.edu}
 
 Authors:
 \itemize{
-  \item Uriel Cohen Priva \email{uriel_cohen_priva@brown.edu} [copyright holder]
+  \item Uriel Cohen Priva \email{uriel_cohen_priva@brown.edu}
 }
 
 Other contributors:
 \itemize{
+  \item Brown University [copyright holder]
   \item Emily Strand (XPF corpus rules) [contributor]
   \item Shiying Yang (XPF corpus rules) [contributor]
   \item William Mizgerd (XPF corpus rules) [contributor]

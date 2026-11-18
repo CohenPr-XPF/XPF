@@ -4,7 +4,8 @@
 #' [xpf_transcribe()]. Rules come from the data bundled with the package or
 #' from a file of your own.
 #'
-#' @param language A language code from [xpf_languages()], such as `"es"`.
+#' @param language A language code from [xpf_languages()], such as `"es"`
+#'   (the corpus data must be installed first, see [xpf_download()]).
 #'   BCP-47 style codes are accepted: a script subtag selects the script
 #'   (`"tt-Cyrl"`, `"tt-cyrillic"`), and a region subtag (`"es-ES"`) selects a
 #'   regional variant if one is bundled, falling back to the base language
@@ -27,13 +28,17 @@
 #' @seealso [xpf_transcribe()], [xpf_verify()], [xpf_languages()]
 #' @export
 #' @examples
-#' es <- xpf_transcriber("es")
-#' es
-#' xpf_transcribe(c("perro", "guitarra"), es)
+#' # Rules from a file: a small made-up language shipped with the package
+#' toy <- xpf_transcriber("toy", file = system.file("extdata", "toy.json", package = "xpfcorpus"))
+#' toy
+#' xpf_transcribe("mesa", toy)
 #'
+#' @examplesIf xpf_has_data()
+#' # Corpus languages, after xpf_download()
+#' es <- xpf_transcriber("es")
+#' xpf_transcribe(c("perro", "guitarra"), es)
 #' # Tatar is written in two scripts, neither the default
-#' tt <- xpf_transcriber("tt", "cyrillic")
-#' tt$script
+#' xpf_transcriber("tt", "cyrillic")$script
 xpf_transcriber <- function(language, script = NULL, verify = TRUE,
                             file = NULL, verify_file = NULL) {
   stopifnot(is.character(language), length(language) == 1, !is.na(language))

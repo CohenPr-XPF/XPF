@@ -1,0 +1,127 @@
+---
+title: "Hebrew"
+author: "DRAFT, to be revised (rules: he2ipa)"
+bibliography: he.bib
+output: html_document
+---
+
+<!--
+DRAFT (2026-11-17), updated for he2ipa commit 4244db5. To check before release:
+  * page numbers: claims cite whole papers; the corpus convention is
+    [@key, p. N], which needs the papers in hand;
+  * the Alphabet table against the imported he.yaml (every example checked against 4244db5);
+  * the source wording of the claims attributed to each paper.
+Tables are plain Markdown (no kableExtra), so this renders the same as .Rmd
+or .qmd.
+-->
+
+Last updated: 2026-11-17
+
+**COMPROMISED: standard pointing does not mark whether a shva is pronounced (the rules decide it from the shape of the word, which is right for most words but not all); qamats qatan is mostly not distinguished from qamats**
+
+# Background
+
+**Language Family:** Afro-Asiatic / Semitic / Central / Northwest / Canaanite
+
+* These rules describe Modern Israeli Hebrew, as read from **pointed** text, that is, text written with the vowel diacritics (*niqqud*). Hebrew is normally written without them. Unpointed spelling leaves most vowels unwritten: *sefer* 'book' and *safar* 'count' are both written ספר [@gafter_performing_2019]. That much ambiguity is beyond what XPF rules can resolve, so only pointed text is covered.
+* Even pointed text does not fully determine Modern Hebrew pronunciation. The pointing system was not designed for Modern Hebrew: it makes more vowel distinctions than the language has, and some diacritics stand for two Modern Hebrew vowels [@gafter_performing_2019]. The places where this matters for the rules are listed under **Alphabet**.
+* The rules come from the he2ipa project, which remains their source: the corpus copy is updated from he2ipa, not edited here. They work on plain pointed text, with two input conventions:
+    - a prefix (ו, ה, ב, כ, ל, מ, ש) must be followed by `|`, as in וּ|מַיִם or הַ|יְּלָדִים. Without it the prefix rules do not apply and the word gets the classical reading;
+    - input may be in either Unicode normalization form (NFC or NFD);
+    - optional marks override the defaults: meteg (U+05BD) forces a heard shva, ole (U+05AB) marks lexical stress, and rafe (U+05BF) keeps ב, כ or פ a fricative after a prefix (in loanwords).
+* Where speakers differ, the rules follow the conservative reading that the spelling encodes, such as keeping the pharyngeals. Users who want another variety can change the output with a final `ipasub` rule (see **Consonants**).
+
+# Phonology
+
+## Consonants
+
+| Manner | Labial | Alveolar | Postalveolar | Palatal | Velar | Uvular | Pharyngeal | Glottal |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Stops** | p b | t d | | | k ɡ | | | ʔ |
+| **Affricates** | | ts | tʃ dʒ | | | | | |
+| **Fricatives** | f v | s z | ʃ ʒ | | | χ | ħ ʕ | h |
+| **Nasals** | m | n | | | | | | |
+| **Rhotic** | | | | | | ᴚ | | |
+| **Approximants** | w | l | | j | | | | |
+
+*Voiceless on the left, voiced on the right. For a phonetic description of the consonants and vowels, see @asherov_cohen_2019.*
+
+* **Rhotic.** The rhotic is transcribed /ᴚ/ in every word. Its realization varies between speakers and positions, from a uvular fricative or approximant to an alveolar tap or trill [@cohen_laks_savu_2019; @gafter_modern_2019], and /ᴚ/ names the phoneme without choosing among them. To get a specific symbol, add an `ipasub` rule that replaces it everywhere, with a weight below every other rule in the file (for example `{from: ᴚ, to: ʁ, weight: 0}`).
+* **Pharyngeals.** ח and ע are transcribed /ħ/ and /ʕ/. Most speakers merge /ħ/ with /χ/ and /ʕ/ with /ʔ/ (or drop it) [@gafter_horesh_2020; @faust_gutturals_2019]. The pharyngeals are kept mainly by Mizrahi speakers, for whom they carry social meaning [@gafter_whats_2016; @gafter_modern_2019]. A merged variety can be produced the same way as above, with final `ipasub` rules from /ħ/ to /χ/ and from /ʕ/ to /ʔ/.
+* **/w/, /dʒ/, /tʃ/ and /ʒ/** occur in loanwords [@cohen_loanword_2019]. They are written with a geresh: ו׳, ג׳, צ׳, ז׳.
+
+## Vowels
+
+| | Front | Central | Back |
+|:--|:-:|:-:|:-:|
+| **High** | i | | u |
+| **Mid** | e | | o |
+| **Low** | | a | |
+
+* Modern Hebrew has five vowels [@asherov_cohen_2019; @gafter_performing_2019].
+* A yod after a vowel and not followed by one forms a diphthong, which is transcribed as a single unit: שַׁי /ˈʃ aj/, but בַּיִת /b a ˈj i t/.
+
+# Alphabet
+
+* Letters (graphemes) are shown without pointing unless a diacritic changes their value.
+* *Dagesh* (the dot in a letter) distinguishes the stop from the fricative in ב, כ/ך and פ/ף. In other letters it marks historical gemination, which Modern Hebrew does not pronounce, and it is ignored.
+
+| Grapheme | Phoneme | Notes |
+|:-:|:-:|:--|
+| א | /ʔ/ | silent when it carries no vowel (זֹאת /ˈzot/) |
+| בּ, ב | /b/, /v/ | |
+| ג | /ɡ/ | ג׳ /dʒ/ |
+| ד | /d/ | |
+| ה | /h/ | silent word-finally, with or without mapiq (מוֹרֶה /moˈᴚe/) |
+| ו | /v/ | /u/ with dagesh (shuruk, וּ); silent before holam (holam male, וֹ); ו׳ /w/ |
+| ז | /z/ | ז׳ /ʒ/ |
+| ח | /ħ/ | |
+| ט | /t/ | |
+| י | /j/ | silent as a vowel letter after hiriq or tsere |
+| כּ, כ, ך | /k/, /χ/, /χ/ | |
+| ל | /l/ | |
+| מ, ם | /m/ | |
+| נ, ן | /n/ | |
+| ס | /s/ | |
+| ע | /ʕ/ | |
+| פּ, פ, ף | /p/, /f/, /f/ | |
+| צ, ץ | /ts/ | צ׳ /tʃ/ |
+| ק | /k/ | |
+| ר | /ᴚ/ | |
+| שׁ, שׂ | /ʃ/, /s/ | shin dot, sin dot |
+| ת | /t/ | |
+| **Vowel points** | | |
+| ִ (hiriq) | /i/ | |
+| ֵ (tsere), ֶ (segol), ֱ (hataf segol) | /e/ | |
+| ַ (patah), ֲ (hataf patah) | /a/ | |
+| ָ (qamats) | /a/ | /o/ (qamats qatan) only before a hataf qamats, or when written with the separate sign ׇ (U+05C7); see below |
+| ֹ (holam), ֳ (hataf qamats), ׇ (qamats qatan) | /o/ | |
+| ֻ (qubuts) | /u/ | |
+| ְ (shva) | silent or /e/ | decided by the rules; see below |
+| **Marks** | | |
+| ֽ (meteg) | /e/ | forces a pronounced shva |
+| ֫ (ole, U+05AB) | /ˈ/ | marks stress where it is written |
+| ׳, ״, ־ | | geresh, gershayim and maqaf are not segments; ASCII ', " and - work the same |
+
+## Shva and qamats: why the language is compromised
+
+* **Shva.** The same sign, shva (ְ), marks both a vowelless consonant and a consonant followed by /e/, and spoken Hebrew does not follow the classical rules for which is which. The rules decide from the shape of the word: a shva is heard, for example, under the first of two like consonants (מָדַדְתִּי /madadeˈti/), under a prefix or a sonorant before another onset (לְבֵית /leˈvet/), and under the second of two shvas in a row (יִשְׁמְרוּ /jiʃmeˈᴚu/). Otherwise it is silent, which gives complex onsets as in קְטִיפָה /ktiˈfa/ [@asherov_batel_2019]. The word-initial conjunction ו 'and' is /ve/, as in spontaneous speech, even where the prescribed form is /u/ [@gafter_performing_2019]. These decisions come from the form of the word, not from the lexicon, so some words come out wrong. A meteg (ֽ) on a shva forces it to be heard.
+* **Qamats qatan.** Qamats (ָ) is /a/ in most words but /o/ in some (כָּל /ˈkol/, חָכְמָה /ħoχˈma/), and the two look the same. The rules read /o/ only before a hataf qamats (צָהֳרַיִם /tsohoᴚaˈjim/) or when the text uses the separate qamats qatan sign (ׇ), which most texts do not.
+
+# Syllable Structure
+
+* Modern Hebrew allows complex onsets, including ones that arise from a silent shva (קְטִיפָה /ktiˈfa/) [@asherov_batel_2019].
+
+# Lenition Rules
+
+* Stop–fricative alternation: /b/–/v/, /k/–/χ/ and /p/–/f/ alternate. In pointed text the dagesh shows which one is used, so the rules follow it rather than predicting it. In Modern Hebrew the alternation is no longer fully predictable from position [@albert_2019].
+
+# Misc. Rules
+
+* **Maqaf.** Words joined by a maqaf (־) are transcribed as one word, with one stress: תֵּל־אָבִיב /tel ʔaˈviv/.
+* **Patah gnuva.** A patah under a word-final ח or ע is pronounced before the consonant: שִׂיחַ /ˈsiaħ/, לֹעַ /ˈloaʕ/.
+* **Stress** is final by default, or on the syllable before a patah gnuva (רוּחַ /ˈᴚuaħ/). Words with other stress need ole (U+05AB) on the stressed letter: מָדַ֫דְתִּי /maˈdadeti/ against unmarked /madadeˈti/. On Modern Hebrew stress, see @batel_cohen_silbervarod_2019.
+* **Voicing assimilation** in obstruent clusters [@mizrachi_2019] is not transcribed.
+* **Unstressed /a/** shows raising in current speech [@cohenpriva_gafter_2024]. This is below the level of the phoneme and is not transcribed.
+
+# References

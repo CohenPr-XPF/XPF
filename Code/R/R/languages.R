@@ -1,11 +1,16 @@
 # Bundled language data and language-code parsing.
 
 languages_dir <- function() {
-  system.file("languages", package = "xpfcorpus", mustWork = TRUE)
+  dir <- file.path(xpf_data_dir(), "languages")
+  if (!xpf_has_data()) {
+    stop("The XPF Corpus language data is not installed. Run xpf_download() ",
+         "to download it (CC BY-NC-SA 4.0), or see ?xpf_data_dir.", call. = FALSE)
+  }
+  dir
 }
 
 # Files are stored as lang_<code>.json: a bare code can be a name Windows
-# reserves (con.json for Constanza), which R packages may not contain.
+# reserves (con.json for Constanza).
 language_file <- function(code) {
   f <- file.path(languages_dir(), paste0("lang_", code, ".json"))
   if (file.exists(f)) f else NULL
@@ -13,8 +18,8 @@ language_file <- function(code) {
 
 #' Languages available in the XPF corpus
 #'
-#' Lists every language bundled with the package, with the scripts it can
-#' be written in and its metadata.
+#' Lists every language in the installed corpus data (see [xpf_download()]),
+#' with the scripts it can be written in and its metadata.
 #'
 #' Some languages are marked as *compromised*: their rules are known to be
 #' imperfect, usually because the orthography does not fully determine the
@@ -27,13 +32,14 @@ language_file <- function(code) {
 #'   the default, in which case a script must be chosen), `compromised` and
 #'   `compromised_note`.
 #' @export
-#' @examples
+#' @examplesIf xpf_has_data()
 #' langs <- xpf_languages()
 #' head(langs[, c("code", "name", "scripts")])
 #' langs[langs$code == "tt", ]
 xpf_languages <- function() {
-  if (is.null(.xpf$catalog)) {
-    files <- sort(list.files(languages_dir(), pattern = "^lang_.*\\.json$", full.names = TRUE))
+  dir <- languages_dir()
+  if (is.null(.xpf$catalog) || !identical(attr(.xpf$catalog, "dir"), dir)) {
+    files <- sort(list.files(dir, pattern = "^lang_.*\\.json$", full.names = TRUE))
     rows <- lapply(files, function(f) {
       d <- jsonlite::fromJSON(f, simplifyVector = FALSE)
       m <- d$metadata
@@ -51,9 +57,13 @@ xpf_languages <- function() {
         stringsAsFactors = FALSE
       )
     })
-    .xpf$catalog <- do.call(rbind, rows)
+    catalog <- do.call(rbind, rows)
+    attr(catalog, "dir") <- dir
+    .xpf$catalog <- catalog
   }
-  .xpf$catalog
+  out <- .xpf$catalog
+  attr(out, "dir") <- NULL
+  out
 }
 
 default_script <- function(metadata, scripts) {

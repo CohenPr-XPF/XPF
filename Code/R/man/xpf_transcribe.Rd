@@ -34,11 +34,16 @@ the XPF corpus rules for a language.
 Characters the rules do not cover are transcribed as \code{"@"}.
 }
 \examples{
-xpf_transcribe(c("perro", "chico"), "es")
-xpf_transcribe("perro", "es", sep = "_")
-xpf_transcribe(c("perro", "chico"), "es", sep = NULL)
+# A small made-up language shipped with the package
+toy <- xpf_transcriber("toy", file = system.file("extdata", "toy.json", package = "xpfcorpus"))
+xpf_transcribe(c("casa", "cielo"), toy)
+xpf_transcribe("casa", toy, sep = "")
+xpf_transcribe(c("casa", "cielo"), toy, sep = NULL)
 
-# Reuse a transcriber for several calls
+\dontshow{if (xpf_has_data()) withAutoprint(\{ # examplesIf}
+# Corpus languages, after xpf_download()
+xpf_transcribe(c("perro", "chico"), "es")
 eu <- xpf_transcriber("eu")
 xpf_transcribe(c("etxea", "zuhaitz"), eu)
+\dontshow{\}) # examplesIf}
 }

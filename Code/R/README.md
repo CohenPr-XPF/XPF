@@ -12,6 +12,7 @@ package, so nothing besides R packages is needed.
 remotes::install_github("CohenPr-XPF/XPF", subdir = "Code/R")
 
 library(xpfcorpus)
+xpf_download()        # once: the corpus rules (CC BY-NC-SA 4.0), ~350 KB from GitHub
 xpf_transcribe(c("perro", "chico"), "es")
 #> [1] "p e r o"  "tʃ i k o"
 xpf_transcribe("perro", "es", sep = NULL)     # list of phoneme vectors
@@ -23,16 +24,24 @@ xpf_transcriber("my", file = "my.yaml")       # your own rules (.json/.yaml/.rul
 
 Cite the corpus with `citation("xpfcorpus")`.
 
+## License
+
+The package code is MIT. The corpus rules it downloads are under
+CC BY-NC-SA 4.0, which excludes commercial use.
+
 ## Maintenance
 
-The engine and language data are byte copies, refreshed by a script:
+The engine is a byte copy of `Code/translate04-node.js`, refreshed by a script:
 
 ```sh
-Code/R/tools/sync.sh            # copy Code/translate04-node.js and ../xpfcorpus data
-Code/R/tools/sync.sh --check    # report anything out of date
+Code/R/tools/sync.sh            # copy the engine
+Code/R/tools/sync.sh --check    # report if it is out of date
 ```
 
-Language files are stored as `inst/languages/lang_<code>.json` because
-`con.json` (Constanza) is a reserved file name on Windows. Check before a
+The language data is not in the package. `xpf_download()` fetches the
+xpfcorpus repository tarball and installs its language files in
+`xpf_data_dir()` as `lang_<code>.json` (`con.json`, Constanza, is a
+reserved file name on Windows). To test with unpushed data, set
+`XPFCORPUS_TEST_DATA` to a local xpfcorpus checkout. Check before a
 release with `R CMD build Code/R && R CMD check --as-cran xpfcorpus_*.tar.gz`
 (run from a scratch directory).
