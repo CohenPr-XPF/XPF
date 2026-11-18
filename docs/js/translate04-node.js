@@ -301,14 +301,10 @@
             for (let i = 0; i < this.rule_list.length; i++) {
                 let rule = this.rule_list[i];
 
-                // Remove double quotes
-                for (const key of Object.keys(rule)) {
-                    let item = rule[key];
-                    if (typeof item !== "undefined" && item.match && item.match(/^\"\"*/)) {
-                        item = item.replace(/^\"/, "").replace(/\"$/, "");
-                        rule[key] = item;
-                    }
-                }
+                // No quote stripping here: parseLine() already unquotes CSV/TSV
+                // fields (as Python's csv module does), and JSON/YAML values are
+                // literal, so a rule may legitimately be a bare '"' (e.g.
+                // Hebrew gershayim).
 
                 try {
                     if (rule["type"] === "pre") {
