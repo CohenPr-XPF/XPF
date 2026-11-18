@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "code": "usa",
+    "name": "Usarufa",
+    "family": "Trans-New Guinea,Main Section,Central and Western,East New Guinea Highlands,Eastern,Gadsup-Auyana-Awa",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "áama",
+          "phonemes": "a ˦ a ˨ m a ˨"
+        },
+        {
+          "word": "aámá",
+          "phonemes": "a ˨ a ˦ m a ˦"
+        },
+        {
+          "word": "aamá",
+          "phonemes": "a ˨ a ˨ m a ˦"
+        },
+        {
+          "word": "ómá",
+          "phonemes": "o ˦ m a ˦"
+        },
+        {
+          "word": "omá",
+          "phonemes": "o ˨ m a ˦"
+        },
+        {
+          "word": "ôma",
+          "phonemes": "o ˥˩ m a ˨"
+        },
+        {
+          "word": "wáíma",
+          "phonemes": "w a ˦ i ˦ m a ˨"
+        },
+        {
+          "word": "waíma",
+          "phonemes": "w a ˨ i ˦ m a ˨"
+        },
+        {
+          "word": "waima",
+          "phonemes": "w a ˨ i ˨ m a ˨"
+        },
+        {
+          "word": "pááq",
+          "phonemes": "p a ˦ a ˦ ʔ"
+        },
+        {
+          "word": "keráwáqá",
+          "phonemes": "k e ˨ r a ˦ w a ˦ ʔ a ˦"
+        },
+        {
+          "word": "ánibo",
+          "phonemes": "a ˦ n i ˨ p o ˨"
+        },
+        {
+          "word": "téna",
+          "phonemes": "t e ˦ n a ˨"
+        },
+        {
+          "word": "yagaroqtamá",
+          "phonemes": "j a ˨ k a ˨ r o ˨ ʔ t a ˨ m a ˦"
+        },
+        {
+          "word": "umá",
+          "phonemes": "u ˨ m a ˦"
+        },
+        {
+          "word": "waayúkama",
+          "phonemes": "w a ˨ a ˨ j u ˦ ʔ k a ˨ m a ˨"
+        },
+        {
+          "word": "minnâ",
+          "phonemes": "m i ˨ n n a ˥˩"
+        },
+        {
+          "word": "íbêqa",
+          "phonemes": "i ˦ p e ˥˩ ʔ a ˨"
+        },
+        {
+          "word": "áwîqa",
+          "phonemes": "a ˦ w i ˥˩ ʔ a ˨"
+        },
+        {
+          "word": "tarôq",
+          "phonemes": "t a ˨ r o ˥˩ ʔ"
+        },
+        {
+          "word": "márûpaq",
+          "phonemes": "m a ˦ r u ˥˩ ʔ p a ˨ ʔ"
+        },
+        {
+          "word": "iyápó-annama",
+          "phonemes": "i ˨ j a ˦ ʔ p o ˦ a ˨ n n a ˨ m a ˨"
+        },
+        {
+          "word": "ketí",
+          "phonemes": "k e ˨ ʔ t i ˦"
+        },
+        {
+          "word": "yímikaiye",
+          "phonemes": "j i ˦ m i ˨ ʔ k a ˨ i ˨ j e ˨"
+        },
+        {
+          "word": "kéiye",
+          "phonemes": "k e ˦ i ˨ j e ˨"
+        },
+        {
+          "word": "naayóbáqá",
+          "phonemes": "n a ˨ a ˨ j o ˦ p a ˦ ʔ a ˦"
+        },
+        {
+          "word": "anómma",
+          "phonemes": "a ˨ n o ˦ m m a ˨"
+        },
+        {
+          "word": "urááe",
+          "phonemes": "u ˨ r a ˦ a ˦ e ˨"
+        },
+        {
+          "word": "yaímma",
+          "phonemes": "j a ˨ i ˦ m m a ˨"
+        },
+        {
+          "word": "ámikaiye",
+          "phonemes": "a ˦ m i ˨ ʔ k a ˨ i ˨ j e ˨"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[pkmnrtw]",
+          "vowel": "[aeiou]",
+          "ptk": "[ptk]",
+          "anything": "[mnrtwbgyaeiouáéíóúâêîôû]",
+          "V-input": "[aeiouáéíóúâêîôû]"
+        },
+        "sub": [
+          {
+            "from": "p",
+            "to": "p",
+            "weight": 3.0,
+            "precede": "^"
+          },
+          {
+            "from": "p",
+            "to": "p",
+            "weight": 3.0,
+            "precede": "q"
+          },
+          {
+            "from": "b",
+            "to": "p",
+            "weight": 3.0,
+            "precede": "{V-input}",
+            "follow": "{V-input}",
+            "comment": "intervocalically"
+          },
+          {
+            "from": "k",
+            "to": "k",
+            "weight": 3.0,
+            "precede": "^"
+          },
+          {
+            "from": "k",
+            "to": "k",
+            "weight": 3.0,
+            "precede": "q"
+          },
+          {
+            "from": "g",
+            "to": "k",
+            "weight": 3.0,
+            "precede": "{V-input}",
+            "follow": "{V-input}",
+            "comment": "intervocalically"
+          },
+          {
+            "from": "q",
+            "to": "ʔ",
+            "weight": 3.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 3.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "({vowel})",
+            "to": "\\1 ˨",
+            "weight": 3.0
+          },
+          {
+            "from": "á",
+            "to": "a ˦",
+            "weight": 3.0
+          },
+          {
+            "from": "é",
+            "to": "e ˦",
+            "weight": 3.0
+          },
+          {
+            "from": "í",
+            "to": "i ˦",
+            "weight": 3.0
+          },
+          {
+            "from": "ó",
+            "to": "o ˦",
+            "weight": 3.0
+          },
+          {
+            "from": "ú",
+            "to": "u ˦",
+            "weight": 3.0
+          },
+          {
+            "from": "â",
+            "to": "a ˥˩",
+            "weight": 3.0
+          },
+          {
+            "from": "ê",
+            "to": "e ˥˩",
+            "weight": 3.0
+          },
+          {
+            "from": "î",
+            "to": "i ˥˩",
+            "weight": 3.0
+          },
+          {
+            "from": "ô",
+            "to": "o ˥˩",
+            "weight": 3.0
+          },
+          {
+            "from": "û",
+            "to": "u ˥˩",
+            "weight": 3.0
+          },
+          {
+            "from": "({ptk})",
+            "to": "ʔ \\1",
+            "weight": 5.0,
+            "precede": "{anything}",
+            "follow": "{anything}"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0,
+            "comment": "hyphens have no phonemic value"
+          }
+        ]
+      }
+    }
+  }
+}

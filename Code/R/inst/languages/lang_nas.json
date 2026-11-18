@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "code": "nas",
+    "name": "Naasioi",
+    "family": "East Papuan,South Bougainville,East,Nasioi",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "nari'",
+          "phonemes": "n a d i ʔ",
+          "comment": "<a>"
+        },
+        {
+          "word": "aa'na'",
+          "phonemes": "a ː ʔ n a ʔ",
+          "comment": "<aa>"
+        },
+        {
+          "word": "bakaang",
+          "phonemes": "b a k a ː n",
+          "comment": "<b>"
+        },
+        {
+          "word": "dii'",
+          "phonemes": "d i ː ʔ",
+          "comment": "<d>"
+        },
+        {
+          "word": "teie",
+          "phonemes": "t e i e",
+          "comment": "<e>"
+        },
+        {
+          "word": "tee",
+          "phonemes": "t e ː",
+          "comment": "<ee>"
+        },
+        {
+          "word": "teing",
+          "phonemes": "t e i n",
+          "comment": "<i>"
+        },
+        {
+          "word": "nii'",
+          "phonemes": "n i ː ʔ",
+          "comment": "<ii>"
+        },
+        {
+          "word": "ee'noko",
+          "phonemes": "e ː ʔ n o k o",
+          "comment": "<k>"
+        },
+        {
+          "word": "tampa'",
+          "phonemes": "t a m p a ʔ",
+          "comment": "<m>"
+        },
+        {
+          "word": "ninka",
+          "phonemes": "n i n k a",
+          "comment": "<n>"
+        },
+        {
+          "word": "napo'",
+          "phonemes": "n a p o ʔ",
+          "comment": "<o>"
+        },
+        {
+          "word": "nantoong",
+          "phonemes": "n a n t o ː n",
+          "comment": "<oo>"
+        },
+        {
+          "word": "aa'puu'",
+          "phonemes": "a ː ʔ p u ː ʔ",
+          "comment": "<p>"
+        },
+        {
+          "word": "ookara",
+          "phonemes": "o ː k a d a",
+          "comment": "<r>"
+        },
+        {
+          "word": "makosi",
+          "phonemes": "m a k o t i",
+          "comment": "<s>"
+        },
+        {
+          "word": "tee'",
+          "phonemes": "t e ː ʔ",
+          "comment": "<t>"
+        },
+        {
+          "word": "narung",
+          "phonemes": "n a d u n",
+          "comment": "<u>"
+        },
+        {
+          "word": "kuung",
+          "phonemes": "k u ː n",
+          "comment": "<uu>"
+        },
+        {
+          "word": "pava",
+          "phonemes": "p a b a",
+          "comment": "<v>"
+        },
+        {
+          "word": "noru'",
+          "phonemes": "n o d u ʔ",
+          "comment": "apostrophe"
+        },
+        {
+          "word": "ketsemani",
+          "phonemes": "k e t e m a n i",
+          "comment": "<ts>"
+        },
+        {
+          "word": "ning",
+          "phonemes": "n i n",
+          "comment": "<ng>"
+        },
+        {
+          "word": "tee-koo",
+          "phonemes": "t e ː k o ː"
+        },
+        {
+          "word": "basi",
+          "phonemes": "b a t i"
+        },
+        {
+          "word": "osi",
+          "phonemes": "o t i"
+        },
+        {
+          "word": "dau",
+          "phonemes": "d a u"
+        },
+        {
+          "word": "kansi'koo",
+          "phonemes": "k a n t i ʔ k o ː"
+        },
+        {
+          "word": "dakaang",
+          "phonemes": "d a k a ː n"
+        },
+        {
+          "word": "bauring",
+          "phonemes": "b a u d i n"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeikmnoptu]",
+          "apostrophe": "['ꞌ‘’]",
+          "vowel": "[aeiou]"
+        },
+        "sub": [
+          {
+            "from": "r",
+            "to": "d",
+            "weight": 1.0
+          },
+          {
+            "from": "s",
+            "to": "t",
+            "weight": 1.0
+          },
+          {
+            "from": "v",
+            "to": "b",
+            "weight": 1.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "t",
+            "to": "t",
+            "weight": 2.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 2.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "n",
+            "weight": 2.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0,
+            "comment": "hyphens may be used to indicate morpheme boundaries"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({vowel}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

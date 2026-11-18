@@ -1,0 +1,317 @@
+{
+  "metadata": {
+    "code": "ht",
+    "name": "Haitian Creole",
+    "family": "Creole,French based",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "animal",
+          "phonemes": "a n i m a l"
+        },
+        {
+          "word": "van",
+          "phonemes": "v ã"
+        },
+        {
+          "word": "vàn",
+          "phonemes": "v a n"
+        },
+        {
+          "word": "aprann",
+          "phonemes": "a p ɣ ã n"
+        },
+        {
+          "word": "bòkò",
+          "phonemes": "b ɔ k ɔ"
+        },
+        {
+          "word": "disèt",
+          "phonemes": "d i s ɛ t"
+        },
+        {
+          "word": "evènman",
+          "phonemes": "e v ɛ n m ã"
+        },
+        {
+          "word": "ensèk",
+          "phonemes": "ɛ̃ s ɛ k"
+        },
+        {
+          "word": "fobou",
+          "phonemes": "f o b u"
+        },
+        {
+          "word": "granmoun",
+          "phonemes": "ɡ ɣ ã m ũ"
+        },
+        {
+          "word": "janm",
+          "phonemes": "ʒ ã m"
+        },
+        {
+          "word": "jòn",
+          "phonemes": "ʒ ɔ n"
+        },
+        {
+          "word": "katastwòf",
+          "phonemes": "k a t a s t w ɔ f"
+        },
+        {
+          "word": "lang",
+          "phonemes": "l a ŋ"
+        },
+        {
+          "word": "segonn",
+          "phonemes": "s e ɡ õ n"
+        },
+        {
+          "word": "pwodui",
+          "phonemes": "p w o d w i"
+        },
+        {
+          "word": "vye",
+          "phonemes": "v j e"
+        },
+        {
+          "word": "zòtèy",
+          "phonemes": "z ɔ t ɛ j"
+        },
+        {
+          "word": "chak",
+          "phonemes": "ʃ a k"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdefhiklmnopstvwz]",
+          "vowels-and-g": "(a|à|e|è|i|ì|o|ò|u|ù|g)",
+          "nasal-vowels": "(a|e|o|u)",
+          "non-nasal-vowels": "(à|è|ì|ò|ù)",
+          "punctuation": "['‘’-]"
+        },
+        "sub": [
+          {
+            "from": "à",
+            "to": "a",
+            "weight": 1.0
+          },
+          {
+            "from": "è",
+            "to": "ɛ",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "ʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "ò",
+            "to": "ɔ",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɣ",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "c",
+            "to": "ʃ",
+            "weight": 1.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 1.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "o",
+            "to": "u",
+            "weight": 2.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 2.0,
+            "precede": "o",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "w",
+            "weight": 1.0,
+            "follow": "i"
+          },
+          {
+            "from": "a",
+            "to": "ã",
+            "weight": 2.0,
+            "follow": "n"
+          },
+          {
+            "from": "e",
+            "to": "ɛ̃",
+            "weight": 2.0,
+            "follow": "n"
+          },
+          {
+            "from": "o",
+            "to": "õ",
+            "weight": 2.0,
+            "follow": "n"
+          },
+          {
+            "from": "o",
+            "to": "ũ",
+            "weight": 2.0,
+            "follow": "un"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 2.0,
+            "precede": "o",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{nasal-vowels}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "a",
+            "weight": 3.0,
+            "follow": "n{vowels-and-g}"
+          },
+          {
+            "from": "e",
+            "to": "e",
+            "weight": 3.0,
+            "follow": "n{vowels-and-g}"
+          },
+          {
+            "from": "o",
+            "to": "o",
+            "weight": 3.0,
+            "follow": "n{vowels-and-g}"
+          },
+          {
+            "from": "i",
+            "to": "i",
+            "weight": 3.0,
+            "follow": "n{vowels-and-g}"
+          },
+          {
+            "from": "u",
+            "to": "u",
+            "weight": 3.0,
+            "follow": "n{vowels-and-g}"
+          },
+          {
+            "from": "o",
+            "to": "u",
+            "weight": 3.0,
+            "follow": "un{vowels-and-g}"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "o",
+            "follow": "{vowels-and-g}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "n",
+            "weight": 3.0,
+            "follow": "{vowels-and-g}"
+          },
+          {
+            "from": "à",
+            "to": "a n",
+            "weight": 4.0,
+            "follow": "n"
+          },
+          {
+            "from": "è",
+            "to": "ɛ n",
+            "weight": 4.0,
+            "follow": "n"
+          },
+          {
+            "from": "ì",
+            "to": "i n",
+            "weight": 4.0,
+            "follow": "n"
+          },
+          {
+            "from": "ò",
+            "to": "ɔ n",
+            "weight": 4.0,
+            "follow": "n"
+          },
+          {
+            "from": "ù",
+            "to": "u n",
+            "weight": 4.0,
+            "follow": "n"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 4.0,
+            "precede": "{non-nasal-vowels}"
+          },
+          {
+            "from": "{punctuation}",
+            "to": "",
+            "weight": 1.0,
+            "comment": "apostrophes and hyphens are optional in the orthography"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "code": "emi",
+    "name": "Mussau-Emira",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,St. Matthias",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "auliaala",
+          "phonemes": "ɑ u l i ɑ ː l ɑ",
+          "comment": "a"
+        },
+        {
+          "word": "boasi",
+          "phonemes": "β ɔ ɑ s i",
+          "comment": "b"
+        },
+        {
+          "word": "eteae",
+          "phonemes": "ɛ t ɛ ɑ ɛ",
+          "comment": "e"
+        },
+        {
+          "word": "gele",
+          "phonemes": "ɣ ɛ l ɛ",
+          "comment": "g"
+        },
+        {
+          "word": "aghe",
+          "phonemes": "ɑ ɣ ɛ",
+          "comment": "gh"
+        },
+        {
+          "word": "righi",
+          "phonemes": "r i ɣ i",
+          "comment": "i"
+        },
+        {
+          "word": "karika",
+          "phonemes": "k ɑ r i k ɑ",
+          "comment": "k"
+        },
+        {
+          "word": "liula",
+          "phonemes": "l i u l ɑ",
+          "comment": "l"
+        },
+        {
+          "word": "teeiem",
+          "phonemes": "t ɛ ː i ɛ m",
+          "comment": "m"
+        },
+        {
+          "word": "nongina",
+          "phonemes": "n ɔ ŋ i n ɑ",
+          "comment": "n"
+        },
+        {
+          "word": "uungu",
+          "phonemes": "u ː ŋ u",
+          "comment": "ng"
+        },
+        {
+          "word": "voto",
+          "phonemes": "β ɔ t ɔ",
+          "comment": "o"
+        },
+        {
+          "word": "ngepona",
+          "phonemes": "ŋ ɛ p ɔ n ɑ",
+          "comment": "p"
+        },
+        {
+          "word": "ararina",
+          "phonemes": "ɑ r ɑ r i n ɑ",
+          "comment": "r"
+        },
+        {
+          "word": "sesa",
+          "phonemes": "s ɛ s ɑ",
+          "comment": "s"
+        },
+        {
+          "word": "taumattu",
+          "phonemes": "t ɑ u m ɑ t ː u",
+          "comment": "t"
+        },
+        {
+          "word": "maulue",
+          "phonemes": "m ɑ u l u ɛ",
+          "comment": "u"
+        },
+        {
+          "word": "vella",
+          "phonemes": "β ɛ l ː ɑ",
+          "comment": "v"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "output": "[ɑβɛɣiklmnŋɔprstu]",
+          "passthrough": "[iklmnprstu]"
+        },
+        "sub": [
+          {
+            "from": "a",
+            "to": "ɑ",
+            "weight": 4.0
+          },
+          {
+            "from": "b",
+            "to": "β",
+            "weight": 4.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 4.0
+          },
+          {
+            "from": "o",
+            "to": "ɔ",
+            "weight": 4.0
+          },
+          {
+            "from": "v",
+            "to": "β",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "g",
+            "to": "ɣ",
+            "weight": 4.0
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "g",
+            "comment": "<gh> cleanup"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 6.0,
+            "follow": "g",
+            "comment": "<ng>"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<ng> cleanup"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({output}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0,
+            "comment": "vowel lengthening / consonant gemination"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,748 @@
+{
+  "metadata": {
+    "code": "hmn",
+    "name": "Hmong",
+    "family": "Hmong-Mien,Hmongic,Chuanqiandian",
+    "macroarea": "Eurasia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "rabdiav",
+          "phonemes": "ʈ a ˦ d ia ˨˦",
+          "comment": "a"
+        },
+        {
+          "word": "taag",
+          "phonemes": "t ã ˦˨",
+          "comment": "aa"
+        },
+        {
+          "word": "huablab",
+          "phonemes": "h ua ˦ l a ˦",
+          "comment": "b (tone)"
+        },
+        {
+          "word": "cag",
+          "phonemes": "c a ˦˨",
+          "comment": "c"
+        },
+        {
+          "word": "chaws",
+          "phonemes": "cʰ aɨ ˨",
+          "comment": "ch"
+        },
+        {
+          "word": "ncauj",
+          "phonemes": "ᶮɟ au ˥˨",
+          "comment": "nc"
+        },
+        {
+          "word": "nchuav",
+          "phonemes": "ᶮɟʱ ua ˨˦",
+          "comment": "nch"
+        },
+        {
+          "word": "daim",
+          "phonemes": "d ai ˨˩",
+          "comment": "d (letter)"
+        },
+        {
+          "word": "dhau",
+          "phonemes": "dʱ au ˧",
+          "comment": "dh"
+        },
+        {
+          "word": "txwd",
+          "phonemes": "ts ɨ ˨˩",
+          "comment": "d (tone)"
+        },
+        {
+          "word": "teb",
+          "phonemes": "t e ˦",
+          "comment": "e"
+        },
+        {
+          "word": "meejpem",
+          "phonemes": "m ẽ ˥˨ p e ˨˩",
+          "comment": "ee"
+        },
+        {
+          "word": "foob",
+          "phonemes": "f õ ˦",
+          "comment": "f"
+        },
+        {
+          "word": "liag",
+          "phonemes": "l ia ˦˨",
+          "comment": "g (tone)"
+        },
+        {
+          "word": "hub",
+          "phonemes": "h u ˦",
+          "comment": "h"
+        },
+        {
+          "word": "ibtxhis",
+          "phonemes": "i ˦ tsʰ i ˨",
+          "comment": "i"
+        },
+        {
+          "word": "koj",
+          "phonemes": "k o ˥˨",
+          "comment": "j (tone)"
+        },
+        {
+          "word": "kotaw",
+          "phonemes": "k o ˧ t aɨ ˧",
+          "comment": "k"
+        },
+        {
+          "word": "khw",
+          "phonemes": "kʰ ɨ ˧",
+          "comment": "kh"
+        },
+        {
+          "word": "neesnkaum",
+          "phonemes": "n ẽ ˨ ᵑɡ au ˨˩",
+          "comment": "nk"
+        },
+        {
+          "word": "nkhib",
+          "phonemes": "ᵑɡʱ i ˦",
+          "comment": "nkh"
+        },
+        {
+          "word": "lolus",
+          "phonemes": "l o ˧ l u ˨",
+          "comment": "l"
+        },
+        {
+          "word": "hlub",
+          "phonemes": "lʰ u ˦",
+          "comment": "hl"
+        },
+        {
+          "word": "majmam",
+          "phonemes": "m a ˥˨ m a ˨˩",
+          "comment": "m (letter)"
+        },
+        {
+          "word": "hmoob",
+          "phonemes": "m̥ õ ˦",
+          "comment": "hm"
+        },
+        {
+          "word": "nlom",
+          "phonemes": "n l o ˨˩",
+          "comment": "m (tone)"
+        },
+        {
+          "word": "nanej",
+          "phonemes": "n a ˧ n e ˥˨",
+          "comment": "n"
+        },
+        {
+          "word": "hnov",
+          "phonemes": "n̥ o ˨˦",
+          "comment": "hn"
+        },
+        {
+          "word": "nyiag",
+          "phonemes": "ɲ ia ˦˨",
+          "comment": "ny"
+        },
+        {
+          "word": "hnyav",
+          "phonemes": "ɲ̥ a ˨˦",
+          "comment": "hny"
+        },
+        {
+          "word": "mob",
+          "phonemes": "m o ˦",
+          "comment": "o"
+        },
+        {
+          "word": "nloog",
+          "phonemes": "n l õ ˦˨",
+          "comment": "oo"
+        },
+        {
+          "word": "pw",
+          "phonemes": "p ɨ ˧",
+          "comment": "p"
+        },
+        {
+          "word": "plhu",
+          "phonemes": "p lʰ u ˧",
+          "comment": "ph"
+        },
+        {
+          "word": "npam",
+          "phonemes": "ᵐb a ˨˩",
+          "comment": "np"
+        },
+        {
+          "word": "nphoo",
+          "phonemes": "ᵐbʱ õ ˧",
+          "comment": "nph"
+        },
+        {
+          "word": "qaib",
+          "phonemes": "q ai ˦",
+          "comment": "q"
+        },
+        {
+          "word": "qhov",
+          "phonemes": "qʰ o ˨˦",
+          "comment": "qh"
+        },
+        {
+          "word": "nqos",
+          "phonemes": "ᶰɢ o ˨",
+          "comment": "nq"
+        },
+        {
+          "word": "nqhis",
+          "phonemes": "ᶰɢʱ i ˨",
+          "comment": "nqh"
+        },
+        {
+          "word": "rawg",
+          "phonemes": "ʈ aɨ ˦˨",
+          "comment": "r"
+        },
+        {
+          "word": "rhaub",
+          "phonemes": "ʈʰ au ˦",
+          "comment": "rh"
+        },
+        {
+          "word": "nrau",
+          "phonemes": "ᶯɖ au ˧",
+          "comment": "nr"
+        },
+        {
+          "word": "nrhiav",
+          "phonemes": "ᶯɖʱ ia ˨˦",
+          "comment": "nrh"
+        },
+        {
+          "word": "suav",
+          "phonemes": "ʂ ua ˨˦",
+          "comment": "s (letter)"
+        },
+        {
+          "word": "zis",
+          "phonemes": "ʐ i ˨",
+          "comment": "s (tone)"
+        },
+        {
+          "word": "twb",
+          "phonemes": "t ɨ ˦",
+          "comment": "t"
+        },
+        {
+          "word": "thiab",
+          "phonemes": "tʰ ia ˦",
+          "comment": "th"
+        },
+        {
+          "word": "ntoo",
+          "phonemes": "ⁿd õ ˧",
+          "comment": "nt"
+        },
+        {
+          "word": "nthi",
+          "phonemes": "ⁿdʱ i ˧",
+          "comment": "nth"
+        },
+        {
+          "word": "tsev",
+          "phonemes": "tʂ e ˨˦",
+          "comment": "ts"
+        },
+        {
+          "word": "tshee",
+          "phonemes": "tʂʰ ẽ ˧",
+          "comment": "tsh"
+        },
+        {
+          "word": "ntsws",
+          "phonemes": "ᶯdʐ ɨ ˨",
+          "comment": "nts"
+        },
+        {
+          "word": "ntshiab",
+          "phonemes": "ᶯdʐʱ ia ˦",
+          "comment": "ntsh"
+        },
+        {
+          "word": "txoj",
+          "phonemes": "ts o ˥˨",
+          "comment": "tx"
+        },
+        {
+          "word": "txhuam",
+          "phonemes": "tsʰ ua ˨˩",
+          "comment": "txh"
+        },
+        {
+          "word": "ntxuav",
+          "phonemes": "ⁿdz ua ˨˦",
+          "comment": "ntx"
+        },
+        {
+          "word": "ntxhw",
+          "phonemes": "ⁿdzʱ ɨ ˧",
+          "comment": "ntxh"
+        },
+        {
+          "word": "du",
+          "phonemes": "d u ˧",
+          "comment": "u"
+        },
+        {
+          "word": "vaubkib",
+          "phonemes": "v au ˦ k i ˦",
+          "comment": "v (letter)"
+        },
+        {
+          "word": "qhuav",
+          "phonemes": "qʰ ua ˨˦",
+          "comment": "v (tone)"
+        },
+        {
+          "word": "xwbpwg",
+          "phonemes": "s ɨ ˦ p ɨ ˦˨",
+          "comment": "w"
+        },
+        {
+          "word": "xav",
+          "phonemes": "s a ˨˦",
+          "comment": "x"
+        },
+        {
+          "word": "xya",
+          "phonemes": "ç a ˧",
+          "comment": "xy"
+        },
+        {
+          "word": "yim",
+          "phonemes": "ʝ i ˨˩",
+          "comment": "y"
+        },
+        {
+          "word": "zoov",
+          "phonemes": "ʐ õ ˨˦",
+          "comment": "z"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "input-cons": "[cdfhklmnpqrstvxyz]",
+          "input-vowel": "[aeiouw]",
+          "output-cons": "[cçdfhʝklᵐmⁿnᶯᶮɲᵑᶰpqsʂtʈvʐ]",
+          "voiceless-asp": "(p|t|ʈ|c|k|q|ts|tʂ)",
+          "voiced-asp": "(ᵐb|d|ⁿd|ᶯɖ|ᶮɟ|ᵑɡ|ᶰɢ|ⁿdz|dʐ)",
+          "output-vowel": "[a|ã|e|ẽ|i|o|õ|u|ɨ]",
+          "pre-y": "[nx]",
+          "pre-a": "[aiu]",
+          "post-a": "[iuw]",
+          "post-h": "[lmn]",
+          "passthrough": "[acdefhiklmnopqtuv]"
+        },
+        "sub": [
+          {
+            "from": "r",
+            "to": "ʈ",
+            "weight": 4.0
+          },
+          {
+            "from": "s",
+            "to": "ʂ",
+            "weight": 4.0
+          },
+          {
+            "from": "w",
+            "to": "ɨ",
+            "weight": 4.0
+          },
+          {
+            "from": "x",
+            "to": "s",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "ʝ",
+            "weight": 4.0
+          },
+          {
+            "from": "z",
+            "to": "ʐ",
+            "weight": 4.0
+          },
+          {
+            "from": "b",
+            "to": "˦",
+            "weight": 5.0,
+            "precede": "{input-vowel}",
+            "follow": "{input-cons}",
+            "comment": "high tone"
+          },
+          {
+            "from": "d",
+            "to": "˨˩",
+            "weight": 5.0,
+            "precede": "{input-vowel}",
+            "follow": "{input-cons}",
+            "comment": "creaky falling tone (1)"
+          },
+          {
+            "from": "g",
+            "to": "˦˨",
+            "weight": 5.0,
+            "precede": "{input-vowel}",
+            "follow": "{input-cons}",
+            "comment": "breathy falling tone"
+          },
+          {
+            "from": "j",
+            "to": "˥˨",
+            "weight": 5.0,
+            "precede": "{input-vowel}",
+            "follow": "{input-cons}",
+            "comment": "high falling tone"
+          },
+          {
+            "from": "m",
+            "to": "˨˩",
+            "weight": 5.0,
+            "precede": "{input-vowel}",
+            "follow": "{input-cons}",
+            "comment": "creaky falling tone (2)"
+          },
+          {
+            "from": "s",
+            "to": "˨",
+            "weight": 5.0,
+            "precede": "{input-vowel}",
+            "follow": "{input-cons}",
+            "comment": "low tone"
+          },
+          {
+            "from": "v",
+            "to": "˨˦",
+            "weight": 5.0,
+            "precede": "{input-vowel}",
+            "follow": "{input-cons}",
+            "comment": "high rising tone"
+          },
+          {
+            "from": "b",
+            "to": "˦",
+            "weight": 5.0,
+            "precede": "{input-vowel}",
+            "follow": "$",
+            "comment": "high tone"
+          },
+          {
+            "from": "d",
+            "to": "˨˩",
+            "weight": 5.0,
+            "precede": "{input-vowel}",
+            "follow": "$",
+            "comment": "creaky falling tone (1)"
+          },
+          {
+            "from": "g",
+            "to": "˦˨",
+            "weight": 5.0,
+            "precede": "{input-vowel}",
+            "follow": "$",
+            "comment": "breathy falling tone"
+          },
+          {
+            "from": "j",
+            "to": "˥˨",
+            "weight": 5.0,
+            "precede": "{input-vowel}",
+            "follow": "$",
+            "comment": "high falling tone"
+          },
+          {
+            "from": "m",
+            "to": "˨˩",
+            "weight": 5.0,
+            "precede": "{input-vowel}",
+            "follow": "$",
+            "comment": "creaky falling tone (2)"
+          },
+          {
+            "from": "s",
+            "to": "˨",
+            "weight": 5.0,
+            "precede": "{input-vowel}",
+            "follow": "$",
+            "comment": "low tone"
+          },
+          {
+            "from": "v",
+            "to": "˨˦",
+            "weight": 5.0,
+            "precede": "{input-vowel}",
+            "follow": "$",
+            "comment": "high rising tone"
+          },
+          {
+            "from": "a",
+            "to": "ã",
+            "weight": 6.0,
+            "follow": "a",
+            "comment": "<aa>"
+          },
+          {
+            "from": "e",
+            "to": "ẽ",
+            "weight": 6.0,
+            "follow": "e",
+            "comment": "<ee>"
+          },
+          {
+            "from": "e",
+            "to": "",
+            "weight": 6.0,
+            "precede": "e",
+            "comment": "<ee> cleanup"
+          },
+          {
+            "from": "o",
+            "to": "õ",
+            "weight": 6.0,
+            "follow": "o",
+            "comment": "<oo>"
+          },
+          {
+            "from": "o",
+            "to": "",
+            "weight": 6.0,
+            "precede": "o",
+            "comment": "<oo> cleanup"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 6.0,
+            "follow": "y",
+            "comment": "<ny>"
+          },
+          {
+            "from": "x",
+            "to": "ç",
+            "weight": 6.0,
+            "follow": "y",
+            "comment": "<xy>"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 8.0,
+            "precede": "{pre-y}",
+            "comment": "cleanup of y-final digraphs"
+          },
+          {
+            "from": "i",
+            "to": "ai",
+            "weight": 6.0,
+            "precede": "a",
+            "comment": "<ai>"
+          },
+          {
+            "from": "u",
+            "to": "au",
+            "weight": 6.0,
+            "precede": "a",
+            "comment": "<au>"
+          },
+          {
+            "from": "w",
+            "to": "aɨ",
+            "weight": 6.0,
+            "precede": "a",
+            "comment": "<aw>"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 6.0,
+            "follow": "{post-a}",
+            "comment": "cleanup of a-initial diphthongs"
+          },
+          {
+            "from": "i",
+            "to": "ia",
+            "weight": 6.0,
+            "follow": "a",
+            "comment": "<ia>"
+          },
+          {
+            "from": "u",
+            "to": "ua",
+            "weight": 6.0,
+            "follow": "a",
+            "comment": "<ua>"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{pre-a}",
+            "comment": "cleanup of a-final diphthongs, including <aa>"
+          },
+          {
+            "from": "l",
+            "to": "lʰ",
+            "weight": 8.0,
+            "precede": "h",
+            "comment": "<hl> - priority is raised to ensure it happens before aspiration rules occur"
+          },
+          {
+            "from": "l",
+            "to": "lʰ",
+            "weight": 6.0,
+            "precede": "p",
+            "follow": "h",
+            "comment": "exception to <hl> rule"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 8.0,
+            "precede": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "m",
+            "to": "m̥",
+            "weight": 6.0,
+            "precede": "h",
+            "comment": "<hm>"
+          },
+          {
+            "from": "n",
+            "to": "n̥",
+            "weight": 6.0,
+            "precede": "h",
+            "comment": "<hn>"
+          },
+          {
+            "from": "n",
+            "to": "ɲ̥",
+            "weight": 7.0,
+            "precede": "h",
+            "follow": "y",
+            "comment": "<hny> - the <y> is erased in line 50, so it doesn't need to be erased here"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "follow": "{post-h}",
+            "comment": "cleanup of h-initial clusters"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({output-vowel}) ({output-cons})",
+            "to": "\\1 ˧ \\2",
+            "weight": 1.0,
+            "comment": "mid tone"
+          },
+          {
+            "from": "({output-vowel})$",
+            "to": "\\1 ˧",
+            "weight": 1.0,
+            "comment": "mid tone"
+          },
+          {
+            "from": "t s",
+            "to": "ts",
+            "weight": 4.0,
+            "comment": "closing the gap in /ts/"
+          },
+          {
+            "from": "t ʂ",
+            "to": "tʂ",
+            "weight": 4.0,
+            "comment": "closing the gap in /tʂ/"
+          },
+          {
+            "from": "n p",
+            "to": "ᵐb",
+            "weight": 3.0
+          },
+          {
+            "from": "n t",
+            "to": "ⁿd",
+            "weight": 3.0
+          },
+          {
+            "from": "n ʈ",
+            "to": "ᶯɖ",
+            "weight": 3.0
+          },
+          {
+            "from": "n c",
+            "to": "ᶮɟ",
+            "weight": 3.0
+          },
+          {
+            "from": "n k",
+            "to": "ᵑɡ",
+            "weight": 3.0
+          },
+          {
+            "from": "n q",
+            "to": "ᶰɢ",
+            "weight": 3.0
+          },
+          {
+            "from": "n ts",
+            "to": "ⁿdz",
+            "weight": 3.5
+          },
+          {
+            "from": "n tʂ",
+            "to": "ᶯdʐ",
+            "weight": 3.5
+          },
+          {
+            "from": "({voiceless-asp}) h",
+            "to": "\\1ʰ",
+            "weight": 2.0,
+            "comment": "attaches aspiration to consonants"
+          },
+          {
+            "from": "({voiced-asp}) h",
+            "to": "\\1ʱ",
+            "weight": 2.5,
+            "comment": "changes aspiration to murmuring on voiced consonants"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "code": "bi",
+    "name": "Bislama",
+    "family": "Creole,English based,Pacific",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "blong",
+          "phonemes": "b l o ŋ",
+          "comment": "ng digraph"
+        },
+        {
+          "word": "hem",
+          "phonemes": "h e m"
+        },
+        {
+          "word": "fri",
+          "phonemes": "f ɾ i"
+        },
+        {
+          "word": "gud",
+          "phonemes": "ɡ u d"
+        },
+        {
+          "word": "evriwan",
+          "phonemes": "e v ɾ i w a n"
+        },
+        {
+          "word": "lojik",
+          "phonemes": "l o tʃ i k"
+        },
+        {
+          "word": "erospeis",
+          "phonemes": "e ɾ o s p e i s"
+        },
+        {
+          "word": "yumi",
+          "phonemes": "j u m i"
+        },
+        {
+          "word": "toktok",
+          "phonemes": "t o k t o k"
+        },
+        {
+          "word": "unaeted",
+          "phonemes": "u n a e t e d"
+        },
+        {
+          "word": "mo",
+          "phonemes": "m o"
+        },
+        {
+          "word": "ya",
+          "phonemes": "j a"
+        },
+        {
+          "word": "stap",
+          "phonemes": "s t a p"
+        },
+        {
+          "word": "olgeta",
+          "phonemes": "o l ɡ e t a"
+        },
+        {
+          "word": "man",
+          "phonemes": "m a n"
+        },
+        {
+          "word": "mi",
+          "phonemes": "m i"
+        },
+        {
+          "word": "yufala",
+          "phonemes": "j u f a l a"
+        },
+        {
+          "word": "se",
+          "phonemes": "s e"
+        },
+        {
+          "word": "mekem",
+          "phonemes": "m e k e m"
+        },
+        {
+          "word": "no",
+          "phonemes": "n o"
+        },
+        {
+          "word": "wan",
+          "phonemes": "w a n"
+        },
+        {
+          "word": "save",
+          "phonemes": "s a v e"
+        },
+        {
+          "word": "gat",
+          "phonemes": "ɡ a t"
+        },
+        {
+          "word": "bambae",
+          "phonemes": "b a m b a e"
+        },
+        {
+          "word": "talem",
+          "phonemes": "t a l e m"
+        },
+        {
+          "word": "yu",
+          "phonemes": "j u"
+        },
+        {
+          "word": "hemi",
+          "phonemes": "h e m i"
+        },
+        {
+          "word": "kam",
+          "phonemes": "k a m"
+        },
+        {
+          "word": "olsem",
+          "phonemes": "o l s e m"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeioupbmfvtdnslkwh]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "tʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 2.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "metadata": {
+    "code": "tzo",
+    "name": "Tzotzil",
+    "family": "Mayan,Cholan-Tzeltalan,Tzeltalan",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ajvalil",
+          "phonemes": "a h v a l i l",
+          "comment": "a"
+        },
+        {
+          "word": "bak'",
+          "phonemes": "b a kʼ",
+          "comment": "b"
+        },
+        {
+          "word": "scotol",
+          "phonemes": "s k o t o l",
+          "comment": "c"
+        },
+        {
+          "word": "c'usi",
+          "phonemes": "kʼ u s i",
+          "comment": "c'"
+        },
+        {
+          "word": "chitom",
+          "phonemes": "tʃ i t o m",
+          "comment": "ch"
+        },
+        {
+          "word": "ch'ich'elil",
+          "phonemes": "tʃʼ i tʃʼ e l i l",
+          "comment": "ch'"
+        },
+        {
+          "word": "ve'el",
+          "phonemes": "v e ʔ e l",
+          "comment": "e"
+        },
+        {
+          "word": "chikinil",
+          "phonemes": "tʃ i k i n i l",
+          "comment": "i"
+        },
+        {
+          "word": "jolol",
+          "phonemes": "h o l o l",
+          "comment": "j"
+        },
+        {
+          "word": "kavron",
+          "phonemes": "k a v ɾ o n",
+          "comment": "k"
+        },
+        {
+          "word": "k'ak'al",
+          "phonemes": "kʼ a kʼ a l",
+          "comment": "k'"
+        },
+        {
+          "word": "lo'bol",
+          "phonemes": "l o ʔ b o l",
+          "comment": "l"
+        },
+        {
+          "word": "muk'ta",
+          "phonemes": "m u kʼ t a",
+          "comment": "m"
+        },
+        {
+          "word": "na'",
+          "phonemes": "n a ʔ",
+          "comment": "n"
+        },
+        {
+          "word": "okol",
+          "phonemes": "o k o l",
+          "comment": "o"
+        },
+        {
+          "word": "paxak'",
+          "phonemes": "p a ʃ a kʼ",
+          "comment": "p"
+        },
+        {
+          "word": "p'ej",
+          "phonemes": "pʼ e h",
+          "comment": "p'"
+        },
+        {
+          "word": "vinique",
+          "phonemes": "v i n i k e",
+          "comment": "qu"
+        },
+        {
+          "word": "loq'uel",
+          "phonemes": "l o kʼ e l",
+          "comment": "q'u"
+        },
+        {
+          "word": "karina",
+          "phonemes": "k a ɾ i n a",
+          "comment": "r"
+        },
+        {
+          "word": "satil",
+          "phonemes": "s a t i l",
+          "comment": "s"
+        },
+        {
+          "word": "totil",
+          "phonemes": "t o t i l",
+          "comment": "t"
+        },
+        {
+          "word": "t'ul",
+          "phonemes": "tʼ u l",
+          "comment": "t'"
+        },
+        {
+          "word": "tsots",
+          "phonemes": "ts o ts",
+          "comment": "ts"
+        },
+        {
+          "word": "ts'iba",
+          "phonemes": "tsʼ i b a",
+          "comment": "ts'"
+        },
+        {
+          "word": "tsukut",
+          "phonemes": "ts u k u t",
+          "comment": "u"
+        },
+        {
+          "word": "vinik",
+          "phonemes": "v i n i k",
+          "comment": "v"
+        },
+        {
+          "word": "xi'el",
+          "phonemes": "ʃ i ʔ e l",
+          "comment": "x"
+        },
+        {
+          "word": "yox",
+          "phonemes": "j o ʃ",
+          "comment": "y"
+        },
+        {
+          "word": "ni'il",
+          "phonemes": "n i ʔ i l",
+          "comment": "apostrophe"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "['ꞌ‘’]",
+          "ejectable-cons": "(c|ch|k|p|q|t|ts)",
+          "either-q": "(q|q')",
+          "passthrough": "[abeiklmnopstuv]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "kʼ",
+            "weight": 5.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "k",
+            "to": "kʼ",
+            "weight": 5.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "p",
+            "to": "pʼ",
+            "weight": 5.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "t",
+            "to": "tʼ",
+            "weight": 5.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "c",
+            "to": "tʃʼ",
+            "weight": 7.0,
+            "follow": "h{apostrophe}",
+            "comment": "ejective ch"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "regular ch"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "c",
+            "comment": "<ch> cleanup"
+          },
+          {
+            "from": "q",
+            "to": "kʼ",
+            "weight": 7.0,
+            "follow": "{apostrophe}",
+            "comment": "ejective qu"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 7.0,
+            "precede": "q",
+            "follow": "u",
+            "comment": "ejective <qu> cleanup"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 6.0,
+            "comment": "regular qu; <u> isn't mentioned in this rule b/c word-final <q> occasionally occurs"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{either-q}",
+            "comment": "<qu> cleanup"
+          },
+          {
+            "from": "t",
+            "to": "tsʼ",
+            "weight": 7.0,
+            "follow": "s{apostrophe}",
+            "comment": "ejective ts"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 6.0,
+            "follow": "s",
+            "comment": "regular ts"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 6.0,
+            "precede": "t",
+            "comment": "<ts> cleanup"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 5.0,
+            "precede": "{ejectable-cons}"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "metadata": {
+    "code": "bug",
+    "name": "Bugis",
+    "family": "Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Sulawesi,South Sulawesi,Bugis",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "maata",
+          "phonemes": "m a t a",
+          "comment": "a"
+        },
+        {
+          "word": "buku",
+          "phonemes": "b u k u",
+          "comment": "b"
+        },
+        {
+          "word": "cèla'",
+          "phonemes": "c ɵ l a ʔ",
+          "comment": "c"
+        },
+        {
+          "word": "tuudang",
+          "phonemes": "t u d a ŋ",
+          "comment": "d"
+        },
+        {
+          "word": "bale",
+          "phonemes": "b a l e",
+          "comment": "e"
+        },
+        {
+          "word": "maega",
+          "phonemes": "m a e ɡ a",
+          "comment": "g"
+        },
+        {
+          "word": "hawang",
+          "phonemes": "h a w a ŋ",
+          "comment": "h"
+        },
+        {
+          "word": "idi'",
+          "phonemes": "i d i ʔ",
+          "comment": "i"
+        },
+        {
+          "word": "jantung",
+          "phonemes": "ɟ a n t u ŋ",
+          "comment": "j"
+        },
+        {
+          "word": "kudaara",
+          "phonemes": "k u d a r a",
+          "comment": "k"
+        },
+        {
+          "word": "liila",
+          "phonemes": "l i l a",
+          "comment": "l"
+        },
+        {
+          "word": "mandre",
+          "phonemes": "m a n d r e",
+          "comment": "m"
+        },
+        {
+          "word": "naange",
+          "phonemes": "n a ŋ e",
+          "comment": "n"
+        },
+        {
+          "word": "liino",
+          "phonemes": "l i n o",
+          "comment": "o"
+        },
+        {
+          "word": "poko",
+          "phonemes": "p o k o",
+          "comment": "p"
+        },
+        {
+          "word": "dara",
+          "phonemes": "d a r a",
+          "comment": "r"
+        },
+        {
+          "word": "èsoo",
+          "phonemes": "ɵ s o",
+          "comment": "s"
+        },
+        {
+          "word": "tindro",
+          "phonemes": "t i n d r o",
+          "comment": "t"
+        },
+        {
+          "word": "daung",
+          "phonemes": "d a u ŋ",
+          "comment": "u"
+        },
+        {
+          "word": "waai",
+          "phonemes": "w a i",
+          "comment": "w"
+        },
+        {
+          "word": "yamanèng",
+          "phonemes": "j a m a n ɵ ŋ",
+          "comment": "y"
+        },
+        {
+          "word": "èngka",
+          "phonemes": "ɵ ŋ k a",
+          "comment": "è"
+        },
+        {
+          "word": "se'di",
+          "phonemes": "s e ʔ d i",
+          "comment": "glottal stop"
+        },
+        {
+          "word": "daging",
+          "phonemes": "d a ɡ i ŋ",
+          "comment": "ng"
+        },
+        {
+          "word": "mènyunyu",
+          "phonemes": "m ɵ ɲ u ɲ u"
+        },
+        {
+          "word": "iyee",
+          "phonemes": "i j e",
+          "comment": "long e"
+        },
+        {
+          "word": "aaga",
+          "phonemes": "a ɡ a",
+          "comment": "long a"
+        },
+        {
+          "word": "yaroo",
+          "phonemes": "j a r o",
+          "comment": "long o"
+        },
+        {
+          "word": "iiga",
+          "phonemes": "i ɡ a",
+          "comment": "long i"
+        },
+        {
+          "word": "potto",
+          "phonemes": "p o t ː o",
+          "comment": "geminate t"
+        },
+        {
+          "word": "babba",
+          "phonemes": "b a b ː a",
+          "comment": "geminate b"
+        },
+        {
+          "word": "coddo",
+          "phonemes": "c o d ː o",
+          "comment": "geminate d"
+        },
+        {
+          "word": "cappa",
+          "phonemes": "c a p ː a",
+          "comment": "geminate p"
+        },
+        {
+          "word": "posso",
+          "phonemes": "p o s ː o",
+          "comment": "geminate s"
+        },
+        {
+          "word": "ajja",
+          "phonemes": "a ɟ ː a",
+          "comment": "geminate ɟ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeioubcdhklmnprstw]",
+          "apostrophe": "['ꞌˈ‘’]",
+          "longvowels": "(a|e|i|o|u)",
+          "gem": "(p|t|k|d|b|s|m|n|l|c|ɟ)"
+        },
+        "sub": [
+          {
+            "from": "è",
+            "to": "ɵ",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "ɟ",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 2.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 2.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({longvowels}) \\1\\b",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "\\b({gem}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

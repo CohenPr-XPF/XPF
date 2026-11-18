@@ -1,0 +1,393 @@
+{
+  "metadata": {
+    "code": "cbu",
+    "name": "Candoshi-Shapra",
+    "family": "Language isolate",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "da",
+          "phonemes": "ⁿt a",
+          "comment": "<a>"
+        },
+        {
+          "word": "táragiya",
+          "phonemes": "t a ɾ a ᵑk i j a",
+          "comment": "<á>"
+        },
+        {
+          "word": "iyaa",
+          "phonemes": "i j a ː",
+          "comment": "<aa>"
+        },
+        {
+          "word": "dabaria",
+          "phonemes": "ⁿt a ᵐp a ɾ ia",
+          "comment": "<b>"
+        },
+        {
+          "word": "kamanchintspa",
+          "phonemes": "k a m a n tʃ i ⁿts p a",
+          "comment": "<ch>"
+        },
+        {
+          "word": "anomad",
+          "phonemes": "a n o m a ⁿt",
+          "comment": "<d>"
+        },
+        {
+          "word": "mag",
+          "phonemes": "m a ᵑk",
+          "comment": "<g>"
+        },
+        {
+          "word": "husiini",
+          "phonemes": "h o s i ː n i",
+          "comment": "<h>"
+        },
+        {
+          "word": "siyaa",
+          "phonemes": "s i j a ː",
+          "comment": "<i>"
+        },
+        {
+          "word": "chínash",
+          "phonemes": "tʃ i n a ʃ",
+          "comment": "<í>"
+        },
+        {
+          "word": "Piip",
+          "phonemes": "p i ː p",
+          "comment": "<ii>"
+        },
+        {
+          "word": "tpotsia",
+          "phonemes": "t p o ts ia",
+          "comment": "<ia>"
+        },
+        {
+          "word": "kizpor",
+          "phonemes": "k i ʂ p o ɾ",
+          "comment": "<k>"
+        },
+        {
+          "word": "kamanchillpa",
+          "phonemes": "k a m a n tʃ i ⁿtʃ p a",
+          "comment": "<ll>"
+        },
+        {
+          "word": "magu",
+          "phonemes": "m a ᵑk o",
+          "comment": "<m>"
+        },
+        {
+          "word": "novaa",
+          "phonemes": "n o w a ː",
+          "comment": "<n>"
+        },
+        {
+          "word": "chinarintspa",
+          "phonemes": "tʃ i n a ɾ i ⁿts p a",
+          "comment": "<nts>"
+        },
+        {
+          "word": "koxinxinav",
+          "phonemes": "k o ʈʂ i ᶯʈʂ i n a w",
+          "comment": "<nx>"
+        },
+        {
+          "word": "nov",
+          "phonemes": "n o w",
+          "comment": "<o>"
+        },
+        {
+          "word": "izooro",
+          "phonemes": "i ʂ o ː ɾ o",
+          "comment": "<oo>"
+        },
+        {
+          "word": "anoa",
+          "phonemes": "a n oa",
+          "comment": "<oa>"
+        },
+        {
+          "word": "tpots",
+          "phonemes": "t p o ts",
+          "comment": "<p>"
+        },
+        {
+          "word": "ichigoro",
+          "phonemes": "i tʃ i ᵑk o ɾ o",
+          "comment": "<r>"
+        },
+        {
+          "word": "kis",
+          "phonemes": "k i s",
+          "comment": "<s>"
+        },
+        {
+          "word": "ashiro",
+          "phonemes": "a ʃ i ɾ o",
+          "comment": "<sh>"
+        },
+        {
+          "word": "itaro",
+          "phonemes": "i t a ɾ o",
+          "comment": "<t>"
+        },
+        {
+          "word": "itsinsaro",
+          "phonemes": "i ts i n s a ɾ o",
+          "comment": "<ts>"
+        },
+        {
+          "word": "pagu",
+          "phonemes": "p a ᵑk o",
+          "comment": "<u>"
+        },
+        {
+          "word": "vatam",
+          "phonemes": "w a t a m",
+          "comment": "<v>"
+        },
+        {
+          "word": "xapoaragana",
+          "phonemes": "ʈʂ a p oa ɾ a ᵑk a n a",
+          "comment": "<x>"
+        },
+        {
+          "word": "yovaa",
+          "phonemes": "j o w a ː",
+          "comment": "<y>"
+        },
+        {
+          "word": "zapan",
+          "phonemes": "ʂ a p a n",
+          "comment": "<z>"
+        },
+        {
+          "word": "yotaritshishia",
+          "phonemes": "j o t a ɾ i t ʃ i ʃ ia"
+        },
+        {
+          "word": "vanintshtaha",
+          "phonemes": "w a n i n t ʃ t a h a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[ahikmnopst]",
+          "vowels": "[aio]",
+          "punct": "['ꞌ‘’-]"
+        },
+        "sub": [
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 1.0,
+            "comment": "accents mark stress"
+          },
+          {
+            "from": "b",
+            "to": "ᵐp",
+            "weight": 1.0
+          },
+          {
+            "from": "d",
+            "to": "ⁿt",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ᵑk",
+            "weight": 1.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "u",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "ú",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "v",
+            "to": "w",
+            "weight": 1.0
+          },
+          {
+            "from": "x",
+            "to": "ʈʂ",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "z",
+            "to": "ʂ",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "l",
+            "to": "ⁿtʃ",
+            "weight": 2.0,
+            "follow": "l"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 2.0,
+            "precede": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 2.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 2.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ⁿts",
+            "weight": 3.0,
+            "follow": "ts"
+          },
+          {
+            "from": "t",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "follow": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 3.0,
+            "precede": "nt",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ᶯʈʂ",
+            "weight": 2.0,
+            "follow": "x"
+          },
+          {
+            "from": "x",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "t",
+            "weight": 4.0,
+            "follow": "sh",
+            "comment": "deals with <tsh> sequences"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 4.0,
+            "precede": "t",
+            "follow": "h",
+            "comment": "deals with <tsh> sequences"
+          },
+          {
+            "from": "n",
+            "to": "n",
+            "weight": 4.0,
+            "follow": "tsh",
+            "comment": "deals with <ntsh> sequences"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 1.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "i a",
+            "to": "ia",
+            "weight": 2.0
+          },
+          {
+            "from": "o a",
+            "to": "oa",
+            "weight": 2.0
+          },
+          {
+            "from": "\\b({vowels}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

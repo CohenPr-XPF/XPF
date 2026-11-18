@@ -1,0 +1,274 @@
+{
+  "metadata": {
+    "code": "rwo",
+    "name": "Rawa",
+    "family": "Trans-New Guinea,Main Section,Central and Western,Huon-Finisterre,Finisterre,Gusap-Mot",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "sounds": "l|r"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "piru",
+          "phonemes": "p i r u"
+        },
+        {
+          "word": "mepune",
+          "phonemes": "m e p u n e"
+        },
+        {
+          "word": "beru",
+          "phonemes": "b e r u"
+        },
+        {
+          "word": "yaba",
+          "phonemes": "j a b a"
+        },
+        {
+          "word": "mbeye",
+          "phonemes": "ᵐb e j e"
+        },
+        {
+          "word": "wembune",
+          "phonemes": "w e ᵐb u n e"
+        },
+        {
+          "word": "mebuyi",
+          "phonemes": "m e b u j i"
+        },
+        {
+          "word": "namo",
+          "phonemes": "n a m o"
+        },
+        {
+          "word": "wita",
+          "phonemes": "w i t a"
+        },
+        {
+          "word": "awa",
+          "phonemes": "a w a"
+        },
+        {
+          "word": "ta",
+          "phonemes": "t a"
+        },
+        {
+          "word": "witu",
+          "phonemes": "w i t u"
+        },
+        {
+          "word": "da",
+          "phonemes": "d a"
+        },
+        {
+          "word": "sidu",
+          "phonemes": "s i d u"
+        },
+        {
+          "word": "ge",
+          "phonemes": "ɡ e"
+        },
+        {
+          "word": "sugado",
+          "phonemes": "s u ɡ a d o"
+        },
+        {
+          "word": "ndawo",
+          "phonemes": "ⁿd a w o"
+        },
+        {
+          "word": "anda",
+          "phonemes": "a ⁿd a"
+        },
+        {
+          "word": "ngu",
+          "phonemes": "ŋ u"
+        },
+        {
+          "word": "gingo",
+          "phonemes": "ɡ i ŋ o"
+        },
+        {
+          "word": "nu",
+          "phonemes": "n u"
+        },
+        {
+          "word": "nane",
+          "phonemes": "n a n e"
+        },
+        {
+          "word": "ngguru",
+          "phonemes": "ᵑɡ u r u"
+        },
+        {
+          "word": "sanggo",
+          "phonemes": "s a ᵑɡ o"
+        },
+        {
+          "word": "sako",
+          "phonemes": "s a k o"
+        },
+        {
+          "word": "nasa",
+          "phonemes": "n a s a"
+        },
+        {
+          "word": "hadaga",
+          "phonemes": "h a d a ɡ a"
+        },
+        {
+          "word": "aha",
+          "phonemes": "a h a"
+        },
+        {
+          "word": "roku",
+          "phonemes": "r o k u"
+        },
+        {
+          "word": "mere",
+          "phonemes": "m e r e"
+        },
+        {
+          "word": "keyi",
+          "phonemes": "k e j i"
+        },
+        {
+          "word": "wako",
+          "phonemes": "w a k o"
+        },
+        {
+          "word": "yangeni",
+          "phonemes": "j a ŋ e n i"
+        },
+        {
+          "word": "sarayi",
+          "phonemes": "s a r a j i"
+        },
+        {
+          "word": "sooporo",
+          "phonemes": "s ɔ p o r o"
+        },
+        {
+          "word": "sugabo",
+          "phonemes": "s u ɡ a b o"
+        },
+        {
+          "word": "koono",
+          "phonemes": "k ɔ n o"
+        },
+        {
+          "word": "ooso",
+          "phonemes": "ɔ s o"
+        },
+        {
+          "word": "moo",
+          "phonemes": "m ɔ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdehiklmnoprstuw]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "m",
+            "to": "ᵐb",
+            "weight": 3.0,
+            "follow": "b"
+          },
+          {
+            "from": "b",
+            "to": "",
+            "weight": 3.0,
+            "precede": "m",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ⁿd",
+            "weight": 3.0,
+            "follow": "d"
+          },
+          {
+            "from": "d",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ᵑɡ",
+            "weight": 4.0,
+            "follow": "gg"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 4.0,
+            "precede": "n",
+            "follow": "g",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 4.0,
+            "precede": "ng",
+            "comment": "clean-up"
+          },
+          {
+            "from": "o",
+            "to": "ɔ",
+            "weight": 3.0,
+            "follow": "o"
+          },
+          {
+            "from": "o",
+            "to": "",
+            "weight": 3.0,
+            "precede": "o",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

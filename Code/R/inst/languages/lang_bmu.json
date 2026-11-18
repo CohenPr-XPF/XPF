@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "code": "bmu",
+    "name": "Somba-Siawari",
+    "family": "Trans-New Guinea,Main Section,Central and Western,Huon-Finisterre,Huon,Western",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "note": "phonetic orthography"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "abubuŋi",
+          "phonemes": "a b u b u ŋ i"
+        },
+        {
+          "word": "ahöza",
+          "phonemes": "a k ɵ ts a"
+        },
+        {
+          "word": "börum",
+          "phonemes": "b ɵ t u m"
+        },
+        {
+          "word": "böwöm",
+          "phonemes": "b ɵ p ɵ m"
+        },
+        {
+          "word": "etkuza",
+          "phonemes": "e t k u ts a"
+        },
+        {
+          "word": "gilja",
+          "phonemes": "ɡ i l dz a"
+        },
+        {
+          "word": "gwak",
+          "phonemes": "ɡʷ a k"
+        },
+        {
+          "word": "ijekwaijek",
+          "phonemes": "i dz e k w a i dz e k"
+        },
+        {
+          "word": "ambiqambi",
+          "phonemes": "a m b i kʷ a m b i"
+        },
+        {
+          "word": "memhombek",
+          "phonemes": "m e m ɣ o m b e k"
+        },
+        {
+          "word": "datni",
+          "phonemes": "d a t n i"
+        },
+        {
+          "word": "kofi",
+          "phonemes": "k o f i"
+        },
+        {
+          "word": "pilik",
+          "phonemes": "p i l i k"
+        },
+        {
+          "word": "silim",
+          "phonemes": "s i l i m"
+        },
+        {
+          "word": "meyök",
+          "phonemes": "m e j ɵ k"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdefiklmnŋoprstuw]",
+          "vowels": "[aeiouö]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "h",
+            "to": "ɣ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "dz",
+            "weight": 2.0
+          },
+          {
+            "from": "ö",
+            "to": "ɵ",
+            "weight": 2.0
+          },
+          {
+            "from": "q",
+            "to": "kʷ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "z",
+            "to": "ts",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 3.0,
+            "precede": "g",
+            "comment": "clean-up"
+          },
+          {
+            "from": "w",
+            "to": "p",
+            "weight": 4.0,
+            "precede": "{vowels}",
+            "follow": "{vowels}"
+          },
+          {
+            "from": "r",
+            "to": "t",
+            "weight": 4.0,
+            "precede": "{vowels}",
+            "follow": "{vowels}"
+          },
+          {
+            "from": "h",
+            "to": "k",
+            "weight": 4.0,
+            "precede": "{vowels}",
+            "follow": "{vowels}"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

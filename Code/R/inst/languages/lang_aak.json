@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "code": "aak",
+    "name": "Ankave",
+    "family": "Trans-New Guinea,Main Section,Central and Western,Angan,Angan Proper",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "pikwɨ",
+          "phonemes": "p i k w ɘ"
+        },
+        {
+          "word": "kakwɨ'",
+          "phonemes": "k a k w ɘ ʔ"
+        },
+        {
+          "word": "abia'",
+          "phonemes": "a ᵐb i a ʔ"
+        },
+        {
+          "word": "mɨ'rɨxɨ'",
+          "phonemes": "m ɘ ʔ ɾ ɘ x ɘ ʔ"
+        },
+        {
+          "word": "naguyikɨ'",
+          "phonemes": "n a ᵑɡ u j i k ɘ ʔ"
+        },
+        {
+          "word": "samɨŋɨ'",
+          "phonemes": "s a m ɘ ŋ ɘ ʔ"
+        },
+        {
+          "word": "jiŋwɨ'",
+          "phonemes": "ⁿdz i ŋ w ɘ ʔ"
+        },
+        {
+          "word": "dɨŋɨ'",
+          "phonemes": "ⁿd ɘ ŋ ɘ ʔ"
+        },
+        {
+          "word": "barusɨ'",
+          "phonemes": "ᵐb a ɾ u s ɘ ʔ"
+        },
+        {
+          "word": "re",
+          "phonemes": "ɾ e"
+        },
+        {
+          "word": "nionɨ",
+          "phonemes": "n i o n ɘ"
+        },
+        {
+          "word": "tɨ'nɨ",
+          "phonemes": "t ɘ ʔ n ɘ"
+        },
+        {
+          "word": "a'ma'",
+          "phonemes": "a ʔ m a ʔ"
+        },
+        {
+          "word": "da'nɨ",
+          "phonemes": "ⁿd a ʔ n ɘ"
+        },
+        {
+          "word": "enɨ",
+          "phonemes": "e n ɘ"
+        },
+        {
+          "word": "wi'",
+          "phonemes": "w i ʔ"
+        },
+        {
+          "word": "xwɨyɨ'a'",
+          "phonemes": "x w ɘ j ɘ ʔ a ʔ"
+        },
+        {
+          "word": "bɨ",
+          "phonemes": "ᵐb ɘ"
+        },
+        {
+          "word": "ayɨ'",
+          "phonemes": "a j ɘ ʔ"
+        },
+        {
+          "word": "urɨŋɨnigɨnɨ",
+          "phonemes": "u ɾ ɘ ŋ ɘ n i ᵑɡ ɘ n ɘ"
+        },
+        {
+          "word": "eŋagɨ",
+          "phonemes": "e ŋ a ᵑɡ ɘ"
+        },
+        {
+          "word": "xegɨ'",
+          "phonemes": "x e ᵑɡ ɘ ʔ"
+        },
+        {
+          "word": "sɨŋwɨ'",
+          "phonemes": "s ɘ ŋ w ɘ ʔ"
+        },
+        {
+          "word": "ai'",
+          "phonemes": "a i ʔ"
+        },
+        {
+          "word": "rɨxa",
+          "phonemes": "ɾ ɘ x a"
+        },
+        {
+          "word": "aŋɨ'",
+          "phonemes": "a ŋ ɘ ʔ"
+        },
+        {
+          "word": "a'mɨ",
+          "phonemes": "a ʔ m ɘ"
+        },
+        {
+          "word": "arɨ'a'",
+          "phonemes": "a ɾ ɘ ʔ a ʔ"
+        },
+        {
+          "word": "nerɨ",
+          "phonemes": "n e ɾ ɘ"
+        },
+        {
+          "word": "apɨ",
+          "phonemes": "a p ɘ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeikxmnŋopstuw]",
+          "apostrophe": "[ꞌ'ˈ‘’ʼ]",
+          "punct": "[-–]"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "ᵐb",
+            "weight": 3.0
+          },
+          {
+            "from": "d",
+            "to": "ⁿd",
+            "weight": 3.0
+          },
+          {
+            "from": "g",
+            "to": "ᵑɡ",
+            "weight": 3.0
+          },
+          {
+            "from": "ɨ",
+            "to": "ɘ",
+            "weight": 3.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 3.0
+          },
+          {
+            "from": "j",
+            "to": "ⁿdz",
+            "weight": 3.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 3.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 3.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

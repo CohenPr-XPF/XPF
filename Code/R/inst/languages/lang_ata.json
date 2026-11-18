@@ -1,0 +1,189 @@
+{
+  "metadata": {
+    "code": "ata",
+    "name": "Pele-Ata",
+    "family": "East Papuan,Yele-Solomons-New Britain,New Britain,Wasi",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "alepeinu",
+          "phonemes": "ɑ l ɛ p ɛ i n u"
+        },
+        {
+          "word": "aluaxa",
+          "phonemes": "ɑ l u ɑ x ɑ"
+        },
+        {
+          "word": "inavate",
+          "phonemes": "i n ɑ β ɑ t ɛ"
+        },
+        {
+          "word": "kaalaua",
+          "phonemes": "k ɑ ː l ɑ u ɑ"
+        },
+        {
+          "word": "kapiilaxu",
+          "phonemes": "k ɑ p i ː l ɑ x u"
+        },
+        {
+          "word": "koolou",
+          "phonemes": "k o ː l o u"
+        },
+        {
+          "word": "la'ilali",
+          "phonemes": "l ɑ ʔ i l ɑ l i"
+        },
+        {
+          "word": "lelemesou",
+          "phonemes": "l ɛ l ɛ m ɛ s o u"
+        },
+        {
+          "word": "ngongoli",
+          "phonemes": "ŋ o ŋ o l i"
+        },
+        {
+          "word": "xalee",
+          "phonemes": "x ɑ l ɛ ː"
+        },
+        {
+          "word": "tauu",
+          "phonemes": "t ɑ u ː"
+        },
+        {
+          "word": "lexe",
+          "phonemes": "l ɛ x ɛ"
+        },
+        {
+          "word": "noxou",
+          "phonemes": "n o x o u"
+        },
+        {
+          "word": "mitema",
+          "phonemes": "m i t ɛ m ɑ"
+        },
+        {
+          "word": "uasi",
+          "phonemes": "u ɑ s i"
+        },
+        {
+          "word": "aloxo",
+          "phonemes": "ɑ l o x o"
+        },
+        {
+          "word": "ane'i",
+          "phonemes": "ɑ n ɛ ʔ i"
+        },
+        {
+          "word": "vile",
+          "phonemes": "β i l ɛ"
+        },
+        {
+          "word": "eni",
+          "phonemes": "ɛ n i"
+        },
+        {
+          "word": "xe",
+          "phonemes": "x ɛ"
+        },
+        {
+          "word": "noxi'a",
+          "phonemes": "n o x i ʔ ɑ"
+        },
+        {
+          "word": "itema",
+          "phonemes": "i t ɛ m ɑ"
+        },
+        {
+          "word": "loxo",
+          "phonemes": "l o x o"
+        },
+        {
+          "word": "ngingi",
+          "phonemes": "ŋ i ŋ i"
+        },
+        {
+          "word": "laixe",
+          "phonemes": "l ɑ i x ɛ"
+        },
+        {
+          "word": "ia",
+          "phonemes": "i ɑ"
+        },
+        {
+          "word": "manina",
+          "phonemes": "m ɑ n i n ɑ"
+        },
+        {
+          "word": "mii",
+          "phonemes": "m i ː"
+        },
+        {
+          "word": "vaikala",
+          "phonemes": "β ɑ i k ɑ l ɑ"
+        },
+        {
+          "word": "mulai",
+          "phonemes": "m u l ɑ i"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[iklmnopstux]",
+          "vowels": "[ɑɛiou]",
+          "apostrophe": "[''‘’]"
+        },
+        "sub": [
+          {
+            "from": "a",
+            "to": "ɑ",
+            "weight": 2.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 2.0
+          },
+          {
+            "from": "v",
+            "to": "β",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

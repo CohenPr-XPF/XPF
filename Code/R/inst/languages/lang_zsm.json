@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "code": "zsm",
+    "name": "Standard Malay",
+    "family": "Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Sundic,Malayic,Malayan,Local Malay",
+    "macroarea": "Eurasia",
+    "compromised": {
+      "sounds": "e|ə",
+      "note": "conflicting orthographies"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "parang",
+          "phonemes": "p a r a ŋ"
+        },
+        {
+          "word": "barang",
+          "phonemes": "b a r a ŋ"
+        },
+        {
+          "word": "tua",
+          "phonemes": "t u a"
+        },
+        {
+          "word": "dua",
+          "phonemes": "d u a"
+        },
+        {
+          "word": "kaji",
+          "phonemes": "k a dʒ i"
+        },
+        {
+          "word": "gaji",
+          "phonemes": "ɡ a dʒ i"
+        },
+        {
+          "word": "cari",
+          "phonemes": "tʃ a r i"
+        },
+        {
+          "word": "jari",
+          "phonemes": "dʒ a r i"
+        },
+        {
+          "word": "rumah",
+          "phonemes": "r u m a h"
+        },
+        {
+          "word": "masih",
+          "phonemes": "m a s i h"
+        },
+        {
+          "word": "nasi",
+          "phonemes": "n a s i"
+        },
+        {
+          "word": "nyanyian",
+          "phonemes": "ɲ a ɲ i a n"
+        },
+        {
+          "word": "sari",
+          "phonemes": "s a r i"
+        },
+        {
+          "word": "hari",
+          "phonemes": "h a r i"
+        },
+        {
+          "word": "bayang",
+          "phonemes": "b a j a ŋ"
+        },
+        {
+          "word": "bawang",
+          "phonemes": "b a w a ŋ"
+        },
+        {
+          "word": "laki",
+          "phonemes": "l a k i"
+        },
+        {
+          "word": "marah",
+          "phonemes": "m a r a h"
+        },
+        {
+          "word": "perang",
+          "phonemes": "p e r a ŋ"
+        },
+        {
+          "word": "bilik",
+          "phonemes": "b i l i k"
+        },
+        {
+          "word": "orang",
+          "phonemes": "o r a ŋ"
+        },
+        {
+          "word": "buluh",
+          "phonemes": "b u l u h"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdehiklmnoprstuw]",
+          "n-follower": "[gy]",
+          "punct": "['ꞌ‘’-]",
+          "C": "[pbtdkgcjshmnyrwl]",
+          "old-digraph": "[cdt]",
+          "loanword-digraph": "[gks]",
+          "vowels": "[aeiou]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "dʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "x",
+            "to": "k s",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 1.0
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 5.0,
+            "follow": "g"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 5.0,
+            "follow": "y"
+          },
+          {
+            "from": "{n-follower}",
+            "to": "",
+            "weight": 5.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "j",
+            "weight": 3.0,
+            "precede": "{vowels}"
+          },
+          {
+            "from": "u",
+            "to": "w",
+            "weight": 3.0,
+            "precede": "{vowels}"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "h{C}",
+            "comment": "<ch> represents /tʃ/ if followed by a consonant - /CCC/ is not allowed per the syllabic structure, so e.g. <chk> would represent /tʃ k/ rather than /tʃ h k/"
+          },
+          {
+            "from": "d",
+            "to": "d",
+            "weight": 6.0,
+            "follow": "h{C}"
+          },
+          {
+            "from": "t",
+            "to": "s",
+            "weight": 6.0,
+            "follow": "h{C}"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{old-digraph}",
+            "follow": "{C}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "precede": "^",
+            "follow": "h",
+            "comment": "accounts for seemingly /CC/ structures word-initially, which aren't supported by the language"
+          },
+          {
+            "from": "d",
+            "to": "d",
+            "weight": 6.0,
+            "precede": "^",
+            "follow": "h"
+          },
+          {
+            "from": "t",
+            "to": "s",
+            "weight": 6.0,
+            "precede": "^",
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "^{old-digraph}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "h$",
+            "comment": "accounts for seemingly /CC/ structures word-finally, which aren't supported by the language"
+          },
+          {
+            "from": "d",
+            "to": "d",
+            "weight": 6.0,
+            "follow": "h$"
+          },
+          {
+            "from": "t",
+            "to": "s",
+            "weight": 6.0,
+            "follow": "h$"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{old-digraph}",
+            "follow": "$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 2.0,
+            "comment": "hyphens represent morpheme boundaries and apostrophes represent phonetic glottal stops"
+          },
+          {
+            "from": "{loanword-digraph}",
+            "to": "@",
+            "weight": 7.0,
+            "follow": "h{C}"
+          },
+          {
+            "from": "s",
+            "to": "@",
+            "weight": 7.0,
+            "follow": "y{C}"
+          },
+          {
+            "from": "{loanword-digraph}",
+            "to": "@",
+            "weight": 7.0,
+            "precede": "^",
+            "follow": "h"
+          },
+          {
+            "from": "s",
+            "to": "@",
+            "weight": 7.0,
+            "precede": "^",
+            "follow": "y"
+          },
+          {
+            "from": "{loanword-digraph}",
+            "to": "@",
+            "weight": 7.0,
+            "follow": "h$"
+          },
+          {
+            "from": "s",
+            "to": "@",
+            "weight": 7.0,
+            "follow": "y$"
+          }
+        ]
+      }
+    }
+  }
+}

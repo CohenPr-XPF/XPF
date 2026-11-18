@@ -1,0 +1,250 @@
+{
+  "metadata": {
+    "code": "cho",
+    "name": "Choctaw",
+    "family": "Muskogean,Western",
+    "macroarea": "North America",
+    "compromised": {
+      "sounds": "n|m",
+      "note": "phonetic orthography (nasal vowels)"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "achaffa",
+          "phonemes": "a tʃ a f f a",
+          "comment": "a"
+        },
+        {
+          "word": "bayuk",
+          "phonemes": "b a j o k",
+          "comment": "b"
+        },
+        {
+          "word": "chualha",
+          "phonemes": "tʃ o a ɬ a",
+          "comment": "ch"
+        },
+        {
+          "word": "fala",
+          "phonemes": "f a l a",
+          "comment": "f"
+        },
+        {
+          "word": "hashi",
+          "phonemes": "h a ʃ i",
+          "comment": "h"
+        },
+        {
+          "word": "itibapishi",
+          "phonemes": "i t i b a p i ʃ i",
+          "comment": "i"
+        },
+        {
+          "word": "kili̲koba",
+          "phonemes": "k i l i n k o b a",
+          "comment": "k"
+        },
+        {
+          "word": "luksi",
+          "phonemes": "l o k s i",
+          "comment": "l"
+        },
+        {
+          "word": "talhapi",
+          "phonemes": "t a ɬ a p i",
+          "comment": "lh"
+        },
+        {
+          "word": "mahli",
+          "phonemes": "m a h l i",
+          "comment": "m"
+        },
+        {
+          "word": "nita",
+          "phonemes": "n i t a",
+          "comment": "n"
+        },
+        {
+          "word": "ohoyo",
+          "phonemes": "o h o j o",
+          "comment": "o"
+        },
+        {
+          "word": "pakanli",
+          "phonemes": "p a k a n l i",
+          "comment": "p"
+        },
+        {
+          "word": "sipi",
+          "phonemes": "s i p i",
+          "comment": "s"
+        },
+        {
+          "word": "shulush",
+          "phonemes": "ʃ o l o ʃ",
+          "comment": "sh"
+        },
+        {
+          "word": "tohto",
+          "phonemes": "t o h t o",
+          "comment": "t"
+        },
+        {
+          "word": "watonlak",
+          "phonemes": "w a t o n l a k",
+          "comment": "w"
+        },
+        {
+          "word": "yak",
+          "phonemes": "j a k",
+          "comment": "y"
+        },
+        {
+          "word": "nani'",
+          "phonemes": "n a n i ʔ",
+          "comment": "apostrophe"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "['ꞌˈ‘’]",
+          "vowel": "[aio]",
+          "a": "[a̲a̧]",
+          "i": "[i̲i̧]",
+          "o": "[o̲o̧]",
+          "pre-h": "[cls]",
+          "passthrough": "[abfhiklmnopstw]"
+        },
+        "sub": [
+          {
+            "from": "a",
+            "to": "a",
+            "weight": 5.0
+          },
+          {
+            "from": "{a}",
+            "to": "a2",
+            "weight": 4.0
+          },
+          {
+            "from": "č",
+            "to": "tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "i",
+            "to": "i",
+            "weight": 5.0
+          },
+          {
+            "from": "{i}",
+            "to": "i2",
+            "weight": 4.0
+          },
+          {
+            "from": "ł",
+            "to": "ɬ",
+            "weight": 4.0
+          },
+          {
+            "from": "o",
+            "to": "o",
+            "weight": 5.0
+          },
+          {
+            "from": "{o}",
+            "to": "o2",
+            "weight": 4.0
+          },
+          {
+            "from": "š",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "e",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "u",
+            "to": "o",
+            "weight": 4.0
+          },
+          {
+            "from": "v",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "h"
+          },
+          {
+            "from": "l",
+            "to": "ɬ",
+            "weight": 6.0,
+            "follow": "h"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 6.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{pre-h}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowel}) \\1",
+            "to": "\\1 ː",
+            "weight": 3.0
+          },
+          {
+            "from": "({vowel}) {vowel}2",
+            "to": "\\1 n",
+            "weight": 4.0,
+            "comment": "the program behaves weirdly with underlined or hooked vowels; this rule allows us to work around that"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

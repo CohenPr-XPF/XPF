@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "code": "acr",
+    "name": "Rabinal Achi'",
+    "family": "Mayan,Quichean-Mamean,Greater Quichean,Quichean,Quiche-Achi",
+    "macroarea": "North America",
+    "compromised": {
+      "note": "suspect marking of vowel length"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "beexex",
+          "phonemes": "ɓ e ː ʃ e ʃ"
+        },
+        {
+          "word": "eyaj",
+          "phonemes": "e j a h"
+        },
+        {
+          "word": "iis",
+          "phonemes": "i ː s"
+        },
+        {
+          "word": "k'ij",
+          "phonemes": "kʼ i h"
+        },
+        {
+          "word": "me's",
+          "phonemes": "m e ʔ s"
+        },
+        {
+          "word": "no's",
+          "phonemes": "n o ʔ s"
+        },
+        {
+          "word": "ok'",
+          "phonemes": "o kʼ"
+        },
+        {
+          "word": "ooj",
+          "phonemes": "o ː h"
+        },
+        {
+          "word": "pix",
+          "phonemes": "p i ʃ"
+        },
+        {
+          "word": "quej",
+          "phonemes": "q u e h"
+        },
+        {
+          "word": "q'uel",
+          "phonemes": "qʼ u e l"
+        },
+        {
+          "word": "rakana'",
+          "phonemes": "ɾ a k a n a ʔ"
+        },
+        {
+          "word": "sutz'",
+          "phonemes": "s u tsʼ"
+        },
+        {
+          "word": "t'ot'",
+          "phonemes": "tʼ o tʼ"
+        },
+        {
+          "word": "tzi",
+          "phonemes": "ts i"
+        },
+        {
+          "word": "tz'i'",
+          "phonemes": "tsʼ i ʔ"
+        },
+        {
+          "word": "wuch'",
+          "phonemes": "w u tʃʼ"
+        },
+        {
+          "word": "xan",
+          "phonemes": "ʃ a n"
+        },
+        {
+          "word": "ya'",
+          "phonemes": "j a ʔ"
+        },
+        {
+          "word": "che'",
+          "phonemes": "tʃ e ʔ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeiklmnopqstuw]",
+          "apostrophe": "['ꞌˈ‘’]",
+          "eject": "(k|q|t|tʃ|ts)",
+          "vowels": "[aeiou]"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "ɓ",
+            "weight": 2.0
+          },
+          {
+            "from": "b",
+            "to": "ɓ",
+            "weight": 3.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "b",
+            "comment": "clean-up"
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({eject}) ʔ",
+            "to": "\\1ʼ",
+            "weight": 2.0
+          },
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

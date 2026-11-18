@@ -1,0 +1,234 @@
+{
+  "metadata": {
+    "code": "fuv",
+    "name": "Nigerian Fulfulde",
+    "family": "Niger-Congo,Atlantic-Congo,Atlantic,Northern,Senegambian,Fula-Wolof,Fulani,East Central",
+    "macroarea": "Africa",
+    "compromised": {
+      "note": "/ʔ/ not always marked; unclear transcription of /ʔʲ/"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "fe''a",
+          "phonemes": "f e ʔ ː a"
+        },
+        {
+          "word": "leggal",
+          "phonemes": "l e ɡ ː a l"
+        },
+        {
+          "word": "honnduko",
+          "phonemes": "h o ⁿd ː u k o"
+        },
+        {
+          "word": "gujjo",
+          "phonemes": "ɡ u dʒ ː o"
+        },
+        {
+          "word": "wannyo",
+          "phonemes": "w a ɲ ː o"
+        },
+        {
+          "word": "y'amol",
+          "phonemes": "ʔʲ a m o l"
+        },
+        {
+          "word": "weendu",
+          "phonemes": "w e ː ⁿd u"
+        },
+        {
+          "word": "kaafahi",
+          "phonemes": "k a ː f a h i"
+        },
+        {
+          "word": "nyiiri",
+          "phonemes": "ɲ i ː r i"
+        },
+        {
+          "word": "caka",
+          "phonemes": "tʃ a k a"
+        },
+        {
+          "word": "toɓɓere",
+          "phonemes": "t o ɓ ː e r e"
+        },
+        {
+          "word": "mbaalu",
+          "phonemes": "ᵐb a ː l u"
+        },
+        {
+          "word": "ɗowdi",
+          "phonemes": "ɗ o w d i"
+        },
+        {
+          "word": "nofru",
+          "phonemes": "n o f r u"
+        },
+        {
+          "word": "ma'y'yere",
+          "phonemes": "m a ʔʲ ː e r e"
+        },
+        {
+          "word": "kaaŋaaɗo",
+          "phonemes": "k a ː ŋ a ː ɗ o"
+        },
+        {
+          "word": "sappo",
+          "phonemes": "s a p ː o"
+        },
+        {
+          "word": "njahi",
+          "phonemes": "ⁿdʒ a h i"
+        },
+        {
+          "word": "ngam",
+          "phonemes": "ᵑɡ a m"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abɓdɗefhiklmnŋoprstuw]",
+          "apostrophe": "['ꞌˈ‘’]",
+          "n-follower": "[djyg]",
+          "vowels": "[aeiou]",
+          "gem": "(b|ɓ|tʃ|d|ɗ|ɡ|dʒ|k|l|m|n|p|r|t|w|ʔ|ʔʲ)"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "dʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "ʔʲ",
+            "weight": 3.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "y",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ƴ",
+            "to": "ʔʲ",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "m",
+            "to": "ᵐb",
+            "weight": 3.0,
+            "follow": "b"
+          },
+          {
+            "from": "b",
+            "to": "",
+            "weight": 3.0,
+            "precede": "m",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ⁿd",
+            "weight": 3.0,
+            "follow": "d"
+          },
+          {
+            "from": "n",
+            "to": "ⁿdʒ",
+            "weight": 3.0,
+            "follow": "j"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "n",
+            "to": "ᵑɡ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "{n-follower}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          },
+          {
+            "from": "({gem}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          },
+          {
+            "from": "m ᵐb",
+            "to": "ᵐb ː",
+            "weight": 4.0
+          },
+          {
+            "from": "n ⁿd",
+            "to": "ⁿd ː",
+            "weight": 4.0
+          },
+          {
+            "from": "n ɲ",
+            "to": "ɲ ː",
+            "weight": 4.0
+          },
+          {
+            "from": "n ᵑɡ",
+            "to": "ᵑɡ ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ʔ ʔʲ j",
+            "to": "ʔʲ ː",
+            "weight": 4.0
+          }
+        ]
+      }
+    }
+  }
+}

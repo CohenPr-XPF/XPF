@@ -1,0 +1,323 @@
+{
+  "metadata": {
+    "code": "djr",
+    "name": "Djambarrpuyngu",
+    "family": "Australian,Pama-Nyungan,Yuulngu,Dhuwal",
+    "macroarea": "Australia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "walalany",
+          "phonemes": "w a l a l a ɲ",
+          "comment": "a"
+        },
+        {
+          "word": "nhäŋal",
+          "phonemes": "n̪ a ː ŋ a l",
+          "comment": "ä"
+        },
+        {
+          "word": "buṉbuŋur",
+          "phonemes": "b u ɳ b u ŋ u ɻ",
+          "comment": "b"
+        },
+        {
+          "word": "yindin",
+          "phonemes": "j i n d i n",
+          "comment": "d"
+        },
+        {
+          "word": "dhäŋur",
+          "phonemes": "d̪ a ː ŋ u ɻ",
+          "comment": "dh"
+        },
+        {
+          "word": "djälthirr",
+          "phonemes": "ɟ a ː l t̪ i r",
+          "comment": "dj"
+        },
+        {
+          "word": "ḏirramu",
+          "phonemes": "ɖ i r a m u",
+          "comment": "ḏ"
+        },
+        {
+          "word": "beŋur",
+          "phonemes": "b i ː ŋ u ɻ",
+          "comment": "e"
+        },
+        {
+          "word": "gurrupan",
+          "phonemes": "ɡ u r u p a n",
+          "comment": "g"
+        },
+        {
+          "word": "mirithirra",
+          "phonemes": "m i ɻ i t̪ i r a",
+          "comment": "i"
+        },
+        {
+          "word": "bukmak",
+          "phonemes": "b u k m a k",
+          "comment": "k"
+        },
+        {
+          "word": "walalaŋgal",
+          "phonemes": "w a l a l a ŋ ɡ a l",
+          "comment": "l"
+        },
+        {
+          "word": "ḻuka",
+          "phonemes": "ɭ u k a",
+          "comment": "ḻ"
+        },
+        {
+          "word": "märram",
+          "phonemes": "m a ː r a m",
+          "comment": "m"
+        },
+        {
+          "word": "yänan",
+          "phonemes": "j a ː n a n",
+          "comment": "n"
+        },
+        {
+          "word": "nhuma",
+          "phonemes": "n̪ u m a",
+          "comment": "nh"
+        },
+        {
+          "word": "ŋayipiny",
+          "phonemes": "ŋ a j i p i ɲ",
+          "comment": "ny"
+        },
+        {
+          "word": "maṉḏa",
+          "phonemes": "m a ɳ ɖ a",
+          "comment": "ṉ"
+        },
+        {
+          "word": "wäŋaŋur",
+          "phonemes": "w a ː ŋ a ŋ u ɻ",
+          "comment": "ŋ"
+        },
+        {
+          "word": "romgu",
+          "phonemes": "ɻ u ː m ɡ u",
+          "comment": "o"
+        },
+        {
+          "word": "dhunupan",
+          "phonemes": "d̪ u n u p a n",
+          "comment": "p"
+        },
+        {
+          "word": "barpuru",
+          "phonemes": "b a ɻ p u ɻ u",
+          "comment": "r"
+        },
+        {
+          "word": "rrupiya",
+          "phonemes": "r u p i j a",
+          "comment": "rr"
+        },
+        {
+          "word": "djan'tayilnydja",
+          "phonemes": "ɟ a n ʔ t a j i l ɲ ɟ a",
+          "comment": "t"
+        },
+        {
+          "word": "ŋathil",
+          "phonemes": "ŋ a t̪ i l",
+          "comment": "th"
+        },
+        {
+          "word": "marrtji",
+          "phonemes": "m a r c i",
+          "comment": "tj"
+        },
+        {
+          "word": "baṯ",
+          "phonemes": "b a ʈ",
+          "comment": "ṯ"
+        },
+        {
+          "word": "nhuŋu",
+          "phonemes": "n̪ u ŋ u",
+          "comment": "u"
+        },
+        {
+          "word": "waluy",
+          "phonemes": "w a l u j",
+          "comment": "w"
+        },
+        {
+          "word": "yolŋuy",
+          "phonemes": "j u ː l ŋ u j",
+          "comment": "y"
+        },
+        {
+          "word": "djuy'yurr",
+          "phonemes": "ɟ u j ʔ j u r",
+          "comment": "apostrophe"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "['ꞌˈ‘’]",
+          "pre-h": "[dnt]",
+          "pre-j": "[dt]",
+          "passthrough": "[abdiklmnŋptuw]"
+        },
+        "sub": [
+          {
+            "from": "ä",
+            "to": "a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ḏ",
+            "to": "ɖ",
+            "weight": 4.0
+          },
+          {
+            "from": "e",
+            "to": "i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "ḻ",
+            "to": "ɭ",
+            "weight": 4.0
+          },
+          {
+            "from": "ṉ",
+            "to": "ɳ",
+            "weight": 4.0
+          },
+          {
+            "from": "o",
+            "to": "u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɻ",
+            "weight": 4.0
+          },
+          {
+            "from": "ṯ",
+            "to": "ʈ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<dh>"
+          },
+          {
+            "from": "n",
+            "to": "n̪",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<nh>"
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<th>"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{pre-h}",
+            "comment": "cleanup of h-final digraphs"
+          },
+          {
+            "from": "d",
+            "to": "ɟ",
+            "weight": 6.0,
+            "follow": "j",
+            "comment": "<dj>"
+          },
+          {
+            "from": "t",
+            "to": "c",
+            "weight": 6.0,
+            "follow": "j",
+            "comment": "<tj>"
+          },
+          {
+            "from": "j",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{pre-h}",
+            "comment": "cleanup of j-final digraphs"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 6.0,
+            "follow": "y",
+            "comment": "<ny>"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "cleanup of <ny>"
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 6.0,
+            "follow": "r",
+            "comment": "<rr>"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 6.0,
+            "precede": "r",
+            "comment": "cleanup of <rr>"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "some words have a hyphen that carries no phonetic value"
+          }
+        ]
+      }
+    }
+  }
+}

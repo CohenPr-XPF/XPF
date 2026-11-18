@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "code": "var",
+    "name": "Huarijío",
+    "family": "Uto-Aztecan,Southern Uto-Aztecan,Sonoran,Tarahumaran,Guarijio",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "mooró",
+          "phonemes": "m o ɾ o"
+        },
+        {
+          "word": "mukukáme",
+          "phonemes": "m u k u k a m e"
+        },
+        {
+          "word": "a'ká",
+          "phonemes": "a ʔ k a"
+        },
+        {
+          "word": "apechúna",
+          "phonemes": "a p e tʃ u n a"
+        },
+        {
+          "word": "ahimáni",
+          "phonemes": "a h i m a n i"
+        },
+        {
+          "word": "apoé",
+          "phonemes": "a p o e"
+        },
+        {
+          "word": "a'rupahchíra",
+          "phonemes": "a ʔ ɾ u p a h tʃ i ɾ a"
+        },
+        {
+          "word": "mokewári",
+          "phonemes": "m o k e w a ɾ i"
+        },
+        {
+          "word": "tísia",
+          "phonemes": "t i s i a"
+        },
+        {
+          "word": "ahjama",
+          "phonemes": "a h h a m a"
+        },
+        {
+          "word": "yooma",
+          "phonemes": "j o m a"
+        },
+        {
+          "word": "aamo",
+          "phonemes": "a m o"
+        },
+        {
+          "word": "eemea",
+          "phonemes": "e m e a"
+        },
+        {
+          "word": "kiisi",
+          "phonemes": "k i s i"
+        },
+        {
+          "word": "puuua",
+          "phonemes": "p u a"
+        },
+        {
+          "word": "teꞌta",
+          "phonemes": "t e ʔ t a"
+        },
+        {
+          "word": "puꞌka",
+          "phonemes": "p u ʔ k a"
+        },
+        {
+          "word": "tiame",
+          "phonemes": "t i a m e"
+        },
+        {
+          "word": "iꞌka",
+          "phonemes": "i ʔ k a"
+        },
+        {
+          "word": "aaata",
+          "phonemes": "a t a"
+        },
+        {
+          "word": "teemea",
+          "phonemes": "t e m e a"
+        },
+        {
+          "word": "tiameo",
+          "phonemes": "t i a m e o"
+        },
+        {
+          "word": "waꞌapi",
+          "phonemes": "w a ʔ a p i"
+        },
+        {
+          "word": "nape",
+          "phonemes": "n a p e"
+        },
+        {
+          "word": "kihta",
+          "phonemes": "k i h t a"
+        },
+        {
+          "word": "neeea",
+          "phonemes": "n e a"
+        },
+        {
+          "word": "kaaweruma",
+          "phonemes": "k a w e ɾ u m a"
+        },
+        {
+          "word": "tiiame",
+          "phonemes": "t i a m e"
+        },
+        {
+          "word": "epeche",
+          "phonemes": "e p e tʃ e"
+        },
+        {
+          "word": "puuu",
+          "phonemes": "p u"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aehikmnopstuw]",
+          "apostrophe": "[ꞌ'ꞌ‘’]",
+          "a": "[aá]",
+          "e": "[eé]",
+          "i": "[ií]",
+          "o": "[oó]",
+          "u": "[uú]"
+        },
+        "sub": [
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "{a}",
+            "to": "a",
+            "weight": 2.0
+          },
+          {
+            "from": "{e}",
+            "to": "e",
+            "weight": 2.0
+          },
+          {
+            "from": "{i}",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "{o}",
+            "to": "o",
+            "weight": 2.0
+          },
+          {
+            "from": "{u}",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 4.0,
+            "precede": "a"
+          },
+          {
+            "from": "e",
+            "to": "",
+            "weight": 4.0,
+            "precede": "e"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 4.0,
+            "precede": "i"
+          },
+          {
+            "from": "o",
+            "to": "",
+            "weight": 4.0,
+            "precede": "o"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 4.0,
+            "precede": "u"
+          }
+        ]
+      }
+    }
+  }
+}

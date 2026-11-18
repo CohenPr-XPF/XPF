@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "code": "avt",
+    "name": "Au",
+    "family": "Torricelli,Wapei-Palei,Wapei",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [],
+      "rules": {
+        "classes": {
+          "passthrough": "[aiɨkmnoprstuw]"
+        },
+        "sub": [
+          {
+            "from": "e",
+            "to": "ɜ",
+            "weight": 2.0
+          },
+          {
+            "from": "h",
+            "to": "ɣ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "a",
+            "to": "aː",
+            "weight": 4.0,
+            "follow": "a"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 3.0,
+            "precede": "a",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

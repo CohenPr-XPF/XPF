@@ -1,0 +1,391 @@
+{
+  "metadata": {
+    "code": "tg",
+    "name": "Tajik",
+    "family": "Indo-European,Indo-Iranian,Iranian,Western,Southwestern,Persian",
+    "macroarea": "Eurasia",
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "асал",
+          "phonemes": "a s a l",
+          "comment": "а"
+        },
+        {
+          "word": "бебок",
+          "phonemes": "b e b ɔ k",
+          "comment": "б"
+        },
+        {
+          "word": "вақт",
+          "phonemes": "v a q t",
+          "comment": "в"
+        },
+        {
+          "word": "гӯгирд",
+          "phonemes": "ɡ ɵ ɡ i r d",
+          "comment": "г"
+        },
+        {
+          "word": "ғоз",
+          "phonemes": "ʁ ɔ z",
+          "comment": "ғ"
+        },
+        {
+          "word": "дидан",
+          "phonemes": "d i d a n",
+          "comment": "д"
+        },
+        {
+          "word": "вегетатсия",
+          "phonemes": "v e ɡ e t a t s i j a",
+          "comment": "е"
+        },
+        {
+          "word": "его",
+          "phonemes": "j e ɡ ɔ",
+          "comment": "word-initial е"
+        },
+        {
+          "word": "ёздаҳ",
+          "phonemes": "j ɔ z d a h",
+          "comment": "ë"
+        },
+        {
+          "word": "жарф",
+          "phonemes": "ʒ a r f",
+          "comment": "ж"
+        },
+        {
+          "word": "зону",
+          "phonemes": "z ɔ n u",
+          "comment": "з"
+        },
+        {
+          "word": "ибтидо",
+          "phonemes": "i b t i d ɔ",
+          "comment": "и"
+        },
+        {
+          "word": "илмӣ",
+          "phonemes": "i l m i",
+          "comment": "ӣ"
+        },
+        {
+          "word": "бӯй",
+          "phonemes": "b ɵ j",
+          "comment": "й"
+        },
+        {
+          "word": "кайк",
+          "phonemes": "k a j k",
+          "comment": "к"
+        },
+        {
+          "word": "қошуқ",
+          "phonemes": "q ɔ ʃ u q",
+          "comment": "қ"
+        },
+        {
+          "word": "лола",
+          "phonemes": "l ɔ l a",
+          "comment": "л"
+        },
+        {
+          "word": "мумкин",
+          "phonemes": "m u m k i n",
+          "comment": "м"
+        },
+        {
+          "word": "накӯном",
+          "phonemes": "n a k ɵ n ɔ m",
+          "comment": "н"
+        },
+        {
+          "word": "осон",
+          "phonemes": "ɔ s ɔ n",
+          "comment": "о"
+        },
+        {
+          "word": "пойтахт",
+          "phonemes": "p ɔ j t a χ t",
+          "comment": "п"
+        },
+        {
+          "word": "раҳбар",
+          "phonemes": "r a h b a r",
+          "comment": "р"
+        },
+        {
+          "word": "сурфа",
+          "phonemes": "s u r f a",
+          "comment": "с"
+        },
+        {
+          "word": "табиат",
+          "phonemes": "t a b i a t",
+          "comment": "т"
+        },
+        {
+          "word": "устухон",
+          "phonemes": "u s t u χ ɔ n",
+          "comment": "у"
+        },
+        {
+          "word": "рӯд",
+          "phonemes": "r ɵ d",
+          "comment": "ӯ"
+        },
+        {
+          "word": "фикр",
+          "phonemes": "f i k r",
+          "comment": "ф"
+        },
+        {
+          "word": "хуб",
+          "phonemes": "χ u b",
+          "comment": "х"
+        },
+        {
+          "word": "ҳаждаҳ",
+          "phonemes": "h a ʒ d a h",
+          "comment": "ҳ"
+        },
+        {
+          "word": "чашм",
+          "phonemes": "tʃ a ʃ m",
+          "comment": "ч"
+        },
+        {
+          "word": "ҷустуҷӯ",
+          "phonemes": "dʒ u s t u dʒ ɵ",
+          "comment": "ҷ"
+        },
+        {
+          "word": "шамшер",
+          "phonemes": "ʃ a m ʃ e r",
+          "comment": "ш"
+        },
+        {
+          "word": "яъне",
+          "phonemes": "j a ʔ n e",
+          "comment": "ъ"
+        },
+        {
+          "word": "эшон",
+          "phonemes": "e ʃ ɔ n",
+          "comment": "э"
+        },
+        {
+          "word": "компютер",
+          "phonemes": "k ɔ m p j u t e r",
+          "comment": "ю"
+        },
+        {
+          "word": "якум",
+          "phonemes": "j a k u m",
+          "comment": "я"
+        }
+      ],
+      "rules": {
+        "sub": [
+          {
+            "from": "а",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 4.0
+          },
+          {
+            "from": "в",
+            "to": "v",
+            "weight": 4.0
+          },
+          {
+            "from": "г",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "ғ",
+            "to": "ʁ",
+            "weight": 4.0
+          },
+          {
+            "from": "д",
+            "to": "d",
+            "weight": 4.0
+          },
+          {
+            "from": "е",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "е",
+            "to": "j e",
+            "weight": 6.0,
+            "precede": "^",
+            "comment": "word-initially"
+          },
+          {
+            "from": "ё",
+            "to": "j ɔ",
+            "weight": 4.0
+          },
+          {
+            "from": "ж",
+            "to": "ʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "з",
+            "to": "z",
+            "weight": 4.0
+          },
+          {
+            "from": "и",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "ӣ",
+            "to": "i",
+            "weight": 4.0,
+            "follow": "$",
+            "comment": "word-finally"
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "қ",
+            "to": "q",
+            "weight": 4.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 4.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 4.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 4.0
+          },
+          {
+            "from": "о",
+            "to": "ɔ",
+            "weight": 4.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 4.0
+          },
+          {
+            "from": "р",
+            "to": "r",
+            "weight": 4.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 4.0
+          },
+          {
+            "from": "т",
+            "to": "t",
+            "weight": 4.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "ӯ",
+            "to": "ɵ",
+            "weight": 4.0
+          },
+          {
+            "from": "ф",
+            "to": "f",
+            "weight": 4.0
+          },
+          {
+            "from": "х",
+            "to": "χ",
+            "weight": 4.0
+          },
+          {
+            "from": "ҳ",
+            "to": "h",
+            "weight": 4.0
+          },
+          {
+            "from": "ч",
+            "to": "tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ҷ",
+            "to": "dʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "ш",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ъ",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "э",
+            "to": "e",
+            "weight": 4.0,
+            "precede": "^",
+            "comment": "word-initially"
+          },
+          {
+            "from": "ю",
+            "to": "j u",
+            "weight": 4.0
+          },
+          {
+            "from": "я",
+            "to": "j a",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "hyphens have no phonemic value"
+          }
+        ]
+      }
+    }
+  }
+}

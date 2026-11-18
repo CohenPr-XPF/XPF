@@ -1,0 +1,376 @@
+{
+  "metadata": {
+    "code": "sq",
+    "name": "Albanian",
+    "family": "Indo-European,Albanian,Tosk",
+    "macroarea": "Eurasia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "abat",
+          "phonemes": "a b a t",
+          "comment": "a"
+        },
+        {
+          "word": "bibë",
+          "phonemes": "b i b ə",
+          "comment": "b"
+        },
+        {
+          "word": "cicëroj",
+          "phonemes": "ts i ts ə ɾ o j",
+          "comment": "c"
+        },
+        {
+          "word": "çuçurjar",
+          "phonemes": "tʃ u tʃ u ɾ j a ɾ",
+          "comment": "ç"
+        },
+        {
+          "word": "dredh",
+          "phonemes": "d ɾ e ð",
+          "comment": "d"
+        },
+        {
+          "word": "dhez",
+          "phonemes": "ð e z",
+          "comment": "dh"
+        },
+        {
+          "word": "edhe",
+          "phonemes": "e ð e",
+          "comment": "e"
+        },
+        {
+          "word": "ëndërr",
+          "phonemes": "ə n d ə r",
+          "comment": "ë"
+        },
+        {
+          "word": "fole",
+          "phonemes": "f o l e",
+          "comment": "f"
+        },
+        {
+          "word": "gargull",
+          "phonemes": "ɡ a ɾ ɡ u ɫ",
+          "comment": "g"
+        },
+        {
+          "word": "gjegje",
+          "phonemes": "ɟ e ɟ e",
+          "comment": "gj"
+        },
+        {
+          "word": "hidhërohem",
+          "phonemes": "h i ð ə ɾ o h e m",
+          "comment": "h"
+        },
+        {
+          "word": "iriq",
+          "phonemes": "i ɾ i c",
+          "comment": "i"
+        },
+        {
+          "word": "miell",
+          "phonemes": "m ie ɫ",
+          "comment": "ie"
+        },
+        {
+          "word": "juaji",
+          "phonemes": "j ua j i",
+          "comment": "j"
+        },
+        {
+          "word": "kapak",
+          "phonemes": "k a p a k",
+          "comment": "k"
+        },
+        {
+          "word": "lalë",
+          "phonemes": "l a l ə",
+          "comment": "l"
+        },
+        {
+          "word": "llap",
+          "phonemes": "ɫ a p",
+          "comment": "ll"
+        },
+        {
+          "word": "majmun",
+          "phonemes": "m a j m u n",
+          "comment": "m"
+        },
+        {
+          "word": "nallban",
+          "phonemes": "n a ɫ b a n",
+          "comment": "n"
+        },
+        {
+          "word": "njëzetenjë",
+          "phonemes": "ɲ ə z e t e ɲ ə",
+          "comment": "nj"
+        },
+        {
+          "word": "ofendoj",
+          "phonemes": "o f e n d o j",
+          "comment": "o"
+        },
+        {
+          "word": "përtyp",
+          "phonemes": "p ə ɾ t y p",
+          "comment": "p"
+        },
+        {
+          "word": "qelq",
+          "phonemes": "c e l c",
+          "comment": "q"
+        },
+        {
+          "word": "rëfyrë",
+          "phonemes": "ɾ ə f y ɾ ə",
+          "comment": "r"
+        },
+        {
+          "word": "rrush",
+          "phonemes": "r u ʃ",
+          "comment": "rr"
+        },
+        {
+          "word": "sasi",
+          "phonemes": "s a s i",
+          "comment": "s"
+        },
+        {
+          "word": "shoshë",
+          "phonemes": "ʃ o ʃ ə",
+          "comment": "sh"
+        },
+        {
+          "word": "tëtanë",
+          "phonemes": "t ə t a n ə",
+          "comment": "t"
+        },
+        {
+          "word": "thuthaq",
+          "phonemes": "θ u θ a c",
+          "comment": "th"
+        },
+        {
+          "word": "utull",
+          "phonemes": "u t u ɫ",
+          "comment": "u"
+        },
+        {
+          "word": "pothuaj",
+          "phonemes": "p o θ ua j",
+          "comment": "ua"
+        },
+        {
+          "word": "kjuer",
+          "phonemes": "k j ue ɾ",
+          "comment": "ue"
+        },
+        {
+          "word": "vervele",
+          "phonemes": "v e ɾ v e l e",
+          "comment": "v"
+        },
+        {
+          "word": "xixë",
+          "phonemes": "dz i dz ə",
+          "comment": "x"
+        },
+        {
+          "word": "xhaxha",
+          "phonemes": "dʒ a dʒ a",
+          "comment": "xh"
+        },
+        {
+          "word": "yndyrë",
+          "phonemes": "y n d y ɾ ə",
+          "comment": "y"
+        },
+        {
+          "word": "krye",
+          "phonemes": "k ɾ ye",
+          "comment": "ye"
+        },
+        {
+          "word": "zogëz",
+          "phonemes": "z o ɡ ə z",
+          "comment": "z"
+        },
+        {
+          "word": "zhvillim",
+          "phonemes": "ʒ v i ɫ i m",
+          "comment": "zh"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "e-pair": "[iuy]",
+          "h-preceder": "[dstxz]",
+          "j-preceder": "[gn]",
+          "punctuation": "['ꞌ‘’-]",
+          "passthrough": "[abdefhijklmnopstuvyz]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "ts",
+            "weight": 4.0
+          },
+          {
+            "from": "ç",
+            "to": "tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ë",
+            "to": "ə",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "q",
+            "to": "c",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "x",
+            "to": "dz",
+            "weight": 4.0
+          },
+          {
+            "from": "d",
+            "to": "ð",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "dh"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "sh"
+          },
+          {
+            "from": "t",
+            "to": "θ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "th"
+          },
+          {
+            "from": "x",
+            "to": "dʒ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "xh"
+          },
+          {
+            "from": "z",
+            "to": "ʒ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "zh"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{h-preceder}",
+            "comment": "eliminates h from each of the above"
+          },
+          {
+            "from": "g",
+            "to": "ɟ",
+            "weight": 6.0,
+            "follow": "j",
+            "comment": "gj"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 6.0,
+            "follow": "j",
+            "comment": "nj"
+          },
+          {
+            "from": "j",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{j-preceder}",
+            "comment": "eliminates j from each of the above"
+          },
+          {
+            "from": "l",
+            "to": "ɫ",
+            "weight": 6.0,
+            "follow": "l",
+            "comment": "ll"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 6.0,
+            "precede": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 6.0,
+            "follow": "r",
+            "comment": "rr"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 6.0,
+            "precede": "r",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{punctuation}",
+            "to": "",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({e-pair}) e",
+            "to": "\\1e",
+            "weight": 2.0,
+            "comment": "ie/ue/ye"
+          },
+          {
+            "from": "u a",
+            "to": "ua",
+            "weight": 2.0,
+            "comment": "ua"
+          }
+        ]
+      }
+    }
+  }
+}

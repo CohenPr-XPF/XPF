@@ -1,0 +1,291 @@
+{
+  "metadata": {
+    "code": "too",
+    "name": "Xicotepec de Juárez Totonac",
+    "family": "Totonacan,Totonac",
+    "macroarea": "North America",
+    "compromised": {
+      "note": "suspect orthography"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "a'cchic",
+          "phonemes": "a ʔ k tʃ i k"
+        },
+        {
+          "word": "ā'huax",
+          "phonemes": "a ː ʔ w a ʃ"
+        },
+        {
+          "word": "caman",
+          "phonemes": "k a m a n"
+        },
+        {
+          "word": "cā'lakpūtīn",
+          "phonemes": "k a ː ʔ l a q p u ː t i ː n"
+        },
+        {
+          "word": "cucalhī't",
+          "phonemes": "k u k a ɬ i ː ʔ t"
+        },
+        {
+          "word": "chihuix",
+          "phonemes": "tʃ i w i ʃ"
+        },
+        {
+          "word": "jūqui'",
+          "phonemes": "h u ː k i ʔ"
+        },
+        {
+          "word": "kalhatu'yūn",
+          "phonemes": "q a ɬ a t u ʔ j u ː n"
+        },
+        {
+          "word": "kalhtza'ni",
+          "phonemes": "q a ɬ ts a ʔ n i"
+        },
+        {
+          "word": "tzu'ma'jāt",
+          "phonemes": "ts u ʔ m a ʔ h a ː t"
+        },
+        {
+          "word": "xēnka",
+          "phonemes": "ʃ e ː n q a"
+        },
+        {
+          "word": "xcuti",
+          "phonemes": "ʃ k u t i"
+        },
+        {
+          "word": "xiquihuā't",
+          "phonemes": "ʃ i k i w a ː ʔ t"
+        },
+        {
+          "word": "tlakanū",
+          "phonemes": "tɬ a q a n u ː"
+        },
+        {
+          "word": "que",
+          "phonemes": "k e"
+        },
+        {
+          "word": "como",
+          "phonemes": "k o m o"
+        },
+        {
+          "word": "tasquiꞌnī",
+          "phonemes": "t a s k i ʔ n i ː"
+        },
+        {
+          "word": "pōꞌktu",
+          "phonemes": "p o ː ʔ q t u"
+        },
+        {
+          "word": "chuntzaꞌ",
+          "phonemes": "tʃ u n ts a ʔ"
+        },
+        {
+          "word": "lhuꞌcuꞌ",
+          "phonemes": "ɬ u ʔ k u ʔ"
+        },
+        {
+          "word": "lej",
+          "phonemes": "l e h"
+        },
+        {
+          "word": "aꞌnchī",
+          "phonemes": "a ʔ n tʃ i ː"
+        },
+        {
+          "word": "xlaꞌ",
+          "phonemes": "ʃ l a ʔ"
+        },
+        {
+          "word": "ūꞌtzaꞌ",
+          "phonemes": "u ː ʔ ts a ʔ"
+        },
+        {
+          "word": "na",
+          "phonemes": "n a"
+        },
+        {
+          "word": "huāꞌmāꞌ",
+          "phonemes": "w a ː ʔ m a ː ʔ"
+        },
+        {
+          "word": "palh",
+          "phonemes": "p a ɬ"
+        },
+        {
+          "word": "huaꞌchi",
+          "phonemes": "w a ʔ tʃ i"
+        },
+        {
+          "word": "quit",
+          "phonemes": "k i t"
+        },
+        {
+          "word": "nā",
+          "phonemes": "n a ː"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeilmnopstu]",
+          "apostrophe": "['ꞌˈ‘’]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "k",
+            "to": "q",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "l",
+            "to": "ɬ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tɬ",
+            "weight": 3.0,
+            "follow": "l"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "w",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "u",
+            "weight": 4.0,
+            "precede": "(ch|lh)",
+            "comment": "prevents /u/ from being deleted in <chu> and <lhu> sequences"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "h",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ā",
+            "to": "a ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ē",
+            "to": "e ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ī",
+            "to": "i ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ō",
+            "to": "o ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ū",
+            "to": "u ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

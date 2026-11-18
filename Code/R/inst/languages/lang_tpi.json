@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "code": "tpi",
+    "name": "Tok Pisin",
+    "family": "Creole,English based,Pacific",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "abababa",
+          "phonemes": "a b a b a b a"
+        },
+        {
+          "word": "long",
+          "phonemes": "l o ŋ",
+          "comment": "tests ng rule"
+        },
+        {
+          "word": "adresim",
+          "phonemes": "a d r e s i m"
+        },
+        {
+          "word": "lukim",
+          "phonemes": "l u k i m"
+        },
+        {
+          "word": "yu",
+          "phonemes": "j u",
+          "comment": "tests y rule"
+        },
+        {
+          "word": "god",
+          "phonemes": "ɡ o d"
+        },
+        {
+          "word": "wara",
+          "phonemes": "w a r a"
+        },
+        {
+          "word": "ananas",
+          "phonemes": "a n a n a s"
+        },
+        {
+          "word": "jip",
+          "phonemes": "dʒ i p"
+        },
+        {
+          "word": "fiva",
+          "phonemes": "f i v a"
+        },
+        {
+          "word": "hetpilo",
+          "phonemes": "h e t p i l o"
+        },
+        {
+          "word": "bilong",
+          "phonemes": "b i l o ŋ"
+        },
+        {
+          "word": "ol",
+          "phonemes": "o l"
+        },
+        {
+          "word": "na",
+          "phonemes": "n a"
+        },
+        {
+          "word": "em",
+          "phonemes": "e m"
+        },
+        {
+          "word": "mi",
+          "phonemes": "m i"
+        },
+        {
+          "word": "dispela",
+          "phonemes": "d i s p e l a"
+        },
+        {
+          "word": "olsem",
+          "phonemes": "o l s e m"
+        },
+        {
+          "word": "bai",
+          "phonemes": "b a i"
+        },
+        {
+          "word": "man",
+          "phonemes": "m a n"
+        },
+        {
+          "word": "tok",
+          "phonemes": "t o k"
+        },
+        {
+          "word": "mekim",
+          "phonemes": "m e k i m"
+        },
+        {
+          "word": "yupela",
+          "phonemes": "j u p e l a"
+        },
+        {
+          "word": "no",
+          "phonemes": "n o"
+        },
+        {
+          "word": "stap",
+          "phonemes": "s t a p"
+        },
+        {
+          "word": "save",
+          "phonemes": "s a v e"
+        },
+        {
+          "word": "bin",
+          "phonemes": "b i n"
+        },
+        {
+          "word": "go",
+          "phonemes": "ɡ o"
+        },
+        {
+          "word": "olgeta",
+          "phonemes": "o l ɡ e t a"
+        },
+        {
+          "word": "samting",
+          "phonemes": "s a m t i ŋ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeioubdfhklmnprstvw]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "dʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 2.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0,
+            "comment": "hyphens have no phonemic value"
+          }
+        ]
+      }
+    }
+  }
+}

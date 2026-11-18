@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "code": "pau",
+    "name": "Palauan",
+    "family": "Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Palauan",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "aikang",
+          "phonemes": "a i k a ŋ",
+          "comment": "a"
+        },
+        {
+          "word": "biib",
+          "phonemes": "b i ː b",
+          "comment": "b"
+        },
+        {
+          "word": "cheriich",
+          "phonemes": "ʔ ɛ ɾ i ː ʔ",
+          "comment": "ch"
+        },
+        {
+          "word": "dngod",
+          "phonemes": "d ŋ o d",
+          "comment": "d"
+        },
+        {
+          "word": "becheleleu",
+          "phonemes": "b ɛ ʔ ɛ l ɛ l ɛ u",
+          "comment": "e"
+        },
+        {
+          "word": "mȩngȩlebȩd",
+          "phonemes": "m ɛ ŋ ɛ l ɛ b ɛ d",
+          "comment": "ȩ"
+        },
+        {
+          "word": "bilis",
+          "phonemes": "b i l i s",
+          "comment": "i"
+        },
+        {
+          "word": "kluk",
+          "phonemes": "k l u k",
+          "comment": "k"
+        },
+        {
+          "word": "chelecheloul",
+          "phonemes": "ʔ ɛ l ɛ ʔ ɛ l o u l",
+          "comment": "l"
+        },
+        {
+          "word": "ralmchull",
+          "phonemes": "ɾ a l m ʔ u l ː",
+          "comment": "ll"
+        },
+        {
+          "word": "mellemau",
+          "phonemes": "m ɛ l ː ɛ m a u",
+          "comment": "m"
+        },
+        {
+          "word": "bungungau",
+          "phonemes": "b u ŋ u ŋ a u",
+          "comment": "ng"
+        },
+        {
+          "word": "oumerorou",
+          "phonemes": "o u m ɛ ɾ o ɾ o u",
+          "comment": "o"
+        },
+        {
+          "word": "rirch",
+          "phonemes": "ɾ i ɾ ʔ",
+          "comment": "r"
+        },
+        {
+          "word": "rruoru",
+          "phonemes": "r u o ɾ u",
+          "comment": "rr"
+        },
+        {
+          "word": "seseb",
+          "phonemes": "s ɛ s ɛ b",
+          "comment": "s"
+        },
+        {
+          "word": "boteto",
+          "phonemes": "b o t ɛ t o",
+          "comment": "t"
+        },
+        {
+          "word": "buikruu",
+          "phonemes": "b u i k ɾ u ː",
+          "comment": "u"
+        },
+        {
+          "word": "molekeed",
+          "phonemes": "m o l ɛ k ɛ ː d"
+        },
+        {
+          "word": "ngii",
+          "phonemes": "ŋ i ː"
+        },
+        {
+          "word": "dekool",
+          "phonemes": "d ɛ k o ː l"
+        },
+        {
+          "word": "meruul",
+          "phonemes": "m ɛ ɾ u ː l"
+        },
+        {
+          "word": "kmal",
+          "phonemes": "k m a l"
+        },
+        {
+          "word": "tia",
+          "phonemes": "t i a"
+        },
+        {
+          "word": "rechad",
+          "phonemes": "ɾ ɛ ʔ a d"
+        },
+        {
+          "word": "tir",
+          "phonemes": "t i ɾ"
+        },
+        {
+          "word": "sel",
+          "phonemes": "s ɛ l"
+        },
+        {
+          "word": "uchul",
+          "phonemes": "u ʔ u l"
+        },
+        {
+          "word": "klengar",
+          "phonemes": "k l ɛ ŋ a ɾ"
+        },
+        {
+          "word": "dirrek",
+          "phonemes": "d i r ɛ k"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "longV": "[ɛiou]",
+          "passthrough": "[abdiklmostu]"
+        },
+        "sub": [
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 4.0
+          },
+          {
+            "from": "ȩ",
+            "to": "ɛ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "c",
+            "to": "ʔ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<ch>"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "c",
+            "comment": "<ch> cleanup"
+          },
+          {
+            "from": "l",
+            "to": "l ː",
+            "weight": 6.0,
+            "follow": "l",
+            "comment": "<ll>"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 6.0,
+            "precede": "l",
+            "comment": "<ll> cleanup"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 6.0,
+            "follow": "g",
+            "comment": "<ng>"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<ng> cleanup"
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 6.0,
+            "follow": "r",
+            "comment": "<rr>"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 6.0,
+            "precede": "r",
+            "comment": "<rr> cleanup"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({longV}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0,
+            "comment": "long vowels"
+          }
+        ]
+      }
+    }
+  }
+}

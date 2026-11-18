@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "code": "iws",
+    "name": "Sepik Iwam",
+    "family": "Sepik-Ramu,Sepik,Upper Sepik,Iwam",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "panami",
+          "phonemes": "p a n a m i"
+        },
+        {
+          "word": "kɨp",
+          "phonemes": "k ɨ p"
+        },
+        {
+          "word": "aowar",
+          "phonemes": "a o w a r"
+        },
+        {
+          "word": "whun",
+          "phonemes": "h w u n"
+        },
+        {
+          "word": "banit",
+          "phonemes": "b a n i t"
+        },
+        {
+          "word": "tanki",
+          "phonemes": "t a n k i"
+        },
+        {
+          "word": "nagut",
+          "phonemes": "n a ɡ u t"
+        },
+        {
+          "word": "danmo",
+          "phonemes": "d a n m o"
+        },
+        {
+          "word": "nɨdi",
+          "phonemes": "n ɨ d i"
+        },
+        {
+          "word": "hura",
+          "phonemes": "h u r a"
+        },
+        {
+          "word": "yoyao",
+          "phonemes": "j o j a o"
+        },
+        {
+          "word": "saeya",
+          "phonemes": "s a e j a"
+        },
+        {
+          "word": "siya",
+          "phonemes": "s i j a"
+        },
+        {
+          "word": "mhoɨiya",
+          "phonemes": "h m o ɨ i j a"
+        },
+        {
+          "word": "nhɨrɨm",
+          "phonemes": "h n ɨ r ɨ m"
+        },
+        {
+          "word": "yhɨuwinan",
+          "phonemes": "h j ɨ u w i n a n"
+        },
+        {
+          "word": "siir",
+          "phonemes": "s i i r"
+        },
+        {
+          "word": "sɨma",
+          "phonemes": "s ɨ m a"
+        },
+        {
+          "word": "wɨ",
+          "phonemes": "w ɨ"
+        },
+        {
+          "word": "sɨmiir",
+          "phonemes": "s ɨ m i i r"
+        },
+        {
+          "word": "tɨ",
+          "phonemes": "t ɨ"
+        },
+        {
+          "word": "kɨma",
+          "phonemes": "k ɨ m a"
+        },
+        {
+          "word": "dimɨn",
+          "phonemes": "d i m ɨ n"
+        },
+        {
+          "word": "ɨni",
+          "phonemes": "ɨ n i"
+        },
+        {
+          "word": "kara",
+          "phonemes": "k a r a"
+        },
+        {
+          "word": "hɨriinan",
+          "phonemes": "h ɨ r i i n a n"
+        },
+        {
+          "word": "iikamɨm",
+          "phonemes": "i i k a m ɨ m"
+        },
+        {
+          "word": "saiir",
+          "phonemes": "s a i i r"
+        },
+        {
+          "word": "rani",
+          "phonemes": "r a n i"
+        },
+        {
+          "word": "ɨna",
+          "phonemes": "ɨ n a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdehiɨkmnoprstuw]",
+          "h-preceder": "[wmnj]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({h-preceder}) h",
+            "to": "h \\1",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

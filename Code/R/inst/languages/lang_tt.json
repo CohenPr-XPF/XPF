@@ -1,0 +1,670 @@
+{
+  "metadata": {
+    "code": "tt",
+    "name": "Tatar",
+    "family": "Turkic,Common Turkic,Kipchak,North Kipchak,Tatar",
+    "macroarea": "Eurasia"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "абага",
+          "phonemes": "ɑ b ɑ ɡ ɑ",
+          "comment": "а"
+        },
+        {
+          "word": "зәңгәр",
+          "phonemes": "z a ŋ ɡ a r",
+          "comment": "ә"
+        },
+        {
+          "word": "бебей",
+          "phonemes": "b e b e j",
+          "comment": "б"
+        },
+        {
+          "word": "вак",
+          "phonemes": "w ɑ k",
+          "comment": "в"
+        },
+        {
+          "word": "гаскәр",
+          "phonemes": "ɡ ɑ s k a r",
+          "comment": "г"
+        },
+        {
+          "word": "дүрт",
+          "phonemes": "d y r t",
+          "comment": "д"
+        },
+        {
+          "word": "зелпе",
+          "phonemes": "z e l p e",
+          "comment": "е"
+        },
+        {
+          "word": "егет",
+          "phonemes": "j e ɡ e t",
+          "comment": "word-initial /je/"
+        },
+        {
+          "word": "самолёт",
+          "phonemes": "s ɑ m o l o t",
+          "comment": "ё"
+        },
+        {
+          "word": "ёнча",
+          "phonemes": "j o n ɕ ɑ",
+          "comment": "word-initial <ё> as /jo/"
+        },
+        {
+          "word": "жәл",
+          "phonemes": "ʒ a l",
+          "comment": "ж"
+        },
+        {
+          "word": "вөҗдан",
+          "phonemes": "w ø ʑ d ɑ n",
+          "comment": "җ"
+        },
+        {
+          "word": "зим",
+          "phonemes": "z i m",
+          "comment": "з"
+        },
+        {
+          "word": "белики",
+          "phonemes": "b e l i k i",
+          "comment": "и"
+        },
+        {
+          "word": "йөз",
+          "phonemes": "j ø z",
+          "comment": "й"
+        },
+        {
+          "word": "карсак",
+          "phonemes": "k ɑ r s ɑ k",
+          "comment": "к"
+        },
+        {
+          "word": "ләкләк",
+          "phonemes": "l a k l a k",
+          "comment": "л"
+        },
+        {
+          "word": "матур",
+          "phonemes": "m ɑ t u r",
+          "comment": "м"
+        },
+        {
+          "word": "пингвин",
+          "phonemes": "p i n ɡ w i n",
+          "comment": "н"
+        },
+        {
+          "word": "җиңел",
+          "phonemes": "ʑ i ŋ e l",
+          "comment": "ң"
+        },
+        {
+          "word": "король",
+          "phonemes": "k o r o l ʔ",
+          "comment": "о"
+        },
+        {
+          "word": "көн",
+          "phonemes": "k ø n",
+          "comment": "ө"
+        },
+        {
+          "word": "әдеп",
+          "phonemes": "a d e p",
+          "comment": "п"
+        },
+        {
+          "word": "черек",
+          "phonemes": "ɕ e r e k",
+          "comment": "р"
+        },
+        {
+          "word": "сиксән",
+          "phonemes": "s i k s a n",
+          "comment": "с"
+        },
+        {
+          "word": "татарча",
+          "phonemes": "t ɑ t ɑ r ɕ ɑ",
+          "comment": "т"
+        },
+        {
+          "word": "урам",
+          "phonemes": "u r ɑ m",
+          "comment": "у"
+        },
+        {
+          "word": "үсү",
+          "phonemes": "y s y",
+          "comment": "ү"
+        },
+        {
+          "word": "фәлсәфи",
+          "phonemes": "f a l s a f i",
+          "comment": "ф"
+        },
+        {
+          "word": "харт",
+          "phonemes": "x ɑ r t",
+          "comment": "х"
+        },
+        {
+          "word": "һава",
+          "phonemes": "h ɑ w ɑ",
+          "comment": "һ"
+        },
+        {
+          "word": "чәчәк",
+          "phonemes": "ɕ a ɕ a k",
+          "comment": "ч"
+        },
+        {
+          "word": "шөпшә",
+          "phonemes": "ʃ ø p ʃ a",
+          "comment": "ш"
+        },
+        {
+          "word": "къат",
+          "phonemes": "k ʔ ɑ t",
+          "comment": "ъ"
+        },
+        {
+          "word": "кымыз",
+          "phonemes": "k ɤ m ɤ z",
+          "comment": "ы"
+        },
+        {
+          "word": "яшь",
+          "phonemes": "j ɑ ʃ ʔ",
+          "comment": "ь"
+        },
+        {
+          "word": "элмә",
+          "phonemes": "e l m a",
+          "comment": "э"
+        },
+        {
+          "word": "юрга",
+          "phonemes": "ɯ r ɡ ɑ",
+          "comment": "ю"
+        },
+        {
+          "word": "явыз",
+          "phonemes": "j ɑ w ɤ z",
+          "comment": "я"
+        }
+      ],
+      "rules": {
+        "sub": [
+          {
+            "from": "а",
+            "to": "ɑ",
+            "weight": 4.0
+          },
+          {
+            "from": "ә",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 4.0
+          },
+          {
+            "from": "в",
+            "to": "w",
+            "weight": 4.0
+          },
+          {
+            "from": "г",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "д",
+            "to": "d",
+            "weight": 4.0
+          },
+          {
+            "from": "е",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "е",
+            "to": "j e",
+            "weight": 6.0,
+            "precede": "^"
+          },
+          {
+            "from": "ё",
+            "to": "o",
+            "weight": 5.0
+          },
+          {
+            "from": "ё",
+            "to": "j o",
+            "weight": 6.0,
+            "precede": "^"
+          },
+          {
+            "from": "ж",
+            "to": "ʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "җ",
+            "to": "ʑ",
+            "weight": 4.0
+          },
+          {
+            "from": "з",
+            "to": "z",
+            "weight": 4.0
+          },
+          {
+            "from": "и",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 4.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 4.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 4.0
+          },
+          {
+            "from": "ң",
+            "to": "ŋ",
+            "weight": 4.0
+          },
+          {
+            "from": "о",
+            "to": "o",
+            "weight": 4.0
+          },
+          {
+            "from": "ө",
+            "to": "ø",
+            "weight": 4.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 4.0
+          },
+          {
+            "from": "р",
+            "to": "r",
+            "weight": 4.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 4.0
+          },
+          {
+            "from": "т",
+            "to": "t",
+            "weight": 4.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "ү",
+            "to": "y",
+            "weight": 4.0
+          },
+          {
+            "from": "ф",
+            "to": "f",
+            "weight": 4.0
+          },
+          {
+            "from": "х",
+            "to": "x",
+            "weight": 4.0
+          },
+          {
+            "from": "һ",
+            "to": "h",
+            "weight": 4.0
+          },
+          {
+            "from": "ч",
+            "to": "ɕ",
+            "weight": 4.0
+          },
+          {
+            "from": "ш",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ъ",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "ы",
+            "to": "ɤ",
+            "weight": 4.0
+          },
+          {
+            "from": "ь",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "э",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "ю",
+            "to": "ɯ",
+            "weight": 5.0
+          },
+          {
+            "from": "я",
+            "to": "j ɑ",
+            "weight": 5.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "some words have a hyphen with no phonetic value"
+          }
+        ]
+      }
+    },
+    "latin": {
+      "verify": [
+        {
+          "word": "alpawıt",
+          "phonemes": "ɑ l p ɑ w ɤ t"
+        },
+        {
+          "word": "azaw",
+          "phonemes": "ɑ z ɑ w"
+        },
+        {
+          "word": "añğıl",
+          "phonemes": "ɑ ŋ ɡ ɤ l"
+        },
+        {
+          "word": "balçıq",
+          "phonemes": "b ɑ l ɕ ɤ k"
+        },
+        {
+          "word": "cärib",
+          "phonemes": "ʑ a r i b"
+        },
+        {
+          "word": "düşämbe",
+          "phonemes": "d y ʃ a m b e"
+        },
+        {
+          "word": "etkey",
+          "phonemes": "e t k e j"
+        },
+        {
+          "word": "fut",
+          "phonemes": "f u t"
+        },
+        {
+          "word": "hawa",
+          "phonemes": "h ɑ w ɑ"
+        },
+        {
+          "word": "kigi",
+          "phonemes": "k i ɡ i"
+        },
+        {
+          "word": "kilovolt",
+          "phonemes": "k i l o w o l t"
+        },
+        {
+          "word": "kiyäw",
+          "phonemes": "k i j a w"
+        },
+        {
+          "word": "omtılu",
+          "phonemes": "o m t ɤ l u"
+        },
+        {
+          "word": "belän",
+          "phonemes": "b e l a n"
+        },
+        {
+          "word": "soñ",
+          "phonemes": "s o ŋ"
+        },
+        {
+          "word": "xalıq",
+          "phonemes": "x ɑ l ɤ k"
+        },
+        {
+          "word": "rejisser",
+          "phonemes": "r e ʒ i s s e r"
+        },
+        {
+          "word": "öçen",
+          "phonemes": "ø ɕ e n"
+        },
+        {
+          "word": "uq",
+          "phonemes": "u k"
+        },
+        {
+          "word": "tä'min",
+          "phonemes": "t a ʔ m i n"
+        },
+        {
+          "word": "yuğarı",
+          "phonemes": "ɯ ɡ ɑ r ɤ"
+        },
+        {
+          "word": "yaña",
+          "phonemes": "j a ŋ ɑ"
+        },
+        {
+          "word": "tatar",
+          "phonemes": "t ɑ t ɑ r"
+        },
+        {
+          "word": "bulğan",
+          "phonemes": "b u l ɡ ɑ n"
+        },
+        {
+          "word": "ide",
+          "phonemes": "i d e"
+        },
+        {
+          "word": "zur",
+          "phonemes": "z u r"
+        },
+        {
+          "word": "bula",
+          "phonemes": "b u l ɑ"
+        },
+        {
+          "word": "iñ",
+          "phonemes": "i ŋ"
+        },
+        {
+          "word": "yıl",
+          "phonemes": "j ɤ l"
+        },
+        {
+          "word": "itä",
+          "phonemes": "i t a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[bdefhiklmnoprstuwxz]",
+          "apostrophe": "[''‘’]"
+        },
+        "pre": [
+          {
+            "from": "Iİ",
+            "to": "ıi"
+          }
+        ],
+        "sub": [
+          {
+            "from": "a",
+            "to": "ɑ",
+            "weight": 2.0
+          },
+          {
+            "from": "ä",
+            "to": "a",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "ʑ",
+            "weight": 2.0
+          },
+          {
+            "from": "ç",
+            "to": "ɕ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "ğ",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "ı",
+            "to": "ɤ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "ʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "ñ",
+            "to": "ŋ",
+            "weight": 2.0
+          },
+          {
+            "from": "ö",
+            "to": "ø",
+            "weight": 2.0
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "ş",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "ü",
+            "to": "y",
+            "weight": 2.0
+          },
+          {
+            "from": "v",
+            "to": "w",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "ɯ",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "y",
+            "comment": "clean-up"
+          },
+          {
+            "from": "y",
+            "to": "j a",
+            "weight": 3.0,
+            "follow": "a"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 3.0,
+            "precede": "y",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

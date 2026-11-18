@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "code": "yva",
+    "name": "Yawa",
+    "family": "West Papuan,Yapen",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "mana",
+          "phonemes": "m a n a"
+        },
+        {
+          "word": "arikainye",
+          "phonemes": "a ɾ i k a i ɲ e"
+        },
+        {
+          "word": "nyomane",
+          "phonemes": "ɲ o m a n e"
+        },
+        {
+          "word": "kea",
+          "phonemes": "k e a"
+        },
+        {
+          "word": "anen-bukami",
+          "phonemes": "a n e n b u k a m i"
+        },
+        {
+          "word": "ajo",
+          "phonemes": "a dʑ o"
+        },
+        {
+          "word": "ugwe",
+          "phonemes": "u dʑ w e"
+        },
+        {
+          "word": "karisya",
+          "phonemes": "k a ɾ i ʃ a"
+        },
+        {
+          "word": "ngkugu",
+          "phonemes": "n k u dʑ u"
+        },
+        {
+          "word": "yane",
+          "phonemes": "j a n e"
+        },
+        {
+          "word": "pawa",
+          "phonemes": "p a w a"
+        },
+        {
+          "word": "toede",
+          "phonemes": "t o e d e"
+        },
+        {
+          "word": "vatan",
+          "phonemes": "w a t a n"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeikmnopstuw]",
+          "y-preceder": "[ns]",
+          "velar_stop": "[kg]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "dʑ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "dʑ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "v",
+            "to": "w",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0,
+            "comment": "hyphens hold no phonemic value (indicate compounding and morpheme boundaries)"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{y-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "follow": "{velar_stop}"
+          }
+        ]
+      }
+    }
+  }
+}

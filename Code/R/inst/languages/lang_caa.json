@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "code": "caa",
+    "name": "Ch'orti'",
+    "family": "Mayan,Cholan-Tzeltalan,Cholan,Chorti",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "inch'aj",
+          "phonemes": "i n tʃʼ a h"
+        },
+        {
+          "word": "b'utujk'ya'n",
+          "phonemes": "ɓ u t u h kʼ j a ʔ n"
+        },
+        {
+          "word": "b'ujkesb'ir",
+          "phonemes": "ɓ u h k e s ɓ i r"
+        },
+        {
+          "word": "b'i'tz'esna",
+          "phonemes": "ɓ i ʔ tsʼ e s n a"
+        },
+        {
+          "word": "atze'n",
+          "phonemes": "a ts e ʔ n"
+        },
+        {
+          "word": "awan",
+          "phonemes": "a w a n"
+        },
+        {
+          "word": "je'yr",
+          "phonemes": "h e ʔ j r"
+        },
+        {
+          "word": "jinchu",
+          "phonemes": "h i n tʃ u"
+        },
+        {
+          "word": "lo",
+          "phonemes": "l o"
+        },
+        {
+          "word": "tama",
+          "phonemes": "t a m a"
+        },
+        {
+          "word": "porque",
+          "phonemes": "p o r k e"
+        },
+        {
+          "word": "ixin",
+          "phonemes": "i ʃ i n"
+        },
+        {
+          "word": "taca",
+          "phonemes": "t a k a"
+        },
+        {
+          "word": "qꞌuin",
+          "phonemes": "kʼ i n"
+        },
+        {
+          "word": "más",
+          "phonemes": "m a s"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeiklmnoprstuw]",
+          "apostrophe": "[ꞌ'ˈ‘’]",
+          "ejective": "(b|k|t|tʃ|ts)",
+          "vowel": "[aeiou]"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "ɓ",
+            "weight": 2.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 2.0,
+            "precede": "b",
+            "comment": "clean-up"
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 2.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 2.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "k ʔ",
+            "weight": 3.0,
+            "precede": "q",
+            "follow": "u"
+          },
+          {
+            "from": "q",
+            "to": "",
+            "weight": 2.0,
+            "follow": "{apostrophe}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 4.0,
+            "precede": "q{apostrophe}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 2.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 2.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 2.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 1.0,
+            "precede": "{vowel}",
+            "comment": "postvocalic <h> also indicates length - for purposes of this project, it will be transcribed out"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({ejective}) ʔ",
+            "to": "\\1ʼ",
+            "weight": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

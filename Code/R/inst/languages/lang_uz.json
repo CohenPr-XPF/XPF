@@ -1,0 +1,435 @@
+{
+  "metadata": {
+    "code": "uz",
+    "name": "Uzbek",
+    "family": "Turkic,Common Turkic,Karluk,Uzbek",
+    "macroarea": "Eurasia",
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "арзанда",
+          "phonemes": "a ɾ z a n d a",
+          "comment": "а"
+        },
+        {
+          "word": "бошлаб",
+          "phonemes": "b ɔ ʃ l a b",
+          "comment": "б"
+        },
+        {
+          "word": "васвос",
+          "phonemes": "w a s w ɔ s",
+          "comment": "в"
+        },
+        {
+          "word": "гугурт",
+          "phonemes": "ɡ u ɡ u ɾ t",
+          "comment": "г"
+        },
+        {
+          "word": "ғазаб",
+          "phonemes": "ɣ a z a b",
+          "comment": "ғ"
+        },
+        {
+          "word": "дудоқ",
+          "phonemes": "d u d ɔ q",
+          "comment": "д"
+        },
+        {
+          "word": "етакчи",
+          "phonemes": "j ɛ t a k tʃ i",
+          "comment": "е"
+        },
+        {
+          "word": "ёқа",
+          "phonemes": "j ɔ q a",
+          "comment": "ё"
+        },
+        {
+          "word": "жўжа",
+          "phonemes": "dʒ o dʒ a",
+          "comment": "ж"
+        },
+        {
+          "word": "зиёфат",
+          "phonemes": "z i j ɔ f a t",
+          "comment": "з"
+        },
+        {
+          "word": "илиқ",
+          "phonemes": "i l i q",
+          "comment": "и"
+        },
+        {
+          "word": "йиғи",
+          "phonemes": "j i ɣ i",
+          "comment": "й"
+        },
+        {
+          "word": "кекса",
+          "phonemes": "k ɛ k s a",
+          "comment": "к"
+        },
+        {
+          "word": "қаймоқ",
+          "phonemes": "q a j m ɔ q",
+          "comment": "қ"
+        },
+        {
+          "word": "лимилла",
+          "phonemes": "l i m i l ː a",
+          "comment": "л"
+        },
+        {
+          "word": "мажмуа",
+          "phonemes": "m a dʒ m u a",
+          "comment": "м"
+        },
+        {
+          "word": "нозанин",
+          "phonemes": "n ɔ z a n i n",
+          "comment": "н"
+        },
+        {
+          "word": "гунг",
+          "phonemes": "ɡ u ŋ",
+          "comment": "нг"
+        },
+        {
+          "word": "одош",
+          "phonemes": "ɔ d ɔ ʃ",
+          "comment": "о"
+        },
+        {
+          "word": "пўписа",
+          "phonemes": "p o p i s a",
+          "comment": "п"
+        },
+        {
+          "word": "ресурс",
+          "phonemes": "ɾ ɛ s u ɾ s",
+          "comment": "р"
+        },
+        {
+          "word": "сафсата",
+          "phonemes": "s a f s a t a",
+          "comment": "с"
+        },
+        {
+          "word": "тентак",
+          "phonemes": "t ɛ n t a k",
+          "comment": "т"
+        },
+        {
+          "word": "учун",
+          "phonemes": "u tʃ u n",
+          "comment": "у"
+        },
+        {
+          "word": "ўрин-кўрпа",
+          "phonemes": "o ɾ i n k o ɾ p a",
+          "comment": "ў"
+        },
+        {
+          "word": "фарфор",
+          "phonemes": "f a ɾ f ɔ ɾ",
+          "comment": "ф"
+        },
+        {
+          "word": "хомхаёл",
+          "phonemes": "χ ɔ m χ a j ɔ l",
+          "comment": "х"
+        },
+        {
+          "word": "ҳамроҳ",
+          "phonemes": "h a m ɾ ɔ h",
+          "comment": "ҳ"
+        },
+        {
+          "word": "чечак",
+          "phonemes": "tʃ ɛ tʃ a k",
+          "comment": "ч"
+        },
+        {
+          "word": "шиша",
+          "phonemes": "ʃ i ʃ a",
+          "comment": "ш"
+        },
+        {
+          "word": "объекти",
+          "phonemes": "ɔ b j ɛ k t i",
+          "comment": "ъ (pre-e)"
+        },
+        {
+          "word": "яъни",
+          "phonemes": "j a n i",
+          "comment": "ъ (elsewhere)"
+        },
+        {
+          "word": "эфир",
+          "phonemes": "ɛ f i ɾ",
+          "comment": "э"
+        },
+        {
+          "word": "юмор",
+          "phonemes": "j u m ɔ ɾ",
+          "comment": "ю"
+        },
+        {
+          "word": "январь",
+          "phonemes": "j a n w a ɾ",
+          "comment": "я"
+        },
+        {
+          "word": "милиция",
+          "phonemes": "m i l i t s i j a",
+          "comment": "ц"
+        },
+        {
+          "word": "июнь",
+          "phonemes": "i j u n",
+          "comment": "ь"
+        },
+        {
+          "word": "аччиқ",
+          "phonemes": "a tʃ ː i q",
+          "comment": "gemination"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "cons-output": "(b|w|ɡ|ɣ|d|dʒ|z|j|k|q|l|m|n|p|ɾ|s|t|f|χ|h|tʃ|ʃ)"
+        },
+        "sub": [
+          {
+            "from": "а",
+            "to": "a",
+            "weight": 4.0,
+            "comment": "for some reason, if I don't put quotes around the characters in this one line, the entire file breaks"
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 4.0
+          },
+          {
+            "from": "в",
+            "to": "w",
+            "weight": 4.0
+          },
+          {
+            "from": "г",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "ғ",
+            "to": "ɣ",
+            "weight": 4.0
+          },
+          {
+            "from": "д",
+            "to": "d",
+            "weight": 4.0
+          },
+          {
+            "from": "е",
+            "to": "j ɛ",
+            "weight": 6.0,
+            "precede": "^",
+            "comment": "word-initial <е>"
+          },
+          {
+            "from": "е",
+            "to": "ɛ",
+            "weight": 4.0,
+            "comment": "word-medial <е>"
+          },
+          {
+            "from": "ё",
+            "to": "j ɔ",
+            "weight": 4.0
+          },
+          {
+            "from": "ж",
+            "to": "dʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "з",
+            "to": "z",
+            "weight": 4.0
+          },
+          {
+            "from": "и",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "қ",
+            "to": "q",
+            "weight": 4.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 4.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 4.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 4.0
+          },
+          {
+            "from": "о",
+            "to": "ɔ",
+            "weight": 4.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 4.0
+          },
+          {
+            "from": "р",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 4.0
+          },
+          {
+            "from": "т",
+            "to": "t",
+            "weight": 4.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "ў",
+            "to": "o",
+            "weight": 4.0
+          },
+          {
+            "from": "ф",
+            "to": "f",
+            "weight": 4.0
+          },
+          {
+            "from": "х",
+            "to": "χ",
+            "weight": 4.0
+          },
+          {
+            "from": "ҳ",
+            "to": "h",
+            "weight": 4.0
+          },
+          {
+            "from": "ч",
+            "to": "tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ш",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ъ",
+            "to": "j",
+            "weight": 6.0,
+            "follow": "е",
+            "comment": "<ъ> before <е> = /j/"
+          },
+          {
+            "from": "ъ",
+            "to": "",
+            "weight": 4.0,
+            "comment": "<ъ> otherwise = non-contrastive vowel length, not included in this ruleset"
+          },
+          {
+            "from": "э",
+            "to": "ɛ",
+            "weight": 4.0
+          },
+          {
+            "from": "ю",
+            "to": "j u",
+            "weight": 4.0
+          },
+          {
+            "from": "я",
+            "to": "j a",
+            "weight": 4.0
+          },
+          {
+            "from": "ц",
+            "to": "t s",
+            "weight": 1.0,
+            "comment": "ц is loadwords from Russian"
+          },
+          {
+            "from": "ь",
+            "to": "",
+            "weight": 1.0,
+            "follow": "$",
+            "comment": "erase word-final soft sign (in loanwords from Russian)"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "some words have a hyphen with no phonetic value"
+          },
+          {
+            "from": "н",
+            "to": "ŋ",
+            "weight": 6.0,
+            "follow": "г",
+            "comment": "<нг> = velar nasal"
+          },
+          {
+            "from": "г",
+            "to": "",
+            "weight": 6.0,
+            "precede": "н",
+            "comment": "<нг> cleanup"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({cons-output}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0,
+            "comment": "consonant gemination"
+          }
+        ]
+      }
+    }
+  }
+}

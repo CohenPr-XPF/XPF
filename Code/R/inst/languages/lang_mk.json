@@ -1,0 +1,690 @@
+{
+  "metadata": {
+    "code": "mk",
+    "name": "Macedonian",
+    "family": "Indo-European,Slavic,South,Eastern",
+    "macroarea": "Eurasia",
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "Саат",
+          "phonemes": "s̪ a a t̪"
+        },
+        {
+          "word": "дете",
+          "phonemes": "d̪ ɛ t̪ ɛ"
+        },
+        {
+          "word": "Мајка",
+          "phonemes": "m a j k a"
+        },
+        {
+          "word": "Татко",
+          "phonemes": "t̪ a t̪ k ɔ"
+        },
+        {
+          "word": "планина",
+          "phonemes": "p ɫ̪ a n̪ i n̪ a"
+        },
+        {
+          "word": "планинарите",
+          "phonemes": "p ɫ̪ a n̪ i n̪ a r i t̪ ɛ"
+        },
+        {
+          "word": "бела",
+          "phonemes": "b ɛ ɫ̪ a"
+        },
+        {
+          "word": "Зеле",
+          "phonemes": "z̪ ɛ l ɛ"
+        },
+        {
+          "word": "Зелје",
+          "phonemes": "z̪ ɛ l j ɛ"
+        },
+        {
+          "word": "ѓаволштина",
+          "phonemes": "ɟ a v ɔ ɫ̪ ʃ t̪ i n̪ a"
+        },
+        {
+          "word": "ѕирне",
+          "phonemes": "dz̪ i r n̪ ɛ"
+        },
+        {
+          "word": "јазичар",
+          "phonemes": "j a z̪ i tʃ a r"
+        },
+        {
+          "word": "ќупче",
+          "phonemes": "c u p tʃ ɛ"
+        },
+        {
+          "word": "јужњак",
+          "phonemes": "j u ʒ ɲ a k"
+        },
+        {
+          "word": "џогер",
+          "phonemes": "dʒ ɔ ɡ ɛ r"
+        },
+        {
+          "word": "вампирски",
+          "phonemes": "v a m p i r s̪ k i"
+        },
+        {
+          "word": "гихт",
+          "phonemes": "ɡ i x t̪"
+        },
+        {
+          "word": "дарежливост",
+          "phonemes": "d̪ a r ɛ ʒ l i v ɔ s̪ t̪"
+        },
+        {
+          "word": "луленце",
+          "phonemes": "ɫ̪ u l ɛ n̪ ts̪ ɛ"
+        },
+        {
+          "word": "логорува",
+          "phonemes": "ɫ̪ ɔ ɡ ɔ r u v a"
+        },
+        {
+          "word": "перфидност",
+          "phonemes": "p ɛ r f i d̪ n̪ ɔ s̪ t̪"
+        },
+        {
+          "word": "пермутација",
+          "phonemes": "p ɛ r m u t̪ a ts̪ i j a"
+        },
+        {
+          "word": "биљбиљ",
+          "phonemes": "b i l b i l"
+        },
+        {
+          "word": "биљбили",
+          "phonemes": "b i l b i l i"
+        },
+        {
+          "word": "набљудувачки",
+          "phonemes": "n̪ a b l u d̪ u v a tʃ k i"
+        },
+        {
+          "word": "бељаџија",
+          "phonemes": "b ɛ l a dʒ i j a"
+        },
+        {
+          "word": "аљкавост",
+          "phonemes": "a l k a v ɔ s̪ t̪"
+        },
+        {
+          "word": "вљубеност",
+          "phonemes": "v l u b ɛ n̪ ɔ s̪ t̪"
+        },
+        {
+          "word": "вистинољубивост",
+          "phonemes": "v i s̪ t̪ i n̪ ɔ l u b i v ɔ s̪ t̪"
+        },
+        {
+          "word": "властољубивост",
+          "phonemes": "v ɫ̪ a s̪ t̪ ɔ l u b i v ɔ s̪ t̪"
+        },
+        {
+          "word": "пљампа",
+          "phonemes": "p l a m p a"
+        },
+        {
+          "word": "распљампа",
+          "phonemes": "r a s̪ p l a m p a"
+        },
+        {
+          "word": "сељачи",
+          "phonemes": "s̪ ɛ l a tʃ i"
+        },
+        {
+          "word": "хмељ",
+          "phonemes": "x m ɛ l"
+        },
+        {
+          "word": "ладничок",
+          "phonemes": "ɫ̪ a d̪ n̪ i tʃ ɔ k"
+        },
+        {
+          "word": "смртта",
+          "phonemes": "s̪ m r t̪ ː a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "frontV-j": "[иеј]",
+          "backV-C": "[абвгдѓжзѕкмнњопрстќуфхцчџш]",
+          "gem": "(t̪|d̪|s̪|z̪|l|m|j)"
+        },
+        "sub": [
+          {
+            "from": "а",
+            "to": "a",
+            "weight": 3.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 3.0
+          },
+          {
+            "from": "в",
+            "to": "v",
+            "weight": 3.0
+          },
+          {
+            "from": "г",
+            "to": "ɡ",
+            "weight": 3.0
+          },
+          {
+            "from": "д",
+            "to": "d̪",
+            "weight": 3.0
+          },
+          {
+            "from": "ѓ",
+            "to": "ɟ",
+            "weight": 3.0
+          },
+          {
+            "from": "е",
+            "to": "ɛ",
+            "weight": 3.0
+          },
+          {
+            "from": "ж",
+            "to": "ʒ",
+            "weight": 3.0
+          },
+          {
+            "from": "з",
+            "to": "z̪",
+            "weight": 3.0
+          },
+          {
+            "from": "ѕ",
+            "to": "dz̪",
+            "weight": 3.0
+          },
+          {
+            "from": "и",
+            "to": "i",
+            "weight": 3.0
+          },
+          {
+            "from": "ј",
+            "to": "j",
+            "weight": 3.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 3.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 3.0,
+            "follow": "{frontV-j}"
+          },
+          {
+            "from": "л",
+            "to": "ɫ̪",
+            "weight": 2.0
+          },
+          {
+            "from": "љ",
+            "to": "l",
+            "weight": 3.0,
+            "follow": "{backV-C}"
+          },
+          {
+            "from": "љ",
+            "to": "l",
+            "weight": 3.0,
+            "follow": "$"
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 3.0
+          },
+          {
+            "from": "н",
+            "to": "n̪",
+            "weight": 3.0
+          },
+          {
+            "from": "њ",
+            "to": "ɲ",
+            "weight": 3.0
+          },
+          {
+            "from": "о",
+            "to": "ɔ",
+            "weight": 3.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 3.0
+          },
+          {
+            "from": "р",
+            "to": "r",
+            "weight": 3.0
+          },
+          {
+            "from": "с",
+            "to": "s̪",
+            "weight": 3.0
+          },
+          {
+            "from": "т",
+            "to": "t̪",
+            "weight": 3.0
+          },
+          {
+            "from": "ќ",
+            "to": "c",
+            "weight": 3.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 3.0
+          },
+          {
+            "from": "ф",
+            "to": "f",
+            "weight": 3.0
+          },
+          {
+            "from": "х",
+            "to": "x",
+            "weight": 3.0
+          },
+          {
+            "from": "ц",
+            "to": "ts̪",
+            "weight": 3.0
+          },
+          {
+            "from": "ч",
+            "to": "tʃ",
+            "weight": 3.0
+          },
+          {
+            "from": "џ",
+            "to": "dʒ",
+            "weight": 3.0
+          },
+          {
+            "from": "ш",
+            "to": "ʃ",
+            "weight": 3.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 3.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({gem}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    },
+    "latin": {
+      "verify": [
+        {
+          "word": "saat",
+          "phonemes": "s̪ a a t̪"
+        },
+        {
+          "word": "dete",
+          "phonemes": "d̪ ɛ t̪ ɛ"
+        },
+        {
+          "word": "majka",
+          "phonemes": "m a j k a"
+        },
+        {
+          "word": "tatko",
+          "phonemes": "t̪ a t̪ k ɔ"
+        },
+        {
+          "word": "planina",
+          "phonemes": "p ɫ̪ a n̪ i n̪ a"
+        },
+        {
+          "word": "planinarite",
+          "phonemes": "p ɫ̪ a n̪ i n̪ a r i t̪ ɛ"
+        },
+        {
+          "word": "bela",
+          "phonemes": "b ɛ ɫ̪ a"
+        },
+        {
+          "word": "zele",
+          "phonemes": "z̪ ɛ l ɛ"
+        },
+        {
+          "word": "gjavolshtina",
+          "phonemes": "ɟ a v ɔ ɫ̪ ʃ t̪ i n̪ a"
+        },
+        {
+          "word": "dzirne",
+          "phonemes": "dz̪ i r n̪ ɛ"
+        },
+        {
+          "word": "jazichar",
+          "phonemes": "j a z̪ i tʃ a r"
+        },
+        {
+          "word": "kjupche",
+          "phonemes": "c u p tʃ ɛ"
+        },
+        {
+          "word": "juzhnjak",
+          "phonemes": "j u ʒ ɲ a k"
+        },
+        {
+          "word": "djoger",
+          "phonemes": "dʒ ɔ ɡ ɛ r"
+        },
+        {
+          "word": "vampirski",
+          "phonemes": "v a m p i r s̪ k i"
+        },
+        {
+          "word": "giht",
+          "phonemes": "ɡ i x t̪"
+        },
+        {
+          "word": "darezhlivost",
+          "phonemes": "d̪ a r ɛ ʒ l i v ɔ s̪ t̪"
+        },
+        {
+          "word": "lulence",
+          "phonemes": "ɫ̪ u l ɛ n̪ ts̪ ɛ"
+        },
+        {
+          "word": "logoruva",
+          "phonemes": "ɫ̪ ɔ ɡ ɔ r u v a"
+        },
+        {
+          "word": "perfidnost",
+          "phonemes": "p ɛ r f i d̪ n̪ ɔ s̪ t̪"
+        },
+        {
+          "word": "permutacija",
+          "phonemes": "p ɛ r m u t̪ a ts̪ i j a"
+        },
+        {
+          "word": "biljbilj",
+          "phonemes": "b i l b i l"
+        },
+        {
+          "word": "biljbili",
+          "phonemes": "b i l b i l i"
+        },
+        {
+          "word": "nabljuduvachki",
+          "phonemes": "n̪ a b l u d̪ u v a tʃ k i"
+        },
+        {
+          "word": "beljadjija",
+          "phonemes": "b ɛ l a dʒ i j a"
+        },
+        {
+          "word": "aljkavost",
+          "phonemes": "a l k a v ɔ s̪ t̪"
+        },
+        {
+          "word": "vljubenost",
+          "phonemes": "v l u b ɛ n̪ ɔ s̪ t̪"
+        },
+        {
+          "word": "vistinoljubivost",
+          "phonemes": "v i s̪ t̪ i n̪ ɔ l u b i v ɔ s̪ t̪"
+        },
+        {
+          "word": "vlastoljubivost",
+          "phonemes": "v ɫ̪ a s̪ t̪ ɔ l u b i v ɔ s̪ t̪"
+        },
+        {
+          "word": "pljampa",
+          "phonemes": "p l a m p a"
+        },
+        {
+          "word": "raspljampa",
+          "phonemes": "r a s̪ p l a m p a"
+        },
+        {
+          "word": "seljachi",
+          "phonemes": "s̪ ɛ l a tʃ i"
+        },
+        {
+          "word": "hmelj",
+          "phonemes": "x m ɛ l"
+        },
+        {
+          "word": "ladnichok",
+          "phonemes": "ɫ̪ a d̪ n̪ i tʃ ɔ k"
+        },
+        {
+          "word": "smrtta",
+          "phonemes": "s̪ m r t̪ ː a"
+        },
+        {
+          "word": "budzhet",
+          "phonemes": "b u dʒ ɛ t̪"
+        },
+        {
+          "word": "pretsedatel",
+          "phonemes": "p r ɛ ts̪ ɛ d̪ a t̪ ɛ ɫ̪"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abvijkmpruf]",
+          "frontV-j": "[ieј]",
+          "backV-C": "[abvkmprufgdzosthc]",
+          "j-preceder": "[glnkd]",
+          "h-preceder": "[csz]",
+          "gem": "(t̪|d̪|s̪|z̪|l|m|j)"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 3.0
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 3.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 3.0
+          },
+          {
+            "from": "z",
+            "to": "z̪",
+            "weight": 3.0
+          },
+          {
+            "from": "l",
+            "to": "l",
+            "weight": 4.0,
+            "follow": "{frontV-j}"
+          },
+          {
+            "from": "l",
+            "to": "ɫ̪",
+            "weight": 3.0
+          },
+          {
+            "from": "n",
+            "to": "n̪",
+            "weight": 3.0
+          },
+          {
+            "from": "o",
+            "to": "ɔ",
+            "weight": 3.0
+          },
+          {
+            "from": "s",
+            "to": "s̪",
+            "weight": 3.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 3.0
+          },
+          {
+            "from": "h",
+            "to": "x",
+            "weight": 3.0
+          },
+          {
+            "from": "c",
+            "to": "ts̪",
+            "weight": 3.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɟ",
+            "weight": 4.0,
+            "follow": "j"
+          },
+          {
+            "from": "l",
+            "to": "l",
+            "weight": 4.0,
+            "follow": "j{backV-C}"
+          },
+          {
+            "from": "l",
+            "to": "l",
+            "weight": 4.0,
+            "follow": "j$"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 4.0,
+            "follow": "j"
+          },
+          {
+            "from": "k",
+            "to": "c",
+            "weight": 4.0,
+            "follow": "j"
+          },
+          {
+            "from": "d",
+            "to": "dʒ",
+            "weight": 4.0,
+            "follow": "j"
+          },
+          {
+            "from": "j",
+            "to": "",
+            "weight": 4.0,
+            "precede": "{j-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "dz̪",
+            "weight": 4.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 5.0,
+            "precede": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "z",
+            "to": "ʒ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "d",
+            "to": "dʒ",
+            "weight": 6.0,
+            "follow": "zh"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "{h-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts̪",
+            "weight": 4.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 4.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 3.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({gem}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

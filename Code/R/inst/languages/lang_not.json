@@ -1,0 +1,381 @@
+{
+  "metadata": {
+    "code": "not",
+    "name": "Nomatsiguenga",
+    "family": "Arawakan,Maipuran,Southern Maipuran,Campa",
+    "macroarea": "South America",
+    "compromised": {
+      "sounds": "N|m|n",
+      "note": "N represents a placeless nasal"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "tsínané",
+          "phonemes": "t̪s i ˦ n̪ a n̪ e ˦"
+        },
+        {
+          "word": "nijá",
+          "phonemes": "n̪ i h a ˦"
+        },
+        {
+          "word": "atsícaneíntagantsi",
+          "phonemes": "a t̪s i ˦ k a n̪ ei ˦ n̪ t̪ a ɡ a n̪ t̪s i"
+        },
+        {
+          "word": "baquiritsi",
+          "phonemes": "b a k i ɾ i t̪s i"
+        },
+        {
+          "word": "cajárá",
+          "phonemes": "k a h a ˦ ɾ a ˦"
+        },
+        {
+          "word": "caráanti",
+          "phonemes": "k a ɾ a ˦ ː n̪ t̪ i"
+        },
+        {
+          "word": "chábëníri",
+          "phonemes": "tʃ a ˦ b ɨ n̪ i ˦ ɾ i"
+        },
+        {
+          "word": "coshóri",
+          "phonemes": "k o ʃ o ˦ ɾ i"
+        },
+        {
+          "word": "chonchóguiri",
+          "phonemes": "tʃ o n̪ tʃ o ˦ ɡ i ɾ i"
+        },
+        {
+          "word": "emó",
+          "phonemes": "e m o ˦"
+        },
+        {
+          "word": "ibangui",
+          "phonemes": "i b a ŋ i"
+        },
+        {
+          "word": "igueí",
+          "phonemes": "i ɡ ei ˦"
+        },
+        {
+          "word": "iína",
+          "phonemes": "i ˦ ː n̪ a"
+        },
+        {
+          "word": "imoncarácaro",
+          "phonemes": "i m o ŋ k a ɾ a ˦ k a ɾ o"
+        },
+        {
+          "word": "përosati",
+          "phonemes": "p ɨ ɾ o s̪ a t̪ i"
+        },
+        {
+          "word": "yamai",
+          "phonemes": "j a m ai"
+        },
+        {
+          "word": "icanque",
+          "phonemes": "i k a ŋ k e"
+        },
+        {
+          "word": "matsiguenga",
+          "phonemes": "m a t̪s i ɡ e ŋ a"
+        },
+        {
+          "word": "quero",
+          "phonemes": "k e ɾ o"
+        },
+        {
+          "word": "carari",
+          "phonemes": "k a ɾ a ɾ i"
+        },
+        {
+          "word": "omagaro",
+          "phonemes": "o m a ɡ a ɾ o"
+        },
+        {
+          "word": "antagaisati",
+          "phonemes": "a n̪ t̪ a ɡ ai s̪ a t̪ i"
+        },
+        {
+          "word": "basini",
+          "phonemes": "b a s̪ i n̪ i"
+        },
+        {
+          "word": "tojai",
+          "phonemes": "t̪ o h ai"
+        },
+        {
+          "word": "onganinate",
+          "phonemes": "o ŋ a n̪ i n̪ a t̪ e"
+        },
+        {
+          "word": "aro",
+          "phonemes": "a ɾ o"
+        },
+        {
+          "word": "saseriroti",
+          "phonemes": "s̪ a s̪ e ɾ i ɾ o t̪ i"
+        },
+        {
+          "word": "icanta",
+          "phonemes": "i k a n̪ t̪ a"
+        },
+        {
+          "word": "ironomire",
+          "phonemes": "i ɾ o n̪ o m i ɾ e"
+        },
+        {
+          "word": "oisha",
+          "phonemes": "oi ʃ a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abeimop]",
+          "h-preceder": "[cs]",
+          "engma": "(c|qu)",
+          "gu-follower": "[eië]",
+          "qu-follower": "[ei]",
+          "vowel": "[aeioë]",
+          "vowel-output": "[aeioɨ]",
+          "tone": "(NO|˦)"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "ë",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "n̪",
+            "weight": 2.0
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "s",
+            "to": "s̪",
+            "weight": 2.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "{engma}"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{h-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "t̪s",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "u{qu-follower}"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "follow": "{qu-follower}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 4.0,
+            "precede": "{vowel}",
+            "follow": "g{vowel}"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 5.0,
+            "precede": "{vowel}n",
+            "follow": "{vowel}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0,
+            "follow": "u{gu-follower}"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "g",
+            "follow": "{gu-follower}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 5.0,
+            "follow": "gu{gu-follower}"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 5.0,
+            "precede": "n",
+            "follow": "u{gu-follower}"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 5.0,
+            "precede": "ng",
+            "follow": "{gu-follower}"
+          },
+          {
+            "from": "á",
+            "to": "a ˦",
+            "weight": 2.0
+          },
+          {
+            "from": "é",
+            "to": "e ˦",
+            "weight": 2.0
+          },
+          {
+            "from": "í",
+            "to": "i ˦",
+            "weight": 2.0
+          },
+          {
+            "from": "ó",
+            "to": "o ˦",
+            "weight": 2.0
+          },
+          {
+            "from": "ë",
+            "to": "ɨ ˦",
+            "weight": 3.0,
+            "follow": "´",
+            "comment": "using the combining diacritic doesn't seem to work; not prevalent in the corpus"
+          },
+          {
+            "from": "´",
+            "to": "",
+            "weight": 3.0,
+            "precede": "ë"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowel-output})(?!\\s˦)",
+            "to": "\\1 NO",
+            "weight": 6.0
+          },
+          {
+            "from": "({vowel-output}) ({tone}) \\1 ({tone})",
+            "to": "\\1 \\2 \\4 ː",
+            "weight": 4.0
+          },
+          {
+            "from": "a ({tone}) i ({tone})",
+            "to": "ai \\2 \\4",
+            "weight": 3.0
+          },
+          {
+            "from": "e ({tone}) i ({tone})",
+            "to": "ei \\2 \\4",
+            "weight": 3.0
+          },
+          {
+            "from": "o ({tone}) i ({tone})",
+            "to": "oi \\2 \\4",
+            "weight": 3.0
+          },
+          {
+            "from": "NO",
+            "to": "",
+            "weight": 2.0,
+            "comment": "removes no tone indicator after completion of other ipasub rules"
+          },
+          {
+            "from": "ŋ tʃ",
+            "to": "n̪ tʃ",
+            "weight": 2.0,
+            "comment": "fixes <nch> clusters - <n> goes to engma preceding <c>, but not <ch>"
+          }
+        ]
+      }
+    }
+  }
+}

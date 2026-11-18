@@ -1,0 +1,336 @@
+{
+  "metadata": {
+    "code": "hsb",
+    "name": "Upper Sorbian",
+    "family": "Indo-European,Slavic,West,Sorbian",
+    "macroarea": "Eurasia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "pask",
+          "phonemes": "p a s k",
+          "comment": "a"
+        },
+        {
+          "word": "bałma",
+          "phonemes": "b a w m a",
+          "comment": "b"
+        },
+        {
+          "word": "całta",
+          "phonemes": "ts a w t a",
+          "comment": "c"
+        },
+        {
+          "word": "ličak",
+          "phonemes": "l i tʃ a k",
+          "comment": "č"
+        },
+        {
+          "word": "bělić",
+          "phonemes": "b ɪ l i tʃ",
+          "comment": "ć"
+        },
+        {
+          "word": "dočini",
+          "phonemes": "d o tʃ i n i",
+          "comment": "d"
+        },
+        {
+          "word": "pesimistiski",
+          "phonemes": "p e s i m i s t i s k i",
+          "comment": "e"
+        },
+        {
+          "word": "něhdy",
+          "phonemes": "n ɪ h d ɨ",
+          "comment": "ě"
+        },
+        {
+          "word": "fabula",
+          "phonemes": "f a b u l a",
+          "comment": "f"
+        },
+        {
+          "word": "gagać",
+          "phonemes": "ɡ a ɡ a tʃ",
+          "comment": "ɡ"
+        },
+        {
+          "word": "habla",
+          "phonemes": "h a b l a",
+          "comment": "h"
+        },
+        {
+          "word": "pisać",
+          "phonemes": "p i s a tʃ",
+          "comment": "i"
+        },
+        {
+          "word": "jadro",
+          "phonemes": "j a d ʀ o",
+          "comment": "j"
+        },
+        {
+          "word": "kabat",
+          "phonemes": "k a b a t",
+          "comment": "k"
+        },
+        {
+          "word": "błazny",
+          "phonemes": "b w a z n ɨ",
+          "comment": "ł"
+        },
+        {
+          "word": "lac",
+          "phonemes": "l a ts",
+          "comment": "l"
+        },
+        {
+          "word": "mač",
+          "phonemes": "m a tʃ",
+          "comment": "m"
+        },
+        {
+          "word": "nabać",
+          "phonemes": "n a b a tʃ",
+          "comment": "n"
+        },
+        {
+          "word": "dań",
+          "phonemes": "d a nʲ",
+          "comment": "ń"
+        },
+        {
+          "word": "posyć",
+          "phonemes": "p o s ɨ tʃ",
+          "comment": "o"
+        },
+        {
+          "word": "póstniski",
+          "phonemes": "p ʊ s t n i s k i",
+          "comment": "ó"
+        },
+        {
+          "word": "pad",
+          "phonemes": "p a d",
+          "comment": "p"
+        },
+        {
+          "word": "rad",
+          "phonemes": "ʀ a d",
+          "comment": "r"
+        },
+        {
+          "word": "tři",
+          "phonemes": "t ʃ i",
+          "comment": "ř"
+        },
+        {
+          "word": "sadło",
+          "phonemes": "s a d w o",
+          "comment": "s"
+        },
+        {
+          "word": "šach",
+          "phonemes": "ʃ a x",
+          "comment": "š"
+        },
+        {
+          "word": "tajić",
+          "phonemes": "t a j i tʃ",
+          "comment": "t"
+        },
+        {
+          "word": "pusty",
+          "phonemes": "p u s t ɨ",
+          "comment": "u"
+        },
+        {
+          "word": "vatikanski",
+          "phonemes": "v a t i k a n s k i",
+          "comment": "v"
+        },
+        {
+          "word": "wačka",
+          "phonemes": "w a tʃ k a",
+          "comment": "w"
+        },
+        {
+          "word": "pysk",
+          "phonemes": "p ɨ s k",
+          "comment": "y"
+        },
+        {
+          "word": "zabić",
+          "phonemes": "z a b i tʃ",
+          "comment": "z"
+        },
+        {
+          "word": "žaba",
+          "phonemes": "ʒ a b a",
+          "comment": "ž"
+        },
+        {
+          "word": "dźak",
+          "phonemes": "dʒ a k",
+          "comment": "dź"
+        },
+        {
+          "word": "čichawa",
+          "phonemes": "tʃ i x a w a",
+          "comment": "ch"
+        },
+        {
+          "word": "bjakać",
+          "phonemes": "bʲ a k a tʃ",
+          "comment": "bj"
+        },
+        {
+          "word": "pjany",
+          "phonemes": "pʲ a n ɨ",
+          "comment": "pj"
+        },
+        {
+          "word": "mjaso",
+          "phonemes": "mʲ a s o",
+          "comment": "mj"
+        },
+        {
+          "word": "njeju",
+          "phonemes": "nʲ e j u",
+          "comment": "nj"
+        },
+        {
+          "word": "sewjerny",
+          "phonemes": "s e wʲ e ʀ n ɨ",
+          "comment": "wj"
+        },
+        {
+          "word": "rjadka",
+          "phonemes": "ʀʲ a d k a",
+          "comment": "rj"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdefhijklmnopstuvwz]",
+          "pal": "[pbmnwʀ]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "ts",
+            "weight": 2.0
+          },
+          {
+            "from": "č",
+            "to": "tʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "ć",
+            "to": "tʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "ě",
+            "to": "ɪ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "ł",
+            "to": "w",
+            "weight": 2.0
+          },
+          {
+            "from": "ń",
+            "to": "nʲ",
+            "weight": 2.0
+          },
+          {
+            "from": "ó",
+            "to": "ʊ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ʀ",
+            "weight": 2.0
+          },
+          {
+            "from": "ř",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "š",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "ž",
+            "to": "ʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "d",
+            "to": "dʒ",
+            "weight": 3.0,
+            "follow": "ź"
+          },
+          {
+            "from": "ź",
+            "to": "",
+            "weight": 3.0,
+            "precede": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "x",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({pal}) j",
+            "to": "\\1ʲ",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

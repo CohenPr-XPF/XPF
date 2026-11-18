@@ -1,0 +1,257 @@
+{
+  "metadata": {
+    "code": "nuy",
+    "name": "Nunggubuyu",
+    "family": "Australian,Gunwingguan,Nunggubuan",
+    "macroarea": "Australia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "badaraga",
+          "phonemes": "b a d a ɻ a ɡ a",
+          "comment": "a"
+        },
+        {
+          "word": "baawul",
+          "phonemes": "b aː w u l",
+          "comment": "aa"
+        },
+        {
+          "word": "bajbara",
+          "phonemes": "b a ɟ b a ɻ a",
+          "comment": "b"
+        },
+        {
+          "word": "diḏiḏ",
+          "phonemes": "d i ɖ i ɖ",
+          "comment": "d"
+        },
+        {
+          "word": "dhangara",
+          "phonemes": "d̪ a ŋ a ɻ a",
+          "comment": "dh"
+        },
+        {
+          "word": "ḏugdabala",
+          "phonemes": "ɖ u ɡ d a b a l a",
+          "comment": "ḏ"
+        },
+        {
+          "word": "gaagag",
+          "phonemes": "ɡ aː ɡ a ɡ",
+          "comment": "g"
+        },
+        {
+          "word": "giḏigiḏi",
+          "phonemes": "ɡ i ɖ i ɡ i ɖ i",
+          "comment": "i"
+        },
+        {
+          "word": "jirrgij",
+          "phonemes": "ɟ i ɾ ɡ i ɟ",
+          "comment": "j"
+        },
+        {
+          "word": "larawal",
+          "phonemes": "l a ɻ a w a l",
+          "comment": "l"
+        },
+        {
+          "word": "lhalaman",
+          "phonemes": "l̪ a l a m a n",
+          "comment": "lh"
+        },
+        {
+          "word": "ḻaḻma",
+          "phonemes": "ɭ a ɭ m a",
+          "comment": "ḻ"
+        },
+        {
+          "word": "maḻaamar",
+          "phonemes": "m a ɭ aː m a ɻ",
+          "comment": "m"
+        },
+        {
+          "word": "nidhun",
+          "phonemes": "n i d̪ u n",
+          "comment": "n"
+        },
+        {
+          "word": "ṉuṉma",
+          "phonemes": "ɳ u ɳ m a",
+          "comment": "ṉ"
+        },
+        {
+          "word": "ngalng",
+          "phonemes": "ŋ a l ŋ",
+          "comment": "ng"
+        },
+        {
+          "word": "nyiny-ma",
+          "phonemes": "ɲ i ɲ m a",
+          "comment": "ny"
+        },
+        {
+          "word": "ramu-nyij",
+          "phonemes": "ɻ a m u ɲ i ɟ",
+          "comment": "r"
+        },
+        {
+          "word": "rrangag",
+          "phonemes": "ɾ a ŋ a ɡ",
+          "comment": "rr"
+        },
+        {
+          "word": "dhuduju",
+          "phonemes": "d̪ u d u ɟ u",
+          "comment": "u"
+        },
+        {
+          "word": "waḻan",
+          "phonemes": "w a ɭ a n",
+          "comment": "w"
+        },
+        {
+          "word": "yiwujun",
+          "phonemes": "j i w u ɟ u n",
+          "comment": "y"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "alveolar-base": "[dnl]",
+          "post-n": "[gy]",
+          "passthrough": "[abdilmnuw]"
+        },
+        "sub": [
+          {
+            "from": "ḏ",
+            "to": "ɖ",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "ɟ",
+            "weight": 4.0
+          },
+          {
+            "from": "ḻ",
+            "to": "ɭ",
+            "weight": 4.0
+          },
+          {
+            "from": "ṉ",
+            "to": "ɳ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɻ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "many words have hyphens that carry no phonetic value"
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<dh>"
+          },
+          {
+            "from": "l",
+            "to": "l̪",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<lh>"
+          },
+          {
+            "from": "n",
+            "to": "n̪",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<nh> - rare"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{alveolar-base}",
+            "comment": "cleanup of h-final digraphs"
+          },
+          {
+            "from": "y",
+            "to": "ɲ",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<ny>"
+          },
+          {
+            "from": "g",
+            "to": "ŋ",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<ng>"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 6.0,
+            "follow": "{post-n}",
+            "comment": "cleanup of n-initial digraphs"
+          },
+          {
+            "from": "a",
+            "to": "aː",
+            "weight": 6.0,
+            "follow": "a",
+            "comment": "<aa>"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 6.0,
+            "precede": "a",
+            "comment": "<aa> cleanup"
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 6.0,
+            "follow": "r",
+            "comment": "<rr>"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 6.0,
+            "precede": "r",
+            "comment": "<rr> cleanup"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}

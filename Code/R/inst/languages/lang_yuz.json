@@ -1,0 +1,300 @@
+{
+  "metadata": {
+    "code": "yuz",
+    "name": "Yuracare",
+    "family": "Language Isolate",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "sama",
+          "phonemes": "s a m a"
+        },
+        {
+          "word": "bolembole",
+          "phonemes": "b o l e m b o l e"
+        },
+        {
+          "word": "sobossobo",
+          "phonemes": "s o b o s ː o b o"
+        },
+        {
+          "word": "sëpisë",
+          "phonemes": "s æ p i s æ"
+        },
+        {
+          "word": "bache",
+          "phonemes": "b a tʃ e"
+        },
+        {
+          "word": "bëjta",
+          "phonemes": "b æ h t a"
+        },
+        {
+          "word": "sheta",
+          "phonemes": "ʃ e t a"
+        },
+        {
+          "word": "letu",
+          "phonemes": "l e t u"
+        },
+        {
+          "word": "judiu",
+          "phonemes": "h u d i w"
+        },
+        {
+          "word": "naa",
+          "phonemes": "n a a"
+        },
+        {
+          "word": "cuta",
+          "phonemes": "k u t a"
+        },
+        {
+          "word": "shunñe",
+          "phonemes": "ʃ u n ɲ e"
+        },
+        {
+          "word": "ateremtë",
+          "phonemes": "a t e ɹ̝ e m t æ"
+        },
+        {
+          "word": "cürüs",
+          "phonemes": "k ɨ ɹ̝ ɨ s"
+        },
+        {
+          "word": "achaya",
+          "phonemes": "a tʃ a j a"
+        },
+        {
+          "word": "cutau",
+          "phonemes": "k u t a w"
+        },
+        {
+          "word": "mandyuju",
+          "phonemes": "m a n dʲ u h u"
+        },
+        {
+          "word": "tuhua",
+          "phonemes": "t u w a"
+        },
+        {
+          "word": "quinto",
+          "phonemes": "k i n t o"
+        },
+        {
+          "word": "achuta",
+          "phonemes": "a tʃ u t a"
+        },
+        {
+          "word": "sibbë",
+          "phonemes": "s i b ː æ"
+        },
+        {
+          "word": "maj-mapacca",
+          "phonemes": "m a h m a p a k ː a"
+        },
+        {
+          "word": "huiddishcuta",
+          "phonemes": "w i d ː i ʃ k u t a"
+        },
+        {
+          "word": "dojjo",
+          "phonemes": "d o h ː o"
+        },
+        {
+          "word": "ellei",
+          "phonemes": "e l ː e i"
+        },
+        {
+          "word": "mammui",
+          "phonemes": "m a m ː u i"
+        },
+        {
+          "word": "ënnëtësh",
+          "phonemes": "æ n ː æ t æ ʃ"
+        },
+        {
+          "word": "mappëlë",
+          "phonemes": "m a p ː æ l æ"
+        },
+        {
+          "word": "burro",
+          "phonemes": "b u ɹ̝ ː o"
+        },
+        {
+          "word": "lëtta",
+          "phonemes": "l æ t ː a"
+        },
+        {
+          "word": "oyyotijsha",
+          "phonemes": "o j ː o t i h ʃ a"
+        },
+        {
+          "word": "ëshshë",
+          "phonemes": "æ ʃ ː æ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeilmnopstu]",
+          "gem": "(b|k|d|h|l|m|n|ɲ|p|ɹ̝|s|t|j|tʃ|dʲ|w|ʃ)",
+          "f-vowel": "[ie]",
+          "vowels": "[aeioëü]",
+          "u-preceder": "(ch|sh)"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "ë",
+            "to": "æ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɹ̝",
+            "weight": 2.0
+          },
+          {
+            "from": "ü",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          },
+          {
+            "from": "u",
+            "to": "w",
+            "weight": 3.0,
+            "precede": "{vowels}",
+            "comment": "<u> to /w/ syllable-finally"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "dʲ",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 3.0,
+            "precede": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "w",
+            "weight": 3.0,
+            "follow": "u{vowels}",
+            "comment": "<hu> transcribes to /w/ syllable-initially"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "h",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "u{f-vowel}"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "u",
+            "weight": 4.0,
+            "precede": "{u-preceder}",
+            "comment": "prevents u from being deleted following <ch> and <sh>"
+          },
+          {
+            "from": "r",
+            "to": "ɹ̝ ː",
+            "weight": 3.0,
+            "follow": "r",
+            "comment": "the rule above can't handle <rr> for some reason"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 3.0,
+            "precede": "r",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({gem}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

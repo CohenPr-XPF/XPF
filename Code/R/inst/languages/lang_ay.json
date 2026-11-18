@@ -1,0 +1,299 @@
+{
+  "metadata": {
+    "code": "ay",
+    "name": "Aymara",
+    "family": "Aymaran",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "allpaqa",
+          "phonemes": "a ʎ p a q a",
+          "comment": "a"
+        },
+        {
+          "word": "mä",
+          "phonemes": "m a ː",
+          "comment": "ä"
+        },
+        {
+          "word": "achichi",
+          "phonemes": "a tʃ i tʃ i",
+          "comment": "ch"
+        },
+        {
+          "word": "wichhu",
+          "phonemes": "w i tʃʰ u",
+          "comment": "chh"
+        },
+        {
+          "word": "ch'aqa",
+          "phonemes": "tʃʼ a q a",
+          "comment": "ch'"
+        },
+        {
+          "word": "khiti",
+          "phonemes": "kʰ i t i",
+          "comment": "i"
+        },
+        {
+          "word": "sarakïnwa",
+          "phonemes": "s a ɾ a k i ː n w a",
+          "comment": "ï"
+        },
+        {
+          "word": "jiwasa",
+          "phonemes": "x i w a s a",
+          "comment": "j"
+        },
+        {
+          "word": "kimsa",
+          "phonemes": "k i m s a",
+          "comment": "k"
+        },
+        {
+          "word": "khunu",
+          "phonemes": "kʰ u n u",
+          "comment": "kh"
+        },
+        {
+          "word": "k'usa",
+          "phonemes": "kʼ u s a",
+          "comment": "k'"
+        },
+        {
+          "word": "wila",
+          "phonemes": "w i l a",
+          "comment": "l"
+        },
+        {
+          "word": "palla",
+          "phonemes": "p a ʎ a",
+          "comment": "ll"
+        },
+        {
+          "word": "malku",
+          "phonemes": "m a l k u",
+          "comment": "m"
+        },
+        {
+          "word": "nina",
+          "phonemes": "n i n a",
+          "comment": "n"
+        },
+        {
+          "word": "qamaña",
+          "phonemes": "q a m a ɲ a",
+          "comment": "ñ"
+        },
+        {
+          "word": "pampa",
+          "phonemes": "p a m p a",
+          "comment": "p"
+        },
+        {
+          "word": "phucha",
+          "phonemes": "pʰ u tʃ a",
+          "comment": "ph"
+        },
+        {
+          "word": "lap'a",
+          "phonemes": "l a pʼ a",
+          "comment": "p'"
+        },
+        {
+          "word": "qullcha",
+          "phonemes": "q u ʎ tʃ a",
+          "comment": "q"
+        },
+        {
+          "word": "manqha",
+          "phonemes": "m a n qʰ a",
+          "comment": "qh"
+        },
+        {
+          "word": "q'ala",
+          "phonemes": "qʼ a l a",
+          "comment": "q'"
+        },
+        {
+          "word": "warawara",
+          "phonemes": "w a ɾ a w a ɾ a",
+          "comment": "r"
+        },
+        {
+          "word": "suxta",
+          "phonemes": "s u χ t a",
+          "comment": "s"
+        },
+        {
+          "word": "tunka",
+          "phonemes": "t u n k a",
+          "comment": "t"
+        },
+        {
+          "word": "utha",
+          "phonemes": "u tʰ a",
+          "comment": "th"
+        },
+        {
+          "word": "t'ant'a",
+          "phonemes": "tʼ a n tʼ a",
+          "comment": "t'"
+        },
+        {
+          "word": "uru",
+          "phonemes": "u ɾ u",
+          "comment": "u"
+        },
+        {
+          "word": "sapür",
+          "phonemes": "s a p u ː ɾ",
+          "comment": "ü"
+        },
+        {
+          "word": "wawa",
+          "phonemes": "w a w a",
+          "comment": "w"
+        },
+        {
+          "word": "phaxsi",
+          "phonemes": "pʰ a χ s i",
+          "comment": "x"
+        },
+        {
+          "word": "naya",
+          "phonemes": "n a j a",
+          "comment": "y"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "['ꞌˈ‘’]",
+          "passthrough": "[aiklmnpqstuw]",
+          "eject": "(p|t|tʃ|k|q)",
+          "asp": "(p|t|tʃ|k|q)",
+          "supraseg": "[ʼʰ]"
+        },
+        "sub": [
+          {
+            "from": "ä",
+            "to": "a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ï",
+            "to": "i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "x",
+            "weight": 4.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "ü",
+            "to": "u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "x",
+            "to": "χ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "h",
+            "to": "ʰ",
+            "weight": 3.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʼ",
+            "weight": 3.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "l",
+            "to": "ʎ",
+            "weight": 6.0,
+            "follow": "l"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 6.0,
+            "precede": "l",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({asp}) ʰ",
+            "to": "\\1ʰ",
+            "weight": 2.0,
+            "comment": "attaches aspiration diacritic to phoneme"
+          },
+          {
+            "from": "({eject}) ʼ",
+            "to": "\\1ʼ",
+            "weight": 2.0,
+            "comment": "attaches ejective diacritic to phoneme"
+          },
+          {
+            "from": " {supraseg}",
+            "to": " @",
+            "weight": 1.0,
+            "comment": "some combinations of consonants (eg. khh, u') are not attested in the language and are not transcribed"
+          },
+          {
+            "from": "^{supraseg}",
+            "to": "@",
+            "weight": 1.0,
+            "comment": "some combinations of consonants (eg. khh, u') are not attested in the language and are not transcribed"
+          },
+          {
+            "from": "n ʰ",
+            "to": "n",
+            "weight": 3.0,
+            "comment": "⟨nh⟩ generally assumed to allophonically represent /ŋ/, so we default to /n/, unless uncommenting lines 33-34 is desired (if so, comment out this line)"
+          }
+        ]
+      }
+    }
+  }
+}

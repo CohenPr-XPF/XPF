@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "code": "dgz",
+    "name": "Daga",
+    "family": "Trans-New Guinea,Main Section,Eastern,Central and Southeastern,Dagan",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ya",
+          "phonemes": "j a",
+          "comment": "testing y rule"
+        },
+        {
+          "word": "sia",
+          "phonemes": "t i a",
+          "comment": "s rule"
+        },
+        {
+          "word": "iravi",
+          "phonemes": "i r a w i",
+          "comment": "v rule"
+        },
+        {
+          "word": "gapan",
+          "phonemes": "ɡ a p a n"
+        },
+        {
+          "word": "amba",
+          "phonemes": "a m b a"
+        },
+        {
+          "word": "den",
+          "phonemes": "d e n"
+        },
+        {
+          "word": "koewa",
+          "phonemes": "k o e w a"
+        },
+        {
+          "word": "menan",
+          "phonemes": "m e n a n"
+        },
+        {
+          "word": "wat",
+          "phonemes": "w a t"
+        },
+        {
+          "word": "anu",
+          "phonemes": "a n u"
+        },
+        {
+          "word": "waenapan",
+          "phonemes": "w a e n a p a n"
+        },
+        {
+          "word": "ap",
+          "phonemes": "a p"
+        },
+        {
+          "word": "ne",
+          "phonemes": "n e"
+        },
+        {
+          "word": "ge",
+          "phonemes": "ɡ e"
+        },
+        {
+          "word": "mu",
+          "phonemes": "m u"
+        },
+        {
+          "word": "wa",
+          "phonemes": "w a"
+        },
+        {
+          "word": "ae",
+          "phonemes": "a e"
+        },
+        {
+          "word": "apan",
+          "phonemes": "a p a n"
+        },
+        {
+          "word": "muga",
+          "phonemes": "m u ɡ a"
+        },
+        {
+          "word": "dim",
+          "phonemes": "d i m"
+        },
+        {
+          "word": "nu",
+          "phonemes": "n u"
+        },
+        {
+          "word": "pa",
+          "phonemes": "p a"
+        },
+        {
+          "word": "iwa",
+          "phonemes": "i w a"
+        },
+        {
+          "word": "uon",
+          "phonemes": "u o n"
+        },
+        {
+          "word": "inap",
+          "phonemes": "i n a p"
+        },
+        {
+          "word": "gare",
+          "phonemes": "ɡ a r e"
+        },
+        {
+          "word": "at",
+          "phonemes": "a t"
+        },
+        {
+          "word": "inak",
+          "phonemes": "i n a k"
+        },
+        {
+          "word": "ta",
+          "phonemes": "t a"
+        },
+        {
+          "word": "mame",
+          "phonemes": "m a m e"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[bdkmnprtwaeiou]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "s",
+            "to": "t",
+            "weight": 1.0
+          },
+          {
+            "from": "v",
+            "to": "w",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}

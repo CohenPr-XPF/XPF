@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "code": "ghs",
+    "name": "Guhu-Samane",
+    "family": "Trans-New Guinea,Main Section,Eastern,Binanderean,Guhu-Samane",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "abaniraqu",
+          "phonemes": "a b a n i ɽ a ʔ u"
+        },
+        {
+          "word": "agita",
+          "phonemes": "a ɡ i t a"
+        },
+        {
+          "word": "aretetaqu",
+          "phonemes": "a ɽ e t e t a ʔ u"
+        },
+        {
+          "word": "attiatti",
+          "phonemes": "a t̪ i a t̪ i"
+        },
+        {
+          "word": "badza",
+          "phonemes": "b a dz a"
+        },
+        {
+          "word": "bairere",
+          "phonemes": "b ai ɽ e ɽ e"
+        },
+        {
+          "word": "bookha",
+          "phonemes": "b o ː kx a"
+        },
+        {
+          "word": "botosa",
+          "phonemes": "b o t o s a"
+        },
+        {
+          "word": "botti",
+          "phonemes": "b o t̪ i"
+        },
+        {
+          "word": "dzadzangi",
+          "phonemes": "dz a dz a ŋ i"
+        },
+        {
+          "word": "eetaqu",
+          "phonemes": "e ː t a ʔ u"
+        },
+        {
+          "word": "emoemo",
+          "phonemes": "e m oe m o"
+        },
+        {
+          "word": "gamaisa",
+          "phonemes": "ɡ a m ai s a"
+        },
+        {
+          "word": "geepo",
+          "phonemes": "ɡ e ː p o"
+        },
+        {
+          "word": "gootaqu",
+          "phonemes": "ɡ o ː t a ʔ u"
+        },
+        {
+          "word": "gohabaqu",
+          "phonemes": "ɡ o h a b a ʔ u"
+        },
+        {
+          "word": "koko",
+          "phonemes": "k o k o"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abehikmnopstu]",
+          "vowels": "[aeiou]",
+          "a-dip": "[eiou]",
+          "e-dip": "[iou]",
+          "o-dip": "[eiu]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "q",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɽ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "d",
+            "to": "dz",
+            "weight": 3.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 3.0,
+            "precede": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "k",
+            "to": "kx",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "k",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 3.0,
+            "follow": "t"
+          },
+          {
+            "from": "t",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "ae",
+            "weight": 4.0,
+            "follow": "e"
+          },
+          {
+            "from": "a",
+            "to": "ai",
+            "weight": 4.0,
+            "follow": "i"
+          },
+          {
+            "from": "a",
+            "to": "ao",
+            "weight": 4.0,
+            "follow": "o"
+          },
+          {
+            "from": "a",
+            "to": "au",
+            "weight": 4.0,
+            "follow": "u"
+          },
+          {
+            "from": "{a-dip}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "a",
+            "comment": "clean-up"
+          },
+          {
+            "from": "e",
+            "to": "ei",
+            "weight": 4.0,
+            "follow": "i"
+          },
+          {
+            "from": "e",
+            "to": "eo",
+            "weight": 4.0,
+            "follow": "o"
+          },
+          {
+            "from": "e",
+            "to": "eu",
+            "weight": 4.0,
+            "follow": "u"
+          },
+          {
+            "from": "{e-dip}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "e",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "iu",
+            "weight": 4.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 4.0,
+            "precede": "i",
+            "comment": "clean-up"
+          },
+          {
+            "from": "o",
+            "to": "oe",
+            "weight": 4.0,
+            "follow": "e"
+          },
+          {
+            "from": "o",
+            "to": "oi",
+            "weight": 4.0,
+            "follow": "i"
+          },
+          {
+            "from": "o",
+            "to": "ou",
+            "weight": 4.0,
+            "follow": "u"
+          },
+          {
+            "from": "{o-dip}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "o",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "ui",
+            "weight": 4.0,
+            "follow": "i"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 4.0,
+            "precede": "u",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({vowels}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,520 @@
+{
+  "metadata": {
+    "code": "suz",
+    "name": "Sunwar",
+    "family": "Sino-Tibetan,Tibeto-Burman,Himalayish,Mahakiranti,Kham-Magar-Chepang-Sunwari,Sunwari",
+    "macroarea": "Eurasia",
+    "compromised": {
+      "sounds": "ɾ|ɭ|l̪",
+      "note": "/ʔ/ not always marked"
+    },
+    "default_script": "devanagari"
+  },
+  "scripts": {
+    "devanagari": {
+      "verify": [
+        {
+          "word": "मेकोपुकी",
+          "phonemes": "m e k o p u k i",
+          "comment": "क / k ----- BEGINNING OF CONSONANTS"
+        },
+        {
+          "word": "खोदेशो",
+          "phonemes": "kʰ o d̪ e ʃ o",
+          "comment": "ख / kʰ"
+        },
+        {
+          "word": "गन्‍ती",
+          "phonemes": "ɡ a n t̪ i",
+          "comment": "ग / ɡ"
+        },
+        {
+          "word": "ङोंइती",
+          "phonemes": "ŋ õ i t̪ i",
+          "comment": "ङ / ŋ"
+        },
+        {
+          "word": "चहिं",
+          "phonemes": "tʃ a h ĩ",
+          "comment": "च / tʃ"
+        },
+        {
+          "word": "जचा",
+          "phonemes": "dʒ a tʃ aː",
+          "comment": "ज / dʒ"
+        },
+        {
+          "word": "मटीब",
+          "phonemes": "m a ʈ i b a",
+          "comment": "ट / ʈ"
+        },
+        {
+          "word": "ठीक",
+          "phonemes": "ʈʰ i k a",
+          "comment": "ठ / ʈʰ"
+        },
+        {
+          "word": "ङोंइती",
+          "phonemes": "ŋ õ i t̪ i",
+          "comment": "त / t̪"
+        },
+        {
+          "word": "थमा",
+          "phonemes": "t̪ʰ a m aː",
+          "comment": "थ / t̪ʰ"
+        },
+        {
+          "word": "दाऊद",
+          "phonemes": "d̪ aː uː d̪ a",
+          "comment": "द / d̪"
+        },
+        {
+          "word": "निक्‍शी",
+          "phonemes": "n i k ʃ i",
+          "comment": "न / n"
+        },
+        {
+          "word": "पिप",
+          "phonemes": "p i p a",
+          "comment": "प / p"
+        },
+        {
+          "word": "निसाफ",
+          "phonemes": "n i s aː pʰ a",
+          "comment": "फ / pʰ"
+        },
+        {
+          "word": "बाक्‍ब",
+          "phonemes": "b aː k b a",
+          "comment": "ब / b"
+        },
+        {
+          "word": "मारदे",
+          "phonemes": "m aː ɾ a d̪ e",
+          "comment": "म / m"
+        },
+        {
+          "word": "यावे",
+          "phonemes": "j aː w e",
+          "comment": "य / j"
+        },
+        {
+          "word": "लोव़",
+          "phonemes": "l̪ o w a",
+          "comment": "ल / l̪"
+        },
+        {
+          "word": "वारच",
+          "phonemes": "w aː ɾ a tʃ a",
+          "comment": "व / w"
+        },
+        {
+          "word": "सम्‍म",
+          "phonemes": "s a m ː a",
+          "comment": "स / s"
+        },
+        {
+          "word": "तशा",
+          "phonemes": "t̪ a ʃ aː",
+          "comment": "श / ʃ"
+        },
+        {
+          "word": "हन्‍ना",
+          "phonemes": "h a n ː aː",
+          "comment": "ह / h"
+        },
+        {
+          "word": "अर्को",
+          "phonemes": "a ɾ k o",
+          "comment": "अ / a ----- BEGINNING OF VOWEL CHARACTERS"
+        },
+        {
+          "word": "आन",
+          "phonemes": "aː n a",
+          "comment": "आ / aː"
+        },
+        {
+          "word": "पाइब",
+          "phonemes": "p aː i b a",
+          "comment": "इ / i"
+        },
+        {
+          "word": "उत्‍पत्ती",
+          "phonemes": "u t̪ p a t̪ ː i",
+          "comment": "उ / u"
+        },
+        {
+          "word": "दाऊदमी",
+          "phonemes": "d̪ aː uː d̪ a m i",
+          "comment": "ऊ / uː"
+        },
+        {
+          "word": "एको",
+          "phonemes": "e k o",
+          "comment": "ए / e"
+        },
+        {
+          "word": "ओटा",
+          "phonemes": "o ʈ aː",
+          "comment": "ओ / o"
+        },
+        {
+          "word": "नेल्",
+          "phonemes": "n e l̪",
+          "comment": "् / null ----- BEGINNING OF DIACRITICS"
+        },
+        {
+          "word": "पा",
+          "phonemes": "p aː",
+          "comment": "ा / aː"
+        },
+        {
+          "word": "रिम्‍शो",
+          "phonemes": "ɾ i m ʃ o",
+          "comment": "ि / i"
+        },
+        {
+          "word": "मुर",
+          "phonemes": "m u ɾ a",
+          "comment": "ु / u"
+        },
+        {
+          "word": "यहू",
+          "phonemes": "j a h uː",
+          "comment": "ू / uː"
+        },
+        {
+          "word": "मेको",
+          "phonemes": "m e k o",
+          "comment": "े / e"
+        },
+        {
+          "word": "खोदेशो",
+          "phonemes": "kʰ o d̪ e ʃ o",
+          "comment": "ो / o"
+        },
+        {
+          "word": "आं",
+          "phonemes": "ãː",
+          "comment": "ं / nasalizer"
+        },
+        {
+          "word": "नेए्ल",
+          "phonemes": "n e ʔ l̪ a",
+          "comment": "glottal stop"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "k": "[क]",
+          "kh": "[ख]",
+          "g": "[ग]",
+          "ng": "[ङ]",
+          "tsh": "[च]",
+          "dzh": "[ज]",
+          "t-retro": "[ट]",
+          "th-retro": "[ठ]",
+          "t": "[त]",
+          "th": "[थ]",
+          "d": "[द]",
+          "n": "[न]",
+          "p": "[प]",
+          "ph": "[फ]",
+          "b": "[ब]",
+          "m": "[म]",
+          "j-glide": "[य]",
+          "flap": "[र]",
+          "l": "[ल]",
+          "w": "[व]",
+          "s": "[स]",
+          "sh": "[षश]",
+          "h": "[ह]",
+          "a": "[अ]",
+          "a-long": "[आ]",
+          "i": "[इई]",
+          "u": "[उ]",
+          "u-long": "[ऊ]",
+          "e": "[ए]",
+          "o": "[ओ]",
+          "diacritic_a-long": "[ा]",
+          "diacritici": "[िी]",
+          "diacriticu": "[ु]",
+          "diacritic_u-long": "[ू]",
+          "diacritice": "[े]",
+          "diacritico": "[ो]",
+          "nasalizer": "[ं]",
+          "null": "[्]",
+          "misc-diacritics": "[‍़-]",
+          "vowel": "(a|e|i|o|u|aː|uː)",
+          "vowel_nota": "[eiou]",
+          "gem": "(p|b|tʃ|k|m|n|p|s|t̪|l̪|pʰ|t̪ʰ|d̪|ʈ|ʈʰ|kʰ|ɡ|dʒ|ʃ|h|ŋ|ɾ|w|ɭ|j)"
+        },
+        "sub": [
+          {
+            "from": "{k}",
+            "to": "k a",
+            "weight": 4.0
+          },
+          {
+            "from": "{kh}",
+            "to": "kʰ a",
+            "weight": 4.0
+          },
+          {
+            "from": "{g}",
+            "to": "ɡ a",
+            "weight": 4.0
+          },
+          {
+            "from": "{ng}",
+            "to": "ŋ a",
+            "weight": 4.0
+          },
+          {
+            "from": "{tsh}",
+            "to": "tʃ a",
+            "weight": 4.0
+          },
+          {
+            "from": "{dzh}",
+            "to": "dʒ a",
+            "weight": 4.0
+          },
+          {
+            "from": "{t-retro}",
+            "to": "ʈ a",
+            "weight": 4.0
+          },
+          {
+            "from": "{th-retro}",
+            "to": "ʈʰ a",
+            "weight": 4.0
+          },
+          {
+            "from": "{t}",
+            "to": "t̪ a",
+            "weight": 4.0
+          },
+          {
+            "from": "{th}",
+            "to": "t̪ʰ a",
+            "weight": 4.0
+          },
+          {
+            "from": "{d}",
+            "to": "d̪ a",
+            "weight": 4.0
+          },
+          {
+            "from": "{n}",
+            "to": "n a",
+            "weight": 4.0
+          },
+          {
+            "from": "{p}",
+            "to": "p a",
+            "weight": 4.0
+          },
+          {
+            "from": "{ph}",
+            "to": "pʰ a",
+            "weight": 4.0
+          },
+          {
+            "from": "{b}",
+            "to": "b a",
+            "weight": 4.0
+          },
+          {
+            "from": "{m}",
+            "to": "m a",
+            "weight": 4.0
+          },
+          {
+            "from": "{j-glide}",
+            "to": "j a",
+            "weight": 4.0
+          },
+          {
+            "from": "{flap}",
+            "to": "ɾ a",
+            "weight": 4.0
+          },
+          {
+            "from": "{l}",
+            "to": "l̪ a",
+            "weight": 4.0
+          },
+          {
+            "from": "{w}",
+            "to": "w a",
+            "weight": 4.0
+          },
+          {
+            "from": "{s}",
+            "to": "s a",
+            "weight": 4.0
+          },
+          {
+            "from": "{sh}",
+            "to": "ʃ a",
+            "weight": 4.0
+          },
+          {
+            "from": "{h}",
+            "to": "h a",
+            "weight": 4.0
+          },
+          {
+            "from": "{a}",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "{a-long}",
+            "to": "aː",
+            "weight": 4.0
+          },
+          {
+            "from": "{i}",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "{u}",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "{u-long}",
+            "to": "uː",
+            "weight": 4.0
+          },
+          {
+            "from": "{e}",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "{o}",
+            "to": "o",
+            "weight": 4.0
+          },
+          {
+            "from": "{diacritic_a-long}",
+            "to": "ERASE aː",
+            "weight": 4.0
+          },
+          {
+            "from": "{diacritici}",
+            "to": "ERASE i",
+            "weight": 4.0
+          },
+          {
+            "from": "{diacriticu}",
+            "to": "ERASE u",
+            "weight": 4.0
+          },
+          {
+            "from": "{diacritic_u-long}",
+            "to": "ERASE uː",
+            "weight": 4.0
+          },
+          {
+            "from": "{diacritice}",
+            "to": "ERASE e",
+            "weight": 4.0
+          },
+          {
+            "from": "{diacritico}",
+            "to": "ERASE o",
+            "weight": 4.0
+          },
+          {
+            "from": "{nasalizer}",
+            "to": "NAS",
+            "weight": 4.0
+          },
+          {
+            "from": "{null}",
+            "to": "ERASE",
+            "weight": 4.0
+          },
+          {
+            "from": "{misc-diacritics}",
+            "to": "",
+            "weight": 3.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "a ERASE",
+            "to": "",
+            "weight": 4.0,
+            "comment": "removes inherent /a/ when followed by an explicit vowel or nullifying character"
+          },
+          {
+            "from": "({vowel}) \\1 ERASE",
+            "to": "\\1 ʔ",
+            "weight": 6.0,
+            "comment": "catches explicitly marked glottal stops"
+          },
+          {
+            "from": "a ({vowel_nota}) ERASE",
+            "to": "\\1",
+            "weight": 3.0,
+            "comment": "in some cases, the nullifying character diacritic is following the vowel diacritic"
+          },
+          {
+            "from": "^ERASE",
+            "to": "",
+            "weight": 2.0,
+            "comment": "deletes the word-initial null diacritic that appears in occasional words"
+          },
+          {
+            "from": " ERASE",
+            "to": " @",
+            "weight": 1.0,
+            "comment": "controls for unattested combos (19)"
+          },
+          {
+            "from": "({vowel}) NAS",
+            "to": "\\1̃",
+            "weight": 2.0,
+            "comment": "attaches the nasal diacritic to short vowels"
+          },
+          {
+            "from": "aː NAS",
+            "to": "ãː",
+            "weight": 3.0,
+            "comment": "attaches the nasal diacritic to long vowels"
+          },
+          {
+            "from": "uː NAS",
+            "to": "uː",
+            "weight": 2.0,
+            "comment": "nasal /uː/ is not contrastive with /uː/"
+          },
+          {
+            "from": "^NAS",
+            "to": "",
+            "weight": 2.0,
+            "comment": "deletes the word-initial NAS diacritic that appears in occasional words"
+          },
+          {
+            "from": "({gem}) a ERASE \\1",
+            "to": "\\1 ː",
+            "weight": 6.0,
+            "comment": "consonant gemination"
+          },
+          {
+            "from": "({gem}) a ERASE \\1ʰ",
+            "to": "\\1ʰ ː",
+            "weight": 7.0,
+            "comment": "fixes gemination rule"
+          }
+        ]
+      }
+    }
+  }
+}

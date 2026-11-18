@@ -1,0 +1,326 @@
+{
+  "metadata": {
+    "code": "cni",
+    "name": "Asháninka",
+    "family": "Arawakan,Maipuran,Southern Maipuran,Campa",
+    "macroarea": "South America",
+    "compromised": {
+      "sounds": "N|m|n",
+      "note": "N represents a placeless nasal"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "aiyo",
+          "phonemes": "ai j o"
+        },
+        {
+          "word": "amarito",
+          "phonemes": "a m a ɾ i t o"
+        },
+        {
+          "word": "ariorica",
+          "phonemes": "a ɾ io ɾ i k a"
+        },
+        {
+          "word": "caari",
+          "phonemes": "k a ː ɾ i"
+        },
+        {
+          "word": "cachorontoqui",
+          "phonemes": "k a tʃ o ɾ o n t o k i"
+        },
+        {
+          "word": "camevira",
+          "phonemes": "k a m e β i ɾ a"
+        },
+        {
+          "word": "capiro",
+          "phonemes": "k a p i ɾ o"
+        },
+        {
+          "word": "capeshi",
+          "phonemes": "k a p e ʃ i"
+        },
+        {
+          "word": "corinto",
+          "phonemes": "k o ɾ i n t o"
+        },
+        {
+          "word": "chacami",
+          "phonemes": "tʃ a k a m i"
+        },
+        {
+          "word": "cajo",
+          "phonemes": "k a h o"
+        },
+        {
+          "word": "chocaripa",
+          "phonemes": "tʃ o k a ɾ i p a"
+        },
+        {
+          "word": "emoo",
+          "phonemes": "e m o ː"
+        },
+        {
+          "word": "eerequi",
+          "phonemes": "e ː ɾ e k i"
+        },
+        {
+          "word": "enoma",
+          "phonemes": "e n o m a"
+        },
+        {
+          "word": "ijina",
+          "phonemes": "i h i n a"
+        },
+        {
+          "word": "imashi",
+          "phonemes": "i m a ʃ i"
+        },
+        {
+          "word": "impanequi",
+          "phonemes": "i m p a n e k i"
+        },
+        {
+          "word": "impita",
+          "phonemes": "i m p i t a"
+        },
+        {
+          "word": "iposataque",
+          "phonemes": "i p o s a t a k e"
+        },
+        {
+          "word": "iveto",
+          "phonemes": "i β e t o"
+        },
+        {
+          "word": "maniti",
+          "phonemes": "m a n i t i"
+        },
+        {
+          "word": "mantsareto",
+          "phonemes": "m a n ts a ɾ e t o"
+        },
+        {
+          "word": "naavataji",
+          "phonemes": "n a ː β a t a h i"
+        },
+        {
+          "word": "najitapo",
+          "phonemes": "n a h i t a p o"
+        },
+        {
+          "word": "nanoncaca",
+          "phonemes": "n a n o n k a k a"
+        },
+        {
+          "word": "neentaca",
+          "phonemes": "n e ː n t a k a"
+        },
+        {
+          "word": "neronto",
+          "phonemes": "n e ɾ o n t o"
+        },
+        {
+          "word": "onkameetsateji",
+          "phonemes": "o n k a m e ː ts a t e h i"
+        },
+        {
+          "word": "jaoca",
+          "phonemes": "h ao k a"
+        },
+        {
+          "word": "irointi",
+          "phonemes": "i ɾ oi n t i"
+        },
+        {
+          "word": "eiro",
+          "phonemes": "ei ɾ o"
+        },
+        {
+          "word": "irineane",
+          "phonemes": "i ɾ i n ea n e"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeikmnopst]",
+          "vowels": "[aeio]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "v",
+            "to": "β",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "ai",
+            "weight": 3.0,
+            "follow": "i"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 3.0,
+            "precede": "a",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "ao",
+            "weight": 3.0,
+            "follow": "o"
+          },
+          {
+            "from": "o",
+            "to": "",
+            "weight": 3.0,
+            "precede": "a",
+            "comment": "clean-up"
+          },
+          {
+            "from": "o",
+            "to": "oi",
+            "weight": 3.0,
+            "follow": "i"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 3.0,
+            "precede": "o",
+            "comment": "clean-up"
+          },
+          {
+            "from": "e",
+            "to": "ei",
+            "weight": 3.0,
+            "follow": "i"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 3.0,
+            "precede": "e",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "io",
+            "weight": 3.0,
+            "follow": "o"
+          },
+          {
+            "from": "o",
+            "to": "",
+            "weight": 3.0,
+            "precede": "i",
+            "comment": "clean-up"
+          },
+          {
+            "from": "e",
+            "to": "ea",
+            "weight": 3.0,
+            "follow": "a"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 3.0,
+            "precede": "e",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({vowels}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 3.0
+          }
+        ]
+      }
+    }
+  }
+}

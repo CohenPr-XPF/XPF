@@ -1,0 +1,265 @@
+{
+  "metadata": {
+    "code": "rkb",
+    "name": "Rikbaktsa",
+    "family": "Macro-Ge,Rikbaktsa",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "yktsikãrã",
+          "phonemes": "ɨ k tʃ i k ã ɾ ã"
+        },
+        {
+          "word": "awatu",
+          "phonemes": "a w a t u"
+        },
+        {
+          "word": "bua",
+          "phonemes": "b u a"
+        },
+        {
+          "word": "tsahwa",
+          "phonemes": "tʃ a h w a"
+        },
+        {
+          "word": "tsumuẽhĩ",
+          "phonemes": "tʃ ũ m u ẽ h ĩ"
+        },
+        {
+          "word": "disaha",
+          "phonemes": "d i ʃ a h a"
+        },
+        {
+          "word": "ezuk",
+          "phonemes": "e ɾ̪ u k"
+        },
+        {
+          "word": "epypyk",
+          "phonemes": "e p ɨ p ɨ k"
+        },
+        {
+          "word": "harahareziktsa",
+          "phonemes": "h a ɾ a h a ɾ e ɾ̪ i k tʃ a"
+        },
+        {
+          "word": "haĩ",
+          "phonemes": "h a ĩ"
+        },
+        {
+          "word": "jaba",
+          "phonemes": "j a b a"
+        },
+        {
+          "word": "jokboha",
+          "phonemes": "j o k b o h a"
+        },
+        {
+          "word": "ki",
+          "phonemes": "k i"
+        },
+        {
+          "word": "koikny",
+          "phonemes": "k o i k n ɨ"
+        },
+        {
+          "word": "tsõ",
+          "phonemes": "tʃ õ"
+        },
+        {
+          "word": "hyỹ",
+          "phonemes": "h ɨ ɨ̃"
+        },
+        {
+          "word": "humo",
+          "phonemes": "h ũ m o"
+        },
+        {
+          "word": "niy",
+          "phonemes": "n i ɨ"
+        },
+        {
+          "word": "batu",
+          "phonemes": "b a t u"
+        },
+        {
+          "word": "kytsa",
+          "phonemes": "k ɨ tʃ a"
+        },
+        {
+          "word": "harere",
+          "phonemes": "h a ɾ e ɾ e"
+        },
+        {
+          "word": "zuba",
+          "phonemes": "ɾ̪ u b a"
+        },
+        {
+          "word": "zeka",
+          "phonemes": "ɾ̪ e k a"
+        },
+        {
+          "word": "kino",
+          "phonemes": "k ĩ n o"
+        },
+        {
+          "word": "tsimaha",
+          "phonemes": "tʃ ĩ m a h a"
+        },
+        {
+          "word": "nikaranaha",
+          "phonemes": "n i k a ɾ ã n a h a"
+        },
+        {
+          "word": "ana",
+          "phonemes": "ã n a"
+        },
+        {
+          "word": "niwatihi",
+          "phonemes": "n i w a t i h i"
+        },
+        {
+          "word": "tsimykaranaha",
+          "phonemes": "tʃ ĩ m ɨ k a ɾ ã n a h a"
+        },
+        {
+          "word": "nipamykysokonaha",
+          "phonemes": "n i p ã m ɨ k ɨ ʃ o k õ n a h a"
+        },
+        {
+          "word": "tsikaeni",
+          "phonemes": "tʃ i k a ẽ n i"
+        },
+        {
+          "word": "nyny",
+          "phonemes": "n ɨ̃ n ɨ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aãbdeẽhiĩjkmnoõptuũw]",
+          "nm_vowel": "[nm]",
+          "voicedC": "[bdjmnw]",
+          "vowels": "[aeiouy]"
+        },
+        "sub": [
+          {
+            "from": "y",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "ỹ",
+            "to": "ɨ̃",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "z",
+            "to": "ɾ̪",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "t",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "ã",
+            "weight": 3.0,
+            "follow": "{nm_vowel}"
+          },
+          {
+            "from": "i",
+            "to": "ĩ",
+            "weight": 3.0,
+            "follow": "{nm_vowel}"
+          },
+          {
+            "from": "o",
+            "to": "õ",
+            "weight": 3.0,
+            "follow": "{nm_vowel}"
+          },
+          {
+            "from": "u",
+            "to": "ũ",
+            "weight": 3.0,
+            "follow": "{nm_vowel}"
+          },
+          {
+            "from": "e",
+            "to": "ẽ",
+            "weight": 3.0,
+            "follow": "{nm_vowel}"
+          },
+          {
+            "from": "y",
+            "to": "ɨ̃",
+            "weight": 3.0,
+            "follow": "{nm_vowel}"
+          },
+          {
+            "from": "g",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "{voicedC}",
+            "comment": "<g> represents /k/ preceding voiced consonants"
+          },
+          {
+            "from": "g",
+            "to": "k",
+            "weight": 3.0,
+            "precede": "{vowels}",
+            "follow": "{vowels}",
+            "comment": "<g> represents /k/ between like-vowels"
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 3.0
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

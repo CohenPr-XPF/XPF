@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "code": "quz",
+    "name": "Cusco Quechua",
+    "family": "Quechuan,Quechua II,C",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ayapampa",
+          "phonemes": "a j a p a m p a",
+          "comment": "a"
+        },
+        {
+          "word": "chichuyay",
+          "phonemes": "tʃ i tʃ u j a j",
+          "comment": "ch"
+        },
+        {
+          "word": "chhalla",
+          "phonemes": "tʃʰ a ʎ a",
+          "comment": "chh"
+        },
+        {
+          "word": "ch'iri",
+          "phonemes": "tʃʼ i ɾ i",
+          "comment": "ch'"
+        },
+        {
+          "word": "rey",
+          "phonemes": "ɾ i j",
+          "comment": "e"
+        },
+        {
+          "word": "huhllay",
+          "phonemes": "h u h ʎ a j",
+          "comment": "h"
+        },
+        {
+          "word": "iñi",
+          "phonemes": "i ɲ i",
+          "comment": "i"
+        },
+        {
+          "word": "kichka",
+          "phonemes": "k i tʃ k a",
+          "comment": "k"
+        },
+        {
+          "word": "khata",
+          "phonemes": "kʰ a t a",
+          "comment": "kh"
+        },
+        {
+          "word": "k'usillu",
+          "phonemes": "kʼ u s i ʎ u",
+          "comment": "k'"
+        },
+        {
+          "word": "laqha",
+          "phonemes": "l a qʰ a",
+          "comment": "l"
+        },
+        {
+          "word": "llulla",
+          "phonemes": "ʎ u ʎ a",
+          "comment": "ll"
+        },
+        {
+          "word": "mitma",
+          "phonemes": "m i t m a",
+          "comment": "m"
+        },
+        {
+          "word": "ninay",
+          "phonemes": "n i n a j",
+          "comment": "n"
+        },
+        {
+          "word": "ñawpa",
+          "phonemes": "ɲ a w p a",
+          "comment": "ñ"
+        },
+        {
+          "word": "ñoqa",
+          "phonemes": "ɲ u q a",
+          "comment": "o"
+        },
+        {
+          "word": "pupu",
+          "phonemes": "p u p u",
+          "comment": "p"
+        },
+        {
+          "word": "phaway",
+          "phonemes": "pʰ a w a j",
+          "comment": "ph"
+        },
+        {
+          "word": "p'api",
+          "phonemes": "pʼ a p i",
+          "comment": "p'"
+        },
+        {
+          "word": "qillqa",
+          "phonemes": "q i ʎ q a",
+          "comment": "q"
+        },
+        {
+          "word": "qhari",
+          "phonemes": "qʰ a ɾ i",
+          "comment": "qh"
+        },
+        {
+          "word": "q'imiy",
+          "phonemes": "qʼ i m i j",
+          "comment": "q'"
+        },
+        {
+          "word": "rikuriy",
+          "phonemes": "ɾ i k u ɾ i j",
+          "comment": "r"
+        },
+        {
+          "word": "suysuy",
+          "phonemes": "s u j s u j",
+          "comment": "s"
+        },
+        {
+          "word": "shullpinay",
+          "phonemes": "ʃ u ʎ p i n a j",
+          "comment": "sh"
+        },
+        {
+          "word": "tuktu",
+          "phonemes": "t u k t u",
+          "comment": "t"
+        },
+        {
+          "word": "thuñiy",
+          "phonemes": "tʰ u ɲ i j",
+          "comment": "th"
+        },
+        {
+          "word": "t'aqa",
+          "phonemes": "tʼ a q a",
+          "comment": "t'"
+        },
+        {
+          "word": "unquy",
+          "phonemes": "u n q u j",
+          "comment": "u"
+        },
+        {
+          "word": "wawqi",
+          "phonemes": "w a w q i",
+          "comment": "w"
+        },
+        {
+          "word": "yaykuy",
+          "phonemes": "j a j k u j",
+          "comment": "y"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "[ꞌ'ˈ‘’]",
+          "can-be-asp": "(ch|k|p|q|t)",
+          "can-be-ejec": "(p|t|k|q|ch)",
+          "pre-h": "[cs]",
+          "plosive": "[ptkqʃ]",
+          "asp-or-ej": "[ʰʼ]",
+          "passthrough": "[ahiklmnpqstuw]"
+        },
+        "sub": [
+          {
+            "from": "e",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "h",
+            "to": "ʰ",
+            "weight": 4.0,
+            "precede": "{can-be-asp}"
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 4.0
+          },
+          {
+            "from": "o",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʼ",
+            "weight": 4.0,
+            "precede": "{can-be-ejec}"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<ch> digraph"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<sh> digraph"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{pre-h}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "l",
+            "to": "ʎ",
+            "weight": 6.0,
+            "follow": "l",
+            "comment": "<ll> digraph"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 6.0,
+            "precede": "l"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({plosive}) ({asp-or-ej})",
+            "to": "\\1\\2",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

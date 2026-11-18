@@ -1,0 +1,428 @@
+{
+  "metadata": {
+    "code": "uk",
+    "name": "Ukrainian",
+    "family": "Indo-European,Balto-Slavic,Slavic,East Slavic,Ukrainian",
+    "macroarea": "Eurasia",
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "абака",
+          "phonemes": "a b a k a",
+          "comment": "а"
+        },
+        {
+          "word": "бабуся",
+          "phonemes": "b a b u sʲ a",
+          "comment": "б"
+        },
+        {
+          "word": "вдова",
+          "phonemes": "v d ɔ v a",
+          "comment": "в"
+        },
+        {
+          "word": "гоголь",
+          "phonemes": "ɦ ɔ ɦ ɔ lʲ",
+          "comment": "г"
+        },
+        {
+          "word": "ґанок",
+          "phonemes": "ɡ a n ɔ k",
+          "comment": "ґ"
+        },
+        {
+          "word": "дідух",
+          "phonemes": "dʲ i d u x",
+          "comment": "д"
+        },
+        {
+          "word": "джерело",
+          "phonemes": "dʒ ɛ r ɛ l ɔ",
+          "comment": "дж"
+        },
+        {
+          "word": "дзьоб",
+          "phonemes": "dzʲ ɔ b",
+          "comment": "дз"
+        },
+        {
+          "word": "енергія",
+          "phonemes": "ɛ n ɛ r ɦ i j a",
+          "comment": "е"
+        },
+        {
+          "word": "єдиноріг",
+          "phonemes": "j ɛ d ɪ n ɔ rʲ i ɦ",
+          "comment": "є"
+        },
+        {
+          "word": "жук",
+          "phonemes": "ʒ u k",
+          "comment": "ж"
+        },
+        {
+          "word": "звізда",
+          "phonemes": "z v i z d a",
+          "comment": "з"
+        },
+        {
+          "word": "жити",
+          "phonemes": "ʒ ɪ t ɪ",
+          "comment": "и"
+        },
+        {
+          "word": "історія",
+          "phonemes": "i s t ɔ rʲ i j a",
+          "comment": "і"
+        },
+        {
+          "word": "їсти",
+          "phonemes": "j i s t ɪ",
+          "comment": "ї"
+        },
+        {
+          "word": "йти",
+          "phonemes": "j t ɪ",
+          "comment": "й"
+        },
+        {
+          "word": "кішка",
+          "phonemes": "k i ʃ k a",
+          "comment": "к"
+        },
+        {
+          "word": "ловелас",
+          "phonemes": "l ɔ v ɛ l a s",
+          "comment": "л"
+        },
+        {
+          "word": "мамонт",
+          "phonemes": "m a m ɔ n t",
+          "comment": "м"
+        },
+        {
+          "word": "надання",
+          "phonemes": "n a d a n nʲ a",
+          "comment": "н"
+        },
+        {
+          "word": "озеро",
+          "phonemes": "ɔ z ɛ r ɔ",
+          "comment": "о"
+        },
+        {
+          "word": "папуга",
+          "phonemes": "p a p u ɦ a",
+          "comment": "п"
+        },
+        {
+          "word": "розмір",
+          "phonemes": "r ɔ z m i r",
+          "comment": "р"
+        },
+        {
+          "word": "совість",
+          "phonemes": "s ɔ v i s tʲ",
+          "comment": "с"
+        },
+        {
+          "word": "ткати",
+          "phonemes": "t k a t ɪ",
+          "comment": "т"
+        },
+        {
+          "word": "увага",
+          "phonemes": "u v a ɦ a",
+          "comment": "у"
+        },
+        {
+          "word": "ферзь",
+          "phonemes": "f ɛ r zʲ",
+          "comment": "ф"
+        },
+        {
+          "word": "хрущ",
+          "phonemes": "x r u ʃ tʃ",
+          "comment": "х"
+        },
+        {
+          "word": "цариця",
+          "phonemes": "ts a r ɪ tsʲ a",
+          "comment": "ц"
+        },
+        {
+          "word": "черга",
+          "phonemes": "tʃ ɛ r ɦ a",
+          "comment": "ч"
+        },
+        {
+          "word": "шершень",
+          "phonemes": "ʃ ɛ r ʃ ɛ nʲ",
+          "comment": "ш"
+        },
+        {
+          "word": "щоб",
+          "phonemes": "ʃ tʃ ɔ b",
+          "comment": "щ"
+        },
+        {
+          "word": "ґедзь",
+          "phonemes": "ɡ ɛ dzʲ",
+          "comment": "ь"
+        },
+        {
+          "word": "юшка",
+          "phonemes": "j u ʃ k a",
+          "comment": "ю"
+        },
+        {
+          "word": "ягня",
+          "phonemes": "j a ɦ nʲ a",
+          "comment": "я"
+        },
+        {
+          "word": "суб'єкт",
+          "phonemes": "s u b j ɛ k t",
+          "comment": "apostrophe"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "post-d": "[жз]",
+          "num": "[12]",
+          "alv-output": "[tdsznrl]",
+          "apostrophe": "['ꞌ‘’]"
+        },
+        "sub": [
+          {
+            "from": "а",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 4.0
+          },
+          {
+            "from": "в",
+            "to": "v",
+            "weight": 4.0
+          },
+          {
+            "from": "г",
+            "to": "ɦ",
+            "weight": 4.0
+          },
+          {
+            "from": "ґ",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "д",
+            "to": "d",
+            "weight": 4.0
+          },
+          {
+            "from": "е",
+            "to": "ɛ",
+            "weight": 4.0
+          },
+          {
+            "from": "є",
+            "to": "ʲ1 ɛ",
+            "weight": 4.0
+          },
+          {
+            "from": "ж",
+            "to": "ʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "з",
+            "to": "z",
+            "weight": 4.0
+          },
+          {
+            "from": "и",
+            "to": "ɪ",
+            "weight": 4.0
+          },
+          {
+            "from": "і",
+            "to": "ʲ2 i",
+            "weight": 4.0
+          },
+          {
+            "from": "ї",
+            "to": "j i",
+            "weight": 4.0
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 4.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 4.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 4.0
+          },
+          {
+            "from": "о",
+            "to": "ɔ",
+            "weight": 4.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 4.0
+          },
+          {
+            "from": "р",
+            "to": "r",
+            "weight": 4.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 4.0
+          },
+          {
+            "from": "т",
+            "to": "t",
+            "weight": 4.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "ф",
+            "to": "f",
+            "weight": 4.0
+          },
+          {
+            "from": "х",
+            "to": "x",
+            "weight": 4.0
+          },
+          {
+            "from": "ц",
+            "to": "ts",
+            "weight": 4.0
+          },
+          {
+            "from": "ч",
+            "to": "tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ш",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "щ",
+            "to": "ʃ tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ь",
+            "to": "ʲ2",
+            "weight": 4.0
+          },
+          {
+            "from": "ю",
+            "to": "ʲ1 u",
+            "weight": 4.0
+          },
+          {
+            "from": "я",
+            "to": "ʲ1 a",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "NOPAL",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "occasional words have a hyphen with no phonetic value"
+          },
+          {
+            "from": "ж",
+            "to": "dʒ",
+            "weight": 6.0,
+            "precede": "д",
+            "comment": "<дж> = /dʒ/"
+          },
+          {
+            "from": "з",
+            "to": "dz",
+            "weight": 6.0,
+            "precede": "д",
+            "comment": "<дз> = /dz/"
+          },
+          {
+            "from": "д",
+            "to": "",
+            "weight": 6.0,
+            "follow": "{post-d}",
+            "comment": "cleanup of <д>-initial digraphs"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({alv-output}) ʲ{num}",
+            "to": "\\1ʲ",
+            "weight": 4.0,
+            "comment": "attaches palatalization to consonants"
+          },
+          {
+            "from": "ʲ1",
+            "to": "j",
+            "weight": 2.0,
+            "comment": "turns surviving palatalization to /j/ as appropriate"
+          },
+          {
+            "from": "ʲ2",
+            "to": "",
+            "weight": 2.0,
+            "comment": "deletes palatalization as appropriate"
+          },
+          {
+            "from": "NOPAL ",
+            "to": "",
+            "weight": 1.0,
+            "comment": "cleans up the non-palatalization mark"
+          }
+        ]
+      }
+    }
+  }
+}

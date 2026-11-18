@@ -1,0 +1,429 @@
+{
+  "metadata": {
+    "code": "ro",
+    "name": "Romanian",
+    "family": "Indo-European,Italic,Romance,Eastern Romance,Balkan Romance,Romanian",
+    "macroarea": "Eurasia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "abandonabil",
+          "phonemes": "a b a n̪ d̪ o n̪ a b i l̪"
+        },
+        {
+          "word": "abacă",
+          "phonemes": "a b a k ɜ"
+        },
+        {
+          "word": "abație",
+          "phonemes": "a b a t̪s i e"
+        },
+        {
+          "word": "abataj",
+          "phonemes": "a b a t̪ a ʒ"
+        },
+        {
+          "word": "acoperiș",
+          "phonemes": "a k o p e r̪ i ʃ"
+        },
+        {
+          "word": "balamuc",
+          "phonemes": "b a l̪ a m u k"
+        },
+        {
+          "word": "balustru",
+          "phonemes": "b a l̪ u s̪ t̪ r̪ u"
+        },
+        {
+          "word": "bătrânețe",
+          "phonemes": "b ɜ t̪ r̪ ɨ n̪ e t̪s e"
+        },
+        {
+          "word": "hamsie",
+          "phonemes": "h a m s̪ i e"
+        },
+        {
+          "word": "haotic",
+          "phonemes": "h a o t̪ i k"
+        },
+        {
+          "word": "harnic",
+          "phonemes": "h a r̪ n̪ i k"
+        },
+        {
+          "word": "hasmațuchi",
+          "phonemes": "h a s̪ m a t̪s u k"
+        },
+        {
+          "word": "hazardat",
+          "phonemes": "h a z̪ a r̪ d̪ a t̪"
+        },
+        {
+          "word": "salvie",
+          "phonemes": "s̪ a l̪ v i e"
+        },
+        {
+          "word": "samcă",
+          "phonemes": "s̪ a m k ɜ"
+        },
+        {
+          "word": "sălbăticiune",
+          "phonemes": "s̪ ɜ l̪ b ɜ t̪ i tʃ u n̪ e"
+        },
+        {
+          "word": "magistrat",
+          "phonemes": "m a dʒ i s̪ t̪ r̪ a t̪"
+        },
+        {
+          "word": "manechin",
+          "phonemes": "m a n̪ e k i n̪"
+        },
+        {
+          "word": "fost",
+          "phonemes": "f o s̪ t̪"
+        },
+        {
+          "word": "greu",
+          "phonemes": "ɡ r̪ e u"
+        },
+        {
+          "word": "în",
+          "phonemes": "ɨ n̪"
+        },
+        {
+          "word": "exista",
+          "phonemes": "e k s̪ i s̪ t̪ a"
+        },
+        {
+          "word": "aceasta",
+          "phonemes": "a tʃ a s̪ t̪ a"
+        },
+        {
+          "word": "poate",
+          "phonemes": "p oa t̪ e"
+        },
+        {
+          "word": "acest",
+          "phonemes": "a tʃ e s̪ t̪"
+        },
+        {
+          "word": "general",
+          "phonemes": "dʒ e n̪ e r̪ a l̪"
+        },
+        {
+          "word": "legea",
+          "phonemes": "l̪ e dʒ a"
+        },
+        {
+          "word": "legii",
+          "phonemes": "l̪ e dʒ i i"
+        },
+        {
+          "word": "veche",
+          "phonemes": "v e k e"
+        },
+        {
+          "word": "cheama",
+          "phonemes": "k a m a"
+        },
+        {
+          "word": "vechi",
+          "phonemes": "v e k"
+        },
+        {
+          "word": "chiar",
+          "phonemes": "k a r̪"
+        },
+        {
+          "word": "supraveghere",
+          "phonemes": "s̪ u p r̪ a v e ɡ e r̪ e"
+        },
+        {
+          "word": "gheata",
+          "phonemes": "ɡ a t̪ a"
+        },
+        {
+          "word": "ghid",
+          "phonemes": "ɡ i d̪"
+        },
+        {
+          "word": "maghiari",
+          "phonemes": "m a ɡ a r̪ i"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abefhimopuv]",
+          "dip-a": "[eo]",
+          "before-a": "(ce|ge|che|ghe)",
+          "punct": "['‘’-]"
+        },
+        "sub": [
+          {
+            "from": "ă",
+            "to": "ɜ",
+            "weight": 2.0
+          },
+          {
+            "from": "â",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "î",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "ʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "l",
+            "to": "l̪",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "n̪",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "r̪",
+            "weight": 2.0
+          },
+          {
+            "from": "s",
+            "to": "s̪",
+            "weight": 2.0
+          },
+          {
+            "from": "ș",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 2.0
+          },
+          {
+            "from": "ț",
+            "to": "t̪s",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "k s̪",
+            "weight": 2.0
+          },
+          {
+            "from": "z",
+            "to": "z̪",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "e",
+            "to": "ea",
+            "weight": 2.5,
+            "follow": "a"
+          },
+          {
+            "from": "o",
+            "to": "oa",
+            "weight": 2.5,
+            "follow": "a"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 2.5,
+            "precede": "{dip-a}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "e"
+          },
+          {
+            "from": "e",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "follow": "a",
+            "comment": "<e> not transcribed if /a/ follows"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "i"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "follow": "(a|o|u|$)",
+            "comment": "<i> not transcribed if /a/, /o/, /u/, or the end of the word follows"
+          },
+          {
+            "from": "g",
+            "to": "dʒ",
+            "weight": 3.0,
+            "follow": "e"
+          },
+          {
+            "from": "e",
+            "to": "",
+            "weight": 3.0,
+            "precede": "g",
+            "follow": "(a|o)",
+            "comment": "<e> not transcribed if /a/ or /o/ follows"
+          },
+          {
+            "from": "g",
+            "to": "dʒ",
+            "weight": 3.0,
+            "follow": "i"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 3.0,
+            "precede": "g",
+            "follow": "(a|o|u)",
+            "comment": "<i> not transcribed if /a/, /o/, or /u/ follows"
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 5.0,
+            "follow": "he"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "c",
+            "follow": "e",
+            "comment": "clean-up"
+          },
+          {
+            "from": "e",
+            "to": "",
+            "weight": 5.0,
+            "precede": "ch",
+            "follow": "a",
+            "comment": "deletion of <e> follows the same form as <ce>"
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 5.0,
+            "follow": "hi"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "c",
+            "follow": "i",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 5.0,
+            "precede": "ch",
+            "follow": "(a|o|u|$)",
+            "comment": "deletion of <i> follows the same form as <ci>"
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 5.0,
+            "follow": "he"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "g",
+            "follow": "e",
+            "comment": "clean-up"
+          },
+          {
+            "from": "e",
+            "to": "",
+            "weight": 5.0,
+            "precede": "gh",
+            "follow": "(a|o)",
+            "comment": "deletion of <e> follows the same form as <ge>"
+          },
+          {
+            "from": "a",
+            "to": "a",
+            "weight": 3.0,
+            "precede": "{before-a}",
+            "comment": "prevents <a> from being deleted by line 33 when in the sequence <cea>"
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 5.0,
+            "follow": "hi"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "g",
+            "follow": "i",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 5.0,
+            "precede": "gh",
+            "follow": "(a|o|u)",
+            "comment": "deletion of <i> follows the same form as <gi>"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

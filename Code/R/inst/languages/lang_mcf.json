@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "code": "mcf",
+    "name": "Matsés",
+    "family": "Panoan,Northern",
+    "macroarea": "South America",
+    "compromised": {
+      "sounds": "ts|tʂ|s|ʂ|u|w|o"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "acte",
+          "phonemes": "a k t e"
+        },
+        {
+          "word": "chido",
+          "phonemes": "tʃ i d o"
+        },
+        {
+          "word": "abentesëc",
+          "phonemes": "a b e n t e s ɨ k"
+        },
+        {
+          "word": "dayun",
+          "phonemes": "d a j u n"
+        },
+        {
+          "word": "occasad",
+          "phonemes": "o k ː a s a d"
+        },
+        {
+          "word": "secque",
+          "phonemes": "s e k ː e"
+        },
+        {
+          "word": "taëmi",
+          "phonemes": "t a ɨ m i"
+        },
+        {
+          "word": "tsidun",
+          "phonemes": "ts i d u n"
+        },
+        {
+          "word": "shui",
+          "phonemes": "ʃ u i"
+        },
+        {
+          "word": "dadpen",
+          "phonemes": "d a d p e n"
+        },
+        {
+          "word": "chiaid",
+          "phonemes": "tʃ i a i d"
+        },
+        {
+          "word": "quequin",
+          "phonemes": "k e k i n"
+        },
+        {
+          "word": "mibi",
+          "phonemes": "m i b i"
+        },
+        {
+          "word": "nec",
+          "phonemes": "n e k"
+        },
+        {
+          "word": "yacno",
+          "phonemes": "j a k n o"
+        },
+        {
+          "word": "iquec",
+          "phonemes": "i k e k"
+        },
+        {
+          "word": "ëbi",
+          "phonemes": "ɨ b i"
+        },
+        {
+          "word": "yec",
+          "phonemes": "j e k"
+        },
+        {
+          "word": "matses",
+          "phonemes": "m a ts e s"
+        },
+        {
+          "word": "aton",
+          "phonemes": "a t o n"
+        },
+        {
+          "word": "abi",
+          "phonemes": "a b i"
+        },
+        {
+          "word": "bëdamboen",
+          "phonemes": "b ɨ d a m b o e n"
+        },
+        {
+          "word": "mimbi",
+          "phonemes": "m i m b i"
+        },
+        {
+          "word": "ambi",
+          "phonemes": "a m b i"
+        },
+        {
+          "word": "dada",
+          "phonemes": "d a d a"
+        },
+        {
+          "word": "icquin",
+          "phonemes": "i k ː i n"
+        },
+        {
+          "word": "bëdambo",
+          "phonemes": "b ɨ d a m b o"
+        },
+        {
+          "word": "utsi",
+          "phonemes": "u ts i"
+        },
+        {
+          "word": "tantiaquin",
+          "phonemes": "t a n t i a k i n"
+        },
+        {
+          "word": "con",
+          "phonemes": "k o n"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeikmnopstuw]",
+          "h-preceder": "[scşç]",
+          "qu-vowel": "[eië]",
+          "gem": "[knsʂʃ]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "ë",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0,
+            "comment": "hyphens indicate morpheme boundaries"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "ş",
+            "to": "ʂ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "ç",
+            "to": "tʂ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{h-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 4.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "u{qu-vowel}"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({gem}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

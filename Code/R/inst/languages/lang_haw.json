@@ -1,0 +1,158 @@
+{
+  "metadata": {
+    "code": "haw",
+    "name": "Hawaiian",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Central-Eastern Oceanic,Remote Oceanic,Central Pacific,East Fijian-Polynesian,Polynesian,Nuclear,East,Central,Marquesic",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "maka",
+          "phonemes": "m a k a",
+          "comment": "m"
+        },
+        {
+          "word": "paka",
+          "phonemes": "p a k a",
+          "comment": "p"
+        },
+        {
+          "word": "waka",
+          "phonemes": "v a k a",
+          "comment": "w/v"
+        },
+        {
+          "word": "naka",
+          "phonemes": "n a k a",
+          "comment": "n"
+        },
+        {
+          "word": "kaka",
+          "phonemes": "k a k a",
+          "comment": "k"
+        },
+        {
+          "word": "laka",
+          "phonemes": "l a k a",
+          "comment": "l"
+        },
+        {
+          "word": "ʻaka",
+          "phonemes": "ʔ a k a",
+          "comment": "glottal stop"
+        },
+        {
+          "word": "haka",
+          "phonemes": "h a k a",
+          "comment": "h"
+        },
+        {
+          "word": "kiki",
+          "phonemes": "k i k i",
+          "comment": "i"
+        },
+        {
+          "word": "ehu",
+          "phonemes": "e h u",
+          "comment": "e"
+        },
+        {
+          "word": "ʻala",
+          "phonemes": "ʔ a l a",
+          "comment": "a"
+        },
+        {
+          "word": "ano",
+          "phonemes": "a n o",
+          "comment": "o"
+        },
+        {
+          "word": "ehu",
+          "phonemes": "e h u",
+          "comment": "u"
+        },
+        {
+          "word": "mīka",
+          "phonemes": "m i ː k a",
+          "comment": "ī"
+        },
+        {
+          "word": "pēla",
+          "phonemes": "p e ː l a",
+          "comment": "ē"
+        },
+        {
+          "word": "nāna",
+          "phonemes": "n a ː n a",
+          "comment": "ā"
+        },
+        {
+          "word": "kōna",
+          "phonemes": "k o ː n a",
+          "comment": "ō"
+        },
+        {
+          "word": "hūi",
+          "phonemes": "h u ː i",
+          "comment": "ū"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeiouhklmnp]",
+          "apostrophe": "[’'‘`ʻ]"
+        },
+        "sub": [
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 1.0
+          },
+          {
+            "from": "ā",
+            "to": "a ː",
+            "weight": 1.0
+          },
+          {
+            "from": "ē",
+            "to": "e ː",
+            "weight": 1.0
+          },
+          {
+            "from": "ī",
+            "to": "i ː",
+            "weight": 1.0
+          },
+          {
+            "from": "ō",
+            "to": "o ː",
+            "weight": 1.0
+          },
+          {
+            "from": "ū",
+            "to": "u ː",
+            "weight": 1.0
+          },
+          {
+            "from": "w",
+            "to": "v",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

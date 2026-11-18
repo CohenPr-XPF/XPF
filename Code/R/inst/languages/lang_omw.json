@@ -1,0 +1,287 @@
+{
+  "metadata": {
+    "code": "omw",
+    "name": "South Tairora",
+    "family": "Trans-New Guinea,Kainantu-Goroka,Kainantu,Tairora,South Tairora",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "aharanta",
+          "phonemes": "ɘ h ɘ ɾ ɘ ⁿt ɘ",
+          "comment": "a"
+        },
+        {
+          "word": "aahaaqi",
+          "phonemes": "aː h aː ʔ i",
+          "comment": "aa"
+        },
+        {
+          "word": "aikaikara",
+          "phonemes": "ɘj k ɘj k ɘ ɾ ɘ",
+          "comment": "ai"
+        },
+        {
+          "word": "aukauke",
+          "phonemes": "ɘw k ɘw k ɛː",
+          "comment": "au"
+        },
+        {
+          "word": "enena",
+          "phonemes": "ɛː n ɛː n ɘ",
+          "comment": "e"
+        },
+        {
+          "word": "haahuqaa",
+          "phonemes": "h aː h u ʔ aː",
+          "comment": "h"
+        },
+        {
+          "word": "hiqinti",
+          "phonemes": "h i ʔ i ⁿt i",
+          "comment": "i"
+        },
+        {
+          "word": "kaikoki",
+          "phonemes": "k ɘj k ɔː k i",
+          "comment": "k"
+        },
+        {
+          "word": "nraakye",
+          "phonemes": "ɾ̃ aː kʲ ɛː",
+          "comment": "ky"
+        },
+        {
+          "word": "memera",
+          "phonemes": "m ɛː m ɛː ɾ ɘ",
+          "comment": "m"
+        },
+        {
+          "word": "mpampuara",
+          "phonemes": "ᵐp ɘ ᵐp u ɘ ɾ ɘ",
+          "comment": "mp"
+        },
+        {
+          "word": "mwiva",
+          "phonemes": "β̃ i β ɘ",
+          "comment": "mw"
+        },
+        {
+          "word": "nainiqama",
+          "phonemes": "n ɘj n i ʔ ɘ m ɘ",
+          "comment": "n"
+        },
+        {
+          "word": "aunkanka",
+          "phonemes": "ɘw ᵑk ɘ ᵑk ɘ",
+          "comment": "nk"
+        },
+        {
+          "word": "nkyiara",
+          "phonemes": "ᵑkʲ i ɘ ɾ ɘ",
+          "comment": "nky"
+        },
+        {
+          "word": "nramanri",
+          "phonemes": "ɾ̃ ɘ m ɘ ɾ̃ i",
+          "comment": "nr"
+        },
+        {
+          "word": "ntainti",
+          "phonemes": "ⁿt ɘj ⁿt i",
+          "comment": "nt"
+        },
+        {
+          "word": "nyinro",
+          "phonemes": "nʲ i ɾ̃ ɔː",
+          "comment": "ny"
+        },
+        {
+          "word": "oroviaqa",
+          "phonemes": "ɔː ɾ ɔː β i ɘ ʔ ɘ",
+          "comment": "o"
+        },
+        {
+          "word": "popaaqu",
+          "phonemes": "p ɔː p aː ʔ u",
+          "comment": "p"
+        },
+        {
+          "word": "qahiaqu",
+          "phonemes": "ʔ ɘ h i ɘ ʔ u",
+          "comment": "q"
+        },
+        {
+          "word": "raarira",
+          "phonemes": "ɾ aː ɾ i ɾ ɘ",
+          "comment": "r"
+        },
+        {
+          "word": "siseri",
+          "phonemes": "s i s ɛː ɾ i",
+          "comment": "s"
+        },
+        {
+          "word": "titite",
+          "phonemes": "t i t i t ɛː",
+          "comment": "t"
+        },
+        {
+          "word": "kururu",
+          "phonemes": "k u ɾ u ɾ u",
+          "comment": "u"
+        },
+        {
+          "word": "vakuvu",
+          "phonemes": "β ɘ k u β u",
+          "comment": "v"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "post-a": "[aiu]",
+          "post-m": "[pw]",
+          "post-n": "[krt]",
+          "pal": "(t|ⁿt|k|n|ᵑk)",
+          "passthrough": "[hikmnpstu]"
+        },
+        "sub": [
+          {
+            "from": "a",
+            "to": "ɘ",
+            "weight": 4.0
+          },
+          {
+            "from": "e",
+            "to": "ɛː",
+            "weight": 4.0
+          },
+          {
+            "from": "o",
+            "to": "ɔː",
+            "weight": 4.0
+          },
+          {
+            "from": "q",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "v",
+            "to": "β",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "PALʲ",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "a",
+            "to": "aː",
+            "weight": 6.0,
+            "precede": "a",
+            "comment": "<aa>"
+          },
+          {
+            "from": "i",
+            "to": "ɘj",
+            "weight": 6.0,
+            "precede": "a",
+            "comment": "<ai>"
+          },
+          {
+            "from": "u",
+            "to": "ɘw",
+            "weight": 6.0,
+            "precede": "a",
+            "comment": "<au>"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 6.0,
+            "follow": "{post-a}",
+            "comment": "cleanup of a-initial diphthongs"
+          },
+          {
+            "from": "p",
+            "to": "ᵐp",
+            "weight": 6.0,
+            "precede": "m",
+            "comment": "<mp>"
+          },
+          {
+            "from": "w",
+            "to": "β̃",
+            "weight": 6.0,
+            "precede": "m",
+            "comment": "<mw>"
+          },
+          {
+            "from": "m",
+            "to": "",
+            "weight": 6.0,
+            "follow": "{post-m}",
+            "comment": "cleanup of m-initial diphthongs"
+          },
+          {
+            "from": "k",
+            "to": "ᵑk",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<nk>"
+          },
+          {
+            "from": "r",
+            "to": "ɾ̃",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<nr>"
+          },
+          {
+            "from": "t",
+            "to": "ⁿt",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<nt>"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 6.0,
+            "follow": "{post-n}",
+            "comment": "cleanup of n-initial diphthongs"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({pal}) PALʲ",
+            "to": "\\1ʲ",
+            "weight": 3.0,
+            "comment": "attaches palatalization to consonants"
+          },
+          {
+            "from": "PALʲ",
+            "to": "@",
+            "weight": 2.0,
+            "comment": "cleans up occurrences of unattested palatalization"
+          }
+        ]
+      }
+    }
+  }
+}

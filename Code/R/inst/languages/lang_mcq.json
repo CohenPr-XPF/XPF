@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "code": "mcq",
+    "name": "Ese",
+    "family": "Trans-New Guinea,Main Section,Eastern,Central and Southeastern,Koiarian,Baraic",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ana'ima",
+          "phonemes": "ɑ n ɑ ʔ i m ɑ",
+          "comment": "a"
+        },
+        {
+          "word": "ijá",
+          "phonemes": "i dʑ ɑ",
+          "comment": "á"
+        },
+        {
+          "word": "chera",
+          "phonemes": "tɕ e ɾ ɑ",
+          "comment": "ch"
+        },
+        {
+          "word": "eja",
+          "phonemes": "e dʑ ɑ",
+          "comment": "e"
+        },
+        {
+          "word": "heha",
+          "phonemes": "h e h ɑ",
+          "comment": "h"
+        },
+        {
+          "word": "siria",
+          "phonemes": "s i ɾ i ɑ",
+          "comment": "i"
+        },
+        {
+          "word": "ahija",
+          "phonemes": "ɑ h i dʑ ɑ",
+          "comment": "j"
+        },
+        {
+          "word": "kutitia",
+          "phonemes": "k u t i t i ɑ",
+          "comment": "k"
+        },
+        {
+          "word": "momora",
+          "phonemes": "m o m o ɾ ɑ",
+          "comment": "m"
+        },
+        {
+          "word": "nana",
+          "phonemes": "n ɑ n ɑ",
+          "comment": "n"
+        },
+        {
+          "word": "ojino",
+          "phonemes": "o dʑ i n o",
+          "comment": "o"
+        },
+        {
+          "word": "piropa",
+          "phonemes": "p i ɾ o p ɑ",
+          "comment": "p"
+        },
+        {
+          "word": "rejuroa",
+          "phonemes": "ɾ e dʑ u ɾ o ɑ",
+          "comment": "r"
+        },
+        {
+          "word": "siasa",
+          "phonemes": "s i ɑ s ɑ",
+          "comment": "s"
+        },
+        {
+          "word": "toata",
+          "phonemes": "t o ɑ t ɑ",
+          "comment": "t"
+        },
+        {
+          "word": "uchuha",
+          "phonemes": "u tɕ u h ɑ",
+          "comment": "u"
+        },
+        {
+          "word": "núni",
+          "phonemes": "n ʉ n i",
+          "comment": "ú"
+        },
+        {
+          "word": "vina",
+          "phonemes": "β i n ɑ",
+          "comment": "v"
+        },
+        {
+          "word": "'ajani",
+          "phonemes": "ʔ ɑ dʑ ɑ n i",
+          "comment": "apostrophe"
+        },
+        {
+          "word": "oni",
+          "phonemes": "o n i"
+        },
+        {
+          "word": "huni",
+          "phonemes": "h u n i"
+        },
+        {
+          "word": "ijí",
+          "phonemes": "i dʑ i"
+        },
+        {
+          "word": "oja",
+          "phonemes": "o dʑ ɑ"
+        },
+        {
+          "word": "sisea",
+          "phonemes": "s i s e ɑ"
+        },
+        {
+          "word": "niho'o",
+          "phonemes": "n i h o ʔ o"
+        },
+        {
+          "word": "va'e",
+          "phonemes": "β ɑ ʔ e"
+        },
+        {
+          "word": "areri",
+          "phonemes": "ɑ ɾ e ɾ i"
+        },
+        {
+          "word": "roe",
+          "phonemes": "ɾ o e"
+        },
+        {
+          "word": "ira",
+          "phonemes": "i ɾ ɑ"
+        },
+        {
+          "word": "uné",
+          "phonemes": "u n e"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "[ꞌ'‘’ʼ]",
+          "passthrough": "[ehikmnopstu]"
+        },
+        "sub": [
+          {
+            "from": "a",
+            "to": "ɑ",
+            "weight": 4.0
+          },
+          {
+            "from": "á",
+            "to": "ɑ",
+            "weight": 4.0,
+            "comment": "the acute accent on <a>, <e>, and <i> just marks stress"
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "dʑ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "ú",
+            "to": "ʉ",
+            "weight": 4.0
+          },
+          {
+            "from": "v",
+            "to": "β",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "c",
+            "to": "tɕ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<ch>"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "c",
+            "comment": "<ch> cleanup"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "metadata": {
+    "code": "zza",
+    "name": "Zaza",
+    "family": "Indo-European,Indo-Iranian,Iranian,Western,Northwestern,Zaza-Gorani",
+    "macroarea": "Eurasia",
+    "compromised": {
+      "sounds": "i|ɨ"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "azad",
+          "phonemes": "ɑ z ɑ d̪",
+          "comment": "a"
+        },
+        {
+          "word": "bılbıl",
+          "phonemes": "b ɨ l b ɨ l",
+          "comment": "b"
+        },
+        {
+          "word": "cucek",
+          "phonemes": "dʒ ʊ dʒ ɜ k",
+          "comment": "c"
+        },
+        {
+          "word": "çakuç",
+          "phonemes": "tʃ ɑ k ʊ tʃ",
+          "comment": "ç"
+        },
+        {
+          "word": "dizd",
+          "phonemes": "d̪ i z d̪",
+          "comment": "d"
+        },
+        {
+          "word": "esteri",
+          "phonemes": "ɜ s t̪ ɜ ɾ i",
+          "comment": "e"
+        },
+        {
+          "word": "şimşêr",
+          "phonemes": "ʃ i m ʃ e ɾ",
+          "comment": "ê"
+        },
+        {
+          "word": "feqet",
+          "phonemes": "f ɜ q ɜ t̪",
+          "comment": "f"
+        },
+        {
+          "word": "gedug",
+          "phonemes": "ɡ ɜ d̪ ʊ ɡ",
+          "comment": "g"
+        },
+        {
+          "word": "ğamık",
+          "phonemes": "ɣ ɑ m ɨ k",
+          "comment": "ğ"
+        },
+        {
+          "word": "hêvi",
+          "phonemes": "h e v i",
+          "comment": "h"
+        },
+        {
+          "word": "'her",
+          "phonemes": "ħ ɜ ɾ",
+          "comment": "'h"
+        },
+        {
+          "word": "mıriçık",
+          "phonemes": "m ɨ ɾ i tʃ ɨ k",
+          "comment": "ı"
+        },
+        {
+          "word": "ini",
+          "phonemes": "i n i",
+          "comment": "i"
+        },
+        {
+          "word": "roj",
+          "phonemes": "ɾ o ʒ",
+          "comment": "j"
+        },
+        {
+          "word": "keki",
+          "phonemes": "k ɜ k i",
+          "comment": "k"
+        },
+        {
+          "word": "lewel",
+          "phonemes": "l ɜw ɜ l",
+          "comment": "l"
+        },
+        {
+          "word": "şu'leyê",
+          "phonemes": "ʃ ʊ ɫ ɜj e",
+          "comment": "'l"
+        },
+        {
+          "word": "filhano",
+          "phonemes": "f i ɫ ɑ n o",
+          "comment": "lh"
+        },
+        {
+          "word": "maqam",
+          "phonemes": "m ɑ q ɑ m",
+          "comment": "m"
+        },
+        {
+          "word": "nan",
+          "phonemes": "n ɑ n",
+          "comment": "n"
+        },
+        {
+          "word": "omnon",
+          "phonemes": "o m n o n",
+          "comment": "o"
+        },
+        {
+          "word": "pılpılık",
+          "phonemes": "p ɨ l p ɨ l ɨ k",
+          "comment": "p"
+        },
+        {
+          "word": "qaloç",
+          "phonemes": "q ɑ l o tʃ",
+          "comment": "q"
+        },
+        {
+          "word": "raye",
+          "phonemes": "ɾ ɑj ɜ",
+          "comment": "r"
+        },
+        {
+          "word": "zerri",
+          "phonemes": "z ɜ r i",
+          "comment": "rr"
+        },
+        {
+          "word": "semsiya",
+          "phonemes": "s ɜ m s i j ɑ",
+          "comment": "s"
+        },
+        {
+          "word": "dü'si",
+          "phonemes": "d̪ u sˤ i",
+          "comment": "'s"
+        },
+        {
+          "word": "ushira",
+          "phonemes": "ʊ sˤ i ɾ ɑ",
+          "comment": "sh"
+        },
+        {
+          "word": "şeş",
+          "phonemes": "ʃ ɜ ʃ",
+          "comment": "ş"
+        },
+        {
+          "word": "tut",
+          "phonemes": "t̪ ʊ t̪",
+          "comment": "t"
+        },
+        {
+          "word": "millet'ta",
+          "phonemes": "m i l l ɜ t̪ t̪ˤ ɑ",
+          "comment": "'t"
+        },
+        {
+          "word": "thowa",
+          "phonemes": "t̪ˤ o w ɑ",
+          "comment": "th"
+        },
+        {
+          "word": "utu",
+          "phonemes": "ʊ t̪ ʊ",
+          "comment": "u"
+        },
+        {
+          "word": "lû",
+          "phonemes": "l u",
+          "comment": "û"
+        },
+        {
+          "word": "xü",
+          "phonemes": "x u",
+          "comment": "ü"
+        },
+        {
+          "word": "vawr",
+          "phonemes": "v ɑw ɾ",
+          "comment": "v"
+        },
+        {
+          "word": "welew",
+          "phonemes": "w ɜ l ɜw",
+          "comment": "w"
+        },
+        {
+          "word": "xox",
+          "phonemes": "x o x",
+          "comment": "x"
+        },
+        {
+          "word": "yasemin",
+          "phonemes": "j ɑ s ɜ m i n",
+          "comment": "y"
+        },
+        {
+          "word": "zebeşe",
+          "phonemes": "z ɜ b ɜ ʃ ɜ",
+          "comment": "z"
+        },
+        {
+          "word": "xoce'y",
+          "phonemes": "x o dʒ ɜ ʕ j",
+          "comment": "apostrophe"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "['ꞌ‘’]",
+          "post-apost": "[hlst]",
+          "pre-h": "[lst]",
+          "passthrough": "[bfhklmnopqsvwxz]"
+        },
+        "pre": [
+          {
+            "from": "Iİ",
+            "to": "ıi"
+          }
+        ],
+        "sub": [
+          {
+            "from": "a",
+            "to": "ɑ",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "dʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "ç",
+            "to": "tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 4.0
+          },
+          {
+            "from": "e",
+            "to": "ɜ",
+            "weight": 4.0
+          },
+          {
+            "from": "ê",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "é",
+            "to": "ɜ",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "ğ",
+            "to": "ɣ",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "ʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "ş",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 4.0
+          },
+          {
+            "from": "u",
+            "to": "ʊ",
+            "weight": 4.0
+          },
+          {
+            "from": "û",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "ü",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʕ",
+            "weight": 4.0
+          },
+          {
+            "from": "ı",
+            "to": "ɨ",
+            "weight": 4.0
+          },
+          {
+            "from": "i",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "h",
+            "to": "ħ",
+            "weight": 6.0,
+            "precede": "{apostrophe}",
+            "comment": "<'h>"
+          },
+          {
+            "from": "l",
+            "to": "ɫ",
+            "weight": 6.0,
+            "precede": "{apostrophe}",
+            "comment": "<'l>"
+          },
+          {
+            "from": "s",
+            "to": "sˤ",
+            "weight": 6.0,
+            "precede": "{apostrophe}",
+            "comment": "<'s>"
+          },
+          {
+            "from": "t",
+            "to": "t̪ˤ",
+            "weight": 6.0,
+            "precede": "{apostrophe}",
+            "comment": "<'t>"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 6.0,
+            "follow": "{post-apost}",
+            "comment": "cleanup of <'>-initial digraphs"
+          },
+          {
+            "from": "l",
+            "to": "ɫ",
+            "weight": 5.0,
+            "follow": "h",
+            "comment": "<lh>"
+          },
+          {
+            "from": "s",
+            "to": "sˤ",
+            "weight": 5.0,
+            "follow": "h",
+            "comment": "<sh>"
+          },
+          {
+            "from": "t",
+            "to": "t̪ˤ",
+            "weight": 5.0,
+            "follow": "h",
+            "comment": "<th>"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 5.0,
+            "precede": "{pre-h}",
+            "comment": "cleanup of <h>-final digraphs"
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 6.0,
+            "follow": "r",
+            "comment": "<rr>"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 6.0,
+            "precede": "r",
+            "comment": "cleanup of <rr>"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "ɑ j",
+            "to": "ɑj",
+            "weight": 2.0
+          },
+          {
+            "from": "ɑ w",
+            "to": "ɑw",
+            "weight": 2.0
+          },
+          {
+            "from": "ɜ j",
+            "to": "ɜj",
+            "weight": 2.0
+          },
+          {
+            "from": "ɜ w",
+            "to": "ɜw",
+            "weight": 2.0
+          },
+          {
+            "from": "o j",
+            "to": "oj",
+            "weight": 2.0
+          },
+          {
+            "from": "ʊ j",
+            "to": "ʊj",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

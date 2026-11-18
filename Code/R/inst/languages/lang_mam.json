@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "code": "mam",
+    "name": "Mam",
+    "family": "Mayan,Quichean-Mamean,Greater Mamean,Mamean",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ajil",
+          "phonemes": "a χ i l"
+        },
+        {
+          "word": "ajb'il",
+          "phonemes": "a χ ɓ i l"
+        },
+        {
+          "word": "aqwil",
+          "phonemes": "a q w i l"
+        },
+        {
+          "word": "aq'il",
+          "phonemes": "a qʼ i l"
+        },
+        {
+          "word": "b'uchil",
+          "phonemes": "ɓ u tʃ i l"
+        },
+        {
+          "word": "b'utxil",
+          "phonemes": "ɓ u ʈʂ i l"
+        },
+        {
+          "word": "etzil",
+          "phonemes": "e ts i l"
+        },
+        {
+          "word": "itaye",
+          "phonemes": "i t a j e"
+        },
+        {
+          "word": "jaala",
+          "phonemes": "χ a ː l a"
+        },
+        {
+          "word": "jk'ul",
+          "phonemes": "χ kʼ u l"
+        },
+        {
+          "word": "luk'pil",
+          "phonemes": "l u kʼ p i l"
+        },
+        {
+          "word": "malni",
+          "phonemes": "m a l n i"
+        },
+        {
+          "word": "miina",
+          "phonemes": "m i ː n a"
+        },
+        {
+          "word": "pakil",
+          "phonemes": "p a k i l"
+        },
+        {
+          "word": "qanyen",
+          "phonemes": "q a n j e n"
+        },
+        {
+          "word": "texa",
+          "phonemes": "t e ʂ a"
+        },
+        {
+          "word": "te'y",
+          "phonemes": "t e ʔ j"
+        },
+        {
+          "word": "txol",
+          "phonemes": "ʈʂ o l"
+        },
+        {
+          "word": "tx'aji'n",
+          "phonemes": "ʈʂʼ a χ i ʔ n"
+        },
+        {
+          "word": "tz'e'ysil",
+          "phonemes": "tsʼ e ʔ j s i l"
+        },
+        {
+          "word": "wech",
+          "phonemes": "w e tʃ"
+        },
+        {
+          "word": "wuq",
+          "phonemes": "w u q"
+        },
+        {
+          "word": "xhilil",
+          "phonemes": "ʃ i l i l"
+        },
+        {
+          "word": "t-ximlala",
+          "phonemes": "t ʂ i m l a l a"
+        },
+        {
+          "word": "t-xabꞌ",
+          "phonemes": "t ʂ a ɓ"
+        },
+        {
+          "word": "pero",
+          "phonemes": "p e r o"
+        },
+        {
+          "word": "kye",
+          "phonemes": "c e"
+        },
+        {
+          "word": "q'ij",
+          "phonemes": "qʼ i χ"
+        },
+        {
+          "word": "t'iw",
+          "phonemes": "tʼ i w"
+        },
+        {
+          "word": "ch'in",
+          "phonemes": "tʃʼ i n"
+        },
+        {
+          "word": "tiipaky'",
+          "phonemes": "t i ː p a cʼ"
+        },
+        {
+          "word": "ejee'y",
+          "phonemes": "e χ e ː ʔ j"
+        },
+        {
+          "word": "ootxa",
+          "phonemes": "o ː ʈʂ a"
+        },
+        {
+          "word": "xuuj",
+          "phonemes": "ʂ u ː χ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeiklmnopqrstuw]",
+          "apostrophe": "['ꞌˈ‘’]",
+          "ejectives": "(k|q|t|tʃ|c|ʈʂ|ts)",
+          "vowels": "[aeiou]"
+        },
+        "sub": [
+          {
+            "from": "j",
+            "to": "χ",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ʂ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "ẍ",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "k",
+            "to": "c",
+            "weight": 4.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 4.0,
+            "precede": "k",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ʈʂ",
+            "weight": 4.0,
+            "follow": "x"
+          },
+          {
+            "from": "x",
+            "to": "",
+            "weight": 4.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 4.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 4.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "x",
+            "comment": "clean-up"
+          },
+          {
+            "from": "b",
+            "to": "ɓ",
+            "weight": 2.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "b",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({ejectives}) ʔ",
+            "to": "\\1ʼ",
+            "weight": 3.0
+          },
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

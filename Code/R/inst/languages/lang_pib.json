@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "code": "pib",
+    "name": "Yine",
+    "family": "Arawakan,Maipuran,Southern Maipuran,Purus",
+    "macroarea": "South America",
+    "compromised": {
+      "sounds": "n|h̃"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "chawo",
+          "phonemes": "tç a w o"
+        },
+        {
+          "word": "chayi",
+          "phonemes": "tç a j i"
+        },
+        {
+          "word": "chagkaka",
+          "phonemes": "tç a h̃ k a k a"
+        },
+        {
+          "word": "chalkatu",
+          "phonemes": "tç a l k a t ɯ"
+        },
+        {
+          "word": "gagalu",
+          "phonemes": "h̃ a h̃ a l ɯ"
+        },
+        {
+          "word": "gagapitsa",
+          "phonemes": "h̃ a h̃ a p i ts a"
+        },
+        {
+          "word": "gashrorjeru",
+          "phonemes": "h̃ a ʃ ɾ o ɾ ç e ɾ ɯ"
+        },
+        {
+          "word": "gitwa",
+          "phonemes": "h̃ i t w a"
+        },
+        {
+          "word": "jeru",
+          "phonemes": "ç e ɾ ɯ"
+        },
+        {
+          "word": "jeplewata",
+          "phonemes": "ç e p l e w a t a"
+        },
+        {
+          "word": "jgekanchi",
+          "phonemes": "ç h̃ e k a n tç i"
+        },
+        {
+          "word": "jixirjetlu",
+          "phonemes": "ç i tʃ i ɾ ç e t l ɯ"
+        },
+        {
+          "word": "kagka",
+          "phonemes": "k a h̃ k a"
+        },
+        {
+          "word": "kajireji",
+          "phonemes": "k a ç i ɾ e ç i"
+        },
+        {
+          "word": "kamgalu",
+          "phonemes": "k a m h̃ a l ɯ"
+        },
+        {
+          "word": "kasapra",
+          "phonemes": "k a s a p ɾ a"
+        },
+        {
+          "word": "kgatlu",
+          "phonemes": "k h̃ a t l ɯ"
+        },
+        {
+          "word": "mapyolo",
+          "phonemes": "m a p j o l o"
+        },
+        {
+          "word": "mapichi",
+          "phonemes": "m a p i tç i"
+        },
+        {
+          "word": "pcholiji",
+          "phonemes": "p tç o l i ç i"
+        },
+        {
+          "word": "payo",
+          "phonemes": "p a j o"
+        },
+        {
+          "word": "rajxigi",
+          "phonemes": "ɾ a ç tʃ i h̃ i"
+        },
+        {
+          "word": "koxa",
+          "phonemes": "k o tʃ a"
+        },
+        {
+          "word": "seyni",
+          "phonemes": "s e j n i"
+        },
+        {
+          "word": "tshicho",
+          "phonemes": "t ʃ i tç o"
+        },
+        {
+          "word": "gitaakaluru",
+          "phonemes": "h̃ i t a ː k a l ɯ ɾ ɯ"
+        },
+        {
+          "word": "geneeka",
+          "phonemes": "h̃ e n e ː k a"
+        },
+        {
+          "word": "niikaluru",
+          "phonemes": "n i ː k a l ɯ ɾ ɯ"
+        },
+        {
+          "word": "mapookanuwa",
+          "phonemes": "m a p o ː k a n ɯ w a"
+        },
+        {
+          "word": "gituukaklu",
+          "phonemes": "h̃ i t ɯ ː k a k l ɯ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeiklmnopstw]",
+          "vowels": "[aeioɯ]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "h̃",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "ç",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "u",
+            "to": "ɯ",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "tʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tç",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "t",
+            "weight": 4.0,
+            "follow": "sh",
+            "comment": "makes it so <tsh> sequences are realized as /t ʃ/ instead of /ts ʃ/"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

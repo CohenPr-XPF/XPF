@@ -1,0 +1,429 @@
+{
+  "metadata": {
+    "code": "ka",
+    "name": "Georgian",
+    "family": "Kartvelian,Karto-Zan,Georgian",
+    "macroarea": "Eurasia",
+    "default_script": "georgian"
+  },
+  "scripts": {
+    "georgian": {
+      "verify": [
+        {
+          "word": "ფური",
+          "phonemes": "pʰ u ɾ i",
+          "comment": "aspirated p"
+        },
+        {
+          "word": "პური",
+          "phonemes": "pʼ u ɾ i",
+          "comment": "ejected p"
+        },
+        {
+          "word": "თალხი",
+          "phonemes": "tʰ ɑ l x i",
+          "comment": "aspirated t"
+        },
+        {
+          "word": "ტალახი",
+          "phonemes": "tʼ ɑ l ɑ x i",
+          "comment": "ejected t"
+        },
+        {
+          "word": "ქუდი",
+          "phonemes": "kʰ u d i",
+          "comment": "aspirated k and intervocalic voicing"
+        },
+        {
+          "word": "კუდი",
+          "phonemes": "kʼ u d i",
+          "comment": "ejected k"
+        },
+        {
+          "word": "ცერი",
+          "phonemes": "ts ɛ ɾ i",
+          "comment": "ts initial"
+        },
+        {
+          "word": "წერო",
+          "phonemes": "tsʼ ɛ ɾ ɔ",
+          "comment": "ts ejected"
+        },
+        {
+          "word": "ჩიხი",
+          "phonemes": "tʃ i x i",
+          "comment": "initial ch"
+        },
+        {
+          "word": "ჭიქა",
+          "phonemes": "tʃʼ i kʰ ɑ",
+          "comment": "ch ejected"
+        },
+        {
+          "word": "ნელა",
+          "phonemes": "n ɛ l ɑ",
+          "comment": "initial n"
+        },
+        {
+          "word": "მელა",
+          "phonemes": "m ɛ l ɑ",
+          "comment": "initial m"
+        },
+        {
+          "word": "ლუდი",
+          "phonemes": "l u d i",
+          "comment": "initial l"
+        },
+        {
+          "word": "რუხი",
+          "phonemes": "ɾ u x i",
+          "comment": "initial r"
+        },
+        {
+          "word": "ქალი",
+          "phonemes": "kʰ ɑ l i",
+          "comment": "intervocalic l"
+        },
+        {
+          "word": "ქარი",
+          "phonemes": "kʰ ɑ ɾ i",
+          "comment": "intervocalic r"
+        },
+        {
+          "word": "ვარდი",
+          "phonemes": "v ɑ ɾ d i",
+          "comment": "initial v"
+        },
+        {
+          "word": "სარდაფი",
+          "phonemes": "s ɑ ɾ d ɑ pʰ i",
+          "comment": "initial s and intervocalic d"
+        },
+        {
+          "word": "ზარი",
+          "phonemes": "z ɑ ɾ i",
+          "comment": "initial z"
+        },
+        {
+          "word": "შარი",
+          "phonemes": "ʃ ɑ ɾ i",
+          "comment": "initial sh"
+        },
+        {
+          "word": "ჟამი",
+          "phonemes": "ʒ ɑ m i",
+          "comment": "initial zh"
+        },
+        {
+          "word": "ხარი",
+          "phonemes": "x ɑ ɾ i",
+          "comment": "initial x"
+        },
+        {
+          "word": "ხუთი",
+          "phonemes": "x u tʰ i",
+          "comment": "initial x"
+        },
+        {
+          "word": "ღარიბი",
+          "phonemes": "ɣ ɑ ɾ i b i",
+          "comment": "initial voiced velar fricative"
+        },
+        {
+          "word": "ყალიბი",
+          "phonemes": "qʼ ɑ l i b i",
+          "comment": "ejected q; intervocalic b"
+        },
+        {
+          "word": "ყუთი",
+          "phonemes": "qʼ u tʰ i",
+          "comment": "ejected q"
+        },
+        {
+          "word": "ყავა",
+          "phonemes": "qʼ ɑ v ɑ",
+          "comment": "ejected q"
+        },
+        {
+          "word": "ჰავა",
+          "phonemes": "h ɑ v ɑ",
+          "comment": "initial h"
+        },
+        {
+          "word": "ბურთი",
+          "phonemes": "b u ɾ tʰ i",
+          "comment": "initial b"
+        },
+        {
+          "word": "დალაქი",
+          "phonemes": "d ɑ l ɑ kʰ i",
+          "comment": "initial d"
+        },
+        {
+          "word": "გუდა",
+          "phonemes": "ɡ u d ɑ",
+          "comment": "initial g"
+        },
+        {
+          "word": "ძერა",
+          "phonemes": "dz ɛ ɾ ɑ",
+          "comment": "originally there was no IPA translation"
+        },
+        {
+          "word": "ჯიქი",
+          "phonemes": "dʒ i kʰ i",
+          "comment": "originally there was no IPA translation"
+        },
+        {
+          "word": "დუქანი",
+          "phonemes": "d u kʰ ɑ n i",
+          "comment": "initial d"
+        },
+        {
+          "word": "ყვავილი",
+          "phonemes": "qʼ v ɑ v i l i",
+          "comment": "ejected q"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "a": "[ა]",
+          "b": "[ბ]",
+          "g": "[გ]",
+          "d": "[დ]",
+          "e": "[ე]",
+          "v": "[ვ]",
+          "z": "[ზ]",
+          "th": "[თ]",
+          "i": "[ი]",
+          "kejected": "[კ]",
+          "l": "[ლ]",
+          "m": "[მ]",
+          "n": "[ნ]",
+          "o": "[ო]",
+          "pejected": "[პ]",
+          "zh": "[ჟ]",
+          "r": "[რ]",
+          "s": "[ს]",
+          "tejected": "[ტ]",
+          "u": "[უ]",
+          "ph": "[ფ]",
+          "kh": "[ქ]",
+          "voicedvelarfric": "[ღ]",
+          "qejected": "[ყ]",
+          "sh": "[შ]",
+          "ch": "[ჩ]",
+          "ts": "[ც]",
+          "dz": "[ძ]",
+          "tsejected": "[წ]",
+          "chejected": "[ჭ]",
+          "x": "[ხ]",
+          "dg": "[ჯ]",
+          "h": "[ჰ]",
+          "he": "[ჱ]",
+          "hie": "[ჲ]",
+          "vie": "[ჳ]",
+          "qari": "[ჴ]",
+          "hoe": "[ჵ]"
+        },
+        "sub": [
+          {
+            "from": "{ch}",
+            "to": "tʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "{r}",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "{d}",
+            "to": "d",
+            "weight": 1.0
+          },
+          {
+            "from": "{i}",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "{l}",
+            "to": "l",
+            "weight": 1.0
+          },
+          {
+            "from": "{o}",
+            "to": "ɔ",
+            "weight": 1.0
+          },
+          {
+            "from": "{e}",
+            "to": "ɛ",
+            "weight": 1.0
+          },
+          {
+            "from": "{th}",
+            "to": "tʰ",
+            "weight": 1.0
+          },
+          {
+            "from": "{s}",
+            "to": "s",
+            "weight": 1.0
+          },
+          {
+            "from": "{kh}",
+            "to": "kʰ",
+            "weight": 1.0
+          },
+          {
+            "from": "{a}",
+            "to": "ɑ",
+            "weight": 1.0
+          },
+          {
+            "from": "{m}",
+            "to": "m",
+            "weight": 1.0
+          },
+          {
+            "from": "{z}",
+            "to": "z",
+            "weight": 1.0
+          },
+          {
+            "from": "{kejected}",
+            "to": "kʼ",
+            "weight": 1.0
+          },
+          {
+            "from": "{b}",
+            "to": "b",
+            "weight": 1.0
+          },
+          {
+            "from": "{n}",
+            "to": "n",
+            "weight": 1.0
+          },
+          {
+            "from": "{u}",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "{qejected}",
+            "to": "qʼ",
+            "weight": 1.0
+          },
+          {
+            "from": "{ph}",
+            "to": "pʰ",
+            "weight": 1.0
+          },
+          {
+            "from": "{g}",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "{tsejected}",
+            "to": "tsʼ",
+            "weight": 1.0
+          },
+          {
+            "from": "{sh}",
+            "to": "ʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "{zh}",
+            "to": "ʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "{dg}",
+            "to": "dʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "{voicedvelarfric}",
+            "to": "ɣ",
+            "weight": 1.0
+          },
+          {
+            "from": "{v}",
+            "to": "v",
+            "weight": 1.0
+          },
+          {
+            "from": "{pejected}",
+            "to": "pʼ",
+            "weight": 1.0
+          },
+          {
+            "from": "{ts}",
+            "to": "ts",
+            "weight": 1.0
+          },
+          {
+            "from": "{chejected}",
+            "to": "tʃʼ",
+            "weight": 1.0
+          },
+          {
+            "from": "{x}",
+            "to": "x",
+            "weight": 1.0
+          },
+          {
+            "from": "{h}",
+            "to": "h",
+            "weight": 1.0
+          },
+          {
+            "from": "{dz}",
+            "to": "dz",
+            "weight": 1.0
+          },
+          {
+            "from": "{tejected}",
+            "to": "tʼ",
+            "weight": 1.0
+          },
+          {
+            "from": "{he}",
+            "to": "e i",
+            "weight": 1.0
+          },
+          {
+            "from": "{hie}",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "{vie}",
+            "to": "v i",
+            "weight": 1.0
+          },
+          {
+            "from": "{qari}",
+            "to": "x",
+            "weight": 1.0
+          },
+          {
+            "from": "{hoe}",
+            "to": "h ɔ i",
+            "weight": 1.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

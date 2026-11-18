@@ -1,0 +1,368 @@
+{
+  "metadata": {
+    "code": "wo",
+    "name": "Wolof",
+    "family": "Niger-Congo,Atlantic-Congo,Atlantic,Northern,Senegambian,Fula-Wolof,Wolof",
+    "macroarea": "Africa",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "aakara",
+          "phonemes": "a ː k a ɾ a",
+          "comment": "a"
+        },
+        {
+          "word": "bàq",
+          "phonemes": "b a ː q",
+          "comment": "à"
+        },
+        {
+          "word": "bisaab",
+          "phonemes": "b i s a ː b",
+          "comment": "b"
+        },
+        {
+          "word": "caaxon",
+          "phonemes": "tʃ a ː x ɔ n",
+          "comment": "c"
+        },
+        {
+          "word": "déedéet",
+          "phonemes": "d e ː d e ː t",
+          "comment": "d"
+        },
+        {
+          "word": "gerte",
+          "phonemes": "ɡ ɛ ɾ t ɛ",
+          "comment": "e"
+        },
+        {
+          "word": "kéwél",
+          "phonemes": "k e w e l",
+          "comment": "é"
+        },
+        {
+          "word": "lëg",
+          "phonemes": "l ə ɡ",
+          "comment": "ë"
+        },
+        {
+          "word": "fukk",
+          "phonemes": "f u k ː",
+          "comment": "f"
+        },
+        {
+          "word": "goŋ",
+          "phonemes": "ɡ ɔ ŋ",
+          "comment": "g"
+        },
+        {
+          "word": "sikket",
+          "phonemes": "s i k ː ɛ t",
+          "comment": "i"
+        },
+        {
+          "word": "jàmm",
+          "phonemes": "dʒ a ː m ː",
+          "comment": "j"
+        },
+        {
+          "word": "koko",
+          "phonemes": "k ɔ k ɔ",
+          "comment": "k"
+        },
+        {
+          "word": "lal",
+          "phonemes": "l a l",
+          "comment": "l"
+        },
+        {
+          "word": "moom",
+          "phonemes": "m ɔ ː m",
+          "comment": "m"
+        },
+        {
+          "word": "mbédd",
+          "phonemes": "ᵐb e d ː",
+          "comment": "mb"
+        },
+        {
+          "word": "pampëlëmuus",
+          "phonemes": "p a m p ə l ə m u ː s",
+          "comment": "mp"
+        },
+        {
+          "word": "nan",
+          "phonemes": "n a n",
+          "comment": "n"
+        },
+        {
+          "word": "kancóoli",
+          "phonemes": "k a n tʃ o ː l i",
+          "comment": "nc"
+        },
+        {
+          "word": "ndobin",
+          "phonemes": "ⁿd ɔ b i n",
+          "comment": "nd"
+        },
+        {
+          "word": "ngelaw",
+          "phonemes": "ᵑɡ ɛ l a w",
+          "comment": "ng"
+        },
+        {
+          "word": "njaxat",
+          "phonemes": "ᶮdʒ a x a t",
+          "comment": "nj"
+        },
+        {
+          "word": "tànk",
+          "phonemes": "t a ː n k",
+          "comment": "nk"
+        },
+        {
+          "word": "ñeent",
+          "phonemes": "ɲ ɛ ː n t",
+          "comment": "nt"
+        },
+        {
+          "word": "ñuulaay",
+          "phonemes": "ɲ u ː l a ː j",
+          "comment": "ñ"
+        },
+        {
+          "word": "ŋas",
+          "phonemes": "ŋ a s",
+          "comment": "ŋ"
+        },
+        {
+          "word": "xorom",
+          "phonemes": "x ɔ ɾ ɔ m",
+          "comment": "o"
+        },
+        {
+          "word": "sufólóor",
+          "phonemes": "s u f o l o ː ɾ",
+          "comment": "ó"
+        },
+        {
+          "word": "pàppaay",
+          "phonemes": "p a ː p ː a ː j",
+          "comment": "p"
+        },
+        {
+          "word": "wëq",
+          "phonemes": "w ə q",
+          "comment": "q"
+        },
+        {
+          "word": "res",
+          "phonemes": "ɾ ɛ s",
+          "comment": "r"
+        },
+        {
+          "word": "soraans",
+          "phonemes": "s ɔ ɾ a ː n s",
+          "comment": "s"
+        },
+        {
+          "word": "tëflit",
+          "phonemes": "t ə f l i t",
+          "comment": "t"
+        },
+        {
+          "word": "njugub",
+          "phonemes": "ᶮdʒ u ɡ u b",
+          "comment": "u"
+        },
+        {
+          "word": "waaw",
+          "phonemes": "w a ː w",
+          "comment": "w"
+        },
+        {
+          "word": "xojox",
+          "phonemes": "x ɔ dʒ ɔ x",
+          "comment": "x"
+        },
+        {
+          "word": "yax",
+          "phonemes": "j a x",
+          "comment": "y"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "geminate": "[abdeɛəfɡiklmnɲŋoɔpqɾstuwxj]",
+          "alv-stop": "[dt]",
+          "postalv": "[ʃʒ]",
+          "superscript": "[ᵐⁿᶮᵑ]",
+          "passthrough": "[abdfiklmnŋpqstuwx]"
+        },
+        "sub": [
+          {
+            "from": "à",
+            "to": "a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 4.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "ë",
+            "to": "ə",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "dʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 4.0
+          },
+          {
+            "from": "o",
+            "to": "ɔ",
+            "weight": 4.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "some words have a hyphen that carries no phonetic value"
+          },
+          {
+            "from": "m",
+            "to": "ᵐ",
+            "weight": 6.0,
+            "follow": "b"
+          },
+          {
+            "from": "n",
+            "to": "ⁿ",
+            "weight": 6.0,
+            "follow": "d"
+          },
+          {
+            "from": "n",
+            "to": "ᵑ",
+            "weight": 6.0,
+            "follow": "g"
+          },
+          {
+            "from": "n",
+            "to": "ᶮ",
+            "weight": 6.0,
+            "follow": "j"
+          },
+          {
+            "from": "c",
+            "to": "tʃ ː",
+            "weight": 5.0,
+            "follow": "c",
+            "comment": "I found it cleanest/easiest to make separate gemination rules for the affricates"
+          },
+          {
+            "from": "c",
+            "to": "",
+            "weight": 5.0,
+            "precede": "c"
+          },
+          {
+            "from": "j",
+            "to": "dʒ ː",
+            "weight": 5.0,
+            "follow": "j"
+          },
+          {
+            "from": "j",
+            "to": "",
+            "weight": 5.0,
+            "precede": "j"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({superscript}) ",
+            "to": "\\1",
+            "weight": 5.0
+          },
+          {
+            "from": "({geminate}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0,
+            "comment": "covers both lengthening of vowels and gemination of consonants"
+          },
+          {
+            "from": "ə ɛ",
+            "to": "ə ː",
+            "weight": 2.0,
+            "comment": "controls for vowel length when the diacritic on the second vowel is omitted"
+          },
+          {
+            "from": "e ɛ",
+            "to": "e ː",
+            "weight": 2.0,
+            "comment": "controls for vowel length when the diacritic on the second vowel is omitted"
+          },
+          {
+            "from": "o ɔ",
+            "to": "o ː",
+            "weight": 2.0,
+            "comment": "controls for vowel length when the diacritic on the second vowel is omitted"
+          },
+          {
+            "from": "({alv-stop}) ː({postalv})",
+            "to": "\\1 \\1\\2",
+            "weight": 1.0,
+            "comment": "reverses mistaken gemination of <tc> and <dj> sequences"
+          }
+        ]
+      }
+    }
+  }
+}

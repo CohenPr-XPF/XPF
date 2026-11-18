@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "code": "id",
+    "name": "Indonesian",
+    "family": "Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Sundic,Malayic,Malayan,Local Malay",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "sounds": "e|ə"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "yang",
+          "phonemes": "j a ŋ",
+          "comment": "tests ng rules & tests y rule"
+        },
+        {
+          "word": "terkini",
+          "phonemes": "t e r k i n i"
+        },
+        {
+          "word": "mencoba",
+          "phonemes": "m e n tʃ o b a",
+          "comment": "tests c rule"
+        },
+        {
+          "word": "juga",
+          "phonemes": "dʒ u ɡ a"
+        },
+        {
+          "word": "qasar",
+          "phonemes": "k a s a r",
+          "comment": "tests q rule & loanword from Arabic"
+        },
+        {
+          "word": "versi",
+          "phonemes": "f e r s i",
+          "comment": "test v rule & loanword"
+        },
+        {
+          "word": "pernyataan",
+          "phonemes": "p e r ɲ a t a a n",
+          "comment": "tests ny rule"
+        },
+        {
+          "word": "terakhir",
+          "phonemes": "t e r a x i r",
+          "comment": "tests kh rule"
+        },
+        {
+          "word": "masyarakat",
+          "phonemes": "m a ʃ a r a k a t",
+          "comment": "tests sy rule"
+        },
+        {
+          "word": "berhak",
+          "phonemes": "b e r h a k"
+        },
+        {
+          "word": "wilayah",
+          "phonemes": "w i l a j a h"
+        },
+        {
+          "word": "taraf",
+          "phonemes": "t a r a f"
+        },
+        {
+          "word": "guna",
+          "phonemes": "ɡ u n a"
+        },
+        {
+          "word": "dan",
+          "phonemes": "d a n"
+        },
+        {
+          "word": "zaman",
+          "phonemes": "z a m a n"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeioubfdhklmnprstwz]",
+          "apostrophe": "['ꞌˈ‘’]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "dʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 1.0
+          },
+          {
+            "from": "v",
+            "to": "f",
+            "weight": 1.0
+          },
+          {
+            "from": "x",
+            "to": "k s",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 2.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 2.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "k",
+            "to": "x",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "k",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 2.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 2.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

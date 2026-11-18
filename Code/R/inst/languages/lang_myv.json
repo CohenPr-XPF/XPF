@@ -1,0 +1,409 @@
+{
+  "metadata": {
+    "code": "myv",
+    "name": "Erzya",
+    "family": "Uralic,Finno-Ugric,Finno-Permic,Finno-Cheremisic,Finno-Mordvinic,Mordvinic",
+    "macroarea": "Eurasia",
+    "compromised": {
+      "sounds": "n|ŋ"
+    },
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "Категория",
+          "phonemes": "k a tʲ e ɡ o rʲ i j a",
+          "comment": "<а>"
+        },
+        {
+          "word": "бути",
+          "phonemes": "b u tʲ i",
+          "comment": "<б>"
+        },
+        {
+          "word": "весе",
+          "phonemes": "v j e sʲ e",
+          "comment": "<в>"
+        },
+        {
+          "word": "лангс",
+          "phonemes": "l a n ɡ s",
+          "comment": "<г>"
+        },
+        {
+          "word": "кода",
+          "phonemes": "k o d a",
+          "comment": "<д>"
+        },
+        {
+          "word": "мерсь",
+          "phonemes": "m j e r sʲ",
+          "comment": "<е>"
+        },
+        {
+          "word": "те",
+          "phonemes": "tʲ e"
+        },
+        {
+          "word": "истяжо",
+          "phonemes": "j i s tʲ a ʒ o",
+          "comment": "<ж>"
+        },
+        {
+          "word": "Пазонь",
+          "phonemes": "p a z o nʲ",
+          "comment": "<з>"
+        },
+        {
+          "word": "Иисус",
+          "phonemes": "j i j i s u s",
+          "comment": "<и>"
+        },
+        {
+          "word": "ули",
+          "phonemes": "u lʲ i"
+        },
+        {
+          "word": "мейле",
+          "phonemes": "m j e j lʲ e",
+          "comment": "<й>"
+        },
+        {
+          "word": "минек",
+          "phonemes": "m j i nʲ e k",
+          "comment": "<к>"
+        },
+        {
+          "word": "ульнесь",
+          "phonemes": "u lʲ nʲ e sʲ",
+          "comment": "<л>"
+        },
+        {
+          "word": "марто",
+          "phonemes": "m a r t o",
+          "comment": "<м>"
+        },
+        {
+          "word": "сон",
+          "phonemes": "s o n",
+          "comment": "<н>"
+        },
+        {
+          "word": "сонзэ",
+          "phonemes": "s o n z e",
+          "comment": "<о>"
+        },
+        {
+          "word": "Пазось",
+          "phonemes": "p a z o sʲ",
+          "comment": "<п>"
+        },
+        {
+          "word": "коряс",
+          "phonemes": "k o rʲ a s",
+          "comment": "<р>"
+        },
+        {
+          "word": "эсь",
+          "phonemes": "e sʲ",
+          "comment": "<с>"
+        },
+        {
+          "word": "тынк",
+          "phonemes": "t i n k",
+          "comment": "<т>"
+        },
+        {
+          "word": "Кулозь",
+          "phonemes": "k u l o zʲ",
+          "comment": "<у>"
+        },
+        {
+          "word": "фарисейтне",
+          "phonemes": "f a rʲ i sʲ e j t nʲ e",
+          "comment": "<ф>"
+        },
+        {
+          "word": "Христос",
+          "phonemes": "x rʲ i s t o s",
+          "comment": "<х>"
+        },
+        {
+          "word": "кемиця",
+          "phonemes": "k j e m j i tsʲ a",
+          "comment": "<ц>"
+        },
+        {
+          "word": "Покшчить",
+          "phonemes": "p o k ʃ tʃ j i tʲ",
+          "comment": "<ч>"
+        },
+        {
+          "word": "покш",
+          "phonemes": "p o k ʃ",
+          "comment": "<ш>"
+        },
+        {
+          "word": "сынь",
+          "phonemes": "s i nʲ",
+          "comment": "<ы>"
+        },
+        {
+          "word": "аволь",
+          "phonemes": "a v o lʲ",
+          "comment": "<ь>"
+        },
+        {
+          "word": "кисэ",
+          "phonemes": "k j i s e",
+          "comment": "<э>"
+        },
+        {
+          "word": "ютксо",
+          "phonemes": "j u t k s o",
+          "comment": "<ю>"
+        },
+        {
+          "word": "эйзюрковонь",
+          "phonemes": "e j zʲ u r k o v o nʲ"
+        },
+        {
+          "word": "лия",
+          "phonemes": "lʲ i j a",
+          "comment": "<я>"
+        },
+        {
+          "word": "ансяк",
+          "phonemes": "a n sʲ a k"
+        },
+        {
+          "word": "седе",
+          "phonemes": "sʲ e dʲ e"
+        },
+        {
+          "word": "тонавтницянзо",
+          "phonemes": "t o n a v t nʲ i tsʲ a n z o"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "pal-out": "(t|d|ts|s|z|n|r|l)",
+          "pal-in": "[тдцсзнрл]"
+        },
+        "sub": [
+          {
+            "from": "а",
+            "to": "a",
+            "weight": 1.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 1.0
+          },
+          {
+            "from": "в",
+            "to": "v",
+            "weight": 1.0
+          },
+          {
+            "from": "г",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "д",
+            "to": "d",
+            "weight": 1.0
+          },
+          {
+            "from": "е",
+            "to": "j e",
+            "weight": 2.0
+          },
+          {
+            "from": "е",
+            "to": "ʲ e",
+            "weight": 3.0,
+            "precede": "{pal-in}"
+          },
+          {
+            "from": "ё",
+            "to": "j o",
+            "weight": 1.0
+          },
+          {
+            "from": "ё",
+            "to": "ʲ o",
+            "weight": 2.0,
+            "precede": "{pal-in}"
+          },
+          {
+            "from": "ж",
+            "to": "ʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "з",
+            "to": "z",
+            "weight": 1.0
+          },
+          {
+            "from": "и",
+            "to": "j i",
+            "weight": 1.0
+          },
+          {
+            "from": "и",
+            "to": "ʲ i",
+            "weight": 2.0,
+            "precede": "{pal-in}"
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 1.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 1.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 1.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 1.0
+          },
+          {
+            "from": "о",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 1.0
+          },
+          {
+            "from": "р",
+            "to": "r",
+            "weight": 1.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 1.0
+          },
+          {
+            "from": "т",
+            "to": "t",
+            "weight": 1.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "ф",
+            "to": "f",
+            "weight": 1.0
+          },
+          {
+            "from": "х",
+            "to": "x",
+            "weight": 1.0
+          },
+          {
+            "from": "ц",
+            "to": "ts",
+            "weight": 1.0
+          },
+          {
+            "from": "ч",
+            "to": "tʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "ш",
+            "to": "ʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "щ",
+            "to": "ʃ tʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "ъ",
+            "to": "",
+            "weight": 1.0
+          },
+          {
+            "from": "ы",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "ь",
+            "to": "ʲ",
+            "weight": 1.0,
+            "precede": "{pal-in}"
+          },
+          {
+            "from": "э",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "ю",
+            "to": "j u",
+            "weight": 1.0
+          },
+          {
+            "from": "ю",
+            "to": "ʲ u",
+            "weight": 2.0,
+            "precede": "{pal-in}"
+          },
+          {
+            "from": "я",
+            "to": "j a",
+            "weight": 1.0
+          },
+          {
+            "from": "я",
+            "to": "ʲ a",
+            "weight": 2.0,
+            "precede": "{pal-in}"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0,
+            "comment": "a hyphen with no phonetic value occurs on occasion"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({pal-out}) ʲ",
+            "to": "\\1ʲ",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

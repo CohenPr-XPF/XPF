@@ -1,0 +1,355 @@
+{
+  "metadata": {
+    "code": "tyv",
+    "name": "Tuvan",
+    "family": "Turkic,Common Turkic,Siberian Turkic,South Siberian,Sayan Turkic,Tuvan",
+    "macroarea": "Eurasia",
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "база",
+          "phonemes": "b ɑ z ɑ",
+          "comment": "б goes to /b/; а goes to /a/; з goes to /z/"
+        },
+        {
+          "word": "эвес",
+          "phonemes": "e ʋ e s",
+          "comment": "э and е go to /e/; в goes to /v/; с goes to /s/"
+        },
+        {
+          "word": "болгаш",
+          "phonemes": "b o l ɡ ɑ ç",
+          "comment": "о goes to /o/; л goes to /l/; г goes to /ɡ/; ш goes to /ç/"
+        },
+        {
+          "word": "деп",
+          "phonemes": "d e p",
+          "comment": "д goes to /d/; п goes to /p/"
+        },
+        {
+          "word": "кижи",
+          "phonemes": "k i ʝ i",
+          "comment": "к goes to /k/; и goes to /i/; ж goes to /ʝ/"
+        },
+        {
+          "word": "дугайыында",
+          "phonemes": "d u ɡ ɑ j ɯ ː n d ɑ",
+          "comment": "у goes to /u/; й goes to /j/; ы goes to /ɯ/; repeated vowels are long; н goes to /n/"
+        },
+        {
+          "word": "мен",
+          "phonemes": "m e n",
+          "comment": "м goes to /m/"
+        },
+        {
+          "word": "борбаңнадыр",
+          "phonemes": "b o r b ɑ ŋ n ɑ d ɯ r",
+          "comment": "р goes to /r/; ң goes to /ŋ/"
+        },
+        {
+          "word": "өске",
+          "phonemes": "ø s k e",
+          "comment": "ө goes to /ø/"
+        },
+        {
+          "word": "турар",
+          "phonemes": "t u r ɑ r",
+          "comment": "т goes to /t/"
+        },
+        {
+          "word": "бүгү",
+          "phonemes": "b y ɡ y",
+          "comment": "ү goes to /y/"
+        },
+        {
+          "word": "хөй",
+          "phonemes": "x ø j",
+          "comment": "х goes to /x/"
+        },
+        {
+          "word": "чок",
+          "phonemes": "cç o k",
+          "comment": "ч goes to /cç/"
+        },
+        {
+          "word": "аът",
+          "phonemes": "ɑ t",
+          "comment": "ъ has no phonemic value"
+        },
+        {
+          "word": "израиль",
+          "phonemes": "i z r ɑ i l",
+          "comment": "ь has no phonemic value"
+        },
+        {
+          "word": "ёзугаар",
+          "phonemes": "j o z u ɡ ɑ ː r",
+          "comment": "ё goes to /j o/"
+        },
+        {
+          "word": "ол",
+          "phonemes": "o l"
+        },
+        {
+          "word": "дээш",
+          "phonemes": "d e ː ç"
+        },
+        {
+          "word": "бурганның",
+          "phonemes": "b u r ɡ ɑ n n ɯ ŋ"
+        },
+        {
+          "word": "турган",
+          "phonemes": "t u r ɡ ɑ n"
+        },
+        {
+          "word": "иисус",
+          "phonemes": "i ː s u s"
+        },
+        {
+          "word": "силер",
+          "phonemes": "s i l e r"
+        },
+        {
+          "word": "дээн",
+          "phonemes": "d e ː n"
+        },
+        {
+          "word": "ооң",
+          "phonemes": "o ː ŋ"
+        },
+        {
+          "word": "болза",
+          "phonemes": "b o l z ɑ"
+        },
+        {
+          "word": "дээрге",
+          "phonemes": "d e ː r ɡ e"
+        },
+        {
+          "word": "улус",
+          "phonemes": "u l u s"
+        },
+        {
+          "word": "бис",
+          "phonemes": "b i s"
+        },
+        {
+          "word": "ону",
+          "phonemes": "o n u"
+        },
+        {
+          "word": "болур",
+          "phonemes": "b o l u r"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "vowel": "[ɑeioøuyɯ]",
+          "gem": "[ptkɡ]"
+        },
+        "sub": [
+          {
+            "from": "а",
+            "to": "ɑ",
+            "weight": 2.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 2.0
+          },
+          {
+            "from": "в",
+            "to": "ʋ",
+            "weight": 2.0
+          },
+          {
+            "from": "г",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "д",
+            "to": "d",
+            "weight": 2.0
+          },
+          {
+            "from": "е",
+            "to": "e",
+            "weight": 2.0,
+            "precede": "(?<!^)",
+            "comment": "<e> goes to /e/ word-medially and word-finally"
+          },
+          {
+            "from": "е",
+            "to": "j e",
+            "weight": 2.0,
+            "precede": "^"
+          },
+          {
+            "from": "э",
+            "to": "e",
+            "weight": 2.0,
+            "precede": "^"
+          },
+          {
+            "from": "ё",
+            "to": "j o",
+            "weight": 2.0
+          },
+          {
+            "from": "ж",
+            "to": "ʝ",
+            "weight": 2.0
+          },
+          {
+            "from": "з",
+            "to": "z",
+            "weight": 2.0
+          },
+          {
+            "from": "и",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 2.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 2.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 2.0
+          },
+          {
+            "from": "ң",
+            "to": "ŋ",
+            "weight": 2.0
+          },
+          {
+            "from": "о",
+            "to": "o",
+            "weight": 2.0
+          },
+          {
+            "from": "ө",
+            "to": "ø",
+            "weight": 2.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 2.0
+          },
+          {
+            "from": "р",
+            "to": "r",
+            "weight": 2.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 2.0
+          },
+          {
+            "from": "т",
+            "to": "t",
+            "weight": 2.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "ү",
+            "to": "y",
+            "weight": 2.0
+          },
+          {
+            "from": "х",
+            "to": "x",
+            "weight": 2.0
+          },
+          {
+            "from": "ч",
+            "to": "cç",
+            "weight": 2.0
+          },
+          {
+            "from": "ш",
+            "to": "ç",
+            "weight": 2.0
+          },
+          {
+            "from": "ъ",
+            "to": "",
+            "weight": 2.0,
+            "comment": "represents pitch accent"
+          },
+          {
+            "from": "ы",
+            "to": "ɯ",
+            "weight": 2.0
+          },
+          {
+            "from": "ь",
+            "to": "",
+            "weight": 2.0,
+            "comment": "represents a reduced vowel"
+          },
+          {
+            "from": "э",
+            "to": "e ː",
+            "weight": 4.0,
+            "follow": "э"
+          },
+          {
+            "from": "э",
+            "to": "",
+            "weight": 3.0,
+            "precede": "э",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowel}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          },
+          {
+            "from": "({gem}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

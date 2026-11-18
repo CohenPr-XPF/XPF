@@ -1,0 +1,347 @@
+{
+  "metadata": {
+    "code": "gn",
+    "name": "Guarani",
+    "family": "Tupi,Tupi-Guarani,Guarani (I)",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ava",
+          "phonemes": "a ʋ a",
+          "comment": "a"
+        },
+        {
+          "word": "akãrasy",
+          "phonemes": "a k ã ɾ a s ɯ",
+          "comment": "ã"
+        },
+        {
+          "word": "kichiha",
+          "phonemes": "k i ʃ i x a",
+          "comment": "ch"
+        },
+        {
+          "word": "rete",
+          "phonemes": "ɾ e t e",
+          "comment": "e"
+        },
+        {
+          "word": "me'ẽ",
+          "phonemes": "ᵐb e ʔ ẽ",
+          "comment": "ẽ"
+        },
+        {
+          "word": "guasu",
+          "phonemes": "ɰ u a s u",
+          "comment": "g"
+        },
+        {
+          "word": "hovy",
+          "phonemes": "x o ʋ ɯ",
+          "comment": "h"
+        },
+        {
+          "word": "tapiti",
+          "phonemes": "t a p i t i",
+          "comment": "i"
+        },
+        {
+          "word": "morotĩ",
+          "phonemes": "ᵐb o ɾ o t ĩ",
+          "comment": "ĩ"
+        },
+        {
+          "word": "joka",
+          "phonemes": "dʒ o k a",
+          "comment": "j"
+        },
+        {
+          "word": "kuñakarai",
+          "phonemes": "k u dʒ a k a ɾ a i",
+          "comment": "k"
+        },
+        {
+          "word": "parral",
+          "phonemes": "p a r a l",
+          "comment": "l & rr"
+        },
+        {
+          "word": "mymba",
+          "phonemes": "ᵐb ɯ ᵐb a",
+          "comment": "m & mb"
+        },
+        {
+          "word": "nase",
+          "phonemes": "ⁿd a s e",
+          "comment": "n"
+        },
+        {
+          "word": "manduvi",
+          "phonemes": "ᵐb a ⁿd u ʋ i",
+          "comment": "nd"
+        },
+        {
+          "word": "hungy",
+          "phonemes": "x u ᵑɡ ɯ",
+          "comment": "ng"
+        },
+        {
+          "word": "tañykã",
+          "phonemes": "t a dʒ ɯ k ã",
+          "comment": "ñ"
+        },
+        {
+          "word": "oko",
+          "phonemes": "o k o",
+          "comment": "o"
+        },
+        {
+          "word": "kasõ",
+          "phonemes": "k a s õ",
+          "comment": "õ"
+        },
+        {
+          "word": "pepo",
+          "phonemes": "p e p o",
+          "comment": "p"
+        },
+        {
+          "word": "resa",
+          "phonemes": "ɾ e s a",
+          "comment": "r"
+        },
+        {
+          "word": "sãso",
+          "phonemes": "s ã s o",
+          "comment": "s"
+        },
+        {
+          "word": "tatu",
+          "phonemes": "t a t u",
+          "comment": "t"
+        },
+        {
+          "word": "uru",
+          "phonemes": "u ɾ u",
+          "comment": "u"
+        },
+        {
+          "word": "angirũ",
+          "phonemes": "a ᵑɡ i ɾ ũ",
+          "comment": "ũ"
+        },
+        {
+          "word": "sevo'i",
+          "phonemes": "s e ʋ o ʔ i",
+          "comment": "v"
+        },
+        {
+          "word": "yvyra",
+          "phonemes": "ɯ ʋ ɯ ɾ a",
+          "comment": "y"
+        },
+        {
+          "word": "kyre'ỹ",
+          "phonemes": "k ɯ ɾ e ʔ ɯ̃",
+          "comment": "ỹ"
+        },
+        {
+          "word": "ha'e",
+          "phonemes": "x a ʔ e",
+          "comment": "apostrophe"
+        },
+        {
+          "word": "anguja",
+          "phonemes": "a ᵑɡʷ dʒ a",
+          "comment": "ngu"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "any-g": "[gg̃]",
+          "apostrophe": "['ꞌˈ‘’]",
+          "n-follower": "[dg]",
+          "passthrough": "[aãeẽiĩkloõpstuũ]"
+        },
+        "sub": [
+          {
+            "from": "{any-g}",
+            "to": "ɰ",
+            "weight": 4.0
+          },
+          {
+            "from": "h",
+            "to": "x",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "dʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "n",
+            "to": "ⁿd",
+            "weight": 4.0,
+            "comment": "[n] and [ⁿd] are allophones"
+          },
+          {
+            "from": "ñ",
+            "to": "dʒ",
+            "weight": 4.0,
+            "comment": "[dʒ] and [ɲ] are allophones; see [@GnWalker1999], p. 68"
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "v",
+            "to": "ʋ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "ɯ",
+            "weight": 4.0
+          },
+          {
+            "from": "ỹ",
+            "to": "ɯ̃",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0
+          },
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 4.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "ý",
+            "to": "ɯ",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "ʃ",
+            "weight": 6.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "m",
+            "to": "ᵐb",
+            "weight": 6.0,
+            "comment": "No environment is given because standalone <m> appears periodically in Guarani, even though /m/ and /ᵐb/ are allophones"
+          },
+          {
+            "from": "b",
+            "to": "",
+            "weight": 6.0,
+            "precede": "m",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 6.0,
+            "follow": "{n-follower}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "ⁿd",
+            "weight": 6.0,
+            "precede": "n"
+          },
+          {
+            "from": "g",
+            "to": "ᵑɡ",
+            "weight": 6.0,
+            "precede": "n"
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 6.0,
+            "follow": "r",
+            "comment": "the <rr> digraph from Spanish loanwords"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 6.0,
+            "precede": "r",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ᵑɡʷ",
+            "weight": 6.0,
+            "precede": "n",
+            "follow": "u"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 3.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "ᵑɡʷ u",
+            "to": "ᵑɡʷ",
+            "weight": 6.0,
+            "comment": "need separate rule rather than a u-delete rule due to environments where gu\" exist\""
+          },
+          {
+            "from": "ɰ ɰ",
+            "to": "ɰ",
+            "weight": 2.0,
+            "comment": "The program struggles with <g̃>, seemingly reading it as a geminate, but it fails completely to recognize <g̃> when I write the {any-g} class as (g|g̃). Thus, I use an ipasub rule to clean up the output."
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "metadata": {
+    "code": "pwg",
+    "name": "Gapapaiwa",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,Papuan Tip,Nuclear,North Papuan Mainland-D'Entrecasteaux,Are-Taupota,Are",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "da",
+          "phonemes": "d a",
+          "comment": "a"
+        },
+        {
+          "word": "bo",
+          "phonemes": "b o",
+          "comment": "b"
+        },
+        {
+          "word": "damsi",
+          "phonemes": "d a m s i",
+          "comment": "d"
+        },
+        {
+          "word": "ke",
+          "phonemes": "k ɛ",
+          "comment": "e"
+        },
+        {
+          "word": "sago",
+          "phonemes": "s a ɡ o",
+          "comment": "g"
+        },
+        {
+          "word": "kegha",
+          "phonemes": "k ɛ ɣ a",
+          "comment": "gh"
+        },
+        {
+          "word": "gwabinai",
+          "phonemes": "ɡʷ a b i n a i",
+          "comment": "gw"
+        },
+        {
+          "word": "ina",
+          "phonemes": "i n a",
+          "comment": "i"
+        },
+        {
+          "word": "makamakii",
+          "phonemes": "m a k a m a k ɨ",
+          "comment": "ii"
+        },
+        {
+          "word": "ku",
+          "phonemes": "k u",
+          "comment": "k"
+        },
+        {
+          "word": "kwanatuna",
+          "phonemes": "kʷ a n a t u n a",
+          "comment": "kw"
+        },
+        {
+          "word": "ma",
+          "phonemes": "m a",
+          "comment": "m"
+        },
+        {
+          "word": "kana",
+          "phonemes": "k a n a",
+          "comment": "n"
+        },
+        {
+          "word": "kamonai",
+          "phonemes": "k a m o n a i",
+          "comment": "o"
+        },
+        {
+          "word": "rewapana",
+          "phonemes": "ɾ ɛ w a p a n a",
+          "comment": "p"
+        },
+        {
+          "word": "mara",
+          "phonemes": "m a ɾ a",
+          "comment": "r"
+        },
+        {
+          "word": "sisiya",
+          "phonemes": "s i s i j a",
+          "comment": "s"
+        },
+        {
+          "word": "ita",
+          "phonemes": "i t a",
+          "comment": "t"
+        },
+        {
+          "word": "tuna",
+          "phonemes": "t u n a",
+          "comment": "u"
+        },
+        {
+          "word": "ivi",
+          "phonemes": "i v i",
+          "comment": "v"
+        },
+        {
+          "word": "wawaya",
+          "phonemes": "w a w a j a",
+          "comment": "w"
+        },
+        {
+          "word": "iyamna",
+          "phonemes": "i j a m n a",
+          "comment": "y"
+        },
+        {
+          "word": "nani",
+          "phonemes": "n a n i"
+        },
+        {
+          "word": "yavata",
+          "phonemes": "j a v a t a"
+        },
+        {
+          "word": "kona",
+          "phonemes": "k o n a"
+        },
+        {
+          "word": "weni",
+          "phonemes": "w ɛ n i"
+        },
+        {
+          "word": "bera",
+          "phonemes": "b ɛ ɾ a"
+        },
+        {
+          "word": "kurina",
+          "phonemes": "k u ɾ i n a"
+        },
+        {
+          "word": "iti",
+          "phonemes": "i t i"
+        },
+        {
+          "word": "kirakai",
+          "phonemes": "k i ɾ a k a i"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdikmnopstuvw]",
+          "w-preceder": "[gk]"
+        },
+        "sub": [
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɣ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "g",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "ɨ",
+            "weight": 2.0,
+            "follow": "i"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 2.0,
+            "precede": "i",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ɡʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "k",
+            "to": "kʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{w-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}

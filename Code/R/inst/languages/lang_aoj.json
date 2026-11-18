@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "code": "aoj",
+    "name": "Mufian",
+    "family": "Torricelli,Kombio-Arapesh,Arapesh",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "sounds": "a|æ|ɘ|o|e|kʷ|kw|ɡʷ|ɡw"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "papi",
+          "phonemes": "p a p i"
+        },
+        {
+          "word": "ambuta",
+          "phonemes": "a b u t a"
+        },
+        {
+          "word": "naep",
+          "phonemes": "n a e p"
+        },
+        {
+          "word": "owamb",
+          "phonemes": "o w a b"
+        },
+        {
+          "word": "waulu'mana",
+          "phonemes": "w a u l u ʔ m a n a"
+        },
+        {
+          "word": "tata",
+          "phonemes": "t a t a"
+        },
+        {
+          "word": "kwa'ah",
+          "phonemes": "kʷ a ʔ a h"
+        },
+        {
+          "word": "gani",
+          "phonemes": "ɡ a n i"
+        },
+        {
+          "word": "isag",
+          "phonemes": "i s a ɡ"
+        },
+        {
+          "word": "dindigina",
+          "phonemes": "d i d i ɡ i n a"
+        },
+        {
+          "word": "ondop",
+          "phonemes": "o d o p"
+        },
+        {
+          "word": "wambele'w",
+          "phonemes": "w a b e l e ʔʷ"
+        },
+        {
+          "word": "gwagwi",
+          "phonemes": "ɡʷ a ɡʷ i"
+        },
+        {
+          "word": "safe'",
+          "phonemes": "s a f e ʔ"
+        },
+        {
+          "word": "lawah",
+          "phonemes": "l a w a h"
+        },
+        {
+          "word": "ukup",
+          "phonemes": "u k u p"
+        },
+        {
+          "word": "ma",
+          "phonemes": "m a"
+        },
+        {
+          "word": "basef",
+          "phonemes": "b a s e f"
+        },
+        {
+          "word": "ea'",
+          "phonemes": "e a ʔ"
+        },
+        {
+          "word": "owa'",
+          "phonemes": "o w a ʔ"
+        },
+        {
+          "word": "ina",
+          "phonemes": "i n a"
+        },
+        {
+          "word": "esis",
+          "phonemes": "e s i s"
+        },
+        {
+          "word": "waf",
+          "phonemes": "w a f"
+        },
+        {
+          "word": "na'i",
+          "phonemes": "n a ʔ i"
+        },
+        {
+          "word": "ipa'",
+          "phonemes": "i p a ʔ"
+        },
+        {
+          "word": "anen",
+          "phonemes": "a n e n"
+        },
+        {
+          "word": "ae'",
+          "phonemes": "a e ʔ"
+        },
+        {
+          "word": "epes",
+          "phonemes": "e p e s"
+        },
+        {
+          "word": "si'i",
+          "phonemes": "s i ʔ i"
+        },
+        {
+          "word": "dei'",
+          "phonemes": "d e i ʔ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "['ꞌ‘’]",
+          "passthrough": "[abdefhiklmnopstuw]",
+          "w-preceder": "[gk'ꞌ‘’]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "m",
+            "to": "b",
+            "weight": 3.0,
+            "follow": "b"
+          },
+          {
+            "from": "b",
+            "to": "",
+            "weight": 3.0,
+            "precede": "m",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "d",
+            "weight": 3.0,
+            "follow": "d"
+          },
+          {
+            "from": "d",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ɡʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "k",
+            "to": "kʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{w-preceder}",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

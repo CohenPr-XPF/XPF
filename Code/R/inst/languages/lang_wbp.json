@@ -1,0 +1,289 @@
+{
+  "metadata": {
+    "code": "wbp",
+    "name": "Warlpiri",
+    "family": "Australian,Pama-Nyungan,South-West,Ngarga",
+    "macroarea": "Australia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "karalyarr",
+          "phonemes": "k a ɻ a ʎ a ɾ",
+          "comment": "a"
+        },
+        {
+          "word": "kaatu",
+          "phonemes": "k a ː t u",
+          "comment": "aa"
+        },
+        {
+          "word": "yaripirrki",
+          "phonemes": "j a ɻ i p i ɾ k i",
+          "comment": "i"
+        },
+        {
+          "word": "yiin-kijirni",
+          "phonemes": "j i ː n k i ɟ i ɳ i",
+          "comment": "ii"
+        },
+        {
+          "word": "jarnpa",
+          "phonemes": "ɟ a ɳ p a",
+          "comment": "j"
+        },
+        {
+          "word": "kuju",
+          "phonemes": "k u ɟ u",
+          "comment": "k"
+        },
+        {
+          "word": "lirra",
+          "phonemes": "ɭ i ɾ a",
+          "comment": "l (initial)"
+        },
+        {
+          "word": "milpa",
+          "phonemes": "m i l p a",
+          "comment": "l (medial)"
+        },
+        {
+          "word": "karlarla",
+          "phonemes": "k a ɭ a ɭ a",
+          "comment": "rl"
+        },
+        {
+          "word": "kalypa",
+          "phonemes": "k a ʎ p a",
+          "comment": "ly"
+        },
+        {
+          "word": "mula",
+          "phonemes": "m u l a",
+          "comment": "m"
+        },
+        {
+          "word": "mina",
+          "phonemes": "m i n a",
+          "comment": "n (medial)"
+        },
+        {
+          "word": "narntirnki",
+          "phonemes": "ɳ a ɳ t i ɳ k i",
+          "comment": "rn & n (initial)"
+        },
+        {
+          "word": "nyanyi",
+          "phonemes": "ɲ a ɲ i",
+          "comment": "ny"
+        },
+        {
+          "word": "ngapa",
+          "phonemes": "ŋ a p a",
+          "comment": "ng"
+        },
+        {
+          "word": "pampa",
+          "phonemes": "p a m p a",
+          "comment": "p"
+        },
+        {
+          "word": "pira",
+          "phonemes": "p i ɻ a",
+          "comment": "r"
+        },
+        {
+          "word": "rdaka",
+          "phonemes": "ɽ a k a",
+          "comment": "rd"
+        },
+        {
+          "word": "jirrama",
+          "phonemes": "ɟ i ɾ a m a",
+          "comment": "rr"
+        },
+        {
+          "word": "tari",
+          "phonemes": "ʈ a ɻ i",
+          "comment": "t (initial)"
+        },
+        {
+          "word": "wati",
+          "phonemes": "w a t i",
+          "comment": "t (medial)"
+        },
+        {
+          "word": "kartaku",
+          "phonemes": "k a ʈ a k u",
+          "comment": "rt"
+        },
+        {
+          "word": "nguku",
+          "phonemes": "ŋ u k u",
+          "comment": "u"
+        },
+        {
+          "word": "puurlu",
+          "phonemes": "p u ː ɭ u",
+          "comment": "uu"
+        },
+        {
+          "word": "wirlki",
+          "phonemes": "w i ɭ k i",
+          "comment": "w"
+        },
+        {
+          "word": "yapa",
+          "phonemes": "j a p a",
+          "comment": "y"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "post-r": "[lndrt]",
+          "pre-y": "[ln]",
+          "vowel": "[aiu]",
+          "passthrough": "[aiklmnptuw]"
+        },
+        "sub": [
+          {
+            "from": "j",
+            "to": "ɟ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɻ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "some words have a hyphen with no phonetic value"
+          },
+          {
+            "from": "d",
+            "to": "ɽ",
+            "weight": 6.0,
+            "precede": "r",
+            "comment": "<rd>"
+          },
+          {
+            "from": "l",
+            "to": "ɭ",
+            "weight": 6.0,
+            "precede": "r",
+            "comment": "<rl>"
+          },
+          {
+            "from": "n",
+            "to": "ɳ",
+            "weight": 6.0,
+            "precede": "r",
+            "comment": "<rn>"
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 6.0,
+            "precede": "r",
+            "comment": "<rr>"
+          },
+          {
+            "from": "t",
+            "to": "ʈ",
+            "weight": 6.0,
+            "precede": "r",
+            "comment": "<rt>"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 6.0,
+            "follow": "{post-r}",
+            "comment": "cleanup of r-initial digraphs"
+          },
+          {
+            "from": "l",
+            "to": "ʎ",
+            "weight": 6.0,
+            "follow": "y",
+            "comment": "<ly>"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 6.0,
+            "follow": "y",
+            "comment": "<ny>"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{pre-y}",
+            "comment": "cleanup of y-final digraphs"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 6.0,
+            "follow": "g",
+            "comment": "<ng>"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<ng> cleanup"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowel}) \\1",
+            "to": "\\1 ː",
+            "weight": 4.0,
+            "comment": "vowel lengthening"
+          },
+          {
+            "from": "^t",
+            "to": "ʈ",
+            "weight": 4.0,
+            "comment": "retroflexion of word-initial <t>"
+          },
+          {
+            "from": "^n",
+            "to": "ɳ",
+            "weight": 4.0,
+            "comment": "retroflexion of word-initial <n>"
+          },
+          {
+            "from": "^l",
+            "to": "ɭ",
+            "weight": 4.0,
+            "comment": "retroflexion of word-initial <l>"
+          }
+        ]
+      }
+    }
+  }
+}

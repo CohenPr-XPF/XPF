@@ -1,0 +1,271 @@
+{
+  "metadata": {
+    "code": "tac",
+    "name": "Tarahumara",
+    "family": "Uto-Aztecan,Southern Uto-Aztecan,Sonoran,Tarahumaran,Tarahumara",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "aká",
+          "phonemes": "a k a",
+          "comment": "a"
+        },
+        {
+          "word": "ba'wí",
+          "phonemes": "β a ʔ w i",
+          "comment": "b"
+        },
+        {
+          "word": "mucú",
+          "phonemes": "m u k u",
+          "comment": "c"
+        },
+        {
+          "word": "chikuli",
+          "phonemes": "tʃ i k u ɭ i",
+          "comment": "ch"
+        },
+        {
+          "word": "alekeri",
+          "phonemes": "a ɭ e k e ɽ i",
+          "comment": "e"
+        },
+        {
+          "word": "ganíliga",
+          "phonemes": "ɣ a n i ɭ i ɣ a",
+          "comment": "g"
+        },
+        {
+          "word": "Tarahumara",
+          "phonemes": "t a ɽ a w m a ɽ a"
+        },
+        {
+          "word": "huirú",
+          "phonemes": "w i ɽ u",
+          "comment": "hu"
+        },
+        {
+          "word": "riní",
+          "phonemes": "ɽ i n i",
+          "comment": "i"
+        },
+        {
+          "word": "kajé",
+          "phonemes": "k a h e",
+          "comment": "j"
+        },
+        {
+          "word": "kaliwa",
+          "phonemes": "k a ɭ i w a",
+          "comment": "k"
+        },
+        {
+          "word": "tolí",
+          "phonemes": "t o ɭ i",
+          "comment": "l"
+        },
+        {
+          "word": "ralámuli",
+          "phonemes": "ɽ a ɭ a m u ɭ i",
+          "comment": "m"
+        },
+        {
+          "word": "ne'ogé",
+          "phonemes": "n e ʔ o ɣ e",
+          "comment": "n"
+        },
+        {
+          "word": "ocó",
+          "phonemes": "o k o",
+          "comment": "o"
+        },
+        {
+          "word": "upí",
+          "phonemes": "u p i",
+          "comment": "p"
+        },
+        {
+          "word": "baquí",
+          "phonemes": "β a k i",
+          "comment": "qu"
+        },
+        {
+          "word": "ripuchí",
+          "phonemes": "ɽ i p u tʃ i",
+          "comment": "r"
+        },
+        {
+          "word": "sulá",
+          "phonemes": "s u ɭ a",
+          "comment": "s"
+        },
+        {
+          "word": "tata",
+          "phonemes": "t a t a",
+          "comment": "t"
+        },
+        {
+          "word": "ukú",
+          "phonemes": "u k u",
+          "comment": "u"
+        },
+        {
+          "word": "wi'yé",
+          "phonemes": "w i ʔ j e",
+          "comment": "w"
+        },
+        {
+          "word": "'yeta",
+          "phonemes": "ʔ j e t a",
+          "comment": "y, apostrophe"
+        },
+        {
+          "word": "alué",
+          "phonemes": "a ɭ u e"
+        },
+        {
+          "word": "napu",
+          "phonemes": "n a p u"
+        },
+        {
+          "word": "ꞌlige",
+          "phonemes": "ʔ ɭ i ɣ e"
+        },
+        {
+          "word": "napurigá",
+          "phonemes": "n a p u ɽ i ɣ a"
+        },
+        {
+          "word": "tabilé",
+          "phonemes": "t a β i ɭ e"
+        },
+        {
+          "word": "alé",
+          "phonemes": "a ɭ e"
+        },
+        {
+          "word": "ꞌemi",
+          "phonemes": "ʔ e m i"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "['ꞌˈ‘’]",
+          "u-preceder": "[hq]",
+          "passthrough": "[aeihkmnopstuw]"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "β",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɣ",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 4.0
+          },
+          {
+            "from": "l",
+            "to": "ɭ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɽ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 4.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<ch> = /tʃ/"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "w",
+            "weight": 5.0,
+            "follow": "u",
+            "comment": "<hu> = /w/"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 5.0,
+            "follow": "u",
+            "comment": "<qu> = /k/"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 5.0,
+            "precede": "{u-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}

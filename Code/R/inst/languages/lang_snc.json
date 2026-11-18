@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "code": "snc",
+    "name": "Sinaugoro",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,Papuan Tip,Peripheral,Central Papuan,Sinagoro-Keapara",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "afeta",
+          "phonemes": "a f e t a"
+        },
+        {
+          "word": "baḡoro",
+          "phonemes": "b a ɣ o r o"
+        },
+        {
+          "word": "duku",
+          "phonemes": "d u k u"
+        },
+        {
+          "word": "gebore",
+          "phonemes": "ɡ e b o r e"
+        },
+        {
+          "word": "gwaḡutu",
+          "phonemes": "ɡʷ a ɣ u t u"
+        },
+        {
+          "word": "ioku",
+          "phonemes": "i o k u"
+        },
+        {
+          "word": "kwaibo",
+          "phonemes": "kʷ ai b o"
+        },
+        {
+          "word": "ḡwatani",
+          "phonemes": "ɣʷ a t a n i"
+        },
+        {
+          "word": "loilo",
+          "phonemes": "l oi l o"
+        },
+        {
+          "word": "midigu",
+          "phonemes": "m i d i ɡ u"
+        },
+        {
+          "word": "raro",
+          "phonemes": "r a r o"
+        },
+        {
+          "word": "asiḡi",
+          "phonemes": "a s i ɣ i"
+        },
+        {
+          "word": "lavilavi",
+          "phonemes": "l a v i l a v i"
+        },
+        {
+          "word": "faeara",
+          "phonemes": "f ae a r a"
+        },
+        {
+          "word": "maoro",
+          "phonemes": "m ao r o"
+        },
+        {
+          "word": "kau",
+          "phonemes": "k au"
+        },
+        {
+          "word": "vei",
+          "phonemes": "v ei"
+        },
+        {
+          "word": "fou",
+          "phonemes": "f ou"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdefiklmnorstuv]",
+          "labial": "[kg]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "ḡ",
+            "to": "ɣ",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 1.0
+          },
+          {
+            "from": "k",
+            "to": "kʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "g",
+            "to": "ɡʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{labial}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ḡ",
+            "to": "ɣʷ",
+            "weight": 2.0,
+            "follow": "w",
+            "comment": "exception to labial rule"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 2.0,
+            "precede": "ḡ"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "a e",
+            "to": "ae",
+            "weight": 1.0
+          },
+          {
+            "from": "a i",
+            "to": "ai",
+            "weight": 1.0
+          },
+          {
+            "from": "a o",
+            "to": "ao",
+            "weight": 1.0
+          },
+          {
+            "from": "a u",
+            "to": "au",
+            "weight": 1.0
+          },
+          {
+            "from": "e i",
+            "to": "ei",
+            "weight": 1.0
+          },
+          {
+            "from": "o u",
+            "to": "ou",
+            "weight": 1.0
+          },
+          {
+            "from": "o i",
+            "to": "oi",
+            "weight": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

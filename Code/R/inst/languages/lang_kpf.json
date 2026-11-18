@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "code": "kpf",
+    "name": "Komba",
+    "family": "Trans-New Guinea,Main Section,Central and Western,Huon-Finisterre,Huon,Western",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "sâputnâ",
+          "phonemes": "s ɐ p u t n ɐ"
+        },
+        {
+          "word": "topŋâ",
+          "phonemes": "t o p ŋ ɐ"
+        },
+        {
+          "word": "sumun",
+          "phonemes": "s u m u n"
+        },
+        {
+          "word": "mârum",
+          "phonemes": "m ɐ d u m"
+        },
+        {
+          "word": "waru",
+          "phonemes": "w a d u"
+        },
+        {
+          "word": "imbaŋâ",
+          "phonemes": "i m b a ŋ ɐ"
+        },
+        {
+          "word": "gundu",
+          "phonemes": "ɡ u n d u"
+        },
+        {
+          "word": "bugam",
+          "phonemes": "b u ɡ a m"
+        },
+        {
+          "word": "topkwap",
+          "phonemes": "t o p kʷ a p"
+        },
+        {
+          "word": "gwâlâgwâlâ",
+          "phonemes": "ɡʷ ɐ l ɐ ɡʷ ɐ l ɐ"
+        },
+        {
+          "word": "muyap",
+          "phonemes": "m u j a p"
+        },
+        {
+          "word": "kera",
+          "phonemes": "k e d a"
+        },
+        {
+          "word": "wenza",
+          "phonemes": "w e n z a"
+        },
+        {
+          "word": "gola",
+          "phonemes": "ɡ o l a"
+        },
+        {
+          "word": "hânân",
+          "phonemes": "ɐ̥ ː n ɐ n"
+        },
+        {
+          "word": "âuk",
+          "phonemes": "ɐu k"
+        },
+        {
+          "word": "neule",
+          "phonemes": "n eu l e"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeiklmnŋopstuwz]",
+          "vowels-input": "[aâeiou]",
+          "vowels-output": "[aɐeiou]",
+          "w-preceder": "[gk]",
+          "high-v": "[iu]",
+          "mid-low-v": "[aɐeo]"
+        },
+        "sub": [
+          {
+            "from": "â",
+            "to": "ɐ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "d",
+            "weight": 2.0,
+            "precede": "{vowels-input}",
+            "follow": "{vowels-input}"
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "k",
+            "to": "kʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{w-preceder}"
+          },
+          {
+            "from": "a",
+            "to": "ḁ ː",
+            "weight": 3.0,
+            "precede": "^h"
+          },
+          {
+            "from": "â",
+            "to": "ɐ̥ ː",
+            "weight": 3.0,
+            "precede": "^h"
+          },
+          {
+            "from": "e",
+            "to": "e̥ ː",
+            "weight": 3.0,
+            "precede": "^h"
+          },
+          {
+            "from": "i",
+            "to": "i̥ ː",
+            "weight": 3.0,
+            "precede": "^h"
+          },
+          {
+            "from": "o",
+            "to": "o̥ ː",
+            "weight": 3.0,
+            "precede": "^h"
+          },
+          {
+            "from": "u",
+            "to": "u̥ ː",
+            "weight": 3.0,
+            "precede": "^h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "follow": "{vowels-input}",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({vowels-output}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          },
+          {
+            "from": "({mid-low-v}) ({high-v})",
+            "to": "\\1\\2",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

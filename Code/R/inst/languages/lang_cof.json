@@ -1,0 +1,390 @@
+{
+  "metadata": {
+    "code": "cof",
+    "name": "Colorado",
+    "family": "Barbacoan,Cayapa-Colorado",
+    "macroarea": "South America",
+    "compromised": {
+      "note": "suspect marking of glottal stops"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "a'cusa",
+          "phonemes": "a ʔ k u s a"
+        },
+        {
+          "word": "ahuinno",
+          "phonemes": "a w ĩ n o"
+        },
+        {
+          "word": "alochí",
+          "phonemes": "a l o ts i"
+        },
+        {
+          "word": "ayán",
+          "phonemes": "a j ã"
+        },
+        {
+          "word": "ayuna",
+          "phonemes": "a j u n a"
+        },
+        {
+          "word": "bá'caca",
+          "phonemes": "b a ʔ k a k a"
+        },
+        {
+          "word": "bájino",
+          "phonemes": "b a h i n o"
+        },
+        {
+          "word": "bo'pí",
+          "phonemes": "b o ʔ p i"
+        },
+        {
+          "word": "buno",
+          "phonemes": "b u n o"
+        },
+        {
+          "word": "bu'tú",
+          "phonemes": "b u ʔ t u"
+        },
+        {
+          "word": "cari",
+          "phonemes": "k a r i"
+        },
+        {
+          "word": "cayen",
+          "phonemes": "k a j ẽ"
+        },
+        {
+          "word": "ca'qué",
+          "phonemes": "k a ʔ k e"
+        },
+        {
+          "word": "co'có",
+          "phonemes": "k o ʔ k o"
+        },
+        {
+          "word": "coleca",
+          "phonemes": "k o l e k a"
+        },
+        {
+          "word": "cuhuá",
+          "phonemes": "k u w a"
+        },
+        {
+          "word": "cu'chuchu",
+          "phonemes": "k u ʔ ts u ts u"
+        },
+        {
+          "word": "chihuu",
+          "phonemes": "ts i w u"
+        },
+        {
+          "word": "chidé",
+          "phonemes": "ts i d e"
+        },
+        {
+          "word": "delesa",
+          "phonemes": "d e l e s a"
+        },
+        {
+          "word": "dídiqueno",
+          "phonemes": "d i d i k e n o"
+        },
+        {
+          "word": "fano",
+          "phonemes": "ɸ a n o"
+        },
+        {
+          "word": "fi'quí",
+          "phonemes": "ɸ i ʔ k i"
+        },
+        {
+          "word": "hue",
+          "phonemes": "w e"
+        },
+        {
+          "word": "i'tono",
+          "phonemes": "i ʔ t o n o"
+        },
+        {
+          "word": "jabi",
+          "phonemes": "h a b i"
+        },
+        {
+          "word": "lano",
+          "phonemes": "l a n o"
+        },
+        {
+          "word": "la'pino",
+          "phonemes": "l a ʔ p i n o"
+        },
+        {
+          "word": "lonlo",
+          "phonemes": "l õ l o"
+        },
+        {
+          "word": "manpi",
+          "phonemes": "m ã p i"
+        },
+        {
+          "word": "nin",
+          "phonemes": "n ĩ"
+        },
+        {
+          "word": "panu",
+          "phonemes": "p a n u"
+        },
+        {
+          "word": "panchi",
+          "phonemes": "p ã ts i"
+        },
+        {
+          "word": "pa'penca",
+          "phonemes": "p a ʔ p ẽ k a"
+        },
+        {
+          "word": "pe'tenno",
+          "phonemes": "p e ʔ t ẽ n o"
+        },
+        {
+          "word": "piranchi",
+          "phonemes": "p i r ã ts i"
+        },
+        {
+          "word": "sónhino",
+          "phonemes": "s õ i n o"
+        },
+        {
+          "word": "sulino",
+          "phonemes": "s u l i n o"
+        },
+        {
+          "word": "ke'sa",
+          "phonemes": "k e ʔ s a"
+        },
+        {
+          "word": "cuwenta",
+          "phonemes": "k u w ẽ t a"
+        },
+        {
+          "word": "tsachila",
+          "phonemes": "ts a ts i l a"
+        },
+        {
+          "word": "junshi",
+          "phonemes": "h ũ s i"
+        },
+        {
+          "word": "shuwato",
+          "phonemes": "s u w a t o"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[bdklmnprstw]",
+          "apostrophe": "[ꞌ'ˈ‘’]",
+          "high-V": "[iíuú]",
+          "front-V": "[iíeé]",
+          "vowels-output": "[aeiou]",
+          "consonants-output": "(p|b|ɸ|m|w|t|d|ts|s|n|r|l|j|k|h|ʔ)",
+          "a": "[aá]",
+          "e": "[eé]",
+          "i": "[ií]",
+          "o": "[oó]",
+          "u": "[uú]"
+        },
+        "sub": [
+          {
+            "from": "{a}",
+            "to": "a",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "{e}",
+            "to": "e",
+            "weight": 2.0
+          },
+          {
+            "from": "h",
+            "to": "NAS",
+            "weight": 2.0
+          },
+          {
+            "from": "{i}",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "f",
+            "to": "ɸ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "{o}",
+            "to": "o",
+            "weight": 2.0
+          },
+          {
+            "from": "{u}",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "ts",
+            "weight": 4.0,
+            "follow": "h{high-V}"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "c",
+            "follow": "{high-V}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "u{front-V}"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "follow": "{front-V}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "w",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "h",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "s",
+            "weight": 4.0,
+            "follow": "h{high-V}"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "s",
+            "follow": "{high-V}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "ts u",
+            "weight": 5.0,
+            "follow": "hu",
+            "comment": "need separate rule for <chu> sequences due to <ch> and <hu> being digraphs"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 5.0,
+            "precede": "c",
+            "follow": "u",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "s u",
+            "weight": 5.0,
+            "follow": "hu",
+            "comment": "need separate rule for <shu> sequences due to <sh> and <hu> being digraphs"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 5.0,
+            "precede": "s",
+            "follow": "u",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowels-output}) n$",
+            "to": "\\1̃",
+            "weight": 6.0,
+            "comment": "word-final nasal vowels"
+          },
+          {
+            "from": "({vowels-output}) n ({consonants-output})",
+            "to": "\\1̃ \\2",
+            "weight": 7.0,
+            "comment": "word-medial nasal vowels (nasal vowel followed by a consonant)"
+          },
+          {
+            "from": "({vowels-output}) n NAS ({vowels-output})",
+            "to": "\\1̃ \\2",
+            "weight": 8.0,
+            "comment": "word-medial nasal vowels (nasal vowel followed immediately by oral vowel)"
+          },
+          {
+            "from": "NAS",
+            "to": "@",
+            "weight": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

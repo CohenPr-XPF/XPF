@@ -1,0 +1,598 @@
+{
+  "metadata": {
+    "code": "con",
+    "name": "Cofán",
+    "family": "Language Isolate",
+    "macroarea": "South America",
+    "compromised": {
+      "sounds": "ᵑɡ|ɰ|m|ʋ|ɲ|j"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "bia'a",
+          "phonemes": "ᵐb i a ʔ a",
+          "comment": "word-inital b and glottal stop"
+        },
+        {
+          "word": "amûndetshi",
+          "phonemes": "ã m ɨ̃ ⁿd e tsʰ i",
+          "comment": "nd prenasalization and tsh affricate and single vowel nasalization"
+        },
+        {
+          "word": "dûshû",
+          "phonemes": "ⁿd ɨ ʃ ɨ",
+          "comment": "word-inital d and sh fricative"
+        },
+        {
+          "word": "geñu",
+          "phonemes": "ᵑɡ ẽ ɲ õ",
+          "comment": "word-inital g"
+        },
+        {
+          "word": "tsa'u",
+          "phonemes": "ts a ʔ o",
+          "comment": "ts affricate"
+        },
+        {
+          "word": "singemakhe",
+          "phonemes": "s ĩ ᵑɡ ẽ m ã kʰ e",
+          "comment": "ng prenasalization and kh aspiration"
+        },
+        {
+          "word": "fithije",
+          "phonemes": "f i tʰ i h e",
+          "comment": "th aspiration"
+        },
+        {
+          "word": "afa'chu",
+          "phonemes": "a f a ʔ tʃ o",
+          "comment": "ch affricate"
+        },
+        {
+          "word": "a'mbia",
+          "phonemes": "a ʔ ᵐb i a",
+          "comment": "mb prenasalization"
+        },
+        {
+          "word": "ain",
+          "phonemes": "ãĩ",
+          "comment": "final nasal deletion"
+        },
+        {
+          "word": "kuchhi",
+          "phonemes": "k o tʃʰ i",
+          "comment": "chh affricate"
+        },
+        {
+          "word": "rande",
+          "phonemes": "ɾ ã ⁿd e"
+        },
+        {
+          "word": "phimi",
+          "phonemes": "pʰ ĩ m ĩ",
+          "comment": "ph aspiration"
+        },
+        {
+          "word": "kûndyi",
+          "phonemes": "k ɨ̃ ⁿdʒ i",
+          "comment": "ndy affricate"
+        },
+        {
+          "word": "dyaiye",
+          "phonemes": "ⁿdʒ ai j e",
+          "comment": "dy affricate and oral diphthong"
+        },
+        {
+          "word": "kuenza",
+          "phonemes": "k õẽ ⁿdz a",
+          "comment": "nz affricate and nasal diphthong"
+        },
+        {
+          "word": "ze'nze",
+          "phonemes": "ⁿdz e ʔ ⁿdz e",
+          "comment": "word-initial z"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aefikmnpst]",
+          "apostrophe": "[ꞌ'ˈ‘’]",
+          "h-preceder": "[ckpst]",
+          "NV-preceder": "(ñ|m|n)",
+          "NV-follower": "(m|n|ñ|b|d|g|z|dy)"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "ᵐb",
+            "weight": 1.0
+          },
+          {
+            "from": "d",
+            "to": "ⁿd",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ᵑɡ",
+            "weight": 3.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 1.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "u",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "û",
+            "to": "ɨ",
+            "weight": 1.0
+          },
+          {
+            "from": "v",
+            "to": "ʋ",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "z",
+            "to": "ⁿdz",
+            "weight": 1.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 1.0
+          },
+          {
+            "from": "b",
+            "to": "ᵐb",
+            "weight": 2.0,
+            "precede": "m"
+          },
+          {
+            "from": "m",
+            "to": "",
+            "weight": 2.0,
+            "follow": "b",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "ⁿd",
+            "weight": 2.0,
+            "precede": "n"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 2.0,
+            "follow": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ᵑɡ",
+            "weight": 2.0,
+            "precede": "n"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 2.0,
+            "follow": "g",
+            "comment": "clean-up"
+          },
+          {
+            "from": "p",
+            "to": "pʰ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "t",
+            "to": "tʰ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "k",
+            "to": "kʰ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{h-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ts",
+            "weight": 3.0,
+            "precede": "t"
+          },
+          {
+            "from": "t",
+            "to": "",
+            "weight": 3.0,
+            "follow": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "tsʰ",
+            "weight": 4.0,
+            "precede": "t",
+            "follow": "h"
+          },
+          {
+            "from": "t",
+            "to": "",
+            "weight": 4.0,
+            "follow": "sh",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "ts",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "tʃʰ",
+            "weight": 3.0,
+            "precede": "c",
+            "follow": "h"
+          },
+          {
+            "from": "c",
+            "to": "",
+            "weight": 4.0,
+            "follow": "hh",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "ch",
+            "comment": "clean-up"
+          },
+          {
+            "from": "z",
+            "to": "ⁿdz",
+            "weight": 2.0,
+            "precede": "n"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 2.0,
+            "follow": "z",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "ⁿdʒ",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 3.0,
+            "precede": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "ⁿdʒ",
+            "weight": 4.0,
+            "precede": "n",
+            "follow": "y"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 4.0,
+            "follow": "dy",
+            "comment": "clean-up"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 4.0,
+            "precede": "nd",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "ã",
+            "weight": 5.0,
+            "precede": "{NV-preceder}"
+          },
+          {
+            "from": "a",
+            "to": "ã",
+            "weight": 5.0,
+            "follow": "{NV-follower}"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 5.0,
+            "precede": "a",
+            "follow": "$",
+            "comment": "clean-up: <n> in the postvocalic (word-final) position only indicates nasalization of the vowel"
+          },
+          {
+            "from": "e",
+            "to": "ẽ",
+            "weight": 5.0,
+            "precede": "{NV-preceder}"
+          },
+          {
+            "from": "e",
+            "to": "ẽ",
+            "weight": 5.0,
+            "follow": "{NV-follower}"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 5.0,
+            "precede": "e",
+            "follow": "$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "ĩ",
+            "weight": 5.0,
+            "precede": "{NV-preceder}"
+          },
+          {
+            "from": "i",
+            "to": "ĩ",
+            "weight": 5.0,
+            "follow": "{NV-follower}"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 5.0,
+            "precede": "i",
+            "follow": "$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "õ",
+            "weight": 5.0,
+            "precede": "{NV-preceder}"
+          },
+          {
+            "from": "u",
+            "to": "õ",
+            "weight": 5.0,
+            "follow": "{NV-follower}"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 5.0,
+            "precede": "u",
+            "follow": "$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "û",
+            "to": "ɨ̃",
+            "weight": 5.0,
+            "precede": "{NV-preceder}"
+          },
+          {
+            "from": "û",
+            "to": "ɨ̃",
+            "weight": 5.0,
+            "follow": "{NV-follower}"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 5.0,
+            "precede": "û",
+            "follow": "$",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "a i",
+            "to": "ai",
+            "weight": 8.0
+          },
+          {
+            "from": "o e",
+            "to": "oe",
+            "weight": 8.0
+          },
+          {
+            "from": "o a",
+            "to": "oa",
+            "weight": 8.0
+          },
+          {
+            "from": "o i",
+            "to": "oi",
+            "weight": 8.0
+          },
+          {
+            "from": "ɨ i",
+            "to": "ɨi",
+            "weight": 8.0
+          },
+          {
+            "from": "a o",
+            "to": "ao",
+            "weight": 8.0
+          },
+          {
+            "from": "a e",
+            "to": "ae",
+            "weight": 8.0
+          },
+          {
+            "from": "a ĩ",
+            "to": "ãĩ",
+            "weight": 8.0
+          },
+          {
+            "from": "o ẽ",
+            "to": "õẽ",
+            "weight": 8.0
+          },
+          {
+            "from": "o ã",
+            "to": "õã",
+            "weight": 8.0
+          },
+          {
+            "from": "o ĩ",
+            "to": "õĩ",
+            "weight": 8.0
+          },
+          {
+            "from": "ɨ ĩ",
+            "to": "ɨ̃ĩ",
+            "weight": 8.0
+          },
+          {
+            "from": "a õ",
+            "to": "ãõ",
+            "weight": 8.0
+          },
+          {
+            "from": "a ẽ",
+            "to": "ãẽ",
+            "weight": 8.0
+          },
+          {
+            "from": "ã ĩ",
+            "to": "ãĩ",
+            "weight": 8.0
+          },
+          {
+            "from": "õ ẽ",
+            "to": "õẽ",
+            "weight": 8.0
+          },
+          {
+            "from": "õ ã",
+            "to": "õã",
+            "weight": 8.0
+          },
+          {
+            "from": "õ ĩ",
+            "to": "õĩ",
+            "weight": 8.0
+          },
+          {
+            "from": "ɨ̃ ĩ",
+            "to": "ɨ̃ĩ",
+            "weight": 8.0
+          },
+          {
+            "from": "ã õ",
+            "to": "ãõ",
+            "weight": 8.0
+          },
+          {
+            "from": "ã ẽ",
+            "to": "ãẽ",
+            "weight": 8.0
+          },
+          {
+            "from": "a ĩ",
+            "to": "ãĩ",
+            "weight": 8.0
+          },
+          {
+            "from": "o ẽ",
+            "to": "õẽ",
+            "weight": 8.0
+          },
+          {
+            "from": "o ã",
+            "to": "õã",
+            "weight": 8.0
+          },
+          {
+            "from": "o ĩ",
+            "to": "õĩ",
+            "weight": 8.0
+          },
+          {
+            "from": "ɨ ĩ",
+            "to": "ɨ̃ĩ",
+            "weight": 8.0
+          },
+          {
+            "from": "a õ",
+            "to": "ãõ",
+            "weight": 8.0
+          },
+          {
+            "from": "a ẽ",
+            "to": "ãẽ",
+            "weight": 8.0
+          }
+        ]
+      }
+    }
+  }
+}

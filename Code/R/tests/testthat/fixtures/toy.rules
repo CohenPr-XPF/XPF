@@ -1,0 +1,7 @@
+type,sfrom,sto,weight,precede,follow,comment
+class,vowel,[aeiou],,,,
+match,a,a,,,,
+match,e,e,,,,
+sub,s,s,1,,,
+sub,s,z,2,{vowel},{vowel},voicing between vowels
+match,",",",",,,,a quoted comma

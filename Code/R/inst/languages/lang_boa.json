@@ -1,0 +1,384 @@
+{
+  "metadata": {
+    "code": "boa",
+    "name": "Bora",
+    "family": "Witotoan,Boran",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ahcówa",
+          "phonemes": "a ˨ ʔ kʰ o ˦ kp a ˨",
+          "comment": "a"
+        },
+        {
+          "word": "ájɨ́vaá",
+          "phonemes": "a ˦ x ɨ ˦ β a ˨ a ˦",
+          "comment": "á"
+        },
+        {
+          "word": "bahbábya",
+          "phonemes": "p a ˨ ʔ p a ˦ p j a ˨",
+          "comment": "b"
+        },
+        {
+          "word": "cácóroáco",
+          "phonemes": "kʰ a ˦ kʰ o ˦ ɾ o ˨ a ˦ kʰ o ˨",
+          "comment": "c"
+        },
+        {
+          "word": "cáchachááve",
+          "phonemes": "kʰ a ˦ tʃʰ a ˨ tʃʰ a ˦ ː β ɛ ˨",
+          "comment": "ch"
+        },
+        {
+          "word": "dɨ́hdahɨ́ɨ́ve",
+          "phonemes": "t ɨ ˦ ʔ t a ˨ ʔ ɨ ˦ ː β ɛ ˨",
+          "comment": "d"
+        },
+        {
+          "word": "dsɨhdsɨ",
+          "phonemes": "ts ɨ ˨ ʔ ts ɨ ˨",
+          "comment": "ds"
+        },
+        {
+          "word": "ehdɨ́ɨ́valle",
+          "phonemes": "ɛ ˨ ʔ t ɨ ˦ ː β a ˨ tʃ ɛ ˨",
+          "comment": "e"
+        },
+        {
+          "word": "éénimyéi",
+          "phonemes": "ɛ ˦ ː n i ˨ m j ɛ ˦ i ˨",
+          "comment": "é"
+        },
+        {
+          "word": "guñágúña",
+          "phonemes": "k ɯ ˨ ɲ a ˦ k ɯ ˦ ɲ a ˨",
+          "comment": "g"
+        },
+        {
+          "word": "hallúhcu",
+          "phonemes": "ʔ a ˨ tʃ ɯ ˦ ʔ kʰ ɯ ˨",
+          "comment": "h"
+        },
+        {
+          "word": "ijchi",
+          "phonemes": "i ˨ x tʃʰ i ˨",
+          "comment": "i"
+        },
+        {
+          "word": "íjpií",
+          "phonemes": "i ˦ x pʰ i ˨ i ˦",
+          "comment": "í"
+        },
+        {
+          "word": "ɨɨcúhájtsɨ",
+          "phonemes": "ɨ ˨ ː kʰ ɯ ˦ ʔ a ˦ x tsʰ ɨ ˨",
+          "comment": "ɨ"
+        },
+        {
+          "word": "ɨ́dsɨ́dúelle",
+          "phonemes": "ɨ ˦ ts ɨ ˦ t ɯ ˦ ɛ ˨ tʃ ɛ ˨",
+          "comment": "ɨ́"
+        },
+        {
+          "word": "joúhjóu",
+          "phonemes": "x o ˨ ɯ ˦ ʔ x o ˦ ɯ ˨",
+          "comment": "j"
+        },
+        {
+          "word": "kíkííjyeba",
+          "phonemes": "kʰ i ˦ kʰ i ˦ ː x j ɛ ˨ p a ˨",
+          "comment": "k"
+        },
+        {
+          "word": "llalláva",
+          "phonemes": "tʃ a ˨ tʃ a ˦ β a ˨",
+          "comment": "ll"
+        },
+        {
+          "word": "máriímu",
+          "phonemes": "m a ˦ ɾ i ˨ i ˦ m ɯ ˨",
+          "comment": "m"
+        },
+        {
+          "word": "naanííva",
+          "phonemes": "n a ˨ ː n i ˦ ː β a ˨",
+          "comment": "n"
+        },
+        {
+          "word": "áñiíñi",
+          "phonemes": "a ˦ ɲ i ˨ i ˦ ɲ i ˨",
+          "comment": "ñ"
+        },
+        {
+          "word": "ojójco",
+          "phonemes": "o ˨ x o ˦ x kʰ o ˨",
+          "comment": "o"
+        },
+        {
+          "word": "ómóniúúve",
+          "phonemes": "o ˦ m o ˦ n i ˨ ɯ ˦ ː β ɛ ˨",
+          "comment": "ó"
+        },
+        {
+          "word": "pájpacyo",
+          "phonemes": "pʰ a ˦ x pʰ a ˨ kʰ j o ˨",
+          "comment": "p"
+        },
+        {
+          "word": "raaráve",
+          "phonemes": "ɾ a ˨ ː ɾ a ˦ β ɛ ˨",
+          "comment": "r"
+        },
+        {
+          "word": "téévetúne",
+          "phonemes": "tʰ ɛ ˦ ː β ɛ ˨ tʰ ɯ ˦ n ɛ ˨",
+          "comment": "t"
+        },
+        {
+          "word": "tsáhojtsɨ",
+          "phonemes": "tsʰ a ˦ ʔ o ˨ x tsʰ ɨ ˨",
+          "comment": "ts"
+        },
+        {
+          "word": "uuhɨ́nu",
+          "phonemes": "ɯ ˨ ː ʔ ɨ ˦ n ɯ ˨",
+          "comment": "u"
+        },
+        {
+          "word": "ɨ́búúcuú",
+          "phonemes": "ɨ ˦ p ɯ ˦ ː kʰ ɯ ˨ ɯ ˦",
+          "comment": "ú"
+        },
+        {
+          "word": "vitíívye",
+          "phonemes": "β i ˨ tʰ i ˦ ː β j ɛ ˨",
+          "comment": "v"
+        },
+        {
+          "word": "waapéwa",
+          "phonemes": "kp a ˨ ː pʰ ɛ ˦ kp a ˨",
+          "comment": "w"
+        },
+        {
+          "word": "yuuyúho",
+          "phonemes": "j ɯ ˨ ː j ɯ ˦ ʔ o ˨",
+          "comment": "y"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "pre-s": "[dt]",
+          "v-output": "[aɛiɨoɯ]",
+          "tone": "[˨˦]",
+          "passthrough": "[mn]"
+        },
+        "sub": [
+          {
+            "from": "a",
+            "to": "a ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "á",
+            "to": "a ˦",
+            "weight": 4.0
+          },
+          {
+            "from": "b",
+            "to": "p",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "kʰ",
+            "weight": 4.0
+          },
+          {
+            "from": "d",
+            "to": "t",
+            "weight": 4.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "é",
+            "to": "ɛ ˦",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "h",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "i",
+            "to": "i ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "í",
+            "to": "i ˦",
+            "weight": 4.0
+          },
+          {
+            "from": "ɨ",
+            "to": "ɨ ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "x",
+            "weight": 4.0
+          },
+          {
+            "from": "k",
+            "to": "kʰ",
+            "weight": 4.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 4.0
+          },
+          {
+            "from": "o",
+            "to": "o ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "ó",
+            "to": "o ˦",
+            "weight": 4.0
+          },
+          {
+            "from": "p",
+            "to": "pʰ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "t",
+            "to": "tʰ",
+            "weight": 4.0
+          },
+          {
+            "from": "u",
+            "to": "ɯ ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "ú",
+            "to": "ɯ ˦",
+            "weight": 4.0
+          },
+          {
+            "from": "v",
+            "to": "β",
+            "weight": 4.0
+          },
+          {
+            "from": "w",
+            "to": "kp",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "c",
+            "to": "tʃʰ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<ch>"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "c",
+            "comment": "<ch> cleanup"
+          },
+          {
+            "from": "l",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "l",
+            "comment": "<ll>"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 6.0,
+            "precede": "l",
+            "comment": "<ll> cleanup"
+          },
+          {
+            "from": "d",
+            "to": "ts",
+            "weight": 6.0,
+            "follow": "s",
+            "comment": "<ds>"
+          },
+          {
+            "from": "t",
+            "to": "tsʰ",
+            "weight": 6.0,
+            "follow": "s",
+            "comment": "<ts>"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{pre-s}",
+            "comment": "<ds> and <ts> cleanup"
+          },
+          {
+            "from": "ɨ",
+            "to": "ɨ ˦",
+            "weight": 5.0,
+            "follow": "́",
+            "comment": "high-tone <ɨ>"
+          },
+          {
+            "from": "́",
+            "to": "",
+            "weight": 5.0,
+            "comment": "cleanup of the diacritic from high <ɨ>"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({v-output}) ({tone}) \\1 \\2",
+            "to": "\\1 \\2 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

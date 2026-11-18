@@ -1,0 +1,593 @@
+{
+  "metadata": {
+    "code": "ca",
+    "name": "Catalan",
+    "family": "Indo-European,Italic,Romance,Italo-Western,Western,Gallo-Iberian,Ibero-Romance,East Iberian",
+    "macroarea": "Eurasia",
+    "compromised": {
+      "sounds": "e|ɛ|o|ɔ|u|w|i|j"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "àbac",
+          "phonemes": "a b a k"
+        },
+        {
+          "word": "cabdal",
+          "phonemes": "k a b d a l"
+        },
+        {
+          "word": "cérvol",
+          "phonemes": "s e ɾ b o l"
+        },
+        {
+          "word": "feliç",
+          "phonemes": "f e l i s"
+        },
+        {
+          "word": "és",
+          "phonemes": "e s"
+        },
+        {
+          "word": "abella",
+          "phonemes": "a b e ʎ a"
+        },
+        {
+          "word": "què",
+          "phonemes": "k ɛ"
+        },
+        {
+          "word": "grossa",
+          "phonemes": "ɡ ɾ o s a"
+        },
+        {
+          "word": "faig",
+          "phonemes": "f a tʃ"
+        },
+        {
+          "word": "gel",
+          "phonemes": "ʒ e l"
+        },
+        {
+          "word": "ham",
+          "phonemes": "a m"
+        },
+        {
+          "word": "abduïda",
+          "phonemes": "a b d u i d a"
+        },
+        {
+          "word": "abaixar",
+          "phonemes": "a b a i ʃ a ɾ"
+        },
+        {
+          "word": "iac",
+          "phonemes": "i a k"
+        },
+        {
+          "word": "ella",
+          "phonemes": "e ʎ a"
+        },
+        {
+          "word": "cel·la",
+          "phonemes": "s e l ː a"
+        },
+        {
+          "word": "senyor",
+          "phonemes": "s e ɲ o ɾ"
+        },
+        {
+          "word": "electró",
+          "phonemes": "e l e k t ɾ o"
+        },
+        {
+          "word": "to",
+          "phonemes": "t o"
+        },
+        {
+          "word": "però",
+          "phonemes": "p e ɾ ɔ"
+        },
+        {
+          "word": "ja",
+          "phonemes": "ʒ a"
+        },
+        {
+          "word": "quinze",
+          "phonemes": "k i n z e"
+        },
+        {
+          "word": "terra",
+          "phonemes": "t e r a"
+        },
+        {
+          "word": "rebre",
+          "phonemes": "r e b ɾ e"
+        },
+        {
+          "word": "dir",
+          "phonemes": "d i ɾ"
+        },
+        {
+          "word": "passa",
+          "phonemes": "p a s a"
+        },
+        {
+          "word": "cotxe",
+          "phonemes": "k o tʃ e"
+        },
+        {
+          "word": "despatx",
+          "phonemes": "d e s p a tʃ"
+        },
+        {
+          "word": "últim",
+          "phonemes": "u l t i m"
+        },
+        {
+          "word": "diürn",
+          "phonemes": "d i u ɾ n"
+        },
+        {
+          "word": "taula",
+          "phonemes": "t a u l a"
+        },
+        {
+          "word": "guant",
+          "phonemes": "ɡ w a n t"
+        },
+        {
+          "word": "botigues",
+          "phonemes": "b o t i ɡ e s"
+        },
+        {
+          "word": "llengües",
+          "phonemes": "ʎ e n ɡ w e s"
+        },
+        {
+          "word": "va",
+          "phonemes": "b a"
+        },
+        {
+          "word": "això",
+          "phonemes": "a i ʃ ɔ"
+        },
+        {
+          "word": "whisky",
+          "phonemes": "w i s k i"
+        },
+        {
+          "word": "exemple",
+          "phonemes": "e k s e m p l e"
+        },
+        {
+          "word": "xarxa",
+          "phonemes": "ʃ a ɾ ʃ a"
+        },
+        {
+          "word": "noveŀla",
+          "phonemes": "n o b e lː a"
+        },
+        {
+          "word": "obliqua",
+          "phonemes": "o b l i k w a"
+        },
+        {
+          "word": "obliqües",
+          "phonemes": "o b l i k w e s"
+        },
+        {
+          "word": "fetge",
+          "phonemes": "f e dʒ e"
+        },
+        {
+          "word": "mitjó",
+          "phonemes": "m i dʒ o"
+        },
+        {
+          "word": "dotze",
+          "phonemes": "d o dz e"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "front": "(e|è|é|i|í|ï)",
+          "back": "(o|ò|ó|u|ú|ü|a|à)",
+          "cdot": "(·|•|᛫|•|∙|⋅)",
+          "vowel": "(a|e|i|o|u)",
+          "consonant": "(b|c|d|f|g|h|k|l|m|n|p|q|r|s|t|v|w|x|y|z)",
+          "passthrough": "[abdefhiklmnopstuwz]",
+          "t-follower": "[jsz]",
+          "l_with_cdot": "[ŀ]",
+          "gem": "(p|b|t|d|k|ɡ|ts|dz|tʃ|dʒ|f|s|z|ʃ|ʒ|m|n|ɲ|ɾ|r|ʎ|j|w)",
+          "punct": "['-]"
+        },
+        "sub": [
+          {
+            "from": "à",
+            "to": "a",
+            "weight": 1.0
+          },
+          {
+            "from": "c",
+            "to": "s",
+            "weight": 1.0,
+            "follow": "{front}",
+            "comment": "<c> becomes /s/ preceding front vowels"
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 0.5
+          },
+          {
+            "from": "ç",
+            "to": "s",
+            "weight": 1.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "è",
+            "to": "ɛ",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ʒ",
+            "weight": 2.0,
+            "follow": "{front}",
+            "comment": "<g> becomes /ʒ/ preceding front vowels"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 1.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "ï",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "ò",
+            "to": "ɔ",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 1.0,
+            "precede": "^",
+            "comment": "<r> becomes a trill word-initially"
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 0.5
+          },
+          {
+            "from": "j",
+            "to": "ʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "ü",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "v",
+            "to": "b",
+            "weight": 1.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 0.5,
+            "precede": "^"
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 0.5,
+            "precede": "i"
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 0.5,
+            "precede": "{consonant}"
+          },
+          {
+            "from": "x",
+            "to": "k s",
+            "weight": 0.5
+          },
+          {
+            "from": "y",
+            "to": "i",
+            "weight": 0.5
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0,
+            "precede": "{vowel}",
+            "comment": "<y> becomes /j/ following vowels"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "g",
+            "to": "tʃ",
+            "weight": 2.0,
+            "precede": "i",
+            "follow": "$",
+            "comment": "<ig> becomes /tʃ/ word-finally"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 2.0,
+            "follow": "g$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "l",
+            "to": "ʎ",
+            "weight": 1.0,
+            "follow": "l"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 1.0,
+            "precede": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 1.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 1.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "s",
+            "weight": 1.0,
+            "precede": "{vowel}",
+            "follow": "s{vowel}",
+            "comment": "<ss> becomes <s> intervocalically"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 1.0,
+            "precede": "{vowel}s",
+            "follow": "{vowel}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tʃ",
+            "weight": 1.0,
+            "follow": "x"
+          },
+          {
+            "from": "x",
+            "to": "",
+            "weight": 1.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 1.0,
+            "precede": "{vowel}",
+            "follow": "r{vowel}",
+            "comment": "<rr> becomes a trill intervocalically"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 1.0,
+            "precede": "{vowel}r",
+            "follow": "{vowel}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "l",
+            "to": "l ː",
+            "weight": 1.0,
+            "follow": "{cdot}"
+          },
+          {
+            "from": "{cdot}",
+            "to": "",
+            "weight": 1.0,
+            "precede": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{l_with_cdot}",
+            "to": "lː",
+            "weight": 1.0,
+            "follow": "l"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 1.0,
+            "precede": "{l_with_cdot}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 1.0,
+            "precede": "{cdot}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 0.1
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 3.0,
+            "follow": "u{front}",
+            "comment": "ex. gui"
+          },
+          {
+            "from": "g",
+            "to": "ɡ w",
+            "weight": 4.0,
+            "follow": "u{back}",
+            "comment": "ex. gua"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "g",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ɡ w",
+            "weight": 3.0,
+            "follow": "ü{front}"
+          },
+          {
+            "from": "ü",
+            "to": "",
+            "weight": 3.0,
+            "precede": "g",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "u{front}",
+            "comment": "ex. qui"
+          },
+          {
+            "from": "q",
+            "to": "k w",
+            "weight": 3.0,
+            "follow": "u{back}",
+            "comment": "ex. qua"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 4.0,
+            "precede": "q",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k w",
+            "weight": 3.0,
+            "follow": "ü{front}"
+          },
+          {
+            "from": "ü",
+            "to": "",
+            "weight": 4.0,
+            "precede": "q",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "dʒ",
+            "weight": 3.0,
+            "precede": "t",
+            "follow": "{front}"
+          },
+          {
+            "from": "t",
+            "to": "",
+            "weight": 4.0,
+            "follow": "g",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "dʒ",
+            "weight": 3.0,
+            "follow": "j"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "t",
+            "to": "dz",
+            "weight": 3.0,
+            "follow": "z"
+          },
+          {
+            "from": "{t-follower}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "t",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({gem}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

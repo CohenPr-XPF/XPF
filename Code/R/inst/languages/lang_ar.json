@@ -1,0 +1,801 @@
+{
+  "metadata": {
+    "code": "ar",
+    "name": "Arabic",
+    "family": "Afro-Asiatic,Semitic,Central,South,Arabic",
+    "macroarea": "Eurasia",
+    "compromised": {
+      "sounds": "w|uː|j|iː",
+      "note": "transcription of alif (phonetic or phonemic glottal stop word-initially)"
+    },
+    "default_script": "arabic"
+  },
+  "scripts": {
+    "arabic": {
+      "verify": [
+        {
+          "word": "أُكْسِجِين",
+          "phonemes": "ʔ u k s i dʒ i ː n",
+          "comment": "long /i/ (kasrah + ي)"
+        },
+        {
+          "word": "أَقِط",
+          "phonemes": "ʔ a q i tˤ",
+          "comment": "initial glottal stop with /a/ diacritic"
+        },
+        {
+          "word": "أَجْهَدَ",
+          "phonemes": "ʔ a dʒ h a d a",
+          "comment": "sukun"
+        },
+        {
+          "word": "أَجْسَم",
+          "phonemes": "ʔ a dʒ s a m"
+        },
+        {
+          "word": "أَجْهَل",
+          "phonemes": "ʔ a dʒ h a l"
+        },
+        {
+          "word": "أُمْدُوحَة",
+          "phonemes": "ʔ u m d u ː ħ a",
+          "comment": "ta-marbuta without a diacritic"
+        },
+        {
+          "word": "أَنْشَط",
+          "phonemes": "ʔ a n ʃ a tˤ",
+          "comment": "emphatic /t/"
+        },
+        {
+          "word": "أَهْدَب",
+          "phonemes": "ʔ a h d a b"
+        },
+        {
+          "word": "شَاحِنَة",
+          "phonemes": "ʃ a ː ħ i n a"
+        },
+        {
+          "word": "شَارِع",
+          "phonemes": "ʃ a ː r i ʕ"
+        },
+        {
+          "word": "دَا",
+          "phonemes": "d a ː",
+          "comment": "long /a/ (fatha + alif)"
+        },
+        {
+          "word": "غاضِب",
+          "phonemes": "ɣ a ː dˤ i b",
+          "comment": "emphatic /d/"
+        },
+        {
+          "word": "غَزَالَة",
+          "phonemes": "ɣ a z a ː l a"
+        },
+        {
+          "word": "رَزَقَ",
+          "phonemes": "r a z a q a"
+        },
+        {
+          "word": "رِفَاق",
+          "phonemes": "r i f a ː q"
+        },
+        {
+          "word": "رَفَأَ",
+          "phonemes": "r a f a ʔ a",
+          "comment": "word-medial glottal stop (alif-hamza)"
+        },
+        {
+          "word": "رُمْح",
+          "phonemes": "r u m ħ"
+        },
+        {
+          "word": "هَافَانَا",
+          "phonemes": "h a ː f a ː n a ː"
+        },
+        {
+          "word": "فَاسِد",
+          "phonemes": "f a ː s i d"
+        },
+        {
+          "word": "فِتْنَة",
+          "phonemes": "f i t n a"
+        },
+        {
+          "word": "فِرْعَوْن",
+          "phonemes": "f i r ʕ aw n",
+          "comment": "diphthong /aw/"
+        },
+        {
+          "word": "فُرُوغ",
+          "phonemes": "f u r u ː ɣ"
+        },
+        {
+          "word": "فَظِيع",
+          "phonemes": "f a ðˤ i ː ʕ"
+        },
+        {
+          "word": "قَاضٍ",
+          "phonemes": "q a ː dˤ i n",
+          "comment": "/in/ nunnation"
+        },
+        {
+          "word": "قَبُوح",
+          "phonemes": "q a b u ː ħ"
+        },
+        {
+          "word": "قَاطَعَ",
+          "phonemes": "q a ː tˤ a ʕ a"
+        },
+        {
+          "word": "قَبِيح",
+          "phonemes": "q a b i ː ħ"
+        },
+        {
+          "word": "قَزّ",
+          "phonemes": "q a z ː",
+          "comment": "consonant gemination (shadda)"
+        },
+        {
+          "word": "وَازَى",
+          "phonemes": "w a ː z a ː",
+          "comment": "initial /w/"
+        },
+        {
+          "word": "ثَلَاثَة",
+          "phonemes": "θ a l a ː θ a"
+        },
+        {
+          "word": "جَبْخَانَة",
+          "phonemes": "dʒ a b x a ː n a"
+        },
+        {
+          "word": "جُمَّيْزَة",
+          "phonemes": "dʒ u m ː aj z a"
+        },
+        {
+          "word": "الْبُخَارِىُّ",
+          "phonemes": "ʔ l b u x a ː r i j ː u"
+        },
+        {
+          "word": "نَبَاتِيّ",
+          "phonemes": "n a b a ː t i j ː"
+        },
+        {
+          "word": "عَلِيٍّ",
+          "phonemes": "ʕ a l i j ː i n"
+        },
+        {
+          "word": "آدَمِيّ",
+          "phonemes": "ʔ a ː d a m i j ː"
+        },
+        {
+          "word": "آيَسَ",
+          "phonemes": "ʔ a ː j a s a"
+        },
+        {
+          "word": "ذبابة",
+          "phonemes": "ð b a ː b"
+        },
+        {
+          "word": "صار",
+          "phonemes": "sˤ a ː r"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "consonant": "(b|t|θ|dʒ|ħ|x|d|ð|r|z|s|ʃ|sˤ|dˤ|tˤ|ðˤ|ʕ|ɣ|f|q|k|l|m|n|h|w|j|ʔ)",
+          "shortV": "[  ُِ َ]",
+          "shortV-output": "[aiu]",
+          "diacritic": "[ ْٕٔ ًٍّٓ ٌ ِٰ َُ]",
+          "hamza-combo": "[اوي]",
+          "hamza-combo-output": "(j|w|a ː)",
+          "diphthong-combo": "[jw]",
+          "alif": "[ا]",
+          "b": "[ب]",
+          "t": "[ت]",
+          "θ": "[ث]",
+          "dʒ": "[ج]",
+          "ħ": "[ح]",
+          "x": "[خ]",
+          "d": "[د]",
+          "ð": "[ذ]",
+          "r": "[ر]",
+          "z": "[ز]",
+          "s": "[س]",
+          "ʃ": "[ش]",
+          "emph-s": "[ص]",
+          "emph-d": "[ض]",
+          "emph-t": "[ط]",
+          "emph-ð": "[ظ]",
+          "ʕ": "[ع]",
+          "ɣ": "[غ]",
+          "f": "[ف]",
+          "q": "[ق]",
+          "k": "[ك]",
+          "l": "[ل]",
+          "m": "[م]",
+          "n": "[ن]",
+          "h": "[ه]",
+          "w-uu": "[و]",
+          "j-ii": "[ي]",
+          "hamza": "[ء]",
+          "ta-marbuta": "[ة]",
+          "alif-maq": "[ى]",
+          "u": "[ُ]",
+          "a": "[َ]",
+          "i": "[ِ]",
+          "sup-alif": "[ٰ]",
+          "dia-hamza-above": "[ٔ]",
+          "dia-hamza-below": "[ٕ]",
+          "madda": "[ٓ]",
+          "shadda": "[ّ]",
+          "sukun": "[ْ]",
+          "a-nunnation": "[ٌ]",
+          "i-nunnation": "[ٍ]",
+          "u-nunnation": "[ً]",
+          "alif-hamza-above": "[أ]",
+          "alif-hamza-below": "[إ]",
+          "w-hamza": "[ؤ]",
+          "j-hamza": "[ئ]",
+          "alif-madda": "[آ]"
+        },
+        "sub": [
+          {
+            "from": "{alif}",
+            "to": "a ː",
+            "weight": 2.0
+          },
+          {
+            "from": "{alif}",
+            "to": "ʔ",
+            "weight": 3.0,
+            "precede": "^",
+            "comment": "word-initial alif is /ʔ/, however, not every word-initial alif is realized as such (primarily the hamza is used) [@Coulmas2003, p. 123] - somewhat compromises the transcription"
+          },
+          {
+            "from": "{b}",
+            "to": "b",
+            "weight": 2.0
+          },
+          {
+            "from": "{t}",
+            "to": "t",
+            "weight": 2.0
+          },
+          {
+            "from": "{θ}",
+            "to": "θ",
+            "weight": 2.0
+          },
+          {
+            "from": "{dʒ}",
+            "to": "dʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "{ħ}",
+            "to": "ħ",
+            "weight": 2.0
+          },
+          {
+            "from": "{x}",
+            "to": "x",
+            "weight": 2.0
+          },
+          {
+            "from": "{d}",
+            "to": "d",
+            "weight": 2.0
+          },
+          {
+            "from": "{ð}",
+            "to": "ð",
+            "weight": 2.0
+          },
+          {
+            "from": "{r}",
+            "to": "r",
+            "weight": 2.0
+          },
+          {
+            "from": "{z}",
+            "to": "z",
+            "weight": 2.0
+          },
+          {
+            "from": "{s}",
+            "to": "s",
+            "weight": 2.0
+          },
+          {
+            "from": "{ʃ}",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "{emph-s}",
+            "to": "sˤ",
+            "weight": 2.0
+          },
+          {
+            "from": "{emph-d}",
+            "to": "dˤ",
+            "weight": 2.0
+          },
+          {
+            "from": "{emph-t}",
+            "to": "tˤ",
+            "weight": 2.0
+          },
+          {
+            "from": "{emph-ð}",
+            "to": "ðˤ",
+            "weight": 2.0
+          },
+          {
+            "from": "{ʕ}",
+            "to": "ʕ",
+            "weight": 2.0
+          },
+          {
+            "from": "{ɣ}",
+            "to": "ɣ",
+            "weight": 2.0
+          },
+          {
+            "from": "{f}",
+            "to": "f",
+            "weight": 2.0
+          },
+          {
+            "from": "{q}",
+            "to": "q",
+            "weight": 2.0
+          },
+          {
+            "from": "{k}",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "{l}",
+            "to": "l",
+            "weight": 2.0
+          },
+          {
+            "from": "{m}",
+            "to": "m",
+            "weight": 2.0
+          },
+          {
+            "from": "{n}",
+            "to": "n",
+            "weight": 2.0
+          },
+          {
+            "from": "{h}",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "{w-uu}",
+            "to": "w",
+            "weight": 2.0
+          },
+          {
+            "from": "{j-ii}",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{hamza}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "{ta-marbuta}",
+            "to": "t",
+            "weight": 3.0,
+            "follow": "{diacritic}$",
+            "comment": "ta-marbuta occurs word-finally and if followed by a diacritic is recognized as /t/"
+          },
+          {
+            "from": "{diacritic}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{ta-marbuta}",
+            "follow": "$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{ta-marbuta}",
+            "to": "",
+            "weight": 2.0,
+            "follow": "$",
+            "comment": "ta-marbuta transcribes to nothing when not followed by a diacritic"
+          },
+          {
+            "from": "{alif-maq}",
+            "to": "a",
+            "weight": 2.0,
+            "follow": "$",
+            "comment": "alif-maq occurs word-finally"
+          },
+          {
+            "from": "{u}",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "{a}",
+            "to": "a",
+            "weight": 2.0
+          },
+          {
+            "from": "{i}",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "{sup-alif}",
+            "to": "a ː",
+            "weight": 2.0
+          },
+          {
+            "from": "{dia-hamza-above}",
+            "to": "1ʔ",
+            "weight": 6.0,
+            "precede": "{hamza-combo}",
+            "comment": "this transcribes the hamza sequences as the consonant followed by a glottal stop, but we need an ipasub rule to make the glottal stop precede the consonant"
+          },
+          {
+            "from": "{alif}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "^",
+            "follow": "{dia-hamza-above}",
+            "comment": "alif-hamza (above) only corresponds to glottal stop word-initially, so the alif shouldn't be transcribed"
+          },
+          {
+            "from": "{alif}",
+            "to": "ʔ i",
+            "weight": 4.0,
+            "follow": "{dia-hamza-below}"
+          },
+          {
+            "from": "{alif}",
+            "to": "ʔ",
+            "weight": 5.0,
+            "precede": "^",
+            "follow": "{dia-hamza-below}",
+            "comment": "alif-hamza (below) only corresponds to glottal stop word-initially, so the alif shouldn't be transcribed"
+          },
+          {
+            "from": "{dia-hamza-below}",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{alif}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{alif}",
+            "to": "ʔ a ː",
+            "weight": 3.0,
+            "follow": "{madda}"
+          },
+          {
+            "from": "{shadda}",
+            "to": "1ː",
+            "weight": 2.0,
+            "comment": "needed for ipasub gemination rules below"
+          },
+          {
+            "from": "{sukun}",
+            "to": "",
+            "weight": 2.0
+          },
+          {
+            "from": "{a-nunnation}",
+            "to": "a n",
+            "weight": 3.0,
+            "follow": "$"
+          },
+          {
+            "from": "{a-nunnation}",
+            "to": "a n",
+            "weight": 3.0,
+            "follow": "{diacritic}$",
+            "comment": "sometimes followed by a diacritic (shadda) which both apply to the consonant [@Habash2010, p. 11]"
+          },
+          {
+            "from": "{i-nunnation}",
+            "to": "i n",
+            "weight": 3.0,
+            "follow": "$"
+          },
+          {
+            "from": "{i-nunnation}",
+            "to": "i n",
+            "weight": 3.0,
+            "follow": "{diacritic}$",
+            "comment": "sometimes followed by a diacritic (shadda) which both apply to the consonant (ibid.)"
+          },
+          {
+            "from": "{u-nunnation}",
+            "to": "u n",
+            "weight": 3.0,
+            "follow": "$"
+          },
+          {
+            "from": "{u-nunnation}",
+            "to": "u n",
+            "weight": 3.0,
+            "follow": "{diacritic}$",
+            "comment": "sometimes followed by a diacritic (shadda) which both apply to the consonant (ibid.)"
+          },
+          {
+            "from": "{alif-hamza-above}",
+            "to": "ʔ a ː",
+            "weight": 3.0
+          },
+          {
+            "from": "{alif-hamza-above}",
+            "to": "ʔ",
+            "weight": 4.0,
+            "precede": "^",
+            "comment": "alif-hamza (above) only corresponds to glottal stop word-initially - alif is a place holder"
+          },
+          {
+            "from": "{alif-hamza-below}",
+            "to": "ʔ i",
+            "weight": 3.0
+          },
+          {
+            "from": "{alif-hamza-below}",
+            "to": "ʔ",
+            "weight": 4.0,
+            "precede": "^",
+            "comment": "alif-hamza (below) only corresponds to glottal stop word-initially - alif is a place holder"
+          },
+          {
+            "from": "{w-hamza}",
+            "to": "ʔ w",
+            "weight": 2.0
+          },
+          {
+            "from": "{j-hamza}",
+            "to": "ʔ j",
+            "weight": 2.0
+          },
+          {
+            "from": "{alif-madda}",
+            "to": "ʔ a ː",
+            "weight": 2.0
+          },
+          {
+            "from": "{a}",
+            "to": "aw",
+            "weight": 3.0,
+            "follow": "{w-uu}"
+          },
+          {
+            "from": "{w-uu}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{a}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{a}",
+            "to": "aj",
+            "weight": 3.0,
+            "follow": "{j-ii}"
+          },
+          {
+            "from": "{j-ii}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{a}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{alif}",
+            "to": "",
+            "weight": 8.0,
+            "precede": "^",
+            "follow": "{shortV}",
+            "comment": "word-initial vowels are represented by an inflected alif [@Habash2012, p. 712]"
+          },
+          {
+            "from": "{a}",
+            "to": "a ː",
+            "weight": 5.0,
+            "follow": "{alif}"
+          },
+          {
+            "from": "{alif}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "{a}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{a}",
+            "to": "a ː",
+            "weight": 5.0,
+            "follow": "{alif-maq}"
+          },
+          {
+            "from": "{alif-maq}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "{a}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{u}",
+            "to": "u 2ː",
+            "weight": 5.0,
+            "follow": "{w-uu}"
+          },
+          {
+            "from": "{w-uu}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "{u}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{i}",
+            "to": "i 3ː",
+            "weight": 5.0,
+            "follow": "{j-ii}"
+          },
+          {
+            "from": "{j-ii}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "{i}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{alif-maq}",
+            "to": "j ː",
+            "weight": 6.0,
+            "follow": "{shortV}{shadda}",
+            "comment": "alif-maq changes into a yaa if followed by a diacritic (generally a shadda) [@Habash2010, p. 61]"
+          },
+          {
+            "from": "{alif-maq}",
+            "to": "j ː",
+            "weight": 6.0,
+            "follow": "{shadda}"
+          },
+          {
+            "from": "{shadda}",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{alif-maq}{shortV}"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({consonant}) ({shortV-output}) 1ː",
+            "to": "\\1 ː \\2",
+            "weight": 3.0,
+            "comment": "controls for shadda geminating vowels depending on if the double consonant is also followed by a short vowel"
+          },
+          {
+            "from": "({consonant}) a 1ː ({diphthong-combo})",
+            "to": "\\1 ː a\\3",
+            "weight": 4.0,
+            "comment": "controls for shadda geminating vowels depending on if the double consonant is also followed by a diphthong"
+          },
+          {
+            "from": "({consonant}) 1ː",
+            "to": "\\1 ː",
+            "weight": 2.0,
+            "comment": "this removes the 1 if the consonant is not followed by a short vowel"
+          },
+          {
+            "from": "({shortV-output}) 2ː ({shortV-output}) 1ː",
+            "to": "\\1 w ː \\2",
+            "weight": 3.0,
+            "comment": "controls for shadda taking priority over elongation of vowels (e.g. Dammah + waw) with following short vowel"
+          },
+          {
+            "from": "({shortV-output}) 2ː 1ː",
+            "to": "\\1 w ː",
+            "weight": 3.0,
+            "comment": "controls for shadda taking priority over elongation of vowels (e.g. dammah + waw)"
+          },
+          {
+            "from": "({shortV-output}) 2ː u n 1ː",
+            "to": "\\1 w ː u n",
+            "weight": 4.0,
+            "comment": "flips around the nunation and gemination"
+          },
+          {
+            "from": "({shortV-output}) 2ː a n 1ː",
+            "to": "\\1 w ː a n",
+            "weight": 4.0,
+            "comment": "flips around the nunation and gemination"
+          },
+          {
+            "from": "({shortV-output}) 2ː i n 1ː",
+            "to": "\\1 w ː i n",
+            "weight": 4.0,
+            "comment": "flips around the nunation and gemination"
+          },
+          {
+            "from": "2ː",
+            "to": "ː",
+            "weight": 2.0,
+            "comment": "removes the 2 from the rest of the elongated /u/s"
+          },
+          {
+            "from": "({shortV-output}) 3ː ({shortV-output}) 1ː",
+            "to": "\\1 j ː \\2",
+            "weight": 3.0,
+            "comment": "controls for shadda taking priority over elongation of vowels (e.g. kasrah + yaa) with following short vowel"
+          },
+          {
+            "from": "({shortV-output}) 3ː 1ː",
+            "to": "\\1 j ː",
+            "weight": 3.0,
+            "comment": "controls for shadda taking priority over elongation of vowels (e.g. kasrah + yaa)"
+          },
+          {
+            "from": "({shortV-output}) 3ː i n 1ː",
+            "to": "\\1 j ː i n",
+            "weight": 4.0,
+            "comment": "flips around the nunation and gemination"
+          },
+          {
+            "from": "({shortV-output}) 3ː u n 1ː",
+            "to": "\\1 j ː u n",
+            "weight": 4.0,
+            "comment": "flips around the nunation and gemination"
+          },
+          {
+            "from": "({shortV-output}) 3ː a n 1ː",
+            "to": "\\1 j ː a n",
+            "weight": 4.0,
+            "comment": "flips around the nunation and gemination"
+          },
+          {
+            "from": "1ː",
+            "to": "@",
+            "weight": 1.0,
+            "comment": "rules out illegal combos (shadda appearing with nunnation word-medially over an alif)"
+          },
+          {
+            "from": "3ː",
+            "to": "ː",
+            "weight": 2.0,
+            "follow": "removes the 3 from the rest of the elongated /i/s"
+          },
+          {
+            "from": "({hamza-combo-output}) 1ʔ",
+            "to": "ʔ \\1",
+            "weight": 3.0,
+            "comment": "this puts the glottal stop before the character carrying the hamza"
+          },
+          {
+            "from": "a ː 1ʔ ({shortV-output})",
+            "to": "ʔ \\1",
+            "weight": 4.0,
+            "comment": "word-medial glottal stops are sometimes represented as alif topped with a hamza and a short vowel diacritic, the alif holds no value here"
+          },
+          {
+            "from": "ʔ a ː ({shortV-output})",
+            "to": "ʔ \\1",
+            "weight": 2.0,
+            "comment": "word-medial glottal stops are sometimes represented as alif topped with a hamza and a short vowel diacritic, the alif holds no value here (this is the same rule as the one above but uses the permanent alf-hamza-above character)"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,996 @@
+{
+  "metadata": {
+    "code": "nan",
+    "name": "Min Nan Chinese",
+    "family": "Sino-Tibetan,Chinese,Min",
+    "macroarea": "Eurasia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "âng",
+          "phonemes": "a ˨˦ ŋ"
+        },
+        {
+          "word": "bô",
+          "phonemes": "b o ˨˦"
+        },
+        {
+          "word": "ê",
+          "phonemes": "e ˨˦"
+        },
+        {
+          "word": "goá",
+          "phonemes": "ɡ ua ˥˩"
+        },
+        {
+          "word": "hiáu-tit",
+          "phonemes": "h iau ˥˩ t i ˨"
+        },
+        {
+          "word": "khah",
+          "phonemes": "kʰ a ˨"
+        },
+        {
+          "word": "Iâ-so͘",
+          "phonemes": "ia ˨˦ s ɔ ˥"
+        },
+        {
+          "word": "Ji̍t-pún-oē",
+          "phonemes": "dz i ˥˧ t p u ˥˩ n ue ˧"
+        },
+        {
+          "word": "keh-piah",
+          "phonemes": "k e ˨ p ia ˨"
+        },
+        {
+          "word": "liáu",
+          "phonemes": "l iau ˥˩"
+        },
+        {
+          "word": "m",
+          "phonemes": "m ˥"
+        },
+        {
+          "word": "ḿ",
+          "phonemes": "m ˥˩"
+        },
+        {
+          "word": "m̀",
+          "phonemes": "m ˨"
+        },
+        {
+          "word": "m̂",
+          "phonemes": "m ˨˦"
+        },
+        {
+          "word": "m̄",
+          "phonemes": "m ˧"
+        },
+        {
+          "word": "m̍",
+          "phonemes": "m ˥˧"
+        },
+        {
+          "word": "mn̂g",
+          "phonemes": "m ŋ ˨˦"
+        },
+        {
+          "word": "nih",
+          "phonemes": "n i ˨"
+        },
+        {
+          "word": "toh-á",
+          "phonemes": "t o ˨ a ˥˩"
+        },
+        {
+          "word": "to̍k",
+          "phonemes": "t ɔ ˥˧ k"
+        },
+        {
+          "word": "pîng-iú",
+          "phonemes": "p i ˨˦ ŋ iu ˥˩"
+        },
+        {
+          "word": "sí-lâng",
+          "phonemes": "s i ˥˩ l a ˨˦ ŋ"
+        },
+        {
+          "word": "tang-pîng",
+          "phonemes": "t a ˥ ŋ p i ˨˦ ŋ"
+        },
+        {
+          "word": "ū-kàu",
+          "phonemes": "u ˧ k au ˨"
+        },
+        {
+          "word": "chiah",
+          "phonemes": "ts ia ˨"
+        },
+        {
+          "word": "chhut",
+          "phonemes": "tsʰ u ˨"
+        },
+        {
+          "word": "khùn",
+          "phonemes": "kʰ u ˨ n"
+        },
+        {
+          "word": "ngiauh",
+          "phonemes": "ŋ iau ˨"
+        },
+        {
+          "word": "ng",
+          "phonemes": "ŋ ˥"
+        },
+        {
+          "word": "kng",
+          "phonemes": "k ŋ ˥"
+        },
+        {
+          "word": "ńg",
+          "phonemes": "ŋ ˥˩"
+        },
+        {
+          "word": "ǹg",
+          "phonemes": "ŋ ˨"
+        },
+        {
+          "word": "n̄g",
+          "phonemes": "ŋ ˧"
+        },
+        {
+          "word": "n̍g",
+          "phonemes": "ŋ ˥˧"
+        },
+        {
+          "word": "pháiⁿ-chia̍h",
+          "phonemes": "pʰ ãĩ ˥˩ ts ia ˥˧ ʔ"
+        },
+        {
+          "word": "thâu",
+          "phonemes": "tʰ au ˨˦"
+        },
+        {
+          "word": "toā-ko͘",
+          "phonemes": "t ua ˧ k ɔ ˥"
+        },
+        {
+          "word": "Hāi",
+          "phonemes": "h ai ˧"
+        },
+        {
+          "word": "Au-iông",
+          "phonemes": "au ˥ iɔ ˨˦ ŋ"
+        },
+        {
+          "word": "Chia̍h-pá",
+          "phonemes": "ts ia ˥˧ ʔ p a ˥˩"
+        },
+        {
+          "word": "sió-chiá",
+          "phonemes": "s io ˥˩ ts ia ˥˩"
+        },
+        {
+          "word": "hiòng",
+          "phonemes": "h iɔ ˨ ŋ"
+        },
+        {
+          "word": "chiú",
+          "phonemes": "ts iu ˥˩"
+        },
+        {
+          "word": "joa̍h",
+          "phonemes": "dz ua ˥˧ ʔ"
+        },
+        {
+          "word": "kóng-oē",
+          "phonemes": "k ɔ ˥˩ ŋ ue ˧"
+        },
+        {
+          "word": "cha̍p-koí",
+          "phonemes": "ts a ˥˧ p k ui ˥˩"
+        },
+        {
+          "word": "niau",
+          "phonemes": "n iau ˥"
+        },
+        {
+          "word": "koai",
+          "phonemes": "k uai ˥"
+        },
+        {
+          "word": "sāⁿ",
+          "phonemes": "s ã ˧"
+        },
+        {
+          "word": "chîⁿ",
+          "phonemes": "ts ĩ ˨˦"
+        },
+        {
+          "word": "hāu-seⁿ",
+          "phonemes": "h au ˧ s ẽ ˥"
+        },
+        {
+          "word": "hóⁿ",
+          "phonemes": "h ɔ̃ ˥˩"
+        },
+        {
+          "word": "pháiⁿ-chia̍h",
+          "phonemes": "pʰ ãĩ ˥˩ ts ia ˥˧ ʔ"
+        },
+        {
+          "word": "thiàⁿ",
+          "phonemes": "tʰ ĩã ˨"
+        },
+        {
+          "word": "Tiuⁿ",
+          "phonemes": "t ĩũ ˥"
+        },
+        {
+          "word": "khoàⁿ",
+          "phonemes": "kʰ ũã ˨"
+        },
+        {
+          "word": "uiⁿ",
+          "phonemes": "ũĩ ˥"
+        },
+        {
+          "word": "iauⁿ",
+          "phonemes": "ĩãũ ˥"
+        },
+        {
+          "word": "oáiⁿ",
+          "phonemes": "ũãĩ ˥˩"
+        },
+        {
+          "word": "hiauh",
+          "phonemes": "h iau ˨"
+        },
+        {
+          "word": "iaⁿh",
+          "phonemes": "ĩã ˨"
+        },
+        {
+          "word": "Pe̍h-ōe-jī",
+          "phonemes": "p e ˥˧ ʔ ue ˧ dz i ˧"
+        },
+        {
+          "word": "Tâi-gí",
+          "phonemes": "t ai ˨˦ ɡ i ˥˩"
+        },
+        {
+          "word": "Tâi-uân",
+          "phonemes": "t ai ˨˦ ua ˨˦ n"
+        },
+        {
+          "word": "to̍h",
+          "phonemes": "t o ˥˧ ʔ"
+        },
+        {
+          "word": "kok-ka",
+          "phonemes": "k ɔ ˨ k a ˥"
+        },
+        {
+          "word": "lóng",
+          "phonemes": "l ɔ ˥˩ ŋ"
+        },
+        {
+          "word": "hóⁿ",
+          "phonemes": "h ɔ̃ ˥˩"
+        },
+        {
+          "word": "io",
+          "phonemes": "io ˥"
+        },
+        {
+          "word": "ioh",
+          "phonemes": "io ˨"
+        },
+        {
+          "word": "iok",
+          "phonemes": "iɔ ˨"
+        },
+        {
+          "word": "iong",
+          "phonemes": "iɔ ˥ ŋ"
+        },
+        {
+          "word": "Má-chó͘-pô",
+          "phonemes": "m a ˥˩ ts ɔ ˥˩ p o ˨˦"
+        },
+        {
+          "word": "hoâi",
+          "phonemes": "h uai ˨˦"
+        },
+        {
+          "word": "sue",
+          "phonemes": "s ue ˥"
+        },
+        {
+          "word": "Uí-uân-huē",
+          "phonemes": "ui ˥˩ ua ˨˦ n h ue ˧"
+        },
+        {
+          "word": "kin-puàⁿ",
+          "phonemes": "k i ˥ n p ũã ˨"
+        },
+        {
+          "word": "uaiⁿ",
+          "phonemes": "ũãĩ ˥"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abehiklmnpstu-]",
+          "tones": "(˥|˥˩|˨|˨|˨˦|˧|˥˧)",
+          "4thtonestop": "[ʔtpk]",
+          "vowelandsyllabic": "[aeioumn]",
+          "nasalvowels": "(ã|ẽ|ĩ|ɔ̃|ũ)",
+          "consonants": "[bcghjklmnpst]",
+          "misc": "(uia|aia|aiu|iaui|uiɔ|aio)"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "h",
+            "to": "ʔ",
+            "weight": 1.0,
+            "follow": "$"
+          },
+          {
+            "from": "h",
+            "to": "ʔ",
+            "weight": 1.0,
+            "follow": "-"
+          },
+          {
+            "from": "j",
+            "to": "dz",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "c",
+            "to": "ts",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "tsʰ",
+            "weight": 3.0,
+            "follow": "hh"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "follow": "h",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "ch",
+            "comment": "clean-up"
+          },
+          {
+            "from": "k",
+            "to": "kʰ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "k",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 2.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "p",
+            "to": "pʰ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "p",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tʰ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({vowelandsyllabic})",
+            "to": "\\1 ˥˧",
+            "weight": 8.0,
+            "follow": "̍",
+            "comment": "8th tone"
+          },
+          {
+            "from": "̍",
+            "to": "",
+            "weight": 8.0,
+            "precede": "{vowelandsyllabic}",
+            "comment": "remove diacritic"
+          },
+          {
+            "from": "a",
+            "to": "a ˥",
+            "weight": 6.0,
+            "comment": "1st tone"
+          },
+          {
+            "from": "á",
+            "to": "a ˥˩",
+            "weight": 6.0,
+            "comment": "2nd tone"
+          },
+          {
+            "from": "à",
+            "to": "a ˨",
+            "weight": 6.0,
+            "comment": "3rd tone"
+          },
+          {
+            "from": "â",
+            "to": "a ˨˦",
+            "weight": 6.0,
+            "comment": "5th tone"
+          },
+          {
+            "from": "ā",
+            "to": "a ˧",
+            "weight": 6.0,
+            "comment": "7th tone"
+          },
+          {
+            "from": "a̍",
+            "to": "a ˥˧",
+            "weight": 6.0,
+            "comment": "8th tone"
+          },
+          {
+            "from": "e",
+            "to": "e ˥",
+            "weight": 6.0,
+            "comment": "1st tone"
+          },
+          {
+            "from": "é",
+            "to": "e ˥˩",
+            "weight": 6.0,
+            "comment": "2nd tone"
+          },
+          {
+            "from": "è",
+            "to": "e ˨",
+            "weight": 6.0,
+            "comment": "3rd tone"
+          },
+          {
+            "from": "ê",
+            "to": "e ˨˦",
+            "weight": 6.0,
+            "comment": "5th tone"
+          },
+          {
+            "from": "ē",
+            "to": "e ˧",
+            "weight": 6.0,
+            "comment": "7th tone"
+          },
+          {
+            "from": "e̍",
+            "to": "e ˥˧",
+            "weight": 6.0,
+            "comment": "8th tone"
+          },
+          {
+            "from": "i",
+            "to": "i ˥",
+            "weight": 6.0,
+            "comment": "1st tone"
+          },
+          {
+            "from": "í",
+            "to": "i ˥˩",
+            "weight": 6.0,
+            "comment": "2nd tone"
+          },
+          {
+            "from": "ì",
+            "to": "i ˨",
+            "weight": 6.0,
+            "comment": "3rd tone"
+          },
+          {
+            "from": "î",
+            "to": "i ˨˦",
+            "weight": 6.0,
+            "comment": "5th tone"
+          },
+          {
+            "from": "ī",
+            "to": "i ˧",
+            "weight": 6.0,
+            "comment": "7th tone"
+          },
+          {
+            "from": "i̍",
+            "to": "i ˥˧",
+            "weight": 6.0,
+            "comment": "8th tone"
+          },
+          {
+            "from": "o",
+            "to": "o ˥",
+            "weight": 6.0,
+            "comment": "1st tone"
+          },
+          {
+            "from": "ó",
+            "to": "o ˥˩",
+            "weight": 6.0,
+            "comment": "2nd tone"
+          },
+          {
+            "from": "ò",
+            "to": "o ˨",
+            "weight": 6.0,
+            "comment": "3rd tone"
+          },
+          {
+            "from": "ô",
+            "to": "o ˨˦",
+            "weight": 6.0,
+            "comment": "5th tone"
+          },
+          {
+            "from": "ō",
+            "to": "o ˧",
+            "weight": 6.0,
+            "comment": "7th tone"
+          },
+          {
+            "from": "o̍",
+            "to": "o ˥˧",
+            "weight": 6.0,
+            "comment": "8th tone"
+          },
+          {
+            "from": "u",
+            "to": "u ˥",
+            "weight": 6.0,
+            "comment": "1st tone"
+          },
+          {
+            "from": "ú",
+            "to": "u ˥˩",
+            "weight": 6.0,
+            "comment": "2nd tone"
+          },
+          {
+            "from": "ù",
+            "to": "u ˨",
+            "weight": 6.0,
+            "comment": "3rd tone"
+          },
+          {
+            "from": "û",
+            "to": "u ˨˦",
+            "weight": 6.0,
+            "comment": "5th tone"
+          },
+          {
+            "from": "ū",
+            "to": "u ˧",
+            "weight": 6.0,
+            "comment": "7th tone"
+          },
+          {
+            "from": "u̍",
+            "to": "u ˥˧",
+            "weight": 6.0,
+            "comment": "8th tone"
+          },
+          {
+            "from": "m",
+            "to": "m ˥",
+            "weight": 6.0,
+            "precede": "^",
+            "follow": "$",
+            "comment": "1st tone"
+          },
+          {
+            "from": "m",
+            "to": "m ˥",
+            "weight": 6.0,
+            "precede": "{consonants}",
+            "follow": "$",
+            "comment": "1st tone"
+          },
+          {
+            "from": "ḿ",
+            "to": "m ˥˩",
+            "weight": 6.0,
+            "comment": "2nd tone"
+          },
+          {
+            "from": "m",
+            "to": "m ˨",
+            "weight": 6.0,
+            "follow": "̀",
+            "comment": "3rd tone"
+          },
+          {
+            "from": "m",
+            "to": "m ˨˦",
+            "weight": 6.0,
+            "follow": "̂",
+            "comment": "5th tone"
+          },
+          {
+            "from": "m",
+            "to": "m ˧",
+            "weight": 6.0,
+            "follow": "̄",
+            "comment": "7th tone"
+          },
+          {
+            "from": "m̍",
+            "to": "m ˥˧",
+            "weight": 6.0,
+            "comment": "8th tone"
+          },
+          {
+            "from": "n",
+            "to": "ŋ ˥",
+            "weight": 6.0,
+            "precede": "^",
+            "follow": "g$",
+            "comment": "1st tone"
+          },
+          {
+            "from": "n",
+            "to": "ŋ ˥",
+            "weight": 6.0,
+            "precede": "{consonants}",
+            "follow": "g$",
+            "comment": "1st tone"
+          },
+          {
+            "from": "ń",
+            "to": "ŋ ˥˩",
+            "weight": 6.0,
+            "comment": "2nd tone"
+          },
+          {
+            "from": "ǹ",
+            "to": "ŋ ˨",
+            "weight": 6.0,
+            "comment": "3rd tone"
+          },
+          {
+            "from": "n",
+            "to": "ŋ ˨˦",
+            "weight": 6.0,
+            "follow": "̂",
+            "comment": "5th tone"
+          },
+          {
+            "from": "n",
+            "to": "ŋ ˧",
+            "weight": 6.0,
+            "follow": "̄",
+            "comment": "7th tone"
+          },
+          {
+            "from": "n̍",
+            "to": "ŋ ˥˧",
+            "weight": 6.0,
+            "comment": "8th tone"
+          },
+          {
+            "from": "̀",
+            "to": "",
+            "weight": 6.0,
+            "comment": "clean-up"
+          },
+          {
+            "from": "̄",
+            "to": "",
+            "weight": 6.0,
+            "comment": "clean-up"
+          },
+          {
+            "from": "̂",
+            "to": "",
+            "weight": 6.0,
+            "comment": "clean-up"
+          },
+          {
+            "from": "ⁿ",
+            "to": "ⁿ",
+            "weight": 3.0
+          },
+          {
+            "from": "͘",
+            "to": "ɔ",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "n ˥˧",
+            "to": "ŋ ˥˧",
+            "weight": 6.0,
+            "comment": "8th tone - corrects the fix for 8th tone section above"
+          },
+          {
+            "from": "ŋ ({tones}) ɡ",
+            "to": "ŋ \\1",
+            "weight": 6.0,
+            "comment": "clean-up"
+          },
+          {
+            "from": "i ˥ a ({tones}) u ˥",
+            "to": "iau \\1",
+            "weight": 5.0
+          },
+          {
+            "from": "o ˥ a ({tones}) i {tones}",
+            "to": "uai \\1",
+            "weight": 5.0
+          },
+          {
+            "from": "u ˥ a ({tones}) i {tones}",
+            "to": "uai \\1",
+            "weight": 5.0
+          },
+          {
+            "from": "a ({tones}) i ˥",
+            "to": "ai \\1",
+            "weight": 4.0
+          },
+          {
+            "from": "a ({tones}) u ˥",
+            "to": "au \\1",
+            "weight": 4.0
+          },
+          {
+            "from": "i ˥ a ({tones})",
+            "to": "ia \\1",
+            "weight": 4.0
+          },
+          {
+            "from": "i ˥ o ({tones})",
+            "to": "io \\1",
+            "weight": 4.0
+          },
+          {
+            "from": "i ˥ u ({tones})",
+            "to": "iu \\1",
+            "weight": 4.0
+          },
+          {
+            "from": "o ({tones}) a ˥",
+            "to": "ua \\1",
+            "weight": 4.0
+          },
+          {
+            "from": "o ˥ a ({tones})",
+            "to": "ua \\1",
+            "weight": 4.0
+          },
+          {
+            "from": "o ({tones}) e ˥",
+            "to": "ue \\1",
+            "weight": 4.0
+          },
+          {
+            "from": "o ˥ e ({tones})",
+            "to": "ue \\1",
+            "weight": 4.0
+          },
+          {
+            "from": "o ({tones}) i ˥",
+            "to": "ui \\1",
+            "weight": 4.0
+          },
+          {
+            "from": "u ˥ a ({tones})",
+            "to": "ua \\1",
+            "weight": 4.0
+          },
+          {
+            "from": "u ˥ e ({tones})",
+            "to": "ue \\1",
+            "weight": 4.0
+          },
+          {
+            "from": "u ({tones}) i ˥",
+            "to": "ui \\1",
+            "weight": 4.0
+          },
+          {
+            "from": "a ({tones}) ⁿ",
+            "to": "ã \\1",
+            "weight": 3.0
+          },
+          {
+            "from": "e ({tones}) ⁿ",
+            "to": "ẽ \\1",
+            "weight": 3.0
+          },
+          {
+            "from": "i ({tones}) ⁿ",
+            "to": "ĩ \\1",
+            "weight": 3.0
+          },
+          {
+            "from": "o ({tones}) ⁿ",
+            "to": "ɔ̃ \\1",
+            "weight": 3.0
+          },
+          {
+            "from": "u ({tones}) ⁿ",
+            "to": "ũ \\1",
+            "weight": 3.0
+          },
+          {
+            "from": "ⁿ",
+            "to": "",
+            "weight": 2.0,
+            "comment": "clean-up"
+          },
+          {
+            "from": "iaũ",
+            "to": "ĩãũ",
+            "weight": 2.5,
+            "comment": "triphthong"
+          },
+          {
+            "from": "uaĩ",
+            "to": "ũãĩ",
+            "weight": 2.5,
+            "comment": "triphthong"
+          },
+          {
+            "from": "\\ba({nasalvowels})\\b",
+            "to": "ã\\1",
+            "weight": 2.0,
+            "comment": "a-diphthongs"
+          },
+          {
+            "from": "\\bi({nasalvowels})\\b",
+            "to": "ĩ\\1",
+            "weight": 2.0,
+            "comment": "i-diphthongs"
+          },
+          {
+            "from": "\\bu({nasalvowels})\\b",
+            "to": "ũ\\1",
+            "weight": 2.0,
+            "comment": "u-diphthongs"
+          },
+          {
+            "from": "iɔ̃",
+            "to": "ĩɔ̃",
+            "weight": 2.0,
+            "comment": "exception - rule above doesn't seem to apply"
+          },
+          {
+            "from": "o ({tones}) p",
+            "to": "ɔ \\1 p",
+            "weight": 3.0
+          },
+          {
+            "from": "o ({tones}) t",
+            "to": "ɔ \\1 t",
+            "weight": 3.0
+          },
+          {
+            "from": "o ({tones}) k",
+            "to": "ɔ \\1 k",
+            "weight": 3.0
+          },
+          {
+            "from": "o ({tones}) m",
+            "to": "ɔ \\1 m",
+            "weight": 3.0
+          },
+          {
+            "from": "o ({tones}) n",
+            "to": "ɔ \\1 n",
+            "weight": 3.0
+          },
+          {
+            "from": "o ({tones}) ŋ",
+            "to": "ɔ \\1 ŋ",
+            "weight": 3.0
+          },
+          {
+            "from": "˥ {4thtonestop}$",
+            "to": "˨",
+            "weight": 2.0
+          },
+          {
+            "from": "˥ {4thtonestop} -",
+            "to": "˨",
+            "weight": 2.0
+          },
+          {
+            "from": "o ({tones}) ɔ",
+            "to": "ɔ \\1",
+            "weight": 2.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0,
+            "comment": "hyphens are used in compounds"
+          },
+          {
+            "from": "˨ʰ",
+            "to": "@",
+            "weight": 1.0,
+            "comment": "transcription of '˨ʰ' occurs seemingly in English loanwords (large amount) as they don't obey coda restrictions"
+          },
+          {
+            "from": "{misc}",
+            "to": "@",
+            "weight": 1.0,
+            "comment": "rules out vowel combinations present in loanwords - only those appearing in Crubadan"
+          }
+        ]
+      }
+    }
+  }
+}

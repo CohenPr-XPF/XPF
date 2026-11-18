@@ -1,0 +1,259 @@
+{
+  "metadata": {
+    "code": "btx",
+    "name": "Batak Karo",
+    "family": "Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Sundic,Sumatra,Batak,Northern",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "sounds": "e|ɘ|ɯ"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "pagi",
+          "phonemes": "p a ɡ i"
+        },
+        {
+          "word": "ipen",
+          "phonemes": "i p ɘ n"
+        },
+        {
+          "word": "tiga",
+          "phonemes": "t i ɡ a"
+        },
+        {
+          "word": "kuta",
+          "phonemes": "k u t a"
+        },
+        {
+          "word": "kaka",
+          "phonemes": "k a k a"
+        },
+        {
+          "word": "pake",
+          "phonemes": "p a k ɘ"
+        },
+        {
+          "word": "bagi",
+          "phonemes": "b a ɡ i"
+        },
+        {
+          "word": "rubat",
+          "phonemes": "r u b a t"
+        },
+        {
+          "word": "dung",
+          "phonemes": "d u ŋ"
+        },
+        {
+          "word": "kuda",
+          "phonemes": "k u d a"
+        },
+        {
+          "word": "page",
+          "phonemes": "p a ɡ ɘ"
+        },
+        {
+          "word": "galang",
+          "phonemes": "ɡ a l a ŋ"
+        },
+        {
+          "word": "cudu",
+          "phonemes": "tɕ u d u"
+        },
+        {
+          "word": "lacina",
+          "phonemes": "l a tɕ i n a"
+        },
+        {
+          "word": "juak",
+          "phonemes": "dʑ u a k"
+        },
+        {
+          "word": "kerja",
+          "phonemes": "k ɘ r dʑ a"
+        },
+        {
+          "word": "merim",
+          "phonemes": "m ɘ r i m"
+        },
+        {
+          "word": "amak",
+          "phonemes": "a m a k"
+        },
+        {
+          "word": "anak",
+          "phonemes": "a n a k"
+        },
+        {
+          "word": "nini",
+          "phonemes": "n i n i"
+        },
+        {
+          "word": "bulang",
+          "phonemes": "b u l a ŋ"
+        },
+        {
+          "word": "ngadi",
+          "phonemes": "ŋ a d i"
+        },
+        {
+          "word": "sudu",
+          "phonemes": "s u d u"
+        },
+        {
+          "word": "isang",
+          "phonemes": "i s a ŋ"
+        },
+        {
+          "word": "nahan",
+          "phonemes": "n a h a n"
+        },
+        {
+          "word": "hamaten",
+          "phonemes": "h a m a t ɘ n"
+        },
+        {
+          "word": "nali",
+          "phonemes": "n a l i"
+        },
+        {
+          "word": "lalap",
+          "phonemes": "l a l a p"
+        },
+        {
+          "word": "kundul",
+          "phonemes": "k u n d u l"
+        },
+        {
+          "word": "rawa",
+          "phonemes": "r a w a"
+        },
+        {
+          "word": "diberu",
+          "phonemes": "d i b ɘ r u"
+        },
+        {
+          "word": "wiswis",
+          "phonemes": "w i s w i s"
+        },
+        {
+          "word": "ya",
+          "phonemes": "j a"
+        },
+        {
+          "word": "ayo",
+          "phonemes": "a j o"
+        },
+        {
+          "word": "wili",
+          "phonemes": "w i l i"
+        },
+        {
+          "word": "nipe",
+          "phonemes": "n i p ɘ"
+        },
+        {
+          "word": "dem",
+          "phonemes": "d ɘ m"
+        },
+        {
+          "word": "karaben",
+          "phonemes": "k a r a b ɘ n"
+        },
+        {
+          "word": "medem",
+          "phonemes": "m ɘ d ɘ m"
+        },
+        {
+          "word": "asa",
+          "phonemes": "a s a"
+        },
+        {
+          "word": "tuhu",
+          "phonemes": "t u h u"
+        },
+        {
+          "word": "ope",
+          "phonemes": "o p ɘ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdhiklmnoprstuw]",
+          "gem": "(p|t|tɕ|k|m|n|ŋ|s|r)"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "tɕ",
+            "weight": 2.0
+          },
+          {
+            "from": "e",
+            "to": "ɘ",
+            "weight": 2.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 2.0
+          },
+          {
+            "from": "ë",
+            "to": "ɯ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "dʑ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({gem}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

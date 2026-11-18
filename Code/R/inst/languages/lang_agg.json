@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "code": "agg",
+    "name": "Angor",
+    "family": "Trans-New Guinea,Senagi",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "hai",
+          "phonemes": "x a i"
+        },
+        {
+          "word": "hoe",
+          "phonemes": "x o e"
+        },
+        {
+          "word": "kinü",
+          "phonemes": "k i n ɨ"
+        },
+        {
+          "word": "mao",
+          "phonemes": "m a o"
+        },
+        {
+          "word": "mupui",
+          "phonemes": "m u p u i"
+        },
+        {
+          "word": "ofis",
+          "phonemes": "o ɸ i s"
+        },
+        {
+          "word": "yaforɨ",
+          "phonemes": "j a ɸ o ɾ ə"
+        },
+        {
+          "word": "ŋga",
+          "phonemes": "ᵑɡ a"
+        },
+        {
+          "word": "ranahambo",
+          "phonemes": "ɾ a n a x a ᵐb o"
+        },
+        {
+          "word": "nindou",
+          "phonemes": "n i ⁿd o u"
+        },
+        {
+          "word": "moatükunɨ",
+          "phonemes": "m o a t ɨ k u n ə"
+        },
+        {
+          "word": "moaruwai",
+          "phonemes": "m o a ɾ u w a i"
+        },
+        {
+          "word": "aboedɨ",
+          "phonemes": "a b o e d ə"
+        },
+        {
+          "word": "ai",
+          "phonemes": "a i"
+        },
+        {
+          "word": "asu",
+          "phonemes": "a s u"
+        },
+        {
+          "word": "ra",
+          "phonemes": "ɾ a"
+        },
+        {
+          "word": "hoafɨ",
+          "phonemes": "x o a ɸ ə"
+        },
+        {
+          "word": "ranai",
+          "phonemes": "ɾ a n a i"
+        },
+        {
+          "word": "hohoanɨmo",
+          "phonemes": "x o x o a n ə m o"
+        },
+        {
+          "word": "se",
+          "phonemes": "s e"
+        },
+        {
+          "word": "ana",
+          "phonemes": "a n a"
+        },
+        {
+          "word": "ahandɨ",
+          "phonemes": "a x a ⁿd ə"
+        },
+        {
+          "word": "ro",
+          "phonemes": "ɾ o"
+        },
+        {
+          "word": "ahambo",
+          "phonemes": "a x a ᵐb o"
+        },
+        {
+          "word": "yahuya",
+          "phonemes": "j a x u j a"
+        },
+        {
+          "word": "muŋguambo",
+          "phonemes": "m u ᵑɡ u a ᵐb o"
+        },
+        {
+          "word": "moai",
+          "phonemes": "m o a i"
+        },
+        {
+          "word": "ŋgɨrɨ",
+          "phonemes": "ᵑɡ ə ɾ ə"
+        },
+        {
+          "word": "bogorɨ",
+          "phonemes": "b o ɡ o ɾ ə"
+        },
+        {
+          "word": "mehu",
+          "phonemes": "m e x u"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeikmnopstuw]",
+          "pre-nasal-follower": "[bdg]",
+          "pre-nasal-preceder": "[mnŋ]"
+        },
+        "sub": [
+          {
+            "from": "f",
+            "to": "ɸ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "h",
+            "to": "x",
+            "weight": 2.0
+          },
+          {
+            "from": "ɨ",
+            "to": "ə",
+            "weight": 2.0
+          },
+          {
+            "from": "ŋ",
+            "to": "ŋ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "ü",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "m",
+            "to": "ᵐb",
+            "weight": 3.0,
+            "follow": "b"
+          },
+          {
+            "from": "n",
+            "to": "ⁿd",
+            "weight": 3.0,
+            "follow": "d"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "n",
+            "to": "ᵑɡ",
+            "weight": 4.0,
+            "follow": "gg"
+          },
+          {
+            "from": "ŋ",
+            "to": "ᵑɡ",
+            "weight": 5.0,
+            "follow": "g"
+          },
+          {
+            "from": "{pre-nasal-follower}",
+            "to": "",
+            "weight": 5.0,
+            "precede": "{pre-nasal-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 4.0,
+            "precede": "g",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

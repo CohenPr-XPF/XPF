@@ -1,0 +1,379 @@
+{
+  "metadata": {
+    "code": "an",
+    "name": "Aragonese",
+    "family": "Indo-European,Italic,Romance,Italo-Western,Western,Pyrenean-Mozarabic,Pyrenean",
+    "macroarea": "Eurasia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "con",
+          "phonemes": "k o n",
+          "comment": "c goes to /k/; o goes to /o/; n goes to /n/"
+        },
+        {
+          "word": "d'o",
+          "phonemes": "d̪ o",
+          "comment": "d goes to /d̪/; apostrophes do not affect pronunciation"
+        },
+        {
+          "word": "ha",
+          "phonemes": "a",
+          "comment": "h is silent; a goes to /a/"
+        },
+        {
+          "word": "rechión",
+          "phonemes": "r e tʃ i o n",
+          "comment": "r goes to /r/ word initially; e goes to /e/; ch goes to /tʃ/; i goes to /i/"
+        },
+        {
+          "word": "sieglo",
+          "phonemes": "s i e ɡ l o",
+          "comment": "s goes to /s/; g goes to /g/; l goes to /l/"
+        },
+        {
+          "word": "por",
+          "phonemes": "p o ɾ",
+          "comment": "p goes to /p/; r goes to /ɾ/"
+        },
+        {
+          "word": "realidat",
+          "phonemes": "r e a l i d̪ a t̪",
+          "comment": "t goes to /t̪/"
+        },
+        {
+          "word": "municipio",
+          "phonemes": "m u n i θ i p i o",
+          "comment": "m goes to /m/; u goes to /u/; c goes to /θ/ before front vowels"
+        },
+        {
+          "word": "qui",
+          "phonemes": "k i",
+          "comment": "qu goes to /k/ before i"
+        },
+        {
+          "word": "luita",
+          "phonemes": "l u i t̪ a"
+        },
+        {
+          "word": "quan",
+          "phonemes": "k u a n",
+          "comment": "qu goes to /ku/ before a"
+        },
+        {
+          "word": "situata",
+          "phonemes": "s i t̪ u a t̪ a"
+        },
+        {
+          "word": "fuoron",
+          "phonemes": "f u o ɾ o n",
+          "comment": "f goes to /f/"
+        },
+        {
+          "word": "provincia",
+          "phonemes": "p ɾ o b i n θ i a",
+          "comment": "v goes to /b/"
+        },
+        {
+          "word": "ixo",
+          "phonemes": "i ʃ o",
+          "comment": "x goes to /ʃ/"
+        },
+        {
+          "word": "y",
+          "phonemes": "i",
+          "comment": "y goes to /i/ in isolation"
+        },
+        {
+          "word": "ye",
+          "phonemes": "ʝ e",
+          "comment": "y typically goes to /ʝ/"
+        },
+        {
+          "word": "diz",
+          "phonemes": "d̪ i θ",
+          "comment": "z goes to /θ/"
+        },
+        {
+          "word": "guaire",
+          "phonemes": "ɡ u a i ɾ e",
+          "comment": "gu goes to /gu/ before a"
+        },
+        {
+          "word": "lingüistica",
+          "phonemes": "l i n ɡ u i s t̪ i k a",
+          "comment": "gü goes to /gu/ before i"
+        },
+        {
+          "word": "millor",
+          "phonemes": "m i ʎ o ɾ",
+          "comment": "ll goes to /ʎ/"
+        },
+        {
+          "word": "diz",
+          "phonemes": "d̪ i θ",
+          "comment": "z goes to /θ/"
+        },
+        {
+          "word": "l'anyo",
+          "phonemes": "l a ɲ o",
+          "comment": "ny goes /ɲ/"
+        },
+        {
+          "word": "conseqüencia",
+          "phonemes": "k o n s e k u e n θ i a",
+          "comment": "qü goes to /ku/ before e"
+        },
+        {
+          "word": "sobre",
+          "phonemes": "s o b ɾ e",
+          "comment": "b goes to /b/"
+        },
+        {
+          "word": "arredol",
+          "phonemes": "a r e d̪ o l",
+          "comment": "rr goes to /r/"
+        },
+        {
+          "word": "totz",
+          "phonemes": "t̪ o θ",
+          "comment": "tz goes to /θ/"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abefilmnopsu]",
+          "any": "[abcedfghijlmmopqrstuvxyz]",
+          "back-v": "[ao]",
+          "front-v": "[ei]",
+          "u": "[uüú]",
+          "punct": "['-]"
+        },
+        "sub": [
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 1.0,
+            "comment": "accent marks on vowels denote stress"
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "i",
+            "weight": 1.0,
+            "comment": "<y> is pronounced /i/ in isolation and /ʝ/ otherwise"
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 1.0
+          },
+          {
+            "from": "c",
+            "to": "θ",
+            "weight": 2.0,
+            "follow": "{front-v}"
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 2.0,
+            "precede": "^",
+            "comment": "<r> is /r/ word-initially"
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 1.0
+          },
+          {
+            "from": "v",
+            "to": "b",
+            "weight": 1.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "ʝ",
+            "weight": 2.0,
+            "precede": "{any}",
+            "comment": "<y> is pronounced /i/ in isolation and /ʝ/ otherwise"
+          },
+          {
+            "from": "y",
+            "to": "ʝ",
+            "weight": 2.0,
+            "follow": "{any}",
+            "comment": "<y> is pronounced /i/ in isolation and /ʝ/ otherwise"
+          },
+          {
+            "from": "z",
+            "to": "θ",
+            "weight": 1.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "g",
+            "to": "ɡ u",
+            "weight": 5.0,
+            "follow": "u{back-v}",
+            "comment": "<gu> becomes /ɡu/ preceding back vowels"
+          },
+          {
+            "from": "g",
+            "to": "ɡ u",
+            "weight": 6.0,
+            "follow": "ü{front-v}",
+            "comment": "<gü> becomes /ɡu/ preceding front vowels"
+          },
+          {
+            "from": "{u}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "g",
+            "comment": "clean-up"
+          },
+          {
+            "from": "l",
+            "to": "ʎ",
+            "weight": 3.0,
+            "follow": "l"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 3.0,
+            "precede": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 4.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0
+          },
+          {
+            "from": "q",
+            "to": "k u",
+            "weight": 5.0,
+            "follow": "u{back-v}",
+            "comment": "<qu> becomes /ku/ preceding back vowels"
+          },
+          {
+            "from": "q",
+            "to": "k u",
+            "weight": 6.0,
+            "follow": "ü{front-v}",
+            "comment": "<qü> becomes /ku/ preceding front vowels"
+          },
+          {
+            "from": "{u}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "q",
+            "comment": "clean-up"
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 4.0,
+            "follow": "r"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 4.0,
+            "precede": "r",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "θ",
+            "weight": 4.0,
+            "follow": "z$"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 4.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}

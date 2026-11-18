@@ -1,0 +1,370 @@
+{
+  "metadata": {
+    "code": "sk",
+    "name": "Slovak",
+    "family": "Indo-European,Slavic,West,Czech-Slovak",
+    "macroarea": "Eurasia",
+    "compromised": {
+      "sounds": "t|c|d|ɟ|l|ʎ|n|ɲ",
+      "note": "interpretation of consonant clusters (one phoneme or two)"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "artritída",
+          "phonemes": "a r t r i t i ː d a"
+        },
+        {
+          "word": "baldrián",
+          "phonemes": "b a l d r i a ː n"
+        },
+        {
+          "word": "guľôčka",
+          "phonemes": "ɡ u ʎ ʊɔ tʃ k a"
+        },
+        {
+          "word": "haruspex",
+          "phonemes": "ɦ a r u s p ɛ k s"
+        },
+        {
+          "word": "hmotnosť",
+          "phonemes": "ɦ m ɔ t n ɔ s c"
+        },
+        {
+          "word": "ťarchavý",
+          "phonemes": "c a r x a v i ː"
+        },
+        {
+          "word": "žalúdok",
+          "phonemes": "ʒ a l u ː d ɔ k"
+        },
+        {
+          "word": "šamlík",
+          "phonemes": "ʃ a m l i ː k"
+        },
+        {
+          "word": "jahňacina",
+          "phonemes": "j a ɦ ɲ a ts i n a"
+        },
+        {
+          "word": "klamstvo",
+          "phonemes": "k l a m s t v ɔ"
+        },
+        {
+          "word": "čechizmus",
+          "phonemes": "tʃ ɛ x i z m u s"
+        },
+        {
+          "word": "činnosť",
+          "phonemes": "tʃ i n n ɔ s c"
+        },
+        {
+          "word": "džungľa",
+          "phonemes": "dʒ u n ɡ ʎ a"
+        },
+        {
+          "word": "bryndza",
+          "phonemes": "b r i n dz a"
+        },
+        {
+          "word": "cudzina",
+          "phonemes": "ts u dz i n a"
+        },
+        {
+          "word": "dážďovka",
+          "phonemes": "d a ː ʒ ɟ ɔ v k a"
+        },
+        {
+          "word": "káfir",
+          "phonemes": "k a ː f i r"
+        },
+        {
+          "word": "šógun",
+          "phonemes": "ʃ ɔ ː ɡ u n"
+        },
+        {
+          "word": "svätý",
+          "phonemes": "s v ɛ t i ː"
+        },
+        {
+          "word": "vŕba",
+          "phonemes": "v rː b a"
+        },
+        {
+          "word": "článku",
+          "phonemes": "tʃ l a ː n k u"
+        },
+        {
+          "word": "alebo",
+          "phonemes": "a l ɛ b ɔ"
+        },
+        {
+          "word": "reakcií",
+          "phonemes": "r ɛ a k ts i i ː"
+        },
+        {
+          "word": "bude",
+          "phonemes": "b u d ɛ"
+        },
+        {
+          "word": "veľmi",
+          "phonemes": "v ɛ ʎ m i"
+        },
+        {
+          "word": "ktoré",
+          "phonemes": "k t ɔ r ɛ ː"
+        },
+        {
+          "word": "hĺbky",
+          "phonemes": "ɦ lː b k i"
+        },
+        {
+          "word": "viac",
+          "phonemes": "v ia ts"
+        },
+        {
+          "word": "nie",
+          "phonemes": "n iɛ"
+        },
+        {
+          "word": "situáciu",
+          "phonemes": "s i t u a ː ts iu"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdfijklmnprstuvz]"
+        },
+        "pre": [
+          {
+            "from": "(Ď|Ť)",
+            "to": "(ď|ť)"
+          }
+        ],
+        "sub": [
+          {
+            "from": "á",
+            "to": "a ː",
+            "weight": 1.0
+          },
+          {
+            "from": "ä",
+            "to": "ɛ",
+            "weight": 1.0
+          },
+          {
+            "from": "c",
+            "to": "ts",
+            "weight": 1.0
+          },
+          {
+            "from": "č",
+            "to": "tʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "ď",
+            "to": "ɟ",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 1.0
+          },
+          {
+            "from": "é",
+            "to": "ɛ ː",
+            "weight": 1.0
+          },
+          {
+            "from": "h",
+            "to": "ɦ",
+            "weight": 1.0
+          },
+          {
+            "from": "í",
+            "to": "i ː",
+            "weight": 1.0
+          },
+          {
+            "from": "ĺ",
+            "to": "lː",
+            "weight": 1.0
+          },
+          {
+            "from": "ľ",
+            "to": "ʎ",
+            "weight": 1.0
+          },
+          {
+            "from": "ň",
+            "to": "ɲ",
+            "weight": 1.0
+          },
+          {
+            "from": "o",
+            "to": "ɔ",
+            "weight": 1.0
+          },
+          {
+            "from": "ó",
+            "to": "ɔ ː",
+            "weight": 1.0
+          },
+          {
+            "from": "ô",
+            "to": "ʊɔ",
+            "weight": 1.0
+          },
+          {
+            "from": "q",
+            "to": "k v",
+            "weight": 1.0
+          },
+          {
+            "from": "ŕ",
+            "to": "rː",
+            "weight": 1.0
+          },
+          {
+            "from": "š",
+            "to": "ʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "ť",
+            "to": "c",
+            "weight": 1.0
+          },
+          {
+            "from": "ú",
+            "to": "u ː",
+            "weight": 1.0
+          },
+          {
+            "from": "w",
+            "to": "v",
+            "weight": 1.0
+          },
+          {
+            "from": "x",
+            "to": "k s",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "ý",
+            "to": "i ː",
+            "weight": 1.0
+          },
+          {
+            "from": "ž",
+            "to": "ʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.5
+          },
+          {
+            "from": "d",
+            "to": "dz",
+            "weight": 2.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 2.0,
+            "precede": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "dʒ",
+            "weight": 2.0,
+            "follow": "ž"
+          },
+          {
+            "from": "ž",
+            "to": "",
+            "weight": 2.0,
+            "precede": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "x",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "ia",
+            "weight": 2.0,
+            "follow": "a"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 2.0,
+            "precede": "i",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "iɛ",
+            "weight": 3.0,
+            "follow": "e"
+          },
+          {
+            "from": "e",
+            "to": "",
+            "weight": 2.0,
+            "precede": "i",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "iu",
+            "weight": 4.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 2.0,
+            "precede": "i",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

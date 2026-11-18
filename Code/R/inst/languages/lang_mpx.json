@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "code": "mpx",
+    "name": "Misima-Panaeati",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,Papuan Tip,Peripheral,Kilivila-Louisiades,Misima",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "sounds": "e|ɛ|o|ɔ"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "alana",
+          "phonemes": "a ɭ a n̪ a",
+          "comment": "a"
+        },
+        {
+          "word": "balu",
+          "phonemes": "b a ɭ u",
+          "comment": "b"
+        },
+        {
+          "word": "odam",
+          "phonemes": "o d̪ a m",
+          "comment": "d"
+        },
+        {
+          "word": "nem",
+          "phonemes": "n̪ e m",
+          "comment": "e"
+        },
+        {
+          "word": "egowa",
+          "phonemes": "e ɡ o w a",
+          "comment": "g"
+        },
+        {
+          "word": "hoga",
+          "phonemes": "h o ɡ a",
+          "comment": "h"
+        },
+        {
+          "word": "il",
+          "phonemes": "i ɭ",
+          "comment": "i"
+        },
+        {
+          "word": "kal",
+          "phonemes": "k a ɭ",
+          "comment": "k"
+        },
+        {
+          "word": "vil",
+          "phonemes": "β i ɭ",
+          "comment": "l"
+        },
+        {
+          "word": "matan",
+          "phonemes": "m a t̪ a n̪",
+          "comment": "m"
+        },
+        {
+          "word": "niu",
+          "phonemes": "n̪ i u",
+          "comment": "n"
+        },
+        {
+          "word": "ol",
+          "phonemes": "o ɭ",
+          "comment": "o"
+        },
+        {
+          "word": "pap",
+          "phonemes": "p a p",
+          "comment": "p"
+        },
+        {
+          "word": "saduwa",
+          "phonemes": "s̪ a d̪ u w a",
+          "comment": "s"
+        },
+        {
+          "word": "atat",
+          "phonemes": "a t̪ a t̪",
+          "comment": "t"
+        },
+        {
+          "word": "luan",
+          "phonemes": "ɭ u a n̪",
+          "comment": "u"
+        },
+        {
+          "word": "yova",
+          "phonemes": "j o β a",
+          "comment": "v"
+        },
+        {
+          "word": "wawaya",
+          "phonemes": "w a w a j a",
+          "comment": "w"
+        },
+        {
+          "word": "yapu",
+          "phonemes": "j a p u",
+          "comment": "y"
+        },
+        {
+          "word": "pwahin",
+          "phonemes": "pʷ a h i n̪",
+          "comment": "pw"
+        },
+        {
+          "word": "gimwan",
+          "phonemes": "ɡ i mʷ a n̪",
+          "comment": "mw"
+        },
+        {
+          "word": "kibwa",
+          "phonemes": "k i bʷ a",
+          "comment": "bw"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abehikmopuw]",
+          "labial": "[pbm]"
+        },
+        "sub": [
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "l",
+            "to": "ɭ",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "n̪",
+            "weight": 2.0
+          },
+          {
+            "from": "s",
+            "to": "s̪",
+            "weight": 2.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 2.0
+          },
+          {
+            "from": "v",
+            "to": "β",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 1.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({labial}) w",
+            "to": "\\1ʷ",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

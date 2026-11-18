@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "code": "guo",
+    "name": "Guayabero",
+    "family": "Guahiban",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "min",
+          "phonemes": "m i n"
+        },
+        {
+          "word": "wíam",
+          "phonemes": "w i a m"
+        },
+        {
+          "word": "péjiw",
+          "phonemes": "p e h i w"
+        },
+        {
+          "word": "asá",
+          "phonemes": "a s a"
+        },
+        {
+          "word": "wáat",
+          "phonemes": "w aː t"
+        },
+        {
+          "word": "bá",
+          "phonemes": "b a"
+        },
+        {
+          "word": "dúíl",
+          "phonemes": "d u i l"
+        },
+        {
+          "word": "jól",
+          "phonemes": "h o l"
+        },
+        {
+          "word": "júl",
+          "phonemes": "h u l"
+        },
+        {
+          "word": "réra",
+          "phonemes": "ɾ e ɾ a"
+        },
+        {
+          "word": "puʉr",
+          "phonemes": "p u ɨ ɾ"
+        },
+        {
+          "word": "xám",
+          "phonemes": "x a m"
+        },
+        {
+          "word": "'ám",
+          "phonemes": "ʔ a m"
+        },
+        {
+          "word": "cháma",
+          "phonemes": "tʃ a m a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "[ꞌ'ˈ‘’]",
+          "passthrough": "[abdeiklmnopstuwx]",
+          "gem": "(p|b|t|k|d|ɸ|s|x|h|tʃ|m|n|l|ɾ|w)"
+        },
+        "sub": [
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 2.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 2.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 2.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "ʉ́",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "́",
+            "to": "",
+            "weight": 2.0,
+            "precede": "ʉ"
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "f",
+            "to": "ɸ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "ʉ",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 2.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "a a",
+            "to": "aː",
+            "weight": 2.0
+          },
+          {
+            "from": "\\b({gem}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

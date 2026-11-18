@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "code": "ksr",
+    "name": "Borong",
+    "family": "Trans-New Guinea,Main Section,Central and Western,Huon-Finisterre,Huon,Eastern",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ama",
+          "phonemes": "a m a",
+          "comment": "a"
+        },
+        {
+          "word": "biiwia",
+          "phonemes": "b i ː w i a",
+          "comment": "b"
+        },
+        {
+          "word": "daaya",
+          "phonemes": "d a ː j a",
+          "comment": "d"
+        },
+        {
+          "word": "eja",
+          "phonemes": "e dz a",
+          "comment": "e"
+        },
+        {
+          "word": "foŋ",
+          "phonemes": "f o ŋ",
+          "comment": "\"f\""
+        },
+        {
+          "word": "gegelao",
+          "phonemes": "ɡ e ɡ e l a o",
+          "comment": "g"
+        },
+        {
+          "word": "hoŋa",
+          "phonemes": "h o ŋ a",
+          "comment": "h"
+        },
+        {
+          "word": "ilaaja",
+          "phonemes": "i l a ː dz a",
+          "comment": "i"
+        },
+        {
+          "word": "juuya",
+          "phonemes": "dz u ː j a",
+          "comment": "j"
+        },
+        {
+          "word": "kooŋ",
+          "phonemes": "k o ː ŋ",
+          "comment": "k"
+        },
+        {
+          "word": "laligori",
+          "phonemes": "l a l i ɡ o r i",
+          "comment": "l"
+        },
+        {
+          "word": "meja",
+          "phonemes": "m e dz a",
+          "comment": "m"
+        },
+        {
+          "word": "naana",
+          "phonemes": "n a ː n a",
+          "comment": "n"
+        },
+        {
+          "word": "owa",
+          "phonemes": "o w a",
+          "comment": "o"
+        },
+        {
+          "word": "pereto",
+          "phonemes": "p e r e t o",
+          "comment": "p"
+        },
+        {
+          "word": "qamo",
+          "phonemes": "kp a m o",
+          "comment": "q"
+        },
+        {
+          "word": "rari",
+          "phonemes": "r a r i",
+          "comment": "r"
+        },
+        {
+          "word": "soko",
+          "phonemes": "s o k o",
+          "comment": "s"
+        },
+        {
+          "word": "taaya",
+          "phonemes": "t a ː j a",
+          "comment": "t"
+        },
+        {
+          "word": "umbeŋ",
+          "phonemes": "u m b e ŋ",
+          "comment": "u"
+        },
+        {
+          "word": "awaa",
+          "phonemes": "a w a ː",
+          "comment": "w"
+        },
+        {
+          "word": "yiist",
+          "phonemes": "j i ː s t",
+          "comment": "y"
+        },
+        {
+          "word": "zenzoŋ",
+          "phonemes": "ts e n ts o ŋ",
+          "comment": "z"
+        },
+        {
+          "word": "koŋaeŋ",
+          "phonemes": "k o ŋ a e ŋ",
+          "comment": "ŋ"
+        },
+        {
+          "word": "gbamo",
+          "phonemes": "ɡb a m o",
+          "comment": "gb"
+        },
+        {
+          "word": "aaŋa",
+          "phonemes": "a ː ŋ a",
+          "comment": "aa"
+        },
+        {
+          "word": "neena",
+          "phonemes": "n e ː n a",
+          "comment": "ee"
+        },
+        {
+          "word": "somariigi",
+          "phonemes": "s o m a r i ː ɡ i",
+          "comment": "ii"
+        },
+        {
+          "word": "ooŋ",
+          "phonemes": "o ː ŋ",
+          "comment": "\"oo\""
+        },
+        {
+          "word": "kuuya",
+          "phonemes": "k u ː j a",
+          "comment": "uu"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "vowels": "[aeiou]",
+          "passthrough": "[abdefhiklmnŋoprstuw]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "dz",
+            "weight": 2.0
+          },
+          {
+            "from": "q",
+            "to": "kp",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "z",
+            "to": "ts",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡb",
+            "weight": 3.0,
+            "follow": "b"
+          },
+          {
+            "from": "b",
+            "to": "",
+            "weight": 3.0,
+            "precede": "g",
+            "comment": "clean up"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

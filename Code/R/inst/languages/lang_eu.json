@@ -1,0 +1,346 @@
+{
+  "metadata": {
+    "code": "eu",
+    "name": "Basque",
+    "family": "Language Isolate",
+    "macroarea": "Eurasia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "xurrup",
+          "phonemes": "ʃ u r u p",
+          "comment": "intervocalic trill"
+        },
+        {
+          "word": "buru",
+          "phonemes": "b u ɾ u",
+          "comment": "intervocalic tap"
+        },
+        {
+          "word": "adar",
+          "phonemes": "a d̪ a r",
+          "comment": "final trill"
+        },
+        {
+          "word": "plater",
+          "phonemes": "p l a t̪ e ɾ",
+          "comment": "final tap (exception)"
+        },
+        {
+          "word": "ñañu",
+          "phonemes": "ɲ a ɲ u"
+        },
+        {
+          "word": "tzitzi",
+          "phonemes": "t̪s̻ i t̪s̻ i"
+        },
+        {
+          "word": "atzo",
+          "phonemes": "a t̪s̻ o"
+        },
+        {
+          "word": "atso",
+          "phonemes": "a t̪s̺ o"
+        },
+        {
+          "word": "yabe",
+          "phonemes": "j a b e"
+        },
+        {
+          "word": "hiru",
+          "phonemes": "i ɾ u"
+        },
+        {
+          "word": "ttiki",
+          "phonemes": "c i k i",
+          "comment": "tt digraph"
+        },
+        {
+          "word": "zall",
+          "phonemes": "s̻ a ʎ",
+          "comment": "ll digraph"
+        },
+        {
+          "word": "manddo",
+          "phonemes": "m a n ɟ o",
+          "comment": "dd digraph"
+        },
+        {
+          "word": "joan",
+          "phonemes": "x o a n"
+        },
+        {
+          "word": "eta",
+          "phonemes": "e t̪ a"
+        },
+        {
+          "word": "informazioa",
+          "phonemes": "i n f o r m a s̻ i o a"
+        },
+        {
+          "word": "egin",
+          "phonemes": "e ɡ i n"
+        },
+        {
+          "word": "batzuk",
+          "phonemes": "b a t̪s̻ u k"
+        },
+        {
+          "word": "bat",
+          "phonemes": "b a t̪"
+        },
+        {
+          "word": "dela",
+          "phonemes": "d̪ e l a"
+        },
+        {
+          "word": "parte",
+          "phonemes": "p a r t̪ e"
+        },
+        {
+          "word": "beste",
+          "phonemes": "b e s̺ t̪ e"
+        },
+        {
+          "word": "izan",
+          "phonemes": "i s̻ a n"
+        },
+        {
+          "word": "gutxi",
+          "phonemes": "ɡ u t̪ʃ i"
+        },
+        {
+          "word": "baina",
+          "phonemes": "b ai n a"
+        },
+        {
+          "word": "zein",
+          "phonemes": "s̻ ei n"
+        },
+        {
+          "word": "soilik",
+          "phonemes": "s̺ oi l i k"
+        },
+        {
+          "word": "hau",
+          "phonemes": "au"
+        },
+        {
+          "word": "euskal",
+          "phonemes": "eu s̺ k a l"
+        },
+        {
+          "word": "ipuin",
+          "phonemes": "i p ui n"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeioubfklmnp]",
+          "vowels": "[aeiou]"
+        },
+        "sub": [
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0,
+            "precede": "{vowels}",
+            "follow": "{vowels}",
+            "comment": "r tapped intervocalic"
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "x",
+            "weight": 1.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 1.0
+          },
+          {
+            "from": "s",
+            "to": "s̺",
+            "weight": 1.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 1.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "z",
+            "to": "s̻",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 2.0,
+            "precede": "r"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 2.0,
+            "follow": "r",
+            "comment": "clean-up"
+          },
+          {
+            "from": "l",
+            "to": "ʎ",
+            "weight": 2.0,
+            "precede": "l"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 2.0,
+            "follow": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "t̪s̺",
+            "weight": 2.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 2.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "t̪s̻",
+            "weight": 2.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 2.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "t̪ʃ",
+            "weight": 2.0,
+            "follow": "x"
+          },
+          {
+            "from": "x",
+            "to": "",
+            "weight": 2.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "ɟ",
+            "weight": 2.0,
+            "precede": "d"
+          },
+          {
+            "from": "d",
+            "to": "",
+            "weight": 2.0,
+            "follow": "d"
+          },
+          {
+            "from": "t",
+            "to": "c",
+            "weight": 2.0,
+            "precede": "t"
+          },
+          {
+            "from": "t",
+            "to": "",
+            "weight": 2.0,
+            "follow": "t"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\ba i\\b",
+            "to": "ai",
+            "weight": 2.0
+          },
+          {
+            "from": "\\be i\\b",
+            "to": "ei",
+            "weight": 1.0
+          },
+          {
+            "from": "\\bo i\\b",
+            "to": "oi",
+            "weight": 1.0
+          },
+          {
+            "from": "\\ba u\\b",
+            "to": "au",
+            "weight": 2.0
+          },
+          {
+            "from": "\\be u\\b",
+            "to": "eu",
+            "weight": 1.0
+          },
+          {
+            "from": "\\bu i\\b",
+            "to": "ui",
+            "weight": 1.0
+          }
+        ],
+        "word": [
+          {
+            "word": "plater",
+            "phonemes": "p l a t̪ e ɾ",
+            "comment": "final tap (exception)"
+          }
+        ]
+      }
+    }
+  }
+}

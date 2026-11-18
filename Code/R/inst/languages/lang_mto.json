@@ -1,0 +1,306 @@
+{
+  "metadata": {
+    "code": "mto",
+    "name": "Totontepec Mixe",
+    "family": "Mixe-Zoque,Mixe,Western Mixe",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "acuvo̱pa",
+          "phonemes": "a k u v o p a",
+          "comment": "a"
+        },
+        {
+          "word": "a̱xpa̱j",
+          "phonemes": "ʌ ʂ p ʌ h",
+          "comment": "a̱"
+        },
+        {
+          "word": "caa'c",
+          "phonemes": "k a ː ʔ k",
+          "comment": "c"
+        },
+        {
+          "word": "cha̱a̱x",
+          "phonemes": "ʂ ʌ ː ʂ",
+          "comment": "ch"
+        },
+        {
+          "word": "madooctay",
+          "phonemes": "m a d ʊ ː k t a j",
+          "comment": "d"
+        },
+        {
+          "word": "ne'ev",
+          "phonemes": "n e ʔ e v",
+          "comment": "e"
+        },
+        {
+          "word": "e̱jcx",
+          "phonemes": "æ h k ʂ",
+          "comment": "e̱"
+        },
+        {
+          "word": "mugo'oc",
+          "phonemes": "m u ɡ ʊ ʔ ʊ k",
+          "comment": "g"
+        },
+        {
+          "word": "ix'it",
+          "phonemes": "i ʂ ʔ i t",
+          "comment": "i"
+        },
+        {
+          "word": "jaajm",
+          "phonemes": "h a ː h m",
+          "comment": "j"
+        },
+        {
+          "word": "ku",
+          "phonemes": "k u",
+          "comment": "k"
+        },
+        {
+          "word": "ma̱ja̱pu̱m",
+          "phonemes": "m ʌ h ʌ p ɨ m",
+          "comment": "m"
+        },
+        {
+          "word": "na'tsu̱n",
+          "phonemes": "n a ʔ ts ɨ n",
+          "comment": "n"
+        },
+        {
+          "word": "ña̱yo̱jxip",
+          "phonemes": "n ʌ j o h ʂ i p",
+          "comment": "ñ"
+        },
+        {
+          "word": "oso",
+          "phonemes": "ʊ s ʊ",
+          "comment": "o"
+        },
+        {
+          "word": "o̱tyo̱jcx",
+          "phonemes": "o t j o h k ʂ",
+          "comment": "o̱"
+        },
+        {
+          "word": "pamiimp",
+          "phonemes": "p a m i ː m p",
+          "comment": "p"
+        },
+        {
+          "word": "que̱e̱p",
+          "phonemes": "k æ ː p",
+          "comment": "qu"
+        },
+        {
+          "word": "miistu",
+          "phonemes": "m i ː s t u",
+          "comment": "s"
+        },
+        {
+          "word": "todojtu̱c",
+          "phonemes": "t ʊ d ʊ h t ɨ k",
+          "comment": "t"
+        },
+        {
+          "word": "tuctsets",
+          "phonemes": "t u k ts e ts",
+          "comment": "ts"
+        },
+        {
+          "word": "tsach'aa'c",
+          "phonemes": "ts a ʂ ʔ a ː ʔ k",
+          "comment": "apostrophe"
+        },
+        {
+          "word": "pu'ut",
+          "phonemes": "p u ʔ u t",
+          "comment": "u"
+        },
+        {
+          "word": "nu̱u̱'pu̱n",
+          "phonemes": "n ɨ ː ʔ p ɨ n",
+          "comment": "u̱"
+        },
+        {
+          "word": "va̱v",
+          "phonemes": "v ʌ v",
+          "comment": "v"
+        },
+        {
+          "word": "xaquix",
+          "phonemes": "ʂ a k i ʂ",
+          "comment": "x"
+        },
+        {
+          "word": "yaa'y",
+          "phonemes": "j a ː ʔ j",
+          "comment": "y"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "['ꞌˈ‘’]",
+          "underline": "[̱]",
+          "ipavowel": "[aeiouʌæʊɨ]",
+          "passthrough": "[adeikmnpstuv]"
+        },
+        "sub": [
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 4.0
+          },
+          {
+            "from": "ñ",
+            "to": "n",
+            "weight": 4.0
+          },
+          {
+            "from": "o",
+            "to": "ʊ",
+            "weight": 4.0
+          },
+          {
+            "from": "ó",
+            "to": "ʊ",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "x",
+            "to": "ʂ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "a",
+            "to": "ʌ",
+            "weight": 6.0,
+            "follow": "{underline}"
+          },
+          {
+            "from": "e",
+            "to": "æ",
+            "weight": 6.0,
+            "follow": "{underline}"
+          },
+          {
+            "from": "o",
+            "to": "o",
+            "weight": 6.0,
+            "follow": "{underline}"
+          },
+          {
+            "from": "u",
+            "to": "ɨ",
+            "weight": 6.0,
+            "follow": "{underline}"
+          },
+          {
+            "from": "{underline}",
+            "to": "",
+            "weight": 6.0
+          },
+          {
+            "from": "c",
+            "to": "ʂ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "ch"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "c"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 6.0,
+            "follow": "u",
+            "comment": "qu"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 6.0,
+            "precede": "q"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 6.0,
+            "follow": "s",
+            "comment": "ts"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 6.0,
+            "precede": "t"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({ipavowel}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0,
+            "comment": "long vowels"
+          }
+        ]
+      }
+    }
+  }
+}

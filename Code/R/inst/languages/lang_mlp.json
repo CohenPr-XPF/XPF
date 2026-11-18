@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "code": "mlp",
+    "name": "Bargam",
+    "family": "Trans-New Guinea,Madang-Adelbert Range,Adelbert Range,Pihom-Isumrud-Mugil,Mugil",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "sounds": "n|ŋ"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "gupken",
+          "phonemes": "ɡ u p k e n"
+        },
+        {
+          "word": "kabiy",
+          "phonemes": "k a b i j"
+        },
+        {
+          "word": "dobsen",
+          "phonemes": "d o b s e n"
+        },
+        {
+          "word": "zumlaw",
+          "phonemes": "z u m l a w"
+        },
+        {
+          "word": "onmin",
+          "phonemes": "o n m i n"
+        },
+        {
+          "word": "gruw",
+          "phonemes": "ɡ ɾ u w"
+        },
+        {
+          "word": "romriq",
+          "phonemes": "ɾ o m ɾ i ʔ"
+        },
+        {
+          "word": "figilfigal",
+          "phonemes": "f i ɡ i l f i ɡ a l"
+        },
+        {
+          "word": "gway",
+          "phonemes": "ɡ w a j"
+        },
+        {
+          "word": "akwiyakan",
+          "phonemes": "a k w i j a k a n"
+        },
+        {
+          "word": "skot",
+          "phonemes": "s k o t"
+        },
+        {
+          "word": "kengkel",
+          "phonemes": "k e n ɡ k e l"
+        },
+        {
+          "word": "loyin",
+          "phonemes": "l o j i n"
+        },
+        {
+          "word": "abelqan",
+          "phonemes": "a b e l ʔ a n"
+        },
+        {
+          "word": "abigman",
+          "phonemes": "a b i ɡ m a n"
+        },
+        {
+          "word": "otaq",
+          "phonemes": "o t a ʔ"
+        },
+        {
+          "word": "katbebey",
+          "phonemes": "k a t b e b e j"
+        },
+        {
+          "word": "tangir",
+          "phonemes": "t a n ɡ i ɾ"
+        },
+        {
+          "word": "gurnuy",
+          "phonemes": "ɡ u ɾ n u j"
+        },
+        {
+          "word": "hus",
+          "phonemes": "h u s"
+        },
+        {
+          "word": "yaw",
+          "phonemes": "j a w"
+        },
+        {
+          "word": "agemyakin",
+          "phonemes": "a ɡ e m j a k i n"
+        },
+        {
+          "word": "mangsong",
+          "phonemes": "m a n ɡ s o n ɡ"
+        },
+        {
+          "word": "baqir",
+          "phonemes": "b a ʔ i ɾ"
+        },
+        {
+          "word": "umzil",
+          "phonemes": "u m z i l"
+        },
+        {
+          "word": "gigo",
+          "phonemes": "ɡ i ɡ o"
+        },
+        {
+          "word": "mat",
+          "phonemes": "m a t"
+        },
+        {
+          "word": "araq",
+          "phonemes": "a ɾ a ʔ"
+        },
+        {
+          "word": "gamuk",
+          "phonemes": "ɡ a m u k"
+        },
+        {
+          "word": "bunmo",
+          "phonemes": "b u n m o"
+        },
+        {
+          "word": "daq",
+          "phonemes": "d a ʔ"
+        },
+        {
+          "word": "ginad",
+          "phonemes": "ɡ i n a d"
+        },
+        {
+          "word": "ahol",
+          "phonemes": "a h o l"
+        },
+        {
+          "word": "ta",
+          "phonemes": "t a"
+        },
+        {
+          "word": "haqad",
+          "phonemes": "h a ʔ a d"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdefhiklmnopstuwz]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "q",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

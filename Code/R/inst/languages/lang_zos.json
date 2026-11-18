@@ -1,0 +1,328 @@
+{
+  "metadata": {
+    "code": "zos",
+    "name": "Francisco León Zoque",
+    "family": "Mixe-Zoque,Zoque,Chiapas Zoque",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ñijpu",
+          "phonemes": "ɲ i h p u"
+        },
+        {
+          "word": "øṉu",
+          "phonemes": "ɨ ŋ u"
+        },
+        {
+          "word": "caꞌṉaju",
+          "phonemes": "k a ʔ ŋ a h u"
+        },
+        {
+          "word": "voju",
+          "phonemes": "w o h u"
+        },
+        {
+          "word": "cø'yi",
+          "phonemes": "k ɨ ʔ j i"
+        },
+        {
+          "word": "maṉdaṉgue'tu",
+          "phonemes": "m a ŋ d̪ a ŋ ɡ e ʔ t̪ u"
+        },
+        {
+          "word": "chømi",
+          "phonemes": "tʃ ɨ m i"
+        },
+        {
+          "word": "macho'tzu",
+          "phonemes": "m a tʃ o ʔ ts u"
+        },
+        {
+          "word": "quinø",
+          "phonemes": "k i n ɨ"
+        },
+        {
+          "word": "más",
+          "phonemes": "m a s"
+        },
+        {
+          "word": "también",
+          "phonemes": "t̪ a m b i e n"
+        },
+        {
+          "word": "policía",
+          "phonemes": "p o l i s i a"
+        },
+        {
+          "word": "sólo",
+          "phonemes": "s o l o"
+        },
+        {
+          "word": "último",
+          "phonemes": "u l t̪ i m o"
+        },
+        {
+          "word": "maṉba",
+          "phonemes": "m a ŋ b a"
+        },
+        {
+          "word": "fuera",
+          "phonemes": "f u e r a"
+        },
+        {
+          "word": "lo",
+          "phonemes": "l o"
+        },
+        {
+          "word": "porque",
+          "phonemes": "p o r k e"
+        },
+        {
+          "word": "entonces",
+          "phonemes": "e n t̪ o n s e s"
+        },
+        {
+          "word": "ndzøctam",
+          "phonemes": "n dz ɨ k t̪ a m"
+        },
+        {
+          "word": "cumguꞌyomo",
+          "phonemes": "k u m ɡ u ʔ j o m o"
+        },
+        {
+          "word": "aṉguiꞌmguy",
+          "phonemes": "a ŋ ɡ i ʔ m ɡ u j"
+        },
+        {
+          "word": "syunbase",
+          "phonemes": "ʃ u n b a s e"
+        },
+        {
+          "word": "ⁿvin",
+          "phonemes": "w i n"
+        },
+        {
+          "word": "eyataꞌmbø",
+          "phonemes": "e j a t̪ a ʔ m b ɨ"
+        },
+        {
+          "word": "oy",
+          "phonemes": "o j"
+        },
+        {
+          "word": "ⁿisø",
+          "phonemes": "i s ɨ"
+        },
+        {
+          "word": "isipø",
+          "phonemes": "i s i p ɨ"
+        },
+        {
+          "word": "yaj",
+          "phonemes": "j a h"
+        },
+        {
+          "word": "cuando",
+          "phonemes": "k u a n d̪ o"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abefilmnoprsu]",
+          "apostrophe": "[ꞌ'ꞌ‘’]",
+          "front-v": "[iìíeèé]",
+          "vowels": "[ieaouɨ]",
+          "accent-a": "[àá]",
+          "accent-e": "[èé]",
+          "accent-i": "[ìí]",
+          "accent-o": "[òó]",
+          "accent-u": "[ùú]",
+          "u": "[uùú]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "s",
+            "weight": 3.0,
+            "follow": "{front-v}"
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 2.0
+          },
+          {
+            "from": "ṉ",
+            "to": "ŋ",
+            "weight": 2.0
+          },
+          {
+            "from": "ø",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 2.0
+          },
+          {
+            "from": "v",
+            "to": "w",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "{accent-a}",
+            "to": "a",
+            "weight": 2.0
+          },
+          {
+            "from": "{accent-e}",
+            "to": "e",
+            "weight": 2.0
+          },
+          {
+            "from": "{accent-i}",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "{accent-o}",
+            "to": "o",
+            "weight": 2.0
+          },
+          {
+            "from": "{accent-u}",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "dz",
+            "weight": 4.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 3.0,
+            "precede": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 4.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0,
+            "follow": "{u}{front-v}"
+          },
+          {
+            "from": "{u}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "g",
+            "follow": "{front-v}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 4.0,
+            "follow": "{u}{front-v}"
+          },
+          {
+            "from": "{u}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "follow": "{front-v}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 4.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 3.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ⁿ",
+            "to": "",
+            "weight": 2.0,
+            "comment": "non-contrastive feature"
+          }
+        ]
+      }
+    }
+  }
+}

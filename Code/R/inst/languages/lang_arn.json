@@ -1,0 +1,353 @@
+{
+  "metadata": {
+    "code": "arn",
+    "name": "Mapudungun",
+    "family": "Araucanian",
+    "macroarea": "South America",
+    "compromised": {
+      "sounds": "t|t̪",
+      "note": "suspect orthography"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "afvlkan",
+          "phonemes": "a f ɘ l k a n"
+        },
+        {
+          "word": "ajfeñ",
+          "phonemes": "a ʎ f e ɲ"
+        },
+        {
+          "word": "aliwentu",
+          "phonemes": "a l i w e n t u"
+        },
+        {
+          "word": "anci",
+          "phonemes": "a n tʃ i"
+        },
+        {
+          "word": "bafaxa",
+          "phonemes": "l̪ a f a ʈʂ a"
+        },
+        {
+          "word": "calin",
+          "phonemes": "tʃ a l i n"
+        },
+        {
+          "word": "cazi",
+          "phonemes": "tʃ a θ i"
+        },
+        {
+          "word": "cagvj",
+          "phonemes": "tʃ a ŋ ɘ ʎ"
+        },
+        {
+          "word": "dallun",
+          "phonemes": "θ a ʎ u n"
+        },
+        {
+          "word": "hamuh",
+          "phonemes": "n̪ a m u n̪"
+        },
+        {
+          "word": "ichuna",
+          "phonemes": "i tʃ u n a"
+        },
+        {
+          "word": "kutri",
+          "phonemes": "k u ʈʂ i"
+        },
+        {
+          "word": "kümelekaymi",
+          "phonemes": "k ɘ m e l e k a j m i"
+        },
+        {
+          "word": "mansun",
+          "phonemes": "m a n s u n"
+        },
+        {
+          "word": "nge",
+          "phonemes": "ŋ e"
+        },
+        {
+          "word": "reqle",
+          "phonemes": "ʐ e ɣ l e"
+        },
+        {
+          "word": "kom",
+          "phonemes": "k o m"
+        },
+        {
+          "word": "pu",
+          "phonemes": "p u"
+        },
+        {
+          "word": "kishu",
+          "phonemes": "k i ʃ u"
+        },
+        {
+          "word": "nhi",
+          "phonemes": "n̪ i"
+        },
+        {
+          "word": "malhenh",
+          "phonemes": "m a l̪ e n̪"
+        },
+        {
+          "word": "femmeken",
+          "phonemes": "f e m ː e k e n"
+        },
+        {
+          "word": "diccionario",
+          "phonemes": "θ i tʃ ː i o n a ʐ i o"
+        },
+        {
+          "word": "segredossereia",
+          "phonemes": "s e ŋ ʐ e θ o s ː e ʐ e i a"
+        },
+        {
+          "word": "küzawwe",
+          "phonemes": "k ɘ θ a w ː e"
+        },
+        {
+          "word": "kutt",
+          "phonemes": "k u t ː"
+        },
+        {
+          "word": "mew",
+          "phonemes": "m e w"
+        },
+        {
+          "word": "ta",
+          "phonemes": "t a"
+        },
+        {
+          "word": "ñi",
+          "phonemes": "ɲ i"
+        },
+        {
+          "word": "ka",
+          "phonemes": "k a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aefiklmnopstuw]",
+          "gem": "(p|t̪|t|k|m|n̪|n|ɲ|ŋ|tʃ|ʈʂ|f|θ|s|ʃ|ʐ|ɣ|l̪|l|j|ʎ|w)"
+        },
+        "sub": [
+          {
+            "from": "d",
+            "to": "θ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ŋ",
+            "weight": 2.0
+          },
+          {
+            "from": "ï",
+            "to": "ɘ",
+            "weight": 2.0
+          },
+          {
+            "from": "ḻ",
+            "to": "l̪",
+            "weight": 2.0
+          },
+          {
+            "from": "ṉ",
+            "to": "n̪",
+            "weight": 2.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ʐ",
+            "weight": 2.0
+          },
+          {
+            "from": "ṯ",
+            "to": "t̪",
+            "weight": 2.0
+          },
+          {
+            "from": "ü",
+            "to": "ɘ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ʈʂ",
+            "weight": 3.0,
+            "follow": "r"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "l",
+            "to": "ʎ",
+            "weight": 3.0,
+            "follow": "l"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 3.0,
+            "precede": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ʈʂ",
+            "weight": 2.0
+          },
+          {
+            "from": "t",
+            "to": "ʈʂ",
+            "weight": 3.0,
+            "follow": "x"
+          },
+          {
+            "from": "x",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "z",
+            "to": "θ",
+            "weight": 2.0
+          },
+          {
+            "from": "h",
+            "to": "n̪",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "n̪",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "ɣ",
+            "weight": 2.0
+          },
+          {
+            "from": "b",
+            "to": "l̪",
+            "weight": 2.0
+          },
+          {
+            "from": "l",
+            "to": "l̪",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "j",
+            "to": "ʎ",
+            "weight": 2.0
+          },
+          {
+            "from": "v",
+            "to": "ɘ",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({gem}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

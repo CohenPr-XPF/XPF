@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "code": "mek",
+    "name": "Mekeo",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,Papuan Tip,Peripheral,Central Papuan,West Central Papuan,Nuclear",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "note": "/ʔ/ not always marked"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "inei",
+          "phonemes": "i n e i"
+        },
+        {
+          "word": "kekea",
+          "phonemes": "k e k e a"
+        },
+        {
+          "word": "ova",
+          "phonemes": "o f a"
+        },
+        {
+          "word": "uma",
+          "phonemes": "u m a"
+        },
+        {
+          "word": "kipo",
+          "phonemes": "k i p o"
+        },
+        {
+          "word": "ufala",
+          "phonemes": "u f a l a"
+        },
+        {
+          "word": "laa'i",
+          "phonemes": "l a ː ʔ i"
+        },
+        {
+          "word": "mame'a",
+          "phonemes": "m a m e ʔ a"
+        },
+        {
+          "word": "pitoga",
+          "phonemes": "p i t o ŋ a"
+        },
+        {
+          "word": "fugugu",
+          "phonemes": "f u ŋ u ŋ u"
+        },
+        {
+          "word": "isa",
+          "phonemes": "i s a"
+        },
+        {
+          "word": "eegai",
+          "phonemes": "e ː ŋ a i"
+        },
+        {
+          "word": "iifaga",
+          "phonemes": "i ː f a ŋ a"
+        },
+        {
+          "word": "ooma",
+          "phonemes": "o ː m a"
+        },
+        {
+          "word": "uu'u",
+          "phonemes": "u ː ʔ u"
+        },
+        {
+          "word": "ega",
+          "phonemes": "e ŋ a"
+        },
+        {
+          "word": "ke",
+          "phonemes": "k e"
+        },
+        {
+          "word": "koa",
+          "phonemes": "k o a"
+        },
+        {
+          "word": "au'i",
+          "phonemes": "a u ʔ i"
+        },
+        {
+          "word": "oi",
+          "phonemes": "o i"
+        },
+        {
+          "word": "aisama",
+          "phonemes": "a i s a m a"
+        },
+        {
+          "word": "mo",
+          "phonemes": "m o"
+        },
+        {
+          "word": "kai",
+          "phonemes": "k a i"
+        },
+        {
+          "word": "papiau",
+          "phonemes": "p a p i a u"
+        },
+        {
+          "word": "aga'o",
+          "phonemes": "a ŋ a ʔ o"
+        },
+        {
+          "word": "eoma",
+          "phonemes": "e o m a"
+        },
+        {
+          "word": "lau",
+          "phonemes": "l a u"
+        },
+        {
+          "word": "puo",
+          "phonemes": "p u o"
+        },
+        {
+          "word": "fou",
+          "phonemes": "f o u"
+        },
+        {
+          "word": "ma'oai",
+          "phonemes": "m a ʔ o a i"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aefiklmnopstu]",
+          "apostrophe": "[''‘’]",
+          "vowels": "[aeiou]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ŋ",
+            "weight": 2.0
+          },
+          {
+            "from": "v",
+            "to": "f",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

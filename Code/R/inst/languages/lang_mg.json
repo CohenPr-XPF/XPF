@@ -1,0 +1,342 @@
+{
+  "metadata": {
+    "code": "mg",
+    "name": "Malagasy",
+    "family": "Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Borneo,Barito,East,Malagasy",
+    "macroarea": "Africa",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "nanjakan",
+          "phonemes": "n a ⁿdz a k a n",
+          "comment": "nj goes to /ⁿdz/"
+        },
+        {
+          "word": "jentilisa",
+          "phonemes": "dz e ⁿt̪ i l i s a",
+          "comment": "j goes to /dz/"
+        },
+        {
+          "word": "tsara",
+          "phonemes": "ts a r a",
+          "comment": "ts is an affricate"
+        },
+        {
+          "word": "rehetra",
+          "phonemes": "r e h e tʳ a",
+          "comment": "tr goes to /tʳ/"
+        },
+        {
+          "word": "andro",
+          "phonemes": "a ⁿdʳ u",
+          "comment": "ndr goes to /ⁿdʳ/; o goes to /u/"
+        },
+        {
+          "word": "mahantra",
+          "phonemes": "m a h a ⁿtʳ a",
+          "comment": "ntr goes to /ⁿtʳ/"
+        },
+        {
+          "word": "toradroa",
+          "phonemes": "t̪ u r a dʳ u a",
+          "comment": "dr goes to /dʳ/"
+        },
+        {
+          "word": "mponina",
+          "phonemes": "ᵐp u n i n a",
+          "comment": "mp goes to /ᵐp/"
+        },
+        {
+          "word": "mba",
+          "phonemes": "ᵐb a",
+          "comment": "mb goes to /ᵐb/"
+        },
+        {
+          "word": "manontolo",
+          "phonemes": "m a n u ⁿt̪ u l u",
+          "comment": "nt goes to /ⁿt̪/"
+        },
+        {
+          "word": "nandeha",
+          "phonemes": "n a ⁿd̪ e h a",
+          "comment": "nd goes to /ⁿd̪/"
+        },
+        {
+          "word": "ankehitriny",
+          "phonemes": "a ᵑk e h i tʳ i n i",
+          "comment": "nk goes to /ᵑk/; y goes to /i/"
+        },
+        {
+          "word": "tonga",
+          "phonemes": "t̪ u ᵑɡ a",
+          "comment": "ng goes to /ᵑg/"
+        },
+        {
+          "word": "antsoina",
+          "phonemes": "a ⁿts u i n a"
+        },
+        {
+          "word": "izay",
+          "phonemes": "i z a i"
+        },
+        {
+          "word": "kantoney",
+          "phonemes": "k a ⁿt̪ u n e i"
+        },
+        {
+          "word": "hoy",
+          "phonemes": "h u i"
+        },
+        {
+          "word": "taona",
+          "phonemes": "t̪ a u n a"
+        },
+        {
+          "word": "vahoaka",
+          "phonemes": "v a h u a k a"
+        },
+        {
+          "word": "habakabaka",
+          "phonemes": "h a b a k a b a k a"
+        },
+        {
+          "word": "dia",
+          "phonemes": "d̪ i a"
+        },
+        {
+          "word": "fa",
+          "phonemes": "f a"
+        },
+        {
+          "word": "madagasikara",
+          "phonemes": "m a d̪ a ɡ a s i k a r a"
+        },
+        {
+          "word": "ihany",
+          "phonemes": "i h a n i"
+        },
+        {
+          "word": "ilay",
+          "phonemes": "i l a i"
+        },
+        {
+          "word": "kilometatra",
+          "phonemes": "k i l u m e t̪ a tʳ a"
+        },
+        {
+          "word": "politika",
+          "phonemes": "p u l i t̪ i k a"
+        },
+        {
+          "word": "sady",
+          "phonemes": "s a d̪ i"
+        },
+        {
+          "word": "avy",
+          "phonemes": "a v i"
+        },
+        {
+          "word": "zavatra",
+          "phonemes": "z a v a tʳ a"
+        },
+        {
+          "word": "mpanjaka",
+          "phonemes": "ᵐp a ⁿdz a k a"
+        },
+        {
+          "word": "fomba",
+          "phonemes": "f u ᵐb a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abefhiklmnprsvz]",
+          "n-follower": "(t|d|g|k|ts|j)",
+          "bi-stop": "[pb]",
+          "alv": "[td]",
+          "a": "[àáâ]",
+          "e": "[èéê]",
+          "i": "[ìíî]",
+          "o": "[oòó]",
+          "punct": "['ꞌˈ‘’-]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "dz",
+            "weight": 2.0
+          },
+          {
+            "from": "o",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "i",
+            "weight": 2.0,
+            "follow": "$"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 1.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 2.0
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 2.0
+          },
+          {
+            "from": "b",
+            "to": "ᵐb",
+            "weight": 3.0,
+            "precede": "m"
+          },
+          {
+            "from": "p",
+            "to": "ᵐp",
+            "weight": 3.0,
+            "precede": "m"
+          },
+          {
+            "from": "d",
+            "to": "ⁿd̪",
+            "weight": 3.0,
+            "precede": "n"
+          },
+          {
+            "from": "t",
+            "to": "ⁿt̪",
+            "weight": 3.0,
+            "precede": "n"
+          },
+          {
+            "from": "g",
+            "to": "ᵑɡ",
+            "weight": 3.0,
+            "precede": "n"
+          },
+          {
+            "from": "k",
+            "to": "ᵑk",
+            "weight": 3.0,
+            "precede": "n"
+          },
+          {
+            "from": "j",
+            "to": "ⁿdz",
+            "weight": 3.0,
+            "precede": "n"
+          },
+          {
+            "from": "t",
+            "to": "tʳ",
+            "weight": 3.0,
+            "follow": "r"
+          },
+          {
+            "from": "d",
+            "to": "dʳ",
+            "weight": 3.0,
+            "follow": "r"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "m",
+            "to": "",
+            "weight": 3.0,
+            "follow": "{bi-stop}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 3.0,
+            "follow": "{n-follower}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 4.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ⁿtʳ",
+            "weight": 5.0,
+            "precede": "n",
+            "follow": "r"
+          },
+          {
+            "from": "d",
+            "to": "ⁿdʳ",
+            "weight": 5.0,
+            "precede": "n",
+            "follow": "r"
+          },
+          {
+            "from": "t",
+            "to": "ⁿts",
+            "weight": 5.0,
+            "precede": "n",
+            "follow": "s"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{alv}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({a})",
+            "to": "a",
+            "weight": 2.0
+          },
+          {
+            "from": "({e})",
+            "to": "e",
+            "weight": 2.0
+          },
+          {
+            "from": "({i})",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "({o})",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 1.0,
+            "comment": "hyphens and apostrophes are use to join compounds; apostrophes are also used to indicate the elision of a vowel"
+          }
+        ]
+      }
+    }
+  }
+}

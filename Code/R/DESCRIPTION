@@ -1,0 +1,43 @@
+Package: xpfcorpus
+Title: Grapheme-to-Phoneme Transcription with the XPF Corpus Rules
+Version: 0.1.0
+Authors@R: c(
+    person("Uriel", "Cohen Priva", email = "uriel_cohen_priva@brown.edu",
+           role = c("aut", "cre", "cph")),
+    person("Emily", "Strand", role = "ctb", comment = "XPF corpus rules"),
+    person("Shiying", "Yang", role = "ctb", comment = "XPF corpus rules"),
+    person("William", "Mizgerd", role = "ctb", comment = "XPF corpus rules"),
+    person("Abigail", "Creighton", role = "ctb", comment = "XPF corpus rules"),
+    person("Justin", "Bai", role = "ctb", comment = "XPF corpus rules"),
+    person("Rebecca", "Mathew", role = "ctb", comment = "XPF corpus rules"),
+    person("Allison", "Shao", role = "ctb", comment = "XPF corpus rules"),
+    person("Jordan", "Schuster", role = "ctb", comment = "XPF corpus rules"),
+    person("Daniela", "Wiepert", role = "ctb", comment = "XPF corpus rules")
+    )
+Description: Converts written words into sequences of International
+    Phonetic Alphabet phonemes for about 200 languages, using the
+    spelling-to-sound rules of the Cross-linguistic Phonological Frequencies
+    (XPF) corpus, Cohen Priva et al. (2021)
+    <https://cohenpr-xpf.github.io/XPF/manual/xpf_manual.pdf>. The rules and
+    the 'JavaScript' rule engine are bundled and run through 'V8', so no
+    other software is needed. Each language comes with verification words
+    that check its rules, and rules of your own can be loaded from 'JSON',
+    'YAML' or legacy XPF files.
+License: MIT + file LICENSE
+URL: https://cohenpr-xpf.github.io/XPF/, https://github.com/CohenPr-XPF/XPF
+BugReports: https://github.com/CohenPr-XPF/XPF/issues
+Depends:
+    R (>= 4.1.0)
+Imports:
+    jsonlite,
+    tools,
+    utils,
+    V8
+Suggests:
+    testthat (>= 3.0.0),
+    yaml
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.1.0

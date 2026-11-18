@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "code": "aia",
+    "name": "Arosi",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Central-Eastern Oceanic,Southeast Solomonic,Malaita-San Cristobal,San Cristobal",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "niu",
+          "phonemes": "n i u"
+        },
+        {
+          "word": "urao",
+          "phonemes": "u ɾ a o"
+        },
+        {
+          "word": "igaraa",
+          "phonemes": "i ɡ a ɾ a ː"
+        },
+        {
+          "word": "totori",
+          "phonemes": "t o t o ɾ i"
+        },
+        {
+          "word": "hai",
+          "phonemes": "h a i"
+        },
+        {
+          "word": "rima",
+          "phonemes": "ɾ i m a"
+        },
+        {
+          "word": "waioa",
+          "phonemes": "w a i o a"
+        },
+        {
+          "word": "tahanga",
+          "phonemes": "t a h a ŋ a"
+        },
+        {
+          "word": "nahomera",
+          "phonemes": "n a h o m e ɾ a"
+        },
+        {
+          "word": "abe",
+          "phonemes": "a b e"
+        },
+        {
+          "word": "mwani",
+          "phonemes": "mʷ a n i"
+        },
+        {
+          "word": "ro'u",
+          "phonemes": "ɾ o ʔ u"
+        },
+        {
+          "word": "bwaa",
+          "phonemes": "bʷ a ː"
+        },
+        {
+          "word": "pwapwaariꞌi",
+          "phonemes": "pʷ a pʷ a ː ɾ i ʔ i"
+        },
+        {
+          "word": "do",
+          "phonemes": "d o"
+        },
+        {
+          "word": "hako",
+          "phonemes": "h a k o"
+        },
+        {
+          "word": "siip",
+          "phonemes": "s i ː p"
+        },
+        {
+          "word": "haꞌatee",
+          "phonemes": "h a ʔ a t e ː"
+        },
+        {
+          "word": "amoou",
+          "phonemes": "a m o ː u"
+        },
+        {
+          "word": "huunai",
+          "phonemes": "h u ː n a i"
+        },
+        {
+          "word": "oꞌani",
+          "phonemes": "o ʔ a n i"
+        },
+        {
+          "word": "ra",
+          "phonemes": "ɾ a"
+        },
+        {
+          "word": "ꞌia",
+          "phonemes": "ʔ i a"
+        },
+        {
+          "word": "roꞌu",
+          "phonemes": "ɾ o ʔ u"
+        },
+        {
+          "word": "ꞌinia",
+          "phonemes": "ʔ i n i a"
+        },
+        {
+          "word": "rau",
+          "phonemes": "ɾ a u"
+        },
+        {
+          "word": "nei",
+          "phonemes": "n e i"
+        },
+        {
+          "word": "mana",
+          "phonemes": "m a n a"
+        },
+        {
+          "word": "moi",
+          "phonemes": "m o i"
+        },
+        {
+          "word": "ꞌoha",
+          "phonemes": "ʔ o h a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdehikmnopstuw]",
+          "apostrophe": "['ꞌ‘’]",
+          "w-preceder": "[pbm]",
+          "vowels": "[aeiou]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "p",
+            "to": "pʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "b",
+            "to": "bʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "m",
+            "to": "mʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{w-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

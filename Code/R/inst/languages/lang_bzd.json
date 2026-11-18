@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "code": "bzd",
+    "name": "Bribri",
+    "family": "Chibchan,Talamanca",
+    "macroarea": "North America",
+    "compromised": {
+      "note": "phonetic orthography"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "tso'",
+          "phonemes": "ts ɔ ˨ ʔ",
+          "comment": "ts; o; apostrophe"
+        },
+        {
+          "word": "buaë",
+          "phonemes": "b u ˨ a ˨ ɪ ˨",
+          "comment": "b; u; a; ë"
+        },
+        {
+          "word": "dör",
+          "phonemes": "d ʊ ˨ d",
+          "comment": "d; ö; r"
+        },
+        {
+          "word": "kë",
+          "phonemes": "k ɪ ˨",
+          "comment": "k; ë"
+        },
+        {
+          "word": "ieꞌpa",
+          "phonemes": "i ˨ ɛ ˨ ʔ p a ˨",
+          "comment": "i; e; '; p"
+        },
+        {
+          "word": "es",
+          "phonemes": "ɛ ˨ s",
+          "comment": "s"
+        },
+        {
+          "word": "ta̱",
+          "phonemes": "t ã ˨",
+          "comment": "t; a̱"
+        },
+        {
+          "word": "judiowak",
+          "phonemes": "x u ˨ d i ˨ ɔ ˨ u a ˨ k",
+          "comment": "j; w"
+        },
+        {
+          "word": "sulu",
+          "phonemes": "s u ˨ ɭ u ˨",
+          "comment": "l"
+        },
+        {
+          "word": "mik",
+          "phonemes": "b i ˨ k",
+          "comment": "m"
+        },
+        {
+          "word": "ena",
+          "phonemes": "ɛ ˨ d a ˨",
+          "comment": "n"
+        },
+        {
+          "word": "ñies",
+          "phonemes": "dʒ i ˨ ɛ ˨ s",
+          "comment": "ñ"
+        },
+        {
+          "word": "yeꞌ",
+          "phonemes": "dʒ ɛ ˨ ʔ",
+          "comment": "y"
+        },
+        {
+          "word": "iché",
+          "phonemes": "i ˨ tʃ ɛ ˥˩",
+          "comment": "ch; é"
+        },
+        {
+          "word": "ñippökwakpa",
+          "phonemes": "dʒ i ˨ p ː ʊ ˨ k u a ˨ k p a ˨",
+          "comment": "pp"
+        },
+        {
+          "word": "burro",
+          "phonemes": "b u ˨ r ɔ ˨",
+          "comment": "rr"
+        },
+        {
+          "word": "shu̱a̱",
+          "phonemes": "ʃ ũ ˨ ã ˨",
+          "comment": "sh; u̱"
+        },
+        {
+          "word": "se̱tcha",
+          "phonemes": "s ɛ̃ ˨ tʃ ː a ˨",
+          "comment": "e̱; tch"
+        },
+        {
+          "word": "ttè",
+          "phonemes": "t ː ɛ ˦",
+          "comment": "tt; è"
+        },
+        {
+          "word": "tka",
+          "phonemes": "tk a ˨",
+          "comment": "tk"
+        },
+        {
+          "word": "ttsé",
+          "phonemes": "ts ː ɛ ˥˩",
+          "comment": "tts"
+        },
+        {
+          "word": "wák",
+          "phonemes": "u a ˥˩ k",
+          "comment": "á"
+        },
+        {
+          "word": "ká̱",
+          "phonemes": "k ã ˥˩",
+          "comment": "á̱"
+        },
+        {
+          "word": "bë́",
+          "phonemes": "b ɪ ˥˩",
+          "comment": "ë́"
+        },
+        {
+          "word": "íyi",
+          "phonemes": "i ˥˩ dʒ i ˨",
+          "comment": "í"
+        },
+        {
+          "word": "itóttola",
+          "phonemes": "i ˨ t ɔ ˥˩ t ː ɔ ˨ ɭ a ˨",
+          "comment": "ó"
+        },
+        {
+          "word": "chö́",
+          "phonemes": "tʃ ʊ ˥˩",
+          "comment": "ö́"
+        },
+        {
+          "word": "mú",
+          "phonemes": "b u ˥˩",
+          "comment": "ú"
+        },
+        {
+          "word": "é̱na",
+          "phonemes": "ɛ̃ ˥˩ d a ˨",
+          "comment": "é̱"
+        },
+        {
+          "word": "kí̱",
+          "phonemes": "k ĩ ˥˩",
+          "comment": "í̱"
+        },
+        {
+          "word": "isho̱ló̱",
+          "phonemes": "i ˨ ʃ ɔ̃ ˨ ɭ ɔ̃ ˥˩",
+          "comment": "o̱; ó̱"
+        },
+        {
+          "word": "sa̱ú̱",
+          "phonemes": "s ã ˨ ũ ˥˩",
+          "comment": "ú̱"
+        },
+        {
+          "word": "wà",
+          "phonemes": "u a ˦",
+          "comment": "à"
+        },
+        {
+          "word": "kë̀",
+          "phonemes": "k ɪ ˦",
+          "comment": "ë̀"
+        },
+        {
+          "word": "ñì",
+          "phonemes": "dʒ i ˦",
+          "comment": "ì"
+        },
+        {
+          "word": "kanò",
+          "phonemes": "k a ˨ d ɔ ˦",
+          "comment": "ò; the nasalized version of this grapheme is not present in Crubadan"
+        },
+        {
+          "word": "ttö̀",
+          "phonemes": "t ː ʊ ˦",
+          "comment": "ö̀"
+        },
+        {
+          "word": "mù",
+          "phonemes": "b u ˦",
+          "comment": "ù"
+        },
+        {
+          "word": "sù̱",
+          "phonemes": "s ũ ˦",
+          "comment": "ù̱"
+        },
+        {
+          "word": "tsà̱",
+          "phonemes": "ts ã ˦",
+          "comment": "à̱"
+        },
+        {
+          "word": "wè̱",
+          "phonemes": "u ɛ̃ ˦",
+          "comment": "è̱"
+        },
+        {
+          "word": "nuì̱",
+          "phonemes": "d u ˨ ĩ ˦"
+        },
+        {
+          "word": "ki̱",
+          "phonemes": "k ĩ ˨",
+          "comment": "i̱"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[bdkpst]",
+          "apostrophe": "[''‘’ꞌ]",
+          "aiu_vowels": "[aiu]",
+          "falling_tone_vowels": "[áéíóú]",
+          "high_tone_vowels": "[àèìòù]",
+          "low_tone_vowels": "[aeiou]",
+          "accented_vowels": "[ëö]"
+        },
+        "sub": [
+          {
+            "from": "j",
+            "to": "x",
+            "weight": 2.0
+          },
+          {
+            "from": "l",
+            "to": "ɭ",
+            "weight": 2.0
+          },
+          {
+            "from": "m",
+            "to": "b",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "d",
+            "weight": 2.0
+          },
+          {
+            "from": "ñ",
+            "to": "dʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "d",
+            "weight": 2.0
+          },
+          {
+            "from": "w",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "dʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "p",
+            "to": "p ː",
+            "weight": 3.0,
+            "follow": "p"
+          },
+          {
+            "from": "p",
+            "to": "",
+            "weight": 3.0,
+            "precede": "p",
+            "comment": "clean-up"
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 3.0,
+            "follow": "r"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 3.0,
+            "precede": "r",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tʃ ː",
+            "weight": 4.0,
+            "follow": "ch"
+          },
+          {
+            "from": "c",
+            "to": "",
+            "weight": 4.0,
+            "precede": "t",
+            "follow": "h",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "t ː",
+            "weight": 3.0,
+            "follow": "t"
+          },
+          {
+            "from": "t",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tk",
+            "weight": 3.0,
+            "follow": "k"
+          },
+          {
+            "from": "k",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts ː",
+            "weight": 4.0,
+            "follow": "ts"
+          },
+          {
+            "from": "t",
+            "to": "",
+            "weight": 4.0,
+            "precede": "t",
+            "follow": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "á",
+            "to": "a ˥˩",
+            "weight": 3.0
+          },
+          {
+            "from": "é",
+            "to": "ɛ ˥˩",
+            "weight": 3.0
+          },
+          {
+            "from": "ë",
+            "to": "ɪ ˥˩",
+            "weight": 4.0,
+            "follow": "́"
+          },
+          {
+            "from": "í",
+            "to": "i ˥˩",
+            "weight": 3.0
+          },
+          {
+            "from": "ó",
+            "to": "ɔ ˥˩",
+            "weight": 3.0
+          },
+          {
+            "from": "ö",
+            "to": "ʊ ˥˩",
+            "weight": 4.0,
+            "follow": "́"
+          },
+          {
+            "from": "ú",
+            "to": "u ˥˩",
+            "weight": 3.0
+          },
+          {
+            "from": "á",
+            "to": "ã ˥˩",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "é",
+            "to": "ɛ̃ ˥˩",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "í",
+            "to": "ĩ ˥˩",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "ó",
+            "to": "ɔ̃ ˥˩",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "ú",
+            "to": "ũ ˥˩",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "̱",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{falling_tone_vowels}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "à",
+            "to": "a ˦",
+            "weight": 3.0
+          },
+          {
+            "from": "è",
+            "to": "ɛ ˦",
+            "weight": 3.0
+          },
+          {
+            "from": "ë",
+            "to": "ɪ ˦",
+            "weight": 4.0,
+            "follow": "̀"
+          },
+          {
+            "from": "ì",
+            "to": "i ˦",
+            "weight": 3.0
+          },
+          {
+            "from": "ò",
+            "to": "ɔ ˦",
+            "weight": 3.0
+          },
+          {
+            "from": "ö",
+            "to": "ʊ ˦",
+            "weight": 4.0,
+            "follow": "̀"
+          },
+          {
+            "from": "ù",
+            "to": "u ˦",
+            "weight": 3.0
+          },
+          {
+            "from": "à",
+            "to": "ã ˦",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "è",
+            "to": "ɛ̃ ˦",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "ì",
+            "to": "ĩ ˦",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "ò",
+            "to": "ɔ̃ ˦",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "ù",
+            "to": "ũ ˦",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "́",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{accented_vowels}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "̀",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{accented_vowels}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "̱",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{high_tone_vowels}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({aiu_vowels})",
+            "to": "\\1 ˨",
+            "weight": 2.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ ˨",
+            "weight": 3.0
+          },
+          {
+            "from": "ë",
+            "to": "ɪ ˨",
+            "weight": 3.0
+          },
+          {
+            "from": "o",
+            "to": "ɔ ˨",
+            "weight": 3.0
+          },
+          {
+            "from": "ö",
+            "to": "ʊ ˨",
+            "weight": 3.0
+          },
+          {
+            "from": "a",
+            "to": "ã ˨",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "e",
+            "to": "ɛ̃ ˨",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "i",
+            "to": "ĩ ˨",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "o",
+            "to": "ɔ̃ ˨",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "u",
+            "to": "ũ ˨",
+            "weight": 4.0,
+            "follow": "̱"
+          },
+          {
+            "from": "̱",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{low_tone_vowels}",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "code": "roo",
+    "name": "Rotokas",
+    "family": "East Papuan,Bougainville,West,Rotokas",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "agara",
+          "phonemes": "a ɡ a ɾ a",
+          "comment": "a"
+        },
+        {
+          "word": "aapaapau",
+          "phonemes": "a ː p a ː p a u",
+          "comment": "aa"
+        },
+        {
+          "word": "eakerea",
+          "phonemes": "e a k e ɾ e a",
+          "comment": "e"
+        },
+        {
+          "word": "eeko",
+          "phonemes": "e ː k o",
+          "comment": "ee"
+        },
+        {
+          "word": "gigisa",
+          "phonemes": "ɡ i ɡ i t a",
+          "comment": "g"
+        },
+        {
+          "word": "iarei",
+          "phonemes": "i a ɾ e i",
+          "comment": "i"
+        },
+        {
+          "word": "iirui",
+          "phonemes": "i ː ɾ u i",
+          "comment": "ii"
+        },
+        {
+          "word": "kakiaki",
+          "phonemes": "k a k i a k i",
+          "comment": "k"
+        },
+        {
+          "word": "oaraoto",
+          "phonemes": "o a ɾ a o t o",
+          "comment": "o"
+        },
+        {
+          "word": "ooro",
+          "phonemes": "o ː ɾ o",
+          "comment": "oo"
+        },
+        {
+          "word": "piaopa",
+          "phonemes": "p i a o p a",
+          "comment": "p"
+        },
+        {
+          "word": "reroaro",
+          "phonemes": "ɾ e ɾ o a ɾ o",
+          "comment": "r"
+        },
+        {
+          "word": "sisevi",
+          "phonemes": "t i t e β i",
+          "comment": "s"
+        },
+        {
+          "word": "tavete",
+          "phonemes": "t a β e t e",
+          "comment": "t"
+        },
+        {
+          "word": "ururau",
+          "phonemes": "u ɾ u ɾ a u",
+          "comment": "u"
+        },
+        {
+          "word": "uureo",
+          "phonemes": "u ː ɾ e o",
+          "comment": "uu"
+        },
+        {
+          "word": "vavuvira",
+          "phonemes": "β a β u β i ɾ a",
+          "comment": "v"
+        },
+        {
+          "word": "vo",
+          "phonemes": "β o"
+        },
+        {
+          "word": "iava",
+          "phonemes": "i a β a"
+        },
+        {
+          "word": "oiso",
+          "phonemes": "o i t o"
+        },
+        {
+          "word": "rutu",
+          "phonemes": "ɾ u t u"
+        },
+        {
+          "word": "ora",
+          "phonemes": "o ɾ a"
+        },
+        {
+          "word": "rera",
+          "phonemes": "ɾ e ɾ a"
+        },
+        {
+          "word": "osa",
+          "phonemes": "o t a"
+        },
+        {
+          "word": "irara",
+          "phonemes": "i ɾ a ɾ a"
+        },
+        {
+          "word": "viapau",
+          "phonemes": "β i a p a u"
+        },
+        {
+          "word": "vao",
+          "phonemes": "β a o"
+        },
+        {
+          "word": "voea",
+          "phonemes": "β o e a"
+        },
+        {
+          "word": "ita",
+          "phonemes": "i t a"
+        },
+        {
+          "word": "visii",
+          "phonemes": "β i t i ː"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "vowel": "[aeiou]",
+          "passthrough": "[aeikoptu]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "s",
+            "to": "t",
+            "weight": 4.0
+          },
+          {
+            "from": "v",
+            "to": "β",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "some words have a hyphen with no phonetic value"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowel}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0,
+            "comment": "vowel lengthening"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "code": "tpp",
+    "name": "Pisaflores Tepehua",
+    "family": "Totonacan,Tepehua",
+    "macroarea": "North America",
+    "compromised": {
+      "note": "suspect marking of vowel length"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "nipxi",
+          "phonemes": "n i p ɕ i"
+        },
+        {
+          "word": "t'akt'a",
+          "phonemes": "tʼ a k tʼ a"
+        },
+        {
+          "word": "ts'alukunun",
+          "phonemes": "tsʼ a l u k u n u n"
+        },
+        {
+          "word": "malhkuyu'",
+          "phonemes": "m a ɬ k u j u ʔ"
+        },
+        {
+          "word": "ja'alhna'xi",
+          "phonemes": "h a ʔ a ɬ n a ʔ ɕ i"
+        },
+        {
+          "word": "chawaway",
+          "phonemes": "tɕ a w a w a j"
+        },
+        {
+          "word": "chun",
+          "phonemes": "tɕ u n"
+        },
+        {
+          "word": "ts'o'otoj",
+          "phonemes": "tsʼ o ʔ o t o h"
+        },
+        {
+          "word": "sasan",
+          "phonemes": "s a s a n"
+        },
+        {
+          "word": "tank'axa",
+          "phonemes": "t a n kʼ a ɕ a"
+        },
+        {
+          "word": "ch'uch'u",
+          "phonemes": "tɕʼ u tɕʼ u"
+        },
+        {
+          "word": "stapu'alat",
+          "phonemes": "s t a p u ʔ a l a t"
+        },
+        {
+          "word": "aay",
+          "phonemes": "a ː j"
+        },
+        {
+          "word": "panch'e'ex",
+          "phonemes": "p a n tɕʼ e ʔ e ɕ"
+        },
+        {
+          "word": "lhamap'a'sin",
+          "phonemes": "ɬ a m a pʼ a ʔ s i n"
+        },
+        {
+          "word": "jatsukunti",
+          "phonemes": "h a ts u k u n t i"
+        },
+        {
+          "word": "xtaalhii'ayxto'nuncha",
+          "phonemes": "ɕ t a ː ɬ i ː ʔ a j ɕ t o ʔ n u n tɕ a"
+        },
+        {
+          "word": "lakaapuuts'isnicha",
+          "phonemes": "l a k a ː p u ː tsʼ i s n i tɕ a"
+        },
+        {
+          "word": "jantu",
+          "phonemes": "h a n t u"
+        },
+        {
+          "word": "laka",
+          "phonemes": "l a k a"
+        },
+        {
+          "word": "tu'u",
+          "phonemes": "t u ʔ u"
+        },
+        {
+          "word": "lapanakni",
+          "phonemes": "l a p a n a k n i"
+        },
+        {
+          "word": "lay",
+          "phonemes": "l a j"
+        },
+        {
+          "word": "wachu",
+          "phonemes": "w a tɕ u"
+        },
+        {
+          "word": "xamati",
+          "phonemes": "ɕ a m a t i"
+        },
+        {
+          "word": "uxitnan",
+          "phonemes": "u ɕ i t n a n"
+        },
+        {
+          "word": "yu'uncha",
+          "phonemes": "j u ʔ u n tɕ a"
+        },
+        {
+          "word": "chuncha",
+          "phonemes": "tɕ u n tɕ a"
+        },
+        {
+          "word": "masi",
+          "phonemes": "m a s i"
+        },
+        {
+          "word": "tanlhun",
+          "phonemes": "t a n ɬ u n"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeiklmnopstuw]",
+          "apostrophe": "['ꞌˈ‘’]",
+          "vowels": "[ieaou]",
+          "eject": "(p|k|t|ts|tɕ)",
+          "h-preceder": "[cl]"
+        },
+        "sub": [
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ɕ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tɕ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "l",
+            "to": "ɬ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{h-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({eject}) ʔ",
+            "to": "\\1ʼ",
+            "weight": 2.0
+          },
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

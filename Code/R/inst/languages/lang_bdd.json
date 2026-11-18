@@ -1,0 +1,299 @@
+{
+  "metadata": {
+    "code": "bdd",
+    "name": "Bunama",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,Papuan Tip,Nuclear,North Papuan Mainland-D'Entrecasteaux,Dobu-Duau",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "babaga",
+          "phonemes": "b a b a ɡ a"
+        },
+        {
+          "word": "bwalu",
+          "phonemes": "bʷ a l u"
+        },
+        {
+          "word": "bwa'omatan",
+          "phonemes": "bʷ a ʔ o m a t a n"
+        },
+        {
+          "word": "dana",
+          "phonemes": "d a n a"
+        },
+        {
+          "word": "gimwane",
+          "phonemes": "ɡ i mʷ a n e"
+        },
+        {
+          "word": "losahwasahwa",
+          "phonemes": "l o s a hʷ a s a hʷ a"
+        },
+        {
+          "word": "'ahusu'wa",
+          "phonemes": "ʔ a h u s u ʔʷ a"
+        },
+        {
+          "word": "lohegwatu",
+          "phonemes": "l o h e ɡʷ a t u"
+        },
+        {
+          "word": "pwatana",
+          "phonemes": "pʷ a t a n a"
+        },
+        {
+          "word": "sani",
+          "phonemes": "s a n i"
+        },
+        {
+          "word": "tohekalesiyao",
+          "phonemes": "t o h e k a l e s i j a o"
+        },
+        {
+          "word": "paihowa",
+          "phonemes": "p a i h o w a"
+        },
+        {
+          "word": "'itahesahe",
+          "phonemes": "ʔ i t a h e s a h e"
+        },
+        {
+          "word": "'iwa",
+          "phonemes": "ʔ i w a"
+        },
+        {
+          "word": "kihi",
+          "phonemes": "k i h i"
+        },
+        {
+          "word": "kululu",
+          "phonemes": "k u l u l u"
+        },
+        {
+          "word": "hwata",
+          "phonemes": "hʷ a t a"
+        },
+        {
+          "word": "nabu'a",
+          "phonemes": "n a b u ʔ a"
+        },
+        {
+          "word": "nage",
+          "phonemes": "n a ɡ e"
+        },
+        {
+          "word": "nima",
+          "phonemes": "n i m a"
+        },
+        {
+          "word": "nimagui",
+          "phonemes": "n i m a ɡ u i"
+        },
+        {
+          "word": "gadowa",
+          "phonemes": "ɡ a d o w a"
+        },
+        {
+          "word": "gegela",
+          "phonemes": "ɡ e ɡ e l a"
+        },
+        {
+          "word": "geya",
+          "phonemes": "ɡ e j a"
+        },
+        {
+          "word": "geya'abwa",
+          "phonemes": "ɡ e j a ʔ a bʷ a"
+        },
+        {
+          "word": "gimwasabu",
+          "phonemes": "ɡ i mʷ a s a b u"
+        },
+        {
+          "word": "gita'i",
+          "phonemes": "ɡ i t a ʔ i"
+        },
+        {
+          "word": "gitoho",
+          "phonemes": "ɡ i t o h o"
+        },
+        {
+          "word": "mala'u'u",
+          "phonemes": "m a l a ʔ u ʔ u"
+        },
+        {
+          "word": "manasama",
+          "phonemes": "m a n a s a m a"
+        },
+        {
+          "word": "mane",
+          "phonemes": "m a n e"
+        },
+        {
+          "word": "me",
+          "phonemes": "m e"
+        },
+        {
+          "word": "mayale",
+          "phonemes": "m a j a l e"
+        },
+        {
+          "word": "labiya",
+          "phonemes": "l a b i j a"
+        },
+        {
+          "word": "lagahe",
+          "phonemes": "l a ɡ a h e"
+        },
+        {
+          "word": "laba",
+          "phonemes": "l a b a"
+        },
+        {
+          "word": "libe",
+          "phonemes": "l i b e"
+        },
+        {
+          "word": "liga",
+          "phonemes": "l i ɡ a"
+        },
+        {
+          "word": "ligeya",
+          "phonemes": "l i ɡ e j a"
+        },
+        {
+          "word": "pa'i",
+          "phonemes": "p a ʔ i"
+        },
+        {
+          "word": "papa",
+          "phonemes": "p a p a"
+        },
+        {
+          "word": "pasa",
+          "phonemes": "p a s a"
+        },
+        {
+          "word": "piyoi",
+          "phonemes": "p i j o i"
+        },
+        {
+          "word": "pou",
+          "phonemes": "p o u"
+        },
+        {
+          "word": "pulina",
+          "phonemes": "p u l i n a"
+        },
+        {
+          "word": "sada",
+          "phonemes": "s a d a"
+        },
+        {
+          "word": "sapaila",
+          "phonemes": "s a p a i l a"
+        },
+        {
+          "word": "sasasaina",
+          "phonemes": "s a s a s a i n a"
+        },
+        {
+          "word": "seliseli",
+          "phonemes": "s e l i s e l i"
+        },
+        {
+          "word": "sesebwaini",
+          "phonemes": "s e s e bʷ a i n i"
+        },
+        {
+          "word": "Ciwa",
+          "phonemes": "ʔ i w a",
+          "comment": "using uppercase form of <'iwa>"
+        },
+        {
+          "word": "CAHUSUCWA",
+          "phonemes": "ʔ a h u s u ʔʷ a",
+          "comment": "using uppercase form of <'ahusu'wa>"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdehiklmnopstuw]",
+          "apostrophe": "[''‘’]",
+          "labialized": "[bhmp]"
+        },
+        "pre": [
+          {
+            "from": "C",
+            "to": "'"
+          }
+        ],
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 1.0
+          },
+          {
+            "from": "({labialized})",
+            "to": "\\1ʷ",
+            "weight": 5.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 4.0,
+            "precede": "{labialized}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ɡʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 3.0,
+            "precede": "g",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{apostrophe}",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

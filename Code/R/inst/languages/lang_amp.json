@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "code": "amp",
+    "name": "Alamblak",
+    "family": "Sepik-Ramu,Sepik,Sepik Hill,Alamblak",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "sounds": "ɘ|o"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "nhai",
+          "phonemes": "n h a i",
+          "comment": "<a>"
+        },
+        {
+          "word": "bi",
+          "phonemes": "b i",
+          "comment": "<b>"
+        },
+        {
+          "word": "duka",
+          "phonemes": "d u k a",
+          "comment": "<d>"
+        },
+        {
+          "word": "be",
+          "phonemes": "b e",
+          "comment": "<e>"
+        },
+        {
+          "word": "tfit",
+          "phonemes": "t ɸ i t",
+          "comment": "<f>"
+        },
+        {
+          "word": "hingrneft",
+          "phonemes": "h i n ɡ ɾ n e ɸ t",
+          "comment": "<g>"
+        },
+        {
+          "word": "toh",
+          "phonemes": "t o h",
+          "comment": "<h>"
+        },
+        {
+          "word": "yima",
+          "phonemes": "j i m a",
+          "comment": "<i>"
+        },
+        {
+          "word": "inji",
+          "phonemes": "i n dʒ i",
+          "comment": "<j>"
+        },
+        {
+          "word": "kfo",
+          "phonemes": "k ɸ o",
+          "comment": "<k>"
+        },
+        {
+          "word": "wom",
+          "phonemes": "w o m",
+          "comment": "<m>"
+        },
+        {
+          "word": "na",
+          "phonemes": "n a",
+          "comment": "<n>"
+        },
+        {
+          "word": "mrokfot",
+          "phonemes": "m ɾ o k ɸ o t",
+          "comment": "<o>"
+        },
+        {
+          "word": "rpat",
+          "phonemes": "ɾ p a t",
+          "comment": "<p>"
+        },
+        {
+          "word": "bro",
+          "phonemes": "b ɾ o",
+          "comment": "<r>"
+        },
+        {
+          "word": "fasoh",
+          "phonemes": "ɸ a s o h",
+          "comment": "<s>"
+        },
+        {
+          "word": "tu",
+          "phonemes": "t u",
+          "comment": "<t>"
+        },
+        {
+          "word": "yuhat",
+          "phonemes": "j u h a t",
+          "comment": "<u>"
+        },
+        {
+          "word": "wanyhato",
+          "phonemes": "w a ɲ h a t o",
+          "comment": "<w>"
+        },
+        {
+          "word": "yak",
+          "phonemes": "j a k",
+          "comment": "<y>"
+        },
+        {
+          "word": "hanyhato",
+          "phonemes": "h a ɲ h a t o",
+          "comment": "<ny>"
+        },
+        {
+          "word": "afo",
+          "phonemes": "a ɸ o"
+        },
+        {
+          "word": "yuhum",
+          "phonemes": "j u h u m"
+        },
+        {
+          "word": "finji",
+          "phonemes": "ɸ i n dʒ i"
+        },
+        {
+          "word": "hik",
+          "phonemes": "h i k"
+        },
+        {
+          "word": "turhu",
+          "phonemes": "t u ɾ h u"
+        },
+        {
+          "word": "memom",
+          "phonemes": "m e m o m"
+        },
+        {
+          "word": "yiha",
+          "phonemes": "j i h a"
+        },
+        {
+          "word": "rim",
+          "phonemes": "ɾ i m"
+        },
+        {
+          "word": "hingrna",
+          "phonemes": "h i n ɡ ɾ n a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdehikmnopstuw]",
+          "punct": "['ꞌ‘’-]"
+        },
+        "sub": [
+          {
+            "from": "f",
+            "to": "ɸ",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "dʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 2.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

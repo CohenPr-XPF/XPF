@@ -1,0 +1,247 @@
+{
+  "metadata": {
+    "code": "pio",
+    "name": "Piapoco",
+    "family": "Arawakan,Maipuran,Northern Maipuran,Inland",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "àlawàta",
+          "phonemes": "a ˨ l a w a ˨ t a"
+        },
+        {
+          "word": "báawaca",
+          "phonemes": "b a ː ˦ w a k a"
+        },
+        {
+          "word": "bachínamáiwaca",
+          "phonemes": "b a ts i ˦ n a m a ˦ i w a k a"
+        },
+        {
+          "word": "batalísa",
+          "phonemes": "b a t a l i ˦ s a"
+        },
+        {
+          "word": "cài",
+          "phonemes": "k a ˨ i"
+        },
+        {
+          "word": "chènunibàa",
+          "phonemes": "ts e ˨ n u n i b a ː ˨"
+        },
+        {
+          "word": "dèewia",
+          "phonemes": "d e ː ˨ w i a"
+        },
+        {
+          "word": "erìba",
+          "phonemes": "e ɾ i ˨ b a"
+        },
+        {
+          "word": "íideca",
+          "phonemes": "i ː ˦ d e k a"
+        },
+        {
+          "word": "jíiri",
+          "phonemes": "h i ː ˦ ɾ i"
+        },
+        {
+          "word": "luélué",
+          "phonemes": "l u e ˦ l u e ˦"
+        },
+        {
+          "word": "quéesi",
+          "phonemes": "k e ː ˦ s i"
+        },
+        {
+          "word": "ituíyáapi",
+          "phonemes": "i t u i ˦ j a ː ˦ p i"
+        },
+        {
+          "word": "iyú",
+          "phonemes": "i j u ˦"
+        },
+        {
+          "word": "yùuwichàacáisi",
+          "phonemes": "j u ː ˨ w i ts a ː ˨ k a ˦ i s i"
+        },
+        {
+          "word": "íimaca",
+          "phonemes": "i ː ˦ m a k a"
+        },
+        {
+          "word": "wenàiwica",
+          "phonemes": "w e n a ˨ i w i k a"
+        },
+        {
+          "word": "íicha",
+          "phonemes": "i ː ˦ ts a"
+        },
+        {
+          "word": "irí",
+          "phonemes": "i ɾ i ˦"
+        },
+        {
+          "word": "ìwali",
+          "phonemes": "i ˨ w a l i"
+        },
+        {
+          "word": "càide",
+          "phonemes": "k a ˨ i d e"
+        },
+        {
+          "word": "yá",
+          "phonemes": "j a ˦"
+        },
+        {
+          "word": "yàasu",
+          "phonemes": "j a ː ˨ s u"
+        },
+        {
+          "word": "itàacái",
+          "phonemes": "i t a ː ˨ k a ˦ i"
+        },
+        {
+          "word": "nía",
+          "phonemes": "n i ˦ a"
+        },
+        {
+          "word": "pía",
+          "phonemes": "p i ˦ a"
+        },
+        {
+          "word": "èeri",
+          "phonemes": "e ː ˨ ɾ i"
+        },
+        {
+          "word": "wía",
+          "phonemes": "w i ˦ a"
+        },
+        {
+          "word": "áibanái",
+          "phonemes": "a ˦ i b a n a ˦ i"
+        },
+        {
+          "word": "tàacáisi",
+          "phonemes": "t a ː ˨ k a ˦ i s i"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeilmnpstuw]",
+          "vowel": "[aeiu]",
+          "tone": "(˦|˨)"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "comment": "clean-up"
+          },
+          {
+            "from": "á",
+            "to": "a ˦",
+            "weight": 2.0
+          },
+          {
+            "from": "é",
+            "to": "e ˦",
+            "weight": 2.0
+          },
+          {
+            "from": "í",
+            "to": "i ˦",
+            "weight": 2.0
+          },
+          {
+            "from": "ú",
+            "to": "u ˦",
+            "weight": 2.0
+          },
+          {
+            "from": "à",
+            "to": "a ˨",
+            "weight": 2.0
+          },
+          {
+            "from": "è",
+            "to": "e ˨",
+            "weight": 2.0
+          },
+          {
+            "from": "ì",
+            "to": "i ˨",
+            "weight": 2.0
+          },
+          {
+            "from": "ù",
+            "to": "u ˨",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowel}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          },
+          {
+            "from": "({vowel}) ({tone}) \\1",
+            "to": "\\1 ː \\2",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

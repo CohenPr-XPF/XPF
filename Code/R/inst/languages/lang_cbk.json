@@ -1,0 +1,377 @@
+{
+  "metadata": {
+    "code": "cbk",
+    "name": "Chavacano",
+    "family": "Creole,Spanish based",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ya",
+          "phonemes": "j a",
+          "comment": "<a>"
+        },
+        {
+          "word": "más",
+          "phonemes": "m a s",
+          "comment": "<á>"
+        },
+        {
+          "word": "habla",
+          "phonemes": "a b l a",
+          "comment": "<b>"
+        },
+        {
+          "word": "con",
+          "phonemes": "k o n",
+          "comment": "<c> before non-front vowel"
+        },
+        {
+          "word": "ciudad",
+          "phonemes": "s i u d̪ a d̪",
+          "comment": "<c> before front vowel"
+        },
+        {
+          "word": "mucho",
+          "phonemes": "m u ts o",
+          "comment": "<ch>"
+        },
+        {
+          "word": "dale",
+          "phonemes": "d̪ a l e",
+          "comment": "<d>"
+        },
+        {
+          "word": "el",
+          "phonemes": "e l",
+          "comment": "<e>"
+        },
+        {
+          "word": "también",
+          "phonemes": "t̪ a m b i e n",
+          "comment": "<é>"
+        },
+        {
+          "word": "maga",
+          "phonemes": "m a ɡ a",
+          "comment": "<g> before non-front vowel"
+        },
+        {
+          "word": "región",
+          "phonemes": "ɾ e h i o n",
+          "comment": "<g> before front vowel"
+        },
+        {
+          "word": "hace",
+          "phonemes": "a s e",
+          "comment": "<h>"
+        },
+        {
+          "word": "di",
+          "phonemes": "d̪ i",
+          "comment": "<i>"
+        },
+        {
+          "word": "así",
+          "phonemes": "a s i",
+          "comment": "<í>"
+        },
+        {
+          "word": "junto",
+          "phonemes": "h u n t̪ o",
+          "comment": "<j>"
+        },
+        {
+          "word": "anak",
+          "phonemes": "a n a k",
+          "comment": "<k>"
+        },
+        {
+          "word": "los",
+          "phonemes": "l o s",
+          "comment": "<l>"
+        },
+        {
+          "word": "llega",
+          "phonemes": "ʎ e ɡ a",
+          "comment": "<ll>"
+        },
+        {
+          "word": "como",
+          "phonemes": "k o m o",
+          "comment": "<m>"
+        },
+        {
+          "word": "entre",
+          "phonemes": "e n t̪ ɾ e",
+          "comment": "<n>"
+        },
+        {
+          "word": "lang",
+          "phonemes": "l a ŋ",
+          "comment": "<ng>"
+        },
+        {
+          "word": "años",
+          "phonemes": "a ɲ o s",
+          "comment": "<ñ>"
+        },
+        {
+          "word": "por",
+          "phonemes": "p o ɾ",
+          "comment": "<o>"
+        },
+        {
+          "word": "población",
+          "phonemes": "p o b l a s i o n",
+          "comment": "<ó>"
+        },
+        {
+          "word": "puede",
+          "phonemes": "p u e d̪ e",
+          "comment": "<p>"
+        },
+        {
+          "word": "para",
+          "phonemes": "p a ɾ a",
+          "comment": "<r>"
+        },
+        {
+          "word": "tierra",
+          "phonemes": "t̪ i e ɾ a",
+          "comment": "<rr>"
+        },
+        {
+          "word": "si",
+          "phonemes": "s i",
+          "comment": "<s>"
+        },
+        {
+          "word": "ta",
+          "phonemes": "t̪ a",
+          "comment": "<t>"
+        },
+        {
+          "word": "ustedes",
+          "phonemes": "u s t̪ e d̪ e s",
+          "comment": "<u>"
+        },
+        {
+          "word": "número",
+          "phonemes": "n u m e ɾ o",
+          "comment": "<ú>"
+        },
+        {
+          "word": "weste",
+          "phonemes": "w e s t̪ e",
+          "comment": "<w>"
+        },
+        {
+          "word": "éxito",
+          "phonemes": "e h i t̪ o",
+          "comment": "<x>"
+        },
+        {
+          "word": "yo",
+          "phonemes": "j o",
+          "comment": "<y>"
+        },
+        {
+          "word": "país",
+          "phonemes": "p a i s"
+        },
+        {
+          "word": "causa",
+          "phonemes": "k a u s a"
+        },
+        {
+          "word": "reina",
+          "phonemes": "ɾ e i n a"
+        },
+        {
+          "word": "estoicismo",
+          "phonemes": "e s t̪ o i s i s m o"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abeiklmnopsuw]",
+          "frontv": "[eéií]",
+          "punct": "['-]"
+        },
+        "sub": [
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 2.0,
+            "comment": "accents mark for stress (not accounted for in this project)"
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "s",
+            "weight": 3.0,
+            "follow": "{frontv}"
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 2.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 2.0
+          },
+          {
+            "from": "f",
+            "to": "p",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "h",
+            "weight": 3.0,
+            "follow": "{frontv}"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 2.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 2.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "v",
+            "to": "b",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "z",
+            "to": "s",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "ts",
+            "weight": 4.0,
+            "follow": "h",
+            "comment": "no clean-up rule is needed because <h> is always deleted"
+          },
+          {
+            "from": "l",
+            "to": "ʎ",
+            "weight": 2.0,
+            "follow": "l"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 2.0,
+            "precede": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 3.0,
+            "precede": "r",
+            "comment": "both <r> and <rr> represent /ɾ/"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "u{frontv}"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "follow": "{frontv}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}

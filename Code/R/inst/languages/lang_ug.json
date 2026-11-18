@@ -1,0 +1,341 @@
+{
+  "metadata": {
+    "code": "ug",
+    "name": "Uyghur",
+    "family": "Turkic,Common Turkic,Karluk,Uyghur",
+    "macroarea": "Eurasia",
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "бала",
+          "phonemes": "b ɑ l ɑ",
+          "comment": "ɑ, b"
+        },
+        {
+          "word": "тәрҗимә",
+          "phonemes": "t æ r dʒ i m æ",
+          "comment": "æ"
+        },
+        {
+          "word": "пәмидур",
+          "phonemes": "p æ m i d u r",
+          "comment": "p, d"
+        },
+        {
+          "word": "җумһурийәт",
+          "phonemes": "dʒ u m h u r i j æ t",
+          "comment": "dʒ, m, h"
+        },
+        {
+          "word": "уйғурчә",
+          "phonemes": "u j ɣ u r tʃ æ",
+          "comment": "tʃ"
+        },
+        {
+          "word": "йахши",
+          "phonemes": "j ɑ x ʃ i",
+          "comment": "x"
+        },
+        {
+          "word": "жил",
+          "phonemes": "ʒ i l",
+          "comment": "ʒ"
+        },
+        {
+          "word": "су",
+          "phonemes": "s u",
+          "comment": "s"
+        },
+        {
+          "word": "таш",
+          "phonemes": "t ɑ ʃ",
+          "comment": "t, ʃ"
+        },
+        {
+          "word": "луғәт",
+          "phonemes": "l u ɣ æ t",
+          "comment": "l, ɣ"
+        },
+        {
+          "word": "йанфон",
+          "phonemes": "j ɑ n f o n",
+          "comment": "f, o"
+        },
+        {
+          "word": "қазан",
+          "phonemes": "q ɑ z ɑ n",
+          "comment": "q, z, n"
+        },
+        {
+          "word": "көк",
+          "phonemes": "k ø k",
+          "comment": "k, ø"
+        },
+        {
+          "word": "гугут",
+          "phonemes": "ɡ u ɡ u t",
+          "comment": "ɡ"
+        },
+        {
+          "word": "миң",
+          "phonemes": "m i ŋ",
+          "comment": "ŋ"
+        },
+        {
+          "word": "уйғур",
+          "phonemes": "u j ɣ u r",
+          "comment": "u,j,r"
+        },
+        {
+          "word": "гүңгүрт",
+          "phonemes": "ɡ y ŋ ɡ y r t",
+          "comment": "y"
+        },
+        {
+          "word": "җаваб",
+          "phonemes": "dʒ ɑ w ɑ b",
+          "comment": "w"
+        },
+        {
+          "word": "нефит",
+          "phonemes": "n e f i t",
+          "comment": "e"
+        },
+        {
+          "word": "бир",
+          "phonemes": "b i r",
+          "comment": "i"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "a": "[اа]",
+          "low-e": "[ەә]",
+          "b": "[بб]",
+          "p": "[پп]",
+          "t": "[تт]",
+          "j-affricate": "[جҗ]",
+          "ch": "[چч]",
+          "x": "[خх]",
+          "d": "[دд]",
+          "r": "[رр]",
+          "z": "[زз]",
+          "zh": "[ژж]",
+          "s": "[سс]",
+          "sh": "[شш]",
+          "gh": "[غғ]",
+          "f": "[فф]",
+          "q": "[قқ]",
+          "k": "[كк]",
+          "g": "[گг]",
+          "ng": "[ڭң]",
+          "l": "[لл]",
+          "m": "[مм]",
+          "n": "[نн]",
+          "h": "[ھһ]",
+          "o": "[وо]",
+          "u": "[ۇу]",
+          "e-round": "[ۆө]",
+          "y": "[ۈү]",
+          "w": "[ۋв]",
+          "high-e": "[ېе]",
+          "i": "[ىи]",
+          "j-glide": "[يй]",
+          "vowelmarker": "[ئ]"
+        },
+        "sub": [
+          {
+            "from": "{b}",
+            "to": "b",
+            "weight": 4.0
+          },
+          {
+            "from": "{p}",
+            "to": "p",
+            "weight": 4.0
+          },
+          {
+            "from": "{t}",
+            "to": "t",
+            "weight": 4.0
+          },
+          {
+            "from": "{j-affricate}",
+            "to": "dʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "{ch}",
+            "to": "tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "{x}",
+            "to": "x",
+            "weight": 4.0
+          },
+          {
+            "from": "{d}",
+            "to": "d",
+            "weight": 4.0
+          },
+          {
+            "from": "{r}",
+            "to": "r",
+            "weight": 4.0
+          },
+          {
+            "from": "{z}",
+            "to": "z",
+            "weight": 4.0
+          },
+          {
+            "from": "{zh}",
+            "to": "ʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "{s}",
+            "to": "s",
+            "weight": 4.0
+          },
+          {
+            "from": "{sh}",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "{gh}",
+            "to": "ɣ",
+            "weight": 4.0
+          },
+          {
+            "from": "{f}",
+            "to": "f",
+            "weight": 4.0
+          },
+          {
+            "from": "{q}",
+            "to": "q",
+            "weight": 4.0
+          },
+          {
+            "from": "{k}",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "{g}",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "{ng}",
+            "to": "ŋ",
+            "weight": 4.0
+          },
+          {
+            "from": "{l}",
+            "to": "l",
+            "weight": 4.0
+          },
+          {
+            "from": "{m}",
+            "to": "m",
+            "weight": 4.0
+          },
+          {
+            "from": "{n}",
+            "to": "n",
+            "weight": 4.0
+          },
+          {
+            "from": "{h}",
+            "to": "h",
+            "weight": 4.0
+          },
+          {
+            "from": "{w}",
+            "to": "w",
+            "weight": 4.0
+          },
+          {
+            "from": "{j-glide}",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{vowelmarker}",
+            "to": "",
+            "weight": 2.0
+          },
+          {
+            "from": "{a}",
+            "to": "ɑ",
+            "weight": 4.0
+          },
+          {
+            "from": "{low-e}",
+            "to": "æ",
+            "weight": 4.0
+          },
+          {
+            "from": "{o}",
+            "to": "o",
+            "weight": 4.0
+          },
+          {
+            "from": "{u}",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "{e-round}",
+            "to": "ø",
+            "weight": 4.0
+          },
+          {
+            "from": "{y}",
+            "to": "y",
+            "weight": 4.0
+          },
+          {
+            "from": "{high-e}",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "{i}",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "ю",
+            "to": "j u",
+            "weight": 4.0
+          },
+          {
+            "from": "я",
+            "to": "j ɑ",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0,
+            "comment": "hyphens have no phonemic value"
+          },
+          {
+            "from": "،",
+            "to": "",
+            "weight": 2.0,
+            "comment": "this character is punctuation and adds no phonemic value"
+          }
+        ]
+      }
+    }
+  }
+}

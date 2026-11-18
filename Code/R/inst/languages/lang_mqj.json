@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "code": "mqj",
+    "name": "Mamasa",
+    "family": "Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Sulawesi,South Sulawesi,Northern,Toraja-Sa'dan",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "baine",
+          "phonemes": "b a i n e"
+        },
+        {
+          "word": "wai",
+          "phonemes": "w a i"
+        },
+        {
+          "word": "iko",
+          "phonemes": "i k o"
+        },
+        {
+          "word": "unnali",
+          "phonemes": "u n ː a l i"
+        },
+        {
+          "word": "uulu",
+          "phonemes": "u u l u"
+        },
+        {
+          "word": "dassi",
+          "phonemes": "d a s ː i"
+        },
+        {
+          "word": "dao",
+          "phonemes": "d a o"
+        },
+        {
+          "word": "angku'",
+          "phonemes": "a ŋ k u ʔ"
+        },
+        {
+          "word": "anggoro",
+          "phonemes": "a ŋ ɡ o r o"
+        },
+        {
+          "word": "ma'kada",
+          "phonemes": "m a ʔ k a d a"
+        },
+        {
+          "word": "mambela",
+          "phonemes": "m a m b e l a"
+        },
+        {
+          "word": "mangganga'",
+          "phonemes": "m a ŋ ɡ a ŋ a ʔ"
+        },
+        {
+          "word": "mellong",
+          "phonemes": "m e l ː o ŋ"
+        },
+        {
+          "word": "tumangi'",
+          "phonemes": "t u m a ŋ i ʔ"
+        },
+        {
+          "word": "ruppia",
+          "phonemes": "r u p ː i a"
+        },
+        {
+          "word": "sa'bu",
+          "phonemes": "s a ʔ b u"
+        },
+        {
+          "word": "pelak-pelak",
+          "phonemes": "p e l a k p e l a k"
+        },
+        {
+          "word": "yakenna",
+          "phonemes": "j a k e n ː a"
+        },
+        {
+          "word": "mangngiru'",
+          "phonemes": "m a ŋ ː i r u ʔ"
+        },
+        {
+          "word": "attu",
+          "phonemes": "a t ː u"
+        },
+        {
+          "word": "rokko",
+          "phonemes": "r o k ː o"
+        },
+        {
+          "word": "ammu",
+          "phonemes": "a m ː u"
+        },
+        {
+          "word": "anna",
+          "phonemes": "a n ː a"
+        },
+        {
+          "word": "torro",
+          "phonemes": "t o r ː o"
+        },
+        {
+          "word": "nakua",
+          "phonemes": "n a k u a"
+        },
+        {
+          "word": "inde",
+          "phonemes": "i n d e"
+        },
+        {
+          "word": "dengan",
+          "phonemes": "d e ŋ a n"
+        },
+        {
+          "word": "illalan",
+          "phonemes": "i l ː a l a n"
+        },
+        {
+          "word": "dio",
+          "phonemes": "d i o"
+        },
+        {
+          "word": "angganna",
+          "phonemes": "a ŋ ɡ a n ː a"
+        },
+        {
+          "word": "mai",
+          "phonemes": "m a i"
+        },
+        {
+          "word": "duka'",
+          "phonemes": "d u k a ʔ"
+        },
+        {
+          "word": "kumua",
+          "phonemes": "k u m u a"
+        },
+        {
+          "word": "sola",
+          "phonemes": "s o l a"
+        },
+        {
+          "word": "mesa",
+          "phonemes": "m e s a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeiklmnoprstuw]",
+          "apostrophe": "['ꞌˈ‘’]",
+          "gem": "[ptkmnŋslr]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({gem}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

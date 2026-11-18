@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "code": "awx",
+    "name": "Awara",
+    "family": "Trans-New Guinea,Main Section,Central and Western,Huon-Finisterre,Finisterre,Wantoat",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "sounds": "d|nd|b|mb|ɡ|nɡ"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "hikngä",
+          "phonemes": "h i k ŋ ɘ"
+        },
+        {
+          "word": "wätä",
+          "phonemes": "β ɘ t ɘ"
+        },
+        {
+          "word": "bakudupi",
+          "phonemes": "b a k u d u p i"
+        },
+        {
+          "word": "xät",
+          "phonemes": "ɣ ɘ t"
+        },
+        {
+          "word": "yähakaying",
+          "phonemes": "j ɘ h a k a j i ŋ"
+        },
+        {
+          "word": "nap",
+          "phonemes": "n a p"
+        },
+        {
+          "word": "gwen",
+          "phonemes": "ɡʷ e n"
+        },
+        {
+          "word": "kwayi",
+          "phonemes": "kʷ a j i"
+        },
+        {
+          "word": "kungwä",
+          "phonemes": "k u ŋʷ ɘ"
+        },
+        {
+          "word": "do",
+          "phonemes": "d o"
+        },
+        {
+          "word": "ge",
+          "phonemes": "ɡ e"
+        },
+        {
+          "word": "äminu",
+          "phonemes": "ɘ m i n u"
+        },
+        {
+          "word": "sipsip",
+          "phonemes": "s i p s i p"
+        },
+        {
+          "word": "inale",
+          "phonemes": "i n a l e"
+        },
+        {
+          "word": "Awara",
+          "phonemes": "a β a l a"
+        },
+        {
+          "word": "yang",
+          "phonemes": "j a ŋ"
+        },
+        {
+          "word": "using",
+          "phonemes": "u s i ŋ"
+        },
+        {
+          "word": "inikut",
+          "phonemes": "i n i k u t"
+        },
+        {
+          "word": "nanä",
+          "phonemes": "n a n ɘ"
+        },
+        {
+          "word": "äwä",
+          "phonemes": "ɘ β ɘ"
+        },
+        {
+          "word": "puyä",
+          "phonemes": "p u j ɘ"
+        },
+        {
+          "word": "undä",
+          "phonemes": "u n d ɘ"
+        },
+        {
+          "word": "tiwän",
+          "phonemes": "t i β ɘ n"
+        },
+        {
+          "word": "yänikut",
+          "phonemes": "j ɘ n i k u t"
+        },
+        {
+          "word": "meyä",
+          "phonemes": "m e j ɘ"
+        },
+        {
+          "word": "wamu",
+          "phonemes": "β a m u"
+        },
+        {
+          "word": "umanä",
+          "phonemes": "u m a n ɘ"
+        },
+        {
+          "word": "kewu",
+          "phonemes": "k e β u"
+        },
+        {
+          "word": "natäke",
+          "phonemes": "n a t ɘ k e"
+        },
+        {
+          "word": "päke",
+          "phonemes": "p ɘ k e"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdehikmnopstu]",
+          "w-preceder": "[gk]",
+          "vowels": "[aeiouä]"
+        },
+        "sub": [
+          {
+            "from": "ä",
+            "to": "ɘ",
+            "weight": 3.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "l",
+            "to": "l",
+            "weight": 3.0,
+            "precede": "{vowels}",
+            "follow": "{vowels}",
+            "comment": "/l/ only occurs intervocalically"
+          },
+          {
+            "from": "r",
+            "to": "l",
+            "weight": 3.0,
+            "precede": "{vowels}",
+            "follow": "{vowels}",
+            "comment": "<r> may also be used to represent /l/"
+          },
+          {
+            "from": "w",
+            "to": "β",
+            "weight": 3.0
+          },
+          {
+            "from": "x",
+            "to": "ɣ",
+            "weight": 3.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 3.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡʷ",
+            "weight": 4.0,
+            "follow": "w"
+          },
+          {
+            "from": "k",
+            "to": "kʷ",
+            "weight": 4.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 4.0,
+            "precede": "{w-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 5.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 5.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋʷ",
+            "weight": 6.0,
+            "follow": "gw"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 6.0,
+            "precede": "n",
+            "follow": "w",
+            "comment": "clean-up"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 6.0,
+            "precede": "ng",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "metadata": {
+    "code": "sah",
+    "name": "Yakut",
+    "family": "Turkic,Common Turkic,Siberian,Northern,Yukutian",
+    "macroarea": "Eurasia",
+    "compromised": {
+      "sounds": "j|j̃"
+    },
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "саха",
+          "phonemes": "s a x a"
+        },
+        {
+          "word": "Арассыыйа",
+          "phonemes": "a ɾ a s ː ɯ ː j a"
+        },
+        {
+          "word": "биир",
+          "phonemes": "b i ː ɾ"
+        },
+        {
+          "word": "алпабыыт",
+          "phonemes": "a l p a b ɯ ː t"
+        },
+        {
+          "word": "ардахтаа",
+          "phonemes": "a ɾ d a x t a ː"
+        },
+        {
+          "word": "аҕырыа",
+          "phonemes": "a ɣ ɯ ɾ ɯa"
+        },
+        {
+          "word": "аһаа",
+          "phonemes": "a h a ː"
+        },
+        {
+          "word": "бачыыҥка",
+          "phonemes": "b a cç ɯ ː ŋ k a"
+        },
+        {
+          "word": "бииккэ",
+          "phonemes": "b i ː k ː e"
+        },
+        {
+          "word": "остуол",
+          "phonemes": "o s t uo l"
+        },
+        {
+          "word": "килиэп",
+          "phonemes": "k i l ie p"
+        },
+        {
+          "word": "грамматика",
+          "phonemes": "ɡ ɾ a m ː a t i k a"
+        },
+        {
+          "word": "уонна",
+          "phonemes": "uo n ː a"
+        },
+        {
+          "word": "өрүс",
+          "phonemes": "ø ɾ y s"
+        },
+        {
+          "word": "буолар",
+          "phonemes": "b uo l a ɾ"
+        },
+        {
+          "word": "курдук",
+          "phonemes": "k u ɾ d u k"
+        },
+        {
+          "word": "күнүгэр",
+          "phonemes": "k y n y ɡ e ɾ"
+        },
+        {
+          "word": "для",
+          "phonemes": "d l j a"
+        },
+        {
+          "word": "тохсунньу",
+          "phonemes": "t o x s u ɲ ː u"
+        },
+        {
+          "word": "адьарай",
+          "phonemes": "a ɟʝ a ɾ a j"
+        },
+        {
+          "word": "баһымньы",
+          "phonemes": "b a h ɯ m ɲ ɯ"
+        },
+        {
+          "word": "күөл",
+          "phonemes": "k yø l"
+        },
+        {
+          "word": "киһи",
+          "phonemes": "k i h i"
+        },
+        {
+          "word": "баар",
+          "phonemes": "b a ː ɾ"
+        },
+        {
+          "word": "сыл",
+          "phonemes": "s ɯ l"
+        },
+        {
+          "word": "сыллаахха",
+          "phonemes": "s ɯ l ː a ː x ː a"
+        },
+        {
+          "word": "турар",
+          "phonemes": "t u ɾ a ɾ"
+        },
+        {
+          "word": "улууһун",
+          "phonemes": "u l u ː h u n"
+        },
+        {
+          "word": "дойду",
+          "phonemes": "d o j d u"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "gem": "[b|ɡ|ɣ|d|ɟʝ|j|k|p|ɾ|s|h|t|x|c|cç|l|m|n|ŋ]",
+          "vowels": "[aeiyuɯоø]"
+        },
+        "sub": [
+          {
+            "from": "а",
+            "to": "a",
+            "weight": 3.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 3.0
+          },
+          {
+            "from": "г",
+            "to": "ɡ",
+            "weight": 3.0
+          },
+          {
+            "from": "ҕ",
+            "to": "ɣ",
+            "weight": 3.0
+          },
+          {
+            "from": "д",
+            "to": "d",
+            "weight": 3.0
+          },
+          {
+            "from": "и",
+            "to": "i",
+            "weight": 3.0
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 3.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 3.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 3.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 3.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 3.0
+          },
+          {
+            "from": "ҥ",
+            "to": "ŋ",
+            "weight": 3.0
+          },
+          {
+            "from": "о",
+            "to": "o",
+            "weight": 3.0
+          },
+          {
+            "from": "ө",
+            "to": "ø",
+            "weight": 3.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 3.0
+          },
+          {
+            "from": "р",
+            "to": "ɾ",
+            "weight": 3.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 3.0
+          },
+          {
+            "from": "һ",
+            "to": "h",
+            "weight": 3.0
+          },
+          {
+            "from": "т",
+            "to": "t",
+            "weight": 3.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 3.0
+          },
+          {
+            "from": "ү",
+            "to": "y",
+            "weight": 3.0
+          },
+          {
+            "from": "х",
+            "to": "x",
+            "weight": 3.0
+          },
+          {
+            "from": "ч",
+            "to": "cç",
+            "weight": 3.0
+          },
+          {
+            "from": "ы",
+            "to": "ɯ",
+            "weight": 3.0
+          },
+          {
+            "from": "э",
+            "to": "e",
+            "weight": 3.0
+          },
+          {
+            "from": "ю",
+            "to": "j u",
+            "weight": 3.0
+          },
+          {
+            "from": "я",
+            "to": "j a",
+            "weight": 3.0
+          },
+          {
+            "from": "д",
+            "to": "ɟʝ",
+            "weight": 4.0,
+            "follow": "ь"
+          },
+          {
+            "from": "ь",
+            "to": "",
+            "weight": 4.0,
+            "precede": "д",
+            "comment": "clean-up"
+          },
+          {
+            "from": "н",
+            "to": "ɲ",
+            "weight": 4.0,
+            "follow": "ь"
+          },
+          {
+            "from": "ь",
+            "to": "",
+            "weight": 4.0,
+            "precede": "н",
+            "comment": "clean-up"
+          },
+          {
+            "from": "н",
+            "to": "ɲ ː",
+            "weight": 5.0,
+            "follow": "нь",
+            "comment": "exception"
+          },
+          {
+            "from": "н",
+            "to": "",
+            "weight": 5.0,
+            "precede": "н",
+            "follow": "ь",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ь",
+            "to": "",
+            "weight": 5.0,
+            "precede": "нн",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({vowels}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          },
+          {
+            "from": "\\b({gem}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ɯ a",
+            "to": "ɯa",
+            "weight": 4.0
+          },
+          {
+            "from": "u o",
+            "to": "uo",
+            "weight": 4.0
+          },
+          {
+            "from": "i e",
+            "to": "ie",
+            "weight": 4.0
+          },
+          {
+            "from": "y ø",
+            "to": "yø",
+            "weight": 4.0
+          }
+        ]
+      }
+    }
+  }
+}

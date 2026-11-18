@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "code": "ilo",
+    "name": "Ilocano",
+    "family": "Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Northern Philippine,Northern Luzon,Ilocano",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "aramat",
+          "phonemes": "a ɾ a m a t̪"
+        },
+        {
+          "word": "met",
+          "phonemes": "m ɛ t̪"
+        },
+        {
+          "word": "idiay",
+          "phonemes": "i d̪ i a j"
+        },
+        {
+          "word": "tiempo",
+          "phonemes": "t̪ i ɛ m p o"
+        },
+        {
+          "word": "gumatel",
+          "phonemes": "ɡ u m a t̪ ɛ l"
+        },
+        {
+          "word": "masig-atan",
+          "phonemes": "m a s i ɡ ʔ a t̪ a n̪"
+        },
+        {
+          "word": "assawa",
+          "phonemes": "a s ː a w a"
+        },
+        {
+          "word": "isyu",
+          "phonemes": "i s j u"
+        },
+        {
+          "word": "lallaki",
+          "phonemes": "l a l ː a k i"
+        },
+        {
+          "word": "nariri",
+          "phonemes": "n̪ a ɾ i ɾ i"
+        },
+        {
+          "word": "yo",
+          "phonemes": "j o"
+        },
+        {
+          "word": "ngata",
+          "phonemes": "ŋ a t̪ a"
+        },
+        {
+          "word": "bulo",
+          "phonemes": "b u l o"
+        },
+        {
+          "word": "lammin",
+          "phonemes": "l a m ː i n̪"
+        },
+        {
+          "word": "dyip",
+          "phonemes": "d̪ j i p"
+        },
+        {
+          "word": "nga",
+          "phonemes": "ŋ a"
+        },
+        {
+          "word": "ken",
+          "phonemes": "k ɛ n̪"
+        },
+        {
+          "word": "dagiti",
+          "phonemes": "d̪ a ɡ i t̪ i"
+        },
+        {
+          "word": "ni",
+          "phonemes": "n̪ i"
+        },
+        {
+          "word": "ket",
+          "phonemes": "k ɛ t̪"
+        },
+        {
+          "word": "no",
+          "phonemes": "n̪ o"
+        },
+        {
+          "word": "kadagiti",
+          "phonemes": "k a d̪ a ɡ i t̪ i"
+        },
+        {
+          "word": "pay",
+          "phonemes": "p a j"
+        },
+        {
+          "word": "daytoy",
+          "phonemes": "d̪ a j t̪ o j"
+        },
+        {
+          "word": "wenno",
+          "phonemes": "w ɛ n̪ ː o"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abiklmopsuw]",
+          "gem": "(p|b|k|ɡ|s|m|ŋ|ɾ|l|j|w)"
+        },
+        "sub": [
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 1.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "n",
+            "to": "n̪",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "-",
+            "to": "ʔ",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 2.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "t̪ ː",
+            "weight": 2.0,
+            "follow": "t"
+          },
+          {
+            "from": "t",
+            "to": "",
+            "weight": 2.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "d̪ ː",
+            "weight": 2.0,
+            "follow": "d"
+          },
+          {
+            "from": "d",
+            "to": "",
+            "weight": 2.0,
+            "precede": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "n̪ ː",
+            "weight": 2.0,
+            "follow": "n"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({gem}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "metadata": {
+    "code": "az",
+    "name": "Azerbaijani",
+    "family": "Turkic,Common Turkic,Oghuz,Western Oghuz,Azerbaijani",
+    "macroarea": "Eurasia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "arxasında",
+          "phonemes": "ɑ ɾ x ɑ s ɯ n d ɑ",
+          "comment": "a"
+        },
+        {
+          "word": "boşqab",
+          "phonemes": "b o ʃ ɡ ɑ b",
+          "comment": "b"
+        },
+        {
+          "word": "cücü",
+          "phonemes": "dʒ y dʒ y",
+          "comment": "c"
+        },
+        {
+          "word": "çiçək",
+          "phonemes": "tʃ i tʃ æ k",
+          "comment": "ç"
+        },
+        {
+          "word": "dodaq",
+          "phonemes": "d o d ɑ ɡ",
+          "comment": "d"
+        },
+        {
+          "word": "ekssentrik",
+          "phonemes": "e k s s e n t ɾ i k",
+          "comment": "e"
+        },
+        {
+          "word": "dəfə",
+          "phonemes": "d æ f æ",
+          "comment": "ə"
+        },
+        {
+          "word": "fəlsəfə",
+          "phonemes": "f æ l s æ f æ",
+          "comment": "f"
+        },
+        {
+          "word": "güzgü",
+          "phonemes": "ɟ y z ɟ y",
+          "comment": "g"
+        },
+        {
+          "word": "çağ",
+          "phonemes": "tʃ ɑ ɣ",
+          "comment": "ğ"
+        },
+        {
+          "word": "həmsöhbət",
+          "phonemes": "h æ m s œ h b æ t",
+          "comment": "h"
+        },
+        {
+          "word": "xoşbəxt",
+          "phonemes": "x o ʃ b æ x t",
+          "comment": "x"
+        },
+        {
+          "word": "fırtına",
+          "phonemes": "f ɯ ɾ t ɯ n ɑ",
+          "comment": "ı"
+        },
+        {
+          "word": "igidlik",
+          "phonemes": "i ɟ i d l i k",
+          "comment": "i"
+        },
+        {
+          "word": "jüri",
+          "phonemes": "ʒ y ɾ i",
+          "comment": "j"
+        },
+        {
+          "word": "kubok",
+          "phonemes": "k u b o k",
+          "comment": "k"
+        },
+        {
+          "word": "qapmaq",
+          "phonemes": "ɡ ɑ p m ɑ ɡ",
+          "comment": "q"
+        },
+        {
+          "word": "ləzzətli",
+          "phonemes": "l æ z z æ t l i",
+          "comment": "l"
+        },
+        {
+          "word": "mütərkim",
+          "phonemes": "m y t æ ɾ k i m",
+          "comment": "m"
+        },
+        {
+          "word": "neyçün",
+          "phonemes": "n e j tʃ y n",
+          "comment": "n"
+        },
+        {
+          "word": "osminoq",
+          "phonemes": "o s m i n o ɡ",
+          "comment": "o"
+        },
+        {
+          "word": "öpüş",
+          "phonemes": "œ p y ʃ",
+          "comment": "ö"
+        },
+        {
+          "word": "pota",
+          "phonemes": "p o t ɑ",
+          "comment": "p"
+        },
+        {
+          "word": "rejissor",
+          "phonemes": "ɾ e ʒ i s s o ɾ",
+          "comment": "r"
+        },
+        {
+          "word": "siyasət",
+          "phonemes": "s i j ɑ s æ t",
+          "comment": "s"
+        },
+        {
+          "word": "tamaşa",
+          "phonemes": "t ɑ m ɑ ʃ ɑ",
+          "comment": "ş"
+        },
+        {
+          "word": "tırtıl",
+          "phonemes": "t ɯ ɾ t ɯ l",
+          "comment": "t"
+        },
+        {
+          "word": "uçurum",
+          "phonemes": "u tʃ u ɾ u m",
+          "comment": "u"
+        },
+        {
+          "word": "tülkü",
+          "phonemes": "t y l k y",
+          "comment": "ü"
+        },
+        {
+          "word": "vağzal",
+          "phonemes": "v ɑ ɣ z ɑ l",
+          "comment": "v"
+        },
+        {
+          "word": "yaylaq",
+          "phonemes": "j ɑ j l ɑ ɡ",
+          "comment": "y"
+        },
+        {
+          "word": "ziyansız",
+          "phonemes": "z i j ɑ n s ɯ z",
+          "comment": "z"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "consonant": "[bcçdfgğhxjkqlmnprsştvyz]",
+          "frontvowel": "[ieyœæ]",
+          "passthrough": "[bdefhxiklmnopstuvz]"
+        },
+        "pre": [
+          {
+            "from": "Iİ",
+            "to": "ıi",
+            "comment": "uppercase to lowercase conversion"
+          }
+        ],
+        "sub": [
+          {
+            "from": "a",
+            "to": "ɑ",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "dʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "ç",
+            "to": "tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ə",
+            "to": "æ",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɟ",
+            "weight": 4.0
+          },
+          {
+            "from": "ğ",
+            "to": "ɣ",
+            "weight": 4.0
+          },
+          {
+            "from": "ı",
+            "to": "ɯ",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "ʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "q",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "ö",
+            "to": "œ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "ş",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ü",
+            "to": "y",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 6.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 6.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "dz",
+            "weight": 6.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 6.0,
+            "precede": "d",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

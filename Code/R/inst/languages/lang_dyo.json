@@ -1,0 +1,359 @@
+{
+  "metadata": {
+    "code": "dyo",
+    "name": "Jola-Fogny",
+    "family": "Niger-Congo,Atlantic-Congo,Atlantic,Northern,Bak,Jola,Jola Proper,Jola Central,Jola-Fogny",
+    "macroarea": "Africa",
+    "compromised": {
+      "note": "suspect reliability of +ATR vowel transcription"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "man",
+          "phonemes": "m ɘ n",
+          "comment": "<a>"
+        },
+        {
+          "word": "ñátum",
+          "phonemes": "ɲ a t u m",
+          "comment": "<á>"
+        },
+        {
+          "word": "máamak",
+          "phonemes": "m a ː m a k",
+          "comment": "<áa>"
+        },
+        {
+          "word": "bee",
+          "phonemes": "b ɛ ː",
+          "comment": "<b>"
+        },
+        {
+          "word": "ceb",
+          "phonemes": "c ɛ b",
+          "comment": "<c>"
+        },
+        {
+          "word": "di",
+          "phonemes": "d ɪ",
+          "comment": "<d>"
+        },
+        {
+          "word": "ínje",
+          "phonemes": "i n ɟ e",
+          "comment": "<e>"
+        },
+        {
+          "word": "ésukey",
+          "phonemes": "e s u k e j",
+          "comment": "<é>"
+        },
+        {
+          "word": "téeŋey",
+          "phonemes": "t e ː ŋ e j",
+          "comment": "<ée>"
+        },
+        {
+          "word": "fati",
+          "phonemes": "f ɘ t ɪ",
+          "comment": "<f>"
+        },
+        {
+          "word": "sílingaas",
+          "phonemes": "s i l i n ɡ a ː s",
+          "comment": "<g>"
+        },
+        {
+          "word": "hani",
+          "phonemes": "h ɘ n ɪ",
+          "comment": "<h>"
+        },
+        {
+          "word": "mati",
+          "phonemes": "m ɘ t ɪ",
+          "comment": "<i>"
+        },
+        {
+          "word": "tíen",
+          "phonemes": "t i e n",
+          "comment": "<í>"
+        },
+        {
+          "word": "ríiŋ",
+          "phonemes": "r i ː ŋ",
+          "comment": "<íi>"
+        },
+        {
+          "word": "joote",
+          "phonemes": "ɟ ɔ ː t ɛ",
+          "comment": "<j>"
+        },
+        {
+          "word": "burok",
+          "phonemes": "b ʊ r ɔ k",
+          "comment": "<k>"
+        },
+        {
+          "word": "muyuul",
+          "phonemes": "m ʊ j ʊ ː l",
+          "comment": "<l>"
+        },
+        {
+          "word": "búrom",
+          "phonemes": "b u r o m",
+          "comment": "<m>"
+        },
+        {
+          "word": "nan",
+          "phonemes": "n ɘ n",
+          "comment": "<n>"
+        },
+        {
+          "word": "iñeme",
+          "phonemes": "ɪ ɲ ɛ m ɛ",
+          "comment": "<ñ>"
+        },
+        {
+          "word": "eroŋey",
+          "phonemes": "ɛ r ɔ ŋ ɛ j",
+          "comment": "<ŋ>"
+        },
+        {
+          "word": "eenomi",
+          "phonemes": "ɛ ː n ɔ m ɪ",
+          "comment": "<o>"
+        },
+        {
+          "word": "dó",
+          "phonemes": "d o",
+          "comment": "<ó>"
+        },
+        {
+          "word": "dóo",
+          "phonemes": "d o ː",
+          "comment": "<óo>"
+        },
+        {
+          "word": "kápurumul",
+          "phonemes": "k a p u r u m u l",
+          "comment": "<p>"
+        },
+        {
+          "word": "bare",
+          "phonemes": "b ɘ r ɛ",
+          "comment": "<r>"
+        },
+        {
+          "word": "sati",
+          "phonemes": "s ɘ t ɪ",
+          "comment": "<s>"
+        },
+        {
+          "word": "yati",
+          "phonemes": "j ɘ t ɪ",
+          "comment": "<t>"
+        },
+        {
+          "word": "bukanak",
+          "phonemes": "b ʊ k ɘ n ɘ k",
+          "comment": "<u>"
+        },
+        {
+          "word": "dúniyaay",
+          "phonemes": "d u n i j a ː j",
+          "comment": "<ú>"
+        },
+        {
+          "word": "súum",
+          "phonemes": "s u ː m",
+          "comment": "<úu>"
+        },
+        {
+          "word": "wan",
+          "phonemes": "w ɘ n",
+          "comment": "<w>"
+        },
+        {
+          "word": "ewañey",
+          "phonemes": "ɛ w ɘ ɲ ɛ j",
+          "comment": "<y>"
+        },
+        {
+          "word": "kaje'e",
+          "phonemes": "k ɘ ɟ ɛ ɛ",
+          "comment": "apostrophe"
+        },
+        {
+          "word": "eppooyuwo",
+          "phonemes": "ɛ p ː ɔ ː j ʊ w ɔ",
+          "comment": "geminate consonant"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[bcdfhklmnŋprstw]",
+          "vowels": "[iɪeɛɘaɔoʊu]",
+          "gem": "[pbtdcɟkɡfshmnɲŋlrwj]",
+          "apostrophe": "['ꞌ‘’]",
+          "+ATR": "[aeiou]",
+          "+ATR-input": "[áéíóú]"
+        },
+        "sub": [
+          {
+            "from": "a",
+            "to": "ɘ",
+            "weight": 1.0
+          },
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 1.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 1.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "i",
+            "to": "ɪ",
+            "weight": 1.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "ɟ",
+            "weight": 1.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 1.0
+          },
+          {
+            "from": "o",
+            "to": "ɔ",
+            "weight": 1.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "u",
+            "to": "ʊ",
+            "weight": 1.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "({+ATR})",
+            "to": "\\1",
+            "weight": 4.0,
+            "precede": "{+ATR-input}+",
+            "comment": "only first +ATR vowel is marked, all following vowels share the same feature, but are unmarked"
+          },
+          {
+            "from": "({+ATR})",
+            "to": "\\1",
+            "weight": 4.0,
+            "precede": "{+ATR-input}.+",
+            "comment": "only first +ATR vowel is marked, all following vowels share the same feature, but are unmarked"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "DEL",
+            "weight": 1.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({vowels}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          },
+          {
+            "from": "\\b({gem}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0,
+            "comment": "consonant gemination"
+          },
+          {
+            "from": "e ʊ",
+            "to": "eʊ",
+            "weight": 2.0
+          },
+          {
+            "from": "i u",
+            "to": "iu",
+            "weight": 2.0
+          },
+          {
+            "from": "ɪ e",
+            "to": "ɪe",
+            "weight": 2.0
+          },
+          {
+            "from": "ɔ a",
+            "to": "ɔa",
+            "weight": 2.0
+          },
+          {
+            "from": "e ɪ",
+            "to": "eɪ",
+            "weight": 2.0
+          },
+          {
+            "from": "({vowels}) DEL ({vowels})",
+            "to": "\\1 \\2",
+            "weight": 3.0,
+            "comment": "apostrophes are used to separate adjacent vowels which do not form a long vowel or diphthong"
+          },
+          {
+            "from": "DEL",
+            "to": "",
+            "weight": 4.0,
+            "comment": "removes leftover apostrophes between consonants and vowels/two consonants"
+          }
+        ]
+      }
+    }
+  }
+}

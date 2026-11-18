@@ -1,0 +1,26 @@
+# A made-up language exercising values YAML would otherwise retype.
+metadata:
+  code: toy
+  name: Toy
+  default_script: latin
+scripts:
+  latin:
+    rules:
+      classes:
+        vowel: "[aeiou]"
+      match:
+        - {from: a, to: a}
+        - {from: e, to: e}
+        - {from: l, to: l}
+        - {from: y, to: j}
+        - {from: '"', to: ''}
+        - {from: '1', to: w}
+      sub:
+        - {from: n, to: n, weight: 1}
+        - {from: n, to: ŋ, weight: 2, follow: k}
+        - {from: k, to: k, weight: 1}
+    verify:
+      - {word: yen, phonemes: j e n}
+      - {word: 'a"l', phonemes: a l}
+      - {word: a1e, phonemes: a w e}
+      - {word: ank, phonemes: a ŋ k}

@@ -1,0 +1,291 @@
+{
+  "metadata": {
+    "code": "bvr",
+    "name": "Burarra",
+    "family": "Australian,Gunwingguan,Burarran",
+    "macroarea": "Australia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "bugula",
+          "phonemes": "b u ɡ u l a"
+        },
+        {
+          "word": "del",
+          "phonemes": "ɖ e l"
+        },
+        {
+          "word": "joborr",
+          "phonemes": "ɟ o b o r"
+        },
+        {
+          "word": "yerrcha",
+          "phonemes": "j e r c a"
+        },
+        {
+          "word": "gun-jong",
+          "phonemes": "ɡ u n ɟ o ŋ"
+        },
+        {
+          "word": "bokpurra",
+          "phonemes": "b o k p u r a"
+        },
+        {
+          "word": "wakwak",
+          "phonemes": "w a k w a k"
+        },
+        {
+          "word": "ngulamngulam",
+          "phonemes": "ŋ u l a m ŋ u l a m"
+        },
+        {
+          "word": "gungarlcha",
+          "phonemes": "ɡ u ŋ a ɭ c a"
+        },
+        {
+          "word": "gungunyja",
+          "phonemes": "ɡ u ŋ u ɲ ɟ a"
+        },
+        {
+          "word": "geka",
+          "phonemes": "ɡ e k a"
+        },
+        {
+          "word": "waya",
+          "phonemes": "w a j a"
+        },
+        {
+          "word": "burraya",
+          "phonemes": "b u r a j a"
+        },
+        {
+          "word": "ngardapa",
+          "phonemes": "ŋ a ɖ a p a"
+        },
+        {
+          "word": "arlay",
+          "phonemes": "a ɭ a j"
+        },
+        {
+          "word": "mernda",
+          "phonemes": "m e ɳ ɖ a"
+        },
+        {
+          "word": "an-guyinda",
+          "phonemes": "a n ɡ u j i n d a"
+        },
+        {
+          "word": "gun-gata",
+          "phonemes": "ɡ u n ɡ a t a"
+        },
+        {
+          "word": "a-workiya",
+          "phonemes": "a w o ɽ k i j a"
+        },
+        {
+          "word": "gurrurta",
+          "phonemes": "ɡ u r u ʈ a"
+        },
+        {
+          "word": "marn'gi",
+          "phonemes": "m a ɳ ɡ i"
+        },
+        {
+          "word": "delipa",
+          "phonemes": "ɖ e l i p a"
+        },
+        {
+          "word": "nipa",
+          "phonemes": "ɳ i p a"
+        },
+        {
+          "word": "lika",
+          "phonemes": "ɭ i k a"
+        },
+        {
+          "word": "ngaypa",
+          "phonemes": "ŋ a j p a"
+        },
+        {
+          "word": "birripa",
+          "phonemes": "b i r i p a"
+        },
+        {
+          "word": "ana-goyburrpa",
+          "phonemes": "a n a ɡ o j b u r p a"
+        },
+        {
+          "word": "jarra",
+          "phonemes": "ɟ a r a"
+        },
+        {
+          "word": "janguny",
+          "phonemes": "ɟ a ŋ u ɲ"
+        },
+        {
+          "word": "a-wena",
+          "phonemes": "a w e n a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeiklmnoptuw]",
+          "n_follower": "[gy]",
+          "r_follower": "[rtdnl]",
+          "misc": "(\\.|'|ꞌ|ˈ|‘|’|-)"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "ɟ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɽ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "c",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ŋ",
+            "weight": 4.0,
+            "precede": "n"
+          },
+          {
+            "from": "y",
+            "to": "ɲ",
+            "weight": 4.0,
+            "precede": "n"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 4.0,
+            "follow": "{n_follower}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 4.0,
+            "precede": "r"
+          },
+          {
+            "from": "t",
+            "to": "ʈ",
+            "weight": 4.0,
+            "precede": "r"
+          },
+          {
+            "from": "d",
+            "to": "ɖ",
+            "weight": 4.0,
+            "precede": "r"
+          },
+          {
+            "from": "n",
+            "to": "ɳ",
+            "weight": 4.0,
+            "precede": "r"
+          },
+          {
+            "from": "l",
+            "to": "ɭ",
+            "weight": 4.0,
+            "precede": "r"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 4.0,
+            "follow": "{r_follower}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ʈ",
+            "weight": 3.0,
+            "precede": "^"
+          },
+          {
+            "from": "d",
+            "to": "ɖ",
+            "weight": 3.0,
+            "precede": "^"
+          },
+          {
+            "from": "n",
+            "to": "ɳ",
+            "weight": 3.0,
+            "precede": "^"
+          },
+          {
+            "from": "l",
+            "to": "ɭ",
+            "weight": 3.0,
+            "precede": "^"
+          },
+          {
+            "from": "r",
+            "to": "ɳ ɖ",
+            "weight": 5.0,
+            "follow": "nd",
+            "comment": "<rnd> transcribes to /ɳɖ/"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 5.0,
+            "precede": "r",
+            "follow": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "",
+            "weight": 5.0,
+            "precede": "rn",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{misc}",
+            "to": "",
+            "weight": 2.0,
+            "comment": "these punctuation marks have no phonemic value"
+          }
+        ]
+      }
+    }
+  }
+}

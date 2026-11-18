@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "code": "nhe",
+    "name": "Nahuatl",
+    "family": "Uto-Aztecan,Southern Uto-Aztecan,Aztecan,General Aztec,Aztec",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ahacatl",
+          "phonemes": "a ʔ a k a tɬ",
+          "comment": "a"
+        },
+        {
+          "word": "cihuatl",
+          "phonemes": "s i w a tɬ",
+          "comment": "c before front vowel"
+        },
+        {
+          "word": "coztic",
+          "phonemes": "k o s t i k",
+          "comment": "c otherwise"
+        },
+        {
+          "word": "çetl",
+          "phonemes": "s e tɬ",
+          "comment": "ç (sometimes used in place of <c> to represent /s/)"
+        },
+        {
+          "word": "ehquetl",
+          "phonemes": "e ʔ k e tɬ",
+          "comment": "e"
+        },
+        {
+          "word": "ahsi",
+          "phonemes": "a ʔ s i",
+          "comment": "h"
+        },
+        {
+          "word": "icni",
+          "phonemes": "i k n i",
+          "comment": "i"
+        },
+        {
+          "word": "kowatl",
+          "phonemes": "k o w a tɬ",
+          "comment": "k/w - alternate orthography"
+        },
+        {
+          "word": "lalax",
+          "phonemes": "l a l a ʃ",
+          "comment": "l"
+        },
+        {
+          "word": "mizto",
+          "phonemes": "m i s t o",
+          "comment": "m"
+        },
+        {
+          "word": "nicani",
+          "phonemes": "n i k a n i",
+          "comment": "n"
+        },
+        {
+          "word": "olotl",
+          "phonemes": "o l o tɬ",
+          "comment": "o"
+        },
+        {
+          "word": "pampa",
+          "phonemes": "p a m p a",
+          "comment": "p"
+        },
+        {
+          "word": "para",
+          "phonemes": "p a r a",
+          "comment": "r"
+        },
+        {
+          "word": "sehco",
+          "phonemes": "s e ʔ k o",
+          "comment": "s"
+        },
+        {
+          "word": "tototl",
+          "phonemes": "t o t o tɬ",
+          "comment": "t"
+        },
+        {
+          "word": "xoxohuic",
+          "phonemes": "ʃ o ʃ o w i k",
+          "comment": "x"
+        },
+        {
+          "word": "yayahuic",
+          "phonemes": "j a j a w i k",
+          "comment": "y"
+        },
+        {
+          "word": "zampa",
+          "phonemes": "s a m p a",
+          "comment": "z"
+        },
+        {
+          "word": "chichiltic",
+          "phonemes": "tʃ i tʃ i l t i k",
+          "comment": "ch"
+        },
+        {
+          "word": "cuecuetzi",
+          "phonemes": "kʷ e kʷ e ts i",
+          "comment": "cu"
+        },
+        {
+          "word": "imojuanti",
+          "phonemes": "i m o w a n t i",
+          "comment": "ju"
+        },
+        {
+          "word": "huehuentzi",
+          "phonemes": "w e w e n ts i",
+          "comment": "hu"
+        },
+        {
+          "word": "kuawitl",
+          "phonemes": "kʷ a w i tɬ",
+          "comment": "ku - alternate orthography"
+        },
+        {
+          "word": "quezqui",
+          "phonemes": "k e s k i",
+          "comment": "qu"
+        },
+        {
+          "word": "tlitl",
+          "phonemes": "tɬ i tɬ",
+          "comment": "tl"
+        },
+        {
+          "word": "tzicatl",
+          "phonemes": "ts i k a tɬ",
+          "comment": "tz"
+        },
+        {
+          "word": "coneuh",
+          "phonemes": "k o n e w",
+          "comment": "uh"
+        },
+        {
+          "word": "ohuaatl",
+          "phonemes": "o w a ˑ tɬ",
+          "comment": "vowel lengthening"
+        },
+        {
+          "word": "más",
+          "phonemes": "m a s",
+          "comment": "á"
+        },
+        {
+          "word": "nelía",
+          "phonemes": "n e l i a",
+          "comment": "í"
+        },
+        {
+          "word": "kilómetros",
+          "phonemes": "k i l o m e t r o s",
+          "comment": "ó"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "vowel": "[aeio]",
+          "frontvowel": "[ie]",
+          "backvowel": "[ao]",
+          "u-preceder": "[chjkq]",
+          "passthrough": "[aeiklmnoprstw]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "s",
+            "weight": 5.0,
+            "follow": "{frontvowel}"
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "ç",
+            "to": "s",
+            "weight": 4.0
+          },
+          {
+            "from": "h",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 4.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "z",
+            "to": "s",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "ch"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "kʷ",
+            "weight": 6.0,
+            "follow": "u",
+            "comment": "cu"
+          },
+          {
+            "from": "h",
+            "to": "w",
+            "weight": 6.0,
+            "follow": "u",
+            "comment": "hu"
+          },
+          {
+            "from": "j",
+            "to": "w",
+            "weight": 6.0,
+            "follow": "u",
+            "comment": "ju - this seems to only be in loanwords, but it comes up repeatedly in Crubadan"
+          },
+          {
+            "from": "k",
+            "to": "kʷ",
+            "weight": 6.0,
+            "follow": "u",
+            "comment": "ku"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 6.0,
+            "follow": "u{frontvowel}",
+            "comment": "qu"
+          },
+          {
+            "from": "q",
+            "to": "kʷ",
+            "weight": 6.0,
+            "follow": "u{backvowel}",
+            "comment": " \"qu\""
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{u-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tɬ",
+            "weight": 6.0,
+            "follow": "l",
+            "comment": "tl"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 6.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 6.0,
+            "follow": "z",
+            "comment": "tz"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 6.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "w",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "uh"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "u",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "kʷ",
+            "weight": 7.0,
+            "follow": "uh"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 7.0,
+            "precede": "c",
+            "follow": "h",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 7.0,
+            "precede": "cu",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "kʷ",
+            "weight": 7.0,
+            "follow": "hc"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 7.0,
+            "precede": "u",
+            "follow": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "",
+            "weight": 7.0,
+            "precede": "uh",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowel}) \\1",
+            "to": "\\1 ˑ",
+            "weight": 3.0,
+            "comment": "vowel lengthening"
+          }
+        ]
+      }
+    }
+  }
+}

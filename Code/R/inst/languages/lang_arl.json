@@ -1,0 +1,216 @@
+{
+  "metadata": {
+    "code": "arl",
+    "name": "Arabela",
+    "family": "Zaparoan",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "camueenujun",
+          "phonemes": "k a m u e ː n u h u n"
+        },
+        {
+          "word": "coriquiatunu",
+          "phonemes": "k o r i k i a t u n u"
+        },
+        {
+          "word": "juura",
+          "phonemes": "h u ː r a"
+        },
+        {
+          "word": "mariyateyaca",
+          "phonemes": "m a r i j a t e j a k a"
+        },
+        {
+          "word": "masetenu",
+          "phonemes": "m a s e t e n u"
+        },
+        {
+          "word": "patoonu",
+          "phonemes": "p a t o ː n u"
+        },
+        {
+          "word": "pianee",
+          "phonemes": "p i a n e ː"
+        },
+        {
+          "word": "pihua",
+          "phonemes": "p i w a"
+        },
+        {
+          "word": "quishacari",
+          "phonemes": "k i ʃ a k a r i"
+        },
+        {
+          "word": "shuquiriaatia",
+          "phonemes": "ʃ u k i r i a ː t i a"
+        },
+        {
+          "word": "jaara",
+          "phonemes": "h a ː r a"
+        },
+        {
+          "word": "nojoriiri",
+          "phonemes": "n o h o r i ː r i"
+        },
+        {
+          "word": "cua",
+          "phonemes": "k u a"
+        },
+        {
+          "word": "pa",
+          "phonemes": "p a"
+        },
+        {
+          "word": "pueya",
+          "phonemes": "p u e j a"
+        },
+        {
+          "word": "maninia",
+          "phonemes": "m a n i n i a"
+        },
+        {
+          "word": "puetunu",
+          "phonemes": "p u e t u n u"
+        },
+        {
+          "word": "quia",
+          "phonemes": "k i a"
+        },
+        {
+          "word": "naa",
+          "phonemes": "n a ː"
+        },
+        {
+          "word": "cuno",
+          "phonemes": "k u n o"
+        },
+        {
+          "word": "sesa",
+          "phonemes": "s e s a"
+        },
+        {
+          "word": "maja",
+          "phonemes": "m a h a"
+        },
+        {
+          "word": "juhua",
+          "phonemes": "h u w a"
+        },
+        {
+          "word": "canaa",
+          "phonemes": "k a n a ː"
+        },
+        {
+          "word": "quiquiaari",
+          "phonemes": "k i k i a ː r i"
+        },
+        {
+          "word": "quiniuria",
+          "phonemes": "k i n i u r i a"
+        },
+        {
+          "word": "jiyanohua",
+          "phonemes": "h i j a n o w a"
+        },
+        {
+          "word": "taa",
+          "phonemes": "t a ː"
+        },
+        {
+          "word": "socua",
+          "phonemes": "s o k u a"
+        },
+        {
+          "word": "seetanujuanaa",
+          "phonemes": "s e ː t a n u h u a n a ː"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeimnoprstu]",
+          "vowels": "[aeiou]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "h",
+            "to": "w",
+            "weight": 2.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "h",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 2.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "u",
+            "weight": 4.0,
+            "precede": "sh",
+            "comment": "prevents u from being deleted in <shu> sequences"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

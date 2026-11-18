@@ -1,0 +1,261 @@
+{
+  "metadata": {
+    "code": "ycn",
+    "name": "Yucuna",
+    "family": "Arawakan,Maipuran,Northern Maipuran,Upper Amazon,Western Nawiki,Yucuna",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "a'aputa",
+          "phonemes": "a ʔ a p u t a",
+          "comment": "a"
+        },
+        {
+          "word": "nacú",
+          "phonemes": "n a k u",
+          "comment": "c"
+        },
+        {
+          "word": "chachámari",
+          "phonemes": "tʃ a tʃ a m a ɾ i",
+          "comment": "ch"
+        },
+        {
+          "word": "ejená",
+          "phonemes": "e h e n a",
+          "comment": "e"
+        },
+        {
+          "word": "ijhua'ate",
+          "phonemes": "i h w a ʔ a t e",
+          "comment": "hu"
+        },
+        {
+          "word": "ichirí",
+          "phonemes": "i tʃ i ɾ i",
+          "comment": "i"
+        },
+        {
+          "word": "já'akaje",
+          "phonemes": "h a ʔ a k a h e",
+          "comment": "j"
+        },
+        {
+          "word": "kapinaka",
+          "phonemes": "k a p i n a k a",
+          "comment": "k"
+        },
+        {
+          "word": "luwílu'uma",
+          "phonemes": "l u w i l u ʔ u m a",
+          "comment": "l"
+        },
+        {
+          "word": "mujrumi",
+          "phonemes": "m u h ɾ u m i",
+          "comment": "m"
+        },
+        {
+          "word": "namánaji",
+          "phonemes": "n a m a n a h i",
+          "comment": "n"
+        },
+        {
+          "word": "ñani'iñá",
+          "phonemes": "ɲ a n i ʔ i ɲ a",
+          "comment": "ñ"
+        },
+        {
+          "word": "ó'ojo",
+          "phonemes": "o ʔ o h o",
+          "comment": "o"
+        },
+        {
+          "word": "pipirí",
+          "phonemes": "p i p i ɾ i",
+          "comment": "p"
+        },
+        {
+          "word": "pha'i",
+          "phonemes": "pʰ a ʔ i",
+          "comment": "ph"
+        },
+        {
+          "word": "quemacana",
+          "phonemes": "k e m a k a n a",
+          "comment": "qu"
+        },
+        {
+          "word": "ruká",
+          "phonemes": "ɾ u k a",
+          "comment": "r"
+        },
+        {
+          "word": "siña'apá",
+          "phonemes": "s i ɲ a ʔ a p a",
+          "comment": "s"
+        },
+        {
+          "word": "tuphí",
+          "phonemes": "t u pʰ i",
+          "comment": "t"
+        },
+        {
+          "word": "athupákaje",
+          "phonemes": "a tʰ u p a k a h e",
+          "comment": "th"
+        },
+        {
+          "word": "uku'ukuri",
+          "phonemes": "u k u ʔ u k u ɾ i",
+          "comment": "u"
+        },
+        {
+          "word": "wa'aweko",
+          "phonemes": "w a ʔ a w e k o",
+          "comment": "w"
+        },
+        {
+          "word": "yawi",
+          "phonemes": "j a w i",
+          "comment": "y"
+        },
+        {
+          "word": "ya'ó",
+          "phonemes": "j a ʔ o",
+          "comment": "apostrophe"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "pre-h": "[cpt]",
+          "pre-u": "[hq]",
+          "apostrophe": "['ꞌˈ‘’]",
+          "passthrough": "[aeiklmnopstuw]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 4.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 4.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "p",
+            "to": "pʰ",
+            "weight": 7.0,
+            "follow": "h",
+            "comment": "<ph>"
+          },
+          {
+            "from": "t",
+            "to": "tʰ",
+            "weight": 7.0,
+            "follow": "h",
+            "comment": "<th>"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 7.0,
+            "precede": "{pre-h}",
+            "comment": "<h> cleanup"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<ch>; the <h> is cleaned up above in line 19"
+          },
+          {
+            "from": "h",
+            "to": "w",
+            "weight": 6.0,
+            "follow": "u",
+            "comment": "<hu>"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 6.0,
+            "follow": "u",
+            "comment": "<qu>"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{pre-u}",
+            "comment": "<u> cleanup"
+          },
+          {
+            "from": "u",
+            "to": "u",
+            "weight": 8.0,
+            "precede": "{pre-h}h",
+            "comment": "prevents <u> from getting deleted when preceded by an aspirated consonant"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}

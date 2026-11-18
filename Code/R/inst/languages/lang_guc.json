@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "code": "guc",
+    "name": "Wayuu",
+    "family": "Arawakan,Maipuran,Northern Maipuran,Caribbean",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "wüin",
+          "phonemes": "w ɯ i n"
+        },
+        {
+          "word": "atpajaa",
+          "phonemes": "a t p a h a ː"
+        },
+        {
+          "word": "awala'ata",
+          "phonemes": "a w a ɺ a ʔ a t a"
+        },
+        {
+          "word": "ayuulii",
+          "phonemes": "a j u ː ɺ i ː"
+        },
+        {
+          "word": "chi",
+          "phonemes": "tʃ i"
+        },
+        {
+          "word": "jimo'olu",
+          "phonemes": "h i m o ʔ o ɺ u"
+        },
+        {
+          "word": "jo'uuchon",
+          "phonemes": "h o ʔ u ː tʃ o n"
+        },
+        {
+          "word": "kalekale",
+          "phonemes": "k a ɺ e k a ɺ e"
+        },
+        {
+          "word": "oushu",
+          "phonemes": "o u ʃ u"
+        },
+        {
+          "word": "aja'ttaa",
+          "phonemes": "a h a ʔ t ː a ː"
+        },
+        {
+          "word": "mma",
+          "phonemes": "m ː a"
+        },
+        {
+          "word": "aikkaa",
+          "phonemes": "a i k ː a ː"
+        },
+        {
+          "word": "süpüla",
+          "phonemes": "s ɯ p ɯ ɺ a"
+        },
+        {
+          "word": "eere",
+          "phonemes": "e ː r e"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeikmnoprstuw]",
+          "apostrophe": "['ꞌˈ‘’ʼ]",
+          "longv": "[aeiuoɯ]",
+          "gem": "(p|m|n|t|s|tʃ|ʃ|k)",
+          "h-preceder": "[cs]"
+        },
+        "sub": [
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "l",
+            "to": "ɺ",
+            "weight": 2.0
+          },
+          {
+            "from": "ü",
+            "to": "ɯ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{h-preceder}",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({longv}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          },
+          {
+            "from": "\\b({gem}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

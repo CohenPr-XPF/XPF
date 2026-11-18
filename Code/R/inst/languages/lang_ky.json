@@ -1,0 +1,305 @@
+{
+  "metadata": {
+    "code": "ky",
+    "name": "Kirghiz",
+    "family": "Turkic,Kipchak,Kyrgyz-Kipchak",
+    "macroarea": "Eurasia",
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "имарат",
+          "phonemes": "i m ɑ r ɑ t"
+        },
+        {
+          "word": "калем",
+          "phonemes": "k ɑ l e m"
+        },
+        {
+          "word": "коён",
+          "phonemes": "k o j o n"
+        },
+        {
+          "word": "кыр",
+          "phonemes": "k ɯ r"
+        },
+        {
+          "word": "мыйзам",
+          "phonemes": "m ɯ j z ɑ m"
+        },
+        {
+          "word": "оогон",
+          "phonemes": "o ː ɡ o n"
+        },
+        {
+          "word": "пияз",
+          "phonemes": "p i j ɑ z"
+        },
+        {
+          "word": "сөздүк",
+          "phonemes": "s ø z d y k"
+        },
+        {
+          "word": "табият",
+          "phonemes": "t ɑ b i j ɑ t"
+        },
+        {
+          "word": "тамаша",
+          "phonemes": "t ɑ m ɑ ʃ ɑ"
+        },
+        {
+          "word": "туура",
+          "phonemes": "t u ː r ɑ"
+        },
+        {
+          "word": "уюм",
+          "phonemes": "u j u m"
+        },
+        {
+          "word": "чайхана",
+          "phonemes": "tʃ ɑ j χ ɑ n ɑ"
+        },
+        {
+          "word": "эртең",
+          "phonemes": "e r t e ŋ"
+        },
+        {
+          "word": "гүлстан",
+          "phonemes": "ɡ y l s t ɑ n"
+        },
+        {
+          "word": "мөндүр",
+          "phonemes": "m ø n d y r"
+        },
+        {
+          "word": "трамвай",
+          "phonemes": "t r ɑ m v ɑ j"
+        },
+        {
+          "word": "жооп",
+          "phonemes": "dʒ o ː p"
+        },
+        {
+          "word": "жана",
+          "phonemes": "dʒ ɑ n ɑ"
+        },
+        {
+          "word": "менен",
+          "phonemes": "m e n e n"
+        },
+        {
+          "word": "да",
+          "phonemes": "d ɑ"
+        },
+        {
+          "word": "бир",
+          "phonemes": "b i r"
+        },
+        {
+          "word": "жылы",
+          "phonemes": "dʒ ɯ l ɯ"
+        },
+        {
+          "word": "эле",
+          "phonemes": "e l e"
+        },
+        {
+          "word": "болуп",
+          "phonemes": "b o l u p"
+        },
+        {
+          "word": "деп",
+          "phonemes": "d e p"
+        },
+        {
+          "word": "үчүн",
+          "phonemes": "y tʃ y n"
+        },
+        {
+          "word": "болгон",
+          "phonemes": "b o l ɡ o n"
+        },
+        {
+          "word": "деген",
+          "phonemes": "d e ɡ e n"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "vowels": "[ɑeiɯoøuy]"
+        },
+        "sub": [
+          {
+            "from": "а",
+            "to": "ɑ",
+            "weight": 1.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 1.0
+          },
+          {
+            "from": "в",
+            "to": "v",
+            "weight": 1.0
+          },
+          {
+            "from": "г",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "д",
+            "to": "d",
+            "weight": 1.0
+          },
+          {
+            "from": "е",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "ё",
+            "to": "j o",
+            "weight": 1.0
+          },
+          {
+            "from": "ж",
+            "to": "dʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "з",
+            "to": "z",
+            "weight": 1.0
+          },
+          {
+            "from": "и",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 1.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 1.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 1.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 1.0
+          },
+          {
+            "from": "ң",
+            "to": "ŋ",
+            "weight": 1.0
+          },
+          {
+            "from": "о",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "ө",
+            "to": "ø",
+            "weight": 1.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 1.0
+          },
+          {
+            "from": "р",
+            "to": "r",
+            "weight": 1.0
+          },
+          {
+            "from": "т",
+            "to": "t",
+            "weight": 1.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "ү",
+            "to": "y",
+            "weight": 1.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 1.0
+          },
+          {
+            "from": "ч",
+            "to": "tʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "ш",
+            "to": "ʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "ы",
+            "to": "ɯ",
+            "weight": 1.0
+          },
+          {
+            "from": "э",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "х",
+            "to": "χ",
+            "weight": 1.0
+          },
+          {
+            "from": "ю",
+            "to": "j u",
+            "weight": 1.0
+          },
+          {
+            "from": "я",
+            "to": "j ɑ",
+            "weight": 1.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

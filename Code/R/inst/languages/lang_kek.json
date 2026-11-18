@@ -1,0 +1,305 @@
+{
+  "metadata": {
+    "code": "kek",
+    "name": "Qeqchi",
+    "family": "Mayan,Quichean-Mamean,Greater Quichean,Kekchi",
+    "macroarea": "North America",
+    "compromised": {
+      "sounds": "ɓ|bʔ|k’|kʔ|q’|qʔ|t’|tʔ|tʃ’|tʃʔ|ts’|tsʔ"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "xyaalal",
+          "phonemes": "ʃ j a ː l a l",
+          "comment": "a"
+        },
+        {
+          "word": "b'alaq'il",
+          "phonemes": "ɓ a l a qʼ i l",
+          "comment": "b'"
+        },
+        {
+          "word": "chirix",
+          "phonemes": "tʃ i r i ʃ",
+          "comment": "ch"
+        },
+        {
+          "word": "ruuchich'och'",
+          "phonemes": "r u ː tʃ i tʃʼ ɔ tʃʼ",
+          "comment": "ch'"
+        },
+        {
+          "word": "reheb'",
+          "phonemes": "r e h e ɓ",
+          "comment": "e"
+        },
+        {
+          "word": "ha'in",
+          "phonemes": "h a ʔ i n",
+          "comment": "h"
+        },
+        {
+          "word": "qiitz'in",
+          "phonemes": "q i ː tsʼ i n",
+          "comment": "i"
+        },
+        {
+          "word": "taawaj",
+          "phonemes": "t a ː w a x",
+          "comment": "j"
+        },
+        {
+          "word": "kutank",
+          "phonemes": "k u t a n k",
+          "comment": "k"
+        },
+        {
+          "word": "k'aru",
+          "phonemes": "kʼ a r u",
+          "comment": "k'"
+        },
+        {
+          "word": "ralal",
+          "phonemes": "r a l a l",
+          "comment": "l"
+        },
+        {
+          "word": "molam",
+          "phonemes": "m ɔ l a m",
+          "comment": "m"
+        },
+        {
+          "word": "xb'aanunkil",
+          "phonemes": "ʃ ɓ a ː n u n k i l",
+          "comment": "n"
+        },
+        {
+          "word": "moko",
+          "phonemes": "m ɔ k ɔ",
+          "comment": "o"
+        },
+        {
+          "word": "palaw",
+          "phonemes": "p a l a w",
+          "comment": "p"
+        },
+        {
+          "word": "jalanq",
+          "phonemes": "x a l a n q",
+          "comment": "q"
+        },
+        {
+          "word": "ninq'e",
+          "phonemes": "n i n qʼ e",
+          "comment": "q'"
+        },
+        {
+          "word": "chiru",
+          "phonemes": "tʃ i r u",
+          "comment": "r"
+        },
+        {
+          "word": "maa'us",
+          "phonemes": "m a ː ʔ u s",
+          "comment": "s"
+        },
+        {
+          "word": "tenamit",
+          "phonemes": "t e n a m i t",
+          "comment": "t"
+        },
+        {
+          "word": "b'ut'iha'",
+          "phonemes": "ɓ u tʼ i h a ʔ",
+          "comment": "t'"
+        },
+        {
+          "word": "tzolom",
+          "phonemes": "ts ɔ l ɔ m",
+          "comment": "tz"
+        },
+        {
+          "word": "tz'aqal",
+          "phonemes": "tsʼ a q a l",
+          "comment": "tz'"
+        },
+        {
+          "word": "jukub'",
+          "phonemes": "x u k u ɓ",
+          "comment": "u"
+        },
+        {
+          "word": "wankeb'",
+          "phonemes": "w a n k e ɓ",
+          "comment": "w"
+        },
+        {
+          "word": "xyu'am",
+          "phonemes": "ʃ j u ʔ a m",
+          "comment": "x"
+        },
+        {
+          "word": "yookeb'",
+          "phonemes": "j ɔ ː k e ɓ",
+          "comment": "y"
+        },
+        {
+          "word": "ha'an",
+          "phonemes": "h a ʔ a n",
+          "comment": "apostrophe"
+        },
+        {
+          "word": "t-uxmanq",
+          "phonemes": "t ʔ u ʃ m a n q",
+          "comment": "hyphen"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "ejectable": "[t|tz|ch|k|q]",
+          "vowel": "[aeiɔu]",
+          "apostrophe": "['ꞌˈ‘’]",
+          "passthrough": "[aehiklmnpqrstuw]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 4.0,
+            "comment": "standalone <c> is present in some older orthographies"
+          },
+          {
+            "from": "j",
+            "to": "x",
+            "weight": 4.0
+          },
+          {
+            "from": "o",
+            "to": "ɔ",
+            "weight": 4.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "ʔ",
+            "weight": 4.0,
+            "comment": "rare"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 5.0,
+            "follow": "h",
+            "comment": "<ch>"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 5.0,
+            "precede": "c",
+            "comment": "<ch> cleanup"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 5.0,
+            "follow": "z",
+            "comment": "<tz>"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 5.0,
+            "precede": "t",
+            "comment": "<tz> cleanup"
+          },
+          {
+            "from": "b",
+            "to": "ɓ",
+            "weight": 6.0,
+            "comment": "<b'>; occasionally the apostrophe is omitted, so I haven't included it in the context"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 6.0,
+            "precede": "b",
+            "comment": "<b'> cleanup"
+          },
+          {
+            "from": "t",
+            "to": "tʼ",
+            "weight": 6.0,
+            "follow": "{apostrophe}",
+            "comment": "<t'>"
+          },
+          {
+            "from": "t",
+            "to": "tsʼ",
+            "weight": 6.0,
+            "follow": "z{apostrophe}",
+            "comment": "<tz'>; the z is cleaned up in line 22"
+          },
+          {
+            "from": "c",
+            "to": "tʃʼ",
+            "weight": 6.0,
+            "follow": "h{apostrophe}",
+            "comment": "<ch'>; the h is cleaned up in line 20"
+          },
+          {
+            "from": "k",
+            "to": "kʼ",
+            "weight": 6.0,
+            "follow": "{apostrophe}",
+            "comment": "<k'>"
+          },
+          {
+            "from": "q",
+            "to": "qʼ",
+            "weight": 6.0,
+            "follow": "{apostrophe}",
+            "comment": "<q'>"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{ejectable}"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowel}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0,
+            "comment": "vowel lengthening"
+          }
+        ]
+      }
+    }
+  }
+}

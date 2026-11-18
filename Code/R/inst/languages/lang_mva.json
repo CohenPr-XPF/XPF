@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "code": "mva",
+    "name": "Manam",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,North New Guinea,Schouten,Kairiru-Manam,Manam",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "pong",
+          "phonemes": "p o ŋ"
+        },
+        {
+          "word": "deba",
+          "phonemes": "d e b a"
+        },
+        {
+          "word": "depa",
+          "phonemes": "d e p a"
+        },
+        {
+          "word": "embeki",
+          "phonemes": "e m b e ʔ i"
+        },
+        {
+          "word": "mama",
+          "phonemes": "m a m a"
+        },
+        {
+          "word": "matamlo",
+          "phonemes": "m a t a m l o"
+        },
+        {
+          "word": "uti",
+          "phonemes": "u t i"
+        },
+        {
+          "word": "udi",
+          "phonemes": "u d i"
+        },
+        {
+          "word": "laba",
+          "phonemes": "l a b a"
+        },
+        {
+          "word": "noka",
+          "phonemes": "n o ʔ a"
+        },
+        {
+          "word": "raba",
+          "phonemes": "r a b a"
+        },
+        {
+          "word": "msoaki",
+          "phonemes": "m s o a ʔ i"
+        },
+        {
+          "word": "mlako",
+          "phonemes": "m l a ʔ o"
+        },
+        {
+          "word": "ugonggong",
+          "phonemes": "u ɡ o ŋ ɡ o ŋ"
+        },
+        {
+          "word": "tangnga",
+          "phonemes": "t a ŋ ŋ a"
+        },
+        {
+          "word": "zimzim",
+          "phonemes": "z i m z i m"
+        },
+        {
+          "word": "zala",
+          "phonemes": "z a l a"
+        },
+        {
+          "word": "mrake",
+          "phonemes": "m r a ʔ e"
+        },
+        {
+          "word": "adika",
+          "phonemes": "a d i ʔ a"
+        },
+        {
+          "word": "atabala",
+          "phonemes": "a t a b a l a"
+        },
+        {
+          "word": "bazi",
+          "phonemes": "b a z i"
+        },
+        {
+          "word": "buiri",
+          "phonemes": "b u i r i"
+        },
+        {
+          "word": "boro",
+          "phonemes": "b o r o"
+        },
+        {
+          "word": "kasa",
+          "phonemes": "ʔ a s a"
+        },
+        {
+          "word": "kita",
+          "phonemes": "ʔ i t a"
+        },
+        {
+          "word": "zoli",
+          "phonemes": "z o l i"
+        },
+        {
+          "word": "zoro",
+          "phonemes": "z o r o"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeilmnoprstuz]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "k",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0,
+            "comment": "dashes indicate morpheme boundaries"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+bibentry(
+  bibtype = "Manual",
+  key = "XPF2021manual",
+  title = "The Cross-linguistic Phonological Frequencies ({XPF}) Corpus manual",
+  author = c(
+    person("Uriel", "Cohen Priva"), person("Emily", "Strand"),
+    person("Shiying", "Yang"), person("William", "Mizgerd"),
+    person("Abigail", "Creighton"), person("Justin", "Bai"),
+    person("Rebecca", "Mathew"), person("Allison", "Shao"),
+    person("Jordan", "Schuster"), person("Daniela", "Wiepert")
+  ),
+  year = "2021",
+  url = "https://cohenpr-xpf.github.io/XPF/manual/xpf_manual.pdf",
+  note = "Accessible online"
+)

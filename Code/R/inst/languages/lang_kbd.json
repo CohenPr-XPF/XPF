@@ -1,0 +1,559 @@
+{
+  "metadata": {
+    "code": "kbd",
+    "name": "Kabardian",
+    "family": "North Caucasian,Northwest,Circassian",
+    "macroarea": "Eurasia",
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "адыгэбзэ",
+          "phonemes": "aː d ə ɣ a b z a"
+        },
+        {
+          "word": "бахъсымэ",
+          "phonemes": "b aː χ s ə m a"
+        },
+        {
+          "word": "вагъуэ",
+          "phonemes": "v aː ʁʷ a"
+        },
+        {
+          "word": "гъуэмылапхъэ",
+          "phonemes": "ʁʷ a m ə ɮ aː p χ a"
+        },
+        {
+          "word": "гъэщӏэгъуэн",
+          "phonemes": "ʁ a ɕʼ a ʁʷ a n"
+        },
+        {
+          "word": "ефакӏуэ",
+          "phonemes": "a f aː kʷʼ a"
+        },
+        {
+          "word": "жьы",
+          "phonemes": "ʑ ə"
+        },
+        {
+          "word": "иджырей",
+          "phonemes": "j ə dʒ ə r a j"
+        },
+        {
+          "word": "кӏагуэ",
+          "phonemes": "tʃʼ aː ɡʷ a"
+        },
+        {
+          "word": "набдзэ",
+          "phonemes": "n aː b dz a"
+        },
+        {
+          "word": "пжэндэхъу",
+          "phonemes": "p ʒ a n d a χʷ"
+        },
+        {
+          "word": "тхыбзэ",
+          "phonemes": "t x ə b z a"
+        },
+        {
+          "word": "ины",
+          "phonemes": "j ə n ə"
+        },
+        {
+          "word": "къэбэрдэйбзэ",
+          "phonemes": "q a b a r d a j b z a"
+        },
+        {
+          "word": "мылъку",
+          "phonemes": "m ə ɬ kʷ"
+        },
+        {
+          "word": "хыкхъуэ",
+          "phonemes": "x ə qʷʼ a"
+        },
+        {
+          "word": "зылӏэжын",
+          "phonemes": "z ə ɬʼ a ʒ ə n"
+        },
+        {
+          "word": "фошыгъу",
+          "phonemes": "f a w ʃ ə ʁʷ"
+        },
+        {
+          "word": "хьэпӏацӏэ",
+          "phonemes": "ħ a pʼ aː tsʼ a"
+        },
+        {
+          "word": "шхъуантӏэ",
+          "phonemes": "ʃ χʷ aː n tʼ a"
+        },
+        {
+          "word": "уасэ",
+          "phonemes": "w aː s a"
+        },
+        {
+          "word": "хьэуа",
+          "phonemes": "ħ a w aː"
+        },
+        {
+          "word": "щӏыкӏафӏэ",
+          "phonemes": "ɕʼ ə tʃʼ aː fʼ a"
+        },
+        {
+          "word": "хьэнцэ",
+          "phonemes": "ħ a n ts a"
+        },
+        {
+          "word": "нэчыхьытх",
+          "phonemes": "n a tʃ ə ħ ə t x"
+        },
+        {
+          "word": "ятӏэ",
+          "phonemes": "j aː tʼ a"
+        },
+        {
+          "word": "ӏанэ",
+          "phonemes": "ʔ aː n a"
+        },
+        {
+          "word": "ӏуэху",
+          "phonemes": "ʔʷ a xʷ"
+        },
+        {
+          "word": "ипэкӏэ",
+          "phonemes": "j ə p a tʃʼ a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "labial": "(ʁ|k|q|qʼ|x|χ)",
+          "eject": "(p|t|f|ts|tʃ|ɕ)"
+        },
+        "pre": [
+          {
+            "from": "ІӀ",
+            "to": "ӏӏ"
+          }
+        ],
+        "sub": [
+          {
+            "from": "а",
+            "to": "aː",
+            "weight": 1.0
+          },
+          {
+            "from": "э",
+            "to": "a",
+            "weight": 1.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 1.0
+          },
+          {
+            "from": "в",
+            "to": "v",
+            "weight": 1.0
+          },
+          {
+            "from": "г",
+            "to": "ɣ",
+            "weight": 1.0
+          },
+          {
+            "from": "д",
+            "to": "d",
+            "weight": 1.0
+          },
+          {
+            "from": "е",
+            "to": "a",
+            "weight": 1.0
+          },
+          {
+            "from": "ж",
+            "to": "ʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "з",
+            "to": "z",
+            "weight": 1.0
+          },
+          {
+            "from": "и",
+            "to": "j ə",
+            "weight": 1.0
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 1.0
+          },
+          {
+            "from": "л",
+            "to": "ɮ",
+            "weight": 1.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 1.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 1.0
+          },
+          {
+            "from": "о",
+            "to": "a w",
+            "weight": 1.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 1.0
+          },
+          {
+            "from": "р",
+            "to": "r",
+            "weight": 1.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 1.0
+          },
+          {
+            "from": "т",
+            "to": "t",
+            "weight": 1.0
+          },
+          {
+            "from": "у",
+            "to": "w",
+            "weight": 1.0
+          },
+          {
+            "from": "ф",
+            "to": "f",
+            "weight": 1.0
+          },
+          {
+            "from": "х",
+            "to": "x",
+            "weight": 1.0
+          },
+          {
+            "from": "ц",
+            "to": "ts",
+            "weight": 1.0
+          },
+          {
+            "from": "ч",
+            "to": "tʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "ш",
+            "to": "ʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "щ",
+            "to": "ɕ",
+            "weight": 1.0
+          },
+          {
+            "from": "ы",
+            "to": "ə",
+            "weight": 1.0
+          },
+          {
+            "from": "ю",
+            "to": "j ə",
+            "weight": 1.0
+          },
+          {
+            "from": "я",
+            "to": "j aː",
+            "weight": 1.0
+          },
+          {
+            "from": "ӏ",
+            "to": "ʔ",
+            "weight": 1.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0
+          },
+          {
+            "from": "ъ",
+            "to": "ʁ",
+            "weight": 3.0,
+            "precede": "г"
+          },
+          {
+            "from": "г",
+            "to": "",
+            "weight": 3.0,
+            "follow": "ъ",
+            "comment": "clean-up"
+          },
+          {
+            "from": "д",
+            "to": "dʒ",
+            "weight": 3.0,
+            "follow": "ж"
+          },
+          {
+            "from": "ж",
+            "to": "",
+            "weight": 3.0,
+            "precede": "д",
+            "comment": "clean-up"
+          },
+          {
+            "from": "д",
+            "to": "dz",
+            "weight": 3.0,
+            "follow": "з"
+          },
+          {
+            "from": "з",
+            "to": "",
+            "weight": 3.0,
+            "precede": "д",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ж",
+            "to": "ʑ",
+            "weight": 3.0,
+            "follow": "ь"
+          },
+          {
+            "from": "ь",
+            "to": "",
+            "weight": 3.0,
+            "precede": "ж",
+            "comment": "clean-up"
+          },
+          {
+            "from": "к",
+            "to": "q",
+            "weight": 3.0,
+            "follow": "ъ"
+          },
+          {
+            "from": "ъ",
+            "to": "",
+            "weight": 3.0,
+            "precede": "к",
+            "comment": "clean-up"
+          },
+          {
+            "from": "л",
+            "to": "ɬ",
+            "weight": 3.0,
+            "follow": "ъ"
+          },
+          {
+            "from": "ъ",
+            "to": "",
+            "weight": 3.0,
+            "precede": "л",
+            "comment": "clean-up"
+          },
+          {
+            "from": "х",
+            "to": "χ",
+            "weight": 3.0,
+            "follow": "ъ"
+          },
+          {
+            "from": "ъ",
+            "to": "",
+            "weight": 3.0,
+            "precede": "х",
+            "comment": "clean-up"
+          },
+          {
+            "from": "х",
+            "to": "ħ",
+            "weight": 3.0,
+            "follow": "ь"
+          },
+          {
+            "from": "ь",
+            "to": "",
+            "weight": 3.0,
+            "precede": "х",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ш",
+            "to": "ʃ",
+            "weight": 3.0,
+            "follow": "ъ",
+            "comment": "orthographic variation [@Matasović2010, p. 16]"
+          },
+          {
+            "from": "ъ",
+            "to": "",
+            "weight": 3.0,
+            "precede": "ш",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ж",
+            "to": "ʑ",
+            "weight": 3.0,
+            "follow": "ъ",
+            "comment": "orthographic variation [@Matasović2010, p. 16]"
+          },
+          {
+            "from": "ъ",
+            "to": "",
+            "weight": 3.0,
+            "precede": "ж",
+            "comment": "clean-up"
+          },
+          {
+            "from": "х",
+            "to": "qʼ",
+            "weight": 4.0,
+            "precede": "к",
+            "follow": "ъ"
+          },
+          {
+            "from": "к",
+            "to": "",
+            "weight": 4.0,
+            "follow": "хъ",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ъ",
+            "to": "",
+            "weight": 4.0,
+            "precede": "кх",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ӏ",
+            "to": "kʷʼ",
+            "weight": 7.0,
+            "precede": "к",
+            "follow": "у",
+            "comment": "exception: labialization and ejectivization simultaneously"
+          },
+          {
+            "from": "к",
+            "to": "",
+            "weight": 7.0,
+            "follow": "ӏу",
+            "comment": "clean-up"
+          },
+          {
+            "from": "у",
+            "to": "",
+            "weight": 7.0,
+            "precede": "кӏ",
+            "comment": "clean-up"
+          },
+          {
+            "from": "г",
+            "to": "ɡʷ",
+            "weight": 5.0,
+            "follow": "у",
+            "comment": "exception to labialization rule (no base phoneme to work off)"
+          },
+          {
+            "from": "у",
+            "to": "",
+            "weight": 5.0,
+            "precede": "г",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ӏ",
+            "to": "ʔʷ",
+            "weight": 5.0,
+            "follow": "у"
+          },
+          {
+            "from": "у",
+            "to": "",
+            "weight": 5.0,
+            "precede": "ӏ",
+            "comment": "clean-up"
+          },
+          {
+            "from": "к",
+            "to": "tʃʼ",
+            "weight": 6.0,
+            "follow": "ӏ",
+            "comment": "exception to the eject rule (no base phoneme to work off)"
+          },
+          {
+            "from": "ӏ",
+            "to": "",
+            "weight": 6.0,
+            "precede": "к",
+            "comment": "clean-up"
+          },
+          {
+            "from": "л",
+            "to": "ɬʼ",
+            "weight": 6.0,
+            "follow": "ӏ",
+            "comment": "exception to the eject rule (no base phoneme to work off)"
+          },
+          {
+            "from": "ӏ",
+            "to": "",
+            "weight": 6.0,
+            "precede": "л",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({labial}) w",
+            "to": "\\1ʷ",
+            "weight": 1.0
+          },
+          {
+            "from": "qʼ w",
+            "to": "qʷʼ",
+            "weight": 2.0,
+            "comment": "standardizes convention with ejective/labialized consonants"
+          },
+          {
+            "from": "({eject}) ʔ",
+            "to": "\\1ʼ",
+            "weight": 1.0
+          },
+          {
+            "from": "({eject}) ʔʷ",
+            "to": "\\1ʼ w",
+            "weight": 3.0,
+            "comment": "only few instance of ejective consonants followed by <у> - prioritizes ejectives rather than labialized glottal stops"
+          }
+        ]
+      }
+    }
+  }
+}

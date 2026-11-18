@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "code": "gvn",
+    "name": "Kuku-Yalanji",
+    "family": "Australian,Pama-Nyungan,Yalandyic",
+    "macroarea": "Australia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "kabanba",
+          "phonemes": "k a p a n p a",
+          "comment": "b"
+        },
+        {
+          "word": "bundanday",
+          "phonemes": "p u n t a n t a j",
+          "comment": "d"
+        },
+        {
+          "word": "dajil",
+          "phonemes": "t a c i l",
+          "comment": "i"
+        },
+        {
+          "word": "wuljaljiku",
+          "phonemes": "w u l c a l c i k u",
+          "comment": "j"
+        },
+        {
+          "word": "kaki",
+          "phonemes": "k a k i",
+          "comment": "k"
+        },
+        {
+          "word": "balkal",
+          "phonemes": "p a l k a l",
+          "comment": "l"
+        },
+        {
+          "word": "mayi",
+          "phonemes": "m a j i",
+          "comment": "m"
+        },
+        {
+          "word": "jananin",
+          "phonemes": "c a n a n i n",
+          "comment": "n"
+        },
+        {
+          "word": "ngayu",
+          "phonemes": "ŋ a j u",
+          "comment": "ng"
+        },
+        {
+          "word": "nyungun",
+          "phonemes": "ɲ u ŋ u n",
+          "comment": "ny"
+        },
+        {
+          "word": "kari",
+          "phonemes": "k a ɻ i",
+          "comment": "r"
+        },
+        {
+          "word": "yalarrku",
+          "phonemes": "j a l a r k u",
+          "comment": "rr"
+        },
+        {
+          "word": "wubulku",
+          "phonemes": "w u p u l k u",
+          "comment": "u"
+        },
+        {
+          "word": "wawu",
+          "phonemes": "w a w u",
+          "comment": "w"
+        },
+        {
+          "word": "yinyaynka",
+          "phonemes": "j i ɲ a j n k a",
+          "comment": "y"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "post-n": "[gy]",
+          "passthrough": "[aiklmnuw]"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "p",
+            "weight": 4.0
+          },
+          {
+            "from": "d",
+            "to": "t",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "c",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɻ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "some words have a hyphen with no phonetic value"
+          },
+          {
+            "from": "g",
+            "to": "ŋ",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<ng>"
+          },
+          {
+            "from": "y",
+            "to": "ɲ",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<ny>"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 6.0,
+            "follow": "{post-n}",
+            "comment": "cleanup of n-initial digraphs"
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 6.0,
+            "follow": "r",
+            "comment": "<rr>"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 6.0,
+            "precede": "r",
+            "comment": "<rr> cleanup"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}

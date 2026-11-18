@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "code": "aau",
+    "name": "Abau",
+    "family": "Sepik-Ramu,Sepik,Upper Sepik,Abau",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "kina",
+          "phonemes": "k i n a",
+          "comment": "a"
+        },
+        {
+          "word": "meio",
+          "phonemes": "m e i o",
+          "comment": "e"
+        },
+        {
+          "word": "hreme",
+          "phonemes": "h ɾ e m e",
+          "comment": "h"
+        },
+        {
+          "word": "hir",
+          "phonemes": "h i ɾ",
+          "comment": "s"
+        },
+        {
+          "word": "kwor",
+          "phonemes": "k w o ɾ",
+          "comment": "k"
+        },
+        {
+          "word": "lyan",
+          "phonemes": "ɾ j a n",
+          "comment": "l"
+        },
+        {
+          "word": "nowm",
+          "phonemes": "n o w m",
+          "comment": "m"
+        },
+        {
+          "word": "howniy",
+          "phonemes": "h o w n i j",
+          "comment": "n"
+        },
+        {
+          "word": "onon",
+          "phonemes": "o n o n",
+          "comment": "o"
+        },
+        {
+          "word": "pisu",
+          "phonemes": "p i s u",
+          "comment": "p"
+        },
+        {
+          "word": "weyr",
+          "phonemes": "w e j ɾ",
+          "comment": "r"
+        },
+        {
+          "word": "sruw",
+          "phonemes": "s ɾ u w",
+          "comment": "s"
+        },
+        {
+          "word": "sune",
+          "phonemes": "s u n e",
+          "comment": "u"
+        },
+        {
+          "word": "swaw",
+          "phonemes": "s w a w",
+          "comment": "w"
+        },
+        {
+          "word": "yor",
+          "phonemes": "j o ɾ",
+          "comment": "y"
+        },
+        {
+          "word": "yodney",
+          "phonemes": "j o ɾ n e j",
+          "comment": "d"
+        },
+        {
+          "word": "yiaup",
+          "phonemes": "i a u p",
+          "comment": "vowel sequence"
+        },
+        {
+          "word": "wueir",
+          "phonemes": "u e i ɾ",
+          "comment": "vowel sequence"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aehikmnopsuw]",
+          "vowels": "[aeo]",
+          "punct": "[ꞌ'ˈ‘’ʼ-]"
+        },
+        "sub": [
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "l",
+            "to": "ɾ",
+            "weight": 1.0,
+            "precede": "^"
+          },
+          {
+            "from": "d",
+            "to": "ɾ",
+            "weight": 1.0,
+            "follow": "n"
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 3.0,
+            "precede": "^",
+            "follow": "i({vowels})"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 3.0,
+            "precede": "^",
+            "follow": "u({vowels})"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "metadata": {
+    "code": "nsn",
+    "name": "Nehan",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,Meso Melanesian,New Ireland,South New Ireland-Northwest Solomonic,Nehan-North Bougainville,Nehan",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "kuah",
+          "phonemes": "k u a h"
+        },
+        {
+          "word": "laur",
+          "phonemes": "l a u r"
+        },
+        {
+          "word": "pil",
+          "phonemes": "p i l"
+        },
+        {
+          "word": "lopou",
+          "phonemes": "l ɔ p ɔ u"
+        },
+        {
+          "word": "leb",
+          "phonemes": "l ɛ b"
+        },
+        {
+          "word": "kamlang",
+          "phonemes": "k a m l a ŋ"
+        },
+        {
+          "word": "tabtabil",
+          "phonemes": "t a b t a b i l"
+        },
+        {
+          "word": "pidipid",
+          "phonemes": "p i d i p i d"
+        },
+        {
+          "word": "ngusun",
+          "phonemes": "ŋ u s u n"
+        },
+        {
+          "word": "puhin",
+          "phonemes": "p u h i n"
+        },
+        {
+          "word": "reh",
+          "phonemes": "r ɛ h"
+        },
+        {
+          "word": "gutgutur",
+          "phonemes": "ɡ u t ɡ u t u r"
+        },
+        {
+          "word": "tar",
+          "phonemes": "t a r"
+        },
+        {
+          "word": "ke",
+          "phonemes": "k ɛ"
+        },
+        {
+          "word": "tang",
+          "phonemes": "t a ŋ"
+        },
+        {
+          "word": "pare",
+          "phonemes": "p a r ɛ"
+        },
+        {
+          "word": "ka",
+          "phonemes": "k a"
+        },
+        {
+          "word": "ra",
+          "phonemes": "r a"
+        },
+        {
+          "word": "me",
+          "phonemes": "m ɛ"
+        },
+        {
+          "word": "ahik",
+          "phonemes": "a h i k"
+        },
+        {
+          "word": "la",
+          "phonemes": "l a"
+        },
+        {
+          "word": "tun",
+          "phonemes": "t u n"
+        },
+        {
+          "word": "tamata",
+          "phonemes": "t a m a t a"
+        },
+        {
+          "word": "kare",
+          "phonemes": "k a r ɛ"
+        },
+        {
+          "word": "tasir",
+          "phonemes": "t a s i r"
+        },
+        {
+          "word": "turung",
+          "phonemes": "t u r u ŋ"
+        },
+        {
+          "word": "kara",
+          "phonemes": "k a r a"
+        },
+        {
+          "word": "pe",
+          "phonemes": "p ɛ"
+        },
+        {
+          "word": "toro",
+          "phonemes": "t ɔ r ɔ"
+        },
+        {
+          "word": "tamatang",
+          "phonemes": "t a m a t a ŋ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdhiklmnprstu]"
+        },
+        "sub": [
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "o",
+            "to": "ɔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

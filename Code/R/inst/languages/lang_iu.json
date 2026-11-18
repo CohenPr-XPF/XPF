@@ -1,0 +1,1348 @@
+{
+  "metadata": {
+    "code": "iu",
+    "name": "Inuktitut",
+    "family": "Eskimo-Aleut,Eskimo,Inuit",
+    "macroarea": "North America"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "anaana",
+          "phonemes": "a n a ː n a",
+          "comment": "a"
+        },
+        {
+          "word": "tuugaalik",
+          "phonemes": "t u ː ɣ a ː l i k",
+          "comment": "g"
+        },
+        {
+          "word": "ilissi",
+          "phonemes": "i l i s s i",
+          "comment": "i"
+        },
+        {
+          "word": "nujat",
+          "phonemes": "n u j a t",
+          "comment": "j"
+        },
+        {
+          "word": "kaaktuq",
+          "phonemes": "k a ː k t u q",
+          "comment": "k"
+        },
+        {
+          "word": "ulu",
+          "phonemes": "u l u",
+          "comment": "l"
+        },
+        {
+          "word": "kangiq&iniup",
+          "phonemes": "k a ŋ i q ɬ i n i u p",
+          "comment": "&"
+        },
+        {
+          "word": "mauja",
+          "phonemes": "m a u j a",
+          "comment": "m"
+        },
+        {
+          "word": "nuna",
+          "phonemes": "n u n a",
+          "comment": "n"
+        },
+        {
+          "word": "qanga",
+          "phonemes": "q a ŋ a",
+          "comment": "ng"
+        },
+        {
+          "word": "paippaaq",
+          "phonemes": "p a i p p a ː q",
+          "comment": "p"
+        },
+        {
+          "word": "qausiqtuq",
+          "phonemes": "q a u s i q t u q",
+          "comment": "q"
+        },
+        {
+          "word": "isaruq",
+          "phonemes": "i s a ʁ u q",
+          "comment": "r"
+        },
+        {
+          "word": "savik",
+          "phonemes": "s a v i k",
+          "comment": "s"
+        },
+        {
+          "word": "titiraut",
+          "phonemes": "t i t i ʁ a u t",
+          "comment": "t"
+        },
+        {
+          "word": "uvaguk",
+          "phonemes": "u v a ɣ u k",
+          "comment": "u"
+        },
+        {
+          "word": "aiviq",
+          "phonemes": "a i v i q",
+          "comment": "v"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "vowel": "[aiu]",
+          "passthrough": "[aijklmnpqstuv]",
+          "punct": "['‘’-]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɣ",
+            "weight": 4.0
+          },
+          {
+            "from": "&",
+            "to": "ɬ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ʁ",
+            "weight": 4.0
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 6.0,
+            "follow": "g",
+            "comment": "<ng>"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<ng> cleanup"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 4.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowel}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0,
+            "comment": "long vowels"
+          }
+        ]
+      }
+    },
+    "syllabics": {
+      "verify": [
+        {
+          "word": "ᐃᖃᓗᐃᑦ",
+          "phonemes": "i q a l u i t",
+          "comment": "ᐃ / i --- BEGINNING OF /i/-FINAL SYLLABLES"
+        },
+        {
+          "word": "ᐱᓱᒃ",
+          "phonemes": "p i s u k",
+          "comment": "ᐱ / pi"
+        },
+        {
+          "word": "ᑎᕆᒐᓂᐊᖅ",
+          "phonemes": "t i ʁ i ɣ a n i a q",
+          "comment": "ᑎ / ti"
+        },
+        {
+          "word": "ᑭᐊᑎ",
+          "phonemes": "k i a t i",
+          "comment": "ᑭ / ki"
+        },
+        {
+          "word": "ᑕᑯᓗᒋᑦ",
+          "phonemes": "t a k u l u ɣ i t",
+          "comment": "ᒋ / ɣi"
+        },
+        {
+          "word": "ᑲᒥᒃ",
+          "phonemes": "k a m i k",
+          "comment": "ᒥ / mi"
+        },
+        {
+          "word": "ᓂᐅᒃ",
+          "phonemes": "n i u k",
+          "comment": "ᓂ / ni"
+        },
+        {
+          "word": "ᓯᓚ",
+          "phonemes": "s i l a",
+          "comment": "ᓯ / si"
+        },
+        {
+          "word": "ᐊᓪᓕᖅ",
+          "phonemes": "a l l i q",
+          "comment": "ᓕ / li"
+        },
+        {
+          "word": "ᐃᔨ",
+          "phonemes": "i j i",
+          "comment": "ᔨ / ji"
+        },
+        {
+          "word": "ᐊᕕᖕᖓᖅ",
+          "phonemes": "a v i ŋ ŋ a q",
+          "comment": "ᕕ / vi"
+        },
+        {
+          "word": "ᑕᕆᐅᖅ",
+          "phonemes": "t a ʁ i u q",
+          "comment": "ᕆ / ʁi"
+        },
+        {
+          "word": "ᕿᒻᒥᒃ",
+          "phonemes": "q i m m i k",
+          "comment": "ᕿ / qi"
+        },
+        {
+          "word": "ᓯᖏᕐᓂᖅ",
+          "phonemes": "s i ŋ i ʁ n i q",
+          "comment": "ᖏ / ŋi"
+        },
+        {
+          "word": "ᓂᕈᐊᖅᖠᕐᓂᕐᒧᑦ",
+          "phonemes": "n i ʁ u a q ɬ i ʁ n i ʁ m u t",
+          "comment": "ᖠ / ɬi"
+        },
+        {
+          "word": "ᐅᑭᐅᖅ",
+          "phonemes": "u k i u q",
+          "comment": "ᐅ / u --- BEGINNING OF /u/-FINAL SYLLABLES"
+        },
+        {
+          "word": "ᐳᐊᓘᒃ",
+          "phonemes": "p u a l u ː k",
+          "comment": "ᐳ / pu"
+        },
+        {
+          "word": "ᑐᒃᑐ",
+          "phonemes": "t u k t u",
+          "comment": "ᑐ / tu"
+        },
+        {
+          "word": "ᓴᑯ",
+          "phonemes": "s a k u",
+          "comment": "ᑯ / ku"
+        },
+        {
+          "word": "ᐅᕙᒍᑦ",
+          "phonemes": "u v a ɣ u t",
+          "comment": "ᒍ / ɣu"
+        },
+        {
+          "word": "ᖃᒧᑏᒃ",
+          "phonemes": "q a m u t i ː k",
+          "comment": "ᒧ / mu"
+        },
+        {
+          "word": "ᓄᔭᑦ",
+          "phonemes": "n u j a t",
+          "comment": "ᓄ / nu"
+        },
+        {
+          "word": "ᓱᓇᒐᖅ",
+          "phonemes": "s u n a ɣ a q",
+          "comment": "ᓱ / su"
+        },
+        {
+          "word": "ᐅᓪᓗᕆᐊᖅ",
+          "phonemes": "u l l u ʁ i a q",
+          "comment": "ᓗ / lu"
+        },
+        {
+          "word": "ᐊᖓᔪᖅ",
+          "phonemes": "a ŋ a j u q",
+          "comment": "ᔪ / ju"
+        },
+        {
+          "word": "ᓄᓇᑦᓯᐊᕗᑦ",
+          "phonemes": "n u n a t s i a v u t",
+          "comment": "ᕗ / vu"
+        },
+        {
+          "word": "ᐊᒪᕈᖅ",
+          "phonemes": "a m a ʁ u q",
+          "comment": "ᕈ / ʁu"
+        },
+        {
+          "word": "ᖁᑭᐅᑦ",
+          "phonemes": "q u k i u t",
+          "comment": "ᖁ / qu"
+        },
+        {
+          "word": "ᐊᖑᑦ",
+          "phonemes": "a ŋ u t",
+          "comment": "ᖑ / ŋu"
+        },
+        {
+          "word": "ᒪᓕᒃᖢᒍ",
+          "phonemes": "m a l i k ɬ u ɣ u",
+          "comment": "ᖢ / ɬu"
+        },
+        {
+          "word": "ᐊᐅᔭ",
+          "phonemes": "a u j a",
+          "comment": "ᐊ / a --- BEGINNING OF /a/-FINAL SYLLABLES"
+        },
+        {
+          "word": "ᐸᓂᖅ",
+          "phonemes": "p a n i q",
+          "comment": "ᐸ / pa"
+        },
+        {
+          "word": "ᕿᑭᖅᑕᑦ",
+          "phonemes": "q i k i q t a t",
+          "comment": "ᑕ / ta"
+        },
+        {
+          "word": "ᓄᑲᖅ",
+          "phonemes": "n u k a q",
+          "comment": "ᑲ / ka"
+        },
+        {
+          "word": "ᐊᒡᒐᒃ",
+          "phonemes": "a ɣ ɣ a k",
+          "comment": "ᒐ / ɣa"
+        },
+        {
+          "word": "ᒪᐅᔭ",
+          "phonemes": "m a u j a",
+          "comment": "ᒪ / ma"
+        },
+        {
+          "word": "ᓇᓄᖅ",
+          "phonemes": "n a n u q",
+          "comment": "ᓇ / na"
+        },
+        {
+          "word": "ᓴᕕᒃ",
+          "phonemes": "s a v i k",
+          "comment": "ᓴ / sa"
+        },
+        {
+          "word": "ᓯᓚᒥ",
+          "phonemes": "s i l a m i",
+          "comment": "ᓚ / la"
+        },
+        {
+          "word": "ᖃᔭᖅ",
+          "phonemes": "q a j a q",
+          "comment": "ᔭ / ja"
+        },
+        {
+          "word": "ᐅᕙᖓ",
+          "phonemes": "u v a ŋ a",
+          "comment": "ᕙ / va"
+        },
+        {
+          "word": "ᑎᑎᕋᐅᑦ",
+          "phonemes": "t i t i ʁ a u t",
+          "comment": "ᕋ / ʁa"
+        },
+        {
+          "word": "ᖃᐅᔨᒪᔭᑐᖃᖏᑦ",
+          "phonemes": "q a u j i m a j a t u q a ŋ i t",
+          "comment": "ᖃ / qa"
+        },
+        {
+          "word": "ᖃᖓ",
+          "phonemes": "q a ŋ a",
+          "comment": "ᖓ / ŋa"
+        },
+        {
+          "word": "ᐊᒡᖤᕕᖕᒥ",
+          "phonemes": "a ɣ ɬ a v i ŋ m i",
+          "comment": "ᖤ / ɬa"
+        },
+        {
+          "word": "ᐁᕕᖃ",
+          "phonemes": "a i v i q a",
+          "comment": "ᐁ / ai --- BEGINNING OF /ai/-FINAL SYLLABLES"
+        },
+        {
+          "word": "ᐯᑉᐹᖅ",
+          "phonemes": "p a i p p a ː q",
+          "comment": "ᐯ / pai"
+        },
+        {
+          "word": "ᐃᓄᓕᕐᑌᑦ",
+          "phonemes": "i n u l i ʁ t a i t",
+          "comment": "ᑌ / tai"
+        },
+        {
+          "word": "ᑫᓪᓗᐊᕈᑕᐅᕗᖅ",
+          "phonemes": "k a i l l u a ʁ u t a u v u q",
+          "comment": "ᑫ / kai"
+        },
+        {
+          "word": "ᑌᒣᑦᑐᐃᑦ",
+          "phonemes": "t a i m a i t t u i t",
+          "comment": "ᒣ / mai"
+        },
+        {
+          "word": "ᑕᐸᓀᑦᑐᑦ",
+          "phonemes": "t a p a n a i t t u t",
+          "comment": "ᓀ / nai"
+        },
+        {
+          "word": "ᑐᓴᕋᑦᓭᑦ",
+          "phonemes": "t u s a ʁ a t s a i t",
+          "comment": "ᓭ / sai"
+        },
+        {
+          "word": "ᐅᓈᒐᓓᑦ",
+          "phonemes": "u n a ː ɣ a l a i t",
+          "comment": "ᓓ / lai"
+        },
+        {
+          "word": "ᓇᒻᒥᓂᕆᔦᑦ",
+          "phonemes": "n a m m i n i ʁ i j a i t",
+          "comment": "ᔦ / jai"
+        },
+        {
+          "word": "ᐊᑭᓖᔪᕕᓂᐅᓂᕃᔪᒥᒃ",
+          "phonemes": "a k i l i ː j u v i n i u n i ʁ a i j u m i k",
+          "comment": "ᕃ / ʁai"
+        },
+        {
+          "word": "ᒪᙯᑦᑏᑦ",
+          "phonemes": "m a q a i t t i ː t",
+          "comment": "ᙯ / qai"
+        },
+        {
+          "word": "ᓄᑕᕋᒃᓴᐅᑉ",
+          "phonemes": "n u t a ʁ a k s a u p",
+          "comment": "ᑉ / p --- BEGINNING OF CODA CONSONANTS"
+        },
+        {
+          "word": "ᐊᐳᑦ",
+          "phonemes": "a p u t",
+          "comment": "ᑦ / t"
+        },
+        {
+          "word": "ᐱᓱᒃ",
+          "phonemes": "p i s u k",
+          "comment": "ᒃ / k"
+        },
+        {
+          "word": "ᐊᒡᒐᒃ",
+          "phonemes": "a ɣ ɣ a k",
+          "comment": "ᒡ / ɣ"
+        },
+        {
+          "word": "ᕿᒻᒧᒃᓯᑦ",
+          "phonemes": "q i m m u k s i t",
+          "comment": "ᒻ / m"
+        },
+        {
+          "word": "ᐅᓐᓄᖅ",
+          "phonemes": "u n n u q",
+          "comment": "ᓐ / n"
+        },
+        {
+          "word": "ᐃᓕᔅᓯ",
+          "phonemes": "i l i s s i",
+          "comment": "ᔅ / s"
+        },
+        {
+          "word": "ᐊᓇᐅᓪᓚᐅᑦ",
+          "phonemes": "a n a u l l a u t",
+          "comment": "ᓪ / l"
+        },
+        {
+          "word": "ᖃᐅᔨᒃᑲᐃᔾᔪᑏᑦ",
+          "phonemes": "q a u j i k k a i j j u t i ː t",
+          "comment": "ᔾ / j"
+        },
+        {
+          "word": "ᑕᕝᕙ",
+          "phonemes": "t a v v a",
+          "comment": "ᕝ / v"
+        },
+        {
+          "word": "ᐊᕐᓇᖅ",
+          "phonemes": "a ʁ n a q",
+          "comment": "ᕐ / ʁ"
+        },
+        {
+          "word": "ᐊᖏᖅᑲᖅᑐᖅ",
+          "phonemes": "a ŋ i q k a q t u q",
+          "comment": "ᖅ / q"
+        },
+        {
+          "word": "ᑎᖕᒥᐊᖅ",
+          "phonemes": "t i ŋ m i a q",
+          "comment": "ᖕ / ŋ"
+        },
+        {
+          "word": "ᑎᑭᖦᖢᒍ",
+          "phonemes": "t i k i ɬ ɬ u ɣ u",
+          "comment": "ᖦ / ɬ"
+        },
+        {
+          "word": "ᐄᑉᐳᕈ",
+          "phonemes": "i ː p p u ʁ u",
+          "comment": "ᐄ / iː --- BEGINNING OF LONG /i/-FINAL SYLLABLES"
+        },
+        {
+          "word": "ᐲᖅᑕᐅᕗᖅ",
+          "phonemes": "p i ː q t a u v u q",
+          "comment": "ᐲ / piː"
+        },
+        {
+          "word": "ᖃᒧᑏᒃ",
+          "phonemes": "q a m u t i ː k",
+          "comment": "ᑏ / tiː"
+        },
+        {
+          "word": "ᑮᓇᖅ",
+          "phonemes": "k i ː n a q",
+          "comment": "ᑮ / kiː"
+        },
+        {
+          "word": "ᐊᔾᔨᒌᖏᑦᑐᓂᒃ",
+          "phonemes": "a j j i ɣ i ː ŋ i t t u n i k",
+          "comment": "ᒌ / ɣiː"
+        },
+        {
+          "word": "ᖁᔭᓐᓇᒦᒃ",
+          "phonemes": "q u j a n n a m i ː k",
+          "comment": "ᒦ / miː"
+        },
+        {
+          "word": "ᓃᖁᓗᒃᑐᖅ",
+          "phonemes": "n i ː q u l u k t u q",
+          "comment": "ᓃ / niː"
+        },
+        {
+          "word": "ᐅᖃᐅᓰᑦ",
+          "phonemes": "u q a u s i ː t",
+          "comment": "ᓰ / siː"
+        },
+        {
+          "word": "ᓄᓇᓖᑦ",
+          "phonemes": "n u n a l i ː t",
+          "comment": "ᓖ / liː"
+        },
+        {
+          "word": "ᑲᑎᒪᔩᑦ",
+          "phonemes": "k a t i m a j i ː t",
+          "comment": "ᔩ / jiː"
+        },
+        {
+          "word": "ᐅᐃᕖᑎᑐᓪᓗ",
+          "phonemes": "u i v i ː t i t u l l u",
+          "comment": "ᕖ / viː"
+        },
+        {
+          "word": "ᑕᐱᕇᒃᑯᑦ",
+          "phonemes": "t a p i ʁ i ː k k u t",
+          "comment": "ᕇ / ʁiː"
+        },
+        {
+          "word": "ᓂᖀᑦ",
+          "phonemes": "n i q i ː t",
+          "comment": "ᖀ / qiː"
+        },
+        {
+          "word": "ᐃᕐᖐᓐᓇᖅ",
+          "phonemes": "i ʁ ŋ i ː n n a q",
+          "comment": "ᖐ / ŋiː"
+        },
+        {
+          "word": "ᐆᒻᒪᑎ",
+          "phonemes": "u ː m m a t i",
+          "comment": "ᐆ / uː --- BEGINNING OF LONG /u/-FINAL SYLLABLES"
+        },
+        {
+          "word": "ᐴᐹᖅ",
+          "phonemes": "p u ː p a ː q",
+          "comment": "ᐴ / puː"
+        },
+        {
+          "word": "ᑑᒑᓕᒃ",
+          "phonemes": "t u ː ɣ a ː l i k",
+          "comment": "ᑑ / tuː"
+        },
+        {
+          "word": "ᑰᒃ",
+          "phonemes": "k u ː k",
+          "comment": "ᑰ / kuː"
+        },
+        {
+          "word": "ᐃᖕᒥᒎᖅᑐᑦ",
+          "phonemes": "i ŋ m i ɣ u ː q t u t",
+          "comment": "ᒎ / ɣuː"
+        },
+        {
+          "word": "ᒪᒃᒨᕆ",
+          "phonemes": "m a k m u ː ʁ i",
+          "comment": "ᒨ / muː"
+        },
+        {
+          "word": "ᓅᕙ",
+          "phonemes": "n u ː v a",
+          "comment": "ᓅ / nuː"
+        },
+        {
+          "word": "ᑎᖕᒥᓲᖅ",
+          "phonemes": "t i ŋ m i s u ː q",
+          "comment": "ᓲ / suː"
+        },
+        {
+          "word": "ᐊᓘᑦ",
+          "phonemes": "a l u ː t",
+          "comment": "ᓘ / luː"
+        },
+        {
+          "word": "ᔫᑳᓐ",
+          "phonemes": "j u ː k a ː n",
+          "comment": "ᔫ / juː"
+        },
+        {
+          "word": "ᐊᐃᑦᕘᑉ",
+          "phonemes": "a i t v u ː p",
+          "comment": "ᕘ / vuː"
+        },
+        {
+          "word": "ᐸᕉ",
+          "phonemes": "p a ʁ u ː",
+          "comment": "ᕉ / ʁuː"
+        },
+        {
+          "word": "ᓂᐊᖂᔮᖅ",
+          "phonemes": "n i a q u ː j a ː q",
+          "comment": "ᖂ / quː"
+        },
+        {
+          "word": "ᑭᓐᖒᒪᔭᖏᑦ",
+          "phonemes": "k i n ŋ u ː m a j a ŋ i t",
+          "comment": "ᖒ / ŋuː"
+        },
+        {
+          "word": "ᐋᒃᑲ",
+          "phonemes": "a ː k k a",
+          "comment": "ᐋ / aː --- BEGINNING OF LONG /a/-FINAL SYLLABLES"
+        },
+        {
+          "word": "ᐹᓯᓂᖅ",
+          "phonemes": "p a ː s i n i q",
+          "comment": "ᐹ / paː"
+        },
+        {
+          "word": "ᐊᑖᑕ",
+          "phonemes": "a t a ː t a",
+          "comment": "ᑖ / taː"
+        },
+        {
+          "word": "ᑳᒃᑐᖅ",
+          "phonemes": "k a ː k t u q",
+          "comment": "ᑳ / kaː"
+        },
+        {
+          "word": "ᑑᒑᖅ",
+          "phonemes": "t u ː ɣ a ː q",
+          "comment": "ᒑ / ɣaː"
+        },
+        {
+          "word": "ᒫᓂᑑᐸ",
+          "phonemes": "m a ː n i t u ː p a",
+          "comment": "ᒫ / maː"
+        },
+        {
+          "word": "ᐊᓈᓇ",
+          "phonemes": "a n a ː n a",
+          "comment": "ᓈ / naː"
+        },
+        {
+          "word": "ᐅᓵᐃᐅ",
+          "phonemes": "u s a ː i u",
+          "comment": "ᓵ / saː"
+        },
+        {
+          "word": "ᒪᒻᒪᓛᑎᒃ",
+          "phonemes": "m a m m a l a ː t i k",
+          "comment": "ᓛ / laː"
+        },
+        {
+          "word": "ᓂᐊᖂᔮᖅ",
+          "phonemes": "n i a q u ː j a ː q",
+          "comment": "ᔮ / jaː"
+        },
+        {
+          "word": "ᑎᒍᕚ",
+          "phonemes": "t i ɣ u v a ː",
+          "comment": "ᕚ / vaː"
+        },
+        {
+          "word": "ᐊᕐᕌᒍᑕᒫᑦ",
+          "phonemes": "a ʁ ʁ a ː ɣ u t a m a ː t",
+          "comment": "ᕌ / ʁaː"
+        },
+        {
+          "word": "ᖄᓐᕿᔭᐅᑦ",
+          "phonemes": "q a ː n q i j a u t",
+          "comment": "ᖄ / qaː"
+        },
+        {
+          "word": "ᑐᖔᓂ",
+          "phonemes": "t u ŋ a ː n i",
+          "comment": "ᖔ / ŋaː"
+        },
+        {
+          "word": "ᖥᒻᒪᑦᑐᒥᒃ",
+          "phonemes": "ɬ a ː m m a t t u m i k",
+          "comment": "ᖥ / ɬaː"
+        },
+        {
+          "word": "ᒉᕓᙰᖡᖣ",
+          "phonemes": "ɣ a i v a i ŋ a i ɬ i ː ɬ u ː",
+          "comment": "this is a string of all the syllables that weren't attested on Wiktionary or in the Crubadan corpus"
+        }
+      ],
+      "rules": {
+        "sub": [
+          {
+            "from": "ᐃ",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐱ",
+            "to": "p i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑎ",
+            "to": "t i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑭ",
+            "to": "k i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒋ",
+            "to": "ɣ i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒥ",
+            "to": "m i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓂ",
+            "to": "n i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓯ",
+            "to": "s i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓕ",
+            "to": "l i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔨ",
+            "to": "j i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕕ",
+            "to": "v i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕆ",
+            "to": "ʁ i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕿ",
+            "to": "q i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖏ",
+            "to": "ŋ i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖠ",
+            "to": "ɬ i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐅ",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐳ",
+            "to": "p u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑐ",
+            "to": "t u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑯ",
+            "to": "k u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒍ",
+            "to": "ɣ u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒧ",
+            "to": "m u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓄ",
+            "to": "n u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓱ",
+            "to": "s u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓗ",
+            "to": "l u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔪ",
+            "to": "j u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕗ",
+            "to": "v u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕈ",
+            "to": "ʁ u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖁ",
+            "to": "q u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖑ",
+            "to": "ŋ u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖢ",
+            "to": "ɬ u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐊ",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐸ",
+            "to": "p a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑕ",
+            "to": "t a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑲ",
+            "to": "k a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒐ",
+            "to": "ɣ a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒪ",
+            "to": "m a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓇ",
+            "to": "n a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓴ",
+            "to": "s a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓚ",
+            "to": "l a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔭ",
+            "to": "j a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕙ",
+            "to": "v a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕋ",
+            "to": "ʁ a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖃ",
+            "to": "q a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖓ",
+            "to": "ŋ a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖤ",
+            "to": "ɬ a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐁ",
+            "to": "a i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐯ",
+            "to": "p a i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑌ",
+            "to": "t a i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑫ",
+            "to": "k a i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒉ",
+            "to": "ɣ a i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒣ",
+            "to": "m a i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓀ",
+            "to": "n a i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓭ",
+            "to": "s a i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓓ",
+            "to": "l a i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔦ",
+            "to": "j a i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕓ",
+            "to": "v a i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕃ",
+            "to": "ʁ a i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᙯ",
+            "to": "q a i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᙰ",
+            "to": "ŋ a i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑉ",
+            "to": "p",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑦ",
+            "to": "t",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒃ",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒡ",
+            "to": "ɣ",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒻ",
+            "to": "m",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓐ",
+            "to": "n",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔅ",
+            "to": "s",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓪ",
+            "to": "l",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔾ",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕝ",
+            "to": "v",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕐ",
+            "to": "ʁ",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖅ",
+            "to": "q",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖕ",
+            "to": "ŋ",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖦ",
+            "to": "ɬ",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐄ",
+            "to": "i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐲ",
+            "to": "p i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑏ",
+            "to": "t i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑮ",
+            "to": "k i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒌ",
+            "to": "ɣ i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒦ",
+            "to": "m i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓃ",
+            "to": "n i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓰ",
+            "to": "s i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓖ",
+            "to": "l i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔩ",
+            "to": "j i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕖ",
+            "to": "v i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕇ",
+            "to": "ʁ i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖀ",
+            "to": "q i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖐ",
+            "to": "ŋ i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖡ",
+            "to": "ɬ i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐆ",
+            "to": "u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐴ",
+            "to": "p u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑑ",
+            "to": "t u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑰ",
+            "to": "k u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒎ",
+            "to": "ɣ u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒨ",
+            "to": "m u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓅ",
+            "to": "n u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓲ",
+            "to": "s u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓘ",
+            "to": "l u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔫ",
+            "to": "j u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕘ",
+            "to": "v u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕉ",
+            "to": "ʁ u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖂ",
+            "to": "q u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖒ",
+            "to": "ŋ u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖣ",
+            "to": "ɬ u ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐋ",
+            "to": "a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐹ",
+            "to": "p a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑖ",
+            "to": "t a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑳ",
+            "to": "k a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒑ",
+            "to": "ɣ a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒫ",
+            "to": "m a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓈ",
+            "to": "n a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓵ",
+            "to": "s a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓛ",
+            "to": "l a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔮ",
+            "to": "j a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕚ",
+            "to": "v a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᕌ",
+            "to": "ʁ a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖄ",
+            "to": "q a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖔ",
+            "to": "ŋ a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᖥ",
+            "to": "ɬ a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᙱ",
+            "to": "ŋ ŋ i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᙳ",
+            "to": "ŋ ŋ u",
+            "weight": 4.0
+          },
+          {
+            "from": "ᙵ",
+            "to": "ŋ ŋ a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᙶ",
+            "to": "ŋ ŋ a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0
+          }
+        ]
+      }
+    }
+  }
+}

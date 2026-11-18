@@ -1,0 +1,779 @@
+{
+  "metadata": {
+    "code": "nhr",
+    "name": "Naro",
+    "family": "Khoisan,Southern Africa,Central,Tshu-Khwe,Southwest",
+    "macroarea": "Africa",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "aba",
+          "phonemes": "a ˧ b a ˧",
+          "comment": "a"
+        },
+        {
+          "word": "bazáná",
+          "phonemes": "b a ˧ dz a ˦ n a ˦",
+          "comment": "á"
+        },
+        {
+          "word": "dtcàrà",
+          "phonemes": "ᶢǂ a ˨ ɾ a ˨",
+          "comment": "à"
+        },
+        {
+          "word": "bãa-bãa",
+          "phonemes": "b ã a ˧ b ã a ˧",
+          "comment": "ã"
+        },
+        {
+          "word": "ba̱ra",
+          "phonemes": "b aˤ ɾ a ˧",
+          "comment": "a̱"
+        },
+        {
+          "word": "mã̱e",
+          "phonemes": "m ãˤ e ˧",
+          "comment": "ã̱"
+        },
+        {
+          "word": "bambara",
+          "phonemes": "b a ˧ m b a ˧ ɾ a ˧",
+          "comment": "b"
+        },
+        {
+          "word": "càù",
+          "phonemes": "ǀ a ˨ u ˨",
+          "comment": "c"
+        },
+        {
+          "word": "cgáì",
+          "phonemes": "ǀx a ˦ i ˨",
+          "comment": "cg"
+        },
+        {
+          "word": "cg'ãa-cg'ana",
+          "phonemes": "ǀxʼ ã a ˧ ǀxʼ a ˧ n a ˧",
+          "comment": "cg'"
+        },
+        {
+          "word": "chóré",
+          "phonemes": "ǀʰ o ˦ ɾ e ˦",
+          "comment": "ch"
+        },
+        {
+          "word": "c'onè",
+          "phonemes": "ǀʼ o ˧ n e ˨",
+          "comment": "c'"
+        },
+        {
+          "word": "dcìì",
+          "phonemes": "ᶢǀ i ˨ i ˨",
+          "comment": "dc"
+        },
+        {
+          "word": "ncãa",
+          "phonemes": "ⁿǀ ã a ˧",
+          "comment": "nc"
+        },
+        {
+          "word": "domka",
+          "phonemes": "d o ˧ m k a ˧",
+          "comment": "d"
+        },
+        {
+          "word": "berese",
+          "phonemes": "b e ˧ ɾ e ˧ s e ˧",
+          "comment": "e"
+        },
+        {
+          "word": "zéné",
+          "phonemes": "dz e ˦ n e ˦",
+          "comment": "é"
+        },
+        {
+          "word": "cèè",
+          "phonemes": "ǀ e ˨ e ˨",
+          "comment": "è"
+        },
+        {
+          "word": "hẽethẽé",
+          "phonemes": "h ẽ e ˧ tʰ ẽ e ˦",
+          "comment": "ẽ"
+        },
+        {
+          "word": "fa̱ísì",
+          "phonemes": "f aˤ i ˦ s i ˨",
+          "comment": "f"
+        },
+        {
+          "word": "gabaga",
+          "phonemes": "x a ˧ b a ˧ x a ˧",
+          "comment": "g"
+        },
+        {
+          "word": "ghànè",
+          "phonemes": "ɡ a ˨ n e ˨",
+          "comment": "gh"
+        },
+        {
+          "word": "hàekg'aà",
+          "phonemes": "h a ˨ e ˧ kxʼ a ˧ a ˨",
+          "comment": "h"
+        },
+        {
+          "word": "nciriga",
+          "phonemes": "ⁿǀ i ˧ ɾ i ˧ x a ˧",
+          "comment": "i"
+        },
+        {
+          "word": "kíí",
+          "phonemes": "k i ˦ i ˦",
+          "comment": "í"
+        },
+        {
+          "word": "tìbì",
+          "phonemes": "t i ˨ b i ˨",
+          "comment": "ì"
+        },
+        {
+          "word": "káàkagu",
+          "phonemes": "k a ˦ a ˨ k a ˧ x u ˧",
+          "comment": "k"
+        },
+        {
+          "word": "kgo-kgori",
+          "phonemes": "kx o ˧ kx o ˧ ɾ i ˧",
+          "comment": "kg"
+        },
+        {
+          "word": "kg'áí",
+          "phonemes": "kxʼ a ˦ i ˦",
+          "comment": "kg'"
+        },
+        {
+          "word": "khàm̀",
+          "phonemes": "kʰ a ˨ m ˨",
+          "comment": "kh"
+        },
+        {
+          "word": "mama-coa",
+          "phonemes": "m a ˧ m a ˧ ǀ o ˧ a ˧",
+          "comment": "m"
+        },
+        {
+          "word": "tháḿ-tham",
+          "phonemes": "tʰ a ˦ m ˦ tʰ a ˧ m",
+          "comment": "ḿ"
+        },
+        {
+          "word": "ca̱m̀",
+          "phonemes": "ǀ aˤ m ˨",
+          "comment": "m̀"
+        },
+        {
+          "word": "no̱be",
+          "phonemes": "n oˤ b e ˧",
+          "comment": "n"
+        },
+        {
+          "word": "hororo",
+          "phonemes": "h o ˧ ɾ o ˧ ɾ o ˧",
+          "comment": "o"
+        },
+        {
+          "word": "kókó",
+          "phonemes": "k o ˦ k o ˦",
+          "comment": "ó"
+        },
+        {
+          "word": "nqòò",
+          "phonemes": "ⁿǃ o ˨ o ˨",
+          "comment": "ò"
+        },
+        {
+          "word": "cõo-cõó",
+          "phonemes": "ǀ õ o ˧ ǀ õ o ˦",
+          "comment": "õ"
+        },
+        {
+          "word": "ko̱bi-ko̱bi",
+          "phonemes": "k oˤ b i ˧ k oˤ b i ˧",
+          "comment": "o̱"
+        },
+        {
+          "word": "cõ̱é",
+          "phonemes": "ǀ õˤ e ˦",
+          "comment": "õ̱"
+        },
+        {
+          "word": "papí",
+          "phonemes": "p a ˧ p i ˦",
+          "comment": "p"
+        },
+        {
+          "word": "phìi-phii",
+          "phonemes": "pʰ i ˨ i ˧ pʰ i ˧ i ˧",
+          "comment": "ph"
+        },
+        {
+          "word": "qaò",
+          "phonemes": "ǃ a ˧ o ˨",
+          "comment": "q"
+        },
+        {
+          "word": "qgóó",
+          "phonemes": "ǃx o ˦ o ˦",
+          "comment": "qg"
+        },
+        {
+          "word": "qg'ats'o",
+          "phonemes": "ǃxʼ a ˧ tsʼ o ˧",
+          "comment": "qg'"
+        },
+        {
+          "word": "qhòm-qhom",
+          "phonemes": "ǃʰ o ˨ m ǃʰ o ˧ m",
+          "comment": "qh"
+        },
+        {
+          "word": "q'ana",
+          "phonemes": "ǃʼ a ˧ n a ˧",
+          "comment": "q'"
+        },
+        {
+          "word": "dqàbà",
+          "phonemes": "ᶢǃ a ˨ b a ˨",
+          "comment": "dq"
+        },
+        {
+          "word": "nqãaka",
+          "phonemes": "ⁿǃ ã a ˧ k a ˧",
+          "comment": "nq"
+        },
+        {
+          "word": "q'ore",
+          "phonemes": "ǃʼ o ˧ ɾ e ˧",
+          "comment": "r"
+        },
+        {
+          "word": "sidcibi",
+          "phonemes": "s i ˧ ᶢǀ i ˧ b i ˧",
+          "comment": "s"
+        },
+        {
+          "word": "tã̱à",
+          "phonemes": "t ãˤ a ˨",
+          "comment": "t"
+        },
+        {
+          "word": "tgabi",
+          "phonemes": "tx a ˧ b i ˧",
+          "comment": "tg"
+        },
+        {
+          "word": "thõò-xam",
+          "phonemes": "tʰ õ o ˨ ǁ a ˧ m",
+          "comment": "th"
+        },
+        {
+          "word": "tcárà",
+          "phonemes": "ǂ a ˦ ɾ a ˨",
+          "comment": "tc"
+        },
+        {
+          "word": "tcgábí",
+          "phonemes": "ǂx a ˦ b i ˦",
+          "comment": "tcg"
+        },
+        {
+          "word": "tcg'aox'ãe",
+          "phonemes": "ǂxʼ a ˧ o ˧ ǁʼ ã e ˧",
+          "comment": "tcg'"
+        },
+        {
+          "word": "tchàno",
+          "phonemes": "ǂʰ a ˨ n o ˧",
+          "comment": "tch"
+        },
+        {
+          "word": "tc'ẽè",
+          "phonemes": "ǂʼ ẽ e ˨",
+          "comment": "tc'"
+        },
+        {
+          "word": "dtcẽe",
+          "phonemes": "ᶢǂ ẽ e ˧",
+          "comment": "dtc"
+        },
+        {
+          "word": "ntcene",
+          "phonemes": "ⁿǂ e ˧ n e ˧",
+          "comment": "ntc"
+        },
+        {
+          "word": "tsa̱ḿ",
+          "phonemes": "ts aˤ m ˦",
+          "comment": "ts"
+        },
+        {
+          "word": "tshàu",
+          "phonemes": "tsʰ a ˨ u ˧",
+          "comment": "tsh"
+        },
+        {
+          "word": "ts'ao",
+          "phonemes": "tsʼ a ˧ o ˧",
+          "comment": "ts'"
+        },
+        {
+          "word": "dquuguru",
+          "phonemes": "ᶢǃ u ˧ u ˧ x u ˧ ɾ u ˧",
+          "comment": "u"
+        },
+        {
+          "word": "chúrú",
+          "phonemes": "ǀʰ u ˦ ɾ u ˦",
+          "comment": "ú"
+        },
+        {
+          "word": "ghùbù-ghùbú",
+          "phonemes": "ɡ u ˨ b u ˨ ɡ u ˨ b u ˦",
+          "comment": "ù"
+        },
+        {
+          "word": "wèé",
+          "phonemes": "e ˨ e ˦",
+          "comment": "w"
+        },
+        {
+          "word": "xa̱a-xa̱bà",
+          "phonemes": "ǁ aˤ a ˧ ǁ aˤ b a ˨",
+          "comment": "x"
+        },
+        {
+          "word": "xgõo",
+          "phonemes": "ǁx õ o ˧",
+          "comment": "xg"
+        },
+        {
+          "word": "xg'ari",
+          "phonemes": "ǁxʼ a ˧ ɾ i ˧",
+          "comment": "xg'"
+        },
+        {
+          "word": "xhàru",
+          "phonemes": "ǁʰ a ˨ ɾ u ˧",
+          "comment": "xh"
+        },
+        {
+          "word": "x'úrú",
+          "phonemes": "ǁʼ u ˦ ɾ u ˦",
+          "comment": "x'"
+        },
+        {
+          "word": "dxãàku",
+          "phonemes": "ᶢǁ ã a ˨ k u ˧",
+          "comment": "dx"
+        },
+        {
+          "word": "nxàbo",
+          "phonemes": "ⁿǁ a ˨ b o ˧",
+          "comment": "nx"
+        },
+        {
+          "word": "tcgãya",
+          "phonemes": "ǂx ã a ˧",
+          "comment": "y"
+        },
+        {
+          "word": "zìrí",
+          "phonemes": "dz i ˨ ɾ i ˦",
+          "comment": "z"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "tone": "[˧˨˦]",
+          "click-input": "(c|q|tc|x)",
+          "click-output": "[ǀǃǂǁ]",
+          "pre-h": "[kptsg]",
+          "pre-g-cons": "[kt]",
+          "apostrophe": "['ꞌ‘’]",
+          "underline": "[̱]",
+          "passthrough": "[ãbdẽfhíkmnõpst]",
+          "phar_vowel": "[aoãõ]",
+          "glides": "[wy]"
+        },
+        "sub": [
+          {
+            "from": "a",
+            "to": "a ˧",
+            "weight": 4.0,
+            "comment": "mid tones"
+          },
+          {
+            "from": "e",
+            "to": "e ˧",
+            "weight": 4.0
+          },
+          {
+            "from": "i",
+            "to": "i ˧",
+            "weight": 4.0
+          },
+          {
+            "from": "o",
+            "to": "o ˧",
+            "weight": 4.0
+          },
+          {
+            "from": "u",
+            "to": "u ˧",
+            "weight": 4.0
+          },
+          {
+            "from": "à",
+            "to": "a ˨",
+            "weight": 4.0,
+            "comment": "low tones"
+          },
+          {
+            "from": "è",
+            "to": "e ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "ì",
+            "to": "i ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "ò",
+            "to": "o ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "ù",
+            "to": "u ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "á",
+            "to": "a ˦",
+            "weight": 4.0,
+            "comment": "high tones"
+          },
+          {
+            "from": "é",
+            "to": "e ˦",
+            "weight": 4.0
+          },
+          {
+            "from": "í",
+            "to": "i ˦",
+            "weight": 4.0
+          },
+          {
+            "from": "ó",
+            "to": "o ˦",
+            "weight": 4.0
+          },
+          {
+            "from": "ú",
+            "to": "u ˦",
+            "weight": 4.0
+          },
+          {
+            "from": "ã",
+            "to": "ã",
+            "weight": 4.0,
+            "comment": "nasals"
+          },
+          {
+            "from": "ẽ",
+            "to": "ẽ",
+            "weight": 4.0
+          },
+          {
+            "from": "õ",
+            "to": "õ",
+            "weight": 4.0
+          },
+          {
+            "from": "{underline}",
+            "to": "ˤ",
+            "weight": 4.0,
+            "comment": "pharyngealization marker"
+          },
+          {
+            "from": "c",
+            "to": "ǀ",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "x",
+            "weight": 4.0
+          },
+          {
+            "from": "ḿ",
+            "to": "m ˦",
+            "weight": 4.0,
+            "comment": "Sometimes syllabic /m/ is rendered with inherent diacritics"
+          },
+          {
+            "from": "m̀",
+            "to": "m ˨",
+            "weight": 4.0,
+            "comment": "in which case these two lines convert it to IPA"
+          },
+          {
+            "from": "́",
+            "to": "˦",
+            "weight": 4.0,
+            "comment": "other times, the diacritic is seen as a different character from the /m/"
+          },
+          {
+            "from": "̀",
+            "to": "˨",
+            "weight": 4.0,
+            "comment": "in which case these two lines convert it to IPA"
+          },
+          {
+            "from": "q",
+            "to": "ǃ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "x",
+            "to": "ǁ",
+            "weight": 4.0
+          },
+          {
+            "from": "z",
+            "to": "dz",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʼ",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "a hyphen appears in some words but carries no phonetic value"
+          },
+          {
+            "from": "k",
+            "to": "kʰ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<kh>"
+          },
+          {
+            "from": "p",
+            "to": "pʰ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<ph>"
+          },
+          {
+            "from": "t",
+            "to": "tʰ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<th>"
+          },
+          {
+            "from": "t",
+            "to": "tsʰ",
+            "weight": 6.0,
+            "follow": "sh",
+            "comment": "<tsh>"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 6.0,
+            "precede": "t",
+            "follow": "h",
+            "comment": "<tsh> cleanup"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{pre-h}",
+            "comment": "cleans up various h-final digraphs"
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<gh> = /ɡ/"
+          },
+          {
+            "from": "k",
+            "to": "kx",
+            "weight": 6.0,
+            "follow": "g",
+            "comment": "<kg> = /kx/"
+          },
+          {
+            "from": "t",
+            "to": "tx",
+            "weight": 6.0,
+            "follow": "g",
+            "comment": "<tg> = /tx/"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{pre-g-cons}",
+            "comment": "<kg> and <tg> cleanup"
+          },
+          {
+            "from": "t",
+            "to": "ǂ",
+            "weight": 6.0,
+            "follow": "c",
+            "comment": "<tc> = /ǂ/"
+          },
+          {
+            "from": "c",
+            "to": "",
+            "weight": 6.0,
+            "precede": "t",
+            "comment": "<tc> cleanup"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 6.0,
+            "follow": "s",
+            "comment": "<ts> = /ts/"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 6.0,
+            "precede": "t",
+            "comment": "<ts> cleanup"
+          },
+          {
+            "from": "h",
+            "to": "ʰ",
+            "weight": 6.0,
+            "precede": "{click-input}",
+            "comment": "aspirated clicks"
+          },
+          {
+            "from": "d",
+            "to": "ᶢ",
+            "weight": 6.0,
+            "follow": "{click-input}",
+            "comment": "voiced clicks"
+          },
+          {
+            "from": "n",
+            "to": "ⁿ",
+            "weight": 6.0,
+            "follow": "({click-input})",
+            "comment": "prenasalized clicks"
+          },
+          {
+            "from": "{glides}",
+            "to": "",
+            "weight": 6.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({phar_vowel}) {tone} ˤ",
+            "to": "\\1ˤ",
+            "weight": 2.0,
+            "comment": "attaches the pharyngealization to the previous vowel; pharyngealization does not appear to coexist with tones on vowels"
+          },
+          {
+            "from": "({phar_vowel}) ˤ",
+            "to": "\\1ˤ",
+            "weight": 2.0,
+            "comment": "attaches the pharyngealization to the previous nasal vowel; nasal vowels don't appear to coexist with tones"
+          },
+          {
+            "from": "({click-output}) ʰ",
+            "to": "\\1ʰ",
+            "weight": 2.0,
+            "comment": "collapsing spaces in aspirated clicks"
+          },
+          {
+            "from": "({click-output}) x",
+            "to": "\\1x",
+            "weight": 2.0,
+            "comment": "collapsing spaces in fricative-released clicks"
+          },
+          {
+            "from": "ᶢ ({click-output})",
+            "to": "ᶢ\\1",
+            "weight": 2.0,
+            "comment": "collapsing spaces in voiced clicks"
+          },
+          {
+            "from": "ⁿ ({click-output})",
+            "to": "ⁿ\\1",
+            "weight": 2.0,
+            "comment": "collapsing spaces in prenasalized clicks"
+          },
+          {
+            "from": " ʼ",
+            "to": "ʼ",
+            "weight": 2.0,
+            "comment": "attaches the ejective marker to the previous consonant"
+          },
+          {
+            "from": "aˤ ̃",
+            "to": "ãˤ",
+            "weight": 1.0,
+            "comment": "fixes a vowel that translate04 misreads"
+          },
+          {
+            "from": "e ˧ ̃",
+            "to": "ẽ",
+            "weight": 1.0,
+            "comment": "fixes a vowel that translate04 misreads"
+          },
+          {
+            "from": "oˤ ̃",
+            "to": "õˤ",
+            "weight": 1.0,
+            "comment": "fixes a vowel that translate04 misreads"
+          },
+          {
+            "from": "ⁿǀx",
+            "to": "ⁿǀ x",
+            "weight": 1.0,
+            "comment": "three instances of <ncg> sequences - resulting output needed changing to reflect an actual click in the language (<nc> was prioritized by default)"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "code": "to",
+    "name": "Tongan",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Central-Eastern Oceanic,Remote Oceanic,Central Pacific,East Fijian-Polynesian,Polynesian,Tongic",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "pā",
+          "phonemes": "p a ː"
+        },
+        {
+          "word": "tā",
+          "phonemes": "t a ː"
+        },
+        {
+          "word": "kā",
+          "phonemes": "k a ː"
+        },
+        {
+          "word": "ʻā",
+          "phonemes": "ʔ a ː"
+        },
+        {
+          "word": "fā",
+          "phonemes": "f a ː"
+        },
+        {
+          "word": "vā",
+          "phonemes": "v a ː"
+        },
+        {
+          "word": "sā",
+          "phonemes": "s a ː"
+        },
+        {
+          "word": "hā",
+          "phonemes": "h a ː"
+        },
+        {
+          "word": "mā",
+          "phonemes": "m a ː"
+        },
+        {
+          "word": "nā",
+          "phonemes": "n a ː"
+        },
+        {
+          "word": "ngā",
+          "phonemes": "ŋ a ː"
+        },
+        {
+          "word": "lā",
+          "phonemes": "l a ː"
+        },
+        {
+          "word": "efi",
+          "phonemes": "e f i"
+        },
+        {
+          "word": "ofi",
+          "phonemes": "o f i"
+        },
+        {
+          "word": "ufi",
+          "phonemes": "u f i"
+        },
+        {
+          "word": "afi",
+          "phonemes": "a f i"
+        },
+        {
+          "word": "fē",
+          "phonemes": "f e ː"
+        },
+        {
+          "word": "fī",
+          "phonemes": "f i ː"
+        },
+        {
+          "word": "fō",
+          "phonemes": "f o ː"
+        },
+        {
+          "word": "fū",
+          "phonemes": "f u ː"
+        },
+        {
+          "word": "naʻá",
+          "phonemes": "n a ʔ a"
+        },
+        {
+          "word": "maté",
+          "phonemes": "m a t e"
+        },
+        {
+          "word": "aí",
+          "phonemes": "a i"
+        },
+        {
+          "word": "kuó",
+          "phonemes": "k u o"
+        },
+        {
+          "word": "ʻokú",
+          "phonemes": "ʔ o k u"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aefhiklmnopstuv]",
+          "apostrophe": "[’'‘`ʻ]"
+        },
+        "sub": [
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 2.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "ā",
+            "to": "a ː",
+            "weight": 1.0
+          },
+          {
+            "from": "ē",
+            "to": "e ː",
+            "weight": 1.0
+          },
+          {
+            "from": "ī",
+            "to": "i ː",
+            "weight": 1.0
+          },
+          {
+            "from": "ō",
+            "to": "o ː",
+            "weight": 1.0
+          },
+          {
+            "from": "ū",
+            "to": "u ː",
+            "weight": 1.0
+          },
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 1.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0,
+            "comment": "hyphens have no phonemic value"
+          }
+        ]
+      }
+    }
+  }
+}

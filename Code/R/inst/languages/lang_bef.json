@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "code": "bef",
+    "name": "Benabena",
+    "family": "Trans-New Guinea,Main Section,Central and Western,East New Guinea Highlands,East-Central,Gahuku-Benabena",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "akaluya'a",
+          "phonemes": "ɑ k ɑ ɭ u j ɑ ʔ ɑ",
+          "comment": "a"
+        },
+        {
+          "word": "bi'ehibe",
+          "phonemes": "ɸ i ʔ e h i ɸ e",
+          "comment": "b"
+        },
+        {
+          "word": "etehi",
+          "phonemes": "e t e h i",
+          "comment": "e"
+        },
+        {
+          "word": "falu'afu",
+          "phonemes": "f ɑ ɭ u ʔ ɑ f u",
+          "comment": "f"
+        },
+        {
+          "word": "gegisa",
+          "phonemes": "ɣ e ɣ i s ɑ",
+          "comment": "g"
+        },
+        {
+          "word": "hepuhi",
+          "phonemes": "h e p u h i",
+          "comment": "h"
+        },
+        {
+          "word": "ikini",
+          "phonemes": "i k i n i",
+          "comment": "i"
+        },
+        {
+          "word": "ki'onaka",
+          "phonemes": "k i ʔ o n ɑ k ɑ",
+          "comment": "k"
+        },
+        {
+          "word": "le'ali",
+          "phonemes": "ɭ e ʔ ɑ ɭ i",
+          "comment": "l"
+        },
+        {
+          "word": "meme'a",
+          "phonemes": "m e m e ʔ ɑ",
+          "comment": "m"
+        },
+        {
+          "word": "nasana",
+          "phonemes": "n ɑ s ɑ n ɑ",
+          "comment": "n"
+        },
+        {
+          "word": "logo",
+          "phonemes": "ɭ o ɣ o",
+          "comment": "o"
+        },
+        {
+          "word": "hepuya",
+          "phonemes": "h e p u j ɑ",
+          "comment": "p"
+        },
+        {
+          "word": "gesese",
+          "phonemes": "ɣ e s e s e",
+          "comment": "s"
+        },
+        {
+          "word": "kota",
+          "phonemes": "k o t ɑ",
+          "comment": "t"
+        },
+        {
+          "word": "fulugu",
+          "phonemes": "f u ɭ u ɣ u",
+          "comment": "u"
+        },
+        {
+          "word": "foya",
+          "phonemes": "f o j ɑ",
+          "comment": "y"
+        },
+        {
+          "word": "ka'moto",
+          "phonemes": "k ɑ ʔ m o t o",
+          "comment": "apostrophe"
+        },
+        {
+          "word": "bati",
+          "phonemes": "ɸ ɑ t i"
+        },
+        {
+          "word": "kaga",
+          "phonemes": "k ɑ ɣ ɑ"
+        },
+        {
+          "word": "mone",
+          "phonemes": "m o n e"
+        },
+        {
+          "word": "lenali",
+          "phonemes": "ɭ e n ɑ ɭ i"
+        },
+        {
+          "word": "hu",
+          "phonemes": "h u"
+        },
+        {
+          "word": "kumu",
+          "phonemes": "k u m u"
+        },
+        {
+          "word": "ni'ibe",
+          "phonemes": "n i ʔ i ɸ e"
+        },
+        {
+          "word": "suhi",
+          "phonemes": "s u h i"
+        },
+        {
+          "word": "ho",
+          "phonemes": "h o"
+        },
+        {
+          "word": "nani",
+          "phonemes": "n ɑ n i"
+        },
+        {
+          "word": "keheli",
+          "phonemes": "k e h e ɭ i"
+        },
+        {
+          "word": "sipi",
+          "phonemes": "s i p i"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "['ꞌˈ‘’]",
+          "passthrough": "[efhikmnopstu]"
+        },
+        "sub": [
+          {
+            "from": "a",
+            "to": "ɑ",
+            "weight": 4.0
+          },
+          {
+            "from": "b",
+            "to": "ɸ",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɣ",
+            "weight": 4.0
+          },
+          {
+            "from": "l",
+            "to": "ɭ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}

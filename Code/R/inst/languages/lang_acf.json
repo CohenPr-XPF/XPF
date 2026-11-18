@@ -1,0 +1,290 @@
+{
+  "metadata": {
+    "code": "acf",
+    "name": "Saint Lucian Creole French",
+    "family": "Creole,French based",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "abizan",
+          "phonemes": "a b i z ã"
+        },
+        {
+          "word": "achévek",
+          "phonemes": "a ʃ e v ɛ k"
+        },
+        {
+          "word": "agouman",
+          "phonemes": "a ɡ u m ã"
+        },
+        {
+          "word": "balas",
+          "phonemes": "b a l a s"
+        },
+        {
+          "word": "basen",
+          "phonemes": "b a s ẽ"
+        },
+        {
+          "word": "bédji",
+          "phonemes": "b e dʒ i"
+        },
+        {
+          "word": "chanjab",
+          "phonemes": "ʃ ã ʒ a b"
+        },
+        {
+          "word": "adan",
+          "phonemes": "a d ã"
+        },
+        {
+          "word": "fè",
+          "phonemes": "f ɛ"
+        },
+        {
+          "word": "hòd",
+          "phonemes": "h ɔ d"
+        },
+        {
+          "word": "mwen",
+          "phonemes": "m w ẽ"
+        },
+        {
+          "word": "wè",
+          "phonemes": "w ɛ"
+        },
+        {
+          "word": "ni",
+          "phonemes": "n i"
+        },
+        {
+          "word": "yo",
+          "phonemes": "j o"
+        },
+        {
+          "word": "pou",
+          "phonemes": "p u"
+        },
+        {
+          "word": "té",
+          "phonemes": "t e"
+        },
+        {
+          "word": "zòt",
+          "phonemes": "z ɔ t"
+        },
+        {
+          "word": "vini",
+          "phonemes": "v i n i"
+        },
+        {
+          "word": "moun-an",
+          "phonemes": "m u n ã"
+        },
+        {
+          "word": "Jérouzalèm",
+          "phonemes": "ʒ e ɹ u z a l ɛ m"
+        },
+        {
+          "word": "langaj",
+          "phonemes": "l ã ɡ a ʒ"
+        },
+        {
+          "word": "lonng",
+          "phonemes": "l õ ŋ"
+        },
+        {
+          "word": "tjè",
+          "phonemes": "tʃ ɛ"
+        },
+        {
+          "word": "nonm",
+          "phonemes": "n õ m"
+        },
+        {
+          "word": "kwè",
+          "phonemes": "k w ɛ"
+        },
+        {
+          "word": "si",
+          "phonemes": "s i"
+        },
+        {
+          "word": "vlé",
+          "phonemes": "v l e"
+        },
+        {
+          "word": "mannyè",
+          "phonemes": "m ã n j ɛ"
+        },
+        {
+          "word": "tout",
+          "phonemes": "t u t"
+        },
+        {
+          "word": "sala",
+          "phonemes": "s a l a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdfhiklmnopstvwz]",
+          "nasalv": "[aeo]",
+          "punct": "[ꞌ'ˈ‘ʼ-]"
+        },
+        "sub": [
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 2.0
+          },
+          {
+            "from": "è",
+            "to": "ɛ",
+            "weight": 2.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "ʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "ò",
+            "to": "ɔ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɹ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "ʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "dʒ",
+            "weight": 3.0,
+            "follow": "j"
+          },
+          {
+            "from": "j",
+            "to": "",
+            "weight": 3.0,
+            "precede": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "o",
+            "to": "u",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 2.0,
+            "precede": "o",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "j"
+          },
+          {
+            "from": "j",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "ã",
+            "weight": 3.0,
+            "follow": "n"
+          },
+          {
+            "from": "e",
+            "to": "ẽ",
+            "weight": 3.0,
+            "follow": "n"
+          },
+          {
+            "from": "o",
+            "to": "õ",
+            "weight": 4.0,
+            "follow": "n"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 4.0,
+            "precede": "{nasalv}"
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0,
+            "precede": "{nasalv}n",
+            "comment": "prevents /g/ from being deleted after nasal vowels"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "code": "kpx",
+    "name": "Mountain Koiali",
+    "family": "Trans-New Guinea,Main Section,Eastern,Central and Southeastern,Koiarian,Koiaric",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "sieti",
+          "phonemes": "ʂ i ɛ t i"
+        },
+        {
+          "word": "basikolo",
+          "phonemes": "b a ʂ i k o l o"
+        },
+        {
+          "word": "galasi",
+          "phonemes": "ɡ a l a ʂ i"
+        },
+        {
+          "word": "lameba",
+          "phonemes": "l a m ɛ b a"
+        },
+        {
+          "word": "vovo",
+          "phonemes": "ɸ o ɸ o"
+        },
+        {
+          "word": "nova",
+          "phonemes": "n o ɸ a"
+        },
+        {
+          "word": "dana",
+          "phonemes": "d a n a"
+        },
+        {
+          "word": "koianu",
+          "phonemes": "k o i a n u"
+        },
+        {
+          "word": "baluga",
+          "phonemes": "b a l u ɡ a"
+        },
+        {
+          "word": "valaha",
+          "phonemes": "ɸ a l a x a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdiklmnotu]"
+        },
+        "sub": [
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "h",
+            "to": "x",
+            "weight": 2.0
+          },
+          {
+            "from": "s",
+            "to": "ʂ",
+            "weight": 2.0
+          },
+          {
+            "from": "v",
+            "to": "ɸ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

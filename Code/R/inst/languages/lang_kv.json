@@ -1,0 +1,602 @@
+{
+  "metadata": {
+    "code": "kv",
+    "name": "Komi",
+    "family": "Uralic,Finno-Ugric,Finno-Permic,Permic",
+    "macroarea": "Eurasia",
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "аттьö",
+          "phonemes": "a t̪ c ɘ",
+          "comment": "а to a"
+        },
+        {
+          "word": "быдöн",
+          "phonemes": "b ɨ d̪ ɘ n̪",
+          "comment": "б to b"
+        },
+        {
+          "word": "выть",
+          "phonemes": "v ɨ c",
+          "comment": "в to v"
+        },
+        {
+          "word": "югыд",
+          "phonemes": "j u ɡ ɨ d̪",
+          "comment": "г to ɡ"
+        },
+        {
+          "word": "öдзöс",
+          "phonemes": "ɘ dʑ ɘ s̪",
+          "comment": "д to d"
+        },
+        {
+          "word": "додь",
+          "phonemes": "d̪ o ɟ",
+          "comment": "д to ɟ"
+        },
+        {
+          "word": "еджыд",
+          "phonemes": "j e ɖʐ ɨ d̪",
+          "comment": "е to je"
+        },
+        {
+          "word": "Медшӧр",
+          "phonemes": "m j e d̪ ʂ ɘ r̪",
+          "comment": "е to je"
+        },
+        {
+          "word": "зеп",
+          "phonemes": "ʑ e p",
+          "comment": "е to e"
+        },
+        {
+          "word": "ёдi",
+          "phonemes": "j o d̪ i",
+          "comment": "ё to jo"
+        },
+        {
+          "word": "сёрниа",
+          "phonemes": "ɕ o r̪ ɲ i a",
+          "comment": "ё to o"
+        },
+        {
+          "word": "жыннян",
+          "phonemes": "ʐ ɨ n̪ ɲ a n̪",
+          "comment": "ж to ʐ"
+        },
+        {
+          "word": "зiль",
+          "phonemes": "z̪ i ʎ",
+          "comment": "з to z"
+        },
+        {
+          "word": "зильгöм",
+          "phonemes": "ʑ i ʎ ɡ ɘ m",
+          "comment": "з to ʑ"
+        },
+        {
+          "word": "рази",
+          "phonemes": "r̪ a ʑ i",
+          "comment": "и to i"
+        },
+        {
+          "word": "мазi",
+          "phonemes": "m a z̪ i",
+          "comment": "і to i"
+        },
+        {
+          "word": "йöв",
+          "phonemes": "j ɘ v",
+          "comment": "й to j"
+        },
+        {
+          "word": "йиӧн",
+          "phonemes": "j i ɘ n̪",
+          "comment": "й to j"
+        },
+        {
+          "word": "согласнӧйяс",
+          "phonemes": "s̪ o ɡ l̪ a s̪ n̪ ɘ j ː a s̪",
+          "comment": "й to j"
+        },
+        {
+          "word": "кальсы",
+          "phonemes": "k a ʎ s̪ ɨ",
+          "comment": "к to k"
+        },
+        {
+          "word": "лэбач",
+          "phonemes": "l̪ e b a tɕ",
+          "comment": "л to l"
+        },
+        {
+          "word": "лежнöг",
+          "phonemes": "ʎ e ʐ n̪ ɘ ɡ",
+          "comment": "л to ʎ"
+        },
+        {
+          "word": "мыгöр",
+          "phonemes": "m ɨ ɡ ɘ r̪",
+          "comment": "м to m"
+        },
+        {
+          "word": "кöнi",
+          "phonemes": "k ɘ n̪ i",
+          "comment": "н to n"
+        },
+        {
+          "word": "лымань",
+          "phonemes": "l̪ ɨ m a ɲ",
+          "comment": "н to ɲ"
+        },
+        {
+          "word": "озыр",
+          "phonemes": "o z̪ ɨ r̪",
+          "comment": "о to o"
+        },
+        {
+          "word": "öшинь",
+          "phonemes": "ɘ ʂ i ɲ",
+          "comment": "ӧ to ɘ"
+        },
+        {
+          "word": "пывсян",
+          "phonemes": "p ɨ v ɕ a n̪",
+          "comment": "п to p"
+        },
+        {
+          "word": "руаöсь",
+          "phonemes": "r̪ u a ɘ ɕ",
+          "comment": "р to r"
+        },
+        {
+          "word": "суйöр",
+          "phonemes": "s̪ u j ɘ r̪",
+          "comment": "с to s"
+        },
+        {
+          "word": "сьывны",
+          "phonemes": "ɕ ɨ v n̪ ɨ",
+          "comment": "с to ɕ"
+        },
+        {
+          "word": "томан",
+          "phonemes": "t̪ o m a n̪",
+          "comment": "т to t"
+        },
+        {
+          "word": "тивзыны",
+          "phonemes": "c i v z̪ ɨ n̪ ɨ",
+          "comment": "т to c"
+        },
+        {
+          "word": "кузь",
+          "phonemes": "k u ʑ",
+          "comment": "у to u"
+        },
+        {
+          "word": "чöскыд",
+          "phonemes": "tɕ ɘ s̪ k ɨ d̪",
+          "comment": "ч to tɕ"
+        },
+        {
+          "word": "шöр",
+          "phonemes": "ʂ ɘ r̪",
+          "comment": "ш to ʂ"
+        },
+        {
+          "word": "лунъясӧ",
+          "phonemes": "l̪ u n̪ j a s̪ ɘ",
+          "comment": "ъ"
+        },
+        {
+          "word": "ӧтувъя",
+          "phonemes": "ɘ t̪ u v j a",
+          "comment": "ъ"
+        },
+        {
+          "word": "ырöш",
+          "phonemes": "ɨ r̪ ɘ ʂ",
+          "comment": "ы to ɨ"
+        },
+        {
+          "word": "кöть",
+          "phonemes": "k ɘ c",
+          "comment": "ь"
+        },
+        {
+          "word": "зэр",
+          "phonemes": "z̪ e r̪",
+          "comment": "э to e"
+        },
+        {
+          "word": "юркар",
+          "phonemes": "j u r̪ k a r̪",
+          "comment": "ю to ju"
+        },
+        {
+          "word": "сюрс",
+          "phonemes": "ɕ u r̪ s̪",
+          "comment": "ю to u"
+        },
+        {
+          "word": "öнiя",
+          "phonemes": "ɘ n̪ i j a",
+          "comment": "я to jɑ"
+        },
+        {
+          "word": "пывсян",
+          "phonemes": "p ɨ v ɕ a n̪",
+          "comment": "я to ɑ"
+        },
+        {
+          "word": "уджач",
+          "phonemes": "u ɖʐ a tɕ",
+          "comment": "дж to ɖʐ"
+        },
+        {
+          "word": "дзоридз",
+          "phonemes": "dʑ o r̪ i dʑ",
+          "comment": "дз to dʑ"
+        },
+        {
+          "word": "кытш",
+          "phonemes": "k ɨ ʈʂ",
+          "comment": "тш to ʈʂ"
+        },
+        {
+          "word": "аддзыны",
+          "phonemes": "a dʑ ː ɨ n̪ ɨ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "punct": "[''’ʻ́ -]",
+          "palatals": "[дзлнст]",
+          "softvowels": "[еёиюяь]",
+          "consonants": "(b|v|ɡ|d̪|ɟ|ʐ|z̪|ʑ|j|k|l̪|ʎ|m|n̪|ɲ|p|r̪|s̪|ɕ|t̪|c|ʂ)"
+        },
+        "sub": [
+          {
+            "from": "а",
+            "to": "a",
+            "weight": 1.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 1.0
+          },
+          {
+            "from": "в",
+            "to": "v",
+            "weight": 1.0
+          },
+          {
+            "from": "г",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "д",
+            "to": "d̪",
+            "weight": 1.0
+          },
+          {
+            "from": "е",
+            "to": "j e",
+            "weight": 1.0
+          },
+          {
+            "from": "ё",
+            "to": "j o",
+            "weight": 1.0
+          },
+          {
+            "from": "ж",
+            "to": "ʐ",
+            "weight": 1.0
+          },
+          {
+            "from": "з",
+            "to": "z̪",
+            "weight": 1.0
+          },
+          {
+            "from": "и",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "i",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 1.0
+          },
+          {
+            "from": "л",
+            "to": "l̪",
+            "weight": 1.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 1.0
+          },
+          {
+            "from": "н",
+            "to": "n̪",
+            "weight": 1.0
+          },
+          {
+            "from": "о",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "ö",
+            "to": "ɘ",
+            "weight": 1.0
+          },
+          {
+            "from": "ӧ",
+            "to": "ɘ",
+            "weight": 1.0,
+            "comment": "represents slight modification of the <o> with diaresis"
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 1.0
+          },
+          {
+            "from": "р",
+            "to": "r̪",
+            "weight": 1.0
+          },
+          {
+            "from": "с",
+            "to": "s̪",
+            "weight": 1.0
+          },
+          {
+            "from": "т",
+            "to": "t̪",
+            "weight": 1.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "ч",
+            "to": "tɕ",
+            "weight": 1.0
+          },
+          {
+            "from": "ш",
+            "to": "ʂ",
+            "weight": 1.0
+          },
+          {
+            "from": "ъ",
+            "to": "",
+            "weight": 1.0
+          },
+          {
+            "from": "ы",
+            "to": "ɨ",
+            "weight": 1.0
+          },
+          {
+            "from": "ь",
+            "to": "",
+            "weight": 1.0
+          },
+          {
+            "from": "э",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "ю",
+            "to": "j u",
+            "weight": 1.0
+          },
+          {
+            "from": "я",
+            "to": "j a",
+            "weight": 1.0
+          },
+          {
+            "from": "д",
+            "to": "ɖʐ",
+            "weight": 2.0,
+            "follow": "ж"
+          },
+          {
+            "from": "ж",
+            "to": "",
+            "weight": 2.0,
+            "precede": "д",
+            "comment": "clean-up"
+          },
+          {
+            "from": "д",
+            "to": "dʑ",
+            "weight": 2.0,
+            "follow": "з"
+          },
+          {
+            "from": "з",
+            "to": "",
+            "weight": 2.0,
+            "precede": "д",
+            "comment": "clean-up"
+          },
+          {
+            "from": "т",
+            "to": "ʈʂ",
+            "weight": 2.0,
+            "follow": "ш"
+          },
+          {
+            "from": "ш",
+            "to": "",
+            "weight": 2.0,
+            "precede": "т",
+            "comment": "clean-up"
+          },
+          {
+            "from": "е",
+            "to": "j e",
+            "weight": 3.0,
+            "precede": "ъ"
+          },
+          {
+            "from": "ё",
+            "to": "j o",
+            "weight": 3.0,
+            "precede": "ъ"
+          },
+          {
+            "from": "ю",
+            "to": "j u",
+            "weight": 3.0,
+            "precede": "ъ"
+          },
+          {
+            "from": "я",
+            "to": "j a",
+            "weight": 3.0,
+            "precede": "ъ"
+          },
+          {
+            "from": "д",
+            "to": "ɟ",
+            "weight": 2.0,
+            "follow": "{softvowels}"
+          },
+          {
+            "from": "з",
+            "to": "ʑ",
+            "weight": 2.0,
+            "follow": "{softvowels}"
+          },
+          {
+            "from": "л",
+            "to": "ʎ",
+            "weight": 2.0,
+            "follow": "{softvowels}"
+          },
+          {
+            "from": "н",
+            "to": "ɲ",
+            "weight": 2.0,
+            "follow": "{softvowels}"
+          },
+          {
+            "from": "с",
+            "to": "ɕ",
+            "weight": 2.0,
+            "follow": "{softvowels}"
+          },
+          {
+            "from": "т",
+            "to": "c",
+            "weight": 2.0,
+            "follow": "{softvowels}"
+          },
+          {
+            "from": "е",
+            "to": "e",
+            "weight": 3.0,
+            "precede": "{palatals}"
+          },
+          {
+            "from": "ё",
+            "to": "o",
+            "weight": 3.0,
+            "precede": "{palatals}"
+          },
+          {
+            "from": "ю",
+            "to": "u",
+            "weight": 3.0,
+            "precede": "{palatals}"
+          },
+          {
+            "from": "я",
+            "to": "a",
+            "weight": 3.0,
+            "precede": "{palatals}"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 1.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({consonants}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0,
+            "comment": "consonant gemination"
+          },
+          {
+            "from": "ɖʐ ʐ",
+            "to": "ɖʐ ː",
+            "weight": 2.0,
+            "comment": "exception because of digraph"
+          },
+          {
+            "from": "d̪ ɖʐ",
+            "to": "ɖʐ ː",
+            "weight": 2.0,
+            "comment": "exception because of digraph - alternate form"
+          },
+          {
+            "from": "dʑ z̪",
+            "to": "dʑ ː",
+            "weight": 2.0,
+            "comment": "exception because of digraph"
+          },
+          {
+            "from": "d̪ dʑ",
+            "to": "dʑ ː",
+            "weight": 2.0,
+            "comment": "exception because of digraph - alternate form"
+          },
+          {
+            "from": "ʈʂ ʂ",
+            "to": "ʈʂ ː",
+            "weight": 2.0,
+            "comment": "exception because of digraph"
+          },
+          {
+            "from": "t̪ ʈʂ",
+            "to": "ʈʂ ː",
+            "weight": 2.0,
+            "comment": "exception because of digraph - alternate form"
+          }
+        ]
+      }
+    }
+  }
+}

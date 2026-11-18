@@ -1,0 +1,932 @@
+{
+  "metadata": {
+    "code": "crm",
+    "name": "Moose Cree",
+    "family": "Algic,Algonquian,Central,Cree-Montagnais-Naskapi",
+    "macroarea": "North America",
+    "compromised": {
+      "note": "/h/ not always marked"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ᐅᐯᔭᑯᑌᔥᑲᓀᐤ",
+          "phonemes": "o p e ː j a k o t e ː ʃ k a n e ː w"
+        },
+        {
+          "word": "ᐲᒥᓂᑲᓐ",
+          "phonemes": "p i ː m i n i k a n"
+        },
+        {
+          "word": "ᐱᒥᓂᑳᑕᐦᐊᒻ",
+          "phonemes": "p i m i n i k a ː t a h a m"
+        },
+        {
+          "word": "ᐋᐦᒌᐦᑫᓐ",
+          "phonemes": "a ː h tʃ i ː h k e ː n"
+        },
+        {
+          "word": "ᐊᓖᒌᒥᓐ",
+          "phonemes": "a l i ː tʃ i ː m i n"
+        },
+        {
+          "word": "ᐊᐸᔓᔾ",
+          "phonemes": "a p a ʃ o j"
+        },
+        {
+          "word": "ᐙᐸᓐ",
+          "phonemes": "w a ː p a n"
+        },
+        {
+          "word": "ᐁᓪᓯ",
+          "phonemes": "e ː l s i"
+        },
+        {
+          "word": "ᐯᔭᑯᔖᑉ",
+          "phonemes": "p e ː j a k o ʃ a ː p"
+        },
+        {
+          "word": "ᓂᑖᓂᔅ",
+          "phonemes": "n i t a ː n i s"
+        },
+        {
+          "word": "ᐯᔭᒃ",
+          "phonemes": "p e ː j a k"
+        },
+        {
+          "word": "ᐐᐸᒡ",
+          "phonemes": "w i ː p a tʃ"
+        },
+        {
+          "word": "ᔖᑭᑖᑦ",
+          "phonemes": "ʃ a ː k i t a ː t"
+        },
+        {
+          "word": "ᑾᔭᔅᒃ",
+          "phonemes": "k w a j a s k"
+        },
+        {
+          "word": "ᑾᔭᔉ",
+          "phonemes": "k w a j a s k"
+        }
+      ],
+      "rules": {
+        "sub": [
+          {
+            "from": "ᐃ",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐱ",
+            "to": "p i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑎ",
+            "to": "t i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑭ",
+            "to": "k i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒋ",
+            "to": "tʃ i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒥ",
+            "to": "m i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓂ",
+            "to": "n i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓯ",
+            "to": "s i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔑ",
+            "to": "ʃ i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔨ",
+            "to": "j i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓕ",
+            "to": "l i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐎ",
+            "to": "w i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐦᐃ",
+            "to": "h i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐅ",
+            "to": "o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐳ",
+            "to": "p o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑐ",
+            "to": "t o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑯ",
+            "to": "k o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒍ",
+            "to": "tʃ o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒧ",
+            "to": "m o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓄ",
+            "to": "n o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓱ",
+            "to": "s o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔓ",
+            "to": "ʃ o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔪ",
+            "to": "j o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓗ",
+            "to": "l o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐒ",
+            "to": "w o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐦᐅ",
+            "to": "h o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐊ",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐸ",
+            "to": "p a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑕ",
+            "to": "t a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑲ",
+            "to": "k a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒐ",
+            "to": "tʃ a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒪ",
+            "to": "m a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓇ",
+            "to": "n a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓴ",
+            "to": "s a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔕ",
+            "to": "ʃ a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔭ",
+            "to": "j a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓚ",
+            "to": "l a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐗ",
+            "to": "w a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐦᐊ",
+            "to": "h a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑉ",
+            "to": "p",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑦ",
+            "to": "t",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒃ",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒡ",
+            "to": "tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒻ",
+            "to": "m",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓐ",
+            "to": "n",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔅ",
+            "to": "s",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔥ",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔾ",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓪ",
+            "to": "l",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐤ",
+            "to": "w",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐦ",
+            "to": "h",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔉ",
+            "to": "s k",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐼ",
+            "to": "p w i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑙ",
+            "to": "t w i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑶ",
+            "to": "k w i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒔ",
+            "to": "tʃ w i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒮ",
+            "to": "m w i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓸ",
+            "to": "s w i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔙ",
+            "to": "ʃ w i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔱ",
+            "to": "j w i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓞ",
+            "to": "l w i",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑀ",
+            "to": "p w o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑝ",
+            "to": "t w o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑺ",
+            "to": "k w o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒘ",
+            "to": "tʃ w o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒲ",
+            "to": "m w o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓼ",
+            "to": "s w o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔝ",
+            "to": "ʃ w o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔵ",
+            "to": "j w o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓢ",
+            "to": "l w o",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑄ",
+            "to": "p w a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑡ",
+            "to": "t w a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑾ",
+            "to": "k w a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒜ",
+            "to": "tʃ w a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒶ",
+            "to": "m w a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓋ",
+            "to": "n w a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔀ",
+            "to": "s w a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔡ",
+            "to": "ʃ w a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔹ",
+            "to": "j w a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓦ",
+            "to": "l w a",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐄ",
+            "to": "i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐲ",
+            "to": "p i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑏ",
+            "to": "t i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑮ",
+            "to": "k i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒌ",
+            "to": "tʃ i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒦ",
+            "to": "m i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓃ",
+            "to": "n i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓰ",
+            "to": "s i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔒ",
+            "to": "ʃ i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔩ",
+            "to": "j i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓖ",
+            "to": "l i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐐ",
+            "to": "w i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐦᐄ",
+            "to": "h i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐆ",
+            "to": "o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐴ",
+            "to": "p o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑑ",
+            "to": "t o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑰ",
+            "to": "k o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒎ",
+            "to": "tʃ o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒨ",
+            "to": "m o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓅ",
+            "to": "n o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓲ",
+            "to": "s o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔔ",
+            "to": "ʃ o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔫ",
+            "to": "j o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓘ",
+            "to": "l o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐔ",
+            "to": "w o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐦᐆ",
+            "to": "h o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐋ",
+            "to": "a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐹ",
+            "to": "p a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑖ",
+            "to": "t a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑳ",
+            "to": "k a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒑ",
+            "to": "tʃ a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒫ",
+            "to": "m a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓈ",
+            "to": "n a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓵ",
+            "to": "s a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔖ",
+            "to": "ʃ a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔮ",
+            "to": "j a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓛ",
+            "to": "l a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐙ",
+            "to": "w a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐦᐋ",
+            "to": "h a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐁ",
+            "to": "e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐯ",
+            "to": "p e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑌ",
+            "to": "t e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑫ",
+            "to": "k e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒉ",
+            "to": "tʃ e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒣ",
+            "to": "m e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓀ",
+            "to": "n e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓭ",
+            "to": "s e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔐ",
+            "to": "ʃ e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔦ",
+            "to": "j e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓓ",
+            "to": "l e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐌ",
+            "to": "w e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐦᐁ",
+            "to": "h e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐾ",
+            "to": "p w i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑛ",
+            "to": "t w i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑸ",
+            "to": "k w i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒖ",
+            "to": "tʃ w i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒰ",
+            "to": "m w i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓺ",
+            "to": "s w i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔛ",
+            "to": "ʃ w i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔳ",
+            "to": "j w i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓠ",
+            "to": "l w i ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑂ",
+            "to": "p w o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑟ",
+            "to": "t w o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑼ",
+            "to": "k w o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒚ",
+            "to": "tʃ w o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒴ",
+            "to": "m w o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓾ",
+            "to": "s w o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔟ",
+            "to": "ʃ w o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔷ",
+            "to": "j w o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓤ",
+            "to": "l w o ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑆ",
+            "to": "p w a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑣ",
+            "to": "t w a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒀ",
+            "to": "k w a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒞ",
+            "to": "tʃ w a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒸ",
+            "to": "m w a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓍ",
+            "to": "n w a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔂ",
+            "to": "s w a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔣ",
+            "to": "ʃ w a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔻ",
+            "to": "j w a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓨ",
+            "to": "l w a ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᐺ",
+            "to": "p w e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑗ",
+            "to": "t w e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᑴ",
+            "to": "k w e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒒ",
+            "to": "tʃ w e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᒬ",
+            "to": "m w e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓉ",
+            "to": "n w e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓶ",
+            "to": "s w e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔗ",
+            "to": "ʃ w e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᔯ",
+            "to": "j w e ː",
+            "weight": 4.0
+          },
+          {
+            "from": "ᓜ",
+            "to": "l w e ː",
+            "weight": 4.0
+          }
+        ]
+      }
+    }
+  }
+}

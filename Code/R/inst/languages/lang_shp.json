@@ -1,0 +1,270 @@
+{
+  "metadata": {
+    "code": "shp",
+    "name": "Shipibo-Konibo",
+    "family": "Panoan,Mainline Panoan,Nawa,Chama,Shipibo-Konibo",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ahuá",
+          "phonemes": "a w a",
+          "comment": "a"
+        },
+        {
+          "word": "bébati",
+          "phonemes": "β ɨ β a t i",
+          "comment": "b"
+        },
+        {
+          "word": "cácaati",
+          "phonemes": "k a k a a t i",
+          "comment": "c"
+        },
+        {
+          "word": "chichínti",
+          "phonemes": "tʃ i tʃ i n t i",
+          "comment": "ch"
+        },
+        {
+          "word": "éseti",
+          "phonemes": "ɨ s ɨ t i",
+          "comment": "e"
+        },
+        {
+          "word": "huáihuanti",
+          "phonemes": "w a i w a n t i",
+          "comment": "hu"
+        },
+        {
+          "word": "ibínti",
+          "phonemes": "i β i n t i",
+          "comment": "i"
+        },
+        {
+          "word": "janqués̈hti",
+          "phonemes": "h a n k ɨ ʂ t i",
+          "comment": "j"
+        },
+        {
+          "word": "iki",
+          "phonemes": "i k i",
+          "comment": "k"
+        },
+        {
+          "word": "mémio",
+          "phonemes": "m ɨ m i o",
+          "comment": "m"
+        },
+        {
+          "word": "ninóti",
+          "phonemes": "n i n o t i",
+          "comment": "n"
+        },
+        {
+          "word": "ochóma",
+          "phonemes": "o tʃ o m a",
+          "comment": "o"
+        },
+        {
+          "word": "papéti",
+          "phonemes": "p a p ɨ t i",
+          "comment": "p"
+        },
+        {
+          "word": "quenqués̈h",
+          "phonemes": "k ɨ n k ɨ ʂ",
+          "comment": "qu"
+        },
+        {
+          "word": "rampárin",
+          "phonemes": "ɻ a m p a ɻ i n",
+          "comment": "r"
+        },
+        {
+          "word": "sísirono",
+          "phonemes": "s i s i ɻ o n o",
+          "comment": "s"
+        },
+        {
+          "word": "shequésh",
+          "phonemes": "ʃ ɨ k ɨ ʃ",
+          "comment": "sh"
+        },
+        {
+          "word": "s̈hás̈ho",
+          "phonemes": "ʂ a ʂ o",
+          "comment": "s̈h"
+        },
+        {
+          "word": "táshati",
+          "phonemes": "t a ʃ a t i",
+          "comment": "t"
+        },
+        {
+          "word": "tsatsán",
+          "phonemes": "ts a ts a n",
+          "comment": "ts"
+        },
+        {
+          "word": "xáxati",
+          "phonemes": "ʂ a ʂ a t i",
+          "comment": "x"
+        },
+        {
+          "word": "yácoa",
+          "phonemes": "j a k o a",
+          "comment": "y"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "['ꞌˈ‘’]",
+          "u-preceder": "[hq]",
+          "passthrough": "[aikmnopstw]",
+          "h-preceder": "(c|s|s̈)"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "β",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "e",
+            "to": "ɨ",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɻ",
+            "weight": 4.0
+          },
+          {
+            "from": "x",
+            "to": "ʂ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 4.0,
+            "comment": "apostrophes mark glottal stops, which are non-phonemic in Shipibo"
+          },
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "é",
+            "to": "ɨ",
+            "weight": 4.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<ch>"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<sh>"
+          },
+          {
+            "from": "s̈",
+            "to": "ʂ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<s̈h>"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 5.0,
+            "precede": "{h-preceder}"
+          },
+          {
+            "from": "s",
+            "to": "ʂ",
+            "weight": 8.0,
+            "follow": "̈h",
+            "comment": "this pair of rules turns the <s̈h> digraph - unnatached combining diacritic"
+          },
+          {
+            "from": "̈",
+            "to": "",
+            "weight": 8.0,
+            "precede": "s",
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "w",
+            "weight": 6.0,
+            "follow": "u",
+            "comment": "<hu>"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 6.0,
+            "follow": "u",
+            "comment": "<qu>"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{u-preceder}"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "t s",
+            "to": "ts",
+            "weight": 2.0,
+            "comment": "<ts>"
+          }
+        ]
+      }
+    }
+  }
+}

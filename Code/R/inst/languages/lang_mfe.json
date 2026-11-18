@@ -1,0 +1,520 @@
+{
+  "metadata": {
+    "code": "mfe",
+    "name": "Morisyen",
+    "family": "Creole,French based",
+    "macroarea": "Africa",
+    "compromised": {
+      "sounds": "ks|ɡz",
+      "note": "possible conflation with other consonants; highly suspect orthography"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "kamarad",
+          "phonemes": "k a m a ɣ a d̪",
+          "comment": "a"
+        },
+        {
+          "word": "buku",
+          "phonemes": "b u k u",
+          "comment": "b"
+        },
+        {
+          "word": "devlope",
+          "phonemes": "d̪ e v l o p e",
+          "comment": "d to d̪"
+        },
+        {
+          "word": "sesil",
+          "phonemes": "s e s i l",
+          "comment": "e"
+        },
+        {
+          "word": "fini",
+          "phonemes": "f i n i",
+          "comment": "f"
+        },
+        {
+          "word": "golfis",
+          "phonemes": "ɡ o l f i s",
+          "comment": "g to ɡ"
+        },
+        {
+          "word": "halim",
+          "phonemes": "h a l i m",
+          "comment": "h"
+        },
+        {
+          "word": "timid",
+          "phonemes": "t̪ i m i d̪",
+          "comment": "i"
+        },
+        {
+          "word": "jet",
+          "phonemes": "dʒ e t̪",
+          "comment": "j to dʒ"
+        },
+        {
+          "word": "lepok",
+          "phonemes": "l e p o k",
+          "comment": "k"
+        },
+        {
+          "word": "lakaz",
+          "phonemes": "l a k a z",
+          "comment": "l"
+        },
+        {
+          "word": "malad",
+          "phonemes": "m a l a d̪",
+          "comment": "m"
+        },
+        {
+          "word": "bizin",
+          "phonemes": "b i z i n",
+          "comment": "n"
+        },
+        {
+          "word": "zom",
+          "phonemes": "z o m",
+          "comment": "o"
+        },
+        {
+          "word": "partu",
+          "phonemes": "p aː t̪ u",
+          "comment": "p"
+        },
+        {
+          "word": "res",
+          "phonemes": "ɣ e s",
+          "comment": "r to ɣ"
+        },
+        {
+          "word": "sez",
+          "phonemes": "s e z",
+          "comment": "s"
+        },
+        {
+          "word": "tipti",
+          "phonemes": "t̪ i p t̪ i",
+          "comment": "t to t̪"
+        },
+        {
+          "word": "dimun",
+          "phonemes": "d̪ i m u n",
+          "comment": "u"
+        },
+        {
+          "word": "vin",
+          "phonemes": "v i n",
+          "comment": "v"
+        },
+        {
+          "word": "dizwit",
+          "phonemes": "d̪ i z w i t̪",
+          "comment": "w"
+        },
+        {
+          "word": "taxi",
+          "phonemes": "t̪ a k s i",
+          "comment": "x to ks"
+        },
+        {
+          "word": "byen",
+          "phonemes": "b j ẽ",
+          "comment": "y to j"
+        },
+        {
+          "word": "zot",
+          "phonemes": "z o t̪",
+          "comment": "z"
+        },
+        {
+          "word": "chak",
+          "phonemes": "tʃ a k",
+          "comment": "ch to tʃ"
+        },
+        {
+          "word": "bengkrep",
+          "phonemes": "b e ŋ k ɣ e p",
+          "comment": "ng to ŋ"
+        },
+        {
+          "word": "ganye",
+          "phonemes": "ɡ a ɲ e",
+          "comment": "ny to ɲ"
+        },
+        {
+          "word": "gagne",
+          "phonemes": "ɡ a ɲ e",
+          "comment": "gn to ɲ"
+        },
+        {
+          "word": "ranze",
+          "phonemes": "ɣ ã z e",
+          "comment": "an to ã"
+        },
+        {
+          "word": "bizen",
+          "phonemes": "b i z ẽ",
+          "comment": "en to ẽ"
+        },
+        {
+          "word": "mizer",
+          "phonemes": "m i z eə",
+          "comment": "er to eə word-finally"
+        },
+        {
+          "word": "lontam",
+          "phonemes": "l õ t̪ a m",
+          "comment": "on to õ"
+        },
+        {
+          "word": "deforz",
+          "phonemes": "d̪ e f oː z",
+          "comment": "or to oː preceding a consonant"
+        },
+        {
+          "word": "turve",
+          "phonemes": "t̪ uə v e",
+          "comment": "ur to uə preceding a consonant"
+        },
+        {
+          "word": "alert",
+          "phonemes": "a l eə t̪",
+          "comment": "er to eə preceding a consonant"
+        },
+        {
+          "word": "bann",
+          "phonemes": "b a n",
+          "comment": "ann to an"
+        },
+        {
+          "word": "kouzinn",
+          "phonemes": "k u z i n",
+          "comment": "inn to n"
+        },
+        {
+          "word": "klounn",
+          "phonemes": "k l u n",
+          "comment": "ou to u"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeioubfhklmnpsvwz]",
+          "longvowels": "[ao]",
+          "vowels": "[aeiou]",
+          "consonants": "[bcdfghjklmnprstvwxyz]",
+          "punct": "['’ʻ-]"
+        },
+        "sub": [
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "dʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɣ",
+            "weight": 1.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 1.0
+          },
+          {
+            "from": "x",
+            "to": "k s",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 4.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 4.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 4.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 4.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 4.0,
+            "precede": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 4.0,
+            "follow": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 4.0,
+            "precede": "x",
+            "comment": "clean-up: for when <xs> is used"
+          },
+          {
+            "from": "o",
+            "to": "u",
+            "weight": 4.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 4.0,
+            "precede": "o",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({longvowels})",
+            "to": "\\1ː",
+            "weight": 3.0,
+            "follow": "r{consonants}",
+            "comment": "preceding a consonant"
+          },
+          {
+            "from": "e",
+            "to": "eə",
+            "weight": 3.0,
+            "follow": "r{consonants}",
+            "comment": "preceding a consonant"
+          },
+          {
+            "from": "i",
+            "to": "iə",
+            "weight": 3.0,
+            "follow": "r{consonants}",
+            "comment": "preceding a consonant"
+          },
+          {
+            "from": "u",
+            "to": "uə",
+            "weight": 3.0,
+            "follow": "r{consonants}",
+            "comment": "preceding a consonant"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{vowels}",
+            "follow": "{consonants}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({longvowels})",
+            "to": "\\1ː",
+            "weight": 3.0,
+            "follow": "r$",
+            "comment": "preceding a consonant"
+          },
+          {
+            "from": "e",
+            "to": "eə",
+            "weight": 3.0,
+            "follow": "r$",
+            "comment": "preceding a consonant"
+          },
+          {
+            "from": "i",
+            "to": "iə",
+            "weight": 3.0,
+            "follow": "r$",
+            "comment": "preceding a consonant"
+          },
+          {
+            "from": "u",
+            "to": "uə",
+            "weight": 3.0,
+            "follow": "r$",
+            "comment": "preceding a consonant"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{vowels}",
+            "follow": "$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "i n",
+            "weight": 2.0,
+            "follow": "nn"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 2.0,
+            "precede": "i",
+            "follow": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 2.0,
+            "precede": "in",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "u n",
+            "weight": 2.0,
+            "follow": "nn"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 2.0,
+            "precede": "u",
+            "follow": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 2.0,
+            "precede": "un",
+            "comment": "clean-up"
+          },
+          {
+            "from": "o",
+            "to": "u n",
+            "weight": 5.0,
+            "follow": "unn"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 5.0,
+            "precede": "o",
+            "follow": "nn",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 5.0,
+            "precede": "ou",
+            "follow": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 5.0,
+            "precede": "oun",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 1.0,
+            "comment": "hyphens have no phonemic value and apostrophes indicate elision"
+          },
+          {
+            "from": "s",
+            "to": "@",
+            "weight": 1.0,
+            "follow": "h",
+            "comment": "loanword digraph representing /ʃ/"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "a n",
+            "to": "ã",
+            "weight": 3.0
+          },
+          {
+            "from": "e n",
+            "to": "ẽ",
+            "weight": 3.0
+          },
+          {
+            "from": "o n",
+            "to": "õ",
+            "weight": 3.0
+          },
+          {
+            "from": "ã n",
+            "to": "a n",
+            "weight": 2.0
+          },
+          {
+            "from": "ẽ n",
+            "to": "e n",
+            "weight": 2.0
+          },
+          {
+            "from": "õ n",
+            "to": "o n",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

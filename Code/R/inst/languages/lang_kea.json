@@ -1,0 +1,521 @@
+{
+  "metadata": {
+    "code": "kea",
+    "name": "Cape Verdean Creole",
+    "family": "Creole,Portuguese based",
+    "macroarea": "Africa",
+    "compromised": {
+      "sounds": "a|ɐ|e|ɛ|ɾ|ʀ"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ta",
+          "phonemes": "t a",
+          "comment": "<a>"
+        },
+        {
+          "word": "kabuverdianu",
+          "phonemes": "k a b u v e ɾ d i ã u",
+          "comment": "<an>"
+        },
+        {
+          "word": "más",
+          "phonemes": "m a s",
+          "comment": "<á>"
+        },
+        {
+          "word": "Amándiu",
+          "phonemes": "a m ã d i u",
+          "comment": "<án>"
+        },
+        {
+          "word": "diâ",
+          "phonemes": "d i ɐ",
+          "comment": "<â>"
+        },
+        {
+          "word": "mânera",
+          "phonemes": "m ɐ̃ e ɾ a",
+          "comment": "<ân>"
+        },
+        {
+          "word": "bu",
+          "phonemes": "b u",
+          "comment": "<b>"
+        },
+        {
+          "word": "di",
+          "phonemes": "d i",
+          "comment": "<d>"
+        },
+        {
+          "word": "dja",
+          "phonemes": "dʒ a",
+          "comment": "<dj>"
+        },
+        {
+          "word": "es",
+          "phonemes": "e s",
+          "comment": "<e>"
+        },
+        {
+          "word": "ben",
+          "phonemes": "b ẽ",
+          "comment": "<en>"
+        },
+        {
+          "word": "é",
+          "phonemes": "ɛ",
+          "comment": "<é>"
+        },
+        {
+          "word": "nén",
+          "phonemes": "n ɛ̃",
+          "comment": "<én>"
+        },
+        {
+          "word": "purtugês",
+          "phonemes": "p u ɾ t u ɡ e s",
+          "comment": "<ê>"
+        },
+        {
+          "word": "influênsia",
+          "phonemes": "ĩ f l u ẽ s i a",
+          "comment": "<ên>"
+        },
+        {
+          "word": "fla",
+          "phonemes": "f l a",
+          "comment": "<f>"
+        },
+        {
+          "word": "lingua",
+          "phonemes": "l ĩ ɡ u a",
+          "comment": "<g>"
+        },
+        {
+          "word": "ki",
+          "phonemes": "k i",
+          "comment": "<i>"
+        },
+        {
+          "word": "inda",
+          "phonemes": "ĩ d a",
+          "comment": "<in>"
+        },
+        {
+          "word": "família",
+          "phonemes": "f a m i l i a",
+          "comment": "<í>"
+        },
+        {
+          "word": "língua",
+          "phonemes": "l ĩ ɡ u a",
+          "comment": "<ín>"
+        },
+        {
+          "word": "oji",
+          "phonemes": "o ʒ i",
+          "comment": "<j>"
+        },
+        {
+          "word": "ka",
+          "phonemes": "k a",
+          "comment": "<k>"
+        },
+        {
+          "word": "el",
+          "phonemes": "e l",
+          "comment": "<l>"
+        },
+        {
+          "word": "ilha",
+          "phonemes": "i ʎ a",
+          "comment": "<lh>"
+        },
+        {
+          "word": "ma",
+          "phonemes": "m a",
+          "comment": "<m>"
+        },
+        {
+          "word": "na",
+          "phonemes": "n a",
+          "comment": "<n>"
+        },
+        {
+          "word": "nha",
+          "phonemes": "ɲ a",
+          "comment": "<nh>"
+        },
+        {
+          "word": "nos",
+          "phonemes": "n o s",
+          "comment": "<o>"
+        },
+        {
+          "word": "konta",
+          "phonemes": "k õ t a",
+          "comment": "<õ>"
+        },
+        {
+          "word": "só",
+          "phonemes": "s ɔ",
+          "comment": "<ó>"
+        },
+        {
+          "word": "kónta",
+          "phonemes": "k ɔ̃ t a",
+          "comment": "<ón>"
+        },
+        {
+          "word": "dôs",
+          "phonemes": "d o s",
+          "comment": "<ô>"
+        },
+        {
+          "word": "ône",
+          "phonemes": "õ e",
+          "comment": "<ôn>"
+        },
+        {
+          "word": "pa",
+          "phonemes": "p a",
+          "comment": "<p>"
+        },
+        {
+          "word": "kre",
+          "phonemes": "k ɾ e",
+          "comment": "<r>"
+        },
+        {
+          "word": "burru",
+          "phonemes": "b u ʀ u",
+          "comment": "<rr>"
+        },
+        {
+          "word": "si",
+          "phonemes": "s i",
+          "comment": "<s>"
+        },
+        {
+          "word": "ten",
+          "phonemes": "t ẽ",
+          "comment": "<t>"
+        },
+        {
+          "word": "txeu",
+          "phonemes": "tʃ e u",
+          "comment": "<tx>"
+        },
+        {
+          "word": "ku",
+          "phonemes": "k u",
+          "comment": "<u>"
+        },
+        {
+          "word": "un",
+          "phonemes": "ũ",
+          "comment": "<un>"
+        },
+        {
+          "word": "kauverde",
+          "phonemes": "k a u v e ɾ d e",
+          "comment": "<v>"
+        },
+        {
+          "word": "dexa",
+          "phonemes": "d e ʃ a",
+          "comment": "<x>"
+        },
+        {
+          "word": "faze",
+          "phonemes": "f a z e",
+          "comment": "<z>"
+        },
+        {
+          "word": "kaminhu",
+          "phonemes": "k a m i ɲ u",
+          "comment": "vowels don't nasalize before <m> and <nh>"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdefiklmnopstuvz]",
+          "vowels": "[aáâeéêiíoóôuú]",
+          "not-h": "[aáâeéêiíoóôubdfgjklmnprstvxz]",
+          "punct": "['ꞌ‘’-]"
+        },
+        "sub": [
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 1.0
+          },
+          {
+            "from": "â",
+            "to": "ɐ",
+            "weight": 1.0
+          },
+          {
+            "from": "é",
+            "to": "ɛ",
+            "weight": 1.0
+          },
+          {
+            "from": "ê",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "ʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "ó",
+            "to": "ɔ",
+            "weight": 1.0
+          },
+          {
+            "from": "ô",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "a",
+            "to": "ã",
+            "weight": 2.0,
+            "follow": "n({not-h}|$)",
+            "comment": "vowels are nasalized when followed by <n> but not the other nasal consonants: <m> and <nh>"
+          },
+          {
+            "from": "á",
+            "to": "ã",
+            "weight": 2.0,
+            "follow": "n({not-h}|$)"
+          },
+          {
+            "from": "â",
+            "to": "ɐ̃",
+            "weight": 2.0,
+            "follow": "n({not-h}|$)"
+          },
+          {
+            "from": "e",
+            "to": "ẽ",
+            "weight": 2.0,
+            "follow": "n({not-h}|$)"
+          },
+          {
+            "from": "é",
+            "to": "ɛ̃",
+            "weight": 2.0,
+            "follow": "n({not-h}|$)"
+          },
+          {
+            "from": "ê",
+            "to": "ẽ",
+            "weight": 2.0,
+            "follow": "n({not-h}|$)"
+          },
+          {
+            "from": "i",
+            "to": "ĩ",
+            "weight": 2.0,
+            "follow": "n({not-h}|$)"
+          },
+          {
+            "from": "í",
+            "to": "ĩ",
+            "weight": 2.0,
+            "follow": "n({not-h}|$)"
+          },
+          {
+            "from": "o",
+            "to": "õ",
+            "weight": 2.0,
+            "follow": "n({not-h}|$)"
+          },
+          {
+            "from": "ó",
+            "to": "ɔ̃",
+            "weight": 2.0,
+            "follow": "n({not-h}|$)"
+          },
+          {
+            "from": "ô",
+            "to": "õ",
+            "weight": 2.0,
+            "follow": "n({not-h}|$)"
+          },
+          {
+            "from": "u",
+            "to": "ũ",
+            "weight": 2.0,
+            "follow": "n({not-h}|$)"
+          },
+          {
+            "from": "ú",
+            "to": "ũ",
+            "weight": 2.0,
+            "follow": "n({not-h}|$)"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{vowels}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "dʒ",
+            "weight": 3.0,
+            "follow": "j"
+          },
+          {
+            "from": "j",
+            "to": "",
+            "weight": 3.0,
+            "precede": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "l",
+            "to": "ʎ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "r",
+            "to": "ʀ",
+            "weight": 3.0,
+            "follow": "r"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 3.0,
+            "precede": "r",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "x"
+          },
+          {
+            "from": "x",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 1.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "ã n",
+            "to": "a n",
+            "weight": 2.0
+          },
+          {
+            "from": "ɐ̃ n",
+            "to": "ɐ n",
+            "weight": 2.0
+          },
+          {
+            "from": "ẽ n",
+            "to": "e n",
+            "weight": 2.0
+          },
+          {
+            "from": "ɛ̃ n",
+            "to": "ɛ n",
+            "weight": 2.0
+          },
+          {
+            "from": "ĩ n",
+            "to": "i n",
+            "weight": 2.0
+          },
+          {
+            "from": "õ n",
+            "to": "o n",
+            "weight": 2.0
+          },
+          {
+            "from": "ɔ̃ n",
+            "to": "ɔ n",
+            "weight": 2.0
+          },
+          {
+            "from": "ũ n",
+            "to": "u n",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

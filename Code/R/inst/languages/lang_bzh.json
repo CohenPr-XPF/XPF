@@ -1,0 +1,471 @@
+{
+  "metadata": {
+    "code": "bzh",
+    "name": "Mapos Buang",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,North New Guinea,Huon Gulf,South,Hote-Buang,Buang",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "note": "possible misrepresentation of /ɛ/"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "pum",
+          "phonemes": "p u m"
+        },
+        {
+          "word": "apel",
+          "phonemes": "a p ɛ l̪"
+        },
+        {
+          "word": "pip",
+          "phonemes": "p i p"
+        },
+        {
+          "word": "bum",
+          "phonemes": "ᵐb u m"
+        },
+        {
+          "word": "abel",
+          "phonemes": "a ᵐb ɛ l̪"
+        },
+        {
+          "word": "bib",
+          "phonemes": "ᵐb i ᵐb"
+        },
+        {
+          "word": "ma",
+          "phonemes": "m a"
+        },
+        {
+          "word": "amaġ",
+          "phonemes": "a m a ᶰɢ"
+        },
+        {
+          "word": "vahek",
+          "phonemes": "β a ʁ ɛ k"
+        },
+        {
+          "word": "vavu",
+          "phonemes": "β a β u"
+        },
+        {
+          "word": "ahov",
+          "phonemes": "a ʁ o β"
+        },
+        {
+          "word": "wanġ",
+          "phonemes": "w a ɴ"
+        },
+        {
+          "word": "bewë",
+          "phonemes": "ᵐb ɛ w e"
+        },
+        {
+          "word": "kwaanġ",
+          "phonemes": "kʷ a ː ɴ"
+        },
+        {
+          "word": "ḳakwii",
+          "phonemes": "q a kʷ i ː"
+        },
+        {
+          "word": "gweḳo",
+          "phonemes": "ᵑɡʷ ɛ q o"
+        },
+        {
+          "word": "degwa",
+          "phonemes": "ⁿd̪ ɛ ᵑɡʷ a"
+        },
+        {
+          "word": "ngwii",
+          "phonemes": "ŋʷ i ː"
+        },
+        {
+          "word": "mangweleḳin",
+          "phonemes": "m a ŋʷ ɛ l̪ ɛ q i n̪"
+        },
+        {
+          "word": "tahu",
+          "phonemes": "t̪ a ʁ u"
+        },
+        {
+          "word": "ḳetu",
+          "phonemes": "q ɛ t̪ u"
+        },
+        {
+          "word": "tebot",
+          "phonemes": "t̪ ɛ ᵐb o t̪"
+        },
+        {
+          "word": "dii",
+          "phonemes": "ⁿd̪ i ː"
+        },
+        {
+          "word": "ading",
+          "phonemes": "a ⁿd̪ i ŋ"
+        },
+        {
+          "word": "vud",
+          "phonemes": "β u ⁿd̪"
+        },
+        {
+          "word": "nöḳ",
+          "phonemes": "n̪ ɔ q"
+        },
+        {
+          "word": "ana",
+          "phonemes": "a n̪ a"
+        },
+        {
+          "word": "mun",
+          "phonemes": "m u n̪"
+        },
+        {
+          "word": "ranġa",
+          "phonemes": "ɽ a ɴ a"
+        },
+        {
+          "word": "aru",
+          "phonemes": "a ɽ u"
+        },
+        {
+          "word": "rawër",
+          "phonemes": "ɽ a w e ɽ"
+        },
+        {
+          "word": "seġes",
+          "phonemes": "tʃ ɛ ᶰɢ ɛ tʃ"
+        },
+        {
+          "word": "pasanġ",
+          "phonemes": "p a tʃ a ɴ"
+        },
+        {
+          "word": "metes",
+          "phonemes": "m ɛ t̪ ɛ tʃ"
+        },
+        {
+          "word": "jabuh",
+          "phonemes": "ⁿdʒ a ᵐb u ʁ"
+        },
+        {
+          "word": "jajap",
+          "phonemes": "ⁿdʒ a ⁿdʒ a p"
+        },
+        {
+          "word": "wëëj",
+          "phonemes": "w e ː ⁿdʒ"
+        },
+        {
+          "word": "nyël",
+          "phonemes": "ɲ e l̪"
+        },
+        {
+          "word": "ḳanyë",
+          "phonemes": "q a ɲ e"
+        },
+        {
+          "word": "lin",
+          "phonemes": "l̪ i n̪"
+        },
+        {
+          "word": "alov",
+          "phonemes": "a l̪ o β"
+        },
+        {
+          "word": "anil",
+          "phonemes": "a n̪ i l̪"
+        },
+        {
+          "word": "yes",
+          "phonemes": "j ɛ tʃ"
+        },
+        {
+          "word": "ayoġ",
+          "phonemes": "a j o ᶰɢ"
+        },
+        {
+          "word": "kip",
+          "phonemes": "k i p"
+        },
+        {
+          "word": "peko",
+          "phonemes": "p ɛ k o"
+        },
+        {
+          "word": "jik",
+          "phonemes": "ⁿdʒ i k"
+        },
+        {
+          "word": "gelëp",
+          "phonemes": "ᵑɡ ɛ l̪ e p"
+        },
+        {
+          "word": "amego",
+          "phonemes": "a m ɛ ᵑɡ o"
+        },
+        {
+          "word": "rig",
+          "phonemes": "ɽ i ᵑɡ"
+        },
+        {
+          "word": "ngisek",
+          "phonemes": "ŋ i tʃ ɛ k"
+        },
+        {
+          "word": "venguh",
+          "phonemes": "β ɛ ŋ u ʁ"
+        },
+        {
+          "word": "neheng",
+          "phonemes": "n̪ ɛ ʁ ɛ ŋ"
+        },
+        {
+          "word": "ggipek",
+          "phonemes": "ɣ i p ɛ k"
+        },
+        {
+          "word": "agga",
+          "phonemes": "a ɣ a"
+        },
+        {
+          "word": "ḳöḳ",
+          "phonemes": "q ɔ q"
+        },
+        {
+          "word": "vaḳu",
+          "phonemes": "β a q u"
+        },
+        {
+          "word": "luḳ",
+          "phonemes": "l̪ u q"
+        },
+        {
+          "word": "gööḳ",
+          "phonemes": "ᵑɡ ɔ ː q"
+        },
+        {
+          "word": "ġeġon",
+          "phonemes": "ᶰɢ ɛ ᶰɢ o n̪"
+        },
+        {
+          "word": "duġ",
+          "phonemes": "ⁿd̪ u ᶰɢ"
+        },
+        {
+          "word": "nġaa",
+          "phonemes": "ɴ a ː"
+        },
+        {
+          "word": "menġëës",
+          "phonemes": "m ɛ ɴ e ː tʃ"
+        },
+        {
+          "word": "rahënġ",
+          "phonemes": "ɽ a ʁ e ɴ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aiokmpuw]",
+          "w-preceder": "[kg]",
+          "g-preceder": "[ng]",
+          "vowels": "[aeɛioɔu]"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "ᵐb",
+            "weight": 2.0
+          },
+          {
+            "from": "d",
+            "to": "ⁿd̪",
+            "weight": 2.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 2.0
+          },
+          {
+            "from": "ë",
+            "to": "e",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ᵑɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "ġ",
+            "to": "ᶰɢ",
+            "weight": 2.0
+          },
+          {
+            "from": "h",
+            "to": "ʁ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "ⁿdʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "ḳ",
+            "to": "q",
+            "weight": 2.0
+          },
+          {
+            "from": "l",
+            "to": "l̪",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "n̪",
+            "weight": 2.0
+          },
+          {
+            "from": "ö",
+            "to": "ɔ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɽ",
+            "weight": 2.0
+          },
+          {
+            "from": "s",
+            "to": "tʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 2.0
+          },
+          {
+            "from": "v",
+            "to": "β",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "k",
+            "to": "kʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "g",
+            "to": "ᵑɡʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{w-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ɣ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{g-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ɴ",
+            "weight": 3.0,
+            "follow": "ġ"
+          },
+          {
+            "from": "ġ",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋʷ",
+            "weight": 4.0,
+            "follow": "gw"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 4.0,
+            "precede": "n",
+            "follow": "w",
+            "comment": "clean-up"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 4.0,
+            "precede": "gn",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

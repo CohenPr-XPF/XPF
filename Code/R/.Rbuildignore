@@ -1,0 +1,4 @@
+^tools$
+^README\.md$
+^cran-comments\.md$
+^\.Rhistory$

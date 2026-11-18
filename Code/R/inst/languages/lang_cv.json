@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "code": "cv",
+    "name": "Chuvash",
+    "family": "Turkic,Bolgar",
+    "macroarea": "Eurasia",
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "арӑслан",
+          "phonemes": "ɑ r ʌ s l ɑ n"
+        },
+        {
+          "word": "вуннӑ",
+          "phonemes": "v u n ː ʌ"
+        },
+        {
+          "word": "кӗҫӗр",
+          "phonemes": "k ɛ ɕ ɛ r"
+        },
+        {
+          "word": "мӑкӑнь",
+          "phonemes": "m ʌ k ʌ n"
+        },
+        {
+          "word": "пӳрне",
+          "phonemes": "p y r n e"
+        },
+        {
+          "word": "тырӑ",
+          "phonemes": "t ɯ r ʌ"
+        },
+        {
+          "word": "чухӑнлӑх",
+          "phonemes": "tʃ u χ ʌ n l ʌ χ"
+        },
+        {
+          "word": "юханшыв",
+          "phonemes": "j u χ ɑ n ʃ ɯ v"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "gem": "[v|p|m|t|s|n|l|r|ʃ|tʃ|ɕ|j|k|χ]",
+          "misc": "[ъь-]"
+        },
+        "sub": [
+          {
+            "from": "а",
+            "to": "ɑ",
+            "weight": 1.0
+          },
+          {
+            "from": "ӑ",
+            "to": "ʌ",
+            "weight": 1.0
+          },
+          {
+            "from": "в",
+            "to": "v",
+            "weight": 1.0
+          },
+          {
+            "from": "е",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "е",
+            "to": "j e",
+            "weight": 2.0,
+            "precede": "^"
+          },
+          {
+            "from": "ӗ",
+            "to": "ɛ",
+            "weight": 1.0
+          },
+          {
+            "from": "и",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 1.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 1.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 1.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 1.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 1.0
+          },
+          {
+            "from": "о",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "р",
+            "to": "r",
+            "weight": 1.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 1.0
+          },
+          {
+            "from": "ҫ",
+            "to": "ɕ",
+            "weight": 1.0
+          },
+          {
+            "from": "т",
+            "to": "t",
+            "weight": 1.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "ӳ",
+            "to": "y",
+            "weight": 1.0
+          },
+          {
+            "from": "х",
+            "to": "χ",
+            "weight": 1.0
+          },
+          {
+            "from": "ч",
+            "to": "tʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "ш",
+            "to": "ʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "ы",
+            "to": "ɯ",
+            "weight": 1.0
+          },
+          {
+            "from": "э",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "ю",
+            "to": "j u",
+            "weight": 1.0
+          },
+          {
+            "from": "я",
+            "to": "j ɑ",
+            "weight": 1.0
+          },
+          {
+            "from": "({misc})",
+            "to": "",
+            "weight": 1.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({gem}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

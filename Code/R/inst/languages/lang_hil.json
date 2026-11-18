@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "code": "hil",
+    "name": "Hiligaynon",
+    "family": "Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Meso Philippine,Bisayan,Central,Peripheral",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "sa",
+          "phonemes": "s̪ a",
+          "comment": "<s>; <a>"
+        },
+        {
+          "word": "abakáda",
+          "phonemes": "a b a k a d̪ a",
+          "comment": "<á>"
+        },
+        {
+          "word": "bala",
+          "phonemes": "b a l a",
+          "comment": "<b>; <l>"
+        },
+        {
+          "word": "kag",
+          "phonemes": "k a ɡ",
+          "comment": "<k>; <g>"
+        },
+        {
+          "word": "kabuhi",
+          "phonemes": "k a b u h i",
+          "comment": "<u>; <h>; <i>"
+        },
+        {
+          "word": "mga",
+          "phonemes": "m ɡ a",
+          "comment": "<m>"
+        },
+        {
+          "word": "eskóba",
+          "phonemes": "i s̪ k u b a",
+          "comment": "<ó>"
+        },
+        {
+          "word": "pa",
+          "phonemes": "p a",
+          "comment": "<p>"
+        },
+        {
+          "word": "tawo",
+          "phonemes": "t̪ a w u",
+          "comment": "<t>; <w>; <o>"
+        },
+        {
+          "word": "indi",
+          "phonemes": "i n̪ d̪ i",
+          "comment": "<n>; <d>"
+        },
+        {
+          "word": "pero",
+          "phonemes": "p i ɾ u",
+          "comment": "<e>; <r>"
+        },
+        {
+          "word": "ebanghélyo",
+          "phonemes": "i b a ŋ h i l j u",
+          "comment": "<ng>; <é>; <y>"
+        },
+        {
+          "word": "abí’",
+          "phonemes": "a b i ʔ",
+          "comment": "<í>; apostrophe"
+        },
+        {
+          "word": "balúta",
+          "phonemes": "b a l u t̪ a",
+          "comment": "<ú>"
+        },
+        {
+          "word": "mangungúmaqsang",
+          "phonemes": "m a ŋ u ŋ u m a ʔ s̪ a ŋ",
+          "comment": "<q>"
+        },
+        {
+          "word": "bug-os",
+          "phonemes": "b u ɡ u s̪"
+        },
+        {
+          "word": "pagkaon",
+          "phonemes": "p a ɡ k a u n̪"
+        },
+        {
+          "word": "sing",
+          "phonemes": "s̪ i ŋ"
+        },
+        {
+          "word": "ila",
+          "phonemes": "i l a"
+        },
+        {
+          "word": "ni",
+          "phonemes": "n̪ i"
+        },
+        {
+          "word": "kay",
+          "phonemes": "k a j"
+        },
+        {
+          "word": "sila",
+          "phonemes": "s̪ i l a"
+        },
+        {
+          "word": "wala",
+          "phonemes": "w a l a"
+        },
+        {
+          "word": "inyo",
+          "phonemes": "i n̪ j u"
+        },
+        {
+          "word": "ini",
+          "phonemes": "i n̪ i"
+        },
+        {
+          "word": "ako",
+          "phonemes": "a k u"
+        },
+        {
+          "word": "malain",
+          "phonemes": "m a l a i n̪"
+        },
+        {
+          "word": "kaugalingon",
+          "phonemes": "k a u ɡ a l i ŋ u n̪"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abkhilmpuw]",
+          "apostrophe": "['ꞌ‘’]"
+        },
+        "sub": [
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 1.0,
+            "comment": "accents mark stress"
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 1.0
+          },
+          {
+            "from": "e",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "é",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "n",
+            "to": "n̪",
+            "weight": 1.0
+          },
+          {
+            "from": "o",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "ó",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "q",
+            "to": "ʔ",
+            "weight": 1.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "s",
+            "to": "s̪",
+            "weight": 1.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 1.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 2.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0,
+            "comment": "hyphens may be used to indicate morpheme boundaries"
+          }
+        ]
+      }
+    }
+  }
+}

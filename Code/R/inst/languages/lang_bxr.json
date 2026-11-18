@@ -1,0 +1,387 @@
+{
+  "metadata": {
+    "code": "bxr",
+    "name": "Russia Buriat",
+    "family": "Mongolian,Eastern,Oirat-Khalkha,Khalkha-Buriat,Buriat",
+    "macroarea": "Eurasia",
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "Бурханай",
+          "phonemes": "b u r x a n ai",
+          "comment": "<а>"
+        },
+        {
+          "word": "байгаа",
+          "phonemes": "b ai ɡ a ː",
+          "comment": "<б>"
+        },
+        {
+          "word": "нэгэ",
+          "phonemes": "n ɘ ɡ ɘ",
+          "comment": "<г>"
+        },
+        {
+          "word": "Дээдын",
+          "phonemes": "d ɘ ː d i n",
+          "comment": "<д>"
+        },
+        {
+          "word": "ехэ",
+          "phonemes": "j ɘ x ɘ",
+          "comment": "<е>"
+        },
+        {
+          "word": "хоёр",
+          "phonemes": "x o j o r",
+          "comment": "<ё>"
+        },
+        {
+          "word": "гэжэ",
+          "phonemes": "ɡ ɘ ʒ ɘ",
+          "comment": "<ж>"
+        },
+        {
+          "word": "зон",
+          "phonemes": "z o n",
+          "comment": "<з>"
+        },
+        {
+          "word": "би",
+          "phonemes": "b i",
+          "comment": "<и>"
+        },
+        {
+          "word": "байһан",
+          "phonemes": "b ai ɦ a n",
+          "comment": "<й>"
+        },
+        {
+          "word": "хэлэбэ",
+          "phonemes": "x ɘ l ɘ b ɘ",
+          "comment": "<л>"
+        },
+        {
+          "word": "юм",
+          "phonemes": "j u m",
+          "comment": "<м>"
+        },
+        {
+          "word": "хүн",
+          "phonemes": "x ʉ n",
+          "comment": "<н>"
+        },
+        {
+          "word": "олон",
+          "phonemes": "o l o n",
+          "comment": "<о>"
+        },
+        {
+          "word": "түлѳѳ",
+          "phonemes": "t ʉ l ɵ ː",
+          "comment": "<ѳ>"
+        },
+        {
+          "word": "өөхэн",
+          "phonemes": "ɵ ː x ɘ n",
+          "comment": "<ө> (variation of ѳ)"
+        },
+        {
+          "word": "тэрэ",
+          "phonemes": "t ɘ r ɘ",
+          "comment": "<р>"
+        },
+        {
+          "word": "соо",
+          "phonemes": "s o ː",
+          "comment": "<с>"
+        },
+        {
+          "word": "тухай",
+          "phonemes": "t u x ai",
+          "comment": "<т>"
+        },
+        {
+          "word": "Иисус",
+          "phonemes": "i ː s u s",
+          "comment": "<у>"
+        },
+        {
+          "word": "бүхы",
+          "phonemes": "b ʉ x i",
+          "comment": "<ү>"
+        },
+        {
+          "word": "харин",
+          "phonemes": "x a r i n",
+          "comment": "<х>"
+        },
+        {
+          "word": "бэшэ",
+          "phonemes": "b ɘ ʃ ɘ",
+          "comment": "<ш>"
+        },
+        {
+          "word": "байгты",
+          "phonemes": "b ai ɡ t i",
+          "comment": "<ы>"
+        },
+        {
+          "word": "Тиихэдэнь",
+          "phonemes": "t i ː x ɘ d ɘ nʲ",
+          "comment": "<ь>"
+        },
+        {
+          "word": "тэрэнэй",
+          "phonemes": "t ɘ r ɘ n ei",
+          "comment": "<э>"
+        },
+        {
+          "word": "юумэ",
+          "phonemes": "j u ː m ɘ",
+          "comment": "<ю>"
+        },
+        {
+          "word": "һэн",
+          "phonemes": "ɦ ɘ n",
+          "comment": "<һ>"
+        },
+        {
+          "word": "зоной",
+          "phonemes": "z o n oi"
+        },
+        {
+          "word": "гуйба",
+          "phonemes": "ɡ ui b a"
+        },
+        {
+          "word": "аргагүй",
+          "phonemes": "a r ɡ a ɡ ʉi"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "pal": "[pbmtdnlrɡx]",
+          "vowel-in": "[аеёиоѳөуүюяэ]",
+          "vowel-out": "[aiouʉɘɵ]",
+          "centralv": "[ѳө]"
+        },
+        "sub": [
+          {
+            "from": "а",
+            "to": "a",
+            "weight": 1.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 1.0
+          },
+          {
+            "from": "г",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "д",
+            "to": "d",
+            "weight": 1.0
+          },
+          {
+            "from": "е",
+            "to": "j ɘ",
+            "weight": 2.0
+          },
+          {
+            "from": "ё",
+            "to": "j o",
+            "weight": 1.0
+          },
+          {
+            "from": "ж",
+            "to": "ʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "з",
+            "to": "z",
+            "weight": 1.0
+          },
+          {
+            "from": "и",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "й",
+            "to": "i",
+            "weight": 2.0,
+            "precede": "{vowel-in}"
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 1.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 1.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 1.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 1.0
+          },
+          {
+            "from": "о",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "{centralv}",
+            "to": "ɵ",
+            "weight": 1.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 1.0
+          },
+          {
+            "from": "р",
+            "to": "r",
+            "weight": 1.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 1.0
+          },
+          {
+            "from": "т",
+            "to": "t",
+            "weight": 1.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "ү",
+            "to": "ʉ",
+            "weight": 1.0
+          },
+          {
+            "from": "х",
+            "to": "x",
+            "weight": 1.0
+          },
+          {
+            "from": "ш",
+            "to": "ʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "ъ",
+            "to": "",
+            "weight": 1.0
+          },
+          {
+            "from": "ы",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "ь",
+            "to": "ʲ",
+            "weight": 1.0
+          },
+          {
+            "from": "э",
+            "to": "ɘ",
+            "weight": 1.0
+          },
+          {
+            "from": "ю",
+            "to": "j u",
+            "weight": 1.0
+          },
+          {
+            "from": "я",
+            "to": "j a",
+            "weight": 1.0
+          },
+          {
+            "from": "һ",
+            "to": "ɦ",
+            "weight": 1.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0,
+            "comment": "a hyphen with no phonetic value occurs on occasion"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({pal}) ʲ",
+            "to": "\\1ʲ",
+            "weight": 2.0
+          },
+          {
+            "from": " ʲ",
+            "to": "",
+            "weight": 1.0,
+            "comment": "removes palatalization marker from non-phonemic palatalized consonants - most likely phonetic realization"
+          },
+          {
+            "from": "a i",
+            "to": "ai",
+            "weight": 2.0
+          },
+          {
+            "from": "o i",
+            "to": "oi",
+            "weight": 2.0
+          },
+          {
+            "from": "u i",
+            "to": "ui",
+            "weight": 2.0
+          },
+          {
+            "from": "ʉ i",
+            "to": "ʉi",
+            "weight": 2.0
+          },
+          {
+            "from": "ɘ i",
+            "to": "ei",
+            "weight": 2.0
+          },
+          {
+            "from": "\\b({vowel-out}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 3.0
+          }
+        ]
+      }
+    }
+  }
+}

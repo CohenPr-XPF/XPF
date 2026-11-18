@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "code": "ake",
+    "name": "Akawaio",
+    "family": "Carib,Northern,East-West Guiana,Macushi-Kapon,Kapon",
+    "macroarea": "South America",
+    "compromised": {
+      "sounds": "p|b|t|d|k|ɡ|s|z"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ɨkena'",
+          "phonemes": "ɨ k e n a k"
+        },
+        {
+          "word": "ɨkʉi",
+          "phonemes": "ɨ k ɘ i"
+        },
+        {
+          "word": "ɨ'se'ne'",
+          "phonemes": "ɨ k s e k n e k"
+        },
+        {
+          "word": "musun",
+          "phonemes": "m u s u n"
+        },
+        {
+          "word": "nari'",
+          "phonemes": "n a ɾ i k"
+        },
+        {
+          "word": "nau",
+          "phonemes": "n a u"
+        },
+        {
+          "word": "nawon",
+          "phonemes": "n a w o n"
+        },
+        {
+          "word": "nɨpontɨ",
+          "phonemes": "n ɨ p o n t ɨ"
+        },
+        {
+          "word": "nonka",
+          "phonemes": "n o n k a"
+        },
+        {
+          "word": "piyau",
+          "phonemes": "p i j a u"
+        },
+        {
+          "word": "pɨ're",
+          "phonemes": "p ɨ k ɾ e"
+        },
+        {
+          "word": "pe",
+          "phonemes": "p e"
+        },
+        {
+          "word": "uya",
+          "phonemes": "u j a"
+        },
+        {
+          "word": "rɨ",
+          "phonemes": "ɾ ɨ"
+        },
+        {
+          "word": "kon",
+          "phonemes": "k o n"
+        },
+        {
+          "word": "mɨrɨ",
+          "phonemes": "m ɨ ɾ ɨ"
+        },
+        {
+          "word": "pʉra",
+          "phonemes": "p ɘ ɾ a"
+        },
+        {
+          "word": "to",
+          "phonemes": "t o"
+        },
+        {
+          "word": "awonsi'kɨ",
+          "phonemes": "a w o n s i k k ɨ"
+        },
+        {
+          "word": "amʉ",
+          "phonemes": "a m ɘ"
+        },
+        {
+          "word": "iya",
+          "phonemes": "i j a"
+        },
+        {
+          "word": "yau",
+          "phonemes": "j a u"
+        },
+        {
+          "word": "ton",
+          "phonemes": "t o n"
+        },
+        {
+          "word": "ta'pʉ",
+          "phonemes": "t a k p ɘ"
+        },
+        {
+          "word": "esi",
+          "phonemes": "e s i"
+        },
+        {
+          "word": "iyesi",
+          "phonemes": "i j e s i"
+        },
+        {
+          "word": "nɨ",
+          "phonemes": "n ɨ"
+        },
+        {
+          "word": "a'tai",
+          "phonemes": "a k t a i"
+        },
+        {
+          "word": "pen",
+          "phonemes": "p e n"
+        },
+        {
+          "word": "mɨrɨpan",
+          "phonemes": "m ɨ ɾ ɨ p a n"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeiɨkmnopstuw]",
+          "apostrophe": "['ꞌˈ‘’]"
+        },
+        "sub": [
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "ʉ",
+            "to": "ɘ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

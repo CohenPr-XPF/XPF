@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "code": "naf",
+    "name": "Nabak",
+    "family": "Trans-New Guinea,Main Section,Central and Western,Huon-Finisterre,Huon,Western",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "bo",
+          "phonemes": "b o"
+        },
+        {
+          "word": "kwep",
+          "phonemes": "kʷ e p"
+        },
+        {
+          "word": "namaŋ",
+          "phonemes": "n a m a ŋ"
+        },
+        {
+          "word": "kâ",
+          "phonemes": "k ɔ"
+        },
+        {
+          "word": "mkwabu",
+          "phonemes": "m kʷ a b u"
+        },
+        {
+          "word": "zigok",
+          "phonemes": "z i ɡ o k"
+        },
+        {
+          "word": "mtin",
+          "phonemes": "m t i n"
+        },
+        {
+          "word": "abm",
+          "phonemes": "a b m"
+        },
+        {
+          "word": "ondedak",
+          "phonemes": "o n d e d a k"
+        },
+        {
+          "word": "âbme",
+          "phonemes": "ɔ b m e"
+        },
+        {
+          "word": "yeŋdi",
+          "phonemes": "j e ŋ d i"
+        },
+        {
+          "word": "begwat",
+          "phonemes": "b e ɡʷ a t"
+        },
+        {
+          "word": "mulup",
+          "phonemes": "m u l u p"
+        },
+        {
+          "word": "sambe",
+          "phonemes": "s a m b e"
+        },
+        {
+          "word": "ewe",
+          "phonemes": "e w e"
+        },
+        {
+          "word": "temaŋ",
+          "phonemes": "t e m a ŋ"
+        },
+        {
+          "word": "nin",
+          "phonemes": "n i n"
+        },
+        {
+          "word": "kapi",
+          "phonemes": "k a p i"
+        },
+        {
+          "word": "nâmti",
+          "phonemes": "n ɔ m t i"
+        },
+        {
+          "word": "keyaŋ",
+          "phonemes": "k e j a ŋ"
+        },
+        {
+          "word": "pigok",
+          "phonemes": "p i ɡ o k"
+        },
+        {
+          "word": "kegok",
+          "phonemes": "k e ɡ o k"
+        },
+        {
+          "word": "zeye",
+          "phonemes": "z e j e"
+        },
+        {
+          "word": "notnaŋ",
+          "phonemes": "n o t n a ŋ"
+        },
+        {
+          "word": "kapigok",
+          "phonemes": "k a p i ɡ o k"
+        },
+        {
+          "word": "ŋep",
+          "phonemes": "ŋ e p"
+        },
+        {
+          "word": "ek",
+          "phonemes": "e k"
+        },
+        {
+          "word": "zeme",
+          "phonemes": "z e m e"
+        },
+        {
+          "word": "ŋenaŋ",
+          "phonemes": "ŋ e n a ŋ"
+        },
+        {
+          "word": "dolakŋaŋ",
+          "phonemes": "d o l a k ŋ a ŋ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeiklmnŋopstuwz]",
+          "w-preceder": "[gk]"
+        },
+        "sub": [
+          {
+            "from": "â",
+            "to": "ɔ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "k",
+            "to": "kʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{w-preceder}",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

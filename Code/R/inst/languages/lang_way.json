@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "code": "way",
+    "name": "Wayana",
+    "family": "Carib,Northern,East-West Guiana,Wayana-Trio",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "akuwalinpë",
+          "phonemes": "a k u w a ɽ i n p ɘ"
+        },
+        {
+          "word": "alisipsik",
+          "phonemes": "a ɽ i s i p s i k"
+        },
+        {
+          "word": "anapamïi",
+          "phonemes": "a n a p a m ɨ i"
+        },
+        {
+          "word": "ehpa",
+          "phonemes": "e h p a"
+        },
+        {
+          "word": "ëë",
+          "phonemes": "ɘ"
+        },
+        {
+          "word": "imjata",
+          "phonemes": "i m j a t a"
+        },
+        {
+          "word": "jemsi",
+          "phonemes": "j e m s i"
+        },
+        {
+          "word": "jolok",
+          "phonemes": "j o ɽ o k"
+        },
+        {
+          "word": "kapau",
+          "phonemes": "k a p a u"
+        },
+        {
+          "word": "sakula",
+          "phonemes": "s a k u ɽ a"
+        },
+        {
+          "word": "umot",
+          "phonemes": "u m o t"
+        },
+        {
+          "word": "wïwï",
+          "phonemes": "w ɨ w ɨ"
+        },
+        {
+          "word": "maa",
+          "phonemes": "m a"
+        },
+        {
+          "word": "kooh",
+          "phonemes": "k o h"
+        },
+        {
+          "word": "sïïp",
+          "phonemes": "s ɨ p"
+        },
+        {
+          "word": "pëk",
+          "phonemes": "p ɘ k"
+        },
+        {
+          "word": "katïp",
+          "phonemes": "k a t ɨ p"
+        },
+        {
+          "word": "man",
+          "phonemes": "m a n"
+        },
+        {
+          "word": "helë",
+          "phonemes": "h e ɽ ɘ"
+        },
+        {
+          "word": "pona",
+          "phonemes": "p o n a"
+        },
+        {
+          "word": "ejahe",
+          "phonemes": "e j a h e"
+        },
+        {
+          "word": "huwa",
+          "phonemes": "h u w a"
+        },
+        {
+          "word": "kaliponotom",
+          "phonemes": "k a ɽ i p o n o t o m"
+        },
+        {
+          "word": "emna",
+          "phonemes": "e m n a"
+        },
+        {
+          "word": "he",
+          "phonemes": "h e"
+        },
+        {
+          "word": "kunka",
+          "phonemes": "k u n k a"
+        },
+        {
+          "word": "wai",
+          "phonemes": "w a i"
+        },
+        {
+          "word": "ëhmelë",
+          "phonemes": "ɘ h m e ɽ ɘ"
+        },
+        {
+          "word": "eja",
+          "phonemes": "e j a"
+        },
+        {
+          "word": "eitëk",
+          "phonemes": "e i t ɘ k"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aehijkmnopstuw]",
+          "vowel": "[aeɘiɨou]"
+        },
+        "sub": [
+          {
+            "from": "ë",
+            "to": "ɘ",
+            "weight": 2.0
+          },
+          {
+            "from": "ï",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "l",
+            "to": "ɽ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowel}) \\1",
+            "to": "\\1",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

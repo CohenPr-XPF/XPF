@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "code": "kl",
+    "name": "Kalaallisut",
+    "family": "Eskimo-Aleut,Eskimo,Inuit",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "aanaq",
+          "phonemes": "a ː n a q",
+          "comment": "short and long a"
+        },
+        {
+          "word": "eqqaq",
+          "phonemes": "i q ː a q",
+          "comment": "e"
+        },
+        {
+          "word": "uffarfik",
+          "phonemes": "u v ː a ʁ v i k",
+          "comment": "f"
+        },
+        {
+          "word": "gigaluaq",
+          "phonemes": "ɣ i ɣ a l u a q",
+          "comment": "g"
+        },
+        {
+          "word": "immiit",
+          "phonemes": "i m ː i ː t",
+          "comment": "short and long i"
+        },
+        {
+          "word": "naja",
+          "phonemes": "n a j a",
+          "comment": "j"
+        },
+        {
+          "word": "kakkua",
+          "phonemes": "k a k ː u a",
+          "comment": "k"
+        },
+        {
+          "word": "malillugu",
+          "phonemes": "m a l i l ː u ɣ u",
+          "comment": "l"
+        },
+        {
+          "word": "matuma",
+          "phonemes": "m a t u m a",
+          "comment": "m"
+        },
+        {
+          "word": "naqinneq",
+          "phonemes": "n a q i n ː i q",
+          "comment": "n"
+        },
+        {
+          "word": "kangoq",
+          "phonemes": "k a ŋ u q",
+          "comment": "short ng"
+        },
+        {
+          "word": "kanngussak",
+          "phonemes": "k a ŋ ː u s ː a k",
+          "comment": "long ng"
+        },
+        {
+          "word": "oqaluppoq",
+          "phonemes": "u q a l u p ː u q",
+          "comment": "o"
+        },
+        {
+          "word": "pupik",
+          "phonemes": "p u p i k",
+          "comment": "p"
+        },
+        {
+          "word": "qeriiaq",
+          "phonemes": "q i ʁ i ː a q",
+          "comment": "q"
+        },
+        {
+          "word": "raajarniut",
+          "phonemes": "ʁ a ː j a ɴ i u t",
+          "comment": "r"
+        },
+        {
+          "word": "tarnut",
+          "phonemes": "t a ɴ u t",
+          "comment": "rn"
+        },
+        {
+          "word": "sissaq",
+          "phonemes": "s i s ː a q",
+          "comment": "s"
+        },
+        {
+          "word": "tallimat",
+          "phonemes": "t a l ː i m a t",
+          "comment": "t"
+        },
+        {
+          "word": "ullumi",
+          "phonemes": "u l ː u m i",
+          "comment": "short u"
+        },
+        {
+          "word": "uuma",
+          "phonemes": "u ː m a",
+          "comment": "long u"
+        },
+        {
+          "word": "vik",
+          "phonemes": "v i k",
+          "comment": "v"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "output": "[aɣijklmnŋɴpqʁstuv]",
+          "passthrough": "[aijklmnpqstuv]",
+          "uvulars": "(q|r|rn)"
+        },
+        "sub": [
+          {
+            "from": "e",
+            "to": "i",
+            "weight": 4.0,
+            "follow": "{uvulars}"
+          },
+          {
+            "from": "f",
+            "to": "v",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɣ",
+            "weight": 4.0
+          },
+          {
+            "from": "o",
+            "to": "u",
+            "weight": 4.0,
+            "follow": "{uvulars}"
+          },
+          {
+            "from": "r",
+            "to": "ʁ",
+            "weight": 4.0
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 6.0,
+            "follow": "g",
+            "comment": "ng"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 6.0,
+            "precede": "n"
+          },
+          {
+            "from": "r",
+            "to": "ɴ",
+            "weight": 6.0,
+            "follow": "n",
+            "comment": "rn"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 6.0,
+            "precede": "r"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 8.0,
+            "follow": "ng",
+            "comment": "nng"
+          },
+          {
+            "from": "n",
+            "to": "ː",
+            "weight": 8.0,
+            "precede": "n",
+            "follow": "g",
+            "comment": "no need for a g-deletion rule since that already exists on line 16"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({output}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

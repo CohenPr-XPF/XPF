@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "code": "bcl",
+    "name": "Central Bikol",
+    "family": "Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Meso Philippine,Central Philippine,Bikol,Coastal,Naga",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "note": "/ʔ/ not always marked"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "apat",
+          "phonemes": "a p a t",
+          "comment": "a"
+        },
+        {
+          "word": "atibangaw",
+          "phonemes": "a t i b a ŋ au",
+          "comment": "aw"
+        },
+        {
+          "word": "gulay",
+          "phonemes": "ɡ u l ai",
+          "comment": "ay"
+        },
+        {
+          "word": "bubon",
+          "phonemes": "b u b u n",
+          "comment": "b"
+        },
+        {
+          "word": "daguldol",
+          "phonemes": "d a ɡ u l d u l",
+          "comment": "d"
+        },
+        {
+          "word": "kengke",
+          "phonemes": "k i ŋ k i",
+          "comment": "e"
+        },
+        {
+          "word": "gusok",
+          "phonemes": "ɡ u s u k",
+          "comment": "g"
+        },
+        {
+          "word": "hagahag",
+          "phonemes": "h a ɡ a h a ɡ",
+          "comment": "h"
+        },
+        {
+          "word": "kiri",
+          "phonemes": "k i ɾ i",
+          "comment": "i"
+        },
+        {
+          "word": "ariw",
+          "phonemes": "a ɾ iu",
+          "comment": "iw"
+        },
+        {
+          "word": "kuko",
+          "phonemes": "k u k u",
+          "comment": "k"
+        },
+        {
+          "word": "lalaki",
+          "phonemes": "l a l a k i",
+          "comment": "l"
+        },
+        {
+          "word": "mampak",
+          "phonemes": "m a m p a k",
+          "comment": "m"
+        },
+        {
+          "word": "nana",
+          "phonemes": "n a n a",
+          "comment": "n"
+        },
+        {
+          "word": "ngunyan",
+          "phonemes": "ŋ u n j a n",
+          "comment": "ng"
+        },
+        {
+          "word": "ido",
+          "phonemes": "i d u",
+          "comment": "o"
+        },
+        {
+          "word": "laboy",
+          "phonemes": "l a b ui",
+          "comment": "oy"
+        },
+        {
+          "word": "papel",
+          "phonemes": "p a p i l",
+          "comment": "p"
+        },
+        {
+          "word": "ribo",
+          "phonemes": "ɾ i b u",
+          "comment": "r"
+        },
+        {
+          "word": "sebolyas",
+          "phonemes": "s i b u l j a s",
+          "comment": "s"
+        },
+        {
+          "word": "tatay",
+          "phonemes": "t a t ai",
+          "comment": "t"
+        },
+        {
+          "word": "utang",
+          "phonemes": "u t a ŋ",
+          "comment": "u"
+        },
+        {
+          "word": "buybuy",
+          "phonemes": "b ui b ui",
+          "comment": "uy"
+        },
+        {
+          "word": "wikwik",
+          "phonemes": "ʋ i k ʋ i k",
+          "comment": "w"
+        },
+        {
+          "word": "yating",
+          "phonemes": "j a t i ŋ",
+          "comment": "y"
+        },
+        {
+          "word": "ba-go",
+          "phonemes": "b a ʔ ɡ u",
+          "comment": "punctuation as glottal stop"
+        },
+        {
+          "word": "iba-ibang",
+          "phonemes": "i b a i b a ŋ"
+        },
+        {
+          "word": "tuyong",
+          "phonemes": "t u i u ŋ",
+          "comment": "non-diphthongs"
+        },
+        {
+          "word": "laog",
+          "phonemes": "l a u ɡ"
+        },
+        {
+          "word": "hiwas",
+          "phonemes": "h i u a s"
+        },
+        {
+          "word": "katawo",
+          "phonemes": "k a t a u u"
+        },
+        {
+          "word": "gayo",
+          "phonemes": "ɡ a i u"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "punctuation": "['‘’-]",
+          "w-preceder": "[ai]",
+          "y-preceder": "[aou]",
+          "vowel": "[aeiou]",
+          "passthrough": "[abdhilkmnpstu]"
+        },
+        "sub": [
+          {
+            "from": "e",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "o",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "w",
+            "to": "ʋ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{punctuation}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "{punctuation}",
+            "to": "",
+            "weight": 5.0,
+            "precede": "{vowel}",
+            "follow": "{vowel}"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "a",
+            "to": "au",
+            "weight": 6.0,
+            "follow": "w",
+            "comment": "aw"
+          },
+          {
+            "from": "i",
+            "to": "iu",
+            "weight": 6.0,
+            "follow": "w",
+            "comment": "iw"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{w-preceder}",
+            "comment": "w-final diphthongs clean-up"
+          },
+          {
+            "from": "a",
+            "to": "ai",
+            "weight": 6.0,
+            "follow": "y",
+            "comment": "ay"
+          },
+          {
+            "from": "o",
+            "to": "ui",
+            "weight": 6.0,
+            "follow": "y",
+            "comment": "oy"
+          },
+          {
+            "from": "u",
+            "to": "ui",
+            "weight": 6.0,
+            "follow": "y",
+            "comment": "uy"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{y-preceder}",
+            "comment": "y-final diphthongs clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 6.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "au ({vowel})",
+            "to": "a u \\1",
+            "weight": 8.0
+          },
+          {
+            "from": "iu ({vowel})",
+            "to": "i u \\1",
+            "weight": 8.0
+          },
+          {
+            "from": "ai ({vowel})",
+            "to": "a i \\1",
+            "weight": 8.0
+          },
+          {
+            "from": "ui ({vowel})",
+            "to": "u i \\1",
+            "weight": 8.0
+          }
+        ]
+      }
+    }
+  }
+}

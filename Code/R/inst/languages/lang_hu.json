@@ -1,0 +1,551 @@
+{
+  "metadata": {
+    "code": "hu",
+    "name": "Hungarian",
+    "family": "Uralic,Finno-Ugric,Ugric,Hungarian",
+    "macroarea": "Eurasia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "komp",
+          "phonemes": "k o m p"
+        },
+        {
+          "word": "lomb",
+          "phonemes": "l o m b"
+        },
+        {
+          "word": "pont",
+          "phonemes": "p o n t"
+        },
+        {
+          "word": "tromf",
+          "phonemes": "t r o m f"
+        },
+        {
+          "word": "gond",
+          "phonemes": "ɡ o n d"
+        },
+        {
+          "word": "konc",
+          "phonemes": "k o n ts"
+        },
+        {
+          "word": "roncs",
+          "phonemes": "r o n tʃ"
+        },
+        {
+          "word": "ponty",
+          "phonemes": "p o n c"
+        },
+        {
+          "word": "rongy",
+          "phonemes": "r o n ɟ"
+        },
+        {
+          "word": "csonk",
+          "phonemes": "tʃ o n k"
+        },
+        {
+          "word": "gong",
+          "phonemes": "ɡ o n ɡ"
+        },
+        {
+          "word": "lámpa",
+          "phonemes": "l a ː m p ɑ"
+        },
+        {
+          "word": "ember",
+          "phonemes": "ɛ m b ɛ r"
+        },
+        {
+          "word": "nimfa",
+          "phonemes": "n i m f ɑ"
+        },
+        {
+          "word": "szenved",
+          "phonemes": "s ɛ n v ɛ d"
+        },
+        {
+          "word": "tinta",
+          "phonemes": "t i n t ɑ"
+        },
+        {
+          "word": "ronda",
+          "phonemes": "r o n d ɑ"
+        },
+        {
+          "word": "pince",
+          "phonemes": "p i n ts ɛ"
+        },
+        {
+          "word": "kancsal",
+          "phonemes": "k ɑ n tʃ ɑ l"
+        },
+        {
+          "word": "findzsa",
+          "phonemes": "f i n dʒ ɑ"
+        },
+        {
+          "word": "pintyőke",
+          "phonemes": "p i n c ø ː k ɛ"
+        },
+        {
+          "word": "angyal",
+          "phonemes": "ɑ n ɟ ɑ l"
+        },
+        {
+          "word": "sonka",
+          "phonemes": "ʃ o n k ɑ"
+        },
+        {
+          "word": "henger",
+          "phonemes": "h ɛ n ɡ ɛ r"
+        },
+        {
+          "word": "dzsessz",
+          "phonemes": "dʒ ɛ s ː"
+        },
+        {
+          "word": "nyár",
+          "phonemes": "ɲ a ː r"
+        },
+        {
+          "word": "hozzá",
+          "phonemes": "h o z ː a ː"
+        },
+        {
+          "word": "kellett",
+          "phonemes": "k ɛ l ː ɛ t ː"
+        },
+        {
+          "word": "vissza",
+          "phonemes": "v i s ː ɑ"
+        },
+        {
+          "word": "annyit",
+          "phonemes": "ɑ ɲ ː i t"
+        },
+        {
+          "word": "mellyel",
+          "phonemes": "m ɛ j ː ɛ l"
+        },
+        {
+          "word": "megy",
+          "phonemes": "m ɛ ɟ"
+        },
+        {
+          "word": "meggy",
+          "phonemes": "m ɛ ɟ ː"
+        },
+        {
+          "word": "meccs",
+          "phonemes": "m ɛ tʃ ː"
+        },
+        {
+          "word": "hosszas",
+          "phonemes": "h o s ː ɑ ʃ"
+        },
+        {
+          "word": "összehasonlító",
+          "phonemes": "ø s ː ɛ h ɑ ʃ o n l i ː t o ː"
+        },
+        {
+          "word": "edzés",
+          "phonemes": "ɛ dz e ː ʃ"
+        },
+        {
+          "word": "eddze",
+          "phonemes": "ɛ dz ː ɛ"
+        },
+        {
+          "word": "briddzsel",
+          "phonemes": "b r i dʒ ː ɛ l"
+        },
+        {
+          "word": "parancs",
+          "phonemes": "p ɑ r ɑ n tʃ"
+        },
+        {
+          "word": "viccet",
+          "phonemes": "v i ts ː ɛ t"
+        },
+        {
+          "word": "perccel",
+          "phonemes": "p ɛ r ts ː ɛ l"
+        },
+        {
+          "word": "elkerülése",
+          "phonemes": "ɛ l k ɛ r y l e ː ʃ ɛ"
+        },
+        {
+          "word": "úgy",
+          "phonemes": "u ː ɟ"
+        },
+        {
+          "word": "olyan",
+          "phonemes": "o j ɑ n"
+        },
+        {
+          "word": "horgászzsinór",
+          "phonemes": "h o r ɡ a ː s ʒ i n o ː r"
+        },
+        {
+          "word": "űrkutatás",
+          "phonemes": "y ː r k u t ɑ t a ː ʃ"
+        },
+        {
+          "word": "szivattyú",
+          "phonemes": "s i v ɑ c ː u ː"
+        },
+        {
+          "word": "egy-két",
+          "phonemes": "ɛ ɟ k e ː t"
+        },
+        {
+          "word": "háromdimenziós",
+          "phonemes": "h a ː r o m d i m ɛ n z i o ː ʃ"
+        },
+        {
+          "word": "nyolcszáz",
+          "phonemes": "ɲ o l ts s a ː z"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "consonants": "[pbtdkgfvszcl]",
+          "gem-C": "(b|ts|d|f|ɡ|h|j|k|l|m|n|p|r|ʃ|t|v|z)",
+          "nasals": "[mn]",
+          "pre-y": "[tgln]",
+          "passthrough": "[bdfhijklmnoprtuvz]",
+          "accent-u": "(ü|ü)",
+          "punct": "[-]"
+        },
+        "sub": [
+          {
+            "from": "a",
+            "to": "ɑ",
+            "weight": 2.0
+          },
+          {
+            "from": "á",
+            "to": "a ː",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "ts",
+            "weight": 2.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 2.0
+          },
+          {
+            "from": "é",
+            "to": "e ː",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "í",
+            "to": "i ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ó",
+            "to": "o ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ö",
+            "to": "ø",
+            "weight": 2.0
+          },
+          {
+            "from": "ő",
+            "to": "ø ː",
+            "weight": 2.0
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "ú",
+            "to": "u ː",
+            "weight": 2.0
+          },
+          {
+            "from": "{accent-u}",
+            "to": "y",
+            "weight": 2.0
+          },
+          {
+            "from": "ű",
+            "to": "y ː",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "t",
+            "to": "c",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "g",
+            "to": "ɟ",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "l",
+            "to": "j",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{pre-y}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "s",
+            "weight": 3.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 3.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "z",
+            "to": "ʒ",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 3.0,
+            "precede": "z",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "dz",
+            "weight": 3.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 3.0,
+            "precede": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "dʒ",
+            "weight": 4.0,
+            "follow": "zs"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 4.0,
+            "precede": "d",
+            "follow": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 4.0,
+            "precede": "dz",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "ts",
+            "weight": 4.0,
+            "follow": "sz",
+            "comment": "in <csz> sequences, the <sz> digraph takes priority over <cs>"
+          },
+          {
+            "from": "t",
+            "to": "c ː",
+            "weight": 6.0,
+            "precede": "t",
+            "follow": "y",
+            "comment": "tty"
+          },
+          {
+            "from": "g",
+            "to": "ɟ ː",
+            "weight": 6.0,
+            "precede": "g",
+            "follow": "y",
+            "comment": "ggy"
+          },
+          {
+            "from": "l",
+            "to": "j ː",
+            "weight": 6.0,
+            "precede": "l",
+            "follow": "y",
+            "comment": "lly"
+          },
+          {
+            "from": "n",
+            "to": "ɲ ː",
+            "weight": 6.0,
+            "precede": "n",
+            "follow": "y",
+            "comment": "nny"
+          },
+          {
+            "from": "t",
+            "to": "",
+            "weight": 5.0,
+            "follow": "ty",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 5.0,
+            "follow": "gy",
+            "comment": "clean-up"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 5.0,
+            "follow": "ly",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 5.0,
+            "follow": "ny",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "s ː",
+            "weight": 6.0,
+            "precede": "s",
+            "follow": "z",
+            "comment": "ssz"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 5.0,
+            "follow": "sz",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "tʃ ː",
+            "weight": 6.0,
+            "precede": "c",
+            "follow": "s",
+            "comment": "ccs"
+          },
+          {
+            "from": "c",
+            "to": "",
+            "weight": 5.0,
+            "follow": "cs",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "dz ː",
+            "weight": 6.0,
+            "precede": "d",
+            "follow": "z",
+            "comment": "ddz"
+          },
+          {
+            "from": "d",
+            "to": "",
+            "weight": 5.0,
+            "follow": "dz",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "dʒ ː",
+            "weight": 6.0,
+            "precede": "d",
+            "follow": "zs",
+            "comment": "ddzs"
+          },
+          {
+            "from": "d",
+            "to": "",
+            "weight": 5.0,
+            "follow": "dzs",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 1.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({gem-C}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 1.0,
+            "comment": "regular duplicate graphemes"
+          }
+        ]
+      }
+    }
+  }
+}

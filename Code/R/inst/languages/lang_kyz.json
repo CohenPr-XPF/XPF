@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "code": "kyz",
+    "name": "Kayabí",
+    "family": "Tupi,Tupi-Guarani,Kayabi",
+    "macroarea": "South America",
+    "compromised": {
+      "sounds": "i|j"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ita",
+          "phonemes": "i t a"
+        },
+        {
+          "word": "tukumã",
+          "phonemes": "t u k u m ã"
+        },
+        {
+          "word": "tea",
+          "phonemes": "t e a"
+        },
+        {
+          "word": "owaẽm",
+          "phonemes": "o w a ẽ m"
+        },
+        {
+          "word": "pyfa",
+          "phonemes": "p ɨ f a"
+        },
+        {
+          "word": "kururu",
+          "phonemes": "k u ɾ u ɾ u"
+        },
+        {
+          "word": "'oguu",
+          "phonemes": "ʔ o ɡ u u"
+        },
+        {
+          "word": "jy",
+          "phonemes": "j ɨ"
+        },
+        {
+          "word": "ju'i",
+          "phonemes": "j u ʔ i"
+        },
+        {
+          "word": "kwasi",
+          "phonemes": "kʷ a s i"
+        },
+        {
+          "word": "inimo",
+          "phonemes": "i n i m o"
+        },
+        {
+          "word": "ipira",
+          "phonemes": "i p i ɾ a"
+        },
+        {
+          "word": "esage",
+          "phonemes": "e s a ɡ e"
+        },
+        {
+          "word": "ipirang",
+          "phonemes": "i p i ɾ a ŋ"
+        },
+        {
+          "word": "aipo",
+          "phonemes": "a j p o"
+        },
+        {
+          "word": "kĩã",
+          "phonemes": "k ĩ ã"
+        },
+        {
+          "word": "rowosõu",
+          "phonemes": "ɾ o w o s õ u"
+        },
+        {
+          "word": "nũ",
+          "phonemes": "n ũ"
+        },
+        {
+          "word": "teꞌỹina",
+          "phonemes": "t e ʔ ɨ̃ j n a"
+        },
+        {
+          "word": "nupe",
+          "phonemes": "n u p e"
+        },
+        {
+          "word": "je",
+          "phonemes": "j e"
+        },
+        {
+          "word": "upe",
+          "phonemes": "u p e"
+        },
+        {
+          "word": "futat",
+          "phonemes": "f u t a t"
+        },
+        {
+          "word": "ꞌã",
+          "phonemes": "ʔ ã"
+        },
+        {
+          "word": "nipo",
+          "phonemes": "n i p o"
+        },
+        {
+          "word": "etee",
+          "phonemes": "e t e e"
+        },
+        {
+          "word": "pẽ",
+          "phonemes": "p ẽ"
+        },
+        {
+          "word": "are",
+          "phonemes": "a ɾ e"
+        },
+        {
+          "word": "te",
+          "phonemes": "t e"
+        },
+        {
+          "word": "rakue",
+          "phonemes": "ɾ a k u e"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aãeẽfiĩjkmnoõpstuũw]",
+          "vowels": "[aãeẽiĩoõuũyỹ]",
+          "consonants": "[fgkmnprstw]",
+          "apostrophe": "[ꞌ'ˈ‘’ʼ]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "i",
+            "to": "j",
+            "weight": 4.0,
+            "precede": "{vowels}",
+            "follow": "{consonants}{vowels}"
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "ỹ",
+            "to": "ɨ̃",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "k",
+            "to": "kʷ",
+            "weight": 3.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 3.0,
+            "precede": "k",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

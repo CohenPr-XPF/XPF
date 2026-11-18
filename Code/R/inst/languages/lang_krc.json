@@ -1,0 +1,403 @@
+{
+  "metadata": {
+    "code": "krc",
+    "name": "Karachay-Balkar",
+    "family": "Turkic,Western,Ponto-Caspian",
+    "macroarea": "Eurasia",
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "алты",
+          "phonemes": "ɑ l t ɯ",
+          "comment": "а to ɑ"
+        },
+        {
+          "word": "билек",
+          "phonemes": "b i l e k",
+          "comment": "b"
+        },
+        {
+          "word": "Гудучу",
+          "phonemes": "ɡ u d u tʃ u",
+          "comment": "г to ɡ"
+        },
+        {
+          "word": "доктор",
+          "phonemes": "d o k t o r",
+          "comment": "д to d"
+        },
+        {
+          "word": "еки",
+          "phonemes": "j e k i",
+          "comment": "е to je"
+        },
+        {
+          "word": "егеч",
+          "phonemes": "j e ɡ e tʃ",
+          "comment": "е to e"
+        },
+        {
+          "word": "тёрт",
+          "phonemes": "t ø r t",
+          "comment": "ё to ø"
+        },
+        {
+          "word": "сегиз",
+          "phonemes": "s e ɡ i z",
+          "comment": "з to z"
+        },
+        {
+          "word": "эдим",
+          "phonemes": "e d i m",
+          "comment": "и to i"
+        },
+        {
+          "word": "Къарачай",
+          "phonemes": "k ɑ r ɑ tʃ ɑ j",
+          "comment": "й to j"
+        },
+        {
+          "word": "келир",
+          "phonemes": "k e l i r",
+          "comment": "к to k"
+        },
+        {
+          "word": "тамбыла",
+          "phonemes": "t ɑ m b ɯ l ɑ",
+          "comment": "л to l"
+        },
+        {
+          "word": "Малкъар",
+          "phonemes": "m ɑ l k ɑ r",
+          "comment": "м to m"
+        },
+        {
+          "word": "сизни",
+          "phonemes": "s i z n i",
+          "comment": "н to n"
+        },
+        {
+          "word": "кёп",
+          "phonemes": "k ø p",
+          "comment": "п to p"
+        },
+        {
+          "word": "онбир",
+          "phonemes": "o n b i r",
+          "comment": "р to r"
+        },
+        {
+          "word": "сакъал",
+          "phonemes": "s ɑ k ɑ l",
+          "comment": "с to s"
+        },
+        {
+          "word": "Тийме",
+          "phonemes": "t i j m e",
+          "comment": "т to t"
+        },
+        {
+          "word": "ауурупма",
+          "phonemes": "ɑ w u r u p m ɑ",
+          "comment": "у to u"
+        },
+        {
+          "word": "къабхан",
+          "phonemes": "k ɑ b x ɑ n",
+          "comment": "х to x"
+        },
+        {
+          "word": "агъач",
+          "phonemes": "ɑ ɡ ɑ tʃ",
+          "comment": "ч to tʃ"
+        },
+        {
+          "word": "онбеш",
+          "phonemes": "o n b e ʃ",
+          "comment": "ш to ʃ"
+        },
+        {
+          "word": "къал",
+          "phonemes": "k ɑ l",
+          "comment": "ъ"
+        },
+        {
+          "word": "ачыкъ",
+          "phonemes": "ɑ tʃ ɯ k",
+          "comment": "ы to ɯ"
+        },
+        {
+          "word": "элли",
+          "phonemes": "e l l i",
+          "comment": "э to e"
+        },
+        {
+          "word": "гюнах",
+          "phonemes": "ɡ y n ɑ x",
+          "comment": "ю to y"
+        },
+        {
+          "word": "Аякъ",
+          "phonemes": "ɑ j ɑ k",
+          "comment": "я to jɑ"
+        },
+        {
+          "word": "багъа",
+          "phonemes": "b ɑ ɡ ɑ",
+          "comment": "гъ to ɡ"
+        },
+        {
+          "word": "джети",
+          "phonemes": "dʒ e t i",
+          "comment": "дж to dʒ"
+        },
+        {
+          "word": "къабар",
+          "phonemes": "k ɑ b ɑ r",
+          "comment": "къ to k"
+        },
+        {
+          "word": "Манга",
+          "phonemes": "m ɑ ŋ ɑ",
+          "comment": "нг to ŋ"
+        },
+        {
+          "word": "суу",
+          "phonemes": "s u w"
+        },
+        {
+          "word": "аууз",
+          "phonemes": "ɑ w u z"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "punct": "[''’ʻ-]",
+          "w": "(а|е|ё|и|о|ы|ю|я|у)"
+        },
+        "sub": [
+          {
+            "from": "а",
+            "to": "ɑ",
+            "weight": 1.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 1.0
+          },
+          {
+            "from": "г",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "д",
+            "to": "d",
+            "weight": 1.0
+          },
+          {
+            "from": "е",
+            "to": "j e",
+            "weight": 2.0,
+            "precede": "^",
+            "comment": "<е> goes to /je/ word-initially"
+          },
+          {
+            "from": "е",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "ё",
+            "to": "ø",
+            "weight": 1.0
+          },
+          {
+            "from": "з",
+            "to": "z",
+            "weight": 1.0
+          },
+          {
+            "from": "и",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 1.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 1.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 1.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 1.0
+          },
+          {
+            "from": "о",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 1.0
+          },
+          {
+            "from": "р",
+            "to": "r",
+            "weight": 1.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 1.0
+          },
+          {
+            "from": "т",
+            "to": "t",
+            "weight": 1.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "у",
+            "to": "w",
+            "weight": 4.0,
+            "precede": "{w}",
+            "comment": "<y> goes to /w/ following a handful of vowels and semi-vowels"
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 5.0,
+            "precede": "{w}у",
+            "comment": "accounts for <yy> sequences preceded by any character listed in {w}"
+          },
+          {
+            "from": "ў",
+            "to": "w",
+            "weight": 1.0
+          },
+          {
+            "from": "х",
+            "to": "x",
+            "weight": 1.0
+          },
+          {
+            "from": "ч",
+            "to": "tʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "ш",
+            "to": "ʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "ы",
+            "to": "ɯ",
+            "weight": 1.0
+          },
+          {
+            "from": "э",
+            "to": "e",
+            "weight": 1.0,
+            "precede": "^",
+            "comment": "word-initially"
+          },
+          {
+            "from": "ю",
+            "to": "y",
+            "weight": 1.0
+          },
+          {
+            "from": "я",
+            "to": "j ɑ",
+            "weight": 1.0
+          },
+          {
+            "from": "д",
+            "to": "dʒ",
+            "weight": 3.0,
+            "follow": "ж"
+          },
+          {
+            "from": "ж",
+            "to": "",
+            "weight": 3.0,
+            "precede": "д",
+            "comment": "clean-up"
+          },
+          {
+            "from": "н",
+            "to": "ŋ",
+            "weight": 3.0,
+            "follow": "г"
+          },
+          {
+            "from": "г",
+            "to": "",
+            "weight": 3.0,
+            "precede": "н",
+            "comment": "clean-up"
+          },
+          {
+            "from": "г",
+            "to": "ɡ",
+            "weight": 3.0,
+            "follow": "ъ",
+            "comment": "realized as [ɣ]"
+          },
+          {
+            "from": "ъ",
+            "to": "",
+            "weight": 3.0,
+            "precede": "г",
+            "comment": "clean-up"
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "ъ",
+            "comment": "realized as [q]"
+          },
+          {
+            "from": "ъ",
+            "to": "",
+            "weight": 3.0,
+            "precede": "к",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "metadata": {
+    "code": "cs",
+    "name": "Czech",
+    "family": "Indo-European,Slavic,West,Czech-Slovak",
+    "macroarea": "Eurasia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "adresát",
+          "phonemes": "a d r ɛ s a ː t"
+        },
+        {
+          "word": "aférka",
+          "phonemes": "a f ɛ ː r k a"
+        },
+        {
+          "word": "bakalářka",
+          "phonemes": "b a k a l a ː r̝ k a"
+        },
+        {
+          "word": "barončin",
+          "phonemes": "b a r o n tʃ i n"
+        },
+        {
+          "word": "Bedříšek",
+          "phonemes": "b ɛ d r̝ i ː ʃ ɛ k"
+        },
+        {
+          "word": "blizoučký",
+          "phonemes": "b l i z ou tʃ k i ː"
+        },
+        {
+          "word": "Cejloňan",
+          "phonemes": "ts ɛ j l o ɲ a n"
+        },
+        {
+          "word": "ňadro",
+          "phonemes": "ɲ a d r o"
+        },
+        {
+          "word": "chůdy",
+          "phonemes": "x u ː d i"
+        },
+        {
+          "word": "dagestánský",
+          "phonemes": "d a ɡ ɛ s t a ː n s k i ː"
+        },
+        {
+          "word": "dálava",
+          "phonemes": "d a ː l a v a"
+        },
+        {
+          "word": "dalekosáhlý",
+          "phonemes": "d a l ɛ k o s a ː ɦ l i ː"
+        },
+        {
+          "word": "dechberoucí",
+          "phonemes": "d ɛ x b ɛ r ou ts i ː"
+        },
+        {
+          "word": "chalífát",
+          "phonemes": "x a l i ː f a ː t"
+        },
+        {
+          "word": "chetitolog",
+          "phonemes": "x ɛ c i t o l o ɡ"
+        },
+        {
+          "word": "chlubit",
+          "phonemes": "x l u b i t"
+        },
+        {
+          "word": "náboj",
+          "phonemes": "n a ː b o j"
+        },
+        {
+          "word": "nábřeží",
+          "phonemes": "n a ː b r̝ ɛ ʒ i ː"
+        },
+        {
+          "word": "nepřímo",
+          "phonemes": "n ɛ p r̝ i ː m o"
+        },
+        {
+          "word": "nespecifický",
+          "phonemes": "n ɛ s p ɛ ts i f i ts k i ː"
+        },
+        {
+          "word": "rám",
+          "phonemes": "r a ː m"
+        },
+        {
+          "word": "ražniči",
+          "phonemes": "r a ʒ ɲ i tʃ i"
+        },
+        {
+          "word": "reagovat",
+          "phonemes": "r ɛ a ɡ o v a t"
+        },
+        {
+          "word": "Tajmyr",
+          "phonemes": "t a j m i r"
+        },
+        {
+          "word": "tajně",
+          "phonemes": "t a j ɲ ɛ"
+        },
+        {
+          "word": "tatík",
+          "phonemes": "t a c i ː k"
+        },
+        {
+          "word": "ještě",
+          "phonemes": "j ɛ ʃ c ɛ"
+        },
+        {
+          "word": "mě",
+          "phonemes": "m j ɛ"
+        },
+        {
+          "word": "případě",
+          "phonemes": "p r̝ i ː p a ɟ ɛ"
+        },
+        {
+          "word": "teď",
+          "phonemes": "t ɛ ɟ"
+        },
+        {
+          "word": "ať",
+          "phonemes": "a c"
+        },
+        {
+          "word": "úplně",
+          "phonemes": "u ː p l ɲ ɛ"
+        },
+        {
+          "word": "lidi",
+          "phonemes": "l i ɟ i"
+        },
+        {
+          "word": "autor",
+          "phonemes": "au t o r"
+        },
+        {
+          "word": "neustále",
+          "phonemes": "n ɛu s t a ː l ɛ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdfjklmnoprstuvz]",
+          "dipvowel": "[aeo]",
+          "i": "[ií]",
+          "frontV_preceder": "[tdn]",
+          "pal": "[ňďť]"
+        },
+        "pre": [
+          {
+            "from": "(Ď|Ť)",
+            "to": "(ď|ť)"
+          }
+        ],
+        "sub": [
+          {
+            "from": "á",
+            "to": "a ː",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "ts",
+            "weight": 2.0
+          },
+          {
+            "from": "č",
+            "to": "tʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "ď",
+            "to": "ɟ",
+            "weight": 2.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 2.0
+          },
+          {
+            "from": "é",
+            "to": "ɛ ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ě",
+            "to": "j ɛ",
+            "weight": 2.0
+          },
+          {
+            "from": "ě",
+            "to": "ɛ",
+            "weight": 3.0,
+            "precede": "{pal}",
+            "comment": "preceding palatal consonants <ě> transcribes to /ɛ/"
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "h",
+            "to": "ɦ",
+            "weight": 2.0
+          },
+          {
+            "from": "i",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "í",
+            "to": "i ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ň",
+            "to": "ɲ",
+            "weight": 2.0
+          },
+          {
+            "from": "ř",
+            "to": "r̝",
+            "weight": 2.0
+          },
+          {
+            "from": "š",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "ť",
+            "to": "c",
+            "weight": 2.0
+          },
+          {
+            "from": "ú",
+            "to": "u ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ů",
+            "to": "u ː",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "ý",
+            "to": "i ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ž",
+            "to": "ʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 1.0
+          },
+          {
+            "from": "c",
+            "to": "x",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "c",
+            "weight": 4.0,
+            "follow": "{i}"
+          },
+          {
+            "from": "d",
+            "to": "ɟ",
+            "weight": 4.0,
+            "follow": "{i}"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 4.0,
+            "follow": "{i}"
+          },
+          {
+            "from": "t",
+            "to": "c ɛ",
+            "weight": 4.0,
+            "follow": "ě"
+          },
+          {
+            "from": "d",
+            "to": "ɟ ɛ",
+            "weight": 4.0,
+            "follow": "ě"
+          },
+          {
+            "from": "n",
+            "to": "ɲ ɛ",
+            "weight": 4.0,
+            "follow": "ě"
+          },
+          {
+            "from": "ě",
+            "to": "",
+            "weight": 4.0,
+            "precede": "{frontV_preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "au",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "e",
+            "to": "ɛu",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "o",
+            "to": "ou",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{dipvowel}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "metadata": {
+    "code": "cnm",
+    "name": "Ixtatán Chuj",
+    "family": "Mayan,Kanjobalan-Chujean,Chujean",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "kakaw",
+          "phonemes": "k a k a w",
+          "comment": "a"
+        },
+        {
+          "word": "b'aj",
+          "phonemes": "ɓ a χ",
+          "comment": "b'"
+        },
+        {
+          "word": "chakchi'in",
+          "phonemes": "tʃ a k tʃ i ʔ i n",
+          "comment": "ch"
+        },
+        {
+          "word": "ch'ach'um",
+          "phonemes": "tʃʼ a tʃʼ u m",
+          "comment": "ch'"
+        },
+        {
+          "word": "k'e'en",
+          "phonemes": "kʼ e ʔ e n",
+          "comment": "e"
+        },
+        {
+          "word": "niwakil",
+          "phonemes": "n i w a k i l",
+          "comment": "i"
+        },
+        {
+          "word": "jach'oj",
+          "phonemes": "χ a tʃʼ o χ",
+          "comment": "j"
+        },
+        {
+          "word": "kakaxte'",
+          "phonemes": "k a k a ʃ t e ʔ",
+          "comment": "k"
+        },
+        {
+          "word": "k'ik'",
+          "phonemes": "kʼ i kʼ",
+          "comment": "k'"
+        },
+        {
+          "word": "lechlab'",
+          "phonemes": "l e tʃ l a ɓ",
+          "comment": "l"
+        },
+        {
+          "word": "me'em",
+          "phonemes": "m e ʔ e m",
+          "comment": "m"
+        },
+        {
+          "word": "nab'en",
+          "phonemes": "n a ɓ e n",
+          "comment": "n"
+        },
+        {
+          "word": "vin̈aj",
+          "phonemes": "w i ŋ a χ",
+          "comment": "n̈"
+        },
+        {
+          "word": "nhoch'o'",
+          "phonemes": "ŋ o tʃʼ o ʔ",
+          "comment": "nh"
+        },
+        {
+          "word": "pokok",
+          "phonemes": "p o k o k",
+          "comment": "o"
+        },
+        {
+          "word": "polpo'",
+          "phonemes": "p o l p o ʔ",
+          "comment": "p"
+        },
+        {
+          "word": "quedꞌoc",
+          "phonemes": "k e tʼ o k",
+          "comment": "qu"
+        },
+        {
+          "word": "tz'ajq'ue",
+          "phonemes": "tsʼ a χ kʼ e",
+          "comment": "q'u"
+        },
+        {
+          "word": "rumirum",
+          "phonemes": "ɾ u m i ɾ u m",
+          "comment": "r"
+        },
+        {
+          "word": "sisim",
+          "phonemes": "s i s i m",
+          "comment": "s"
+        },
+        {
+          "word": "tat",
+          "phonemes": "t a t",
+          "comment": "t"
+        },
+        {
+          "word": "t'uru'",
+          "phonemes": "tʼ u ɾ u ʔ",
+          "comment": "t'"
+        },
+        {
+          "word": "tzaktzaj",
+          "phonemes": "ts a k ts a χ",
+          "comment": "tz"
+        },
+        {
+          "word": "tz'ey",
+          "phonemes": "tsʼ e j",
+          "comment": "tz'"
+        },
+        {
+          "word": "juku'",
+          "phonemes": "χ u k u ʔ",
+          "comment": "u"
+        },
+        {
+          "word": "wotix",
+          "phonemes": "w o t i ʃ",
+          "comment": "w"
+        },
+        {
+          "word": "ximel",
+          "phonemes": "ʃ i m e l",
+          "comment": "x"
+        },
+        {
+          "word": "yalisjaw",
+          "phonemes": "j a l i s χ a w",
+          "comment": "y"
+        },
+        {
+          "word": "’ala’",
+          "phonemes": "ʔ a l a ʔ",
+          "comment": "apostrophe"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "[ꞌ'‘’]",
+          "post-n": "[ḧ]",
+          "pre-apost": "[cdhktz]",
+          "passthrough": "[aeiklmnopstuw]"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "ɓ",
+            "weight": 4.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 4.0,
+            "comment": "an alternate orthography for <k>"
+          },
+          {
+            "from": "d",
+            "to": "t",
+            "weight": 4.0,
+            "follow": "{apostrophe}",
+            "comment": "<d'> is sometimes used in place of <t'>"
+          },
+          {
+            "from": "j",
+            "to": "χ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "v",
+            "to": "w",
+            "weight": 4.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 6.0,
+            "precede": "b",
+            "comment": "<b'> collectively marks the implosive b"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "some words have hyphens with no phonetic value"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʼ",
+            "weight": 6.0,
+            "precede": "{pre-apost}"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 5.0,
+            "follow": "u",
+            "comment": "<qu>"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 5.0,
+            "precede": "q",
+            "comment": "<qu> cleanup"
+          },
+          {
+            "from": "q",
+            "to": "kʼ",
+            "weight": 5.0,
+            "follow": "{apostrophe}u",
+            "comment": "<q'u>"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 5.0,
+            "precede": "q",
+            "follow": "u",
+            "comment": "<q'u> cleanup part 1"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 5.0,
+            "precede": "q{apostrophe}",
+            "comment": "<q'u> cleanup part 2"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<ch>"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "c",
+            "comment": "<ch> cleanup"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 6.0,
+            "follow": "{post-n}",
+            "comment": "/ŋ/ digraphs"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<nh> cleanup"
+          },
+          {
+            "from": "̈",
+            "to": "",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<n̈> cleanup"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 6.0,
+            "follow": "z",
+            "comment": "<tz>"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 6.0,
+            "precede": "t",
+            "comment": "<tz> cleanup"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ],
+        "ipasub": [
+          {
+            "from": " ʼ",
+            "to": "ʼ",
+            "weight": 2.0,
+            "comment": "closing the space"
+          }
+        ]
+      }
+    }
+  }
+}

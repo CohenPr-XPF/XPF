@@ -1,0 +1,389 @@
+{
+  "metadata": {
+    "code": "shi",
+    "name": "Shilha",
+    "family": "Afro-Asiatic,Berber,Northern, Atlas",
+    "macroarea": "Africa",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "addad",
+          "phonemes": "a d ː a d",
+          "comment": "a"
+        },
+        {
+          "word": "babbur",
+          "phonemes": "b a b ː u r",
+          "comment": "b"
+        },
+        {
+          "word": "didsn",
+          "phonemes": "d i d s n",
+          "comment": "d"
+        },
+        {
+          "word": "nḍaḍ",
+          "phonemes": "n dˤ a dˤ",
+          "comment": "ḍ"
+        },
+        {
+          "word": "flufel",
+          "phonemes": "f l u f l",
+          "comment": "e"
+        },
+        {
+          "word": "lɛaql",
+          "phonemes": "l ʕ a q l",
+          "comment": "ɛ"
+        },
+        {
+          "word": "f-uggjdi",
+          "phonemes": "f u ɡ ː ʒ d i",
+          "comment": "f"
+        },
+        {
+          "word": "gaga",
+          "phonemes": "ɡ a ɡ a",
+          "comment": "g"
+        },
+        {
+          "word": "ġ-uġaras",
+          "phonemes": "ʁ u ʁ a r a s",
+          "comment": "ġ"
+        },
+        {
+          "word": "hudhud",
+          "phonemes": "h u d h u d",
+          "comment": "h"
+        },
+        {
+          "word": "imḥḍarn",
+          "phonemes": "i m ħ dˤ a r n",
+          "comment": "ḥ"
+        },
+        {
+          "word": "lh̬bar",
+          "phonemes": "l χ b a r",
+          "comment": "h̬"
+        },
+        {
+          "word": "ifindi",
+          "phonemes": "i f i n d i",
+          "comment": "i"
+        },
+        {
+          "word": "ijjnjm",
+          "phonemes": "i ʒ ː n ʒ m",
+          "comment": "j"
+        },
+        {
+          "word": "tuj̣j̣ut",
+          "phonemes": "t u ʒˤ ː u t",
+          "comment": "j̣"
+        },
+        {
+          "word": "kullu",
+          "phonemes": "k u l ː u",
+          "comment": "k"
+        },
+        {
+          "word": "lalla",
+          "phonemes": "l a l ː a",
+          "comment": "l"
+        },
+        {
+          "word": "ḷaditt",
+          "phonemes": "lˤ a d i t ː",
+          "comment": "ḷ"
+        },
+        {
+          "word": "miargam",
+          "phonemes": "m i a r ɡ a m",
+          "comment": "m"
+        },
+        {
+          "word": "nnunt",
+          "phonemes": "n ː u n t",
+          "comment": "n"
+        },
+        {
+          "word": "ṇal",
+          "phonemes": "nˤ a l",
+          "comment": "ṇ"
+        },
+        {
+          "word": "qilliq",
+          "phonemes": "q i l ː i q",
+          "comment": "q"
+        },
+        {
+          "word": "ruizrug",
+          "phonemes": "r u i z r u ɡ",
+          "comment": "r"
+        },
+        {
+          "word": "ṛufla",
+          "phonemes": "rˤ u f l a",
+          "comment": "ṛ"
+        },
+        {
+          "word": "sausa",
+          "phonemes": "s a u s a",
+          "comment": "s"
+        },
+        {
+          "word": "ṣifṣaf",
+          "phonemes": "sˤ i f sˤ a f",
+          "comment": "ṣ"
+        },
+        {
+          "word": "šašk",
+          "phonemes": "ʃ a ʃ k",
+          "comment": "š"
+        },
+        {
+          "word": "tajbirt",
+          "phonemes": "t a ʒ b i r t",
+          "comment": "t"
+        },
+        {
+          "word": "ṭaẓẓiṭ",
+          "phonemes": "tˤ a zˤ ː i tˤ",
+          "comment": "ṭ"
+        },
+        {
+          "word": "ururd",
+          "phonemes": "u r u r d",
+          "comment": "u"
+        },
+        {
+          "word": "wawudiḍ",
+          "phonemes": "w a w u d i dˤ",
+          "comment": "w"
+        },
+        {
+          "word": "uggʷar",
+          "phonemes": "u ɡ ɡʷ a r",
+          "comment": "ʷ"
+        },
+        {
+          "word": "yʷh̬šn",
+          "phonemes": "j χʷ ʃ n",
+          "comment": "ʷh̬"
+        },
+        {
+          "word": "xubayr",
+          "phonemes": "χ u b a j r",
+          "comment": "x"
+        },
+        {
+          "word": "ayt-yudaya",
+          "phonemes": "a j t j u d a j a",
+          "comment": "y"
+        },
+        {
+          "word": "zigziu",
+          "phonemes": "z i ɡ z i u",
+          "comment": "z"
+        },
+        {
+          "word": "ẓufer",
+          "phonemes": "zˤ u f r",
+          "comment": "ẓ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "cons-output": "(b|d|dˤ|ʕ|f|ɡ|ɡʷ|ʁ|ʁʷ|h|ħ|ʒ|ʒˤ|k|kʷ|l|lˤ|m|n|nˤ|q|qʷ|r|rˤ|s|sˤ|ʃ|t|tˤ|w|χ|χʷ|j|z|zˤ)",
+          "passthrough": "(a|b|d|f|h|i|k|l|m|n|q|r|s|t|u|w|ʷ|z)",
+          "pharyngeal": "[̣]",
+          "labial-out": "[kɡqχʁ]",
+          "pharyngeal-out": "[tdszʒnrl]"
+        },
+        "sub": [
+          {
+            "from": "ḍ",
+            "to": "dˤ",
+            "weight": 4.0
+          },
+          {
+            "from": "e",
+            "to": "",
+            "weight": 4.0,
+            "comment": "<e> is used to mark [ə], which is non-phonemic in Shilha"
+          },
+          {
+            "from": "ɛ",
+            "to": "ʕ",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "ġ",
+            "to": "ʁ",
+            "weight": 4.0
+          },
+          {
+            "from": "ḥ",
+            "to": "ħ",
+            "weight": 4.0
+          },
+          {
+            "from": "h̬",
+            "to": "χ",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "ʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "ʒˤ",
+            "weight": 5.0,
+            "follow": "̣"
+          },
+          {
+            "from": "̣",
+            "to": "",
+            "weight": 5.0,
+            "precede": "j",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ḷ",
+            "to": "lˤ",
+            "weight": 4.0
+          },
+          {
+            "from": "ṇ",
+            "to": "nˤ",
+            "weight": 4.0
+          },
+          {
+            "from": "ṛ",
+            "to": "rˤ",
+            "weight": 4.0
+          },
+          {
+            "from": "ṣ",
+            "to": "sˤ",
+            "weight": 4.0
+          },
+          {
+            "from": "š",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ṭ",
+            "to": "tˤ",
+            "weight": 4.0
+          },
+          {
+            "from": "x",
+            "to": "χ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "ẓ",
+            "to": "zˤ",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "some words have a hyphen with no phonetic value"
+          },
+          {
+            "from": "h",
+            "to": "χ",
+            "weight": 8.0,
+            "follow": "̬",
+            "comment": "<h̬>"
+          },
+          {
+            "from": "̬",
+            "to": "",
+            "weight": 8.0,
+            "comment": "cleans up the diacritic from <h̬>"
+          },
+          {
+            "from": "{pharyngeal}",
+            "to": "ˤ",
+            "weight": 1.0,
+            "comment": "pharyngealization diacritic"
+          },
+          {
+            "from": "ʷ",
+            "to": "@",
+            "weight": 5.0,
+            "precede": "^"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "ʷ χ",
+            "to": "χʷ",
+            "weight": 3.5,
+            "comment": "for some reason, <ʷ> usually comes before <h̬>"
+          },
+          {
+            "from": "({cons-output}) \\1",
+            "to": "\\1 ː",
+            "weight": 3.0
+          },
+          {
+            "from": "({cons-output}) ːˤ",
+            "to": "\\1 \\1ˤ",
+            "weight": 2.0,
+            "comment": "corrects mistaken gemination of plain/pharyngealized consonant sequences"
+          },
+          {
+            "from": "({labial-out}) ʷ",
+            "to": "\\1ʷ",
+            "weight": 4.0,
+            "comment": "attaches labialization to the preceding character"
+          },
+          {
+            "from": "({pharyngeal-out}) ˤ",
+            "to": "\\1ˤ",
+            "weight": 4.0,
+            "comment": "attaches pharyngealization to the preceding character"
+          },
+          {
+            "from": "({cons-output}) ːʷ",
+            "to": "\\1 \\1ʷ",
+            "weight": 2.0,
+            "comment": "fixes clusters of regular + labialized consonants"
+          },
+          {
+            "from": " ʷ",
+            "to": " @",
+            "weight": 1.0,
+            "comment": "removes (59) occurrences of labialized consonants that aren't attested as phonemic - could be transcribed as plain consonants or included if documentation of the language changes"
+          }
+        ]
+      }
+    }
+  }
+}

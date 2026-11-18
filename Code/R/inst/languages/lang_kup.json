@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "code": "kup",
+    "name": "Kunimaipa",
+    "family": "Trans-New Guinea,Main Section,Eastern,Central and Southeastern,Goilalan,Kunimaipa",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "kara",
+          "phonemes": "k a r a"
+        },
+        {
+          "word": "povoza",
+          "phonemes": "p o β o z a"
+        },
+        {
+          "word": "pata",
+          "phonemes": "p a t a"
+        },
+        {
+          "word": "engarohol",
+          "phonemes": "e n ɡ a r o ɣ o l"
+        },
+        {
+          "word": "maize",
+          "phonemes": "m a i z e"
+        },
+        {
+          "word": "engarim",
+          "phonemes": "e n ɡ a r i m"
+        },
+        {
+          "word": "abana",
+          "phonemes": "a b a n a"
+        },
+        {
+          "word": "goe",
+          "phonemes": "ɡ o e"
+        },
+        {
+          "word": "tina",
+          "phonemes": "t i n a"
+        },
+        {
+          "word": "hodad",
+          "phonemes": "ɣ o d a d"
+        },
+        {
+          "word": "sat",
+          "phonemes": "s a t"
+        },
+        {
+          "word": "paru",
+          "phonemes": "p a r u"
+        },
+        {
+          "word": "oñ",
+          "phonemes": "o ŋ"
+        },
+        {
+          "word": "katë",
+          "phonemes": "k a t e"
+        },
+        {
+          "word": "ñetï",
+          "phonemes": "ŋ e t i"
+        },
+        {
+          "word": "ahö",
+          "phonemes": "a ɣ o"
+        },
+        {
+          "word": "natotü",
+          "phonemes": "n a t o t u"
+        },
+        {
+          "word": "aban",
+          "phonemes": "a b a n"
+        },
+        {
+          "word": "pim",
+          "phonemes": "p i m"
+        },
+        {
+          "word": "tin",
+          "phonemes": "t i n"
+        },
+        {
+          "word": "ari",
+          "phonemes": "a r i"
+        },
+        {
+          "word": "epat",
+          "phonemes": "e p a t"
+        },
+        {
+          "word": "ne",
+          "phonemes": "n e"
+        },
+        {
+          "word": "ravat",
+          "phonemes": "r a β a t"
+        },
+        {
+          "word": "tat",
+          "phonemes": "t a t"
+        },
+        {
+          "word": "añarab",
+          "phonemes": "a ŋ a r a b"
+        },
+        {
+          "word": "het",
+          "phonemes": "ɣ e t"
+        },
+        {
+          "word": "mañah",
+          "phonemes": "m a ŋ a ɣ"
+        },
+        {
+          "word": "hat",
+          "phonemes": "ɣ a t"
+        },
+        {
+          "word": "homet",
+          "phonemes": "ɣ o m e t"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeiklmnoprsztu]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "h",
+            "to": "ɣ",
+            "weight": 2.0
+          },
+          {
+            "from": "ñ",
+            "to": "ŋ",
+            "weight": 2.0
+          },
+          {
+            "from": "v",
+            "to": "β",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "ë",
+            "to": "e",
+            "weight": 2.0
+          },
+          {
+            "from": "ï",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "ö",
+            "to": "o",
+            "weight": 2.0
+          },
+          {
+            "from": "ü",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0,
+            "comment": "hyphens mark morpheme boundaries"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "code": "tr",
+    "name": "Turkish",
+    "family": "Turkic,Common Turkic,Oghuz,Western Oghuz,Turkish",
+    "macroarea": "Eurasia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "pul",
+          "phonemes": "p u l"
+        },
+        {
+          "word": "bulmak",
+          "phonemes": "b u l m a k"
+        },
+        {
+          "word": "far",
+          "phonemes": "f a ɾ"
+        },
+        {
+          "word": "var",
+          "phonemes": "v a ɾ"
+        },
+        {
+          "word": "tel",
+          "phonemes": "t e l"
+        },
+        {
+          "word": "del",
+          "phonemes": "d e l"
+        },
+        {
+          "word": "nal",
+          "phonemes": "n a l"
+        },
+        {
+          "word": "rey",
+          "phonemes": "ɾ e j"
+        },
+        {
+          "word": "sar",
+          "phonemes": "s a ɾ"
+        },
+        {
+          "word": "zar",
+          "phonemes": "z a ɾ"
+        },
+        {
+          "word": "çam",
+          "phonemes": "tʃ a m"
+        },
+        {
+          "word": "cam",
+          "phonemes": "dʒ a m"
+        },
+        {
+          "word": "gâvur",
+          "phonemes": "ɡ a v u ɾ"
+        },
+        {
+          "word": "kâfir",
+          "phonemes": "k a f i ɾ"
+        },
+        {
+          "word": "dağ",
+          "phonemes": "d a"
+        },
+        {
+          "word": "düğün",
+          "phonemes": "d y y n"
+        },
+        {
+          "word": "her",
+          "phonemes": "h e ɾ"
+        },
+        {
+          "word": "güneş",
+          "phonemes": "ɡ y n e ʃ"
+        },
+        {
+          "word": "göl",
+          "phonemes": "ɡ œ l"
+        },
+        {
+          "word": "kıl",
+          "phonemes": "k ɯ l"
+        },
+        {
+          "word": "ali'nin",
+          "phonemes": "a l i n i n"
+        },
+        {
+          "word": "hayatî",
+          "phonemes": "h a j a t i"
+        },
+        {
+          "word": "eller",
+          "phonemes": "e l ː e ɾ"
+        },
+        {
+          "word": "hacca",
+          "phonemes": "h a dʒ ː a"
+        },
+        {
+          "word": "çok",
+          "phonemes": "tʃ o k"
+        },
+        {
+          "word": "enerji",
+          "phonemes": "e n e ɾ ʒ i"
+        },
+        {
+          "word": "sûresinde",
+          "phonemes": "s u ɾ e s i n d e"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdefhiklmnopstuvz]",
+          "gem": "(b|d|f|ɡ|h|k|l|m|n|p|s|t|v|z|dʒ|tʃ|ɾ|ʒ|ʃ|j)",
+          "punctuation": "[''‘’-]"
+        },
+        "pre": [
+          {
+            "from": "Iİ",
+            "to": "ıi"
+          }
+        ],
+        "sub": [
+          {
+            "from": "c",
+            "to": "dʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "ç",
+            "to": "tʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "ğ",
+            "to": "",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "ʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "ı",
+            "to": "ɯ",
+            "weight": 2.0
+          },
+          {
+            "from": "ö",
+            "to": "œ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "ş",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "ü",
+            "to": "y",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "â",
+            "to": "a",
+            "weight": 2.0
+          },
+          {
+            "from": "û",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "î",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "ô",
+            "to": "o",
+            "weight": 2.0
+          },
+          {
+            "from": "ê",
+            "to": "e",
+            "weight": 2.0
+          },
+          {
+            "from": "{punctuation}",
+            "to": "",
+            "weight": 1.0,
+            "comment": "apostrophes and hyphens have no phonemic value"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({gem}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

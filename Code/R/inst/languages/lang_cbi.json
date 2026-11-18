@@ -1,0 +1,296 @@
+{
+  "metadata": {
+    "code": "cbi",
+    "name": "Cha'palaa",
+    "family": "Barbacoan,Cayapa-Colorado",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "aachama",
+          "phonemes": "a ː tʃ a m a",
+          "comment": "a"
+        },
+        {
+          "word": "baanbuka",
+          "phonemes": "b a ː n b u k a",
+          "comment": "b"
+        },
+        {
+          "word": "chichiiya",
+          "phonemes": "tʃ i tʃ i ː j a",
+          "comment": "ch"
+        },
+        {
+          "word": "dillinu",
+          "phonemes": "d i ʎ i n u",
+          "comment": "d"
+        },
+        {
+          "word": "dya'kanu",
+          "phonemes": "dʲ a ʔ k a n u",
+          "comment": "dy"
+        },
+        {
+          "word": "eetennu",
+          "phonemes": "e ː t e n n u",
+          "comment": "e"
+        },
+        {
+          "word": "fe'sha",
+          "phonemes": "f e ʔ ʃ a",
+          "comment": "f"
+        },
+        {
+          "word": "guntsu",
+          "phonemes": "ɡ u n ts u",
+          "comment": "g"
+        },
+        {
+          "word": "inunchi",
+          "phonemes": "i n u n tʃ i",
+          "comment": "i"
+        },
+        {
+          "word": "jakajtu",
+          "phonemes": "h a k a h t u",
+          "comment": "j"
+        },
+        {
+          "word": "kika",
+          "phonemes": "k i k a",
+          "comment": "k"
+        },
+        {
+          "word": "lulamu",
+          "phonemes": "l u l a m u",
+          "comment": "l"
+        },
+        {
+          "word": "lluu",
+          "phonemes": "ʎ u ː",
+          "comment": "ll"
+        },
+        {
+          "word": "mu'mu'pamu",
+          "phonemes": "m u ʔ m u ʔ p a m u",
+          "comment": "m"
+        },
+        {
+          "word": "nekunu",
+          "phonemes": "n e k u n u",
+          "comment": "n"
+        },
+        {
+          "word": "nangule",
+          "phonemes": "n a ŋ u l e",
+          "comment": "ng"
+        },
+        {
+          "word": "ñañi",
+          "phonemes": "ɲ a ɲ i",
+          "comment": "ñ"
+        },
+        {
+          "word": "pajkipala",
+          "phonemes": "p a h k i p a l a",
+          "comment": "p"
+        },
+        {
+          "word": "remedyu",
+          "phonemes": "ɾ e m e dʲ u",
+          "comment": "r"
+        },
+        {
+          "word": "seeputyu",
+          "phonemes": "s e ː p u tʲ u",
+          "comment": "s"
+        },
+        {
+          "word": "shiishupa",
+          "phonemes": "ʃ i ː ʃ u p a",
+          "comment": "sh"
+        },
+        {
+          "word": "tutiti",
+          "phonemes": "t u t i t i",
+          "comment": "t"
+        },
+        {
+          "word": "tsanginu",
+          "phonemes": "ts a ŋ i n u",
+          "comment": "ts"
+        },
+        {
+          "word": "tyujtyu",
+          "phonemes": "tʲ u h tʲ u",
+          "comment": "ty"
+        },
+        {
+          "word": "uumu",
+          "phonemes": "u ː m u",
+          "comment": "u"
+        },
+        {
+          "word": "vijtya",
+          "phonemes": "v i h tʲ a",
+          "comment": "v"
+        },
+        {
+          "word": "waiberu",
+          "phonemes": "w a i b e ɾ u",
+          "comment": "w"
+        },
+        {
+          "word": "yapaya",
+          "phonemes": "j a p a j a",
+          "comment": "y"
+        },
+        {
+          "word": "ña'ma",
+          "phonemes": "ɲ a ʔ m a",
+          "comment": "apostrophe"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "[ꞌ'ˈ‘’]",
+          "pre-h": "[cs]",
+          "pre-y": "[dt]",
+          "vowel": "[aeiu]",
+          "passthrough": "[abdefiklmnpstuvw]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 4.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "some words have hyphens with no phonetic value"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<ch>"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "<sh>"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{pre-h}",
+            "comment": "cleanup of h-final digraphs"
+          },
+          {
+            "from": "t",
+            "to": "tʲ",
+            "weight": 6.0,
+            "follow": "y",
+            "comment": "<ty>"
+          },
+          {
+            "from": "d",
+            "to": "dʲ",
+            "weight": 6.0,
+            "follow": "y",
+            "comment": "<dy>"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{pre-y}",
+            "comment": "cleanup of y-final digraphs"
+          },
+          {
+            "from": "l",
+            "to": "ʎ",
+            "weight": 6.0,
+            "follow": "l",
+            "comment": "<ll>"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 6.0,
+            "precede": "l",
+            "comment": "<ll> cleanup"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 6.0,
+            "follow": "g",
+            "comment": "<ng>"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<ng> cleanup"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "t s",
+            "to": "ts",
+            "weight": 2.0,
+            "comment": "<ts>"
+          },
+          {
+            "from": "\\b({vowel}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0,
+            "comment": "vowel lengthening"
+          }
+        ]
+      }
+    }
+  }
+}

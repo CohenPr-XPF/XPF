@@ -1,0 +1,216 @@
+{
+  "metadata": {
+    "code": "ded",
+    "name": "Dedua",
+    "family": "Trans-New Guinea,Main Section,Central and Western,Huon-Finisterre,Huon,Eastern",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "piratac",
+          "phonemes": "p i r a t a ʔ"
+        },
+        {
+          "word": "dumbeng",
+          "phonemes": "d u ŋ b e ŋ"
+        },
+        {
+          "word": "kifa",
+          "phonemes": "k i f a"
+        },
+        {
+          "word": "wau",
+          "phonemes": "w au"
+        },
+        {
+          "word": "kpesec",
+          "phonemes": "kp e s e ʔ"
+        },
+        {
+          "word": "dzurac",
+          "phonemes": "dʑ u r a ʔ"
+        },
+        {
+          "word": "yegbong",
+          "phonemes": "j e ɡb o ŋ"
+        },
+        {
+          "word": "nena",
+          "phonemes": "n e n a"
+        },
+        {
+          "word": "yei",
+          "phonemes": "j ei"
+        },
+        {
+          "word": "hende",
+          "phonemes": "ʔ e ŋ d e"
+        },
+        {
+          "word": "feude",
+          "phonemes": "f eu d e"
+        },
+        {
+          "word": "taide",
+          "phonemes": "t ai d e"
+        },
+        {
+          "word": "ohoude",
+          "phonemes": "o ʔ ou d e"
+        },
+        {
+          "word": "foi",
+          "phonemes": "f oi"
+        },
+        {
+          "word": "gerec",
+          "phonemes": "ɡ e r e ʔ"
+        },
+        {
+          "word": "marina",
+          "phonemes": "m a r i n a"
+        },
+        {
+          "word": "singguba",
+          "phonemes": "s i ŋ ɡ u b a"
+        },
+        {
+          "word": "henni",
+          "phonemes": "ʔ e ŋ n i"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdefikmnoprstuw]",
+          "dip": "[eao]",
+          "nasal": "[mn]",
+          "cons": "[bcdfgkmnoprstwy]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "ʔ",
+            "weight": 3.0,
+            "follow": "{cons}",
+            "comment": "<c> represents the glottal stop syllable-finally"
+          },
+          {
+            "from": "c",
+            "to": "ʔ",
+            "weight": 3.0,
+            "follow": "$",
+            "comment": "<c> represents the glottal stop syllable-finally"
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 3.0
+          },
+          {
+            "from": "h",
+            "to": "ʔ",
+            "weight": 3.0,
+            "precede": "{cons}",
+            "comment": "<h> represents the glottal stop syllable-initially"
+          },
+          {
+            "from": "h",
+            "to": "ʔ",
+            "weight": 3.0,
+            "precede": "^",
+            "comment": "<h> represents the glottal stop syllable-initially"
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 3.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "d",
+            "to": "dʑ",
+            "weight": 4.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 4.0,
+            "precede": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ɡb",
+            "weight": 4.0,
+            "follow": "b"
+          },
+          {
+            "from": "b",
+            "to": "",
+            "weight": 4.0,
+            "precede": "g",
+            "comment": "clean-up"
+          },
+          {
+            "from": "k",
+            "to": "kp",
+            "weight": 4.0,
+            "follow": "p"
+          },
+          {
+            "from": "p",
+            "to": "",
+            "weight": 4.0,
+            "precede": "k",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 4.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 4.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{nasal}",
+            "to": "ŋ",
+            "weight": 4.0,
+            "follow": "{cons}",
+            "comment": "/ŋ/, rather than the other nasals, is underlying syllable-finally - this rule combats nasal assimilation in this position"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({dip}) i",
+            "to": "\\1i",
+            "weight": 2.0
+          },
+          {
+            "from": "({dip}) u",
+            "to": "\\1u",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

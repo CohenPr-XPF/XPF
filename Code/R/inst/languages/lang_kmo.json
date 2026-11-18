@@ -1,0 +1,345 @@
+{
+  "metadata": {
+    "code": "kmo",
+    "name": "Kwoma",
+    "family": "Sepik-Ramu,Sepik,Middle Sepik,Nukuma",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "note": "/ʔ/ not always marked"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "akama",
+          "phonemes": "a k a m a",
+          "comment": "a"
+        },
+        {
+          "word": "kayek",
+          "phonemes": "k ai e k",
+          "comment": "ay"
+        },
+        {
+          "word": "beber",
+          "phonemes": "ᵐb e ᵐb e ɾ",
+          "comment": "b"
+        },
+        {
+          "word": "cheebi",
+          "phonemes": "tʃ ɛ ᵐb i",
+          "comment": "ch"
+        },
+        {
+          "word": "diin",
+          "phonemes": "ⁿd ɨ n",
+          "comment": "d"
+        },
+        {
+          "word": "egeyebaka",
+          "phonemes": "e ᵑɡ ei e ᵐb a k a",
+          "comment": "e"
+        },
+        {
+          "word": "eeta",
+          "phonemes": "ɛ t a",
+          "comment": "ee"
+        },
+        {
+          "word": "keyapo",
+          "phonemes": "k ei a ɸ o",
+          "comment": "ey"
+        },
+        {
+          "word": "giyishagu",
+          "phonemes": "ᵑɡ i j i ʃ a ᵑɡ u",
+          "comment": "g"
+        },
+        {
+          "word": "hehar",
+          "phonemes": "h e h a ɾ",
+          "comment": "h"
+        },
+        {
+          "word": "iyi",
+          "phonemes": "i j i",
+          "comment": "i"
+        },
+        {
+          "word": "siikiir",
+          "phonemes": "s ɨ k ɨ ɾ",
+          "comment": "ii"
+        },
+        {
+          "word": "magwiy",
+          "phonemes": "m a ᵑɡ w i",
+          "comment": "final iy"
+        },
+        {
+          "word": "jecha",
+          "phonemes": "ⁿdʒ e tʃ a",
+          "comment": "j"
+        },
+        {
+          "word": "kiikiir",
+          "phonemes": "k ɨ k ɨ ɾ",
+          "comment": "k"
+        },
+        {
+          "word": "mima",
+          "phonemes": "m i m a",
+          "comment": "m"
+        },
+        {
+          "word": "nona",
+          "phonemes": "n o n a",
+          "comment": "n"
+        },
+        {
+          "word": "nyey",
+          "phonemes": "ɲ ei",
+          "comment": "ny"
+        },
+        {
+          "word": "opoche",
+          "phonemes": "o ɸ o tʃ e",
+          "comment": "o"
+        },
+        {
+          "word": "owaga",
+          "phonemes": "ou a ᵑɡ a",
+          "comment": "ow"
+        },
+        {
+          "word": "popoy",
+          "phonemes": "ɸ o ɸ o j",
+          "comment": "p"
+        },
+        {
+          "word": "rupu",
+          "phonemes": "ɾ u ɸ u",
+          "comment": "r"
+        },
+        {
+          "word": "seechi",
+          "phonemes": "s ɛ tʃ i",
+          "comment": "s"
+        },
+        {
+          "word": "shasha",
+          "phonemes": "ʃ a ʃ a",
+          "comment": "sh"
+        },
+        {
+          "word": "teenye",
+          "phonemes": "t ɛ ɲ e",
+          "comment": "t"
+        },
+        {
+          "word": "ukuka",
+          "phonemes": "u k u k a",
+          "comment": "u"
+        },
+        {
+          "word": "varekwo",
+          "phonemes": "β a ɾ e k w o",
+          "comment": "v"
+        },
+        {
+          "word": "wokwoya",
+          "phonemes": "w o k w o j a",
+          "comment": "w"
+        },
+        {
+          "word": "yasaya",
+          "phonemes": "j a s ai a",
+          "comment": "y"
+        },
+        {
+          "word": "yii'a",
+          "phonemes": "j ɨ ʔ a",
+          "comment": "apostrophe"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "['ꞌˈ‘’]",
+          "h-preceder": "[cs]",
+          "w-preceder": "[o]",
+          "y-preceder": "[aen]",
+          "passthrough": "[aehikmnostuw]"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "ᵐb",
+            "weight": 4.0
+          },
+          {
+            "from": "d",
+            "to": "ⁿd",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ᵑɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "ⁿdʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "l",
+            "to": "j",
+            "weight": 4.0,
+            "comment": "<l> isn't normally in Kwoma but @KmoBowden1997 lists it as appearing in some alternate spellings of words with <y>."
+          },
+          {
+            "from": "p",
+            "to": "ɸ",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "v",
+            "to": "β",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "ch"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "sh"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{h-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 6.0,
+            "follow": "y",
+            "comment": "palatal n"
+          },
+          {
+            "from": "a",
+            "to": "ai",
+            "weight": 6.0,
+            "follow": "y",
+            "comment": "ay"
+          },
+          {
+            "from": "e",
+            "to": "ei",
+            "weight": 6.0,
+            "follow": "y",
+            "comment": "ey"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{y-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "o",
+            "to": "ou",
+            "weight": 6.0,
+            "follow": "w",
+            "comment": "ow"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{w-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 6.0,
+            "follow": "e",
+            "comment": "ee"
+          },
+          {
+            "from": "e",
+            "to": "",
+            "weight": 6.0,
+            "precede": "e",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "ɨ",
+            "weight": 6.0,
+            "follow": "i",
+            "comment": "ii"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 6.0,
+            "precede": "i",
+            "comment": "clean-up"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 5.0,
+            "precede": "i",
+            "follow": "$"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 5.0,
+            "precede": "u",
+            "follow": "$"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0
+          }
+        ]
+      }
+    }
+  }
+}

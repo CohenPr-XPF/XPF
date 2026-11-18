@@ -1,0 +1,499 @@
+{
+  "metadata": {
+    "code": "es",
+    "name": "Spanish",
+    "family": "Indo-European,Italic,Romance,Italo-Western,Western,Gallo-Iberian,Ibero-Romance,West Iberian,Castilian",
+    "macroarea": "Eurasia",
+    "compromised": {
+      "note": "orthographically ambiguous diphthongs"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "la",
+          "phonemes": "l a",
+          "comment": "l goes to /l/; a goes to /a/"
+        },
+        {
+          "word": "sobre",
+          "phonemes": "s o b ɾ e",
+          "comment": "s goes to /s/; o goes to /o/; b goes to /b/; r goes to /ɾ/; e goes to /e/"
+        },
+        {
+          "word": "con",
+          "phonemes": "k o n",
+          "comment": "c goes to /k/; n goes to /n/"
+        },
+        {
+          "word": "del",
+          "phonemes": "d̪ e l",
+          "comment": "d goes to /d̪/"
+        },
+        {
+          "word": "forma",
+          "phonemes": "f o ɾ m a",
+          "comment": "f goes to /f/; m goes to /m/"
+        },
+        {
+          "word": "si",
+          "phonemes": "s i",
+          "comment": "i goes to /i/"
+        },
+        {
+          "word": "kilómetros",
+          "phonemes": "k i l o m e t̪ ɾ o s",
+          "comment": "k goes to /k/; t goes to /t̪/"
+        },
+        {
+          "word": "por",
+          "phonemes": "p o ɾ",
+          "comment": "p goes to /p/"
+        },
+        {
+          "word": "web",
+          "phonemes": "w e b",
+          "comment": "w goes to /w/"
+        },
+        {
+          "word": "más",
+          "phonemes": "m a s",
+          "comment": "accented vowels are pronounced the same as their non-accented counterparts"
+        },
+        {
+          "word": "también",
+          "phonemes": "t̪ a m b i e n"
+        },
+        {
+          "word": "día",
+          "phonemes": "d̪ i a"
+        },
+        {
+          "word": "sólo",
+          "phonemes": "s o l o"
+        },
+        {
+          "word": "según",
+          "phonemes": "s e ɡ u n",
+          "comment": "g goes to /ɡ/; u goes to /u/"
+        },
+        {
+          "word": "ciudad",
+          "phonemes": "θ i u d̪ a d̪",
+          "comment": "c goes to /θ/ before front vowels"
+        },
+        {
+          "word": "hasta",
+          "phonemes": "a s t̪ a",
+          "comment": "h is silent"
+        },
+        {
+          "word": "mejor",
+          "phonemes": "m e x o ɾ",
+          "comment": "j goes to /x/"
+        },
+        {
+          "word": "años",
+          "phonemes": "a ɲ o s",
+          "comment": "ñ goes to /ɲ/"
+        },
+        {
+          "word": "río",
+          "phonemes": "r i o",
+          "comment": "r goes to /r/ word initially"
+        },
+        {
+          "word": "guerra",
+          "phonemes": "ɡ e r a",
+          "comment": "gu goes to /ɡ/ before a front vowel; rr goes to /r/"
+        },
+        {
+          "word": "lingüística",
+          "phonemes": "l i n ɡ w i s t̪ i k a",
+          "comment": "gü goes to /gu/"
+        },
+        {
+          "word": "vez",
+          "phonemes": "b e θ",
+          "comment": "v goes to /b/; z goes to /θ/"
+        },
+        {
+          "word": "existe",
+          "phonemes": "e k s i s t̪ e",
+          "comment": "x goes to /ks/"
+        },
+        {
+          "word": "México",
+          "phonemes": "m e x i k o",
+          "comment": "some words preserve the older orthography in which x goes to /x/; these are given in the rules"
+        },
+        {
+          "word": "Mexico",
+          "phonemes": "m e x i k o"
+        },
+        {
+          "word": "mexicano",
+          "phonemes": "m e x i k a n o"
+        },
+        {
+          "word": "mexicanos",
+          "phonemes": "m e x i k a n o s"
+        },
+        {
+          "word": "mexicana",
+          "phonemes": "m e x i k a n a"
+        },
+        {
+          "word": "mexicanas",
+          "phonemes": "m e x i k a n a s"
+        },
+        {
+          "word": "Xavier",
+          "phonemes": "x a b i e ɾ"
+        },
+        {
+          "word": "Oaxaca",
+          "phonemes": "o a x a k a"
+        },
+        {
+          "word": "xiote",
+          "phonemes": "x i o t̪ e"
+        },
+        {
+          "word": "Texas",
+          "phonemes": "t̪ e x a s"
+        },
+        {
+          "word": "Axarquía",
+          "phonemes": "a x a ɾ k i a"
+        },
+        {
+          "word": "Ximena",
+          "phonemes": "x i m e n a"
+        },
+        {
+          "word": "Ximénez",
+          "phonemes": "x i m e n e θ"
+        },
+        {
+          "word": "Mexía",
+          "phonemes": "m e x i a"
+        },
+        {
+          "word": "ya",
+          "phonemes": "ʝ a"
+        },
+        {
+          "word": "mayor",
+          "phonemes": "m a ʝ o ɾ"
+        },
+        {
+          "word": "hoy",
+          "phonemes": "o ʝ"
+        },
+        {
+          "word": "Aýna",
+          "phonemes": "a i n a",
+          "comment": "ý goes to /i/"
+        },
+        {
+          "word": "mucho",
+          "phonemes": "m u tʃ o",
+          "comment": "ch goes to /tʃ/"
+        },
+        {
+          "word": "ellos",
+          "phonemes": "e ʎ o s",
+          "comment": "ll goes to /ʎ/"
+        },
+        {
+          "word": "que",
+          "phonemes": "k e",
+          "comment": "qu goes to /k/"
+        },
+        {
+          "word": "gitano",
+          "phonemes": "x i t̪ a n o",
+          "comment": "g goes to /x/"
+        },
+        {
+          "word": "xilófono",
+          "phonemes": "s i l o f o n o",
+          "comment": "x goes to /s/"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abefiklmnopsuw]",
+          "front": "[eiéí]",
+          "punct": "[ꞌ'ˈ‘’-]"
+        },
+        "sub": [
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 1.0,
+            "comment": "accents mark stress (not accounted for in this project)"
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 1.0
+          },
+          {
+            "from": "c",
+            "to": "θ",
+            "weight": 2.0,
+            "follow": "{front}"
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 1.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 1.0,
+            "comment": "accents mark stress (not accounted for in this project)"
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "x",
+            "weight": 2.0,
+            "follow": "{front}"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 1.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "x",
+            "weight": 1.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 1.0
+          },
+          {
+            "from": "ó",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 2.0,
+            "precede": "^"
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 1.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 1.0,
+            "comment": "accents mark stress (not accounted for in this project)"
+          },
+          {
+            "from": "ü",
+            "to": "w",
+            "weight": 1.0,
+            "precede": "g",
+            "comment": "<gü> sequences indicate a /gw/ rather than /ɡ/"
+          },
+          {
+            "from": "v",
+            "to": "b",
+            "weight": 1.0
+          },
+          {
+            "from": "x",
+            "to": "k s",
+            "weight": 1.0
+          },
+          {
+            "from": "x",
+            "to": "s",
+            "weight": 2.0,
+            "precede": "^"
+          },
+          {
+            "from": "y",
+            "to": "ʝ",
+            "weight": 1.0
+          },
+          {
+            "from": "ý",
+            "to": "i",
+            "weight": 1.0,
+            "comment": "<ý> is only preserved in some proper names, but refers to the vowel /i/ rather than the fricative"
+          },
+          {
+            "from": "z",
+            "to": "θ",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "l",
+            "to": "ʎ",
+            "weight": 3.0,
+            "follow": "l"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 3.0,
+            "precede": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "r",
+            "to": "r",
+            "weight": 3.0,
+            "follow": "r"
+          },
+          {
+            "from": "r",
+            "to": "",
+            "weight": 3.0,
+            "precede": "r",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 3.0,
+            "follow": "u{front}"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "g",
+            "follow": "{front}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "u{front}"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "follow": "{front}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 2.0,
+            "comment": "hyphens and apostrophes have no phonemic value"
+          }
+        ],
+        "word": [
+          {
+            "word": "México",
+            "phonemes": "m e x i k o"
+          },
+          {
+            "word": "Mexico",
+            "phonemes": "m e x i k o"
+          },
+          {
+            "word": "mexicano",
+            "phonemes": "m e x i k a n o"
+          },
+          {
+            "word": "mexicanos",
+            "phonemes": "m e x i k a n o s"
+          },
+          {
+            "word": "mexicana",
+            "phonemes": "m e x i k a n a"
+          },
+          {
+            "word": "mexicanas",
+            "phonemes": "m e x i k a n a s"
+          },
+          {
+            "word": "Xavier",
+            "phonemes": "x a b i e ɾ"
+          },
+          {
+            "word": "Oaxaca",
+            "phonemes": "o a x a k a"
+          },
+          {
+            "word": "xiote",
+            "phonemes": "x i o t̪ e"
+          },
+          {
+            "word": "Texas",
+            "phonemes": "t̪ e x a s"
+          },
+          {
+            "word": "Axarquía",
+            "phonemes": "a x a ɾ k i a"
+          },
+          {
+            "word": "Ximena",
+            "phonemes": "x i m e n a"
+          },
+          {
+            "word": "Ximénez",
+            "phonemes": "x i m e n e θ"
+          },
+          {
+            "word": "Mexía",
+            "phonemes": "m e x i a"
+          }
+        ]
+      }
+    }
+  }
+}

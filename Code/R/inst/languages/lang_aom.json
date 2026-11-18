@@ -1,0 +1,234 @@
+{
+  "metadata": {
+    "code": "aom",
+    "name": "Aomie",
+    "family": "Trans-New Guinea,Main Section,Eastern,Central and Southeastern,Koiarian,Baraic",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "mae",
+          "phonemes": "m ae",
+          "comment": "<a>"
+        },
+        {
+          "word": "bogo",
+          "phonemes": "b o ɡ o",
+          "comment": "<b>"
+        },
+        {
+          "word": "uëvadeje",
+          "phonemes": "uæ v a d e dʒ e",
+          "comment": "<d>"
+        },
+        {
+          "word": "hesi",
+          "phonemes": "h e s i",
+          "comment": "<e>"
+        },
+        {
+          "word": "ëhi",
+          "phonemes": "æ h i",
+          "comment": "<ë>"
+        },
+        {
+          "word": "gö",
+          "phonemes": "ɡ ɔ",
+          "comment": "<g>"
+        },
+        {
+          "word": "höjo",
+          "phonemes": "h ɔ dʒ o",
+          "comment": "<h>"
+        },
+        {
+          "word": "jabesi",
+          "phonemes": "dʒ a b e s i",
+          "comment": "<i>"
+        },
+        {
+          "word": "jöho",
+          "phonemes": "dʒ ɔ h o",
+          "comment": "<j>"
+        },
+        {
+          "word": "ekaresia",
+          "phonemes": "e k a ɾ e s ia",
+          "comment": "<k>"
+        },
+        {
+          "word": "mu",
+          "phonemes": "m u",
+          "comment": "<m>"
+        },
+        {
+          "word": "na",
+          "phonemes": "n a",
+          "comment": "<n>"
+        },
+        {
+          "word": "aho'obëhe",
+          "phonemes": "a h o ʔ o b æ h e",
+          "comment": "<o>"
+        },
+        {
+          "word": "aribövioho",
+          "phonemes": "a ɾ i b ɔ v io h o",
+          "comment": "<ö>"
+        },
+        {
+          "word": "raje",
+          "phonemes": "ɾ a dʒ e",
+          "comment": "<r>"
+        },
+        {
+          "word": "sisë",
+          "phonemes": "s i s æ",
+          "comment": "<s>"
+        },
+        {
+          "word": "bapataeto",
+          "phonemes": "b a p a t ae t o",
+          "comment": "<t>"
+        },
+        {
+          "word": "guomo",
+          "phonemes": "ɡ uo m o",
+          "comment": "<g>"
+        },
+        {
+          "word": "uvareje",
+          "phonemes": "u v a ɾ e dʒ e",
+          "comment": "<v>"
+        },
+        {
+          "word": "aru'aho",
+          "phonemes": "a ɾ u ʔ a h o",
+          "comment": "apostrophe"
+        },
+        {
+          "word": "avoho",
+          "phonemes": "a v o h o"
+        },
+        {
+          "word": "böröme",
+          "phonemes": "b ɔ ɾ ɔ m e"
+        },
+        {
+          "word": "ëhuni",
+          "phonemes": "æ h u n i"
+        },
+        {
+          "word": "huro",
+          "phonemes": "h u ɾ o"
+        },
+        {
+          "word": "rueromo",
+          "phonemes": "ɾ ue ɾ o m o"
+        },
+        {
+          "word": "evare",
+          "phonemes": "e v a ɾ e"
+        },
+        {
+          "word": "eni",
+          "phonemes": "e n i"
+        },
+        {
+          "word": "a'i",
+          "phonemes": "a ʔ i"
+        },
+        {
+          "word": "jioromo",
+          "phonemes": "dʒ io ɾ o m o"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdehikmnopstuv]",
+          "apostrophe": "['ꞌ‘’]",
+          "i-dip": "[eæaoɔe]",
+          "u-dip": "[ieaoæ]",
+          "trip": "[eæ]"
+        },
+        "sub": [
+          {
+            "from": "ë",
+            "to": "æ",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "dʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "ö",
+            "to": "ɔ",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "i ({i-dip})",
+            "to": "i\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "u ({u-dip})",
+            "to": "u\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "a e",
+            "to": "ae",
+            "weight": 2.0
+          },
+          {
+            "from": "i a ({trip})",
+            "to": "ia\\1",
+            "weight": 3.0
+          },
+          {
+            "from": "i ɔ ({trip})",
+            "to": "iɔ\\1",
+            "weight": 3.0
+          },
+          {
+            "from": "u a ({trip})",
+            "to": "ua\\1",
+            "weight": 3.0
+          }
+        ]
+      }
+    }
+  }
+}

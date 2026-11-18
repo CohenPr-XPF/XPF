@@ -1,0 +1,478 @@
+{
+  "metadata": {
+    "code": "yua",
+    "name": "Yucatec Maya",
+    "family": "Mayan,Yucatecan,Yucatec-Lacandon",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "a'al",
+          "phonemes": "a ː ˦ ˷ l",
+          "comment": "tests v'v rule"
+        },
+        {
+          "word": "xiib",
+          "phonemes": "ʃ i ː ˨ ɓ",
+          "comment": "tests vv rule"
+        },
+        {
+          "word": "óox",
+          "phonemes": "o ː ˦ ʃ",
+          "comment": "tests v́v rule"
+        },
+        {
+          "word": "kaajal",
+          "phonemes": "k a ː ˨ h a l"
+        },
+        {
+          "word": "chaik",
+          "phonemes": "tʃ a i k"
+        },
+        {
+          "word": "iik'",
+          "phonemes": "i ː ˨ kʼ"
+        },
+        {
+          "word": "p'uchik",
+          "phonemes": "pʼ u tʃ i k"
+        },
+        {
+          "word": "metik",
+          "phonemes": "m e t i k"
+        },
+        {
+          "word": "t'uut'",
+          "phonemes": "tʼ u ː ˨ tʼ"
+        },
+        {
+          "word": "ch'o'",
+          "phonemes": "tʃʼ o ʔ",
+          "comment": "tests apostrophe to glottal stop rule"
+        },
+        {
+          "word": "woolis",
+          "phonemes": "w o ː ˨ l i s"
+        },
+        {
+          "word": "tz'in",
+          "phonemes": "tsʼ i n"
+        },
+        {
+          "word": "itza",
+          "phonemes": "i ts a"
+        },
+        {
+          "word": "beora",
+          "phonemes": "ɓ e o ɾ a"
+        },
+        {
+          "word": "muyal",
+          "phonemes": "m u j a l"
+        },
+        {
+          "word": "kuxtal",
+          "phonemes": "k u ʃ t a l"
+        },
+        {
+          "word": "te'ex",
+          "phonemes": "t e ː ˦ ˷ ʃ"
+        },
+        {
+          "word": "puksi'ik'al",
+          "phonemes": "p u k s i ː ˦ ˷ kʼ a l"
+        },
+        {
+          "word": "ko'olel",
+          "phonemes": "k o ː ˦ ˷ l e l"
+        },
+        {
+          "word": "tu'ux",
+          "phonemes": "t u ː ˦ ˷ ʃ"
+        },
+        {
+          "word": "máak",
+          "phonemes": "m a ː ˦ k"
+        },
+        {
+          "word": "junp'éel",
+          "phonemes": "h u n pʼ e ː ˦ l"
+        },
+        {
+          "word": "yéetel",
+          "phonemes": "j e ː ˦ t e l"
+        },
+        {
+          "word": "kíimil",
+          "phonemes": "k i ː ˦ m i l"
+        },
+        {
+          "word": "juntúul",
+          "phonemes": "h u n t u ː ˦ l"
+        },
+        {
+          "word": "yaan",
+          "phonemes": "j a ː ˨ n"
+        },
+        {
+          "word": "teech",
+          "phonemes": "t e ː ˨ tʃ"
+        },
+        {
+          "word": "xook",
+          "phonemes": "ʃ o ː ˨ k"
+        },
+        {
+          "word": "k'iin",
+          "phonemes": "kʼ i ː ˨ n"
+        },
+        {
+          "word": "tuukul",
+          "phonemes": "t u ː ˨ k u l"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeiklmnopstuw]",
+          "ejectives": "[kpt]",
+          "apostrophe": "[’'‘`ʻ]"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "ɓ",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 0.5
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 2.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 2.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({ejectives})",
+            "to": "\\1ʼ",
+            "weight": 3.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{ejectives}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "tʃʼ",
+            "weight": 3.0,
+            "follow": "h{apostrophe}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "h",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tsʼ",
+            "weight": 3.0,
+            "follow": "z{apostrophe}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "z",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "a ː ˨",
+            "weight": 2.0,
+            "follow": "a"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 2.0,
+            "precede": "a"
+          },
+          {
+            "from": "e",
+            "to": "e ː ˨",
+            "weight": 2.0,
+            "follow": "e"
+          },
+          {
+            "from": "e",
+            "to": "",
+            "weight": 2.0,
+            "precede": "e"
+          },
+          {
+            "from": "i",
+            "to": "i ː ˨",
+            "weight": 2.0,
+            "follow": "i"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 2.0,
+            "precede": "i"
+          },
+          {
+            "from": "o",
+            "to": "o ː ˨",
+            "weight": 2.0,
+            "follow": "o"
+          },
+          {
+            "from": "o",
+            "to": "",
+            "weight": 2.0,
+            "precede": "o"
+          },
+          {
+            "from": "u",
+            "to": "u ː ˨",
+            "weight": 2.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 2.0,
+            "precede": "u"
+          },
+          {
+            "from": "á",
+            "to": "a ː ˦",
+            "weight": 2.0,
+            "follow": "a"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 2.0,
+            "precede": "á",
+            "comment": "clean-up"
+          },
+          {
+            "from": "é",
+            "to": "e ː ˦",
+            "weight": 2.0,
+            "follow": "e"
+          },
+          {
+            "from": "e",
+            "to": "",
+            "weight": 2.0,
+            "precede": "é",
+            "comment": "clean-up"
+          },
+          {
+            "from": "í",
+            "to": "i ː ˦",
+            "weight": 2.0,
+            "follow": "i"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 2.0,
+            "precede": "í",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ó",
+            "to": "o ː ˦",
+            "weight": 2.0,
+            "follow": "o"
+          },
+          {
+            "from": "o",
+            "to": "",
+            "weight": 2.0,
+            "precede": "ó",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ú",
+            "to": "u ː ˦",
+            "weight": 2.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 2.0,
+            "precede": "ú",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "a ː ˦ ˷",
+            "weight": 2.0,
+            "follow": "{apostrophe}a"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 2.0,
+            "precede": "a",
+            "follow": "a",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 2.0,
+            "precede": "a{apostrophe}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "e",
+            "to": "e ː ˦ ˷",
+            "weight": 2.0,
+            "follow": "{apostrophe}e"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 2.0,
+            "precede": "e",
+            "follow": "e",
+            "comment": "clean-up"
+          },
+          {
+            "from": "e",
+            "to": "",
+            "weight": 2.0,
+            "precede": "e{apostrophe}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "i ː ˦ ˷",
+            "weight": 2.0,
+            "follow": "{apostrophe}i"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 2.0,
+            "precede": "i",
+            "follow": "i",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 2.0,
+            "precede": "i{apostrophe}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "o",
+            "to": "o ː ˦ ˷",
+            "weight": 2.0,
+            "follow": "{apostrophe}o"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 2.0,
+            "precede": "o",
+            "follow": "o",
+            "comment": "clean-up"
+          },
+          {
+            "from": "o",
+            "to": "",
+            "weight": 2.0,
+            "precede": "o{apostrophe}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "u ː ˦ ˷",
+            "weight": 2.0,
+            "follow": "{apostrophe}u"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 2.0,
+            "precede": "u",
+            "follow": "u",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 2.0,
+            "precede": "u{apostrophe}",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

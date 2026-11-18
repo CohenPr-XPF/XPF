@@ -1,0 +1,442 @@
+{
+  "metadata": {
+    "code": "os",
+    "name": "Ossetic",
+    "family": "Indo-European,Indo-Iranian,Iranian,Eastern,Northeastern",
+    "macroarea": "Eurasia",
+    "compromised": {
+      "sounds": "u|w|ʷ",
+      "note": "orthographically ambiguous consonant gemination"
+    },
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "абана",
+          "phonemes": "a b a n a",
+          "comment": "а"
+        },
+        {
+          "word": "лӕсӕг",
+          "phonemes": "l æ s æ ɡ",
+          "comment": "ӕ"
+        },
+        {
+          "word": "бабыз",
+          "phonemes": "b a b ɨ z",
+          "comment": "б"
+        },
+        {
+          "word": "авд",
+          "phonemes": "a v d",
+          "comment": "в"
+        },
+        {
+          "word": "горӕт",
+          "phonemes": "ɡ o r æ t",
+          "comment": "г"
+        },
+        {
+          "word": "гуырдзыстон",
+          "phonemes": "ɡʷ ɨ r dz ɨ s t o n",
+          "comment": "гу"
+        },
+        {
+          "word": "гъог",
+          "phonemes": "ʁ o ɡ",
+          "comment": "гъ"
+        },
+        {
+          "word": "аргъуан",
+          "phonemes": "a r ʁʷ a n",
+          "comment": "гъу"
+        },
+        {
+          "word": "дӕндаг",
+          "phonemes": "d æ n d a ɡ",
+          "comment": "д"
+        },
+        {
+          "word": "денджыз",
+          "phonemes": "d e n dʒ ɨ z",
+          "comment": "дж"
+        },
+        {
+          "word": "дзуг",
+          "phonemes": "dz u ɡ",
+          "comment": "дз"
+        },
+        {
+          "word": "ефс",
+          "phonemes": "e f s",
+          "comment": "е"
+        },
+        {
+          "word": "змис",
+          "phonemes": "z m i s",
+          "comment": "з"
+        },
+        {
+          "word": "игӕр",
+          "phonemes": "i ɡ æ r",
+          "comment": "и"
+        },
+        {
+          "word": "айкӕ",
+          "phonemes": "a j k æ",
+          "comment": "й"
+        },
+        {
+          "word": "калак",
+          "phonemes": "k a l a k",
+          "comment": "к"
+        },
+        {
+          "word": "куыдз",
+          "phonemes": "kʷ ɨ dz",
+          "comment": "ку"
+        },
+        {
+          "word": "къамбец",
+          "phonemes": "kʼ a m b e ts",
+          "comment": "къ"
+        },
+        {
+          "word": "къуыри",
+          "phonemes": "kʷʼ ɨ r i",
+          "comment": "къу"
+        },
+        {
+          "word": "лӕг",
+          "phonemes": "l æ ɡ",
+          "comment": "л"
+        },
+        {
+          "word": "майрӕмбон",
+          "phonemes": "m a j r æ m b o n",
+          "comment": "м"
+        },
+        {
+          "word": "ном",
+          "phonemes": "n o m",
+          "comment": "н"
+        },
+        {
+          "word": "ирон",
+          "phonemes": "i r o n",
+          "comment": "о"
+        },
+        {
+          "word": "поезд",
+          "phonemes": "p o e z d",
+          "comment": "п"
+        },
+        {
+          "word": "пълан",
+          "phonemes": "pʼ l a n",
+          "comment": "пъ"
+        },
+        {
+          "word": "расыг",
+          "phonemes": "r a s ɨ ɡ",
+          "comment": "р"
+        },
+        {
+          "word": "сиахс",
+          "phonemes": "s i a χ s",
+          "comment": "с"
+        },
+        {
+          "word": "тута",
+          "phonemes": "t u t a",
+          "comment": "т"
+        },
+        {
+          "word": "стъалы",
+          "phonemes": "s tʼ a l ɨ",
+          "comment": "тъ"
+        },
+        {
+          "word": "узун",
+          "phonemes": "u z u n",
+          "comment": "у"
+        },
+        {
+          "word": "фарст",
+          "phonemes": "f a r s t",
+          "comment": "ф"
+        },
+        {
+          "word": "хох",
+          "phonemes": "χ o χ",
+          "comment": "х"
+        },
+        {
+          "word": "хуыцау",
+          "phonemes": "χʷ ɨ ts a u",
+          "comment": "ху"
+        },
+        {
+          "word": "хъӕд",
+          "phonemes": "q æ d",
+          "comment": "хъ"
+        },
+        {
+          "word": "тӕрхъус",
+          "phonemes": "t æ r qʷ s",
+          "comment": "хъу"
+        },
+        {
+          "word": "цыхт",
+          "phonemes": "ts ɨ χ t",
+          "comment": "ц"
+        },
+        {
+          "word": "арцъиу",
+          "phonemes": "a r tsʼ i u",
+          "comment": "цъ"
+        },
+        {
+          "word": "чиныг",
+          "phonemes": "tʃ i n ɨ ɡ",
+          "comment": "ч"
+        },
+        {
+          "word": "чъерами",
+          "phonemes": "tʃʼ e r a m i",
+          "comment": "чъ"
+        },
+        {
+          "word": "уырыдзы",
+          "phonemes": "u ɨ r ɨ dz ɨ",
+          "comment": "ы"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "can-harden": "[гх]",
+          "can-labialize": "(г|к|х|гъ|къ|хъ)",
+          "punctuation": "['’-]",
+          "ejectives": "(p|t|k|ts|tʃ)",
+          "labialized": "(k|ɡ|q|χ|ʁ)"
+        },
+        "sub": [
+          {
+            "from": "а",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "ӕ",
+            "to": "æ",
+            "weight": 4.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 4.0
+          },
+          {
+            "from": "в",
+            "to": "v",
+            "weight": 4.0
+          },
+          {
+            "from": "г",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "д",
+            "to": "d",
+            "weight": 4.0
+          },
+          {
+            "from": "е",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "з",
+            "to": "z",
+            "weight": 4.0
+          },
+          {
+            "from": "и",
+            "to": "i",
+            "weight": 4.0
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 4.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 4.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 4.0
+          },
+          {
+            "from": "о",
+            "to": "o",
+            "weight": 4.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 4.0
+          },
+          {
+            "from": "р",
+            "to": "r",
+            "weight": 4.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 4.0
+          },
+          {
+            "from": "т",
+            "to": "t",
+            "weight": 4.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 4.0,
+            "comment": "can be either /u/ or /w/; I selected /u/ as the default; to make /w/ the default..."
+          },
+          {
+            "from": "ф",
+            "to": "f",
+            "weight": 4.0
+          },
+          {
+            "from": "х",
+            "to": "χ",
+            "weight": 4.0
+          },
+          {
+            "from": "ц",
+            "to": "ts",
+            "weight": 4.0
+          },
+          {
+            "from": "ч",
+            "to": "tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ы",
+            "to": "ɨ",
+            "weight": 4.0
+          },
+          {
+            "from": "ъ",
+            "to": "ʼ",
+            "weight": 4.0,
+            "comment": "marks ejectives"
+          },
+          {
+            "from": "{punctuation}",
+            "to": "",
+            "weight": 4.0
+          },
+          {
+            "from": "г",
+            "to": "ʁ",
+            "weight": 6.0,
+            "follow": "ъ"
+          },
+          {
+            "from": "х",
+            "to": "q",
+            "weight": 6.0,
+            "follow": "ъ"
+          },
+          {
+            "from": "ъ",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{can-harden}"
+          },
+          {
+            "from": "д",
+            "to": "dʒ",
+            "weight": 6.0,
+            "follow": "ж"
+          },
+          {
+            "from": "ж",
+            "to": "",
+            "weight": 6.0,
+            "precede": "д",
+            "comment": "clean-up"
+          },
+          {
+            "from": "у",
+            "to": "ʷ",
+            "weight": 8.0,
+            "precede": "{can-labialize}",
+            "comment": "marks labiovelar and labiouvular stops"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "d z",
+            "to": "dz",
+            "weight": 3.0,
+            "comment": "<дз> becomes /dz/"
+          },
+          {
+            "from": "({labialized}) ʷ",
+            "to": "\\1ʷ",
+            "weight": 2.0,
+            "comment": "attaches labialization to preceding phonemes"
+          },
+          {
+            "from": "({ejectives}) ʼ",
+            "to": "\\1ʼ",
+            "weight": 2.0,
+            "comment": "attaches ejectivization to preceding phonemes"
+          },
+          {
+            "from": "k ʼ ʷ",
+            "to": "kʷʼ",
+            "weight": 3.0
+          },
+          {
+            "from": " ʼ ",
+            "to": " @ ",
+            "weight": 1.0,
+            "comment": "rules out unattested ejectivization"
+          },
+          {
+            "from": " ʼ",
+            "to": " @",
+            "weight": 1.0,
+            "comment": "rules out unattested ejectivization"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,421 @@
+{
+  "metadata": {
+    "code": "chf",
+    "name": "Tabasco Chontal",
+    "family": "Mayan,Cholan-Tzeltalan,Cholan,Chol-Chontal",
+    "macroarea": "North America",
+    "compromised": {
+      "sounds": "p’|pʔ|t̪’|t̪ʔ|k’|kʔ"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ac'ä",
+          "phonemes": "a kʼ ɘ"
+        },
+        {
+          "word": "achacha'tu",
+          "phonemes": "a tʃ a tʃ a ʔ t̪ u"
+        },
+        {
+          "word": "ajbobo",
+          "phonemes": "a h b o b o"
+        },
+        {
+          "word": "ajcapumpiyo'",
+          "phonemes": "a h k a p u m p i j o ʔ"
+        },
+        {
+          "word": "ajcotq'uin",
+          "phonemes": "a h k o t̪ kʼ i n"
+        },
+        {
+          "word": "ajlächom",
+          "phonemes": "a h l ɘ tʃ o m"
+        },
+        {
+          "word": "ajman",
+          "phonemes": "a h m a n"
+        },
+        {
+          "word": "ajmococh",
+          "phonemes": "a h m o k o tʃ"
+        },
+        {
+          "word": "ajmitz'it",
+          "phonemes": "a h m i tsʼ i t̪"
+        },
+        {
+          "word": "aranxax",
+          "phonemes": "a ɾ a n ʃ a ʃ"
+        },
+        {
+          "word": "apasote",
+          "phonemes": "a p a s o t̪ e"
+        },
+        {
+          "word": "ayc'uyni",
+          "phonemes": "a j kʼ u j n i"
+        },
+        {
+          "word": "awät",
+          "phonemes": "a w ɘ t̪"
+        },
+        {
+          "word": "a'äctaya",
+          "phonemes": "a ʔ ɘ k t̪ a j a"
+        },
+        {
+          "word": "a'i",
+          "phonemes": "a ʔ i"
+        },
+        {
+          "word": "a'uma'",
+          "phonemes": "a ʔ u m a ʔ"
+        },
+        {
+          "word": "äle'",
+          "phonemes": "ɘ l e ʔ"
+        },
+        {
+          "word": "älib",
+          "phonemes": "ɘ l i b"
+        },
+        {
+          "word": "äq'ue'",
+          "phonemes": "ɘ kʼ e ʔ"
+        },
+        {
+          "word": "bäcä",
+          "phonemes": "b ɘ k ɘ"
+        },
+        {
+          "word": "bucla",
+          "phonemes": "b u k l a"
+        },
+        {
+          "word": "bo'inle",
+          "phonemes": "b o ʔ i n l e"
+        },
+        {
+          "word": "buruxja'",
+          "phonemes": "b u ɾ u ʃ h a ʔ"
+        },
+        {
+          "word": "but'esan",
+          "phonemes": "b u t̪ʼ e s a n"
+        },
+        {
+          "word": "catijunq'uin",
+          "phonemes": "k a t̪ i h u n kʼ i n"
+        },
+        {
+          "word": "cuch",
+          "phonemes": "k u tʃ"
+        },
+        {
+          "word": "cus'an",
+          "phonemes": "k u s ʔ a n"
+        },
+        {
+          "word": "c'ote",
+          "phonemes": "kʼ o t̪ e"
+        },
+        {
+          "word": "c'omelcab",
+          "phonemes": "kʼ o m e l k a b"
+        },
+        {
+          "word": "chicchicna",
+          "phonemes": "tʃ i k tʃ i k n a"
+        },
+        {
+          "word": "chij'oc",
+          "phonemes": "tʃ i h ʔ o k"
+        },
+        {
+          "word": "chinin",
+          "phonemes": "tʃ i n i n"
+        },
+        {
+          "word": "ch'ix",
+          "phonemes": "tʃʼ i ʃ"
+        },
+        {
+          "word": "dali",
+          "phonemes": "d̪ a l i"
+        },
+        {
+          "word": "ej",
+          "phonemes": "e h"
+        },
+        {
+          "word": "ichan",
+          "phonemes": "i tʃ a n"
+        },
+        {
+          "word": "ixquel",
+          "phonemes": "i ʃ k e l"
+        },
+        {
+          "word": "jan",
+          "phonemes": "h a n"
+        },
+        {
+          "word": "jaque",
+          "phonemes": "h a k e"
+        },
+        {
+          "word": "jäyp'exca",
+          "phonemes": "h ɘ j pʼ e ʃ k a"
+        },
+        {
+          "word": "jit'xan",
+          "phonemes": "h i t̪ʼ ʃ a n"
+        },
+        {
+          "word": "jitz'",
+          "phonemes": "h i tsʼ"
+        },
+        {
+          "word": "jut",
+          "phonemes": "h u t̪"
+        },
+        {
+          "word": "ju'",
+          "phonemes": "h u ʔ"
+        },
+        {
+          "word": "lep'",
+          "phonemes": "l e pʼ"
+        },
+        {
+          "word": "liq'uich",
+          "phonemes": "l i kʼ i tʃ"
+        },
+        {
+          "word": "lotän",
+          "phonemes": "l o t̪ ɘ n"
+        },
+        {
+          "word": "lomteq'ue'",
+          "phonemes": "l o m t̪ e kʼ e ʔ"
+        },
+        {
+          "word": "machca",
+          "phonemes": "m a tʃ k a"
+        },
+        {
+          "word": "malu",
+          "phonemes": "m a l u"
+        },
+        {
+          "word": "malujle",
+          "phonemes": "m a l u h l e"
+        },
+        {
+          "word": "ma'läwe",
+          "phonemes": "m a ʔ l ɘ w e"
+        },
+        {
+          "word": "mäc",
+          "phonemes": "m ɘ k"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abeilmnopsuw]",
+          "apostrophe": "['ꞌˈ‘’]",
+          "frontV": "[ie]",
+          "ejec": "[cpt]",
+          "digraph-ejec": "(ch|tz)",
+          "vowels": "[aeiouɘ]"
+        },
+        "sub": [
+          {
+            "from": "ä",
+            "to": "ɘ",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "u{frontV}"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "follow": "{frontV}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "kʼ",
+            "weight": 3.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "p",
+            "to": "pʼ",
+            "weight": 3.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "t",
+            "to": "t̪ʼ",
+            "weight": 3.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{ejec}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "tʃʼ",
+            "weight": 4.0,
+            "follow": "h{apostrophe}"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "c",
+            "follow": "{apostrophe}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "ch",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tsʼ",
+            "weight": 4.0,
+            "follow": "z{apostrophe}"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 4.0,
+            "precede": "t",
+            "follow": "{apostrophe}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "tz",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "kʼ",
+            "weight": 4.0,
+            "follow": "{apostrophe}u{frontV}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "q",
+            "follow": "u{frontV}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 4.0,
+            "precede": "q{apostrophe}",
+            "follow": "{frontV}",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

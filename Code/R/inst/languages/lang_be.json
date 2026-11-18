@@ -1,0 +1,429 @@
+{
+  "metadata": {
+    "code": "be",
+    "name": "Belarusan",
+    "family": "Indo-European,Slavic,East",
+    "macroarea": "Eurasia",
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "іншаземец",
+          "phonemes": "j i n ʃ a zʲ ɛ mʲ ɛ ts"
+        },
+        {
+          "word": "абавязковы",
+          "phonemes": "a b a vʲ a z k o v i"
+        },
+        {
+          "word": "бавоўна",
+          "phonemes": "b a v o u n a"
+        },
+        {
+          "word": "бессмяротны",
+          "phonemes": "bʲ ɛ sʲ ː mʲ a r o t n i"
+        },
+        {
+          "word": "будаванне",
+          "phonemes": "b u d a v a nʲ ː ɛ"
+        },
+        {
+          "word": "вядома",
+          "phonemes": "vʲ a d o m a"
+        },
+        {
+          "word": "гадзіннік",
+          "phonemes": "ɣ a dzʲ i nʲ ː i k"
+        },
+        {
+          "word": "Дар'я",
+          "phonemes": "d a r j a"
+        },
+        {
+          "word": "дзесьці",
+          "phonemes": "dzʲ ɛ sʲ tsʲ i"
+        },
+        {
+          "word": "дзесяцігоддзе",
+          "phonemes": "dzʲ ɛ sʲ a tsʲ i ɣ o dzʲ ː ɛ"
+        },
+        {
+          "word": "жывёла",
+          "phonemes": "ʒ i vʲ o l a"
+        },
+        {
+          "word": "жыццё",
+          "phonemes": "ʒ i tsʲ ː o"
+        },
+        {
+          "word": "заўсёды",
+          "phonemes": "z a u sʲ o d i"
+        },
+        {
+          "word": "князь",
+          "phonemes": "k nʲ a zʲ"
+        },
+        {
+          "word": "любоў",
+          "phonemes": "lʲ u b o u"
+        },
+        {
+          "word": "мінулае",
+          "phonemes": "mʲ i n u l a j ɛ"
+        },
+        {
+          "word": "прыгажун",
+          "phonemes": "p r i ɣ a ʒ u n"
+        },
+        {
+          "word": "спакой",
+          "phonemes": "s p a k o j"
+        },
+        {
+          "word": "Францыі",
+          "phonemes": "f r a n ts i j i"
+        },
+        {
+          "word": "дух",
+          "phonemes": "d u x"
+        },
+        {
+          "word": "час",
+          "phonemes": "tʃ a s"
+        },
+        {
+          "word": "што",
+          "phonemes": "ʃ t o"
+        },
+        {
+          "word": "гэта",
+          "phonemes": "ɣ ɛ t a"
+        },
+        {
+          "word": "паходжання",
+          "phonemes": "p a x o dʒ a nʲ ː a"
+        },
+        {
+          "word": "баяцца",
+          "phonemes": "b a j a ts ː a"
+        },
+        {
+          "word": "коцса",
+          "phonemes": "k o ts s a",
+          "comment": "test nonce word"
+        },
+        {
+          "word": "мітцо",
+          "phonemes": "mʲ i t ts o",
+          "comment": "test nonce word"
+        },
+        {
+          "word": "басса",
+          "phonemes": "b a s ː a",
+          "comment": "test nonce word"
+        },
+        {
+          "word": "мітчо",
+          "phonemes": "mʲ i t tʃ o",
+          "comment": "test nonce word"
+        },
+        {
+          "word": "сярэднявечча",
+          "phonemes": "sʲ a r ɛ d nʲ a vʲ ɛ tʃ ː a"
+        },
+        {
+          "word": "башша",
+          "phonemes": "b a ʃ ː a",
+          "comment": "test nonce word"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "num": "[12]",
+          "gem": "(l|n|t|d|s|z|ʃ|ʒ|tʃ|ts)",
+          "apostrophe": "['ꞌ‘’]",
+          "pal": "(p|b|m|f|v|n|ts|dz|s|z|l|k|x|ɣ)",
+          "pal-out": "(pʲ|bʲ|mʲ|fʲ|vʲ|nʲ|tsʲ|dzʲ|sʲ|zʲ|lʲ|kʲ|xʲ|ɣʲ)"
+        },
+        "sub": [
+          {
+            "from": "а",
+            "to": "a",
+            "weight": 2.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 2.0
+          },
+          {
+            "from": "в",
+            "to": "v",
+            "weight": 2.0
+          },
+          {
+            "from": "г",
+            "to": "ɣ",
+            "weight": 2.0
+          },
+          {
+            "from": "д",
+            "to": "d",
+            "weight": 2.0
+          },
+          {
+            "from": "е",
+            "to": "ʲ1 ɛ",
+            "weight": 2.0,
+            "comment": "indicates palatalization"
+          },
+          {
+            "from": "ё",
+            "to": "ʲ1 o",
+            "weight": 2.0,
+            "comment": "indicates palatalization"
+          },
+          {
+            "from": "ж",
+            "to": "ʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "з",
+            "to": "z",
+            "weight": 2.0
+          },
+          {
+            "from": "і",
+            "to": "ʲ1 i",
+            "weight": 2.0,
+            "comment": "indicates palatalization"
+          },
+          {
+            "from": "й",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "к",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 2.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 2.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 2.0
+          },
+          {
+            "from": "о",
+            "to": "o",
+            "weight": 2.0
+          },
+          {
+            "from": "п",
+            "to": "p",
+            "weight": 2.0
+          },
+          {
+            "from": "р",
+            "to": "r",
+            "weight": 2.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 2.0
+          },
+          {
+            "from": "т",
+            "to": "t",
+            "weight": 2.0
+          },
+          {
+            "from": "у",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "ў",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "ф",
+            "to": "f",
+            "weight": 2.0
+          },
+          {
+            "from": "х",
+            "to": "x",
+            "weight": 2.0
+          },
+          {
+            "from": "ц",
+            "to": "ts",
+            "weight": 2.0
+          },
+          {
+            "from": "ч",
+            "to": "tʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "ш",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "ы",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "ь",
+            "to": "ʲ2",
+            "weight": 2.0,
+            "comment": "indicates palatalization"
+          },
+          {
+            "from": "э",
+            "to": "ɛ",
+            "weight": 2.0
+          },
+          {
+            "from": "ю",
+            "to": "ʲ1 u",
+            "weight": 2.0,
+            "comment": "indicates palatalization"
+          },
+          {
+            "from": "я",
+            "to": "ʲ1 a",
+            "weight": 2.0,
+            "comment": "indicates palatalization"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "no-pala",
+            "weight": 2.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          },
+          {
+            "from": "д",
+            "to": "dʒ",
+            "weight": 3.0,
+            "follow": "ж"
+          },
+          {
+            "from": "ж",
+            "to": "",
+            "weight": 3.0,
+            "precede": "д",
+            "comment": "clean-up"
+          },
+          {
+            "from": "д",
+            "to": "dz",
+            "weight": 4.0,
+            "follow": "з"
+          },
+          {
+            "from": "з",
+            "to": "",
+            "weight": 3.0,
+            "precede": "д",
+            "comment": "clean-up"
+          },
+          {
+            "from": "д",
+            "to": "dzʲ ː",
+            "weight": 5.0,
+            "precede": "д",
+            "follow": "з",
+            "comment": "orthographic exception to gem ipasub with <ддз>"
+          },
+          {
+            "from": "д",
+            "to": "",
+            "weight": 3.0,
+            "follow": "д",
+            "comment": "clean-up"
+          },
+          {
+            "from": "з",
+            "to": "",
+            "weight": 3.0,
+            "precede": "д",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({pal}) ʲ{num}",
+            "to": "\\1ʲ",
+            "weight": 6.0,
+            "comment": "attaches palatalization diacritic to consonant"
+          },
+          {
+            "from": "\\bʲ1\\b",
+            "to": "j",
+            "weight": 5.0,
+            "comment": "changes isolated palatalized diacritic to /j/"
+          },
+          {
+            "from": "\\bʲ2\\b",
+            "to": "",
+            "weight": 5.0,
+            "comment": "deletes palatalization from <ь> when necessary"
+          },
+          {
+            "from": "no-pala",
+            "to": "",
+            "weight": 4.0,
+            "comment": "deletes apostrophe, maintaining non-palatalization"
+          },
+          {
+            "from": "({gem}) \\1ʲ",
+            "to": "\\1ʲ ː",
+            "weight": 3.0,
+            "comment": "gemination when palatalized"
+          },
+          {
+            "from": "({gem}) \\1 ({pal-out})",
+            "to": "\\1ʲ ː \\3",
+            "weight": 4.0,
+            "comment": "gemination when followed by palatalized cons"
+          },
+          {
+            "from": "\\b({gem}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 1.0,
+            "comment": "gemination when non-palatalized"
+          },
+          {
+            "from": "ː j",
+            "to": "ː",
+            "weight": 3.0,
+            "comment": "clean-up redundant palatalization with instances like <ддзе> where palatalized geminated consonant is followed by a palatalization indicator"
+          }
+        ]
+      }
+    }
+  }
+}

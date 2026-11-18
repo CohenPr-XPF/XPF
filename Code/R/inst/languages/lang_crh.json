@@ -1,0 +1,287 @@
+{
+  "metadata": {
+    "code": "crh",
+    "name": "Crimean Tatar",
+    "family": "Turkic,Kipchak,West Kipchak",
+    "macroarea": "Eurasia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "adam",
+          "phonemes": "ɑ d̪ ɑ m",
+          "comment": "a"
+        },
+        {
+          "word": "lâle",
+          "phonemes": "l j ɑ l e",
+          "comment": "â"
+        },
+        {
+          "word": "bina",
+          "phonemes": "b i n ɑ",
+          "comment": "b"
+        },
+        {
+          "word": "cevap",
+          "phonemes": "dʒ e v ɑ p",
+          "comment": "c"
+        },
+        {
+          "word": "çabik",
+          "phonemes": "tʃ ɑ b i k",
+          "comment": "ç"
+        },
+        {
+          "word": "demir",
+          "phonemes": "d̪ e m i r",
+          "comment": "d"
+        },
+        {
+          "word": "suret",
+          "phonemes": "s u r e t̪",
+          "comment": "e"
+        },
+        {
+          "word": "farq",
+          "phonemes": "f ɑ r q",
+          "comment": "f"
+        },
+        {
+          "word": "gece",
+          "phonemes": "ɡ e dʒ e",
+          "comment": "g"
+        },
+        {
+          "word": "ğaddab",
+          "phonemes": "ɣ ɑ d̪ ː ɑ b",
+          "comment": "ğ"
+        },
+        {
+          "word": "hane",
+          "phonemes": "x ɑ n e",
+          "comment": "h"
+        },
+        {
+          "word": "bit",
+          "phonemes": "b i t̪",
+          "comment": "i"
+        },
+        {
+          "word": "çın",
+          "phonemes": "tʃ ɯ n",
+          "comment": "ı"
+        },
+        {
+          "word": "kitap",
+          "phonemes": "k i t̪ ɑ p",
+          "comment": "k"
+        },
+        {
+          "word": "yol",
+          "phonemes": "j o l",
+          "comment": "l"
+        },
+        {
+          "word": "meydan",
+          "phonemes": "m e j d̪ ɑ n",
+          "comment": "m"
+        },
+        {
+          "word": "nas",
+          "phonemes": "n ɑ s",
+          "comment": "n"
+        },
+        {
+          "word": "keñ",
+          "phonemes": "k e ŋ",
+          "comment": "ñ"
+        },
+        {
+          "word": "soy",
+          "phonemes": "s o j",
+          "comment": "o"
+        },
+        {
+          "word": "söz",
+          "phonemes": "s ø z",
+          "comment": "ö"
+        },
+        {
+          "word": "parmaq",
+          "phonemes": "p ɑ r m ɑ q",
+          "comment": "p"
+        },
+        {
+          "word": "qursaq",
+          "phonemes": "q u r s ɑ q",
+          "comment": "q"
+        },
+        {
+          "word": "arqa",
+          "phonemes": "ɑ r q ɑ",
+          "comment": "r"
+        },
+        {
+          "word": "sade",
+          "phonemes": "s ɑ d̪ e",
+          "comment": "s"
+        },
+        {
+          "word": "şey",
+          "phonemes": "ʃ e j",
+          "comment": "ş"
+        },
+        {
+          "word": "tiş",
+          "phonemes": "t̪ i ʃ",
+          "comment": "t"
+        },
+        {
+          "word": "uzun",
+          "phonemes": "u z u n",
+          "comment": "u"
+        },
+        {
+          "word": "sürek",
+          "phonemes": "s y r e k",
+          "comment": "ü"
+        },
+        {
+          "word": "ve",
+          "phonemes": "v e",
+          "comment": "v"
+        },
+        {
+          "word": "yuvmaq",
+          "phonemes": "j u v m ɑ q",
+          "comment": "y"
+        },
+        {
+          "word": "zor",
+          "phonemes": "z o r",
+          "comment": "z"
+        },
+        {
+          "word": "İstanbul",
+          "phonemes": "i s t̪ ɑ n b u l",
+          "comment": "İ"
+        },
+        {
+          "word": "Işqaf",
+          "phonemes": "ɯ ʃ q ɑ f",
+          "comment": "I"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[befiklmnopqrsuvz]",
+          "gem": "(b|dʒ|tʃ|d̪|f|ɡ|ɣ|x|k|l|m|n|ŋ|p|q|r|s|ʃ|t̪|v|j|z)",
+          "misc": "['ꞌˈ‘’-]"
+        },
+        "pre": [
+          {
+            "from": "Iİ",
+            "to": "ıi"
+          }
+        ],
+        "sub": [
+          {
+            "from": "a",
+            "to": "ɑ",
+            "weight": 2.0
+          },
+          {
+            "from": "â",
+            "to": "j ɑ",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "dʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "ç",
+            "to": "tʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "ğ",
+            "to": "ɣ",
+            "weight": 2.0
+          },
+          {
+            "from": "h",
+            "to": "x",
+            "weight": 2.0
+          },
+          {
+            "from": "ı",
+            "to": "ɯ",
+            "weight": 2.0
+          },
+          {
+            "from": "ñ",
+            "to": "ŋ",
+            "weight": 2.0
+          },
+          {
+            "from": "ö",
+            "to": "ø",
+            "weight": 2.0
+          },
+          {
+            "from": "ş",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 2.0
+          },
+          {
+            "from": "ü",
+            "to": "y",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "{misc}",
+            "to": "",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({gem}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

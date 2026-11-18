@@ -1,0 +1,216 @@
+{
+  "metadata": {
+    "code": "jam",
+    "name": "Jamaican Creole",
+    "family": "Creole,English based,Atlantic,Western",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "yu",
+          "phonemes": "j u"
+        },
+        {
+          "word": "chrangga",
+          "phonemes": "tʃ ɹ a ŋ ɡ a"
+        },
+        {
+          "word": "win",
+          "phonemes": "w i n"
+        },
+        {
+          "word": "dem",
+          "phonemes": "d e m"
+        },
+        {
+          "word": "jakit",
+          "phonemes": "dʒ a k i t"
+        },
+        {
+          "word": "shain",
+          "phonemes": "ʃ ai n"
+        },
+        {
+          "word": "fos",
+          "phonemes": "f o s"
+        },
+        {
+          "word": "bout",
+          "phonemes": "b au t"
+        },
+        {
+          "word": "luk",
+          "phonemes": "l u k"
+        },
+        {
+          "word": "op",
+          "phonemes": "o p"
+        },
+        {
+          "word": "zuu",
+          "phonemes": "z u ː"
+        },
+        {
+          "word": "hiit",
+          "phonemes": "h i ː t"
+        },
+        {
+          "word": "raas",
+          "phonemes": "ɹ a ː s"
+        },
+        {
+          "word": "biak",
+          "phonemes": "b ia k"
+        },
+        {
+          "word": "buat",
+          "phonemes": "b ua t"
+        },
+        {
+          "word": "vuot",
+          "phonemes": "v u o t"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[bdfhklmnopstvwzaeiu]",
+          "punct": "['’-]",
+          "longv": "[aiu]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "dʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɹ",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 1.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 2.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "ai",
+            "weight": 2.0,
+            "follow": "i"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 3.0,
+            "precede": "a",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "ua",
+            "weight": 2.0,
+            "follow": "a"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 3.0,
+            "precede": "u",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "ia",
+            "weight": 2.0,
+            "follow": "a"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 3.0,
+            "precede": "i",
+            "comment": "clean-up"
+          },
+          {
+            "from": "o",
+            "to": "au",
+            "weight": 2.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 2.0,
+            "precede": "o",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({longv}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

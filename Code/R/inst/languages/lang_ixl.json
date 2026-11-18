@@ -1,0 +1,258 @@
+{
+  "metadata": {
+    "code": "ixl",
+    "name": "Ixil",
+    "family": "Mayan,Quichean-Mamean,Greater Mamean,Ixilan",
+    "macroarea": "North America",
+    "compromised": {
+      "note": "/ʔ/ not always marked; suspect orthography"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "tchem",
+          "phonemes": "tsʃ e m"
+        },
+        {
+          "word": "tz'itchin",
+          "phonemes": "tsʼ i tsʃ i n"
+        },
+        {
+          "word": "okya",
+          "phonemes": "o k j a"
+        },
+        {
+          "word": "q'aavichil",
+          "phonemes": "qʼ a ː ʋ i tʃ i l"
+        },
+        {
+          "word": "iq'osaki",
+          "phonemes": "i qʼ o s a k i"
+        },
+        {
+          "word": "itx'a-aaki",
+          "phonemes": "i ʈʂʼ a a ː k i"
+        },
+        {
+          "word": "viinqil",
+          "phonemes": "ʋ i ː n q i l"
+        },
+        {
+          "word": "acha'v",
+          "phonemes": "a tʃ a ʔ ʋ"
+        },
+        {
+          "word": "vatzik'",
+          "phonemes": "ʋ a ts i kʼ"
+        },
+        {
+          "word": "saq",
+          "phonemes": "s a q"
+        },
+        {
+          "word": "t'ay",
+          "phonemes": "tʼ a j"
+        },
+        {
+          "word": "al",
+          "phonemes": "a l"
+        },
+        {
+          "word": "tuuqul",
+          "phonemes": "t u ː q u l"
+        },
+        {
+          "word": "chib'",
+          "phonemes": "tʃ i ɓ"
+        },
+        {
+          "word": "b'o's",
+          "phonemes": "ɓ o ʔ s"
+        },
+        {
+          "word": "b'ooq'ol",
+          "phonemes": "ɓ o ː qʼ o l"
+        },
+        {
+          "word": "suutz'",
+          "phonemes": "s u ː tsʼ"
+        },
+        {
+          "word": "poo",
+          "phonemes": "p o ː"
+        },
+        {
+          "word": "q'ejte",
+          "phonemes": "qʼ e h t e"
+        },
+        {
+          "word": "pitx'o",
+          "phonemes": "p i ʈʂʼ o"
+        },
+        {
+          "word": "xo'vitchil",
+          "phonemes": "ʂ o ʔ ʋ i tsʃ i l"
+        },
+        {
+          "word": "kuxh",
+          "phonemes": "k u sʃ"
+        },
+        {
+          "word": "kuruseʼ",
+          "phonemes": "k u ɾ u s e ʔ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aehiklmnopqstu]",
+          "apostrophe": "['ꞌˈ‘’ʼ]",
+          "vowels": "[aeiou]",
+          "h-preceder": "[cx]",
+          "eject": "(k|q|t|tʃ|tsʃ|ʈʂ|ts)"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "ɓ",
+            "weight": 2.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "b",
+            "comment": "clean-up"
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "v",
+            "to": "ʋ",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ʂ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "x",
+            "to": "sʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{h-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ʈʂ",
+            "weight": 3.0,
+            "follow": "x"
+          },
+          {
+            "from": "x",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tsʃ",
+            "weight": 4.0,
+            "follow": "ch"
+          },
+          {
+            "from": "c",
+            "to": "",
+            "weight": 4.0,
+            "precede": "t",
+            "follow": "h",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "tc",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "SEP",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({eject}) ʔ",
+            "to": "\\1ʼ",
+            "weight": 2.0
+          },
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          },
+          {
+            "from": "SEP",
+            "to": "",
+            "weight": 1.0,
+            "comment": "hyphens prohibit the formation of long vowels"
+          }
+        ]
+      }
+    }
+  }
+}

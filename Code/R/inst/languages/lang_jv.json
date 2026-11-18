@@ -1,0 +1,359 @@
+{
+  "metadata": {
+    "code": "jv",
+    "name": "Javanese",
+    "family": "Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Sundic,Javanese",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "abala",
+          "phonemes": "a b a l a",
+          "comment": "a"
+        },
+        {
+          "word": "bulus",
+          "phonemes": "b u l u s",
+          "comment": "b"
+        },
+        {
+          "word": "cucak",
+          "phonemes": "c u c a k",
+          "comment": "c"
+        },
+        {
+          "word": "dados",
+          "phonemes": "d̪ a d̪ o s",
+          "comment": "d"
+        },
+        {
+          "word": "enem",
+          "phonemes": "ɜ n ɜ m",
+          "comment": "e"
+        },
+        {
+          "word": "srengéngé",
+          "phonemes": "s r ɜ ŋ e ŋ e",
+          "comment": "é"
+        },
+        {
+          "word": "sadhèrèk",
+          "phonemes": "s a ɖ ɛ r ɛ k",
+          "comment": "è"
+        },
+        {
+          "word": "gedang",
+          "phonemes": "ɡ ɜ d̪ a ŋ",
+          "comment": "g"
+        },
+        {
+          "word": "hanacaraka",
+          "phonemes": "h a n a c a r a k a",
+          "comment": "h"
+        },
+        {
+          "word": "bithi",
+          "phonemes": "b i ʈ i",
+          "comment": "i"
+        },
+        {
+          "word": "jurang",
+          "phonemes": "ɟ u r a ŋ",
+          "comment": "j"
+        },
+        {
+          "word": "kapak",
+          "phonemes": "k a p a k",
+          "comment": "k"
+        },
+        {
+          "word": "lemu",
+          "phonemes": "l ɜ m u",
+          "comment": "l"
+        },
+        {
+          "word": "mahami",
+          "phonemes": "m a h a m i",
+          "comment": "m"
+        },
+        {
+          "word": "nengen",
+          "phonemes": "n ɜ ŋ ɜ n",
+          "comment": "n"
+        },
+        {
+          "word": "kroto",
+          "phonemes": "k r o t̪ o",
+          "comment": "o"
+        },
+        {
+          "word": "papat",
+          "phonemes": "p a p a t̪",
+          "comment": "p"
+        },
+        {
+          "word": "koq",
+          "phonemes": "k o ʔ",
+          "comment": "q"
+        },
+        {
+          "word": "roro",
+          "phonemes": "r o r o",
+          "comment": "r"
+        },
+        {
+          "word": "susuh",
+          "phonemes": "s u s u h",
+          "comment": "s"
+        },
+        {
+          "word": "teka",
+          "phonemes": "t̪ ɜ k a",
+          "comment": "t"
+        },
+        {
+          "word": "turu",
+          "phonemes": "t̪ u r u",
+          "comment": "u"
+        },
+        {
+          "word": "wana",
+          "phonemes": "w a n a",
+          "comment": "w"
+        },
+        {
+          "word": "yayi",
+          "phonemes": "j a j i",
+          "comment": "y"
+        },
+        {
+          "word": "dhemen",
+          "phonemes": "ɖ ɜ m ɜ n",
+          "comment": "dh"
+        },
+        {
+          "word": "timbel",
+          "phonemes": "t̪ i ᵐb ɜ l",
+          "comment": "mb"
+        },
+        {
+          "word": "ndongèng",
+          "phonemes": "ⁿd̪ o ŋ ɛ ŋ",
+          "comment": "nd"
+        },
+        {
+          "word": "ngalor",
+          "phonemes": "ŋ a l o r",
+          "comment": "ng"
+        },
+        {
+          "word": "banjur",
+          "phonemes": "b a ᶮɟ u r",
+          "comment": "nj"
+        },
+        {
+          "word": "banyu",
+          "phonemes": "b a ɲ u",
+          "comment": "ny"
+        },
+        {
+          "word": "kutha",
+          "phonemes": "k u ʈ a",
+          "comment": "th"
+        },
+        {
+          "word": "randha",
+          "phonemes": "r a ⁿɖ a",
+          "comment": "ndh"
+        },
+        {
+          "word": "panganggo",
+          "phonemes": "p a ŋ a ᵑɡ o",
+          "comment": "ngg"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "alv-stop": "[dt]",
+          "n-follower": "[dgjy]",
+          "n-trigraph": "(dh|gg)",
+          "passthrough": "[abchiklmnoprsuw]"
+        },
+        "sub": [
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 4.0
+          },
+          {
+            "from": "ḍ",
+            "to": "ɖ",
+            "weight": 4.0
+          },
+          {
+            "from": "e",
+            "to": "ɜ",
+            "weight": 4.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 4.0
+          },
+          {
+            "from": "è",
+            "to": "ɛ",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "ɟ",
+            "weight": 4.0
+          },
+          {
+            "from": "ô",
+            "to": "ɔ",
+            "weight": 4.0
+          },
+          {
+            "from": "q",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 4.0
+          },
+          {
+            "from": "ṭ",
+            "to": "ʈ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "d",
+            "to": "ɖ",
+            "weight": 6.0,
+            "follow": "h"
+          },
+          {
+            "from": "t",
+            "to": "ʈ",
+            "weight": 6.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "precede": "{alv-stop}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "m",
+            "to": "ᵐb",
+            "weight": 6.0,
+            "follow": "b"
+          },
+          {
+            "from": "b",
+            "to": "",
+            "weight": 6.0,
+            "precede": "m",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "ⁿd̪",
+            "weight": 6.0,
+            "precede": "n"
+          },
+          {
+            "from": "g",
+            "to": "ŋ",
+            "weight": 6.0,
+            "precede": "n"
+          },
+          {
+            "from": "j",
+            "to": "ᶮɟ",
+            "weight": 6.0,
+            "precede": "n"
+          },
+          {
+            "from": "y",
+            "to": "ɲ",
+            "weight": 6.0,
+            "precede": "n"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 6.0,
+            "follow": "{n-follower}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "ⁿɖ",
+            "weight": 8.0,
+            "precede": "n",
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 8.0,
+            "precede": "nh",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ᵑɡ",
+            "weight": 8.0,
+            "precede": "n",
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 8.0,
+            "precede": "ng",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 8.0,
+            "follow": "{n-trigraph}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0,
+            "comment": "hyphens appear in some Javanese words but do not seem to carry phonetic value"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}

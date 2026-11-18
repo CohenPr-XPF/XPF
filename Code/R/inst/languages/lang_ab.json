@@ -1,0 +1,564 @@
+{
+  "metadata": {
+    "code": "ab",
+    "name": "Abkhaz",
+    "family": "North Caucasian,Northwest,Abkhaz-Abazin",
+    "macroarea": "Eurasia",
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "аҳамҭа",
+          "phonemes": "a ħ a m t a",
+          "comment": "а"
+        },
+        {
+          "word": "бжьба",
+          "phonemes": "b ʒʲ b a",
+          "comment": "б"
+        },
+        {
+          "word": "ваза",
+          "phonemes": "v a z a",
+          "comment": "в"
+        },
+        {
+          "word": "абгаду",
+          "phonemes": "a b ɡ a d w",
+          "comment": "г"
+        },
+        {
+          "word": "адгьыл",
+          "phonemes": "a d ɡʲ ə l",
+          "comment": "гь"
+        },
+        {
+          "word": "агәы",
+          "phonemes": "a ɡʷ ə",
+          "comment": "гә"
+        },
+        {
+          "word": "аӷу",
+          "phonemes": "a ʁ w",
+          "comment": "ӷ"
+        },
+        {
+          "word": "адаӷь",
+          "phonemes": "a d a ʁʲ",
+          "comment": "ӷь"
+        },
+        {
+          "word": "аӷәӷәа",
+          "phonemes": "a ʁʷ ʁʷ a",
+          "comment": "ӷә"
+        },
+        {
+          "word": "дада",
+          "phonemes": "d a d a",
+          "comment": "д"
+        },
+        {
+          "word": "адәқьан",
+          "phonemes": "a dʷ kʲ a n",
+          "comment": "дә"
+        },
+        {
+          "word": "аметан",
+          "phonemes": "a m a tʼ a n",
+          "comment": "е"
+        },
+        {
+          "word": "ажакьа",
+          "phonemes": "a ʒ a kʲʼ a",
+          "comment": "ж"
+        },
+        {
+          "word": "ажьы",
+          "phonemes": "a ʒʲ ə",
+          "comment": "жь"
+        },
+        {
+          "word": "жәохә",
+          "phonemes": "ʒʷ a χʷ",
+          "comment": "жә"
+        },
+        {
+          "word": "абзиа",
+          "phonemes": "a b z j a",
+          "comment": "з"
+        },
+        {
+          "word": "аӡын",
+          "phonemes": "a dz ə n",
+          "comment": "ӡ"
+        },
+        {
+          "word": "аиааира",
+          "phonemes": "a j a a j r a",
+          "comment": "и"
+        },
+        {
+          "word": "акаҳуа",
+          "phonemes": "a kʼ a ħ w a",
+          "comment": "к"
+        },
+        {
+          "word": "ажакьа",
+          "phonemes": "a ʒ a kʲʼ a",
+          "comment": "кь"
+        },
+        {
+          "word": "ашкәакәа",
+          "phonemes": "a ʃ kʷʼ a kʷʼ a",
+          "comment": "кә"
+        },
+        {
+          "word": "ақуҧш",
+          "phonemes": "a k w p ʃ",
+          "comment": "қ"
+        },
+        {
+          "word": "ақалақь",
+          "phonemes": "a k a l a kʲ",
+          "comment": "қь"
+        },
+        {
+          "word": "ақәа",
+          "phonemes": "a kʷ a",
+          "comment": "қә"
+        },
+        {
+          "word": "аҟны",
+          "phonemes": "a qʼ n ə",
+          "comment": "ҟ"
+        },
+        {
+          "word": "иахҟьаны",
+          "phonemes": "j a χ qʲʼ a n ə",
+          "comment": "ҟь"
+        },
+        {
+          "word": "ашәҟәы",
+          "phonemes": "a ʃʷ qʷʼ ə",
+          "comment": "ҟә"
+        },
+        {
+          "word": "лара",
+          "phonemes": "l a r a",
+          "comment": "л"
+        },
+        {
+          "word": "амш",
+          "phonemes": "a m ʃ",
+          "comment": "м"
+        },
+        {
+          "word": "нанҳәа",
+          "phonemes": "n a n ħʷ a",
+          "comment": "н"
+        },
+        {
+          "word": "ақәоура",
+          "phonemes": "a kʷ a w r a",
+          "comment": "о"
+        },
+        {
+          "word": "аплиаж",
+          "phonemes": "a pʼ l j a ʒ",
+          "comment": "п"
+        },
+        {
+          "word": "ацаԥха",
+          "phonemes": "a ts a p χ a",
+          "comment": "ԥ"
+        },
+        {
+          "word": "арашәара",
+          "phonemes": "a r a ʃʷ a r a",
+          "comment": "р"
+        },
+        {
+          "word": "асааҭ",
+          "phonemes": "a s a a t",
+          "comment": "с"
+        },
+        {
+          "word": "аметил",
+          "phonemes": "a m a tʼ j l",
+          "comment": "т"
+        },
+        {
+          "word": "атәыла",
+          "phonemes": "a tʷʼ ə l a",
+          "comment": "тә"
+        },
+        {
+          "word": "иҭабуп",
+          "phonemes": "j t a b w pʼ",
+          "comment": "ҭ"
+        },
+        {
+          "word": "ихаҭәаау",
+          "phonemes": "j χ a tʷ a a w",
+          "comment": "ҭә"
+        },
+        {
+          "word": "уаха",
+          "phonemes": "w a χ a",
+          "comment": "у"
+        },
+        {
+          "word": "афы",
+          "phonemes": "a f ə",
+          "comment": "ф"
+        },
+        {
+          "word": "ахаҿы",
+          "phonemes": "a χ a tʃʼ ə",
+          "comment": "х"
+        },
+        {
+          "word": "ахьы",
+          "phonemes": "a χʲ ə",
+          "comment": "хь"
+        },
+        {
+          "word": "ахәаша",
+          "phonemes": "a χʷ a ʃ a",
+          "comment": "хә"
+        },
+        {
+          "word": "аҳаир",
+          "phonemes": "a ħ a j r",
+          "comment": "ҳ"
+        },
+        {
+          "word": "абҳәа",
+          "phonemes": "a b ħʷ a",
+          "comment": "ҳә"
+        },
+        {
+          "word": "ацара",
+          "phonemes": "a ts a r a",
+          "comment": "ц"
+        },
+        {
+          "word": "аҵла",
+          "phonemes": "a tsʼ l a",
+          "comment": "ҵ"
+        },
+        {
+          "word": "ача",
+          "phonemes": "a tʃʲ a",
+          "comment": "ч"
+        },
+        {
+          "word": "аҷарам",
+          "phonemes": "a tʃʲʼ a r a m",
+          "comment": "ҷ"
+        },
+        {
+          "word": "аҽада",
+          "phonemes": "a tʃ a d a",
+          "comment": "ҽ"
+        },
+        {
+          "word": "аҿы",
+          "phonemes": "a tʃʼ ə",
+          "comment": "ҿ"
+        },
+        {
+          "word": "аҩаша",
+          "phonemes": "a ʡ a ʃ a",
+          "comment": "ш"
+        },
+        {
+          "word": "ашьа",
+          "phonemes": "a ʃʲ a",
+          "comment": "шь"
+        },
+        {
+          "word": "шәара",
+          "phonemes": "ʃʷ a r a",
+          "comment": "шә"
+        },
+        {
+          "word": "ҧхынгәы",
+          "phonemes": "p χ ə n ɡʷ ə",
+          "comment": "ы"
+        },
+        {
+          "word": "ҩба",
+          "phonemes": "ʡ b a",
+          "comment": "ҩ"
+        },
+        {
+          "word": "џон",
+          "phonemes": "dʒ a n",
+          "comment": "џ"
+        },
+        {
+          "word": "аџьыка",
+          "phonemes": "a dʒʲ ə kʼ a",
+          "comment": "џь"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "supraseg-out": "[ʷʲ]",
+          "supraseg": "[ьә]",
+          "labial": "(t|tʼ|d|ʃ|ʒ|k|kʼ|ɡ|qʼ|χ|ʁ|ħ)",
+          "palatal": "(ʒ|dʒ|k|kʼ|ɡ|qʼ|χ|ʁ|ʃ)"
+        },
+        "sub": [
+          {
+            "from": "а",
+            "to": "a",
+            "weight": 4.0
+          },
+          {
+            "from": "б",
+            "to": "b",
+            "weight": 4.0
+          },
+          {
+            "from": "в",
+            "to": "v",
+            "weight": 4.0
+          },
+          {
+            "from": "г",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "ӷ",
+            "to": "ʁ",
+            "weight": 4.0
+          },
+          {
+            "from": "ҕ",
+            "to": "ʁ",
+            "weight": 4.0,
+            "comment": "alternate form of <ӷ>"
+          },
+          {
+            "from": "д",
+            "to": "d",
+            "weight": 4.0
+          },
+          {
+            "from": "е",
+            "to": "a",
+            "weight": 4.0,
+            "comment": "[e] is an allophone of /a/; see @AbChirikba2003, p. 21"
+          },
+          {
+            "from": "ж",
+            "to": "ʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "з",
+            "to": "z",
+            "weight": 4.0
+          },
+          {
+            "from": "ӡ",
+            "to": "dz",
+            "weight": 4.0
+          },
+          {
+            "from": "и",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "к",
+            "to": "kʼ",
+            "weight": 4.0
+          },
+          {
+            "from": "қ",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "ҟ",
+            "to": "qʼ",
+            "weight": 4.0
+          },
+          {
+            "from": "л",
+            "to": "l",
+            "weight": 4.0
+          },
+          {
+            "from": "м",
+            "to": "m",
+            "weight": 4.0
+          },
+          {
+            "from": "н",
+            "to": "n",
+            "weight": 4.0
+          },
+          {
+            "from": "о",
+            "to": "a",
+            "weight": 4.0,
+            "comment": "[o] is an allophone of /a/; see @AbChirikba2003, p. 21"
+          },
+          {
+            "from": "п",
+            "to": "pʼ",
+            "weight": 4.0
+          },
+          {
+            "from": "ԥ",
+            "to": "p",
+            "weight": 4.0
+          },
+          {
+            "from": "ҧ",
+            "to": "p",
+            "weight": 4.0,
+            "comment": "older form of <ԥ>"
+          },
+          {
+            "from": "р",
+            "to": "r",
+            "weight": 4.0
+          },
+          {
+            "from": "с",
+            "to": "s",
+            "weight": 4.0
+          },
+          {
+            "from": "т",
+            "to": "tʼ",
+            "weight": 4.0
+          },
+          {
+            "from": "ҭ",
+            "to": "t",
+            "weight": 4.0
+          },
+          {
+            "from": "у",
+            "to": "w",
+            "weight": 4.0
+          },
+          {
+            "from": "ф",
+            "to": "f",
+            "weight": 4.0
+          },
+          {
+            "from": "х",
+            "to": "χ",
+            "weight": 4.0
+          },
+          {
+            "from": "ҳ",
+            "to": "ħ",
+            "weight": 4.0
+          },
+          {
+            "from": "ц",
+            "to": "ts",
+            "weight": 4.0
+          },
+          {
+            "from": "ҵ",
+            "to": "tsʼ",
+            "weight": 4.0
+          },
+          {
+            "from": "ч",
+            "to": "tʃʲ",
+            "weight": 4.0
+          },
+          {
+            "from": "ҷ",
+            "to": "tʃʲʼ",
+            "weight": 4.0
+          },
+          {
+            "from": "ҽ",
+            "to": "tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ҿ",
+            "to": "tʃʼ",
+            "weight": 4.0
+          },
+          {
+            "from": "ш",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "ы",
+            "to": "ə",
+            "weight": 4.0
+          },
+          {
+            "from": "ҩ",
+            "to": "ʡ",
+            "weight": 4.0
+          },
+          {
+            "from": "џ",
+            "to": "dʒ",
+            "weight": 4.0
+          },
+          {
+            "from": "({supraseg})",
+            "to": "\\1",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "a hyphen with no phonetic value appears in some words"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({labial}) ә",
+            "to": "\\1ʷ",
+            "weight": 2.0
+          },
+          {
+            "from": "({palatal}) ь",
+            "to": "\\1ʲ",
+            "weight": 2.0
+          },
+          {
+            "from": "ʼ({supraseg-out})",
+            "to": "\\1ʼ",
+            "weight": 1.0
+          },
+          {
+            "from": "({supraseg})",
+            "to": "@",
+            "weight": 1.0,
+            "comment": "some combinations aren't attested resulting in duplication of diacritics or certain palatalized and ejectivized phonemes (eg. ɡьә, dzә), thus we don't allow for such transcriptions"
+          },
+          {
+            "from": "tʃʷ",
+            "to": "@",
+            "weight": 1.0,
+            "comment": "combination not attested - no other work-around with the rules"
+          }
+        ]
+      }
+    }
+  }
+}

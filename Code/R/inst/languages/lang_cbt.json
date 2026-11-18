@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "code": "cbt",
+    "name": "Chayahuita",
+    "family": "Cahuapanan",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "paya",
+          "phonemes": "p a j a",
+          "comment": "a"
+        },
+        {
+          "word": "cato",
+          "phonemes": "k a t u",
+          "comment": "c"
+        },
+        {
+          "word": "pochin",
+          "phonemes": "p u tʃ i n",
+          "comment": "ch"
+        },
+        {
+          "word": "tëquën",
+          "phonemes": "t ɨ k ɨ n",
+          "comment": "ë"
+        },
+        {
+          "word": "huachi",
+          "phonemes": "w a tʃ i",
+          "comment": "hu"
+        },
+        {
+          "word": "nipirinhuë",
+          "phonemes": "n i p i ɾ i n w ɨ",
+          "comment": "i"
+        },
+        {
+          "word": "marë'",
+          "phonemes": "m a ɾ ɨ ʔ",
+          "comment": "m"
+        },
+        {
+          "word": "nohuanton",
+          "phonemes": "n u w a n t u n",
+          "comment": "n"
+        },
+        {
+          "word": "itopiso",
+          "phonemes": "i t u p i s u",
+          "comment": "o"
+        },
+        {
+          "word": "piyapi",
+          "phonemes": "p i j a p i",
+          "comment": "p"
+        },
+        {
+          "word": "quëran",
+          "phonemes": "k ɨ ɾ a n",
+          "comment": "qu"
+        },
+        {
+          "word": "iraca",
+          "phonemes": "i ɾ a k a",
+          "comment": "r"
+        },
+        {
+          "word": "sanapiri",
+          "phonemes": "s a n a p i ɾ i",
+          "comment": "s"
+        },
+        {
+          "word": "nisha",
+          "phonemes": "n i ʃ a",
+          "comment": "sh"
+        },
+        {
+          "word": "tëranta",
+          "phonemes": "t ɨ ɾ a n t a",
+          "comment": "t"
+        },
+        {
+          "word": "iyaro",
+          "phonemes": "i j a ɾ u",
+          "comment": "y"
+        },
+        {
+          "word": "i'sha",
+          "phonemes": "i ʔ ʃ a",
+          "comment": "apostrophe"
+        },
+        {
+          "word": "ya",
+          "phonemes": "j a"
+        },
+        {
+          "word": "co",
+          "phonemes": "k u"
+        },
+        {
+          "word": "sa",
+          "phonemes": "s a"
+        },
+        {
+          "word": "noya",
+          "phonemes": "n u j a"
+        },
+        {
+          "word": "ni",
+          "phonemes": "n i"
+        },
+        {
+          "word": "na",
+          "phonemes": "n a"
+        },
+        {
+          "word": "ton",
+          "phonemes": "t u n"
+        },
+        {
+          "word": "hua",
+          "phonemes": "w a"
+        },
+        {
+          "word": "itërin",
+          "phonemes": "i t ɨ ɾ i n"
+        },
+        {
+          "word": "chachin",
+          "phonemes": "tʃ a tʃ i n"
+        },
+        {
+          "word": "pi",
+          "phonemes": "p i"
+        },
+        {
+          "word": "tahuëri",
+          "phonemes": "t a w ɨ ɾ i"
+        },
+        {
+          "word": "chiniquën",
+          "phonemes": "tʃ i n i k ɨ n"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "[ꞌ'ˈ‘’]",
+          "passthrough": "[aimnpst]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 4.0
+          },
+          {
+            "from": "ë",
+            "to": "ɨ",
+            "weight": 4.0
+          },
+          {
+            "from": "o",
+            "to": "u",
+            "weight": 4.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "ch"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 6.0,
+            "follow": "h",
+            "comment": "sh"
+          },
+          {
+            "from": "u",
+            "to": "w",
+            "weight": 6.0,
+            "precede": "h",
+            "comment": "hu"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 6.0,
+            "comment": "clean-up: covers all cases of h"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 6.0,
+            "comment": "qu"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 6.0,
+            "precede": "q",
+            "comment": "clean-up"
+          },
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 2.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "ó",
+            "to": "u",
+            "weight": 2.0
+          },
+          {
+            "from": "ë́",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}

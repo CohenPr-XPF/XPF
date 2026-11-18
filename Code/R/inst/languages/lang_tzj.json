@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "code": "tzj",
+    "name": "Tz'utujil",
+    "family": "Mayan,Quichean-Mamean,Greater Quichean,Quichean,Tzutujil",
+    "macroarea": "North America",
+    "compromised": {
+      "note": "suspect orthography; suspect marking of /ʔ/"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "jar",
+          "phonemes": "χ a r"
+        },
+        {
+          "word": "way",
+          "phonemes": "w a j"
+        },
+        {
+          "word": "ya'",
+          "phonemes": "j a ʔ"
+        },
+        {
+          "word": "kaq'ayiin",
+          "phonemes": "k a qʼ a j i ː n"
+        },
+        {
+          "word": "keem",
+          "phonemes": "k e ː m"
+        },
+        {
+          "word": "ak'",
+          "phonemes": "a kʼ"
+        },
+        {
+          "word": "utziil",
+          "phonemes": "u ts i ː l"
+        },
+        {
+          "word": "ojb'",
+          "phonemes": "o χ pʼ"
+        },
+        {
+          "word": "jamooj",
+          "phonemes": "χ a m o ː χ"
+        },
+        {
+          "word": "ch'ob'ooj",
+          "phonemes": "tʃʼ o pʼ o ː χ"
+        },
+        {
+          "word": "mich'ili",
+          "phonemes": "m i tʃʼ i l i"
+        },
+        {
+          "word": "chooy",
+          "phonemes": "tʃ o ː j"
+        },
+        {
+          "word": "teep",
+          "phonemes": "t e ː p"
+        },
+        {
+          "word": "xuud'",
+          "phonemes": "ʃ u ː tʼ"
+        },
+        {
+          "word": "sootz'",
+          "phonemes": "s o ː tsʼ"
+        },
+        {
+          "word": "k'iy",
+          "phonemes": "kʼ i j"
+        },
+        {
+          "word": "aj",
+          "phonemes": "a χ"
+        },
+        {
+          "word": "achajiloom",
+          "phonemes": "a tʃ a χ i l o ː m"
+        },
+        {
+          "word": "tre",
+          "phonemes": "t r e"
+        },
+        {
+          "word": "chique",
+          "phonemes": "tʃ i q u e"
+        },
+        {
+          "word": "jariꞌ",
+          "phonemes": "χ a r i ʔ"
+        },
+        {
+          "word": "jun",
+          "phonemes": "χ u n"
+        },
+        {
+          "word": "tok",
+          "phonemes": "t o k"
+        },
+        {
+          "word": "wiꞌ",
+          "phonemes": "w i ʔ"
+        },
+        {
+          "word": "pa",
+          "phonemes": "p a"
+        },
+        {
+          "word": "pro",
+          "phonemes": "p r o"
+        },
+        {
+          "word": "winak",
+          "phonemes": "w i n a k"
+        },
+        {
+          "word": "xa",
+          "phonemes": "ʃ a"
+        },
+        {
+          "word": "ma",
+          "phonemes": "m a"
+        },
+        {
+          "word": "arjaꞌ",
+          "phonemes": "a r χ a ʔ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeiklmnopqrstuw]",
+          "apostrophe": "['ꞌˈ‘’]",
+          "implosives": "[bd]",
+          "ejectives": "(k|q|ts|tʃ)",
+          "vowels": "[aeiou]"
+        },
+        "sub": [
+          {
+            "from": "j",
+            "to": "χ",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "b",
+            "to": "pʼ",
+            "weight": 3.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "d",
+            "to": "tʼ",
+            "weight": 3.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{implosives}",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({ejectives}) ʔ",
+            "to": "\\1ʼ",
+            "weight": 2.0
+          },
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

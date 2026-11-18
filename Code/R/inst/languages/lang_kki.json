@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "code": "kki",
+    "name": "Kagulu",
+    "family": "Niger-Congo,Atlantic-Congo,Volta-Congo,Benue-Congo,Bantoid,Southern,Narrow Bantu,East,Northeast Savanna Bantu,Northeast Coastal Bantu,Ruvu",
+    "macroarea": "Africa",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "aseye",
+          "phonemes": "a s e j e"
+        },
+        {
+          "word": "mwana",
+          "phonemes": "m w a n a"
+        },
+        {
+          "word": "baha",
+          "phonemes": "b a h a"
+        },
+        {
+          "word": "dibiki",
+          "phonemes": "d i b i k i"
+        },
+        {
+          "word": "chana",
+          "phonemes": "tʃ a n a"
+        },
+        {
+          "word": "nhechilo",
+          "phonemes": "n̥ e tʃ i l o"
+        },
+        {
+          "word": "ehe",
+          "phonemes": "e h e"
+        },
+        {
+          "word": "nyundo",
+          "phonemes": "ɲ u ⁿd o"
+        },
+        {
+          "word": "mfele",
+          "phonemes": "m f e l e"
+        },
+        {
+          "word": "kwija",
+          "phonemes": "k w i dʒ a"
+        },
+        {
+          "word": "imwedu",
+          "phonemes": "i m w e d u"
+        },
+        {
+          "word": "lumboya",
+          "phonemes": "l u ᵐb o j a"
+        },
+        {
+          "word": "disina",
+          "phonemes": "d i s i n a"
+        },
+        {
+          "word": "mhando",
+          "phonemes": "m̥ a ⁿd o"
+        },
+        {
+          "word": "diganja",
+          "phonemes": "d i ɡ a ⁿdʒ a"
+        },
+        {
+          "word": "munhu",
+          "phonemes": "m u n̥ u"
+        },
+        {
+          "word": "ng'ina",
+          "phonemes": "ŋ i n a"
+        },
+        {
+          "word": "ng'hutwi",
+          "phonemes": "ŋ̥ u t w i"
+        },
+        {
+          "word": "kutunya",
+          "phonemes": "k u t u ɲ a"
+        },
+        {
+          "word": "mapesa",
+          "phonemes": "m a p e s a"
+        },
+        {
+          "word": "kukonga",
+          "phonemes": "k u k o ᵑɡ a"
+        },
+        {
+          "word": "shano",
+          "phonemes": "ʃ a n o"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdefhiklmnopstuw]",
+          "apostrophe": "[''‘’]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "dʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "m",
+            "to": "ᵐb",
+            "weight": 3.0,
+            "follow": "b"
+          },
+          {
+            "from": "b",
+            "to": "",
+            "weight": 3.0,
+            "precede": "m",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ⁿd",
+            "weight": 3.0,
+            "follow": "d"
+          },
+          {
+            "from": "d",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ⁿdʒ",
+            "weight": 3.0,
+            "follow": "j"
+          },
+          {
+            "from": "j",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ᵑɡ",
+            "weight": 3.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "m",
+            "to": "m̥",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "m",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "n̥",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ̥",
+            "weight": 4.0,
+            "follow": "g{apostrophe}h"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 1.0,
+            "precede": "g",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{apostrophe}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 4.0,
+            "follow": "g{apostrophe}"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

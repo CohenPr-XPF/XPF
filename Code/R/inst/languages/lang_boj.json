@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "code": "boj",
+    "name": "Anjam",
+    "family": "Trans-New Guinea,Madang-Adelbert Range,Madang,Rai Coast,Mindjim",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "pulu",
+          "phonemes": "p u l u"
+        },
+        {
+          "word": "bem",
+          "phonemes": "b e m"
+        },
+        {
+          "word": "mandam",
+          "phonemes": "m a n d a m"
+        },
+        {
+          "word": "wau",
+          "phonemes": "w a u"
+        },
+        {
+          "word": "lou",
+          "phonemes": "l o u"
+        },
+        {
+          "word": "tal",
+          "phonemes": "t a l"
+        },
+        {
+          "word": "damu",
+          "phonemes": "d a m u"
+        },
+        {
+          "word": "nam",
+          "phonemes": "n a m"
+        },
+        {
+          "word": "robu",
+          "phonemes": "r o b u"
+        },
+        {
+          "word": "sis",
+          "phonemes": "s i s"
+        },
+        {
+          "word": "qoji",
+          "phonemes": "q o dʑ i"
+        },
+        {
+          "word": "kalil",
+          "phonemes": "k a l i l"
+        },
+        {
+          "word": "gara",
+          "phonemes": "ɡ a r a"
+        },
+        {
+          "word": "ŋauŋ",
+          "phonemes": "ŋ a u ŋ"
+        },
+        {
+          "word": "ñam",
+          "phonemes": "ɲ a m"
+        },
+        {
+          "word": "qe",
+          "phonemes": "q e"
+        },
+        {
+          "word": "yuwal",
+          "phonemes": "j u w a l"
+        },
+        {
+          "word": "iga",
+          "phonemes": "i ɡ a"
+        },
+        {
+          "word": "ebe",
+          "phonemes": "e b e"
+        },
+        {
+          "word": "urat",
+          "phonemes": "u r a t"
+        },
+        {
+          "word": "olo",
+          "phonemes": "o l o"
+        },
+        {
+          "word": "akamqo",
+          "phonemes": "a k a m q o"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeiklmnŋopqrstuw]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "j",
+            "to": "dʑ",
+            "weight": 4.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}

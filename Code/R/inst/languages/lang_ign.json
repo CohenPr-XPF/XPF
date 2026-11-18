@@ -1,0 +1,294 @@
+{
+  "metadata": {
+    "code": "ign",
+    "name": "Ignaciano",
+    "family": "Arawakan,Maipuran,Southern Maipuran,Bolivia-Parana,Moxo",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "eta",
+          "phonemes": "e t a",
+          "comment": "<a>"
+        },
+        {
+          "word": "tási'a",
+          "phonemes": "t a s i ʔ a",
+          "comment": "<á>"
+        },
+        {
+          "word": "juca",
+          "phonemes": "h u k a",
+          "comment": "<c>"
+        },
+        {
+          "word": "achane",
+          "phonemes": "a tʃ a n e",
+          "comment": "<ch>"
+        },
+        {
+          "word": "ema",
+          "phonemes": "e m a",
+          "comment": "<e>"
+        },
+        {
+          "word": "étapa",
+          "phonemes": "e t a p a",
+          "comment": "<é>"
+        },
+        {
+          "word": "tayehe",
+          "phonemes": "t a j e ʔ e",
+          "comment": "<h>"
+        },
+        {
+          "word": "taicha",
+          "phonemes": "t a i tʃ a",
+          "comment": "<i>"
+        },
+        {
+          "word": "víti",
+          "phonemes": "v i t i",
+          "comment": "<í>"
+        },
+        {
+          "word": "jena",
+          "phonemes": "h e n a",
+          "comment": "<j>"
+        },
+        {
+          "word": "juka",
+          "phonemes": "h u k a",
+          "comment": "<k>"
+        },
+        {
+          "word": "tamutu",
+          "phonemes": "t a m u t u",
+          "comment": "<m>"
+        },
+        {
+          "word": "achaneana",
+          "phonemes": "a tʃ a n e a n a",
+          "comment": "<n>"
+        },
+        {
+          "word": "eñi",
+          "phonemes": "e ɲ i",
+          "comment": "<ñ>"
+        },
+        {
+          "word": "puiti",
+          "phonemes": "p u i t i",
+          "comment": "<p>"
+        },
+        {
+          "word": "apaquehe",
+          "phonemes": "a p a k e ʔ e",
+          "comment": "<qu>"
+        },
+        {
+          "word": "apamuriana",
+          "phonemes": "a p a m u ɾ i a n a",
+          "comment": "<r>"
+        },
+        {
+          "word": "esu",
+          "phonemes": "e s u",
+          "comment": "<s>"
+        },
+        {
+          "word": "máurishinuina'ini",
+          "phonemes": "m a u ɾ i ʃ i n u i n a ʔ i n i",
+          "comment": "<sh>"
+        },
+        {
+          "word": "te",
+          "phonemes": "t e",
+          "comment": "<t>"
+        },
+        {
+          "word": "útsutsure",
+          "phonemes": "u ts u ts u ɾ e",
+          "comment": "<ts>"
+        },
+        {
+          "word": "nuti",
+          "phonemes": "n u t i",
+          "comment": "<u>"
+        },
+        {
+          "word": "júkana",
+          "phonemes": "h u k a n a",
+          "comment": "<ú>"
+        },
+        {
+          "word": "vichamuriana",
+          "phonemes": "v i tʃ a m u ɾ i a n a",
+          "comment": "<v>"
+        },
+        {
+          "word": "maye'e",
+          "phonemes": "m a j e ʔ e",
+          "comment": "<y>"
+        },
+        {
+          "word": "naye'e",
+          "phonemes": "n a j e ʔ e",
+          "comment": "apostrophe"
+        },
+        {
+          "word": "me",
+          "phonemes": "m e"
+        },
+        {
+          "word": "apaesa",
+          "phonemes": "a p a e s a"
+        },
+        {
+          "word": "anuma",
+          "phonemes": "a n u m a"
+        },
+        {
+          "word": "namutu",
+          "phonemes": "n a m u t u"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeikmnpstuv]",
+          "apostrophe": "['ꞌ‘’]",
+          "w-follower": "[aáuú]"
+        },
+        "sub": [
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 1.0,
+            "comment": "accents mark stress (not accounted for in this project)"
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 1.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "h",
+            "to": "ʔ",
+            "weight": 1.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 1.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "w",
+            "to": "v",
+            "weight": 1.0,
+            "follow": "{w-follower}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 2.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 2.0,
+            "precede": "q",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 2.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 2.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

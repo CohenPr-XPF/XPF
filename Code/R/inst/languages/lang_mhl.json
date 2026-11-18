@@ -1,0 +1,305 @@
+{
+  "metadata": {
+    "code": "mhl",
+    "name": "Mauwake",
+    "family": "Trans-New Guinea,Madang-Adelbert Range,Adelbert Range,Pihom-Isumrud,Pihom,Kumilan",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "pika",
+          "phonemes": "p i k a"
+        },
+        {
+          "word": "pepek",
+          "phonemes": "p e p e k"
+        },
+        {
+          "word": "urap",
+          "phonemes": "u r a p"
+        },
+        {
+          "word": "sibaur",
+          "phonemes": "s i b au r"
+        },
+        {
+          "word": "bilibalak",
+          "phonemes": "b i l i b a l a k"
+        },
+        {
+          "word": "moma",
+          "phonemes": "m o m a"
+        },
+        {
+          "word": "kema",
+          "phonemes": "k e m a"
+        },
+        {
+          "word": "senam",
+          "phonemes": "s e n a m"
+        },
+        {
+          "word": "fofa",
+          "phonemes": "ɸ o ɸ a"
+        },
+        {
+          "word": "ifa",
+          "phonemes": "i ɸ a"
+        },
+        {
+          "word": "wia",
+          "phonemes": "w i a"
+        },
+        {
+          "word": "auwa",
+          "phonemes": "au w a"
+        },
+        {
+          "word": "kuisow",
+          "phonemes": "k ui s o w"
+        },
+        {
+          "word": "tiira",
+          "phonemes": "t i ː r a"
+        },
+        {
+          "word": "patema",
+          "phonemes": "p a t e m a"
+        },
+        {
+          "word": "menat",
+          "phonemes": "m e n a t"
+        },
+        {
+          "word": "diluw",
+          "phonemes": "d i l u w"
+        },
+        {
+          "word": "duduwa",
+          "phonemes": "d u d u w a"
+        },
+        {
+          "word": "nanar",
+          "phonemes": "n a n a r"
+        },
+        {
+          "word": "anane",
+          "phonemes": "a n a n e"
+        },
+        {
+          "word": "nain",
+          "phonemes": "n ai n"
+        },
+        {
+          "word": "rinai",
+          "phonemes": "r i n ai"
+        },
+        {
+          "word": "sosora",
+          "phonemes": "s o s o r a"
+        },
+        {
+          "word": "ewar",
+          "phonemes": "e w a r"
+        },
+        {
+          "word": "sererek",
+          "phonemes": "s e r e r e k"
+        },
+        {
+          "word": "eesa",
+          "phonemes": "e ː s a"
+        },
+        {
+          "word": "kawus",
+          "phonemes": "k a w u s"
+        },
+        {
+          "word": "lali",
+          "phonemes": "l a l i"
+        },
+        {
+          "word": "elew",
+          "phonemes": "e l e w"
+        },
+        {
+          "word": "kaul",
+          "phonemes": "k au l"
+        },
+        {
+          "word": "konan",
+          "phonemes": "k o n a n"
+        },
+        {
+          "word": "koka",
+          "phonemes": "k o k a"
+        },
+        {
+          "word": "onak",
+          "phonemes": "o n a k"
+        },
+        {
+          "word": "gelemuta",
+          "phonemes": "ɡ e l e m u t a"
+        },
+        {
+          "word": "googok",
+          "phonemes": "ɡ o ː ɡ o k"
+        },
+        {
+          "word": "yaweyaw",
+          "phonemes": "j a w e j a w"
+        },
+        {
+          "word": "omomiya",
+          "phonemes": "o m o m i j a"
+        },
+        {
+          "word": "aakisa",
+          "phonemes": "a ː k i s a"
+        },
+        {
+          "word": "yaaya",
+          "phonemes": "j a ː j a"
+        },
+        {
+          "word": "iina",
+          "phonemes": "i ː n a"
+        },
+        {
+          "word": "siiwa",
+          "phonemes": "s i ː w a"
+        },
+        {
+          "word": "neeke",
+          "phonemes": "n e ː k e"
+        },
+        {
+          "word": "uuma",
+          "phonemes": "u ː m a"
+        },
+        {
+          "word": "puukiya",
+          "phonemes": "p u ː k i j a"
+        },
+        {
+          "word": "piipuae",
+          "phonemes": "p i ː p u ae"
+        },
+        {
+          "word": "wuak",
+          "phonemes": "w u a k"
+        },
+        {
+          "word": "oona",
+          "phonemes": "o ː n a"
+        },
+        {
+          "word": "soomariya",
+          "phonemes": "s o ː m a r i j a"
+        },
+        {
+          "word": "Oo-ya",
+          "phonemes": "o ː j a"
+        },
+        {
+          "word": "kui-iraparowen",
+          "phonemes": "k ui i r a p a r o w e n"
+        },
+        {
+          "word": "uru-urufap",
+          "phonemes": "u r u u r u ɸ a p"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeiklmnoprstuw-]",
+          "vowels": "[aeiou]",
+          "a-follower": "[ieou]"
+        },
+        "sub": [
+          {
+            "from": "f",
+            "to": "ɸ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "a",
+            "to": "ai",
+            "weight": 3.0,
+            "follow": "i"
+          },
+          {
+            "from": "a",
+            "to": "ae",
+            "weight": 3.0,
+            "follow": "e"
+          },
+          {
+            "from": "a",
+            "to": "ao",
+            "weight": 3.0,
+            "follow": "o"
+          },
+          {
+            "from": "a",
+            "to": "au",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "{a-follower}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "a",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "ui",
+            "weight": 3.0,
+            "follow": "i"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 3.0,
+            "precede": "u",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0,
+            "comment": "need an ipasub rule to remove hyphen rather than a sub rule because the rule for vowel length must come first due to morpheme boundaries"
+          }
+        ]
+      }
+    }
+  }
+}

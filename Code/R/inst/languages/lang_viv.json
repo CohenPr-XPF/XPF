@@ -1,0 +1,210 @@
+{
+  "metadata": {
+    "code": "viv",
+    "name": "Iduna",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Western Oceanic,Papuan Tip,Nuclear,North Papuan Mainland-D'Entrecasteaux,Bwaidoga",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "agaimiya",
+          "phonemes": "ɑ ɡ ɑ i m i j ɑ",
+          "comment": "a"
+        },
+        {
+          "word": "babiya",
+          "phonemes": "b ɑ b i j ɑ",
+          "comment": "b"
+        },
+        {
+          "word": "gidadauda",
+          "phonemes": "ɡ i d ɑ d ɑ u d ɑ",
+          "comment": "d"
+        },
+        {
+          "word": "velemo'ena",
+          "phonemes": "v e l e m o ʔ e n ɑ",
+          "comment": "e"
+        },
+        {
+          "word": "fafali",
+          "phonemes": "f ɑ f ɑ l i",
+          "comment": "f"
+        },
+        {
+          "word": "gigayo",
+          "phonemes": "ɡ i ɡ ɑ j o",
+          "comment": "g"
+        },
+        {
+          "word": "hagihagina",
+          "phonemes": "h ɑ ɡ i h ɑ ɡ i n ɑ",
+          "comment": "h"
+        },
+        {
+          "word": "omiꞋiyao",
+          "phonemes": "o m i ʔ i j ɑ o",
+          "comment": "i"
+        },
+        {
+          "word": "keke",
+          "phonemes": "k e k e",
+          "comment": "k"
+        },
+        {
+          "word": "melala",
+          "phonemes": "m e l ɑ l ɑ",
+          "comment": "l"
+        },
+        {
+          "word": "medema",
+          "phonemes": "m e d e m ɑ",
+          "comment": "m"
+        },
+        {
+          "word": "nuwanuwana",
+          "phonemes": "n u w ɑ n u w ɑ n ɑ",
+          "comment": "n"
+        },
+        {
+          "word": "yo'o",
+          "phonemes": "j o ʔ o",
+          "comment": "o"
+        },
+        {
+          "word": "faisewa",
+          "phonemes": "f ɑ i t e w ɑ",
+          "comment": "s"
+        },
+        {
+          "word": "tovetumagana",
+          "phonemes": "t o v e t u m ɑ ɡ ɑ n ɑ",
+          "comment": "t"
+        },
+        {
+          "word": "yamumuna",
+          "phonemes": "j ɑ m u m u n ɑ",
+          "comment": "u"
+        },
+        {
+          "word": "vevine",
+          "phonemes": "v e v i n e",
+          "comment": "v"
+        },
+        {
+          "word": "kwamayoku",
+          "phonemes": "k u ɑ m ɑ j o k u",
+          "comment": "w (C_V)"
+        },
+        {
+          "word": "wowona",
+          "phonemes": "w o w o n ɑ",
+          "comment": "w (normal)"
+        },
+        {
+          "word": "iya'iyaya",
+          "phonemes": "i j ɑ ʔ i j ɑ j ɑ",
+          "comment": "y"
+        },
+        {
+          "word": "toꞋitaveꞋavina",
+          "phonemes": "t o ʔ i t ɑ v e ʔ ɑ v i n ɑ",
+          "comment": "apostrophe"
+        },
+        {
+          "word": "againe",
+          "phonemes": "ɑ ɡ ɑ i n e"
+        },
+        {
+          "word": "ana",
+          "phonemes": "ɑ n ɑ"
+        },
+        {
+          "word": "be",
+          "phonemes": "b e"
+        },
+        {
+          "word": "yana",
+          "phonemes": "j ɑ n ɑ"
+        },
+        {
+          "word": "faꞋina",
+          "phonemes": "f ɑ ʔ i n ɑ"
+        },
+        {
+          "word": "kaliva",
+          "phonemes": "k ɑ l i v ɑ"
+        },
+        {
+          "word": "kadu",
+          "phonemes": "k ɑ d u"
+        },
+        {
+          "word": "tu",
+          "phonemes": "t u"
+        },
+        {
+          "word": "ada",
+          "phonemes": "ɑ d ɑ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "['ꞌ‘’]",
+          "consonant": "[bdfghklmnst]",
+          "vowel": "[aeiou]",
+          "passthrough": "[bdefhiklmnotuvw]"
+        },
+        "sub": [
+          {
+            "from": "a",
+            "to": "ɑ",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "s",
+            "to": "t",
+            "weight": 4.0,
+            "comment": "despite being orthographically distinct, [s] is just an allophone of /t/"
+          },
+          {
+            "from": "w",
+            "to": "u",
+            "weight": 6.0,
+            "precede": "{consonant}",
+            "follow": "{vowel}"
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "some words have a hyphen that has no phonetic value"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "code": "amn",
+    "name": "Amanab",
+    "family": "Trans-New Guinea,Northern,Border,Waris",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "aragag",
+          "phonemes": "a ɾ a ᵑɡ a ᵑɡ",
+          "comment": "a"
+        },
+        {
+          "word": "busog",
+          "phonemes": "ᵐb u s o ᵑɡ",
+          "comment": "b"
+        },
+        {
+          "word": "du",
+          "phonemes": "ⁿd u",
+          "comment": "d"
+        },
+        {
+          "word": "fweskeg",
+          "phonemes": "f w e s k e ᵑɡ",
+          "comment": "e"
+        },
+        {
+          "word": "fak",
+          "phonemes": "f a k",
+          "comment": "f"
+        },
+        {
+          "word": "gog",
+          "phonemes": "ᵑɡ o ᵑɡ",
+          "comment": "g"
+        },
+        {
+          "word": "ehenog",
+          "phonemes": "e h e n o ᵑɡ",
+          "comment": "h"
+        },
+        {
+          "word": "bigisig",
+          "phonemes": "ᵐb i ᵑɡ i s i ᵑɡ",
+          "comment": "i"
+        },
+        {
+          "word": "ka",
+          "phonemes": "k a",
+          "comment": "k"
+        },
+        {
+          "word": "lofug",
+          "phonemes": "ɾ o f u ᵑɡ",
+          "comment": "l"
+        },
+        {
+          "word": "mamug",
+          "phonemes": "m a m u ᵑɡ",
+          "comment": "m"
+        },
+        {
+          "word": "ninog",
+          "phonemes": "n i n o ᵑɡ",
+          "comment": "n"
+        },
+        {
+          "word": "mawang",
+          "phonemes": "m a w a ŋ",
+          "comment": "ng"
+        },
+        {
+          "word": "orug",
+          "phonemes": "o ɾ u ᵑɡ",
+          "comment": "o"
+        },
+        {
+          "word": "pup",
+          "phonemes": "p u p",
+          "comment": "p"
+        },
+        {
+          "word": "rafu",
+          "phonemes": "ɾ a f u",
+          "comment": "r"
+        },
+        {
+          "word": "sumieg",
+          "phonemes": "s u m i e ᵑɡ",
+          "comment": "s"
+        },
+        {
+          "word": "tut",
+          "phonemes": "t u t",
+          "comment": "t"
+        },
+        {
+          "word": "ohumbug",
+          "phonemes": "o h u m ᵐb u ᵑɡ",
+          "comment": "u"
+        },
+        {
+          "word": "wak",
+          "phonemes": "w a k",
+          "comment": "w"
+        },
+        {
+          "word": "yi",
+          "phonemes": "j i",
+          "comment": "y"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aefhikmnopstuw]"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "ᵐb",
+            "weight": 4.0
+          },
+          {
+            "from": "d",
+            "to": "ⁿd",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ᵑɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "l",
+            "to": "ɾ",
+            "weight": 4.0,
+            "comment": "[l] is an allophone of /ɾ/"
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 6.0,
+            "follow": "g",
+            "comment": "<ng>"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<ng> cleanup"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,518 @@
+{
+  "metadata": {
+    "code": "chm",
+    "name": "Mari",
+    "family": "Uralic,Finno-Ugric,Finno-Permic,Finno-Cheremisic,Cheremisic",
+    "macroarea": "Eurasia",
+    "compromised": {
+      "sounds": "n|ɲ|l|ʎ",
+      "note": "/ə/ and /æ/ not always marked"
+    },
+    "default_script": "cyrillic"
+  },
+  "scripts": {
+    "cyrillic": {
+      "verify": [
+        {
+          "word": "ин",
+          "phonemes": "i n",
+          "comment": "и goes to /i/; н goes to /n/"
+        },
+        {
+          "word": "шӹ",
+          "phonemes": "ʃ ə",
+          "comment": "ш goes to /ʃ/; ӹ goes to /ə/"
+        },
+        {
+          "word": "эдем",
+          "phonemes": "e d e m",
+          "comment": "э goes to /e/; д goes to /d/; е goes to /e/; м goes to /m/"
+        },
+        {
+          "word": "да",
+          "phonemes": "d ɑ",
+          "comment": "a goes to /а/"
+        },
+        {
+          "word": "ӹлен",
+          "phonemes": "ə l e n",
+          "comment": "л goes to /l/"
+        },
+        {
+          "word": "тӹштӹ",
+          "phonemes": "t ə ʃ t ə",
+          "comment": "т goes to /t/"
+        },
+        {
+          "word": "ӹдӹрӓмӓш",
+          "phonemes": "ə d ə r æ m æ ʃ",
+          "comment": "р goes to /r/"
+        },
+        {
+          "word": "доно",
+          "phonemes": "d o n o",
+          "comment": "о goes to /o/"
+        },
+        {
+          "word": "марий",
+          "phonemes": "m ɑ r i j",
+          "comment": "й goes to /j/"
+        },
+        {
+          "word": "гыч",
+          "phonemes": "ɡ ɤ tɕ",
+          "comment": "ч goes to /tɕ/"
+        },
+        {
+          "word": "Тыгак",
+          "phonemes": "t ɤ ɡ ɑ k",
+          "comment": "к goes to /k/"
+        },
+        {
+          "word": "Кӧ",
+          "phonemes": "k ø",
+          "comment": "ӧ goes to /ø/"
+        },
+        {
+          "word": "шабдар",
+          "phonemes": "ʃ ɑ b d ɑ r",
+          "comment": "б goes to /b/"
+        },
+        {
+          "word": "веле",
+          "phonemes": "β e l e",
+          "comment": "в goes to /β/"
+        },
+        {
+          "word": "территорижӹ",
+          "phonemes": "t e r r i t o r i ʒ ə",
+          "comment": "ж goes to /ʒ/"
+        },
+        {
+          "word": "изи",
+          "phonemes": "i z i",
+          "comment": "з goes to /z/"
+        },
+        {
+          "word": "еҥ",
+          "phonemes": "j e ŋ",
+          "comment": "е goes to /je/ word-initally; ҥ goes to /ŋ/"
+        },
+        {
+          "word": "вес",
+          "phonemes": "β e s",
+          "comment": "с goes to /s/"
+        },
+        {
+          "word": "улы",
+          "phonemes": "u l ɤ",
+          "comment": "у goes to /u/"
+        },
+        {
+          "word": "финн",
+          "phonemes": "f i n n",
+          "comment": "ф goes to /f/"
+        },
+        {
+          "word": "вуйхалажы",
+          "phonemes": "β u j x ɑ l ɑ ʒ ɤ",
+          "comment": "х goes to /x/"
+        },
+        {
+          "word": "гӹц",
+          "phonemes": "ɡ ə ts",
+          "comment": "ц goes to /ts/"
+        },
+        {
+          "word": "училищым",
+          "phonemes": "u tɕ i l i ɕ ɤ m",
+          "comment": "щ goes to /ɕ/"
+        },
+        {
+          "word": "революций",
+          "phonemes": "r e β o ʎ u ts i j",
+          "comment": "ю goes to /u/"
+        },
+        {
+          "word": "южо",
+          "phonemes": "j u ʒ o",
+          "comment": "ю goes to /ju/ word-initally"
+        },
+        {
+          "word": "пырля",
+          "phonemes": "p ɤ r ʎ ɑ",
+          "comment": "я goes to /ɑ/"
+        },
+        {
+          "word": "якте",
+          "phonemes": "j ɑ k t e",
+          "comment": "я goes to /jɑ/ word-initally"
+        },
+        {
+          "word": "мием",
+          "phonemes": "m i j e m",
+          "comment": "е goes to /je/ after other vowels"
+        },
+        {
+          "word": "июнь",
+          "phonemes": "i j u ɲ",
+          "comment": "ю goes to /ju/ after other vowels; ь does not have a phonemic value"
+        },
+        {
+          "word": "ияш",
+          "phonemes": "i j ɑ ʃ",
+          "comment": "я goes to /jɑ/ after other vowels"
+        },
+        {
+          "word": "приём",
+          "phonemes": "p r i j o m"
+        },
+        {
+          "word": "йӱла",
+          "phonemes": "j y l ɑ"
+        },
+        {
+          "word": "адъютант",
+          "phonemes": "ɑ d j u t ɑ n t"
+        },
+        {
+          "word": "июль",
+          "phonemes": "i j u ʎ"
+        },
+        {
+          "word": "коньяк",
+          "phonemes": "k o ɲ j ɑ k"
+        },
+        {
+          "word": "ляпкаш",
+          "phonemes": "ʎ ɑ p k ɑ ʃ"
+        },
+        {
+          "word": "арня",
+          "phonemes": "ɑ r ɲ ɑ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "pal": "[ьюя]",
+          "glide_preceders": "[аэиоӧуӱыӹъь]",
+          "hard_soft": "[ъь]",
+          "a": "[а]",
+          "ae": "[ӓ]",
+          "b": "[б]",
+          "bilabialfric": "[в]",
+          "g": "[г]",
+          "d": "[д]",
+          "je": "[е]",
+          "jo": "[ё]",
+          "ezh": "[ж]",
+          "z": "[з]",
+          "i": "[и]",
+          "j": "[й]",
+          "k": "[к]",
+          "l": "[л]",
+          "m": "[м]",
+          "n": "[н]",
+          "ng": "[ҥ]",
+          "o": "[о]",
+          "lineo": "[ӧ]",
+          "p": "[п]",
+          "r": "[р]",
+          "s": "[с]",
+          "t": "[т]",
+          "u": "[у]",
+          "y": "[ӱ]",
+          "f": "[ф]",
+          "x": "[х]",
+          "ts": "[ц]",
+          "alveopalatal_ch": "[ч]",
+          "esh": "[ш]",
+          "alveopalatal_sh": "[щ]",
+          "mid_back_unroundedV": "[ы]",
+          "schwa": "[ӹ]",
+          "e": "[э]",
+          "ju": "[ю]",
+          "ja": "[я]"
+        },
+        "sub": [
+          {
+            "from": "{a}",
+            "to": "ɑ",
+            "weight": 1.0
+          },
+          {
+            "from": "{ae}",
+            "to": "æ",
+            "weight": 1.0
+          },
+          {
+            "from": "{b}",
+            "to": "b",
+            "weight": 1.0
+          },
+          {
+            "from": "{bilabialfric}",
+            "to": "β",
+            "weight": 1.0
+          },
+          {
+            "from": "{g}",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "{d}",
+            "to": "d",
+            "weight": 1.0
+          },
+          {
+            "from": "{je}",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "{je}",
+            "to": "j e",
+            "weight": 3.0,
+            "precede": "{glide_preceders}",
+            "comment": "<е> is /je/ word-initially, following vowels, and following the hard and soft sign"
+          },
+          {
+            "from": "{je}",
+            "to": "j e",
+            "weight": 2.0,
+            "precede": "^",
+            "comment": "<е> is /je/ word-initially"
+          },
+          {
+            "from": "{hard_soft}",
+            "to": "",
+            "weight": 2.0,
+            "follow": "{je}",
+            "comment": "clean-up: the hard and soft signs do not hold any phonemic value"
+          },
+          {
+            "from": "{jo}",
+            "to": "j o",
+            "weight": 1.0
+          },
+          {
+            "from": "{ezh}",
+            "to": "ʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "{z}",
+            "to": "z",
+            "weight": 1.0
+          },
+          {
+            "from": "{i}",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "{j}",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "{k}",
+            "to": "k",
+            "weight": 1.0
+          },
+          {
+            "from": "{l}",
+            "to": "l",
+            "weight": 1.0
+          },
+          {
+            "from": "{m}",
+            "to": "m",
+            "weight": 1.0
+          },
+          {
+            "from": "{n}",
+            "to": "n",
+            "weight": 1.0
+          },
+          {
+            "from": "{ng}",
+            "to": "ŋ",
+            "weight": 1.0
+          },
+          {
+            "from": "{o}",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "{lineo}",
+            "to": "ø",
+            "weight": 1.0
+          },
+          {
+            "from": "{p}",
+            "to": "p",
+            "weight": 1.0
+          },
+          {
+            "from": "{r}",
+            "to": "r",
+            "weight": 1.0
+          },
+          {
+            "from": "{s}",
+            "to": "s",
+            "weight": 1.0
+          },
+          {
+            "from": "{t}",
+            "to": "t",
+            "weight": 1.0
+          },
+          {
+            "from": "{u}",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "{y}",
+            "to": "y",
+            "weight": 1.0
+          },
+          {
+            "from": "{f}",
+            "to": "f",
+            "weight": 1.0
+          },
+          {
+            "from": "{x}",
+            "to": "x",
+            "weight": 1.0
+          },
+          {
+            "from": "{ts}",
+            "to": "ts",
+            "weight": 1.0
+          },
+          {
+            "from": "{alveopalatal_ch}",
+            "to": "tɕ",
+            "weight": 1.0
+          },
+          {
+            "from": "{esh}",
+            "to": "ʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "{alveopalatal_sh}",
+            "to": "ɕ",
+            "weight": 1.0
+          },
+          {
+            "from": "{mid_back_unroundedV}",
+            "to": "ɤ",
+            "weight": 1.0
+          },
+          {
+            "from": "{schwa}",
+            "to": "ə",
+            "weight": 1.0
+          },
+          {
+            "from": "{e}",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "{ju}",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "{ju}",
+            "to": "j u",
+            "weight": 3.0,
+            "precede": "{glide_preceders}",
+            "comment": "<ю> is /ju/ word-initially, following vowels, and following the hard and soft sign"
+          },
+          {
+            "from": "{ju}",
+            "to": "j u",
+            "weight": 2.0,
+            "precede": "^",
+            "comment": "<ю> is /ju/ word-initially"
+          },
+          {
+            "from": "{hard_soft}",
+            "to": "",
+            "weight": 2.0,
+            "follow": "{ju}",
+            "comment": "clean-up: the hard and soft signs do not hold any phonemic value"
+          },
+          {
+            "from": "{ja}",
+            "to": "ɑ",
+            "weight": 1.0
+          },
+          {
+            "from": "{ja}",
+            "to": "j ɑ",
+            "weight": 3.0,
+            "precede": "{glide_preceders}",
+            "comment": "<я> is /jɑ/ word-initially, following vowels, and following the hard and soft sign"
+          },
+          {
+            "from": "{ja}",
+            "to": "j ɑ",
+            "weight": 2.0,
+            "precede": "^",
+            "comment": "<я> is /jɑ/ word-initially"
+          },
+          {
+            "from": "{hard_soft}",
+            "to": "",
+            "weight": 2.0,
+            "follow": "{ja}",
+            "comment": "clean-up: the hard and soft signs do not hold any phonemic value"
+          },
+          {
+            "from": "{n}",
+            "to": "ɲ",
+            "weight": 2.0,
+            "follow": "{pal}",
+            "comment": "<н> is /ɲ/ preceding the soft sign, ⟨ю⟩, and ⟨я⟩"
+          },
+          {
+            "from": "ь",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{n}",
+            "comment": "clean-up: the soft sign holds no phonemic value"
+          },
+          {
+            "from": "{l}",
+            "to": "ʎ",
+            "weight": 2.0,
+            "follow": "{pal}",
+            "comment": "<л> is /ʎ/ preceding the soft sign, ⟨ю⟩, and ⟨я⟩"
+          },
+          {
+            "from": "ь",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{l}",
+            "comment": "clean-up: the soft sign holds no phonemic value"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

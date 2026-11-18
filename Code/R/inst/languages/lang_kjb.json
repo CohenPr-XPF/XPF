@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "code": "kjb",
+    "name": "Q'anjob'al",
+    "family": "Mayan,Kanjobalan-Chujean,Kanjobalan,Kanjobal-Jacaltec",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "a'ej",
+          "phonemes": "ʔ a ʔ e x"
+        },
+        {
+          "word": "lajoneb'",
+          "phonemes": "l a x o n e ɓ"
+        },
+        {
+          "word": "mitz'on",
+          "phonemes": "m i tsʼ o n"
+        },
+        {
+          "word": "masanil",
+          "phonemes": "m a s a n i l"
+        },
+        {
+          "word": "lowoq",
+          "phonemes": "l o w o q"
+        },
+        {
+          "word": "k'ewex",
+          "phonemes": "kʼ e w e ʂ"
+        },
+        {
+          "word": "lawuxh",
+          "phonemes": "l a w u ʃ"
+        },
+        {
+          "word": "waykan",
+          "phonemes": "w a j k a n"
+        },
+        {
+          "word": "stxitam",
+          "phonemes": "s tʂ i t a m"
+        },
+        {
+          "word": "Xhuxhep",
+          "phonemes": "ʃ u ʃ e p"
+        },
+        {
+          "word": "al",
+          "phonemes": "ʔ a l"
+        },
+        {
+          "word": "yalan",
+          "phonemes": "j a l a n"
+        },
+        {
+          "word": "heb'",
+          "phonemes": "e ɓ"
+        },
+        {
+          "word": "hemasanil",
+          "phonemes": "e m a s a n i l"
+        },
+        {
+          "word": "q'ax",
+          "phonemes": "qʼ a ʂ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aeiklmnopqstuw]",
+          "vowel": "[aeiou]",
+          "ejective": "(k|q|t|tʃ|tʂ|ts)",
+          "apostrophe": "[''‘’]"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "ɓ",
+            "weight": 2.0,
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "b",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "x",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ʂ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tʂ",
+            "weight": 3.0,
+            "follow": "x"
+          },
+          {
+            "from": "x",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "x",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({vowel})",
+            "to": "ʔ \\1",
+            "weight": 3.0,
+            "precede": "^"
+          },
+          {
+            "from": "({vowel})",
+            "to": "\\1",
+            "weight": 4.0,
+            "precede": "^h",
+            "comment": "<h> indicates that no glottal stop is present [@Lichtman2010, p. 3]"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "^",
+            "follow": "{vowel}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ẍ",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "b",
+            "to": "ɓ",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({ejective}) ʔ",
+            "to": "\\1ʼ",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

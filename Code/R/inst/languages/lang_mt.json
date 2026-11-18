@@ -1,0 +1,692 @@
+{
+  "metadata": {
+    "code": "mt",
+    "name": "Maltese",
+    "family": "Afro-Asiatic,Semitic,Central,South,Arabic",
+    "macroarea": "Eurasia",
+    "compromised": {
+      "sounds": "ts|dz|ʃ|ʒ"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "armla",
+          "phonemes": "a r m l a",
+          "comment": "a"
+        },
+        {
+          "word": "trajbu",
+          "phonemes": "t̪ r aj b u",
+          "comment": "rule: /aj/ diphthong"
+        },
+        {
+          "word": "ħawsel",
+          "phonemes": "ħ aw s e l",
+          "comment": "rule: /aw/ diphthong"
+        },
+        {
+          "word": "bidwi",
+          "phonemes": "b i d̪ w i",
+          "comment": "b"
+        },
+        {
+          "word": "ċirku",
+          "phonemes": "tʃ i r k u",
+          "comment": "rule: <ċ> → /tʃ/"
+        },
+        {
+          "word": "eċċitament",
+          "phonemes": "e tʃ ː i t̪ a m e n t̪",
+          "comment": "rule: <ċċ> → /tʃ ː/"
+        },
+        {
+          "word": "demel",
+          "phonemes": "d̪ e m e l",
+          "comment": "rule: dental d"
+        },
+        {
+          "word": "eżempju",
+          "phonemes": "e z e m p j u",
+          "comment": "e"
+        },
+        {
+          "word": "bewsa",
+          "phonemes": "b ew s a",
+          "comment": "rule: /ew/ diphthong"
+        },
+        {
+          "word": "farfett",
+          "phonemes": "f a r f e t̪ ː",
+          "comment": "f"
+        },
+        {
+          "word": "ġirasol",
+          "phonemes": "dʒ i r a s o l",
+          "comment": "rule: <ġ> → /dʒ/"
+        },
+        {
+          "word": "siġġu",
+          "phonemes": "s i dʒ ː u",
+          "comment": "rule: <ġġ> → /dʒ ː/"
+        },
+        {
+          "word": "gideb",
+          "phonemes": "ɡ i d̪ e b",
+          "comment": "g"
+        },
+        {
+          "word": "jilqagħha",
+          "phonemes": "j i l ʔ a ħ a ː",
+          "comment": "rule: <għ> before the suffix pronoun <ha>"
+        },
+        {
+          "word": "jilqagħhom",
+          "phonemes": "j i l ʔ a ħ o ː m",
+          "comment": "rule: <għ> before the suffix pronoun <hom>"
+        },
+        {
+          "word": "żrieragħ",
+          "phonemes": "z r ɪ ː r a ħ",
+          "comment": "rule: <għ> → /ħ/ word-finally"
+        },
+        {
+          "word": "għadma",
+          "phonemes": "a ː d̪ m a",
+          "comment": "rule: <għ> lengthens following vowels"
+        },
+        {
+          "word": "dagħwa",
+          "phonemes": "d̪ a ː w a",
+          "comment": "rule: <għ> lengthens preceding vowels"
+        },
+        {
+          "word": "għixt",
+          "phonemes": "ej ʃ t̪",
+          "comment": "rule: <għi> → /ej/"
+        },
+        {
+          "word": "bergħud",
+          "phonemes": "b e r ow d̪",
+          "comment": "rule: <għu> → /ow/"
+        },
+        {
+          "word": "ikrah",
+          "phonemes": "i k r a ħ",
+          "comment": "rule: <h> → /ħ/ word-finally"
+        },
+        {
+          "word": "hija",
+          "phonemes": "i ː j a",
+          "comment": "rule: <h> lengthens following vowels"
+        },
+        {
+          "word": "fehmet",
+          "phonemes": "f e ː m e t̪",
+          "comment": "rule: <h> lengthens preceding vowels"
+        },
+        {
+          "word": "ħalib",
+          "phonemes": "ħ a l i ː b",
+          "comment": "ħ"
+        },
+        {
+          "word": "inti",
+          "phonemes": "i n t̪ i",
+          "comment": "i"
+        },
+        {
+          "word": "bniet",
+          "phonemes": "b n ɪ ː t̪",
+          "comment": "rule: <ie> → /ɪː/"
+        },
+        {
+          "word": "kimika",
+          "phonemes": "k i m i k a",
+          "comment": "k"
+        },
+        {
+          "word": "lejla",
+          "phonemes": "l e j l a",
+          "comment": "l"
+        },
+        {
+          "word": "musmar",
+          "phonemes": "m u s m a r",
+          "comment": "m"
+        },
+        {
+          "word": "nazzjon",
+          "phonemes": "n a ts ː j o n",
+          "comment": "n"
+        },
+        {
+          "word": "qofof",
+          "phonemes": "ʔ o f o f",
+          "comment": "o"
+        },
+        {
+          "word": "papra",
+          "phonemes": "p a p r a",
+          "comment": "p"
+        },
+        {
+          "word": "qorti",
+          "phonemes": "ʔ o r t̪ i",
+          "comment": "rule: <q> → /ʔ/"
+        },
+        {
+          "word": "rixa",
+          "phonemes": "r i ʃ a",
+          "comment": "r"
+        },
+        {
+          "word": "sistema",
+          "phonemes": "s i s t̪ e m a",
+          "comment": "s"
+        },
+        {
+          "word": "telaq",
+          "phonemes": "t̪ e l a ʔ",
+          "comment": "rule: dental t"
+        },
+        {
+          "word": "numru",
+          "phonemes": "n u m r u",
+          "comment": "u"
+        },
+        {
+          "word": "nemusa",
+          "phonemes": "n e m u ː s a",
+          "comment": "rule: <u> lengthens as antepenult followed by C V"
+        },
+        {
+          "word": "vuċi",
+          "phonemes": "v u ː tʃ i",
+          "comment": "v"
+        },
+        {
+          "word": "widna",
+          "phonemes": "w i d̪ n a",
+          "comment": "w"
+        },
+        {
+          "word": "xebb",
+          "phonemes": "ʃ e b ː",
+          "comment": "rule: <x> → /ʃ/"
+        },
+        {
+          "word": "żifna",
+          "phonemes": "z i f n a",
+          "comment": "rule: <ż> → /z/"
+        },
+        {
+          "word": "zija",
+          "phonemes": "ts i j a",
+          "comment": "rule: <z> → /t͡s/"
+        },
+        {
+          "word": "azzjoni",
+          "phonemes": "a ts ː j o n i",
+          "comment": "rule: <zz> → /ts ː/"
+        },
+        {
+          "word": "deheb",
+          "phonemes": "d̪ e ː b",
+          "comment": "rule: <V1hV1> → <V1ː>"
+        },
+        {
+          "word": "ragħada",
+          "phonemes": "r a ː d̪ a",
+          "comment": "rule: <V1għV1> → <V1ː>"
+        },
+        {
+          "word": "ikkommunika",
+          "phonemes": "i k ː o m ː u n i k a",
+          "comment": "rule: lengthening of doubled consonants"
+        },
+        {
+          "word": "qrib",
+          "phonemes": "ʔ r i ː b",
+          "comment": "rule: lengthening of penultimate <i>"
+        },
+        {
+          "word": "għarus",
+          "phonemes": "a ː r u ː s",
+          "comment": "rule: lengthening of penultimate <u>"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "pre-j": "[ao]",
+          "pre-w": "[aei]",
+          "anyh": "(għ|h)",
+          "vowel": "(a|e|i|ie|ɪ|o|u)",
+          "highvowel": "[iu]",
+          "glide": "[jw]",
+          "consonant": "[bċdfgġhħjklmnpqrstvwxzż]",
+          "cons-output": "(b|tʃ|d̪|f|ɡ|dʒ|ħ|j|k|l|m|n|p|ʔ|r|s|t̪|v|w|ʃ|z|ts)",
+          "punctuation": "[-'ꞌ‘’]",
+          "passthrough": "[abefħijklmnoprsuvw]"
+        },
+        "sub": [
+          {
+            "from": "à",
+            "to": "a",
+            "weight": 4.0,
+            "follow": "$",
+            "comment": "vowels with grave accents appear word-finally"
+          },
+          {
+            "from": "è",
+            "to": "e",
+            "weight": 4.0,
+            "follow": "$"
+          },
+          {
+            "from": "ì",
+            "to": "i",
+            "weight": 4.0,
+            "follow": "$"
+          },
+          {
+            "from": "ò",
+            "to": "o",
+            "weight": 4.0,
+            "follow": "$"
+          },
+          {
+            "from": "ù",
+            "to": "u",
+            "weight": 4.0,
+            "follow": "$"
+          },
+          {
+            "from": "ċ",
+            "to": "tʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "ġ",
+            "to": "dʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "q",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 4.0
+          },
+          {
+            "from": "u",
+            "to": "u ː",
+            "weight": 6.0,
+            "follow": "{consonant}{vowel}$"
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "z",
+            "to": "ts",
+            "weight": 2.0
+          },
+          {
+            "from": "ż",
+            "to": "z",
+            "weight": 1.9
+          },
+          {
+            "from": "{punctuation}",
+            "to": "",
+            "weight": 4.0
+          },
+          {
+            "from": "a",
+            "to": "aj",
+            "weight": 9.0,
+            "follow": "j",
+            "comment": "<aj>"
+          },
+          {
+            "from": "o",
+            "to": "oj",
+            "weight": 9.0,
+            "follow": "j",
+            "comment": "<oj>"
+          },
+          {
+            "from": "j",
+            "to": "",
+            "weight": 9.0,
+            "precede": "{pre-j}",
+            "comment": "cleanup of j-final digraphs"
+          },
+          {
+            "from": "a",
+            "to": "aw",
+            "weight": 9.0,
+            "follow": "w",
+            "comment": "<aw>"
+          },
+          {
+            "from": "e",
+            "to": "ew",
+            "weight": 9.0,
+            "follow": "w",
+            "comment": "<ew>"
+          },
+          {
+            "from": "i",
+            "to": "iw",
+            "weight": 9.0,
+            "follow": "w",
+            "comment": "<iw>"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 9.0,
+            "precede": "{pre-w}",
+            "comment": "cleanup of w-final digraphs"
+          },
+          {
+            "from": "i",
+            "to": "ɪ ː",
+            "weight": 4.1,
+            "follow": "e",
+            "comment": "<ie>"
+          },
+          {
+            "from": "e",
+            "to": "",
+            "weight": 4.1,
+            "precede": "i",
+            "comment": "<ie> cleanup"
+          },
+          {
+            "from": "ċ",
+            "to": "tʃ REALː",
+            "weight": 2.2,
+            "follow": "ċ",
+            "comment": "<ċċ>; see line 72 re: REALː"
+          },
+          {
+            "from": "ċ",
+            "to": "",
+            "weight": 2.2,
+            "precede": "ċ",
+            "comment": "<ċċ> cleanup"
+          },
+          {
+            "from": "ġ",
+            "to": "dʒ REALː",
+            "weight": 2.2,
+            "follow": "ġ",
+            "comment": "<ġġ>; see line 72 re: REALː"
+          },
+          {
+            "from": "ġ",
+            "to": "",
+            "weight": 2.2,
+            "precede": "ġ",
+            "comment": "<ġġ> cleanup"
+          },
+          {
+            "from": "z",
+            "to": "ts REALː",
+            "weight": 2.2,
+            "follow": "z",
+            "comment": "<zz>; see line 72 re: REALː"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 2.2,
+            "precede": "z",
+            "comment": "<zz> cleanup"
+          },
+          {
+            "from": "i",
+            "to": "ej",
+            "weight": 9.0,
+            "precede": "għ",
+            "comment": "<għi>"
+          },
+          {
+            "from": "u",
+            "to": "ow",
+            "weight": 9.0,
+            "precede": "għ",
+            "comment": "<għu>"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 9.0,
+            "follow": "ħ{highvowel}",
+            "comment": "cleanup of għ-initial trigraphs (1)"
+          },
+          {
+            "from": "ħ",
+            "to": "",
+            "weight": 9.0,
+            "precede": "g",
+            "follow": "{highvowel}",
+            "comment": "cleanup of għ-initial trigraphs (2)"
+          },
+          {
+            "from": "g",
+            "to": "ħ a ː",
+            "weight": 8.0,
+            "follow": "ħha$",
+            "comment": "-ha suffix rules begin here"
+          },
+          {
+            "from": "ħ",
+            "to": "",
+            "weight": 8.0,
+            "precede": "g",
+            "follow": "ha$"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 8.0,
+            "precede": "għ",
+            "follow": "a$"
+          },
+          {
+            "from": "a",
+            "to": "",
+            "weight": 8.0,
+            "precede": "għh",
+            "follow": "$"
+          },
+          {
+            "from": "g",
+            "to": "ħ o ː m",
+            "weight": 8.0,
+            "follow": "ħhom$",
+            "comment": "-hom suffix rules begin here"
+          },
+          {
+            "from": "ħ",
+            "to": "",
+            "weight": 8.0,
+            "precede": "g",
+            "follow": "hom$"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 8.0,
+            "precede": "għ",
+            "follow": "om$"
+          },
+          {
+            "from": "o",
+            "to": "",
+            "weight": 8.0,
+            "precede": "għh",
+            "follow": "m$"
+          },
+          {
+            "from": "m",
+            "to": "",
+            "weight": 8.0,
+            "precede": "għho",
+            "follow": "$"
+          },
+          {
+            "from": "g",
+            "to": "ħ",
+            "weight": 7.0,
+            "follow": "ħ$"
+          },
+          {
+            "from": "ħ",
+            "to": "",
+            "weight": 7.0,
+            "precede": "g",
+            "follow": "$"
+          },
+          {
+            "from": "h",
+            "to": "ħ",
+            "weight": 8.0,
+            "follow": "$"
+          },
+          {
+            "from": "g",
+            "to": "ː",
+            "weight": 7.0,
+            "follow": "ħ."
+          },
+          {
+            "from": "ħ",
+            "to": "",
+            "weight": 7.0,
+            "precede": "g",
+            "follow": "."
+          },
+          {
+            "from": "h",
+            "to": "ː",
+            "weight": 7.0
+          },
+          {
+            "from": "({highvowel})",
+            "to": "\\1 ː",
+            "weight": 6.0,
+            "follow": "({consonant}|għ)$",
+            "comment": "lengthening of high vowel penult"
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowel}) {anyh} \\1",
+            "to": "\\1 ː",
+            "weight": 1.6,
+            "comment": "collapsing of VhV"
+          },
+          {
+            "from": "({vowel}) ː \\1",
+            "to": "\\1 ː",
+            "weight": 1.6,
+            "comment": "collapsing of V ː V"
+          },
+          {
+            "from": "({vowel}) \\1",
+            "to": "\\1 ː",
+            "weight": 1.6,
+            "comment": "collapsing of VV"
+          },
+          {
+            "from": "({vowel}) ː \\1 ː",
+            "to": "\\1 ː",
+            "weight": 0.9,
+            "comment": "collapsing of multiple consecutive long vowels"
+          },
+          {
+            "from": "(ː |ː)ː+",
+            "to": "ː",
+            "weight": 0.5,
+            "comment": "collapsing of multi-length"
+          },
+          {
+            "from": "^({cons-output}) \\1",
+            "to": "\\1 REALː",
+            "weight": 1.6,
+            "comment": "lengthening of word-initial double consonants"
+          },
+          {
+            "from": " ({cons-output}) \\1",
+            "to": " \\1 REALː",
+            "weight": 1.6,
+            "comment": "lengthening of other double consonants (the initial space lets us avoid catching diphthongs)"
+          },
+          {
+            "from": "REALː ː ({vowel})",
+            "to": "REALː \\1 ː",
+            "weight": 1.4,
+            "comment": "should allow for the appropriate establishment of CːVː sequences"
+          },
+          {
+            "from": "REALː",
+            "to": "ː",
+            "weight": 0.9,
+            "comment": "prevents consonant-lengthening ː from getting inappropriately moved by the rule in line 73"
+          },
+          {
+            "from": "({cons-output}) ː ({vowel})",
+            "to": "\\1 \\3 ː",
+            "weight": 1.1,
+            "comment": "fixing length distribution"
+          },
+          {
+            "from": "^ː ({vowel}) ",
+            "to": "\\1 ː ",
+            "weight": 1.1,
+            "comment": "correcting lengthening of word-initial vowels"
+          },
+          {
+            "from": "^ː ({vowel})({cons-output})",
+            "to": "\\1\\3 ː",
+            "weight": 1.1,
+            "comment": "correcting lengthening of word-initial diphthongs"
+          },
+          {
+            "from": "ː({glide})",
+            "to": "ː \\1",
+            "weight": 0.4,
+            "comment": "fixes a few odd cases of <ːj> and <ːw>"
+          }
+        ]
+      }
+    }
+  }
+}

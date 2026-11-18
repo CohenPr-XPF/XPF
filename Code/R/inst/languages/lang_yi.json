@@ -1,0 +1,347 @@
+{
+  "metadata": {
+    "code": "yi",
+    "name": "Yiddish",
+    "family": "Indo-European,Germanic,West,High German,Yiddish",
+    "macroarea": "Eurasia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "az",
+          "phonemes": "a z",
+          "comment": "a goes to /a/; z goes to /z/"
+        },
+        {
+          "word": "dem",
+          "phonemes": "d ɛ m",
+          "comment": "d goes to /d/; e goes to /ɛ/; m goes to /m/"
+        },
+        {
+          "word": "zikh",
+          "phonemes": "z ɪ χ",
+          "comment": "i goes to /ɪ/; kh goes to /χ/"
+        },
+        {
+          "word": "vos",
+          "phonemes": "v ɔ s",
+          "comment": "v goes to /v/; o goes to /ɔ/; s goes to /s/"
+        },
+        {
+          "word": "tsu",
+          "phonemes": "ts ʊ",
+          "comment": "ts goes to /ts/; u goes to /ʊ/"
+        },
+        {
+          "word": "zayn",
+          "phonemes": "z aɪ n",
+          "comment": "ay goes to /aɪ/; n goes to /n/"
+        },
+        {
+          "word": "azoy",
+          "phonemes": "a z ɔɪ",
+          "comment": "oy goes to /ɔɪ/"
+        },
+        {
+          "word": "zey",
+          "phonemes": "z ɛɪ",
+          "comment": "ey goes to /ɛɪ/"
+        },
+        {
+          "word": "yidish",
+          "phonemes": "j ɪ d ɪ ʃ",
+          "comment": "y goes to /j/; sh goes to /ʃ/"
+        },
+        {
+          "word": "der",
+          "phonemes": "d ɛ ɾ",
+          "comment": "r goes to /ɾ/"
+        },
+        {
+          "word": "zhe",
+          "phonemes": "ʒ ɛ",
+          "comment": "zh goes to /ʒ/"
+        },
+        {
+          "word": "birobidzhan",
+          "phonemes": "b ɪ ɾ ɔ b ɪ dʒ a n",
+          "comment": "b goes to /b/; dzh goes to /dʒ/"
+        },
+        {
+          "word": "mentsh",
+          "phonemes": "m ɛ n tʃ",
+          "comment": "tsh goes to /tʃ/"
+        },
+        {
+          "word": "fun",
+          "phonemes": "f ʊ n",
+          "comment": "f goes to /f/"
+        },
+        {
+          "word": "geven",
+          "phonemes": "ɡ ɛ v ɛ n",
+          "comment": "g goes to /g/"
+        },
+        {
+          "word": "hot",
+          "phonemes": "h ɔ t",
+          "comment": "h goes to h; t goes to /t/"
+        },
+        {
+          "word": "keyn",
+          "phonemes": "k ɛɪ n",
+          "comment": "k goes to /k/"
+        },
+        {
+          "word": "ale",
+          "phonemes": "a l ɛ",
+          "comment": "l goes to /l/"
+        },
+        {
+          "word": "shprakh",
+          "phonemes": "ʃ p ɾ a χ",
+          "comment": "p goes to /p/"
+        },
+        {
+          "word": "un",
+          "phonemes": "ʊ n"
+        },
+        {
+          "word": "a",
+          "phonemes": "a"
+        },
+        {
+          "word": "di",
+          "phonemes": "d ɪ"
+        },
+        {
+          "word": "in",
+          "phonemes": "ɪ n"
+        },
+        {
+          "word": "iz",
+          "phonemes": "ɪ z"
+        },
+        {
+          "word": "mit",
+          "phonemes": "m ɪ t"
+        },
+        {
+          "word": "er",
+          "phonemes": "ɛ ɾ"
+        },
+        {
+          "word": "ikh",
+          "phonemes": "ɪ χ"
+        },
+        {
+          "word": "vi",
+          "phonemes": "v ɪ"
+        },
+        {
+          "word": "nisht",
+          "phonemes": "n ɪ ʃ t"
+        },
+        {
+          "word": "dos",
+          "phonemes": "d ɔ s"
+        },
+        {
+          "word": "oyf",
+          "phonemes": "ɔɪ f"
+        },
+        {
+          "word": "mir",
+          "phonemes": "m ɪ ɾ"
+        },
+        {
+          "word": "hobn",
+          "phonemes": "h ɔ b n"
+        },
+        {
+          "word": "men",
+          "phonemes": "m ɛ n"
+        },
+        {
+          "word": "far",
+          "phonemes": "f a ɾ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdfhklmnpstvz]",
+          "yvowel": "[aeo]",
+          "punct": "['ꞌˈ‘’-]"
+        },
+        "sub": [
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "i",
+            "to": "ɪ",
+            "weight": 1.0
+          },
+          {
+            "from": "o",
+            "to": "ɔ",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "u",
+            "to": "ʊ",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "d",
+            "to": "dʒ",
+            "weight": 3.0,
+            "follow": "zh"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 3.0,
+            "precede": "d",
+            "follow": "h",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "dz",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 2.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 2.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "sh"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "follow": "h",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "follow": "ts",
+            "comment": "clean-up"
+          },
+          {
+            "from": "k",
+            "to": "χ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "k",
+            "comment": "clean-up"
+          },
+          {
+            "from": "z",
+            "to": "ʒ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "z",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "aɪ",
+            "weight": 2.0,
+            "follow": "y"
+          },
+          {
+            "from": "e",
+            "to": "ɛɪ",
+            "weight": 2.0,
+            "follow": "y"
+          },
+          {
+            "from": "o",
+            "to": "ɔɪ",
+            "weight": 2.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{yvowel}"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 2.0,
+            "comment": "hyphens and apostrophes are used as they are in English (no phonemic quality)"
+          }
+        ]
+      }
+    }
+  }
+}

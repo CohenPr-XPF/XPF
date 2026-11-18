@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "code": "apu",
+    "name": "Apurinã",
+    "family": "Arawakan,Maipuran,Southern Maipuran,Purus",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "pomama",
+          "phonemes": "p o m a m a"
+        },
+        {
+          "word": "ããtsopa",
+          "phonemes": "ã ː ts o p a"
+        },
+        {
+          "word": "mapowatsa",
+          "phonemes": "m a p o ɰ a ts a"
+        },
+        {
+          "word": "xamuna",
+          "phonemes": "ʃ a m ɨ n a"
+        },
+        {
+          "word": "kaneepa",
+          "phonemes": "k a n e ː p a"
+        },
+        {
+          "word": "kaxiama",
+          "phonemes": "k a ʃ i a m a"
+        },
+        {
+          "word": "kanhĩĩ",
+          "phonemes": "k a ɲ ĩ ː"
+        },
+        {
+          "word": "popũka-ru",
+          "phonemes": "p o p ɨ̃ k a ɾ ɨ"
+        },
+        {
+          "word": "mainharu",
+          "phonemes": "m ai ɲ a ɾ ɨ"
+        },
+        {
+          "word": "yakonero",
+          "phonemes": "j a k o n e ɾ o"
+        },
+        {
+          "word": "potxowaro",
+          "phonemes": "p o tʃ o ɰ a ɾ o"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aãeẽhiĩkmnoõpst]",
+          "vowels": "[ieaɨoĩẽãɨ̃õ]",
+          "i-dip": "[aeo]",
+          "o-dip": "[ai]",
+          "punct": "[ꞌ'ˈ‘ʼ-]"
+        },
+        "sub": [
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "u",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "ũ",
+            "to": "ɨ̃",
+            "weight": 2.0
+          },
+          {
+            "from": "w",
+            "to": "ɰ",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "x"
+          },
+          {
+            "from": "x",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({i-dip})",
+            "to": "\\1i",
+            "weight": 4.0,
+            "follow": "i"
+          },
+          {
+            "from": "i",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{i-dip}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({o-dip})",
+            "to": "\\1o",
+            "weight": 4.0,
+            "follow": "o"
+          },
+          {
+            "from": "o",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{o-dip}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 2.0,
+            "comment": "hyphens and dashes add no phonemic value"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "\\b({vowels}) \\1\\b",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

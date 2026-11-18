@@ -1,0 +1,262 @@
+{
+  "metadata": {
+    "code": "gil",
+    "name": "Kiribati",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Central-Eastern Oceanic,Remote Oceanic,Micronesia,Micronesian Proper,Ikiribati",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "i",
+          "phonemes": "i"
+        },
+        {
+          "word": "a",
+          "phonemes": "a"
+        },
+        {
+          "word": "butiiko",
+          "phonemes": "p u t i ː k o"
+        },
+        {
+          "word": "mwaie",
+          "phonemes": "mˠ a i e"
+        },
+        {
+          "word": "newe",
+          "phonemes": "n e βˠ e"
+        },
+        {
+          "word": "boo",
+          "phonemes": "p o ː"
+        },
+        {
+          "word": "matiuum",
+          "phonemes": "m a t i u ː m"
+        },
+        {
+          "word": "nna",
+          "phonemes": "n ː a"
+        },
+        {
+          "word": "bwe",
+          "phonemes": "pˠ e"
+        },
+        {
+          "word": "robu",
+          "phonemes": "ɾ o p u"
+        },
+        {
+          "word": "reeti",
+          "phonemes": "ɾ e ː t i"
+        },
+        {
+          "word": "mmanii",
+          "phonemes": "m ː a n i ː"
+        },
+        {
+          "word": "tuangnga",
+          "phonemes": "t u a ŋ ː a"
+        },
+        {
+          "word": "kaangaanga",
+          "phonemes": "k a ː ŋ a ː ŋ a"
+        },
+        {
+          "word": "te",
+          "phonemes": "t e"
+        },
+        {
+          "word": "ao",
+          "phonemes": "a o"
+        },
+        {
+          "word": "ni",
+          "phonemes": "n i"
+        },
+        {
+          "word": "bwa",
+          "phonemes": "pˠ a"
+        },
+        {
+          "word": "ae",
+          "phonemes": "a e"
+        },
+        {
+          "word": "na",
+          "phonemes": "n a"
+        },
+        {
+          "word": "ma",
+          "phonemes": "m a"
+        },
+        {
+          "word": "are",
+          "phonemes": "a ɾ e"
+        },
+        {
+          "word": "aki",
+          "phonemes": "a k i"
+        },
+        {
+          "word": "aika",
+          "phonemes": "a i k a"
+        },
+        {
+          "word": "ana",
+          "phonemes": "a n a"
+        },
+        {
+          "word": "iai",
+          "phonemes": "i a i"
+        },
+        {
+          "word": "aomata",
+          "phonemes": "a o m a t a"
+        },
+        {
+          "word": "nako",
+          "phonemes": "n a k o"
+        },
+        {
+          "word": "ake",
+          "phonemes": "a k e"
+        },
+        {
+          "word": "ti",
+          "phonemes": "t i"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[kmntaeiou]",
+          "vowels": "[aeiou]"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "p",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 1.0
+          },
+          {
+            "from": "w",
+            "to": "βˠ",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0
+          },
+          {
+            "from": "b",
+            "to": "pˠ",
+            "weight": 2.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 2.0,
+            "precede": "b",
+            "comment": "clean-up"
+          },
+          {
+            "from": "m",
+            "to": "m ː",
+            "weight": 2.0,
+            "follow": "m"
+          },
+          {
+            "from": "m",
+            "to": "",
+            "weight": 2.0,
+            "precede": "m",
+            "comment": "clean-up"
+          },
+          {
+            "from": "m",
+            "to": "mˠ",
+            "weight": 2.0,
+            "follow": "w"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 2.0,
+            "precede": "m",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "n ː",
+            "weight": 2.0,
+            "follow": "n"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 2.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ŋ ː",
+            "weight": 3.0,
+            "follow": "gng"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "follow": "ng",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 3.0,
+            "precede": "ng",
+            "follow": "g",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

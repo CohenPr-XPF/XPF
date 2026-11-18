@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "code": "car",
+    "name": "Carib",
+    "family": "Carib,Northern,Galibi",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "parana",
+          "phonemes": "p a ɽ a n a",
+          "comment": "a"
+        },
+        {
+          "word": "ikarai'pa",
+          "phonemes": "i k a ɽ ai ʔ p a",
+          "comment": "ai"
+        },
+        {
+          "word": "mamau",
+          "phonemes": "m a m au",
+          "comment": "au"
+        },
+        {
+          "word": "irombo",
+          "phonemes": "i ɽ o ŋ p o",
+          "comment": "b"
+        },
+        {
+          "word": "e'merepy",
+          "phonemes": "e ʔ m e ɽ e p ɨ",
+          "comment": "e"
+        },
+        {
+          "word": "iku'mei'pa",
+          "phonemes": "i k u ʔ m ei ʔ p a",
+          "comment": "ei"
+        },
+        {
+          "word": "ikiririky'pa",
+          "phonemes": "i k i ɽ i ɽ i k ɨ ʔ p a",
+          "comment": "i"
+        },
+        {
+          "word": "jajonto",
+          "phonemes": "j a j o ŋ t o",
+          "comment": "j"
+        },
+        {
+          "word": "kekeika",
+          "phonemes": "k e k ei k a",
+          "comment": "k"
+        },
+        {
+          "word": "mi'mamy",
+          "phonemes": "m i ʔ m a m ɨ",
+          "comment": "m"
+        },
+        {
+          "word": "na'nen",
+          "phonemes": "n a ʔ n e ŋ",
+          "comment": "n"
+        },
+        {
+          "word": "koro'po",
+          "phonemes": "k o ɽ o ʔ p o",
+          "comment": "o"
+        },
+        {
+          "word": "orukoimo",
+          "phonemes": "o ɽ u k oi m o",
+          "comment": "oi"
+        },
+        {
+          "word": "paipa",
+          "phonemes": "p ai p a",
+          "comment": "p"
+        },
+        {
+          "word": "ra'kere",
+          "phonemes": "ɽ a ʔ k e ɽ e",
+          "comment": "r"
+        },
+        {
+          "word": "sese'wu",
+          "phonemes": "s e s e ʔ w u",
+          "comment": "s"
+        },
+        {
+          "word": "tajataja",
+          "phonemes": "t a j a t a j a",
+          "comment": "t"
+        },
+        {
+          "word": "kurumu",
+          "phonemes": "k u ɽ u m u",
+          "comment": "u"
+        },
+        {
+          "word": "paruruipo",
+          "phonemes": "p a ɽ u ɽ ui p o",
+          "comment": "ui"
+        },
+        {
+          "word": "kawiwi",
+          "phonemes": "k a w i w i",
+          "comment": "w"
+        },
+        {
+          "word": "myrypy",
+          "phonemes": "m ɨ ɽ ɨ p ɨ",
+          "comment": "y"
+        },
+        {
+          "word": "kyryi",
+          "phonemes": "k ɨ ɽ ɨi",
+          "comment": "yi"
+        },
+        {
+          "word": "ta'we'ke",
+          "phonemes": "t a ʔ w e ʔ k e",
+          "comment": "apostrophe"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "[ꞌ'ˈ‘’]",
+          "diph-vowel": "[aeɨou]",
+          "nasal-coda": "[pbtdkgs]",
+          "passthrough": "[aeijkmnopstuw]",
+          "nasal": "[mnŋ]"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "p",
+            "weight": 4.0,
+            "precede": "{nasal}"
+          },
+          {
+            "from": "d",
+            "to": "t",
+            "weight": 4.0,
+            "precede": "{nasal}"
+          },
+          {
+            "from": "g",
+            "to": "k",
+            "weight": 4.0,
+            "precede": "{nasal}"
+          },
+          {
+            "from": "ï",
+            "to": "ɨ",
+            "weight": 4.0,
+            "comment": "this letter used in some older orthographies"
+          },
+          {
+            "from": "m",
+            "to": "ŋ",
+            "weight": 4.0,
+            "follow": "{nasal-coda}",
+            "comment": "marks /ŋ/ in syllable codas"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 4.0,
+            "follow": "{nasal-coda}",
+            "comment": "marks /ŋ/ in syllable codas"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 4.0,
+            "follow": "$",
+            "comment": "marks word-final /ŋ/"
+          },
+          {
+            "from": "r",
+            "to": "ɽ",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "ɨ",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "a",
+            "to": "au",
+            "weight": 6.0,
+            "follow": "u",
+            "comment": "au"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 6.0,
+            "precede": "a"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({diph-vowel}) i",
+            "to": "\\1i",
+            "weight": 2.0,
+            "comment": "i-final diphthongs"
+          }
+        ]
+      }
+    }
+  }
+}

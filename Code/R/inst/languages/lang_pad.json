@@ -1,0 +1,242 @@
+{
+  "metadata": {
+    "code": "pad",
+    "name": "Paumarí",
+    "family": "Arauan",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "'ananini",
+          "phonemes": "ʔ a n a n i n i"
+        },
+        {
+          "word": "va'iga",
+          "phonemes": "w a ʔ i ɡ a"
+        },
+        {
+          "word": "viro",
+          "phonemes": "w i ɾ o"
+        },
+        {
+          "word": "varara",
+          "phonemes": "w a ɾ a ɾ a"
+        },
+        {
+          "word": "tato",
+          "phonemes": "t a t o"
+        },
+        {
+          "word": "txika'da'da",
+          "phonemes": "tʃ i k a ɗ a ɗ a"
+        },
+        {
+          "word": "sirisiri",
+          "phonemes": "s i ɾ i s i ɾ i"
+        },
+        {
+          "word": "siho",
+          "phonemes": "s i h o"
+        },
+        {
+          "word": "makha",
+          "phonemes": "m a kʰ a"
+        },
+        {
+          "word": "kasadari",
+          "phonemes": "k a s a d a ɾ i"
+        },
+        {
+          "word": "badava",
+          "phonemes": "b a d a w a"
+        },
+        {
+          "word": "biviri",
+          "phonemes": "b i w i ɾ i"
+        },
+        {
+          "word": "onimanari",
+          "phonemes": "o n i m a n a ɾ i"
+        },
+        {
+          "word": "pati",
+          "phonemes": "p a t i"
+        },
+        {
+          "word": "okajori",
+          "phonemes": "o k a dʒ o ɾ i"
+        },
+        {
+          "word": "'ojoro",
+          "phonemes": "ʔ o dʒ o ɾ o"
+        },
+        {
+          "word": "savaharo",
+          "phonemes": "s a w a h a ɾ o"
+        },
+        {
+          "word": "siri",
+          "phonemes": "s i ɾ i"
+        },
+        {
+          "word": "jabajo",
+          "phonemes": "dʒ a b a dʒ o"
+        },
+        {
+          "word": "jooma",
+          "phonemes": "dʒ o o m a"
+        },
+        {
+          "word": "kaaroma",
+          "phonemes": "k a a ɾ o m a"
+        },
+        {
+          "word": "vaago",
+          "phonemes": "w a a ɡ o"
+        },
+        {
+          "word": "vadi'bako'bako",
+          "phonemes": "w a d i ɓ a k o ɓ a k o"
+        },
+        {
+          "word": "fori",
+          "phonemes": "f o ɾ i"
+        },
+        {
+          "word": "xikotxia",
+          "phonemes": "ʃ i k o tʃ i a"
+        },
+        {
+          "word": "va'ora",
+          "phonemes": "w a ʔ o ɾ a"
+        },
+        {
+          "word": "bana",
+          "phonemes": "b a n a"
+        },
+        {
+          "word": "adani",
+          "phonemes": "a d a n i"
+        },
+        {
+          "word": "kaimoni",
+          "phonemes": "k a i m o n i"
+        },
+        {
+          "word": "ija'ari",
+          "phonemes": "i dʒ a ʔ a ɾ i"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdfhikmnopst]",
+          "apostrophe": "['ꞌˈ‘’]",
+          "h-preceder": "[kt]"
+        },
+        "sub": [
+          {
+            "from": "b",
+            "to": "ɓ",
+            "weight": 3.0,
+            "precede": "{apostrophe}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 3.0,
+            "follow": "b",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "ɗ",
+            "weight": 3.0,
+            "precede": "{apostrophe}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 3.0,
+            "follow": "d",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "dʒ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "v",
+            "to": "w",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "k",
+            "to": "kʰ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "t",
+            "to": "tʰ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{h-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "x"
+          },
+          {
+            "from": "x",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

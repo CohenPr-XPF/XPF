@@ -1,0 +1,506 @@
+{
+  "metadata": {
+    "code": "el",
+    "name": "Greek",
+    "family": "Indo-European,Hellenic,Greek",
+    "macroarea": "Eurasia",
+    "default_script": "greek"
+  },
+  "scripts": {
+    "greek": {
+      "verify": [
+        {
+          "word": "πήρα",
+          "phonemes": "p i ɾ ɐ"
+        },
+        {
+          "word": "µπύρα",
+          "phonemes": "b i ɾ ɐ"
+        },
+        {
+          "word": "φάση",
+          "phonemes": "f ɐ s i"
+        },
+        {
+          "word": "βάση",
+          "phonemes": "v ɐ s i"
+        },
+        {
+          "word": "µόνος",
+          "phonemes": "m o n̪ o s"
+        },
+        {
+          "word": "τείνω",
+          "phonemes": "t̪ i n̪ o"
+        },
+        {
+          "word": "ντύνω",
+          "phonemes": "d̪ i n̪ o"
+        },
+        {
+          "word": "θέµα",
+          "phonemes": "θ ɛ m ɐ"
+        },
+        {
+          "word": "δέµα",
+          "phonemes": "ð ɛ m ɐ"
+        },
+        {
+          "word": "σώα",
+          "phonemes": "s o ɐ"
+        },
+        {
+          "word": "ζώα",
+          "phonemes": "z o ɐ"
+        },
+        {
+          "word": "νόµος",
+          "phonemes": "n̪ o m o s"
+        },
+        {
+          "word": "ρήµα",
+          "phonemes": "ɾ i m ɐ"
+        },
+        {
+          "word": "λίµα",
+          "phonemes": "l i m ɐ"
+        },
+        {
+          "word": "κόµµα",
+          "phonemes": "k o m ɐ"
+        },
+        {
+          "word": "γκάµα",
+          "phonemes": "ɡ ɐ m ɐ"
+        },
+        {
+          "word": "χώµα",
+          "phonemes": "x o m ɐ"
+        },
+        {
+          "word": "γόµα",
+          "phonemes": "ɣ o m ɐ"
+        },
+        {
+          "word": "τον",
+          "phonemes": "t̪ o n̪"
+        },
+        {
+          "word": "καθηγητή",
+          "phonemes": "k ɐ θ i ɣ i t̪ i"
+        },
+        {
+          "word": "φίλο",
+          "phonemes": "f i l o"
+        },
+        {
+          "word": "µου",
+          "phonemes": "m u"
+        },
+        {
+          "word": "την",
+          "phonemes": "t̪ i n̪"
+        },
+        {
+          "word": "ρώτησα",
+          "phonemes": "ɾ o t̪ i s ɐ"
+        },
+        {
+          "word": "καφές",
+          "phonemes": "k ɐ f ɛ s"
+        },
+        {
+          "word": "λεκιάζει",
+          "phonemes": "l ɛ k i ɐ z i"
+        },
+        {
+          "word": "ο",
+          "phonemes": "o"
+        },
+        {
+          "word": "Μάνος",
+          "phonemes": "m ɐ n̪ o s"
+        },
+        {
+          "word": "σηκώθηκε",
+          "phonemes": "s i k o θ i k ɛ"
+        },
+        {
+          "word": "η",
+          "phonemes": "i"
+        },
+        {
+          "word": "πόρτα",
+          "phonemes": "p o ɾ t̪ ɐ"
+        },
+        {
+          "word": "ανοίγει",
+          "phonemes": "ɐ n̪ i ɣ i"
+        },
+        {
+          "word": "ανοίγω",
+          "phonemes": "ɐ n̪ i ɣ o"
+        },
+        {
+          "word": "είναι",
+          "phonemes": "i n̪ ɛ"
+        },
+        {
+          "word": "από",
+          "phonemes": "ɐ p o"
+        },
+        {
+          "word": "ύφασµα",
+          "phonemes": "i f ɐ s m ɐ"
+        },
+        {
+          "word": "δάνειο",
+          "phonemes": "ð ɐ n̪ i o"
+        },
+        {
+          "word": "φυσάει",
+          "phonemes": "f i s ɐ i"
+        },
+        {
+          "word": "περισσότερο",
+          "phonemes": "p ɛ ɾ i s o t̪ ɛ ɾ o"
+        },
+        {
+          "word": "φυσούσε",
+          "phonemes": "f i s u s ɛ"
+        },
+        {
+          "word": "παϊδάκι",
+          "phonemes": "p ɐ i ð ɐ k i"
+        },
+        {
+          "word": "παιδάκι",
+          "phonemes": "p ɛ ð ɐ k i"
+        },
+        {
+          "word": "Ταΰγετος",
+          "phonemes": "t̪ ɐ i ɣ ɛ t̪ o s"
+        },
+        {
+          "word": "αϋπνία",
+          "phonemes": "ɐ i p n̪ i ɐ"
+        },
+        {
+          "word": "μεταξύ",
+          "phonemes": "m ɛ t̪ ɐ k s i"
+        },
+        {
+          "word": "Μάιος",
+          "phonemes": "m ɐ i o s"
+        },
+        {
+          "word": "στρέψις",
+          "phonemes": "s t̪ ɾ ɛ p s i s"
+        },
+        {
+          "word": "ύψος",
+          "phonemes": "i p s o s"
+        },
+        {
+          "word": "κράτη-μέλη",
+          "phonemes": "k ɾ ɐ t̪ i m ɛ l i"
+        },
+        {
+          "word": "Σ'αυτό",
+          "phonemes": "s ɐ f t̪ o"
+        },
+        {
+          "word": "Αύγουστος",
+          "phonemes": "ɐ v ɣ u s t̪ o s"
+        },
+        {
+          "word": "πλευρά",
+          "phonemes": "p l ɛ v ɾ ɐ"
+        },
+        {
+          "word": "ναυτικός",
+          "phonemes": "n̪ ɐ f t̪ i k o s"
+        },
+        {
+          "word": "πνεύμα",
+          "phonemes": "p n̪ ɛ v m ɐ"
+        },
+        {
+          "word": "Εβραίος",
+          "phonemes": "ɛ v ɾ ɛ o s"
+        },
+        {
+          "word": "Ευρώπη",
+          "phonemes": "ɛ v ɾ o p i"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "preceding-i": "[εου]",
+          "i-digraph": "[ιί]",
+          "u-digraph": "[υύ]",
+          "voiceless-c": "[πτκφθςσχξψ]",
+          "g-digraph": "[γκ]",
+          "punct": "[-']",
+          "a": "[αά]",
+          "v": "β",
+          "ɣ": "γ",
+          "dh": "δ",
+          "ɛ": "[εέ]",
+          "z": "ζ",
+          "i": "[ηήιίυύϊΐϋΰ]",
+          "θ": "θ",
+          "k": "κ",
+          "l": "λ",
+          "m": "[µμ]",
+          "n̪": "ν",
+          "ks": "ξ",
+          "o": "[ωώοό]",
+          "p": "π",
+          "ɾ": "ρ",
+          "s": "[σς]",
+          "t̪": "τ",
+          "f": "φ",
+          "x": "χ",
+          "ps": "ψ"
+        },
+        "sub": [
+          {
+            "from": "{a}",
+            "to": "ɐ",
+            "weight": 2.0
+          },
+          {
+            "from": "{v}",
+            "to": "v",
+            "weight": 2.0
+          },
+          {
+            "from": "{ɣ}",
+            "to": "ɣ",
+            "weight": 2.0
+          },
+          {
+            "from": "{dh}",
+            "to": "ð",
+            "weight": 2.0
+          },
+          {
+            "from": "{ɛ}",
+            "to": "ɛ",
+            "weight": 2.0
+          },
+          {
+            "from": "{z}",
+            "to": "z",
+            "weight": 2.0
+          },
+          {
+            "from": "{i}",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "{θ}",
+            "to": "θ",
+            "weight": 2.0
+          },
+          {
+            "from": "{k}",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "{l}",
+            "to": "l",
+            "weight": 2.0
+          },
+          {
+            "from": "{m}",
+            "to": "m",
+            "weight": 2.0
+          },
+          {
+            "from": "{n̪}",
+            "to": "n̪",
+            "weight": 2.0
+          },
+          {
+            "from": "{ks}",
+            "to": "k s",
+            "weight": 2.0
+          },
+          {
+            "from": "{o}",
+            "to": "o",
+            "weight": 2.0
+          },
+          {
+            "from": "{p}",
+            "to": "p",
+            "weight": 2.0
+          },
+          {
+            "from": "{ɾ}",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "{s}",
+            "to": "s",
+            "weight": 2.0
+          },
+          {
+            "from": "{t̪}",
+            "to": "t̪",
+            "weight": 2.0
+          },
+          {
+            "from": "{f}",
+            "to": "f",
+            "weight": 2.0
+          },
+          {
+            "from": "{x}",
+            "to": "x",
+            "weight": 2.0
+          },
+          {
+            "from": "{ps}",
+            "to": "p s",
+            "weight": 2.0
+          },
+          {
+            "from": "{preceding-i}",
+            "to": "i",
+            "weight": 4.0,
+            "follow": "{i-digraph}"
+          },
+          {
+            "from": "{i-digraph}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "{preceding-i}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "α",
+            "to": "ɛ",
+            "weight": 4.0,
+            "follow": "{i-digraph}"
+          },
+          {
+            "from": "{i-digraph}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "α",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ο",
+            "to": "u",
+            "weight": 5.0,
+            "follow": "{u-digraph}"
+          },
+          {
+            "from": "{u-digraph}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "ο",
+            "comment": "clean-up"
+          },
+          {
+            "from": "α",
+            "to": "ɐ f",
+            "weight": 5.0,
+            "follow": "{u-digraph}{voiceless-c}"
+          },
+          {
+            "from": "α",
+            "to": "ɐ v",
+            "weight": 4.0,
+            "follow": "{u-digraph}"
+          },
+          {
+            "from": "{u-digraph}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "α",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ε",
+            "to": "ɛ f",
+            "weight": 5.0,
+            "follow": "{u-digraph}{voiceless-c}"
+          },
+          {
+            "from": "ε",
+            "to": "ɛ v",
+            "weight": 4.0,
+            "follow": "{u-digraph}"
+          },
+          {
+            "from": "{u-digraph}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "ε",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{m}",
+            "to": "b",
+            "weight": 6.0,
+            "follow": "{p}"
+          },
+          {
+            "from": "{n̪}",
+            "to": "d̪",
+            "weight": 6.0,
+            "follow": "{t̪}"
+          },
+          {
+            "from": "{ɣ}",
+            "to": "ɡ",
+            "weight": 6.0,
+            "follow": "{g-digraph}"
+          },
+          {
+            "from": "{p}",
+            "to": "",
+            "weight": 5.0,
+            "precede": "{m}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{t̪}",
+            "to": "",
+            "weight": 5.0,
+            "precede": "{n̪}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{g-digraph}",
+            "to": "",
+            "weight": 5.0,
+            "precede": "{ɣ}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 1.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "(.) \\1",
+            "to": "\\1",
+            "weight": 2.0,
+            "comment": "gemination does not occur"
+          }
+        ]
+      }
+    }
+  }
+}

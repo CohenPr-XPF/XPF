@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "code": "ctu",
+    "name": "Chol",
+    "family": "Mayan,Cholan-Tzeltalan,Cholan,Chol-Chontal",
+    "macroarea": "North America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "abälel",
+          "phonemes": "a b ɨ l e l"
+        },
+        {
+          "word": "ajcuntsʼuʼ",
+          "phonemes": "a x k u ɲ tsʼ u ʔ"
+        },
+        {
+          "word": "alob",
+          "phonemes": "a l o b"
+        },
+        {
+          "word": "cawayuʼ",
+          "phonemes": "k a w a j u ʔ"
+        },
+        {
+          "word": "chämeñ",
+          "phonemes": "tʃ ɨ m e ɲ"
+        },
+        {
+          "word": "cox",
+          "phonemes": "k o ʃ"
+        },
+        {
+          "word": "cʼʌncho",
+          "phonemes": "kʼ ɨ ɲ tʃ o"
+        },
+        {
+          "word": "jaʼal",
+          "phonemes": "x a ʔ a l"
+        },
+        {
+          "word": "pisil",
+          "phonemes": "p i s i l"
+        },
+        {
+          "word": "tyumuty",
+          "phonemes": "tʲ u m u tʲ"
+        },
+        {
+          "word": "kilo",
+          "phonemes": "k i l o"
+        },
+        {
+          "word": "rey",
+          "phonemes": "r e j"
+        },
+        {
+          "word": "pꞌʌtʌlel",
+          "phonemes": "pʼ ɨ tʲ ɨ l e l"
+        },
+        {
+          "word": "tꞌan",
+          "phonemes": "tʲʼ a ɲ"
+        },
+        {
+          "word": "utsꞌat",
+          "phonemes": "u tsʼ a tʲ"
+        },
+        {
+          "word": "chꞌiton",
+          "phonemes": "tʃʼ i tʲ o ɲ"
+        },
+        {
+          "word": "chuqui",
+          "phonemes": "tʃ u k i"
+        },
+        {
+          "word": "qꞌuin",
+          "phonemes": "kʼ i ɲ"
+        },
+        {
+          "word": "bʌ",
+          "phonemes": "b ɨ"
+        },
+        {
+          "word": "ti",
+          "phonemes": "tʲ i"
+        },
+        {
+          "word": "jini",
+          "phonemes": "x i ɲ i"
+        },
+        {
+          "word": "chaꞌan",
+          "phonemes": "tʃ a ʔ a ɲ"
+        },
+        {
+          "word": "mi",
+          "phonemes": "m i"
+        },
+        {
+          "word": "tsiꞌ",
+          "phonemes": "ts i ʔ"
+        },
+        {
+          "word": "miꞌ",
+          "phonemes": "m i ʔ"
+        },
+        {
+          "word": "tiꞌ",
+          "phonemes": "tʲ i ʔ"
+        },
+        {
+          "word": "yicꞌot",
+          "phonemes": "j i kʼ o tʲ"
+        },
+        {
+          "word": "tsaꞌ",
+          "phonemes": "ts a ʔ"
+        },
+        {
+          "word": "caj",
+          "phonemes": "k a x"
+        },
+        {
+          "word": "laꞌ",
+          "phonemes": "l a ʔ"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abeiklmoprsuw]",
+          "apostrophe": "[ʼ'ꞌˈ‘’]",
+          "ejective": "(p|tʲ|k|ts|tʃ)",
+          "vowels": "[aeiouɨ]"
+        },
+        "sub": [
+          {
+            "from": "j",
+            "to": "x",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 2.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 2.0
+          },
+          {
+            "from": "t",
+            "to": "tʲ",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "-",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "ä",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 3.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "tʲ",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 2.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "kʼ",
+            "weight": 3.0,
+            "precede": "q",
+            "follow": "u",
+            "comment": "exception to ejective rule"
+          },
+          {
+            "from": "q",
+            "to": "",
+            "weight": 2.0,
+            "follow": "{apostrophe}u",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q{apostrophe}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 4.0,
+            "follow": "z"
+          },
+          {
+            "from": "z",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t"
+          },
+          {
+            "from": "ü",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "ʌ",
+            "to": "ɨ",
+            "weight": 2.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({ejective}) ʔ",
+            "to": "\\1ʼ",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

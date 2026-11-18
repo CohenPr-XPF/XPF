@@ -1,0 +1,359 @@
+{
+  "metadata": {
+    "code": "wmw",
+    "name": "Mwani",
+    "family": "Niger-Congo,Atlantic-Congo,Volta-Congo,Benue-Congo,Bantoid,Bantu,Northeast Coast Bantu,Sabaki,Swahili,Mwani",
+    "macroarea": "Africa",
+    "compromised": {
+      "sounds": "ᵐb|mb|ⁿd|nd|ⁿdʒ|ndʒ|ᵑɡ|nɡ"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "awala",
+          "phonemes": "a w a l a",
+          "comment": "a"
+        },
+        {
+          "word": "bunduki",
+          "phonemes": "b u ⁿd u k i",
+          "comment": "b"
+        },
+        {
+          "word": "cingi",
+          "phonemes": "tʃ i ᵑɡ i",
+          "comment": "tʃ"
+        },
+        {
+          "word": "diiki",
+          "phonemes": "d i i k i",
+          "comment": "d"
+        },
+        {
+          "word": "eko",
+          "phonemes": "e k o",
+          "comment": "e"
+        },
+        {
+          "word": "funfu",
+          "phonemes": "f u n f u",
+          "comment": "f"
+        },
+        {
+          "word": "gaibu",
+          "phonemes": "ɡ a i b u",
+          "comment": "ɡ"
+        },
+        {
+          "word": "irizi",
+          "phonemes": "i l i z i",
+          "comment": "i"
+        },
+        {
+          "word": "maji",
+          "phonemes": "m a dʒ i",
+          "comment": "dʒ"
+        },
+        {
+          "word": "kunola",
+          "phonemes": "k u n o l a",
+          "comment": "k"
+        },
+        {
+          "word": "ladi",
+          "phonemes": "l a d i",
+          "comment": "l"
+        },
+        {
+          "word": "mepo",
+          "phonemes": "m e p o",
+          "comment": "m"
+        },
+        {
+          "word": "nsada",
+          "phonemes": "n s a d a",
+          "comment": "n"
+        },
+        {
+          "word": "ofwe",
+          "phonemes": "o f w e",
+          "comment": "o"
+        },
+        {
+          "word": "piyali",
+          "phonemes": "p i j a l i",
+          "comment": "p"
+        },
+        {
+          "word": "raisi",
+          "phonemes": "l a i s i",
+          "comment": "r"
+        },
+        {
+          "word": "sambi",
+          "phonemes": "s a ᵐb i",
+          "comment": "s"
+        },
+        {
+          "word": "tamboru",
+          "phonemes": "t a ᵐb o l u",
+          "comment": "t"
+        },
+        {
+          "word": "utope",
+          "phonemes": "u t o p e",
+          "comment": "u"
+        },
+        {
+          "word": "vikwaku",
+          "phonemes": "v i k w a k u",
+          "comment": "v"
+        },
+        {
+          "word": "ware",
+          "phonemes": "w a l e",
+          "comment": "w"
+        },
+        {
+          "word": "yakafe",
+          "phonemes": "j a k a f e",
+          "comment": "j"
+        },
+        {
+          "word": "zinku",
+          "phonemes": "z i n k u",
+          "comment": "z"
+        },
+        {
+          "word": "chija",
+          "phonemes": "tʃ i dʒ a",
+          "comment": "tʃ"
+        },
+        {
+          "word": "lembo",
+          "phonemes": "l e ᵐb o",
+          "comment": "ᵐb"
+        },
+        {
+          "word": "malundi",
+          "phonemes": "m a l u ⁿd i",
+          "comment": "ⁿd"
+        },
+        {
+          "word": "genge",
+          "phonemes": "ɡ e ᵑɡ e",
+          "comment": "ᵑɡ"
+        },
+        {
+          "word": "mmang'a",
+          "phonemes": "m m a ŋ a",
+          "comment": "ŋ"
+        },
+        {
+          "word": "kusinja",
+          "phonemes": "k u s i ⁿdʒ a",
+          "comment": "ⁿdʒ"
+        },
+        {
+          "word": "nyuki",
+          "phonemes": "ɲ u k i",
+          "comment": "ɲ"
+        },
+        {
+          "word": "kushukuru",
+          "phonemes": "k u ʃ u k u l u",
+          "comment": "ʃ"
+        },
+        {
+          "word": "tífyoma",
+          "phonemes": "t i f j o m a",
+          "comment": "í"
+        },
+        {
+          "word": "nîfyoma",
+          "phonemes": "n i f j o m a",
+          "comment": "î"
+        },
+        {
+          "word": "wásaka",
+          "phonemes": "w a s a k a",
+          "comment": "á"
+        },
+        {
+          "word": "wâsikizana",
+          "phonemes": "w a s i k i z a n a",
+          "comment": "â"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdefiklmnopstuvwz]",
+          "apostrophe": "[''’ʻ]",
+          "n-follower": "[djgy]",
+          "a": "[áâã]",
+          "e": "[éêẽ]",
+          "i": "[íîĩ]",
+          "o": "[óôõ]",
+          "u": "[úûũ]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "dʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "l",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "{a}",
+            "to": "a",
+            "weight": 1.0
+          },
+          {
+            "from": "{e}",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "{i}",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "{o}",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "{u}",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "m",
+            "to": "ᵐb",
+            "weight": 4.0,
+            "follow": "b"
+          },
+          {
+            "from": "b",
+            "to": "",
+            "weight": 4.0,
+            "precede": "m",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ⁿd",
+            "weight": 4.0,
+            "follow": "d"
+          },
+          {
+            "from": "n",
+            "to": "ᵑɡ",
+            "weight": 4.0,
+            "follow": "g"
+          },
+          {
+            "from": "n",
+            "to": "ⁿdʒ",
+            "weight": 4.0,
+            "follow": "j"
+          },
+          {
+            "from": "n",
+            "to": "ɲ",
+            "weight": 4.0,
+            "follow": "y"
+          },
+          {
+            "from": "{n-follower}",
+            "to": "",
+            "weight": 4.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ŋ",
+            "weight": 5.0,
+            "precede": "n",
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 5.0,
+            "follow": "g{apostrophe}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 5.0,
+            "precede": "ng",
+            "comment": "clean-up"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 1.0,
+            "comment": "hyphens have no phonemic value"
+          }
+        ]
+      }
+    }
+  }
+}

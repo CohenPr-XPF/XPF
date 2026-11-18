@@ -1,0 +1,359 @@
+{
+  "metadata": {
+    "code": "lem",
+    "name": "Namaande",
+    "family": "Niger-Congo,Atlantic-Congo,Volta-Congo,Benue-Congo,Bantoid,Southern Bantoid,Narrow Bantu,Mbam,West Mbam,Nomaande",
+    "macroarea": "Africa",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "acaka",
+          "phonemes": "a ˨ tʃ a ˨ k a ˨",
+          "comment": "a"
+        },
+        {
+          "word": "abákálá",
+          "phonemes": "a ˨ p a ˦ k a ˦ l a ˦",
+          "comment": "á"
+        },
+        {
+          "word": "bóbóo",
+          "phonemes": "p o ˦ p o ˦ o ˨",
+          "comment": "b"
+        },
+        {
+          "word": "cɛɛsɛs",
+          "phonemes": "tʃ ɛ ˨ ː s ɛ ˨ s",
+          "comment": "c"
+        },
+        {
+          "word": "enenyi",
+          "phonemes": "ɨ ˨ n ɨ ˨ ɲ i ˨",
+          "comment": "e"
+        },
+        {
+          "word": "ehélé",
+          "phonemes": "ɨ ˨ h ɨ ˦ l ɨ ˦",
+          "comment": "é"
+        },
+        {
+          "word": "ɛɛsɛsɛ",
+          "phonemes": "ɛ ˨ ː s ɛ ˨ s ɛ ˨",
+          "comment": "ɛ"
+        },
+        {
+          "word": "ɛ́ɛhɛ́",
+          "phonemes": "ɛ ˦ ɛ ˨ h ɛ ˦",
+          "comment": "ɛ́"
+        },
+        {
+          "word": "fufú",
+          "phonemes": "f u ˨ f u ˦",
+          "comment": "f"
+        },
+        {
+          "word": "hɛhɛlɛ́",
+          "phonemes": "h ɛ ˨ h ɛ ˨ l ɛ ˦",
+          "comment": "h"
+        },
+        {
+          "word": "indiŋisi",
+          "phonemes": "i ˨ ⁿd i ˨ ŋ i ˨ s i ˨",
+          "comment": "i"
+        },
+        {
+          "word": "ebílícínyínyí",
+          "phonemes": "ɨ ˨ p i ˦ l i ˦ tʃ i ˦ ɲ i ˦ ɲ i ˦",
+          "comment": "í"
+        },
+        {
+          "word": "kakáwɔ",
+          "phonemes": "k a ˨ k a ˦ w ɔ ˨",
+          "comment": "k"
+        },
+        {
+          "word": "lɛbɛlɛbɛ",
+          "phonemes": "l ɛ ˨ p ɛ ˨ l ɛ ˨ p ɛ ˨",
+          "comment": "l"
+        },
+        {
+          "word": "mutúme",
+          "phonemes": "m u ˨ t u ˦ m ɨ ˨",
+          "comment": "m"
+        },
+        {
+          "word": "owoombi",
+          "phonemes": "o ˨ w o ˨ ː ᵐb i ˨",
+          "comment": "mb"
+        },
+        {
+          "word": "nulénéne",
+          "phonemes": "n u ˨ l ɨ ˦ n ɨ ˦ n ɨ ˨",
+          "comment": "n"
+        },
+        {
+          "word": "indíné",
+          "phonemes": "i ˨ ⁿd i ˦ n ɨ ˦",
+          "comment": "nd"
+        },
+        {
+          "word": "nɔnjamɔ́",
+          "phonemes": "n ɔ ˨ ᶮdʒ a ˨ m ɔ ˦",
+          "comment": "nj"
+        },
+        {
+          "word": "nyɛhaanyua",
+          "phonemes": "ɲ ɛ ˨ h a ˨ ː ɲ u ˨ a ˨",
+          "comment": "ny"
+        },
+        {
+          "word": "nɔtɔŋɔtɔ́ŋɔ́",
+          "phonemes": "n ɔ ˨ t ɔ ˨ ŋ ɔ ˨ t ɔ ˦ ŋ ɔ ˦",
+          "comment": "ŋ"
+        },
+        {
+          "word": "aláŋgɛ",
+          "phonemes": "a ˨ l a ˦ ᵑɡ ɛ ˨",
+          "comment": "ŋg"
+        },
+        {
+          "word": "ohiolo",
+          "phonemes": "o ˨ h i ˨ o ˨ l o ˨",
+          "comment": "o"
+        },
+        {
+          "word": "obólótóto",
+          "phonemes": "o ˨ p o ˦ l o ˦ t o ˦ t o ˨",
+          "comment": "ó"
+        },
+        {
+          "word": "nɔbɔlɔ",
+          "phonemes": "n ɔ ˨ p ɔ ˨ l ɔ ˨",
+          "comment": "ɔ"
+        },
+        {
+          "word": "acɔ́cɔ́lɔ́",
+          "phonemes": "a ˨ tʃ ɔ ˦ tʃ ɔ ˦ l ɔ ˦",
+          "comment": "ɔ́"
+        },
+        {
+          "word": "sɔ́ɔ́kɔ́",
+          "phonemes": "s ɔ ˦ ː k ɔ ˦",
+          "comment": "s"
+        },
+        {
+          "word": "tɔkɛ́ta",
+          "phonemes": "t ɔ ˨ k ɛ ˦ t a ˨",
+          "comment": "t"
+        },
+        {
+          "word": "nufule",
+          "phonemes": "n u ˨ f u ˨ l ɨ ˨",
+          "comment": "u"
+        },
+        {
+          "word": "ekúlú",
+          "phonemes": "ɨ ˨ k u ˦ l u ˦",
+          "comment": "ú"
+        },
+        {
+          "word": "wáánye",
+          "phonemes": "w a ˦ ː ɲ ɨ ˨",
+          "comment": "w"
+        },
+        {
+          "word": "yiici",
+          "phonemes": "j i ˨ ː tʃ i ˨",
+          "comment": "y"
+        },
+        {
+          "word": "ó'o",
+          "phonemes": "o ˦ ʔ o ˨",
+          "comment": "apostrophe"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "apostrophe": "[ꞌ'ˈ‘’ʼ]",
+          "v-midlow": "[ɛɔ]",
+          "n-follower": "[djy]",
+          "ipavowel": "[aɨɛioɔu]",
+          "tone": "[˨˦]",
+          "passthrough": "[fhklmnŋstw]"
+        },
+        "sub": [
+          {
+            "from": "a",
+            "to": "a ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "á",
+            "to": "a ˦",
+            "weight": 4.0
+          },
+          {
+            "from": "b",
+            "to": "p",
+            "weight": 4.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 4.0
+          },
+          {
+            "from": "e",
+            "to": "ɨ ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "é",
+            "to": "ɨ ˦",
+            "weight": 4.0
+          },
+          {
+            "from": "ɛ",
+            "to": "ɛ ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "i",
+            "to": "i ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "í",
+            "to": "i ˦",
+            "weight": 4.0
+          },
+          {
+            "from": "o",
+            "to": "o ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "ó",
+            "to": "o ˦",
+            "weight": 4.0
+          },
+          {
+            "from": "ɔ",
+            "to": "ɔ ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "u",
+            "to": "u ˨",
+            "weight": 4.0
+          },
+          {
+            "from": "ú",
+            "to": "u ˦",
+            "weight": 4.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 4.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "́",
+            "to": "˦",
+            "weight": 4.0,
+            "comment": "acute accent = high tone"
+          },
+          {
+            "from": "m",
+            "to": "ᵐb",
+            "weight": 6.0,
+            "follow": "b",
+            "comment": "<mb>"
+          },
+          {
+            "from": "b",
+            "to": "",
+            "weight": 6.0,
+            "precede": "m",
+            "comment": "<mb> cleanup"
+          },
+          {
+            "from": "ŋ",
+            "to": "ᵑɡ",
+            "weight": 6.0,
+            "follow": "g",
+            "comment": "<ŋg>"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 6.0,
+            "precede": "ŋ",
+            "comment": "<ŋg> cleanup"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 6.0,
+            "follow": "{n-follower}",
+            "comment": "<n>-initial digraph cleanup"
+          },
+          {
+            "from": "d",
+            "to": "ⁿd",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<nd>"
+          },
+          {
+            "from": "j",
+            "to": "ᶮdʒ",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<nj>"
+          },
+          {
+            "from": "y",
+            "to": "ɲ",
+            "weight": 6.0,
+            "precede": "n",
+            "comment": "<ny>"
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 4.0,
+            "comment": "a handful of words have hyphens with no phonetic value"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({v-midlow}) ˨ ˦",
+            "to": "\\1 ˦",
+            "weight": 2.0,
+            "comment": "attaches the high tone to the vowel"
+          },
+          {
+            "from": "({ipavowel}) ({tone}) \\1 \\2",
+            "to": "\\1 \\2 ː",
+            "weight": 1.0,
+            "comment": "vowel lengthening"
+          }
+        ]
+      }
+    }
+  }
+}

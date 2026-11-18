@@ -1,0 +1,406 @@
+{
+  "metadata": {
+    "code": "plu",
+    "name": "Palikúr",
+    "family": "Arawakan,Maipuran,Eastern Maipuran",
+    "macroarea": "South America",
+    "compromised": {
+      "sounds": "ɡ|ɣ"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "gibiy",
+          "phonemes": "ɡ i b ij"
+        },
+        {
+          "word": "awna",
+          "phonemes": "aw n a"
+        },
+        {
+          "word": "akiw",
+          "phonemes": "a k iw"
+        },
+        {
+          "word": "nukamkayh",
+          "phonemes": "n u k a m k ãj"
+        },
+        {
+          "word": "wiwh",
+          "phonemes": "w ĩw"
+        },
+        {
+          "word": "dagawnka",
+          "phonemes": "d a ɡ aw n k a"
+        },
+        {
+          "word": "gitew",
+          "phonemes": "ɡ i t ew"
+        },
+        {
+          "word": "kabiman",
+          "phonemes": "k a b i m a n"
+        },
+        {
+          "word": "amin",
+          "phonemes": "a m i n"
+        },
+        {
+          "word": "nnaguh",
+          "phonemes": "n n a ɡ ũ"
+        },
+        {
+          "word": "isaksa",
+          "phonemes": "i s a k s a"
+        },
+        {
+          "word": "pohowku",
+          "phonemes": "p o h ow k u"
+        },
+        {
+          "word": "kadahan",
+          "phonemes": "k a d a h a n"
+        },
+        {
+          "word": "yakot",
+          "phonemes": "j a k o t"
+        },
+        {
+          "word": "kawa",
+          "phonemes": "k a w a"
+        },
+        {
+          "word": "parak",
+          "phonemes": "p a ɣ a k"
+        },
+        {
+          "word": "waxri",
+          "phonemes": "w a ʃ ɣ i"
+        },
+        {
+          "word": "hawkri",
+          "phonemes": "h aw k ɣ i"
+        },
+        {
+          "word": "miruk",
+          "phonemes": "m i ɣ u k"
+        },
+        {
+          "word": "mmahki",
+          "phonemes": "m m ã k i"
+        },
+        {
+          "word": "mpana",
+          "phonemes": "m p a n a"
+        },
+        {
+          "word": "humaw",
+          "phonemes": "h u m aw"
+        },
+        {
+          "word": "pariye",
+          "phonemes": "p a ɣ i j e"
+        },
+        {
+          "word": "numawhkig",
+          "phonemes": "n u m ãw k i ɡ"
+        },
+        {
+          "word": "nah",
+          "phonemes": "n ã"
+        },
+        {
+          "word": "awahkis",
+          "phonemes": "a w ã k i s"
+        },
+        {
+          "word": "keh",
+          "phonemes": "k ẽ"
+        },
+        {
+          "word": "kehne",
+          "phonemes": "k ẽ n e"
+        },
+        {
+          "word": "kawih",
+          "phonemes": "k a w ĩ"
+        },
+        {
+          "word": "gamnihra",
+          "phonemes": "ɡ a m n ĩ ɣ a"
+        },
+        {
+          "word": "gibohri",
+          "phonemes": "ɡ i b õ ɣ i"
+        },
+        {
+          "word": "gikannuhnipwi",
+          "phonemes": "ɡ i k a n n ũ n i p w i"
+        },
+        {
+          "word": "ayge",
+          "phonemes": "aj ɡ e"
+        },
+        {
+          "word": "hiwhka",
+          "phonemes": "h ĩw k a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdehikmnopstuw]",
+          "vowels": "[aeiou]",
+          "consonants-input": "[bdgkmnprstwxy]",
+          "y-preceder": "[aeiu]",
+          "w-preceder": "[aeiou]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɣ",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "({vowels})",
+            "to": "\\1̃",
+            "weight": 3.0,
+            "follow": "h$"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{vowels}",
+            "follow": "$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({vowels})",
+            "to": "\\1̃",
+            "weight": 3.0,
+            "follow": "h{consonants-input}"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{vowels}",
+            "follow": "{consonants-input}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({y-preceder})",
+            "to": "\\1j",
+            "weight": 3.0,
+            "follow": "y$"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{y-preceder}",
+            "follow": "$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({y-preceder})",
+            "to": "\\1j",
+            "weight": 3.0,
+            "follow": "y{consonants-input}"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{y-preceder}",
+            "follow": "{consonants-input}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({w-preceder})",
+            "to": "\\1w",
+            "weight": 3.0,
+            "follow": "w$"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{w-preceder}",
+            "follow": "$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "({w-preceder})",
+            "to": "\\1w",
+            "weight": 3.0,
+            "follow": "w{consonants-input}"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{w-preceder}",
+            "follow": "{consonants-input}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "ãj",
+            "weight": 4.0,
+            "follow": "yh$"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 4.0,
+            "precede": "a",
+            "follow": "h$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "ay",
+            "follow": "$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "ãj",
+            "weight": 4.0,
+            "follow": "yh{consonants-input}"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 4.0,
+            "precede": "a",
+            "follow": "h{consonants-input}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "ay",
+            "follow": "{consonants-input}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "ãw",
+            "weight": 4.0,
+            "follow": "wh$"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 4.0,
+            "precede": "a",
+            "follow": "h$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "aw",
+            "follow": "$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "a",
+            "to": "ãw",
+            "weight": 4.0,
+            "follow": "wh{consonants-input}"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 4.0,
+            "precede": "a",
+            "follow": "h{consonants-input}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "aw",
+            "follow": "{consonants-input}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "ĩw",
+            "weight": 4.0,
+            "follow": "wh$"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 4.0,
+            "precede": "i",
+            "follow": "h$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "iw",
+            "follow": "$",
+            "comment": "clean-up"
+          },
+          {
+            "from": "i",
+            "to": "ĩw",
+            "weight": 4.0,
+            "follow": "wh{consonants-input}"
+          },
+          {
+            "from": "w",
+            "to": "",
+            "weight": 4.0,
+            "precede": "i",
+            "follow": "h{consonants-input}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "iw",
+            "follow": "{consonants-input}",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

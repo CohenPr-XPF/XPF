@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "code": "sm",
+    "name": "Samoan",
+    "family": "Austronesian,Malayo-Polynesian,Central-Eastern,Eastern Malayo-Polynesian,Oceanic,Central-Eastern Oceanic,Remote Oceanic,Central Pacific,East Fijian-Polynesian,Polynesian,Nuclear,Samoic-Outlier,Samoan",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "note": "suspect transcription of /ʔ/ and vowel length"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "'ailao",
+          "phonemes": "ʔ a i l a o"
+        },
+        {
+          "word": "'oti",
+          "phonemes": "ʔ o t i"
+        },
+        {
+          "word": "afafine",
+          "phonemes": "a f a f i n e"
+        },
+        {
+          "word": "ago",
+          "phonemes": "a ŋ o"
+        },
+        {
+          "word": "avaga",
+          "phonemes": "a v a ŋ a"
+        },
+        {
+          "word": "fa'a",
+          "phonemes": "f a ʔ a"
+        },
+        {
+          "word": "fasefulu",
+          "phonemes": "f a s e f u l u"
+        },
+        {
+          "word": "fuāmoa",
+          "phonemes": "f u a ː m o a"
+        },
+        {
+          "word": "iao",
+          "phonemes": "i a o"
+        },
+        {
+          "word": "laulau",
+          "phonemes": "l a u l a u"
+        },
+        {
+          "word": "lē",
+          "phonemes": "l e ː"
+        },
+        {
+          "word": "pei",
+          "phonemes": "p e i"
+        },
+        {
+          "word": "peiseaī",
+          "phonemes": "p e i s e a i ː"
+        },
+        {
+          "word": "uō",
+          "phonemes": "u o ː"
+        },
+        {
+          "word": "tutū",
+          "phonemes": "t u t u ː"
+        },
+        {
+          "word": "lava",
+          "phonemes": "l a v a"
+        },
+        {
+          "word": "tagata",
+          "phonemes": "t a ŋ a t a"
+        },
+        {
+          "word": "ʻua",
+          "phonemes": "ʔ u a"
+        },
+        {
+          "word": "lona",
+          "phonemes": "l o n a"
+        },
+        {
+          "word": "fai",
+          "phonemes": "f a i"
+        },
+        {
+          "word": "foʻi",
+          "phonemes": "f o ʔ i"
+        },
+        {
+          "word": "ʻiā",
+          "phonemes": "ʔ i a ː"
+        },
+        {
+          "word": "lenei",
+          "phonemes": "l e n e i"
+        },
+        {
+          "word": "ʻoutou",
+          "phonemes": "ʔ o u t o u"
+        },
+        {
+          "word": "sa",
+          "phonemes": "s a"
+        },
+        {
+          "word": "ʻona",
+          "phonemes": "ʔ o n a"
+        },
+        {
+          "word": "nei",
+          "phonemes": "n e i"
+        },
+        {
+          "word": "mo",
+          "phonemes": "m o"
+        },
+        {
+          "word": "tele",
+          "phonemes": "t e l e"
+        },
+        {
+          "word": "isi",
+          "phonemes": "i s i"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aefilmnopstuv]",
+          "apostrophe": "['ꞌˈ‘’ʻ]"
+        },
+        "sub": [
+          {
+            "from": "g",
+            "to": "ŋ",
+            "weight": 2.0
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "ā",
+            "to": "a ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ē",
+            "to": "e ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ī",
+            "to": "i ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ō",
+            "to": "o ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ū",
+            "to": "u ː",
+            "weight": 2.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

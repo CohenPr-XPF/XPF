@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "code": "pag",
+    "name": "Pangasinan",
+    "family": "Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Northern Philippine,Northern Luzon,South-Central Cordilleran,Southern Cordilleran,Pangasinic",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "sounds": "ŋ|nɡ"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ed",
+          "phonemes": "ɛ d̪",
+          "comment": "e goes to /ɛ/; d goes to /d̪/"
+        },
+        {
+          "word": "na",
+          "phonemes": "n̪ a",
+          "comment": "n goes to /n̪/; a goes to /a/"
+        },
+        {
+          "word": "so",
+          "phonemes": "s ɔ",
+          "comment": "s goes to /s/; o goes to /ɔ/"
+        },
+        {
+          "word": "ya",
+          "phonemes": "j a",
+          "comment": "y goes to /j/"
+        },
+        {
+          "word": "tan",
+          "phonemes": "t̪ a n̪",
+          "comment": "t goes to /t̪/"
+        },
+        {
+          "word": "saray",
+          "phonemes": "s a r̪ a j",
+          "comment": "r goes to /r̪/"
+        },
+        {
+          "word": "balet",
+          "phonemes": "b a l̪ ɛ t̪",
+          "comment": "b goes to /b/; l goes to /l̪/"
+        },
+        {
+          "word": "singa",
+          "phonemes": "s i ŋ a",
+          "comment": "i goes to /i/; ng goes to /ŋ/"
+        },
+        {
+          "word": "nepeg",
+          "phonemes": "n̪ ɛ p ɛ ɡ",
+          "comment": "p goes to /p/; g goes to /g/"
+        },
+        {
+          "word": "anghil",
+          "phonemes": "a ŋ h i l̪",
+          "comment": "h goes to /h/"
+        },
+        {
+          "word": "sakey",
+          "phonemes": "s a k ɛ j",
+          "comment": "k goes to /k/"
+        },
+        {
+          "word": "met",
+          "phonemes": "m ɛ t̪",
+          "comment": "m goes to /m/"
+        },
+        {
+          "word": "lapud",
+          "phonemes": "l̪ a p u d̪",
+          "comment": "u goes to /u/"
+        },
+        {
+          "word": "walay",
+          "phonemes": "w a l̪ a j",
+          "comment": "w goes to /w/"
+        },
+        {
+          "word": "cristo",
+          "phonemes": "k r̪ i s t̪ ɔ",
+          "comment": "c goes to /k/"
+        },
+        {
+          "word": "ciudad",
+          "phonemes": "s i u d̪ a d̪",
+          "comment": "c goes to /s/ before front vowels"
+        },
+        {
+          "word": "malasiqui",
+          "phonemes": "m a l̪ a s i k i",
+          "comment": "qu goes to /k/"
+        },
+        {
+          "word": "ko",
+          "phonemes": "k ɔ"
+        },
+        {
+          "word": "diad",
+          "phonemes": "d̪ i a d̪"
+        },
+        {
+          "word": "yo",
+          "phonemes": "j ɔ"
+        },
+        {
+          "word": "iray",
+          "phonemes": "i r̪ a j"
+        },
+        {
+          "word": "say",
+          "phonemes": "s a j"
+        },
+        {
+          "word": "mo",
+          "phonemes": "m ɔ"
+        },
+        {
+          "word": "ray",
+          "phonemes": "r̪ a j"
+        },
+        {
+          "word": "ra",
+          "phonemes": "r̪ a"
+        },
+        {
+          "word": "amin",
+          "phonemes": "a m i n̪"
+        },
+        {
+          "word": "tayo",
+          "phonemes": "t̪ a j ɔ"
+        },
+        {
+          "word": "sikato",
+          "phonemes": "s i k a t̪ ɔ"
+        },
+        {
+          "word": "ak",
+          "phonemes": "a k"
+        },
+        {
+          "word": "ton",
+          "phonemes": "t̪ ɔ n̪"
+        },
+        {
+          "word": "ni",
+          "phonemes": "n̪ i"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abhikmpsuw]",
+          "front": "[ei]",
+          "punct": "[ꞌ'ˈ‘’-]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 1.0
+          },
+          {
+            "from": "c",
+            "to": "s",
+            "weight": 2.0,
+            "follow": "{front}"
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 1.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "l",
+            "to": "l̪",
+            "weight": 1.0
+          },
+          {
+            "from": "n",
+            "to": "n̪",
+            "weight": 1.0
+          },
+          {
+            "from": "o",
+            "to": "ɔ",
+            "weight": 1.0
+          },
+          {
+            "from": "r",
+            "to": "r̪",
+            "weight": 1.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 2.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 2.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "ñ",
+            "to": "ŋ",
+            "weight": 2.0,
+            "follow": "g"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 2.0,
+            "precede": "ñ",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 2.0,
+            "precede": "q",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{punct}",
+            "to": "",
+            "weight": 2.0,
+            "comment": "hyphens and apostrophes have no phonemic value"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,705 @@
+{
+  "metadata": {
+    "code": "ml",
+    "name": "Malayalam",
+    "family": "Dravidian,Southern,Tamil-Kannada,Tamil-Kodagu,Tamil-Malayalam,Malayalam",
+    "macroarea": "Eurasia",
+    "compromised": {
+      "sounds": "n|n̪"
+    },
+    "default_script": "malayalam"
+  },
+  "scripts": {
+    "malayalam": {
+      "verify": [
+        {
+          "word": "ഞാൻ",
+          "phonemes": "ɲ a ː n̪",
+          "comment": "NYA DIACRITICAA CHILLUN"
+        },
+        {
+          "word": "മലയാളം",
+          "phonemes": "m a l a j a ː ɭ a m",
+          "comment": "MA LA YA DIACRITICAA LLA ANUSVARA"
+        },
+        {
+          "word": "ക്രിസ്തു",
+          "phonemes": "k ɾ i s t̪ u",
+          "comment": "KA DIACRITICVOCALICR DIACRITICI SA VIRAMA TA DIACRITICU"
+        },
+        {
+          "word": "ഖണ്ഡങ്ങൾ",
+          "phonemes": "kʰ a ɳ ɖ a ŋ ː a ɭ",
+          "comment": "KHA NNA VIRAMA DDA NGA VIRAMA NGA CHILLULL"
+        },
+        {
+          "word": "ഗണേശ",
+          "phonemes": "ɡ a ɳ e ː ʃ a",
+          "comment": "GA NNA DIACRITICEE SHA"
+        },
+        {
+          "word": "ഘടന",
+          "phonemes": "ɡʱ a ʈ a n̪ a",
+          "comment": "GHA TTA NA"
+        },
+        {
+          "word": "അരങ്ങേറ്റം",
+          "phonemes": "a ɾ a ŋ ː e ː ʈ ː a m",
+          "comment": "A RA NGA VIRAMA NGA DIACRITICEE RRA VIRAMA RRA MA"
+        },
+        {
+          "word": "ചുവപ്പായ",
+          "phonemes": "tʃ u ʋ a p ː a ː j a",
+          "comment": "CA DIACRITICU VA PA VIRAMA PA DIACRITICAA YA"
+        },
+        {
+          "word": "ജീവിതം",
+          "phonemes": "ɟ i ː ʋ i t̪ a m",
+          "comment": "JA DIACRITICII VA DIACRITICI TA ANUSVARA"
+        },
+        {
+          "word": "ഝാര്ഖണ്ഡ്",
+          "phonemes": "ɟʱ a ː ɾ kʰ a ɳ ɖ",
+          "comment": "JHA DIACRITCAA RA VIRAMA KHA NNA VIRAMA DDA VIRAMA"
+        },
+        {
+          "word": "കുഷ്‌ഠം",
+          "phonemes": "k u ʂ ʈʰ a m",
+          "comment": "KA DIACRITICU SSA VIRAMA zero width non joiner TTHA ANUSVARA"
+        },
+        {
+          "word": "നിഗൂഢ",
+          "phonemes": "n̪ i ɡ u ː ɖʱ a",
+          "comment": "NA DIACRITICI GA DIACRITICUU DDHA"
+        },
+        {
+          "word": "എണ്ണല്‍",
+          "phonemes": "e ɳ ː a l",
+          "comment": "E NNA VIRAMA NNA LA VIRAMA zero width joiner"
+        },
+        {
+          "word": "ഩ",
+          "phonemes": "n a",
+          "comment": "NNNA not a real word"
+        },
+        {
+          "word": "ഫല",
+          "phonemes": "pʰ a l a",
+          "comment": "PHA LA"
+        },
+        {
+          "word": "ബന്ധപ്പെട്ട",
+          "phonemes": "b a n̪ d̪ʱ a p ː e ʈ ː a",
+          "comment": "BA NA VIRAMA DHA VIRAMA PA DIACRITICE TTA VIRAMA"
+        },
+        {
+          "word": "ഭാഗമായ",
+          "phonemes": "bʱ a ː ɡ a m a ː j a",
+          "comment": "BHA DIACRITICAA GA MA DIACRITICAA YA"
+        },
+        {
+          "word": "മഴ",
+          "phonemes": "m a ɻ a",
+          "comment": "MA LLLA"
+        },
+        {
+          "word": "കൈ",
+          "phonemes": "k ai",
+          "comment": "KA DIACRITICAI"
+        },
+        {
+          "word": "ലോകം",
+          "phonemes": "l o ː k a m",
+          "comment": "LA DIACRITICEE DIACRITICAA KA ANUSVARA"
+        },
+        {
+          "word": "പോകു",
+          "phonemes": "p o ː k u",
+          "comment": "PA DIACRITICOO KA DIACRITICU"
+        },
+        {
+          "word": "പൊ",
+          "phonemes": "p o",
+          "comment": "PA DIACRITICE DIACRITICAA"
+        },
+        {
+          "word": "പൊ",
+          "phonemes": "p o",
+          "comment": "PA DIACRITICO"
+        },
+        {
+          "word": "കൌമ",
+          "phonemes": "k au m a",
+          "comment": "KA DIACRITICAU MA"
+        },
+        {
+          "word": "കൗമ",
+          "phonemes": "k au m a",
+          "comment": "KA AULENGTHMARK MA"
+        },
+        {
+          "word": "ആൺ",
+          "phonemes": "a ː ɳ",
+          "comment": "AA CHILLUNN"
+        },
+        {
+          "word": "സർ",
+          "phonemes": "s a r",
+          "comment": "SA CHILLURR"
+        },
+        {
+          "word": "ഐൿ",
+          "phonemes": "ai k",
+          "comment": "AI CHILLUK not a real word"
+        },
+        {
+          "word": "പഃ",
+          "phonemes": "p a h",
+          "comment": "PA VISARGA not a real word"
+        },
+        {
+          "word": "ഈച്ച",
+          "phonemes": "i ː tʃ ː a",
+          "comment": "II CHA VIRAMA CHA"
+        },
+        {
+          "word": "ഇല്ല",
+          "phonemes": "i l ː a",
+          "comment": "I LA VIRAMA LA"
+        },
+        {
+          "word": "ഉപ്പ്",
+          "phonemes": "u p ː",
+          "comment": "U PA VIRAMA PA"
+        },
+        {
+          "word": "ഊണ്",
+          "phonemes": "u ː ɳ",
+          "comment": "UU NNA VIRAMA"
+        },
+        {
+          "word": "ഒന്ന്",
+          "phonemes": "o n̪ ː",
+          "comment": "O NA VIRAMA NA VIRAMA"
+        },
+        {
+          "word": "ഔദ്യോഗിക",
+          "phonemes": "au d̪ j o ː ɡ i k a",
+          "comment": "AU DA VIRAMA YA DIACRITICOO GI"
+        },
+        {
+          "word": "ഏറ്റവും",
+          "phonemes": "e ː ʈ ː a ʋ u m",
+          "comment": "EE RA VIRAMA RA VA DIACRITICU ANUSVARA"
+        },
+        {
+          "word": "അതു്",
+          "phonemes": "a t̪ u"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "Gem": "(p|t̪|ʈ|tʃ|k|m|n̪|n|ɳ|ɲ|ŋ|l|ɭ)",
+          "KA": "ക",
+          "KHA": "ഖ",
+          "GA": "ഗ",
+          "GHA": "ഘ",
+          "NGA": "ങ",
+          "CA": "ച",
+          "CHA": "ഛ",
+          "JA": "ജ",
+          "JHA": "ഝ",
+          "NYA": "ഞ",
+          "TTA": "ട",
+          "TTHA": "ഠ",
+          "DDA": "ഡ",
+          "DDHA": "ഢ",
+          "NNA": "ണ",
+          "TA": "ത",
+          "THA": "ഥ",
+          "DA": "ദ",
+          "DHA": "ധ",
+          "NA": "ന",
+          "NNNA": "ഩ",
+          "PA": "പ",
+          "PHA": "ഫ",
+          "BA": "ബ",
+          "BHA": "ഭ",
+          "MA": "മ",
+          "YA": "യ",
+          "RA": "ര",
+          "RRA": "റ",
+          "LA": "ല",
+          "LLA": "ള",
+          "LLLA": "ഴ",
+          "VA": "വ",
+          "SHA": "ശ",
+          "SSA": "ഷ",
+          "SA": "സ",
+          "HA": "ഹ",
+          "A": "അ",
+          "AA": "ആ",
+          "I": "ഇ",
+          "II": "ഈ",
+          "U": "ഉ",
+          "UU": "ഊ",
+          "E": "എ",
+          "EE": "ഏ",
+          "AI": "ഐ",
+          "O": "ഒ",
+          "OO": "ഓ",
+          "AU": "ഔ",
+          "DIACRITICAA": "ാ",
+          "DIACRITICI": "ി",
+          "DIACRITICII": "ീ",
+          "DIACRITICU": "ു",
+          "DIACRITICUU": "ൂ",
+          "DIACRITICE": "െ",
+          "DIACRITICEE": "േ",
+          "DIACRITICAI": "ൈ",
+          "DIACRITICO": "ൊ",
+          "DIACRITICOO": "ോ",
+          "DIACRITICAU": "(ൌ|ൗ)",
+          "VIRAMA": "്",
+          "ANUSVARA": "(ം|൦)",
+          "VISARGA": "ഃ",
+          "CHILLUNN": "ൺ",
+          "CHILLUN": "(ൻ|൯)",
+          "CHILLURR": "(ർ|൪)",
+          "CHILLUL": "ൽ",
+          "CHILLULL": "ൾ",
+          "CHILLUK": "ൿ"
+        },
+        "sub": [
+          {
+            "from": "‌",
+            "to": "",
+            "weight": 1.0,
+            "comment": "removing zero width non joiner"
+          },
+          {
+            "from": "‍",
+            "to": "",
+            "weight": 1.0,
+            "comment": "removing zero width joiner"
+          },
+          {
+            "from": "{KA}",
+            "to": "k a",
+            "weight": 1.0
+          },
+          {
+            "from": "{KHA}",
+            "to": "kʰ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{GA}",
+            "to": "ɡ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{GHA}",
+            "to": "ɡʱ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{NGA}",
+            "to": "ŋ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{CA}",
+            "to": "tʃ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{CHA}",
+            "to": "tʃʰ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{JA}",
+            "to": "ɟ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{JHA}",
+            "to": "ɟʱ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{NYA}",
+            "to": "ɲ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{TTA}",
+            "to": "ʈ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{TTHA}",
+            "to": "ʈʰ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{DDA}",
+            "to": "ɖ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{DDHA}",
+            "to": "ɖʱ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{NNA}",
+            "to": "ɳ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{TA}",
+            "to": "t̪ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{THA}",
+            "to": "t̪ʰ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{DA}",
+            "to": "d̪ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{DHA}",
+            "to": "d̪ʱ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{NA}",
+            "to": "n̪ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{NNNA}",
+            "to": "n a",
+            "weight": 1.0
+          },
+          {
+            "from": "{PA}",
+            "to": "p a",
+            "weight": 1.0
+          },
+          {
+            "from": "{PHA}",
+            "to": "pʰ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{BA}",
+            "to": "b a",
+            "weight": 1.0
+          },
+          {
+            "from": "{BHA}",
+            "to": "bʱ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{MA}",
+            "to": "m a",
+            "weight": 1.0
+          },
+          {
+            "from": "{YA}",
+            "to": "j a",
+            "weight": 1.0
+          },
+          {
+            "from": "{RA}",
+            "to": "ɾ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{RRA}",
+            "to": "r a",
+            "weight": 1.0
+          },
+          {
+            "from": "{LA}",
+            "to": "l a",
+            "weight": 1.0
+          },
+          {
+            "from": "{LLA}",
+            "to": "ɭ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{LLLA}",
+            "to": "ɻ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{VA}",
+            "to": "ʋ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{SHA}",
+            "to": "ʃ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{SSA}",
+            "to": "ʂ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{SA}",
+            "to": "s a",
+            "weight": 1.0
+          },
+          {
+            "from": "{HA}",
+            "to": "h a",
+            "weight": 1.0
+          },
+          {
+            "from": "{A}",
+            "to": "a",
+            "weight": 1.0
+          },
+          {
+            "from": "{AA}",
+            "to": "a ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{I}",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "{II}",
+            "to": "i ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{U}",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "{UU}",
+            "to": "u ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{E}",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "{EE}",
+            "to": "e ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{AI}",
+            "to": "ai",
+            "weight": 1.0
+          },
+          {
+            "from": "{O}",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "{OO}",
+            "to": "o ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{AU}",
+            "to": "au",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICAA}",
+            "to": "ERASE a ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICI}",
+            "to": "ERASE i",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICII}",
+            "to": "ERASE i ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICU}",
+            "to": "ERASE u",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICUU}",
+            "to": "ERASE u ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICE}",
+            "to": "ERASE e",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICEE}",
+            "to": "ERASE e ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICAI}",
+            "to": "ERASE ai",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICO}",
+            "to": "ERASE o",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICOO}",
+            "to": "ERASE o ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICAU}",
+            "to": "ERASE au",
+            "weight": 1.0
+          },
+          {
+            "from": "{VIRAMA}",
+            "to": "ERASE",
+            "weight": 1.0
+          },
+          {
+            "from": "{ANUSVARA}",
+            "to": "m",
+            "weight": 1.0
+          },
+          {
+            "from": "{VISARGA}",
+            "to": "h",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICU}",
+            "to": "ERASE u",
+            "weight": 3.0,
+            "follow": "{VIRAMA}",
+            "comment": "accounts for the predictable reduction of /u/"
+          },
+          {
+            "from": "{VIRAMA}",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{DIACRITICU}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{CHILLUNN}",
+            "to": "ɳ",
+            "weight": 1.0
+          },
+          {
+            "from": "{CHILLUN}",
+            "to": "n̪",
+            "weight": 1.0
+          },
+          {
+            "from": "{CHILLURR}",
+            "to": "r",
+            "weight": 1.0
+          },
+          {
+            "from": "{CHILLUL}",
+            "to": "l",
+            "weight": 1.0
+          },
+          {
+            "from": "{CHILLULL}",
+            "to": "ɭ",
+            "weight": 1.0
+          },
+          {
+            "from": "{CHILLUK}",
+            "to": "k",
+            "weight": 1.0
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "e ː ERASE a ː",
+            "to": "o ː",
+            "weight": 2.0,
+            "comment": "/ea/ (long) to /o/ - two diacritics compose this phoneme"
+          },
+          {
+            "from": "e ERASE a ː",
+            "to": "o",
+            "weight": 2.0,
+            "comment": "changes /ea/ to /o/ - two diacritics compose this phoneme"
+          },
+          {
+            "from": "a ERASE",
+            "to": "",
+            "weight": 1.0,
+            "comment": "removes the inherent vowel when inflected by another vowel"
+          },
+          {
+            "from": "({Gem}) a ERASE \\1",
+            "to": "\\1 ː",
+            "weight": 3.0,
+            "comment": "consonant gemination"
+          },
+          {
+            "from": "({Gem}) a ERASE \\1ʰ",
+            "to": "\\1ʰ ː",
+            "weight": 3.5,
+            "comment": "fixes gemination rule"
+          },
+          {
+            "from": "({Gem}) a ERASE \\1ʱ",
+            "to": "\\1ʱ ː",
+            "weight": 3.5,
+            "comment": "fixes gemination rule"
+          },
+          {
+            "from": "r a ERASE r",
+            "to": "ʈ ː",
+            "weight": 4.0,
+            "comment": "fixes gemination - exception"
+          },
+          {
+            "from": "ERASE",
+            "to": "@",
+            "weight": 0.5,
+            "comment": "accounts for unattested combos"
+          },
+          {
+            "from": " ːʰ",
+            "to": " @",
+            "weight": 1.0,
+            "comment": "accounts for unattested aspiration (3 instances)"
+          }
+        ]
+      }
+    }
+  }
+}

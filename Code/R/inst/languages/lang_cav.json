@@ -1,0 +1,294 @@
+{
+  "metadata": {
+    "code": "cav",
+    "name": "Cavineña",
+    "family": "Tacanan,Araona-Tacana,Cavinena-Tacana,Cavinena",
+    "macroarea": "South America",
+    "compromised": {
+      "note": "interpretation of consonant clusters (one phoneme or two)"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "adebabada",
+          "phonemes": "a d e b a b a d a"
+        },
+        {
+          "word": "ahuema",
+          "phonemes": "a w e m a"
+        },
+        {
+          "word": "cuesiya",
+          "phonemes": "kʷ e s i j a"
+        },
+        {
+          "word": "chadi",
+          "phonemes": "tɕ a d i"
+        },
+        {
+          "word": "chajaya",
+          "phonemes": "tɕ a h a j a"
+        },
+        {
+          "word": "duu",
+          "phonemes": "d u u"
+        },
+        {
+          "word": "dyai",
+          "phonemes": "ɟ a i"
+        },
+        {
+          "word": "dyaquetanaya",
+          "phonemes": "ɟ a k e t a n a j a"
+        },
+        {
+          "word": "naqui",
+          "phonemes": "n a k i"
+        },
+        {
+          "word": "nasehueda",
+          "phonemes": "n a s e w e d a"
+        },
+        {
+          "word": "erumu",
+          "phonemes": "e ɺ u m u"
+        },
+        {
+          "word": "icuene",
+          "phonemes": "i kʷ e n e"
+        },
+        {
+          "word": "lluya",
+          "phonemes": "ʎ u j a"
+        },
+        {
+          "word": "mallaya",
+          "phonemes": "m a ʎ a j a"
+        },
+        {
+          "word": "metse",
+          "phonemes": "m e ts e"
+        },
+        {
+          "word": "ñuhuiri",
+          "phonemes": "ɲ u w i ɺ i"
+        },
+        {
+          "word": "patya",
+          "phonemes": "p a c a"
+        },
+        {
+          "word": "ishu",
+          "phonemes": "i ɕ u"
+        },
+        {
+          "word": "chichucata",
+          "phonemes": "tɕ i tɕ u k a t a"
+        },
+        {
+          "word": "cacuatsashati",
+          "phonemes": "k a kʷ a ts a ɕ a t i"
+        },
+        {
+          "word": "ama",
+          "phonemes": "a m a"
+        },
+        {
+          "word": "cuanaque",
+          "phonemes": "kʷ a n a k e"
+        },
+        {
+          "word": "jadya",
+          "phonemes": "h a ɟ a"
+        },
+        {
+          "word": "bucha",
+          "phonemes": "b u tɕ a"
+        },
+        {
+          "word": "cuana",
+          "phonemes": "kʷ a n a"
+        },
+        {
+          "word": "tuna",
+          "phonemes": "t u n a"
+        },
+        {
+          "word": "tuque",
+          "phonemes": "t u k e"
+        },
+        {
+          "word": "inime",
+          "phonemes": "i n i m e"
+        },
+        {
+          "word": "eque",
+          "phonemes": "e k e"
+        },
+        {
+          "word": "queja",
+          "phonemes": "k e h a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdeimnpstu]",
+          "u-preceder": "[chq]",
+          "y-preceder": "[dt]",
+          "h-preceder": "[cs]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 2.0
+          },
+          {
+            "from": "j",
+            "to": "h",
+            "weight": 2.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɺ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "kʷ",
+            "weight": 4.0,
+            "follow": "u"
+          },
+          {
+            "from": "c",
+            "to": "tɕ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "d",
+            "to": "ɟ",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "l",
+            "to": "ʎ",
+            "weight": 3.0,
+            "follow": "l"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 3.0,
+            "precede": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ɕ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "{h-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "ts",
+            "weight": 3.0,
+            "follow": "s"
+          },
+          {
+            "from": "s",
+            "to": "",
+            "weight": 3.0,
+            "precede": "t",
+            "comment": "clean-up"
+          },
+          {
+            "from": "t",
+            "to": "c",
+            "weight": 3.0,
+            "follow": "y"
+          },
+          {
+            "from": "y",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{y-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "w",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "u",
+            "weight": 4.0,
+            "precede": "(sh|ch)",
+            "comment": "prevents /u/ from being deleted in <chu> and <shu> sequences"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{u-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "á",
+            "to": "a",
+            "weight": 2.0
+          },
+          {
+            "from": "é",
+            "to": "e",
+            "weight": 2.0
+          },
+          {
+            "from": "í",
+            "to": "i",
+            "weight": 2.0
+          },
+          {
+            "from": "ú",
+            "to": "u",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

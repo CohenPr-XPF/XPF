@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "code": "apy",
+    "name": "Apalaí",
+    "family": "Carib,Northern,East-West Guiana,Wayana-Trio",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ahnohpyry",
+          "phonemes": "a ʔ n o ʔ p ɨ ɾ ɨ"
+        },
+        {
+          "word": "ahpĩko",
+          "phonemes": "a ʔ p ĩ k o"
+        },
+        {
+          "word": "amõko",
+          "phonemes": "a m õ k o"
+        },
+        {
+          "word": "akyry",
+          "phonemes": "a k ɨ ɾ ɨ"
+        },
+        {
+          "word": "amaro",
+          "phonemes": "a m a ɾ o"
+        },
+        {
+          "word": "enaroximary",
+          "phonemes": "e n a ɾ o ʃ i m a ɾ ɨ"
+        },
+        {
+          "word": "enaromyra",
+          "phonemes": "e n a ɾ o m ɨ ɾ a"
+        },
+        {
+          "word": "enepỹme",
+          "phonemes": "e n e p ɨ̃ m e"
+        },
+        {
+          "word": "ẽnõko",
+          "phonemes": "ẽ n õ k o"
+        },
+        {
+          "word": "epo",
+          "phonemes": "e p o"
+        },
+        {
+          "word": "hkoty",
+          "phonemes": "ʔ k o t ɨ"
+        },
+        {
+          "word": "htae",
+          "phonemes": "ʔ t a e"
+        },
+        {
+          "word": "ipakomo",
+          "phonemes": "i p a k o m o"
+        },
+        {
+          "word": "inyrihpyry",
+          "phonemes": "i n ɨ ɾ i ʔ p ɨ ɾ ɨ"
+        },
+        {
+          "word": "iparunun",
+          "phonemes": "i p a ɾ u n u n"
+        },
+        {
+          "word": "inũme",
+          "phonemes": "i n ũ m e"
+        },
+        {
+          "word": "isawany",
+          "phonemes": "i s a w a n ɨ"
+        },
+        {
+          "word": "isãtajany",
+          "phonemes": "i s ã t a j a n ɨ"
+        },
+        {
+          "word": "juru",
+          "phonemes": "j u ɾ u"
+        },
+        {
+          "word": "moino",
+          "phonemes": "m o i n o"
+        },
+        {
+          "word": "moky",
+          "phonemes": "m o k ɨ"
+        },
+        {
+          "word": "oryxiry",
+          "phonemes": "o ɾ ɨ ʃ i ɾ ɨ"
+        },
+        {
+          "word": "osema",
+          "phonemes": "o s e m a"
+        },
+        {
+          "word": "osemazuhme",
+          "phonemes": "o s e m a z u ʔ m e"
+        },
+        {
+          "word": "peze",
+          "phonemes": "p e z e"
+        },
+        {
+          "word": "poeto",
+          "phonemes": "p o e t o"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[aãeẽiĩjkmnoõpstuũwz]"
+        },
+        "sub": [
+          {
+            "from": "h",
+            "to": "ʔ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "x",
+            "to": "ʃ",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "ɨ",
+            "weight": 2.0
+          },
+          {
+            "from": "ỹ",
+            "to": "ɨ̃",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

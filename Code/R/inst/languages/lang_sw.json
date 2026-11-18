@@ -1,0 +1,314 @@
+{
+  "metadata": {
+    "code": "sw",
+    "name": "Swahili",
+    "family": "Niger-Congo,Atlantic-Congo,Volta-Congo,Benue-Congo,Bantoid,Southern Bantoid,Bantu,Northeast Bantu,Northeast Coast Bantu,Sabaki,Swahili",
+    "macroarea": "Africa",
+    "compromised": {
+      "sounds": "ᵐb|mb|ⁿd|nd|ⁿdʒ|ndʒ|ɲ|nj|ᶬv|mv|ⁿz|nz|ᵑɡ|nɡ"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ng'amba",
+          "phonemes": "ŋ ɑ ᵐb ɑ",
+          "comment": "rules tested: ng' --> /ŋ/, a --> /ɑ/, mb --> /ᵐb/"
+        },
+        {
+          "word": "andikiza",
+          "phonemes": "ɑ ⁿd i k i z ɑ",
+          "comment": "rules tested: nd --> /ⁿd/, k --> /k/ when there's no x after it, z --> /z/ when there's no n before it, i --> /i/ (passthrough)"
+        },
+        {
+          "word": "achali",
+          "phonemes": "ɑ tʃ ɑ l i",
+          "comment": "rules tested: ch --> /tʃ/, l --> /l/ (passthrough)"
+        },
+        {
+          "word": "dhakari",
+          "phonemes": "ð ɑ k ɑ r i",
+          "comment": "rules tested: dh --> /ð/, r --> /r/ (passthrough)"
+        },
+        {
+          "word": "andikiza",
+          "phonemes": "ɑ ⁿd i k i z ɑ",
+          "comment": "rule tested: nd --> /ⁿd/"
+        },
+        {
+          "word": "hotuba",
+          "phonemes": "h ɔ t u b ɑ",
+          "comment": "rules tested: h --> /h/ (passthrough), b --> /b/ (passthrough), u --> /u/ (passthrough), t --> /t/ when there's no h after"
+        },
+        {
+          "word": "jana",
+          "phonemes": "dʒ ɑ n ɑ",
+          "comment": "rules tested: j --> /dʒ/, n --> /n/ when there's no g or d afterwards"
+        },
+        {
+          "word": "gae",
+          "phonemes": "ɡ ɑ ɛ",
+          "comment": "rules tested: e --> /ɛ/, g --> /g/ when there's no n before it or h after it"
+        },
+        {
+          "word": "nyuki",
+          "phonemes": "ɲ u k i",
+          "comment": "rule tested: n --> /ɲ/ when there's a y after"
+        },
+        {
+          "word": "kanga",
+          "phonemes": "k ɑ ᵑɡ ɑ",
+          "comment": "rule tested: ng --> ᵑg"
+        },
+        {
+          "word": "neno",
+          "phonemes": "n ɛ n ɔ",
+          "comment": "rules tested: n --> /n/ when it does not precede g or d, o --> /ɔ/"
+        },
+        {
+          "word": "shashimamishi",
+          "phonemes": "ʃ ɑ ʃ i m ɑ m i ʃ i",
+          "comment": "rule tested: sh --> /ʃ/"
+        },
+        {
+          "word": "kisu",
+          "phonemes": "k i s u",
+          "comment": "rule tested: s --> /s/ when there's no h after"
+        },
+        {
+          "word": "vivu",
+          "phonemes": "v i v u",
+          "comment": "rule tested: v --> /v/ when there's no m preceding"
+        },
+        {
+          "word": "mzungu",
+          "phonemes": "m z u ᵑɡ u",
+          "comment": "rule tested: z --> /z/ when there's no n in front"
+        },
+        {
+          "word": "khofu",
+          "phonemes": "x ɔ f u",
+          "comment": "rule tested: kh --> /x/"
+        },
+        {
+          "word": "Lugha",
+          "phonemes": "l u ɣ ɑ",
+          "comment": "rule tested: gh --> /ɣ/"
+        },
+        {
+          "word": "Thamani",
+          "phonemes": "θ ɑ m ɑ n i",
+          "comment": "rule tested: th --> /θ/"
+        },
+        {
+          "word": "Yaya",
+          "phonemes": "j ɑ j ɑ",
+          "comment": "rule tested: y --> /j/"
+        },
+        {
+          "word": "tii",
+          "phonemes": "t i i",
+          "comment": "rule tested: collapsing of double vowel"
+        },
+        {
+          "word": "zaidi",
+          "phonemes": "z ɑ i d i",
+          "comment": "rule tested: d --> /d/ (passthrough)"
+        },
+        {
+          "word": "hapa",
+          "phonemes": "h ɑ p ɑ",
+          "comment": "rule tested: p --> /p/ (passthrough)"
+        },
+        {
+          "word": "ilikuwa",
+          "phonemes": "i l i k u w ɑ",
+          "comment": "rule tested: w --> /w/ (passthrough)"
+        },
+        {
+          "word": "mvua",
+          "phonemes": "ᶬv u ɑ",
+          "comment": "rule tested: mv --> /ᶬv/"
+        },
+        {
+          "word": "njia",
+          "phonemes": "ⁿdʒ i ɑ",
+          "comment": "rule tested: nj --> /ⁿdʒ/"
+        },
+        {
+          "word": "kwanza",
+          "phonemes": "k w ɑ ⁿz ɑ",
+          "comment": "rule tested: nz --> /ⁿz/"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[bdfhiklmnprstuvwz]",
+          "m-follower": "[bv]",
+          "n-follower": "[djyvzg]",
+          "h-preceder": "[cdgkst]",
+          "apostrophe": "[’'ʻ′]"
+        },
+        "sub": [
+          {
+            "from": "a",
+            "to": "ɑ",
+            "weight": 1.0
+          },
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 1.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 1.0
+          },
+          {
+            "from": "j",
+            "to": "dʒ",
+            "weight": 1.0
+          },
+          {
+            "from": "o",
+            "to": "ɔ",
+            "weight": 1.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 1.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          },
+          {
+            "from": "b",
+            "to": "ᵐb",
+            "weight": 2.0,
+            "precede": "m"
+          },
+          {
+            "from": "v",
+            "to": "ᶬv",
+            "weight": 2.0,
+            "precede": "m"
+          },
+          {
+            "from": "m",
+            "to": "",
+            "weight": 2.0,
+            "follow": "{m-follower}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "d",
+            "to": "ⁿd",
+            "weight": 2.0,
+            "precede": "n"
+          },
+          {
+            "from": "j",
+            "to": "ⁿdʒ",
+            "weight": 2.0,
+            "precede": "n"
+          },
+          {
+            "from": "y",
+            "to": "ɲ",
+            "weight": 2.0,
+            "precede": "n"
+          },
+          {
+            "from": "z",
+            "to": "ⁿz",
+            "weight": 2.0,
+            "precede": "n"
+          },
+          {
+            "from": "g",
+            "to": "ᵑɡ",
+            "weight": 2.0,
+            "precede": "n"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 2.0,
+            "follow": "{n-follower}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "d",
+            "to": "ð",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "g",
+            "to": "ɣ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "k",
+            "to": "x",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "t",
+            "to": "θ",
+            "weight": 2.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{h-preceder}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "ŋ",
+            "weight": 5.0,
+            "precede": "n",
+            "follow": "{apostrophe}"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 5.0,
+            "precede": "ng",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "",
+            "weight": 5.0,
+            "follow": "g{apostrophe}",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

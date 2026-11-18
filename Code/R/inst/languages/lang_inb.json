@@ -1,0 +1,259 @@
+{
+  "metadata": {
+    "code": "inb",
+    "name": "Inga",
+    "family": "Quechuan,Quechua II,B",
+    "macroarea": "South America",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "aswa",
+          "phonemes": "a s̪ w a"
+        },
+        {
+          "word": "aspii",
+          "phonemes": "a s̪ p i i"
+        },
+        {
+          "word": "atuniai",
+          "phonemes": "a t̪ u n̪ i a i"
+        },
+        {
+          "word": "iachi",
+          "phonemes": "i a tʃ i"
+        },
+        {
+          "word": "imapas",
+          "phonemes": "i m a p a s̪"
+        },
+        {
+          "word": "jijin",
+          "phonemes": "x i x i n̪"
+        },
+        {
+          "word": "juakimi",
+          "phonemes": "x u a k i m i"
+        },
+        {
+          "word": "kaillapi",
+          "phonemes": "k a i ʎ a p i"
+        },
+        {
+          "word": "kakuchiska",
+          "phonemes": "k a k u tʃ i s̪ k a"
+        },
+        {
+          "word": "kilpai",
+          "phonemes": "k i l̪ p a i"
+        },
+        {
+          "word": "killa",
+          "phonemes": "k i ʎ a"
+        },
+        {
+          "word": "lipia",
+          "phonemes": "l̪ i p i a"
+        },
+        {
+          "word": "llikii",
+          "phonemes": "ʎ i k i i"
+        },
+        {
+          "word": "lluchka",
+          "phonemes": "ʎ u tʃ k a"
+        },
+        {
+          "word": "lluspichirii",
+          "phonemes": "ʎ u s̪ p i tʃ i ɾ i i"
+        },
+        {
+          "word": "maltuiai",
+          "phonemes": "m a l̪ t̪ u i a i"
+        },
+        {
+          "word": "milma",
+          "phonemes": "m i l̪ m a"
+        },
+        {
+          "word": "sarawai",
+          "phonemes": "s̪ a ɾ a w a i"
+        },
+        {
+          "word": "sapa",
+          "phonemes": "s̪ a p a"
+        },
+        {
+          "word": "tapia",
+          "phonemes": "t̪ a p i a"
+        },
+        {
+          "word": "ujnai",
+          "phonemes": "u x n̪ a i"
+        },
+        {
+          "word": "witsaja",
+          "phonemes": "w i t̪ s̪ a x a"
+        },
+        {
+          "word": "antakuyu",
+          "phonemes": "a n̪ t̪ a k u j u"
+        },
+        {
+          "word": "añikuna",
+          "phonemes": "a ɲ i k u n̪ a"
+        },
+        {
+          "word": "kanchu",
+          "phonemes": "k a n̪ tʃ u"
+        },
+        {
+          "word": "saquisachu",
+          "phonemes": "s̪ a k i s̪ a tʃ u"
+        },
+        {
+          "word": "akushi",
+          "phonemes": "a k u ʃ i"
+        },
+        {
+          "word": "cahuaspa",
+          "phonemes": "k a w a s̪ p a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[akimpuw]",
+          "backV": "[au]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "k",
+            "weight": 5.0,
+            "follow": "{backV}"
+          },
+          {
+            "from": "j",
+            "to": "x",
+            "weight": 2.0
+          },
+          {
+            "from": "l",
+            "to": "l̪",
+            "weight": 2.0
+          },
+          {
+            "from": "n",
+            "to": "n̪",
+            "weight": 2.0
+          },
+          {
+            "from": "ñ",
+            "to": "ɲ",
+            "weight": 2.0
+          },
+          {
+            "from": "r",
+            "to": "ɾ",
+            "weight": 2.0
+          },
+          {
+            "from": "s",
+            "to": "s̪",
+            "weight": 2.0
+          },
+          {
+            "from": "t",
+            "to": "t̪",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "c",
+            "to": "tʃ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "c",
+            "comment": "clean-up"
+          },
+          {
+            "from": "u",
+            "to": "u",
+            "weight": 5.0,
+            "precede": "ch",
+            "comment": "prevents /u/ from being deleted in <chu> sequences"
+          },
+          {
+            "from": "l",
+            "to": "ʎ",
+            "weight": 3.0,
+            "follow": "l"
+          },
+          {
+            "from": "l",
+            "to": "",
+            "weight": 3.0,
+            "precede": "l",
+            "comment": "clean-up"
+          },
+          {
+            "from": "q",
+            "to": "k",
+            "weight": 3.0,
+            "follow": "ui"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "q",
+            "follow": "i",
+            "comment": "clean-up"
+          },
+          {
+            "from": "s",
+            "to": "ʃ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 4.0,
+            "precede": "s",
+            "comment": "clean-up"
+          },
+          {
+            "from": "h",
+            "to": "w",
+            "weight": 3.0,
+            "follow": "u"
+          },
+          {
+            "from": "u",
+            "to": "",
+            "weight": 3.0,
+            "precede": "h",
+            "comment": "clean-up"
+          }
+        ]
+      }
+    }
+  }
+}

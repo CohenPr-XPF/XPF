@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "code": "gaw",
+    "name": "Nobonob",
+    "family": "Trans-New Guinea,Madang-Adelbert Range,Madang,Mabuso,Hanseman",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "da",
+          "phonemes": "d a"
+        },
+        {
+          "word": "heqopa",
+          "phonemes": "h e ɓ o p a"
+        },
+        {
+          "word": "kaleg",
+          "phonemes": "k a l e ɡ"
+        },
+        {
+          "word": "goḏum",
+          "phonemes": "ɡ o ɗ u m"
+        },
+        {
+          "word": "oḵulyi",
+          "phonemes": "o k ː u l j i"
+        },
+        {
+          "word": "mauḏṯe",
+          "phonemes": "m a u ɗ t ː e"
+        },
+        {
+          "word": "niiṯem",
+          "phonemes": "n i ː t ː e m"
+        },
+        {
+          "word": "buuṯem",
+          "phonemes": "b u ː t ː e m"
+        },
+        {
+          "word": "aahe",
+          "phonemes": "a ː h e"
+        },
+        {
+          "word": "akipkip",
+          "phonemes": "a k i p k i p"
+        },
+        {
+          "word": "awa",
+          "phonemes": "a w a"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdehiklmnoptuw]",
+          "vowels": "[aeiou]",
+          "macron_preceder": "[ptkdg]"
+        },
+        "sub": [
+          {
+            "from": "q",
+            "to": "ɓ",
+            "weight": 2.0
+          },
+          {
+            "from": "ḏ",
+            "to": "ɗ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "g̱",
+            "to": "ɠ",
+            "weight": 2.0
+          },
+          {
+            "from": "ḵ",
+            "to": "k ː",
+            "weight": 2.0
+          },
+          {
+            "from": "p̱",
+            "to": "p ː",
+            "weight": 2.0
+          },
+          {
+            "from": "ṯ",
+            "to": "t ː",
+            "weight": 2.0
+          },
+          {
+            "from": "y",
+            "to": "j",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "k",
+            "to": "k ː",
+            "weight": 3.0,
+            "follow": "̱"
+          },
+          {
+            "from": "p",
+            "to": "p ː",
+            "weight": 3.0,
+            "follow": "̱"
+          },
+          {
+            "from": "t",
+            "to": "t ː",
+            "weight": 3.0,
+            "follow": "̱"
+          },
+          {
+            "from": "d",
+            "to": "ɗ",
+            "weight": 3.0,
+            "follow": "̱"
+          },
+          {
+            "from": "g",
+            "to": "ɠ",
+            "weight": 3.0,
+            "follow": "̱"
+          },
+          {
+            "from": "̱",
+            "to": "",
+            "weight": 2.0,
+            "precede": "{macron_preceder}"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "({vowels}) \\1",
+            "to": "\\1 ː",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

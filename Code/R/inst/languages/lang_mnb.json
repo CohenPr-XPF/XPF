@@ -1,0 +1,281 @@
+{
+  "metadata": {
+    "code": "mnb",
+    "name": "Muna",
+    "family": "Austronesian,Malayo-Polynesian,Western Malayo-Polynesian,Sulawesi,Muna-Buton,Muna",
+    "macroarea": "Papunesia",
+    "compromised": {
+      "note": "suspect orthography"
+    },
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "ghulu",
+          "phonemes": "ʁ u l u"
+        },
+        {
+          "word": "poi",
+          "phonemes": "p ɔ i"
+        },
+        {
+          "word": "tuwu",
+          "phonemes": "t u w u"
+        },
+        {
+          "word": "tangke",
+          "phonemes": "t a ᵑk ɛ"
+        },
+        {
+          "word": "bhera",
+          "phonemes": "ɓ ɛ r a"
+        },
+        {
+          "word": "mbali",
+          "phonemes": "ᵐb a l i"
+        },
+        {
+          "word": "kati",
+          "phonemes": "k a t i"
+        },
+        {
+          "word": "kampuna",
+          "phonemes": "k a ᵐp u n a"
+        },
+        {
+          "word": "fagha",
+          "phonemes": "f a ʁ a"
+        },
+        {
+          "word": "ahadhi",
+          "phonemes": "a h a d̪ i"
+        },
+        {
+          "word": "bage",
+          "phonemes": "b a ɡ ɛ"
+        },
+        {
+          "word": "ringgi",
+          "phonemes": "r i ᵑɡ i"
+        },
+        {
+          "word": "kasopa",
+          "phonemes": "k a s ɔ p a"
+        },
+        {
+          "word": "sunsu",
+          "phonemes": "s u ⁿs u"
+        },
+        {
+          "word": "malingu",
+          "phonemes": "m a l i ŋ u"
+        },
+        {
+          "word": "wanta",
+          "phonemes": "w a ⁿt a"
+        },
+        {
+          "word": "rindi",
+          "phonemes": "r i ⁿd i"
+        },
+        {
+          "word": "na'a",
+          "phonemes": "n a a"
+        },
+        {
+          "word": "dua",
+          "phonemes": "d u a"
+        },
+        {
+          "word": "ingka",
+          "phonemes": "i ᵑk a"
+        },
+        {
+          "word": "ini",
+          "phonemes": "i n i"
+        },
+        {
+          "word": "so",
+          "phonemes": "s ɔ"
+        },
+        {
+          "word": "we",
+          "phonemes": "w ɛ"
+        },
+        {
+          "word": "maka",
+          "phonemes": "m a k a"
+        },
+        {
+          "word": "weo",
+          "phonemes": "w ɛ ɔ"
+        },
+        {
+          "word": "miina",
+          "phonemes": "m i i n a"
+        },
+        {
+          "word": "ana'a",
+          "phonemes": "a n a a"
+        },
+        {
+          "word": "peda",
+          "phonemes": "p ɛ d a"
+        },
+        {
+          "word": "tamaka",
+          "phonemes": "t a m a k a"
+        },
+        {
+          "word": "maitu",
+          "phonemes": "m a i t u"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdfhiklmnprstuw]",
+          "m-followers": "[pb]",
+          "h-preceders": "[bdg]",
+          "n-followers": "[tdsg]",
+          "vowels": "[aeiou]",
+          "apostrophe": "[''‘’]"
+        },
+        "sub": [
+          {
+            "from": "e",
+            "to": "ɛ",
+            "weight": 2.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 2.0
+          },
+          {
+            "from": "o",
+            "to": "ɔ",
+            "weight": 2.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 2.0
+          },
+          {
+            "from": "m",
+            "to": "ᵐp",
+            "weight": 4.0,
+            "follow": "p"
+          },
+          {
+            "from": "m",
+            "to": "ᵐb",
+            "weight": 4.0,
+            "follow": "b"
+          },
+          {
+            "from": "{m-followers}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "m",
+            "comment": "clean-up"
+          },
+          {
+            "from": "b",
+            "to": "ɓ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "d",
+            "to": "d̪",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "g",
+            "to": "ʁ",
+            "weight": 4.0,
+            "follow": "h"
+          },
+          {
+            "from": "h",
+            "to": "",
+            "weight": 3.0,
+            "precede": "{h-preceders}",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ⁿt",
+            "weight": 4.0,
+            "follow": "t"
+          },
+          {
+            "from": "n",
+            "to": "ⁿd",
+            "weight": 4.0,
+            "follow": "d"
+          },
+          {
+            "from": "n",
+            "to": "ⁿs",
+            "weight": 4.0,
+            "follow": "s"
+          },
+          {
+            "from": "n",
+            "to": "ŋ",
+            "weight": 4.0,
+            "follow": "g"
+          },
+          {
+            "from": "{n-followers}",
+            "to": "",
+            "weight": 3.0,
+            "precede": "n",
+            "comment": "clean-up"
+          },
+          {
+            "from": "n",
+            "to": "ᵑk",
+            "weight": 7.0,
+            "follow": "gk"
+          },
+          {
+            "from": "n",
+            "to": "ᵑɡ",
+            "weight": 7.0,
+            "follow": "gg"
+          },
+          {
+            "from": "k",
+            "to": "",
+            "weight": 6.0,
+            "precede": "ng",
+            "comment": "clean-up"
+          },
+          {
+            "from": "g",
+            "to": "",
+            "weight": 6.0,
+            "precede": "ng",
+            "comment": "clean-up"
+          },
+          {
+            "from": "{apostrophe}",
+            "to": "",
+            "weight": 2.0
+          },
+          {
+            "from": "-",
+            "to": "",
+            "weight": 2.0
+          }
+        ]
+      }
+    }
+  }
+}

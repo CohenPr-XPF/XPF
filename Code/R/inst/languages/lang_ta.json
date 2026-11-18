@@ -1,0 +1,461 @@
+{
+  "metadata": {
+    "code": "ta",
+    "name": "Tamil",
+    "family": "Dravidian,Southern,Tamil-Kannada,Tamil-Kodagu,Tamil-Malayalam,Tamil",
+    "macroarea": "Eurasia",
+    "default_script": "tamil"
+  },
+  "scripts": {
+    "tamil": {
+      "verify": [
+        {
+          "word": "கசிவு",
+          "phonemes": "k a tʃ i ʋ u",
+          "comment": "KA CHA DIACRITICI VA DIACRITICU"
+        },
+        {
+          "word": "அங்கீகரிக்கப்பட்ட",
+          "phonemes": "a n k i ː k a ɾ i k ː a p ː a ʈ ː a",
+          "comment": "A NGA DIACRITICPULLI KA DIACRITICII KA TAP DIACRITICI KA DIACRITICPULLI KA PA DIACRITICPULLI PA RETROFLEXTA DIACRITICPULLI RETROFLEXTA"
+        },
+        {
+          "word": "ஞாயிறு",
+          "phonemes": "n a ː j i ɾ u",
+          "comment": "NJA DIACRITICAA YA DIACRITICI RA DIACRITICU"
+        },
+        {
+          "word": "அணி",
+          "phonemes": "a ɳ i",
+          "comment": "A RETROFLEXNA DIACRITICI"
+        },
+        {
+          "word": "தங்கம்",
+          "phonemes": "t̪ a n k a m",
+          "comment": "DENTALTA NGA DIACRITICPULLI KA MA DIACRITICPULLI"
+        },
+        {
+          "word": "அக்கறை",
+          "phonemes": "a k ː a ɾ aɪ",
+          "comment": "A KA DIACRITICPULLI KA RA DIACRITICAI"
+        },
+        {
+          "word": "நகர",
+          "phonemes": "n a k a ɾ a",
+          "comment": "DENTALNA KA TAP"
+        },
+        {
+          "word": "அங்குல",
+          "phonemes": "a n k u l a",
+          "comment": "A NGA DIACRITICPULLI KA DIACRITICU LA"
+        },
+        {
+          "word": "அக்குள்",
+          "phonemes": "a k ː u ɭ",
+          "comment": "A KA DIACRITICPULLI KA DIACRITICU RETROFLEXLA"
+        },
+        {
+          "word": "அழ",
+          "phonemes": "a ɻ a",
+          "comment": "A RETROFLEXAPPROXIMANT"
+        },
+        {
+          "word": "ஆஃப்",
+          "phonemes": "a ː k a p",
+          "comment": "AA XA PA DIACRITICPULLI loanword from English off"
+        },
+        {
+          "word": "இளமை",
+          "phonemes": "i ɭ a m aɪ",
+          "comment": "I RETROFLEXLA MA DIACRITICAI"
+        },
+        {
+          "word": "ஈரமான",
+          "phonemes": "i ː ɾ a m a ː n a",
+          "comment": "II TAP MA DIACRITICAA NA"
+        },
+        {
+          "word": "உச்ச",
+          "phonemes": "u tʃ ː a",
+          "comment": "U CHA DIACRITICPULLI CHA"
+        },
+        {
+          "word": "ஊட்டி",
+          "phonemes": "u ː ʈ ː i",
+          "comment": "UU RETROFLEXTA DIACRITICPULLI RETROFLEXTA DIACRITICI"
+        },
+        {
+          "word": "எங்கே",
+          "phonemes": "e n k e ː",
+          "comment": "E NGA DIACRITICPULLI KA DIACRITICEE"
+        },
+        {
+          "word": "ஏன்",
+          "phonemes": "e ː n",
+          "comment": "EE NA DIACRITICPULLI"
+        },
+        {
+          "word": "ஐயா",
+          "phonemes": "aɪ j a ː",
+          "comment": "AI"
+        },
+        {
+          "word": "ஒடி",
+          "phonemes": "o ʈ i",
+          "comment": "O RETROFLEXTA DIACRITICI"
+        },
+        {
+          "word": "ஓடம்",
+          "phonemes": "o ː ʈ a m",
+          "comment": "OO RETROFLEXTA MA DIACRITICPULLI"
+        },
+        {
+          "word": "ஔகம்",
+          "phonemes": "aʊ k a m",
+          "comment": "AU KA MA DIACRITICPULLI"
+        },
+        {
+          "word": "கூட",
+          "phonemes": "k u ː ʈ a",
+          "comment": "KA DIACRITICUU RETROFLEXTA"
+        },
+        {
+          "word": "கொசு",
+          "phonemes": "k o tʃ u",
+          "comment": "KA DIACRITICO CHA DIACRITICU"
+        },
+        {
+          "word": "உலோகம்",
+          "phonemes": "u l o ː k a m",
+          "comment": "U LA DIACRITICOO KA MA DIACRITICPULLI"
+        },
+        {
+          "word": "மௌனம்",
+          "phonemes": "m aʊ n a m",
+          "comment": "MA DIACRITICE DIACRITICAU2 NA MA DIACRITICPULLI"
+        },
+        {
+          "word": "மௌனம்",
+          "phonemes": "m aʊ n a m",
+          "comment": "MA DIACRITICAU NA MA DIACRITICPULLI"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "gem": "(p|m|ʋ|t̪|n|l|tʃ|ʈ|ɳ|ɭ|j|k)",
+          "KA": "[க]",
+          "NGA": "[ங]",
+          "CHA": "[ச]",
+          "NJA": "[ஞ]",
+          "RETROFLEXTA": "[ட]",
+          "RETROFLEXNA": "[ண]",
+          "DENTALTA": "[த]",
+          "DENTALNA": "[ந]",
+          "PA": "[ப]",
+          "MA": "[ம]",
+          "RA": "[ற]",
+          "NA": "[ன]",
+          "TAP": "[ர]",
+          "LA": "[ல]",
+          "RETROFLEXL": "[ள]",
+          "RETROFLEXAPPROXIMANT": "[ழ]",
+          "YA": "[ய]",
+          "VA": "[வ]",
+          "XA": "[ஃ]",
+          "A": "[அ]",
+          "AA": "[ஆ]",
+          "I": "[இ]",
+          "II": "[ஈ]",
+          "U": "[உ]",
+          "UU": "[ஊ]",
+          "E": "[எ]",
+          "EE": "[ஏ]",
+          "AI": "[ஐ]",
+          "O": "[ஒ]",
+          "OO": "[ஓ]",
+          "AU": "[ஔ]",
+          "DIACRITICAA": "[ா]",
+          "DIACRITICI": "[ி]",
+          "DIACRITICII": "[ீ]",
+          "DIACRITICU": "[ு]",
+          "DIACRITICUU": "[ூ]",
+          "DIACRITICE": "[ெ]",
+          "DIACRITICEE": "[ே]",
+          "DIACRITICAI": "[ை]",
+          "DIACRITICO": "[ொ]",
+          "DIACRITICOO": "[ோ]",
+          "DIACRITICAU": "[ௌ]",
+          "DIACRITICAU2": "[ௗ]",
+          "DIACRITICPULLI": "[்]"
+        },
+        "sub": [
+          {
+            "from": "{KA}",
+            "to": "k a",
+            "weight": 1.0
+          },
+          {
+            "from": "{NGA}",
+            "to": "n a",
+            "weight": 1.0,
+            "comment": "velar nasal is an allophone of /n/"
+          },
+          {
+            "from": "{CHA}",
+            "to": "tʃ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{NJA}",
+            "to": "n a",
+            "weight": 1.0,
+            "comment": "palatal nasal is an allophone of /n/"
+          },
+          {
+            "from": "{RETROFLEXTA}",
+            "to": "ʈ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{RETROFLEXNA}",
+            "to": "ɳ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{DENTALTA}",
+            "to": "t̪ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{DENTALNA}",
+            "to": "n a",
+            "weight": 1.0,
+            "comment": "dental nasal is an allophone of /n/"
+          },
+          {
+            "from": "{PA}",
+            "to": "p a",
+            "weight": 1.0
+          },
+          {
+            "from": "{MA}",
+            "to": "m a",
+            "weight": 1.0
+          },
+          {
+            "from": "{RA}",
+            "to": "ɾ a",
+            "weight": 1.0,
+            "comment": "there is no phonemic contrast between tap and trill"
+          },
+          {
+            "from": "{NA}",
+            "to": "n a",
+            "weight": 1.0
+          },
+          {
+            "from": "{TAP}",
+            "to": "ɾ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{LA}",
+            "to": "l a",
+            "weight": 1.0
+          },
+          {
+            "from": "{RETROFLEXL}",
+            "to": "ɭ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{RETROFLEXAPPROXIMANT}",
+            "to": "ɻ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{YA}",
+            "to": "j a",
+            "weight": 1.0
+          },
+          {
+            "from": "{VA}",
+            "to": "ʋ a",
+            "weight": 1.0
+          },
+          {
+            "from": "{XA}",
+            "to": "k a",
+            "weight": 1.0,
+            "comment": "the velar fricative is an allophone of /k/"
+          },
+          {
+            "from": "{A}",
+            "to": "a",
+            "weight": 1.0
+          },
+          {
+            "from": "{AA}",
+            "to": "a ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{I}",
+            "to": "i",
+            "weight": 1.0
+          },
+          {
+            "from": "{II}",
+            "to": "i ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{U}",
+            "to": "u",
+            "weight": 1.0
+          },
+          {
+            "from": "{UU}",
+            "to": "u ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{E}",
+            "to": "e",
+            "weight": 1.0
+          },
+          {
+            "from": "{EE}",
+            "to": "e ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{AI}",
+            "to": "aɪ",
+            "weight": 1.0
+          },
+          {
+            "from": "{O}",
+            "to": "o",
+            "weight": 1.0
+          },
+          {
+            "from": "{OO}",
+            "to": "o ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{AU}",
+            "to": "aʊ",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICAA}",
+            "to": "ERASE a ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICI}",
+            "to": "ERASE i",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICII}",
+            "to": "ERASE i ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICU}",
+            "to": "ERASE u",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICUU}",
+            "to": "ERASE u ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICE}",
+            "to": "ERASE e",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICEE}",
+            "to": "ERASE e ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICAI}",
+            "to": "ERASE aɪ",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICO}",
+            "to": "ERASE o",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICOO}",
+            "to": "ERASE o ː",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICAU}",
+            "to": "ERASE aʊ",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICAU2}",
+            "to": "ERASE AU2",
+            "weight": 1.0
+          },
+          {
+            "from": "{DIACRITICPULLI}",
+            "to": "ERASE",
+            "weight": 1.0
+          },
+          {
+            "from": "ற",
+            "to": "ɾ ː",
+            "weight": 2.0,
+            "follow": "ற",
+            "comment": "exception to gemination rule, given that the designated flap cannot geminate (see Misc. Rules in ta.rmd)"
+          },
+          {
+            "from": "ற",
+            "to": "",
+            "weight": 2.0,
+            "precede": "ற",
+            "comment": "clean-up"
+          }
+        ],
+        "ipasub": [
+          {
+            "from": "a ERASE",
+            "to": "",
+            "weight": 3.0,
+            "comment": "removes the inherent /a/ and removes it completely or replaces it with another vowel"
+          },
+          {
+            "from": "({gem}) a ERASE \\1",
+            "to": "\\1 ː",
+            "weight": 4.0,
+            "comment": "consonant gemination - occurs when inherent vowel is removed and not replaced with anything"
+          },
+          {
+            "from": "e ERASE AU2",
+            "to": "aʊ",
+            "weight": 2.0,
+            "comment": "combing two diacritics for /aʊ/"
+          },
+          {
+            "from": "ERASE",
+            "to": "@",
+            "weight": 1.0,
+            "comment": "left over ERASE results from combinations not legal in the language"
+          }
+        ]
+      }
+    }
+  }
+}

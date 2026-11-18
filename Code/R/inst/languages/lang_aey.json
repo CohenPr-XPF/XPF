@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "code": "aey",
+    "name": "Amele",
+    "family": "Trans-New Guinea,Madang-Adelbert Range,Madang,Mabuso,Gum",
+    "macroarea": "Papunesia",
+    "default_script": "latin"
+  },
+  "scripts": {
+    "latin": {
+      "verify": [
+        {
+          "word": "agena",
+          "phonemes": "a ɡ e n a",
+          "comment": "a"
+        },
+        {
+          "word": "babalecna",
+          "phonemes": "b a b a l e ʔ n a",
+          "comment": "b"
+        },
+        {
+          "word": "cajaca",
+          "phonemes": "ʔ a j a ʔ a",
+          "comment": "c"
+        },
+        {
+          "word": "maaden",
+          "phonemes": "m a a d e n",
+          "comment": "d"
+        },
+        {
+          "word": "ceteh",
+          "phonemes": "ʔ e t e h",
+          "comment": "e"
+        },
+        {
+          "word": "filfil",
+          "phonemes": "f i l f i l",
+          "comment": "f"
+        },
+        {
+          "word": "gug",
+          "phonemes": "ɡ u ɡ",
+          "comment": "g"
+        },
+        {
+          "word": "hewi",
+          "phonemes": "h e w i",
+          "comment": "h"
+        },
+        {
+          "word": "nijia",
+          "phonemes": "n i j i a",
+          "comment": "i"
+        },
+        {
+          "word": "jic",
+          "phonemes": "j i ʔ",
+          "comment": "j"
+        },
+        {
+          "word": "kobol",
+          "phonemes": "k o b o l",
+          "comment": "k"
+        },
+        {
+          "word": "qila",
+          "phonemes": "ɡb i l a",
+          "comment": "l"
+        },
+        {
+          "word": "malogom",
+          "phonemes": "m a l o ɡ o m",
+          "comment": "m"
+        },
+        {
+          "word": "anutna",
+          "phonemes": "a n u t n a",
+          "comment": "n"
+        },
+        {
+          "word": "odocob",
+          "phonemes": "o d o ʔ o b",
+          "comment": "o"
+        },
+        {
+          "word": "qasali",
+          "phonemes": "ɡb a s a l i",
+          "comment": "q"
+        },
+        {
+          "word": "fero",
+          "phonemes": "f e r o",
+          "comment": "r"
+        },
+        {
+          "word": "saen",
+          "phonemes": "s a e n",
+          "comment": "s"
+        },
+        {
+          "word": "ceteteh",
+          "phonemes": "ʔ e t e t e h",
+          "comment": "t"
+        },
+        {
+          "word": "cunug",
+          "phonemes": "ʔ u n u ɡ",
+          "comment": "u"
+        },
+        {
+          "word": "wawaga",
+          "phonemes": "w a w a ɡ a",
+          "comment": "w"
+        }
+      ],
+      "rules": {
+        "classes": {
+          "passthrough": "[abdefhijklmnorstuw]"
+        },
+        "sub": [
+          {
+            "from": "c",
+            "to": "ʔ",
+            "weight": 4.0
+          },
+          {
+            "from": "g",
+            "to": "ɡ",
+            "weight": 4.0
+          },
+          {
+            "from": "q",
+            "to": "ɡb",
+            "weight": 4.0
+          },
+          {
+            "from": "({passthrough})",
+            "to": "\\1",
+            "weight": 0.1
+          }
+        ]
+      }
+    }
+  }
+}
