@@ -80,7 +80,11 @@ xpf_download <- function(ref = "main", path = NULL, dir = xpf_data_dir(),
     }
     utils::untar(tarball, files = wanted, exdir = staging)
     files <- file.path(staging, wanted)
-    source <- sprintf("https://github.com/%s, ref %s", xpf_data_repo, ref)
+    source <- sprintf("https://github.com/%s", xpf_data_repo)
+    # GitHub tarballs come from `git archive`, which records the commit in
+    # the pax header and gives every file the commit's timestamp.
+    commit <- tarball_commit(tarball)
+    date <- format(max(file.mtime(files)), "%Y-%m-%d")
   } else {
     if (!dir.exists(path)) stop(sprintf("No such directory: %s", path), call. = FALSE)
     sub <- file.path(path, "xpfcorpus", "data", "languages")
@@ -89,6 +93,10 @@ xpf_download <- function(ref = "main", path = NULL, dir = xpf_data_dir(),
     files <- files[basename(files) != "index.json"]
     if (length(files) == 0) stop(sprintf("No language files in %s", path), call. = FALSE)
     source <- normalizePath(path)
+    git <- git_commit(path)
+    commit <- git$commit
+    date <- git$date
+    ref <- NA_character_
   }
 
   # Install as lang_<code>.json: a bare code can be a name Windows reserves
@@ -98,12 +106,13 @@ xpf_download <- function(ref = "main", path = NULL, dir = xpf_data_dir(),
   dir.create(file.path(new, "languages"), recursive = TRUE)
   ok <- file.copy(files, file.path(new, "languages", paste0("lang_", basename(files))))
   if (!all(ok)) stop("Could not copy the language files.", call. = FALSE)
-  writeLines(c(
-    "XPF Corpus language data, CC BY-NC-SA 4.0",
-    "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    paste("source:", source),
-    paste("installed:", format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z")),
-    paste("languages:", length(files))
+  write.dcf(data.frame(
+    Data = "XPF Corpus language rules",
+    License = "CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+    Source = source, Ref = ref, Commit = commit, Date = date,
+    Languages = length(files),
+    Installed = format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z"),
+    stringsAsFactors = FALSE
   ), file.path(new, "PROVENANCE"))
 
   dir.create(dir, recursive = TRUE, showWarnings = FALSE)
@@ -119,6 +128,76 @@ xpf_download <- function(ref = "main", path = NULL, dir = xpf_data_dir(),
   # Anything loaded from the old data is stale now.
   .xpf$catalog <- NULL
   .xpf$transcribers <- list()
-  if (!quiet) message(sprintf("Installed %d languages in %s", length(files), dir))
+  if (!quiet) {
+    message(sprintf("Installed %d languages in %s", length(files), dir))
+    message(data_version_line())
+  }
   invisible(dir)
+}
+
+# The commit a `git archive` tarball was made from: its first header is a
+# pax global header whose "comment" record holds the commit id.
+tarball_commit <- function(tarball) {
+  con <- gzfile(tarball, "rb")
+  on.exit(close(con))
+  head <- rawToChar(readBin(con, "raw", 1024)[-(1:512)], multiple = TRUE)
+  head <- paste(head[head != "\001" & nzchar(head)], collapse = "")
+  m <- regmatches(head, regexpr("comment=[0-9a-f]{40}", head))
+  if (length(m)) sub("comment=", "", m) else NA_character_
+}
+
+# Commit and date of a local git checkout, if it is one; "+" marks
+# uncommitted changes to the language files.
+git_commit <- function(path) {
+  none <- list(commit = NA_character_, date = NA_character_)
+  git <- Sys.which("git")
+  if (!nzchar(git)) return(none)
+  run <- function(...) suppressWarnings(tryCatch(
+    system2(git, c("-C", shQuote(path), ...), stdout = TRUE, stderr = FALSE),
+    error = function(e) character()))
+  out <- run("log", "-1", "--format=%H%x20%cs", "--", ".")
+  if (length(out) != 1 || !grepl("^[0-9a-f]{40} ", out)) return(none)
+  dirty <- length(run("status", "--porcelain", "--", ".")) > 0
+  parts <- strsplit(out, " ")[[1]]
+  list(commit = paste0(parts[1], if (dirty) "+"), date = parts[2])
+}
+
+#' Which version of the corpus rules is installed
+#'
+#' Reports where the installed language data came from: the xpfcorpus
+#' commit and its date, as recorded by [xpf_download()]. Cite this with
+#' your results, since transcriptions can change between versions of the
+#' rules. [citation()] for this package includes it.
+#'
+#' @return A list with elements `source`, `ref`, `commit` (a trailing `+`
+#'   means a local copy with uncommitted changes), `date`, `languages`,
+#'   `installed` and `license`, or `NULL` if no data is installed.
+#' @export
+#' @examples
+#' xpf_data_info()
+xpf_data_info <- function() {
+  f <- file.path(xpf_data_dir(), "PROVENANCE")
+  if (!xpf_has_data() || !file.exists(f)) return(NULL)
+  d <- tryCatch(read.dcf(f), error = function(e) NULL)
+  get <- function(k) if (!is.null(d) && k %in% colnames(d) && !is.na(d[1, k]) && d[1, k] != "NA") gsub("\\s*\n\\s*", " ", unname(d[1, k])) else NA_character_
+  list(source = get("Source"), ref = get("Ref"), commit = get("Commit"),
+       date = get("Date"), languages = as.integer(get("Languages")),
+       installed = get("Installed"), license = get("License"))
+}
+
+# One line naming the installed rules, for messages.
+data_version_line <- function() {
+  info <- xpf_data_info()
+  if (is.null(info)) {
+    return("XPF Corpus rules not installed; run xpf_download() (CC BY-NC-SA 4.0).")
+  }
+  commit <- if (is.na(info$commit)) "unknown commit" else paste("commit", substr(info$commit, 1, 7))
+  if (!is.na(info$commit) && endsWith(info$commit, "+")) commit <- paste(commit, "with local changes")
+  date <- if (is.na(info$date)) "" else sprintf(" (%s)", info$date)
+  sprintf("XPF Corpus rules: %s%s, %d languages. Cite with citation(\"xpfcorpus\").",
+          commit, date, info$languages)
+}
+
+.onAttach <- function(libname, pkgname) {
+  packageStartupMessage(data_version_line())
 }

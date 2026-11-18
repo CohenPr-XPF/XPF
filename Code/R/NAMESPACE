@@ -2,6 +2,7 @@
 
 S3method(print,xpf_transcriber)
 export(xpf_data_dir)
+export(xpf_data_info)
 export(xpf_download)
 export(xpf_has_data)
 export(xpf_languages)

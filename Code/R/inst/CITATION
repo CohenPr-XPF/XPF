@@ -1,15 +1,52 @@
-bibentry(
-  bibtype = "Manual",
-  key = "XPF2021manual",
-  title = "The Cross-linguistic Phonological Frequencies ({XPF}) Corpus manual",
-  author = c(
-    person("Uriel", "Cohen Priva"), person("Emily", "Strand"),
-    person("Shiying", "Yang"), person("William", "Mizgerd"),
-    person("Abigail", "Creighton"), person("Justin", "Bai"),
-    person("Rebecca", "Mathew"), person("Allison", "Shao"),
-    person("Jordan", "Schuster"), person("Daniela", "Wiepert")
+xpf_authors <- c(
+  person("Uriel", "Cohen Priva"), person("Emily", "Strand"),
+  person("Shiying", "Yang"), person("William", "Mizgerd"),
+  person("Abigail", "Creighton"), person("Justin", "Bai"),
+  person("Rebecca", "Mathew"), person("Allison", "Shao"),
+  person("Jordan", "Schuster"), person("Daniela", "Wiepert")
+)
+
+# The installed rules, as recorded by xpf_download(). NULL when none are
+# installed, or when the package cannot be loaded (e.g. while R CMD check
+# reads this file).
+xpf_info <- tryCatch(
+  if (requireNamespace("xpfcorpus", quietly = TRUE)) xpfcorpus::xpf_data_info(),
+  error = function(e) NULL)
+
+xpf_cite_note <- "Please also cite the version of the rules you used (below), since transcriptions can change between versions."
+
+c(
+  bibentry(
+    bibtype = "Manual",
+    key = "XPF2021manual",
+    header = "To cite the XPF Corpus, use:",
+    title = "The Cross-linguistic Phonological Frequencies ({XPF}) Corpus manual",
+    author = xpf_authors,
+    year = "2021",
+    url = "https://cohenpr-xpf.github.io/XPF/manual/xpf_manual.pdf",
+    note = "Accessible online"
   ),
-  year = "2021",
-  url = "https://cohenpr-xpf.github.io/XPF/manual/xpf_manual.pdf",
-  note = "Accessible online"
+  if (!is.null(xpf_info)) bibentry(
+    bibtype = "Misc",
+    key = "xpfcorpusRules",
+    header = xpf_cite_note,
+    title = "{XPF} Corpus language rules",
+    author = xpf_authors,
+    year = if (is.na(xpf_info$date)) format(Sys.Date(), "%Y") else substr(xpf_info$date, 1, 4),
+    howpublished = paste0(
+      if (is.na(xpf_info$source)) "" else xpf_info$source,
+      if (is.na(xpf_info$commit)) "" else paste0(", commit ", xpf_info$commit),
+      if (is.na(xpf_info$date)) "" else paste0(" (", xpf_info$date, ")")),
+    note = "CC BY-NC-SA 4.0"
+  ),
+  bibentry(
+    bibtype = "Manual",
+    key = "xpfcorpusR",
+    header = "The R package:",
+    title = "xpfcorpus: Grapheme-to-Phoneme Transcription with the {XPF} Corpus Rules",
+    author = person("Uriel", "Cohen Priva"),
+    year = format(Sys.Date(), "%Y"),
+    note = paste("R package version", meta$Version),
+    url = "https://github.com/CohenPr-XPF/XPF"
+  )
 )

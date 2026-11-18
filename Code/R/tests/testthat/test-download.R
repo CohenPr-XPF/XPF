@@ -18,7 +18,8 @@ test_that("xpf_download(path =) installs language files under lang_ names", {
   expect_true(xpf_has_data())
   expect_true(file.exists(file.path(dir, "languages", "lang_toy.json")))
   expect_false(file.exists(file.path(dir, "languages", "lang_index.json")))
-  expect_match(readLines(file.path(dir, "PROVENANCE"))[1], "CC BY-NC-SA")
+  expect_match(xpf_data_info()$license, "CC BY-NC-SA")
+  expect_identical(xpf_data_info()$languages, 1L)
   expect_identical(xpf_languages()$code, "toy")
   expect_identical(xpf_transcribe("casa", "toy"), "k a z a")
 })
@@ -52,4 +53,56 @@ test_that("xpf_data_dir() follows the option and the environment variable", {
   Sys.setenv(XPFCORPUS_DATA = "")
   options(xpfcorpus.data_dir = NULL)
   expect_identical(xpf_data_dir(), tools::R_user_dir("xpfcorpus", "data"))
+})
+
+# A throwaway git repository laid out like xpfcorpus, holding the toy language.
+make_git_source <- function() {
+  skip_if(!nzchar(Sys.which("git")), "git not available")
+  src <- make_source()
+  git <- function(...) system2("git", c("-C", shQuote(src), ...), stdout = TRUE, stderr = TRUE)
+  git("init", "-q")
+  git("-c", "user.name=t", "-c", "user.email=t@example.org", "add", ".")
+  git("-c", "user.name=t", "-c", "user.email=t@example.org", "commit", "-q", "-m", "toy")
+  list(dir = src, commit = git("rev-parse", "HEAD"), git = git)
+}
+
+test_that("the commit is read from a git-archive tarball, as GitHub serves", {
+  g <- make_git_source()
+  tarball <- tempfile(fileext = ".tar.gz")
+  system2("git", c("-C", shQuote(g$dir), "archive", "--format=tar.gz",
+                   "--prefix=xpfcorpus-main/", "-o", shQuote(tarball), "HEAD"))
+  expect_identical(xpfcorpus:::tarball_commit(tarball), g$commit)
+})
+
+test_that("installing from a git checkout records its commit, and local changes", {
+  g <- make_git_source()
+  dir <- tempfile("data-")
+  old <- options(xpfcorpus.data_dir = dir)
+  on.exit(options(old))
+  xpf_download(path = g$dir, quiet = TRUE)
+  info <- xpf_data_info()
+  expect_identical(info$commit, g$commit)
+  expect_match(info$date, "^\\d{4}-\\d{2}-\\d{2}$")
+  expect_match(xpfcorpus:::data_version_line(), substr(g$commit, 1, 7), fixed = TRUE)
+
+  write("\n", file.path(g$dir, "xpfcorpus", "data", "languages", "toy.json"), append = TRUE)
+  xpf_download(path = g$dir, quiet = TRUE)
+  expect_identical(xpf_data_info()$commit, paste0(g$commit, "+"))
+  expect_match(xpfcorpus:::data_version_line(), "with local changes")
+})
+
+test_that("citation() names the installed rules, and works without them", {
+  dir <- tempfile("data-")
+  old <- options(xpfcorpus.data_dir = dir)
+  on.exit(options(old))
+  expect_null(xpf_data_info())
+  expect_match(xpfcorpus:::data_version_line(), "xpf_download")
+  keys <- function() vapply(unclass(citation("xpfcorpus")), function(b) attr(b, "key"), "")
+  expect_identical(keys(), c("XPF2021manual", "xpfcorpusR"))
+
+  g <- make_git_source()
+  xpf_download(path = g$dir, quiet = TRUE)
+  expect_identical(keys(), c("XPF2021manual", "xpfcorpusRules", "xpfcorpusR"))
+  rules <- format(citation("xpfcorpus")[2], style = "text")
+  expect_match(rules, g$commit, fixed = TRUE)
 })
